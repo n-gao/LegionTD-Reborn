@@ -1,0 +1,42 @@
+"send_incomeunit_jellyfish"
+{
+	"BaseClass"             		"ability_datadriven"
+	"AbilityTextureName"				"send_incomeunit_jellyfish"
+	"MaxLevel" 									"1"
+
+	"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityType"								"DOTA_ABILITY_TYPE_BASIC"
+
+	"AbilityCooldown"						"10.0"
+
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"player.lua"
+			"Function"		"SendUnit"
+		}
+	}
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"tango_cost"		"450"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"income"				"22"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"unitID"				"1021"
+		}
+	}
+  "precache"
+  {
+    "model" "models/items/courier/echo_wisp/echo_wisp.vmdl"
+  }
+}

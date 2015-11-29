@@ -1,0 +1,76 @@
+// *******************************************************************************
+// *********************************** BUILDINGS *********************************
+// *******************************************************************************
+
+"radiant_unit_building"
+{
+	// General
+	//----------------------------------------------------------------
+	"BaseClass"					"npc_dota_building"
+	"Model"						"models/props_structures/good_barracks_melee001.vmdl"
+	"ModelScale"				"0.5"
+	"Level"						"1"
+	"HealthBarOffset"			"140"
+
+	// Abilities
+	//----------------------------------------------------------------
+	"AbilityLayout"					"6"
+	"Ability1"							"send_incomeunit_kobold"
+	"Ability2"							"send_incomeunit_hill_troll_shaman"
+	"Ability3"							"send_incomeunit_hill_troll_warrior"
+	"Ability4"							"send_incomeunit_harpy"
+	"Ability5"							"send_incomeunit_ghost"
+	"Ability6"							"send_incomeunit_little_wolf"
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"				"5"
+	"MagicalResistance"			"0"
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"			"0"
+	"AttackDamageMax"			"0"
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyGoldMin"				"0.0"
+	"BountyGoldMax"				"0.0"
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"			"DOTA_HULL_SIZE_BARRACKS"
+	"RingRadius"				"110"
+	"CollisionSize"				"100"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"	// Needed to cast Point abilities
+	"MovementSpeed"				"0"
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"1"
+	"StatusHealthRegen"			"0"
+	"StatusMana"				"0"
+	"StatusManaRegen"			"0"
+
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"0"
+	"VisionNighttimeRange"	"0"
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"					"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+	"UnitRelationShipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+
+	"States"
+	{
+		"MODIFIER_STATE_INVULNERABLE"		"MODIFIER_STATE_VALUE_ENABLED"
+	}
+}

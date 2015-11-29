@@ -1,0 +1,94 @@
+"tower_naturebuilder_big_bug"
+{
+	// General
+	//----------------------------------------------------------------
+	"BaseClass"             "npc_dota_creature"
+	"Model"                 "models/heroes/weaver/weaver.vmdl"
+	"ModelScale"            "0.5"
+	"SoundSet"					"Hero_Weaver"
+	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"
+	"Level"                 "1"
+	"HealthBarOffset"       "150"
+
+	"Ability1"							"sell"
+	"Ability2"							"weaver_geminate_attack"
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"         "1"
+	"MagicalResistance"     "0"
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"       "55.0"
+	"AttackDamageMax"       "75.0"
+	"AttackRate"            "0.45"
+	"AttackAnimationPoint"  "0.55"
+	"AttackAcquisitionRange" "500"
+	"AttackRange"           "500"
+	"ProjectileModel"       "particles/units/heroes/hero_weaver/weaver_base_attack.vpcf"
+	"ProjectileSpeed"       "900"
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyGoldMin"         "0"
+	"BountyGoldMax"         "0"
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	"RingRadius"            "30"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"         "270"
+	"MovementTurnRate"      "0.6"
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"          "210"
+	"StatusHealthRegen"     "0"
+	"StatusMana"            "0"
+	"StatusManaRegen"       "0"
+
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"    "1400"
+	"VisionNighttimeRange"  "800"
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"              "DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	// Creature Data
+	//----------------------------------------------------------------
+	"Creature"
+	{
+		"DisableClumpingBehavior"       "1"
+		"DefaultState"				"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"0.0"
+			}
+		}
+		"AttachWearables"
+		{
+			"Wearable1" { "ItemDef" "6132" }
+			"Wearable2" { "ItemDef" "6130" }
+			"Wearable3" { "ItemDef" "7468" }
+			"Wearable4" { "ItemDef" "4820" }
+			"Wearable5" { "ItemDef" "6134" }
+		}
+	}
+}

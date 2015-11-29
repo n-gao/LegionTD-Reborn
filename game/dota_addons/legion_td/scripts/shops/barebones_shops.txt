@@ -1,0 +1,19 @@
+"dota_shops"
+{
+	"consumables"
+	{
+		//"item"		"item_clarity"					
+		//"item"   		"item_example_item"
+	}
+	
+	"secretshop"
+	{							
+		//"item"		"item_orb_of_venom"
+		//"item"		"item_ring_of_health"
+	}
+
+	"sideshop1"
+	{
+		//"item"		"item_tpscroll"
+	}	
+}

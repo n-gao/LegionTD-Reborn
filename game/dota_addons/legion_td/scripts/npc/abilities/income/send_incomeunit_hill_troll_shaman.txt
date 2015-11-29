@@ -1,0 +1,44 @@
+"send_incomeunit_hill_troll_shaman"
+{
+	"BaseClass"             		"ability_datadriven"
+	"AbilityTextureName"				"send_incomeunit_hill_troll_shaman"
+	"MaxLevel" 									"1"
+
+	"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityType"								"DOTA_ABILITY_TYPE_BASIC"
+
+	"AbilityCooldown"						"2.0"
+
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"player.lua"
+			"Function"		"SendUnit"
+		}
+	}
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"tango_cost"		"40"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"income"				"1"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"unitID"				"1002"
+		}
+	}
+  "precache"
+  {
+    "model"     "models/creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_high_priest.vmdl"
+		"particle"  "particles/units/heroes/hero_chen/chen_base_attack.vpcf"
+
+  }
+}

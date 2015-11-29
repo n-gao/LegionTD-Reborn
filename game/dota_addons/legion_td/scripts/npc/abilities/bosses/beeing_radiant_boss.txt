@@ -1,0 +1,39 @@
+"beeing_radiant_boss"
+{
+  "BaseClass"                 "ability_datadriven"
+  "AbilityTextureName"      "omniknight_guardian_angel"
+  "MaxLevel"             "1"
+
+  "AbilityBehavior"     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+  "Modifiers"
+  {
+    "isBoss"
+    {
+      "Passive"      "1"
+      "IsHidden"      "0"
+      "IsDebuff"      "0"
+
+      "OnDeath"
+      {
+        "RunScript"
+        {
+          "ScriptFile"  "abilities/bosses"
+          "Function"    "BossDied"
+        }
+      }
+    }
+    "boss_upgrade_health_stack"
+    {
+      "IsBuff"      "1"
+    }
+    "boss_upgrade_attack_stack"
+    {
+      "IsBuff"      "1"
+    }
+    "boss_upgrade_regen_stack"
+    {
+      "IsBuff"      "1"
+    }
+  }
+}

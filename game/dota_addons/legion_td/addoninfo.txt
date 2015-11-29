@@ -1,0 +1,7 @@
+"AddonInfo"
+{
+  "testmap"
+  {
+    "MaxPlayers"    "8"
+  }
+}

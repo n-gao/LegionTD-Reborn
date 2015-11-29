@@ -1,0 +1,61 @@
+.UnitButton {
+  margin: 3px 3px 3px 3px;
+  width: 74px;
+  height: 74px;
+  transform: scaleX(0.92) scaleY(0.92);
+  transition-property: transform;
+  transition-duration: 0.1s;
+}
+
+.UnitButton:hover {
+  transform: scaleX(1) scaleY(1);
+}
+
+.UnitButton:active {
+  transform: scaleX(0.9) scaleY(0.9);
+}
+
+#UnitTangoCostPanel {
+  height: 18px;
+}
+
+.Hovered #UnitTangoCostPanel {
+  height: 74px;
+}
+
+#TangoCostLabel {
+  font-size: 15px;
+}
+
+#GoldIncomeLabel {
+  color: gold;
+  font-size: 14px;
+}
+
+#DescLabel {
+  horizontal-align: center;
+  vertical-align: top;
+  margin-top: 45px;
+  color: white;
+  font-size: 14px;
+}
+
+#UnitTint {
+  width: 100%;
+  height: 100%;
+  background-color: #981717A0;
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 0.2s;
+  visibility: collapse;
+}
+
+#UnitTint.TintVisible {
+  opacity: 1;
+  visibility: visible;
+}
+
+#UnitTint.TintVisible.FadeTint {
+  opacity: 0;
+  visibility: visible;
+}

@@ -1,0 +1,105 @@
+"DOTAHeroes"
+{
+	"elementalbuilder"
+	{
+		"override_hero"		"npc_dota_hero_invoker"
+		"Level"						"1"
+		"MaxLevel"				"1"
+	  "AbilityLayout"   "6"
+		"Ability1"				"elementalbuilder_spawn_waterbender"
+		"Ability2"				"elementalbuilder_spawn_thunderbender"
+		"Ability3"				"elementalbuilder_spawn_earthbender"
+		"Ability4"				"elementalbuilder_spawn_firebender"
+		"Ability5"				"elementalbuilder_spawn_voidbender"
+	  "Ability6"        ""
+	
+		"AttributeBaseStrength"	"0"
+		"AttributeBaseAgility"	"0"
+		"AttributeBaseIntelligence"	"0"
+	
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"	"1"
+		"AttackDamageMax"	"1"
+		"ArmorPhysical"		"0"
+	
+		"HasInventory"			"0"
+		"MagicalResistance"	"0"
+	
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"MovementSpeed"					"1000"
+		"MovementTurnRate"			"1.0"
+	
+		"StatusHealth"			"1"
+		"StatusMana"				"0"
+	
+		"VisionDaytimeRange"	"1000"
+		"VisionNighttimeRange""1000"
+	}
+	"naturebuilder"
+	{
+		"override_hero"		"npc_dota_hero_furion"
+		"Level"						"1"
+		"MaxLevel"				"1"
+	  "AbilityLayout"   "6"
+		"Ability1"				"naturebuilder_spawn_spider"
+		"Ability2"				"naturebuilder_spawn_bug"
+		"Ability3"				"naturebuilder_spawn_bear"
+		"Ability4"				"naturebuilder_spawn_treant"
+		"Ability5"				"naturebuilder_spawn_hyena"
+		"Ability6"				"naturebuilder_spawn_centaur"
+	
+		"AttributeBaseStrength"	"0"
+		"AttributeBaseAgility"	"0"
+		"AttributeBaseIntelligence"	"0"
+	
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"	"1"
+		"AttackDamageMax"	"1"
+		"ArmorPhysical"		"0"
+	
+		"HasInventory"			"0"
+		"MagicalResistance"	"0"
+	
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"MovementSpeed"					"1000"
+		"MovementTurnRate"			"1.0"
+	
+		"StatusHealth"			"1"
+		"StatusMana"				"0"
+	
+		"VisionDaytimeRange"	"1000"
+		"VisionNighttimeRange""1000"
+	}
+	"npc_dota_hero_ancient_apparition_barebones"
+	{
+		"override_hero"		"npc_dota_hero_ancient_apparition"
+		"Level"						"1"
+		"MaxLevel"				"1"
+		"Ability1"				"insta_kill"
+		"Ability2"				"spawn_human_footman"
+		"Ability3"				"spawn_bird_ranged"
+		"Ability4"				""
+	
+		"AttributeBaseStrength"	"0"
+		"AttributeBaseAgility"	"0"
+		"AttributeBaseIntelligence"	"0"
+	
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"	"1"
+		"AttackDamageMax"	"1"
+		"ArmorPhysical"		"0"
+	
+		"HasInventory"			"0"
+		"MagicalResistance"	"0"
+	
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"MovementSpeed"					"1000"
+		"MovementTurnRate"			"1.0"
+	
+		"StatusHealth"			"1"
+		"StatusMana"				"0"
+	
+		"VisionDaytimeRange"	"1000"
+		"VisionNighttimeRange""1000"
+	}
+}

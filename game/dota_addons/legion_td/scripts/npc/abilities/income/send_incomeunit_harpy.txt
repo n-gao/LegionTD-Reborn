@@ -1,0 +1,43 @@
+"send_incomeunit_harpy"
+{
+	"BaseClass"             		"ability_datadriven"
+	"AbilityTextureName"				"send_incomeunit_harpy"
+	"MaxLevel" 									"1"
+
+	"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityType"								"DOTA_ABILITY_TYPE_BASIC"
+
+	"AbilityCooldown"						"3.0"
+
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"player.lua"
+			"Function"		"SendUnit"
+		}
+	}
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"tango_cost"		"60"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"income"				"3"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"unitID"				"1004"
+		}
+	}
+  "precache"
+  {
+    "model"     "models/creeps/neutral_creeps/n_creep_harpy_a/n_creep_harpy_a.vmdl"
+		"particle"  "particles/econ/items/razor/razor_punctured_crest/razor_static_link_beam_blade.vpcf"
+  }
+}

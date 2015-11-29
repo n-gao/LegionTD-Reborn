@@ -1,0 +1,58 @@
+"elementalbuilder_spawn_waterbender"
+{
+  "BaseClass"               "ability_datadriven"
+  "AbilityTextureName"      "morphling_waveform"
+  "MaxLevel"             "1"
+
+  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+  "AbilityGoldCost"				"40"
+  "AbilityCooldown"		    "1.0"
+  "AbilityCastRange"			"125"
+  "OnSpellStart"
+  {
+    "RunScript"
+    {
+      "ScriptFile"	"player.lua"
+      "Function"		"UnitSpawn"
+    }
+  }
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_damage_tooltip"    "27"
+    }
+    "02"
+    {
+      "var_type"              "FIELD_FLOAT"
+      "atk_speed_tooltip"     "0.65"
+    }
+    "03"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_range_tooltip"     "90"
+    }
+    "04"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "health_tooltip"        "150"
+    }
+    "05"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "armor_tooltip"         "3"
+    }
+    "06"
+    {
+      "var_type"      "FIELD_INTEGER"
+      "food_cost"     "1"
+    }
+    "07"
+    {
+      "var_type"			"FIELD_INTEGER"
+      "unitID"				"16"
+    }
+  }
+}

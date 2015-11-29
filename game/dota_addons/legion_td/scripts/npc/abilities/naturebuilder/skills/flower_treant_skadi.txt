@@ -1,0 +1,74 @@
+"flower_treant_skadi"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                     "ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"            "item_skadi"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "cold_movement_speed"   "-35"
+        }
+        "02"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "cold_attack_speed"     "-45"
+        }
+        "03"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "cold_duration_melee"   "5.0"
+        }
+        "04"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "cold_duration_ranged"  "3.0"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_item_skadi_datadriven"
+        {
+            "Passive"               "1"
+            "IsHidden"              "1"
+
+            "Orb"
+            {
+                "Priority"              "DOTA_ORB_PRIORITY_ITEM"
+                "Label"                 "DOTA_ORB_LABEL_SKADI"  //This does not currently seem to have an effect.  "Label" may not be the right key.
+                "ProjectileName"        "particles/items2_fx/skadi_projectile.vpcf"
+                "CastAttack"            "0"
+            }
+
+            "OnOrbImpact"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"            "abilities/naturebuilder/flower_treant_skadi.lua"
+                    "Function"              "modifier_item_skadi_datadriven_on_orb_impact"
+                    "ColdDurationMelee"     "%cold_duration_melee"
+                    "ColdDurationRanged"    "%cold_duration_ranged"
+                }
+            }
+        }
+        "modifier_item_skadi_datadriven_cold_attack"
+        {
+            "Passive"               "0"
+            "IsHidden"              "0"
+
+            "StatusEffectName"     "particles/status_fx/status_effect_frost.vpcf"
+            "StatusEffectPriority" "10"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"      "%cold_attack_speed"
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"      "%cold_movement_speed"
+            }
+        }
+    }
+}

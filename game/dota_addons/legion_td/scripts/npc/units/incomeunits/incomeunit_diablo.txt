@@ -1,0 +1,85 @@
+"incomeunit_diablo"
+{
+	// General
+	//----------------------------------------------------------------
+	"BaseClass"             "npc_dota_creature"
+	"Model"                 "models/items/warlock/golem/doom_of_ithogoaki/doom_of_ithogoaki.vmdl"
+	"ModelScale"            "0.7"
+	"SoundSet"				    	"Hero_WarlockGolem"
+	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts"
+	"Level"                 "1"
+	"HealthBarOffset"       "150"
+
+	"Ability1"							"radiance aura"
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"         "1"
+	"MagicalResistance"     "0"
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"       "150.0"
+	"AttackDamageMax"       "160.0"
+	"AttackRate"            "0.8"
+	"AttackAnimationPoint"  "0.5"
+	"AttackAcquisitionRange" "500"
+	"AttackRange"           "125"
+	"ProjectileModel"       ""
+	"ProjectileSpeed"       "0"
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyGoldMin"         "27"
+	"BountyGoldMax"         "27"
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+  "CollisionSize"					"40"
+	"RingRadius"            "25"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"         "270"
+	"MovementTurnRate"      "0.6"
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"          "1800"
+	"StatusHealthRegen"     "0"
+	"StatusMana"            "0"
+	"StatusManaRegen"       "0"
+
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"    "1400"
+	"VisionNighttimeRange"  "800"
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"              "DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	// Creature Data
+	//----------------------------------------------------------------
+	"Creature"
+	{
+		"DisableClumpingBehavior"       "1"
+		"DefaultState"				"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"0.0"
+			}
+		}
+	}
+}

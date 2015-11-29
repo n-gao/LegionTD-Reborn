@@ -1,0 +1,24 @@
+"brood_spawn_spiderlings"
+{
+	"BaseClass"             		"ability_datadriven"
+	"AbilityTextureName"			"broodmother_spawn_spiderlings"
+	"MaxLevel" 								"1"
+	"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"AbilityCooldown"					"30"
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"                    "FIELD_FLOAT"
+			"duration"                    "8.0"
+		}
+	}
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"abilities/naturebuilder/broodmother_spawn_spiderlings"
+			"Function"		"SpawnSpiderlings"
+		}
+	}
+}

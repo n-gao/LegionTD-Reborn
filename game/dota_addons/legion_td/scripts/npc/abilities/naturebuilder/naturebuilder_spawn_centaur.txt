@@ -1,0 +1,58 @@
+"naturebuilder_spawn_centaur"
+{
+  "BaseClass"                 "ability_datadriven"
+  "AbilityTextureName"      "centaur_stampede"
+  "MaxLevel"             "1"
+
+  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+  "AbilityGoldCost"				"360"
+  "AbilityCooldown"		    "1.0"
+  "AbilityCastRange"			"125"
+  "OnSpellStart"
+  {
+    "RunScript"
+    {
+      "ScriptFile"	"player.lua"
+      "Function"		"UnitSpawn"
+    }
+  }
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_damage_tooltip"    "325"
+    }
+    "02"
+    {
+      "var_type"              "FIELD_FLOAT"
+      "atk_speed_tooltip"     "1.8"
+    }
+    "03"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_range_tooltip"     "90"
+    }
+    "04"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "health_tooltip"        "1020"
+    }
+    "05"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "armor_tooltip"         "3"
+    }
+    "06"
+    {
+      "var_type"      "FIELD_INTEGER"
+      "food_cost"     "1"
+    }
+    "07"
+    {
+      "var_type"			"FIELD_INTEGER"
+      "unitID"				"6"
+    }
+  }
+}

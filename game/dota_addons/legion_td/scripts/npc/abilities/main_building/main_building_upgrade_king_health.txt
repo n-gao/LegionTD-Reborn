@@ -1,0 +1,21 @@
+"main_building_useless_dont_use_this_shit_just_forget_it_and_never_touch_it_again_fuck_this_bug"
+{
+  "BaseClass"             	"ability_datadriven"
+  "AbilityTextureName"			"attribute_bonus"
+  "MaxLevel" 								"30"
+  "AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type"			"FIELD_INTEGER"
+      "food_cost"				 "100"
+    }
+    "02"
+    {
+      "var_type"			"FIELD_INTEGER"
+      "income"				 "3"
+    }
+  }
+}

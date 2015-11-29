@@ -1,0 +1,83 @@
+//Fatty
+//------------------------------------------------------------------
+"unit_fatty"
+{
+	"BaseClass"             "npc_dota_creature"
+	"Model"                 "models/heroes/pudge/pudge.vmdl"
+	"ModelScale"            "2.5"
+	"SoundSet"				"Hero_Pudge"
+	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts"
+	"Level"                 "1"
+	"HealthBarOffset"       "450"
+
+	"Ability1"							"alchemist_acid_spray"
+
+	"ArmorPhysical"         "8"
+	"MagicalResistance"     "20"
+
+	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"       "50.0"
+	"AttackDamageMax"       "60.0"
+	"AttackRate"            "0.8"
+	"AttackAnimationPoint"  "0.3"
+	"AttackAcquisitionRange" "500"
+	"AttackRange"           "300"
+	"ProjectileModel"       ""
+	"ProjectileSpeed"       "0"
+
+	"BountyGoldMin"         "51.0"
+	"BountyGoldMax"         "51.0"
+
+	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	"CollisionSize"			"300"
+	"RingRadius"            "300"
+
+	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"         "300"
+	"MovementTurnRate"      "0.6"
+
+	"StatusHealth"          "3100"
+	"StatusHealthRegen"     "0"
+	"StatusMana"            "130"
+	"StatusManaRegen"       "10"
+
+	"VisionDaytimeRange"    "1400"
+	"VisionNighttimeRange"  "800"
+
+	"TeamName"              "DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	"precache"
+	{
+		"particle"  "particles/units/heroes/hero_alchemist/alchemist_acid_spray.vpcf"
+	}
+
+	"Creature"
+	{
+		"DisableClumpingBehavior"       "1"
+		"DefaultState"				"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"0.0"
+			}
+		}
+		"AttachWearables"
+		{
+			"Wearable1" { "ItemDef" "7545"}
+			"Wearable2" { "ItemDef" "7541"}
+			"Wearable3"	{ "ItemDef"	"7542"}
+			"Wearable4"	{ "ItemDef"	"7544"}
+			"Wearable5"	{ "ItemDef"	"7543"}
+			"Wearable6"	{ "ItemDef"	"7546"}
+			"Wearable7"	{ "ItemDef"	"7547"}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+// Rewrite of the Leshrac Diabolic Edict ability
+// Author: jacklarnes
+// Date: 05.04.2015
+"thunderelemental_diablic_edict"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                     "ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+    "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+    "FightRecapLevel"               "1"
+    "AbilityTextureName"            "leshrac_diabolic_edict"
+
+    "precache"
+    {
+        "soundfile"         "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
+        "particle"          "particles/units/heroes/hero_leshrac/leshrac_diabolic_edict.vpcf"
+    }
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"              "0.5"
+
+    // Time
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"               "15"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"               "0"
+
+    // Damage.
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityDamage"                 "40"
+    "AbilityDuration"               "10"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "num_explosions"        "30"
+        }
+
+        "02"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "radius"                "450"
+        }
+        "03"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "tower_bonus"           "0"
+        }
+        "04"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "explosion_delay"       ".25"
+        }
+    }
+
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+            "EffectName"    "Hero_Leshrac.Diabolic_Edict_lp"
+            "Target"        "CASTER"
+        }
+
+        "RunScript"
+        {
+            "ScriptFile"    "abilites/elementalbuilder/thunderelemental_diablic_edict.lua"
+            "Function"      "diabolic_edict_start"
+        }
+    }
+}

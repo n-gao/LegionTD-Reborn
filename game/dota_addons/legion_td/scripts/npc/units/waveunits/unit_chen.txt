@@ -1,0 +1,77 @@
+//Assassins
+//------------------------------------------------------------------
+"unit_chen"
+{
+	"BaseClass"             "npc_dota_creature"
+	"Model"                 "models/heroes/chen/chen.vmdl"
+	"ModelScale"            "0.6"
+	"SoundSet"				"Hero_Chen"
+	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_chen.vsndevts"
+	"Level"                 "1"
+	"HealthBarOffset"       "140"
+
+	"Ability1"							""
+
+	"ArmorPhysical"         "10"
+	"MagicalResistance"     "0"
+
+	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"       "100.0"
+	"AttackDamageMax"       "110.0"
+	"AttackRate"            "0.5"
+	"AttackAnimationPoint"  "0.2"
+	"AttackAcquisitionRange" "500"
+	"AttackRange"           "400"
+	"ProjectileModel"       "particles/units/heroes/hero_chen/chen_base_attack.vpcf"
+	"ProjectileSpeed"       "200"
+
+	"BountyGoldMin"         "6.0"
+	"BountyGoldMax"         "6.0"
+
+	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
+	"CollisionSize"					"50"
+	"RingRadius"            "50"
+
+	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"         "300"
+	"MovementTurnRate"      "0.6"
+
+	"StatusHealth"          "1000"
+	"StatusHealthRegen"     "0"
+	"StatusMana"            "0"
+	"StatusManaRegen"       "0"
+
+	"VisionDaytimeRange"    "1400"
+	"VisionNighttimeRange"  "800"
+
+	"TeamName"              "DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	"Creature"
+	{
+		"DisableClumpingBehavior"       "1"
+		"DefaultState"				"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"100.0"
+			}
+		}
+		"AttachWearables"
+		{
+			"Wearable1" { "ItemDef" "5031" }
+			"Wearable2" { "ItemDef" "5036" }
+			"Wearable3" { "ItemDef" "5034" }
+			"Wearable4" { "ItemDef" "5999" }
+			"Wearable5" { "ItemDef" "5998" }
+			"Wearable6" { "ItemDef" "5995" }
+		}
+	}
+}

@@ -1,0 +1,96 @@
+"tower_naturebuilder_big_centaur"
+{
+	// General
+	//----------------------------------------------------------------
+	"BaseClass"             "npc_dota_creature"
+	"Model"                 "models/creeps/neutral_creeps/n_creep_centaur_lrg/n_creep_centaur_lrg.vmdl"
+	"ModelScale"            "0.5"
+	"SoundSet"							"n_creep_Melee"
+	"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
+	"Level"                 "1"
+	"HealthBarOffset"       "150"
+
+	"Ability1"							"sell"
+	"Ability2"							"tiny_craggy_exterior"
+	"Ability3"							"centaur_hoof_stomp_datadriven"
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"         "6"
+	"MagicalResistance"     "50"
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"       "400.0"
+	"AttackDamageMax"       "450.0"
+	"AttackRate"            "1.3"
+	"AttackAnimationPoint"  "0.5"
+	"AttackAcquisitionRange" "500"
+	"AttackRange"           "90"
+	"ProjectileModel"       ""
+	"ProjectileSpeed"       "0"
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyGoldMin"         "0"
+	"BountyGoldMax"         "0"
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	"RingRadius"            "30"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"         "270"
+	"MovementTurnRate"      "0.6"
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"          "2340"
+	"StatusHealthRegen"     "0"
+	"StatusMana"            "130"
+	"StatusManaRegen"       "10"
+
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"    "1400"
+	"VisionNighttimeRange"  "800"
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"              "DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	// Creature Data
+	//----------------------------------------------------------------
+	"Creature"
+	{
+		"DisableClumpingBehavior"       "1"
+		"DefaultState"				"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+			}
+		}
+		"OffensiveAbilities"
+		{
+			"Ability1"
+			{
+				"Name"        			 "centaur_hoof_stomp_datadriven"
+        "AOE"                "1"
+        "Radius"             "315"
+        "MinimumTargets"     "1"
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+"send_incomeunit_fleshgolem"
+{
+	"BaseClass"             		"ability_datadriven"
+	"AbilityTextureName"				"send_incomeunit_fleshgolem"
+	"MaxLevel" 									"1"
+
+	"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityType"								"DOTA_ABILITY_TYPE_BASIC"
+
+	"AbilityCooldown"						"10.0"
+
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"player.lua"
+			"Function"		"SendUnit"
+		}
+	}
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"tango_cost"		"440"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"income"				"18"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"unitID"				"1020"
+		}
+	}
+  "precache"
+  {
+    "model" "models/heroes/undying/undying_flesh_golem.vmdl"
+  }
+}

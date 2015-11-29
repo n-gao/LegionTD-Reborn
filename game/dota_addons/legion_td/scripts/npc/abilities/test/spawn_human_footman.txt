@@ -1,0 +1,33 @@
+"spawn_human_footman"
+{
+	"BaseClass"             "ability_datadriven"
+	"AbilityTextureName"		"dragon_knight_dragon_tail"
+	"MaxLevel" 							"1"
+
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	"AbilityGoldCost"				"100"
+	"AbilityCooldown"		    "2.0"
+	"AbilityCastRange"			"100"
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"player.lua"
+			"Function"		"UnitSpawn"
+		}
+	}
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"gold_cost"			"100"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"unitID"				"1"
+		}
+	}
+}

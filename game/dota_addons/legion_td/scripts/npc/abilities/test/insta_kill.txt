@@ -1,0 +1,27 @@
+"insta_kill" {
+	"BaseClass"             		"ability_datadriven"
+	"AbilityTextureName"				"lina_laguna_blade"
+	"MaxLevel" 									"1"
+
+	"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+
+	"AbliityDamage"							"100000"
+	"AbilityCooldown"						"0.0"
+	"AbilityManaCost"						"0"
+	"AbilityDamage"							"100000"
+	"AbilityCastRange"					"1000000"
+	"AbilityCastPoint"					"0.0"
+	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+	"OnSpellStart"
+	{
+		"Damage"
+		{
+			"Target"		"TARGET"
+			"Type"			"DAMAGE_TYPE_PURE"
+			"Damage"		"%AbilityDamage"
+		}
+	}
+}

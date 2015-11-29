@@ -1,0 +1,42 @@
+"assassin_backstab"
+{
+	"BaseClass"									"ability_datadriven"
+	"AbilityTextureName"				"riki_backstab"
+	"MaxLevel"									"1"
+	"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"extra_damage" 	"0.5"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"angle"					"70"
+		}
+	}
+	"Modifiers"
+	{
+		"backstab"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"IsDebuff"			"0"
+			"OnAttack"
+			{
+				"RunScript"
+				{
+					"ScriptFile"	"abilities/waveunits/assassin_backstab"
+					"Function"		"BackstabHit"
+				}
+			}
+		}
+	}
+	"precache"
+	{
+		"particle"  "particles/units/heroes/hero_riki/riki_backstab.vpcf"
+		"soundfile" "sounds/weapons/hero/riki/riki_backstab.vsnd"
+	}
+}
