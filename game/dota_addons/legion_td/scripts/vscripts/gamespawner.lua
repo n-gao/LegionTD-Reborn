@@ -2,6 +2,9 @@ if GameSpawner == nil then
   GameSpawner = class({})
 end
 
+LAST_WAVE_DMG_PER_ROUND = 200;
+LAST_WAVE_HEALTH_PER_ROUND = 2000;
+
 ai_standard = require('ai/ai_core')
 ai_techies = require('ai/waves/ai_techies')
 ai_fatty = require('ai/waves/ai_fatty')
@@ -16,6 +19,8 @@ function GameSpawner:ReadConfiguration(name, kv, gameRound)
   self.name = name
   self.npcName = kv.NPCName
   self.unitCount = kv.UnitCount
+  self.dmgBonus = 0
+  self.healthBonus = 0
 end
 
 function GameSpawner:Spawn()
@@ -33,10 +38,18 @@ function GameSpawner:Spawn()
         creep.nextTarget = value.nextWaypoint
         creep.lastWaypoint = value.lastWaypoint
         creep.lane = value
+        creep:SetMaxHealth(creep:GetMaxHealth() + self.healthBonus)
+        creep:SetBaseMaxHealth(creep:GetBaseMaxHealth() + self.healthBonus)
+        creep:Heal(self.healthBonus, nil)
+        creep:SetBaseDamageMin(creep:GetBaseDamageMin() + self.dmgBonus)
+        creep:SetBaseDamageMax(creep:GetBaseDamageMax() + self.dmgBonus)
         self.ApplyAI(creep)
       end
     end
   end
+
+  self.dmgBonus = self.dmgBonus + LAST_WAVE_DMG_PER_ROUND
+  self.healthBonus = self.healthBonus + LAST_WAVE_HEALTH_PER_ROUND
 
   self:SendIncomingUnits(DOTA_TEAM_GOODGUYS)
   self:SendIncomingUnits(DOTA_TEAM_BADGUYS)

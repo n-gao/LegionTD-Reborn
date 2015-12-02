@@ -11,6 +11,7 @@ STARTING_ROUND = 1
 CHECKING_INTERVALL = 1
 
 START_HEALTH_BONUS = 450
+MAX_KING_UPGRADES = 75
 HEALTH_BONUS_ADD = 25
 START_DAMAGE_BONUS = 6
 DAMAGE_BONUS_ADD = 1
@@ -23,6 +24,8 @@ START_GOLD = 100
 START_TANGO = 30
 START_FOOD_LIMIT = 10
 START_INCOME = 0
+
+LEAKED_TANGO_MULTIPLIER = 2
 
 
 
@@ -110,12 +113,12 @@ function Game.new()
   self.sendDire = {}
   GameRules:GetGameModeEntity():SetExecuteOrderFilter(Dynamic_Wrap(Game, "OrderFilter"), Game)
 
-  -- if Convars:GetBool('developer') then
-  --   Convars:RegisterCommand("start_next_round", Dynamic_Wrap(self, "StartNextRoundCommand"), "keine Ahnung", 0)
-  --   Convars:RegisterCommand("start_prev_round", Dynamic_Wrap(self, "StartPreviousRoundCommand"), "keine Ahnung", 0)
-  --   Convars:RegisterCommand("restart_round", Dynamic_Wrap(self, "RestartRoundCommand"), "keine Ahnung", 0)
-  --   Convars:RegisterCommand("reset", Dynamic_Wrap(self, "RestartCommand"), "keine Ahnung", 0)
-  -- end
+  if Convars:GetBool('developer') then
+    Convars:RegisterCommand("start_next_round", Dynamic_Wrap(self, "StartNextRoundCommand"), "keine Ahnung", 0)
+    Convars:RegisterCommand("start_prev_round", Dynamic_Wrap(self, "StartPreviousRoundCommand"), "keine Ahnung", 0)
+    Convars:RegisterCommand("restart_round", Dynamic_Wrap(self, "RestartRoundCommand"), "keine Ahnung", 0)
+    Convars:RegisterCommand("reset", Dynamic_Wrap(self, "RestartCommand"), "keine Ahnung", 0)
+  end
 
   CustomGameEventManager:RegisterListener("send_unit", Dynamic_Wrap(Game, "SendUnit"))
   CustomGameEventManager:RegisterListener("upgarde_king", Dynamic_Wrap(Game, "UpgradeKing"))
@@ -248,9 +251,9 @@ function Game:ReadRoundConfiguration(kv)
     table.insert(self.rounds, roundObj)
     if #self.rounds % 10 == duelRoundCount then
       local duelRoundName = "DuelRound"..(duelRoundCount + 1)
-      local duelRoundDate = kv[duelRoundName]
-      if duelRoundDate then
-        table.insert(self.rounds, DuelRound.new(duelRoundDate, #self.rounds + 1))
+      local duelRoundData = kv[duelRoundName]
+      if duelRoundData then
+        table.insert(self.rounds, DuelRound.new(duelRoundData, #self.rounds + 1, false))
         duelRoundCount = duelRoundCount + 1
       end
     end
@@ -361,6 +364,7 @@ function Game:RoundFinished()
   local round = self:GetCurrentRound()
   if round.bounty then
     for _,player in pairs(self.players) do
+      player.leaked = false;
       if player.plyEntitie and (player:GetTeamNumber() == round.winningTeam or round.winningTeam == DOTA_TEAM_NOTEAM) then
         player:Income(round.bounty)
       end
@@ -610,43 +614,54 @@ function Game:UpgradeKing(data)
   }
   local player = Game:FindPlayerWithID(lData.id)
   if not player then return end
-  if player:SpendTangos(lData.cost) then
-    player:AddIncome(lData.income)
+  if Game.noUpgrade then player:SendErrorCode(6) return end
+  if player:HasEnoughTangos(lData.cost) then
     local boss = Game.radiantBoss
     if player:GetTeamNumber() == DOTA_TEAM_BADGUYS then
       boss = Game.direBoss
     end
     if lData.type == 0 then
-      Game:UpgradeKingsHealth(boss)
+      if not Game:UpgradeKingsHealth(boss) then player:SendErrorCode(5) return end
     elseif lData.type == 1 then
-      Game:UpgradeKingsAttack(boss)
+      if not Game:UpgradeKingsAttack(boss) then player:SendErrorCode(5) return end
     elseif lData.type == 2 then
-      Game:UpgradeKingsRegen(boss)
+      if not Game:UpgradeKingsRegen(boss) then player:SendErrorCode(5) return end
     end
+    player:AddIncome(lData.income)
+    player:SpendTangos(lData.cost)
   else
     player:SendErrorCode(1)
   end
 end
 
 function Game:UpgradeKingsHealth(king)
-  IncreaseStack(king, "boss_upgrade_health_stack")
-  king:SetMaxHealth(king:GetMaxHealth() + king.healthBonus)
-  king:SetBaseMaxHealth(king:GetBaseMaxHealth() + king.healthBonus)
-  king:Heal(king.healthBonus, nil)
-  king.healthBonus = king.healthBonus + HEALTH_BONUS_ADD
+  if IncreaseStack(king, "boss_upgrade_health_stack") then
+    king:SetMaxHealth(king:GetMaxHealth() + king.healthBonus)
+    king:SetBaseMaxHealth(king:GetBaseMaxHealth() + king.healthBonus)
+    king:Heal(king.healthBonus, nil)
+    king.healthBonus = king.healthBonus + HEALTH_BONUS_ADD
+    return true
+  end
+  return false
 end
 
 function Game:UpgradeKingsAttack(king)
-  IncreaseStack(king, "boss_upgrade_attack_stack")
-  king:SetBaseDamageMin(king:GetBaseDamageMin() + king.damageBonus)
-  king:SetBaseDamageMax(king:GetBaseDamageMax() + king.damageBonus)
-  king.damageBonus = king.damageBonus + DAMAGE_BONUS_ADD
+  if IncreaseStack(king, "boss_upgrade_attack_stack") then
+    king:SetBaseDamageMin(king:GetBaseDamageMin() + king.damageBonus)
+    king:SetBaseDamageMax(king:GetBaseDamageMax() + king.damageBonus)
+    king.damageBonus = king.damageBonus + DAMAGE_BONUS_ADD
+    return true
+  end
+  return false
 end
 
 function Game:UpgradeKingsRegen(king)
-  IncreaseStack(king, "boss_upgrade_regen_stack")
-  king:SetBaseHealthRegen(king:GetBaseHealthRegen() + king.regenBonus)
-  king.regenBonus = king.regenBonus + REGEN_BONUS_ADD
+  if IncreaseStack(king, "boss_upgrade_regen_stack") then
+    king:SetBaseHealthRegen(king:GetBaseHealthRegen() + king.regenBonus)
+    king.regenBonus = king.regenBonus + REGEN_BONUS_ADD
+    return true
+  end
+  return false
 end
 
 function IncreaseStack(king, modifier)
@@ -655,7 +670,11 @@ function IncreaseStack(king, modifier)
   if not stackCounter then
     stackCounter = bossAbility:ApplyDataDrivenModifier(king, king, modifier, nil)
   end
+  if stackCounter:GetStackCount() >= MAX_KING_UPGRADES then
+    return false
+  end
   stackCounter:IncrementStackCount()
+  return true
 end
 
 
@@ -690,7 +709,9 @@ end
 
 function Game:ClearBoard()
   for _, round in pairs(self.rounds) do
-    round:KillAll()
+    if not round.isDuelRound then
+      round:KillAll()
+    end
   end
 end
 

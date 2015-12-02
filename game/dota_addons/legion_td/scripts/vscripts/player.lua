@@ -96,15 +96,14 @@ function Player:HasEnoughTangos(amount)
   return self.tangos >= amount
 end
 
-
 --consumes tangos
 function Player:SpendTangos(amount)
-if self.tangos >= amount then
-  self:AddTangos(-amount)
-  return true
-else
-  return false
-end
+  if self:HasEnoughTangos(amount) then
+    self:AddTangos(-amount)
+    return true
+  else
+    return false
+  end
 end
 
 function Player:HasEnoughFood(food)
@@ -204,6 +203,7 @@ end
 
 
 function Player:Leaked(unit)
+  self.leaked = true
   self.leaks = self.leaks + 1
   self:RefreshPlayerInfo()
 end
@@ -273,6 +273,9 @@ function Player:CreateTangoTicker()
   if not Timers.timers[self.timer] then
     self.timer = Timers:CreateTimer(self.tangoAddSpeed, function()
       self:AddTangos(self.tangoAddAmount)
+      if self.leaked then
+        return self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER
+      end
       return self.tangoAddSpeed
     end)
   end
