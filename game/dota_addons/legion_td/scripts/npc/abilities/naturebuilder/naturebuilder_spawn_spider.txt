@@ -6,7 +6,7 @@
 
   "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
   "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
-  "AbilityGoldCost"				"20"
+  "AbilityGoldCost"				"15"
   "AbilityCooldown"		    "1.0"
   "AbilityCastRange"			"125"
   "OnSpellStart"
