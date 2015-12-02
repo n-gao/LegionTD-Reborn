@@ -131,6 +131,12 @@ function ErrorMessage(data) {
 		case 4:
 		text = $.Localize("#Error_to_close_to_another");
 		break;
+		case 5:
+		text = $.Localize("#Error_to_many_king_upgrades");
+		break;
+		case 6:
+		text = $.Localize("#Error_not_possible_in_last_duel");
+		break;
 		default:
 		text = $.Localize("#Error_unknown");
 	}

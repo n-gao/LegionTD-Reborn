@@ -11,6 +11,7 @@ function GameRound:ReadRoundConfiguration(kv, roundNumber)
   self.bounty = kv.bounty
   self.winningTeam = DOTA_TEAM_NOTEAM
   self.spawners = {}
+  self.remainingUnits = {}
 
   for key, val in pairs(kv) do
     if type(val) == "table" and val.NPCName then
@@ -25,13 +26,13 @@ end
 --Begin der Runde
 function GameRound:Begin()
   print("Runde "..self.roundNumber.." started.")
-
   self.remainingUnits = {}
+
   self.EventHandles = {
     ListenToGameEvent("npc_spawned", Dynamic_Wrap(GameRound, "OnNPCSpawned"), self),
     ListenToGameEvent("entity_killed", Dynamic_Wrap(GameRound, "OnEntityKilled"), self)
   }
-  self.unstuckTimer = Timers:CreateTimer(120, function()
+  self.unstuckTimer = Timers:CreateTimer(180, function()
     if Game:GetCurrentRound() == self then
       Game:ClearBoard()
       print("Unstuck")
