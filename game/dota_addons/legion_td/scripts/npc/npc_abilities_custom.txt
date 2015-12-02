@@ -2900,7 +2900,7 @@
 	    "04"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "health_tooltip"        "1020"
+	      "health_tooltip"        "960"
 	    }
 	    "05"
 	    {
@@ -3252,7 +3252,7 @@
 	    "04"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "health_tooltip"        "2340"
+	      "health_tooltip"        "2040"
 	    }
 	    "05"
 	    {
@@ -3364,12 +3364,12 @@
 	    "04"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "health_tooltip"        "1600"
+	      "health_tooltip"        "1400"
 	    }
 	    "05"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "armor_tooltip"         "4"
+	      "armor_tooltip"         "3"
 	    }
 	    "06"
 	    {
@@ -3588,12 +3588,12 @@
 	    "04"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "health_tooltip"        "855"
+	      "health_tooltip"        "880"
 	    }
 	    "05"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "armor_tooltip"         "5"
+	      "armor_tooltip"         "7"
 	    }
 	    "06"
 	    {
