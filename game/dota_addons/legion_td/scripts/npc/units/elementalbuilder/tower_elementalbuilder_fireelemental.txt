@@ -15,7 +15,7 @@
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "0"
+	"ArmorPhysical"         "4"
 	"MagicalResistance"     "0"
 
 	// Attack
