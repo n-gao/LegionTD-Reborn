@@ -273,7 +273,7 @@ function Player:CreateTangoTicker()
   if not Timers.timers[self.timer] then
     self.timer = Timers:CreateTimer(self.tangoAddSpeed, function()
       self:AddTangos(self.tangoAddAmount)
-      if self.leaked then
+      if self.leaked or self:IsActive() then
         return self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER
       end
       return self.tangoAddSpeed

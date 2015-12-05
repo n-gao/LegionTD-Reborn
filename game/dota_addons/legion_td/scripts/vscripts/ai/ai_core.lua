@@ -97,5 +97,4 @@ function CheckIfHasAggro( self )
 	return self:GetAggroTarget() ~= nil
 end
 
-
 return EXPORTS

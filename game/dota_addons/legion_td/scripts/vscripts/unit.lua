@@ -103,10 +103,9 @@ end
 
 function Unit:Unlock()
   if self.npc and not self.npc:IsNull() and self.npc:IsAlive() then
-    self.npc:SetControllableByPlayer(-1, false)
     self.npc:RemoveModifierByName("modifier_stunned")
     self.npc:RemoveModifierByName("modifier_invulnerable")
-    self.npc:Stop()
+    self.npc:SetControllableByPlayer(-1, false)
     self.npc:SetInitialGoalEntity(self.currentTarget)
     self.npc:SetMustReachEachGoalEntity(true)
     self.npc.nextTarget = self.currentTarget
