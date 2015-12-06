@@ -106,10 +106,13 @@ function Unit:Unlock()
     self.npc:RemoveModifierByName("modifier_stunned")
     self.npc:RemoveModifierByName("modifier_invulnerable")
     self.npc:SetControllableByPlayer(-1, false)
-    self.npc:SetInitialGoalEntity(self.currentTarget)
-    self.npc:SetMustReachEachGoalEntity(true)
-    self.npc.nextTarget = self.currentTarget
-    self.ApplyAI(self.npc)
+    self.npc:Stop()
+    Timers:CreateTimer(0.5, function ()
+      self.npc:SetInitialGoalEntity(self.currentTarget)
+      self.npc:SetMustReachEachGoalEntity(true)
+      self.npc.nextTarget = self.currentTarget
+      self.ApplyAI(self.npc)
+    end)
   end
 end
 

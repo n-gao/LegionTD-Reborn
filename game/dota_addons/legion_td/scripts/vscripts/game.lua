@@ -497,8 +497,18 @@ function Game:OrderFilter(keys)
   if unit then
     player = unit.player
   end
+
+  if order == DOTA_UNIT_ORDER_HOLD_POSITION then
+    if unit.unit then
+      return false
+    end
+  end
+
+
   local ability = EntIndexToHScript(keys.entindex_ability)
+  -- if it is an ability
   if ability then
+    -- if it is MY ability
     if ability.player then
       player = ability.player
     else
@@ -510,6 +520,7 @@ function Game:OrderFilter(keys)
     end
     local tangoCost = ability:GetSpecialValueFor("tango_cost")
     local foodCost = ability:GetSpecialValueFor("food_cost")
+    --Does it have FoodCost?
     if foodCost then
       if not player then
         return false
@@ -519,6 +530,7 @@ function Game:OrderFilter(keys)
         return false
       end
     end
+    --DOes it have tangoCost
     if tangoCost then
       if not player then
         return false

@@ -7,13 +7,4 @@
   {
     "MaxPlayers"    "8"
   }
-  "Default_Keys"
-  {
-    "01"
-    {
-      "Key"         "S"
-      "Command"     "OnStopButtonPressed"
-      "Name"        "Stop Command"
-    }
-  }
 }

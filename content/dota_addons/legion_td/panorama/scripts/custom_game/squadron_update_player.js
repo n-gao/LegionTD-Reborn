@@ -12,12 +12,7 @@ function UpdatePlayerInfo(data) {
 	playerinfo.max_food = data.maxFood;
 }
 
-function OnStopButtonPressed() {
-
-}
-
 (function() {
-	Game.AddCommand("OnStopButtonPressed", OnStopButtonPressed, "", 0);
 	GameEvents.Subscribe("update_player_info", UpdatePlayerInfo);
 	for (var i = 0; i < GameUI.CustomUIConfig().morePlayerInfos.length; i++) {
 		GameUI.CustomUIConfig().morePlayerInfos[i] = {tango_count : 0, gold_income : 0, tango_income : 0, leaks : 0, current_food : 0, max_food : 10}
