@@ -246,7 +246,7 @@
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"120"
+		"AbilityDamage"					"240"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -258,7 +258,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"tooltip_brain_sap_heal_amt"		"120"
+				"tooltip_brain_sap_heal_amt"		"240"
 			}
 		}
 	}
@@ -450,7 +450,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"caustic_finale_damage"		"25"
+				"caustic_finale_damage"		"35"
 			}
 			"03"
 			{
@@ -504,7 +504,7 @@
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"100"
+		"AbilityDamage"					"150"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -638,12 +638,12 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chance_pct"			"16"
+				"chance_pct"			"25"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"30"
+				"bonus_damage"			"60"
 			}
 		}
 	}
@@ -747,7 +747,7 @@
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"static_remnant_damage"			"70"
+				"static_remnant_damage"			"180"
 			}
 		}
 	}
