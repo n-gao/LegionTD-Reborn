@@ -493,15 +493,23 @@ end
 function Game:OrderFilter(keys)
   local order = keys.order_type
   local unit = EntIndexToHScript(keys.units["0"])
-  local player = nil
-  if unit then
-    player = unit.player
+  local units = {}
+  for _,key in pairs(keys.units) do
+    table.insert(units, EntIndexToHScript(key))
   end
 
   if order == DOTA_UNIT_ORDER_HOLD_POSITION then
-    if unit.unit then
-      return false
+    for _,u in pairs(units) do
+      if u.unit then
+        return false
+      end
     end
+  end
+
+
+  local player = nil
+  if unit then
+    player = unit.player
   end
 
 
