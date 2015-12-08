@@ -20,7 +20,7 @@
 
 "CustomEvents"
 {
-	
+
 	"send_unit"
 	{
 		"id"						"short"
@@ -28,6 +28,10 @@
 		"cost"						"short"
 		"playerID"					"short"
 	}
+	"toggle_income_limit"
+	{
+		"playerID"						"short"
+		"value"					"bool"
+	}
 
 }
-

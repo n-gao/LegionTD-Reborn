@@ -1,5 +1,6 @@
 "bist_du_ein_spasti"
 {
+  "FirstPrepTime"           "60"
   "PrepTimeBetweenRounds"   "35"
 
   "LastSpawn"

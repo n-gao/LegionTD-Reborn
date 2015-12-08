@@ -9,7 +9,7 @@
   <Panel class="RoundCountLeft">
     <Panel class="RoundPanel">
       <Label id="Round" text="#Round" />
-      <Label id="CurrentRound" text="0" />
+      <Label id="CurrentRound" text="1" />
       <Label id="Time" text="--:--" />
     </Panel>
   </Panel>

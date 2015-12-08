@@ -37,6 +37,9 @@ function Player:RemoveEntitie()
   print("User "..self.userID.." removed.")
   self.plyEntitie = nil
   self.userID = -1
+  if not Game:IsBetweenRounds() then
+    self.leaked = true;
+  end
   if self.lane then
     self.lane.isActive = false
   end
@@ -182,6 +185,9 @@ end
 --adds tangos
 function Player:AddTangos(amount)
   self.tangos = self.tangos + amount
+  if Game.withIncomeLimit and self.tangos > Game:GetTangoLimit() then
+    self.tangos = Game:GetTangoLimit()
+  end
   self:RefreshPlayerInfo()
 end
 
@@ -273,7 +279,7 @@ function Player:CreateTangoTicker()
   if not Timers.timers[self.timer] then
     self.timer = Timers:CreateTimer(self.tangoAddSpeed, function()
       self:AddTangos(self.tangoAddAmount)
-      if self.leaked or not self:IsActive() then
+      if self.leaked then
         return self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER
       end
       return self.tangoAddSpeed

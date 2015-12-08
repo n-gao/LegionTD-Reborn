@@ -25,6 +25,8 @@ START_TANGO = 30
 START_FOOD_LIMIT = 10
 START_INCOME = 0
 
+START_TANGO_LIMIT = 100
+TANGO_LIMIT_PER_ROUND = 25
 LEAKED_TANGO_MULTIPLIER = 2
 
 
@@ -122,9 +124,12 @@ function Game.new()
 
   CustomGameEventManager:RegisterListener("send_unit", Dynamic_Wrap(Game, "SendUnit"))
   CustomGameEventManager:RegisterListener("upgarde_king", Dynamic_Wrap(Game, "UpgradeKing"))
+  CustomGameEventManager:RegisterListener("toggle_income_limit", Dynamic_Wrap(Game, "ToggleIncomeLimit"))
 
   return self
 end
+
+
 
 --List alle Informationen ein
 function Game:ReadConfiguration()
@@ -133,6 +138,7 @@ function Game:ReadConfiguration()
     print("voll scheiße gelaufen jetzt!!!!!!!!!!!")
     return
   end
+  self.initPrepTime = kv.FirstPrepTime
   self.timeBetweenRounds = kv.PrepTimeBetweenRounds
   self:ReadLastSpawn(kv["LastSpawn"])
   self:ReadIncomeSpawner(kv["IncomeSpawner"])
@@ -263,6 +269,12 @@ end
 
 
 
+function Game:GetTangoLimit()
+  return START_TANGO_LIMIT + self.gameRound * TANGO_LIMIT_PER_ROUND
+end
+
+
+
 --Start des Spiels
 function Game:Start()
   self.gameState = GAMESTATE_PREPARATION
@@ -279,6 +291,13 @@ function Game:Start()
   self.direBoss.healthBonus = START_HEALTH_BONUS
   self.direBoss.damageBonus = START_DAMAGE_BONUS
   self.direBoss.regenBonus = START_BONUS_REGEN
+  local incomeLimitCount = 0
+  for _,player in pairs(self.players) do
+    if player.wantIncomeLimit == 1 then
+      incomeLimitCount = incomeLimitCount + 1
+    end
+  end
+  self.withIncomeLimit = incomeLimitCount > (PlayerResource:GetPlayerCount() / 2)
   self:CreateGameTimer()
   -- GameRules:GetGameModeEntity():SetThink("OnThink", self, "Check", 0)
   self:Initialice()
@@ -323,20 +342,24 @@ end
 
 --Setzt die Zeit zum warten zur nächsten Runde
 function Game:SetWaitTime()
-  self.nextRoundTime = GameRules:GetGameTime() + self.timeBetweenRounds
+  local waitTime = self.timeBetweenRounds
+  if self.gameRound == 1 then
+    waitTime = self.initPrepTime
+  end
+  self.nextRoundTime = GameRules:GetGameTime() + waitTime
 
   self.quest = SpawnEntityFromTableSynchronous( "quest", { name = "QuestName", title = "#QuestTimer" } )
   self.nextWaveQuest = SpawnEntityFromTableSynchronous( "quest", { name = "QuestName", title =  "#"..self.rounds[self.gameRound].roundTitle} )
-  self.quest.finished = self.timeBetweenRounds;
+  self.quest.finished = waitTime
   local subQuest = SpawnEntityFromTableSynchronous("subquest_base", {
     show_progress_bar = true,
     progress_bar_hue_shift = -119
   })
   self.quest:AddSubquest(subQuest)
   self.quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished )
-  self.quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, self.timeBetweenRounds )
+  self.quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, waitTime )
   subQuest:SetTextReplaceValue( SUBQUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished )
-  subQuest:SetTextReplaceValue( SUBQUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, self.timeBetweenRounds )
+  subQuest:SetTextReplaceValue( SUBQUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, waitTime )
   Timers:CreateTimer(1, function()
     self.quest.finished = self.quest.finished - 1
     self.quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished )
@@ -351,7 +374,7 @@ function Game:SetWaitTime()
 
   CustomGameEventManager:Send_ServerToAllClients( "update_round", {round = self.gameRound - self.doneDuels} )
   self:RespawnUnits()
-  print("Time to next Round: "..self.timeBetweenRounds)
+  print("Time to next Round: "..waitTime)
 end
 
 
@@ -581,7 +604,7 @@ end
 
 function Game:FindPlayerWithID(id)
   for _, player in pairs(self.players) do
-    if player.playerID == id then
+    if player:GetPlayerID() == id then
       return player
     end
   end
@@ -597,6 +620,20 @@ function Game:OnPlayerDisconnect(key)
     end
   end
 end
+
+
+
+
+function Game:ToggleIncomeLimit(data)
+  local lData = {
+    playerID = data.playerID,
+    value = data.value
+  }
+  local player = Game:FindPlayerWithID(lData.playerID)
+  player.wantIncomeLimit = data.value
+end
+
+
 
 --sends a unit
 function Game:SendUnit(data)
@@ -624,6 +661,9 @@ function Game:SendUnit(data)
     player:SendErrorCode(1)
   end
 end
+
+
+
 
 function Game:UpgradeKing(data)
   local lData = {
@@ -654,6 +694,9 @@ function Game:UpgradeKing(data)
   end
 end
 
+
+
+
 function Game:UpgradeKingsHealth(king)
   if IncreaseStack(king, "boss_upgrade_health_stack") then
     king:SetMaxHealth(king:GetMaxHealth() + king.healthBonus)
@@ -665,6 +708,9 @@ function Game:UpgradeKingsHealth(king)
   return false
 end
 
+
+
+
 function Game:UpgradeKingsAttack(king)
   if IncreaseStack(king, "boss_upgrade_attack_stack") then
     king:SetBaseDamageMin(king:GetBaseDamageMin() + king.damageBonus)
@@ -675,6 +721,9 @@ function Game:UpgradeKingsAttack(king)
   return false
 end
 
+
+
+
 function Game:UpgradeKingsRegen(king)
   if IncreaseStack(king, "boss_upgrade_regen_stack") then
     king:SetBaseHealthRegen(king:GetBaseHealthRegen() + king.regenBonus)
@@ -683,6 +732,9 @@ function Game:UpgradeKingsRegen(king)
   end
   return false
 end
+
+
+
 
 function IncreaseStack(king, modifier)
   local bossAbility = king:GetAbilityByIndex(0)
@@ -707,11 +759,15 @@ function Game:StartNextRoundCommand()
   Game:StartNextRound()
 end
 
+
+
 function Game:RestartRoundCommand()
   Game:ClearBoard()
   Game:RespawnUnits()
   Game:StartNextRound()
 end
+
+
 
 function Game:StartPreviousRoundCommand()
   Game:ClearBoard()
@@ -720,12 +776,16 @@ function Game:StartPreviousRoundCommand()
   Game:StartNextRound()
 end
 
+
+
 function Game:RestartCommand()
   Game:ClearBoard()
   Game.gameRound = 1
   Game:RespawnUnits()
   Game:StartNextRound()
 end
+
+
 
 function Game:ClearBoard()
   for _, round in pairs(self.rounds) do

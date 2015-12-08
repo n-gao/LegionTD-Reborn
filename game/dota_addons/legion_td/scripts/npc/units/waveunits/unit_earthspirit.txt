@@ -10,14 +10,14 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
 
-	"ArmorPhysical"         "10"
+	"ArmorPhysical"         "4"
 	"MagicalResistance"     "0"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "65.0"
 	"AttackDamageMax"       "75.0"
-	"AttackRate"            "0.5"
+	"AttackRate"            "0.65"
 	"AttackAnimationPoint"  "0.2"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "90"
