@@ -1,35 +1,36 @@
-"tower_elementalbuilder_commander"
+"tower_elementalbuilder_gunner"
 {
 	// General
 	//----------------------------------------------------------------
 	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/legion_commander/legion_commander.vmdl"
-	"ModelScale"            "0.6"
-	"SoundSet"					    "Hero_LegionCommander"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+	"Model"                 "models/heroes/sniper/sniper.vmdl"
+	"ModelScale"            "0.55"
+	"SoundSet"					    "Hero_Sniper"
+	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
 	"Ability1"							"sell"
 	"Ability2"							"upgrade1"
+	"Ability3"							"upgrade2"
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "0"
+	"ArmorPhysical"         "1"
 	"MagicalResistance"     "0"
 
 	// Attack
 	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "130.0"
-	"AttackDamageMax"       "150.0"
-	"AttackRate"            "0.8"
+	"AttackDamageMin"       "90.0"
+	"AttackDamageMax"       "100.0"
+	"AttackRate"            "1.6"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
-	"AttackRange"           "100"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
+	"AttackRange"           "350"
+	"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
+	"ProjectileSpeed"       "1000"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -49,7 +50,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "860"
+	"StatusHealth"          "175"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
@@ -93,11 +94,11 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "431" }
-      "Wearable2" { "ItemDef" "432" }
-      "Wearable3" { "ItemDef" "433" }
-      "Wearable4" { "ItemDef" "434" }
-      "Wearable5" { "ItemDef" "435" }
+      "Wearable1" { "ItemDef" "281" }
+      "Wearable2" { "ItemDef" "282" }
+      "Wearable3" { "ItemDef" "283" }
+      "Wearable4" { "ItemDef" "284" }
+      "Wearable5" { "ItemDef" "285" }
     }
 	}
 }

@@ -1,12 +1,12 @@
-"tower_elementalbuilder_hunter"
+"tower_elementalbuilder_soundmaster"
 {
 	// General
 	//----------------------------------------------------------------
 	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/windrunner/windrunner.vmdl"
+	"Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
 	"ModelScale"            "0.55"
-	"SoundSet"					    "Hero_Windrunner"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+	"SoundSet"					    "Hero_CrystalMaiden"
+	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
@@ -15,19 +15,19 @@
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "1"
+	"ArmorPhysical"         "0"
 	"MagicalResistance"     "0"
 
 	// Attack
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "80.0"
-	"AttackDamageMax"       "90.0"
-	"AttackRate"            "0.8"
+	"AttackDamageMin"       "55.0"
+	"AttackDamageMax"       "55.0"
+	"AttackRate"            "0.3"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
-	"AttackRange"           "100"
+	"AttackRange"           "500"
 	"ProjectileModel"       ""
 	"ProjectileSpeed"       "0"
 
@@ -49,7 +49,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "85"
+	"StatusHealth"          "100"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
@@ -93,11 +93,12 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "21" }
-      "Wearable2" { "ItemDef" "22" }
-      "Wearable3" { "ItemDef" "23" }
-      "Wearable4" { "ItemDef" "24" }
-      "Wearable5" { "ItemDef" "25" }
+      "Wearable1" { "ItemDef" "38" }
+      "Wearable2" { "ItemDef" "39" }
+      "Wearable3" { "ItemDef" "40" }
+      "Wearable4" { "ItemDef" "41" }
+      "Wearable5" { "ItemDef" "311" }
+      "Wearable6" { "ItemDef" "502" }
     }
 	}
 }

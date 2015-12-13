@@ -1,30 +1,30 @@
-"tower_elementalbuilder_hunter"
+"tower_humanbuilder_spearman"
 {
 	// General
 	//----------------------------------------------------------------
 	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/windrunner/windrunner.vmdl"
+	"Model"                 "models/heroes/dragon_knight/dragon_knight.vmdl"
 	"ModelScale"            "0.55"
-	"SoundSet"					    "Hero_Windrunner"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+	"SoundSet"					    "Hero_DragonKnight"
+	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"upgrade1"
+	"Ability1"							"upgrade1"
+	"Ability2"							"sell"
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "1"
+	"ArmorPhysical"         "6"
 	"MagicalResistance"     "0"
 
 	// Attack
 	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "80.0"
-	"AttackDamageMax"       "90.0"
-	"AttackRate"            "0.8"
+	"AttackDamageMin"       "110.0"
+	"AttackDamageMax"       "130.0"
+	"AttackRate"            "0.6"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "100"
@@ -49,7 +49,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "85"
+	"StatusHealth"          "520"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
@@ -66,15 +66,6 @@
 	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
-	"precache"
-	{
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-	}
 	// Creature Data
 	//----------------------------------------------------------------
 	"Creature"
@@ -93,11 +84,12 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "21" }
-      "Wearable2" { "ItemDef" "22" }
-      "Wearable3" { "ItemDef" "23" }
-      "Wearable4" { "ItemDef" "24" }
-      "Wearable5" { "ItemDef" "25" }
+      "Wearable1" { "ItemDef" "4095" }
+      "Wearable2" { "ItemDef" "4114" }
+      "Wearable3" { "ItemDef" "4115" }
+      "Wearable4" { "ItemDef" "4116" }
+      "Wearable5" { "ItemDef" "4117" }
+      "Wearable6" { "ItemDef" "4118" }
     }
 	}
 }

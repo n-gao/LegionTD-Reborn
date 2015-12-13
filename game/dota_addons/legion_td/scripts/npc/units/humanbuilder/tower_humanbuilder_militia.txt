@@ -22,9 +22,9 @@
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "10.0"
-	"AttackDamageMax"       "15.0"
-	"AttackRate"            "0.6"
+	"AttackDamageMin"       "35.0"
+	"AttackDamageMax"       "45.0"
+	"AttackRate"            "1.0"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "90"
@@ -49,7 +49,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "80"
+	"StatusHealth"          "150"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

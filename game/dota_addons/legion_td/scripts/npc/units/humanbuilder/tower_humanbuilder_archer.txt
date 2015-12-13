@@ -15,19 +15,19 @@
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "0"
+	"ArmorPhysical"         "1"
 	"MagicalResistance"     "0"
 
 	// Attack
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "20.0"
-	"AttackDamageMax"       "25.0"
-	"AttackRate"            "0.6"
+	"AttackDamageMin"       "50.0"
+	"AttackDamageMax"       "60.0"
+	"AttackRate"            "1.1"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
-	"AttackRange"           "350"
+	"AttackRange"           "500"
 	"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
 	"ProjectileSpeed"       "0"
 
@@ -49,7 +49,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "100"
+	"StatusHealth"          "60"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

@@ -1,0 +1,58 @@
+"humanbuilder_leutnant"
+{
+  "BaseClass"                 "ability_datadriven"
+  "AbilityTextureName"      "lone_druid_spirit_bear"
+  "MaxLevel"             "1"
+
+  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+  "AbilityGoldCost"				"150"
+  "AbilityCooldown"		    "1.0"
+  "AbilityCastRange"			"125"
+  "OnSpellStart"
+  {
+    "RunScript"
+    {
+      "ScriptFile"	"player.lua"
+      "Function"		"UnitSpawn"
+    }
+  }
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_damage_tooltip"    "50"
+    }
+    "02"
+    {
+      "var_type"              "FIELD_FLOAT"
+      "atk_speed_tooltip"     "1.0"
+    }
+    "03"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_range_tooltip"     "100"
+    }
+    "04"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "health_tooltip"        "300"
+    }
+    "05"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "armor_tooltip"         "6"
+    }
+    "06"
+    {
+      "var_type"      "FIELD_INTEGER"
+      "food_cost"     "1"
+    }
+    "07"
+    {
+      "var_type"			"FIELD_INTEGER"
+      "unitID"				"79"
+    }
+  }
+}
