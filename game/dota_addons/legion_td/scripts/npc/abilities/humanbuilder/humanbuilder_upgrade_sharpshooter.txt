@@ -30,7 +30,7 @@
     "03"
     {
       "var_type"              "FIELD_INTEGER"
-      "atk_range_tooltip"     "500"
+      "atk_range_tooltip"     "900"
     }
     "04"
     {

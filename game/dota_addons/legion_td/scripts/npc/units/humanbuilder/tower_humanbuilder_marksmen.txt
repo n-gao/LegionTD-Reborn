@@ -27,8 +27,8 @@
 	"AttackDamageMax"       "130.0"
 	"AttackRate"            "1.3"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
-	"AttackRange"           "500"
+	"AttackAcquisitionRange" "600"
+	"AttackRange"           "600"
 	"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
 	"ProjectileSpeed"       "1000"
 

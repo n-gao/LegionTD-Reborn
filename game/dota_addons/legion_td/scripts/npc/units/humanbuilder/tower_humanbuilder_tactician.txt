@@ -27,7 +27,7 @@
 	"AttackRate"            "0.8"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
-	"AttackRange"           "100"
+	"AttackRange"           "500"
 	"ProjectileModel"       ""
 	"ProjectileSpeed"       "0"
 
@@ -49,7 +49,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "860"
+	"StatusHealth"          "150"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
