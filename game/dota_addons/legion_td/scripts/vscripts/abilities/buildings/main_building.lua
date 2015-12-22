@@ -1,6 +1,11 @@
 function add_tango_collector(event)
   local player = event.caster.player
   local newTangoAdd = player.tangoAddAmount + 1
+  local foodCost = event.ability:GetSpecialValueFor("food_cost")
+  if (not player:HasEnoughFood(foodCost)) then
+    Player:SendErrorCode(LEGION_ERROR_NOT_ENOUGH_FOOD)
+    return
+  end
   player:SetTangoAddAmount(newTangoAdd)
   if event.ability:GetLevel() == event.ability:GetMaxLevel() then
     event.caster:RemoveAbility(event.ability:GetAbilityName())

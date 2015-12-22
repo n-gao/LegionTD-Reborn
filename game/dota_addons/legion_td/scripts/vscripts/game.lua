@@ -29,7 +29,13 @@ START_TANGO_LIMIT = 100
 TANGO_LIMIT_PER_ROUND = 25
 LEAKED_TANGO_MULTIPLIER = 2
 
-
+LEGION_ERROR_BETWEEN_ROUNDS = 0
+LEGION_ERROR_NOT_ENOUGH_TANGOS = 1
+LEGION_ERROR_INVALID_LOCATION = 2
+LEGION_ERROR_NOT_ENOUGH_FOOD = 3
+LEGION_ERROR_TO_CLOSE = 4
+LEGION_ERROR_TO_MANY_UPGRADES = 5
+LEGION_ERROR_DURING_DUEL = 6
 
 function Game.GetUnitNameByID(id)
   if id == 1 then return "tower_naturebuilder_spider"
@@ -557,7 +563,7 @@ function Game:OrderFilter(keys)
         return false
       end
       if not player:HasEnoughFood(foodCost) then
-        player:SendErrorCode(3)
+        player:SendErrorCode(LEGION_ERROR_NOT_ENOUGH_FOOD)
         return false
       end
     end
@@ -567,7 +573,7 @@ function Game:OrderFilter(keys)
         return false
       end
       if not player:SpendTangos(tangoCost) then
-        player:SendErrorCode(1)
+        player:SendErrorCode(LEGION_ERROR_NOT_ENOUGH_TANGOS)
         return false
       end
     end
@@ -577,17 +583,17 @@ function Game:OrderFilter(keys)
       --between rounds?
       if not self:IsBetweenRounds() then
         if player then
-          player:SendErrorCode(0)
+          player:SendErrorCode(LEGION_ERROR_BETWEEN_ROUNDS)
         end
         return false
       end
       --valid location?
       local vector = Vector(keys.position_x, keys.position_y, keys.position_z)
       local canSpawn = self:CanSpawn(ability:GetCaster(), vector)
-      if not (canSpawn == 1) then
+      if not (canSpawn == LEGION_ERROR_NOT_ENOUGH_TANGOS) then
         if player then
           player:SendErrorCode(canSpawn)
-          if canSpawn == 2 then
+          if canSpawn == LEGION_ERROR_INVALID_LOCATION then
             local pos = player.lane.box:GetAbsOrigin()
             MinimapEvent(player:GetTeamNumber(), player.hero, pos.x, pos.y, DOTA_MINIMAP_EVENT_HINT_LOCATION, 1)
           end
@@ -658,10 +664,9 @@ function Game:SendUnit(data)
     end
     player:RefreshPlayerInfo()
   else
-    player:SendErrorCode(1)
+    player:SendErrorCode(LEGION_ERROR_NOT_ENOUGH_TANGOS)
   end
 end
-
 
 
 
@@ -674,23 +679,23 @@ function Game:UpgradeKing(data)
   }
   local player = Game:FindPlayerWithID(lData.id)
   if not player then return end
-  if Game.noUpgrade then player:SendErrorCode(6) return end
+  if Game.noUpgrade then player:SendErrorCode(LEGION_ERROR_DURING_DUEL) return end
   if player:HasEnoughTangos(lData.cost) then
     local boss = Game.radiantBoss
     if player:GetTeamNumber() == DOTA_TEAM_BADGUYS then
       boss = Game.direBoss
     end
     if lData.type == 0 then
-      if not Game:UpgradeKingsHealth(boss) then player:SendErrorCode(5) return end
+      if not Game:UpgradeKingsHealth(boss) then player:SendErrorCode(LEGION_ERROR_TO_MANY_UPGRADES) return end
     elseif lData.type == 1 then
-      if not Game:UpgradeKingsAttack(boss) then player:SendErrorCode(5) return end
+      if not Game:UpgradeKingsAttack(boss) then player:SendErrorCode(LEGION_ERROR_TO_MANY_UPGRADES) return end
     elseif lData.type == 2 then
-      if not Game:UpgradeKingsRegen(boss) then player:SendErrorCode(5) return end
+      if not Game:UpgradeKingsRegen(boss) then player:SendErrorCode(LEGION_ERROR_TO_MANY_UPGRADES) return end
     end
     player:AddIncome(lData.income)
     player:SpendTangos(lData.cost)
   else
-    player:SendErrorCode(1)
+    player:SendErrorCode(LEGION_ERROR_NOT_ENOUGH_TANGOS)
   end
 end
 

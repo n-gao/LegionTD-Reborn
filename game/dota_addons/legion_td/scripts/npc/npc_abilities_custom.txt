@@ -1652,6 +1652,1551 @@
 	    }
 	  }
 	}
+	"humanbuilder_spawn_militia"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "lone_druid_spirit_bear"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"50"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"player.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "55"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "500"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "60"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"65"
+	    }
+	  }
+	}
+	"humanbuilder_spawn_gyrocopterMK1"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "lone_druid_spirit_bear"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"150"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"player.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "90"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "0.5"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "500"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "133"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"76"
+	    }
+	  }
+	}
+	"humanbuilder_leutnant"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "lone_druid_spirit_bear"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"150"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"player.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "50"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "100"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "300"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "6"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"79"
+	    }
+	  }
+	}
+	"humanbuilder_spawn_militia"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "lone_druid_spirit_bear"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"50"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"player.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "40"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "100"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "2"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"60"
+	    }
+	  }
+	}
+	"humanbuilder_spawn_novice"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "lone_druid_spirit_bear"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"100"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"player.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "30"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "400"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "50"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "0"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"70"
+	    }
+	  }
+	}
+	"humanbuilder_upgrade_archbishop"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"350"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "110"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "500"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "120"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "0"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"73"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_archmage"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"160"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "70"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "500"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "95"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "0"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"72"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_blademaster"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"450"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "175"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.5"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "100"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "950"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "6"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"82"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_footmen"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"85"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "60"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "100"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "190"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "3"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"61"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_futuristicgyrocopter"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"550"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "270"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "0.7"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "500"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "400"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"78"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_footmen"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"300"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "60"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "100"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "190"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "3"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"80"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_gunner"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"150"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "95"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.6"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "500"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "175"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "2"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"69"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_gyrocopterMK2"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"350"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "180"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "0.7"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "500"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "266"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"77"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_hunter"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"85"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "85"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "500"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "85"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"66"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_icewrackgrandmaster"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"400"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "120"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "500"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "100"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "0"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"74"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_mage"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"130"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "50"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "450"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "65"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "0"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"71"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_marksmen"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"110"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "125"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "600"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"67"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_footmen"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"150"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "85"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "100"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "320"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "7"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"64"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_sharpshooter"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"150"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "300"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "0.6"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "900"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "175"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"68"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_soldier"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"125"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "85"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "100"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "290"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "3"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"62"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_icewrackgrandmaster"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"450"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "55"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.7"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "500"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "100"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "0"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"75"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_spearman"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"150"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "120"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "100"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "520"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "6"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"63"
+	    }
+		}
+	}
+	"humanbuilder_upgrade_tactician"
+	{
+	  "BaseClass"               "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"550"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "50"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "500"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "2"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"83"
+	    }
+		}
+	}
+	"agressive_boar_nethertoxin"
+	{
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "BaseClass"             "ability_datadriven"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	    "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+	    "AbilityTextureName"            "viper_nethertoxin"
+	
+	    // Special
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilitySpecial"
+	    {
+	        // Base Hero damage
+	        "01"
+	        {
+	            "var_type"              "FIELD_FLOAT"
+	            "bonus_damage"          "5"
+	        }
+	        "02"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "non_hero_damage_pct"   "50"
+	        }
+	        "03"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "max_damage_tooltip"    "80"
+	        }
+	        // Hero Damage
+	        "04"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "damage_hero_80"        "10"
+	        }
+	        "05"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "damage_hero_60"        "20"
+	        }
+	        "06"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "damage_hero_40"        "40"
+	        }
+	        "07"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "damage_hero_20"        "80"
+	        }
+	        // Creep Damage
+	        "08"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "damage_creep_base"     "2.5"
+	        }
+	        "09"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "damage_creep_80"       "5"
+	        }
+	        "10"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "damage_creep_60"       "10"
+	        }
+	        "11"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "damage_creep_40"       "20"
+	        }
+	        "12"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "damage_creep_20"       "40"
+	        }
+	    }
+	
+	    "Modifiers"
+	    {
+	        "modifier_nethertoxin_datadriven"
+	        {
+	            "Passive"   "1"
+	            "IsHidden"  "1"
+	
+	            "OnAttackStart"
+	            {
+	                // This is done to prevent stacking of different modifiers
+	                // Hero
+	                "RemoveModifier"
+	                {
+	                    "ModifierName"  "modifier_nethertoxin_100_hero_datadriven"
+	                    "Target"        "CASTER"
+	                }
+	                "RemoveModifier"
+	                {
+	                    "ModifierName"  "modifier_nethertoxin_80_hero_datadriven"
+	                    "Target"        "CASTER"
+	                }
+	                "RemoveModifier"
+	                {
+	                    "ModifierName"  "modifier_nethertoxin_60_hero_datadriven"
+	                    "Target"        "CASTER"
+	                }
+	                "RemoveModifier"
+	                {
+	                    "ModifierName"  "modifier_nethertoxin_40_hero_datadriven"
+	                    "Target"        "CASTER"
+	                }
+	                "RemoveModifier"
+	                {
+	                    "ModifierName"  "modifier_nethertoxin_20_hero_datadriven"
+	                    "Target"        "CASTER"
+	                }
+	
+	                // Creep
+	                "RemoveModifier"
+	                {
+	                    "ModifierName"  "modifier_nethertoxin_100_creep_datadriven"
+	                    "Target"        "CASTER"
+	                }
+	                "RemoveModifier"
+	                {
+	                    "ModifierName"  "modifier_nethertoxin_80_creep_datadriven"
+	                    "Target"        "CASTER"
+	                }
+	                "RemoveModifier"
+	                {
+	                    "ModifierName"  "modifier_nethertoxin_60_creep_datadriven"
+	                    "Target"        "CASTER"
+	                }
+	                "RemoveModifier"
+	                {
+	                    "ModifierName"  "modifier_nethertoxin_40_creep_datadriven"
+	                    "Target"        "CASTER"
+	                }
+	                "RemoveModifier"
+	                {
+	                    "ModifierName"  "modifier_nethertoxin_20_creep_datadriven"
+	                    "Target"        "CASTER"
+	                }
+	
+	                // Script to determine which modifier gets applied
+	                "RunScript"
+	                {
+	                    "ScriptFile"    "abilities/naturebuilder/nethertoxin.lua"
+	                    "Function"      "Nethertoxin"
+	                    "Target"        "TARGET"
+	                }
+	            }
+	        }
+	
+	        "modifier_nethertoxin_100_hero_datadriven"
+	        {
+	            "IsHidden"      "1"
+	            "IsPurgable"    "0"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%bonus_damage"
+	            }
+	        }
+	        "modifier_nethertoxin_80_hero_datadriven"
+	        {
+	            "IsHidden"      "1"
+	            "IsPurgable"    "0"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_hero_80"
+	            }
+	        }
+	        "modifier_nethertoxin_60_hero_datadriven"
+	        {
+	            "IsHidden"      "1"
+	            "IsPurgable"    "0"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_hero_60"
+	            }
+	        }
+	        "modifier_nethertoxin_40_hero_datadriven"
+	        {
+	            "IsHidden"      "1"
+	            "IsPurgable"    "0"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_hero_40"
+	            }
+	        }
+	        "modifier_nethertoxin_20_hero_datadriven"
+	        {
+	            "IsHidden"      "1"
+	            "IsPurgable"    "0"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_hero_20"
+	            }
+	        }
+	        // The upper rank of hero damage can be applied instead of a creep modifier (eg 40% creep damage is the same as 60% hero)
+	        // I went with this way because it can get messy otherwise
+	        "modifier_nethertoxin_100_creep_datadriven"
+	        {
+	            "IsHidden"      "1"
+	            "IsPurgable"    "0"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_creep_base"
+	            }
+	        }
+	        "modifier_nethertoxin_80_creep_datadriven"
+	        {
+	            "IsHidden"      "1"
+	            "IsPurgable"    "0"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_creep_80"
+	            }
+	        }
+	        "modifier_nethertoxin_60_creep_datadriven"
+	        {
+	            "IsHidden"      "1"
+	            "IsPurgable"    "0"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_creep_60"
+	            }
+	        }
+	        "modifier_nethertoxin_40_creep_datadriven"
+	        {
+	            "IsHidden"      "1"
+	            "IsPurgable"    "0"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_creep_40"
+	            }
+	        }
+	        "modifier_nethertoxin_20_creep_datadriven"
+	        {
+	            "IsHidden"      "1"
+	            "IsPurgable"    "0"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_creep_20"
+	            }
+	        }
+	    }
+	}
 	"send_incomeunit_ancient_golem"
 	{
 		"BaseClass"             		"ability_datadriven"

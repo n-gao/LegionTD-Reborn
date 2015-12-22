@@ -13,8 +13,8 @@
 	"Ability1"							"centaur_khan_endurance_aura" // irgendein jungle creep hatte sowas.
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "1"
-	"MagicalResistance"     "0"
+	"ArmorPhysical"         "8"
+	"MagicalResistance"     "40"
 
 	// Attack
 	//----------------------------------------------------------------

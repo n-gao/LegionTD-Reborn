@@ -2656,6 +2656,110 @@
 	    }
 		}
 	}
+	"tower_elementalbuilder_archbishop"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"					    "Hero_CrystalMaiden"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"sell"
+		"Ability2"							"upgrade1"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "0"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "100.0"
+		"AttackDamageMax"       "120.0"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "500"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "120"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+		}
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "38" }
+	      "Wearable2" { "ItemDef" "39" }
+	      "Wearable3" { "ItemDef" "40" }
+	      "Wearable4" { "ItemDef" "41" }
+	      "Wearable5" { "ItemDef" "311" }
+	      "Wearable6" { "ItemDef" "502" }
+	    }
+		}
+	}
 	"tower_humanbuilder_archer"
 	{
 		// General
@@ -2673,19 +2777,19 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "0"
+		"ArmorPhysical"         "1"
 		"MagicalResistance"     "0"
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "20.0"
-		"AttackDamageMax"       "25.0"
-		"AttackRate"            "0.6"
+		"AttackDamageMin"       "50.0"
+		"AttackDamageMax"       "60.0"
+		"AttackRate"            "1.1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
-		"AttackRange"           "350"
+		"AttackRange"           "500"
 		"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
 		"ProjectileSpeed"       "0"
 	
@@ -2707,7 +2811,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "100"
+		"StatusHealth"          "60"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -2750,7 +2854,111 @@
 	    }
 		}
 	}
-	"tower_elementalbuilder_commander"
+	"tower_elementalbuilder_archmage"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"					    "Hero_CrystalMaiden"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"sell"
+		"Ability2"							"upgrade1"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "0"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "60.0"
+		"AttackDamageMax"       "80.0"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "500"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "95"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+		}
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "38" }
+	      "Wearable2" { "ItemDef" "39" }
+	      "Wearable3" { "ItemDef" "40" }
+	      "Wearable4" { "ItemDef" "41" }
+	      "Wearable5" { "ItemDef" "311" }
+	      "Wearable6" { "ItemDef" "502" }
+	    }
+		}
+	}
+	"tower_elementalbuilder_blademaster"
 	{
 		// General
 		//----------------------------------------------------------------
@@ -2767,16 +2975,16 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "0"
+		"ArmorPhysical"         "6"
 		"MagicalResistance"     "0"
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "130.0"
-		"AttackDamageMax"       "150.0"
-		"AttackRate"            "0.8"
+		"AttackDamageMin"       "170.0"
+		"AttackDamageMax"       "180.0"
+		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "100"
@@ -2801,7 +3009,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "860"
+		"StatusHealth"          "950"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -2877,12 +3085,12 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "40.0"
-		"AttackDamageMax"       "45.0"
-		"AttackRate"            "0.6"
+		"AttackDamageMin"       "60.0"
+		"AttackDamageMax"       "60.0"
+		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
-		"AttackRange"           "90"
+		"AttackRange"           "100"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
@@ -2904,7 +3112,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "320"
+		"StatusHealth"          "190"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -2948,6 +3156,525 @@
 	    }
 		}
 	}
+	"tower_elementalbuilder_futuristicgyrocopter"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/sniper/sniper.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"					    "Hero_Sniper"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"sell"
+		"Ability2"							"upgrade1"
+		"Ability3"							"upgrade2"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "260.0"
+		"AttackDamageMax"       "280.0"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "500"
+		"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
+		"ProjectileSpeed"       "1000"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "400"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+		}
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "281" }
+	      "Wearable2" { "ItemDef" "282" }
+	      "Wearable3" { "ItemDef" "283" }
+	      "Wearable4" { "ItemDef" "284" }
+	      "Wearable5" { "ItemDef" "285" }
+	    }
+		}
+	}
+	"tower_elementalbuilder_general"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/legion_commander/legion_commander.vmdl"
+		"ModelScale"            "0.6"
+		"SoundSet"					    "Hero_LegionCommander"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"sell"
+		"Ability2"							"upgrade1"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "7"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "70.0"
+		"AttackDamageMax"       "800.0"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "100"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "600"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+		}
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "431" }
+	      "Wearable2" { "ItemDef" "432" }
+	      "Wearable3" { "ItemDef" "433" }
+	      "Wearable4" { "ItemDef" "434" }
+	      "Wearable5" { "ItemDef" "435" }
+	    }
+		}
+	}
+	"tower_elementalbuilder_gunner"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/sniper/sniper.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"					    "Hero_Sniper"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"sell"
+		"Ability2"							"upgrade1"
+		"Ability3"							"upgrade2"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "90.0"
+		"AttackDamageMax"       "100.0"
+		"AttackRate"            "1.6"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "350"
+		"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
+		"ProjectileSpeed"       "1000"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "175"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+		}
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "281" }
+	      "Wearable2" { "ItemDef" "282" }
+	      "Wearable3" { "ItemDef" "283" }
+	      "Wearable4" { "ItemDef" "284" }
+	      "Wearable5" { "ItemDef" "285" }
+	    }
+		}
+	}
+	"tower_elementalbuilder_GyrocopterMK1"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/sniper/sniper.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"					    "Hero_Sniper"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"sell"
+		"Ability2"							"upgrade1"
+		"Ability3"							"upgrade2"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "90.0"
+		"AttackDamageMax"       "90.0"
+		"AttackRate"            "0.5"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "500"
+		"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
+		"ProjectileSpeed"       "1000"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "133"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+		}
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "281" }
+	      "Wearable2" { "ItemDef" "282" }
+	      "Wearable3" { "ItemDef" "283" }
+	      "Wearable4" { "ItemDef" "284" }
+	      "Wearable5" { "ItemDef" "285" }
+	    }
+		}
+	}
+	"tower_elementalbuilder_GyrocopterMK2"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/sniper/sniper.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"					    "Hero_Sniper"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"sell"
+		"Ability2"							"upgrade1"
+		"Ability3"							"upgrade2"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "180.0"
+		"AttackDamageMax"       "180.0"
+		"AttackRate"            "0.7"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "500"
+		"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
+		"ProjectileSpeed"       "1000"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "266"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+		}
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "281" }
+	      "Wearable2" { "ItemDef" "282" }
+	      "Wearable3" { "ItemDef" "283" }
+	      "Wearable4" { "ItemDef" "284" }
+	      "Wearable5" { "ItemDef" "285" }
+	    }
+		}
+	}
 	"tower_elementalbuilder_hunter"
 	{
 		// General
@@ -2965,15 +3692,15 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "0"
+		"ArmorPhysical"         "1"
 		"MagicalResistance"     "0"
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "130.0"
-		"AttackDamageMax"       "150.0"
+		"AttackDamageMin"       "80.0"
+		"AttackDamageMax"       "90.0"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -2999,7 +3726,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "860"
+		"StatusHealth"          "85"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -3051,6 +3778,110 @@
 	    }
 		}
 	}
+	"tower_elementalbuilder_icewrackgrandmaster"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"					    "Hero_CrystalMaiden"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"sell"
+		"Ability2"							"upgrade1"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "0"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "120.0"
+		"AttackDamageMax"       "120.0"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "100"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "100"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+		}
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "38" }
+	      "Wearable2" { "ItemDef" "39" }
+	      "Wearable3" { "ItemDef" "40" }
+	      "Wearable4" { "ItemDef" "41" }
+	      "Wearable5" { "ItemDef" "311" }
+	      "Wearable6" { "ItemDef" "502" }
+	    }
+		}
+	}
 	"tower_humanbuilder_lieutenant"
 	{
 		// General
@@ -3068,16 +3899,16 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "4"
+		"ArmorPhysical"         "6"
 		"MagicalResistance"     "0"
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "30.0"
-		"AttackDamageMax"       "40.0"
-		"AttackRate"            "0.7"
+		"AttackDamageMin"       "45.0"
+		"AttackDamageMax"       "55.0"
+		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "90"
@@ -3169,12 +4000,12 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "130.0"
-		"AttackDamageMax"       "150.0"
-		"AttackRate"            "0.8"
+		"AttackDamageMin"       "45.0"
+		"AttackDamageMax"       "55.0"
+		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
-		"AttackRange"           "100"
+		"AttackRange"           "450"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
@@ -3196,7 +4027,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "860"
+		"StatusHealth"          "65"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -3249,6 +4080,110 @@
 	    }
 		}
 	}
+	"tower_elementalbuilder_marksmen"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/sniper/sniper.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"					    "Hero_Sniper"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"sell"
+		"Ability2"							"upgrade1"
+		"Ability3"							"upgrade2"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "120.0"
+		"AttackDamageMax"       "130.0"
+		"AttackRate"            "1.3"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "600"
+		"AttackRange"           "600"
+		"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
+		"ProjectileSpeed"       "1000"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+		}
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "281" }
+	      "Wearable2" { "ItemDef" "282" }
+	      "Wearable3" { "ItemDef" "283" }
+	      "Wearable4" { "ItemDef" "284" }
+	      "Wearable5" { "ItemDef" "285" }
+	    }
+		}
+	}
 	"tower_humanbuilder_militia"
 	{
 		// General
@@ -3273,9 +4208,9 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "10.0"
-		"AttackDamageMax"       "15.0"
-		"AttackRate"            "0.6"
+		"AttackDamageMin"       "35.0"
+		"AttackDamageMax"       "45.0"
+		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "90"
@@ -3300,7 +4235,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "80"
+		"StatusHealth"          "150"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -3344,6 +4279,110 @@
 	    }
 		}
 	}
+	"tower_elementalbuilder_novice"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"					    "Hero_CrystalMaiden"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"sell"
+		"Ability2"							"upgrade1"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "0"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "25.0"
+		"AttackDamageMax"       "35.0"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "400"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "50"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+		}
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "38" }
+	      "Wearable2" { "ItemDef" "39" }
+	      "Wearable3" { "ItemDef" "40" }
+	      "Wearable4" { "ItemDef" "41" }
+	      "Wearable5" { "ItemDef" "311" }
+	      "Wearable6" { "ItemDef" "502" }
+	    }
+		}
+	}
 	"tower_elementalbuilder_paladin"
 	{
 		// General
@@ -3361,16 +4400,16 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "0"
+		"ArmorPhysical"         "7"
 		"MagicalResistance"     "0"
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "130.0"
-		"AttackDamageMax"       "150.0"
-		"AttackRate"            "0.8"
+		"AttackDamageMin"       "80.0"
+		"AttackDamageMax"       "90.0"
+		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "100"
@@ -3395,7 +4434,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "860"
+		"StatusHealth"          "320"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -3466,19 +4505,19 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "0"
+		"ArmorPhysical"         "1"
 		"MagicalResistance"     "0"
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "130.0"
-		"AttackDamageMax"       "150.0"
-		"AttackRate"            "0.8"
+		"AttackDamageMin"       "290.0"
+		"AttackDamageMax"       "310.0"
+		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
-		"AttackAcquisitionRange" "500"
-		"AttackRange"           "475"
+		"AttackAcquisitionRange" "900"
+		"AttackRange"           "900"
 		"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
 		"ProjectileSpeed"       "1000"
 	
@@ -3500,7 +4539,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "860"
+		"StatusHealth"          "175"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -3552,6 +4591,403 @@
 	    }
 		}
 	}
+	"tower_humanbuilder_soldier"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/dragon_knight/dragon_knight.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"					    "Hero_DragonKnight"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"upgrade1"
+		"Ability2"							"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "3"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "80.0"
+		"AttackDamageMax"       "90.0"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "290"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "4095" }
+	      "Wearable2" { "ItemDef" "4114" }
+	      "Wearable3" { "ItemDef" "4115" }
+	      "Wearable4" { "ItemDef" "4116" }
+	      "Wearable5" { "ItemDef" "4117" }
+	      "Wearable6" { "ItemDef" "4118" }
+	    }
+		}
+	}
+	"tower_elementalbuilder_soundmaster"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"					    "Hero_CrystalMaiden"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"sell"
+		"Ability2"							"upgrade1"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "0"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "55.0"
+		"AttackDamageMax"       "55.0"
+		"AttackRate"            "0.3"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "500"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "100"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+		}
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "38" }
+	      "Wearable2" { "ItemDef" "39" }
+	      "Wearable3" { "ItemDef" "40" }
+	      "Wearable4" { "ItemDef" "41" }
+	      "Wearable5" { "ItemDef" "311" }
+	      "Wearable6" { "ItemDef" "502" }
+	    }
+		}
+	}
+	"tower_humanbuilder_spearman"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/dragon_knight/dragon_knight.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"					    "Hero_DragonKnight"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"upgrade1"
+		"Ability2"							"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "6"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "110.0"
+		"AttackDamageMax"       "130.0"
+		"AttackRate"            "0.6"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "100"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "520"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "4095" }
+	      "Wearable2" { "ItemDef" "4114" }
+	      "Wearable3" { "ItemDef" "4115" }
+	      "Wearable4" { "ItemDef" "4116" }
+	      "Wearable5" { "ItemDef" "4117" }
+	      "Wearable6" { "ItemDef" "4118" }
+	    }
+		}
+	}
+	"tower_elementalbuilder_tactician"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/legion_commander/legion_commander.vmdl"
+		"ModelScale"            "0.6"
+		"SoundSet"					    "Hero_LegionCommander"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"sell"
+		"Ability2"							"upgrade1"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "0"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "130.0"
+		"AttackDamageMax"       "150.0"
+		"AttackRate"            "0.8"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "500"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+		}
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    "AttachWearables"
+	    {
+	      "Wearable1" { "ItemDef" "431" }
+	      "Wearable2" { "ItemDef" "432" }
+	      "Wearable3" { "ItemDef" "433" }
+	      "Wearable4" { "ItemDef" "434" }
+	      "Wearable5" { "ItemDef" "435" }
+	    }
+		}
+	}
 	"incomeunit_ancientgolem"
 	{
 		// General
@@ -3569,7 +5005,7 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"         "1"
-		"MagicalResistance"     "0"
+		"MagicalResistance"     "100"
 	
 		// Attack
 		//----------------------------------------------------------------
@@ -3653,8 +5089,8 @@
 		"Ability1"							"centaur_khan_endurance_aura" // irgendein jungle creep hatte sowas.
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "1"
-		"MagicalResistance"     "0"
+		"ArmorPhysical"         "8"
+		"MagicalResistance"     "40"
 	
 		// Attack
 		//----------------------------------------------------------------
@@ -4255,7 +5691,7 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"         "10"
-		"MagicalResistance"     "0"
+		"MagicalResistance"     "100"
 	
 		// Attack
 		//----------------------------------------------------------------
@@ -5379,8 +6815,8 @@
 		"Ability1"							""
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "10"
-		"MagicalResistance"     "0"
+		"ArmorPhysical"         "15"
+		"MagicalResistance"     "50"
 	
 		// Attack
 		//----------------------------------------------------------------

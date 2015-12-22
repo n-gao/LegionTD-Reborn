@@ -27,6 +27,14 @@ GameUI.CustomUIConfig().units =  new Array(
 	{id : 1025, cost : 600, income : 16, cooldown : 10, name : "incomeunit_roshan", icon : "send_incomeunit_rosh"}
 );
 
+var LEGION_ERROR_BETWEEN_ROUNDS = 0;
+var LEGION_ERROR_NOT_ENOUGH_TANGOS = 1;
+var LEGION_ERROR_INVALID_LOCATION = 2;
+var LEGION_ERROR_NOT_ENOUGH_FOOD = 3;
+var LEGION_ERROR_TO_CLOSE = 4;
+var LEGION_ERROR_TO_MANY_UPGRADES = 5;
+var LEGION_ERROR_DURING_DUEL = 6;
+
 function AddUnit(unit, row) {
 	var unitPanel = $.CreatePanel("Panel", row, unit.name);
 	unitPanel.BLoadLayout("file://{resources}/layout/custom_game/squadron_unit.xml", false, false);
@@ -116,25 +124,25 @@ function ErrorMessage(data) {
 	$.GetContextPanel().SetHasClass("error_appeared", true);
 	var text;
 	switch (data.errorCode) {
-		case 0:
+		case LEGION_ERROR_BETWEEN_ROUNDS:
 		text = $.Localize("#Error_not_between_rounds");
 		break;
-		case 1:
+		case LEGION_ERROR_NOT_ENOUGH_TANGOS:
 		text = $.Localize("#Error_not_enough_tangos");
 		break;
-		case 2:
+		case LEGION_ERROR_INVALID_LOCATION:
 		text = $.Localize("#Error_invalid_location");
 		break;
-		case 3:
+		case LEGION_ERROR_NOT_ENOUGH_FOOD:
 		text = $.Localize("#Error_not_enough_food");
 		break;
-		case 4:
+		case LEGION_ERROR_TO_CLOSE:
 		text = $.Localize("#Error_to_close_to_another");
 		break;
-		case 5:
+		case LEGION_ERROR_TO_MANY_UPGRADES:
 		text = $.Localize("#Error_to_many_king_upgrades");
 		break;
-		case 6:
+		case LEGION_ERROR_DURING_DUEL:
 		text = $.Localize("#Error_not_possible_in_last_duel");
 		break;
 		default:

@@ -76,7 +76,7 @@ function Player:SetNPC(npc)
   self:PrepareBuilding(self.lane.foodBuilding)
 
   --skill abilities
-  for i = 0,self.hero:GetAbilityCount() do
+  for i = 0, self.hero:GetAbilityCount() - 1 do
     local ability = self.hero:GetAbilityByIndex(i)
     if ability then
       ability:SetLevel(1)

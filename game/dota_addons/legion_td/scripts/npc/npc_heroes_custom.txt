@@ -35,6 +35,40 @@
 		"VisionDaytimeRange"	"1000"
 		"VisionNighttimeRange""1000"
 	}
+	"humanbuilder"
+	{
+		"override_hero"		"npc_dota_hero_furion"
+		"Level"						"1"
+		"MaxLevel"				"1"
+	  "AbilityLayout"   "6"
+		"Ability1"				"naturebuilder_spawn_militia"
+		"Ability2"				"naturebuilder_spawn_archer"
+		"Ability3"				"naturebuilder_spawn_novice"
+		"Ability4"				"naturebuilder_spawn_gyrocopter"
+		"Ability5"				"naturebuilder_spawn_leutnant"
+	
+		"AttributeBaseStrength"	"0"
+		"AttributeBaseAgility"	"0"
+		"AttributeBaseIntelligence"	"0"
+	
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"	"1"
+		"AttackDamageMax"	"1"
+		"ArmorPhysical"		"0"
+	
+		"HasInventory"			"0"
+		"MagicalResistance"	"0"
+	
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"MovementSpeed"					"1000"
+		"MovementTurnRate"			"1.0"
+	
+		"StatusHealth"			"1"
+		"StatusMana"				"0"
+	
+		"VisionDaytimeRange"	"1000"
+		"VisionNighttimeRange""1000"
+	}
 	"naturebuilder"
 	{
 		"override_hero"		"npc_dota_hero_furion"
