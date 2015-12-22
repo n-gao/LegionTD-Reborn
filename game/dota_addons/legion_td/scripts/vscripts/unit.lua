@@ -7,7 +7,7 @@ end
 ai_standard = require('ai/ai_core')
 --Naturebuilder AI
 ai_broodmother = require('ai/naturebuilder/ai_broodmother')
-ai_bigCentaur = require('ai/naturebuilder/ai_bigCentaur')
+ai_bigcentaur = require('ai/naturebuilder/ai_bigcentaur')
 --Elementalbuilder AI
 ai_earthgod = require('ai/elementalbuilder/ai_earthgod')
 ai_fireelemental = require('ai/elementalbuilder/ai_fireelemental')
@@ -59,7 +59,7 @@ end
 function Unit.ApplyAI(unit)
   local name = unit:GetUnitName()
   if name == "tower_naturebuilder_broodmother" then ai_broodmother.Init(unit)
-  elseif name == "tower_naturebuilder_big_centaur" then ai_bigCentaur.Init(unit)
+  elseif name == "tower_naturebuilder_big_centaur" then ai_bigcentaur.Init(unit)
   elseif name == "tower_elementalbuilder_earthgod" then ai_earthgod.Init(unit)
   elseif name == "tower_elementalbuilder_fireelemental" then ai_fireelemental.Init(unit)
   elseif name == "tower_elementalbuilder_firegod" then ai_firegod.Init(unit)

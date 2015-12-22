@@ -8,7 +8,7 @@ EXPORTS.Init = function( self )
 		self.Skill = UseSkillNoTarget
 		self.ability = self:GetAbilityByIndex(2)
 		self.Unstuck = Unstuck
-		self:SetContextThink( "ai_techies.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
+		self:SetContextThink( "ai_bigcentaur.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )
 end
 
