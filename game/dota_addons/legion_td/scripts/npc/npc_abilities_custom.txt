@@ -115,7 +115,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "37"
+	      "atk_damage_tooltip"    "46.25"
 	    }
 	    "02"
 	    {
@@ -173,7 +173,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "42"
+	      "atk_damage_tooltip"    "52.5"
 	    }
 	    "02"
 	    {
@@ -231,7 +231,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "55"
+	      "atk_damage_tooltip"    "68.75"
 	    }
 	    "02"
 	    {
@@ -289,7 +289,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "37"
+	      "atk_damage_tooltip"    "46.25"
 	    }
 	    "02"
 	    {
@@ -347,7 +347,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "27"
+	      "atk_damage_tooltip"    "33.75"
 	    }
 	    "02"
 	    {
@@ -403,7 +403,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "55"
+	      "atk_damage_tooltip"    "68.75"
 	    }
 	    "02"
 	    {
@@ -459,7 +459,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "475"
+	      "atk_damage_tooltip"    "593.75"
 	    }
 	    "02"
 	    {
@@ -515,7 +515,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "62"
+	      "atk_damage_tooltip"    "77.5"
 	    }
 	    "02"
 	    {
@@ -571,7 +571,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "55"
+	      "atk_damage_tooltip"    "68.75"
 	    }
 	    "02"
 	    {
@@ -627,7 +627,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "450"
+	      "atk_damage_tooltip"    "562.5"
 	    }
 	    "02"
 	    {
@@ -683,7 +683,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "140"
+	      "atk_damage_tooltip"    "175.0"
 	    }
 	    "02"
 	    {
@@ -739,7 +739,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "25"
+	      "atk_damage_tooltip"    "31.25"
 	    }
 	    "02"
 	    {
@@ -795,7 +795,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "15"
+	      "atk_damage_tooltip"    "18.75"
 	    }
 	    "02"
 	    {
@@ -851,7 +851,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "100"
+	      "atk_damage_tooltip"    "125.0"
 	    }
 	    "02"
 	    {
@@ -907,7 +907,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "135"
+	      "atk_damage_tooltip"    "168.75"
 	    }
 	    "02"
 	    {
@@ -963,7 +963,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "310"
+	      "atk_damage_tooltip"    "387.5"
 	    }
 	    "02"
 	    {
@@ -1019,7 +1019,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "88"
+	      "atk_damage_tooltip"    "110.0"
 	    }
 	    "02"
 	    {
@@ -1075,7 +1075,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "62"
+	      "atk_damage_tooltip"    "77.5"
 	    }
 	    "02"
 	    {
@@ -1131,7 +1131,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "205"
+	      "atk_damage_tooltip"    "256.25"
 	    }
 	    "02"
 	    {
@@ -1187,7 +1187,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "52"
+	      "atk_damage_tooltip"    "65.0"
 	    }
 	    "02"
 	    {
@@ -1676,7 +1676,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "55"
+	      "atk_damage_tooltip"    "68.75"
 	    }
 	    "02"
 	    {
@@ -1734,7 +1734,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "90"
+	      "atk_damage_tooltip"    "112.5"
 	    }
 	    "02"
 	    {
@@ -1792,7 +1792,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "50"
+	      "atk_damage_tooltip"    "62.5"
 	    }
 	    "02"
 	    {
@@ -1850,7 +1850,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "40"
+	      "atk_damage_tooltip"    "50.0"
 	    }
 	    "02"
 	    {
@@ -1908,7 +1908,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "30"
+	      "atk_damage_tooltip"    "37.5"
 	    }
 	    "02"
 	    {
@@ -1964,7 +1964,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "110"
+	      "atk_damage_tooltip"    "137.5"
 	    }
 	    "02"
 	    {
@@ -2020,7 +2020,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "70"
+	      "atk_damage_tooltip"    "87.5"
 	    }
 	    "02"
 	    {
@@ -2076,7 +2076,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "175"
+	      "atk_damage_tooltip"    "218.75"
 	    }
 	    "02"
 	    {
@@ -2132,7 +2132,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "60"
+	      "atk_damage_tooltip"    "75.0"
 	    }
 	    "02"
 	    {
@@ -2188,7 +2188,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "270"
+	      "atk_damage_tooltip"    "337.5"
 	    }
 	    "02"
 	    {
@@ -2244,7 +2244,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "60"
+	      "atk_damage_tooltip"    "75.0"
 	    }
 	    "02"
 	    {
@@ -2300,7 +2300,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "95"
+	      "atk_damage_tooltip"    "118.75"
 	    }
 	    "02"
 	    {
@@ -2356,7 +2356,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "180"
+	      "atk_damage_tooltip"    "225.0"
 	    }
 	    "02"
 	    {
@@ -2412,7 +2412,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "85"
+	      "atk_damage_tooltip"    "106.25"
 	    }
 	    "02"
 	    {
@@ -2468,7 +2468,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "120"
+	      "atk_damage_tooltip"    "150.0"
 	    }
 	    "02"
 	    {
@@ -2524,7 +2524,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "50"
+	      "atk_damage_tooltip"    "62.5"
 	    }
 	    "02"
 	    {
@@ -2580,7 +2580,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "125"
+	      "atk_damage_tooltip"    "156.25"
 	    }
 	    "02"
 	    {
@@ -2636,7 +2636,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "85"
+	      "atk_damage_tooltip"    "106.25"
 	    }
 	    "02"
 	    {
@@ -2692,7 +2692,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "300"
+	      "atk_damage_tooltip"    "375.0"
 	    }
 	    "02"
 	    {
@@ -2748,7 +2748,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "85"
+	      "atk_damage_tooltip"    "106.25"
 	    }
 	    "02"
 	    {
@@ -2804,7 +2804,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "55"
+	      "atk_damage_tooltip"    "68.75"
 	    }
 	    "02"
 	    {
@@ -2860,7 +2860,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "120"
+	      "atk_damage_tooltip"    "150.0"
 	    }
 	    "02"
 	    {
@@ -2916,7 +2916,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "50"
+	      "atk_damage_tooltip"    "62.5"
 	    }
 	    "02"
 	    {
@@ -4314,7 +4314,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "45"
+	      "atk_damage_tooltip"    "56.25"
 	    }
 	    "02"
 	    {
@@ -4372,7 +4372,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "31"
+	      "atk_damage_tooltip"    "38.75"
 	    }
 	    "02"
 	    {
@@ -4430,7 +4430,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "325"
+	      "atk_damage_tooltip"    "406.25"
 	    }
 	    "02"
 	    {
@@ -4488,7 +4488,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "165"
+	      "atk_damage_tooltip"    "206.25"
 	    }
 	    "02"
 	    {
@@ -4546,7 +4546,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "12"
+	      "atk_damage_tooltip"    "15.0"
 	    }
 	    "02"
 	    {
@@ -4604,7 +4604,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "42"
+	      "atk_damage_tooltip"    "52.5"
 	    }
 	    "02"
 	    {
@@ -4670,7 +4670,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "280"
+	      "atk_damage_tooltip"    "350.0"
 	    }
 	    "02"
 	    {
@@ -4726,7 +4726,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "65"
+	      "atk_damage_tooltip"    "81.25"
 	    }
 	    "02"
 	    {
@@ -4782,7 +4782,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "425"
+	      "atk_damage_tooltip"    "531.25"
 	    }
 	    "02"
 	    {
@@ -4838,7 +4838,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "27"
+	      "atk_damage_tooltip"    "33.75"
 	    }
 	    "02"
 	    {
@@ -4894,7 +4894,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "525"
+	      "atk_damage_tooltip"    "656.25"
 	    }
 	    "02"
 	    {
@@ -4950,7 +4950,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "105"
+	      "atk_damage_tooltip"    "131.25"
 	    }
 	    "02"
 	    {
@@ -5006,7 +5006,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "220"
+	      "atk_damage_tooltip"    "275.0"
 	    }
 	    "02"
 	    {
@@ -5062,7 +5062,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "65"
+	      "atk_damage_tooltip"    "81.25"
 	    }
 	    "02"
 	    {
@@ -5118,7 +5118,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "35"
+	      "atk_damage_tooltip"    "43.75"
 	    }
 	    "02"
 	    {
