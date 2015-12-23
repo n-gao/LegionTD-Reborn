@@ -17,8 +17,8 @@
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "15.0"
-	"AttackDamageMax"       "17.0"
+	"AttackDamageMin"       "18.75"
+	"AttackDamageMax"       "21.25"
 	"AttackRate"            "0.46"
 	"AttackAnimationPoint"  "0.2"
 	"AttackAcquisitionRange" "500"
@@ -47,7 +47,7 @@
 
 	"TeamName"              "DOTA_TEAM_NEUTRALS"
 	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
 	"Creature"

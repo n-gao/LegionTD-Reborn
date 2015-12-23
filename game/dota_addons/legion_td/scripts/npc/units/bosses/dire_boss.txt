@@ -21,8 +21,8 @@
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "55.0"
-	"AttackDamageMax"       "65.0"
+	"AttackDamageMin"       "68.75"
+	"AttackDamageMax"       "81.25"
 	"AttackRate"            "0.8"
 	"AttackAnimationPoint"  "0.2"
 	"AttackAcquisitionRange" "125"
@@ -63,7 +63,7 @@
 	//----------------------------------------------------------------
 	"TeamName"              "DOTA_TEAM_GOODGUYS"
 	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
 	// Creature Data

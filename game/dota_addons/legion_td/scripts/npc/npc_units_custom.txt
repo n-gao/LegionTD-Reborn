@@ -23,8 +23,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "55.0"
-		"AttackDamageMax"       "65.0"
+		"AttackDamageMin"       "68.75"
+		"AttackDamageMax"       "81.25"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "125"
@@ -65,7 +65,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_GOODGUYS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -118,8 +118,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "55.0"
-		"AttackDamageMax"       "65.0"
+		"AttackDamageMin"       "68.75"
+		"AttackDamageMax"       "81.25"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "125"
@@ -160,7 +160,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_GOODGUYS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -786,8 +786,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "35.0"
-		"AttackDamageMax"       "40.0"
+		"AttackDamageMin"       "43.75"
+		"AttackDamageMax"       "50.0"
 		"AttackRate"            "1.1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -827,7 +827,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -879,8 +879,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "45.0"
-		"AttackDamageMax"       "65.0"
+		"AttackDamageMin"       "56.25"
+		"AttackDamageMax"       "81.25"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -920,7 +920,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -979,8 +979,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "450.0"
-		"AttackDamageMax"       "500.0"
+		"AttackDamageMin"       "562.5"
+		"AttackDamageMax"       "625.0"
 		"AttackRate"            "1.2"
 		"AttackAnimationPoint"  "0.8"
 		"AttackAcquisitionRange" "500"
@@ -1020,7 +1020,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -1078,8 +1078,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "55.0"
-		"AttackDamageMax"       "70.0"
+		"AttackDamageMin"       "68.75"
+		"AttackDamageMax"       "87.5"
 		"AttackRate"            "0.46"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -1119,7 +1119,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -1176,8 +1176,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "40.0"
-		"AttackDamageMax"       "45.0"
+		"AttackDamageMin"       "50.0"
+		"AttackDamageMax"       "56.25"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -1217,7 +1217,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -1270,8 +1270,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "50.0"
-		"AttackDamageMax"       "60.0"
+		"AttackDamageMin"       "62.5"
+		"AttackDamageMax"       "75.0"
 		"AttackRate"            "1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -1311,7 +1311,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -1361,8 +1361,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "400.0"
-		"AttackDamageMax"       "500.0"
+		"AttackDamageMin"       "500.0"
+		"AttackDamageMax"       "625.0"
 		"AttackRate"            "1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -1402,7 +1402,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -1459,8 +1459,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "130.0"
-		"AttackDamageMax"       "150.0"
+		"AttackDamageMin"       "162.5"
+		"AttackDamageMax"       "187.5"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -1500,7 +1500,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -1565,8 +1565,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "50.0"
-		"AttackDamageMax"       "60.0"
+		"AttackDamageMin"       "62.5"
+		"AttackDamageMax"       "75.0"
 		"AttackRate"            "0.9"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -1606,7 +1606,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -1660,8 +1660,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "20.0"
-		"AttackDamageMax"       "30.0"
+		"AttackDamageMin"       "25.0"
+		"AttackDamageMax"       "37.5"
 		"AttackRate"            "0.45"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -1701,7 +1701,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -1753,8 +1753,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "10.0"
-		"AttackDamageMax"       "20.0"
+		"AttackDamageMin"       "12.5"
+		"AttackDamageMax"       "25.0"
 		"AttackRate"            "1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -1794,7 +1794,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -1844,8 +1844,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "95.0"
-		"AttackDamageMax"       "105.0"
+		"AttackDamageMin"       "118.75"
+		"AttackDamageMax"       "131.25"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -1885,7 +1885,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -1944,8 +1944,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "35.0"
-		"AttackDamageMax"       "40.0"
+		"AttackDamageMin"       "43.75"
+		"AttackDamageMax"       "50.0"
 		"AttackRate"            "1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -1985,7 +1985,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2034,8 +2034,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "120.0"
-		"AttackDamageMax"       "150.0"
+		"AttackDamageMin"       "150.0"
+		"AttackDamageMax"       "187.5"
 		"AttackRate"            "0.75"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -2075,7 +2075,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2124,8 +2124,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "300.0"
-		"AttackDamageMax"       "320.0"
+		"AttackDamageMin"       "375.0"
+		"AttackDamageMax"       "400.0"
 		"AttackRate"            "0.45"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -2165,7 +2165,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2215,8 +2215,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "84.0"
-		"AttackDamageMax"       "92.0"
+		"AttackDamageMin"       "105.0"
+		"AttackDamageMax"       "115.0"
 		"AttackRate"            "0.45"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -2256,7 +2256,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2311,8 +2311,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "25.0"
-		"AttackDamageMax"       "30.0"
+		"AttackDamageMin"       "31.25"
+		"AttackDamageMax"       "37.5"
 		"AttackRate"            "0.65"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -2352,7 +2352,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2405,8 +2405,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "55.0"
-		"AttackDamageMax"       "70.0"
+		"AttackDamageMin"       "68.75"
+		"AttackDamageMax"       "87.5"
 		"AttackRate"            "0.33"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -2446,7 +2446,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2495,8 +2495,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "180.0"
-		"AttackDamageMax"       "200.0"
+		"AttackDamageMin"       "225.0"
+		"AttackDamageMax"       "250.0"
 		"AttackRate"            "1.1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -2536,7 +2536,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2585,8 +2585,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "50.0"
-		"AttackDamageMax"       "55.0"
+		"AttackDamageMin"       "62.5"
+		"AttackDamageMax"       "68.75"
 		"AttackRate"            "0.85"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -2626,7 +2626,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2680,8 +2680,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "100.0"
-		"AttackDamageMax"       "120.0"
+		"AttackDamageMin"       "125.0"
+		"AttackDamageMax"       "150.0"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -2721,7 +2721,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -2784,8 +2784,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "50.0"
-		"AttackDamageMax"       "60.0"
+		"AttackDamageMin"       "62.5"
+		"AttackDamageMax"       "75.0"
 		"AttackRate"            "1.1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -2825,7 +2825,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2878,8 +2878,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "60.0"
-		"AttackDamageMax"       "80.0"
+		"AttackDamageMin"       "75.0"
+		"AttackDamageMax"       "100.0"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -2919,7 +2919,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -2982,8 +2982,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "170.0"
-		"AttackDamageMax"       "180.0"
+		"AttackDamageMin"       "212.5"
+		"AttackDamageMax"       "225.0"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -3023,7 +3023,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -3085,8 +3085,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "60.0"
-		"AttackDamageMax"       "60.0"
+		"AttackDamageMin"       "75.0"
+		"AttackDamageMax"       "75.0"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -3126,7 +3126,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -3181,8 +3181,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "260.0"
-		"AttackDamageMax"       "280.0"
+		"AttackDamageMin"       "325.0"
+		"AttackDamageMax"       "350.0"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -3222,7 +3222,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -3284,8 +3284,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "70.0"
-		"AttackDamageMax"       "800.0"
+		"AttackDamageMin"       "87.5"
+		"AttackDamageMax"       "1000.0"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -3325,7 +3325,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -3388,8 +3388,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "90.0"
-		"AttackDamageMax"       "100.0"
+		"AttackDamageMin"       "112.5"
+		"AttackDamageMax"       "125.0"
 		"AttackRate"            "1.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -3429,7 +3429,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -3492,8 +3492,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "90.0"
-		"AttackDamageMax"       "90.0"
+		"AttackDamageMin"       "112.5"
+		"AttackDamageMax"       "112.5"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -3533,7 +3533,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -3596,8 +3596,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "180.0"
-		"AttackDamageMax"       "180.0"
+		"AttackDamageMin"       "225.0"
+		"AttackDamageMax"       "225.0"
 		"AttackRate"            "0.7"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -3637,7 +3637,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -3699,8 +3699,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "80.0"
-		"AttackDamageMax"       "90.0"
+		"AttackDamageMin"       "100.0"
+		"AttackDamageMax"       "112.5"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -3740,7 +3740,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -3802,8 +3802,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "120.0"
-		"AttackDamageMax"       "120.0"
+		"AttackDamageMin"       "150.0"
+		"AttackDamageMax"       "150.0"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -3843,7 +3843,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -3906,8 +3906,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "45.0"
-		"AttackDamageMax"       "55.0"
+		"AttackDamageMin"       "56.25"
+		"AttackDamageMax"       "68.75"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -3947,7 +3947,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4000,8 +4000,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "45.0"
-		"AttackDamageMax"       "55.0"
+		"AttackDamageMin"       "56.25"
+		"AttackDamageMax"       "68.75"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -4041,7 +4041,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -4105,8 +4105,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "120.0"
-		"AttackDamageMax"       "130.0"
+		"AttackDamageMin"       "150.0"
+		"AttackDamageMax"       "162.5"
 		"AttackRate"            "1.3"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "600"
@@ -4146,7 +4146,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -4208,8 +4208,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "35.0"
-		"AttackDamageMax"       "45.0"
+		"AttackDamageMin"       "43.75"
+		"AttackDamageMax"       "56.25"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -4249,7 +4249,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4303,8 +4303,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "25.0"
-		"AttackDamageMax"       "35.0"
+		"AttackDamageMin"       "31.25"
+		"AttackDamageMax"       "43.75"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -4344,7 +4344,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -4407,8 +4407,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "80.0"
-		"AttackDamageMax"       "90.0"
+		"AttackDamageMin"       "100.0"
+		"AttackDamageMax"       "112.5"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -4448,7 +4448,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -4512,8 +4512,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "290.0"
-		"AttackDamageMax"       "310.0"
+		"AttackDamageMin"       "362.5"
+		"AttackDamageMax"       "387.5"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "900"
@@ -4553,7 +4553,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -4615,8 +4615,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "80.0"
-		"AttackDamageMax"       "90.0"
+		"AttackDamageMin"       "100.0"
+		"AttackDamageMax"       "112.5"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -4656,7 +4656,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4710,8 +4710,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "55.0"
-		"AttackDamageMax"       "55.0"
+		"AttackDamageMin"       "68.75"
+		"AttackDamageMax"       "68.75"
 		"AttackRate"            "0.3"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -4751,7 +4751,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -4814,8 +4814,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "110.0"
-		"AttackDamageMax"       "130.0"
+		"AttackDamageMin"       "137.5"
+		"AttackDamageMax"       "162.5"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -4855,7 +4855,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4909,8 +4909,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "130.0"
-		"AttackDamageMax"       "150.0"
+		"AttackDamageMin"       "162.5"
+		"AttackDamageMax"       "187.5"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -4950,7 +4950,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -5011,8 +5011,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "90.0"
-		"AttackDamageMax"       "100.0"
+		"AttackDamageMin"       "112.5"
+		"AttackDamageMax"       "125.0"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -5053,7 +5053,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5096,8 +5096,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "90.0"
-		"AttackDamageMax"       "100.0"
+		"AttackDamageMin"       "112.5"
+		"AttackDamageMax"       "125.0"
 		"AttackRate"            "0.3"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -5138,7 +5138,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5182,8 +5182,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "70.0"
-		"AttackDamageMax"       "75.0"
+		"AttackDamageMin"       "87.5"
+		"AttackDamageMax"       "93.75"
 		"AttackRate"            "1.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -5224,7 +5224,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5268,8 +5268,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "70.0"
-		"AttackDamageMax"       "75.0"
+		"AttackDamageMin"       "87.5"
+		"AttackDamageMax"       "93.75"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -5310,7 +5310,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5354,8 +5354,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "50.0"
-		"AttackDamageMax"       "70.0"
+		"AttackDamageMin"       "62.5"
+		"AttackDamageMax"       "87.5"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -5396,7 +5396,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5439,8 +5439,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "150.0"
-		"AttackDamageMax"       "160.0"
+		"AttackDamageMin"       "187.5"
+		"AttackDamageMax"       "200.0"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -5481,7 +5481,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5525,8 +5525,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "100.0"
-		"AttackDamageMax"       "110.0"
+		"AttackDamageMin"       "125.0"
+		"AttackDamageMax"       "137.5"
 		"AttackRate"            "1.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -5567,7 +5567,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5611,8 +5611,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "20.0"
-		"AttackDamageMax"       "25.0"
+		"AttackDamageMin"       "25.0"
+		"AttackDamageMax"       "31.25"
 		"AttackRate"            "0.4"
 		"AttackAnimationPoint"  "0.8"
 		"AttackAcquisitionRange" "500"
@@ -5653,7 +5653,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5697,8 +5697,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "35.0"
-		"AttackDamageMax"       "40.0"
+		"AttackDamageMin"       "43.75"
+		"AttackDamageMax"       "50.0"
 		"AttackRate"            "1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -5739,7 +5739,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5783,8 +5783,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "7.0"
-		"AttackDamageMax"       "9.0"
+		"AttackDamageMin"       "8.75"
+		"AttackDamageMax"       "11.25"
 		"AttackRate"            "0.7"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -5825,7 +5825,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5877,8 +5877,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "5.0"
-		"AttackDamageMax"       "6.0"
+		"AttackDamageMin"       "6.25"
+		"AttackDamageMax"       "7.5"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -5919,7 +5919,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5963,8 +5963,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "5.0"
-		"AttackDamageMax"       "6.0"
+		"AttackDamageMin"       "6.25"
+		"AttackDamageMax"       "7.5"
 		"AttackRate"            "1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -6005,7 +6005,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6048,8 +6048,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "200.0"
-		"AttackDamageMax"       "210.0"
+		"AttackDamageMin"       "250.0"
+		"AttackDamageMax"       "262.5"
 		"AttackRate"            "1.2"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -6090,7 +6090,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6134,8 +6134,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "130.0"
-		"AttackDamageMax"       "140.0"
+		"AttackDamageMin"       "162.5"
+		"AttackDamageMax"       "175.0"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.4"
 		"AttackAcquisitionRange" "500"
@@ -6176,7 +6176,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6220,8 +6220,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "4.0"
-		"AttackDamageMax"       "5.0"
+		"AttackDamageMin"       "5.0"
+		"AttackDamageMax"       "6.25"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -6262,7 +6262,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6306,8 +6306,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "45.0"
-		"AttackDamageMax"       "50.0"
+		"AttackDamageMin"       "56.25"
+		"AttackDamageMax"       "62.5"
 		"AttackRate"            "0.9"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -6348,7 +6348,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6392,8 +6392,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "20.0"
-		"AttackDamageMax"       "22.0"
+		"AttackDamageMin"       "25.0"
+		"AttackDamageMax"       "27.5"
 		"AttackRate"            "1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -6434,7 +6434,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6478,8 +6478,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "30.0"
-		"AttackDamageMax"       "40.0"
+		"AttackDamageMin"       "37.5"
+		"AttackDamageMax"       "50.0"
 		"AttackRate"            "0.7"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -6520,7 +6520,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6564,8 +6564,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "50.0"
-		"AttackDamageMax"       "60.0"
+		"AttackDamageMin"       "62.5"
+		"AttackDamageMax"       "75.0"
 		"AttackRate"            "1.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -6606,7 +6606,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6651,8 +6651,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "100.0"
-		"AttackDamageMax"       "110.0"
+		"AttackDamageMin"       "125.0"
+		"AttackDamageMax"       "137.5"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -6693,7 +6693,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6737,8 +6737,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "40.0"
-		"AttackDamageMax"       "45.0"
+		"AttackDamageMin"       "50.0"
+		"AttackDamageMax"       "56.25"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -6779,7 +6779,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6822,8 +6822,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "180.0"
-		"AttackDamageMax"       "200.0"
+		"AttackDamageMin"       "225.0"
+		"AttackDamageMax"       "250.0"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -6864,7 +6864,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6908,8 +6908,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "30.0"
-		"AttackDamageMax"       "35.0"
+		"AttackDamageMin"       "37.5"
+		"AttackDamageMax"       "43.75"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -6950,7 +6950,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6994,8 +6994,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "60.0"
-		"AttackDamageMax"       "80.0"
+		"AttackDamageMin"       "75.0"
+		"AttackDamageMax"       "100.0"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -7036,7 +7036,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7080,8 +7080,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "50.0"
-		"AttackDamageMax"       "60.0"
+		"AttackDamageMin"       "62.5"
+		"AttackDamageMax"       "75.0"
 		"AttackRate"            "0.4"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -7122,7 +7122,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7167,8 +7167,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "260.0"
-		"AttackDamageMax"       "300.0"
+		"AttackDamageMin"       "325.0"
+		"AttackDamageMax"       "375.0"
 		"AttackRate"            "0.4"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -7208,7 +7208,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7255,8 +7255,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "40.0"
-		"AttackDamageMax"       "50.0"
+		"AttackDamageMin"       "50.0"
+		"AttackDamageMax"       "62.5"
 		"AttackRate"            "1.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -7296,7 +7296,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -7356,8 +7356,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "55.0"
-		"AttackDamageMax"       "75.0"
+		"AttackDamageMin"       "68.75"
+		"AttackDamageMax"       "93.75"
 		"AttackRate"            "0.45"
 		"AttackAnimationPoint"  "0.55"
 		"AttackAcquisitionRange" "500"
@@ -7397,7 +7397,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7451,8 +7451,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "400.0"
-		"AttackDamageMax"       "450.0"
+		"AttackDamageMin"       "500.0"
+		"AttackDamageMax"       "562.5"
 		"AttackRate"            "1.3"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -7492,7 +7492,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7546,8 +7546,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "25.0"
-		"AttackDamageMax"       "30.0"
+		"AttackDamageMin"       "31.25"
+		"AttackDamageMax"       "37.5"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -7587,7 +7587,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7648,8 +7648,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "28.0"
-		"AttackDamageMax"       "34.0"
+		"AttackDamageMin"       "35.0"
+		"AttackDamageMax"       "42.5"
 		"AttackRate"            "0.65"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -7689,7 +7689,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7744,8 +7744,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "300.0"
-		"AttackDamageMax"       "350.0"
+		"AttackDamageMin"       "375.0"
+		"AttackDamageMax"       "437.5"
 		"AttackRate"            "1.8"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -7785,7 +7785,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7830,8 +7830,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "500.0"
-		"AttackDamageMax"       "550.0"
+		"AttackDamageMin"       "625.0"
+		"AttackDamageMax"       "687.5"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -7871,7 +7871,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7927,8 +7927,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "100.0"
-		"AttackDamageMax"       "110.0"
+		"AttackDamageMin"       "125.0"
+		"AttackDamageMax"       "137.5"
 		"AttackRate"            "1.2"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -7968,7 +7968,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -8028,8 +8028,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "180.0"
-		"AttackDamageMax"       "220.0"
+		"AttackDamageMin"       "225.0"
+		"AttackDamageMax"       "275.0"
 		"AttackRate"            "1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -8069,7 +8069,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8115,8 +8115,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "150.0"
-		"AttackDamageMax"       "180.0"
+		"AttackDamageMin"       "187.5"
+		"AttackDamageMax"       "225.0"
 		"AttackRate"            "0.55"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -8156,7 +8156,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8201,8 +8201,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "60.0"
-		"AttackDamageMax"       "70.0"
+		"AttackDamageMin"       "75.0"
+		"AttackDamageMax"       "87.5"
 		"AttackRate"            "0.4"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -8242,7 +8242,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8294,8 +8294,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "30.0"
-		"AttackDamageMax"       "40.0"
+		"AttackDamageMin"       "37.5"
+		"AttackDamageMax"       "50.0"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -8335,7 +8335,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -8387,8 +8387,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "10.0"
-		"AttackDamageMax"       "15.0"
+		"AttackDamageMin"       "12.5"
+		"AttackDamageMax"       "18.75"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -8428,7 +8428,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8475,8 +8475,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "35.0"
-		"AttackDamageMax"       "50.0"
+		"AttackDamageMin"       "43.75"
+		"AttackDamageMax"       "62.5"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -8516,7 +8516,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8556,8 +8556,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "20.0"
-		"AttackDamageMax"       "40.0"
+		"AttackDamageMin"       "25.0"
+		"AttackDamageMax"       "50.0"
 		"AttackRate"            "1.1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -8597,7 +8597,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8639,8 +8639,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "12.0"
-		"AttackDamageMax"       "13.0"
+		"AttackDamageMin"       "15.0"
+		"AttackDamageMax"       "16.25"
 		"AttackRate"            "1.35"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -8678,7 +8678,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8714,8 +8714,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "12.0"
-		"AttackDamageMax"       "14.0"
+		"AttackDamageMin"       "15.0"
+		"AttackDamageMax"       "17.5"
 		"AttackRate"            "0.55"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -8744,7 +8744,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -8795,8 +8795,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "14.0"
-		"AttackDamageMax"       "16.0"
+		"AttackDamageMin"       "17.5"
+		"AttackDamageMax"       "20.0"
 		"AttackRate"            "0.7"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -8825,7 +8825,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -8872,8 +8872,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "10.0"
-		"AttackDamageMax"       "50.0"
+		"AttackDamageMin"       "12.5"
+		"AttackDamageMax"       "62.5"
 		"AttackRate"            "0.64"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -8902,7 +8902,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -8948,8 +8948,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "100.0"
-		"AttackDamageMax"       "110.0"
+		"AttackDamageMin"       "125.0"
+		"AttackDamageMax"       "137.5"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -8978,7 +8978,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9023,8 +9023,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "80.0"
-		"AttackDamageMax"       "100.0"
+		"AttackDamageMin"       "100.0"
+		"AttackDamageMax"       "125.0"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -9053,7 +9053,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 	
@@ -9098,8 +9098,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "2.0"
-		"AttackDamageMax"       "3.0"
+		"AttackDamageMin"       "2.5"
+		"AttackDamageMax"       "3.75"
 		"AttackRate"            "1.25"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -9126,7 +9126,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"precache"
 		{
@@ -9172,8 +9172,8 @@
 	
 	  "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	  "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	  "AttackDamageMin"       "150.0"
-	  "AttackDamageMax"       "160.0"
+	  "AttackDamageMin"       "187.5"
+	  "AttackDamageMax"       "200.0"
 	  "AttackRate"            "0.4"
 	  "AttackAnimationPoint"  "0.2"
 	  "AttackAcquisitionRange" "500"
@@ -9202,7 +9202,7 @@
 	
 	  "TeamName"              "DOTA_TEAM_NEUTRALS"
 	  "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	  "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	  "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 	  "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 	  "precache"
@@ -9256,8 +9256,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "55.0"
-		"AttackDamageMax"       "65.0"
+		"AttackDamageMin"       "68.75"
+		"AttackDamageMax"       "81.25"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -9286,7 +9286,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9330,8 +9330,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "65.0"
-		"AttackDamageMax"       "75.0"
+		"AttackDamageMin"       "81.25"
+		"AttackDamageMax"       "93.75"
 		"AttackRate"            "0.65"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -9360,7 +9360,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9406,8 +9406,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "15.0"
-		"AttackDamageMax"       "17.0"
+		"AttackDamageMin"       "18.75"
+		"AttackDamageMax"       "21.25"
 		"AttackRate"            "0.46"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -9436,7 +9436,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9478,8 +9478,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "50.0"
-		"AttackDamageMax"       "60.0"
+		"AttackDamageMin"       "62.5"
+		"AttackDamageMax"       "75.0"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.3"
 		"AttackAcquisitionRange" "500"
@@ -9508,7 +9508,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -9559,8 +9559,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "1.0"
-		"AttackDamageMax"       "2.0"
+		"AttackDamageMin"       "1.25"
+		"AttackDamageMax"       "2.5"
 		"AttackRate"            "0.3"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -9589,7 +9589,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9635,8 +9635,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "42.0"
-		"AttackDamageMax"       "50.0"
+		"AttackDamageMin"       "52.5"
+		"AttackDamageMax"       "62.5"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -9665,7 +9665,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9719,8 +9719,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "7.0"
-		"AttackDamageMax"       "8.0"
+		"AttackDamageMin"       "8.75"
+		"AttackDamageMax"       "10.0"
 		"AttackRate"            "1.1"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -9749,7 +9749,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9795,8 +9795,8 @@
 	
 	  "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	  "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	  "AttackDamageMin"       "260.0"
-	  "AttackDamageMax"       "280.0"
+	  "AttackDamageMin"       "325.0"
+	  "AttackDamageMax"       "350.0"
 	  "AttackRate"            "0.4"
 	  "AttackAnimationPoint"  "0.2"
 	  "AttackAcquisitionRange" "500"
@@ -9825,7 +9825,7 @@
 	
 	  "TeamName"              "DOTA_TEAM_NEUTRALS"
 	  "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	  "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+	  "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 	  "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 	  "precache"
@@ -9871,8 +9871,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "30.0"
-		"AttackDamageMax"       "40.0"
+		"AttackDamageMin"       "37.5"
+		"AttackDamageMax"       "50.0"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -9901,7 +9901,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -9954,8 +9954,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "4.0"
-		"AttackDamageMax"       "6.0"
+		"AttackDamageMin"       "5.0"
+		"AttackDamageMax"       "7.5"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -9982,7 +9982,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10018,8 +10018,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "12.0"
-		"AttackDamageMax"       "14.0"
+		"AttackDamageMin"       "15.0"
+		"AttackDamageMax"       "17.5"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -10048,7 +10048,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10084,8 +10084,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "42.0"
-		"AttackDamageMax"       "46.0"
+		"AttackDamageMin"       "52.5"
+		"AttackDamageMax"       "57.5"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -10114,7 +10114,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10157,8 +10157,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "50.0"
-		"AttackDamageMax"       "60.0"
+		"AttackDamageMin"       "62.5"
+		"AttackDamageMax"       "75.0"
 		"AttackRate"            "0.75"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -10187,7 +10187,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -10248,8 +10248,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "12.0"
-		"AttackDamageMax"       "15.0"
+		"AttackDamageMin"       "15.0"
+		"AttackDamageMax"       "18.75"
 		"AttackRate"            "1.2"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -10278,7 +10278,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -10326,8 +10326,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "90.0"
-		"AttackDamageMax"       "110.0"
+		"AttackDamageMin"       "112.5"
+		"AttackDamageMax"       "137.5"
 		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -10356,7 +10356,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -10405,8 +10405,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "20.0"
-		"AttackDamageMax"       "25.0"
+		"AttackDamageMin"       "25.0"
+		"AttackDamageMax"       "31.25"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -10435,7 +10435,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10479,8 +10479,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "9.0"
-		"AttackDamageMax"       "11.0"
+		"AttackDamageMin"       "11.25"
+		"AttackDamageMax"       "13.75"
 		"AttackRate"            "0.75"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -10509,7 +10509,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10552,8 +10552,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "60.0"
-		"AttackDamageMax"       "70.0"
+		"AttackDamageMin"       "75.0"
+		"AttackDamageMax"       "87.5"
 		"AttackRate"            "0.55"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -10582,7 +10582,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -10639,8 +10639,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "6.0"
-		"AttackDamageMax"       "7.0"
+		"AttackDamageMin"       "7.5"
+		"AttackDamageMax"       "8.75"
 		"AttackRate"            "1.35"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -10667,7 +10667,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10715,8 +10715,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "0"
-		"AttackDamageMax"       "0"
+		"AttackDamageMin"       "0.0"
+		"AttackDamageMax"       "0.0"
 		"AttackRate"            "0"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -10745,7 +10745,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"GameSoundsFile"   "soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
@@ -10799,8 +10799,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "16.0"
-		"AttackDamageMax"       "21.0"
+		"AttackDamageMin"       "20.0"
+		"AttackDamageMax"       "26.25"
 		"AttackRate"            "0.62"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -10829,7 +10829,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10881,8 +10881,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "9.0"
-		"AttackDamageMax"       "12.0"
+		"AttackDamageMin"       "11.25"
+		"AttackDamageMax"       "15.0"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -10911,7 +10911,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -10960,8 +10960,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "70.0"
-		"AttackDamageMax"       "75.0"
+		"AttackDamageMin"       "87.5"
+		"AttackDamageMax"       "93.75"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -10990,7 +10990,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -11037,8 +11037,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "3.0"
-		"AttackDamageMax"       "4.0"
+		"AttackDamageMin"       "3.75"
+		"AttackDamageMax"       "5.0"
 		"AttackRate"            "1.25"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -11065,7 +11065,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Creature"
 		{
@@ -11100,8 +11100,8 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "11.0"
-		"AttackDamageMax"       "13.0"
+		"AttackDamageMin"       "13.75"
+		"AttackDamageMax"       "16.25"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
@@ -11130,7 +11130,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"

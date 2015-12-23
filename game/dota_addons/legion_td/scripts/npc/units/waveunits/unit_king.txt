@@ -18,8 +18,8 @@
 
   "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
   "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-  "AttackDamageMin"       "260.0"
-  "AttackDamageMax"       "280.0"
+  "AttackDamageMin"       "325.0"
+  "AttackDamageMax"       "350.0"
   "AttackRate"            "0.4"
   "AttackAnimationPoint"  "0.2"
   "AttackAcquisitionRange" "500"
@@ -48,7 +48,7 @@
 
   "TeamName"              "DOTA_TEAM_NEUTRALS"
   "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-  "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_STRONG"
+  "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
   "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
   "precache"
