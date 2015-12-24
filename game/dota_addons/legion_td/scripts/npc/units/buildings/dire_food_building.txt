@@ -8,11 +8,10 @@
 	"Level"								"1"
 	"HealthBarOffset"			"140"
 
-  "Ability1"            "increase_food_limit"
-
 	// Abilities
 	//----------------------------------------------------------------
 	"AbilityLayout"					"4"
+	"Ability1"            "increase_food_limit"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -51,8 +50,8 @@
 
 	// Vision
 	//----------------------------------------------------------------
-	"VisionDaytimeRange"		"0"
-	"VisionNighttimeRange"	"0"
+	"VisionDaytimeRange"		"1800"
+	"VisionNighttimeRange"	"800"
 
 	// Team
 	//----------------------------------------------------------------

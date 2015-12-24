@@ -12,6 +12,7 @@ require ('duelround')
 require ('gamespawner')
 require ('player')
 require ('unit')
+require ('popups')
 
 RequiredUnits = {
 	-- Bosses

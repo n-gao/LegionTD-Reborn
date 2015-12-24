@@ -228,9 +228,9 @@ end
 
 
 --on leaving lane
-function OnEndTouch(trigger)
+function LeaveLane(trigger)
   local hero = trigger.activator
-  if hero:IsRealHero() then
+  if hero and hero:IsRealHero() then
     hero.player:ToSpawn()
   end
 end
@@ -277,13 +277,27 @@ end
 
 function Player:CreateTangoTicker()
   if not Timers.timers[self.timer] then
+    --[[This was gonna be some sweet-ass shit where I make a dummy unit to create a progress bar for tangos
+    unfortunately I can't make creeps not attack it without also removing the healthbar
+    so I'm leaving the lines commented here for when I make it a particle or something]]
+    --self.timerDummy = CreateUnitByName("npc_dummy_unit_healthbar", self.lane.mainBuilding:GetAbsOrigin(), false, nil, self, self:GetTeamNumber())
+    --self.tangoTimeStartSpan = GameRules:GetGameTime()
+    --self.tangoTimeEndSpan = GameRules:GetGameTime() + self.tangoAddSpeed
     self.timer = Timers:CreateTimer(self.tangoAddSpeed, function()
       self:AddTangos(self.tangoAddAmount)
-      if self.leaked then
-        return self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER
-      end
-      return self.tangoAddSpeed
+      PopupHealing(self.lane.mainBuilding, self.tangoAddAmount)
+      local tangoDelay = self.tangoAddSpeed
+      if self.leaked then tangoDelay = tangoDelay * LEAKED_TANGO_MULTIPLIER end
+      --self.tangoTimeStartSpan = GameRules:GetGameTime()
+      --self.tangoTimeEndSpan = GameRules:GetGameTime() + tangoDelay
+      return tangoDelay
     end)
+    --self.dummyTimer = Timers:CreateTimer(function()
+    --  tangoProgressPercent = (GameRules:GetGameTime()-self.tangoTimeStartSpan)/(self.tangoTimeEndSpan-self.tangoTimeStartSpan)*100
+    --  if tangoProgressPercent < 1 then tangoProgressPercent = 1 end
+    --  self.timerDummy:SetHealth(tangoProgressPercent)
+    --  return .1
+    --end)
   end
 end
 

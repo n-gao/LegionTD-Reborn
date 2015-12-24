@@ -155,6 +155,7 @@ function leaveLane(trigger)
   local npc = trigger.activator
   if npc and not npc:IsRealHero() then
     if npc:GetTeamNumber() == DOTA_TEAM_NEUTRALS then
+      PopupSadface(npc)
       npc.leftLane = true
       npc.lane.player:Leaked(self)
       npc:SetMinimumGoldBounty(1)

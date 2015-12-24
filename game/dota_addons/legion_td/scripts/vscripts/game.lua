@@ -132,7 +132,6 @@ function Game.new()
   CustomGameEventManager:RegisterListener("send_unit", Dynamic_Wrap(Game, "SendUnit"))
   CustomGameEventManager:RegisterListener("upgarde_king", Dynamic_Wrap(Game, "UpgradeKing"))
   CustomGameEventManager:RegisterListener("toggle_income_limit", Dynamic_Wrap(Game, "ToggleIncomeLimit"))
-
   return self
 end
 
@@ -284,6 +283,9 @@ end
 
 --Start des Spiels
 function Game:Start()
+  print ("Game:Start()")
+  self.radiantKingVision = CreateUnitByName("king_vision_dummy", self.radiantBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+  self.direKingVision = CreateUnitByName("king_vision_dummy", self.direBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
   self.gameState = GAMESTATE_PREPARATION
   self.gameRound = STARTING_ROUND
   self.isRunning = true
@@ -388,6 +390,7 @@ end
 
 --Runde beendet
 function Game:RoundFinished()
+  mode:SetFogOfWarDisabled(false)
   if not self.gameTimer then
     self:CreateGameTimer()
   end
@@ -418,6 +421,7 @@ end
 
 --Startet nächste Runde
 function Game:StartNextRound()
+  mode:SetFogOfWarDisabled(true)
   self.gameState = GAMESTATE_FIGHTING
   self.nextRoundTime = nil
   self.rounds[self.gameRound]:Begin()
