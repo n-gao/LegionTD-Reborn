@@ -69,36 +69,54 @@ function GameSpawner.ApplyAI(creep)
 end
 
 function GameSpawner:SendIncomingUnits(team)
-  local spawners = {}
-  local count = 0
+  local spawners = {} -- list of possible lanes that we can distribute to, indexed 1 to 4
+  local count = 0 -- number of valid lanes to distribute to
   local units = {}
+  local distributedValues = {}
+  local lowestValue = 0
+  local leader = 1
   if team == DOTA_TEAM_GOODGUYS then
     units = Game.sendRadiant
     Game.sendRadiant = {}
     for i = 5,8 do
       if Game.lanes[""..i].isActive then
         spawners[count + 1] = Game.lanes[""..i]
+        distributedValues[count + 1] = 0
         count = count + 1
       end
     end
+    leader = Game.sendLeaderRadiant
+    Game.sendLeaderRadiant = Game.sendLeaderRadiant + 1
+    if Game.sendLeaderRadiant > count then Game.sendLeaderRadiant = 1 end
   else
     units = Game.sendDire
     Game.sendDire = {}
     for i = 1,4 do
       if Game.lanes[""..i].isActive then
         spawners[count + 1] = Game.lanes[""..i]
+        distributedValues[count + 1] = 0
         count = count + 1
       end
+      leader = Game.sendLeaderDire
+      Game.sendLeaderDire = Game.sendLeaderDire + 1
+      if Game.sendLeaderDire > count then Game.sendLeaderDire = 1 end
     end
   end
 
-  local ind = 1
-  for _,unit in pairs(units) do
+  table.sort(units, function(a,b) return a.tangoValue>b.tangoValue end)-- sort units by their tango value
+
+  for _,unit in ipairs(units) do
     if next(spawners) == nil then
       unit:ForceKill(false)
     else
-      local lane = spawners[ind]
-      ind = (ind % count) + 1
+      local theLane = 1
+      for j = (leader), (leader+(count-1)) do
+        if distributedValues[((j-1)%count)+1] == lowestValue then
+          theLane = ((j-1)%count)+1
+          break
+        end
+      end
+      local lane = spawners[theLane]
       FindClearSpaceForUnit(unit, lane.spawnpoint:GetAbsOrigin(), true)
       unit:SetInitialGoalEntity(lane.waypoint)
       unit:SetTeam(DOTA_TEAM_NEUTRALS)
@@ -106,6 +124,12 @@ function GameSpawner:SendIncomingUnits(team)
       unit.lastWypoint = lane.lastWaypoint
       unit.lane = lane
       self.gameRound:AddUnitToBeKilled(unit)
+      distributedValues[theLane] = distributedValues[theLane] + unit.tangoValue
+      tempLowestValue = distributedValues[leader]
+      for j = 1, (count) do
+        if distributedValues[j] < tempLowestValue then tempLowestValue = distributedValues[j] end
+      end
+      lowestValue = tempLowestValue
     end
   end
 end

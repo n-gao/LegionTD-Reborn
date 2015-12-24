@@ -120,6 +120,8 @@ function Game.new()
   self.players = {}
   self.sendRadiant = {}
   self.sendDire = {}
+  self.sendLeaderRadiant = 1 -- we'll rotate who gets the biggest send each wave
+  self.sendLeaderDire = 1 -- we'll rotate who gets the biggest send each wave
   GameRules:GetGameModeEntity():SetExecuteOrderFilter(Dynamic_Wrap(Game, "OrderFilter"), Game)
 
   if Convars:GetBool('developer') then
@@ -662,6 +664,7 @@ function Game:SendUnit(data)
     local team = player:GetTeamNumber()
     local name = Game.GetUnitNameByID(lData.id)
     local unit = CreateUnitByName(name, spawn, true, nil, nil, team)
+    unit.tangoValue = lData.cost
     if team == 2 then
       table.insert(Game.sendRadiant, unit)
     else

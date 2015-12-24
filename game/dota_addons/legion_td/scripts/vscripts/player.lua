@@ -286,7 +286,7 @@ end
 
 
 function Player:CreateTangoTicker()
-  if not Timers.timers[self.timer] then
+  if (not Timers.timers[self.timer]) and (self.lane.mainBuilding) then
     --[[This was gonna be some sweet-ass shit where I make a dummy unit to create a progress bar for tangos
     unfortunately I can't make creeps not attack it without also removing the healthbar
     so I'm leaving the lines commented here for when I make it a particle or something]]
