@@ -228,10 +228,20 @@ end
 
 
 --on leaving lane
-function LeaveLane(trigger)
+function leaveLane(trigger)
   local hero = trigger.activator
   if hero and hero:IsRealHero() then
-    hero.player:ToSpawn()
+    local vHeroPos = hero:GetAbsOrigin()
+    local vCent = trigger.caller:GetCenter()
+    local vMax = vCent + trigger.caller:GetBoundingMaxs()
+    local vMin = vCent + trigger.caller:GetBoundingMins()
+    if hero:GetTeamNumber() == DOTA_TEAM_GOODGUYS then
+      vHeroPos.x = vMin.x - 128
+    else
+      vHeroPos.x = vMax.x + 128
+    end
+    FindClearSpaceForUnit(hero, vHeroPos, false)
+    hero:Stop()
   end
 end
 
