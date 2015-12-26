@@ -7,6 +7,7 @@ EXPORTS.Init = function( self )
 		self.CheckIfHasAggro = CheckIfHasAggro
 		self.Skill = UseSkillNoTarget
 		self.ability = self:GetAbilityByIndex(0)
+		self.NextWayPoint = NextWayPoint
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_dragon.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )

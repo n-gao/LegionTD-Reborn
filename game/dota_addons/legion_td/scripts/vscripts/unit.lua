@@ -33,7 +33,8 @@ function Unit.new(npcclass, position, owner, foodCost, goldCost)
   self.owner = owner
   self.player = owner.player
   self.target = self.player.lane.unitWaypoint
-  self.currentTarget = self.target
+  self.nextTarget = self.target:GetAbsOrigin()
+  self.nextTarget.x = self.spawnposition.x
   table.insert(self.player.units, self)
   self:Spawn()
 end
@@ -50,7 +51,8 @@ function Unit:Spawn()
   end
   self.npc.unit = self
   self.npc.player = self.player
-  self.currentTarget = self.target
+  self.npc.nextTarget = self.target:GetAbsOrigin()
+  self.npc.nextTarget.x = self.spawnposition.x
   self:Lock()
 end
 
@@ -108,9 +110,16 @@ function Unit:Unlock()
     self.npc:SetControllableByPlayer(-1, false)
     self.npc:Stop()
     Timers:CreateTimer(0.5, function ()
-      self.npc:SetInitialGoalEntity(self.currentTarget)
-      self.npc:SetMustReachEachGoalEntity(true)
-      self.npc.nextTarget = self.currentTarget
+      local pos = self.npc.nextTarget
+      pos.x = self.spawnposition.x
+      ExecuteOrderFromTable({
+        UnitIndex = self.npc:entindex(), 
+        OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
+        TargetIndex = 0, --Optional.  Only used when targeting units
+        AbilityIndex = 0, --Optional.  Only used when casting abilities
+        Position = pos, --Optional.  Only used when targeting the ground
+        Queue = 0 --Optional.  Used for queueing up abilities
+      })
       self.ApplyAI(self.npc)
     end)
   end
@@ -157,10 +166,12 @@ function leaveLane(trigger)
     if npc:GetTeamNumber() == DOTA_TEAM_NEUTRALS then
       PopupSadface(npc)
       npc.leftLane = true
-      npc.lane.player:Leaked(self)
+      if npc.lane.player then
+        npc.lane.player:Leaked(self)
+      end
       npc:SetMinimumGoldBounty(1)
       npc:SetMaximumGoldBounty(1)
-      npc.nextTarget = npc.lastWaypoint
+      --npc.nextTarget = npc.lastWaypoint
     end
   end
 end
@@ -180,14 +191,13 @@ end
 
 
 
-function OnStartTouch(trigger)
+function OnStartTouch(trigger) -- trigger at end of lane to teleport to final defense
   local npc = trigger.activator
   if npc.unit and not npc:IsRealHero() then
     if not (npc:GetTeamNumber() == DOTA_TEAM_NEUTRALS) then
-      FindClearSpaceForUnit(npc, Game.lastDefends[""..npc:GetTeamNumber()]:GetAbsOrigin(), true)
+      npc.nextTarget = Game.lastDefends[""..npc:GetTeamNumber()]:GetAbsOrigin()
+      FindClearSpaceForUnit(npc, npc.nextTarget, true)
       npc:Stop()
-      npc:SetInitialGoalEntity(nil)
-      npc.nextTarget = nil
     end
   end
 end

@@ -1,10 +1,11 @@
-STANDARD_THINK_TIME = 0.5
+STANDARD_THINK_TIME = 0.1
 
 EXPORTS = {}
 
 EXPORTS.Init = function( self )
 	self:SetContextThink( "init_think", function()
 		self.aiThink = aiThinkStandard
+		self.NextWayPoint = NextWayPoint
 		self.Unstuck = Unstuck
 		self.CheckIfHasAggro = CheckIfHasAggro
 		self:Unstuck()
@@ -19,9 +20,13 @@ function aiThinkStandard(self)
 	if self:HasModifier("modifier_stunned") or GameRules:IsGamePaused() then
 		return STANDARD_THINK_TIME
 	end
+	if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
+		return self:NextWayPoint()
+	end
 	if self:IsIdle() and not self:CheckIfHasAggro() then
 		return self:Unstuck()
 	end
+
 	return STANDARD_THINK_TIME
 end
 
@@ -34,6 +39,9 @@ function aiThinkStandardBuff(self)
 	end
 	if self.ability:IsCooldownReady() then
 		return self:Skill()
+	end
+	if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
+		return self:NextWayPoint()
 	end
 	if self:IsIdle() and not self:CheckIfHasAggro() then
 		return self:Unstuck()
@@ -50,6 +58,9 @@ function aiThinkStandardSkill(self)
 	end
 	if self:CheckIfHasAggro() and self.ability:IsCooldownReady() then
 		return self:Skill()
+	end
+	if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
+		return self:NextWayPoint()
 	end
 	if self:IsIdle() and not self:CheckIfHasAggro() then
 		return self:Unstuck()
@@ -77,10 +88,41 @@ function UseSkillOnSelf(self)
 	return 1
 end
 
+function NextWayPoint(self)
+	print("lane creep hit waypoint " .. self.wayStep)
+		if self.wayStep < 4 then self.wayStep = self.wayStep + 1 end
+		ExecuteOrderFromTable({
+          UnitIndex = self:entindex(), 
+          OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
+          TargetIndex = 0, --Optional.  Only used when targeting units
+          AbilityIndex = 0, --Optional.  Only used when casting abilities
+          Position = self.waypoints[self.wayStep], --Optional.  Only used when targeting the ground
+          Queue = 0 --Optional.  Used for queueing up abilities
+        })
+        return STANDARD_THINK_TIME
+    end
+
 function Unstuck(self)
-	if self.nextTarget then
+	print ("unsticking!")
+	if self.wayStep then -- is this a wave/send creep?
+		ExecuteOrderFromTable({
+          UnitIndex = self:entindex(), 
+          OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
+          TargetIndex = 0, --Optional.  Only used when targeting units
+          AbilityIndex = 0, --Optional.  Only used when casting abilities
+          Position = self.waypoints[self.wayStep], --Optional.  Only used when targeting the ground
+          Queue = 0 --Optional.  Used for queueing up abilities
+        })
+	elseif self.nextTarget then
 		self:Stop()
-		self:SetInitialGoalEntity(self.nextTarget)
+		ExecuteOrderFromTable({
+	          UnitIndex = self:entindex(), 
+	          OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
+	          TargetIndex = 0, --Optional.  Only used when targeting units
+	          AbilityIndex = 0, --Optional.  Only used when casting abilities
+	          Position = self.nextTarget, --Optional.  Only used when targeting the ground
+	          Queue = 0 --Optional.  Used for queueing up abilities
+	        })
 	end
 	return STANDARD_THINK_TIME
 end

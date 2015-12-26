@@ -4,6 +4,7 @@ EXPORTS.Init = function( self )
 	self:SetContextThink( "init_think", function()
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggro
+		self.NextWayPoint = NextWayPoint
 		self.Unstuck = Unstuck
 		self.Skill = UseSkillOnTarget
 		self.ability = self:GetAbilityByIndex(0)

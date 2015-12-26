@@ -23,20 +23,66 @@ function GameSpawner:ReadConfiguration(name, kv, gameRound)
   self.healthBonus = 0
 end
 
+function round(num, nearest)
+  num = num / nearest
+  num = math.floor(num)
+  num = num * nearest
+  return num, num/nearest
+end
+
 function GameSpawner:Spawn()
   local spawners = Game.lanes
   local count = 1
   --Spawn normal Wave
   for key,value in pairs(spawners) do
     if value.isActive then
+      local polar = 1
+      local spacing = 96
+      if value.spawnpoint:GetAbsOrigin().y < 0 then polar = -1 end
+      local rank1 = value.spawnpoint:GetAbsOrigin()
+      local positions = {}
+      local columns = 5
+      for i = 1, self.unitCount do
+        local offset = (((columns-1) / 2) * spacing)*-1
+        if i > round(self.unitCount, columns) then
+          offset = offset + (((round(self.unitCount, columns)+columns)-self.unitCount)/2)*spacing
+        end
+        local hpos = offset+(((i-1)%columns)*spacing)      
+        local vpos = (math.floor((i-1)/columns))*spacing*polar
+        print ("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
+        table.insert(positions, Vector(hpos, vpos, 0))
+      end
+
+      print ("RANK AND FILE:")
+      for _, v in ipairs(positions) do
+        print(v.x .. ", " .. v.y)
+      end
+
       for i = 1, self.unitCount do
         local creep = CreateUnitByName(self.npcName,
-          value.spawnpoint:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_NEUTRALS)
+          positions[i] + rank1, true, nil, nil, DOTA_TEAM_NEUTRALS)
+        if positions[i].y > 0 then
+          creep:SetAngles(0, 90, 0)
+        else
+          creep:SetAngles(0, 270, 0)
+        end
         creep:Stop()
-        creep:SetInitialGoalEntity(value.waypoint)
-        creep.waypoint = value.waypoint
+        ExecuteOrderFromTable({
+          UnitIndex = creep:entindex(), 
+          OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
+          TargetIndex = 0, --Optional.  Only used when targeting units
+          AbilityIndex = 0, --Optional.  Only used when casting abilities
+          Position = Vector(positions[i].x, 0, 0), --Optional.  Only used when targeting the ground
+          Queue = 1 --Optional.  Used for queueing up abilities
+        })
+        creep:MoveToPositionAggressive(Vector(positions[i].x, 0, 0))
+        creep.wayStep = 2
+        creep.waypoints = {}
+        for j = 1, 4 do
+          table.insert(creep.waypoints, value.waypoints[j] + positions[i])
+        end
+        creep.waypoints[4].y = value.waypoints[4].y -- make final waypoint y aligned with king regardless of formation rank
         creep.nextTarget = value.nextWaypoint
-        creep.lastWaypoint = value.lastWaypoint
         creep.lane = value
         creep:SetMaxHealth(creep:GetMaxHealth() + self.healthBonus)
         creep:SetBaseMaxHealth(creep:GetBaseMaxHealth() + self.healthBonus)
@@ -79,11 +125,11 @@ function GameSpawner:SendIncomingUnits(team)
     units = Game.sendRadiant
     Game.sendRadiant = {}
     for i = 5,8 do
-      if Game.lanes[""..i].isActive then
+      --if Game.lanes[""..i].isActive then
         spawners[count + 1] = Game.lanes[""..i]
         distributedValues[count + 1] = 0
         count = count + 1
-      end
+      --end
     end
     leader = Game.sendLeaderRadiant
     Game.sendLeaderRadiant = Game.sendLeaderRadiant + 1
@@ -117,12 +163,29 @@ function GameSpawner:SendIncomingUnits(team)
         end
       end
       local lane = spawners[theLane]
+
       FindClearSpaceForUnit(unit, lane.spawnpoint:GetAbsOrigin(), true)
-      unit:SetInitialGoalEntity(lane.waypoint)
+      
+      unit.waypoints = {}
+      for j = 1, 4 do
+        table.insert(unit.waypoints, lane.waypoints[j])
+      end
+
+      unit.wayStep = 2
+
+      ExecuteOrderFromTable({
+        UnitIndex = unit:entindex(), 
+        OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
+        TargetIndex = 0, --Optional.  Only used when targeting units
+        AbilityIndex = 0, --Optional.  Only used when casting abilities
+        Position = unit.waypoints[unit.wayStep], --Optional.  Only used when targeting the ground
+        Queue = 0 --Optional.  Used for queueing up abilities
+      })
       unit:SetTeam(DOTA_TEAM_NEUTRALS)
       unit.nextTarget = lane.nextWaypoint
-      unit.lastWypoint = lane.lastWaypoint
-      unit.lane = lane
+      unit.lastWaypoint = lane.lastWaypoint
+      unit.lane = spawners[theLane]
+      self.ApplyAI(unit)
       self.gameRound:AddUnitToBeKilled(unit)
       distributedValues[theLane] = distributedValues[theLane] + unit.tangoValue
       tempLowestValue = distributedValues[leader]

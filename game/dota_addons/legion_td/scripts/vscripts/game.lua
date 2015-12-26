@@ -222,19 +222,22 @@ function Game:ReadLanes(kvSpawns)
     local lspawn = Entities:FindByName(nil, sp.SpawnerName)
     local lwaypoint = Entities:FindByName(nil, sp.Waypoint)
     local lnextWaypoint = Entities:FindByName(nil, sp.NextWaypoint)
+    local lmidWaypoint = Entities:FindByName(nil, sp.MidWaypoint)
     local lheroSpawn = Entities:FindByName(nil, sp.HeroSpawn)
     local lunitWaypoint = Entities:FindByName(nil, sp.UnitWaypoint)
     local lmainBuilding = Entities:FindByName(nil, sp.MainBuilding)
     local lfoodBuilding = Entities:FindByName(nil, sp.FoodBuilding)
-    local llastWaypoint = Entities:FindByName(nil, sp.LastWypoint)
+    local llastWaypoint = Entities:FindByName(nil, sp.LastWaypoint)
     if lspawn and lwaypoint and lheroSpawn and lunitWaypoint and lbox
       and lfoodBuilding and lmainBuilding and lnextWaypoint and llastWaypoint then
       print("Lane "..ind.." found.")
       self.lanes[ind] = {
         spawnpoint = lspawn,
-        waypoint = lwaypoint,
-        nextWaypoint = lnextWaypoint,
-        lastWaypoint = llastWaypoint,
+        waypoint = lwaypoint:GetAbsOrigin(),
+        nextWaypoint = lnextWaypoint:GetAbsOrigin(),
+        midWaypoint = lmidWaypoint:GetAbsOrigin(),
+        lastWaypoint = llastWaypoint:GetAbsOrigin(),
+        waypoints = {lwaypoint:GetAbsOrigin(), lnextWaypoint:GetAbsOrigin(), lmidWaypoint:GetAbsOrigin(), llastWaypoint:GetAbsOrigin(),},
         heroSpawn = lheroSpawn,
         unitWaypoint = lunitWaypoint,
         box = lbox,
