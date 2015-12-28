@@ -10,8 +10,9 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"upgrade1"
+	"Ability1"							"humanbuilder_upgrade_footman"
 	"Ability2"							"sell"
+	"Ability3"							"militia_shield_bash"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -51,8 +52,8 @@
 	//----------------------------------------------------------------
 	"StatusHealth"          "150"
 	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
+	"StatusMana"            "10"
+	"StatusManaRegen"       "10"
 
 	// Vision
 	//----------------------------------------------------------------

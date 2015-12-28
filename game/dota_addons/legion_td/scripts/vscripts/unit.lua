@@ -20,6 +20,13 @@ ai_voidelemental = require('ai/elementalbuilder/ai_voidelemental')
 ai_voidgod = require('ai/elementalbuilder/ai_voidgod')
 ai_watergod = require('ai/elementalbuilder/ai_watergod')
 ai_waterwarrior = require('ai/elementalbuilder/ai_waterwarrior')
+--Humanbuilder AI
+ai_militia = require('ai/humanbuilder/ai_militia')
+ai_footman = require('ai/humanbuilder/ai_footman')
+ai_lieutenant = require('ai/humanbuilder/ai_lieutenant')
+ai_soldier = require('ai/humanbuilder/ai_soldier')
+ai_general = require('ai/humanbuilder/ai_general')
+ai_spearman = require('ai/humanbuilder/ai_spearman')
 
 
 
@@ -73,6 +80,7 @@ function Unit.ApplyAI(unit)
   elseif name == "tower_elementalbuilder_voidgod" then ai_voidgod.Init(unit)
   elseif name == "tower_elementalbuilder_watergod" then ai_watergod.Init(unit)
   elseif name == "tower_elementalbuilder_waterwarrior" then ai_waterwarrior.Init(unit)
+  elseif name == "tower_humanbuilder_militia" then ai_militia.Init(unit)
   else ai_standard.Init(unit)
   end
 end

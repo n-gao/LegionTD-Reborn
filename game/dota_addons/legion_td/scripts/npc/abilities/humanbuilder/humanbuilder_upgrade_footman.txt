@@ -1,11 +1,11 @@
-"humanbuilder_upgrade_icewrackgrandmaster"
+"humanbuilder_upgrade_footman"
 {
   "BaseClass"               "ability_datadriven"
   "AbilityTextureName"      "rattletrap_power_cogs"
   "MaxLevel"                "1"
 
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityGoldCost"				"400"
+	"AbilityGoldCost"				"85"
 	"AbilityCooldown"		    "1.0"
 	"OnSpellStart"
 	{
@@ -20,7 +20,7 @@
     "01"
     {
       "var_type"              "FIELD_INTEGER"
-      "atk_damage_tooltip"    "150.0"
+      "atk_damage_tooltip"    "75.0"
     }
     "02"
     {
@@ -30,17 +30,17 @@
     "03"
     {
       "var_type"              "FIELD_INTEGER"
-      "atk_range_tooltip"     "500"
+      "atk_range_tooltip"     "100"
     }
     "04"
     {
       "var_type"              "FIELD_INTEGER"
-      "health_tooltip"        "100"
+      "health_tooltip"        "190"
     }
     "05"
     {
       "var_type"              "FIELD_INTEGER"
-      "armor_tooltip"         "0"
+      "armor_tooltip"         "3"
     }
     "06"
     {
@@ -50,7 +50,7 @@
     "07"
     {
       "var_type"			"FIELD_INTEGER"
-      "unitID"				"74"
+      "unitID"				"104"
     }
 	}
 }

@@ -1,4 +1,4 @@
-"tower_elementalbuilder_archmage"
+"tower_humanbuilder_archmage"
 {
 	// General
 	//----------------------------------------------------------------
@@ -11,7 +11,9 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"							"sell"
-	"Ability2"							"upgrade1"
+	"Ability2"							"humanbuilder_upgrade_archbishop"
+	"Ability3"							"humanbuilder_upgrade_icewrack_grandmaster"
+	"Ability4"							"humanbuilder_upgrade_soundmaster"
 
 	// Armor
 	//----------------------------------------------------------------

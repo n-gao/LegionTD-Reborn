@@ -1,36 +1,36 @@
-"tower_elementalbuilder_marksmen"
+"tower_humanbuilder_footman"
 {
 	// General
 	//----------------------------------------------------------------
 	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/sniper/sniper.vmdl"
+	"Model"                 "models/heroes/dragon_knight/dragon_knight.vmdl"
 	"ModelScale"            "0.55"
-	"SoundSet"					    "Hero_Sniper"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+	"SoundSet"					    "Hero_DragonKnight"
+	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"upgrade1"
-	"Ability3"							"upgrade2"
+	"Ability1"							"humanbuilder_upgrade_soldier"
+	"Ability2"							"sell"
+	"Ability3"							"footman_shield_bash"
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "1"
+	"ArmorPhysical"         "3"
 	"MagicalResistance"     "0"
 
 	// Attack
 	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "150.0"
-	"AttackDamageMax"       "162.5"
-	"AttackRate"            "1.3"
-	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "600"
-	"AttackRange"           "600"
-	"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
-	"ProjectileSpeed"       "1000"
+	"AttackDamageMin"       "75.0"
+	"AttackDamageMax"       "75.0"
+	"AttackRate"            "1.0"
+	"AttackAnimationPoint"  "2"
+	"AttackAcquisitionRange" "500"
+	"AttackRange"           "100"
+	"ProjectileModel"       ""
+	"ProjectileSpeed"       "0"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -50,7 +50,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "150"
+	"StatusHealth"          "190"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
@@ -67,15 +67,6 @@
 	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
-	"precache"
-	{
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-	}
 	// Creature Data
 	//----------------------------------------------------------------
 	"Creature"
@@ -94,11 +85,12 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "281" }
-      "Wearable2" { "ItemDef" "282" }
-      "Wearable3" { "ItemDef" "283" }
-      "Wearable4" { "ItemDef" "284" }
-      "Wearable5" { "ItemDef" "285" }
+      "Wearable1" { "ItemDef" "4095" }
+      "Wearable2" { "ItemDef" "4114" }
+      "Wearable3" { "ItemDef" "4115" }
+      "Wearable4" { "ItemDef" "4116" }
+      "Wearable5" { "ItemDef" "4117" }
+      "Wearable6" { "ItemDef" "4118" }
     }
 	}
 }

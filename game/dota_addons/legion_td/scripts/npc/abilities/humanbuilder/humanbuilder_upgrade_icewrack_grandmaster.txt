@@ -1,11 +1,11 @@
-"humanbuilder_upgrade_gyrocopterMK2"
+"humanbuilder_upgrade_icewrack_grandmaster"
 {
   "BaseClass"               "ability_datadriven"
   "AbilityTextureName"      "rattletrap_power_cogs"
   "MaxLevel"                "1"
 
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityGoldCost"				"350"
+	"AbilityGoldCost"				"400"
 	"AbilityCooldown"		    "1.0"
 	"OnSpellStart"
 	{
@@ -20,12 +20,12 @@
     "01"
     {
       "var_type"              "FIELD_INTEGER"
-      "atk_damage_tooltip"    "225.0"
+      "atk_damage_tooltip"    "150.0"
     }
     "02"
     {
       "var_type"              "FIELD_FLOAT"
-      "atk_speed_tooltip"     "0.7"
+      "atk_speed_tooltip"     "1.0"
     }
     "03"
     {
@@ -35,12 +35,12 @@
     "04"
     {
       "var_type"              "FIELD_INTEGER"
-      "health_tooltip"        "266"
+      "health_tooltip"        "100"
     }
     "05"
     {
       "var_type"              "FIELD_INTEGER"
-      "armor_tooltip"         "1"
+      "armor_tooltip"         "0"
     }
     "06"
     {
@@ -50,7 +50,7 @@
     "07"
     {
       "var_type"			"FIELD_INTEGER"
-      "unitID"				"77"
+      "unitID"				"111"
     }
 	}
 }

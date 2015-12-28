@@ -1,4 +1,4 @@
-"tower_elementalbuilder_icewrackgrandmaster"
+"tower_humanbuilder_icewrackgrandmaster"
 {
 	// General
 	//----------------------------------------------------------------

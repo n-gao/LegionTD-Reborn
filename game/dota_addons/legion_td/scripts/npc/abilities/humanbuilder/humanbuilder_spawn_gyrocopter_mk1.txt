@@ -1,4 +1,4 @@
-"humanbuilder_spawn_gyrocopterMK1"
+"humanbuilder_spawn_gyrocopter_mk1"
 {
   "BaseClass"                 "ability_datadriven"
   "AbilityTextureName"      "lone_druid_spirit_bear"
@@ -52,7 +52,7 @@
     "07"
     {
       "var_type"			"FIELD_INTEGER"
-      "unitID"				"76"
+      "unitID"				"108"
     }
   }
 }

@@ -1,4 +1,4 @@
-"tower_elementalbuilder_archbishop"
+"tower_humanbuilder_archbishop"
 {
 	// General
 	//----------------------------------------------------------------

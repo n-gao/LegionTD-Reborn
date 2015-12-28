@@ -1,4 +1,4 @@
-"tower_elementalbuilder_general"
+"tower_humanbuilder_general"
 {
 	// General
 	//----------------------------------------------------------------
@@ -10,8 +10,10 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"upgrade1"
+	"Ability3"							"sell"
+	"Ability1"							"humanbuilder_upgrade_blademaster"
+	"Ability2"							"humanbuilder_upgrade_tactician"
+	"Ability4"							"general_shield_bash"
 
 	// Armor
 	//----------------------------------------------------------------

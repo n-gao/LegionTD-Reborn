@@ -1,4 +1,4 @@
-"tower_elementalbuilder_GyrocopterMK1"
+"tower_humanbuilder_futuristic_gyrocopter"
 {
 	// General
 	//----------------------------------------------------------------
@@ -11,8 +11,6 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"							"sell"
-	"Ability2"							"upgrade1"
-	"Ability3"							"upgrade2"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -23,9 +21,9 @@
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "112.5"
-	"AttackDamageMax"       "112.5"
-	"AttackRate"            "0.5"
+	"AttackDamageMin"       "325.0"
+	"AttackDamageMax"       "350.0"
+	"AttackRate"            "1.0"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "500"
@@ -50,7 +48,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "133"
+	"StatusHealth"          "400"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

@@ -1675,7 +1675,7 @@
 	    }
 	  }
 	}
-	"humanbuilder_spawn_militia"
+	"humanbuilder_spawn_archer"
 	{
 	  "BaseClass"                 "ability_datadriven"
 	  "AbilityTextureName"      "lone_druid_spirit_bear"
@@ -1729,11 +1729,11 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"65"
+	      "unitID"				"101"
 	    }
 	  }
 	}
-	"humanbuilder_spawn_gyrocopterMK1"
+	"humanbuilder_spawn_gyrocopter_mk1"
 	{
 	  "BaseClass"                 "ability_datadriven"
 	  "AbilityTextureName"      "lone_druid_spirit_bear"
@@ -1787,11 +1787,11 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"76"
+	      "unitID"				"108"
 	    }
 	  }
 	}
-	"humanbuilder_leutnant"
+	"humanbuilder_spawn_lieutnant"
 	{
 	  "BaseClass"                 "ability_datadriven"
 	  "AbilityTextureName"      "lone_druid_spirit_bear"
@@ -1845,7 +1845,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"79"
+	      "unitID"				"112"
 	    }
 	  }
 	}
@@ -1903,7 +1903,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"60"
+	      "unitID"				"115"
 	    }
 	  }
 	}
@@ -1961,7 +1961,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"70"
+	      "unitID"				"116"
 	    }
 	  }
 	}
@@ -2017,7 +2017,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"73"
+	      "unitID"				"100"
 	    }
 		}
 	}
@@ -2073,7 +2073,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"72"
+	      "unitID"				"102"
 	    }
 		}
 	}
@@ -2129,11 +2129,11 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"82"
+	      "unitID"				"103"
 	    }
 		}
 	}
-	"humanbuilder_upgrade_footmen"
+	"humanbuilder_upgrade_footman"
 	{
 	  "BaseClass"               "ability_datadriven"
 	  "AbilityTextureName"      "rattletrap_power_cogs"
@@ -2185,11 +2185,11 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"61"
+	      "unitID"				"104"
 	    }
 		}
 	}
-	"humanbuilder_upgrade_futuristicgyrocopter"
+	"humanbuilder_upgrade_futuristic_gyrocopter"
 	{
 	  "BaseClass"               "ability_datadriven"
 	  "AbilityTextureName"      "rattletrap_power_cogs"
@@ -2241,7 +2241,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"78"
+	      "unitID"				"105"
 	    }
 		}
 	}
@@ -2297,7 +2297,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"80"
+	      "unitID"				"106"
 	    }
 		}
 	}
@@ -2353,11 +2353,11 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"69"
+	      "unitID"				"107"
 	    }
 		}
 	}
-	"humanbuilder_upgrade_gyrocopterMK2"
+	"humanbuilder_upgrade_gyrocopter_mk2"
 	{
 	  "BaseClass"               "ability_datadriven"
 	  "AbilityTextureName"      "rattletrap_power_cogs"
@@ -2409,7 +2409,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"77"
+	      "unitID"				"109"
 	    }
 		}
 	}
@@ -2465,11 +2465,11 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"66"
+	      "unitID"				"110"
 	    }
 		}
 	}
-	"humanbuilder_upgrade_icewrackgrandmaster"
+	"humanbuilder_upgrade_icewrack_grandmaster"
 	{
 	  "BaseClass"               "ability_datadriven"
 	  "AbilityTextureName"      "rattletrap_power_cogs"
@@ -2521,7 +2521,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"74"
+	      "unitID"				"111"
 	    }
 		}
 	}
@@ -2577,11 +2577,11 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"71"
+	      "unitID"				"113"
 	    }
 		}
 	}
-	"humanbuilder_upgrade_marksmen"
+	"humanbuilder_upgrade_marksman"
 	{
 	  "BaseClass"               "ability_datadriven"
 	  "AbilityTextureName"      "rattletrap_power_cogs"
@@ -2633,7 +2633,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"67"
+	      "unitID"				"114"
 	    }
 		}
 	}
@@ -2689,7 +2689,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"64"
+	      "unitID"				"117"
 	    }
 		}
 	}
@@ -2745,7 +2745,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"68"
+	      "unitID"				"118"
 	    }
 		}
 	}
@@ -2801,7 +2801,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"62"
+	      "unitID"				"119"
 	    }
 		}
 	}
@@ -2857,7 +2857,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"75"
+	      "unitID"				"120"
 	    }
 		}
 	}
@@ -2913,7 +2913,7 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"63"
+	      "unitID"				"121"
 	    }
 		}
 	}
@@ -2969,256 +2969,269 @@
 	    "07"
 	    {
 	      "var_type"			"FIELD_INTEGER"
-	      "unitID"				"83"
+	      "unitID"				"122"
 	    }
 		}
 	}
-	"agressive_boar_nethertoxin"
+	"footman_shield_bash"
 	{
 	    // General
 	    //-------------------------------------------------------------------------------------------------------------
-	    "BaseClass"             "ability_datadriven"
-	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-	    "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
-	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
-	    "AbilityTextureName"            "viper_nethertoxin"
+	    "BaseClass"                     "dragon_knight_dragon_tail"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+	    "AbilityTextureName"            "dragon_knight_dragon_tail"
+	
+	    // Casting
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastRange"              "150"
+	    "AbilityCastPoint"              "0.0"
+	    
+	    // Time     
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCooldown"               "2"
+	
+	    // Damage.
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityDamage"                 "40"
+	
+	    // Cost
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityManaCost"               "0"
 	
 	    // Special
 	    //-------------------------------------------------------------------------------------------------------------
 	    "AbilitySpecial"
-	    {
-	        // Base Hero damage
-	        "01"
 	        {
-	            "var_type"              "FIELD_FLOAT"
-	            "bonus_damage"          "5"
+	            "01"
+	            {
+	                "var_type"              "FIELD_FLOAT"
+	                "stun_duration"         ".4"
+	            }
+	            "02"
+	            {
+	                "var_type"              "FIELD_INTEGER"
+	                "dragon_cast_range"         "400"
+	            }
 	        }
-	        "02"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "non_hero_damage_pct"   "50"
-	        }
-	        "03"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "max_damage_tooltip"    "80"
-	        }
-	        // Hero Damage
-	        "04"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "damage_hero_80"        "10"
-	        }
-	        "05"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "damage_hero_60"        "20"
-	        }
-	        "06"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "damage_hero_40"        "40"
-	        }
-	        "07"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "damage_hero_20"        "80"
-	        }
-	        // Creep Damage
-	        "08"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "damage_creep_base"     "2.5"
-	        }
-	        "09"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "damage_creep_80"       "5"
-	        }
-	        "10"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "damage_creep_60"       "10"
-	        }
-	        "11"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "damage_creep_40"       "20"
-	        }
-	        "12"
-	        {
-	            "var_type"              "FIELD_INTEGER"
-	            "damage_creep_20"       "40"
-	        }
-	    }
+	}
+	"general_shield_bash"
+	{
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "BaseClass"             "dragon_knight_dragon_tail"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+	    "AbilityTextureName"            "dragon_knight_dragon_tail"
 	
-	    "Modifiers"
-	    {
-	        "modifier_nethertoxin_datadriven"
-	        {
-	            "Passive"   "1"
-	            "IsHidden"  "1"
+	    // Casting
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastRange"              "150"
+	    "AbilityCastPoint"              "0.0"
+	    
+	    // Time     
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCooldown"               "2"
 	
-	            "OnAttackStart"
-	            {
-	                // This is done to prevent stacking of different modifiers
-	                // Hero
-	                "RemoveModifier"
-	                {
-	                    "ModifierName"  "modifier_nethertoxin_100_hero_datadriven"
-	                    "Target"        "CASTER"
-	                }
-	                "RemoveModifier"
-	                {
-	                    "ModifierName"  "modifier_nethertoxin_80_hero_datadriven"
-	                    "Target"        "CASTER"
-	                }
-	                "RemoveModifier"
-	                {
-	                    "ModifierName"  "modifier_nethertoxin_60_hero_datadriven"
-	                    "Target"        "CASTER"
-	                }
-	                "RemoveModifier"
-	                {
-	                    "ModifierName"  "modifier_nethertoxin_40_hero_datadriven"
-	                    "Target"        "CASTER"
-	                }
-	                "RemoveModifier"
-	                {
-	                    "ModifierName"  "modifier_nethertoxin_20_hero_datadriven"
-	                    "Target"        "CASTER"
-	                }
+	    // Damage.
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityDamage"                 "80"
 	
-	                // Creep
-	                "RemoveModifier"
-	                {
-	                    "ModifierName"  "modifier_nethertoxin_100_creep_datadriven"
-	                    "Target"        "CASTER"
-	                }
-	                "RemoveModifier"
-	                {
-	                    "ModifierName"  "modifier_nethertoxin_80_creep_datadriven"
-	                    "Target"        "CASTER"
-	                }
-	                "RemoveModifier"
-	                {
-	                    "ModifierName"  "modifier_nethertoxin_60_creep_datadriven"
-	                    "Target"        "CASTER"
-	                }
-	                "RemoveModifier"
-	                {
-	                    "ModifierName"  "modifier_nethertoxin_40_creep_datadriven"
-	                    "Target"        "CASTER"
-	                }
-	                "RemoveModifier"
-	                {
-	                    "ModifierName"  "modifier_nethertoxin_20_creep_datadriven"
-	                    "Target"        "CASTER"
-	                }
+	    // Cost
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityManaCost"               "0 0 0"
 	
-	                // Script to determine which modifier gets applied
-	                "RunScript"
-	                {
-	                    "ScriptFile"    "abilities/naturebuilder/nethertoxin.lua"
-	                    "Function"      "Nethertoxin"
-	                    "Target"        "TARGET"
-	                }
+	    // Special
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilitySpecial"
+	        {
+	            "01"
+	            {
+	                "var_type"              "FIELD_FLOAT"
+	                "stun_duration"         ".8"
+	            }
+	            "02"
+	            {
+	                "var_type"              "FIELD_INTEGER"
+	                "dragon_cast_range"         "400"
 	            }
 	        }
+	}
+	"lieutenant_shield_bash"
+	{
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "BaseClass"                     "dragon_knight_dragon_tail"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+	    "AbilityTextureName"            "dragon_knight_dragon_tail"
 	
-	        "modifier_nethertoxin_100_hero_datadriven"
+	    // Casting
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastRange"              "150"
+	    "AbilityCastPoint"              "0.0"
+	    
+	    // Time     
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCooldown"               "2"
+	
+	    // Damage.
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityDamage"                 "40"
+	
+	    // Cost
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityManaCost"               "0"
+	
+	    // Special
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilitySpecial"
 	        {
-	            "IsHidden"      "1"
-	            "IsPurgable"    "0"
-	            "Properties"
+	            "01"
 	            {
-	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%bonus_damage"
+	                "var_type"              "FIELD_FLOAT"
+	                "stun_duration"         ".4"
+	            }
+	            "02"
+	            {
+	                "var_type"              "FIELD_INTEGER"
+	                "dragon_cast_range"         "400"
 	            }
 	        }
-	        "modifier_nethertoxin_80_hero_datadriven"
+	}
+	"militia_shield_bash"
+	{
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "BaseClass"                     "dragon_knight_dragon_tail"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+	    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+	    "AbilityTextureName"            "dragon_knight_dragon_tail"
+	
+	    // Casting
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastRange"              "150"
+	    "AbilityCastPoint"              "0.0 0.0 0.0"
+	    
+	    // Time     
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCooldown"               "2"
+	
+	    // Damage.
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityDamage"                 "10"
+	
+	    // Cost
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityManaCost"               "1"
+	
+	    // Special
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilitySpecial"
 	        {
-	            "IsHidden"      "1"
-	            "IsPurgable"    "0"
-	            "Properties"
+	            "01"
 	            {
-	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_hero_80"
+	                "var_type"              "FIELD_FLOAT"
+	                "stun_duration"         ".1"
+	            }
+	            "02"
+	            {
+	                "var_type"              "FIELD_INTEGER"
+	                "dragon_cast_range"         "400"
 	            }
 	        }
-	        "modifier_nethertoxin_60_hero_datadriven"
+	}
+	"soldier_shield_bash"
+	{
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "BaseClass"             "dragon_knight_dragon_tail"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+	    "AbilityTextureName"            "dragon_knight_dragon_tail"
+	
+	    // Casting
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastRange"              "150"
+	    "AbilityCastPoint"              "0.0"
+	    
+	    // Time     
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCooldown"               "2"
+	
+	    // Damage.
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityDamage"                 "80"
+	
+	    // Cost
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityManaCost"               "0 0 0"
+	
+	    // Special
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilitySpecial"
 	        {
-	            "IsHidden"      "1"
-	            "IsPurgable"    "0"
-	            "Properties"
+	            "01"
 	            {
-	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_hero_60"
+	                "var_type"              "FIELD_FLOAT"
+	                "stun_duration"         ".8"
+	            }
+	            "02"
+	            {
+	                "var_type"              "FIELD_INTEGER"
+	                "dragon_cast_range"         "400"
 	            }
 	        }
-	        "modifier_nethertoxin_40_hero_datadriven"
+	}
+	"spearman_shield_bash"
+	{
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "BaseClass"             "dragon_knight_dragon_tail"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+	    "AbilityTextureName"            "dragon_knight_dragon_tail"
+	
+	    // Casting
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastRange"              "150"
+	    "AbilityCastPoint"              "0.0"
+	    
+	    // Time     
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCooldown"               "2"
+	
+	    // Damage.
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityDamage"                 "120"
+	
+	    // Cost
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityManaCost"               "0 0 0"
+	
+	    // Special
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilitySpecial"
 	        {
-	            "IsHidden"      "1"
-	            "IsPurgable"    "0"
-	            "Properties"
+	            "01"
 	            {
-	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_hero_40"
+	                "var_type"              "FIELD_FLOAT"
+	                "stun_duration"         "1.2"
+	            }
+	            "02"
+	            {
+	                "var_type"              "FIELD_INTEGER"
+	                "dragon_cast_range"         "400"
 	            }
 	        }
-	        "modifier_nethertoxin_20_hero_datadriven"
-	        {
-	            "IsHidden"      "1"
-	            "IsPurgable"    "0"
-	            "Properties"
-	            {
-	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_hero_20"
-	            }
-	        }
-	        // The upper rank of hero damage can be applied instead of a creep modifier (eg 40% creep damage is the same as 60% hero)
-	        // I went with this way because it can get messy otherwise
-	        "modifier_nethertoxin_100_creep_datadriven"
-	        {
-	            "IsHidden"      "1"
-	            "IsPurgable"    "0"
-	            "Properties"
-	            {
-	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_creep_base"
-	            }
-	        }
-	        "modifier_nethertoxin_80_creep_datadriven"
-	        {
-	            "IsHidden"      "1"
-	            "IsPurgable"    "0"
-	            "Properties"
-	            {
-	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_creep_80"
-	            }
-	        }
-	        "modifier_nethertoxin_60_creep_datadriven"
-	        {
-	            "IsHidden"      "1"
-	            "IsPurgable"    "0"
-	            "Properties"
-	            {
-	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_creep_60"
-	            }
-	        }
-	        "modifier_nethertoxin_40_creep_datadriven"
-	        {
-	            "IsHidden"      "1"
-	            "IsPurgable"    "0"
-	            "Properties"
-	            {
-	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_creep_40"
-	            }
-	        }
-	        "modifier_nethertoxin_20_creep_datadriven"
-	        {
-	            "IsHidden"      "1"
-	            "IsPurgable"    "0"
-	            "Properties"
-	            {
-	                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"  "%damage_creep_20"
-	            }
-	        }
-	    }
 	}
 	"send_incomeunit_ancient_golem"
 	{

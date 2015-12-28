@@ -1,4 +1,4 @@
-"tower_elementalbuilder_gunner"
+"tower_humanbuilder_gunner"
 {
 	// General
 	//----------------------------------------------------------------
@@ -11,8 +11,6 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"							"sell"
-	"Ability2"							"upgrade1"
-	"Ability3"							"upgrade2"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -25,7 +23,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "112.5"
 	"AttackDamageMax"       "125.0"
-	"AttackRate"            "1.6"
+	"AttackRate"            ".6"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "350"

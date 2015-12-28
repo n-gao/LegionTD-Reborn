@@ -1,4 +1,4 @@
-"tower_elementalbuilder_tactician"
+"tower_humanbuilder_tactician"
 {
 	// General
 	//----------------------------------------------------------------
@@ -11,7 +11,6 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"							"sell"
-	"Ability2"							"upgrade1"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -24,7 +23,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "162.5"
 	"AttackDamageMax"       "187.5"
-	"AttackRate"            "0.8"
+	"AttackRate"            "1.25"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "500"

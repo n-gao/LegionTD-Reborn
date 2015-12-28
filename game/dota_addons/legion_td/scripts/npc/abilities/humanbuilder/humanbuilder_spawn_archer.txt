@@ -1,4 +1,4 @@
-"humanbuilder_spawn_militia"
+"humanbuilder_spawn_archer"
 {
   "BaseClass"                 "ability_datadriven"
   "AbilityTextureName"      "lone_druid_spirit_bear"
@@ -52,7 +52,7 @@
     "07"
     {
       "var_type"			"FIELD_INTEGER"
-      "unitID"				"65"
+      "unitID"				"101"
     }
   }
 }

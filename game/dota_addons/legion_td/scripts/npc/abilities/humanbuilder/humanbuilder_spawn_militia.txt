@@ -52,7 +52,7 @@
     "07"
     {
       "var_type"			"FIELD_INTEGER"
-      "unitID"				"60"
+      "unitID"				"115"
     }
   }
 }

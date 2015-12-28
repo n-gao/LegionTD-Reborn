@@ -1,4 +1,4 @@
-"tower_elementalbuilder_GyrocopterMK2"
+"tower_humanbuilder_gyrocopter_mk2"
 {
 	// General
 	//----------------------------------------------------------------
@@ -11,8 +11,7 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"							"sell"
-	"Ability2"							"upgrade1"
-	"Ability3"							"upgrade2"
+	"Ability2"							"humanbuilder_upgrade_futuristic_gyrocopter"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -25,7 +24,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "225.0"
 	"AttackDamageMax"       "225.0"
-	"AttackRate"            "0.7"
+	"AttackRate"            "1.4"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "500"

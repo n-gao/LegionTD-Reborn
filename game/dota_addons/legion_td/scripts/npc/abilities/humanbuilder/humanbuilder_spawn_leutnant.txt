@@ -1,4 +1,4 @@
-"humanbuilder_leutnant"
+"humanbuilder_spawn_lieutnant"
 {
   "BaseClass"                 "ability_datadriven"
   "AbilityTextureName"      "lone_druid_spirit_bear"
@@ -52,7 +52,7 @@
     "07"
     {
       "var_type"			"FIELD_INTEGER"
-      "unitID"				"79"
+      "unitID"				"112"
     }
   }
 }

@@ -107,7 +107,7 @@
 	"npc_dota_hero_abaddon" "0"
 	"npc_dota_hero_earth_spirit" "0"
 	"npc_dota_hero_ember_spirit" "0"
-	"npc_dota_hero_legion_commander" "0"
+	"npc_dota_hero_legion_commander" "1"
 	"npc_dota_hero_phoenix" "0"
 	"npc_dota_hero_terrorblade" "0"
 }

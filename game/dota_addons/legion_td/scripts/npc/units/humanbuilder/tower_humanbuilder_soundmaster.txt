@@ -1,4 +1,4 @@
-"tower_elementalbuilder_soundmaster"
+"tower_humanbuilder_soundmaster"
 {
 	// General
 	//----------------------------------------------------------------
@@ -24,7 +24,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "68.75"
 	"AttackDamageMax"       "68.75"
-	"AttackRate"            "0.3"
+	"AttackRate"            "3"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "500"

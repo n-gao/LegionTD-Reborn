@@ -1,11 +1,11 @@
-"humanbuilder_upgrade_footmen"
+"humanbuilder_upgrade_futuristic_gyrocopter"
 {
   "BaseClass"               "ability_datadriven"
   "AbilityTextureName"      "rattletrap_power_cogs"
   "MaxLevel"                "1"
 
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityGoldCost"				"85"
+	"AbilityGoldCost"				"550"
 	"AbilityCooldown"		    "1.0"
 	"OnSpellStart"
 	{
@@ -20,27 +20,27 @@
     "01"
     {
       "var_type"              "FIELD_INTEGER"
-      "atk_damage_tooltip"    "75.0"
+      "atk_damage_tooltip"    "337.5"
     }
     "02"
     {
       "var_type"              "FIELD_FLOAT"
-      "atk_speed_tooltip"     "1.0"
+      "atk_speed_tooltip"     "0.7"
     }
     "03"
     {
       "var_type"              "FIELD_INTEGER"
-      "atk_range_tooltip"     "100"
+      "atk_range_tooltip"     "500"
     }
     "04"
     {
       "var_type"              "FIELD_INTEGER"
-      "health_tooltip"        "190"
+      "health_tooltip"        "400"
     }
     "05"
     {
       "var_type"              "FIELD_INTEGER"
-      "armor_tooltip"         "3"
+      "armor_tooltip"         "1"
     }
     "06"
     {
@@ -50,7 +50,7 @@
     "07"
     {
       "var_type"			"FIELD_INTEGER"
-      "unitID"				"61"
+      "unitID"				"105"
     }
 	}
 }

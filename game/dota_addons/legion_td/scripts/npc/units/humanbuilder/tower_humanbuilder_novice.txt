@@ -1,4 +1,4 @@
-"tower_elementalbuilder_novice"
+"tower_humanbuilder_novice"
 {
 	// General
 	//----------------------------------------------------------------
@@ -11,7 +11,7 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"							"sell"
-	"Ability2"							"upgrade1"
+	"Ability2"							"humanbuilder_upgrade_mage"
 
 	// Armor
 	//----------------------------------------------------------------
