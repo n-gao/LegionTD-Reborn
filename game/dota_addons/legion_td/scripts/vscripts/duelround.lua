@@ -76,7 +76,7 @@ function DuelRound:PlaceUnits()
         team = self.remainingUnitsDire
       end
       for _,unit in pairs(pl.units) do
-        unit.currentTarget = target
+        unit.nextTarget = target:GetAbsOrigin()
         FindClearSpaceForUnit(unit.npc, spawnPoint:GetAbsOrigin(), true)
         table.insert(team, unit.npc)
       end
