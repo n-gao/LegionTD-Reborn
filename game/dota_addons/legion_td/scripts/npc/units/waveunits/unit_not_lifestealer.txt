@@ -10,7 +10,7 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
 
-	"Ability1"							"life_stealer_feast"
+	"Ability1"							"skeleton_king_vampiric_aura"
 
 	"ArmorPhysical"         "6"
 	"MagicalResistance"     "10"
@@ -19,7 +19,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "15.0"
 	"AttackDamageMax"       "18.75"
-	"AttackRate"            "1.2"
+	"AttackRate"            "0.8"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "90"
@@ -37,7 +37,7 @@
 	"MovementSpeed"         "300"
 	"MovementTurnRate"      "0.6"
 
-	"StatusHealth"          "210"
+	"StatusHealth"          "280"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
