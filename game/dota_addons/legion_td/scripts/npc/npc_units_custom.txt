@@ -2826,15 +2826,6 @@
 		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
-		"precache"
-		{
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-		}
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"
@@ -3031,15 +3022,6 @@
 		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
-		"precache"
-		{
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-		}
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"
@@ -3096,7 +3078,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "212.5"
 		"AttackDamageMax"       "225.0"
-		"AttackRate"            "2"
+		"AttackRate"            "1.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "100"
@@ -3290,7 +3272,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "325.0"
 		"AttackDamageMax"       "350.0"
-		"AttackRate"            "1.0"
+		"AttackRate"            ".8"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "550"
 		"AttackRange"           "500"
@@ -3433,15 +3415,6 @@
 		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
-		"precache"
-		{
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-		}
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"
@@ -3494,7 +3467,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "112.5"
 		"AttackDamageMax"       "125.0"
-		"AttackRate"            ".6"
+		"AttackRate"            "1.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "350"
@@ -3536,15 +3509,6 @@
 		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
-		"precache"
-		{
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-		}
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"
@@ -3885,10 +3849,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "0.0"
-		"AttackDamageMax"       "0.0"
-	//	"AttackDamageMin"       "150.0"
-	//	"AttackDamageMax"       "150.0"
+		"AttackDamageMin"       "150.0"
+		"AttackDamageMax"       "150.0"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "600"
@@ -3931,15 +3893,6 @@
 		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
-		"precache"
-		{
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-		}
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"
@@ -4134,15 +4087,6 @@
 		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
-		"precache"
-		{
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-		}
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"
@@ -4198,7 +4142,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "150.0"
 		"AttackDamageMax"       "162.5"
-		"AttackRate"            ".77"
+		"AttackRate"            ".8"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "650"
 		"AttackRange"           "600"
@@ -4240,15 +4184,6 @@
 		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
-		"precache"
-		{
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-		}
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"
@@ -4539,15 +4474,6 @@
 		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
-		"precache"
-		{
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-		}
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"
@@ -4643,15 +4569,6 @@
 		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
-		"precache"
-		{
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-		}
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"
@@ -4710,7 +4627,7 @@
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
-		"AttackRange"           "90"
+		"AttackRange"           "100"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
@@ -4804,9 +4721,9 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "68.75"
 		"AttackDamageMax"       "68.75"
-		"AttackRate"            "3"
+		"AttackRate"            "1.7"
 		"AttackAnimationPoint"  "0.5"
-		"AttackAcquisitionRange" "500"
+		"AttackAcquisitionRange" "550"
 		"AttackRange"           "500"
 		"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"       "420"
@@ -5045,15 +4962,6 @@
 		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
-		"precache"
-		{
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-			"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-		}
 		// Creature Data
 		//----------------------------------------------------------------
 		"Creature"

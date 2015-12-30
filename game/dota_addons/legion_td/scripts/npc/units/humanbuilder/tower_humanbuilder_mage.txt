@@ -69,15 +69,6 @@
 	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
-	"precache"
-	{
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-	}
 	// Creature Data
 	//----------------------------------------------------------------
 	"Creature"

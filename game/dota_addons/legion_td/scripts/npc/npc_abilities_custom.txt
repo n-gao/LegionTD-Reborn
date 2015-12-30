@@ -1753,7 +1753,7 @@
 	    "02"
 	    {
 	      "var_type"              "FIELD_FLOAT"
-	      "atk_speed_tooltip"     "1.0"
+	      "atk_speed_tooltip"     ".9"
 	    }
 	    "03"
 	    {
@@ -1811,7 +1811,7 @@
 	    "02"
 	    {
 	      "var_type"              "FIELD_FLOAT"
-	      "atk_speed_tooltip"     "0.5"
+	      "atk_speed_tooltip"     "2.0"
 	    }
 	    "03"
 	    {
@@ -2265,7 +2265,7 @@
 	    "02"
 	    {
 	      "var_type"              "FIELD_FLOAT"
-	      "atk_speed_tooltip"     "0.7"
+	      "atk_speed_tooltip"     ".8"
 	    }
 	    "03"
 	    {
@@ -2433,7 +2433,7 @@
 	    "02"
 	    {
 	      "var_type"              "FIELD_FLOAT"
-	      "atk_speed_tooltip"     "0.7"
+	      "atk_speed_tooltip"     "1.4"
 	    }
 	    "03"
 	    {
@@ -2489,7 +2489,7 @@
 	    "02"
 	    {
 	      "var_type"              "FIELD_FLOAT"
-	      "atk_speed_tooltip"     "1.0"
+	      "atk_speed_tooltip"     "1.25"
 	    }
 	    "03"
 	    {
@@ -2550,7 +2550,7 @@
 	    "03"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_range_tooltip"     "500"
+	      "atk_range_tooltip"     "550"
 	    }
 	    "04"
 	    {
@@ -2657,7 +2657,7 @@
 	    "02"
 	    {
 	      "var_type"              "FIELD_FLOAT"
-	      "atk_speed_tooltip"     "1.0"
+	      "atk_speed_tooltip"     ".8"
 	    }
 	    "03"
 	    {
@@ -2769,7 +2769,7 @@
 	    "02"
 	    {
 	      "var_type"              "FIELD_FLOAT"
-	      "atk_speed_tooltip"     "0.6"
+	      "atk_speed_tooltip"     "1.6"
 	    }
 	    "03"
 	    {
@@ -2937,7 +2937,7 @@
 	    "02"
 	    {
 	      "var_type"              "FIELD_FLOAT"
-	      "atk_speed_tooltip"     "1.0"
+	      "atk_speed_tooltip"     "1.6"
 	    }
 	    "03"
 	    {
@@ -2993,7 +2993,7 @@
 	    "02"
 	    {
 	      "var_type"              "FIELD_FLOAT"
-	      "atk_speed_tooltip"     "1.0"
+	      "atk_speed_tooltip"     "1.25"
 	    }
 	    "03"
 	    {
@@ -3064,7 +3064,7 @@
 				"Aura"          	"modifier_healing_aura"
 				"Aura_Radius"   	"%aura_radius"
 				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP" //mechanic?
+				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC" //mechanic?
 				//"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_NONE" //immune?
 			}
 	
@@ -4532,7 +4532,6 @@
 				"Passive"   			"1"
 				"IsPurgable"			"0"
 				"IsHidden"				"0"
-				"OverrideAnimation"		"ACT_DOTA_IDLE"
 				
 				"Aura"					"modifier_freezing_field_debuff_datadriven"
 				"Aura_Radius"			"%radius"
