@@ -9,9 +9,11 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/humanbuilder/ai_archbishop.lua"
 
-	"Ability1"							"sell"
-	"Ability2"							"upgrade1"
+	"Ability1"				"sell"
+	"Ability2"				"archbishop_shadow_wave"
+	"Ability3"				"archbishop_healing_aura"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -29,7 +31,7 @@
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "500"
 	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
+	"ProjectileSpeed"       "400"
 
 	// Bounty
 	//----------------------------------------------------------------

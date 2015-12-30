@@ -13,6 +13,7 @@
 	"Ability1"							"humanbuilder_upgrade_soldier"
 	"Ability2"							"sell"
 	"Ability3"							"footman_shield_bash"
+	"Ability4"							"footman_block"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -26,7 +27,7 @@
 	"AttackDamageMin"       "75.0"
 	"AttackDamageMax"       "75.0"
 	"AttackRate"            "1.0"
-	"AttackAnimationPoint"  "2"
+	"AttackAnimationPoint"  ".5"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "100"
 	"ProjectileModel"       ""
@@ -52,8 +53,8 @@
 	//----------------------------------------------------------------
 	"StatusHealth"          "190"
 	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
+	"StatusMana"            "10"
+	"StatusManaRegen"       "10"
 
 	// Vision
 	//----------------------------------------------------------------

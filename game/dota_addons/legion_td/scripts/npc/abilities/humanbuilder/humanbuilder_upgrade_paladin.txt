@@ -1,4 +1,4 @@
-"humanbuilder_upgrade_footmen"
+"humanbuilder_upgrade_paladin"
 {
   "BaseClass"               "ability_datadriven"
   "AbilityTextureName"      "rattletrap_power_cogs"

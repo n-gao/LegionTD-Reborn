@@ -10,10 +10,13 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability3"							"sell"
+	"AbilityLayout"				"6"
 	"Ability1"							"humanbuilder_upgrade_blademaster"
 	"Ability2"							"humanbuilder_upgrade_tactician"
+	"Ability3"							"sell"
 	"Ability4"							"general_shield_bash"
+	"Ability5"							"general_block"
+	"Ability6"							"human_vladmir"
 
 	// Armor
 	//----------------------------------------------------------------

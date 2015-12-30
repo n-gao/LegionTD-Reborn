@@ -1,7 +1,7 @@
 "humanbuilder_spawn_gyrocopter_mk1"
 {
   "BaseClass"                 "ability_datadriven"
-  "AbilityTextureName"      "lone_druid_spirit_bear"
+  "AbilityTextureName"      "spawn_gyrocopter_mk1"
   "MaxLevel"             "1"
 
   "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"

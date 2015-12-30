@@ -10,7 +10,8 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
+	"Ability1"				"sell"
+	"Ability2"				"gunner_headshot"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -28,7 +29,7 @@
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "350"
 	"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
-	"ProjectileSpeed"       "1000"
+	"ProjectileSpeed"       "3000"
 
 	// Bounty
 	//----------------------------------------------------------------

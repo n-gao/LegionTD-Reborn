@@ -118,6 +118,14 @@ RequiredUnits = {
 	"tower_elementalbuilder_waterelemental",
 	"tower_elementalbuilder_watergod",
 	"tower_elementalbuilder_waterwarrior",
+
+	"tower_humanbuilder_hunter",
+	"tower_humanbuilder_blademaster",
+	"tower_humanbuilder_tactician",
+	"tower_humanbuilder_mage",
+	"tower_humanbuilder_icewrack_grandmaster",
+	"tower_humanbuilder_archbishop",
+	"tower_humanbuilder_soundmaster"
 }
 
 function Precache( context )

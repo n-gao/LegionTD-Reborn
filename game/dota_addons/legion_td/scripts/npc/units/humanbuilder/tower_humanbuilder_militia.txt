@@ -13,6 +13,7 @@
 	"Ability1"							"humanbuilder_upgrade_footman"
 	"Ability2"							"sell"
 	"Ability3"							"militia_shield_bash"
+	"Ability4"							"militia_block"
 
 	// Armor
 	//----------------------------------------------------------------

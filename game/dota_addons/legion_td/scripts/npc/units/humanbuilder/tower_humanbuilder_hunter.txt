@@ -10,8 +10,9 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"humanbuilder_upgrade_marksman"
+	"Ability1"				"sell"
+	"Ability2"				"humanbuilder_upgrade_marksman"
+	"Ability3"				"hunter_headshot"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -26,10 +27,10 @@
 	"AttackDamageMax"       "112.5"
 	"AttackRate"            "1.25"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
-	"AttackRange"           "100"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
+	"AttackAcquisitionRange" "600"
+	"AttackRange"           "550"
+	"ProjectileModel"       "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
+	"ProjectileSpeed"       "950"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -66,15 +67,6 @@
 	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
-	"precache"
-	{
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-	}
 	// Creature Data
 	//----------------------------------------------------------------
 	"Creature"

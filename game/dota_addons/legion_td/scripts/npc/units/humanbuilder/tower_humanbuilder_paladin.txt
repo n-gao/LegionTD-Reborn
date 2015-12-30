@@ -9,8 +9,11 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_omni_knight.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/humanbuilder/ai_paladin.lua"
 
-	"Ability1"							"sell"
+
+	"Ability1"				"sell"
+	"Ability2"				"paladin_purification"
 
 	// Armor
 	//----------------------------------------------------------------

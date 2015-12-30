@@ -10,8 +10,7 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"upgrade1"
+	"Ability1"				"sell"
 
 	// Armor
 	//----------------------------------------------------------------

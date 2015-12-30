@@ -14,6 +14,7 @@
 	"Ability2"							"humanbuilder_upgrade_paladin"
 	"Ability3"							"sell"
 	"Ability4"							"soldier_shield_bash"
+	"Ability5"							"soldier_block"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -53,8 +54,8 @@
 	//----------------------------------------------------------------
 	"StatusHealth"          "290"
 	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
+	"StatusMana"            "10"
+	"StatusManaRegen"       "10"
 
 	// Vision
 	//----------------------------------------------------------------

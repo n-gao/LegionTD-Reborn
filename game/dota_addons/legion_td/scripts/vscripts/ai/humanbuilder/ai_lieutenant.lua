@@ -2,6 +2,7 @@ EXPORTS = {}
 
 EXPORTS.Init = function( self )
 	self:SetContextThink( "init_think", function()
+		print ("ai_lieutenant.lua found")
 		self:GetAbilityByIndex(2):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggro

@@ -81,6 +81,19 @@ function Unit.ApplyAI(unit)
   elseif name == "tower_elementalbuilder_watergod" then ai_watergod.Init(unit)
   elseif name == "tower_elementalbuilder_waterwarrior" then ai_waterwarrior.Init(unit)
   elseif name == "tower_humanbuilder_militia" then ai_militia.Init(unit)
+  elseif name == "tower_humanbuilder_footman" then ai_footman.Init(unit)
+  elseif name == "tower_humanbuilder_lieutenant" then ai_lieutenant.Init(unit)
+  elseif name == "tower_humanbuilder_soldier" then ai_soldier.Init(unit)
+  elseif name == "tower_humanbuilder_general" then ai_general.Init(unit)
+  elseif name == "tower_humanbuilder_spearman" then ai_spearman.Init(unit)
+  elseif name == "tower_humanbuilder_paladin" then return
+  elseif name == "tower_humanbuilder_blademaster" then return
+  elseif name == "tower_humanbuilder_tactician" then return
+  elseif name == "tower_humanbuilder_novice" then return
+  elseif name == "tower_humanbuilder_mage" then return
+  elseif name == "tower_humanbuilder_archmage" then return
+  elseif name == "tower_humanbuilder_archbishop" then return
+  elseif name == "tower_humanbuilder_soundmaster" then return
   else ai_standard.Init(unit)
   end
 end

@@ -9,11 +9,16 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/humanbuilder/ai_archmage.lua"
 
-	"Ability1"							"sell"
-	"Ability2"							"humanbuilder_upgrade_archbishop"
-	"Ability3"							"humanbuilder_upgrade_icewrack_grandmaster"
-	"Ability4"							"humanbuilder_upgrade_soundmaster"
+
+	"AbilityLayout"			"6"
+	"Ability1"				"sell"
+	"Ability2"				"humanbuilder_upgrade_archbishop"
+	"Ability3"				"humanbuilder_upgrade_icewrack_grandmaster"
+	"Ability4"				"humanbuilder_upgrade_soundmaster"
+	"Ability5"				"archmage_chain_fade"
+	"Ability6"				"archmage_crystal_nova"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -28,10 +33,10 @@
 	"AttackDamageMax"       "100.0"
 	"AttackRate"            "1.0"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "550"
 	"AttackRange"           "500"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
+	"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
+	"ProjectileSpeed"       "400"
 
 	// Bounty
 	//----------------------------------------------------------------

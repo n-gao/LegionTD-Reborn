@@ -5,13 +5,15 @@
 	"BaseClass"             "npc_dota_creature"
 	"Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
 	"ModelScale"            "0.55"
-	"SoundSet"					    "Hero_CrystalMaiden"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
+	"SoundSet"				"Hero_CrystalMaiden"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/humanbuilder/ai_novice.lua"
 
-	"Ability1"							"sell"
-	"Ability2"							"humanbuilder_upgrade_mage"
+	"Ability1"				"sell"
+	"Ability2"				"humanbuilder_upgrade_mage"
+	"Ability3"				"novice_chain_fade"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -26,10 +28,10 @@
 	"AttackDamageMax"       "43.75"
 	"AttackRate"            "1.0"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "450"
 	"AttackRange"           "400"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
+	"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
+	"ProjectileSpeed"       "400"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -66,15 +68,6 @@
 	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
-	"precache"
-	{
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-	}
 	// Creature Data
 	//----------------------------------------------------------------
 	"Creature"

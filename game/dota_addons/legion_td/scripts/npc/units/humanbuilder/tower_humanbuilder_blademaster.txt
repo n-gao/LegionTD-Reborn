@@ -3,14 +3,18 @@
 	// General
 	//----------------------------------------------------------------
 	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/legion_commander/legion_commander.vmdl"
+	"Model"                 "models/heroes/juggernaut/juggernaut.vmdl"
 	"ModelScale"            "0.6"
-	"SoundSet"					    "Hero_LegionCommander"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+	"SoundSet"				"Hero_Juggernaut"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/humanbuilder/ai_blademaster.lua"
 
-	"Ability1"							"sell"
+	"Ability1"				"sell"
+	"Ability2"				"blademaster_blade_fury"
+	"Ability3"				"blademaster_blade_dance"
+	"Ability4"				"human_vladmir"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -50,7 +54,7 @@
 	//----------------------------------------------------------------
 	"StatusHealth"          "950"
 	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
+	"StatusMana"            "1"
 	"StatusManaRegen"       "0"
 
 	// Vision
@@ -65,15 +69,6 @@
 	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
-	"precache"
-	{
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-	}
 	// Creature Data
 	//----------------------------------------------------------------
 	"Creature"
@@ -92,11 +87,11 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "431" }
-      "Wearable2" { "ItemDef" "432" }
-      "Wearable3" { "ItemDef" "433" }
-      "Wearable4" { "ItemDef" "434" }
-      "Wearable5" { "ItemDef" "435" }
+      "Wearable1" { "ItemDef" "6" } // "Juggernaut's Default Mask"
+      "Wearable2" { "ItemDef" "7" } // "Juggernaut's Weapon"
+      "Wearable3" { "ItemDef" "8" } // "Juggernaut's Cape"
+      "Wearable4" { "ItemDef" "9" } // "Juggernaut's Bracers"
+      "Wearable5" { "ItemDef" "62" } // "Juggernaut's Default Legs"
     }
 	}
 }

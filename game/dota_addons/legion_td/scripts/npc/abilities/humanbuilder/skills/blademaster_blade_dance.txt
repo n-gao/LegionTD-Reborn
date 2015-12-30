@@ -1,0 +1,96 @@
+"blademaster_critical_strike"
+{
+    "BaseClass"                     "ability_datadriven"
+    "AbilityTextureName"            "blademaster_critical_strike"
+    "MaxLevel"                      "4"
+
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "precache"
+    {
+        "particle"  "particles/units/heroes/hero_juggernaut/jugg_attack_blur.vpcf"
+        "particle"  "particles/units/heroes/hero_juggernaut/jugg_crit_blur_impact.vpcf"
+        "soundfile" "soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
+    }
+    
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"                  "FIELD_INTEGER"
+            "crit_bonus"                "200"
+        }
+        "02"
+        {
+            "var_type"                  "FIELD_INTEGER"
+            "crit_chance"               "20"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_critical_strike"
+        {
+            "Passive"   "1"
+            "IsHidden"  "1"
+            "OnAttackStart"
+            {
+                "RemoveModifier"
+                {
+                    "ModifierName"  "modifier_critical_strike_crit"
+                    "Target"        "CASTER"
+                }
+
+                "Random"
+                {
+                    "Chance" "%crit_chance"
+                    "OnSuccess"
+                    {
+                        "FireSound"
+                        {
+                            "EffectName"    "Hero_SkeletonKing.CriticalStrike"
+                            "Target"        "CASTER"
+                        }
+
+                        "FireEffect"
+                        {
+                            "EffectName"        "particles/units/heroes/hero_juggernaut/jugg_attack_blur.vpcf"
+                            "EffectAttachType"  "attach_sword"
+                            "Target"            "CASTER"
+                        }
+
+                        "ApplyModifier"
+                        {
+                            "ModifierName"  "modifier_critical_strike_crit"
+                            "Target"        "CASTER"    
+                        }        
+                    }
+                }
+            }
+        }
+
+        "modifier_critical_strike_crit"
+        {
+            "IsHidden"  "1"
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE" "%crit_bonus"
+            }
+
+            "OnAttackLanded"
+            {
+                "FireEffect"
+                {
+                    "EffectName"        "particles/units/heroes/hero_juggernaut/jugg_crit_blur_impact.vpcf"
+                    "EffectAttachType"  "attach_hitloc"
+                    "Target"            "TARGET"
+                }
+                "RemoveModifier"
+                {
+                    "ModifierName"      "modifier_critical_strike_crit"
+                    "Target"            "CASTER"    
+                }
+            }
+        }
+    }
+}

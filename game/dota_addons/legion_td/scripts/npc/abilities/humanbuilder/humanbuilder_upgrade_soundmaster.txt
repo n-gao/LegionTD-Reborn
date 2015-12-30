@@ -1,4 +1,4 @@
-"humanbuilder_upgrade_icewrackgrandmaster"
+"humanbuilder_upgrade_soundmaster"
 {
   "BaseClass"               "ability_datadriven"
   "AbilityTextureName"      "rattletrap_power_cogs"

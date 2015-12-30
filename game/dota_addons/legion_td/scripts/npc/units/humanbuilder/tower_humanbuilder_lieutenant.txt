@@ -13,6 +13,7 @@
 	"Ability1"							"humanbuilder_upgrade_general"
 	"Ability2"							"sell"
 	"Ability3"							"lieutenant_shield_bash"
+	"Ability4"							"lieutenant_block"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -52,7 +53,7 @@
 	//----------------------------------------------------------------
 	"StatusHealth"          "300"
 	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
+	"StatusMana"            "1"
 	"StatusManaRegen"       "0"
 
 	// Vision

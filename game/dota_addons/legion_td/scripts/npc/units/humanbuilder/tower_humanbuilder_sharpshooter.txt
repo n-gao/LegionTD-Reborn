@@ -3,14 +3,15 @@
 	// General
 	//----------------------------------------------------------------
 	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/sniper/sniper.vmdl"
+	"Model"                 "models/heroes/windrunner/windrunner.vmdl"
 	"ModelScale"            "0.55"
-	"SoundSet"					    "Hero_Sniper"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+	"SoundSet"				"Hero_Windrunner"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
+	"Ability1"				"sell"
+	"Ability2"				"sharpshooter_headshot"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -25,10 +26,10 @@
 	"AttackDamageMax"       "387.5"
 	"AttackRate"            "1.6"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "900"
+	"AttackAcquisitionRange" "950"
 	"AttackRange"           "900"
-	"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
-	"ProjectileSpeed"       "1000"
+	"ProjectileModel"       "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
+	"ProjectileSpeed"       "1050"
 
 	// Bounty
 	//----------------------------------------------------------------
