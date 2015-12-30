@@ -93,12 +93,14 @@ function AICore:CreateBehaviorSystem( behaviors )
 			if self.repeatedlyIssueOrders or
 				self.previousOrderType ~= self.currentBehavior.order.OrderType or
 				self.previousOrderTarget ~= self.currentBehavior.order.TargetIndex or
+				self.previousOrderAbilityId ~= self.currentBehavior.order.AbilityIndex or
 				self.previousOrderPosition ~= self.currentBehavior.order.Position then
 
-				-- Keep sending the order repeatedly, in case we forgot >.<
 				ExecuteOrderFromTable( self.currentBehavior.order )
+				
 				self.previousOrderType = self.currentBehavior.order.OrderType
 				self.previousOrderTarget = self.currentBehavior.order.TargetIndex
+				self.previousOrderAbilityId = self.currentBehavior.order.AbilityIndex
 				self.previousOrderPosition = self.currentBehavior.order.Position
 			end
 		end

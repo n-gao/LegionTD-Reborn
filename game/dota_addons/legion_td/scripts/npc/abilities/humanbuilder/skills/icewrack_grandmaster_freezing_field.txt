@@ -70,7 +70,6 @@
 	"precache"
 	{
 		"soundfile"				"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
-		"particle"				"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_snow.vpcf"
 		"particle"				"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion.vpcf"
 		"particle"				"particles/generic_gameplay/generic_slowed_cold.vpcf"
 		"particle"				"particles/status_fx/status_effect_frost_lich.vpcf"
@@ -98,7 +97,6 @@
 			"Passive"   			"1"
 			"IsPurgable"			"0"
 			"IsHidden"				"0"
-			"OverrideAnimation"		"ACT_DOTA_IDLE"
 			
 			"Aura"					"modifier_freezing_field_debuff_datadriven"
 			"Aura_Radius"			"%radius"

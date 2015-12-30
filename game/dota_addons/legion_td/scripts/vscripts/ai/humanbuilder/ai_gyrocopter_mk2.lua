@@ -8,7 +8,7 @@ behaviorSystem = {} -- create the global so we can assign to it
 
 function Spawn( entityKeyValues )
 	thisEntity:SetContextThink( "AIThink", AIThink, 1 )
-    behaviorSystem = AICore:CreateBehaviorSystem( { BehaviorNone, BehaviorHeal } ) 
+    behaviorSystem = AICore:CreateBehaviorSystem( { BehaviorNone, BehaviorBarrage } ) 
 end
 
 function AIThink() -- For some reason AddThinkToEnt doesn't accept member functions
@@ -24,6 +24,7 @@ function BehaviorNone:Evaluate()
 end
 
 function BehaviorNone:Begin()
+
 	self.endTime = GameRules:GetGameTime() + .1
 	
 	self.order =
@@ -40,31 +41,24 @@ end
 
 --------------------------------------------------------------------------------------------------------
 
-BehaviorHeal = {}
+BehaviorBarrage = {}
 
-function BehaviorHeal:Evaluate()
-	self.healAbility = thisEntity:FindAbilityByName("archbishop_shadow_wave")
+function BehaviorBarrage:Evaluate()
+	self.barrageAbility = thisEntity:FindAbilityByName("gyrocopter_mk2_rocket_barrage")
 	local desire = 0
-	local target
+	local blastDirection = nil
 
 	-- let's not choose this twice in a row
 	if AICore.currentBehavior == self then return desire end
 
-	if self.healAbility and self.healAbility:IsFullyCastable() then
-		local range = self.healAbility:GetCastRange()
-		local allies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_ALL, 0, FIND_ANY_ORDER, false )
-		local mostHurt = 40 -- minimum hurt amount
-		for _, unit in pairs(allies) do
-			local healthLost = unit:GetMaxHealth() - unit:GetHealth()
-			if healthLost > mostHurt and healthLost > (unit:GetMaxHealth() *.25) then --only cast if unit has lost at least 25% of its health
-				target = unit
-			end
-		end
+	if self.barrageAbility and self.barrageAbility:IsFullyCastable() then
+		local range = self.barrageAbility:GetCastRange()
+		local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false )
+		if #enemies > 0 then target = true end
 	end
 
 	if target then
-		desire = 3
-		self.target = target
+		desire = 4
 	else
 		desire = 0
 	end
@@ -72,20 +66,23 @@ function BehaviorHeal:Evaluate()
 	return desire
 end
 
-function BehaviorHeal:Begin()
-	self.endTime = GameRules:GetGameTime() + .1
+function BehaviorBarrage:Begin()
+
+	self.endTime = GameRules:GetGameTime() + .2
 
 	self.order =
 	{
-		OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
+		OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
 		UnitIndex = thisEntity:entindex(),
-		TargetIndex = self.target:entindex(),
-		AbilityIndex = self.healAbility:entindex()
+		TargetIndex = nil,
+		AbilityIndex = self.barrageAbility:entindex(),
+		Position = nil
 	}
+
 end
 
-BehaviorHeal.Continue = BehaviorHeal.Begin --if we re-enter this ability, we might have a different target; might as well do a full reset
+BehaviorBarrage.Continue = BehaviorBarrage.Begin --if we re-enter this ability, we might have a different target; might as well do a full reset
 
 --------------------------------------------------------------------------------------------------------
 
-AICore.possibleBehaviors = { BehaviorNone, BehaviorHeal }
+AICore.possibleBehaviors = { BehaviorNone, BehaviorBarrage }

@@ -1,0 +1,103 @@
+"soundmaster_deafening_blast"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"				"ability_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+	"AbilityTextureName"			"invoker_deafening_blast"
+
+	// Precache
+	//-------------------------------------------------------------------------------------------------------------
+	"precache"
+	{
+		"soundfile"		"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
+		"particle"		"particles/units/heroes/hero_invoker/invoker_deafening_blast.vpcf"
+		"particle"		"particles/units/heroes/hero_invoker/invoker_deafening_blast_knockback_debuff.vpcf"
+		"particle"		"particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_debuff.vpcf"
+		"particle"		"particles/status_fx/status_effect_frost.vpcf"
+	}
+
+
+	// Stats
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"1000"
+	"AbilityCastPoint"				"0"
+	"AbilityCooldown"				"600"
+	"AbilityManaCost"				"0"
+	"AbilityDamage"					"100"
+
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"travel_distance"		"1000"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"travel_speed"			"1100"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"radius_start"			"175"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"radius_end"			"225"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"end_vision_duration"	"1.75"
+		}
+		"06"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"damage"				"100"
+		}
+		"07"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"knockback_duration"	"2"
+		}
+		"08"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"disarm_duration"		"2.0"
+		}
+		// Extra
+		"09"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"tree_radius"			"100" // not used currently
+		}
+	}
+
+	"OnSpellStart"
+	{
+		"FireSound"
+		{
+			"EffectName"	"Hero_Invoker.DeafeningBlast"
+			"Target" 		"CASTER"
+		}
+
+		"RunScript"
+		{
+			"ScriptFile"	"abilities/humanbuilder/deafening_blast.lua"
+			"Function"		"deafening_blast_start"
+			"Target"		"POINT"
+			"dummy_ability_name"	"soundmaster_deafening_blast_dummy"
+			"projectile_name"		"particles/units/heroes/hero_invoker/invoker_deafening_blast.vpcf"
+		}
+	}
+}

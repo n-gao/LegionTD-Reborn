@@ -1675,6 +1675,55 @@
 	    }
 	  }
 	}
+	"humanbuilder_precache"
+	{
+	    "BaseClass" "ability_datadriven"
+	    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	
+	    "precache"
+	    {
+	    	"particle"	"particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"					// crystal maiden base attack
+	    	"particle"	"particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"				// windrunner base attack
+	    	"particle"	"particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"						// sniper base attack
+	    	"particle"	"particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"						// gyro base attack
+	        "soundfile"	"soundevents/game_sounds_heroes/game_sounds_dazzle.vsndevts"						// archbishop shadow wave
+			"particle"	"particles/units/heroes/hero_dazzle/dazzle_shadow_wave.vpcf"						// archbishop shadow wave
+			"particle"	"particles/units/heroes/hero_dazzle/dazzle_shadow_wave_impact_damage.vpcf"			// archbishop shadow wave
+	    	"particle"	"particles/chain_fade.vpcf"															// archmage chain fade
+			"particle"	"particles/units/heroes/hero_lich/lich_chain_frost.vpcf"							// archmage chain fade
+			"particle"	"particles/units/heroes/hero_lich/lich_slowed_cold.vpcf"							// archmage chain fade
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts"							// archmage chain fade
+			"particle"  "particles/units/heroes/hero_juggernaut/jugg_attack_blur.vpcf"						// blademaster blade dance
+	        "particle"  "particles/units/heroes/hero_juggernaut/jugg_crit_blur_impact.vpcf"					// blademaster blade dance
+	        "soundfile" "soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"					// blademaster blade dance
+	        "particle"  "particles/units/heroes/hero_juggernaut/juggernaut_blade_fury.vpcf"					// blademaster blade fury
+	        "soundfile" "soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"					// blademaster blade fury
+	        "particle"	"particles/generic_gameplay/generic_stunned.vpcf"									// headshot
+	        "soundfile"	"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"					// crystal maiden sounds
+			"particle"	"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion.vpcf"	//icewrack_grandmaster freezing_field
+			"particle"	"particles/generic_gameplay/generic_slowed_cold.vpcf"								//icewrack_grandmaster freezing_field
+			"particle"	"particles/status_fx/status_effect_frost_lich.vpcf"									//icewrack_grandmaster freezing_field
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"						// soundmaster deafening_blast
+			"particle"	"particles/units/heroes/hero_invoker/invoker_deafening_blast.vpcf"					// soundmaster deafening_blast
+			"particle"	"particles/units/heroes/hero_invoker/invoker_deafening_blast_knockback_debuff.vpcf"	// soundmaster deafening_blast
+			"particle"	"particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_debuff.vpcf"	// soundmaster deafening_blast
+			"particle"	"particles/status_fx/status_effect_frost.vpcf"										// soundmaster deafening_blast
+			"soundfile" "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"						// soundmaster lightning_storm
+			"particle"	"particles/units/heroes/hero_leshrac/leshrac_lightning_bolt.vpcf"					// soundmaster lightning_storm
+			"particle"	"particles/items2_fx/veil_of_discord_debuff.vpcf"									// soundmaster lightning_storm
+			"particle"	"particles/units/heroes/hero_leshrac/leshrac_lightning_impact.vpcf"					// soundmaster lightning_storm
+			"particle"	"particles/units/heroes/hero_leshrac/leshrac_lightning_sparks.vpcf"					// soundmaster lightning_storm
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"					// tactician guardian angel
+			"particle"	"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_halo_buff.vpcf"	// tactician guardian angel
+			"particle"  "particles/status_fx/status_effect_guardian_angel.vpcf"								// tactician guardian angel
+			"particle"  "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"		// tactician guardian angel
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"							// tactician storm bolt
+			"particle"	"particles/units/heroes/hero_sven/sven_spell_storm_bolt.vpcf"						// tactician storm bolt
+			"particle"	"particles/units/heroes/hero_sven/sven_storm_bolt_projectile_explosion.vpcf"		// tactician storm bolt
+			"particle"	"particles/generic_gameplay/generic_stunned.vpcf"									// tactician storm bolt
+	    }
+	
+	}
 	"humanbuilder_spawn_archer"
 	{
 	  "BaseClass"                 "ability_datadriven"
@@ -2987,7 +3036,7 @@
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"300"
+		"AbilityCastRange"				"600"
 	
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -3001,7 +3050,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"aura_radius"				"300"
+				"aura_radius"				"600"
 			}
 		}
 	
@@ -3013,10 +3062,10 @@
 				"IsHidden"			"1"
 		
 				"Aura"          	"modifier_healing_aura"
-				"Aura_Radius"   	"%healing_aura_radius"
+				"Aura_Radius"   	"%aura_radius"
 				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC" //mechanic?
-				"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_NONE" //immune?
+				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CREEP" //mechanic?
+				//"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_NONE" //immune?
 			}
 	
 			"modifier_healing_aura"
@@ -3096,7 +3145,7 @@
 			"05"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage"			"25"
+				"damage"			"40"
 			}
 		}
 	
@@ -3709,6 +3758,171 @@
 	            }
 	        }
 	}
+	"futuristic_gyrocopter_call_down"
+		{
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"BaseClass"						"gyrocopter_call_down"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+			"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+			"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+			"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+			"FightRecapLevel"				"2"
+			
+			// Casting
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityCastRange"				"1000"
+			"AbilityCastPoint"				"0"
+	
+			// Time		
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityCooldown"				"60"
+			
+			// Cost
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityManaCost"				"0"
+			
+			// Special
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilitySpecial"
+			{
+				"01"
+				{
+					"var_type"					"FIELD_INTEGER"
+					"slow_duration_first"		"2"
+				}
+				"02"
+				{
+					"var_type"					"FIELD_INTEGER"
+					"slow_duration_second"		"4"
+				}
+				"03"
+				{
+					"var_type"					"FIELD_INTEGER"
+					"damage_first"				"200"
+				}
+				"04"
+				{
+					"var_type"					"FIELD_INTEGER"
+					"damage_second"				"200"
+				}
+				"05"
+				{
+					"var_type"					"FIELD_FLOAT"
+					"slow_first"				"70"
+				}
+				"06"
+				{
+					"var_type"					"FIELD_FLOAT"
+					"slow_second"				"70"
+				}
+				"07"
+				{
+					"var_type"					"FIELD_INTEGER"
+					"radius"					"300"
+				}
+				"08"
+				{
+					"var_type"					"FIELD_INTEGER"
+					"range_scepter"					"0"
+				}
+				"09"
+				{
+					"var_type"					"FIELD_INTEGER"
+					"damage_second_scepter"		"175 225 275"
+				}
+			}
+		}
+	"futuristic_gyrocopter_flak_cannon"
+		{
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"BaseClass"						"gyrocopter_flak_cannon"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+			"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+			"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+			"FightRecapLevel"				"1"
+	
+			"AbilityCastRange"				"900" //only used by AI
+			"AbilityCastPoint"				"0"
+	
+			// Time		
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityCooldown"				"30"
+			
+			// Cost
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityManaCost"				"0"
+	
+			//Duration
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityDuration"				"15"
+							
+			// Special
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilitySpecial"
+			{
+				"01"
+				{
+					"var_type"						"FIELD_INTEGER"
+					"radius"						"1000"
+				}
+				"02"
+				{
+					"var_type"						"FIELD_INTEGER"
+					"max_attacks"					"3"
+				}
+				"03"
+				{
+					"var_type"						"FIELD_INTEGER"
+					"projectile_speed"				"800"
+				}
+			}
+		}
+	"futuristic_gyrocopter_rocket_barrage"
+		{
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"BaseClass"						"gyrocopter_rocket_barrage"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+			"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+			"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+			"FightRecapLevel"				"1"
+			
+			// Casting
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityCastRange"				"400" //only used by AI
+			"AbilityCastPoint"				"0"
+	
+			// Time		
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityCooldown"				"15"
+			"AbilityDuration"				"3"
+	
+			// Damage.
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityDamage"					"0"
+	
+			// Cost
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityManaCost"				"0"
+			
+			// Special
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilitySpecial"
+			{
+				"01"
+				{
+					"var_type"					"FIELD_INTEGER"
+					"radius"					"400"
+				}
+				"02"
+				{
+					"var_type"					"FIELD_INTEGER"
+					"rockets_per_second"		"10"
+				}
+			}
+		}
 	"general_block"
 	{
 		"BaseClass"						"ability_datadriven"
@@ -3947,6 +4161,50 @@
 			}
 		}
 	}
+	"gyrocopter_mk2_rocket_barrage"
+		{
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"BaseClass"						"gyrocopter_rocket_barrage"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+			"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+			"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+			"FightRecapLevel"				"1"
+			
+			// Casting
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityCastRange"				"400"
+			"AbilityCastPoint"				"0"
+	
+			// Time		
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityCooldown"				"45"
+			"AbilityDuration"				"3"
+	
+			// Damage.
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityDamage"					"0"
+	
+			// Cost
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityManaCost"				"0"
+			
+			// Special
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilitySpecial"
+			{
+				"01"
+				{
+					"var_type"					"FIELD_INTEGER"
+					"radius"					"400"
+				}
+				"02"
+				{
+					"var_type"					"FIELD_INTEGER"
+					"rockets_per_second"		"10"
+				}
+			}
+		}
 	"human_vladmir"
 	{
 		"BaseClass"						"ability_datadriven"
@@ -4247,7 +4505,6 @@
 		"precache"
 		{
 			"soundfile"				"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
-			"particle"				"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_snow.vpcf"
 			"particle"				"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion.vpcf"
 			"particle"				"particles/generic_gameplay/generic_slowed_cold.vpcf"
 			"particle"				"particles/status_fx/status_effect_frost_lich.vpcf"
@@ -5388,6 +5645,321 @@
 	            }
 	        }
 	}
+	"soundmaster_deafening_blast"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"			"invoker_deafening_blast"
+	
+		// Precache
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"soundfile"		"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
+			"particle"		"particles/units/heroes/hero_invoker/invoker_deafening_blast.vpcf"
+			"particle"		"particles/units/heroes/hero_invoker/invoker_deafening_blast_knockback_debuff.vpcf"
+			"particle"		"particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_debuff.vpcf"
+			"particle"		"particles/status_fx/status_effect_frost.vpcf"
+		}
+	
+	
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"600"
+		"AbilityManaCost"				"0"
+		"AbilityDamage"					"100"
+	
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"travel_distance"		"1000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"travel_speed"			"1100"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius_start"			"175"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius_end"			"225"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"end_vision_duration"	"1.75"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage"				"100"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"knockback_duration"	"2"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"disarm_duration"		"2.0"
+			}
+			// Extra
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tree_radius"			"100" // not used currently
+			}
+		}
+	
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"	"Hero_Invoker.DeafeningBlast"
+				"Target" 		"CASTER"
+			}
+	
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/humanbuilder/deafening_blast.lua"
+				"Function"		"deafening_blast_start"
+				"Target"		"POINT"
+				"dummy_ability_name"	"soundmaster_deafening_blast_dummy"
+				"projectile_name"		"particles/units/heroes/hero_invoker/invoker_deafening_blast.vpcf"
+			}
+		}
+	}
+	// DUMMY SPELL
+	"soundmaster_deafening_blast_dummy"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"invoker_deafening_blast"
+	
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"0"
+			
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/humanbuilder/deafening_blast.lua"
+				"Function"		"deafening_blast_hit"
+				"knockback_modifier"	"modifier_deafening_blast_knockback_datadriven"
+			}
+		}
+	
+		"Modifiers"
+		{
+			"modifier_deafening_blast_knockback_datadriven"
+			{
+				"IsDebuff"		"1"
+				"IsPurgable"	"0"
+	
+				"OverrideAnimation"     "ACT_DOTA_DISABLED"
+				"TextureName"			"invoker_deafening_blast"
+	
+				"StatusEffectName" 		"particles/status_fx/status_effect_frost.vpcf" 	   
+				"StatusEffectPriority"  "10"
+	
+				"EffectName"		"particles/units/heroes/hero_invoker/invoker_deafening_blast_knockback_debuff.vpcf"
+				"EffectAttachType"	"follow_origin"
+	
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"abilities/humanbuilder/deafening_blast.lua"
+						"Function"		"deafening_blast_knockback_start"
+					}
+				}
+	
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"abilities/humanbuilder/deafening_blast.lua"
+						"Function"		"deafening_blast_disarm"
+						"disarm_modifier"	"modifier_deafening_blast_disarm_datadriven"
+					}
+				}
+	
+				"ThinkInterval"  "0.03"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"abilities/humanbuilder/deafening_blast.lua"
+						"Function"		"deafening_blast_knockback"
+					}
+	
+					"DestroyTrees"
+					{
+						"Target" 		"TARGET"
+						"Radius"		"100" // Change this to %tree_radius whenever the game feels like working properly
+					}
+				}
+	
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+	
+			"modifier_deafening_blast_disarm_datadriven"
+			{
+				"IsDebuff"		"1"
+				"IsPurgable"	"0"
+	
+				"TextureName"	"invoker_deafening_blast"
+	
+				"StatusEffectName" 		"particles/status_fx/status_effect_frost.vpcf" 	   
+				"StatusEffectPriority"  "10"
+	
+				"EffectName"		"particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_debuff.vpcf"
+				"EffectAttachType"	"follow_overhead"
+	
+				"States"
+				{
+					"MODIFIER_STATE_DISARMED"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+	
+			"modifier_deafening_blast_dummy"
+			{
+				"Passive"	"1"
+	
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"						"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_INVULNERABLE"					"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_HEALTH_BAR"					"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NO_UNIT_COLLISION"				"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_NOT_ON_MINIMAP"					"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_UNSELECTABLE"					"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+	"soundmaster_lightning_storm"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityTextureName"			"leshrac_lightning_storm"
+	
+		"precache"
+		{
+			"soundfile"         "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
+			"particle"			"particles/units/heroes/hero_leshrac/leshrac_lightning_bolt.vpcf"
+			"particle"			"particles/items2_fx/veil_of_discord_debuff.vpcf"
+			"particle"			"particles/units/heroes/hero_leshrac/leshrac_lightning_impact.vpcf"
+			"particle"			"particles/units/heroes/hero_leshrac/leshrac_lightning_sparks.vpcf"
+		}
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.7"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.5"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"125"
+			
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"jump_count"			"3"
+			}
+			
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"650"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"jump_delay"			"0.25"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"resist_debuff_duration"	"6"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"resist_debuff"			"-20"
+			}
+		}
+	
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/abilities/humanbuilder/lightning_storm.lua"
+				"Function"		"lightning_storm_start"
+			}
+		}
+	
+		"Modifiers"
+		{
+			"lightning_storm_veil"
+			{
+				"Passive"			"0"
+				"IsHidden"			"0"
+				"IsDebuff"			"1"
+		
+				"Duration"			"%resist_debuff_duration"
+	
+				"EffectName"        "particles/items2_fx/veil_of_discord_debuff.vpcf"
+				"EffectAttachType"  "follow_origin"
+				"Target"            "TARGET"
+	
+				"Properties"
+				{
+				    "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "%resist_debuff" 
+				}
+			}
+		}
+	}
 	"spearman_block"
 	{
 		"BaseClass"						"ability_datadriven"
@@ -5518,121 +6090,6 @@
 	                "dragon_cast_range"         "400"
 	            }
 	        }
-	}
-	"tactician_guardian_angel"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
-		"AbilityTextureName"			"omniknight_guardian_angel"
-	
-		"AbilityCastRange"				"300" // just for AI
-	
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"600"
-		"AbilityCastPoint"				"0.5 0.5 0.5"
-		
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"0"
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"2.0"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"radius"					"300"
-			}
-		}
-	
-		"precache"
-		{
-			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
-			"particle"	"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_halo_buff.vpcf"
-			"particle"  "particles/status_fx/status_effect_guardian_angel.vpcf"
-			"particle"  "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
-		}
-	
-		"OnSpellStart"
-		{
-			"FireSound"
-			{
-				"EffectName"	"Hero_Omniknight.GuardianAngel.Cast"
-				"Target"		"CASTER"
-			}
-	
-			"ActOnTargets"
-			{
-				"Target"
-				{
-					"Center"  		"CASTER"
-					"Radius"		"%radius"
-					"Teams" 		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-					"Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-				}
-	
-				"Action"
-				{
-					"ApplyModifier"
-					{
-						"Target" 		"TARGET"
-						"ModifierName"	"modifier_guardian_angel"
-					}
-				}
-			}
-		}
-	
-		"Modifiers"
-		{
-			"modifier_guardian_angel"
-			{
-				"IsBuff"			"1"
-				"IsPurgable"		"1"
-				"Duration"			"%duration"
-				"StatusEffectName"     "particles/status_fx/status_effect_guardian_angel.vpcf"
-				"StatusEffectPriority" "10"
-	
-				"OnCreated"
-				{
-					"AttachEffect"
-					{
-						"EffectName"		"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_halo_buff.vpcf"
-						"EffectAttachType"	"follow_overhead"
-						"Target"			"CASTER"
-					}
-	
-				 	"AttachEffect"
-					{
-						"Target"
-						{
-							"Center"  		"CASTER"
-							"Radius"		"%radius"
-							"Teams" 		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-							"Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-						}
-						"EffectName"				"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
-						"EffectAttachType"			"follow_origin"
-						"EffectRadius"				"%radius"
-					}
-				}
-	
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL"	"1"
-				}
-			}
-		}
 	}
 	"tactician_guardian_angel"
 	{
@@ -5950,7 +6407,7 @@
 				"IsHidden"			"1"
 		
 				"Aura"          	"modifier_healing_aura"
-				"Aura_Radius"   	"%healing_aura_radius"
+				"Aura_Radius"   	"%aura_radius"
 				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC" //mechanic?
 				"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_NONE" //immune?

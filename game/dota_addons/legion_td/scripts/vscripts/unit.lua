@@ -94,6 +94,9 @@ function Unit.ApplyAI(unit)
   elseif name == "tower_humanbuilder_archmage" then return
   elseif name == "tower_humanbuilder_archbishop" then return
   elseif name == "tower_humanbuilder_soundmaster" then return
+  elseif name == "tower_humanbuilder_gyrocopter_mk1" then return
+  elseif name == "tower_humanbuilder_gyrocopter_mk2" then return
+  elseif name == "tower_humanbuilder_futuristic_gyrocopter" then return
   else ai_standard.Init(unit)
   end
 end

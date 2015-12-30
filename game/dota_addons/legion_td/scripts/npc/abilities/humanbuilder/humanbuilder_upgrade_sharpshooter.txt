@@ -25,7 +25,7 @@
     "02"
     {
       "var_type"              "FIELD_FLOAT"
-      "atk_speed_tooltip"     "0.6"
+      "atk_speed_tooltip"     "1.6"
     }
     "03"
     {

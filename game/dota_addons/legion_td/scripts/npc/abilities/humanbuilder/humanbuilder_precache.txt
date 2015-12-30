@@ -1,0 +1,49 @@
+"humanbuilder_precache"
+{
+    "BaseClass" "ability_datadriven"
+    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+    "precache"
+    {
+    	"particle"	"particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"					// crystal maiden base attack
+    	"particle"	"particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"				// windrunner base attack
+    	"particle"	"particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"						// sniper base attack
+    	"particle"	"particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"						// gyro base attack
+        "soundfile"	"soundevents/game_sounds_heroes/game_sounds_dazzle.vsndevts"						// archbishop shadow wave
+		"particle"	"particles/units/heroes/hero_dazzle/dazzle_shadow_wave.vpcf"						// archbishop shadow wave
+		"particle"	"particles/units/heroes/hero_dazzle/dazzle_shadow_wave_impact_damage.vpcf"			// archbishop shadow wave
+    	"particle"	"particles/chain_fade.vpcf"															// archmage chain fade
+		"particle"	"particles/units/heroes/hero_lich/lich_chain_frost.vpcf"							// archmage chain fade
+		"particle"	"particles/units/heroes/hero_lich/lich_slowed_cold.vpcf"							// archmage chain fade
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts"							// archmage chain fade
+		"particle"  "particles/units/heroes/hero_juggernaut/jugg_attack_blur.vpcf"						// blademaster blade dance
+        "particle"  "particles/units/heroes/hero_juggernaut/jugg_crit_blur_impact.vpcf"					// blademaster blade dance
+        "soundfile" "soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"					// blademaster blade dance
+        "particle"  "particles/units/heroes/hero_juggernaut/juggernaut_blade_fury.vpcf"					// blademaster blade fury
+        "soundfile" "soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"					// blademaster blade fury
+        "particle"	"particles/generic_gameplay/generic_stunned.vpcf"									// headshot
+        "soundfile"	"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"					// crystal maiden sounds
+		"particle"	"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion.vpcf"	//icewrack_grandmaster freezing_field
+		"particle"	"particles/generic_gameplay/generic_slowed_cold.vpcf"								//icewrack_grandmaster freezing_field
+		"particle"	"particles/status_fx/status_effect_frost_lich.vpcf"									//icewrack_grandmaster freezing_field
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"						// soundmaster deafening_blast
+		"particle"	"particles/units/heroes/hero_invoker/invoker_deafening_blast.vpcf"					// soundmaster deafening_blast
+		"particle"	"particles/units/heroes/hero_invoker/invoker_deafening_blast_knockback_debuff.vpcf"	// soundmaster deafening_blast
+		"particle"	"particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_debuff.vpcf"	// soundmaster deafening_blast
+		"particle"	"particles/status_fx/status_effect_frost.vpcf"										// soundmaster deafening_blast
+		"soundfile" "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"						// soundmaster lightning_storm
+		"particle"	"particles/units/heroes/hero_leshrac/leshrac_lightning_bolt.vpcf"					// soundmaster lightning_storm
+		"particle"	"particles/items2_fx/veil_of_discord_debuff.vpcf"									// soundmaster lightning_storm
+		"particle"	"particles/units/heroes/hero_leshrac/leshrac_lightning_impact.vpcf"					// soundmaster lightning_storm
+		"particle"	"particles/units/heroes/hero_leshrac/leshrac_lightning_sparks.vpcf"					// soundmaster lightning_storm
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"					// tactician guardian angel
+		"particle"	"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_halo_buff.vpcf"	// tactician guardian angel
+		"particle"  "particles/status_fx/status_effect_guardian_angel.vpcf"								// tactician guardian angel
+		"particle"  "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"		// tactician guardian angel
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"							// tactician storm bolt
+		"particle"	"particles/units/heroes/hero_sven/sven_spell_storm_bolt.vpcf"						// tactician storm bolt
+		"particle"	"particles/units/heroes/hero_sven/sven_storm_bolt_projectile_explosion.vpcf"		// tactician storm bolt
+		"particle"	"particles/generic_gameplay/generic_stunned.vpcf"									// tactician storm bolt
+    }
+
+}

@@ -32,8 +32,6 @@ function freezing_field_explode( keys )
     local targetType = ability:GetAbilityTargetType() -- DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_HERO
     local targetFlag = ability:GetAbilityTargetFlags() -- DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES
     local damageType = ability:GetAbilityDamageType()
-
-    print ("Freezing_field_explode flags: " .. targetTeam .. ", " .. targetType .. ", " .. targetFlag .. ", " .. damageType)
     
     -- Get random point
     local castDistance = RandomInt( minDistance, maxDistance )
