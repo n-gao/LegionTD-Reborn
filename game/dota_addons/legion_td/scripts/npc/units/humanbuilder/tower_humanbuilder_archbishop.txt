@@ -5,8 +5,8 @@
 	"BaseClass"             "npc_dota_creature"
 	"Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
 	"ModelScale"            "0.55"
-	"SoundSet"					    "Hero_CrystalMaiden"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
+	"SoundSet"				"Hero_CrystalMaiden"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 	"Vscripts"              "ai/humanbuilder/ai_archbishop.lua"
@@ -30,7 +30,7 @@
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "500"
-	"ProjectileModel"       ""
+	"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 	"ProjectileSpeed"       "400"
 
 	// Bounty
@@ -86,12 +86,12 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "38" }
-      "Wearable2" { "ItemDef" "39" }
-      "Wearable3" { "ItemDef" "40" }
-      "Wearable4" { "ItemDef" "41" }
-      "Wearable5" { "ItemDef" "311" }
-      "Wearable6" { "ItemDef" "502" }
+      "Wearable1" { "ItemDef" "5735" } // "Cape of the Frozen Feather"
+      "Wearable2" { "ItemDef" "5736" } // "Pauldrons of the Frozen Feather"
+      "Wearable3" { "ItemDef" "5737" } // "Staff of the Frozen Feather"
+      "Wearable4" { "ItemDef" "5734" } // "Bracers of the Frozen Feather"
+      "Wearable5" { "ItemDef" "5738" } // "Hood of the Frozen Feather"
+      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
     }
 	}
 }

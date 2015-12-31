@@ -503,6 +503,7 @@ function Game:Initialice()
       timer_second = secondsString
     }
     CustomGameEventManager:Send_ServerToAllClients("update_time", data)
+    GameRules:SetTimeOfDay( 0.26 ) -- always day!
     return 1
   end)
 

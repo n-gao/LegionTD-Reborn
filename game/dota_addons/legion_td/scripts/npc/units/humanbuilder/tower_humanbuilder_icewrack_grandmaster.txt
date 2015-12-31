@@ -84,12 +84,12 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "38" }
-      "Wearable2" { "ItemDef" "39" }
-      "Wearable3" { "ItemDef" "40" }
-      "Wearable4" { "ItemDef" "41" }
-      "Wearable5" { "ItemDef" "311" }
-      "Wearable6" { "ItemDef" "502" }
+      "Wearable1" { "ItemDef" "9325" } // "Tails of the Tundra Warden"
+      "Wearable2" { "ItemDef" "9326" } // "Guard of the Tundra Warden"
+      "Wearable3" { "ItemDef" "9328" } // "North Star"
+      "Wearable4" { "ItemDef" "9324" } // "Gauntlets of the Tundra Warden"
+      "Wearable5" { "ItemDef" "6686" } // "Yulsaria's Glacier"
+      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
     }
 	}
 }

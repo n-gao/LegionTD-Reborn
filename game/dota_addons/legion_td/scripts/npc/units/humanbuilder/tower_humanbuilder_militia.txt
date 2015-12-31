@@ -86,12 +86,12 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "63" }
-      "Wearable2" { "ItemDef" "64" }
-      "Wearable3" { "ItemDef" "65" }
-      "Wearable4" { "ItemDef" "66" }
-      "Wearable5" { "ItemDef" "67" }
-      "Wearable6" { "ItemDef" "68" }
+      "Wearable1" { "ItemDef" "63" } // "Dragon Knight's Helmet"
+      "Wearable2" { "ItemDef" "64" } // "Dragon Knight's Shoulder Armor"
+      "Wearable3" { "ItemDef" "65" } // "Dragon Knight's Bracers"
+      "Wearable4" { "ItemDef" "66" } // "Dragon Knight's Weapon"
+      "Wearable5" { "ItemDef" "67" } // "Dragon Knight's Offhand"
+      "Wearable6" { "ItemDef" "68" } // "Dragon Knight's Skirt"
     }
 	}
 }

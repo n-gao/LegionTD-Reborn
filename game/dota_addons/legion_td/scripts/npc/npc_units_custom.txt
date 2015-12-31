@@ -2763,8 +2763,8 @@
 		"BaseClass"             "npc_dota_creature"
 		"Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
 		"ModelScale"            "0.55"
-		"SoundSet"					    "Hero_CrystalMaiden"
-		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
+		"SoundSet"				"Hero_CrystalMaiden"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 		"Vscripts"              "ai/humanbuilder/ai_archbishop.lua"
@@ -2788,7 +2788,7 @@
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "500"
-		"ProjectileModel"       ""
+		"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"       "400"
 	
 		// Bounty
@@ -2844,12 +2844,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "38" }
-	      "Wearable2" { "ItemDef" "39" }
-	      "Wearable3" { "ItemDef" "40" }
-	      "Wearable4" { "ItemDef" "41" }
-	      "Wearable5" { "ItemDef" "311" }
-	      "Wearable6" { "ItemDef" "502" }
+	      "Wearable1" { "ItemDef" "5735" } // "Cape of the Frozen Feather"
+	      "Wearable2" { "ItemDef" "5736" } // "Pauldrons of the Frozen Feather"
+	      "Wearable3" { "ItemDef" "5737" } // "Staff of the Frozen Feather"
+	      "Wearable4" { "ItemDef" "5734" } // "Bracers of the Frozen Feather"
+	      "Wearable5" { "ItemDef" "5738" } // "Hood of the Frozen Feather"
+	      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
 	    }
 		}
 	}
@@ -3040,12 +3040,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "38" }
-	      "Wearable2" { "ItemDef" "39" }
-	      "Wearable3" { "ItemDef" "40" }
-	      "Wearable4" { "ItemDef" "41" }
-	      "Wearable5" { "ItemDef" "311" }
-	      "Wearable6" { "ItemDef" "502" }
+	      "Wearable1" { "ItemDef" "38" } // "Crystal Maiden's Cape"
+	      "Wearable2" { "ItemDef" "39" } // "Crystal Maiden's Shoulder Pads"
+	      "Wearable3" { "ItemDef" "40" } // "Crystal Maiden's Weapon"
+	      "Wearable4" { "ItemDef" "41" } // "Crystal Maiden's Cuffs"
+	      "Wearable5" { "ItemDef" "311" } // "Crystal Maiden's Headdress"
+	      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
 	    }
 		}
 	}
@@ -3234,12 +3234,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "4095" }
-	      "Wearable2" { "ItemDef" "4114" }
-	      "Wearable3" { "ItemDef" "4115" }
-	      "Wearable4" { "ItemDef" "4116" }
-	      "Wearable5" { "ItemDef" "4117" }
-	      "Wearable6" { "ItemDef" "4118" }
+	      "Wearable1" { "ItemDef" "4095" } // "Wyrm Shield of Uldorak"
+	      "Wearable2" { "ItemDef" "4114" } // "Wyrm Helm of Uldorak"
+	      "Wearable3" { "ItemDef" "4115" } // "Wyrm Bracers of Uldorak"
+	      "Wearable4" { "ItemDef" "4116" } // "Wyrm Skirt of Uldorak" - seems to have physics problems
+	      "Wearable5" { "ItemDef" "4117" } // "Wyrm Pauldrons of Uldorak"
+	      "Wearable6" { "ItemDef" "4154" } // "Dragonmaw" (sword)
 	    }
 		}
 	}
@@ -3911,12 +3911,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "38" }
-	      "Wearable2" { "ItemDef" "39" }
-	      "Wearable3" { "ItemDef" "40" }
-	      "Wearable4" { "ItemDef" "41" }
-	      "Wearable5" { "ItemDef" "311" }
-	      "Wearable6" { "ItemDef" "502" }
+	      "Wearable1" { "ItemDef" "9325" } // "Tails of the Tundra Warden"
+	      "Wearable2" { "ItemDef" "9326" } // "Guard of the Tundra Warden"
+	      "Wearable3" { "ItemDef" "9328" } // "North Star"
+	      "Wearable4" { "ItemDef" "9324" } // "Gauntlets of the Tundra Warden"
+	      "Wearable5" { "ItemDef" "6686" } // "Yulsaria's Glacier"
+	      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
 	    }
 		}
 	}
@@ -4105,12 +4105,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "38" }
-	      "Wearable2" { "ItemDef" "39" }
-	      "Wearable3" { "ItemDef" "40" }
-	      "Wearable4" { "ItemDef" "41" }
-	      "Wearable5" { "ItemDef" "311" }
-	      "Wearable6" { "ItemDef" "502" }
+	      "Wearable1" { "ItemDef" "38" } // "Crystal Maiden's Cape"
+	      "Wearable2" { "ItemDef" "39" } // "Crystal Maiden's Shoulder Pads"
+	      "Wearable3" { "ItemDef" "40" } // "Crystal Maiden's Weapon"
+	      "Wearable4" { "ItemDef" "41" } // "Crystal Maiden's Cuffs"
+	      "Wearable5" { "ItemDef" "5486" } // "Winter Solstice Fashion"
+	      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
 	    }
 		}
 	}
@@ -4298,12 +4298,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "63" }
-	      "Wearable2" { "ItemDef" "64" }
-	      "Wearable3" { "ItemDef" "65" }
-	      "Wearable4" { "ItemDef" "66" }
-	      "Wearable5" { "ItemDef" "67" }
-	      "Wearable6" { "ItemDef" "68" }
+	      "Wearable1" { "ItemDef" "63" } // "Dragon Knight's Helmet"
+	      "Wearable2" { "ItemDef" "64" } // "Dragon Knight's Shoulder Armor"
+	      "Wearable3" { "ItemDef" "65" } // "Dragon Knight's Bracers"
+	      "Wearable4" { "ItemDef" "66" } // "Dragon Knight's Weapon"
+	      "Wearable5" { "ItemDef" "67" } // "Dragon Knight's Offhand"
+	      "Wearable6" { "ItemDef" "68" } // "Dragon Knight's Skirt"
 	    }
 		}
 	}
@@ -4395,12 +4395,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "38" }
-	      "Wearable2" { "ItemDef" "39" }
-	      "Wearable3" { "ItemDef" "40" }
-	      "Wearable4" { "ItemDef" "41" }
-	      "Wearable5" { "ItemDef" "311" }
-	      "Wearable6" { "ItemDef" "502" }
+	      "Wearable1" { "ItemDef" "38" } // "Crystal Maiden's Cape"
+	      "Wearable2" { "ItemDef" "39" } // "Crystal Maiden's Shoulder Pads"
+	      "Wearable3" { "ItemDef" "40" } // "Crystal Maiden's Weapon"
+	      "Wearable4" { "ItemDef" "41" } // "Crystal Maiden's Cuffs"
+	      "Wearable5" { "ItemDef" "5581" } // "Blueheart Tails" look at this nub lmao
+	      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
 	    }
 		}
 	}
@@ -4684,12 +4684,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "4095" }
-	      "Wearable2" { "ItemDef" "4114" }
-	      "Wearable3" { "ItemDef" "4115" }
-	      "Wearable4" { "ItemDef" "4116" }
-	      "Wearable5" { "ItemDef" "4117" }
-	      "Wearable6" { "ItemDef" "4118" }
+	      "Wearable1" { "ItemDef" "4095" } // "Wyrm Shield of Uldorak"
+	      "Wearable2" { "ItemDef" "4114" } // "Wyrm Helm of Uldorak"
+	      "Wearable3" { "ItemDef" "4115" } // "Wyrm Bracers of Uldorak"
+	      "Wearable4" { "ItemDef" "4116" } // "Wyrm Skirt of Uldorak" - seems to have physics problems
+	      "Wearable5" { "ItemDef" "4117" } // "Wyrm Pauldrons of Uldorak"
+	      "Wearable6" { "ItemDef" "4154" } // "Dragonmaw" (sword)
 	    }
 		}
 	}
@@ -4781,12 +4781,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "38" }
-	      "Wearable2" { "ItemDef" "39" }
-	      "Wearable3" { "ItemDef" "40" }
-	      "Wearable4" { "ItemDef" "41" }
-	      "Wearable5" { "ItemDef" "311" }
-	      "Wearable6" { "ItemDef" "502" }
+	      "Wearable1" { "ItemDef" "8695" } // "Cape of the Glacial Magnolia"
+	      "Wearable2" { "ItemDef" "8697" } // "Mantle of the Glacial Magnolia"
+	      "Wearable3" { "ItemDef" "4383" } // "Staff of the Crystalline Queen"
+	      "Wearable4" { "ItemDef" "4420" } // "Bracers of the Crystalline Queen"
+	      "Wearable5" { "ItemDef" "4540" } // "Tiara of the Crystalline Queen"
+	      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
 	    }
 		}
 	}
