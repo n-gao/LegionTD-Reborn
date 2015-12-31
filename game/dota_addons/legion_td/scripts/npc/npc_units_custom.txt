@@ -9162,7 +9162,7 @@
 	  "ModelScale"            "2"
 	  "SoundSet"				    	"Hero_DragonKnight"
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
-	  "Level"                 "1"
+	  "Level"                 "5"
 	  "HealthBarOffset"       "140"
 	
 	  "Ability1"							"dragon_knight_elder_dragon_form"
@@ -9468,7 +9468,7 @@
 		"ModelScale"            "2.5"
 		"SoundSet"				"Hero_Pudge"
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts"
-		"Level"                 "1"
+		"Level"                 "3"
 		"HealthBarOffset"       "450"
 	
 		"Ability1"							"alchemist_acid_spray"
@@ -9784,7 +9784,7 @@
 	  "ModelScale"            "2"
 	  "SoundSet"				    	"Hero_SkeletonKing"
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
-	  "Level"                 "1"
+	  "Level"                 "4"
 	  "HealthBarOffset"       "140"
 	
 	  "Ability1"							"skeleton_king_hellfire_blast"

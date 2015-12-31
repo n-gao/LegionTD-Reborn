@@ -191,7 +191,7 @@ function leaveLane(trigger)
       PopupSadface(npc)
       npc.leftLane = true
       if npc.lane.player then
-        npc.lane.player:Leaked(self)
+        npc.lane.player:Leaked(self, npc:GetLevel())
       end
       npc:SetMinimumGoldBounty(1)
       npc:SetMaximumGoldBounty(1)

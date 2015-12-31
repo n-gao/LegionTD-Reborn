@@ -7,7 +7,7 @@
 	"ModelScale"            "2.5"
 	"SoundSet"				"Hero_Pudge"
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts"
-	"Level"                 "1"
+	"Level"                 "3"
 	"HealthBarOffset"       "450"
 
 	"Ability1"							"alchemist_acid_spray"

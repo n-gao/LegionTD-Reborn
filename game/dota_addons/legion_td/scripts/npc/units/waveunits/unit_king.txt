@@ -7,7 +7,7 @@
   "ModelScale"            "2"
   "SoundSet"				    	"Hero_SkeletonKing"
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
-  "Level"                 "1"
+  "Level"                 "4"
   "HealthBarOffset"       "140"
 
   "Ability1"							"skeleton_king_hellfire_blast"

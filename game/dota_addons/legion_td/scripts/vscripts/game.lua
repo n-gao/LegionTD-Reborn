@@ -21,13 +21,13 @@ REGEN_BONUS_ADD = 0.2
 START_TANGO_ADD_AMOUNT = 1
 START_TANGO_ADD_SPEED = 5.0
 START_GOLD = 100
-START_TANGO = 30
+START_TANGO = 40
 START_FOOD_LIMIT = 10
 START_INCOME = 0
 
 START_TANGO_LIMIT = 100
 TANGO_LIMIT_PER_ROUND = 25
-LEAKED_TANGO_MULTIPLIER = 2
+LEAKED_TANGO_MULTIPLIER = .9
 
 LEGION_ERROR_BETWEEN_ROUNDS = 0
 LEGION_ERROR_NOT_ENOUGH_TANGOS = 1
@@ -423,7 +423,6 @@ function Game:RoundFinished()
   local round = self:GetCurrentRound()
   if round.bounty then
     for _,player in pairs(self.players) do
-      player.leaked = false;
       if player.plyEntitie and (player:GetTeamNumber() == round.winningTeam or round.winningTeam == DOTA_TEAM_NOTEAM) then
         player:Income(round.bounty)
       end
@@ -447,11 +446,23 @@ end
 
 --Startet nächste Runde
 function Game:StartNextRound()
+  for _,player in pairs(self.players) do
+    player.leaked = false;
+    player.leaksPenalty = 0;
+  end
   mode:SetFogOfWarDisabled(true)
   self.gameState = GAMESTATE_FIGHTING
   self.nextRoundTime = nil
   self.rounds[self.gameRound]:Begin()
   self:UnlockUnits()
+  if self.gameRound == 1 then
+    self.tangoCheckingTimer = Timers:CreateTimer(0, function()
+      for _,player in pairs(self.players) do
+        player:CreateTangoTicker()
+      end
+      return CHECKING_INTERVALL
+    end)
+  end
 end
 
 
@@ -505,13 +516,6 @@ function Game:Initialice()
     CustomGameEventManager:Send_ServerToAllClients("update_time", data)
     GameRules:SetTimeOfDay( 0.26 ) -- always day!
     return 1
-  end)
-
-  self.tangoCheckingTimer = Timers:CreateTimer(0, function()
-    for _,player in pairs(self.players) do
-      player:CreateTangoTicker()
-    end
-    return CHECKING_INTERVALL
   end)
 end
 

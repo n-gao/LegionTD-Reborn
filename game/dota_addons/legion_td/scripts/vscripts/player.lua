@@ -16,6 +16,7 @@ function Player.new(plyEntitie, userID)
   self.income = START_INCOME
   self.foodlimit = START_FOOD_LIMIT
   self.leaks = 0
+  self.leaksPenalty = 0
   return self
 end
 
@@ -208,9 +209,10 @@ function Player:RefreshPlayerInfo()
 end
 
 
-function Player:Leaked(unit)
+function Player:Leaked(unit, level)
   self.leaked = true
   self.leaks = self.leaks + 1
+  self.leaksPenalty = self.leaksPenalty + level
   self:RefreshPlayerInfo()
 end
 
@@ -297,7 +299,7 @@ function Player:CreateTangoTicker()
       self:AddTangos(self.tangoAddAmount)
       PopupHealing(self.lane.mainBuilding, self.tangoAddAmount)
       local tangoDelay = self.tangoAddSpeed
-      if self.leaked then tangoDelay = tangoDelay * LEAKED_TANGO_MULTIPLIER end
+      if self.leaked then tangoDelay = self.tangoAddSpeed / (LEAKED_TANGO_MULTIPLIER ^ self.leaksPenalty) end
       --self.tangoTimeStartSpan = GameRules:GetGameTime()
       --self.tangoTimeEndSpan = GameRules:GetGameTime() + tangoDelay
       return tangoDelay
