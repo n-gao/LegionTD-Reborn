@@ -413,7 +413,7 @@
     "Unit"
     {
       "NPCName"             "unit_kunkka"
-      "UnitCount"           "15"
+      "UnitCount"           "12"
     }
   }
   "Round24"

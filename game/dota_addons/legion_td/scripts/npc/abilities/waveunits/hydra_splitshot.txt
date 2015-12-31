@@ -14,7 +14,7 @@
 		"02"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"targets"				"3"
+			"targets"				"2"
 		}
 		"03"
 		{

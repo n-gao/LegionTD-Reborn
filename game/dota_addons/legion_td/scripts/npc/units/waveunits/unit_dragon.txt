@@ -7,7 +7,7 @@
   "ModelScale"            "2"
   "SoundSet"				    	"Hero_DragonKnight"
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
-  "Level"                 "5"
+  "Level"                 "7"
   "HealthBarOffset"       "140"
 
   "Ability1"							"dragon_knight_elder_dragon_form"

@@ -52,6 +52,11 @@
 	      "IsHidden"      "0"
 	      "IsDebuff"      "0"
 	
+	      "States"
+	      {
+	        "MODIFIER_STATE_CANNOT_MISS"      "MODIFIER_STATE_VALUE_ENABLED"
+	      }
+	
 	      "OnDeath"
 	      {
 	        "RunScript"
@@ -90,6 +95,11 @@
 	      "Passive"      "1"
 	      "IsHidden"      "0"
 	      "IsDebuff"      "0"
+	
+	      "States"
+	      {
+	        "MODIFIER_STATE_CANNOT_MISS"      "MODIFIER_STATE_VALUE_ENABLED"
+	      }
 	
 	      "OnDeath"
 	      {
@@ -9698,7 +9708,7 @@
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"targets"				"3"
+				"targets"				"2"
 			}
 			"03"
 			{
