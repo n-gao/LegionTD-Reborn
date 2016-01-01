@@ -79,54 +79,6 @@ RequiredUnits = {
 	"incomeunit_satyr",
 	"incomeunit_vulture",
 	"incomeunit_wolf",
-
-	--Naturebuilder
-	"tower_naturebuilder_agressive_boar",
-	"tower_naturebuilder_bear",
-	"tower_naturebuilder_big_bug",
-	"tower_naturebuilder_big_centaur",
-	"tower_naturebuilder_broodmother",
-	"tower_naturebuilder_bug",
-	"tower_naturebuilder_centaur",
-	"tower_naturebuilder_centaur_warrunner",
-	"tower_naturebuilder_druid_bear",
-	"tower_naturebuilder_flower_tower",
-	"tower_naturebuilder_hyena",
-	"tower_naturebuilder_iron_bear",
-	"tower_naturebuilder_shroom",
-	"tower_naturebuilder_spider",
-	"tower_naturebuilder_treant",
-
-	--Elementalbuilder
-	"tower_elementalbuilder_earthbender",
-	"tower_elementalbuilder_earthelemental",
-	"tower_elementalbuilder_earthgod",
-	"tower_elementalbuilder_earthwarrior",
-	"tower_elementalbuilder_firebender",
-	"tower_elementalbuilder_fireelemental",
-	"tower_elementalbuilder_firegod",
-	"tower_elementalbuilder_firewarrior",
-	"tower_elementalbuilder_thunderbender",
-	"tower_elementalbuilder_thunderelemental",
-	"tower_elementalbuilder_thundergod",
-	"tower_elementalbuilder_thunderwarrior",
-	"tower_elementalbuilder_voidbender",
-	"tower_elementalbuilder_voidelemental",
-	"tower_elementalbuilder_voidgod",
-	"tower_elementalbuilder_voidwarrior",
-	"tower_elementalbuilder_waterbender",
-	"tower_elementalbuilder_waterelemental",
-	"tower_elementalbuilder_watergod",
-	"tower_elementalbuilder_waterwarrior"
-
-	-- "tower_humanbuilder_hunter",
-	-- "tower_humanbuilder_blademaster",
-	-- "tower_humanbuilder_tactician",
-	-- "tower_humanbuilder_mage",
-	-- "tower_humanbuilder_icewrack_grandmaster",
-	-- "tower_humanbuilder_archbishop",
-	-- "tower_humanbuilder_soundmaster",
-	-- "tower_humanbuilder_futuristic_gyrocopter"
 }
 
 function Precache( context )

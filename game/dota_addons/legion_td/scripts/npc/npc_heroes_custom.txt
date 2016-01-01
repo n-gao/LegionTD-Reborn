@@ -12,6 +12,7 @@
 		"Ability4"				"elementalbuilder_spawn_firebender"
 		"Ability5"				"elementalbuilder_spawn_voidbender"
 	  "Ability6"        ""
+	  "Ability8"				"elementalbuilder_precache"
 	
 		"AttributeBaseStrength"	"0"
 		"AttributeBaseAgility"	"0"
@@ -82,6 +83,7 @@
 		"Ability4"				"naturebuilder_spawn_treant"
 		"Ability5"				"naturebuilder_spawn_hyena"
 		"Ability6"				"naturebuilder_spawn_centaur"
+		"Ability8"				"naturebuilder_precache"
 	
 		"AttributeBaseStrength"	"0"
 		"AttributeBaseAgility"	"0"
