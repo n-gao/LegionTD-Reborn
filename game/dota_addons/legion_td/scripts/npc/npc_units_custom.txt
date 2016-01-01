@@ -2865,8 +2865,9 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"humanbuilder_upgrade_hunter"
-		"Ability2"							"sell"
+		"Ability1"							"sell"
+		"Ability2"							"humanbuilder_upgrade_hunter"
+		
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -2939,11 +2940,11 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "21" }
-	      "Wearable2" { "ItemDef" "22" }
-	      "Wearable3" { "ItemDef" "23" }
-	      "Wearable4" { "ItemDef" "24" }
-	      "Wearable5" { "ItemDef" "25" }
+	      "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
+	      "Wearable2" { "ItemDef" "4180" } // "Nature's Shortbow"
+	      "Wearable3" { "ItemDef" "23" } // "Wind Ranger's Shoulder Pads"
+	      "Wearable4" { "ItemDef" "24" } // "Wind Ranger's Cape"
+	      "Wearable5" { "ItemDef" "25" } // "Wind Ranger's Quiver"
 	    }
 		}
 	}
@@ -3332,12 +3333,15 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "126" } //"Gyrocopter's Bottles"
-	      "Wearable2" { "ItemDef" "131" } //"Gyrocopter's head"
-	      "Wearable3" { "ItemDef" "176" } //"Gyrocopter's Goggles"
-	      "Wearable4" { "ItemDef" "177" } //"Gyrocopter's Guns"
-	      "Wearable5" { "ItemDef" "178" } //"Gyrocopter's Propeller"
-	      "Wearable6" { "ItemDef" "527" } //"Gyrocopter's Ambient Effects"
+	      "Wearable1" { "ItemDef" "126" } 	//"Gyrocopter's Bottles"
+	      "Wearable2" { "ItemDef" "131" } 	//"Gyrocopter's head"
+	      "Wearable4" { "ItemDef" "9261" } 	//"Atomic Ray Thrusters"
+	      "Wearable5" { "ItemDef" "178" } 	//"Gyrocopter's Propeller"
+	      "Wearable6" { "ItemDef" "527" } 	//"Gyrocopter's Ambient Effects"
+	      "Wearable7" { "ItemDef" "6898" } 	//"Bonnet of the Rainmaker"
+	      "Wearable8" { "ItemDef" "7121" } 	//"Olde Cap of the Rainmaker"
+	      "Wearable9" { "ItemDef" "6899" } 	//"Wings of the Rainmaker"
+	      "Wearable10" { "ItemDef" "6903" } 	//"Chassis of the Rainmaker"
 	      // not used: gyrocopter's default homing missile
 	    }
 		}
@@ -3622,12 +3626,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "126" } //"Gyrocopter's Bottles"
-	      "Wearable2" { "ItemDef" "131" } //"Gyrocopter's head"
-	      "Wearable3" { "ItemDef" "176" } //"Gyrocopter's Goggles"
-	      "Wearable4" { "ItemDef" "177" } //"Gyrocopter's Guns"
-	      "Wearable5" { "ItemDef" "178" } //"Gyrocopter's Propeller"
-	      "Wearable6" { "ItemDef" "527" } //"Gyrocopter's Ambient Effects"
+	      "Wearable1" { "ItemDef" "126" } //"Gyrocopter's Bottles" "#DOTA_WearableType_Back"
+	      "Wearable2" { "ItemDef" "131" } //"Gyrocopter's head" "#DOTA_WearableType_Body_Head"
+	      "Wearable3" { "ItemDef" "176" } //"Gyrocopter's Goggles" "#DOTA_WearableType_Head"
+	      "Wearable4" { "ItemDef" "5967" } // "Gatling Cannon of the Dragon Emperor"
+	      "Wearable5" { "ItemDef" "178" } //"Gyrocopter's Propeller" "#DOTA_WearableType_Propeller"
+	      "Wearable6" { "ItemDef" "527" } //"Gyrocopter's Ambient Effects" "#DOTA_WearableType_Unnamed_New_Item"
 	      // not used: gyrocopter's default homing missile
 	    }
 		}
@@ -3723,7 +3727,7 @@
 	      "Wearable1" { "ItemDef" "126" } //"Gyrocopter's Bottles"
 	      "Wearable2" { "ItemDef" "131" } //"Gyrocopter's head"
 	      "Wearable3" { "ItemDef" "176" } //"Gyrocopter's Goggles"
-	      "Wearable4" { "ItemDef" "177" } //"Gyrocopter's Guns"
+	      "Wearable4" { "ItemDef" "7827" } //"Sky-High Warship Wings"
 	      "Wearable5" { "ItemDef" "178" } //"Gyrocopter's Propeller"
 	      "Wearable6" { "ItemDef" "527" } //"Gyrocopter's Ambient Effects"
 	      // not used: gyrocopter's default homing missile
@@ -3817,11 +3821,11 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "21" }
-	      "Wearable2" { "ItemDef" "22" }
-	      "Wearable3" { "ItemDef" "23" }
-	      "Wearable4" { "ItemDef" "24" }
-	      "Wearable5" { "ItemDef" "25" }
+	      "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
+	      "Wearable2" { "ItemDef" "22" } // "Wind Ranger's Bow"
+	      "Wearable3" { "ItemDef" "23" } // "Wind Ranger's Shoulder Pads"
+	      "Wearable4" { "ItemDef" "24" } // "Wind Ranger's Cape"
+	      "Wearable5" { "ItemDef" "25" } // "Wind Ranger's Quiver"
 	    }
 		}
 	}
@@ -4202,11 +4206,11 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "281" }
-	      "Wearable2" { "ItemDef" "282" }
-	      "Wearable3" { "ItemDef" "283" }
-	      "Wearable4" { "ItemDef" "284" }
-	      "Wearable5" { "ItemDef" "285" }
+	      "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
+	      "Wearable2" { "ItemDef" "4454" } // "Lyralei's Breeze"
+	      "Wearable3" { "ItemDef" "23" } // "Wind Ranger's Shoulder Pads"
+	      "Wearable4" { "ItemDef" "24" } // "Wind Ranger's Cape"
+	      "Wearable5" { "ItemDef" "25" } // "Wind Ranger's Quiver"
 	    }
 		}
 	}
@@ -4587,11 +4591,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "281" }
-	      "Wearable2" { "ItemDef" "282" }
-	      "Wearable3" { "ItemDef" "283" }
-	      "Wearable4" { "ItemDef" "284" }
-	      "Wearable5" { "ItemDef" "285" }
+	      "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
+	      "Wearable2" { "ItemDef" "4552" } // "Gilded Falcon Bow"
+	      "Wearable3" { "ItemDef" "4562" } // "Gilded Falcon Wings"
+	      "Wearable4" { "ItemDef" "4554" } // "Gilded Falcon Cloak"
+	      "Wearable5" { "ItemDef" "4553" } // "Gilded Falcon Quiver"
+	      "Wearable6" { "ItemDef" "4559" } // "Gilded Falcon Helm" 
 	    }
 		}
 	}

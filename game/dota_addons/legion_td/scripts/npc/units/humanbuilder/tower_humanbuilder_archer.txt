@@ -10,8 +10,9 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"humanbuilder_upgrade_hunter"
-	"Ability2"							"sell"
+	"Ability1"							"sell"
+	"Ability2"							"humanbuilder_upgrade_hunter"
+	
 
 	// Armor
 	//----------------------------------------------------------------
@@ -84,11 +85,11 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "21" }
-      "Wearable2" { "ItemDef" "22" }
-      "Wearable3" { "ItemDef" "23" }
-      "Wearable4" { "ItemDef" "24" }
-      "Wearable5" { "ItemDef" "25" }
+      "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
+      "Wearable2" { "ItemDef" "4180" } // "Nature's Shortbow"
+      "Wearable3" { "ItemDef" "23" } // "Wind Ranger's Shoulder Pads"
+      "Wearable4" { "ItemDef" "24" } // "Wind Ranger's Cape"
+      "Wearable5" { "ItemDef" "25" } // "Wind Ranger's Quiver"
     }
 	}
 }

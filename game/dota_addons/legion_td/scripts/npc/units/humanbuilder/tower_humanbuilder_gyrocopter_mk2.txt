@@ -89,7 +89,7 @@
       "Wearable1" { "ItemDef" "126" } //"Gyrocopter's Bottles"
       "Wearable2" { "ItemDef" "131" } //"Gyrocopter's head"
       "Wearable3" { "ItemDef" "176" } //"Gyrocopter's Goggles"
-      "Wearable4" { "ItemDef" "177" } //"Gyrocopter's Guns"
+      "Wearable4" { "ItemDef" "7827" } //"Sky-High Warship Wings"
       "Wearable5" { "ItemDef" "178" } //"Gyrocopter's Propeller"
       "Wearable6" { "ItemDef" "527" } //"Gyrocopter's Ambient Effects"
       // not used: gyrocopter's default homing missile

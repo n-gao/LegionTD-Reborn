@@ -86,11 +86,11 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "281" }
-      "Wearable2" { "ItemDef" "282" }
-      "Wearable3" { "ItemDef" "283" }
-      "Wearable4" { "ItemDef" "284" }
-      "Wearable5" { "ItemDef" "285" }
+      "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
+      "Wearable2" { "ItemDef" "4454" } // "Lyralei's Breeze"
+      "Wearable3" { "ItemDef" "23" } // "Wind Ranger's Shoulder Pads"
+      "Wearable4" { "ItemDef" "24" } // "Wind Ranger's Cape"
+      "Wearable5" { "ItemDef" "25" } // "Wind Ranger's Quiver"
     }
 	}
 }

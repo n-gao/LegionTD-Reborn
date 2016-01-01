@@ -85,12 +85,12 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "126" } //"Gyrocopter's Bottles"
-      "Wearable2" { "ItemDef" "131" } //"Gyrocopter's head"
-      "Wearable3" { "ItemDef" "176" } //"Gyrocopter's Goggles"
-      "Wearable4" { "ItemDef" "177" } //"Gyrocopter's Guns"
-      "Wearable5" { "ItemDef" "178" } //"Gyrocopter's Propeller"
-      "Wearable6" { "ItemDef" "527" } //"Gyrocopter's Ambient Effects"
+      "Wearable1" { "ItemDef" "126" } //"Gyrocopter's Bottles" "#DOTA_WearableType_Back"
+      "Wearable2" { "ItemDef" "131" } //"Gyrocopter's head" "#DOTA_WearableType_Body_Head"
+      "Wearable3" { "ItemDef" "176" } //"Gyrocopter's Goggles" "#DOTA_WearableType_Head"
+      "Wearable4" { "ItemDef" "5967" } // "Gatling Cannon of the Dragon Emperor"
+      "Wearable5" { "ItemDef" "178" } //"Gyrocopter's Propeller" "#DOTA_WearableType_Propeller"
+      "Wearable6" { "ItemDef" "527" } //"Gyrocopter's Ambient Effects" "#DOTA_WearableType_Unnamed_New_Item"
       // not used: gyrocopter's default homing missile
     }
 	}
