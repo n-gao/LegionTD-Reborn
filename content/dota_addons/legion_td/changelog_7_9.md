@@ -16,11 +16,11 @@
 
 	This means regular creeps will increase time between ticks by roughly 11%/23%/37%/52%/69%/88%/109%/158% etc; leaking 7 creeps will now slightly halve tango production, and a full 15 units leaked in a wave will cause that players tango production to be cut to less than a quarter.
 	
-- "Boss" creeps (fatty, king, dragon) levels increased to 5/6/7. (all other wave creeps are level 1)
+- "Boss" creeps (fatty, king, dragon) levels increased to 5/6/7 (all other wave creeps are level 1).
 
-- Wave creeps now spawn in wider formations rather than clumped together
+- Wave creeps now spawn in wider formations rather than clumped together.
 
-- Wave creeps and player units will now walk to a point across from their spawn rather than all converging to a point on the other side
+- Wave creeps and player units will now walk to a point across from their spawn rather than all converging to a point on the other side.
 
 - Tango production now starts at the beginning of the first wave rather than when the hero enters the world.
 
@@ -30,11 +30,15 @@
 
 ## Creep wave changes
 
-- Not Lifestealer now has vampiric aura instead of feast; attackrate from 1.2 to .8, health from 210 to 280
+- Fixed Assassin backstab; it previously would trigger on front-stabs if slightly to one side.
 
-- Hydra Splitshot additional attacks reduced from 3 to 2
+- Assassin spawn count from 10 to 12.
 
-- Kunkka spawn count from 15 to 12
+- Not Lifestealer now has vampiric aura instead of feast; attackrate from 1.2 to .8, health from 210 to 280.
+
+- Hydra Splitshot additional attacks reduced from 3 to 2.
+
+- Kunkka spawn count from 15 to 12.
 
 ## Technical
 - Humanbuilder units are cached on hero select rather than game init. In the future all units will be converted to this new system.

@@ -2,11 +2,10 @@ EXPORTS = {}
 
 EXPORTS.Init = function( self )
 	self:SetContextThink( "init_think", function()
-		self:GetAbilityByIndex(3):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggro
 		self.Skill = UseSkillOnTarget
-		self.ability = self:GetAbilityByIndex(3)
+		self.ability = self:FindAbilityByName("soldier_shield_bash")
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_soldier.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )

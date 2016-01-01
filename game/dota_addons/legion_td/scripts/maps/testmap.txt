@@ -237,7 +237,7 @@
     "Unit"
     {
       "NPCName"             "unit_assassins"
-      "UnitCount"           "10"
+      "UnitCount"           "12"
     }
   }
   "Round8"
