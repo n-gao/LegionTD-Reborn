@@ -83,6 +83,7 @@ function GameRound:OnNPCSpawned(event)
   if not spawned or spawned:IsPhantom() or spawned:GetClassname() == "npc_dota_thinker" or spawned:GetUnitName() == "" then
     return
   end
+  if spawned:GetUnitName() == "storm_spirit_static_remnant" then return end
   if spawned:GetTeamNumber() == DOTA_TEAM_NEUTRALS and not spawned.dontAdd then
     self:AddUnitToBeKilled(spawned)
   end
