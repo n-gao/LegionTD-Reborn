@@ -1,4 +1,4 @@
-"soldier_shield_bash"
+"militia_shield_bash"
 {
 	"BaseClass"						"ability_datadriven"
 	"AbilityTextureName"			"dragon_knight_dragon_tail"
@@ -14,7 +14,7 @@
 	"AbilityCooldown"               "2"
 	"AbilityManaCost"               "0"
 
-	"AbilityDamage"                 "80"
+	"AbilityDamage"                 "10"
 
 	"AbilitySpecial"
 	{
@@ -26,29 +26,29 @@
 		"02"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"damage_blocked"		"12"
+			"damage_blocked"		"1"
 		}
 		"03"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"chance"				"85"
+			"chance"				"00"
 		}
 	}
 
 	"OnSpellStart"
 	{
-		"Damage"
-		{
-			"Target"	"TARGET"
-			"Type"		"DAMAGE_TYPE_MAGICAL"
-			"Damage"	"%AbilityDamage"
-		}
-
-		"Stun"
-		{
-			"Target"	"TARGET"
-			"Duration"	"%stun_duration"
-		}
+//		"Damage"
+//		{
+//			"Target"	"TARGET"
+//			"Type"		"DAMAGE_TYPE_MAGICAL"
+//			"Damage"	"%AbilityDamage"
+//		}
+//
+//		"Stun"
+//		{
+//			"Target"	"TARGET"
+//			"Duration"	"%stun_duration"
+//		}
 
 	//	"FireEffect"
 	//	{
@@ -68,7 +68,7 @@
 		"modifier_footman_pms"
 		{
 			"Passive"					"1"
-			"IsHidden"					"0"
+			"IsHidden"					"1"
 			"ThinkInterval"				"0.03"
 			"OnCreated"
 			{

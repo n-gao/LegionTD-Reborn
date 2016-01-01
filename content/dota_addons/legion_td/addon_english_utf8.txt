@@ -804,7 +804,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_food_cost"            "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_spawn_archer"                                  "Spawn Archer"
-		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_Description"                      ""
+		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_Description"                      "Skills: ---"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_atk_damage_tooltip"               "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_atk_speed_tooltip"                "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_atk_range_tooltip"                "ATK RANGE:"
@@ -813,7 +813,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_food_cost"                        "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1"                          "Spawn Gyrocopter Mk1"
-		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_Description"              ""
+		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_Description"              "Skills: ---"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_atk_damage_tooltip"       "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_atk_speed_tooltip"        "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_atk_range_tooltip"        "ATK RANGE:"
@@ -822,7 +822,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_food_cost"                "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant"                               "Spawn Lieutnant"
-		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_Description"                   ""
+		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_Description"                   "Skills: Shield Bash"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_atk_damage_tooltip"            "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_atk_speed_tooltip"             "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_atk_range_tooltip"             "ATK RANGE:"
@@ -831,7 +831,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_food_cost"                     "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_spawn_militia"                                 "Spawn Militia"
-		"DOTA_Tooltip_ability_humanbuilder_spawn_militia_Description"                     ""
+		"DOTA_Tooltip_ability_humanbuilder_spawn_militia_Description"                     "Skills: ---"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_militia_atk_damage_tooltip"              "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_militia_atk_speed_tooltip"               "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_militia_atk_range_tooltip"               "ATK RANGE:"
@@ -841,7 +841,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_spawn_novice"                                  "Spawn Novice"
-		"DOTA_Tooltip_ability_humanbuilder_spawn_novice_Description"                      ""
+		"DOTA_Tooltip_ability_humanbuilder_spawn_novice_Description"                      "Skills: Chain Fade"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_novice_atk_damage_tooltip"               "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_novice_atk_speed_tooltip"                "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_novice_atk_range_tooltip"                "ATK RANGE:"
@@ -850,7 +850,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_spawn_novice_food_cost"                        "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop"                            "Upgrade Archbishop"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_Description"                ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_Description"                "Skills: Shadow Wave, Healing Aura"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_atk_damage_tooltip"         "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_atk_speed_tooltip"          "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_atk_range_tooltip"          "ATK RANGE:"
@@ -859,7 +859,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_food_cost"                  "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage"                              "Upgrade Archmage"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_Description"                  ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_Description"                  "Skills: Chain Fade, Crystal Nova"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_atk_damage_tooltip"           "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_atk_speed_tooltip"            "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_atk_range_tooltip"            "ATK RANGE:"
@@ -868,7 +868,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_food_cost"                    "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster"                           "Upgrade Blademaster"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_Description"               ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_Description"               "Skills: Blade fury, Blade Dance"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_atk_damage_tooltip"        "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_atk_speed_tooltip"         "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_atk_range_tooltip"         "ATK RANGE:"
@@ -877,7 +877,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_food_cost"                 "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_footman"                               "Upgrade Footman"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_footman_Description"                   ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_footman_Description"                   "Skills: Shield Bash"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_footman_atk_damage_tooltip"            "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_footman_atk_speed_tooltip"             "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_footman_atk_range_tooltip"             "ATK RANGE:"
@@ -887,7 +887,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter"                 "Upgrade Futuristic Gyrocopter"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_Description"     ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_Description"     "Skills: Flak Cannon, Call Down, Rocket Barrage"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_atk_speed_tooltip"		"ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_atk_range_tooltip"		"ATK RANGE:"
@@ -897,7 +897,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_general"                               "Upgrade General"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_general_Description"                   ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_general_Description"                   "Skills: Shield Bash, Vladmir Aura"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_general_atk_damage_tooltip"            "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_general_atk_speed_tooltip"             "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_general_atk_range_tooltip"             "ATK RANGE:"
@@ -907,7 +907,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gunner"                                "Upgrade Gunner"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_Description"                    ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_Description"                    "Skills: Headshot"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_atk_damage_tooltip"             "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_atk_speed_tooltip"              "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_atk_range_tooltip"              "ATK RANGE:"
@@ -917,7 +917,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2"                        "Upgrade Gyrocopter Mk2"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_Description"            ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_Description"            "Skills: Rocket Barrage"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_atk_damage_tooltip"     "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_atk_speed_tooltip"      "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_atk_range_tooltip"      "ATK RANGE:"
@@ -927,7 +927,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_hunter"                                "Upgrade Hunter"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_Description"                    ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_Description"                    "Skills: Headshot"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_atk_damage_tooltip"             "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_atk_speed_tooltip"              "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_atk_range_tooltip"              "ATK RANGE:"
@@ -937,7 +937,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster"                  "Upgrade Icewrack Grandmaster"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_Description"      ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_Description"      "Skills: Freezing Field"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_atk_speed_tooltip"		"ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_atk_range_tooltip"		"ATK RANGE:"
@@ -947,7 +947,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage"                                  "Upgrade Mage"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage_Description"                      ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage_Description"                      "Skills: Chain Fade, Crystal Nova"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage_atk_damage_tooltip"               "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage_atk_speed_tooltip"                "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage_atk_range_tooltip"                "ATK RANGE:"
@@ -956,7 +956,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage_food_cost"                        "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_marksman"                              "Upgrade Marksman"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_Description"                  ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_Description"                  "Skills: Headshot"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_atk_damage_tooltip"           "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_atk_speed_tooltip"            "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_atk_range_tooltip"            "ATK RANGE:"
@@ -966,7 +966,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_paladin"                               "Upgrade Paladin"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_Description"                   ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_Description"                   "Skills: Purification"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_atk_damage_tooltip"            "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_atk_speed_tooltip"             "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_atk_range_tooltip"             "ATK RANGE:"
@@ -976,7 +976,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter"                          "Upgrade Sharpshooter"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_Description"              ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_Description"              "Skills: Headshot"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_atk_damage_tooltip"       "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_atk_speed_tooltip"        "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_atk_range_tooltip"        "ATK RANGE:"
@@ -986,7 +986,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soldier"                               "Upgrade Soldier"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_Description"                   ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_Description"                   "Skills: Shield Bash"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_atk_damage_tooltip"            "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_atk_speed_tooltip"             "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_atk_range_tooltip"             "ATK RANGE:"
@@ -996,7 +996,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster"                           "Upgrade Soundmaster"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_Description"               ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_Description"               "Skills: Deafening Blast, Lightning Storm"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_atk_damage_tooltip"        "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_atk_speed_tooltip"         "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_atk_range_tooltip"         "ATK RANGE:"
@@ -1005,8 +1005,8 @@
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_food_cost"                 "FOOD COST:"
 
 
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman"                              "Humanbuilder Upgrade Spearman"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_Description"                  ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman"                              "Upgrade Spearman"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_Description"                  "Skills: Shield Bash"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_atk_damage_tooltip"           "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_atk_speed_tooltip"            "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_atk_range_tooltip"            "ATK RANGE:"
@@ -1016,7 +1016,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_tactician"                             "Upgrade Tactician"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_Description"                 ""
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_Description"                 "Skills: Guardian Angel, Storm Bolt, Tactical Aura"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_atk_damage_tooltip"          "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_atk_speed_tooltip"           "ATK SPEED:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_atk_range_tooltip"           "ATK RANGE:"
@@ -1031,7 +1031,7 @@
 		"DOTA_Tooltip_ability_archbishop_healing_aura_aura_radius"                        "AURA RADIUS:"
 
 		"DOTA_Tooltip_ability_archbishop_shadow_wave"                                     "Shadow Wave"
-		"DOTA_Tooltip_ability_archbishop_shadow_wave_Description"                         ""
+		"DOTA_Tooltip_ability_archbishop_shadow_wave_Description"                         "Sends out a bolt of power that arcs between allies, healing them while damaging any units standing nearby. Archbishop is always healed by Shadow Wave. <font color=\"#33ff33\">Damage to each enemy is not multiplied by healing multiple adjacent units.</font>"
 		"DOTA_Tooltip_ability_archbishop_shadow_wave_bounce_radius"                       "BOUNCE RADIUS:"
 		"DOTA_Tooltip_ability_archbishop_shadow_wave_damage_radius"                       "DAMAGE RADIUS:"
 		"DOTA_Tooltip_ability_archbishop_shadow_wave_max_targets"                         "MAX TARGETS:"
@@ -1039,7 +1039,7 @@
 		"DOTA_Tooltip_ability_archbishop_shadow_wave_damage"                              "DAMAGE:"
 
 		"DOTA_Tooltip_ability_archmage_chain_fade"                                        "Chain Fade"
-		"DOTA_Tooltip_ability_archmage_chain_fade_Description"                            ""
+		"DOTA_Tooltip_ability_archmage_chain_fade_Description"                            "Throws a bolt of energy that jumps between enemies, dealing damage and lowering attack damage for the duration."
 		"DOTA_Tooltip_ability_archmage_chain_fade_jumps"                                  "JUMPS:"
 		"DOTA_Tooltip_ability_archmage_chain_fade_reduce_duration"                        "REDUCE DURATION:"
 		"DOTA_Tooltip_ability_archmage_chain_fade_reduce_damage"                          "REDUCE DAMAGE:"
@@ -1048,10 +1048,9 @@
 		"DOTA_Tooltip_ability_archmage_chain_fade_vision_radius"                          "VISION RADIUS:"
 		"DOTA_Tooltip_ability_archmage_chain_fade_damage"                                 "DAMAGE:"
 		"DOTA_Tooltip_ability_archmage_chain_fade_jump_interval"                          "JUMP INTERVAL:"
-		"DOTA_Tooltip_ability_archmage_chain_fade_mini_stun"                              "MINI STUN:"
 
 		"DOTA_Tooltip_ability_archmage_crystal_nova"                                      "Crystal Nova"
-		"DOTA_Tooltip_ability_archmage_crystal_nova_Description"                          ""
+		"DOTA_Tooltip_ability_archmage_crystal_nova_Description"                          "A burst of damaging frost slows enemy movement and attack rate in the targeted area."
 		"DOTA_Tooltip_ability_archmage_crystal_nova_radius"                               "RADIUS:"
 		"DOTA_Tooltip_ability_archmage_crystal_nova_movespeed_slow"                       "MOVESPEED SLOW:"
 		"DOTA_Tooltip_ability_archmage_crystal_nova_attackspeed_slow"                     "ATTACKSPEED SLOW:"
@@ -1069,15 +1068,11 @@
 		"DOTA_Tooltip_ability_blademaster_blade_fury_blade_fury_radius"                   "BLADE FURY RADIUS:"
 		"DOTA_Tooltip_ability_blademaster_blade_fury_duration"                            "DURATION:"
 
-		"DOTA_Tooltip_ability_footman_block"                                              "Block"
-		"DOTA_Tooltip_ability_footman_block_Description"                                  ""
-		"DOTA_Tooltip_ability_footman_block_damage_blocked"                               "DAMAGE BLOCKED:"
-		"DOTA_Tooltip_ability_footman_block_chance"                                       "CHANCE:"
-
-		"DOTA_Tooltip_ability_footman_shield_bash"                                        "Shield Bash"
-		"DOTA_Tooltip_ability_footman_shield_bash_Description"                            ""
-		"DOTA_Tooltip_ability_footman_shield_bash_stun_duration"                          "STUN DURATION:"
-		"DOTA_Tooltip_ability_footman_shield_bash_dragon_cast_range"                      "DRAGON CAST RANGE:"
+		"DOTA_Tooltip_ability_footman_shield_bash"                                              "Block"
+		"DOTA_Tooltip_ability_footman_shield_bash_Description"                                  "Stuns and deals magic damage to a foe without breaking the rhythm of attacks. Passively blocks some damage from incoming phyiscal attacks."
+		"DOTA_Tooltip_ability_footman_shield_bash_stun_duration"                                "STUN DURATION:"
+		"DOTA_Tooltip_ability_footman_shield_bash_damage_blocked"                               "DAMAGE BLOCKED:"
+		"DOTA_Tooltip_ability_footman_shield_bash_chance"                                       "CHANCE:"
 
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_call_down"                            "Call Down"
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_call_down_Description"                ""
@@ -1102,15 +1097,11 @@
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_rocket_barrage_radius"                "RADIUS:"
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_rocket_barrage_rockets_per_second"    "ROCKETS PER SECOND:"
 
-		"DOTA_Tooltip_ability_general_block"                                              "Block"
-		"DOTA_Tooltip_ability_general_block_Description"                                  ""
-		"DOTA_Tooltip_ability_general_block_damage_blocked"                               "DAMAGE BLOCKED:"
-		"DOTA_Tooltip_ability_general_block_chance"                                       "CHANCE:"
-
-		"DOTA_Tooltip_ability_general_shield_bash"                                        "Shield Bash"
-		"DOTA_Tooltip_ability_general_shield_bash_Description"                            ""
-		"DOTA_Tooltip_ability_general_shield_bash_stun_duration"                          "STUN DURATION:"
-		"DOTA_Tooltip_ability_general_shield_bash_dragon_cast_range"                      "DRAGON CAST RANGE:"
+		"DOTA_Tooltip_ability_general_shield_bash"                                              "Block"
+		"DOTA_Tooltip_ability_general_shield_bash_Description"                                  "Stuns and deals magic damage to a foe without breaking the rhythm of attacks. Passively blocks some damage from incoming phyiscal attacks."
+		"DOTA_Tooltip_ability_general_shield_bash_stun_duration"                                "STUN DURATION:"
+		"DOTA_Tooltip_ability_general_shield_bash_damage_blocked"                               "DAMAGE BLOCKED:"
+		"DOTA_Tooltip_ability_general_shield_bash_chance"                                       "CHANCE:"
 
 		"DOTA_Tooltip_ability_gunner_headshot"                                            "Headshot"
 		"DOTA_Tooltip_ability_gunner_headshot_Description"                                ""
@@ -1141,28 +1132,23 @@
 		"DOTA_Tooltip_ability_hunter_headshot_attackspeed_slow"                           "ATTACKSPEED SLOW:"
 
 		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field"                        "Freezing Field"
-		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_Description"            ""
-		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_debuff_radius"          "DEBUFF RADIUS:"
-		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_explosion_radius"       "EXPLOSION RADIUS:"
+		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_Description"            "Icy explosions fall on the positions of random enemies, dealing impact damage in a small area of effect, and chilling a larger area of effect, slowing and damaging over time."
 		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_explosion_interval"     "EXPLOSION INTERVAL:"
-		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_movespeed_slow"         "MOVESPEED SLOW:"
-		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_attack_slow"            "ATTACK SLOW:"
-		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_slow_duration"          "SLOW DURATION:"
-		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_explosion_max_dist"     "EXPLOSION MAX DIST:"
-		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_damage"                 "DAMAGE:"
+		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_explosion_radius"       "IMPACT RADIUS:"
+		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_debuff_radius"          "DEBUFF RADIUS:"
+		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_debuff_slow"            "CHILL SLOW:"
+		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_slow_duration"          "CHILL DURATION:"
+		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_damage"                 "IMPACT DAMAGE:"
+		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_freeze_damage"          "CHILL DPS:"
 
-		"DOTA_Tooltip_ability_lieutenant_block"                                           "Block"
-		"DOTA_Tooltip_ability_lieutenant_block_Description"                               ""
-		"DOTA_Tooltip_ability_lieutenant_block_damage_blocked"                            "DAMAGE BLOCKED:"
-		"DOTA_Tooltip_ability_lieutenant_block_chance"                                    "CHANCE:"
-
-		"DOTA_Tooltip_ability_lieutenant_shield_bash"                                     "Shield Bash"
-		"DOTA_Tooltip_ability_lieutenant_shield_bash_Description"                         ""
-		"DOTA_Tooltip_ability_lieutenant_shield_bash_stun_duration"                       "STUN DURATION:"
-		"DOTA_Tooltip_ability_lieutenant_shield_bash_dragon_cast_range"                   "DRAGON CAST RANGE:"
+		"DOTA_Tooltip_ability_lieutenant_shield_bash"                                           "Block"
+		"DOTA_Tooltip_ability_lieutenant_shield_bash_Description"                               "Stuns and deals magic damage to a foe without breaking the rhythm of attacks. Passively blocks some damage from incoming phyiscal attacks."
+		"DOTA_Tooltip_ability_lieutenant_shield_bash_stun_duration"                                "STUN DURATION:"
+		"DOTA_Tooltip_ability_lieutenant_shield_bash_damage_blocked"                            "DAMAGE BLOCKED:"
+		"DOTA_Tooltip_ability_lieutenant_shield_bash_chance"                                    "CHANCE:"
 
 		"DOTA_Tooltip_ability_mage_chain_fade"                                            "Chain Fade"
-		"DOTA_Tooltip_ability_mage_chain_fade_Description"                                ""
+		"DOTA_Tooltip_ability_mage_chain_fade_Description"                                "Throws a bolt of energy that jumps between enemies, dealing damage and lowering attack damage for the duration."
 		"DOTA_Tooltip_ability_mage_chain_fade_jumps"                                      "JUMPS:"
 		"DOTA_Tooltip_ability_mage_chain_fade_reduce_duration"                            "REDUCE DURATION:"
 		"DOTA_Tooltip_ability_mage_chain_fade_reduce_damage"                              "REDUCE DAMAGE:"
@@ -1171,10 +1157,9 @@
 		"DOTA_Tooltip_ability_mage_chain_fade_vision_radius"                              "VISION RADIUS:"
 		"DOTA_Tooltip_ability_mage_chain_fade_damage"                                     "DAMAGE:"
 		"DOTA_Tooltip_ability_mage_chain_fade_jump_interval"                              "JUMP INTERVAL:"
-		"DOTA_Tooltip_ability_mage_chain_fade_mini_stun"                                  "MINI STUN:"
 
 		"DOTA_Tooltip_ability_mage_crystal_nova"                                          "Crystal Nova"
-		"DOTA_Tooltip_ability_mage_crystal_nova_Description"                              ""
+		"DOTA_Tooltip_ability_mage_crystal_nova_Description"                              "A burst of damaging frost slows enemy movement and attack rate in the targeted area."
 		"DOTA_Tooltip_ability_mage_crystal_nova_radius"                                   "RADIUS:"
 		"DOTA_Tooltip_ability_mage_crystal_nova_movespeed_slow"                           "MOVESPEED SLOW:"
 		"DOTA_Tooltip_ability_mage_crystal_nova_attackspeed_slow"                         "ATTACKSPEED SLOW:"
@@ -1188,18 +1173,8 @@
 		"DOTA_Tooltip_ability_marksman_headshot_movespeed_slow"                           "MOVESPEED SLOW:"
 		"DOTA_Tooltip_ability_marksman_headshot_attackspeed_slow"                         "ATTACKSPEED SLOW:"
 
-		"DOTA_Tooltip_ability_militia_block"                                              "Block"
-		"DOTA_Tooltip_ability_militia_block_Description"                                  ""
-		"DOTA_Tooltip_ability_militia_block_damage_blocked"                               "DAMAGE BLOCKED:"
-		"DOTA_Tooltip_ability_militia_block_chance"                                       "CHANCE:"
-
-		"DOTA_Tooltip_ability_militia_shield_bash"                                        "Shield Bash"
-		"DOTA_Tooltip_ability_militia_shield_bash_Description"                            ""
-		"DOTA_Tooltip_ability_militia_shield_bash_stun_duration"                          "STUN DURATION:"
-		"DOTA_Tooltip_ability_militia_shield_bash_dragon_cast_range"                      "DRAGON CAST RANGE:"
-
 		"DOTA_Tooltip_ability_novice_chain_fade"                                          "Chain Fade"
-		"DOTA_Tooltip_ability_novice_chain_fade_Description"                              ""
+		"DOTA_Tooltip_ability_novice_chain_fade_Description"                              "Throws a bolt of energy that jumps between enemies, dealing damage and lowering attack damage for the duration."
 		"DOTA_Tooltip_ability_novice_chain_fade_jumps"                                    "JUMPS:"
 		"DOTA_Tooltip_ability_novice_chain_fade_reduce_duration"                          "REDUCE DURATION:"
 		"DOTA_Tooltip_ability_novice_chain_fade_reduce_damage"                            "REDUCE DAMAGE:"
@@ -1208,7 +1183,6 @@
 		"DOTA_Tooltip_ability_novice_chain_fade_vision_radius"                            "VISION RADIUS:"
 		"DOTA_Tooltip_ability_novice_chain_fade_damage"                                   "DAMAGE:"
 		"DOTA_Tooltip_ability_novice_chain_fade_jump_interval"                            "JUMP INTERVAL:"
-		"DOTA_Tooltip_ability_novice_chain_fade_mini_stun"                                "MINI STUN:"
 
 		"DOTA_Tooltip_ability_paladin_purification"                                       "Purification"
 		"DOTA_Tooltip_ability_paladin_purification_Description"                           ""
@@ -1222,18 +1196,14 @@
 		"DOTA_Tooltip_ability_sharpshooter_headshot_movespeed_slow"                       "MOVESPEED SLOW:"
 		"DOTA_Tooltip_ability_sharpshooter_headshot_attackspeed_slow"                     "ATTACKSPEED SLOW:"
 
-		"DOTA_Tooltip_ability_soldier_block"                                              "Block"
-		"DOTA_Tooltip_ability_soldier_block_Description"                                  ""
-		"DOTA_Tooltip_ability_soldier_block_damage_blocked"                               "DAMAGE BLOCKED:"
-		"DOTA_Tooltip_ability_soldier_block_chance"                                       "CHANCE:"
-
-		"DOTA_Tooltip_ability_soldier_shield_bash"                                        "Shield Bash"
-		"DOTA_Tooltip_ability_soldier_shield_bash_Description"                            ""
-		"DOTA_Tooltip_ability_soldier_shield_bash_stun_duration"                          "STUN DURATION:"
-		"DOTA_Tooltip_ability_soldier_shield_bash_dragon_cast_range"                      "DRAGON CAST RANGE:"
+		"DOTA_Tooltip_ability_soldier_shield_bash"                                              "Block"
+		"DOTA_Tooltip_ability_soldier_shield_bash_Description"                                  "Stuns and deals magic damage to a foe without breaking the rhythm of attacks. Passively blocks some damage from incoming phyiscal attacks."
+		"DOTA_Tooltip_ability_soldier_shield_bash_stun_duration"                                "STUN DURATION:"
+		"DOTA_Tooltip_ability_soldier_shield_bash_damage_blocked"                               "DAMAGE BLOCKED:"
+		"DOTA_Tooltip_ability_soldier_shield_bash_chance"                                       "CHANCE:"
 
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast"                                "Deafening Blast"
-		"DOTA_Tooltip_ability_soundmaster_deafening_blast_Description"                    ""
+		"DOTA_Tooltip_ability_soundmaster_deafening_blast_Description"                    "Throws a wave of pure sound directly north or south, pushing enemies back while disabling them, then disarming them."
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast_travel_distance"                "TRAVEL DISTANCE:"
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast_travel_speed"                   "TRAVEL SPEED:"
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast_radius_start"                   "RADIUS START:"
@@ -1242,28 +1212,23 @@
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast_damage"                         "DAMAGE:"
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast_knockback_duration"             "KNOCKBACK DURATION:"
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast_disarm_duration"                "DISARM DURATION:"
-		"DOTA_Tooltip_ability_soundmaster_deafening_blast_tree_radius"                    "TREE RADIUS:"
 
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast_dummy"                          "Deafening Blast Dummy"
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast_dummy_Description"              ""
 
 		"DOTA_Tooltip_ability_soundmaster_lightning_storm"                                "Lightning Storm"
-		"DOTA_Tooltip_ability_soundmaster_lightning_storm_Description"                    ""
+		"DOTA_Tooltip_ability_soundmaster_lightning_storm_Description"                    "Lightning jumps between enemies, dealing damage and then <font color=\"#33ff33\">decreasing each target's resistance to further magic damage.</font>"
 		"DOTA_Tooltip_ability_soundmaster_lightning_storm_jump_count"                     "JUMP COUNT:"
 		"DOTA_Tooltip_ability_soundmaster_lightning_storm_radius"                         "RADIUS:"
 		"DOTA_Tooltip_ability_soundmaster_lightning_storm_jump_delay"                     "JUMP DELAY:"
 		"DOTA_Tooltip_ability_soundmaster_lightning_storm_resist_debuff_duration"         "RESIST DEBUFF DURATION:"
 		"DOTA_Tooltip_ability_soundmaster_lightning_storm_resist_debuff"                  "RESIST DEBUFF:"
 
-		"DOTA_Tooltip_ability_spearman_block"                                             "Block"
-		"DOTA_Tooltip_ability_spearman_block_Description"                                 ""
-		"DOTA_Tooltip_ability_spearman_block_damage_blocked"                              "DAMAGE BLOCKED:"
-		"DOTA_Tooltip_ability_spearman_block_chance"                                      "CHANCE:"
-
-		"DOTA_Tooltip_ability_spearman_shield_bash"                                       "Shield Bash"
-		"DOTA_Tooltip_ability_spearman_shield_bash_Description"                           ""
-		"DOTA_Tooltip_ability_spearman_shield_bash_stun_duration"                         "STUN DURATION:"
-		"DOTA_Tooltip_ability_spearman_shield_bash_dragon_cast_range"                     "DRAGON CAST RANGE:"
+		"DOTA_Tooltip_ability_spearman_shield_bash"                                             "Block"
+		"DOTA_Tooltip_ability_spearman_shield_bash_Description"                                 "Stuns and deals magic damage to a foe without breaking the rhythm of attacks. Passively blocks some damage from incoming phyiscal attacks."
+		"DOTA_Tooltip_ability_spearman_shield_bash_stun_duration"                                "STUN DURATION:"
+		"DOTA_Tooltip_ability_spearman_shield_bash_damage_blocked"                              "DAMAGE BLOCKED:"
+		"DOTA_Tooltip_ability_spearman_shield_bash_chance"                                      "CHANCE:"
 
 		"DOTA_Tooltip_ability_tactician_guardian_angel"                                   "Guardian Angel"
 		"DOTA_Tooltip_ability_tactician_guardian_angel_Description"                       ""

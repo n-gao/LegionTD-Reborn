@@ -41,19 +41,19 @@
 	"Modifiers"
 	{
 		
-		"modifier_vladmir_general_aura_emitter"  //We use two aura emitters because lifesteal is different for melee and ranged.
+		"modifier_vladmir_aura_emitter"  //We use two aura emitters because lifesteal is different for melee and ranged.
 		{
 			"Passive"				"1"
 			"IsHidden"				"1"
 			
-			"Aura" 					"modifier_vladmir_general_aura"
+			"Aura" 					"modifier_vladmir_aura"
 			"Aura_Radius" 			"%aura_radius"
 			"Aura_Teams" 			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 			"Aura_Types" 			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 			"Aura_Flags" 			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
 			"Aura_ApplyToCaster" 	"1"
 		}
-		"modifier_vladmir_general_aura"
+		"modifier_vladmir_aura"
 		{
 			"Passive"			"0"
 			"IsHidden"			"0"
