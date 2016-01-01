@@ -24,7 +24,7 @@ function freezing_field_explode( keys )
     local maxDistance = ability:GetLevelSpecialValueFor( "explosion_max_dist", ( ability:GetLevel() - 1 ) )
     local radius = ability:GetLevelSpecialValueFor( "explosion_radius", ( ability:GetLevel() - 1 ) )
     local debuffRadius = ability:GetLevelSpecialValueFor( "debuff_radius", ( ability:GetLevel() - 1 ) )
-    local modifierName = "modifier_freezing_field_debuff_datadriven"
+    local modifierName = "modifier_freezing_field_debuff"
     local refModifierName = "modifier_freezing_field_ref_point_datadriven"
     local particleName = "particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion.vpcf"
     local soundEventName = "hero_Crystal.freezingField.explosion"
@@ -53,8 +53,7 @@ function freezing_field_explode( keys )
         Timers:CreateTimer( .4, function() -- we put damage on a delay so that it synchs better with the particle
             
             -- damage
-            units = FindUnitsInRadius( caster:GetTeamNumber(), attackPoint, caster, radius,
-                targetTeam, targetType, targetFlag, 0, false )
+            units = FindUnitsInRadius( caster:GetTeamNumber(), attackPoint, caster, radius, targetTeam, targetType, targetFlag, 0, false )
             for k, v in pairs( units ) do
                 local damageTable =
                 {
@@ -67,8 +66,7 @@ function freezing_field_explode( keys )
             end
 
             -- debuff
-            units = FindUnitsInRadius( caster:GetTeamNumber(), attackPoint, caster, debuffRadius,
-                targetTeam, targetType, targetFlag, 0, false )
+            units = FindUnitsInRadius( caster:GetTeamNumber(), attackPoint, caster, debuffRadius, targetTeam, targetType, targetFlag, 0, false )
             for k, v in pairs( units ) do
                 ability:ApplyDataDrivenModifier( caster, v, modifierName, {} )
             end

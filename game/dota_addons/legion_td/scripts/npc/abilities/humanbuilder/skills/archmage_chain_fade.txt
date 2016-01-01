@@ -69,12 +69,7 @@
 		{
 			"var_type"				"FIELD_FLOAT"
 			"jump_interval"			"0.2"
-		}
-		"09"
-		{
-			"var_type"				"FIELD_FLOAT"
-			"mini_stun"				"0.1"
-		}		
+		}	
 	}
 
 	"precache"

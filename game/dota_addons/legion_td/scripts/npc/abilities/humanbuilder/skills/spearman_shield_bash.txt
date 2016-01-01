@@ -1,45 +1,131 @@
 "spearman_shield_bash"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"                     "dragon_knight_dragon_tail"
-    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
-    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
-    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-    "AbilityTextureName"            "dragon_knight_dragon_tail"
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"dragon_knight_dragon_tail"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
-    // Casting
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityCastRange"              "150"
-    "AbilityCastPoint"              "0.0"
-    
-    // Time     
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityCooldown"               "2"
+	"AbilityCastRange"				"150"
+	"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
 
-    // Damage.
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityDamage"                 "120"
+	"AbilityCooldown"               "2"
+	"AbilityManaCost"               "0"
 
-    // Cost
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityManaCost"               "0 0 0"
+	"AbilityDamage"                 "120"
 
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
-        {
-            "01"
-            {
-                "var_type"              "FIELD_FLOAT"
-                "stun_duration"         "1.2"
-            }
-            "02"
-            {
-                "var_type"              "FIELD_INTEGER"
-                "dragon_cast_range"         "400"
-            }
-        }
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"stun_duration"			"2.0"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"damage_blocked"		"16"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"chance"				"95"
+		}
+	}
+
+	"OnSpellStart"
+	{
+		"Damage"
+		{
+			"Target"	"TARGET"
+			"Type"		"DAMAGE_TYPE_MAGICAL"
+			"Damage"	"%AbilityDamage"
+		}
+
+		"Stun"
+		{
+			"Target"	"TARGET"
+			"Duration"	"%stun_duration"
+		}
+
+	//	"FireEffect"
+	//	{
+	//		"EffectName"	"particles/units/heroes/hero_dragon_knight/dragon_knight_dragon_tail.vpcf"
+	//		"Target"		"TARGET"
+	//	}
+
+	//	"FireSound"
+	//	{
+	//		"EffectName"	"Hero_DragonKnight.DragonTail.Target"
+	//		"Target"		"TARGET"
+	//	}
+	}
+
+	"Modifiers"
+	{
+		"modifier_footman_pms"
+		{
+			"Passive"					"1"
+			"IsHidden"					"1"
+			"ThinkInterval"				"0.03"
+			"OnCreated"
+			{
+				"Random"
+				{
+					"Chance" 			"%chance"
+					"OnSuccess"
+					{
+						"ApplyModifier"
+						{
+							"Target"		"CASTER"
+							"ModifierName"	"modifier_footman_pms_block"
+						}
+					}
+				}
+			}
+			"OnAttacked"
+			{
+				"Random"
+				{
+					"Chance"			"%chance"
+					"OnSuccess"
+					{
+						"ApplyModifier"
+						{
+							"Target"		"CASTER"
+							"ModifierName"	"modifier_footman_pms_block"
+						}
+					}
+					"OnFailure"
+					{
+						"RemoveModifier"
+						{
+							"Target"		"CASTER"
+							"ModifierName"	"modifier_footman_pms_block"
+						}
+					}
+				}
+			}
+		}
+		"modifier_footman_pms_block"
+		{
+			"IsBuff"	"1"
+			"IsHidden"	"1"
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK" "%damage_blocked"
+			}		
+			"OnAttacked"
+			{
+				"RemoveModifier"
+				{
+					"Target"		"CASTER"
+					"ModifierName"	"modifier_footman_pms_block"
+				}
+			}
+		}
+	}
+	
 }

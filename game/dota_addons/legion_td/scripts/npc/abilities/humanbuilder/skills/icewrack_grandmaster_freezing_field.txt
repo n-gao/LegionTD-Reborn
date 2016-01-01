@@ -22,13 +22,13 @@
 	//-------------------------------------------------------------------------------------------------------------
 	"AbilitySpecial"
 	{
-		"01"
+		"02"
 		{
 			"var_type"			"FIELD_INTEGER"
 			"debuff_radius"		"100"
 		}
 	
-		"02"
+		"01"
 		{
 			"var_type"			"FIELD_INTEGER"
 			"explosion_radius"	"45"
@@ -36,22 +36,17 @@
 		"04"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"explosion_interval"	"0.9"
-		}
-		"05"
-		{
-			"var_type"			"FIELD_INTEGER"
-			"movespeed_slow"	"-30"
+			"explosion_interval"	"1.0"
 		}
 		"06"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"attack_slow"	"-30"
+			"debuff_slow"	"-20"
 		}
 		"07"
 		{
 			"var_type"			"FIELD_FLOAT"
-			"slow_duration"		"1.0"
+			"debuff_duration"		"2.5"
 		}
 		"08"
 		{
@@ -61,7 +56,12 @@
 		"09"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"damage"			"75"
+			"damage"			"60"
+		}
+		"10"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"freeze_damage"		"10"
 		}
 	}
 	
@@ -96,7 +96,7 @@
 		{
 			"Passive"   			"1"
 			"IsPurgable"			"0"
-			"IsHidden"				"0"
+			"IsHidden"				"1"
 			
 			"Aura"					"modifier_freezing_field_debuff_datadriven"
 			"Aura_Radius"			"%radius"
@@ -146,7 +146,7 @@
 			"IsHidden"				"0"
 			"IsPurgable"			"1"
 			"IsDebuff"				"1"
-			"Duration"				"%slow_duration"
+			"Duration"				"%debuff_duration"
 			
 			"EffectName"			"particles/generic_gameplay/generic_slowed_cold.vpcf"
 			"StatusEffectName"		"particles/status_fx/status_effect_frost_lich.vpcf"
@@ -154,8 +154,34 @@
 			
 			"Properties"
 			{
-				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_slow"
-				"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%movement_slow"
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%debuff_slow"
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%debuff_slow"
+			}
+//		}
+//
+//		"modifier_freezing_field_debuff_damage"
+//		{
+//			"IsHidden"		"1"
+
+			"OnCreated"
+			{
+				"Damage"
+				{
+					"Target"		"TARGET"
+					"Type"			"DAMAGE_TYPE_MAGICAL"
+					"Damage"		"%freeze_damage / 5"
+				}
+			}
+
+			"ThinkInterval"  ".2"
+			"OnIntervalThink"
+			{
+				"Damage"
+				{
+					"Target"		"TARGET"
+					"Type"			"DAMAGE_TYPE_MAGICAL"
+					"Damage"		"%freeze_damage / 5"
+				}
 			}
 		}
 		

@@ -10,10 +10,9 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"humanbuilder_upgrade_general"
-	"Ability2"							"sell"
-	"Ability3"							"lieutenant_shield_bash"
-	"Ability4"							"lieutenant_block"
+	"Ability1"				"humanbuilder_upgrade_general"
+	"Ability2"				"sell"
+	"Ability3"				"lieutenant_shield_bash"
 
 	// Armor
 	//----------------------------------------------------------------

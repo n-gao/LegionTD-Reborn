@@ -2326,7 +2326,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "75.0"
+	      "atk_damage_tooltip"    "93.75"
 	    }
 	    "02"
 	    {
@@ -3003,7 +3003,7 @@
 	    "02"
 	    {
 	      "var_type"              "FIELD_FLOAT"
-	      "atk_speed_tooltip"     "1.25"
+	      "atk_speed_tooltip"     "1.2"
 	    }
 	    "03"
 	    {
@@ -3259,12 +3259,7 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"jump_interval"			"0.2"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"mini_stun"				"0.1"
-			}		
+			}	
 		}
 	
 		"precache"
@@ -3636,24 +3631,69 @@
 	        }
 	    }   
 	}
-	"footman_block"
+	"footman_shield_bash"
 	{
 		"BaseClass"						"ability_datadriven"
-		"AbilityTextureName"			"tidehunter_kraken_shell"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"dragon_knight_dragon_tail"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	
+		"AbilityCastRange"				"150"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+	
+		"AbilityCooldown"               "2"
+		"AbilityManaCost"               "0"
+	
+		"AbilityDamage"                 "40"
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_blocked"		"2"
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"2.0"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
+				"damage_blocked"		"2"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
 				"chance"				"75"
 			}
+		}
+	
+		"OnSpellStart"
+		{
+			"Damage"
+			{
+				"Target"	"TARGET"
+				"Type"		"DAMAGE_TYPE_MAGICAL"
+				"Damage"	"%AbilityDamage"
+			}
+	
+			"Stun"
+			{
+				"Target"	"TARGET"
+				"Duration"	"%stun_duration"
+			}
+	
+		//	"FireEffect"
+		//	{
+		//		"EffectName"	"particles/units/heroes/hero_dragon_knight/dragon_knight_dragon_tail.vpcf"
+		//		"Target"		"TARGET"
+		//	}
+	
+		//	"FireSound"
+		//	{
+		//		"EffectName"	"Hero_DragonKnight.DragonTail.Target"
+		//		"Target"		"TARGET"
+		//	}
 		}
 	
 		"Modifiers"
@@ -3721,52 +3761,6 @@
 			}
 		}
 		
-	}
-	"footman_shield_bash"
-	{
-	    // General
-	    //-------------------------------------------------------------------------------------------------------------
-	    "BaseClass"                     "dragon_knight_dragon_tail"
-	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
-	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-	    "AbilityTextureName"            "dragon_knight_dragon_tail"
-	
-	
-	    // Casting
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityCastRange"              "150"
-	    "AbilityCastPoint"              "0.0"
-	    
-	    // Time     
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityCooldown"               "2"
-	
-	    // Damage.
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityDamage"                 "40"
-	
-	    // Cost
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityManaCost"               "0"
-	
-	    // Special
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilitySpecial"
-	        {
-	            "01"
-	            {
-	                "var_type"              "FIELD_FLOAT"
-	                "stun_duration"         ".4"
-	            }
-	            "02"
-	            {
-	                "var_type"              "FIELD_INTEGER"
-	                "dragon_cast_range"         "400"
-	            }
-	        }
 	}
 	"futuristic_gyrocopter_call_down"
 		{
@@ -3933,24 +3927,69 @@
 				}
 			}
 		}
-	"general_block"
+	"general_shield_bash"
 	{
 		"BaseClass"						"ability_datadriven"
-		"AbilityTextureName"			"tidehunter_kraken_shell"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"dragon_knight_dragon_tail"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	
+		"AbilityCastRange"				"150"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+	
+		"AbilityCooldown"               "2"
+		"AbilityManaCost"               "0"
+	
+		"AbilityDamage"                 "80"
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_blocked"		"12"
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"2.0"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
+				"damage_blocked"		"12"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
 				"chance"				"85"
 			}
+		}
+	
+		"OnSpellStart"
+		{
+			"Damage"
+			{
+				"Target"	"TARGET"
+				"Type"		"DAMAGE_TYPE_MAGICAL"
+				"Damage"	"%AbilityDamage"
+			}
+	
+			"Stun"
+			{
+				"Target"	"TARGET"
+				"Duration"	"%stun_duration"
+			}
+	
+		//	"FireEffect"
+		//	{
+		//		"EffectName"	"particles/units/heroes/hero_dragon_knight/dragon_knight_dragon_tail.vpcf"
+		//		"Target"		"TARGET"
+		//	}
+	
+		//	"FireSound"
+		//	{
+		//		"EffectName"	"Hero_DragonKnight.DragonTail.Target"
+		//		"Target"		"TARGET"
+		//	}
 		}
 	
 		"Modifiers"
@@ -4018,51 +4057,6 @@
 			}
 		}
 		
-	}
-	"general_shield_bash"
-	{
-	    // General
-	    //-------------------------------------------------------------------------------------------------------------
-	    "BaseClass"                     "dragon_knight_dragon_tail"
-	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
-	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-	    "AbilityTextureName"            "dragon_knight_dragon_tail"
-	
-	    // Casting
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityCastRange"              "150"
-	    "AbilityCastPoint"              "0.0"
-	    
-	    // Time     
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityCooldown"               "2"
-	
-	    // Damage.
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityDamage"                 "80"
-	
-	    // Cost
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityManaCost"               "0 0 0"
-	
-	    // Special
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilitySpecial"
-	        {
-	            "01"
-	            {
-	                "var_type"              "FIELD_FLOAT"
-	                "stun_duration"         ".8"
-	            }
-	            "02"
-	            {
-	                "var_type"              "FIELD_INTEGER"
-	                "dragon_cast_range"         "400"
-	            }
-	        }
 	}
 	"gunner_headshot"
 	{
@@ -4348,7 +4342,7 @@
 		
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"40"
+		"AbilityDamage"					"20"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -4467,13 +4461,13 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
-			"01"
+			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
 				"debuff_radius"		"100"
 			}
 		
-			"02"
+			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
 				"explosion_radius"	"45"
@@ -4481,22 +4475,17 @@
 			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"explosion_interval"	"0.9"
-			}
-			"05"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"movespeed_slow"	"-30"
+				"explosion_interval"	"1.0"
 			}
 			"06"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"attack_slow"	"-30"
+				"debuff_slow"	"-20"
 			}
 			"07"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"slow_duration"		"1.0"
+				"debuff_duration"		"2.5"
 			}
 			"08"
 			{
@@ -4506,7 +4495,12 @@
 			"09"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage"			"75"
+				"damage"			"60"
+			}
+			"10"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"freeze_damage"		"10"
 			}
 		}
 		
@@ -4541,7 +4535,7 @@
 			{
 				"Passive"   			"1"
 				"IsPurgable"			"0"
-				"IsHidden"				"0"
+				"IsHidden"				"1"
 				
 				"Aura"					"modifier_freezing_field_debuff_datadriven"
 				"Aura_Radius"			"%radius"
@@ -4591,7 +4585,7 @@
 				"IsHidden"				"0"
 				"IsPurgable"			"1"
 				"IsDebuff"				"1"
-				"Duration"				"%slow_duration"
+				"Duration"				"%debuff_duration"
 				
 				"EffectName"			"particles/generic_gameplay/generic_slowed_cold.vpcf"
 				"StatusEffectName"		"particles/status_fx/status_effect_frost_lich.vpcf"
@@ -4599,8 +4593,34 @@
 				
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_slow"
-					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%movement_slow"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%debuff_slow"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%debuff_slow"
+				}
+	//		}
+	//
+	//		"modifier_freezing_field_debuff_damage"
+	//		{
+	//			"IsHidden"		"1"
+	
+				"OnCreated"
+				{
+					"Damage"
+					{
+						"Target"		"TARGET"
+						"Type"			"DAMAGE_TYPE_MAGICAL"
+						"Damage"		"%freeze_damage / 5"
+					}
+				}
+	
+				"ThinkInterval"  ".2"
+				"OnIntervalThink"
+				{
+					"Damage"
+					{
+						"Target"		"TARGET"
+						"Type"			"DAMAGE_TYPE_MAGICAL"
+						"Damage"		"%freeze_damage / 5"
+					}
 				}
 			}
 			
@@ -4617,24 +4637,69 @@
 			}
 		}
 	}
-	"lieutenant_block"
+	"lieutenant_shield_bash"
 	{
 		"BaseClass"						"ability_datadriven"
-		"AbilityTextureName"			"tidehunter_kraken_shell"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"dragon_knight_dragon_tail"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	
+		"AbilityCastRange"				"150"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+	
+		"AbilityCooldown"               "2"
+		"AbilityManaCost"               "0"
+	
+		"AbilityDamage"                 "40"
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_blocked"		"12"
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"2.0"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
+				"damage_blocked"		"12"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
 				"chance"				"85"
 			}
+		}
+	
+		"OnSpellStart"
+		{
+			"Damage"
+			{
+				"Target"	"TARGET"
+				"Type"		"DAMAGE_TYPE_MAGICAL"
+				"Damage"	"%AbilityDamage"
+			}
+	
+			"Stun"
+			{
+				"Target"	"TARGET"
+				"Duration"	"%stun_duration"
+			}
+	
+		//	"FireEffect"
+		//	{
+		//		"EffectName"	"particles/units/heroes/hero_dragon_knight/dragon_knight_dragon_tail.vpcf"
+		//		"Target"		"TARGET"
+		//	}
+	
+		//	"FireSound"
+		//	{
+		//		"EffectName"	"Hero_DragonKnight.DragonTail.Target"
+		//		"Target"		"TARGET"
+		//	}
 		}
 	
 		"Modifiers"
@@ -4702,51 +4767,6 @@
 			}
 		}
 		
-	}
-	"lieutenant_shield_bash"
-	{
-	    // General
-	    //-------------------------------------------------------------------------------------------------------------
-	    "BaseClass"                     "dragon_knight_dragon_tail"
-	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
-	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-	    "AbilityTextureName"            "dragon_knight_dragon_tail"
-	
-	    // Casting
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityCastRange"              "150"
-	    "AbilityCastPoint"              "0.0"
-	    
-	    // Time     
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityCooldown"               "2"
-	
-	    // Damage.
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityDamage"                 "40"
-	
-	    // Cost
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityManaCost"               "0"
-	
-	    // Special
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilitySpecial"
-	        {
-	            "01"
-	            {
-	                "var_type"              "FIELD_FLOAT"
-	                "stun_duration"         ".4"
-	            }
-	            "02"
-	            {
-	                "var_type"              "FIELD_INTEGER"
-	                "dragon_cast_range"         "400"
-	            }
-	        }
 	}
 	"mage_chain_fade"
 	{
@@ -4819,12 +4839,7 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"jump_interval"			"0.2"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"mini_stun"				"0.1"
-			}		
+			}	
 		}
 	
 		"precache"
@@ -5081,21 +5096,66 @@
 	"militia_block"
 	{
 		"BaseClass"						"ability_datadriven"
-		"AbilityTextureName"			"tidehunter_kraken_shell"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"dragon_knight_dragon_tail"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	
+		"AbilityCastRange"				"150"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+	
+		"AbilityCooldown"               "2"
+		"AbilityManaCost"               "0"
+	
+		"AbilityDamage"                 "10"
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_blocked"		"1"
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"2.0"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
+				"damage_blocked"		"1"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
 				"chance"				"75"
 			}
+		}
+	
+		"OnSpellStart"
+		{
+			"Damage"
+			{
+				"Target"	"TARGET"
+				"Type"		"DAMAGE_TYPE_MAGICAL"
+				"Damage"	"%AbilityDamage"
+			}
+	
+			"Stun"
+			{
+				"Target"	"TARGET"
+				"Duration"	"%stun_duration"
+			}
+	
+		//	"FireEffect"
+		//	{
+		//		"EffectName"	"particles/units/heroes/hero_dragon_knight/dragon_knight_dragon_tail.vpcf"
+		//		"Target"		"TARGET"
+		//	}
+	
+		//	"FireSound"
+		//	{
+		//		"EffectName"	"Hero_DragonKnight.DragonTail.Target"
+		//		"Target"		"TARGET"
+		//	}
 		}
 	
 		"Modifiers"
@@ -5163,51 +5223,6 @@
 			}
 		}
 		
-	}
-	"militia_shield_bash"
-	{
-	    // General
-	    //-------------------------------------------------------------------------------------------------------------
-	    "BaseClass"                     "dragon_knight_dragon_tail"
-	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
-	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-	    "AbilityTextureName"            "dragon_knight_dragon_tail"
-	
-	    // Casting
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityCastRange"              "150"
-	    "AbilityCastPoint"              "0.0 0.0 0.0"
-	    
-	    // Time     
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityCooldown"               "2"
-	
-	    // Damage.
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityDamage"                 "10"
-	
-	    // Cost
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityManaCost"               "0"
-	
-	    // Special
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilitySpecial"
-	        {
-	            "01"
-	            {
-	                "var_type"              "FIELD_FLOAT"
-	                "stun_duration"         ".1"
-	            }
-	            "02"
-	            {
-	                "var_type"              "FIELD_INTEGER"
-	                "dragon_cast_range"         "400"
-	            }
-	        }
 	}
 	"novice_chain_fade"
 	{
@@ -5280,12 +5295,7 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"jump_interval"			"0.2"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"mini_stun"				"0.1"
-			}		
+			}	
 		}
 	
 		"precache"
@@ -5523,24 +5533,69 @@
 			}
 		}
 	}
-	"soldier_block"
+	"soldier_shield_bash"
 	{
 		"BaseClass"						"ability_datadriven"
-		"AbilityTextureName"			"tidehunter_kraken_shell"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"dragon_knight_dragon_tail"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	
+		"AbilityCastRange"				"150"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+	
+		"AbilityCooldown"               "2"
+		"AbilityManaCost"               "0"
+	
+		"AbilityDamage"                 "80"
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_blocked"		"12"
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"2.0"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
+				"damage_blocked"		"12"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
 				"chance"				"85"
 			}
+		}
+	
+		"OnSpellStart"
+		{
+			"Damage"
+			{
+				"Target"	"TARGET"
+				"Type"		"DAMAGE_TYPE_MAGICAL"
+				"Damage"	"%AbilityDamage"
+			}
+	
+			"Stun"
+			{
+				"Target"	"TARGET"
+				"Duration"	"%stun_duration"
+			}
+	
+		//	"FireEffect"
+		//	{
+		//		"EffectName"	"particles/units/heroes/hero_dragon_knight/dragon_knight_dragon_tail.vpcf"
+		//		"Target"		"TARGET"
+		//	}
+	
+		//	"FireSound"
+		//	{
+		//		"EffectName"	"Hero_DragonKnight.DragonTail.Target"
+		//		"Target"		"TARGET"
+		//	}
 		}
 	
 		"Modifiers"
@@ -5608,51 +5663,6 @@
 			}
 		}
 		
-	}
-	"soldier_shield_bash"
-	{
-	    // General
-	    //-------------------------------------------------------------------------------------------------------------
-	    "BaseClass"                     "dragon_knight_dragon_tail"
-	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
-	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-	    "AbilityTextureName"            "dragon_knight_dragon_tail"
-	
-	    // Casting
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityCastRange"              "150"
-	    "AbilityCastPoint"              "0.0"
-	    
-	    // Time     
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityCooldown"               "2"
-	
-	    // Damage.
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityDamage"                 "80"
-	
-	    // Cost
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityManaCost"               "0"
-	
-	    // Special
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilitySpecial"
-	        {
-	            "01"
-	            {
-	                "var_type"              "FIELD_FLOAT"
-	                "stun_duration"         ".8"
-	            }
-	            "02"
-	            {
-	                "var_type"              "FIELD_INTEGER"
-	                "dragon_cast_range"         "400"
-	            }
-	        }
 	}
 	"soundmaster_deafening_blast"
 	{
@@ -5969,24 +5979,69 @@
 			}
 		}
 	}
-	"spearman_block"
+	"spearman_shield_bash"
 	{
 		"BaseClass"						"ability_datadriven"
-		"AbilityTextureName"			"tidehunter_kraken_shell"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"			"dragon_knight_dragon_tail"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	
+		"AbilityCastRange"				"150"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+	
+		"AbilityCooldown"               "2"
+		"AbilityManaCost"               "0"
+	
+		"AbilityDamage"                 "120"
 	
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_blocked"		"16"
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"2.0"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
+				"damage_blocked"		"16"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
 				"chance"				"95"
 			}
+		}
+	
+		"OnSpellStart"
+		{
+			"Damage"
+			{
+				"Target"	"TARGET"
+				"Type"		"DAMAGE_TYPE_MAGICAL"
+				"Damage"	"%AbilityDamage"
+			}
+	
+			"Stun"
+			{
+				"Target"	"TARGET"
+				"Duration"	"%stun_duration"
+			}
+	
+		//	"FireEffect"
+		//	{
+		//		"EffectName"	"particles/units/heroes/hero_dragon_knight/dragon_knight_dragon_tail.vpcf"
+		//		"Target"		"TARGET"
+		//	}
+	
+		//	"FireSound"
+		//	{
+		//		"EffectName"	"Hero_DragonKnight.DragonTail.Target"
+		//		"Target"		"TARGET"
+		//	}
 		}
 	
 		"Modifiers"
@@ -6054,51 +6109,6 @@
 			}
 		}
 		
-	}
-	"spearman_shield_bash"
-	{
-	    // General
-	    //-------------------------------------------------------------------------------------------------------------
-	    "BaseClass"                     "dragon_knight_dragon_tail"
-	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
-	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-	    "AbilityTextureName"            "dragon_knight_dragon_tail"
-	
-	    // Casting
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityCastRange"              "150"
-	    "AbilityCastPoint"              "0.0"
-	    
-	    // Time     
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityCooldown"               "2"
-	
-	    // Damage.
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityDamage"                 "120"
-	
-	    // Cost
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilityManaCost"               "0 0 0"
-	
-	    // Special
-	    //-------------------------------------------------------------------------------------------------------------
-	    "AbilitySpecial"
-	        {
-	            "01"
-	            {
-	                "var_type"              "FIELD_FLOAT"
-	                "stun_duration"         "1.2"
-	            }
-	            "02"
-	            {
-	                "var_type"              "FIELD_INTEGER"
-	                "dragon_cast_range"         "400"
-	            }
-	        }
 	}
 	"tactician_guardian_angel"
 	{

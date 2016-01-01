@@ -12,7 +12,6 @@
 
 	"Ability1"							"sell"
 	"Ability2"							"spearman_shield_bash"
-	"Ability4"							"spearman_block"
 
 	// Armor
 	//----------------------------------------------------------------

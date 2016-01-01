@@ -3159,10 +3159,9 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"humanbuilder_upgrade_soldier"
-		"Ability2"							"sell"
-		"Ability3"							"footman_shield_bash"
-		"Ability4"							"footman_block"
+		"Ability1"				"humanbuilder_upgrade_soldier"
+		"Ability2"				"sell"
+		"Ability3"				"footman_shield_bash"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3358,13 +3357,12 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"AbilityLayout"				"6"
-		"Ability1"							"humanbuilder_upgrade_blademaster"
-		"Ability2"							"humanbuilder_upgrade_tactician"
-		"Ability3"							"sell"
-		"Ability4"							"general_shield_bash"
-		"Ability5"							"general_block"
-		"Ability6"							"human_vladmir"
+		"AbilityLayout"			"6"
+		"Ability1"				"humanbuilder_upgrade_blademaster"
+		"Ability2"				"humanbuilder_upgrade_tactician"
+		"Ability3"				"sell"
+		"Ability4"				"general_shield_bash"
+		"Ability5"				"human_vladmir"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3376,7 +3374,7 @@
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "87.5"
-		"AttackDamageMax"       "1000.0"
+		"AttackDamageMax"       "100.0"
 		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
@@ -3936,10 +3934,9 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"humanbuilder_upgrade_general"
-		"Ability2"							"sell"
-		"Ability3"							"lieutenant_shield_bash"
-		"Ability4"							"lieutenant_block"
+		"Ability1"				"humanbuilder_upgrade_general"
+		"Ability2"				"sell"
+		"Ability3"				"lieutenant_shield_bash"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4226,10 +4223,9 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"humanbuilder_upgrade_footman"
-		"Ability2"							"sell"
-		"Ability3"							"militia_shield_bash"
-		"Ability4"							"militia_block"
+		"Ability1"				"humanbuilder_upgrade_footman"
+		"Ability2"				"sell"
+		"Ability3"				"militia_shield_bash"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4616,7 +4612,6 @@
 		"Ability2"							"humanbuilder_upgrade_paladin"
 		"Ability3"							"sell"
 		"Ability4"							"soldier_shield_bash"
-		"Ability5"							"soldier_block"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4809,7 +4804,6 @@
 	
 		"Ability1"							"sell"
 		"Ability2"							"spearman_shield_bash"
-		"Ability4"							"spearman_block"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4925,7 +4919,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "162.5"
 		"AttackDamageMax"       "187.5"
-		"AttackRate"            "1.25"
+		"AttackRate"            "1.2"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "100"
