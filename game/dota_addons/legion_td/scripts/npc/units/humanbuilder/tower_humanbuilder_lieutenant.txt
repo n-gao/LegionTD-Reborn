@@ -3,10 +3,10 @@
 	// General
 	//----------------------------------------------------------------
 	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/legion_commander/legion_commander.vmdl"
+	"Model"                 "models/heroes/sven/sven.vmdl"
 	"ModelScale"            "0.55"
-	"SoundSet"					    "Hero_LegionCommander"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+	"SoundSet"				"Hero_Sven"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
@@ -71,7 +71,7 @@
 	//----------------------------------------------------------------
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
+		"DisableClumpingBehavior"	"1"
 		"DefaultState"				"Invade"
 		"States"
 		{
@@ -85,11 +85,12 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "431" }
-      "Wearable2" { "ItemDef" "432" }
-      "Wearable3" { "ItemDef" "433" }
-      "Wearable4" { "ItemDef" "434" }
-      "Wearable5" { "ItemDef" "435" }
+      "Wearable1" { "ItemDef" "16" } // "Sven's Mask"
+      "Wearable2" { "ItemDef" "17" } // "Sven's Sword"
+      "Wearable3" { "ItemDef" "18" } // "Sven's Belt"
+      "Wearable4" { "ItemDef" "19" } // "Sven's Gauntlet"
+      "Wearable5" { "ItemDef" "20" } // "Sven's Shoulder"
+      "Wearable5" { "ItemDef" "581" } // "Sven's Back"
     }
 	}
 }

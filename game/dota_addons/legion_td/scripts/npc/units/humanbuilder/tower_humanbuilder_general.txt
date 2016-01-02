@@ -3,10 +3,10 @@
 	// General
 	//----------------------------------------------------------------
 	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/legion_commander/legion_commander.vmdl"
-	"ModelScale"            "0.6"
-	"SoundSet"					    "Hero_LegionCommander"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+	"Model"                 "models/heroes/sven/sven.vmdl"
+	"ModelScale"            "0.55"
+	"SoundSet"				"Hero_Sven"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
@@ -88,11 +88,12 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "431" }
-      "Wearable2" { "ItemDef" "432" }
-      "Wearable3" { "ItemDef" "433" }
-      "Wearable4" { "ItemDef" "434" }
-      "Wearable5" { "ItemDef" "435" }
+      "Wearable1" { "ItemDef" "5653" } // "Helm of the Warrior's Retribution"
+      "Wearable2" { "ItemDef" "5647" } // "Sword of the Warrior's Retribution"
+      "Wearable3" { "ItemDef" "5648" } // "Belt of the Warrior's Retribution"
+      "Wearable4" { "ItemDef" "5652" } // "Gauntlet of the Warrior's Retribution"
+      "Wearable5" { "ItemDef" "5645" } // "Pauldron of the Warrior's Retribution"
+      "Wearable5" { "ItemDef" "5650" } // "Cape of the Warrior's Retribution"
     }
 	}
 }

@@ -85,13 +85,13 @@
 				"Support"			"0.0"
 			}
 		}
-    "AttachWearables"
-    {
-      "Wearable1" { "ItemDef" "6" } // "Juggernaut's Default Mask"
-      "Wearable2" { "ItemDef" "7" } // "Juggernaut's Weapon"
-      "Wearable3" { "ItemDef" "8" } // "Juggernaut's Cape"
-      "Wearable4" { "ItemDef" "9" } // "Juggernaut's Bracers"
-      "Wearable5" { "ItemDef" "62" } // "Juggernaut's Default Legs"
-    }
+	"AttachWearables"
+	{
+		"Wearable1" { "ItemDef" "6775" } // "Mask of the Bladesrunner"
+		"Wearable2" { "ItemDef" "6847" } // "Sword of the Bladesrunner"
+		"Wearable3" { "ItemDef" "6773" } // "Shoulders of the Bladesrunner"
+		"Wearable4" { "ItemDef" "6826" } // "Gloves of the Bladesrunner"
+		"Wearable5" { "ItemDef" "6774" } // "Belt of the Bladesrunner"
+	}
 	}
 }

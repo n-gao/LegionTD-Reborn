@@ -3,14 +3,12 @@
 	// General
 	//----------------------------------------------------------------
 	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/legion_commander/legion_commander.vmdl"
-	"ModelScale"            "0.6"
-	"SoundSet"					    "Hero_LegionCommander"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+	"Model"                 "models/heroes/sven/sven.vmdl"
+	"ModelScale"            "0.55"
+	"SoundSet"				"Hero_Sven"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
-
-
 	"Vscripts"              "ai/humanbuilder/ai_tactician.lua"
 
 
@@ -92,11 +90,12 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "431" }
-      "Wearable2" { "ItemDef" "432" }
-      "Wearable3" { "ItemDef" "433" }
-      "Wearable4" { "ItemDef" "434" }
-      "Wearable5" { "ItemDef" "435" }
+      "Wearable1" { "ItemDef" "8352" } // "Helm of Rising Fury"
+      "Wearable2" { "ItemDef" "8353" } // "Sword of Rising Fury"
+      "Wearable3" { "ItemDef" "8348" } // "Faulds of Rising Fury"
+      "Wearable4" { "ItemDef" "8351" } // "Gauntlets of Rising Fury"
+      "Wearable5" { "ItemDef" "8349" } // "Pauldrons of Rising Fury"
+      "Wearable5" { "ItemDef" "8350" } // "Cape of Rising Fury"
     }
 	}
 }

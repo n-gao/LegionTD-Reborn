@@ -3137,14 +3137,14 @@
 					"Support"			"0.0"
 				}
 			}
-	    "AttachWearables"
-	    {
-	      "Wearable1" { "ItemDef" "6" } // "Juggernaut's Default Mask"
-	      "Wearable2" { "ItemDef" "7" } // "Juggernaut's Weapon"
-	      "Wearable3" { "ItemDef" "8" } // "Juggernaut's Cape"
-	      "Wearable4" { "ItemDef" "9" } // "Juggernaut's Bracers"
-	      "Wearable5" { "ItemDef" "62" } // "Juggernaut's Default Legs"
-	    }
+		"AttachWearables"
+		{
+			"Wearable1" { "ItemDef" "6775" } // "Mask of the Bladesrunner"
+			"Wearable2" { "ItemDef" "6847" } // "Sword of the Bladesrunner"
+			"Wearable3" { "ItemDef" "6773" } // "Shoulders of the Bladesrunner"
+			"Wearable4" { "ItemDef" "6826" } // "Gloves of the Bladesrunner"
+			"Wearable5" { "ItemDef" "6774" } // "Belt of the Bladesrunner"
+		}
 		}
 	}
 	"tower_humanbuilder_footman"
@@ -3350,10 +3350,10 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"             "npc_dota_creature"
-		"Model"                 "models/heroes/legion_commander/legion_commander.vmdl"
-		"ModelScale"            "0.6"
-		"SoundSet"					    "Hero_LegionCommander"
-		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+		"Model"                 "models/heroes/sven/sven.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"				"Hero_Sven"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
@@ -3435,11 +3435,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "431" }
-	      "Wearable2" { "ItemDef" "432" }
-	      "Wearable3" { "ItemDef" "433" }
-	      "Wearable4" { "ItemDef" "434" }
-	      "Wearable5" { "ItemDef" "435" }
+	      "Wearable1" { "ItemDef" "5653" } // "Helm of the Warrior's Retribution"
+	      "Wearable2" { "ItemDef" "5647" } // "Sword of the Warrior's Retribution"
+	      "Wearable3" { "ItemDef" "5648" } // "Belt of the Warrior's Retribution"
+	      "Wearable4" { "ItemDef" "5652" } // "Gauntlet of the Warrior's Retribution"
+	      "Wearable5" { "ItemDef" "5645" } // "Pauldron of the Warrior's Retribution"
+	      "Wearable5" { "ItemDef" "5650" } // "Cape of the Warrior's Retribution"
 	    }
 		}
 	}
@@ -3927,10 +3928,10 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"             "npc_dota_creature"
-		"Model"                 "models/heroes/legion_commander/legion_commander.vmdl"
+		"Model"                 "models/heroes/sven/sven.vmdl"
 		"ModelScale"            "0.55"
-		"SoundSet"					    "Hero_LegionCommander"
-		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+		"SoundSet"				"Hero_Sven"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
@@ -3995,7 +3996,7 @@
 		//----------------------------------------------------------------
 		"Creature"
 		{
-			"DisableClumpingBehavior"       "1"
+			"DisableClumpingBehavior"	"1"
 			"DefaultState"				"Invade"
 			"States"
 			{
@@ -4009,11 +4010,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "431" }
-	      "Wearable2" { "ItemDef" "432" }
-	      "Wearable3" { "ItemDef" "433" }
-	      "Wearable4" { "ItemDef" "434" }
-	      "Wearable5" { "ItemDef" "435" }
+	      "Wearable1" { "ItemDef" "16" } // "Sven's Mask"
+	      "Wearable2" { "ItemDef" "17" } // "Sven's Sword"
+	      "Wearable3" { "ItemDef" "18" } // "Sven's Belt"
+	      "Wearable4" { "ItemDef" "19" } // "Sven's Gauntlet"
+	      "Wearable5" { "ItemDef" "20" } // "Sven's Shoulder"
+	      "Wearable5" { "ItemDef" "581" } // "Sven's Back"
 	    }
 		}
 	}
@@ -4683,12 +4685,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "4095" } // "Wyrm Shield of Uldorak"
-	      "Wearable2" { "ItemDef" "4114" } // "Wyrm Helm of Uldorak"
-	      "Wearable3" { "ItemDef" "4115" } // "Wyrm Bracers of Uldorak"
-	      "Wearable4" { "ItemDef" "4116" } // "Wyrm Skirt of Uldorak" - seems to have physics problems
-	      "Wearable5" { "ItemDef" "4117" } // "Wyrm Pauldrons of Uldorak"
-	      "Wearable6" { "ItemDef" "4154" } // "Dragonmaw" (sword)
+	      "Wearable1" { "ItemDef" "6373" } // "Shield of the Blazing Superiority"
+	      "Wearable2" { "ItemDef" "6371" } // "Helmet of the Blazing Superiority"
+	      "Wearable3" { "ItemDef" "6376" } // "Vambrace of the Blazing Superiority"
+	      "Wearable4" { "ItemDef" "6374" } // "Skirt of the Blazing Superiority"
+	      "Wearable5" { "ItemDef" "6372" } // "Pauldrons of the Blazing Superiority"
+	      "Wearable6" { "ItemDef" "6375" } // "Sword of the Blazing Superiority"
 	    }
 		}
 	}
@@ -4875,12 +4877,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "4095" }
-	      "Wearable2" { "ItemDef" "4114" }
-	      "Wearable3" { "ItemDef" "4115" }
-	      "Wearable4" { "ItemDef" "4116" }
-	      "Wearable5" { "ItemDef" "4117" }
-	      "Wearable6" { "ItemDef" "4118" }
+	      "Wearable1" { "ItemDef" "7420" } // "Shield of the Wurmblood"
+	      "Wearable2" { "ItemDef" "7416" } // "Helm of the Wurmblood"
+	      "Wearable3" { "ItemDef" "7418" } // "Gauntlets of the Wurmblood"
+	      "Wearable4" { "ItemDef" "7419" } // "Tassets of the Wurmblood"
+	      "Wearable5" { "ItemDef" "7417" } // "Cuirass of the Wurmblood"
+	      "Wearable6" { "ItemDef" "7421" } // "Lance of the Wurmblood"
 	    }
 		}
 	}
@@ -4889,14 +4891,12 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"             "npc_dota_creature"
-		"Model"                 "models/heroes/legion_commander/legion_commander.vmdl"
-		"ModelScale"            "0.6"
-		"SoundSet"					    "Hero_LegionCommander"
-		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+		"Model"                 "models/heroes/sven/sven.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"				"Hero_Sven"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
-	
-	
 		"Vscripts"              "ai/humanbuilder/ai_tactician.lua"
 	
 	
@@ -4978,11 +4978,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "431" }
-	      "Wearable2" { "ItemDef" "432" }
-	      "Wearable3" { "ItemDef" "433" }
-	      "Wearable4" { "ItemDef" "434" }
-	      "Wearable5" { "ItemDef" "435" }
+	      "Wearable1" { "ItemDef" "8352" } // "Helm of Rising Fury"
+	      "Wearable2" { "ItemDef" "8353" } // "Sword of Rising Fury"
+	      "Wearable3" { "ItemDef" "8348" } // "Faulds of Rising Fury"
+	      "Wearable4" { "ItemDef" "8351" } // "Gauntlets of Rising Fury"
+	      "Wearable5" { "ItemDef" "8349" } // "Pauldrons of Rising Fury"
+	      "Wearable5" { "ItemDef" "8350" } // "Cape of Rising Fury"
 	    }
 		}
 	}
