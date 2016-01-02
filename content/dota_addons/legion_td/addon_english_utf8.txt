@@ -1114,12 +1114,6 @@
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_rocket_barrage_radius"                "RADIUS:"
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_rocket_barrage_rockets_per_second"    "ROCKETS PER SECOND:"
 
-		"DOTA_Tooltip_ability_general_shield_bash"                                              "Block"
-		"DOTA_Tooltip_ability_general_shield_bash_Description"                                  "Stuns and deals magic damage to a foe without breaking the rhythm of attacks. Passively blocks some damage from incoming phyiscal attacks."
-		"DOTA_Tooltip_ability_general_shield_bash_stun_duration"                                "STUN DURATION:"
-		"DOTA_Tooltip_ability_general_shield_bash_damage_blocked"                               "DAMAGE BLOCKED:"
-		"DOTA_Tooltip_ability_general_shield_bash_chance"                                       "CHANCE:"
-
 		"DOTA_Tooltip_ability_gunner_headshot"                                            "Headshot"
 		"DOTA_Tooltip_ability_gunner_headshot_Description"                                ""
 		"DOTA_Tooltip_ability_gunner_headshot_slow_duration"                              "SLOW DURATION:"
@@ -1158,11 +1152,15 @@
 		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_damage"                 "IMPACT DAMAGE:"
 		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_freeze_damage"          "CHILL DPS:"
 
-		"DOTA_Tooltip_ability_lieutenant_shield_bash"                                           "Block"
-		"DOTA_Tooltip_ability_lieutenant_shield_bash_Description"                               "Stuns and deals magic damage to a foe without breaking the rhythm of attacks. Passively blocks some damage from incoming phyiscal attacks."
-		"DOTA_Tooltip_ability_lieutenant_shield_bash_stun_duration"                                "STUN DURATION:"
-		"DOTA_Tooltip_ability_lieutenant_shield_bash_damage_blocked"                            "DAMAGE BLOCKED:"
-		"DOTA_Tooltip_ability_lieutenant_shield_bash_chance"                                    "CHANCE:"
+		"DOTA_Tooltip_ability_general_invigorating_strike"                                "Invigorating Strike"
+		"DOTA_Tooltip_ability_general_invigorating_strike_Description"                    "The General plans their next hit, passively adding a critical strike and lifesteal to their next attack."
+		"DOTA_Tooltip_ability_general_invigorating_strike_crit_multiplier"                "CRIT MULTIPLIER:"
+		"DOTA_Tooltip_ability_general_invigorating_strike_lifesteal_percent"              "LIFESTEAL PERCENT:"
+
+		"DOTA_Tooltip_ability_lieutenant_invigorating_strike"                             "Invigorating Strike"
+		"DOTA_Tooltip_ability_lieutenant_invigorating_strike_Description"                 "The Lieutenant plans their next hit, passively adding a critical strike and lifesteal to their next attack."
+		"DOTA_Tooltip_ability_lieutenant_invigorating_strike_crit_multiplier"             "CRIT MULTIPLIER:"
+		"DOTA_Tooltip_ability_lieutenant_invigorating_strike_lifesteal_percent"           "LIFESTEAL PERCENT:"
 
 		"DOTA_Tooltip_ability_mage_chain_fade"                                            "Chain Fade"
 		"DOTA_Tooltip_ability_mage_chain_fade_Description"                                "Throws a bolt of energy that jumps between enemies, dealing damage and lowering attack damage for the duration."

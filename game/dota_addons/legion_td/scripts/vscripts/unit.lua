@@ -23,9 +23,7 @@ ai_waterwarrior = require('ai/elementalbuilder/ai_waterwarrior')
 --Humanbuilder AI
 ai_militia = require('ai/humanbuilder/ai_militia')
 ai_footman = require('ai/humanbuilder/ai_footman')
-ai_lieutenant = require('ai/humanbuilder/ai_lieutenant')
 ai_soldier = require('ai/humanbuilder/ai_soldier')
-ai_general = require('ai/humanbuilder/ai_general')
 ai_spearman = require('ai/humanbuilder/ai_spearman')
 
 
@@ -81,9 +79,7 @@ function Unit.ApplyAI(unit)
   elseif name == "tower_elementalbuilder_watergod" then ai_watergod.Init(unit)
   elseif name == "tower_elementalbuilder_waterwarrior" then ai_waterwarrior.Init(unit)
   elseif name == "tower_humanbuilder_footman" then ai_footman.Init(unit)
-  elseif name == "tower_humanbuilder_lieutenant" then ai_lieutenant.Init(unit)
   elseif name == "tower_humanbuilder_soldier" then ai_soldier.Init(unit)
-  elseif name == "tower_humanbuilder_general" then ai_general.Init(unit)
   elseif name == "tower_humanbuilder_spearman" then ai_spearman.Init(unit)
   elseif name == "tower_humanbuilder_paladin" then return
   elseif name == "tower_humanbuilder_blademaster" then return

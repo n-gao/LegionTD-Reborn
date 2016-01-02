@@ -4014,137 +4014,83 @@
 				}
 			}
 		}
-	"general_shield_bash"
+	"general_vigor_strike"
 	{
-		"BaseClass"						"ability_datadriven"
-		"AbilityTextureName"			"dragon_knight_dragon_tail"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"	"bounty_hunter_jinada"
 	
-		"AbilityCastRange"				"150"
-		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		// Precache
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		 {
+		  "soundfile"   "soundevents/game_sounds_heroes/game_sounds_bounty_hunter.vsndevts"
+		 }
 	
-		"AbilityCooldown"               "2"
-		"AbilityManaCost"               "0"
-	
-		"AbilityDamage"                 "80"
-	
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"4.2"
+			
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"stun_duration"			".8"
+				"var_type"				"FIELD_INTEGER"
+				"crit_multiplier"		"200"
 			}
 			"02"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_blocked"		"12"
+				"var_type"				"FIELD_FLOAT"
+				"lifesteal_percent"		"50"
 			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"chance"				"85"
-			}
-		}
-	
-		"OnSpellStart"
-		{
-			"Damage"
-			{
-				"Target"	"TARGET"
-				"Type"		"DAMAGE_TYPE_MAGICAL"
-				"Damage"	"%AbilityDamage"
-			}
-	
-			"Stun"
-			{
-				"Target"	"TARGET"
-				"Duration"	"%stun_duration"
-			}
-	
-		//	"FireEffect"
-		//	{
-		//		"EffectName"	"particles/units/heroes/hero_dragon_knight/dragon_knight_dragon_tail.vpcf"
-		//		"Target"		"TARGET"
-		//	}
-	
-		//	"FireSound"
-		//	{
-		//		"EffectName"	"Hero_DragonKnight.DragonTail.Target"
-		//		"Target"		"TARGET"
-		//	}
 		}
 	
 		"Modifiers"
 		{
-			"modifier_footman_pms"
+	
+			"modifier_vigor_strike"
 			{
-				"Passive"					"1"
-				"IsHidden"					"1"
-				"ThinkInterval"				"0.03"
-				"OnCreated"
-				{
-					"Random"
-					{
-						"Chance" 			"%chance"
-						"OnSuccess"
-						{
-							"ApplyModifier"
-							{
-								"Target"		"CASTER"
-								"ModifierName"	"modifier_footman_pms_block"
-							}
-						}
-					}
-				}
-				"OnAttacked"
-				{
-					"Random"
-					{
-						"Chance"			"%chance"
-						"OnSuccess"
-						{
-							"ApplyModifier"
-							{
-								"Target"		"CASTER"
-								"ModifierName"	"modifier_footman_pms_block"
-							}
-						}
-						"OnFailure"
-						{
-							"RemoveModifier"
-							{
-								"Target"		"CASTER"
-								"ModifierName"	"modifier_footman_pms_block"
-							}
-						}
-					}
-				}
-			}
-			"modifier_footman_pms_block"
-			{
-				"IsBuff"	"1"
+				"Passive"	"1"
 				"IsHidden"	"1"
+	
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK" "%damage_blocked"
-				}		
-				"OnAttacked"
-				{
-					"RemoveModifier"
-					{
-						"Target"		"CASTER"
-						"ModifierName"	"modifier_footman_pms_block"
-					}
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"%crit_multiplier"
 				}
+	
+				"OnAttackLanded"
+				{
+	
+					"Lifesteal"
+					{
+						"Target"			"ATTACKER"
+						"LifestealPercent"	"%lifesteal_percent"
+					}
+	
+					"FireSound"
+					{
+						"EffectName"	"Hero_BountyHunter.Jinada"
+						"Target"		"TARGET"
+					}
+	
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/abilities/humanbuilder/jinada.lua"	
+						"Function"		"Jinada"
+						"modifiername"	"modifier_vigor_strike"
+					}
+	
+				}
+	
 			}
+	
 		}
-		
-	}
+	
+	}	
 	"gunner_headshot"
 	{
 		// General
@@ -4724,137 +4670,83 @@
 			}
 		}
 	}
-	"lieutenant_shield_bash"
+	"lieutenant_vigor_strike"
 	{
-		"BaseClass"						"ability_datadriven"
-		"AbilityTextureName"			"dragon_knight_dragon_tail"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"	"bounty_hunter_jinada"
 	
-		"AbilityCastRange"				"150"
-		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		// Precache
+		//-------------------------------------------------------------------------------------------------------------
+		"precache"
+		 {
+		  "soundfile"   "soundevents/game_sounds_heroes/game_sounds_bounty_hunter.vsndevts"
+		 }
 	
-		"AbilityCooldown"               "2"
-		"AbilityManaCost"               "0"
-	
-		"AbilityDamage"                 "40"
-	
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"4.2"
+			
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"stun_duration"			".4"
+				"var_type"				"FIELD_INTEGER"
+				"crit_multiplier"		"150"
 			}
 			"02"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage_blocked"		"12"
+				"var_type"				"FIELD_FLOAT"
+				"lifesteal_percent"		"50"
 			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"chance"				"85"
-			}
-		}
-	
-		"OnSpellStart"
-		{
-			"Damage"
-			{
-				"Target"	"TARGET"
-				"Type"		"DAMAGE_TYPE_MAGICAL"
-				"Damage"	"%AbilityDamage"
-			}
-	
-			"Stun"
-			{
-				"Target"	"TARGET"
-				"Duration"	"%stun_duration"
-			}
-	
-		//	"FireEffect"
-		//	{
-		//		"EffectName"	"particles/units/heroes/hero_dragon_knight/dragon_knight_dragon_tail.vpcf"
-		//		"Target"		"TARGET"
-		//	}
-	
-		//	"FireSound"
-		//	{
-		//		"EffectName"	"Hero_DragonKnight.DragonTail.Target"
-		//		"Target"		"TARGET"
-		//	}
 		}
 	
 		"Modifiers"
 		{
-			"modifier_footman_pms"
+	
+			"modifier_vigor_strike"
 			{
-				"Passive"					"1"
-				"IsHidden"					"1"
-				"ThinkInterval"				"0.03"
-				"OnCreated"
-				{
-					"Random"
-					{
-						"Chance" 			"%chance"
-						"OnSuccess"
-						{
-							"ApplyModifier"
-							{
-								"Target"		"CASTER"
-								"ModifierName"	"modifier_footman_pms_block"
-							}
-						}
-					}
-				}
-				"OnAttacked"
-				{
-					"Random"
-					{
-						"Chance"			"%chance"
-						"OnSuccess"
-						{
-							"ApplyModifier"
-							{
-								"Target"		"CASTER"
-								"ModifierName"	"modifier_footman_pms_block"
-							}
-						}
-						"OnFailure"
-						{
-							"RemoveModifier"
-							{
-								"Target"		"CASTER"
-								"ModifierName"	"modifier_footman_pms_block"
-							}
-						}
-					}
-				}
-			}
-			"modifier_footman_pms_block"
-			{
-				"IsBuff"	"1"
+				"Passive"	"1"
 				"IsHidden"	"1"
+	
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_CONSTANT_BLOCK" "%damage_blocked"
-				}		
-				"OnAttacked"
-				{
-					"RemoveModifier"
-					{
-						"Target"		"CASTER"
-						"ModifierName"	"modifier_footman_pms_block"
-					}
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"%crit_multiplier"
 				}
+	
+				"OnAttackLanded"
+				{
+	
+					"Lifesteal"
+					{
+						"Target"			"ATTACKER"
+						"LifestealPercent"	"%lifesteal_percent"
+					}
+	
+					"FireSound"
+					{
+						"EffectName"	"Hero_BountyHunter.Jinada"
+						"Target"		"TARGET"
+					}
+	
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/abilities/humanbuilder/jinada.lua"
+						"Function"		"Jinada"
+						"modifiername"	"modifier_vigor_strike"
+					}
+	
+				}
+	
 			}
+	
 		}
-		
-	}
+	
+	}	
 	"mage_chain_fade"
 	{
 		// General

@@ -3361,7 +3361,7 @@
 		"Ability1"				"humanbuilder_upgrade_blademaster"
 		"Ability2"				"humanbuilder_upgrade_tactician"
 		"Ability3"				"sell"
-		"Ability4"				"general_shield_bash"
+		"Ability4"				"general_vigor_strike"
 		"Ability5"				"human_vladmir"
 	
 		// Armor
@@ -3936,7 +3936,7 @@
 	
 		"Ability1"				"humanbuilder_upgrade_general"
 		"Ability2"				"sell"
-		"Ability3"				"lieutenant_shield_bash"
+		"Ability3"				"lieutenant_vigor_strike"
 	
 		// Armor
 		//----------------------------------------------------------------

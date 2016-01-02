@@ -12,7 +12,7 @@
 
 	"Ability1"				"humanbuilder_upgrade_general"
 	"Ability2"				"sell"
-	"Ability3"				"lieutenant_shield_bash"
+	"Ability3"				"lieutenant_vigor_strike"
 
 	// Armor
 	//----------------------------------------------------------------
