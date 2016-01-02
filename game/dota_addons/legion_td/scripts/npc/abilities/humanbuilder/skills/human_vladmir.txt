@@ -2,7 +2,7 @@
 {
 	"BaseClass"						"ability_datadriven"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-	"AbilityTextureName"			"skeleton_king_vampiric_aura"
+	"AbilityTextureName"			"ability_vladmir"
 	
 	"AbilitySpecial"
 	{
