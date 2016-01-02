@@ -195,7 +195,6 @@
 		"tower_humanbuilder_soundmaster"                                                  "Soundmaster"
 		"tower_humanbuilder_spearman"                                                     "Spearman"
 		"tower_humanbuilder_tactician"                                                    "Tactician"
-		"humanbuilder"                                                                    "Humanbuilder"
 
 		// ******************** ABILITY MODIFIERS ********************
 		"DOTA_Tooltip_isBoss"                                                             "IsBoss"
@@ -224,6 +223,24 @@
 
 		"DOTA_Tooltip_health_regen"                                                       "Health Regen"
 		"DOTA_Tooltip_health_regen_Description"                                           ""
+
+		"DOTA_Tooltip_modifier_healing_aura"                                              "Healing Aura"
+		"DOTA_Tooltip_modifier_healing_aura_Description"                                  ""
+
+		"DOTA_Tooltip_modifier_fade"                                                      "Fade"
+		"DOTA_Tooltip_modifier_fade_Description"                                          ""
+
+		"DOTA_Tooltip_modifier_vladmir_aura"                                              "Vladmir Aura"
+		"DOTA_Tooltip_modifier_vladmir_aura_Description"                                  ""
+
+		"DOTA_Tooltip_modifier_freezing_field_debuff"                                     "Freezing Field Chill"
+		"DOTA_Tooltip_modifier_freezing_field_debuff_Description"                         ""
+
+		"DOTA_Tooltip_modifier_guardian_angel"                                            "Guardian Angel"
+		"DOTA_Tooltip_modifier_guardian_angel_Description"                                ""
+
+		"DOTA_Tooltip_modifier_tactical_aura"                                             "Tactical Aura"
+		"DOTA_Tooltip_modifier_tactical_aura_Description"                                 ""
 
 
 		// ******************** ITEM MODIFIERS ********************

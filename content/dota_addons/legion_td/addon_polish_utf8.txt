@@ -3,7 +3,7 @@
 	"Language"		"Polish"
 	"Tokens"
 	{		
-		"addon_game_name"								"Legion TD"
+		"addon_game_name"								"Legion TD Reborn"
 		
 		// ******************************** ERROR ********************************
 		 "Error_not_enough_tangos"		"Nie wystarczająca liczba drewa"
