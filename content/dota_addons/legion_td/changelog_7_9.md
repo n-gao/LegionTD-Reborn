@@ -30,13 +30,13 @@
 
 ## Creep wave changes
 
-- Fixed Assassin backstab; it previously would trigger on front-stabs if slightly to one side.
+- Fixed Assassin backstab; it previously would frequently trigger on face-stabs from one side only.
 
 - Assassin spawn count from 10 to 12.
 
 - Not Lifestealer now has vampiric aura instead of feast; attackrate from 1.2 to .8, health from 210 to 280.
 
-- Hydra Splitshot additional attacks reduced from 3 to 2.
+- Hydra Splitshot additional attacks reduced from 3 to 2, base damage from 8.75-10 to 10-12.
 
 - Kunkka spawn count from 15 to 12.
 
