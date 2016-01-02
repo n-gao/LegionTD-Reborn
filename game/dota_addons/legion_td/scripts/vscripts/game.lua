@@ -312,6 +312,7 @@ function Game:Start()
   print ("Game:Start()")
   self.radiantKingVision = CreateUnitByName("king_vision_dummy", self.radiantBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
   self.direKingVision = CreateUnitByName("king_vision_dummy", self.direBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
+  self.gridBoxes = Entities:FindByName(nil, "gridboxes")
   self.gameState = GAMESTATE_PREPARATION
   self.gameRound = STARTING_ROUND
   self.isRunning = true
@@ -417,6 +418,7 @@ end
 --Runde beendet
 function Game:RoundFinished()
   mode:SetFogOfWarDisabled(false)
+  self.gridBoxes:RemoveEffects(EF_NODRAW)
   if not self.gameTimer then
     self:CreateGameTimer()
   end
@@ -451,6 +453,7 @@ function Game:StartNextRound()
     player.leaksPenalty = 0;
   end
   mode:SetFogOfWarDisabled(true)
+  self.gridBoxes:AddEffects(EF_NODRAW)
   self.gameState = GAMESTATE_FIGHTING
   self.nextRoundTime = nil
   self.rounds[self.gameRound]:Begin()
@@ -623,6 +626,9 @@ function Game:OrderFilter(keys)
         end
         return false
       end
+      --quantize the target position to grid square centers
+        keys.position_x = round(keys.position_x, 64) + 32
+        keys.position_y = round(keys.position_y, 64) + 32
       --valid location?
       local vector = Vector(keys.position_x, keys.position_y, keys.position_z)
       local canSpawn = self:CanSpawn(ability:GetCaster(), vector)

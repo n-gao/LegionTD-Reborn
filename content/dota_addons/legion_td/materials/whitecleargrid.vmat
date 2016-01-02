@@ -1,0 +1,22 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "global_lit_simple.vfx"
+
+	//---- Fullbright ----
+	F_FULLBRIGHT 1
+
+	//---- Translucent ----
+	F_TRANSLUCENT 1
+
+	//---- Color ----
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[2.000 2.000]"
+	TextureColor "materials/whitegrid.png"
+
+	//---- Translucent ----
+	g_flOpacityScale "0.400"
+	TextureTranslucency "materials/whitegridonblack.png"
+}
