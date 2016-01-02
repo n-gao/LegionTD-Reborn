@@ -50,7 +50,7 @@
 		"modifier_headshot_passive_datadriven"
 		{
 			"Passive"			"1"
-			"IsHidden"			"0"
+			"IsHidden"			"1"
 			"IsPurgable"		"0"
 			
 			"OnAttackLanded"

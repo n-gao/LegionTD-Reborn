@@ -2,6 +2,8 @@
 
 - Human Builder added!
 
+- Lanes have been widened by 40% (640 to 896 units)
+
 - The game will now attempt to distribute sends evenly based on tango value rather than unit count. The player that recieves the biggest send will rotate every round (player in first position for first round, second position for 2nd round, etc.)
   
   Example: 4 players are going to be sent 15 20-tango kobolds and a single 600-tango roshan. Under the old system, Three players will recieve 4 kobolds each, and another player will recieve 3 kobolds and a roshan. Under the new system, three players will recieve 5 kobolds each, and another player recieves only the roshan.

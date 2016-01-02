@@ -50,7 +50,7 @@
       "LastWaypoint"        "Raidant_Ancient"
       "HeroSpawn"           "Radiant_1"
       "Box"                 "Radiant_1_Box"
-      "UnitWaypoint"        "Radiant_1_Spawn"
+      "UnitWaypoint"        "Radiant_1_Unit_Waypoint"
       "MainBuilding"        "Radiant_1_Main_Building"
       "FoodBuilding"        "Radiant_1_Food_Building"
     }
@@ -63,7 +63,7 @@
       "LastWaypoint"        "Raidant_Ancient"
       "HeroSpawn"           "Radiant_2"
       "Box"                 "Radiant_2_Box"
-      "UnitWaypoint"        "Radiant_2_Spawn"
+      "UnitWaypoint"        "Radiant_2_Unit_Waypoint"
       "MainBuilding"        "Radiant_2_Main_Building"
       "FoodBuilding"        "Radiant_2_Food_Building"
     }
@@ -76,7 +76,7 @@
       "LastWaypoint"        "Raidant_Ancient"
       "HeroSpawn"           "Radiant_3"
       "Box"                 "Radiant_3_Box"
-      "UnitWaypoint"        "Radiant_3_Spawn"
+      "UnitWaypoint"        "Radiant_3_Unit_Waypoint"
       "MainBuilding"        "Radiant_3_Main_Building"
       "FoodBuilding"        "Radiant_3_Food_Building"
     }
@@ -89,7 +89,7 @@
       "LastWaypoint"        "Raidant_Ancient"
       "HeroSpawn"           "Radiant_4"
       "Box"                 "Radiant_4_Box"
-      "UnitWaypoint"        "Radiant_4_Spawn"
+      "UnitWaypoint"        "Radiant_4_Unit_Waypoint"
       "MainBuilding"        "Radiant_4_Main_Building"
       "FoodBuilding"        "Radiant_4_Food_Building"
     }
@@ -102,7 +102,7 @@
       "LastWaypoint"        "Dire_Ancient"
       "HeroSpawn"           "Dire_1"
       "Box"                 "Dire_1_Box"
-      "UnitWaypoint"        "Dire_1_Spawn"
+      "UnitWaypoint"        "Dire_1_Unit_Waypoint"
       "MainBuilding"        "Dire_1_Main_Building"
       "FoodBuilding"        "Dire_1_Food_Building"
     }
@@ -115,7 +115,7 @@
       "LastWaypoint"        "Dire_Ancient"
       "HeroSpawn"           "Dire_2"
       "Box"                 "Dire_2_Box"
-      "UnitWaypoint"        "Dire_2_Spawn"
+      "UnitWaypoint"        "Dire_2_Unit_Waypoint"
       "MainBuilding"        "Dire_2_Main_Building"
       "FoodBuilding"        "Dire_2_Food_Building"
     }
@@ -128,7 +128,7 @@
       "LastWaypoint"        "Dire_Ancient"
       "HeroSpawn"           "Dire_3"
       "Box"                 "Dire_3_Box"
-      "UnitWaypoint"        "Dire_3_Spawn"
+      "UnitWaypoint"        "Dire_3_Unit_Waypoint"
       "MainBuilding"        "Dire_3_Main_Building"
       "FoodBuilding"        "Dire_3_Food_Building"
     }
@@ -141,7 +141,7 @@
       "LastWaypoint"        "Dire_Ancient"
       "HeroSpawn"           "Dire_4"
       "Box"                 "Dire_4_Box"
-      "UnitWaypoint"        "Dire_4_Spawn"
+      "UnitWaypoint"        "Dire_4_Unit_Waypoint"
       "MainBuilding"        "Dire_4_Main_Building"
       "FoodBuilding"        "Dire_4_Food_Building"
     }
