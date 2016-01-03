@@ -290,13 +290,6 @@ function UpdateTimer()
 	$.Schedule( 0.1, UpdateTimer );
 }
 
-function AddContributor(name, steamId, parent) {
-	var newPlayerPanel = $.CreatePanel("Panel", parent, "player_info");
-	newPlayerPanel.SetAttributeString("creator_steamid", steamId);
-	newPlayerPanel.SetAttributeString("creator_name", name);
-	newPlayerPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_creator_panel.xml", false, false);
-}
-
 //--------------------------------------------------------------------------------------------------
 // Entry point called when the team select panel is created
 //--------------------------------------------------------------------------------------------------
@@ -305,13 +298,6 @@ function AddContributor(name, steamId, parent) {
 	var bShowSpectatorTeam = false;
 	var bAutoAssignTeams = true;
 
-	AddContributor("Roofkiller", "76561198027964324", $("#Creators"));
-	AddContributor("Roofkiller", "76561198027964324", $("#GameDesigners"));
-	AddContributor("Roofkiller", "76561198027964324", $("#Programmers"));
-	AddContributor("func_door", "76561197993928301", $("#GameDesigners"));
-	AddContributor("HoodyCore", "76561198038088076", $("#GameDesigners"));
-	AddContributor("Spider Muffin", "76561197998364533", $("#GameDesigners"));
-	AddContributor("func_door", "76561197993928301", $("#Programmers"));
 
 	// get any custom config
 	if ( GameUI.CustomUIConfig().team_select )

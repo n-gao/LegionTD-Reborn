@@ -2,7 +2,25 @@
 	<styles>
 		<include src="file://{resources}/styles/dotastyles.css" />
 		<include src="file://{resources}/styles/custom_game/squadron_game_info.css" />
+		<include src="file://{resources}/styles/custom_game/legion_creator_panel.css" />
 	</styles>
+	<script>
+		function AddContributor(name, steamId, parent) {
+			var newPlayerPanel = $.CreatePanel("Panel", parent, "player_info");
+			newPlayerPanel.SetAttributeString("creator_steamid", steamId);
+			newPlayerPanel.SetAttributeString("creator_name", name);
+			newPlayerPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_creator_panel.xml", false, false);
+		}
+
+			AddContributor("Roofkiller", "76561198027964324", $("#Creators"));
+			AddContributor("Roofkiller", "76561198027964324", $("#GameDesigners"));
+			AddContributor("Roofkiller", "76561198027964324", $("#Programmers"));
+			AddContributor("func_door", "76561197993928301", $("#GameDesigners"));
+			AddContributor("func_door", "76561197993928301", $("#Leaders"));
+			AddContributor("func_door", "76561197993928301", $("#Programmers"));
+			AddContributor("HoodyCore", "76561198038088076", $("#GameDesigners"));
+			AddContributor("Muffet", "76561197998364533", $("#GameDesigners"));
+	</script>
 	<Panel class="OverthrowGameInfo">
 		<Panel id="Title">
 			<Label id="TitleName" text="#addon_game_name" />
@@ -29,5 +47,16 @@
 			<Label id="TipText03" class="TipText" html="true" text="#squadron_game_info_tip03" />
 			<Label id="TipText04" class="TipText" html="true" text="#squadron_game_info_tip04" />
 		</Panel>
+			<Panel id="CreatorPanel" hittest="false">
+				<Label id="ContributorPanelLabel" text="#legion_contributor_label" />
+				<Label class="ContributorLabel" text="#legion_contributor_creator" />
+				<Panel id="Creators" class="ContributorPanel" hitetst="false" />
+				<Label class="ContributorLabel" text="#legion_contributor_leader" />
+				<Panel id="Leaders" class="ContributorPanel" hitetst="false" />
+				<Label class="ContributorLabel" text="#legion_contributor_design" />
+				<Panel id="GameDesigners" class="ContributorPanel" hitetst="false" />
+				<Label class="ContributorLabel" text="#legion_contributor_programming" />
+				<Panel id="Programmers" class="ContributorPanel" hitetst="false" />
+			</Panel>
 	</Panel>
 </root>
