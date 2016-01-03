@@ -1,0 +1,13 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/legion_creator_panel.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/legion_creator_panel.js" />
+	</scripts>
+	<Panel class="CreatorPlayer">
+		<DOTAAvatarImage id="PlayerAvatar" />
+		<Label id="PlayerName" text="PLAYER_NAME" />
+	</Panel>
+</root>

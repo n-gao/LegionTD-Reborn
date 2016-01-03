@@ -3,6 +3,7 @@
 		<include src="file://{resources}/styles/dotastyles.css" />
 		<include src="file://{resources}/styles/play.css" />
 		<include src="file://{resources}/styles/custom_game/team_select.css" />
+		<include src="file://{resources}/styles/custom_game/legion_creator_panel.css" />
 	</styles>
 	<scripts>
 		<include src="file://{resources}/scripts/custom_game/team_select.js" />
@@ -10,6 +11,14 @@
 	</scripts>
 	<Panel hittest="false" class="TeamSelect">
 		<Panel hittest="false" id="TeamSelectContainer" selectionpos="auto">`
+			<Panel id="CreatorPanel" hittest="false">
+				<Label class="ContributorLabel" text="Creator" />
+				<Panel id="Creators" class="ContributorPanel" hitetst="false" />
+				<Label class="ContributorLabel" text="Game Design" />
+				<Panel id="GameDesigners" class="ContributorPanel" hitetst="false" />
+				<Label class="ContributorLabel" text="Programmer" />
+				<Panel id="Programmers" class="ContributorPanel" hitetst="false" />
+			</Panel>
 			<!--Empty space to let the loading screen and chat be visible-->
 			<Panel hittest="false" id="TeamsSelectEmptySpace" />
 

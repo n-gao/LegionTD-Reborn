@@ -1,7 +1,7 @@
 "use strict";
 
 // Global list of panels representing each of the teams
-var g_TeamPanels = [];		
+var g_TeamPanels = [];
 
 // Global list of panels representing each of the players (1 per-player). These are reparented
 // to the appropriate team panel to indicate which team the player is on.
@@ -26,16 +26,16 @@ function OnLockAndStartPressed()
 {
 	// Don't allow a forced start if there are unassigned players
 	if ( Game.GetUnassignedPlayerIDs().length > 0  )
-		return;
+	return;
 
 	// Lock the team selection so that no more team changes can be made
 	Game.SetTeamSelectionLocked( true );
-	
+
 	// Disable the auto start count down
 	Game.SetAutoLaunchEnabled( false );
 
 	// Set the remaining time before the game starts
-	Game.SetRemainingSetupTime( 4 ); 
+	Game.SetRemainingSetupTime( 4 );
 }
 
 
@@ -48,7 +48,7 @@ function OnCancelAndUnlockPressed()
 	Game.SetTeamSelectionLocked( false );
 
 	// Stop the countdown timer
-	Game.SetRemainingSetupTime( -1 ); 
+	Game.SetRemainingSetupTime( -1 );
 }
 
 
@@ -68,16 +68,16 @@ function OnAutoAssignPressed()
 //--------------------------------------------------------------------------------------------------
 function OnShufflePlayersPressed()
 {
-	// Shuffle the team assignments of any players which are assigned to a team, 
-	// this will not assign any players to a team which are currently unassigned. 
+	// Shuffle the team assignments of any players which are assigned to a team,
+	// this will not assign any players to a team which are currently unassigned.
 	// This will also not attempt to keep players in a party on the same team.
 	Game.ShufflePlayerTeamAssignments();
 }
 
 
 //--------------------------------------------------------------------------------------------------
-// Find the player panel for the specified player in the global list or create the panel if there 
-// is not already one in the global list. Make the new or existing panel a child panel of the 
+// Find the player panel for the specified player in the global list or create the panel if there
+// is not already one in the global list. Make the new or existing panel a child panel of the
 // specified parent panel
 //--------------------------------------------------------------------------------------------------
 function FindOrCreatePanelForPlayer( playerId, parent )
@@ -86,7 +86,7 @@ function FindOrCreatePanelForPlayer( playerId, parent )
 	for ( var i = 0; i < g_PlayerPanels.length; ++i )
 	{
 		var playerPanel = g_PlayerPanels[ i ];
-		
+
 		if ( playerPanel.GetAttributeInt( "player_id", -1 ) == playerId )
 		{
 			playerPanel.SetParent( parent );
@@ -113,8 +113,8 @@ function FindPlayerSlotInTeamPanel( teamPanel, playerSlot )
 {
 	var playerListNode = teamPanel.FindChildInLayoutFile( "PlayerList" );
 	if ( playerListNode == null )
-		return null;
-	
+	return null;
+
 	var nNumChildren = playerListNode.GetChildCount();
 	for ( var i = 0; i < nNumChildren; ++i )
 	{
@@ -138,9 +138,9 @@ function UpdateTeamPanel( teamPanel )
 	// Get the id of team this panel is displaying
 	var teamId = teamPanel.GetAttributeInt( "team_id", -1 );
 	if ( teamId <= 0 )
-		return;
-	
-	// Add all of the players currently assigned to the team 
+	return;
+
+	// Add all of the players currently assigned to the team
 	var teamPlayers = Game.GetPlayerIDsOnTeam( teamId );
 	for ( var i = 0; i < teamPlayers.length; ++i )
 	{
@@ -183,20 +183,20 @@ function OnTeamPlayerListChanged()
 {
 	var unassignedPlayersContainerNode = $( "#UnassignedPlayersContainer" );
 	if ( unassignedPlayersContainerNode === null )
-		return;	
-	
+	return;
+
 	// Move all existing player panels back to the unassigned player list
 	for ( var i = 0; i < g_PlayerPanels.length; ++i )
 	{
 		var playerPanel = g_PlayerPanels[ i ];
 		playerPanel.SetParent( unassignedPlayersContainerNode );
 	}
-		
-	// Make sure all of the unassigned player have a player panel 
+
+	// Make sure all of the unassigned player have a player panel
 	// and that panel is a child of the unassigned player panel.
 	var unassignedPlayers = Game.GetUnassignedPlayerIDs();
 	for ( var i = 0; i < unassignedPlayers.length; ++i )
-	{		
+	{
 		var playerId = unassignedPlayers[ i ];
 		FindOrCreatePanelForPlayer( playerId, unassignedPlayersContainerNode );
 	}
@@ -220,7 +220,7 @@ function OnPlayerSelectedTeam( nPlayerId, nTeamId, bSuccess )
 {
 	var playerInfo = Game.GetLocalPlayerInfo();
 	if ( !playerInfo )
-		return;
+	return;
 
 	// Check to see if the event is for the local player
 	if ( playerInfo.player_id === nPlayerId )
@@ -246,9 +246,9 @@ function CheckForHostPrivileges()
 {
 	var playerInfo = Game.GetLocalPlayerInfo();
 	if ( !playerInfo )
-		return;
+	return;
 
-	// Set the "player_has_host_privileges" class on the panel, this can be used 
+	// Set the "player_has_host_privileges" class on the panel, this can be used
 	// to have some sub-panels on display or be enabled for the host player.
 	$.GetContextPanel().SetHasClass( "player_has_host_privileges", playerInfo.player_has_host_privileges );
 }
@@ -263,7 +263,7 @@ function UpdateTimer()
 	var transitionTime = Game.GetStateTransitionTime();
 
 	CheckForHostPrivileges();
-	
+
 	var mapInfo = Game.GetMapInfo();
 	$( "#MapInfo" ).SetDialogVariable( "map_name", mapInfo.map_display_name );
 
@@ -286,10 +286,16 @@ function UpdateTimer()
 	// Allow the ui to update its state based on team selection being locked or unlocked
 	$.GetContextPanel().SetHasClass( "teams_locked", Game.GetTeamSelectionLocked() );
 	$.GetContextPanel().SetHasClass( "teams_unlocked", Game.GetTeamSelectionLocked() == false );
-		
+
 	$.Schedule( 0.1, UpdateTimer );
 }
 
+function AddContributor(name, steamId, parent) {
+	var newPlayerPanel = $.CreatePanel("Panel", parent, "player_info");
+	newPlayerPanel.SetAttributeString("creator_steamid", steamId);
+	newPlayerPanel.SetAttributeString("creator_name", name);
+	newPlayerPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_creator_panel.xml", false, false);
+}
 
 //--------------------------------------------------------------------------------------------------
 // Entry point called when the team select panel is created
@@ -298,6 +304,14 @@ function UpdateTimer()
 {
 	var bShowSpectatorTeam = false;
 	var bAutoAssignTeams = true;
+
+	AddContributor("Roofkiller", "76561198027964324", $("#Creators"));
+	AddContributor("Roofkiller", "76561198027964324", $("#GameDesigners"));
+	AddContributor("Roofkiller", "76561198027964324", $("#Programmers"));
+	AddContributor("func_door", "76561197993928301", $("#GameDesigners"));
+	AddContributor("HoodyCore", "76561198038088076", $("#GameDesigners"));
+	AddContributor("Spider Muffin", "76561197998364533", $("#GameDesigners"));
+	AddContributor("func_door", "76561197993928301", $("#Programmers"));
 
 	// get any custom config
 	if ( GameUI.CustomUIConfig().team_select )
@@ -318,12 +332,12 @@ function UpdateTimer()
 
 	// Construct the panels for each team
 	var allTeamIDs = Game.GetAllTeamIDs();
-	
+
 	if ( bShowSpectatorTeam )
 	{
 		allTeamIDs.unshift( g_TEAM_SPECATOR );
 	}
-	
+
 	for ( var teamId of allTeamIDs )
 	{
 		var teamNode = $.CreatePanel( "Panel", teamsListRootNode, "" );

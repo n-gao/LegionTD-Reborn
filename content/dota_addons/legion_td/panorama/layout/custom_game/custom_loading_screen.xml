@@ -3,6 +3,9 @@
 		<include src="file://{resources}/styles/dotastyles.css" />
 		<include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
 	</styles>
+	<scripts>
+		<incldue src="file://{resources}/scripts/custom_game/legion_loading_screen.js" />
+	</scripts>
 	<Panel class="LoadingScreen">
 		<Panel id="seq" >
 			<Image id="seq_bg" class="SeqBg" src="file://{images}/custom_game/loading_screen/loading_screen.jpg" />

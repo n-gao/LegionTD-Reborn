@@ -3,7 +3,7 @@
 
 //--------------------------------------------------------------------------------------------------
 // Handeler for when the unssigned players panel is clicked that causes the player to be reassigned
-// to the unssigned players team
+// to the unssigned players team#
 //--------------------------------------------------------------------------------------------------
 function OnLeaveTeamPressed()
 {
