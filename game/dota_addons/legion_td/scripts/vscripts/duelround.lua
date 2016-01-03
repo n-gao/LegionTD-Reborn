@@ -79,6 +79,11 @@ function DuelRound:PlaceUnits()
         unit.nextTarget = target:GetAbsOrigin()
         FindClearSpaceForUnit(unit.npc, spawnPoint:GetAbsOrigin(), true)
         table.insert(team, unit.npc)
+        ExecuteOrderFromTable(
+          UnitIndex = unit.npc:entindex(),
+          OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
+          Position = unit.nextTarget
+        )
       end
     end
   end
