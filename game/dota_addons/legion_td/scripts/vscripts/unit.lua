@@ -196,6 +196,13 @@ function leaveLane(trigger)
 end
 
 
+function UnitSpawn(event)
+  local unit = Unit.new(Game.GetUnitNameByID(event.ability:GetSpecialValueFor("unitID")),
+    event.unit:GetCursorPosition(), event.caster, event.ability:GetSpecialValueFor("food_cost"),
+    event.ability:GetGoldCost(event.ability:GetLevel()))
+  event.caster.player:RefreshPlayerInfo()
+end
+
 
 function upgrade_unit(event)
   local id = event.ability:GetSpecialValueFor("unitID")

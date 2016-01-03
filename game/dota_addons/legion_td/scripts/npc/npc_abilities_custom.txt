@@ -221,7 +221,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -279,7 +279,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -337,7 +337,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -395,7 +395,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -453,7 +453,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -1839,7 +1839,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -1897,7 +1897,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -1955,7 +1955,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -2013,7 +2013,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -2071,7 +2071,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -7582,7 +7582,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -7640,7 +7640,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -7698,7 +7698,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -7756,7 +7756,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -7814,7 +7814,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
@@ -7872,7 +7872,7 @@
 	  {
 	    "RunScript"
 	    {
-	      "ScriptFile"	"player.lua"
+	      "ScriptFile"	"unit.lua"
 	      "Function"		"UnitSpawn"
 	    }
 	  }
