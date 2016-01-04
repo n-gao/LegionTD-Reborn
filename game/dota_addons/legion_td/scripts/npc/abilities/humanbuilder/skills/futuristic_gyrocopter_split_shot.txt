@@ -1,4 +1,4 @@
-"gyrocopter_mk1_split_shot"
+"futuristic_gyrocopter_split_shot"
 {
 	// General
 	//-------------------------------------------------------------------------------------------------------------
@@ -30,12 +30,12 @@
 		"03"
 		{	
 			"var_type"					"FIELD_INTEGER"
-			"arrow_count"				"2"
+			"arrow_count"				"4"
 		}
 		"04"
 		{	
 			"var_type"					"FIELD_INTEGER"
-			"total_arrow_count"			"3"
+			"total_arrow_count"			"5"
 		}
 		"05"
 		{

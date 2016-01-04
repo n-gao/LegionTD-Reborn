@@ -3259,7 +3259,7 @@
 		"Ability1"				"sell"
 		"Ability2"				"futuristic_gyrocopter_call_down"
 		"Ability3"				"futuristic_gyrocopter_flak_cannon"
-		"Ability4"				"futuristic_gyrocopter_rocket_barrage"
+		"Ability4"				"futuristic_gyrocopter_split_shot"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3270,12 +3270,12 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "325.0"
+		"AttackDamageMin"       "350.0"
 		"AttackDamageMax"       "350.0"
-		"AttackRate"            ".8"
+		"AttackRate"            "1"
 		"AttackAnimationPoint"  "0.2"
-		"AttackAcquisitionRange" "550"
-		"AttackRange"           "500"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "400"
 		"ProjectileModel"       "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
 		"ProjectileSpeed"       "3000"
 	
@@ -3564,12 +3564,12 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "112.5"
-		"AttackDamageMax"       "112.5"
-		"AttackRate"            "2"
+		"AttackDamageMin"       "99"
+		"AttackDamageMax"       "99"
+		"AttackRate"            "1.5"
 		"AttackAnimationPoint"  "0.2"
-		"AttackAcquisitionRange" "550"
-		"AttackRange"           "500"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "400"
 		"ProjectileModel"       "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
 		"ProjectileSpeed"       "2000"
 	
@@ -3591,7 +3591,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "133"
+		"StatusHealth"          "200"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -3651,7 +3651,8 @@
 	
 		"Ability1"				"sell"
 		"Ability2"				"humanbuilder_upgrade_futuristic_gyrocopter"
-		"Ability3"				"gyrocopter_mk2_rocket_barrage"
+		"Ability3"				"gyrocopter_mk2_flak_cannon"
+		"Ability4"				"gyrocopter_mk2_split_shot"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3662,12 +3663,12 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "225.0"
-		"AttackDamageMax"       "225.0"
-		"AttackRate"            "1.4"
+		"AttackDamageMin"       "233.0"
+		"AttackDamageMax"       "233.0"
+		"AttackRate"            "1.2"
 		"AttackAnimationPoint"  "0.2"
-		"AttackAcquisitionRange" "550"
-		"AttackRange"           "500"
+		"AttackAcquisitionRange" "500"
+		"AttackRange"           "400"
 		"ProjectileModel"       "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
 		"ProjectileSpeed"       "2500"
 	
@@ -3689,7 +3690,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "266"
+		"StatusHealth"          "300"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"

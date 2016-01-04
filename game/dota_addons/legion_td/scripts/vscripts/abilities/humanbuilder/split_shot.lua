@@ -3,6 +3,15 @@ function SplitShotLaunch( keys )
 	local caster_location = caster:GetAbsOrigin()
 	local ability = keys.ability
 	local ability_level = ability:GetLevel() - 1
+	local cooldown = ability:GetCooldown(ability_level)
+	local modifierName = keys.modifiername
+
+	ability:StartCooldown(cooldown)
+	caster:RemoveModifierByName(modifierName)
+
+	Timers:CreateTimer(cooldown, function()
+		ability:ApplyDataDrivenModifier(caster, caster, modifierName, {})
+	end)
 
 	-- Targeting variables
 	local target_type = ability:GetAbilityTargetType()

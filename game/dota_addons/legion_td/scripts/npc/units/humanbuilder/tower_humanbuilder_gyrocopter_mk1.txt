@@ -24,12 +24,12 @@
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "112.5"
-	"AttackDamageMax"       "112.5"
-	"AttackRate"            "2"
+	"AttackDamageMin"       "99"
+	"AttackDamageMax"       "99"
+	"AttackRate"            "1.5"
 	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "550"
-	"AttackRange"           "500"
+	"AttackAcquisitionRange" "500"
+	"AttackRange"           "400"
 	"ProjectileModel"       "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
 	"ProjectileSpeed"       "2000"
 
@@ -51,7 +51,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "133"
+	"StatusHealth"          "200"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

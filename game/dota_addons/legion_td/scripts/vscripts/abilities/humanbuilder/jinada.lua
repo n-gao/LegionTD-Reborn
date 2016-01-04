@@ -1,7 +1,7 @@
 function Jinada( keys )
 	local ability = keys.ability
 	local level = ability:GetLevel() - 1
-	local cooldown = ability:GetCooldown(level)
+	local cooldown = ability:GetCooldown(ability:GetLevel() - 1)
 	local caster = keys.caster	
 	local modifierName = keys.modifiername
 
