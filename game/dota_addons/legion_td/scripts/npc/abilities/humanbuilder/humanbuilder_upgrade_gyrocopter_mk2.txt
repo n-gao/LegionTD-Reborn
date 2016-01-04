@@ -20,22 +20,22 @@
     "01"
     {
       "var_type"              "FIELD_INTEGER"
-      "atk_damage_tooltip"    "225.0"
+      "atk_damage_tooltip"    "233"
     }
     "02"
     {
       "var_type"              "FIELD_FLOAT"
-      "atk_speed_tooltip"     "1.4"
+      "atk_speed_tooltip"     "1.2"
     }
     "03"
     {
       "var_type"              "FIELD_INTEGER"
-      "atk_range_tooltip"     "500"
+      "atk_range_tooltip"     "400"
     }
     "04"
     {
       "var_type"              "FIELD_INTEGER"
-      "health_tooltip"        "266"
+      "health_tooltip"        "300"
     }
     "05"
     {

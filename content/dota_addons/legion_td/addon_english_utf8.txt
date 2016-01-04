@@ -835,7 +835,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_food_cost"                        "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1"                          "Spawn Gyrocopter Mk1"
-		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_Description"              "Skills: ---"
+		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_Description"              "Skills: Split Shot"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_atk_damage_tooltip"       "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_atk_speed_tooltip"        "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_atk_range_tooltip"        "ATK RANGE:"
