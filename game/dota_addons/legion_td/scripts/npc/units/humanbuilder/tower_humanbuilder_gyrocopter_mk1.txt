@@ -13,6 +13,7 @@
 
 	"Ability1"				"sell"
 	"Ability2"				"humanbuilder_upgrade_gyrocopter_mk2"
+	"Ability3"				"gyrocopter_mk1_split_shot"
 
 	// Armor
 	//----------------------------------------------------------------
@@ -26,7 +27,7 @@
 	"AttackDamageMin"       "112.5"
 	"AttackDamageMax"       "112.5"
 	"AttackRate"            "2"
-	"AttackAnimationPoint"  "0.5"
+	"AttackAnimationPoint"  "0.2"
 	"AttackAcquisitionRange" "550"
 	"AttackRange"           "500"
 	"ProjectileModel"       "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
