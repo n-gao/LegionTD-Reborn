@@ -11,9 +11,9 @@
 	"HealthBarOffset"       "150"
 	"Vscripts"              "ai/humanbuilder/ai_archbishop.lua"
 
-	"Ability1"				"sell"
-	"Ability2"				"archbishop_shadow_wave"
-	"Ability3"				"archbishop_healing_aura"
+	"Ability6"				"sell"
+	"Ability1"				"archbishop_shadow_wave"
+	"Ability2"				"archbishop_healing_aura"
 
 	// Armor
 	//----------------------------------------------------------------

@@ -10,8 +10,8 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"enigma_black_hole"
+	"Ability6"				"sell"
+	"Ability1"				"enigma_black_hole"
 
 	// Armor
 	//----------------------------------------------------------------

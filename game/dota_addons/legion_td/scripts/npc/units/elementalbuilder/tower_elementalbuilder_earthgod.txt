@@ -10,9 +10,9 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"tiny_avalanche"
-  "Ability3"              "tiny_grow"
+	"Ability6"				"sell"
+	"Ability1"				"tiny_avalanche"
+  	"Ability10"             "tiny_grow"
 
 	// Armor
 	//----------------------------------------------------------------

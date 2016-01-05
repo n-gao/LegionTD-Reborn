@@ -10,8 +10,8 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"				"sell"
-	"Ability2"				"sharpshooter_headshot"
+	"Ability6"				"sell"
+	"Ability1"				"sharpshooter_headshot"
 
 	// Armor
 	//----------------------------------------------------------------

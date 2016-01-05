@@ -12,8 +12,8 @@
 
 	"Ability1"							"naturebuilder_upgrade_druid_bear"
 	"Ability2"							"naturebuilder_upgrade_iron_bear"
-	"Ability3"							"sell"
-	"Ability4"							"axe_berserkers_call"
+	"Ability6"							"sell"
+	"Ability3"							"axe_berserkers_call"
 
 	// Armor
 	//----------------------------------------------------------------

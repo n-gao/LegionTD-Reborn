@@ -10,8 +10,8 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"				"sell"
-	"Ability2"				"icewrack_grandmaster_freezing_field"
+	"Ability6"				"sell"
+	"Ability1"				"icewrack_grandmaster_freezing_field"
 
 	// Armor
 	//----------------------------------------------------------------

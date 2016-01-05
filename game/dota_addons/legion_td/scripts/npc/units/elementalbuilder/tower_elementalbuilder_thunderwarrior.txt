@@ -10,8 +10,8 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"storm_spirit_static_remnant"
+	"Ability6"				"sell"
+	"Ability1"				"storm_spirit_static_remnant"
 
 	// Armor
 	//----------------------------------------------------------------

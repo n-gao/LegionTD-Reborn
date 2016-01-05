@@ -10,10 +10,10 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"				"sell"
-	"Ability2"				"humanbuilder_upgrade_sharpshooter"
-	"Ability3"				"humanbuilder_upgrade_gunner"
-	"Ability4"				"marksman_headshot"
+	"Ability6"				"sell"
+	"Ability1"				"humanbuilder_upgrade_sharpshooter"
+	"Ability2"				"humanbuilder_upgrade_gunner"
+	"Ability3"				"marksman_headshot"
 
 	// Armor
 	//----------------------------------------------------------------

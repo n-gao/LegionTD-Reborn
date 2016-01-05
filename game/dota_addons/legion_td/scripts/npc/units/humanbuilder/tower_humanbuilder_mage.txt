@@ -11,10 +11,10 @@
 	"HealthBarOffset"       "150"
 	"Vscripts"              "ai/humanbuilder/ai_mage.lua"
 
-	"Ability1"				"sell"
-	"Ability2"				"humanbuilder_upgrade_archmage"
-	"Ability3"				"mage_chain_fade"
-	"Ability4"				"mage_crystal_nova"
+	"Ability6"				"sell"
+	"Ability1"				"humanbuilder_upgrade_archmage"
+	"Ability2"				"mage_chain_fade"
+	"Ability3"				"mage_crystal_nova"
 
 	// Armor
 	//----------------------------------------------------------------

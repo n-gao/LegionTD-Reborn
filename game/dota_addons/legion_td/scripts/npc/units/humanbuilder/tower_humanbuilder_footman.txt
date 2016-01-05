@@ -11,8 +11,8 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"				"humanbuilder_upgrade_soldier"
-	"Ability2"				"sell"
-	"Ability3"				"footman_shield_bash"
+	"Ability6"				"sell"
+	"Ability2"				"footman_shield_bash"
 
 	// Armor
 	//----------------------------------------------------------------

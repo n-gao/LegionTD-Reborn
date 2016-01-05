@@ -13,12 +13,12 @@
 
 
 	"AbilityLayout"			"6"
-	"Ability1"				"sell"
-	"Ability2"				"humanbuilder_upgrade_archbishop"
-	"Ability3"				"humanbuilder_upgrade_icewrack_grandmaster"
-	"Ability4"				"humanbuilder_upgrade_soundmaster"
-	"Ability5"				"archmage_chain_fade"
-	"Ability6"				"archmage_crystal_nova"
+	"Ability6"				"sell"
+	"Ability1"				"humanbuilder_upgrade_archbishop"
+	"Ability2"				"humanbuilder_upgrade_icewrack_grandmaster"
+	"Ability3"				"humanbuilder_upgrade_soundmaster"
+	"Ability4"				"archmage_chain_fade"
+	"Ability5"				"archmage_crystal_nova"
 
 	// Armor
 	//----------------------------------------------------------------

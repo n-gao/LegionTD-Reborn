@@ -11,9 +11,9 @@
 	"HealthBarOffset"       "150"
 	"Vscripts"              "ai/humanbuilder/ai_gyrocopter_mk1.lua"
 
-	"Ability1"				"sell"
-	"Ability2"				"humanbuilder_upgrade_gyrocopter_mk2"
-	"Ability3"				"gyrocopter_mk1_split_shot"
+	"Ability6"				"sell"
+	"Ability1"				"humanbuilder_upgrade_gyrocopter_mk2"
+	"Ability2"				"gyrocopter_mk1_split_shot"
 
 	// Armor
 	//----------------------------------------------------------------

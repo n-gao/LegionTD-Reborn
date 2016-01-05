@@ -11,9 +11,9 @@
 	"HealthBarOffset"       "150"
 	"Vscripts"              "ai/humanbuilder/ai_novice.lua"
 
-	"Ability1"				"sell"
-	"Ability2"				"humanbuilder_upgrade_mage"
-	"Ability3"				"novice_chain_fade"
+	"Ability6"				"sell"
+	"Ability1"				"humanbuilder_upgrade_mage"
+	"Ability2"				"novice_chain_fade"
 
 	// Armor
 	//----------------------------------------------------------------

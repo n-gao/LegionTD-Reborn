@@ -10,9 +10,9 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"lone_druid_spirit_bear_entangle"
-	"Ability3"							"axe_berserkers_call"
+	"Ability6"							"sell"
+	"Ability1"							"lone_druid_spirit_bear_entangle"
+	"Ability2"							"axe_berserkers_call"
 
 	// Armor
 	//----------------------------------------------------------------

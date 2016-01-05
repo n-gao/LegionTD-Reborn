@@ -3,6 +3,7 @@
   "BaseClass"                "ability_datadriven"
   "AbilityTextureName"      "alchemist_goblins_greed"
   "MaxLevel"                "1"
+  "AbilityType"				"DOTA_ABILITY_TYPE_ULTIMATE"
 
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 	"AbilityCooldown"		    "1.0"

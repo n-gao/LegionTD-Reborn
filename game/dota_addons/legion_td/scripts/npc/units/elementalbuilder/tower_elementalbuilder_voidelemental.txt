@@ -10,8 +10,8 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"bane_brain_sap"
+	"Ability6"				"sell"
+	"Ability1"				"bane_brain_sap"
 
 	// Armor
 	//----------------------------------------------------------------

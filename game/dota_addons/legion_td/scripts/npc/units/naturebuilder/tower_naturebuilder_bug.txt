@@ -11,8 +11,8 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"							"naturebuilder_upgrade_big_bug"
-	"Ability2"							"sell"
-	"Ability3"							"weaver_geminate_attack"
+	"Ability6"							"sell"
+	"Ability2"							"weaver_geminate_attack"
 
 	// Armor
 	//----------------------------------------------------------------
