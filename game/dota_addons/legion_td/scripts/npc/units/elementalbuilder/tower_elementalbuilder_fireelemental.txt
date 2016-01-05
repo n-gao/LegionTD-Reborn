@@ -10,8 +10,8 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability6"				"sell"
-	"Ability1"				"ember_spirit_flame_guard"
+	"Ability1"							"sell"
+	"Ability2"							"ember_spirit_flame_guard"
 
 	// Armor
 	//----------------------------------------------------------------

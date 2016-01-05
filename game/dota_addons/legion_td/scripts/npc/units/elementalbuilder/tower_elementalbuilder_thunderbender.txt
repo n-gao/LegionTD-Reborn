@@ -11,9 +11,9 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"							"elementalbuilder_upgrade_thunderelemental"
-  	"Ability2"							"elementalbuilder_upgrade_thunderwarrior"
-  	"Ability3"							"elementalbuilder_upgrade_thundergod"
-	"Ability6"							"sell"
+  "Ability2"							"elementalbuilder_upgrade_thunderwarrior"
+  "Ability3"							"elementalbuilder_upgrade_thundergod"
+	"Ability4"							"sell"
 
 	// Armor
 	//----------------------------------------------------------------

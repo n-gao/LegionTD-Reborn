@@ -12,8 +12,8 @@
 
 	"Ability1"							"humanbuilder_upgrade_spearman"
 	"Ability2"							"humanbuilder_upgrade_paladin"
-	"Ability6"							"sell"
-	"Ability3"							"soldier_shield_bash"
+	"Ability3"							"sell"
+	"Ability4"							"soldier_shield_bash"
 
 	// Armor
 	//----------------------------------------------------------------

@@ -11,10 +11,10 @@
 	"HealthBarOffset"       "150"
 	"Vscripts"              "ai/humanbuilder/ai_futuristic_gyrocopter.lua"
 
-	"Ability6"				"sell"
-	"Ability1"				"futuristic_gyrocopter_call_down"
-	"Ability2"				"futuristic_gyrocopter_flak_cannon"
-	"Ability3"				"futuristic_gyrocopter_split_shot"
+	"Ability1"				"sell"
+	"Ability2"				"futuristic_gyrocopter_call_down"
+	"Ability3"				"futuristic_gyrocopter_flak_cannon"
+	"Ability4"				"futuristic_gyrocopter_split_shot"
 
 	// Armor
 	//----------------------------------------------------------------

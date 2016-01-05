@@ -11,8 +11,8 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"							"naturebuilder_upgrade_broodmother"
-	"Ability6"							"sell"
-	"Ability2"							"broodmother_poison_sting"
+	"Ability2"							"sell"
+	"Ability3"							"broodmother_poison_sting"
 
 	// Armor
 	//----------------------------------------------------------------

@@ -11,10 +11,10 @@
 	"HealthBarOffset"       "150"
 	"Vscripts"              "ai/humanbuilder/ai_blademaster.lua"
 
-	"Ability6"				"sell"
-	"Ability1"				"blademaster_blade_fury"
-	"Ability2"				"blademaster_blade_dance"
-	"Ability3"				"human_vladmir"
+	"Ability1"				"sell"
+	"Ability2"				"blademaster_blade_fury"
+	"Ability3"				"blademaster_blade_dance"
+	"Ability4"				"human_vladmir"
 
 	// Armor
 	//----------------------------------------------------------------

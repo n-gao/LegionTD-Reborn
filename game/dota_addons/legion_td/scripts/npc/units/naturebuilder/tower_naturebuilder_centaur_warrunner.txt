@@ -10,8 +10,8 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability6"							"sell"
-	"Ability1"							"centaur_warrunner_great_cleave"
+	"Ability1"							"sell"
+	"Ability2"							"centaur_warrunner_great_cleave"
 
 	// Armor
 	//----------------------------------------------------------------

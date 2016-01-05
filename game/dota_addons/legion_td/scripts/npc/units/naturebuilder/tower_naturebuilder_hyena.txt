@@ -11,8 +11,8 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"							"naturebuilder_upgrade_agressive_boar"
-	"Ability6"							"sell"
-	"Ability2"							"hyena_nethertoxin"
+	"Ability2"							"sell"
+	"Ability3"							"hyena_nethertoxin"
 
 	// Armor
 	//----------------------------------------------------------------

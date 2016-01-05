@@ -11,8 +11,8 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"				"humanbuilder_upgrade_general"
-	"Ability6"				"sell"
-	"Ability2"				"lieutenant_vigor_strike"
+	"Ability2"				"sell"
+	"Ability3"				"lieutenant_vigor_strike"
 
 	// Armor
 	//----------------------------------------------------------------

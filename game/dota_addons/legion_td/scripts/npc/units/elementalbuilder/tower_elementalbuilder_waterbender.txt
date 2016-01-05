@@ -11,9 +11,9 @@
 	"HealthBarOffset"       "150"
 
 	"Ability1"							"elementalbuilder_upgrade_waterelemental"
-  	"Ability2"							"elementalbuilder_upgrade_waterwarrior"
-  	"Ability3"							"elementalbuilder_upgrade_watergod"
-	"Ability6"							"sell"
+  "Ability2"							"elementalbuilder_upgrade_waterwarrior"
+  "Ability3"							"elementalbuilder_upgrade_watergod"
+	"Ability4"							"sell"
 
 	// Armor
 	//----------------------------------------------------------------

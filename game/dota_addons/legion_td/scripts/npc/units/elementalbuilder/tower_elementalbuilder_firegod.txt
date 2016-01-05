@@ -10,8 +10,8 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability6"							"sell"
-	"Ability1"							"firegod_supernova"
+	"Ability1"							"sell"
+	"Ability2"							"firegod_supernova"
 
 	// Armor
 	//----------------------------------------------------------------

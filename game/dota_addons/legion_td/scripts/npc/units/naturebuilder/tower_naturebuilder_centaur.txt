@@ -13,8 +13,8 @@
 
 	"Ability1"							"naturebuilder_upgrade_big_centaur"
 	"Ability2"							"naturebuilder_upgrade_centaur_warrunner"
-	"Ability6"							"sell"
-	"Ability3"							"tiny_craggy_exterior"
+	"Ability3"							"sell"
+	"Ability4"							"tiny_craggy_exterior"
 
 	// Armor
 	//----------------------------------------------------------------

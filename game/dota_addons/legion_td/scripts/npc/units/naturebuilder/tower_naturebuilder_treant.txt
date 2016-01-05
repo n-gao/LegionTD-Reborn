@@ -12,8 +12,8 @@
 
 	"Ability1"							"naturebuilder_upgrade_shroom"
 	"Ability2"							"naturebuilder_upgrade_flower_treant"
-	"Ability6"							"sell"
-	"Ability3"							"treant_vampiric_aura"
+	"Ability3"							"sell"
+	"Ability4"							"treant_vampiric_aura"
 
 	// Armor
 	//----------------------------------------------------------------

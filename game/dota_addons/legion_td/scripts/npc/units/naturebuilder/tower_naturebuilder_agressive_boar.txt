@@ -10,8 +10,8 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"				"agressive_boar_nethertoxin"
-	"Ability6"				"sell"
+	"Ability1"							"agressive_boar_nethertoxin"
+	"Ability2"							"sell"
 
 	// Armor
 	//----------------------------------------------------------------
