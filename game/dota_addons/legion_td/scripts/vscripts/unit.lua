@@ -30,7 +30,7 @@ ai_spearman = require('ai/humanbuilder/ai_spearman')
 
 function Unit.new(npcclass, position, owner, foodCost, goldCost)
   local self = Unit()
-  self.buytime = GameRules:GetGameTime()
+  self.buyround = Game:GetCurrentRound()
   self.goldCost = goldCost
   self.foodCost = foodCost
   self.npcclass = npcclass
@@ -170,7 +170,7 @@ function sell(event)
   local player = unit.player
   unit:RemoveNPC()
   local gold = unit.goldCost / 2
-  if GameRules:GetGameTime() <= (unit.buytime + 6) then
+  if unit.buyround == Game:GetCurrentRound() then
     gold = unit.goldCost
   end
   PlayerResource:ModifyGold(player:GetPlayerID(), gold, true, DOTA_ModifyGold_Unspecified)
