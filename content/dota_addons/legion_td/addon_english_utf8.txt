@@ -643,7 +643,7 @@
 		"DOTA_Tooltip_ability_insta_kill_Description"                                     ""
 
 		"DOTA_Tooltip_ability_sell"                                                       "Sell"
-		"DOTA_Tooltip_ability_sell_Description"                                           "Sell this unit for 50% of its price. (100% within 6 seconds after you bought it)"
+		"DOTA_Tooltip_ability_sell_Description"                                           "Sell this unit for 50% of its price. (100% within the same round purchased)"
 
 		"DOTA_Tooltip_ability_spawn_bird_ranged"                                          "Spawn Bird Ranged"
 		"DOTA_Tooltip_ability_spawn_bird_ranged_Description"                              ""

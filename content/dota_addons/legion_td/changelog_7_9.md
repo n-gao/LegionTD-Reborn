@@ -32,6 +32,8 @@
 
 - Kings now have truestrike.
 
+- Towers can be fully refunded if sold the same turn they're bought, rather than needing to be within 6 seconds.
+
 ## Creep wave changes
 
 - Fixed Assassin backstab; it previously would frequently trigger on face-stabs from one side only.
@@ -45,7 +47,7 @@
 - Kunkka spawn count from 15 to 12.
 
 ## Technical
-- Builder unit game resources are cached on hero select rather than game init.
+- Builder game resources are cached on hero select rather than game init.
 
 	The game should load faster initially but slight ingame lags may occur. This functionality is still under development and feedback is welcome.
 
