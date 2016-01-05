@@ -45,7 +45,9 @@
 - Kunkka spawn count from 15 to 12.
 
 ## Technical
-- Humanbuilder units are cached on hero select rather than game init. In the future all units will be converted to this new system.
+- Builder unit game resources are cached on hero select rather than game init.
+
+	The game should load faster initially but slight ingame lags may occur. This functionality is still under development and feedback is welcome.
 
 - Armor types changed from STRONG to SOFT and increased physical damage values by 125%.
 
