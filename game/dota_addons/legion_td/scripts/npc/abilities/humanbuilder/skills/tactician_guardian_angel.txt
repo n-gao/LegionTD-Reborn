@@ -8,7 +8,7 @@
 	"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
 	"AbilityTextureName"			"omniknight_guardian_angel"
 
-	"AbilityCastRange"				"300" // just for AI
+	"AbilityCastRange"				"625" // just for AI
 
 	// Time		
 	//-------------------------------------------------------------------------------------------------------------
@@ -31,7 +31,7 @@
 		"02"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"radius"					"300"
+			"radius"					"625"
 		}
 	}
 

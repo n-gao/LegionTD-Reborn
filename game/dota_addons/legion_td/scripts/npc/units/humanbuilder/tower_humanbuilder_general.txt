@@ -88,12 +88,12 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "5653" } // "Helm of the Warrior's Retribution"
-      "Wearable2" { "ItemDef" "5647" } // "Sword of the Warrior's Retribution"
-      "Wearable3" { "ItemDef" "5648" } // "Belt of the Warrior's Retribution"
-      "Wearable4" { "ItemDef" "5652" } // "Gauntlet of the Warrior's Retribution"
-      "Wearable5" { "ItemDef" "5645" } // "Pauldron of the Warrior's Retribution"
-      "Wearable5" { "ItemDef" "5650" } // "Cape of the Warrior's Retribution"
+      "Wearable1" { "ItemDef" "8352" } // "Helm of Rising Fury"
+      "Wearable2" { "ItemDef" "8353" } // "Sword of Rising Fury"
+      "Wearable3" { "ItemDef" "8348" } // "Faulds of Rising Fury"
+      "Wearable4" { "ItemDef" "8351" } // "Gauntlets of Rising Fury"
+      "Wearable5" { "ItemDef" "8349" } // "Pauldrons of Rising Fury"
+      "Wearable5" { "ItemDef" "8350" } // "Cape of Rising Fury"
     }
 	}
 }

@@ -3435,12 +3435,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "5653" } // "Helm of the Warrior's Retribution"
-	      "Wearable2" { "ItemDef" "5647" } // "Sword of the Warrior's Retribution"
-	      "Wearable3" { "ItemDef" "5648" } // "Belt of the Warrior's Retribution"
-	      "Wearable4" { "ItemDef" "5652" } // "Gauntlet of the Warrior's Retribution"
-	      "Wearable5" { "ItemDef" "5645" } // "Pauldron of the Warrior's Retribution"
-	      "Wearable5" { "ItemDef" "5650" } // "Cape of the Warrior's Retribution"
+	      "Wearable1" { "ItemDef" "8352" } // "Helm of Rising Fury"
+	      "Wearable2" { "ItemDef" "8353" } // "Sword of Rising Fury"
+	      "Wearable3" { "ItemDef" "8348" } // "Faulds of Rising Fury"
+	      "Wearable4" { "ItemDef" "8351" } // "Gauntlets of Rising Fury"
+	      "Wearable5" { "ItemDef" "8349" } // "Pauldrons of Rising Fury"
+	      "Wearable5" { "ItemDef" "8350" } // "Cape of Rising Fury"
 	    }
 		}
 	}
@@ -4018,6 +4018,12 @@
 	      "Wearable4" { "ItemDef" "19" } // "Sven's Gauntlet"
 	      "Wearable5" { "ItemDef" "20" } // "Sven's Shoulder"
 	      "Wearable5" { "ItemDef" "581" } // "Sven's Back"
+	//    "Wearable1" { "ItemDef" "5653" } // "Helm of the Warrior's Retribution"
+	//    "Wearable2" { "ItemDef" "5647" } // "Sword of the Warrior's Retribution"
+	//    "Wearable3" { "ItemDef" "5648" } // "Belt of the Warrior's Retribution"
+	//    "Wearable4" { "ItemDef" "5652" } // "Gauntlet of the Warrior's Retribution"
+	//    "Wearable5" { "ItemDef" "5645" } // "Pauldron of the Warrior's Retribution"
+	//    "Wearable5" { "ItemDef" "5650" } // "Cape of the Warrior's Retribution"
 	    }
 		}
 	}
@@ -4893,10 +4899,10 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"             "npc_dota_creature"
-		"Model"                 "models/heroes/sven/sven.vmdl"
+		"Model"                 "models/heroes/luna/luna.vmdl"
 		"ModelScale"            "0.55"
-		"SoundSet"				"Hero_Sven"
-		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
+		"SoundSet"				"Hero_Luna"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_luna.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 		"Vscripts"              "ai/humanbuilder/ai_tactician.lua"
@@ -4916,16 +4922,16 @@
 	
 		// Attack
 		//----------------------------------------------------------------
-		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "162.5"
 		"AttackDamageMax"       "187.5"
 		"AttackRate"            "1.2"
 		"AttackAnimationPoint"  "0.5"
-		"AttackAcquisitionRange" "500"
-		"AttackRange"           "100"
-		"ProjectileModel"       ""
-		"ProjectileSpeed"       "0"
+		"AttackAcquisitionRange" "650"
+		"AttackRange"           "600"
+		"ProjectileModel"       "particles/units/heroes/hero_luna/luna_base_attack.vpcf"
+		"ProjectileSpeed"       "800"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4980,12 +4986,13 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "8352" } // "Helm of Rising Fury"
-	      "Wearable2" { "ItemDef" "8353" } // "Sword of Rising Fury"
-	      "Wearable3" { "ItemDef" "8348" } // "Faulds of Rising Fury"
-	      "Wearable4" { "ItemDef" "8351" } // "Gauntlets of Rising Fury"
-	      "Wearable5" { "ItemDef" "8349" } // "Pauldrons of Rising Fury"
-	      "Wearable5" { "ItemDef" "8350" } // "Cape of Rising Fury"
+	      "Wearable1" { "ItemDef" "453" } // "Luna's Head"
+	      "Wearable2" { "ItemDef" "8673" } // "Orion" (mount)
+	      "Wearable3" { "ItemDef" "8672" } // "Guard of the Moonlit Thicket"
+	      "Wearable4" { "ItemDef" "8671" } // "Pauldrons of the Moonlit Thicket"
+	      "Wearable5" { "ItemDef" "8670" } // "Glaive of the Moonlit Thicket"
+	      "Wearable6" { "ItemDef" "8669" } // "Tiara of the Moonlit Thicket"
+	
 	    }
 		}
 	}

@@ -91,6 +91,12 @@
       "Wearable4" { "ItemDef" "19" } // "Sven's Gauntlet"
       "Wearable5" { "ItemDef" "20" } // "Sven's Shoulder"
       "Wearable5" { "ItemDef" "581" } // "Sven's Back"
+//    "Wearable1" { "ItemDef" "5653" } // "Helm of the Warrior's Retribution"
+//    "Wearable2" { "ItemDef" "5647" } // "Sword of the Warrior's Retribution"
+//    "Wearable3" { "ItemDef" "5648" } // "Belt of the Warrior's Retribution"
+//    "Wearable4" { "ItemDef" "5652" } // "Gauntlet of the Warrior's Retribution"
+//    "Wearable5" { "ItemDef" "5645" } // "Pauldron of the Warrior's Retribution"
+//    "Wearable5" { "ItemDef" "5650" } // "Cape of the Warrior's Retribution"
     }
 	}
 }

@@ -1247,10 +1247,8 @@
 
 		"DOTA_Tooltip_ability_tactician_storm_bolt"                                       "Storm Bolt"
 		"DOTA_Tooltip_ability_tactician_storm_bolt_Description"                           ""
-		"DOTA_Tooltip_ability_tactician_storm_bolt_bolt_speed"                            "BOLT SPEED:"
 		"DOTA_Tooltip_ability_tactician_storm_bolt_bolt_stun_duration"                    "BOLT STUN DURATION:"
 		"DOTA_Tooltip_ability_tactician_storm_bolt_bolt_aoe"                              "BOLT AOE:"
-		"DOTA_Tooltip_ability_tactician_storm_bolt_vision_radius"                         "VISION RADIUS:"
 
 		"DOTA_Tooltip_ability_tactician_tactical_aura"                                    "Tactical Aura"
 		"DOTA_Tooltip_ability_tactician_tactical_aura_Description"                        ""

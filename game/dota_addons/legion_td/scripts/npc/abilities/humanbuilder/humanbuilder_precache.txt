@@ -11,10 +11,12 @@
     	"model"		"models/heroes/gyro/gyro.vmdl"														// gyrocopter
     	"model"     "models/heroes/sven/sven.vmdl"														// lieutenant
     	"model"		"models/heroes/juggernaut/juggernaut.vmdl"											// blademaster
+    	"model"		"models/heroes/luna/luna.vmdl"														// tactician
     	"particle"	"particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"					// crystal maiden base attack
     	"particle"	"particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"				// windrunner base attack
     	"particle"	"particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"						// sniper base attack
     	"particle"	"particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"						// gyro base attack
+    	"particle"	"particles/units/heroes/hero_luna/luna_base_attack.vpcf"							// luna base attack
     	"particle"	"particles/econ/items/gyrocopter/hero_gyrocopter_atomic/gyro_atomic_ray_ambient.vpcf" // futuristic gyrocopter effect
     	"model"		"models/items/gyrocopter/immortal_guns/immortal_guns.vmdl"							// futuristic gyrocopter guns
         "soundfile"	"soundevents/game_sounds_heroes/game_sounds_dazzle.vsndevts"						// archbishop shadow wave
