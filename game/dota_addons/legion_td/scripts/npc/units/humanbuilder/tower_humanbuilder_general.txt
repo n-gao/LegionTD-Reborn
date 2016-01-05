@@ -13,9 +13,9 @@
 	"AbilityLayout"			"6"
 	"Ability1"				"humanbuilder_upgrade_blademaster"
 	"Ability2"				"humanbuilder_upgrade_tactician"
-	"Ability3"				"sell"
-	"Ability4"				"general_vigor_strike"
-	"Ability5"				"human_vladmir"
+	"Ability4"				"sell"
+	"Ability5"				"general_vigor_strike"
+	"Ability6"				"human_vladmir"
 
 	// Armor
 	//----------------------------------------------------------------

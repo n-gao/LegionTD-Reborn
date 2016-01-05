@@ -10,8 +10,10 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"shroom_corrosive_skin"
+	"Ability4"							"sell"
+	"Ability1"							"shroom_corrosive_skin"
+	"Ability2"				"ability_empty_2"
+	"Ability3"				"ability_empty_3"
 
 	// Armor
 	//----------------------------------------------------------------

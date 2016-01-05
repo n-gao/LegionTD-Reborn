@@ -12,8 +12,10 @@
 	"Vscripts"              "ai/humanbuilder/ai_paladin.lua"
 
 
-	"Ability1"				"sell"
-	"Ability2"				"paladin_purification"
+	"Ability4"				"sell"
+	"Ability3"				"ability_empty_3"
+	"Ability2"				"ability_empty_2"
+	"Ability1"				"paladin_purification"
 
 	// Armor
 	//----------------------------------------------------------------

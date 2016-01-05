@@ -23,6 +23,35 @@
 	      }
 	    }
 	  }
+	 "ability_empty_1"
+	  {
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	    "MaxLevel"            "0"
+	    "BaseClass"           "ability_datadriven"
+	    "AbilityTextureName"            "rubick_empty1"
+	  }
+	  
+	  "ability_empty_2"
+	  {
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	    "MaxLevel"            "0"
+	    "BaseClass"           "ability_datadriven"
+	    "AbilityTextureName"            "rubick_empty1"
+	  }
+	  
+	  "ability_empty_3"
+	  {
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	    "MaxLevel"            "0"
+	    "BaseClass"           "ability_datadriven"
+	    "AbilityTextureName"            "rubick_empty1"
+	  }
 	"beeing_dire_boss"
 	{
 	  "BaseClass"                 "ability_datadriven"

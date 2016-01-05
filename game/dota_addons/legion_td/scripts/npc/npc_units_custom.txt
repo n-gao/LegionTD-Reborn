@@ -967,8 +967,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"sandking_caustic_finale"
+		"Ability4"							"sell"
+		"Ability3"							"ability_empty_3"
+		"Ability2"							"ability_empty_2"
+		"Ability1"							"sandking_caustic_finale"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -1066,9 +1068,11 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"tiny_avalanche"
-	  "Ability3"              "tiny_grow"
+		"Ability4"				"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"				"tiny_avalanche"
+	  	"Ability8"              "tiny_grow"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -1167,7 +1171,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"							"sell"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -1358,8 +1365,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"ember_spirit_flame_guard"
+		"Ability4"							"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"							"ember_spirit_flame_guard"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -1449,8 +1458,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"firegod_supernova"
+		"Ability4"							"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"							"firegod_supernova"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -1547,8 +1558,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"ember_spirit_sleight_of_fist"
+		"Ability4"							"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"							"ember_spirit_sleight_of_fist"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -1748,8 +1761,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"leshrac_diabolic_edict"
+		"Ability4"							"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"							"leshrac_diabolic_edict"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -1841,8 +1856,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"zuus_arc_lightning"
+		"Ability4"							"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"							"zuus_arc_lightning"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -1932,8 +1949,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"storm_spirit_static_remnant"
+		"Ability4"							"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"							"storm_spirit_static_remnant"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -2122,8 +2141,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"bane_brain_sap"
+		"Ability4"							"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"							"bane_brain_sap"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -2212,8 +2233,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"enigma_black_hole"
+		"Ability4"							"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"							"enigma_black_hole"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -2303,8 +2326,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"faceless_void_time_lock"
+		"Ability4"							"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"							"faceless_void_time_lock"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -2494,7 +2519,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"							"sell"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -2583,8 +2611,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-	  "Ability2"              "ancient_apparition_ice_vortex" // das lustige eis feld da :D
+		"Ability4"							"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+	  "Ability1"              "ancient_apparition_ice_vortex" // das lustige eis feld da :D
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -2673,8 +2703,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"naga_siren_rip_tide" //das wichtigste is armorreduction
+		"Ability4"							"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"							"naga_siren_rip_tide" //das wichtigste is armorreduction
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -2769,9 +2801,10 @@
 		"HealthBarOffset"       "150"
 		"Vscripts"              "ai/humanbuilder/ai_archbishop.lua"
 	
-		"Ability1"				"sell"
-		"Ability2"				"archbishop_shadow_wave"
-		"Ability3"				"archbishop_healing_aura"
+		"Ability4"				"sell"
+		"Ability1"				"archbishop_shadow_wave"
+		"Ability2"				"archbishop_healing_aura"
+		"Ability3" 				"ability_empty_3"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -2865,8 +2898,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"humanbuilder_upgrade_hunter"
+		"Ability4"							"sell"
+		"Ability1"							"humanbuilder_upgrade_hunter"
+		"Ability2"							"ability_empty_2"
+		"Ability3"							"ability_empty_3"
 		
 	
 		// Armor
@@ -2963,10 +2998,10 @@
 	
 	
 		"AbilityLayout"			"6"
-		"Ability1"				"sell"
-		"Ability2"				"humanbuilder_upgrade_archbishop"
-		"Ability3"				"humanbuilder_upgrade_icewrack_grandmaster"
-		"Ability4"				"humanbuilder_upgrade_soundmaster"
+		"Ability4"				"sell"
+		"Ability1"				"humanbuilder_upgrade_archbishop"
+		"Ability2"				"humanbuilder_upgrade_icewrack_grandmaster"
+		"Ability3"				"humanbuilder_upgrade_soundmaster"
 		"Ability5"				"archmage_chain_fade"
 		"Ability6"				"archmage_crystal_nova"
 	
@@ -3063,10 +3098,10 @@
 		"HealthBarOffset"       "150"
 		"Vscripts"              "ai/humanbuilder/ai_blademaster.lua"
 	
-		"Ability1"				"sell"
-		"Ability2"				"blademaster_blade_fury"
-		"Ability3"				"blademaster_blade_dance"
-		"Ability4"				"human_vladmir"
+		"Ability4"				"sell"
+		"Ability1"				"blademaster_blade_fury"
+		"Ability2"				"blademaster_blade_dance"
+		"Ability3"				"human_vladmir"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3160,8 +3195,9 @@
 		"HealthBarOffset"       "150"
 	
 		"Ability1"				"humanbuilder_upgrade_soldier"
-		"Ability2"				"sell"
-		"Ability3"				"footman_shield_bash"
+		"Ability4"				"sell"
+		"Ability2"				"footman_shield_bash"
+		"Ability2"				"ability_empty_2"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3256,10 +3292,10 @@
 		"HealthBarOffset"       "150"
 		"Vscripts"              "ai/humanbuilder/ai_futuristic_gyrocopter.lua"
 	
-		"Ability1"				"sell"
-		"Ability2"				"futuristic_gyrocopter_call_down"
-		"Ability3"				"futuristic_gyrocopter_flak_cannon"
-		"Ability4"				"futuristic_gyrocopter_split_shot"
+		"Ability4"				"sell"
+		"Ability3"				"futuristic_gyrocopter_call_down"
+		"Ability2"				"futuristic_gyrocopter_flak_cannon"
+		"Ability1"				"futuristic_gyrocopter_split_shot"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3360,9 +3396,9 @@
 		"AbilityLayout"			"6"
 		"Ability1"				"humanbuilder_upgrade_blademaster"
 		"Ability2"				"humanbuilder_upgrade_tactician"
-		"Ability3"				"sell"
-		"Ability4"				"general_vigor_strike"
-		"Ability5"				"human_vladmir"
+		"Ability4"				"sell"
+		"Ability5"				"general_vigor_strike"
+		"Ability6"				"human_vladmir"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3456,8 +3492,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"				"sell"
-		"Ability2"				"gunner_headshot"
+		"Ability4"				"sell"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability1"				"gunner_headshot"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3551,9 +3589,10 @@
 		"HealthBarOffset"       "150"
 		"Vscripts"              "ai/humanbuilder/ai_gyrocopter_mk1.lua"
 	
-		"Ability1"				"sell"
-		"Ability2"				"humanbuilder_upgrade_gyrocopter_mk2"
-		"Ability3"				"gyrocopter_mk1_split_shot"
+		"Ability4"				"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability1"				"humanbuilder_upgrade_gyrocopter_mk2"
+		"Ability2"				"gyrocopter_mk1_split_shot"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3649,10 +3688,10 @@
 		"HealthBarOffset"       "150"
 		"Vscripts"              "ai/humanbuilder/ai_gyrocopter_mk2.lua"
 	
-		"Ability1"				"sell"
-		"Ability2"				"humanbuilder_upgrade_futuristic_gyrocopter"
+		"Ability4"				"sell"
+		"Ability1"				"humanbuilder_upgrade_futuristic_gyrocopter"
 		"Ability3"				"gyrocopter_mk2_flak_cannon"
-		"Ability4"				"gyrocopter_mk2_split_shot"
+		"Ability2"				"gyrocopter_mk2_split_shot"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3747,9 +3786,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"				"sell"
-		"Ability2"				"humanbuilder_upgrade_marksman"
-		"Ability3"				"hunter_headshot"
+		"Ability4"				"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability1"				"humanbuilder_upgrade_marksman"
+		"Ability2"				"hunter_headshot"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3842,8 +3882,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"				"sell"
-		"Ability2"				"icewrack_grandmaster_freezing_field"
+		"Ability4"				"sell"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability1"				"icewrack_grandmaster_freezing_field"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -3938,8 +3980,9 @@
 		"HealthBarOffset"       "150"
 	
 		"Ability1"				"humanbuilder_upgrade_general"
-		"Ability2"				"sell"
-		"Ability3"				"lieutenant_vigor_strike"
+		"Ability4"				"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"lieutenant_vigor_strike"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4040,10 +4083,10 @@
 		"HealthBarOffset"       "150"
 		"Vscripts"              "ai/humanbuilder/ai_mage.lua"
 	
-		"Ability1"				"sell"
-		"Ability2"				"humanbuilder_upgrade_archmage"
-		"Ability3"				"mage_chain_fade"
-		"Ability4"				"mage_crystal_nova"
+		"Ability4"				"sell"
+		"Ability1"				"humanbuilder_upgrade_archmage"
+		"Ability2"				"mage_chain_fade"
+		"Ability3"				"mage_crystal_nova"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4137,10 +4180,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"				"sell"
-		"Ability2"				"humanbuilder_upgrade_sharpshooter"
-		"Ability3"				"humanbuilder_upgrade_gunner"
-		"Ability4"				"marksman_headshot"
+		"Ability4"				"sell"
+		"Ability1"				"humanbuilder_upgrade_sharpshooter"
+		"Ability2"				"humanbuilder_upgrade_gunner"
+		"Ability3"				"marksman_headshot"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4234,7 +4277,9 @@
 		"HealthBarOffset"       "150"
 	
 		"Ability1"				"humanbuilder_upgrade_footman"
-		"Ability2"				"sell"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4329,9 +4374,10 @@
 		"HealthBarOffset"       "150"
 		"Vscripts"              "ai/humanbuilder/ai_novice.lua"
 	
-		"Ability1"				"sell"
-		"Ability2"				"humanbuilder_upgrade_mage"
-		"Ability3"				"novice_chain_fade"
+		"Ability4"				"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability1"				"humanbuilder_upgrade_mage"
+		"Ability2"				"novice_chain_fade"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4427,8 +4473,10 @@
 		"Vscripts"              "ai/humanbuilder/ai_paladin.lua"
 	
 	
-		"Ability1"				"sell"
-		"Ability2"				"paladin_purification"
+		"Ability4"				"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"				"paladin_purification"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4522,8 +4570,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"				"sell"
-		"Ability2"				"sharpshooter_headshot"
+		"Ability4"				"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"				"sharpshooter_headshot"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4619,8 +4669,8 @@
 	
 		"Ability1"							"humanbuilder_upgrade_spearman"
 		"Ability2"							"humanbuilder_upgrade_paladin"
-		"Ability3"							"sell"
-		"Ability4"							"soldier_shield_bash"
+		"Ability4"							"sell"
+		"Ability3"							"soldier_shield_bash"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4715,9 +4765,10 @@
 		"HealthBarOffset"       "150"
 		"Vscripts"              "ai/humanbuilder/ai_soundmaster.lua"
 	
-		"Ability1"				"sell"
-		"Ability2"				"soundmaster_deafening_blast"
-		"Ability3"				"soundmaster_lightning_storm"
+		"Ability4"				"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability1"				"soundmaster_deafening_blast"
+		"Ability2"				"soundmaster_lightning_storm"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4811,8 +4862,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"spearman_shield_bash"
+		"Ability4"							"sell"
+		"Ability3"				"ability_empty_3"
+		"Ability2"				"ability_empty_2"
+		"Ability1"							"spearman_shield_bash"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -4909,10 +4962,10 @@
 	
 	
 		"AbilityLayout"			"5"
-		"Ability1"				"sell"
-		"Ability2"				"tactician_guardian_angel"
-		"Ability3"				"tactician_storm_bolt"
-		"Ability4"				"tactician_tactical_aura"
+		"Ability4"				"sell"
+		"Ability1"				"tactician_guardian_angel"
+		"Ability2"				"tactician_storm_bolt"
+		"Ability3"				"tactician_tactical_aura"
 		"Ability5"				"human_vladmir"
 	
 		// Armor
@@ -7164,7 +7217,9 @@
 		"HealthBarOffset"       "150"
 	
 		"Ability1"							"agressive_boar_nethertoxin"
-		"Ability2"							"sell"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"							"sell"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -7251,8 +7306,8 @@
 	
 		"Ability1"							"naturebuilder_upgrade_druid_bear"
 		"Ability2"							"naturebuilder_upgrade_iron_bear"
-		"Ability3"							"sell"
-		"Ability4"							"axe_berserkers_call"
+		"Ability4"							"sell"
+		"Ability3"							"axe_berserkers_call"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -7352,8 +7407,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"weaver_geminate_attack"
+		"Ability4"							"sell"
+		"Ability1"							"weaver_geminate_attack"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -7446,9 +7503,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"tiny_craggy_exterior"
-		"Ability3"							"centaur_hoof_stomp_datadriven"
+		"Ability4"							"sell"
+		"Ability1"							"tiny_craggy_exterior"
+		"Ability2"							"centaur_hoof_stomp_datadriven"
+		"Ability3"				"ability_empty_3"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -7542,8 +7600,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"brood_spawn_spiderlings"
+		"Ability4"							"sell"
+		"Ability1"							"brood_spawn_spiderlings"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -7643,9 +7703,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"naturebuilder_upgrade_big_bug"
-		"Ability2"							"sell"
-		"Ability3"							"weaver_geminate_attack"
+		"Ability1"				"naturebuilder_upgrade_big_bug"
+		"Ability4"				"sell"
+		"Ability2"				"weaver_geminate_attack"
+		"Ability3"				"ability_empty_3"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -7740,8 +7801,8 @@
 	
 		"Ability1"							"naturebuilder_upgrade_big_centaur"
 		"Ability2"							"naturebuilder_upgrade_centaur_warrunner"
-		"Ability3"							"sell"
-		"Ability4"							"tiny_craggy_exterior"
+		"Ability4"							"sell"
+		"Ability3"							"tiny_craggy_exterior"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -7826,8 +7887,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"centaur_warrunner_great_cleave"
+		"Ability4"				"sell"
+		"Ability1"				"centaur_warrunner_great_cleave"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -7922,9 +7985,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"lone_druid_spirit_bear_entangle"
-		"Ability3"							"axe_berserkers_call"
+		"Ability4"							"sell"
+		"Ability1"							"lone_druid_spirit_bear_entangle"
+		"Ability2"							"axe_berserkers_call"
+		"Ability3"				"ability_empty_3"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -8023,9 +8087,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"flower_treant_skadi"
-		"Ability3"							"treant_vampiric_aura"
+		"Ability4"							"sell"
+		"Ability1"							"flower_treant_skadi"
+		"Ability2"							"treant_vampiric_aura"
+		"Ability3"				"ability_empty_3"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -8111,8 +8176,9 @@
 		"HealthBarOffset"       "150"
 	
 		"Ability1"							"naturebuilder_upgrade_agressive_boar"
-		"Ability2"							"sell"
-		"Ability3"							"hyena_nethertoxin"
+		"Ability4"							"sell"
+		"Ability2"							"hyena_nethertoxin"
+		"Ability3"				"ability_empty_3"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -8197,8 +8263,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"iron_bear_fury_swipes"
+		"Ability4"							"sell"
+		"Ability1"							"iron_bear_fury_swipes"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -8290,8 +8358,10 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"							"sell"
-		"Ability2"							"shroom_corrosive_skin"
+		"Ability4"							"sell"
+		"Ability1"							"shroom_corrosive_skin"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -8383,8 +8453,8 @@
 		"HealthBarOffset"       "150"
 	
 		"Ability1"							"naturebuilder_upgrade_broodmother"
-		"Ability2"							"sell"
-		"Ability3"							"broodmother_poison_sting"
+		"Ability4"							"sell"
+		"Ability2"							"broodmother_poison_sting"
 	
 		// Armor
 		//----------------------------------------------------------------
@@ -8471,8 +8541,8 @@
 	
 		"Ability1"							"naturebuilder_upgrade_shroom"
 		"Ability2"							"naturebuilder_upgrade_flower_treant"
-		"Ability3"							"sell"
-		"Ability4"							"treant_vampiric_aura"
+		"Ability4"							"sell"
+		"Ability3"							"treant_vampiric_aura"
 	
 		// Armor
 		//----------------------------------------------------------------

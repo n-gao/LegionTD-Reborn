@@ -11,10 +11,10 @@
 	"HealthBarOffset"       "150"
 	"Vscripts"              "ai/humanbuilder/ai_gyrocopter_mk2.lua"
 
-	"Ability1"				"sell"
-	"Ability2"				"humanbuilder_upgrade_futuristic_gyrocopter"
+	"Ability4"				"sell"
+	"Ability1"				"humanbuilder_upgrade_futuristic_gyrocopter"
 	"Ability3"				"gyrocopter_mk2_flak_cannon"
-	"Ability4"				"gyrocopter_mk2_split_shot"
+	"Ability2"				"gyrocopter_mk2_split_shot"
 
 	// Armor
 	//----------------------------------------------------------------

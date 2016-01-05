@@ -13,10 +13,10 @@
 
 
 	"AbilityLayout"			"5"
-	"Ability1"				"sell"
-	"Ability2"				"tactician_guardian_angel"
-	"Ability3"				"tactician_storm_bolt"
-	"Ability4"				"tactician_tactical_aura"
+	"Ability4"				"sell"
+	"Ability1"				"tactician_guardian_angel"
+	"Ability2"				"tactician_storm_bolt"
+	"Ability3"				"tactician_tactical_aura"
 	"Ability5"				"human_vladmir"
 
 	// Armor

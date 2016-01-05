@@ -11,9 +11,10 @@
 	"HealthBarOffset"       "150"
 	"Vscripts"              "ai/humanbuilder/ai_soundmaster.lua"
 
-	"Ability1"				"sell"
-	"Ability2"				"soundmaster_deafening_blast"
-	"Ability3"				"soundmaster_lightning_storm"
+	"Ability4"				"sell"
+	"Ability3"				"ability_empty_3"
+	"Ability1"				"soundmaster_deafening_blast"
+	"Ability2"				"soundmaster_lightning_storm"
 
 	// Armor
 	//----------------------------------------------------------------

@@ -10,8 +10,10 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"faceless_void_time_lock"
+	"Ability4"							"sell"
+	"Ability3"				"ability_empty_3"
+	"Ability2"				"ability_empty_2"
+	"Ability1"							"faceless_void_time_lock"
 
 	// Armor
 	//----------------------------------------------------------------

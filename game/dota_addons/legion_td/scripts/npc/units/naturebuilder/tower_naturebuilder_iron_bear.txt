@@ -10,8 +10,10 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"iron_bear_fury_swipes"
+	"Ability4"							"sell"
+	"Ability1"							"iron_bear_fury_swipes"
+	"Ability2"				"ability_empty_2"
+	"Ability3"				"ability_empty_3"
 
 	// Armor
 	//----------------------------------------------------------------

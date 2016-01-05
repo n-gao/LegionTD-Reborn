@@ -10,9 +10,10 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"sell"
-	"Ability2"							"flower_treant_skadi"
-	"Ability3"							"treant_vampiric_aura"
+	"Ability4"							"sell"
+	"Ability1"							"flower_treant_skadi"
+	"Ability2"							"treant_vampiric_aura"
+	"Ability3"				"ability_empty_3"
 
 	// Armor
 	//----------------------------------------------------------------
