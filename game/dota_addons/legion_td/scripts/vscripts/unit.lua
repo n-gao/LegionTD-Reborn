@@ -47,7 +47,7 @@ end
 
 
 function Unit:Spawn()
-  self.npc = CreateUnitByName(self.npcclass, self.spawnposition, true, nil,
+  self.npc = CreateUnitByName(self.npcclass, self.spawnposition, false, nil,
   self.owner, self.owner:GetTeamNumber())
   if self.spawnposition.y > 0 then
     self.npc:SetAngles(0, 90, 0)
