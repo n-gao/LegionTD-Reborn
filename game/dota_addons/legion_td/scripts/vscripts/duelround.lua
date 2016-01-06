@@ -88,7 +88,9 @@ function DuelRound:PlaceUnits()
           relativeposition.x = relativeposition.x * -1
           relativeposition.y = relativeposition.y * -1
         end
-        FindClearSpaceForUnit(unit.npc, spawnPoint:GetAbsOrigin() + relativeposition, true)
+        movePoint = spawnPoint:GetAbsOrigin() + relativeposition
+        unit.npc.nextTarget.x = movePoint.x
+        FindClearSpaceForUnit(unit.npc, movePoint, true)
         unit.npc:Stop()
         table.insert(team, unit.npc)
       end
@@ -152,6 +154,8 @@ function touchTeleport(trigger)
   local npc = trigger.activator
   if npc.unit and not npc:IsRealHero() then
     local spawnPoint = Game.duelSpawn[""..npc:GetTeamNumber()]
+    local target = Game.duelTargets[""..npc:GetTeamNumber()]
     FindClearSpaceForUnit(npc, spawnPoint:GetAbsOrigin(), true)
+    npc.nextTarget = target:GetAbsOrigin()
   end
 end
