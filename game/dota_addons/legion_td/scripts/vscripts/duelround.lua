@@ -99,11 +99,11 @@ end
 
 
 function DuelRound:CheckEnd()
-  -- self:CheckUnitsAlive()
-  -- if next(self.remainingUnitsRadiant) == nil or next(self.remainingUnitsDire) == nil then
-  --   print("Rounde beendet")
-  --   self:End()
-  -- end
+  self:CheckUnitsAlive()
+  if next(self.remainingUnitsRadiant) == nil or next(self.remainingUnitsDire) == nil then
+    print("Rounde beendet")
+    self:End()
+  end
 end
 
 

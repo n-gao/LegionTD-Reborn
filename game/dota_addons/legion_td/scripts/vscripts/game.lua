@@ -305,7 +305,7 @@ function Game:ReadRoundConfiguration(kv)
     local roundObj = GameRound()
     roundObj:ReadRoundConfiguration(roundData, #self.rounds + 1 - duelRoundCount)
     table.insert(self.rounds, roundObj)
-    if #self.rounds % 2 == duelRoundCount then
+    if #self.rounds % 10 == duelRoundCount then
       local duelRoundName = "DuelRound"..(duelRoundCount + 1)
       local duelRoundData = kv[duelRoundName]
       if duelRoundData then
