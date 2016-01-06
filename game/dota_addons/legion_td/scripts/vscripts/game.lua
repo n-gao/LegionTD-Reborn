@@ -172,6 +172,7 @@ function Game:ReadConfiguration()
   self:ReadLastSpawn(kv["LastSpawn"])
   self:ReadIncomeSpawner(kv["IncomeSpawner"])
   self:ReadDuelSpawn(kv["DuelSpawn"])
+  self:ReadDuelTargets(kv["DuelTarget"])
   self:ReadLanes(kv["Lanes"])
   self:ReadRoundConfiguration(kv)
   self.radiantBoss = Entities:FindByName(nil, "radiant_boss")
@@ -190,6 +191,23 @@ function Game:ReadDuelSpawn(kvDue)
     local obj = Entities:FindByName(nil, sp.Name)
     if obj then
       self.duelSpawn[ind] = obj
+    else
+      print(sp.Name.." not found.")
+    end
+  end
+end
+
+
+
+function Game:ReadDuelTargets(kvDuet)
+  self.duelTargets = {}
+  if not (type(kvDuet) == "table") then
+    return
+  end
+  for ind,sp in pairs(kvDuet) do
+    local obj = Entities:FindByName(nil, sp.Name)
+    if obj then
+      self.duelTargets[ind] = obj
     else
       print(sp.Name.." not found.")
     end
@@ -287,7 +305,7 @@ function Game:ReadRoundConfiguration(kv)
     local roundObj = GameRound()
     roundObj:ReadRoundConfiguration(roundData, #self.rounds + 1 - duelRoundCount)
     table.insert(self.rounds, roundObj)
-    if #self.rounds % 10 == duelRoundCount then
+    if #self.rounds % 2 == duelRoundCount then
       local duelRoundName = "DuelRound"..(duelRoundCount + 1)
       local duelRoundData = kv[duelRoundName]
       if duelRoundData then
