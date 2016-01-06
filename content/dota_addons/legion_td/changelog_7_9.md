@@ -2,17 +2,17 @@
 
 - Human Builder added!
 
-- Lanes have been widened by 40% (640 to 896 units)
+- Lanes have been widened from 640 to 896 units.
 
-- Builders are now restricted to building on a grid of 64-unit squares (14 squares wide and 40 squares long)
+- The river has been widened from 640 to 1152 units.
+
+- Builders are now restricted to building on a grid of 64-unit squares (14 squares wide and 40 squares long).
 
 - The game will now attempt to distribute sends evenly based on tango value rather than unit count. The player that recieves the biggest send will rotate every round (player in first position for first round, second position for 2nd round, etc.)
   
   Example: 4 players are going to be sent 15 20-tango kobolds and a single 600-tango roshan. Under the old system, Three players will recieve 4 kobolds each, and another player will recieve 3 kobolds and a roshan. Under the new system, three players will recieve 5 kobolds each, and another player recieves only the roshan.
 	
-- Fog of war covers the enemy team during build phases; only their king can be seen. Builders are prevented from moving across the river.
-
-- It is now constantly day.
+- Fog of war covers the enemy team during build phases; only their king can be seen. Builders are prevented from moving across the river. It is constantly day.
 
 - Tango production penalty from leaked creeps is now repaired at the end of build phase rather than the start of it.
 
@@ -23,6 +23,8 @@
 - "Boss" creeps (fatty, king, dragon) levels increased to 5/6/7 (all other wave creeps are level 1).
 
 - Wave creeps now spawn in wider formations rather than clumped together.
+
+- Creeps spawn in their assigned formation at the start of duels, overlapping spawn points for all players.
 
 - Wave creeps and player units will now walk to a point across from their spawn rather than all converging to a point on the other side.
 
