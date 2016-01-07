@@ -39,6 +39,18 @@
     }
   }
 
+  "DuelTarget"
+  {
+    "2"
+    {
+      "Name"                "Radiant_Duel_Target"
+    }
+    "3"
+    {
+      "Name"                "Dire_Duel_Target"
+    }
+  }
+
   "Lanes"
   {
     "1"

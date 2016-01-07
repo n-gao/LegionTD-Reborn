@@ -30,13 +30,13 @@ ai_spearman = require('ai/humanbuilder/ai_spearman')
 
 function Unit.new(npcclass, position, owner, foodCost, goldCost)
   local self = Unit()
+  self.owner = owner
+  self.player = owner.player
   self.buyround = Game:GetCurrentRound()
   self.goldCost = goldCost
   self.foodCost = foodCost
   self.npcclass = npcclass
   self.spawnposition = position
-  self.owner = owner
-  self.player = owner.player
   self.target = self.player.lane.unitWaypoint
   self.nextTarget = self.target:GetAbsOrigin()
   self.nextTarget.x = self.spawnposition.x
@@ -56,8 +56,7 @@ function Unit:Spawn()
   end
   self.npc.unit = self
   self.npc.player = self.player
-  self.npc.nextTarget = self.target:GetAbsOrigin()
-  self.npc.nextTarget.x = self.spawnposition.x
+  self.npc.nextTarget = self.nextTarget
   self:Lock()
 end
 
@@ -130,7 +129,7 @@ function Unit:Unlock()
     self.npc:Stop()
     Timers:CreateTimer(0.5, function ()
       local pos = self.npc.nextTarget
-      pos.x = self.spawnposition.x
+      --pos.x = self.spawnposition.x
       ExecuteOrderFromTable({
         UnitIndex = self.npc:entindex(), 
         OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,

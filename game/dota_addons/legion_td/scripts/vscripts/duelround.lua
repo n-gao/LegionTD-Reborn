@@ -66,18 +66,31 @@ end
 
 
 
+
 function DuelRound:PlaceUnits()
   for _,pl in pairs(Game.players) do
     if pl:IsActive() then
       local spawnPoint = Game.duelSpawn[""..pl:GetTeamNumber()]
-      local target = Game.duelSpawn[""..(-pl:GetTeamNumber() + 5)]
+      local target = Game.duelTargets[""..pl:GetTeamNumber()]
       local team = self.remainingUnitsRadiant
       if pl:GetTeamNumber() == DOTA_TEAM_BADGUYS then
         team = self.remainingUnitsDire
       end
       for _,unit in pairs(pl.units) do
         unit.npc.nextTarget = target:GetAbsOrigin()
-        FindClearSpaceForUnit(unit.npc, spawnPoint:GetAbsOrigin(), true)
+        local relativeposition = unit.npc:GetAbsOrigin() - unit.player.lane.box:GetAbsOrigin()
+        if unit.npc:GetAbsOrigin().y < 0 then -- we want to rotate our relative positions for southern lanes
+          relativeposition.x = relativeposition.x * -1
+          relativeposition.y = relativeposition.y * -1
+        end
+        relativeposition.y = relativeposition.y + unit.player.lane.box:GetBoundingMaxs().y -- we want positions relative to the "front" of the lane
+        if pl:GetTeamNumber() == DOTA_TEAM_BADGUYS then -- rotate again if spawning badguy creeps 
+          relativeposition.x = relativeposition.x * -1
+          relativeposition.y = relativeposition.y * -1
+        end
+        movePoint = spawnPoint:GetAbsOrigin() + relativeposition
+        unit.npc.nextTarget.x = movePoint.x
+        FindClearSpaceForUnit(unit.npc, movePoint, true)
         unit.npc:Stop()
         table.insert(team, unit.npc)
       end
@@ -132,5 +145,17 @@ function DuelRound:CheckUnitsAlive()
       table.remove(self.remainingUnitsDire, ind - deadUnitCount)
       deadUnitCount = deadUnitCount + 1
     end
+  end
+end
+
+
+function touchTeleport(trigger)
+  print("teleporting unit!")
+  local npc = trigger.activator
+  if npc.unit and not npc:IsRealHero() then
+    local spawnPoint = Game.duelSpawn[""..npc:GetTeamNumber()]
+    local target = Game.duelTargets[""..npc:GetTeamNumber()]
+    FindClearSpaceForUnit(npc, spawnPoint:GetAbsOrigin(), true)
+    npc.nextTarget = target:GetAbsOrigin()
   end
 end
