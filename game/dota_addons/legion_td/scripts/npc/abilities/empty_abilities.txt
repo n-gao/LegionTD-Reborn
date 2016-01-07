@@ -3,7 +3,6 @@
     // General
     //-------------------------------------------------------------------------------------------------------------
     "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "MaxLevel"            "0"
     "BaseClass"           "ability_datadriven"
     "AbilityTextureName"            "rubick_empty1"
   }
@@ -13,7 +12,6 @@
     // General
     //-------------------------------------------------------------------------------------------------------------
     "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "MaxLevel"            "0"
     "BaseClass"           "ability_datadriven"
     "AbilityTextureName"            "rubick_empty1"
   }
@@ -23,7 +21,6 @@
     // General
     //-------------------------------------------------------------------------------------------------------------
     "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "MaxLevel"            "0"
     "BaseClass"           "ability_datadriven"
     "AbilityTextureName"            "rubick_empty1"
   }

@@ -254,6 +254,15 @@
 
 
 		// ******************** ABILITIES ********************
+		"DOTA_Tooltip_ability_ability_empty_1"                                            "Empty Ability Q"
+		"DOTA_Tooltip_ability_ability_empty_1_Description"                                "Just taking up space."
+
+		"DOTA_Tooltip_ability_ability_empty_2"                                            "Empty Ability W"
+		"DOTA_Tooltip_ability_ability_empty_2_Description"                                "Just taking up space."
+
+		"DOTA_Tooltip_ability_ability_empty_3"                                            "Empty Ability E"
+		"DOTA_Tooltip_ability_ability_empty_3_Description"                                "Just taking up space."
+
 		"DOTA_Tooltip_ability_beeing_dire_boss"                                           "Beeing Dire Boss"
 		"DOTA_Tooltip_ability_beeing_dire_boss_Description"                               ""
 
