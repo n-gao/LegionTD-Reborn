@@ -3197,7 +3197,7 @@
 		"Ability1"				"humanbuilder_upgrade_soldier"
 		"Ability4"				"sell"
 		"Ability2"				"footman_shield_bash"
-		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
 	
 		// Armor
 		//----------------------------------------------------------------

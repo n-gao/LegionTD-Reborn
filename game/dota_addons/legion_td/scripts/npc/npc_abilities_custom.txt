@@ -4046,7 +4046,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"range"					"400"
+				"range"					"500"
 			}
 			"06"
 			{
@@ -4318,7 +4318,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"range"					"400"
+				"range"					"500"
 			}
 			"06"
 			{
@@ -4406,7 +4406,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"range"					"400"
+				"range"					"500"
 			}
 			"06"
 			{
