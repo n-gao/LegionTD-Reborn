@@ -1,6 +1,10 @@
 7.9
 
+## General Changes
+
 - Human Builder added!
+	
+	This builder is the most ambitious and versatile yet, featuring both more units (23!) and more custom spells than any other builder.
 
 - Lanes have been widened from 640 to 896 units.
 
@@ -51,7 +55,7 @@
 ## Technical
 - Builder game resources are cached on hero select rather than game init.
 
-	The game should load faster initially but slight ingame lags may occur. This functionality is still under development and feedback is welcome.
+	The game should load faster initially but slight ingame lags may occur. This functionality is still under development.
 
 - Armor types changed from STRONG to SOFT and increased physical damage values by 125%.
 
