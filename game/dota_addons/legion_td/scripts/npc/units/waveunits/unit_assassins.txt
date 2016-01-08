@@ -26,8 +26,8 @@
 	"ProjectileModel"       ""
 	"ProjectileSpeed"       "0"
 
-	"BountyGoldMin"         "6.0"
-	"BountyGoldMax"         "6.0"
+	"BountyGoldMin"         "5.0"
+	"BountyGoldMax"         "5.0"
 
 	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
 	"CollisionSize"					"50"
