@@ -2034,7 +2034,7 @@
 	
 	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
 	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
-	  "AbilityGoldCost"				"40"
+	  "AbilityGoldCost"				"35"
 	  "AbilityCooldown"		    "1.0"
 	  "AbilityCastRange"			"125"
 	  "OnSpellStart"
@@ -2317,7 +2317,7 @@
 	  "MaxLevel"                "1"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"				"70"
+		"AbilityGoldCost"				"65"
 		"AbilityCooldown"		    "1.0"
 		"OnSpellStart"
 		{
@@ -2429,7 +2429,7 @@
 	  "MaxLevel"                "1"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"				"300"
+		"AbilityGoldCost"				"225"
 		"AbilityCooldown"		    "1.0"
 		"OnSpellStart"
 		{
@@ -2541,7 +2541,7 @@
 	  "MaxLevel"                "1"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"				"300"
+		"AbilityGoldCost"				"250"
 		"AbilityCooldown"		    "1.0"
 		"OnSpellStart"
 		{
@@ -2637,7 +2637,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "0"
 	    }
 	    "07"
 	    {
@@ -2933,7 +2933,7 @@
 	  "MaxLevel"                "1"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"				"100"
+		"AbilityGoldCost"				"90"
 		"AbilityCooldown"		    "1.0"
 		"OnSpellStart"
 		{
