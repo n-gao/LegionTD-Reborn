@@ -11,6 +11,7 @@
   "HealthBarOffset"       "140"
 
   "Ability1"							"dragon_knight_elder_dragon_form"
+  "Ability2"              "waveboss_repel"
 
   "ArmorPhysical"         "10"
   "MagicalResistance"     "30"

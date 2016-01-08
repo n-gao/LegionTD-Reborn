@@ -9246,6 +9246,7 @@
 	  "HealthBarOffset"       "140"
 	
 	  "Ability1"							"dragon_knight_elder_dragon_form"
+	  "Ability2"              "waveboss_repel"
 	
 	  "ArmorPhysical"         "10"
 	  "MagicalResistance"     "30"
@@ -9551,7 +9552,8 @@
 		"Level"                 "5"
 		"HealthBarOffset"       "450"
 	
-		"Ability1"							"alchemist_acid_spray"
+		"Ability1"				"alchemist_acid_spray"
+		"Ability2"				"waveboss_repel"
 	
 		"ArmorPhysical"         "8"
 		"MagicalResistance"     "20"
@@ -9869,6 +9871,7 @@
 	
 	  "Ability1"							"skeleton_king_hellfire_blast"
 	  "Ability2"							"skeleton_king_reincarnation"
+	  "Ability3"              "waveboss_repel"
 	
 	  "ArmorPhysical"         "15"
 	  "MagicalResistance"     "30"

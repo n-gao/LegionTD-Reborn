@@ -10,7 +10,8 @@
 	"Level"                 "5"
 	"HealthBarOffset"       "450"
 
-	"Ability1"							"alchemist_acid_spray"
+	"Ability1"				"alchemist_acid_spray"
+	"Ability2"				"waveboss_repel"
 
 	"ArmorPhysical"         "8"
 	"MagicalResistance"     "20"

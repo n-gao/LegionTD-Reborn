@@ -12,6 +12,7 @@
 
   "Ability1"							"skeleton_king_hellfire_blast"
   "Ability2"							"skeleton_king_reincarnation"
+  "Ability3"              "waveboss_repel"
 
   "ArmorPhysical"         "15"
   "MagicalResistance"     "30"
