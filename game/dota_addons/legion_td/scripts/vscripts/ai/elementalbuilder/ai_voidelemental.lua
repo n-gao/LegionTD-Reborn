@@ -2,11 +2,11 @@ EXPORTS = {}
 
 EXPORTS.Init = function( self )
 	self:SetContextThink( "init_think", function()
-		self:GetAbilityByIndex(1):SetLevel(1)
+		self:FindAbilityByName("bane_brain_sap"):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggro
 		self.Skill = UseSkillOnTarget
-		self.ability = self:GetAbilityByIndex(1)
+		self.ability = self:FindAbilityByName("bane_brain_sap")
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_voidelemental.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )

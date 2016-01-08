@@ -2,11 +2,11 @@ EXPORTS = {}
 
 EXPORTS.Init = function( self )
 	self:SetContextThink( "init_think", function()
-		self:GetAbilityByIndex(1):SetLevel(1)
+		self:FindAbilityByName("leshrac_diabolic_edict"):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggro
 		self.Skill = UseSkillNoTarget
-		self.ability = self:GetAbilityByIndex(1)
+		self.ability = self:FindAbilityByName("leshrac_diabolic_edict")
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_thunderelemental.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )
