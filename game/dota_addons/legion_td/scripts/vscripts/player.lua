@@ -41,6 +41,7 @@ function Player:RemoveEntitie()
   self.userID = -1
   if not Game:IsBetweenRounds() then
     self.leaked = true;
+    self.leaksPenalty = 10;
   end
   if self.lane then
     self.lane.isActive = false
