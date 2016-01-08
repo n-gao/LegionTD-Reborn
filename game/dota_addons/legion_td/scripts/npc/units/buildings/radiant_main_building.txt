@@ -2,7 +2,7 @@
 {
 	// General
 	//----------------------------------------------------------------
-	"BaseClass"						"npc_dota_building"
+	"BaseClass"						"npc_dota_creature"
 	"Model"								"models/props_structures/tower_good.vmdl"
 	"ModelScale"					"0.9"
 	"SoundSet"						"Tower.Water"
@@ -14,6 +14,7 @@
 	"AbilityLayout"					"4"
 	"Ability1"							"main_building_tango_collector"
 	"Ability2"							"main_building_tango_speed"
+	"Ability3"						"ability_building"
 
 	// Armor
 	//----------------------------------------------------------------

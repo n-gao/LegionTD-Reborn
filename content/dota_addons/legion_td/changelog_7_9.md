@@ -16,9 +16,9 @@
 
 - Tango production penalty from leaked creeps is now repaired at the end of build phase rather than the start of it.
 
-- Tango production penalty on is now a cumulative 10% penalty per level of leaked creep rather than a flat 100%. (time between ticks divided by .9^leaked_levels)
+- Tango production penalty on is now a cumulative 10% penalty per level of leaked creep rather than a flat 100%.
 
-	This means regular creeps will increase time between ticks by roughly 11%/23%/37%/52%/69%/88%/109%/158% etc; leaking 7 creeps will now slightly halve tango production, and a full 15 units leaked in a wave will cause that players tango production to be cut to less than a quarter.
+	This means regular creeps will increase time between ticks by roughly 10%/20%/30% etc; leaking 10 creeps will halve tango production.
 	
 - "Boss" creeps (fatty, king, dragon) levels increased to 5/6/7 (all other wave creeps are level 1).
 

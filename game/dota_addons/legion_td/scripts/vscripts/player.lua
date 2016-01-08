@@ -13,6 +13,7 @@ function Player.new(plyEntitie, userID)
   self.tangos = START_TANGO
   self.tangoAddAmount = START_TANGO_ADD_AMOUNT
   self.tangoAddSpeed = START_TANGO_ADD_SPEED
+  self.tangoAddProgress = 0
   self.income = START_INCOME
   self.foodlimit = START_FOOD_LIMIT
   self.leaks = 0
@@ -289,27 +290,27 @@ end
 
 function Player:CreateTangoTicker()
   if (not Timers.timers[self.timer]) and (self.lane.mainBuilding) then
-    --[[This was gonna be some sweet-ass shit where I make a dummy unit to create a progress bar for tangos
-    unfortunately I can't make creeps not attack it without also removing the healthbar
-    so I'm leaving the lines commented here for when I make it a particle or something]]
-    --self.timerDummy = CreateUnitByName("npc_dummy_unit_healthbar", self.lane.mainBuilding:GetAbsOrigin(), false, nil, self, self:GetTeamNumber())
-    --self.tangoTimeStartSpan = GameRules:GetGameTime()
-    --self.tangoTimeEndSpan = GameRules:GetGameTime() + self.tangoAddSpeed
-    self.timer = Timers:CreateTimer(self.tangoAddSpeed, function()
-      self:AddTangos(self.tangoAddAmount)
-      PopupHealing(self.lane.mainBuilding, self.tangoAddAmount)
+
+    self.timer = Timers:CreateTimer(function()
+      
       local tangoDelay = self.tangoAddSpeed
-      if self.leaked then tangoDelay = self.tangoAddSpeed / (LEAKED_TANGO_MULTIPLIER ^ self.leaksPenalty) end
-      --self.tangoTimeStartSpan = GameRules:GetGameTime()
-      --self.tangoTimeEndSpan = GameRules:GetGameTime() + tangoDelay
-      return tangoDelay
+      if self.leaked then tangoDelay = self.tangoAddSpeed + (self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER * self.leaksPenalty) end
+
+      self.tangoAddProgress = self.tangoAddProgress + 1/tangoDelay/30
+      local i = self.tangoAddProgress*math.pi*2
+      if self.lane.mainBuilding:GetAbsOrigin().y > 0 then
+        i = i + math.pi
+      end
+      self.lane.mainBuilding:SetForwardVector(Vector(math.sin(i), math.cos(i), 0))
+
+      if self.tangoAddProgress > 1 then
+        self.tangoAddProgress = self.tangoAddProgress - 1
+        PopupHealing(self.lane.mainBuilding, self.tangoAddAmount)
+        self:AddTangos(self.tangoAddAmount)
+      end
+
+      return (1/30)
     end)
-    --self.dummyTimer = Timers:CreateTimer(function()
-    --  tangoProgressPercent = (GameRules:GetGameTime()-self.tangoTimeStartSpan)/(self.tangoTimeEndSpan-self.tangoTimeStartSpan)*100
-    --  if tangoProgressPercent < 1 then tangoProgressPercent = 1 end
-    --  self.timerDummy:SetHealth(tangoProgressPercent)
-    --  return .1
-    --end)
   end
 end
 
