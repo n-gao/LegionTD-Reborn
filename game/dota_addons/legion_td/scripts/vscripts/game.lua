@@ -305,7 +305,7 @@ function Game:ReadRoundConfiguration(kv)
     local roundObj = GameRound()
     roundObj:ReadRoundConfiguration(roundData, #self.rounds + 1 - duelRoundCount)
     table.insert(self.rounds, roundObj)
-    if #self.rounds % 10 == duelRoundCount then
+    if #self.rounds % 2 == duelRoundCount then
       local duelRoundName = "DuelRound"..(duelRoundCount + 1)
       local duelRoundData = kv[duelRoundName]
       if duelRoundData then
@@ -466,6 +466,7 @@ end
 
 --Startet nächste Runde
 function Game:StartNextRound()
+  print "Game:StartNextround()"
   for _,player in pairs(self.players) do
     player.leaked = false;
     player.leaksPenalty = 0;
@@ -475,6 +476,7 @@ function Game:StartNextRound()
   self.gameState = GAMESTATE_FIGHTING
   self.nextRoundTime = nil
   self.rounds[self.gameRound]:Begin()
+  print "Game:StartNextround() about to call self:UnlockUnits()"
   self:UnlockUnits()
   if self.gameRound == 1 then
     self.tangoCheckingTimer = Timers:CreateTimer(0, function()
@@ -566,8 +568,10 @@ function Game:OnConnectFull(keys)
   if not PlayerResource:IsBroadcaster(playerID) then
     local player = self:FindPlayerWithID(playerID)
     if player then
+      print ("Game:OnConnectFull(): Player object found for existing player.")
       player:SetPlayerEntitie(ply, keys.userid)
     else
+      print ("Game:OnConnectFull(): Player object not found for existing player; Creating.")
       local newPlayer = Player.new(ply, keys.userid)
       table.insert(self.players, newPlayer)
     end
@@ -719,8 +723,10 @@ function Game:SendUnit(data)
     local unit = CreateUnitByName(name, spawn, true, nil, nil, team)
     unit.tangoValue = lData.cost
     if team == 2 then
+      print ("adding unit to Game.sendRadiant")
       table.insert(Game.sendRadiant, unit)
     else
+      print ("adding unit to Game.sendDire")
       table.insert(Game.sendDire, unit)
     end
     player:RefreshPlayerInfo()
@@ -884,6 +890,7 @@ function Game:ResetUnitPositions()
 end
 --Einheiten machen was
 function Game:UnlockUnits()
+  print "Doing Game:UnlockUnits()"
   for _, player in pairs(self.players) do
     if player:IsActive() then
       for __, unit in pairs(player.units) do

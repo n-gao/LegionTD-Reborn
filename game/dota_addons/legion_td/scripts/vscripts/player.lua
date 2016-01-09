@@ -38,7 +38,11 @@ end
 function Player:RemoveEntitie()
   print("User "..self.userID.." removed.")
   self.plyEntitie = nil
+
+--[[  test without this
   self.userID = -1
+]]
+
   if not Game:IsBetweenRounds() then
     self.leaked = true;
     self.leaksPenalty = 10;

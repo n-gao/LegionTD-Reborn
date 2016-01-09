@@ -38,9 +38,12 @@ function GameRound:Begin()
       print("Unstuck")
     end
   end)
+  print ("gonna do GameRound:Begin() Spawn()-ing")
   for ind, key in pairs(self.spawners) do
+    print ("Doing key:Spawn()")
     key:Spawn()
   end
+  print ("did GameRound:Begin() Spawn()-ing")
 end
 
 --Ende einer Runde
@@ -48,7 +51,7 @@ function GameRound:End()
   for key, val in pairs(self.EventHandles) do
     StopListeningToGameEvent(val)
   end
-  Timers.timers[self.unstuckTimer] = nil
+  if Timers.timers[self.unstuckTimer] then Timers.timers[self.unstuckTimer] = nil end
   self.unstuckTimer = nil
   self.EventHandles = {}
   Game:RoundFinished()
@@ -100,7 +103,7 @@ end
 --Jemand wurde getötet
 function GameRound:OnEntityKilled(event)
   local killed = EntIndexToHScript(event.entindex_killed)
-  if not killed then
+  if not killed or not self.remainingUnits then
     return
   end
   for i, unit in pairs(self.remainingUnits) do

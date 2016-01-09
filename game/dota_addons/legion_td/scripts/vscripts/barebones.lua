@@ -52,7 +52,7 @@ end
 
 -- Generated from template
 if GameMode == nil then
-	print ( '[BAREBONES] creating barebones game mode' )
+--	print ( '[BAREBONES] creating barebones game mode' )
 	GameMode = class({})
 end
 
@@ -60,7 +60,7 @@ end
 -- It can be used to pre-initialize any values/tables that will be needed later
 function GameMode:InitGameMode()
 	GameMode = self
-	print('[BAREBONES] Starting to load Barebones gamemode...')
+--	print('[BAREBONES] Starting to load Barebones gamemode...')
 
 	-- Setup rules
 	GameRules:SetCustomGameTeamMaxPlayers(DOTA_TEAM_GOODGUYS, TEAM_SIZE)
@@ -328,8 +328,8 @@ end
 
 -- An NPC has spawned somewhere in game.  This includes heroes
 function GameMode:OnNPCSpawned(keys)
-	print("[BAREBONES] NPC Spawned")
-	DeepPrintTable(keys)
+--	print("[BAREBONES] NPC Spawned")
+--	DeepPrintTable(keys)
 	local npc = EntIndexToHScript(keys.entindex)
 
 	if npc:IsRealHero() and npc.bFirstSpawned == nil then
@@ -388,8 +388,8 @@ end
 
 -- An ability was used by a player
 function GameMode:OnAbilityUsed(keys)
-	print('[BAREBONES] AbilityUsed')
-	DeepPrintTable(keys)
+--	print('[BAREBONES] AbilityUsed')
+--	DeepPrintTable(keys)
 
 	local player = EntIndexToHScript(keys.PlayerID)
 	local abilityname = keys.abilityname
@@ -441,8 +441,8 @@ end
 
 -- A player last hit a creep, a tower, or a hero
 function GameMode:OnLastHit(keys)
-	print ('[BAREBONES] OnLastHit')
-	DeepPrintTable(keys)
+--	print ('[BAREBONES] OnLastHit')
+--	DeepPrintTable(keys)
 
 	local isFirstBlood = keys.FirstBlood == 1
 	local isHeroKill = keys.HeroKill == 1
@@ -501,8 +501,8 @@ end
 
 -- An entity died
 function GameMode:OnEntityKilled( keys )
-	print( '[BAREBONES] OnEntityKilled Called' )
-	DeepPrintTable( keys )
+--	print( '[BAREBONES] OnEntityKilled Called' )
+--	DeepPrintTable( keys )
 
 	-- The Unit that was Killed
 	local killedUnit = EntIndexToHScript( keys.entindex_killed )
