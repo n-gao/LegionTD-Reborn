@@ -468,8 +468,10 @@ end
 function Game:StartNextRound()
   print "Game:StartNextround()"
   for _,player in pairs(self.players) do
-    player.leaked = false;
-    player.leaksPenalty = 0;
+    if player.lane.isActive then --only repair leaks if lane is active
+      player.leaked = false;
+      player.leaksPenalty = 0;
+    end
   end
   mode:SetFogOfWarDisabled(true)
   self.gridBoxes:AddEffects(EF_NODRAW)
