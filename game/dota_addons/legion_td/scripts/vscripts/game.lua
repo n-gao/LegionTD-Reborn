@@ -478,14 +478,6 @@ function Game:StartNextRound()
   self.rounds[self.gameRound]:Begin()
   print "Game:StartNextround() about to call self:UnlockUnits()"
   self:UnlockUnits()
-  if self.gameRound == 1 then
-    self.tangoCheckingTimer = Timers:CreateTimer(0, function()
-      for _,player in pairs(self.players) do
-        player:CreateTangoTicker()
-      end
-      return CHECKING_INTERVALL
-    end)
-  end
 end
 
 

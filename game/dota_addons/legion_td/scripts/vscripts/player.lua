@@ -93,6 +93,14 @@ function Player:SetNPC(npc)
   self.hero:SetAbilityPoints(0)
 
   --prepartaion
+
+  self.tangoCheckingTimer = Timers:CreateTimer(0, function()
+    for _,player in pairs(self.players) do
+      player:CreateTangoTicker()
+    end
+    return CHECKING_INTERVALL
+  end)
+
   npc:AddNewModifier(nil, nil, "modifier_invulnerable", {})
   Timers:CreateTimer( 0.2, function()
     self:ToSpawn()
