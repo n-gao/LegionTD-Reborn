@@ -86,9 +86,9 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "9325" } // "Tails of the Tundra Warden"
+      "Wearable1" { "ItemDef" "4386" } // Cape of the Crystalline Queen
       "Wearable2" { "ItemDef" "9326" } // "Guard of the Tundra Warden"
-      "Wearable3" { "ItemDef" "9328" } // "North Star"
+      "Wearable3" { "ItemDef" "6573" } // "Sceptre of Icewrack"
       "Wearable4" { "ItemDef" "9324" } // "Gauntlets of the Tundra Warden"
       "Wearable5" { "ItemDef" "6686" } // "Yulsaria's Glacier"
       "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"

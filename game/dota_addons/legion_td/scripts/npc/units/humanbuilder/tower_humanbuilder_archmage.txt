@@ -91,11 +91,11 @@
 		}
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "38" } // "Crystal Maiden's Cape"
+      "Wearable1" { "ItemDef" "9325" } // "Tails of the Tundra Warden"
       "Wearable2" { "ItemDef" "39" } // "Crystal Maiden's Shoulder Pads"
-      "Wearable3" { "ItemDef" "40" } // "Crystal Maiden's Weapon"
+      "Wearable3" { "ItemDef" "9328" } // "North Star"
       "Wearable4" { "ItemDef" "41" } // "Crystal Maiden's Cuffs"
-      "Wearable5" { "ItemDef" "311" } // "Crystal Maiden's Headdress"
+      "Wearable5" { "ItemDef" "5214" } // Ice Capped Hood of the North
       "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
     }
 	}

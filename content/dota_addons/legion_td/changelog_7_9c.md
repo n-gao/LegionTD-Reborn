@@ -8,6 +8,8 @@
 
 - Fixed Human Builder Gunner not having an improved attack rate (now .6 instead of 1.6).
 
-## Misc
+## Misc/Cosmetic
+
+- Updated some Human Builder Archer and Mage units with different cosmetics (Archer, Hunter, Marksman, Novice, Mage, Archmage, Icewrack Grandmaster).
 
 - Added and updated a few English strings.

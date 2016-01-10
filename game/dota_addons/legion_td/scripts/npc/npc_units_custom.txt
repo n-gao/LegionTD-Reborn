@@ -2980,7 +2980,7 @@
 	      "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
 	      "Wearable2" { "ItemDef" "4180" } // "Nature's Shortbow"
 	      "Wearable3" { "ItemDef" "23" } // "Wind Ranger's Shoulder Pads"
-	      "Wearable4" { "ItemDef" "24" } // "Wind Ranger's Cape"
+	      "Wearable4" { "ItemDef" "5278" } // Cloak of the Northern Wind
 	      "Wearable5" { "ItemDef" "25" } // "Wind Ranger's Quiver"
 	    }
 		}
@@ -3078,11 +3078,11 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "38" } // "Crystal Maiden's Cape"
+	      "Wearable1" { "ItemDef" "9325" } // "Tails of the Tundra Warden"
 	      "Wearable2" { "ItemDef" "39" } // "Crystal Maiden's Shoulder Pads"
-	      "Wearable3" { "ItemDef" "40" } // "Crystal Maiden's Weapon"
+	      "Wearable3" { "ItemDef" "9328" } // "North Star"
 	      "Wearable4" { "ItemDef" "41" } // "Crystal Maiden's Cuffs"
-	      "Wearable5" { "ItemDef" "311" } // "Crystal Maiden's Headdress"
+	      "Wearable5" { "ItemDef" "5214" } // Ice Capped Hood of the North
 	      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
 	    }
 		}
@@ -3862,14 +3862,17 @@
 					"Support"			"0.0"
 				}
 			}
+	
 	    "AttachWearables"
-	    {
-	      "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
-	      "Wearable2" { "ItemDef" "22" } // "Wind Ranger's Bow"
-	      "Wearable3" { "ItemDef" "23" } // "Wind Ranger's Shoulder Pads"
-	      "Wearable4" { "ItemDef" "24" } // "Wind Ranger's Cape"
-	      "Wearable5" { "ItemDef" "25" } // "Wind Ranger's Quiver"
-	    }
+	        {
+	            "Wearable1" { "ItemDef" "4504" } // Verdant Coif
+	        //    "Wearable2" { "ItemDef" "21" } // "Wind Ranger's Head"
+	            "Wearable3" { "ItemDef" "24" } // "Wind Ranger's Cape"
+	            "Wearable4" { "ItemDef" "4495" } // Shoulderpads of the Falcon
+	            "Wearable5" { "ItemDef" "22" } // "Wind Ranger's Bow"
+	            "Wearable6" { "ItemDef" "25" } // "Wind Ranger's Quiver"
+	        }
+	
 		}
 	}
 	"tower_humanbuilder_icewrack_grandmaster"
@@ -3960,9 +3963,9 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "9325" } // "Tails of the Tundra Warden"
+	      "Wearable1" { "ItemDef" "4386" } // Cape of the Crystalline Queen
 	      "Wearable2" { "ItemDef" "9326" } // "Guard of the Tundra Warden"
-	      "Wearable3" { "ItemDef" "9328" } // "North Star"
+	      "Wearable3" { "ItemDef" "6573" } // "Sceptre of Icewrack"
 	      "Wearable4" { "ItemDef" "9324" } // "Gauntlets of the Tundra Warden"
 	      "Wearable5" { "ItemDef" "6686" } // "Yulsaria's Glacier"
 	      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
@@ -4162,10 +4165,11 @@
 	    "AttachWearables"
 	    {
 	      "Wearable1" { "ItemDef" "38" } // "Crystal Maiden's Cape"
-	      "Wearable2" { "ItemDef" "39" } // "Crystal Maiden's Shoulder Pads"
-	      "Wearable3" { "ItemDef" "40" } // "Crystal Maiden's Weapon"
+	      "Wearable2" { "ItemDef" "5216" } // Shoulders of the North
+	      
+	      "Wearable3" { "ItemDef" "8228" } // Scepter of the Icebound Floret
 	      "Wearable4" { "ItemDef" "41" } // "Crystal Maiden's Cuffs"
-	      "Wearable5" { "ItemDef" "5486" } // "Winter Solstice Fashion"
+	      "Wearable5" { "ItemDef" "311" } // "Crystal Maiden's Headdress"
 	      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
 	    }
 		}
@@ -4258,11 +4262,12 @@
 			}
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
+	    //"Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
 	      "Wearable2" { "ItemDef" "4454" } // "Lyralei's Breeze"
 	      "Wearable3" { "ItemDef" "23" } // "Wind Ranger's Shoulder Pads"
-	      "Wearable4" { "ItemDef" "24" } // "Wind Ranger's Cape"
+	      "Wearable4" { "ItemDef" "4512" } // Cape of the Wind Leaf
 	      "Wearable5" { "ItemDef" "25" } // "Wind Ranger's Quiver"
+	      "Wearable6" { "ItemDef" "4473" } // Markswoman's Cap
 	    }
 		}
 	}
@@ -4453,10 +4458,10 @@
 	    "AttachWearables"
 	    {
 	      "Wearable1" { "ItemDef" "38" } // "Crystal Maiden's Cape"
-	      "Wearable2" { "ItemDef" "39" } // "Crystal Maiden's Shoulder Pads"
+	      "Wearable2" { "ItemDef" "5019" } // Frostiron Sorceress Pads
 	      "Wearable3" { "ItemDef" "40" } // "Crystal Maiden's Weapon"
 	      "Wearable4" { "ItemDef" "41" } // "Crystal Maiden's Cuffs"
-	      "Wearable5" { "ItemDef" "5581" } // "Blueheart Tails" look at this nub lmao
+	      "Wearable5" { "ItemDef" "5486" } // "Winter Solstice Fashion"
 	      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
 	    }
 		}

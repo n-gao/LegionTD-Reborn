@@ -88,10 +88,10 @@
     "AttachWearables"
     {
       "Wearable1" { "ItemDef" "38" } // "Crystal Maiden's Cape"
-      "Wearable2" { "ItemDef" "39" } // "Crystal Maiden's Shoulder Pads"
+      "Wearable2" { "ItemDef" "5019" } // Frostiron Sorceress Pads
       "Wearable3" { "ItemDef" "40" } // "Crystal Maiden's Weapon"
       "Wearable4" { "ItemDef" "41" } // "Crystal Maiden's Cuffs"
-      "Wearable5" { "ItemDef" "5581" } // "Blueheart Tails" look at this nub lmao
+      "Wearable5" { "ItemDef" "5486" } // "Winter Solstice Fashion"
       "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
     }
 	}

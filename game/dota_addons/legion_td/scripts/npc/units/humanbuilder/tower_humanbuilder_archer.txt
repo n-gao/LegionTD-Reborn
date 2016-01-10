@@ -90,7 +90,7 @@
       "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
       "Wearable2" { "ItemDef" "4180" } // "Nature's Shortbow"
       "Wearable3" { "ItemDef" "23" } // "Wind Ranger's Shoulder Pads"
-      "Wearable4" { "ItemDef" "24" } // "Wind Ranger's Cape"
+      "Wearable4" { "ItemDef" "5278" } // Cloak of the Northern Wind
       "Wearable5" { "ItemDef" "25" } // "Wind Ranger's Quiver"
     }
 	}
