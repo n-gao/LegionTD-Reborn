@@ -2350,7 +2350,7 @@
 	  "MaxLevel"                "1"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"				"65"
+		"AbilityGoldCost"				"70"
 		"AbilityCooldown"		    "1.0"
 		"OnSpellStart"
 		{
@@ -2538,7 +2538,7 @@
 	    "02"
 	    {
 	      "var_type"              "FIELD_FLOAT"
-	      "atk_speed_tooltip"     "1.6"
+	      "atk_speed_tooltip"     ".6"
 	    }
 	    "03"
 	    {
