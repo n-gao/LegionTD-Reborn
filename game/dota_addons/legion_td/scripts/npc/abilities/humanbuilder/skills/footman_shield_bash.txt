@@ -20,18 +20,18 @@
 	{
 		"01"
 		{
-			"var_type"				"FIELD_FLOAT"
-			"stun_duration"			".4"
+			"var_type"				"FIELD_INTEGER"
+			"damage_blocked"		"4"
 		}
 		"02"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"damage_blocked"		"4"
+			"chance"				"70"
 		}
 		"03"
 		{
-			"var_type"				"FIELD_INTEGER"
-			"chance"				"70"
+			"var_type"				"FIELD_FLOAT"
+			"stun_duration"			".4"
 		}
 	}
 

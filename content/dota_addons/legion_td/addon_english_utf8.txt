@@ -1103,7 +1103,7 @@
 		"DOTA_Tooltip_ability_footman_shield_bash_Description"                                  "Stuns and deals magic damage to a foe without breaking the rhythm of attacks. Passively blocks some damage from incoming phyiscal attacks."
 		"DOTA_Tooltip_ability_footman_shield_bash_stun_duration"                                "STUN DURATION:"
 		"DOTA_Tooltip_ability_footman_shield_bash_damage_blocked"                               "DAMAGE BLOCKED:"
-		"DOTA_Tooltip_ability_footman_shield_bash_chance"                                       "CHANCE:"
+		"DOTA_Tooltip_ability_footman_shield_bash_chance"                                       "BLOCK CHANCE:"
 
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_call_down"                            "Call Down"
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_call_down_Description"                ""
@@ -1219,7 +1219,7 @@
 		"DOTA_Tooltip_ability_soldier_shield_bash_Description"                                  "Stuns and deals magic damage to a foe without breaking the rhythm of attacks. Passively blocks some damage from incoming phyiscal attacks."
 		"DOTA_Tooltip_ability_soldier_shield_bash_stun_duration"                                "STUN DURATION:"
 		"DOTA_Tooltip_ability_soldier_shield_bash_damage_blocked"                               "DAMAGE BLOCKED:"
-		"DOTA_Tooltip_ability_soldier_shield_bash_chance"                                       "CHANCE:"
+		"DOTA_Tooltip_ability_soldier_shield_bash_chance"                                       "BLOCK CHANCE:"
 
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast"                                "Deafening Blast"
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast_Description"                    "Throws a wave of pure sound directly north or south, pushing enemies back while disabling them, then disarming them."
@@ -1247,7 +1247,7 @@
 		"DOTA_Tooltip_ability_spearman_shield_bash_Description"                                 "Stuns and deals magic damage to a foe without breaking the rhythm of attacks. Passively blocks some damage from incoming phyiscal attacks."
 		"DOTA_Tooltip_ability_spearman_shield_bash_stun_duration"                                "STUN DURATION:"
 		"DOTA_Tooltip_ability_spearman_shield_bash_damage_blocked"                              "DAMAGE BLOCKED:"
-		"DOTA_Tooltip_ability_spearman_shield_bash_chance"                                      "CHANCE:"
+		"DOTA_Tooltip_ability_spearman_shield_bash_chance"                                      "BLOCK CHANCE:"
 
 		"DOTA_Tooltip_ability_tactician_guardian_angel"                                   "Guardian Angel"
 		"DOTA_Tooltip_ability_tactician_guardian_angel_Description"                       ""

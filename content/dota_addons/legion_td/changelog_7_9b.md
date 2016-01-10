@@ -1,4 +1,4 @@
-7.9b.rc1
+0.7.9b.rc1
 
 ## Bugfixes
 
@@ -17,3 +17,5 @@
 - Wave Bosses now have a passive magic immunity ability with a 10 second duration and 16 second cooldown (so bosses have 6 out of every 16 seconds where they aren't magic immune).
 
 - Disconnected players will have a leak penalty equivalent to 25 units (+250% tango generation interval) until a wave starts while they are connected.
+
+- Rearranged Human Builder Block tooltip variables to be more clear
