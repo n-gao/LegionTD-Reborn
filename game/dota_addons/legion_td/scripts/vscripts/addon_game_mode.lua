@@ -78,7 +78,7 @@ RequiredUnits = {
 	"incomeunit_rosh",
 	"incomeunit_satyr",
 	"incomeunit_vulture",
-	"incomeunit_wolf",
+	"incomeunit_wolf"--[[,
 
 	--Naturebuilder
 	"tower_naturebuilder_agressive_boar",
@@ -142,7 +142,7 @@ RequiredUnits = {
 	"tower_humanbuilder_soldier",
 	"tower_humanbuilder_soundmaster",
 	"tower_humanbuilder_spearman",
-	"tower_humanbuilder_tactician"
+	"tower_humanbuilder_tactician"]]
 }
 
 function Precache( context )
