@@ -12,8 +12,8 @@
 	"Vscripts"              "ai/humanbuilder/ai_futuristic_gyrocopter.lua"
 
 	"Ability4"				"sell"
-	"Ability3"				"futuristic_gyrocopter_call_down"
-	"Ability2"				"futuristic_gyrocopter_flak_cannon"
+	"Ability2"				"futuristic_gyrocopter_call_down"
+	"Ability3"				"ability_empty_3"
 	"Ability1"				"futuristic_gyrocopter_split_shot"
 
 	// Armor

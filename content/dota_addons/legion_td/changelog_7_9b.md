@@ -8,7 +8,7 @@
 
 ## Gameplay
 
-- Human Builder Futuristic Gyrocopter Flak Cannon max attacks reduced from 3 to 2, range from 1000 to 600.
+- Removed Human Builder Futuristic Gyrocopter Flak Cannon.
 
 - Human Builder Footman/Soldier/Spearman Shield Bash block chance changed from 75/85/95 to 70 (block values still 4/12/16)
 
