@@ -12,6 +12,8 @@
 
 - Human Builder Guardian Angel will now put all other friendly Guardian Angels in its range on cooldown when starting cast.
 
+- Fixed Human Builder Blademaster missing his Blade Dance skill.
+
 - Wave Bosses now have a passive magic immunity ability with a 10 second duration and 16 second cooldown (so bosses have 6 out of every 16 seconds where they aren't magic immune).
 
 - Disconnected players will have a leak penalty equivalent to 25 units (+250% tango generation interval) until a wave starts while they are connected.
