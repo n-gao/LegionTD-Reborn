@@ -10,7 +10,7 @@
 
 - Removed Human Builder Futuristic Gyrocopter Flak Cannon.
 
-- Human Builder Footman/Soldier/Spearman Shield Bash block chance changed from 75/85/95 to 70 (block values still 4/12/16)
+- Human Builder Guardian Angel will now put all other friendly Guardian Angels in its range on cooldown when starting cast.
 
 - Wave Bosses now have a passive magic immunity ability with a 10 second duration and 16 second cooldown (so bosses have 6 out of every 16 seconds where they aren't magic immune).
 

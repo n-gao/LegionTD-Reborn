@@ -95,7 +95,7 @@ function BehaviorAngel:Evaluate()
 	if self.angelAbility and self.angelAbility:IsFullyCastable() then
 		local range = self.angelAbility:GetCastRange()
 		local allies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_ALL, 0, FIND_ANY_ORDER, false )
-		print ("tactician guardian angel allies number considering: " .. #allies .. " (" .. range .. " range)")
+		--print ("tactician guardian angel allies number considering: " .. #allies .. " (" .. range .. " range)")
 		for _, unit in pairs(allies) do
 			local healthLost = unit:GetMaxHealth() - unit:GetHealth()
 			if healthLost > (unit:GetMaxHealth() *.4) then --only cast if unit has lost at least 40% of its health
@@ -118,6 +118,23 @@ function BehaviorAngel:Begin()
 		TargetIndex = nil,
 		AbilityIndex = self.angelAbility:entindex()
 	}
+
+
+	local units = FindUnitsInRadius(thisEntity:GetTeam(), thisEntity:GetAbsOrigin(), nil, self.angelAbility:GetCastRange(), DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_ALL, 0, FIND_CLOSEST, false)
+
+	local cooldown = self.angelAbility:GetCooldown(self.angelAbility:GetLevel() - 1)
+
+	print ("found " .. #units .. "friendly units ")
+
+	for _, unit in pairs(units) do
+		if unit ~= thisEntity then
+			local unitGuardian = unit:FindAbilityByName("tactician_guardian_angel")
+			if unitGuardian then
+				unitGuardian:StartCooldown(600)
+				print ("Putting a guardian angel on cooldown")
+			end
+		end
+	end
 end
 
 BehaviorAngel.Continue = BehaviorAngel.Begin --if we re-enter this ability, we might have a different target; might as well do a full reset
