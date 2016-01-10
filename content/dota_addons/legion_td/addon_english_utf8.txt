@@ -7,12 +7,12 @@
 		
 		// ******************************** ERROR ********************************
 		 "Error_not_enough_tangos"		"Not enough Tangos"
-		 "Error_not_between_rounds"		"You can just use this between rounds"
+		 "Error_not_between_rounds"		"You can only use this between rounds"
 		 "Error_unknown"					"Unknown Error"
-		 "Error_invalid_location"		"You just can build on your lane"
+		 "Error_invalid_location"		"You can only build on your lane"
 		 "Error_not_enough_food"		"Not enough Food"
-		 "Error_to_close_to_another"	"To close to another unit"
-		 "Error_to_many_king_upgrades"	"To many king upgrades"
+		 "Error_to_close_to_another"	"Space already full"
+		 "Error_to_many_king_upgrades"	"That upgrade is maxed"
 		 "Error_not_possible_in_last_duel"	"Not possible during duel"
 		 
 		 
@@ -272,10 +272,10 @@
 		"DOTA_Tooltip_ability_ability_empty_3"                                            "Empty Ability E"
 		"DOTA_Tooltip_ability_ability_empty_3_Description"                                "Just taking up space."
 
-		"DOTA_Tooltip_ability_beeing_dire_boss"                                           "Beeing Dire Boss"
+		"DOTA_Tooltip_ability_beeing_dire_boss"                                           "Is Dire Boss"
 		"DOTA_Tooltip_ability_beeing_dire_boss_Description"                               ""
 
-		"DOTA_Tooltip_ability_beeing_radiant_boss"                                        "Beeing Radiant Boss"
+		"DOTA_Tooltip_ability_beeing_radiant_boss"                                        "Is Radiant Boss"
 		"DOTA_Tooltip_ability_beeing_radiant_boss_Description"                            ""
 
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender"                         "Spawn Earthbender"
