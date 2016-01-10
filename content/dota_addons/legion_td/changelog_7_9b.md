@@ -2,7 +2,7 @@
 
 ## Bugfixes
 
-- Fixed a case where missing players could cause round-start to fail, preventing unlocking of player units.
+- Fixed a case where missing players could cause round-start to fail, preventing unlocking of player units and causing some income units to not get sent.
 
 - Fixed a case where players could miss the tango-ticker event if they spawned late.
 
