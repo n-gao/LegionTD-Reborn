@@ -49,14 +49,14 @@ function GameSpawner:Spawn()
         end
         local hpos = offset+(((i-1)%columns)*spacing)      
         local vpos = (math.floor((i-1)/columns))*spacing*polar
-        print ("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
+      --print ("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
         table.insert(positions, Vector(hpos, vpos, 0))
       end
 
-      print ("RANK AND FILE:")
-      for _, v in ipairs(positions) do
-        print(v.x .. ", " .. v.y)
-      end
+      -- print ("RANK AND FILE:")
+      -- for _, v in ipairs(positions) do
+      --   print(v.x .. ", " .. v.y)
+      -- end
 
       for i = 1, self.unitCount do
         local creep = CreateUnitByName(self.npcName,
@@ -131,9 +131,15 @@ function GameSpawner:SendIncomingUnits(team)
         count = count + 1
       end
     end
-    leader = Game.sendLeaderRadiant
-    Game.sendLeaderRadiant = Game.sendLeaderRadiant + 1
-    if Game.sendLeaderRadiant > count then Game.sendLeaderRadiant = 1 end
+    Game.sendLeaderDire = Game.sendLeaderDire + 1
+    if Game.sendLeaderDire > 4 then Game.sendLeaderDire = 1 end
+    for i = 1,4 do
+      if Game.lanes["".. Game.sendLeaderDire + 4].isActive then break end
+      Game.sendLeaderDire = Game.sendLeaderDire + 1
+      if Game.sendLeaderDire > 4 then Game.sendLeaderDire = 1 end
+    end
+    print("Game.sendLeaderDire is now " .. Game.sendLeaderDire)
+    leader = Game.sendLeaderDire
   else
     units = Game.sendDire
     Game.sendDire = {}
@@ -143,10 +149,16 @@ function GameSpawner:SendIncomingUnits(team)
         distributedValues[count + 1] = 0
         count = count + 1
       end
-      leader = Game.sendLeaderDire
-      Game.sendLeaderDire = Game.sendLeaderDire + 1
-      if Game.sendLeaderDire > count then Game.sendLeaderDire = 1 end
     end
+    Game.sendLeaderRadiant = Game.sendLeaderRadiant + 1
+    if Game.sendLeaderRadiant > 4 then Game.sendLeaderRadiant = 1 end
+    for i = 1,4 do
+      if Game.lanes[""..Game.sendLeaderRadiant].isActive then break end
+      Game.sendLeaderRadiant = Game.sendLeaderRadiant + 1
+      if Game.sendLeaderRadiant > 4 then Game.sendLeaderRadiant = 1 end
+    end
+    print("Game.sendLeaderRadiant is now " .. Game.sendLeaderRadiant)
+    leader = Game.sendLeaderRadiant
   end
 
   table.sort(units, function(a,b) return a.tangoValue>b.tangoValue end)-- sort units by their tango value
@@ -164,6 +176,7 @@ function GameSpawner:SendIncomingUnits(team)
       end
       local lane = spawners[theLane]
 
+      print ("Moving send unit;")
       FindClearSpaceForUnit(unit, lane.spawnpoint:GetAbsOrigin(), true)
       
       unit.waypoints = {}
@@ -188,9 +201,10 @@ function GameSpawner:SendIncomingUnits(team)
       self.ApplyAI(unit)
       self.gameRound:AddUnitToBeKilled(unit)
       distributedValues[theLane] = distributedValues[theLane] + unit.tangoValue
-      tempLowestValue = distributedValues[leader]
-      for j = 1, (count) do
-        if distributedValues[j] < tempLowestValue then tempLowestValue = distributedValues[j] end
+      tempLowestValue = distributedValues[theLane]
+      for _,j in pairs(distributedValues) do
+        print ("j = " .. j)
+        if j and j < tempLowestValue then tempLowestValue = j end
       end
       lowestValue = tempLowestValue
     end

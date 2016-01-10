@@ -38,11 +38,12 @@ end
 function Player:RemoveEntitie()
   print("User "..self.userID.." removed.")
   self.plyEntitie = nil
+
+--[[  test without this
   self.userID = -1
-  if not Game:IsBetweenRounds() then
-    self.leaked = true;
-    self.leaksPenalty = 10;
-  end
+]]
+  self.leaksPenalty = 25
+  self.leaked = true
   if self.lane then
     self.lane.isActive = false
   end
@@ -89,6 +90,12 @@ function Player:SetNPC(npc)
   self.hero:SetAbilityPoints(0)
 
   --prepartaion
+
+  self.tangoCheckingTimer = Timers:CreateTimer(0, function()
+    self:CreateTangoTicker()
+    return CHECKING_INTERVALL
+  end)
+
   npc:AddNewModifier(nil, nil, "modifier_invulnerable", {})
   Timers:CreateTimer( 0.2, function()
     self:ToSpawn()
@@ -293,10 +300,11 @@ function Player:CreateTangoTicker()
   if (not Timers.timers[self.timer]) and (self.lane.mainBuilding) then
 
     self.timer = Timers:CreateTimer(function()
+
+      if Game.gameState == GAMESTATE_PREPARATION and Game.gameRound == STARTING_ROUND then return (1/30) end
       
       local tangoDelay = self.tangoAddSpeed
       if self.leaked then tangoDelay = self.tangoAddSpeed + (self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER * self.leaksPenalty) end
-
       self.tangoAddProgress = self.tangoAddProgress + 1/tangoDelay/30
       local i = self.tangoAddProgress*math.pi*2
       if self.lane.mainBuilding:GetAbsOrigin().y > 0 then
