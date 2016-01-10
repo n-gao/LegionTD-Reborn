@@ -1,7 +1,7 @@
-"blademaster_critical_strike"
+"blademaster_blade_dance"
 {
     "BaseClass"                     "ability_datadriven"
-    "AbilityTextureName"            "blademaster_critical_strike"
+    "AbilityTextureName"            "juggernaut_blade_dance"
     "MaxLevel"                      "4"
 
     "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"

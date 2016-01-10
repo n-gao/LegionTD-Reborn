@@ -918,7 +918,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter"                 "Upgrade Futuristic Gyrocopter"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_Description"     "Skills: Flak Cannon, Call Down, Split Shot"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_Description"     "Skills: Call Down, Split Shot"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_atk_speed_tooltip"		"ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_atk_range_tooltip"		"ATK RANGE:"
@@ -948,7 +948,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2"                        "Upgrade Gyrocopter Mk2"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_Description"            "Skills: Flak Cannon, Split Shot"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_Description"            "Skills: Split Shot"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_atk_damage_tooltip"     "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_atk_speed_tooltip"      "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_atk_range_tooltip"      "ATK RANGE:"
@@ -1088,10 +1088,10 @@
 		"DOTA_Tooltip_ability_archmage_crystal_nova_duration"                             "DURATION:"
 		"DOTA_Tooltip_ability_archmage_crystal_nova_vision_duration"                      "VISION DURATION:"
 
-		"DOTA_Tooltip_ability_blademaster_critical_strike"                                "Critical Strike"
-		"DOTA_Tooltip_ability_blademaster_critical_strike_Description"                    ""
-		"DOTA_Tooltip_ability_blademaster_critical_strike_crit_bonus"                     "CRIT BONUS:"
-		"DOTA_Tooltip_ability_blademaster_critical_strike_crit_chance"                    "CRIT CHANCE:"
+		"DOTA_Tooltip_ability_blademaster_blade_dance"                                    "Blademaster Blade Dance"
+		"DOTA_Tooltip_ability_blademaster_blade_dance_Description"                        ""
+		"DOTA_Tooltip_ability_blademaster_blade_dance_crit_bonus"                         "CRIT BONUS:"
+		"DOTA_Tooltip_ability_blademaster_blade_dance_crit_chance"                        "CRIT CHANCE:"
 
 		"DOTA_Tooltip_ability_blademaster_blade_fury"                                     "Blade Fury"
 		"DOTA_Tooltip_ability_blademaster_blade_fury_Description"                         ""
