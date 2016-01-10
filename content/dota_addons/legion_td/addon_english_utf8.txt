@@ -205,6 +205,15 @@
 		"DOTA_Tooltip_isBoss"                                                             "IsBoss"
 		"DOTA_Tooltip_isBoss_Description"                                                 ""
 
+		"DOTA_Tooltip_boss_upgrade_health_stack"                                          "Boss Upgrade Health Stack"
+		"DOTA_Tooltip_boss_upgrade_health_stack_Description"                              ""
+
+		"DOTA_Tooltip_boss_upgrade_attack_stack"                                          "Boss Upgrade Attack Stack"
+		"DOTA_Tooltip_boss_upgrade_attack_stack_Description"                              ""
+
+		"DOTA_Tooltip_boss_upgrade_regen_stack"                                           "Boss Upgrade Regen Stack"
+		"DOTA_Tooltip_boss_upgrade_regen_stack_Description"                               ""
+
 		"DOTA_Tooltip_modifier_hoof_stomp"                                                "Hoof Stomp"
 		"DOTA_Tooltip_modifier_hoof_stomp_Description"                                    ""
 
