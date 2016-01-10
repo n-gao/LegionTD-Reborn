@@ -3815,7 +3815,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chance"				"75"
+				"chance"				"70"
 			}
 		}
 	
@@ -5785,7 +5785,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chance"				"85"
+				"chance"				"70"
 			}
 		}
 	
@@ -6225,7 +6225,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chance"				"95"
+				"chance"				"70"
 			}
 		}
 	
