@@ -4,6 +4,8 @@
 
 ## Gameplay
 
+- Wave Boss Repel from 10 second duration and 16 second cooldown to 2 second duration and 4 second cooldown.
+
 - Human Builder Upgrade Footman Gold Cost increased from 65 to 70.
 
 - Human Builder Hunter Headshot proc chance reduced from 40% to 20%, damage increased from 20 to 40 (same damage as other headshots).
