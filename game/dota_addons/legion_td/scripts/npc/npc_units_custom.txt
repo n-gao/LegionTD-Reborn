@@ -9252,7 +9252,6 @@
 	
 	  "Ability1"							"dragon_knight_elder_dragon_form"
 	  "Ability2"              "waveboss_repel"
-	  "Ability3"              "waveboss_attackspeed"
 	
 	  "ArmorPhysical"         "10"
 	  "MagicalResistance"     "30"
@@ -9261,7 +9260,7 @@
 	  "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	  "AttackDamageMin"       "187.5"
 	  "AttackDamageMax"       "200.0"
-	  "AttackRate"            "0.8"
+	  "AttackRate"            "0.4"
 	  "AttackAnimationPoint"  "0.2"
 	  "AttackAcquisitionRange" "500"
 	  "AttackRange"           "125"
@@ -9560,7 +9559,6 @@
 	
 		"Ability1"				"alchemist_acid_spray"
 		"Ability2"				"waveboss_repel"
-		"Ability3"				"waveboss_attackspeed"
 	
 		"ArmorPhysical"         "8"
 		"MagicalResistance"     "20"
@@ -9569,7 +9567,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "62.5"
 		"AttackDamageMax"       "75.0"
-		"AttackRate"            "1.6"
+		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.3"
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "300"
@@ -9879,7 +9877,6 @@
 	  "Ability1"							"skeleton_king_hellfire_blast"
 	  "Ability2"							"skeleton_king_reincarnation"
 	  "Ability3"              "waveboss_repel"
-	  "Ability4"              "waveboss_attackspeed"
 	
 	  "ArmorPhysical"         "15"
 	  "MagicalResistance"     "30"
@@ -9888,7 +9885,7 @@
 	  "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	  "AttackDamageMin"       "325.0"
 	  "AttackDamageMax"       "350.0"
-	  "AttackRate"            "0.8"
+	  "AttackRate"            "0.4"
 	  "AttackAnimationPoint"  "0.2"
 	  "AttackAcquisitionRange" "500"
 	  "AttackRange"           "125"
