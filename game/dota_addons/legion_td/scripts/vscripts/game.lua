@@ -468,7 +468,7 @@ end
 function Game:StartNextRound()
   print "Game:StartNextround()"
   for _,player in pairs(self.players) do
-    if player.lane.isActive then --only repair leaks if lane is active
+    if player.lane and player.lane.isActive then --only repair leaks if lane is active
       player.leaked = false;
       player.leaksPenalty = 0;
     end
