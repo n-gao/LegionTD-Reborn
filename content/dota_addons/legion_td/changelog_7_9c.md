@@ -1,5 +1,7 @@
 0.7.9c
 
+- Fixed a case where starting a round could fail if a player has been disconnected since hero select.
+
 ## Gameplay
 
 - Wave Bosses have double their previous attack times (fatty .8 to 1.6, king and dragon .4 to .8)
