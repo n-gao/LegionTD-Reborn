@@ -10,6 +10,8 @@
 
 ## Misc/Cosmetic
 
-- Updated some Human Builder Archer and Mage units with different cosmetics (Archer, Hunter, Marksman, Novice, Mage, Archmage, Icewrack Grandmaster).
+- Updated some Human Builder Archer and Mage units with different cosmetics (Archer, Hunter, Marksman, Novice, Mage, Archmage, Icewrack Grandmaster
+
+- Fixed a few cosmetic "stretch marks" on the map
 
 - Added and updated a few English strings.
