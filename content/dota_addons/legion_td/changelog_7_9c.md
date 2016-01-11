@@ -6,9 +6,9 @@
 
 - Wave Bosses have double their previous attack times (fatty .8 to 1.6, king and dragon .4 to .8)
 
-- Wave Bosses now passively recieve +100 attack speed
+- Wave Bosses now passively recieve +100 attack speed.
 	
-	(Just like roshan in 6.86, this will mean their normal attack speed is the same, but they're more resilient to attack slows)
+	(Just like roshan in 6.86, this will mean their normal attack speed is the same, but they're more resilient to attack slows.)
 
 - Human Builder Upgrade Footman Gold Cost increased from 65 to 70.
 
