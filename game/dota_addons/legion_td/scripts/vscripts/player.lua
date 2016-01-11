@@ -39,9 +39,9 @@ function Player:RemoveEntitie()
   print("User "..self.userID.." removed.")
   self.plyEntitie = nil
 
---[[  test without this
+-- why is this here
   self.userID = -1
-]]
+
   self.leaksPenalty = 25
   self.leaked = true
   if self.lane then
