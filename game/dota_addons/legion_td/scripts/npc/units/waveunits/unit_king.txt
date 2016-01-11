@@ -13,6 +13,7 @@
   "Ability1"							"skeleton_king_hellfire_blast"
   "Ability2"							"skeleton_king_reincarnation"
   "Ability3"              "waveboss_repel"
+  "Ability4"              "waveboss_attackspeed"
 
   "ArmorPhysical"         "15"
   "MagicalResistance"     "30"
@@ -21,7 +22,7 @@
   "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
   "AttackDamageMin"       "325.0"
   "AttackDamageMax"       "350.0"
-  "AttackRate"            "0.4"
+  "AttackRate"            "0.8"
   "AttackAnimationPoint"  "0.2"
   "AttackAcquisitionRange" "500"
   "AttackRange"           "125"

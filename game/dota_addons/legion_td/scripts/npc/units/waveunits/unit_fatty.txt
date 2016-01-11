@@ -12,6 +12,7 @@
 
 	"Ability1"				"alchemist_acid_spray"
 	"Ability2"				"waveboss_repel"
+	"Ability3"				"waveboss_attackspeed"
 
 	"ArmorPhysical"         "8"
 	"MagicalResistance"     "20"
@@ -20,7 +21,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "62.5"
 	"AttackDamageMax"       "75.0"
-	"AttackRate"            "0.8"
+	"AttackRate"            "1.6"
 	"AttackAnimationPoint"  "0.3"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "300"
