@@ -119,17 +119,19 @@ function GameSpawner:SendIncomingUnits(team)
   local count = 0 -- number of valid lanes to distribute to
   local units = {}
   local distributedValues = {}
+  local distributedUnits = {}
   local lowestValue = 0
   local leader = 1
   if team == DOTA_TEAM_GOODGUYS then
     units = Game.sendRadiant
     Game.sendRadiant = {}
     for i = 5,8 do
-      if Game.lanes[""..i].isActive then
+      --if Game.lanes[""..i].isActive then
         spawners[count + 1] = Game.lanes[""..i]
         distributedValues[count + 1] = 0
+        distributedUnits[count + 1] = {}
         count = count + 1
-      end
+      --end
     end
     Game.sendLeaderDire = Game.sendLeaderDire + 1
     if Game.sendLeaderDire > 4 then Game.sendLeaderDire = 1 end
@@ -147,6 +149,7 @@ function GameSpawner:SendIncomingUnits(team)
       if Game.lanes[""..i].isActive then
         spawners[count + 1] = Game.lanes[""..i]
         distributedValues[count + 1] = 0
+        distributedUnits[count + 1] = {}
         count = count + 1
       end
     end
@@ -163,6 +166,8 @@ function GameSpawner:SendIncomingUnits(team)
 
   table.sort(units, function(a,b) return a.tangoValue>b.tangoValue end)-- sort units by their tango value
 
+  print ("Assigning send units-")
+
   for _,unit in ipairs(units) do
     if next(spawners) == nil then
       unit:ForceKill(false)
@@ -174,14 +179,52 @@ function GameSpawner:SendIncomingUnits(team)
           break
         end
       end
-      local lane = spawners[theLane]
 
-      print ("Moving send unit;")
-      FindClearSpaceForUnit(unit, lane.spawnpoint:GetAbsOrigin(), true)
+      table.insert(distributedUnits[theLane], unit)
+
+      distributedValues[theLane] = distributedValues[theLane] + unit.tangoValue
+      tempLowestValue = distributedValues[theLane]
+      for _,j in pairs(distributedValues) do
+        print ("j = " .. j)
+        if j and j < tempLowestValue then tempLowestValue = j end
+      end
+      lowestValue = tempLowestValue
+    end
+  end
+
+  print ("Moving send units-")
+
+  for theLane, units in pairs(distributedUnits) do
+
+    local lane = spawners[theLane]
+    local unitCount = #units
+    local polar = 1
+    local spacing = 96
+    if lane.spawnpoint:GetAbsOrigin().y < 0 then polar = -1 end
+    local rank1 = lane.spawnpoint:GetAbsOrigin()
+    local positions = {}
+    local columns = 5
+    for i = 1, unitCount do
+      local offset = (((columns-1) / 2) * spacing)*-1
+      if i > round(unitCount, columns) then
+        offset = offset + (((round(unitCount, columns)+columns)-unitCount)/2)*spacing
+      end
+      local hpos = offset+(((i-1)%columns)*spacing)      
+      local vpos = (math.floor((i-1)/columns))*spacing*polar
+    --print ("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
+      table.insert(positions, Vector(hpos, vpos, 0))
+    end
+
+    local i = 1
+
+    for _, unit in pairs(units) do
+
+      FindClearSpaceForUnit(unit, rank1 + positions[i], true)
       
       unit.waypoints = {}
       for j = 1, 4 do
-        table.insert(unit.waypoints, lane.waypoints[j])
+        DebugDrawCircle(lane.waypoints[j] + positions[i], Vector(0,255,0), 1, 50, false, 50)
+        table.insert(unit.waypoints, lane.waypoints[j] + positions[i])
       end
 
       unit.wayStep = 2
@@ -200,13 +243,21 @@ function GameSpawner:SendIncomingUnits(team)
       unit.lane = spawners[theLane]
       self.ApplyAI(unit)
       self.gameRound:AddUnitToBeKilled(unit)
-      distributedValues[theLane] = distributedValues[theLane] + unit.tangoValue
-      tempLowestValue = distributedValues[theLane]
-      for _,j in pairs(distributedValues) do
-        print ("j = " .. j)
-        if j and j < tempLowestValue then tempLowestValue = j end
-      end
-      lowestValue = tempLowestValue
+
+      i = i + 1
+
+    end
+  end
+end
+
+
+
+function KingTrigger(trigger)
+  local npc = trigger.activator
+  if npc and not npc:IsRealHero() then
+    if npc:GetTeamNumber() == DOTA_TEAM_NEUTRALS then
+      npc:RemoveAbility("ability_phased")
+      npc:RemoveModifierByName("modifier_phased")
     end
   end
 end

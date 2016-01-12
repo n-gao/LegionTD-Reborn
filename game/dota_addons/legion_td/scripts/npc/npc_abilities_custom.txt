@@ -56,6 +56,36 @@
 	      }
 	    }
 	  }
+	"ability_phased"
+	{
+		"BaseClass"             		"ability_datadriven"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+		"MaxLevel" 						"1"
+	
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"			"CASTER"
+				"ModifierName"		"modifier_phased"
+			}
+		}
+	
+		"Modifiers"
+		{
+			"modifier_phased"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+				"States"
+				{
+					"MODIFIER_STATE_NO_UNIT_COLLISION"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}		
+	}
 	 "ability_empty_1"
 	  {
 	    // General

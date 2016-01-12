@@ -184,6 +184,9 @@ function leaveLane(trigger)
     if npc:GetTeamNumber() == DOTA_TEAM_NEUTRALS then
       PopupSadface(npc)
       npc.leftLane = true
+      npc:AddAbility("ability_phased")
+      local ability = npc:FindAbilityByName("ability_phased")
+      ability:SetLevel(1)
       if npc.lane.player then
         npc.lane.player:Leaked(self, npc:GetLevel())
       end
