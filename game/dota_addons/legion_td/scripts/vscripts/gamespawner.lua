@@ -215,38 +215,41 @@ function GameSpawner:SendIncomingUnits(team)
       table.insert(positions, Vector(hpos, vpos, 0))
     end
 
-    local i = 1
 
-    for _, unit in pairs(units) do
-
-      FindClearSpaceForUnit(unit, rank1 + positions[i], true)
+    Timers:CreateTimer(1, function()
       
-      unit.waypoints = {}
-      for j = 1, 4 do
-        DebugDrawCircle(lane.waypoints[j] + positions[i], Vector(0,255,0), 1, 50, false, 50)
-        table.insert(unit.waypoints, lane.waypoints[j] + positions[i])
+      local i = 1
+
+      for _, unit in pairs(units) do
+
+        FindClearSpaceForUnit(unit, rank1 + positions[i], true)
+        
+        unit.waypoints = {}
+        for j = 1, 4 do
+          DebugDrawCircle(lane.waypoints[j] + positions[i], Vector(0,255,0), 1, 50, false, 50)
+          table.insert(unit.waypoints, lane.waypoints[j] + positions[i])
+        end
+
+        unit.wayStep = 2
+
+        ExecuteOrderFromTable({
+          UnitIndex = unit:entindex(), 
+          OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
+          TargetIndex = 0, --Optional.  Only used when targeting units
+          AbilityIndex = 0, --Optional.  Only used when casting abilities
+          Position = unit.waypoints[unit.wayStep], --Optional.  Only used when targeting the ground
+          Queue = 0 --Optional.  Used for queueing up abilities
+        })
+        unit:SetTeam(DOTA_TEAM_NEUTRALS)
+        unit.nextTarget = lane.nextWaypoint
+        unit.lastWaypoint = lane.lastWaypoint
+        unit.lane = spawners[theLane]
+        self.ApplyAI(unit)
+        self.gameRound:AddUnitToBeKilled(unit)
+
+        i = i + 1
       end
-
-      unit.wayStep = 2
-
-      ExecuteOrderFromTable({
-        UnitIndex = unit:entindex(), 
-        OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
-        TargetIndex = 0, --Optional.  Only used when targeting units
-        AbilityIndex = 0, --Optional.  Only used when casting abilities
-        Position = unit.waypoints[unit.wayStep], --Optional.  Only used when targeting the ground
-        Queue = 0 --Optional.  Used for queueing up abilities
-      })
-      unit:SetTeam(DOTA_TEAM_NEUTRALS)
-      unit.nextTarget = lane.nextWaypoint
-      unit.lastWaypoint = lane.lastWaypoint
-      unit.lane = spawners[theLane]
-      self.ApplyAI(unit)
-      self.gameRound:AddUnitToBeKilled(unit)
-
-      i = i + 1
-
-    end
+    end)
   end
 end
 
