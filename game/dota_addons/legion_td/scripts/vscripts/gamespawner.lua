@@ -216,7 +216,7 @@ function GameSpawner:SendIncomingUnits(team)
     end
 
 
-    Timers:CreateTimer(1, function()
+    Timers:CreateTimer(2, function()
       
       local i = 1
 
