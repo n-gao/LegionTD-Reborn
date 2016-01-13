@@ -126,12 +126,12 @@ function GameSpawner:SendIncomingUnits(team)
     units = Game.sendRadiant
     Game.sendRadiant = {}
     for i = 5,8 do
-      --if Game.lanes[""..i].isActive then
+      if Game.lanes[""..i].isActive then
         spawners[count + 1] = Game.lanes[""..i]
         distributedValues[count + 1] = 0
         distributedUnits[count + 1] = {}
         count = count + 1
-      --end
+      end
     end
     Game.sendLeaderDire = Game.sendLeaderDire + 1
     if Game.sendLeaderDire > 4 then Game.sendLeaderDire = 1 end
