@@ -150,6 +150,7 @@ function Game.new()
     Convars:RegisterCommand("start_prev_round", Dynamic_Wrap(self, "StartPreviousRoundCommand"), "keine Ahnung", 0)
     Convars:RegisterCommand("restart_round", Dynamic_Wrap(self, "RestartRoundCommand"), "keine Ahnung", 0)
     Convars:RegisterCommand("reset", Dynamic_Wrap(self, "RestartCommand"), "keine Ahnung", 0)
+    Convars:RegisterCommand("wiki", Dynamic_Wrap(self, "WikiCommand"), "no idea", 0)
   end
 
   CustomGameEventManager:RegisterListener("send_unit", Dynamic_Wrap(Game, "SendUnit"))
