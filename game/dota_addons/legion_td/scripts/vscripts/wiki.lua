@@ -8,6 +8,7 @@ function Game:WikiCommand()
 	local unitKV = LoadKeyValues("scripts/npc/npc_units_custom.txt")
 	local abilityKV = LoadKeyValues("scripts/npc/npc_abilities_custom.txt")
 	local engKV = LoadKeyValues("resource/addon_english.txt")
+	local heroKV = LoadKeyValues("scripts/npc/npc_heroes.custom.txt")
 
 	local builder_list = {"naturebuilder", "elementalbuilder", "humanbuilder"}
 	local builder_list_inv = table_invert(builder_list)
@@ -21,6 +22,17 @@ function Game:WikiCommand()
 	local relevant_stats_inv = table_invert(relevant_stats)
 
 	local relevant_astats = {"AbilityBehavior", "SpellImmunityType", "AbilityCastRange", "AbilityCooldown"}
+
+	for _, buildername in builder_list do
+		file:write(engKV["Tokens"][buildername] .. "\n")
+		basic_units = {}
+		for i = 1,6 do
+			local basic_unit = heroKV[buildername][]
+		end
+
+
+
+
 
 	for unitname, unittable in pairs(unitKV) do
 		local buildername = string.match(unitname, "tower_")
@@ -43,8 +55,6 @@ function Game:WikiCommand()
 	print ("write was okay")
 end
 
-
-
 function make_ability(abilityname)
 	local unitKV = LoadKeyValues("scripts/npc/npc_units_custom.txt")
 	local abilityKV = LoadKeyValues("scripts/npc/npc_abilities_custom.txt")
@@ -59,7 +69,7 @@ function make_ability(abilityname)
 
 	output = output .. "\n"
 
-	if not abilityKV[abilityname] then return output end
+	if not abilityKV[abilityname] then return output .. "(same as dota)\n" end
 
 	sAbilityBehavior = abilityKV[abilityname]["AbilityBehavior"] or "ABILITY_BEHAVIOR_NONE"
 	tAbilityBehavior = split(sAbilityBehavior, "|", nil)
