@@ -1,0 +1,29 @@
+"elementalbuilder_passive"
+{
+    "BaseClass" "ability_datadriven"
+    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "ScriptFile"		"abilities/elementalbuilder/passive/elementalbuilder_passive_lua.lua"
+
+
+    "AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"cooldown_reduction_percent"	"6 8 10 12"
+		}
+	}
+
+	"Modifiers"
+	{
+		"modifier_elementalbuilder_passive"
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"    "abilites/elementalbuilder/passive/elementalbuilder_passive.lua"
+            	"Function"      "elementalbuilder_passive_start"
+			}
+		}
+	}
+}
