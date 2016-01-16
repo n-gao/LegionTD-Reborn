@@ -566,7 +566,7 @@ function Game:OnConnectFull(keys)
       print ("Game:OnConnectFull(): Player object found for existing player.")
       player:SetPlayerEntitie(ply, keys.userid)
     else
-      print ("Game:OnConnectFull(): Player object not found for existing player; Creating.")
+      print ("Game:OnConnectFull(): Player object not found for player entIndex " .. entIndex .. " playerID " .. playerID .."; Creating.")
       local newPlayer = Player.new(ply, keys.userid)
       table.insert(self.players, newPlayer)
     end

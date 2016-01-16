@@ -26,10 +26,10 @@ function Game:WikiCommand()
 	for _, buildername in builder_list do
 		file:write(engKV["Tokens"][buildername] .. "\n")
 		basic_units = {}
-		for i = 1,6 do
-			local basic_unit = heroKV[buildername][]
-		end
-
+		-- for i = 1,6 do
+		-- 	local basic_unit = heroKV[buildername][]
+		-- end
+	end
 
 
 

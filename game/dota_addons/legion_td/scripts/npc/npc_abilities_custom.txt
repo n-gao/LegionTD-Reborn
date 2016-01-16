@@ -213,6 +213,42 @@
 	    }
 	  }
 	}
+	"elementalbuilder_passive"
+	{
+	    "BaseClass" "ability_datadriven"
+	    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	    "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cooldown_reduction_percent"	"5"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cooldown_increase_percent"		"-6"
+			}
+		}
+	
+		"Modifiers"
+		{
+			"modifier_elementalbuilder_passive"
+			{
+				"Passive"	"1"
+				"IsHidden"	"0"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"    "abilities/elementalbuilder/passive/elementalbuilder_passive.lua"
+		            	"Function"      "elementalbuilder_passive_start"
+					}
+				}
+			}
+		}
+	}
 	"elementalbuilder_precache"
 	{
 	    "BaseClass" "ability_datadriven"
