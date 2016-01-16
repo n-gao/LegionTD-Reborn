@@ -8,12 +8,27 @@
 		"01"
 		{
 			"var_type"						"FIELD_INTEGER"
-			"cooldown_reduction_percent"	"5"
+			"cooldown_reduction_percent"	"1"
 		}
 		"02"
 		{
-			"var_type"						"FIELD_INTEGER"
-			"cooldown_increase_percent"		"-6"
+			"var_type"						"FIELD_FLOAT"
+			"armor_increase"				".1"
+		}
+		"03"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"armor_decrease"				"-.1"
+		}
+		"04"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"basedamagepercent_increase"	"2"
+		}
+		"05"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"basedamagepercent_decrease"	"-1"
 		}
 	}
 

@@ -1,6 +1,14 @@
 function elementalbuilder_passive_start(keys)
+	LinkLuaModifier( "modifier_elementalbuilder_passive_earth_lua", "abilities/elementalbuilder/passive/modifier_elementalbuilder_passive_earth_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+	LinkLuaModifier( "modifier_elementalbuilder_passive_earth_negative_lua", "abilities/elementalbuilder/passive/modifier_elementalbuilder_passive_earth_negative_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+	LinkLuaModifier( "modifier_elementalbuilder_passive_fire_lua", "abilities/elementalbuilder/passive/modifier_elementalbuilder_passive_fire_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+	LinkLuaModifier( "modifier_elementalbuilder_passive_fire_negative_lua", "abilities/elementalbuilder/passive/modifier_elementalbuilder_passive_fire_negative_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+	LinkLuaModifier( "modifier_elementalbuilder_passive_thunder_lua", "abilities/elementalbuilder/passive/modifier_elementalbuilder_passive_thunder_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+	LinkLuaModifier( "modifier_elementalbuilder_passive_thunder_negative_lua", "abilities/elementalbuilder/passive/modifier_elementalbuilder_passive_thunder_negative_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
 	LinkLuaModifier( "modifier_elementalbuilder_passive_void_lua", "abilities/elementalbuilder/passive/modifier_elementalbuilder_passive_void_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
 	LinkLuaModifier( "modifier_elementalbuilder_passive_void_negative_lua", "abilities/elementalbuilder/passive/modifier_elementalbuilder_passive_void_negative_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+	LinkLuaModifier( "modifier_elementalbuilder_passive_water_lua", "abilities/elementalbuilder/passive/modifier_elementalbuilder_passive_water_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+	LinkLuaModifier( "modifier_elementalbuilder_passive_water_negative_lua", "abilities/elementalbuilder/passive/modifier_elementalbuilder_passive_water_negative_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
 	local ability = keys.ability
 	local caster = keys.caster
 	local elementNames = {"water", "thunder", "earth", "fire", "void"}
@@ -8,6 +16,7 @@ function elementalbuilder_passive_start(keys)
 	local elementSums = {}
 	local elementRatios = {}
 	local elementStacks = {}
+	local maxStacks = 20
 
 	print ("grepple")
 
@@ -20,12 +29,12 @@ function elementalbuilder_passive_start(keys)
 		print ("dur dur u have " .. #playerObj.units )
 
 		for _, element in pairs (elementNames) do
-			elementSums[element] = 10
+			elementSums[element] = 0
 			elementRatios[element] = 0
 			elementStacks[element] = 0
 		end
 
-		local valueSum = 50
+		local valueSum = 0
 
 		for _, unitRef in pairs(playerObj.units) do
 			unitName = unitRef.npcclass
@@ -38,13 +47,21 @@ function elementalbuilder_passive_start(keys)
 			end
 		end
 
-		local valueAvg = valueSum / 5
+		local elementCount = 0
+
+		for _, element in pairs(elementNames) do
+			if elementSums[element] > 0 then
+				elementCount = elementCount + 1
+			end
+		end
+
+		local valueAvg = valueSum / elementCount
 
 		print ("Total value: " .. valueSum .. ", average " .. valueAvg)
 
 		for element, total in pairs(elementSums) do
 			elementRatios[element] = total / valueAvg
-			if elementRatios[element] > 1 then
+			if elementRatios[element] >= 1 then
 				elementStacks[element] = -math.floor(10*(1-(elementRatios[element])))
 				print (element .. ": " .. total .. "(" .. elementRatios[element] .. " surplus), " .. elementStacks[element] .. " stacks")
 			else
@@ -56,18 +73,19 @@ function elementalbuilder_passive_start(keys)
 		for _, unitRef in pairs(playerObj.units) do
 			local unit = unitRef.npc
 			if unit then
-				--for _, element in pairs(elementNames) do
-				local element = "void" -- remove this line and uncomment above and end
-					unit:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_".. element .."_lua", {})
-					unit:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_".. element .."_negative_lua", {})
-					if elementStacks[element] < 0 then
-						unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, 0)
-						unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 1-elementStacks[element])
-					else
-						unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, elementStacks[element])
-						unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 0)
+				for _, element in pairs(elementNames) do
+					if elementSums[element] > 0 then
+						unit:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_".. element .."_lua", {})
+						unit:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_".. element .."_negative_lua", {})
+						if elementStacks[element] < 0 then
+							unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, 0)
+							unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, math.min(maxStacks,0-elementStacks[element])-1)
+						else
+							unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, math.min(maxStacks,elementStacks[element])-1)
+							unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 0)
+						end
 					end
-				--end
+				end
 			end
 		end
 
