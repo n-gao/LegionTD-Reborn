@@ -3,7 +3,7 @@ modifier_naturebuilder_passive_deathknell_lua = class({})
 --------------------------------------------------------------------------------
 
 function modifier_naturebuilder_passive_deathknell_lua:GetTexture()
-	return "earthshaker_fissure"
+	return "treant_leech_seed"
 end
 
 --------------------------------------------------------------------------------
@@ -11,8 +11,33 @@ end
 function modifier_naturebuilder_passive_deathknell_lua:OnCreated( kv )
 	self.damage_percent = self:GetAbility():GetSpecialValueFor( "damage_percent")
 	self.heal_percent = self:GetAbility():GetSpecialValueFor( "heal_percent")
+	
+	if self:GetStackCount() > 0 then
+		self.damage_percent = self.damage_percent * 2
+		self.heal_percent = self.heal_percent * 2
+	end
+
 	if IsServer() then
-		--
+		local doublePassive = false
+
+		-- gameEnt = GameRules:GetGameModeEntity()
+		gameEnt = GameRules.GameMode.game
+
+		playerObj = gameEnt:FindPlayerWithID(self:GetParent():GetPlayerID())
+
+		for _, unitRef in pairs(playerObj.units) do
+			unitName = unitRef.npcclass
+			if string.find(unitName, "treebeard") then
+				doublePassive = true
+				print ("Treebeard Found")
+			end
+		end
+
+		if doublePassive then
+			self:GetParent():SetModifierStackCount("modifier_naturebuilder_passive_deathknell_lua", self:GetParent(), 1)
+		else
+			self:GetParent():SetModifierStackCount("modifier_naturebuilder_passive_deathknell_lua", self:GetParent(), 0)
+		end
 	end
 end
 
@@ -21,8 +46,33 @@ end
 function modifier_naturebuilder_passive_deathknell_lua:OnRefresh( kv )
 	self.damage_percent = self:GetAbility():GetSpecialValueFor( "damage_percent")
 	self.heal_percent = self:GetAbility():GetSpecialValueFor( "heal_percent")
+	
+	if self:GetStackCount() > 0 then
+		self.damage_percent = self.damage_percent * 2
+		self.heal_percent = self.heal_percent * 2
+	end
+
 	if IsServer() then
-		--
+		local doublePassive = false
+
+		-- gameEnt = GameRules:GetGameModeEntity()
+		gameEnt = GameRules.GameMode.game
+
+		playerObj = gameEnt:FindPlayerWithID(self:GetParent():GetPlayerID())
+
+		for _, unitRef in pairs(playerObj.units) do
+			unitName = unitRef.npcclass
+			if string.find(unitName, "treebeard") then
+				doublePassive = true
+				print ("Treebeard Found")
+			end
+		end
+
+		if doublePassive then
+			self:GetParent():SetModifierStackCount("modifier_naturebuilder_passive_deathknell_lua", self:GetParent(), 1)
+		else
+			self:GetParent():SetModifierStackCount("modifier_naturebuilder_passive_deathknell_lua", self:GetParent(), 0)
+		end
 	end
 end
 
@@ -95,7 +145,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_naturebuilder_passive_deathknell_lua:OnTooltip( params )
-	return self.earth_armor_increase * self:GetStackCount()
+	return self.damage_percent
 end
 
 --------------------------------------------------------------------------------

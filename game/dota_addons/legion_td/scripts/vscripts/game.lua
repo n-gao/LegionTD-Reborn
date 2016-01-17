@@ -53,6 +53,7 @@ function Game.GetUnitNameByID(id)
   elseif id == 13 then return "tower_naturebuilder_agressive_boar"
   elseif id == 14 then return "tower_naturebuilder_big_centaur"
   elseif id == 15 then return "tower_naturebuilder_centaur_warrunner"
+  elseif id == 16 then return "tower_naturebuilder_treebeard"
 
   elseif id == 50 then return "tower_elementalbuilder_waterbender"
   elseif id == 51 then return "tower_elementalbuilder_thunderbender"

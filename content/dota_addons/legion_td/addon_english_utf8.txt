@@ -124,6 +124,7 @@
 		"tower_naturebuilder_shroom"                                                      "Shroom"
 		"tower_naturebuilder_spider"                                                      "Spider"
 		"tower_naturebuilder_treant"                                                      "Treant"
+		"tower_naturebuilder_treebeard"                                                   "Treebeard"
 		"bird_ranged"                                                                     "Bird Ranged"
 		"human_footman"                                                                   "Human Footman"
 		"unit_abaddon"                                                                    "Abaddon"
@@ -281,7 +282,8 @@
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_thunder_negative_lua"						"Thunder Deficiency"
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_thunder_negative_lua_Description"			"Incoming spell damage increased and outgoing spell damage decreased by %dMODIFIER_PROPERTY_TOOLTIP%%%"
 
-
+		"DOTA_Tooltip_modifier_naturebuilder_passive_deathknell_lua"								"Death Knell"
+		"DOTA_Tooltip_modifier_naturebuilder_passive_deathknell_lua_Description"					"Whenever one of your units dies, it heals %dMODIFIER_PROPERTY_TOOLTIP%%% of its HP to a nearby ally and deals %dMODIFIER_PROPERTY_TOOLTIP%%% of its HP in magic damage to a nearby target."  
 
 
 		// ******************** ITEM MODIFIERS ********************
@@ -670,6 +672,15 @@
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_armor_tooltip"                 "ARMOR:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_food_cost"                     "FOOD COST:"
 
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard"                            "Upgrade Treebeard"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_Description"                "Skills: Overgrowth, Synergy"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_atk_damage_tooltip"         "ATK DAMAGE:"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_atk_speed_tooltip"          "ATK RATE:"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_atk_range_tooltip"          "ATK RANGE:"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_health_tooltip"             "HEALTH:"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_armor_tooltip"              "ARMOR:"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_food_cost"                  "FOOD COST:"
+
 		"DOTA_Tooltip_ability_shroom_corrosive_skin"                                      "Shroom Corrosive Skin"
 		"DOTA_Tooltip_ability_shroom_corrosive_skin_Description"                          ""
 		"DOTA_Tooltip_ability_shroom_corrosive_skin_duration"                             "DURATION:"
@@ -683,6 +694,14 @@
 		"DOTA_Tooltip_ability_treant_vampiric_aura_Description"                           ""
 		"DOTA_Tooltip_ability_treant_vampiric_aura_vampiric_aura_radius"                  "VAMPIRIC AURA RADIUS:"
 		"DOTA_Tooltip_ability_treant_vampiric_aura_vampiric_aura"                         "VAMPIRIC AURA:"
+
+		"DOTA_Tooltip_ability_treebeard_overgrowth"                                       "Overgrowth"
+		"DOTA_Tooltip_ability_treebeard_overgrowth_Description"                           ""
+		"DOTA_Tooltip_ability_treebeard_overgrowth_duration"                              "DURATION:"
+		"DOTA_Tooltip_ability_treebeard_overgrowth_radius"                                "RADIUS:"
+
+		"DOTA_Tooltip_ability_treebeard_synergy"                                          "Synergy"
+		"DOTA_Tooltip_ability_treebeard_synergy_Description"                              "Doubles the passive ability of Nature Builder"
 
 		"DOTA_Tooltip_ability_insta_kill"                                                 "Insta Kill"
 		"DOTA_Tooltip_ability_insta_kill_Description"                                     ""

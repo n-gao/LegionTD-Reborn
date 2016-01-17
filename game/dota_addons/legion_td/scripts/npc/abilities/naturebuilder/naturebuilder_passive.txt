@@ -1,7 +1,7 @@
 "naturebuilder_passive"
 {
     "BaseClass" "ability_datadriven"
-    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 
     "AbilitySpecial"
 	{
@@ -24,7 +24,7 @@
 		"modifier_naturebuilder_passive"
 		{
 			"Passive"	"1"
-			"IsHidden"	"0"
+			"IsHidden"	"1"
 			"OnCreated"
 			{
 				"RunScript"

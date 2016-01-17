@@ -39,6 +39,8 @@
     	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"			// tower_naturebuilder_spider
     	"model"		"models/items/furion/treant/furion_treant_nelum_red/furion_treant_nelum_red.vmdl"	//tower_naturebuilder_treant
     	"soundfile" "soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"					// tower_naturebuilder_treant
+        "particle"  "particles/units/heroes/hero_treant/treant_foot_step.vpcf"                  // tower_naturebuilder_treebeard
+
 
 
     	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"				// centaur_hoof_stomp_datadriven

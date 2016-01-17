@@ -1,37 +1,36 @@
-"tower_naturebuilder_treant"
+"tower_naturebuilder_treebeard"
 {
 	// General
 	//----------------------------------------------------------------
 	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/items/furion/treant/furion_treant_nelum_red/furion_treant_nelum_red.vmdl"
+	"Model"                 "models/heroes/treant_protector/treant_protector.mdl"
 	"ModelScale"            "0.5"
-	"SoundSet"					"Furion_Treant"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
+	"SoundSet"				"Hero_Treant"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/naturebuilder/ai_treebeard.lua"
 
-	"AbilityLayout"   "6"
-	"Ability1"							"naturebuilder_upgrade_shroom"
-	"Ability2"							"naturebuilder_upgrade_flower_treant"
-	"Ability3"							"naturebuilder_upgrade_treebeard"
-	"Ability4"							"sell"
-	"Ability5"							"treant_vampiric_aura"
+	"Ability4"				"sell"
+	"Ability1"				"treebeard_overgrowth"
+	"Ability2"				"treebeard_synergy"
+	"Ability3"				"ability_empty_3"
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "4"
-	"MagicalResistance"     "30"
+	"ArmorPhysical"         "7"
+	"MagicalResistance"     "40"
 
 	// Attack
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "43.75"
-	"AttackDamageMax"       "62.5"
-	"AttackRate"            "0.5"
-	"AttackAnimationPoint"  "0.5"
+	"AttackDamageMin"       "300"
+	"AttackDamageMax"       "325"
+	"AttackRate"            "1"
+	"AttackAnimationPoint"  "0.6"
 	"AttackAcquisitionRange" "500"
-	"AttackRange"           "90"
+	"AttackRange"           "100"
 	"ProjectileModel"       ""
 	"ProjectileSpeed"       "0"
 
@@ -53,7 +52,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "450"
+	"StatusHealth"          "1100"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
@@ -70,21 +69,16 @@
 	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
-	// Creature Data
-	//----------------------------------------------------------------
 	"Creature"
-	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
-		"States"
-		{
-			"Invade"
-			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
-			}
-		}
-	}
+    {
+        "AttachWearables" // Default npc_dota_hero_treant
+        {
+            "1" { "ItemDef" "230" } // Treant Protector's Feet
+            "2" { "ItemDef" "229" } // Treant Protector's Hands
+            "3" { "ItemDef" "227" } // Treant Protector's Head
+            "4" { "ItemDef" "228" } // Treant Protector's Foliage
+        }
+    }
+
+
 }
