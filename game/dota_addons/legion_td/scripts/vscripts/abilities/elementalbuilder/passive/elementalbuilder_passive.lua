@@ -23,15 +23,12 @@ function elementalbuilder_passive_start(keys)
 	local elementGods = {}
 	local maxStacks = 10
 
-	print ("grepple")
-
-
 	Timers:CreateTimer(function()
 
 		id = caster:GetPlayerID()
 		playerObj = Game:FindPlayerWithID(id)
 
-		print ("dur dur u have " .. #playerObj.units )
+		print ("u have " .. #playerObj.units )
 
 		for _, element in pairs (elementNames) do
 			elementSums[element] = 0
@@ -148,9 +145,9 @@ function elementalbuilder_passive_start(keys)
 		end
 
 		for _, element in pairs(elementNames) do
+			caster:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_".. element .."_lua", {})
+			caster:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_".. element .."_negative_lua", {})
 			if elementSums[element] > 0 then
-				caster:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_".. element .."_lua", {})
-				caster:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_".. element .."_negative_lua", {})
 				if elementStacks[element] < 0 then
 					caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, 0)
 					caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, math.min(maxStacks,0-elementStacks[element]-1))
@@ -158,13 +155,12 @@ function elementalbuilder_passive_start(keys)
 					caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, math.min(maxStacks,elementStacks[element]-1))
 					caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 0)
 				end
+			else
+				caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, 0))
+				caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 0)
 			end
 		end
-
-
-
 		
-
 		return 1 -- slowish
 	end)	
 end

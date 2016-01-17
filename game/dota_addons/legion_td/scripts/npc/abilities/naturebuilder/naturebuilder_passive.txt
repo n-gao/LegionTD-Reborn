@@ -1,0 +1,40 @@
+"naturebuilder_passive"
+{
+    "BaseClass" "ability_datadriven"
+    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    "AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"damage_percent"		"25"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"heal_percent"			"25"
+		}
+	}
+
+
+
+	"Modifiers"
+	{
+		"modifier_naturebuilder_passive"
+		{
+			"Passive"	"1"
+			"IsHidden"	"0"
+			"OnCreated"
+			{
+				"RunScript"
+				{
+					"ScriptFile"    "abilities/naturebuilder/passive/naturebuilder_passive.lua"
+	            	"Function"      "naturebuilder_passive_start"
+				}
+			}
+		}
+	}
+}
+
+

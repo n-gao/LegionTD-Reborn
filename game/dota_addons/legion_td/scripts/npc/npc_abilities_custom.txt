@@ -7820,6 +7820,46 @@
 	    }
 	  }
 	}
+	"naturebuilder_passive"
+	{
+	    "BaseClass" "ability_datadriven"
+	    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	
+	    "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_percent"		"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"heal_percent"			"25"
+			}
+		}
+	
+	
+	
+		"Modifiers"
+		{
+			"modifier_naturebuilder_passive"
+			{
+				"Passive"	"1"
+				"IsHidden"	"0"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"    "abilities/naturebuilder/passive/naturebuilder_passive.lua"
+		            	"Function"      "naturebuilder_passive_start"
+					}
+				}
+			}
+		}
+	}
+	
+	
 	"naturebuilder_precache"
 	{
 	    "BaseClass" "ability_datadriven"
@@ -7827,7 +7867,8 @@
 	
 	    "precache"
 	    {
-	    	"model" 	"models/items/beastmaster/boar/beast_deming/beast_deming.vmdl"				// tower_naturebuilder_agressive_boar
+	    	"particle"  "particles/units/heroes/hero_pugna/pugna_ward_attack.vpcf"                  // nature builder passive
+	        "model" 	"models/items/beastmaster/boar/beast_deming/beast_deming.vmdl"				// tower_naturebuilder_agressive_boar
 	    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"			// tower_naturebuilder_agressive_boar
 	    	"model"     "models/items/lone_druid/viciouskraitpanda/viciouskrait_panda.vmdl"			// tower_naturebuilder_bear
 	    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"			// tower_naturebuilder_bear
