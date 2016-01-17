@@ -10,6 +10,7 @@
 	"Ability4"				"humanbuilder_spawn_gyrocopter_mk1"
 	"Ability5"				"humanbuilder_spawn_lieutnant"
 	"Ability8"				"humanbuilder_precache"
+	"Ability9"				"humanbuilder_passive"
 
 	"AttributeBaseStrength"	"0"
 	"AttributeBaseAgility"	"0"

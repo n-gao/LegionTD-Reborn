@@ -1,0 +1,35 @@
+"humanbuilder_passive"
+{
+    "BaseClass" "ability_datadriven"
+    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+    "AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"food_per_turn"			"1.2"
+		}
+	}
+
+
+
+	"Modifiers"
+	{
+		"modifier_humanbuilder_passive"
+		{
+			"Passive"	"1"
+			"IsHidden"	"1"
+			"OnCreated"
+			{
+				"RunScript"
+				{
+					"ScriptFile"    "abilities/humanbuilder/passive/humanbuilder_passive.lua"
+	            	"Function"      "humanbuilder_passive_start"
+				}
+			}
+		}
+	}
+}
+
+

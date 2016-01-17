@@ -285,6 +285,9 @@
 		"DOTA_Tooltip_modifier_naturebuilder_passive_deathknell_lua"								"Death Knell"
 		"DOTA_Tooltip_modifier_naturebuilder_passive_deathknell_lua_Description"					"Whenever one of your units dies, it heals %dMODIFIER_PROPERTY_TOOLTIP%%% of its HP to a nearby ally and deals %dMODIFIER_PROPERTY_TOOLTIP%%% of its HP in magic damage to a nearby target."  
 
+		"DOTA_Tooltip_modifier_humanbuilder_passive_lua"											"Additional Food"
+		"DOTA_Tooltip_modifier_humanbuilder_passive_lua_Description"					"Gain 1.2 additional food per round."  
+
 
 		// ******************** ITEM MODIFIERS ********************
 		"DOTA_Tooltip_modifier_item_shield"                                               "Item Shield"
