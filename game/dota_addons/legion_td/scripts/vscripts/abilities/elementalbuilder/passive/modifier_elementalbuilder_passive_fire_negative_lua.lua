@@ -48,7 +48,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_elementalbuilder_passive_fire_negative_lua:OnTooltip( params )
-	return self.fire_damage_increase * self:GetStackCount() * -1
+	return self.fire_damage_decrease * self:GetStackCount() * -1
 end
 
 --------------------------------------------------------------------------------

@@ -34,7 +34,7 @@ end
 
 function modifier_elementalbuilder_passive_earth_negative_lua:DeclareFunctions()
 	local funcs = {
-		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS,
+		MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS, MODIFIER_PROPERTY_TOOLTIP
 	}
 	return funcs
 end
@@ -43,6 +43,12 @@ end
 
 function modifier_elementalbuilder_passive_earth_negative_lua:GetModifierPhysicalArmorBonus( params )
 	return self.earth_armor_decrease * self:GetStackCount()
+end
+
+--------------------------------------------------------------------------------
+
+function modifier_elementalbuilder_passive_earth_negative_lua:OnTooltip( params )
+	return self.earth_armor_decrease * self:GetStackCount() * -1
 end
 
 --------------------------------------------------------------------------------

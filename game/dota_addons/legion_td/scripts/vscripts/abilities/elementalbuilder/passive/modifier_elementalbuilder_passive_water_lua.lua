@@ -15,7 +15,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_elementalbuilder_passive_water_lua:OnCreated( kv )
-	self.void_cooldown_reduction = self:GetAbility():GetSpecialValueFor( "cooldown_reduction_percent" )
+	self.water_attackspeed_increase = self:GetAbility():GetSpecialValueFor( "attackspeed_increase" )
 	if IsServer() then
 		--
 	end
@@ -24,7 +24,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_elementalbuilder_passive_water_lua:OnRefresh( kv )
-	self.void_cooldown_reduction = self:GetAbility():GetSpecialValueFor( "cooldown_reduction_percent" )
+	self.water_attackspeed_increase = self:GetAbility():GetSpecialValueFor( "attackspeed_increase" )
 	if IsServer() then
 		--
 	end
@@ -34,15 +34,21 @@ end
 
 function modifier_elementalbuilder_passive_water_lua:DeclareFunctions()
 	local funcs = {
-		MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE,
+		MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT, MODIFIER_PROPERTY_TOOLTIP
 	}
 	return funcs
 end
 
 --------------------------------------------------------------------------------
 
-function modifier_elementalbuilder_passive_water_lua:GetModifierPercentageCooldown( params )
-	return self.void_cooldown_reduction * self:GetStackCount()
+function modifier_elementalbuilder_passive_water_lua:GetModifierAttackSpeedBonus_Constant( params )
+	return self.water_attackspeed_increase * self:GetStackCount()
+end
+
+--------------------------------------------------------------------------------
+
+function modifier_elementalbuilder_passive_water_lua:OnTooltip( params )
+	return self.water_attackspeed_increase * self:GetStackCount()
 end
 
 --------------------------------------------------------------------------------

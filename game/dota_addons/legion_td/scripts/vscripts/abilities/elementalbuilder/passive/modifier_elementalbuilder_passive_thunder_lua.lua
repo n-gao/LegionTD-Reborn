@@ -15,7 +15,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_elementalbuilder_passive_thunder_lua:OnCreated( kv )
-	self.void_cooldown_reduction = self:GetAbility():GetSpecialValueFor( "cooldown_reduction_percent" )
+	self.thunder_magic_increase = self:GetAbility():GetSpecialValueFor( "magic_increase_percent" )
 	if IsServer() then
 		--
 	end
@@ -24,7 +24,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_elementalbuilder_passive_thunder_lua:OnRefresh( kv )
-	self.void_cooldown_reduction = self:GetAbility():GetSpecialValueFor( "cooldown_reduction_percent" )
+	self.thunder_magic_increase = self:GetAbility():GetSpecialValueFor( "magic_increase_percent" )
 	if IsServer() then
 		--
 	end
@@ -34,15 +34,27 @@ end
 
 function modifier_elementalbuilder_passive_thunder_lua:DeclareFunctions()
 	local funcs = {
-		MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE,
+		MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE, MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS, MODIFIER_PROPERTY_TOOLTIP
 	}
 	return funcs
 end
 
 --------------------------------------------------------------------------------
 
-function modifier_elementalbuilder_passive_thunder_lua:GetModifierPercentageCooldown( params )
-	return self.void_cooldown_reduction * self:GetStackCount()
+function modifier_elementalbuilder_passive_thunder_lua:GetModifierMagicalResistanceBonus( params )
+	return self.thunder_magic_increase * self:GetStackCount()
+end
+
+--------------------------------------------------------------------------------
+
+function modifier_elementalbuilder_passive_thunder_lua:GetModifierMagicDamageOutgoing_Percentage( params )
+	return self.thunder_magic_increase * self:GetStackCount()
+end
+
+--------------------------------------------------------------------------------
+
+function modifier_elementalbuilder_passive_thunder_lua:OnTooltip( params )
+	return self.thunder_magic_increase * self:GetStackCount()
 end
 
 --------------------------------------------------------------------------------

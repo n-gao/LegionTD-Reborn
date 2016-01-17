@@ -15,7 +15,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_elementalbuilder_passive_void_negative_lua:OnCreated( kv )
-	self.void_cooldown_increase = 0
+	self.void_damage_increase = self:GetAbility():GetSpecialValueFor("incomingdamage_increase_percent")
 	if IsServer() then
 		--
 	end
@@ -24,7 +24,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_elementalbuilder_passive_void_negative_lua:OnRefresh( kv )
-	self.void_cooldown_increase = 0
+	self.void_damage_increase = self:GetAbility():GetSpecialValueFor("incomingdamage_increase_percent")
 	if IsServer() then
 		--
 	end
@@ -34,15 +34,21 @@ end
 
 function modifier_elementalbuilder_passive_void_negative_lua:DeclareFunctions()
 	local funcs = {
-		MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE,
+		MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE, MODIFIER_PROPERTY_TOOLTIP
 	}
 	return funcs
 end
 
 --------------------------------------------------------------------------------
 
-function modifier_elementalbuilder_passive_void_negative_lua:GetModifierPercentageCooldown( params )
-	return self.void_cooldown_increase * self:GetStackCount()
+function modifier_elementalbuilder_passive_void_negative_lua:GetModifierIncomingDamage_Percentage( params )
+	return self.void_damage_increase * self:GetStackCount()
+end
+
+--------------------------------------------------------------------------------
+
+function modifier_elementalbuilder_passive_void_negative_lua:OnTooltip( params )
+	return self.void_damage_increase * self:GetStackCount()
 end
 
 --------------------------------------------------------------------------------

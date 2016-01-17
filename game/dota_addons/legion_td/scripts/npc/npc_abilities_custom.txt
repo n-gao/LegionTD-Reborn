@@ -228,12 +228,12 @@
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"armor_increase"				".1"
+				"armor_increase"				".2"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"armor_decrease"				"-.1"
+				"armor_decrease"				"-.15"
 			}
 			"04"
 			{
@@ -243,9 +243,41 @@
 			"05"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"basedamagepercent_decrease"	"-1"
+				"basedamagepercent_decrease"	"-2"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"magic_increase_percent"	"2"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"magic_decrease_percent"	"-2"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"attackspeed_increase"	"2"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"attackspeed_decrease"	"-1"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"incomingdamage_decrease_percent"	"-.5"
+			}
+			"11"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"incomingdamage_increase_percent"	".5"
 			}
 		}
+	
+	
 	
 		"Modifiers"
 		{
@@ -264,6 +296,8 @@
 			}
 		}
 	}
+	
+	
 	"elementalbuilder_precache"
 	{
 	    "BaseClass" "ability_datadriven"

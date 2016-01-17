@@ -256,6 +256,33 @@
 		"DOTA_Tooltip_modifier_tactical_aura"                                             "Tactical Aura"
 		"DOTA_Tooltip_modifier_tactical_aura_Description"                                 ""
 
+		"DOTA_Tooltip_modifier_elementalbuilder_passive"  								"Elemental Alignment"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_description"  					"Gain bonuses and penalties depending on the elemental gold balance of your legion. Gain a big bonus when all 5 elements are balanced."
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_elemental_harmony_lua"						"Elemental Harmony"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_elemental_harmony_lua_Description"			"Your totality eclipses the cosm!"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_void_lua"									"Void Surplus"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_void_lua_Description"						"Incoming damage reduced by %dMODIFIER_PROPERTY_TOOLTIP%%%"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_void_negative_lua"							"Void Deficiency"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_void_negative_lua_Description"				"Incoming damage increased by %dMODIFIER_PROPERTY_TOOLTIP%%%"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_water_lua"									"Water Surplus"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_water_lua_Description"						"Attack speed increased by %dMODIFIER_PROPERTY_TOOLTIP%"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_water_negative_lua"							"Water Deficiency"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_water_negative_lua_Description"				"Attack speed decreased by %dMODIFIER_PROPERTY_TOOLTIP%"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_fire_lua"									"Fire Surplus"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_fire_lua_Description"						"Gaining a %dMODIFIER_PROPERTY_TOOLTIP%%% bonus to attack damage"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_fire_negative_lua"							"Fire Deficiency"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_fire_negative_lua_Description"				"Suffering a %dMODIFIER_PROPERTY_TOOLTIP%%% penalty to attack damage"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_earth_lua"									"Earth Surplus"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_earth_lua_Description"						"Gaining %dMODIFIER_PROPERTY_TOOLTIP% armor"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_earth_negative_lua"							"Earth Deficiency"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_earth_negative_lua_Description"				"Losing %dMODIFIER_PROPERTY_TOOLTIP% armor"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_thunder_lua"								"Thunder Surplus"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_thunder_lua_Description"					"Incoming spell damage reduced and outgoing spell damage increased by %dMODIFIER_PROPERTY_TOOLTIP%%%"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_thunder_negative_lua"						"Thunder Deficiency"
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_thunder_negative_lua_Description"			"Incoming spell damage increased and outgoing spell damage decreased by %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+
+
 
 		// ******************** ITEM MODIFIERS ********************
 		"DOTA_Tooltip_modifier_item_shield"                                               "Item Shield"
