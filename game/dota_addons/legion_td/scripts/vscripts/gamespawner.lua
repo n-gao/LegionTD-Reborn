@@ -194,6 +194,8 @@ function GameSpawner:SendIncomingUnits(team)
 
   print ("Moving send units-")
 
+  local sendsPerMiniwave = 15
+
   for theLane, units in pairs(distributedUnits) do
 
     local lane = spawners[theLane]
@@ -210,24 +212,30 @@ function GameSpawner:SendIncomingUnits(team)
         offset = offset + (((round(unitCount, columns)+columns)-unitCount)/2)*spacing
       end
       local hpos = offset+(((i-1)%columns)*spacing)      
-      local vpos = (math.floor((i-1)/columns))*spacing*polar
-    --print ("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
+      local vpos = (math.floor((((i-1)%sendsPerMiniwave))/columns))*spacing*polar
+      print ("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
       table.insert(positions, Vector(hpos, vpos, 0))
     end
 
 
-    Timers:CreateTimer(2, function()
+    
       
-      local i = 1
+    local k = 1
+    local i = 1
 
-      for _, unit in pairs(units) do
+    for _, unit in pairs(units) do
 
-        FindClearSpaceForUnit(unit, rank1 + positions[i], true)
+      Timers:CreateTimer((math.floor((i-1)/sendsPerMiniwave)*2)+2, function()
+
+        print ("i = " .. i)
+        print ("k = " .. k)
+
+        FindClearSpaceForUnit(unit, rank1 + positions[k], true)
         
         unit.waypoints = {}
         for j = 1, 4 do
-          DebugDrawCircle(lane.waypoints[j] + positions[i], Vector(0,255,0), 1, 50, false, 50)
-          table.insert(unit.waypoints, lane.waypoints[j] + positions[i])
+          DebugDrawCircle(lane.waypoints[j] + positions[k], Vector(0,255,0), 1, 50, false, 50)
+          table.insert(unit.waypoints, lane.waypoints[j] + positions[k])
         end
 
         unit.wayStep = 2
@@ -246,10 +254,13 @@ function GameSpawner:SendIncomingUnits(team)
         unit.lane = spawners[theLane]
         self.ApplyAI(unit)
         self.gameRound:AddUnitToBeKilled(unit)
+        k = k + 1
+      end)
 
-        i = i + 1
-      end
-    end)
+      i = i + 1
+
+    end
+  
   end
 end
 
