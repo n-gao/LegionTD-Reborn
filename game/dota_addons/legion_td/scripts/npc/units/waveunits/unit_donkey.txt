@@ -18,6 +18,9 @@
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "90"
 
+	"Legion_AttackType"		"normal"
+	"Legion_DefendType"		"light"
+
 	"BountyGoldMin"         "3.0"
 	"BountyGoldMax"         "3.0"
 

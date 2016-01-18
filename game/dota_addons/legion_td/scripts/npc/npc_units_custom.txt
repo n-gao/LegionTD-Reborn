@@ -2923,6 +2923,8 @@
 		"AttackRange"           "500"
 		"ProjectileModel"       "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
 		"ProjectileSpeed"       "900"
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4305,6 +4307,8 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4696,6 +4700,8 @@
 		"AttackRange"           "100"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -9275,6 +9281,9 @@
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "90"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"light"
 	
 		"BountyGoldMin"         "3.0"
 		"BountyGoldMax"         "3.0"

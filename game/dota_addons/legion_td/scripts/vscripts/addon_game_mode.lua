@@ -13,6 +13,7 @@ require ('gamespawner')
 require ('player')
 require ('unit')
 require ('popups')
+require ('damage')
 require ('wiki')
 
 RequiredUnits = {
