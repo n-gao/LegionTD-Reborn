@@ -33,6 +33,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
 	"ProjectileSpeed"       "1000"
 
+	"Legion_AttackType"		"pierce"
+	"Legion_DefendType"		"medium"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "0"

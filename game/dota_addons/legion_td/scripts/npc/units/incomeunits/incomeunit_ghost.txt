@@ -30,6 +30,9 @@
 	"ProjectileModel"       "particles/neutral_fx/ghost_base_attack.vpcf"
 	"ProjectileSpeed"       "400"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "4"

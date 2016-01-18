@@ -24,6 +24,9 @@
 	"ProjectileModel"       "particles/items_fx/desolator_projectile.vpcf"
 	"ProjectileSpeed"       "2000"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+
 	"BountyGoldMin"         "5.0"
 	"BountyGoldMax"         "5.0"
 

@@ -26,6 +26,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
 	"ProjectileSpeed"       "700"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+
 	"BountyGoldMin"         "6.0"
 	"BountyGoldMax"         "6.0"
 

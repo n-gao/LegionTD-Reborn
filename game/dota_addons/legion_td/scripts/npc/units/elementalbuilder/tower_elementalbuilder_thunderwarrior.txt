@@ -33,6 +33,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
 	"ProjectileSpeed"       "900"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"medium"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "0"

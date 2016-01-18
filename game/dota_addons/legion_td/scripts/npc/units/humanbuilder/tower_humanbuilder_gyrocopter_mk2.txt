@@ -34,6 +34,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
 	"ProjectileSpeed"       "2500"
 
+	"Legion_AttackType"		"pierce"
+	"Legion_DefendType"		"medium"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "0"

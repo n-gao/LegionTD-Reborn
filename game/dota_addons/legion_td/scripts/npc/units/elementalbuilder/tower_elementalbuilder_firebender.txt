@@ -33,6 +33,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_lina/lina_base_attack.vpcf"
 	"ProjectileSpeed"       "900"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "0"

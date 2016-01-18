@@ -33,6 +33,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_ancient_apparition/ancient_apparition_base_attack.vpcf" //hierbin ich
 	"ProjectileSpeed"       "700"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "0"

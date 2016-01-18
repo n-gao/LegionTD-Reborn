@@ -24,6 +24,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_pugna/pugna_base_attack.vpcf"
 	"ProjectileSpeed"       "250"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+
 	"BountyGoldMin"         "5.0"
 	"BountyGoldMax"         "5.0"
 

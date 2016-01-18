@@ -897,6 +897,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -991,6 +994,9 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -1094,6 +1100,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -1196,6 +1205,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -1294,6 +1306,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_lina/lina_base_attack.vpcf"
 		"ProjectileSpeed"       "900"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -1390,6 +1405,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"medium"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -1482,6 +1500,9 @@
 		"AttackRange"           "600"
 		"ProjectileModel"       "particles/units/heroes/hero_phoenix/phoenix_base_attack.vpcf"
 		"ProjectileSpeed"       "590"
+	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -1582,6 +1603,9 @@
 		"AttackRange"           "100"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -1689,6 +1713,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf"
 		"ProjectileSpeed"       "1000"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -1786,6 +1813,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
 		"ProjectileSpeed"       "900"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -1881,6 +1911,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_zuus/zuus_base_attack.vpcf"
 		"ProjectileSpeed"       "900"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -1973,6 +2006,9 @@
 		"AttackRange"           "200"
 		"ProjectileModel"       "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
 		"ProjectileSpeed"       "900"
+	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"medium"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2074,6 +2110,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"medium"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -2165,6 +2204,9 @@
 		"AttackRange"           "375"
 		"ProjectileModel"       "particles/units/heroes/hero_enigma/enigma_base_attack.vpcf"
 		"ProjectileSpeed"       "650"
+	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2258,6 +2300,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_enigma/enigma_base_attack.vpcf"
 		"ProjectileSpeed"       "500"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -2350,6 +2395,9 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2446,6 +2494,9 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2544,6 +2595,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_morphling/morphling_base_attack.vpcf"
 		"ProjectileSpeed"       "850"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -2636,6 +2690,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_ancient_apparition/ancient_apparition_base_attack.vpcf" //hierbin ich
 		"ProjectileSpeed"       "700"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -2727,6 +2784,9 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2826,6 +2886,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"       "400"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -2923,6 +2986,7 @@
 		"AttackRange"           "500"
 		"ProjectileModel"       "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
 		"ProjectileSpeed"       "900"
+		
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
 	
@@ -3027,6 +3091,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"       "400"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -3125,6 +3192,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"heavy"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -3220,6 +3290,9 @@
 		"AttackRange"           "100"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3318,6 +3391,11 @@
 		"AttackRange"           "400"
 		"ProjectileModel"       "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
 		"ProjectileSpeed"       "3000"
+	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
+	
+	
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3422,6 +3500,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -3519,6 +3600,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
 		"ProjectileSpeed"       "3000"
 	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -3615,6 +3699,9 @@
 		"AttackRange"           "400"
 		"ProjectileModel"       "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
 		"ProjectileSpeed"       "2000"
+	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3715,6 +3802,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
 		"ProjectileSpeed"       "2500"
 	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -3812,6 +3902,9 @@
 		"AttackRange"           "550"
 		"ProjectileModel"       "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
 		"ProjectileSpeed"       "950"
+	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3912,6 +4005,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"       "400"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -4008,6 +4104,10 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4113,6 +4213,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"       "400"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -4211,6 +4314,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
 		"ProjectileSpeed"       "1000"
 	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -4307,6 +4413,7 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+		
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
 	
@@ -4408,6 +4515,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"       "400"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -4507,6 +4617,10 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -4604,6 +4718,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
 		"ProjectileSpeed"       "1050"
 	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -4700,6 +4817,7 @@
 		"AttackRange"           "100"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+		
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
 	
@@ -4801,6 +4919,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"       "420"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -4897,6 +5018,9 @@
 		"AttackRange"           "100"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4998,6 +5122,10 @@
 		"AttackRange"           "600"
 		"ProjectileModel"       "particles/units/heroes/hero_luna/luna_base_attack.vpcf"
 		"ProjectileSpeed"       "800"
+		
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
+	
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -5093,6 +5221,9 @@
 		"AttackRange"           "125"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -5522,6 +5653,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "27"
@@ -5608,6 +5742,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "22"
@@ -5693,6 +5830,9 @@
 		"AttackRange"           "300"
 		"ProjectileModel"       "particles/neutral_fx/ghost_base_attack.vpcf"
 		"ProjectileSpeed"       "400"
+	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -5866,6 +6006,9 @@
 		"ProjectileModel"       "particles/econ/items/razor/razor_punctured_crest/razor_static_link_beam_blade.vpcf"
 		"ProjectileSpeed"       "500"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "3"
@@ -5960,6 +6103,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_chen/chen_base_attack.vpcf"
 		"ProjectileSpeed"       "650"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "1"
@@ -6045,6 +6191,9 @@
 		"AttackRange"           "125"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6217,6 +6366,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf"
 		"ProjectileSpeed"       "1500"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "22"
@@ -6302,6 +6454,9 @@
 		"AttackRange"           "125"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7252,6 +7407,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 		"ProjectileSpeed"       "775"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"medium"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -7339,6 +7497,9 @@
 		"AttackRange"           "125"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7443,6 +7604,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_weaver/weaver_base_attack.vpcf"
 		"ProjectileSpeed"       "900"
 	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -7538,6 +7702,9 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7635,6 +7802,10 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7739,6 +7910,10 @@
 		"ProjectileModel"       "particles/units/heroes/hero_weaver/weaver_base_attack.vpcf"
 		"ProjectileSpeed"       "800"
 	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
+	
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -7835,6 +8010,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -7922,6 +8100,9 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8020,6 +8201,9 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8123,6 +8307,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
 		"ProjectileSpeed"       "750"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -8211,6 +8398,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 		"ProjectileSpeed"       "750"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -8298,6 +8488,9 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8394,6 +8587,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"heavy"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -8487,6 +8683,10 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -8577,6 +8777,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "0"
@@ -8665,6 +8868,9 @@
 		"AttackRange"           "100"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8900,6 +9106,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 		"BountyGoldMin"         "8.0"
 		"BountyGoldMax"         "8.0"
 	
@@ -8981,6 +9190,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"light"
+	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
 	
@@ -9057,6 +9269,9 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -9208,6 +9423,9 @@
 		"AttackRange"           "400"
 		"ProjectileModel"       "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
 		"ProjectileSpeed"       "600"
+	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
 	
 		"BountyGoldMin"         "25.0"
 		"BountyGoldMax"         "25.0"
@@ -9446,6 +9664,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"medium"
+	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
 	
@@ -9519,6 +9740,9 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -9595,6 +9819,9 @@
 		"AttackRange"           "250"
 		"ProjectileModel"       "particles/units/heroes/hero_enchantress/enchantress_impetus.vpcf"
 		"ProjectileSpeed"       "600"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"light"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -9750,6 +9977,9 @@
 		"ProjectileModel"       "particles/items_fx/desolator_projectile.vpcf"
 		"ProjectileSpeed"       "2000"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
 	
@@ -9825,6 +10055,9 @@
 		"AttackRange"           "300"
 		"ProjectileModel"       "particles/units/heroes/hero_huskar/huskar_base_attack.vpcf"
 		"ProjectileSpeed"       "600"
+	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"light"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -9909,6 +10142,9 @@
 		"AttackRange"           "400"
 		"ProjectileModel"       "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
 		"ProjectileSpeed"       "650"
+	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"medium"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -10063,6 +10299,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"medium"
+	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
 	
@@ -10143,6 +10382,8 @@
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "90"
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -10209,6 +10450,9 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"medium"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -10349,6 +10593,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"medium"
+	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
 	
@@ -10440,6 +10687,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"light"
+	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
 	
@@ -10517,6 +10767,9 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"heavy"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -10597,6 +10850,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
+	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
 	
@@ -10670,6 +10926,8 @@
 		"AttackRange"           "90"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"heavy"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -10743,6 +11001,9 @@
 		"AttackRange"           "400"
 		"ProjectileModel"       "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
 		"ProjectileSpeed"       "600"
+	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -10829,6 +11090,9 @@
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "90"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 		"BountyGoldMin"         "4.0"
 		"BountyGoldMax"         "4.0"
 	
@@ -10906,6 +11170,9 @@
 		"AttackRange"           "0"
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"medium"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -10991,6 +11258,9 @@
 		"ProjectileModel"       "particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
 		"ProjectileSpeed"       "700"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
 	
@@ -11073,6 +11343,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
 	
@@ -11152,6 +11425,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
 	
@@ -11227,6 +11503,9 @@
 		"AttackAcquisitionRange" "500"
 		"AttackRange"           "90"
 	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
+	
 		"BountyGoldMin"         "4.0"
 		"BountyGoldMax"         "4.0"
 	
@@ -11291,6 +11570,9 @@
 		"AttackRange"           "250"
 		"ProjectileModel"       "particles/units/heroes/hero_pugna/pugna_base_attack.vpcf"
 		"ProjectileSpeed"       "250"
+	
+		"Legion_AttackType"		"arcane"
+		"Legion_DefendType"		"light"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
