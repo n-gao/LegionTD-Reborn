@@ -233,7 +233,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"armor_decrease"				"-.15"
+				"armor_decrease"				"-.1"
 			}
 			"04"
 			{
@@ -243,7 +243,7 @@
 			"05"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"basedamagepercent_decrease"	"-2"
+				"basedamagepercent_decrease"	"-1"
 			}
 			"06"
 			{
@@ -253,7 +253,7 @@
 			"07"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"magic_decrease_percent"	"-2"
+				"magic_decrease_percent"	"-1"
 			}
 			"08"
 			{
@@ -268,7 +268,7 @@
 			"10"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"incomingdamage_decrease_percent"	"-.5"
+				"incomingdamage_decrease_percent"	"-1"
 			}
 			"11"
 			{
@@ -284,7 +284,8 @@
 			"modifier_elementalbuilder_passive"
 			{
 				"Passive"	"1"
-				"IsHidden"	"1"
+				"IsHidden"	"0"
+				"TextureName" "invoker_invoke"
 				"OnCreated"
 				{
 					"RunScript"

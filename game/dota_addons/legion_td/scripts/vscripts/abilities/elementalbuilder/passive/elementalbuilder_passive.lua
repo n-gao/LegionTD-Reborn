@@ -156,7 +156,7 @@ function elementalbuilder_passive_start(keys)
 					caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 0)
 				end
 			else
-				caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, 0))
+				caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, 0)
 				caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 0)
 			end
 		end

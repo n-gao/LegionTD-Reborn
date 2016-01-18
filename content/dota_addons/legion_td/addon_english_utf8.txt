@@ -258,7 +258,7 @@
 		"DOTA_Tooltip_modifier_tactical_aura_Description"                                 ""
 
 		"DOTA_Tooltip_modifier_elementalbuilder_passive"  								"Elemental Alignment"
-		"DOTA_Tooltip_modifier_elementalbuilder_passive_description"  					"Gain bonuses and penalties depending on the elemental gold balance of your legion. Gain a big bonus when all 5 elements are balanced."
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_description"  					"Gain bonuses and penalties depending on the elemental gold balance of your legion. Gain a big bonus when all 5 elements are balanced. Elemental Gods will ensure their element is always balanced."
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_elemental_harmony_lua"						"Elemental Harmony"
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_elemental_harmony_lua_Description"			"Your totality eclipses the cosm!"
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_void_lua"									"Void Surplus"
