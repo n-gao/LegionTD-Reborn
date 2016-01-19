@@ -1,53 +1,53 @@
 "naturebuilder_precache"
 {
-    "BaseClass" "ability_datadriven"
-    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	"BaseClass" "ability_datadriven"
+	"AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 
-    "precache"
-    {
-    	"model" 	"models/items/beastmaster/boar/beast_deming/beast_deming.vmdl"				// tower_naturebuilder_agressive_boar
-    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"			// tower_naturebuilder_agressive_boar
-    	"model"     "models/items/lone_druid/viciouskraitpanda/viciouskrait_panda.vmdl"			// tower_naturebuilder_bear
-    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"			// tower_naturebuilder_bear
-    	"particle"  "particles/units/heroes/hero_axe/axe_beserkers_call.vpcf"					// tower_naturebuilder_bear
-    	"model" 	"models/heroes/weaver/weaver.vmdl"											// tower_naturebuilder_big_bug
-    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"				// tower_naturebuilder_big_bug
-    	"particle"	"particles/units/heroes/hero_weaver/weaver_base_attack.vpcf"				// tower_naturebuilder_big_bug
-    	"model"		"models/creeps/neutral_creeps/n_creep_centaur_lrg/n_creep_centaur_lrg.vmdl"	// tower_naturebuilder_big_centaur
-    	"model"		"models/heroes/broodmother/broodmother.vmdl"								// tower_naturebuilder_broodmother
-    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"			// tower_naturebuilder_broodmother
-    	"model"		"models/creeps/neutral_creeps/n_creep_centaur_med/n_creep_centaur_med.vmdl"	// tower_naturebuilder_centaur
-    	"model"		"models/heroes/centaur/centaur.vmdl"										// tower_naturebuilder_centaur_warrunner
-    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"				// tower_naturebuilder_centaur_warrunner
-    	"model"		"models/items/lone_druid/true_form/form_of_the_atniw/form_of_the_atniw.vmdl"// tower_naturebuilder_druid_bear
-    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"			// tower_naturebuilder_druid_bear
-    	"particle"  "particles/units/heroes/hero_axe/axe_beserkers_call.vpcf"					// tower_naturebuilder_druid_bear
-    	"model"		"models/items/furion/treant_flower_1.vmdl"									// tower_naturebuilder_flower_treant
-    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"				// tower_naturebuilder_flower_treant
-    	"particle"	"particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"		// tower_naturebuilder_flower_treant
-    	"model"		"models/items/beastmaster/boar/fotw_wolf/fotw_wolf.vmdl"					// tower_naturebuilder_hyena
-    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"			// tower_naturebuilder_hyena
-    	"particle"	"particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"		// tower_naturebuilder_hyena
-    	"model"		"models/heroes/ursa/ursa.vmdl"												// tower_naturebuilder_iron_bear
-    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts"					// tower_naturebuilder_iron_bear
-    	"model"		"models/items/furion/treant/shroomling_treant/shroomling_treant.vmdl"		// tower_naturebuilder_shroom
-    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"				// tower_naturebuilder_shroom
-    	"particle"  "particles/units/heroes/hero_ursa/ursa_fury_swipes.vpcf"					// tower_naturebuilder_shroom
+	"precache"
+	{
+//		"model" 	"models/items/beastmaster/boar/beast_deming/beast_deming.vmdl"				// tower_naturebuilder_agressive_boar
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"			// tower_naturebuilder_agressive_boar
+//		"model"     "models/items/lone_druid/viciouskraitpanda/viciouskrait_panda.vmdl"			// tower_naturebuilder_bear
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"			// tower_naturebuilder_bear
+		"particle"  "particles/units/heroes/hero_axe/axe_beserkers_call.vpcf"					// tower_naturebuilder_bear
+//		"model" 	"models/heroes/weaver/weaver.vmdl"											// tower_naturebuilder_big_bug
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"				// tower_naturebuilder_big_bug
+		"particle"	"particles/units/heroes/hero_weaver/weaver_base_attack.vpcf"				// tower_naturebuilder_big_bug
+//		"model"		"models/creeps/neutral_creeps/n_creep_centaur_lrg/n_creep_centaur_lrg.vmdl"	// tower_naturebuilder_big_centaur
+//		"model"		"models/heroes/broodmother/broodmother.vmdl"								// tower_naturebuilder_broodmother
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"			// tower_naturebuilder_broodmother
+//		"model"		"models/creeps/neutral_creeps/n_creep_centaur_med/n_creep_centaur_med.vmdl"	// tower_naturebuilder_centaur
+//		"model"		"models/heroes/centaur/centaur.vmdl"										// tower_naturebuilder_centaur_warrunner
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"				// tower_naturebuilder_centaur_warrunner
+//		"model"		"models/items/lone_druid/true_form/form_of_the_atniw/form_of_the_atniw.vmdl"// tower_naturebuilder_druid_bear
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"			// tower_naturebuilder_druid_bear
+		"particle"  "particles/units/heroes/hero_axe/axe_beserkers_call.vpcf"					// tower_naturebuilder_druid_bear
+//		"model"		"models/items/furion/treant_flower_1.vmdl"									// tower_naturebuilder_flower_treant
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"				// tower_naturebuilder_flower_treant
+		"particle"	"particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"		// tower_naturebuilder_flower_treant
+//		"model"		"models/items/beastmaster/boar/fotw_wolf/fotw_wolf.vmdl"					// tower_naturebuilder_hyena
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"			// tower_naturebuilder_hyena
+		"particle"	"particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"		// tower_naturebuilder_hyena
+//		"model"		"models/heroes/ursa/ursa.vmdl"												// tower_naturebuilder_iron_bear
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts"					// tower_naturebuilder_iron_bear
+//		"model"		"models/items/furion/treant/shroomling_treant/shroomling_treant.vmdl"		// tower_naturebuilder_shroom
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"				// tower_naturebuilder_shroom
+		"particle"  "particles/units/heroes/hero_ursa/ursa_fury_swipes.vpcf"					// tower_naturebuilder_shroom
 		"particle"  "particles/units/heroes/hero_ursa/ursa_fury_swipes_debuff.vpcf"				// tower_naturebuilder_shroom
-    	"model"		"models/heroes/broodmother/spiderling.vmdl"									// tower_naturebuilder_spider
-    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"			// tower_naturebuilder_spider
-    	"model"		"models/items/furion/treant/furion_treant_nelum_red/furion_treant_nelum_red.vmdl"	//tower_naturebuilder_treant
-    	"soundfile" "soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"					// tower_naturebuilder_treant
+//		"model"		"models/heroes/broodmother/spiderling.vmdl"									// tower_naturebuilder_spider
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"			// tower_naturebuilder_spider
+//		"model"		"models/items/furion/treant/furion_treant_nelum_red/furion_treant_nelum_red.vmdl"	//tower_naturebuilder_treant
+		"soundfile" "soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"					// tower_naturebuilder_treant
 
 
-    	"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"				// centaur_hoof_stomp_datadriven
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"				// centaur_hoof_stomp_datadriven
 		"particle"	"particles/units/heroes/hero_centaur/centaur_warstomp.vpcf"					// centaur_hoof_stomp_datadriven
 		"particle"	"particles/generic_gameplay/generic_stunned.vpcf"							// centaur_hoof_stomp_datadriven
 		"particle"	"particles/units/heroes/hero_sven/sven_spell_great_cleave.vpcf"				// centaur_warrunner_great_cleave
 		"particle"  "particles/units/heroes/hero_ursa/ursa_fury_swipes.vpcf"					// iron_bear_fury_swipes
-        "particle"	"particles/units/heroes/hero_ursa/ursa_fury_swipes_debuff.vpcf"				// iron_bear_fury_swipes
-        "soundfile"	"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"					// shroom_corrosive_skin
-        "particle"	"particles/units/heroes/hero_viper/viper_poison_debuff.vpcf"				// shroom_corrosive_skin
-    }
+		"particle"	"particles/units/heroes/hero_ursa/ursa_fury_swipes_debuff.vpcf"				// iron_bear_fury_swipes
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"					// shroom_corrosive_skin
+		"particle"	"particles/units/heroes/hero_viper/viper_poison_debuff.vpcf"				// shroom_corrosive_skin
+	}
 
 }
