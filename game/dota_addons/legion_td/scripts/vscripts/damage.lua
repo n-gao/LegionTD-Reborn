@@ -15,20 +15,6 @@ function Game:DamageFilter( filterTable )
 	-- Physical attack damage filtering
 	if damagetype == DAMAGE_TYPE_PHYSICAL then
 		local original_damage = filterTable["damage"] --Post reduction
-		local inflictor = filterTable["entindex_inflictor_const"]
-
-		local armor = victim:GetPhysicalArmorValue()
-		local damage_reduction = ((armor)*0.06) / (1+0.06*(armor))
-
-		-- If there is an inflictor, the damage came from an ability
-		local attack_damage
-		if inflictor then
-			--Remake the full damage to apply our custom handling
-			attack_damage = original_damage / ( 1 - damage_reduction )
-			--print(original_damage,"=",attack_damage,"*",1-damage_reduction)
-		else
-			attack_damage = attacker:GetAttackDamage()
-		end
 
 		local attack_type = Game.UnitKV[attacker:GetUnitName()]["Legion_AttackType"] or "normal"
 		local defend_type = Game.UnitKV[victim:GetUnitName()]["Legion_DefendType"] or "medium"
@@ -37,9 +23,7 @@ function Game:DamageFilter( filterTable )
 
 		print (attacker:GetUnitName() .. "(" .. attack_type .. ") vs " .. victim:GetUnitName() .. "(" .. defend_type .. "), damage multiplied by " .. damage_multiplier)
 
-		local damage = ( attack_damage * (1-damage_reduction)) * damage_multiplier
-
-
+		local damage = original_damage * damage_multiplier
 
 		-- Reassign the new damage
 		filterTable["damage"] = damage
