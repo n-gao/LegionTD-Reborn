@@ -5,6 +5,7 @@
 
 	"precache"
 	{
+		"particle"  "particles/units/heroes/hero_pugna/pugna_ward_attack.vpcf"                  // nature builder passive
 //		"model" 	"models/items/beastmaster/boar/beast_deming/beast_deming.vmdl"				// tower_naturebuilder_agressive_boar
 		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"			// tower_naturebuilder_agressive_boar
 //		"model"     "models/items/lone_druid/viciouskraitpanda/viciouskrait_panda.vmdl"			// tower_naturebuilder_bear
