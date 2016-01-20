@@ -7866,12 +7866,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_percent"		"25"
+				"damage_percent"		"15"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"heal_percent"			"25"
+				"heal_percent"			"15"
 			}
 		}
 	
