@@ -49,3 +49,18 @@ function modifier_humanbuilder_passive_lua:OnRefresh( kv )
 end
 
 --------------------------------------------------------------------------------
+
+function modifier_humanbuilder_passive_lua:DeclareFunctions()
+	local funcs = {
+		MODIFIER_PROPERTY_TOOLTIP
+	}
+	return funcs
+end
+
+--------------------------------------------------------------------------------
+
+function modifier_humanbuilder_passive_lua:OnTooltip( params )
+	return self.food_per_turn
+end
+
+--------------------------------------------------------------------------------
