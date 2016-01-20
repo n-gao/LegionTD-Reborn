@@ -36,6 +36,10 @@
 	"AttackRange"           "600"
 	"ProjectileModel"       "particles/units/heroes/hero_luna/luna_base_attack.vpcf"
 	"ProjectileSpeed"       "800"
+	
+	"Legion_AttackType"		"pierce"
+	"Legion_DefendType"		"medium"
+
 
 	// Bounty
 	//----------------------------------------------------------------

@@ -29,6 +29,9 @@
 	"ProjectileModel"       ""
 	"ProjectileSpeed"       "0"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "27"

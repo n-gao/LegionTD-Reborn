@@ -21,6 +21,9 @@
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "90"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+
 	"BountyGoldMin"         "4.0"
 	"BountyGoldMax"         "4.0"
 

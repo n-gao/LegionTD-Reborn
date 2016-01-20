@@ -13,6 +13,7 @@
 		"Ability5"				"elementalbuilder_spawn_voidbender"
 	  "Ability6"        ""
 	  "Ability8"				"elementalbuilder_precache"
+	  "Ability9"				"elementalbuilder_passive"
 	
 		"AttributeBaseStrength"	"0"
 		"AttributeBaseAgility"	"0"
@@ -48,6 +49,7 @@
 		"Ability4"				"humanbuilder_spawn_gyrocopter_mk1"
 		"Ability5"				"humanbuilder_spawn_lieutnant"
 		"Ability8"				"humanbuilder_precache"
+		"Ability9"				"humanbuilder_passive"
 	
 		"AttributeBaseStrength"	"0"
 		"AttributeBaseAgility"	"0"
@@ -84,6 +86,7 @@
 		"Ability5"				"naturebuilder_spawn_hyena"
 		"Ability6"				"naturebuilder_spawn_centaur"
 		"Ability8"				"naturebuilder_precache"
+		"Ability9"				"naturebuilder_passive"
 	
 		"AttributeBaseStrength"	"0"
 		"AttributeBaseAgility"	"0"

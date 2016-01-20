@@ -34,6 +34,9 @@
 	"ProjectileModel"       ""
 	"ProjectileSpeed"       "0"
 
+	"Legion_AttackType"		"normal"
+	"Legion_DefendType"		"heavy"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "0"

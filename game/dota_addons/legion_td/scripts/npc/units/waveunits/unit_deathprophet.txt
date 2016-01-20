@@ -24,6 +24,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
 	"ProjectileSpeed"       "600"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+
 	"BountyGoldMin"         "25.0"
 	"BountyGoldMax"         "25.0"
 

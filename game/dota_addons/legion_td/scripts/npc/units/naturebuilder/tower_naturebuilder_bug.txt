@@ -33,6 +33,10 @@
 	"ProjectileModel"       "particles/units/heroes/hero_weaver/weaver_base_attack.vpcf"
 	"ProjectileSpeed"       "800"
 
+	"Legion_AttackType"		"pierce"
+	"Legion_DefendType"		"medium"
+
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "0"

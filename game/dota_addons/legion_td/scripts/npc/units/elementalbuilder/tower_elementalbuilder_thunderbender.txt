@@ -33,6 +33,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf"
 	"ProjectileSpeed"       "1000"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "0"

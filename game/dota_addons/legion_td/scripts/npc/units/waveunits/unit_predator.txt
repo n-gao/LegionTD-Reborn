@@ -23,6 +23,8 @@
 	"AttackRange"           "90"
 	"ProjectileModel"       ""
 	"ProjectileSpeed"       "0"
+	"Legion_AttackType"		"pierce"
+	"Legion_DefendType"		"heavy"
 
 	"BountyGoldMin"         "6.0"
 	"BountyGoldMax"         "6.0"

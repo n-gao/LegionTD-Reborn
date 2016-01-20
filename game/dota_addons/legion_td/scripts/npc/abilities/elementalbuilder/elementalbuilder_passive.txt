@@ -1,0 +1,86 @@
+"elementalbuilder_passive"
+{
+    "BaseClass" "ability_datadriven"
+    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+    "AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"						"FIELD_INTEGER"
+			"cooldown_reduction_percent"	"1"
+		}
+		"02"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"armor_increase"				".2"
+		}
+		"03"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"armor_decrease"				"-.1"
+		}
+		"04"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"basedamagepercent_increase"	"2"
+		}
+		"05"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"basedamagepercent_decrease"	"-1"
+		}
+		"06"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"magic_increase_percent"	"2"
+		}
+		"07"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"magic_decrease_percent"	"-1"
+		}
+		"08"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"attackspeed_increase"	"2"
+		}
+		"09"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"attackspeed_decrease"	"-1"
+		}
+		"10"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"incomingdamage_decrease_percent"	"-1"
+		}
+		"11"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"incomingdamage_increase_percent"	".5"
+		}
+	}
+
+
+
+	"Modifiers"
+	{
+		"modifier_elementalbuilder_passive"
+		{
+			"Passive"	"1"
+			"IsHidden"	"0"
+			"TextureName" "invoker_invoke"
+			"OnCreated"
+			{
+				"RunScript"
+				{
+					"ScriptFile"    "abilities/elementalbuilder/passive/elementalbuilder_passive.lua"
+	            	"Function"      "elementalbuilder_passive_start"
+				}
+			}
+		}
+	}
+}
+
+

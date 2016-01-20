@@ -33,6 +33,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 	"ProjectileSpeed"       "775"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"medium"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "0"

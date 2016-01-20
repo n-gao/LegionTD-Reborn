@@ -27,6 +27,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_huskar/huskar_base_attack.vpcf"
 	"ProjectileSpeed"       "600"
 
+	"Legion_AttackType"		"pierce"
+	"Legion_DefendType"		"light"
+
 	"BountyGoldMin"         "6.0"
 	"BountyGoldMax"         "6.0"
 

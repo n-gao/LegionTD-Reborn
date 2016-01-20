@@ -11,6 +11,7 @@
 	"Ability5"				"elementalbuilder_spawn_voidbender"
   "Ability6"        ""
   "Ability8"				"elementalbuilder_precache"
+  "Ability9"				"elementalbuilder_passive"
 
 	"AttributeBaseStrength"	"0"
 	"AttributeBaseAgility"	"0"

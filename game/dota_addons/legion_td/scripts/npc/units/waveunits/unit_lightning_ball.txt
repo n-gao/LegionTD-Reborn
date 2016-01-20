@@ -22,6 +22,8 @@
 	"AttackAnimationPoint"  "0.2"
 	"AttackAcquisitionRange" "500"
 	"AttackRange"           "90"
+	"Legion_AttackType"		"pierce"
+	"Legion_DefendType"		"medium"
 
 	"BountyGoldMin"         "5.0"
 	"BountyGoldMax"         "5.0"

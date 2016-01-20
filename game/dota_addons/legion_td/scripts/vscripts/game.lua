@@ -2,7 +2,6 @@ if Game == nil then
   Game = class({})
 end
 
-
 --Spielstati
 GAMESTATE_PREPARATION = 0
 GAMESTATE_FIGHTING = 1
@@ -53,6 +52,7 @@ function Game.GetUnitNameByID(id)
   elseif id == 13 then return "tower_naturebuilder_agressive_boar"
   elseif id == 14 then return "tower_naturebuilder_big_centaur"
   elseif id == 15 then return "tower_naturebuilder_centaur_warrunner"
+  elseif id == 16 then return "tower_naturebuilder_treebeard"
 
   elseif id == 50 then return "tower_elementalbuilder_waterbender"
   elseif id == 51 then return "tower_elementalbuilder_thunderbender"
@@ -143,7 +143,18 @@ function Game.new()
   self.sendDire = {}
   self.sendLeaderRadiant = 1 -- we'll rotate who gets the biggest send each wave
   self.sendLeaderDire = 1 -- we'll rotate who gets the biggest send each wave
+  self.UnitKV = LoadKeyValues("scripts/npc/npc_units_custom.txt")
+  self.DamageKV = LoadKeyValues("scripts/damage_table.kv")
+  GameRules:GetGameModeEntity():SetDamageFilter(Dynamic_Wrap(Game, "DamageFilter"), Game)
   GameRules:GetGameModeEntity():SetExecuteOrderFilter(Dynamic_Wrap(Game, "OrderFilter"), Game)
+
+  LinkLuaModifier( "modifier_attack_arcane_lua", "abilities/damage/modifier_attack_arcane_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+  LinkLuaModifier( "modifier_attack_normal_lua", "abilities/damage/modifier_attack_normal_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+  LinkLuaModifier( "modifier_attack_pierce_lua", "abilities/damage/modifier_attack_pierce_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+  LinkLuaModifier( "modifier_defend_heavy_lua", "abilities/damage/modifier_defend_heavy_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+  LinkLuaModifier( "modifier_defend_medium_lua", "abilities/damage/modifier_defend_medium_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+  LinkLuaModifier( "modifier_defend_light_lua", "abilities/damage/modifier_defend_light_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
+
 
   if Convars:GetBool('developer') then
     Convars:RegisterCommand("start_next_round", Dynamic_Wrap(self, "StartNextRoundCommand"), "keine Ahnung", 0)
@@ -541,15 +552,23 @@ end
 --NPC gespawnt, falls spieler in die Liste eintragen
 function Game:OnNPCSpawned(key)
   local npc = EntIndexToHScript(key.entindex)
-  if npc:IsRealHero() and npc.firstSpawned == nil then
+  if npc.firstSpawned == nil then
     npc.firstSpawned = true
-    for _, player in pairs(self.players) do
-      if player:GetPlayerID() == npc:GetPlayerID() then
-        -- local ltext = "ID:"..npc:GetPlayerID()
-        -- CustomGameEventManager:Send_ServerToPlayer(player:GetPlayer(), "debug", {text = ltext})
-        player:SetNPC(npc)
-        return
+    if npc:IsRealHero() then
+      for _, player in pairs(self.players) do
+        if player:GetPlayerID() == npc:GetPlayerID() then
+          -- local ltext = "ID:"..npc:GetPlayerID()
+          -- CustomGameEventManager:Send_ServerToPlayer(player:GetPlayer(), "debug", {text = ltext})
+          player:SetNPC(npc)
+          return
+        end
       end
+    else -- not a hero
+      local attack_type = Game.UnitKV[npc:GetUnitName()]["Legion_AttackType"] or "normal"
+      local defend_type = Game.UnitKV[npc:GetUnitName()]["Legion_DefendType"] or "medium"
+      print ("unit spawned with " .. attack_type .. "/" .. defend_type)
+      npc:AddNewModifier(npc, nil, "modifier_attack_" .. attack_type .. "_lua", {})
+      npc:AddNewModifier(npc, nil, "modifier_defend_" .. defend_type .. "_lua", {})
     end
   end
 end
@@ -566,7 +585,7 @@ function Game:OnConnectFull(keys)
       print ("Game:OnConnectFull(): Player object found for existing player.")
       player:SetPlayerEntitie(ply, keys.userid)
     else
-      print ("Game:OnConnectFull(): Player object not found for existing player; Creating.")
+      print ("Game:OnConnectFull(): Player object not found for player entIndex " .. entIndex .. " playerID " .. playerID .."; Creating.")
       local newPlayer = Player.new(ply, keys.userid)
       table.insert(self.players, newPlayer)
     end

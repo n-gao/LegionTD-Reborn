@@ -32,6 +32,9 @@
 	"AttackRange"           "90"
 	"ProjectileModel"       ""
 	"ProjectileSpeed"       "0"
+	
+	"Legion_AttackType"		"normal"
+	"Legion_DefendType"		"heavy"
 
 	// Bounty
 	//----------------------------------------------------------------

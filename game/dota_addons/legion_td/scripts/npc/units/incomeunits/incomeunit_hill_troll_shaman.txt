@@ -30,6 +30,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_chen/chen_base_attack.vpcf"
 	"ProjectileSpeed"       "650"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "1"

@@ -26,6 +26,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
 	"ProjectileSpeed"       "650"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"medium"
+
 	"BountyGoldMin"         "6.0"
 	"BountyGoldMax"         "6.0"
 

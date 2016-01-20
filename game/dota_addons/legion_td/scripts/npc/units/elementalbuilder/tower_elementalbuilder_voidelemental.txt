@@ -33,6 +33,9 @@
 	"ProjectileModel"       "particles/units/heroes/hero_enigma/enigma_base_attack.vpcf"
 	"ProjectileSpeed"       "650"
 
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "0"
