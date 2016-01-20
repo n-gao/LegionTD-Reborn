@@ -14,8 +14,28 @@
 
 - Physical Damage Types added!
 
-	There are 3 physical attack types: normal, pierce, and arcane; and 3 physical defense types: light, medium, and heavy. Front-line melee units are generally normal/heavy, archer-types and certain melee units are generally pierce/medium, and wizardly units are generally arcane/light.
+	There are 3 physical attack types: normal, pierce, and arcane; and 3 physical defense types: light, medium, and heavy. Front-line melee units are generally normal/heavy, archer-types and certain melee units are generally pierce/medium, and wizardly units are generally arcane/light. Not all units follow these common pairings however, and units can have any combination of attack and defense type.
+
+	normal attacks deal:
+	    85% to light defense
+	    120% to medium defense
+	    100% to heavy defense
+
+
+	piercing attacks deal:
+		120% to light defense
+		100% to medium defense
+		85% to heavy defense
+
+    arcane attacks deal:
+    	100% to light defense
+    	85% to medium defense
+    	120% to heavy defense
+
+- All builder units, send units, and non-boss wave units have been given physical attack and defense types.
 
 - If more than 15 units are being sent to the same player, each additional set of 15 will be delayed by an additional 2 seconds (This should fix certain situations where send units will get stuck when a large number is sent at once, especially in playercount-imbalanced games).
 
 - "King" (wave 20) attack time increased from .4 to .6
+
+- Wave Bosses attack animation times have been fixed.
