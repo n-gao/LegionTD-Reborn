@@ -213,6 +213,92 @@
 	    }
 	  }
 	}
+	"elementalbuilder_passive"
+	{
+	    "BaseClass" "ability_datadriven"
+	    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	
+	    "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cooldown_reduction_percent"	"1"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"armor_increase"				".2"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"armor_decrease"				"-.1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"basedamagepercent_increase"	"2"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"basedamagepercent_decrease"	"-1"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"magic_increase_percent"	"2"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"magic_decrease_percent"	"-1"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"attackspeed_increase"	"2"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"attackspeed_decrease"	"-1"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"incomingdamage_decrease_percent"	"-1"
+			}
+			"11"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"incomingdamage_increase_percent"	".5"
+			}
+		}
+	
+	
+	
+		"Modifiers"
+		{
+			"modifier_elementalbuilder_passive"
+			{
+				"Passive"	"1"
+				"IsHidden"	"0"
+				"TextureName" "invoker_invoke"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"    "abilities/elementalbuilder/passive/elementalbuilder_passive.lua"
+		            	"Function"      "elementalbuilder_passive_start"
+					}
+				}
+			}
+		}
+	}
+	
+	
 	"elementalbuilder_precache"
 	{
 		"BaseClass" "ability_datadriven"
@@ -1856,6 +1942,41 @@
 	    }
 	  }
 	}
+	"humanbuilder_passive"
+	{
+	    "BaseClass" "ability_datadriven"
+	    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	
+	    "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food_per_turn"			"1.2"
+			}
+		}
+	
+	
+	
+		"Modifiers"
+		{
+			"modifier_humanbuilder_passive"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"    "abilities/humanbuilder/passive/humanbuilder_passive.lua"
+		            	"Function"      "humanbuilder_passive_start"
+					}
+				}
+			}
+		}
+	}
+	
+	
 	"humanbuilder_precache"
 	{
 		"BaseClass" "ability_datadriven"
@@ -7735,6 +7856,46 @@
 	    }
 	  }
 	}
+	"naturebuilder_passive"
+	{
+	    "BaseClass" "ability_datadriven"
+	    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	
+	    "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_percent"		"15"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"heal_percent"			"15"
+			}
+		}
+	
+	
+	
+		"Modifiers"
+		{
+			"modifier_naturebuilder_passive"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"    "abilities/naturebuilder/passive/naturebuilder_passive.lua"
+		            	"Function"      "naturebuilder_passive_start"
+					}
+				}
+			}
+		}
+	}
+	
+	
 	"naturebuilder_precache"
 	{
 		"BaseClass" "ability_datadriven"
@@ -8647,6 +8808,62 @@
 	    {
 	      "var_type"			"FIELD_INTEGER"
 	      "unitID"				"11"
+	    }
+		}
+	}
+	"naturebuilder_upgrade_treebeard"
+	{
+	  "BaseClass"                "ability_datadriven"
+	  "AbilityTextureName"      "rattletrap_power_cogs"
+	  "MaxLevel"                "1"
+	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"				"550"
+		"AbilityCooldown"		    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"unit.lua"
+				"Function"		"upgrade_unit"
+			}
+		}
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "312.5"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "100"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "1100"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "7"
+	    }
+	    "06"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "food_cost"              "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			         "FIELD_INTEGER"
+	      "unitID"				        "16"
 	    }
 		}
 	}
@@ -9663,6 +9880,51 @@
 	        }
 	    }
 	}
+	"treebeard_overgrowth"
+		{
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"BaseClass"						"treant_overgrowth"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+			"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+			"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"	
+			"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+			
+			"AbilityCastPoint"				"0.5"
+			"AbilityCastRange"              "675" // probably not used by ability - for AI only
+			
+			// Time		
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityCooldown"				"70"
+	
+			// Cost
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityManaCost"				"0"
+	
+			// Special
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilitySpecial"
+			{
+				"01"
+				{
+					"var_type"						"FIELD_FLOAT"
+					"duration"						"2.0"
+				}
+				"02"
+				{
+					"var_type"						"FIELD_INTEGER"
+					"radius"						"675"
+				}			
+			}
+		}
+	"treebeard_synergy"
+		{
+			// General
+			//-------------------------------------------------------------------------------------------------------------
+			"BaseClass"						"ability_datadriven"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+			"AbilityTextureName"            "treant_natures_guise"
+		}
 	"insta_kill" {
 		"BaseClass"             		"ability_datadriven"
 		"AbilityTextureName"				"lina_laguna_blade"
