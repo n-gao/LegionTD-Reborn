@@ -108,7 +108,7 @@ function UpdateInfoPanel() {
 	var infos = morePlayerInfos[displayedPlayer];
 	$("#tangos").text = "" + infos.tango_count;
 	$("#goldIncome").text = "" + infos.gold_income + $.Localize("#gold_income_text");
-	$("#tangoIncome").text = "" + infos.tango_income + $.Localize("#tango_income_text");
+	$("#tangoIncome").text = "" + infos.tango_income + $.Localize("#tango_income_text") + "\n" + infos.max_tangos + " " + $.Localize("#tango_maximum_text");
 	$("#foodLabel").text = "" + infos.current_food + "/" + infos.max_food;
 }
 

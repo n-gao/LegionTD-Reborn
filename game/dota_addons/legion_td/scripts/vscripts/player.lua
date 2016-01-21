@@ -11,6 +11,7 @@ function Player.new(plyEntitie, userID)
   self.userID = userID
   self.units = {}
   self.tangos = START_TANGO
+  self.tangoLimit = 125
   self.tangoAddAmount = START_TANGO_ADD_AMOUNT
   self.tangoAddSpeed = START_TANGO_ADD_SPEED
   self.tangoAddProgress = 0
@@ -195,8 +196,8 @@ end
 --adds tangos
 function Player:AddTangos(amount)
   self.tangos = self.tangos + amount
-  if Game.withIncomeLimit and self.tangos > Game:GetTangoLimit() then
-    self.tangos = Game:GetTangoLimit()
+  if self.tangos > self.tangoLimit then
+    self.tangos = self.tangoLimit
   end
   self:RefreshPlayerInfo()
 end
@@ -209,6 +210,7 @@ function Player:RefreshPlayerInfo()
       playerID = self:GetPlayerID(),
       leaks = self.leaks,
       tangoCount = self.tangos,
+      maxTangos = self.tangoLimit,
       goldIncome = self.income,
       tangoIncome = math.floor(self.tangoAddAmount / self.tangoAddSpeed * 60),
       currentFood = self:GetUsedFood(),

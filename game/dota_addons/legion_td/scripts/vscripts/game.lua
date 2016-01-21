@@ -462,6 +462,9 @@ function Game:RoundFinished()
   end
   self.gameRound = self.gameRound + 1
   self.gameState = GAMESTATE_PREPARATION
+  for _,player in pairs(self.players) do
+    player.tangoLimit = self:GetTangoLimit()
+  end
   if self.gameRound > #self.rounds then
     self.gameRound = self.gameRound - 1
     self.finishedWaves = true

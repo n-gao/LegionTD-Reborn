@@ -12,7 +12,7 @@
 		<Panel hittest="false" id="TeamSelectContainer" selectionpos="auto">
 			<!--Empty space to let the loading screen and chat be visible-->
 			<Panel hittest="false" id="TeamsSelectEmptySpace" />
-
+<!--
 			<Panel id="OptionList">
 				<Panel id="OptionListGroup">
 					<Label id="OptionTitle" text="#Options_title" />
@@ -21,7 +21,7 @@
 					</Panel>
 				</Panel>
 			</Panel>
-
+		-->
 			<!--Teams List, left hand panel-->
 			<Panel id="TeamsList" >
 				<Panel id="TeamsListGroup" >

@@ -32,6 +32,7 @@
 		
 		"gold_income_text"				"/round"
 		"tango_income_text"				"/min"
+		"tango_maximum_text"			"max"
 		
 		"DOTA_Tooltip_ability_main_building_tango_collector"                              "New Tango Collector"
 		"DOTA_Tooltip_ability_main_building_tango_collector_Description"                  "+1 Tango per tick"
