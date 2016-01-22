@@ -8890,7 +8890,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "1100"
+		"StatusHealth"          "1220"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
