@@ -487,6 +487,9 @@ function Game:StartNextRound()
       player.leaked = false;
       player.leaksPenalty = 0;
     end
+    if player.tangos > player.tangoLimit then
+      player.tangos = player.tangoLimit
+    end
   end
   mode:SetFogOfWarDisabled(true)
   self.gridBoxes:AddEffects(EF_NODRAW)

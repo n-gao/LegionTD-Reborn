@@ -196,9 +196,6 @@ end
 --adds tangos
 function Player:AddTangos(amount)
   self.tangos = self.tangos + amount
-  if self.tangos > self.tangoLimit then
-    self.tangos = self.tangoLimit
-  end
   self:RefreshPlayerInfo()
 end
 
@@ -307,6 +304,7 @@ function Player:CreateTangoTicker()
       
       local tangoDelay = self.tangoAddSpeed
       if self.leaked then tangoDelay = self.tangoAddSpeed + (self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER * self.leaksPenalty) end
+      if self.tangos > self.tangoLimit then tangoDelay = tangoDelay * 5 end -- slow down production while over the maximum
       self.tangoAddProgress = self.tangoAddProgress + 1/tangoDelay/30
       local i = self.tangoAddProgress*math.pi*2
       if self.lane.mainBuilding:GetAbsOrigin().y > 0 then
