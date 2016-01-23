@@ -11,7 +11,7 @@
 	"HealthBarOffset"       "150"
 
 	"Ability4"				"sell"
-	"Ability2"				"ability_empty_2"
+	"Ability2"				"icewrack_grandmaster_chilled_blood"
 	"Ability3"				"ability_empty_3"
 	"Ability1"				"icewrack_grandmaster_freezing_field"
 

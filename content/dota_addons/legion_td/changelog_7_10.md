@@ -40,6 +40,8 @@
 
 - Human Builder Futuristic Gyrocopter base damage decreased from 350 to 300.
 
+- Human Builder Icewrack Grandmaster has an additional pasive aura, Chilled Blood, which grants 10% additional HP to allies within a 900 unit radius.
+
 - Human Builder Icewrack Grandmaster Freezing Field explosion interval decreased from every 1.0 seconds to every .7 seconds.
 
 ### Elemental Builder
