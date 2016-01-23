@@ -125,7 +125,7 @@ function Unstuck(self)
 	          Queue = 0 --Optional.  Used for queueing up abilities
 	        })
 	end
-	return STANDARD_THINK_TIME
+	return 1.0
 end
 
 function CheckIfHasAggroInRange(self)
