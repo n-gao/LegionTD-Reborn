@@ -2572,7 +2572,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "350"
+	      "atk_damage_tooltip"    "300"
 	    }
 	    "02"
 	    {
@@ -2740,7 +2740,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "233"
+	      "atk_damage_tooltip"    "203"
 	    }
 	    "02"
 	    {
@@ -4853,7 +4853,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"explosion_interval"	"1.0"
+				"explosion_interval"	"0.7"
 			}
 			"06"
 			{
