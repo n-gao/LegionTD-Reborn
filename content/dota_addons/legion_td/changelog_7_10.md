@@ -34,6 +34,8 @@
 
 - All builder units, send units, and non-boss wave units have been given physical attack and defense types.
 
+- Tango Limit is always on rather than being a vote option, and has been reworked: rather than being a constant absolute limit to tangos, each player's production time is multiplied by 5 while over the current maximum (cumulative with any leak penalties), and reduced to the limit at the start of every wave spawn.
+
 - If more than 15 units are being sent to the same player, each additional set of 15 will be delayed by an additional 2 seconds (This should fix certain situations where send units will get stuck when a large number is sent at once, especially in playercount-imbalanced games).
 
 - "King" (wave 20) attack time increased from .4 to .6
