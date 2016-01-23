@@ -57,6 +57,8 @@ function Unit:Spawn()
   self.npc.unit = self
   self.npc.player = self.player
   self.npc.nextTarget = self.nextTarget
+  self.npc:SetMinimumGoldBounty(self.foodCost)
+  self.npc:SetMaximumGoldBounty(self.foodCost)
   self:Lock()
 end
 
