@@ -570,11 +570,13 @@ function Game:OnNPCSpawned(key)
         end
       end
     else -- not a hero
-      local attack_type = Game.UnitKV[npc:GetUnitName()]["Legion_AttackType"] or "normal"
-      local defend_type = Game.UnitKV[npc:GetUnitName()]["Legion_DefendType"] or "medium"
-      print ("unit spawned with " .. attack_type .. "/" .. defend_type)
-      npc:AddNewModifier(npc, nil, "modifier_attack_" .. attack_type .. "_lua", {})
-      npc:AddNewModifier(npc, nil, "modifier_defend_" .. defend_type .. "_lua", {})
+      if Game.UnitKV[npc:GetUnitName()] then
+        local attack_type = Game.UnitKV[npc:GetUnitName()]["Legion_AttackType"] or "normal"
+        local defend_type = Game.UnitKV[npc:GetUnitName()]["Legion_DefendType"] or "medium"
+        print ("unit spawned with " .. attack_type .. "/" .. defend_type)
+        npc:AddNewModifier(npc, nil, "modifier_attack_" .. attack_type .. "_lua", {})
+        npc:AddNewModifier(npc, nil, "modifier_defend_" .. defend_type .. "_lua", {})
+      end
     end
   end
 end
