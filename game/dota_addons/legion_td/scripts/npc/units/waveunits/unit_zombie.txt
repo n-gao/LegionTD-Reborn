@@ -19,7 +19,7 @@
 	"AttackDamageMax"       "16.25"
 	"AttackRate"            "0.5"
 	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "250"
 	"ProjectileModel"       "particles/units/heroes/hero_pugna/pugna_base_attack.vpcf"
 	"ProjectileSpeed"       "250"

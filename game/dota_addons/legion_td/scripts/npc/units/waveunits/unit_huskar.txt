@@ -22,7 +22,7 @@
 	"AttackDamageMax"       "62.5"
 	"AttackRate"            "0.8"
 	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "300"
 	"ProjectileModel"       "particles/units/heroes/hero_huskar/huskar_base_attack.vpcf"
 	"ProjectileSpeed"       "600"

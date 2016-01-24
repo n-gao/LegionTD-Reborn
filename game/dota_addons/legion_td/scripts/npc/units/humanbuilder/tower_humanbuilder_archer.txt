@@ -29,7 +29,7 @@
 	"AttackDamageMax"       "75.0"
 	"AttackRate"            ".9"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "550"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "500"
 	"ProjectileModel"       "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
 	"ProjectileSpeed"       "900"

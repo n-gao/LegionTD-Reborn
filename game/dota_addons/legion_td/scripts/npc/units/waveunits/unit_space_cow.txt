@@ -19,7 +19,7 @@
 	"AttackDamageMax"       "8.75"
 	"AttackRate"            "1.35"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "90"
 
 	"Legion_AttackType"		"normal"

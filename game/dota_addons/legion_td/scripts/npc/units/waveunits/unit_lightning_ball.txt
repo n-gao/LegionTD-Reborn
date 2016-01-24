@@ -20,7 +20,7 @@
 	"AttackDamageMax"       "7.5"
 	"AttackRate"            "0.5"
 	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "90"
 	"Legion_AttackType"		"pierce"
 	"Legion_DefendType"		"medium"

@@ -28,7 +28,7 @@
 	"AttackDamageMax"       "275.0"
 	"AttackRate"            "1"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "300"
 	"ProjectileModel"       "particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
 	"ProjectileSpeed"       "750"

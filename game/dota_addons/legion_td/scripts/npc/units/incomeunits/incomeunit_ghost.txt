@@ -25,7 +25,7 @@
 	"AttackDamageMax"       "31.25"
 	"AttackRate"            "0.4"
 	"AttackAnimationPoint"  "0.8"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "300"
 	"ProjectileModel"       "particles/neutral_fx/ghost_base_attack.vpcf"
 	"ProjectileSpeed"       "400"

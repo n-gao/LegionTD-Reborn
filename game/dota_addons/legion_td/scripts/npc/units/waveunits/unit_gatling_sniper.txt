@@ -19,7 +19,7 @@
 	"AttackDamageMax"       "2.5"
 	"AttackRate"            "0.3"
 	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "380"
 	"ProjectileModel"       "particles/items_fx/desolator_projectile.vpcf"
 	"ProjectileSpeed"       "2000"

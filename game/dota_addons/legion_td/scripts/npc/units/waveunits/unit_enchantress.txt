@@ -21,7 +21,7 @@
 	"AttackDamageMax"       "21.25"
 	"AttackRate"            "0.46"
 	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "250"
 	"ProjectileModel"       "particles/units/heroes/hero_enchantress/enchantress_impetus.vpcf"
 	"ProjectileSpeed"       "600"

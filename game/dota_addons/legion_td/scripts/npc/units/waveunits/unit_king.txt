@@ -23,7 +23,7 @@
   "AttackDamageMax"       "350.0"
   "AttackRate"            "0.6"
   "AttackAnimationPoint"  "0.56"
-  "AttackAcquisitionRange" "500"
+  "AttackAcquisitionRange" "850"
   "AttackRange"           "125"
   "ProjectileModel"       ""
   "ProjectileSpeed"       "0"

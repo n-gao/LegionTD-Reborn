@@ -28,7 +28,7 @@
 	"AttackDamageMax"       "225.0"
 	"AttackRate"            "0.55"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "400"
 	"ProjectileModel"       "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 	"ProjectileSpeed"       "750"

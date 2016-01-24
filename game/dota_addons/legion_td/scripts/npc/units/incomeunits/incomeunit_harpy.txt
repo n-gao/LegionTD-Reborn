@@ -25,7 +25,7 @@
 	"AttackDamageMax"       "11.25"
 	"AttackRate"            "0.7"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "300"
 	"ProjectileModel"       "particles/econ/items/razor/razor_punctured_crest/razor_static_link_beam_blade.vpcf"
 	"ProjectileSpeed"       "500"

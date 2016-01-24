@@ -21,7 +21,7 @@
 	"AttackDamageMax"       "26.25"
 	"AttackRate"            "0.62"
 	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "200"
 	"ProjectileModel"       "particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
 	"ProjectileSpeed"       "700"

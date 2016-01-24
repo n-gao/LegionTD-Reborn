@@ -28,7 +28,7 @@
 	"AttackDamageMax"       "56.25"
 	"AttackRate"            "0.6"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "500"
 	"ProjectileModel"       "particles/units/heroes/hero_lina/lina_base_attack.vpcf"
 	"ProjectileSpeed"       "900"

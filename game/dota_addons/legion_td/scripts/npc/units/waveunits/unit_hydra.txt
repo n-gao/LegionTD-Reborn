@@ -21,7 +21,7 @@
 	"AttackDamageMax"       "12.0"
 	"AttackRate"            "1.1"
 	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "400"
 	"ProjectileModel"       "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
 	"ProjectileSpeed"       "650"

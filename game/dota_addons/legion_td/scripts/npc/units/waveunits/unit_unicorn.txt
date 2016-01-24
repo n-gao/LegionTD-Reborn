@@ -18,7 +18,7 @@
 	"AttackDamageMax"       "5.0"
 	"AttackRate"            "1.25"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "90"
 
 	"Legion_AttackType"		"arcane"

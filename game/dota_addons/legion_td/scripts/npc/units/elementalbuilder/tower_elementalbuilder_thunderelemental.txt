@@ -28,7 +28,7 @@
 	"AttackDamageMax"       "37.5"
 	"AttackRate"            "0.45"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "250"
 	"ProjectileModel"       "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
 	"ProjectileSpeed"       "900"

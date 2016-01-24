@@ -32,7 +32,7 @@
 	"AttackDamageMax"       "187.5"
 	"AttackRate"            "1.2"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "650"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "600"
 	"ProjectileModel"       "particles/units/heroes/hero_luna/luna_base_attack.vpcf"
 	"ProjectileSpeed"       "800"

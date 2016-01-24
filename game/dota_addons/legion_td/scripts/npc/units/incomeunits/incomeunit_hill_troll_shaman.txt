@@ -25,7 +25,7 @@
 	"AttackDamageMax"       "7.5"
 	"AttackRate"            "0.6"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "300"
 	"ProjectileModel"       "particles/units/heroes/hero_chen/chen_base_attack.vpcf"
 	"ProjectileSpeed"       "650"

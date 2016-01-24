@@ -28,7 +28,7 @@
 	"AttackDamageMax"       "42.5"
 	"AttackRate"            "0.65"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "450"
 	"ProjectileModel"       "particles/units/heroes/hero_weaver/weaver_base_attack.vpcf"
 	"ProjectileSpeed"       "800"

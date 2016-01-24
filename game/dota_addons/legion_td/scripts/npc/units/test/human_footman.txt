@@ -28,7 +28,7 @@
 	"AttackDamageMax"       "16.25"
 	"AttackRate"            "1.35"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "90"
 
 	// Bounty

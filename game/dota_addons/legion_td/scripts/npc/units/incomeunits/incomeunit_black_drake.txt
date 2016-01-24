@@ -25,7 +25,7 @@
 	"AttackDamageMax"       "93.75"
 	"AttackRate"            "0.6"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "350"
 	"ProjectileModel"       "particles/neutral_fx/black_drake_attack.vpcf"
 	"ProjectileSpeed"       "550"

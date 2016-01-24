@@ -19,7 +19,7 @@
 	"AttackDamageMax"       "125.0"
 	"AttackRate"            "0.8"
 	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "500"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "400"
 	"ProjectileModel"       "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
 	"ProjectileSpeed"       "600"

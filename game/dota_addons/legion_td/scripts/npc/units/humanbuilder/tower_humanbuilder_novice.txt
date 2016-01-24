@@ -29,7 +29,7 @@
 	"AttackDamageMax"       "43.75"
 	"AttackRate"            "1.0"
 	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "450"
+	"AttackAcquisitionRange" "850"
 	"AttackRange"           "400"
 	"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 	"ProjectileSpeed"       "400"
