@@ -21,7 +21,7 @@ function Game:DamageFilter( filterTable )
 
 		local damage_multiplier = Game.DamageKV[attack_type][defend_type] or 1
 
-		print (attacker:GetUnitName() .. "(" .. attack_type .. ") vs " .. victim:GetUnitName() .. "(" .. defend_type .. "), damage multiplied by " .. damage_multiplier)
+		--print (attacker:GetUnitName() .. "(" .. attack_type .. ") vs " .. victim:GetUnitName() .. "(" .. defend_type .. "), damage multiplied by " .. damage_multiplier)
 
 		local damage = original_damage * damage_multiplier
 

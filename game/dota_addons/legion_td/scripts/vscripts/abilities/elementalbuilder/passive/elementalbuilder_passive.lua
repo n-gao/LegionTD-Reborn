@@ -28,7 +28,7 @@ function elementalbuilder_passive_start(keys)
 		id = caster:GetPlayerID()
 		playerObj = Game:FindPlayerWithID(id)
 
-		print ("u have " .. #playerObj.units )
+		--print ("u have " .. #playerObj.units )
 
 		for _, element in pairs (elementNames) do
 			elementSums[element] = 0
@@ -73,19 +73,19 @@ function elementalbuilder_passive_start(keys)
 
 		local valueAvg = valueSum / elementCount
 
-		print ("Element Count: " .. elementCount .. ", Total value: " .. valueSum .. ", average " .. valueAvg)
+		--print ("Element Count: " .. elementCount .. ", Total value: " .. valueSum .. ", average " .. valueAvg)
 
 		for element, total in pairs(elementSums) do
 			elementRatios[element] = total / valueAvg
 			if elementGods[element] then
-				elementStacks[element] = 0
-				print (element .. " has a god!")
+				elementStacks[element] = 1
+				--print (element .. " has a god!")
 			elseif elementRatios[element] >= 1 then
 				elementStacks[element] = -math.floor(5*(1-(elementRatios[element])))
-				print (element .. ": " .. total .. "(" .. elementRatios[element] .. " surplus), " .. elementStacks[element] .. " stacks")
+				--print (element .. ": " .. total .. "(" .. elementRatios[element] .. " surplus), " .. elementStacks[element] .. " stacks")
 			else
 				elementStacks[element] = math.floor(5*(1-(1/elementRatios[element])))
-				print (element .. ": " .. total .. "(" .. 1/elementRatios[element] .. " defecit), " .. elementStacks[element] .. " stacks")
+				--print (element .. ": " .. total .. "(" .. 1/elementRatios[element] .. " defecit), " .. elementStacks[element] .. " stacks")
 			end
 		end
 
@@ -99,7 +99,7 @@ function elementalbuilder_passive_start(keys)
 		end
 
 		if harmony then
-			print ("we have harmony")
+			--print ("we have harmony")
 			for _, element in pairs(elementNames) do
 				elementStacks[element] = maxStacks
 			end
@@ -107,7 +107,7 @@ function elementalbuilder_passive_start(keys)
 
 		for _, unitRef in pairs(playerObj.units) do
 			local unit = unitRef.npc
-			if unit then
+			if unit and unit:IsAlive() and caster and ability then
 
 				unit:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_elemental_harmony_lua", {})
 

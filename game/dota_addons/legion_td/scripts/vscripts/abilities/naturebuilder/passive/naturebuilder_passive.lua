@@ -9,7 +9,7 @@ function naturebuilder_passive_start(keys)
 		id = caster:GetPlayerID()
 		playerObj = Game:FindPlayerWithID(id)
 
-		print ("u have " .. #playerObj.units )
+		-- print ("u have " .. #playerObj.units )
 
 		-- for _, unitRef in pairs(playerObj.units) do
 		-- 	local unit = unitRef.npc
