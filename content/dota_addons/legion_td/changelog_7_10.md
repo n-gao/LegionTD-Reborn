@@ -25,19 +25,19 @@
 
 - All builder units, send units, and non-boss wave units have been given physical attack and defense types.
 
-- Tango Limit is always on rather than being a vote option, and has been reworked: rather than being a constant absolute limit to tangos, each player's production time is multiplied by 5 while over the current maximum (cumulative with any leak penalties), and reduced to the limit at the start of every wave spawn.
+- Tango Limit is always on rather than being a vote option, and has been reworked: rather than being a constant absolute limit to tangos, each player's production time is multiplied by 5 while over the current maximum (cumulative with any leak penalties), and each player's tango count is reduced to the limit at the start of every wave spawn.
 
 - Ranged defenders will now teleport to behind the king after clearing their wave, and defend a spot 200 units behind melee defenders.
 
 - If more than 15 units are being sent to the same player, each additional set of 15 will be delayed by an additional 2 seconds (This should fix certain situations where send units will get stuck when a large number is sent at once, especially in playercount-imbalanced games).
 
-- Attack Aquisition ranges on all non-king units increased from 500 to 850 (except humanbuilder sharpshooter which is still 950)
+- Attack Aquisition ranges on all non-king units increased from 500 to 850 (except humanbuilder sharpshooter which is still 950).
 
 ## Wave Changes
 
 - Duel victory gold bounty reduced from 75/150/300 to 25/50/100
 
-- All player units now have a bounty equal to their food cost
+- All player units now have a bounty equal to their food cost.
 
 - "King" (wave 20) attack time increased from .4 to .6
 
@@ -63,7 +63,7 @@
 
 ### Nature Builder
 
-- Nature Builder gets a final death knell on each of his units, healing a nearby ally for 10% of the dying unit's maximum health and dealing as much magic damage to a nearby foe.
+- Nature Builder gets a final death knell on each of his units, healing a nearby ally for 10% of the dying unit's maximum health and dealing as much magic damage to a nearby foe. Maximum range on both effects is 300 units.
 
 - New Nature Builder Unit: Treebeard. Upgrades from Treant, has Treant Protector's Overgrowth with a 2 second duration, and owning one will double the effectiveness of Nature Builder's passive.
 
