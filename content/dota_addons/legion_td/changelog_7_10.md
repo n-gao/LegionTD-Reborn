@@ -63,3 +63,6 @@
 
 - New Nature Builder Unit: Treebeard. Upgrades from Treant, has Treant Protector's Overgrowth with a 2 second duration, and owning one will double the effectiveness of Nature Builder's passive.
 
+## Technical
+
+- Improved precaching of builder unit resources.
