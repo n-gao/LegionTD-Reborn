@@ -47,19 +47,22 @@ end
 
 
 function Unit:Spawn()
-  self.npc = CreateUnitByName(self.npcclass, self.spawnposition, false, nil,
-  self.owner, self.owner:GetTeamNumber())
-  if self.spawnposition.y > 0 then
-    self.npc:SetAngles(0, 90, 0)
-  else
-    self.npc:SetAngles(0, 270, 0)
+  PrecacheUnitByNameAsync(self.npcclass, function () 
+    self.npc = CreateUnitByName(self.npcclass, self.spawnposition, false, nil,
+    self.owner, self.owner:GetTeamNumber())
+    if self.spawnposition.y > 0 then
+      self.npc:SetAngles(0, 90, 0)
+    else
+      self.npc:SetAngles(0, 270, 0)
+    end
+    self.npc.unit = self
+    self.npc.player = self.player
+    self.npc.nextTarget = self.nextTarget
+    self.npc:SetMinimumGoldBounty(self.foodCost)
+    self.npc:SetMaximumGoldBounty(self.foodCost)
+    self:Lock()
   end
-  self.npc.unit = self
-  self.npc.player = self.player
-  self.npc.nextTarget = self.nextTarget
-  self.npc:SetMinimumGoldBounty(self.foodCost)
-  self.npc:SetMaximumGoldBounty(self.foodCost)
-  self:Lock()
+  )
 end
 
 
