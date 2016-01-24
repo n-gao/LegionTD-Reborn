@@ -503,6 +503,12 @@ function Game:StartNextRound()
       player.leaked = false;
       player.leaksPenalty = 0;
     end
+    if player.lane and (not player.lane.isActive) then
+      player.missedSpawns = player.missedSpawns + 1
+    end
+    if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
+      player:Abandon()
+    end
     if player.tangos > player.tangoLimit then
       player.tangos = player.tangoLimit
     end
@@ -624,6 +630,11 @@ function Game:OrderFilter(keys)
   local units = {}
   for _,key in pairs(keys.units) do
     table.insert(units, EntIndexToHScript(key))
+  end
+
+  local issuingPlayer = self:FindPlayerWithID(keys.issuer_player_id_const)
+  if issuingPlayer then
+    if issuingPlayer.abandoned == true then return false end
   end
 
   if order == DOTA_UNIT_ORDER_HOLD_POSITION then

@@ -19,6 +19,9 @@ function Player.new(plyEntitie, userID)
   self.foodlimit = START_FOOD_LIMIT
   self.leaks = 0
   self.leaksPenalty = 0
+  self.buildingUpgradeValue = 0
+  self.missedSpawns = 0
+  self.abandoned = false
   return self
 end
 
@@ -301,6 +304,7 @@ function Player:CreateTangoTicker()
     self.timer = Timers:CreateTimer(function()
 
       if Game.gameState == GAMESTATE_PREPARATION and Game.gameRound == STARTING_ROUND then return (1/30) end
+      if self.abandoned == true then return end
       
       local tangoDelay = self.tangoAddSpeed
       if self.leaked then tangoDelay = self.tangoAddSpeed + (self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER * self.leaksPenalty) end
@@ -337,4 +341,30 @@ end
 
 function Player:IsActive()
   return self.lane and self.lane.isActive
+end
+
+function Player:Abandon()
+  local goldValue = PlayerResource:GetGold(self:GetPlayerID()) -- gold in pocket
+  goldValue = goldvalue + self.buildingUpgradeValue -- gold in building upgrades
+  for _, unit in pairs(self.units) do -- gold in built units
+    goldValue = goldValue + unit.goldCost
+    unit:RemoveNPC()
+    table.remove(self.units, self:GetUnitKey(unit))
+  end
+  distributePlayers = {}
+  for _, player in pairs(Game.players) do
+    if player:IsActive() == true and player.teamNumber == self.teamnumber then
+      table.insert(distributePlayers, player)
+    end
+  end
+  goldEach = math.floor(goldValue/#distributePlayers)
+  Notifications:BottomToAll({text="player abandoned. ", duration=5.0, continue = true})
+  Notifications:BottomToAll({text=goldEach, duration=5.0, continue = true})
+  Notifications:BottomToAll({text=" gold distributed to each remaining player", duration=5.0})
+  PlayerResource:SetGold(self:GetPlayerID(), 0, true)
+  PlayerResource:SetGold(self:GetPlayerID(), 0, false)
+  for _, player in pairs (distributePlayers) do
+    PlayerResource:ModifyGold(player:GetPlayerID(), goldEach, true, DOTA_ModifyGold_Unspecified)
+  end
+  self.abandoned = true
 end
