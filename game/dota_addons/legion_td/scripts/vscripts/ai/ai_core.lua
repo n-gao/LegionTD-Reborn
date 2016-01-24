@@ -104,7 +104,7 @@ function NextWayPoint(self)
 
 function Unstuck(self)
 	if self.wayStep then -- is this a wave/send creep?
---		print ("Unsticking unit with .WayStep")
+		print ("Unsticking unit with .WayStep")
 		ExecuteOrderFromTable({
           UnitIndex = self:entindex(), 
           OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
@@ -114,7 +114,7 @@ function Unstuck(self)
           Queue = 0 --Optional.  Used for queueing up abilities
         })
 	elseif self.nextTarget then
---		print ("Unsticking unit with .nextTarget: " .. self.nextTarget.x .. ", " .. self.nextTarget.y)
+		print ("Unsticking unit with .nextTarget: " .. self.nextTarget.x .. ", " .. self.nextTarget.y)
 		self:Stop()
 		ExecuteOrderFromTable({
 	          UnitIndex = self:entindex(), 

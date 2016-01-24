@@ -227,8 +227,20 @@ function OnStartTouch(trigger) -- trigger at end of lane to teleport to final de
   if npc.unit and not npc:IsRealHero() then
     if not (npc:GetTeamNumber() == DOTA_TEAM_NEUTRALS) then
       npc.nextTarget = Game.lastDefends[""..npc:GetTeamNumber()]:GetAbsOrigin()
-      FindClearSpaceForUnit(npc, npc.nextTarget, true)
-      npc:Stop()
+      if npc:GetAttackCapability() == DOTA_UNIT_CAP_RANGED_ATTACK then
+        FindClearSpaceForUnit(npc, Game.lastDefendsRanged[""..npc:GetTeamNumber()]:GetAbsOrigin(), true)
+        npc.nextTarget.y = npc.nextTarget.y - 200
+      else
+        FindClearSpaceForUnit(npc, npc.nextTarget, true)
+      end
+      ExecuteOrderFromTable({
+            UnitIndex = npc:entindex(), 
+            OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
+            TargetIndex = 0, --Optional.  Only used when targeting units
+            AbilityIndex = 0, --Optional.  Only used when casting abilities
+            Position = npc.nextTarget, --Optional.  Only used when targeting the ground
+            Queue = 0 --Optional.  Used for queueing up abilities
+          })
     end
   end
 end

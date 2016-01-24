@@ -182,6 +182,7 @@ function Game:ReadConfiguration()
   self.initPrepTime = kv.FirstPrepTime
   self.timeBetweenRounds = kv.PrepTimeBetweenRounds
   self:ReadLastSpawn(kv["LastSpawn"])
+  self:ReadLastSpawnRanged(kv["LastSpawnRanged"])
   self:ReadIncomeSpawner(kv["IncomeSpawner"])
   self:ReadDuelSpawn(kv["DuelSpawn"])
   self:ReadDuelTargets(kv["DuelTarget"])
@@ -254,6 +255,21 @@ function Game:ReadLastSpawn(kvLast)
     local obj = Entities:FindByName(nil, sp.Name)
     if obj then
       self.lastDefends[ind] = obj
+    else
+      print(sp.Name.." not found.")
+    end
+  end
+end
+
+function Game:ReadLastSpawnRanged(kvLastR)
+  self.lastDefendsRanged = {}
+  if type(kvLastR) ~= "table" then
+    return
+  end
+  for ind,sp in pairs(kvLastR) do
+    local obj = Entities:FindByName(nil, sp.Name)
+    if obj then
+      self.lastDefendsRanged[ind] = obj
     else
       print(sp.Name.." not found.")
     end

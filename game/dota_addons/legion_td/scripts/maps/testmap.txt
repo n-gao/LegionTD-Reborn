@@ -15,6 +15,18 @@
     }
   }
 
+  "LastSpawnRanged"
+  {
+    "2"
+    {
+      "Name"                "Radiant_LastDefRanged"
+    }
+    "3"
+    {
+      "Name"                "Dire_LastDefRanged"
+    }
+  }
+
   "IncomeSpawner"
   {
     "2"
