@@ -506,8 +506,10 @@ function Game:StartNextRound()
     if player.lane and (not player.lane.isActive) then
       player.missedSpawns = player.missedSpawns + 1
     end
-    if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
-      player:Abandon()
+    if not player.abandoned then
+      if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
+        player:Abandon()
+      end
     end
     if player.tangos > player.tangoLimit then
       player.tangos = player.tangoLimit
