@@ -353,7 +353,7 @@ function Player:Abandon()
   end
   distributePlayers = {}
   for _, player in pairs(Game.players) do
-    if player:IsActive() == true and player.teamNumber == self.teamnumber then
+    if player:IsActive() == true and player.teamnumber == self.teamnumber then
       table.insert(distributePlayers, player)
     end
   end
