@@ -30,7 +30,7 @@ function Player:SetPlayerEntitie(plyEntitie, userID)
   self.plyEntitie = plyEntitie
   self.userID = userID
   plyEntitie.myPlayer = self
-  if self.lane then
+  if self.lane and not self.abandoned then
     self.lane.isActive = true
   end
   for _,unit in pairs(self.units) do
