@@ -358,9 +358,7 @@ function Player:Abandon()
     end
   end
   goldEach = math.floor(goldValue/#distributePlayers)
-  Notifications:BottomToAll({text="player abandoned. ", duration=5.0, continue = true})
-  Notifications:BottomToAll({text=goldEach, duration=5.0, continue = true})
-  Notifications:BottomToAll({text=" gold distributed to each remaining player", duration=5.0})
+  GameRules:SendCustomMessage("player abandoned. " .. goldEach .. " gold distributed to each remaining player.", 0, 0)
   PlayerResource:SetGold(self:GetPlayerID(), 0, true)
   PlayerResource:SetGold(self:GetPlayerID(), 0, false)
   for _, player in pairs (distributePlayers) do
