@@ -345,7 +345,7 @@ end
 
 function Player:Abandon()
   local goldValue = PlayerResource:GetGold(self:GetPlayerID()) -- gold in pocket
-  goldValue = goldvalue + self.buildingUpgradeValue -- gold in building upgrades
+  goldValue = goldValue + self.buildingUpgradeValue -- gold in building upgrades
   for _, unit in pairs(self.units) do -- gold in built units
     goldValue = goldValue + unit.goldCost
     unit:RemoveNPC()
