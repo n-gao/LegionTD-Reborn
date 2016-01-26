@@ -238,7 +238,7 @@ function GameSpawner:SendIncomingUnits(team)
           table.insert(unit.waypoints, lane.waypoints[j] + positions[k])
         end
 
-        unit.waypoints[4].y = value.waypoints[4].y -- make final waypoint y aligned with king regardless of formation rank
+        unit.waypoints[4].y = unit.waypoints[4].y -- make final waypoint y aligned with king regardless of formation rank
         unit.wayStep = 2
 
         ExecuteOrderFromTable({
