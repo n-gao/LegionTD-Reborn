@@ -9,19 +9,19 @@
 	There are 3 physical attack types: normal, pierce, and arcane; and 3 physical defense types: light, medium, and heavy. Front-line melee units are generally normal/heavy, archer-types and certain melee units are generally pierce/medium, and wizardly units are generally arcane/light. Not all units follow these common pairings however, and units can have any combination of attack and defense type.
 
 	normal attacks deal:
-	    85% to light defense
-	    120% to medium defense
+	    80% to light defense
+	    125% to medium defense
 	    100% to heavy defense
 
 	piercing attacks deal:
-		120% to light defense
+		125% to light defense
 		100% to medium defense
-		85% to heavy defense
+		80% to heavy defense
 
     arcane attacks deal:
     	100% to light defense
-    	85% to medium defense
-    	120% to heavy defense
+    	80% to medium defense
+    	125% to heavy defense
 
 - All builder units, send units, and non-boss wave units have been given physical attack and defense types.
 
@@ -29,9 +29,11 @@
 
 - Ranged defenders will now teleport to behind the king after clearing their wave, and defend a spot 200 units behind melee defenders.
 
-- If more than 15 units are being sent to the same player, each additional set of 15 will be delayed by an additional 2 seconds (This should fix certain situations where send units will get stuck when a large number is sent at once, especially in playercount-imbalanced games).
+- If more than 15 units are being sent to the same player, each additional set of 15 will be delayed by an additional 2 seconds (This should fix certain situations where send units will get stuck or even spawn off-map when a large number is sent at once, especially in playercount-imbalanced games).
 
 - Attack Aquisition ranges on all non-king units increased from 500 to 850 (except humanbuilder sharpshooter which is still 950).
+
+- Added abandon mechanic: if a player misses 3 wave spawns, all their towers are sold for full value and their net worth (tower value, gold value, and tango/food upgrade value) is split among the remaining players on that team. That player's lane is then locked for the remainder of the game.
 
 ## Wave Changes
 
@@ -67,6 +69,8 @@
 
 - New Nature Builder Unit: Treebeard. Upgrades from Treant, has Treant Protector's Overgrowth with a 2 second duration, and owning one will double the effectiveness of Nature Builder's passive.
 
-## Technical
+## Technical / Bugfix
 
 - Improved precaching of builder unit resources.
+
+- Fixed a case where wave/send units would get "stuck" on the king, only playing their walk animation and not attacking.
