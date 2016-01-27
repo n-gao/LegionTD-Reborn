@@ -33,7 +33,7 @@
 
 - Attack Aquisition ranges on all non-king units increased from 500 to 850 (except humanbuilder sharpshooter which is still 950).
 
-- Added abandon mechanic: if a player misses 3 wave spawns, all their towers are sold for full value and their net worth (tower value, gold value, and tango/food upgrade value) is split among the remaining players on that team. That player's lane is then locked for the remainder of the game.
+- Added abandon mechanic: if a player is disconnected for 3 wave spawns (or abandons directly), all their towers are sold for full value and their net worth (tower value, gold value, and tango/food upgrade value) is split among the remaining players on that team. That player's lane is then locked for the remainder of the game.
 
 ## Wave Changes
 
