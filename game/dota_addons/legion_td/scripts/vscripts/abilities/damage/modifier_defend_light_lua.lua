@@ -3,7 +3,7 @@ modifier_defend_light_lua = class({})
 --------------------------------------------------------------------------------
 
 function modifier_defend_light_lua:GetTexture()
-	return ""
+	return "defend_light"
 end
 
 --------------------------------------------------------------------------------
