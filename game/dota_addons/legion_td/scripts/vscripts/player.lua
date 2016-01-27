@@ -6,7 +6,7 @@ end
 function Player.new(plyEntitie, userID)
   local self = Player()
   self.plyEntitie = plyEntitie
-  self.teamnumber = self:GetTeamNumber()
+  self.teamnumber = self:GetTeamNumber() -- new players don't have a team number so this is worthless here
   plyEntitie.myPlayer = self
   self.userID = userID
   self.units = {}
@@ -60,8 +60,8 @@ function Player:SetNPC(npc)
   self.hero = npc
   self.playerID = self:GetPlayerID()
   npc.player = self
-
-
+  self.teamnumber = self.hero:GetTeamNumber()
+  print ("new player set to team " .. self.teamnumber)
   local laneID = self.hero:GetTeamNumber() == DOTA_TEAM_GOODGUYS and 1 or 5
   if self.hero:GetTeamNumber() == DOTA_TEAM_GOODGUYS then
     laneID = 1
@@ -344,16 +344,21 @@ function Player:IsActive()
 end
 
 function Player:Abandon()
+  print ("abandoning player on team " .. self.teamnumber)
   local goldValue = PlayerResource:GetGold(self:GetPlayerID()) -- gold in pocket
+  print ("abandoning player had " .. goldValue .. " gold in pocket")
   goldValue = goldValue + self.buildingUpgradeValue -- gold in building upgrades
+  print ("plus building upgrades: " .. goldValue)
   for _, unit in pairs(self.units) do -- gold in built units
     goldValue = goldValue + unit.goldCost
     unit:RemoveNPC()
     table.remove(self.units, self:GetUnitKey(unit))
   end
+  print ("plus units: " .. goldValue)
   distributePlayers = {}
   for _, player in pairs(Game.players) do
     if player:IsActive() == true and player.teamnumber == self.teamnumber then
+      print ("player " .. player:GetPlayerID() .. " (teamnumber " .. player.teamnumber .. ") is eligible!")
       table.insert(distributePlayers, player)
     end
   end
@@ -361,8 +366,10 @@ function Player:Abandon()
   GameRules:SendCustomMessage("player abandoned. " .. goldEach .. " gold distributed to each remaining player.", 0, 0)
   PlayerResource:SetGold(self:GetPlayerID(), 0, true)
   PlayerResource:SetGold(self:GetPlayerID(), 0, false)
+  print ("distributing " .. goldEach .. " abandon gold to " .. #distributePlayers .. " players")
   for _, player in pairs (distributePlayers) do
-    PlayerResource:ModifyGold(player:GetPlayerID(), goldEach, true, DOTA_ModifyGold_Unspecified)
+    print ("cha-ching")
+    player.hero:ModifyGold(goldEach, true, DOTA_ModifyGold_Unspecified)
   end
   self.abandoned = true
 end
