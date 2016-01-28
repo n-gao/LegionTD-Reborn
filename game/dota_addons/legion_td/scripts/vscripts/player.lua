@@ -352,8 +352,8 @@ function Player:Abandon()
   for _, unit in pairs(self.units) do -- gold in built units
     goldValue = goldValue + unit.goldCost
     unit:RemoveNPC()
-    table.remove(self.units, self:GetUnitKey(unit))
   end
+  self.units = {}
   print ("plus units: " .. goldValue)
   distributePlayers = {}
   for _, player in pairs(Game.players) do
