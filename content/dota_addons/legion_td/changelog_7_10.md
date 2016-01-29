@@ -41,7 +41,7 @@
 
 - All player units now have a bounty equal to their food cost.
 
-- "King" (wave 20) attack time increased from .4 to .6
+- All bosses (fatty, king, dragon) now have a +50% attack speed ability and their Base Attack Times increased: Fatty BAT from .8 to 1.2, King BAT from .4 to .9, Dragon BAT from .4 to .6
 
 - Wave Bosses attack animation times have been fixed.
 
