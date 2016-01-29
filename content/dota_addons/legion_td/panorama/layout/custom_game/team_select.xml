@@ -12,16 +12,14 @@
 		<Panel hittest="false" id="TeamSelectContainer" selectionpos="auto">
 			<!--Empty space to let the loading screen and chat be visible-->
 			<Panel hittest="false" id="TeamsSelectEmptySpace" />
-<!--
 			<Panel id="OptionList">
 				<Panel id="OptionListGroup">
 					<Label id="OptionTitle" text="#Options_title" />
 					<Panel id="Options">
-						<ToggleButton id="IncomeToggle" onactivate="IncomeTogglePressed()" text="#Option_Income_Limit"/>
+						<ToggleButton id="RtsToggle" onactivate="ReturnToSenderTogglePressed()" text="#Option_Return_To_Sender"/>
 					</Panel>
 				</Panel>
 			</Panel>
-		-->
 			<!--Teams List, left hand panel-->
 			<Panel id="TeamsList" >
 				<Panel id="TeamsListGroup" >

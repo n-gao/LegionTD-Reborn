@@ -33,5 +33,10 @@
 		"playerID"						"short"
 		"value"					"bool"
 	}
+	"toggle_return_to_sender"
+	{
+		"playerID"						"short"
+		"value"					"bool"
+	}
 
 }

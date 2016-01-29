@@ -25,6 +25,8 @@
 
 - All builder units, send units, and non-boss wave units have been given physical attack and defense types.
 
+- New game option: Return to Sender. Tango units will be sent to the sender's team. ALL players must vote for this option to activate it. 
+
 - Tango Limit is always on rather than being a vote option, and has been reworked: rather than being a constant absolute limit to tangos, each player's production time is multiplied by 5 while over the current maximum (cumulative with any leak penalties), and each player's tango count is reduced to the limit at the start of every wave spawn.
 
 - Ranged defenders will now teleport to behind the king after clearing their wave, and defend a spot 200 units behind melee defenders.

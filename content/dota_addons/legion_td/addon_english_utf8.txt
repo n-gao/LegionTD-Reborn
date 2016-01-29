@@ -20,6 +20,7 @@
 		// ******************************** HUD ********************************
 		"Options_title"	"Vote Options"
 		"Option_Income_Limit"	"Tango Limit"
+		"Option_Return_To_Sender"	"Return to Sender"
 		"QuestTimer"    "Next round starts in %quest_current_value% seconds"
 		"Duel_Quest_Title"		"Duel"
 		"Round"			"Round"

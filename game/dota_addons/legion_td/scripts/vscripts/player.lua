@@ -299,7 +299,7 @@ end
 
 
 function Player:CreateTangoTicker()
-  if (not Timers.timers[self.timer]) and (self.lane.mainBuilding) then
+  if (not Timers.timers[self.timer]) and (self.lane.mainBuilding) and (Game:GetCurrentRound()) then
 
     self.timer = Timers:CreateTimer(function()
 

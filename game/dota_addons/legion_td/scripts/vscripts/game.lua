@@ -167,6 +167,7 @@ function Game.new()
   CustomGameEventManager:RegisterListener("send_unit", Dynamic_Wrap(Game, "SendUnit"))
   CustomGameEventManager:RegisterListener("upgarde_king", Dynamic_Wrap(Game, "UpgradeKing"))
   CustomGameEventManager:RegisterListener("toggle_income_limit", Dynamic_Wrap(Game, "ToggleIncomeLimit"))
+  CustomGameEventManager:RegisterListener("toggle_return_to_sender", Dynamic_Wrap(Game, "ToggleReturnToSender"))
   return self
 end
 
@@ -374,12 +375,24 @@ function Game:Start()
   self.direBoss.damageBonus = START_DAMAGE_BONUS
   self.direBoss.regenBonus = START_BONUS_REGEN
   local incomeLimitCount = 0
+  local rtsVoteCount = 0
   for _,player in pairs(self.players) do
     if player.wantIncomeLimit == 1 then
       incomeLimitCount = incomeLimitCount + 1
     end
+    if player.wantRTS == 1 then
+      rtsVoteCount = rtsVoteCount + 1
+    end
   end
   self.withIncomeLimit = incomeLimitCount > (PlayerResource:GetPlayerCount() / 2)
+  self.returnToSenderActive = rtsVoteCount == PlayerResource:GetPlayerCount()
+  print("rtsVoteCount: " .. rtsVoteCount)
+  print("player count: " .. PlayerResource:GetPlayerCount())
+  if self.returnToSenderActive then
+    GameRules:SendCustomMessage("Return to Sender mode is active!", 0, 0)
+    print("return to sender is active")
+  end
+
   self:CreateGameTimer()
   -- GameRules:GetGameModeEntity():SetThink("OnThink", self, "Check", 0)
   self:Initialice()
@@ -756,6 +769,18 @@ end
 
 
 
+function Game:ToggleReturnToSender(data)
+print ("Game:ToggleReturnToSender invoked")
+  local lData = {
+    playerID = data.playerID,
+    value = data.value
+  }
+  local player = Game:FindPlayerWithID(lData.playerID)
+  player.wantRTS = data.value
+end
+
+
+
 --sends a unit
 function Game:SendUnit(data)
   local lData = {
@@ -773,7 +798,7 @@ function Game:SendUnit(data)
     local name = Game.GetUnitNameByID(lData.id)
     local unit = CreateUnitByName(name, spawn, true, nil, nil, team)
     unit.tangoValue = lData.cost
-    if team == 2 then
+    if team == 2 and not Game.returnToSenderActive then
       print ("adding unit to Game.sendRadiant")
       table.insert(Game.sendRadiant, unit)
     else
