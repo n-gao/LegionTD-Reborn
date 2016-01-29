@@ -142,6 +142,8 @@ function deafening_blast_disarm( keys )
 	local disarm_duration = owner_ability:GetSpecialValueFor("disarm_duration")
 	local disarm_modifier = keys.disarm_modifier
 
+	FindClearSpaceForUnit(target, target:GetAbsOrigin(), true)
+
 	-- Check if the target is alive(to prevent errors when the deafening blast is the killing blow)
 	if target:IsAlive() and ability then
 		ability:ApplyDataDrivenModifier(caster, target, disarm_modifier, {duration = disarm_duration})

@@ -59,6 +59,8 @@
 
 - Human Builder Icewrack Grandmaster Freezing Field explosion interval decreased from every 1.0 seconds to every .7 seconds.
 
+- Human Builder Soundmaster's Deafening Blast will now stun rather than disarm at the end of its duration, and should no longer cause units to get stuck up cliffs.
+
 ### Elemental Builder
 
 - Elemental Builder gets stat bonuses and penalties on his entire legion depending on how much gold he's proportionally spent on each element. If he manages to get all elements within a threshhold of the average, he gets maximum stacks on all stats. Purchasing a God for an element (the most expensive upgrade for each element) will stabilize that element, making elemental harmony that much easier to achieve.

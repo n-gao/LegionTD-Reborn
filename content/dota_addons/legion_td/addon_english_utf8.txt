@@ -290,17 +290,17 @@
 		"DOTA_Tooltip_modifier_humanbuilder_passive_lua_Description"					"Gain %fMODIFIER_PROPERTY_TOOLTIP% additional food per round."  
 
 		"DOTA_Tooltip_modifier_attack_normal_lua"													"Normal Attack"
-		"DOTA_Tooltip_modifier_attack_normal_lua_Description"										"Deal 85%% to Light\nDeal 120%% to Medium\nDeal 100%% to Heavy"
+		"DOTA_Tooltip_modifier_attack_normal_lua_Description"										"Deal 80%% to Light\nDeal 125%% to Medium\nDeal 100%% to Heavy"
 		"DOTA_Tooltip_modifier_attack_pierce_lua"													"Pierce Attack"
-		"DOTA_Tooltip_modifier_attack_pierce_lua_Description"										"Deal 120%% to Light\nDeal 100%% to Medium\nDeal 85%% to Heavy"
+		"DOTA_Tooltip_modifier_attack_pierce_lua_Description"										"Deal 125%% to Light\nDeal 100%% to Medium\nDeal 80%% to Heavy"
 		"DOTA_Tooltip_modifier_attack_arcane_lua"													"Arcane Attack"
-		"DOTA_Tooltip_modifier_attack_arcane_lua_Description"										"Deal 100%% to Light\nDeal 85%% to Medium\nDeal 120%% to Heavy"
+		"DOTA_Tooltip_modifier_attack_arcane_lua_Description"										"Deal 100%% to Light\nDeal 80%% to Medium\nDeal 150%% to Heavy"
 		"DOTA_Tooltip_modifier_defend_light_lua"													"Light Defense"
-		"DOTA_Tooltip_modifier_defend_light_lua_Description"										"Take 85%% from Normal\nTake 120%% from Pierce\nTake 100% from Arcane"
+		"DOTA_Tooltip_modifier_defend_light_lua_Description"										"Take 80%% from Normal\nTake 125%% from Pierce\nTake 100% from Arcane"
 		"DOTA_Tooltip_modifier_defend_medium_lua"													"Medium Defense"
-		"DOTA_Tooltip_modifier_defend_medium_lua_Description"										"Take 120%% from Normal\nTake 100%% from Pierce\nTake 85% from Arcane"
+		"DOTA_Tooltip_modifier_defend_medium_lua_Description"										"Take 125%% from Normal\nTake 100%% from Pierce\nTake 80% from Arcane"
 		"DOTA_Tooltip_modifier_defend_heavy_lua"													"Heavy Defense"
-		"DOTA_Tooltip_modifier_defend_heavy_lua_Description"										"Take 100%% from Normal\nTake 85%% from Pierce\nTake 120% from Arcane"
+		"DOTA_Tooltip_modifier_defend_heavy_lua_Description"										"Take 100%% from Normal\nTake 80%% from Pierce\nTake 125% from Arcane"
 
 
 		// ******************** ITEM MODIFIERS ********************
@@ -1293,7 +1293,7 @@
 		"DOTA_Tooltip_ability_soldier_shield_bash_chance"                                       "BLOCK CHANCE:"
 
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast"                                "Deafening Blast"
-		"DOTA_Tooltip_ability_soundmaster_deafening_blast_Description"                    "Throws a wave of pure sound directly north or south, pushing enemies back while disabling them, then disarming them."
+		"DOTA_Tooltip_ability_soundmaster_deafening_blast_Description"                    "Throws a wave of pure sound directly north or south, pushing enemies back while disabling them, then stunning them."
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast_travel_distance"                "TRAVEL DISTANCE:"
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast_travel_speed"                   "TRAVEL SPEED:"
 		"DOTA_Tooltip_ability_soundmaster_deafening_blast_radius_start"                   "RADIUS START:"

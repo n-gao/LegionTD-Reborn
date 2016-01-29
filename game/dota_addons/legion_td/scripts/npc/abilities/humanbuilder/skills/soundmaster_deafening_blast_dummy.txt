@@ -86,12 +86,12 @@
 			"StatusEffectName" 		"particles/status_fx/status_effect_frost.vpcf" 	   
 			"StatusEffectPriority"  "10"
 
-			"EffectName"		"particles/units/heroes/hero_invoker/invoker_deafening_blast_disarm_debuff.vpcf"
+			"EffectName"		"particles/generic_gameplay/generic_stunned.vpcf"
 			"EffectAttachType"	"follow_overhead"
 
 			"States"
 			{
-				"MODIFIER_STATE_DISARMED"		"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_STUNNED"		"MODIFIER_STATE_VALUE_ENABLED"
 			}
 		}
 
