@@ -68,7 +68,7 @@
 		"modifier_footman_pms"
 		{
 			"Passive"					"1"
-			"IsHidden"					"0"
+			"IsHidden"					"1"
 			"ThinkInterval"				"0.03"
 			"OnCreated"
 			{

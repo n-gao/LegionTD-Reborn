@@ -296,11 +296,11 @@
 		"DOTA_Tooltip_modifier_attack_arcane_lua"													"Arcane Attack"
 		"DOTA_Tooltip_modifier_attack_arcane_lua_Description"										"Deal 100%% to Light\nDeal 80%% to Medium\nDeal 150%% to Heavy"
 		"DOTA_Tooltip_modifier_defend_light_lua"													"Light Defense"
-		"DOTA_Tooltip_modifier_defend_light_lua_Description"										"Take 80%% from Normal\nTake 125%% from Pierce\nTake 100% from Arcane"
+		"DOTA_Tooltip_modifier_defend_light_lua_Description"										"Take 80%% from Normal\nTake 125%% from Pierce\nTake 100%% from Arcane"
 		"DOTA_Tooltip_modifier_defend_medium_lua"													"Medium Defense"
-		"DOTA_Tooltip_modifier_defend_medium_lua_Description"										"Take 125%% from Normal\nTake 100%% from Pierce\nTake 80% from Arcane"
+		"DOTA_Tooltip_modifier_defend_medium_lua_Description"										"Take 125%% from Normal\nTake 100%% from Pierce\nTake 80%% from Arcane"
 		"DOTA_Tooltip_modifier_defend_heavy_lua"													"Heavy Defense"
-		"DOTA_Tooltip_modifier_defend_heavy_lua_Description"										"Take 100%% from Normal\nTake 80%% from Pierce\nTake 125% from Arcane"
+		"DOTA_Tooltip_modifier_defend_heavy_lua_Description"										"Take 100%% from Normal\nTake 80%% from Pierce\nTake 125%% from Arcane"
 
 
 		// ******************** ITEM MODIFIERS ********************
