@@ -113,10 +113,10 @@ end
 --Ende einer Runde
 function DuelRound:End()
   self.winningTeam = DOTA_TEAM_GOODGUYS
-  local victoryText = "Radiant wins the duel!"
+  local victoryText = "Radiant wins the duel and win "
   if next(self.remainingUnitsRadiant) == nil then
     self.winningTeam = DOTA_TEAM_BADGUYS
-    victoryText = "Dire wins the duel!"
+    victoryText = "Dire wins the duel and win "
   end
   if self.determinWinner then
     GameRules:SetGameWinner(self.winningTeam)
@@ -128,7 +128,7 @@ function DuelRound:End()
   Timers.timers[self.unstuckTimer] = nil
   self.unstuckTimer = nil
   self.EventHandles = {}
-  Notifications:TopToAll({text=victoryText, duration=5.0})
+  GameRules:SendCustomMessage(victoryText .. self.bounty .. " extra gold each!", 0, 0)
   Game:RoundFinished()
 end
 
