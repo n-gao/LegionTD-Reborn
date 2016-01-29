@@ -305,6 +305,7 @@ function Player:CreateTangoTicker()
 
       if Game.gameState == GAMESTATE_PREPARATION and Game.gameRound == STARTING_ROUND then return (1/30) end
       if self.abandoned == true then return end
+      if Game:GetCurrentRound().isDuelRound then return end
       
       local tangoDelay = self.tangoAddSpeed
       if self.leaked then tangoDelay = self.tangoAddSpeed + (self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER * self.leaksPenalty) end

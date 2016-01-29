@@ -37,7 +37,9 @@
 
 ## Wave Changes
 
-- Duel victory gold bounty reduced from 75/150/300 to 25/50/100
+- Tango towers no longer produce tangos during duel rounds, including setup.
+
+- Duel victory gold bounty reduced from 75/150/300 to 25/50/100.
 
 - All player units now have a bounty equal to their food cost.
 
