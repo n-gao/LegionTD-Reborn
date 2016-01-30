@@ -62,6 +62,39 @@
 		"Upgrade_King_Health"							"King Health"
 		"Upgrade_King_Attack"							"King Attack"
 		"Upgrade_King_Regen"							"King Regen"
+
+
+		"wavetitle_abaddon"                                                                    "Abaddon (Normal / Heavy)"
+		"wavetitle_assassins"                                                                  "Assassin (Pierce / Light)"
+		"wavetitle_chaos"                                                                      "The Random Guy (Normal / Heavy)"
+		"wavetitle_chen"                                                                       "The OP Guy at the end"
+		"wavetitle_deathprophet"                                                               "Deathprophet (Arcane / Light)"
+		"wavetitle_donkey"                                                                     "Donkey (Normal / Light)"
+		"wavetitle_dragon"                                                                     "Dragonlord"
+		"wavetitle_drunken"                                                                    "Drunken (Normal / Medium)"
+		"wavetitle_earthspirit"                                                                "Earthspirit (Normal / Heavy)"
+		"wavetitle_enchantress"                                                                "Enchantress (Normal / Light)"
+		"wavetitle_fatty"                                                                      "Fatty"
+		"wavetitle_gatling_sniper"                                                             "Gatling Guy (Arcane / Light)"
+		"wavetitle_huskar"                                                                     "Berserker (Pierce / Light)"
+		"wavetitle_hydra"                                                                      "Hydra (Arcane / Medium)"
+		"wavetitle_king"                                                                       "King"
+		"wavetitle_kunkka"                                                                     "Pirate (Normal / Medium)"
+		"wavetitle_lightning_ball"                                                             "Fluffy Thing (Pierce / Medium)"
+		"wavetitle_little_fishy"                                                               "Little Fishy (Normal / Medium)"
+		"wavetitle_necro_replacement"															"Bloody Berserker (Pierce / Medium)"
+		"wavetitle_not_lifestealer"                                                            "Not Lifestealer (Normal / Light)"
+		"wavetitle_ogre"                                                                       "Ogre (Arcane / Heavy)"
+		"wavetitle_phantom"                                                                    "Phantom (Pierce / Medium)"
+		"wavetitle_predator"                                                                   "Predator (Pierce / Medium)"
+		"wavetitle_rubick"                                                                     "The Grand Magus (Arcane / Light)"
+		"wavetitle_space_cow"                                                                  "Space Cow (Normal / Heavy)"
+		"wavetitle_techies"                                                                    "I'm out (Arcane / Medium)"
+		"wavetitle_templer"                                                                    "Templer (Arcane / Light)"
+		"wavetitle_tidehunter"                                                                 "Tidehunter (Normal / Heavy)"
+		"wavetitle_tiny"                                                                       "Tiny (Normal / Heavy)"
+		"wavetitle_unicorn"                                                                    "Unicorn (Arcane / Light)"
+		"wavetitle_zombie"                                                                     "Zombie (Arcane / Light)"
 		
 
 		// ******************** HEROES ********************
@@ -326,7 +359,7 @@
 		"DOTA_Tooltip_ability_beeing_radiant_boss_Description"                            ""
 
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender"                         "Spawn Earthbender"
-		"DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_Description"             "Skills: ---"
+		"DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_Description"             "Attack: Normal/Heavy\nSkills: ---"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_atk_damage_tooltip"      "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_atk_speed_tooltip"       "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_atk_range_tooltip"       "ATK RANGE:"
@@ -335,7 +368,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_food_cost"               "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_firebender"                          "Spawn Firebender"
-		"DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_Description"              "Skills: ---"
+		"DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_Description"              "Attack: Arcane/Light\nSkills: ---"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_atk_damage_tooltip"       "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_atk_speed_tooltip"        "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_atk_range_tooltip"        "ATK RANGE:"
@@ -344,7 +377,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_food_cost"                "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender"                       "Spawn Thunderbender"
-		"DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_Description"           "Skills: ---"
+		"DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_Description"           "Attack: Arcane/Light\nSkills: ---"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_atk_damage_tooltip"    "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_atk_speed_tooltip"     "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_atk_range_tooltip"     "ATK RANGE:"
@@ -353,7 +386,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_food_cost"             "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender"                          "Spawn Voidbender"
-		"DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_Description"              "Skills: ---"
+		"DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_Description"              "Attack: Arcane/Medium\nSkills: ---"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_atk_damage_tooltip"       "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_atk_speed_tooltip"        "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_atk_range_tooltip"        "ATK RANGE:"
@@ -362,7 +395,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_food_cost"                "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender"                         "Spawn Waterbender"
-		"DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender_Description"             "Skills: ---"
+		"DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender_Description"             "Attack: Normal/Heavy\nSkills: ---"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender_atk_damage_tooltip"      "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender_atk_speed_tooltip"       "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender_atk_range_tooltip"       "ATK RANGE:"
@@ -556,7 +589,7 @@
 		"DOTA_Tooltip_ability_iron_bear_fury_swipes_damage_per_stack"                     "DAMAGE PER STACK:"
 
 		"DOTA_Tooltip_ability_naturebuilder_spawn_bear"                                   "Spawn Bear"
-		"DOTA_Tooltip_ability_naturebuilder_spawn_bear_Description"                       "Skills: Beserkers Call"
+		"DOTA_Tooltip_ability_naturebuilder_spawn_bear_Description"                       "Attack: Normal/Heavy\nSkills: Beserkers Call"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_bear_atk_damage_tooltip"                "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_bear_atk_speed_tooltip"                 "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_bear_atk_range_tooltip"                 "ATK RANGE:"
@@ -565,7 +598,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_spawn_bear_food_cost"                         "FOOD COST:"
 		
 		"DOTA_Tooltip_ability_naturebuilder_spawn_bug"                                    "Spawn Bug"
-		"DOTA_Tooltip_ability_naturebuilder_spawn_bug_Description"                        "Skills: Geminate Attack"
+		"DOTA_Tooltip_ability_naturebuilder_spawn_bug_Description"                        "Attack: Pierce/Medium\nSkills: Geminate Attack"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_bug_atk_damage_tooltip"                 "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_bug_atk_speed_tooltip"                  "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_bug_atk_range_tooltip"                  "ATK RANGE:"
@@ -574,7 +607,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_spawn_bug_food_cost"                          "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_spawn_centaur"                                "Spawn Centaur"
-		"DOTA_Tooltip_ability_naturebuilder_spawn_centaur_Description"                    "Skills: Craggy Exterior"
+		"DOTA_Tooltip_ability_naturebuilder_spawn_centaur_Description"                    "Attack: Normal/Heavy\nSkills: Craggy Exterior"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_centaur_atk_damage_tooltip"             "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_centaur_atk_speed_tooltip"              "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_centaur_atk_range_tooltip"              "ATK RANGE:"
@@ -583,7 +616,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_spawn_centaur_food_cost"                      "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_spawn_hyena"                                  "Spawn Hyena"
-		"DOTA_Tooltip_ability_naturebuilder_spawn_hyena_Description"                      "Skills: Nethertoxin"
+		"DOTA_Tooltip_ability_naturebuilder_spawn_hyena_Description"                      "Attack: Normal/Heavy\nSkills: Nethertoxin"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_hyena_atk_damage_tooltip"               "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_hyena_atk_speed_tooltip"                "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_hyena_atk_range_tooltip"                "ATK RANGE:"
@@ -592,7 +625,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_spawn_hyena_food_cost"                        "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_spawn_spider"                                 "Spawn Spider"
-		"DOTA_Tooltip_ability_naturebuilder_spawn_spider_Description"                     "Skills: Poison Sting"
+		"DOTA_Tooltip_ability_naturebuilder_spawn_spider_Description"                     "Attack: Normal/Heavy\nSkills: Poison Sting"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_spider_atk_damage_tooltip"              "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_spider_atk_speed_tooltip"               "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_spider_atk_range_tooltip"               "ATK RANGE:"
@@ -601,7 +634,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_spawn_spider_food_cost"                       "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_spawn_treant"                                 "Spawn Treant"
-		"DOTA_Tooltip_ability_naturebuilder_spawn_treant_Description"                     "Skills: Vampiric Aura"
+		"DOTA_Tooltip_ability_naturebuilder_spawn_treant_Description"                     "Attack: Normal/Heavy\nSkills: Vampiric Aura"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_treant_atk_damage_tooltip"              "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_treant_atk_speed_tooltip"               "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_spawn_treant_atk_range_tooltip"               "ATK RANGE:"
@@ -610,7 +643,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_spawn_treant_food_cost"                       "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar"                       "Upgrade Agressive Boar"
-		"DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar_Description"           "Skills: Nethertoxin"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar_Description"           "Attack: Arcane/Medium\nSkills: Nethertoxin"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar_atk_damage_tooltip"    "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar_atk_speed_tooltip"     "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar_atk_range_tooltip"     "ATK RANGE:"
@@ -619,7 +652,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar_food_cost"             "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug"                              "Upgrade Big Bug"
-		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug_Description"                  "Skills: Geminate Attack"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug_Description"                  "Attack: Pierce/Medium\nSkills: Geminate Attack"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug_atk_damage_tooltip"           "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug_atk_speed_tooltip"            "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug_atk_range_tooltip"            "ATK RANGE:"
@@ -628,7 +661,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug_food_cost"                    "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur"                          "Upgrade Big Centaur"
-		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur_Description"              "Skills: Hoofstomp, Craggy Exterior"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur_Description"              "Attack: Normal/Heavy\nSkills: Hoofstomp, Craggy Exterior"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur_atk_damage_tooltip"       "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur_atk_speed_tooltip"        "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur_atk_range_tooltip"        "ATK RANGE:"
@@ -637,7 +670,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur_food_cost"                "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother"                          "Upgrade Broodmother"
-		"DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother_Description"              "Skills: Spawn Spiderlings"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother_Description"              "Attack: Normal/Heavy\nSkills: Spawn Spiderlings"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother_atk_damage_tooltip"       "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother_atk_speed_tooltip"        "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother_atk_range_tooltip"        "ATK RANGE:"
@@ -646,7 +679,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother_food_cost"                "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner"                    "Upgrade Centaur Warrunner"
-		"DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner_Description"        "Skills: Greater Cleave"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner_Description"        "Attack: Normal/Heavy\nSkills: Greater Cleave"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner_atk_speed_tooltip"		"ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner_atk_range_tooltip"		"ATK RANGE:"
@@ -655,7 +688,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner_food_cost"          "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear"                           "Upgrade Druid Bear"
-		"DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear_Description"               "Skills: Beserkers Call, Entangle"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear_Description"               "Attack: Normal/Heavy\nSkills: Beserkers Call, Entangle"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear_atk_damage_tooltip"        "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear_atk_speed_tooltip"         "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear_atk_range_tooltip"         "ATK RANGE:"
@@ -664,7 +697,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear_food_cost"                 "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_flower_treant"                        "Upgrade Flower Treant"
-		"DOTA_Tooltip_ability_naturebuilder_upgrade_flower_treant_Description"            "Skills: Vampiric Aura, Cold Attack"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_flower_treant_Description"            "Attack: Arcane/Light\nSkills: Vampiric Aura, Cold Attack"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_flower_treant_atk_damage_tooltip"     "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_flower_treant_atk_speed_tooltip"      "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_flower_treant_atk_range_tooltip"      "ATK RANGE:"
@@ -673,7 +706,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_flower_treant_food_cost"              "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear"                            "Upgrade Iron Bear"
-		"DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear_Description"                "Skills: Fury Swipes"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear_Description"                "Attack: Normal/Heavy\nSkills: Fury Swipes"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear_atk_damage_tooltip"         "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear_atk_speed_tooltip"          "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear_atk_range_tooltip"          "ATK RANGE:"
@@ -682,7 +715,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear_food_cost"                  "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_shroom"                               "Upgrade Shroom"
-		"DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_Description"                   "Skills: Corrosive Skin"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_Description"                   "Attack: Arcane/Heavy\nSkills: Corrosive Skin"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_atk_damage_tooltip"            "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_atk_speed_tooltip"             "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_atk_range_tooltip"             "ATK RANGE:"
@@ -691,7 +724,7 @@
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_food_cost"                     "FOOD COST:"
 
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard"                            "Upgrade Treebeard"
-		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_Description"                "Skills: Overgrowth, Synergy"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_Description"                "Attack: Normal/Heavy\nSkills: Overgrowth, Synergy"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_atk_damage_tooltip"         "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_atk_speed_tooltip"          "ATK RATE:"
 		"DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_atk_range_tooltip"          "ATK RANGE:"
@@ -773,7 +806,7 @@
 		"DOTA_Tooltip_ability_techies_suicide_datadriven_vision_duration"                 "VISION DURATION:"
 		
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental"                    "Upgrade Earthelemental"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental_Description"        "Skills: Caustic Finale"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental_Description"        "Attack: Normal/Heavy\nSkills: Caustic Finale"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental_atk_speed_tooltip"		"ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental_atk_range_tooltip"		"ATK RANGE:"
@@ -782,7 +815,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental_food_cost"          "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod"                          "Upgrade Earthgod"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod_Description"              "Skills: Avalanche"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod_Description"              "Attack: Normal/Heavy\nSkills: Avalanche"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod_atk_damage_tooltip"       "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod_atk_speed_tooltip"        "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod_atk_range_tooltip"        "ATK RANGE:"
@@ -791,7 +824,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod_food_cost"                "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior"                      "Upgrade Earthwarrior"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior_Description"          "Skills: ---"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior_Description"          "Attack: Normal/Heavy\nSkills: ---"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior_atk_damage_tooltip"   "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior_atk_speed_tooltip"    "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior_atk_range_tooltip"    "ATK RANGE:"
@@ -800,7 +833,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior_food_cost"            "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental"                     "Upgrade Fireelemental"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental_Description"         "Skills: Flame Guard"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental_Description"         "Attack: Arcane/Medium\nSkills: Flame Guard"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental_atk_speed_tooltip"   "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental_atk_range_tooltip"   "ATK RANGE:"
@@ -809,7 +842,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental_food_cost"           "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod"                           "Upgrade Firegod"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod_Description"               "Skills: Supernova"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod_Description"               "Attack: Arcane/Light\nSkills: Supernova"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod_atk_damage_tooltip"        "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod_atk_speed_tooltip"         "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod_atk_range_tooltip"         "ATK RANGE:"
@@ -818,7 +851,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod_food_cost"                 "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior"                       "Upgrade Firewarrior"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior_Description"           "Skills: Sleight of Fist"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior_Description"           "Attack: Normal/Heavy\nSkills: Sleight of Fist"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior_atk_damage_tooltip"    "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior_atk_speed_tooltip"     "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior_atk_range_tooltip"     "ATK RANGE:"
@@ -827,7 +860,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior_food_cost"             "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental"                  "Upgrade Thunderelemental"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental_Description"      "Skills: Diablolic Edict"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental_Description"      "Attack: Arcane/Light\nSkills: Diablolic Edict"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental_atk_speed_tooltip"		"ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental_atk_range_tooltip"		"ATK RANGE:"
@@ -836,7 +869,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental_food_cost"        "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod"                        "Upgrade Thundergod"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod_Description"            "Skills: Arc Lightning"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod_Description"            "Attack: Arcane/Light\nSkills: Arc Lightning"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod_atk_damage_tooltip"     "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod_atk_speed_tooltip"      "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod_atk_range_tooltip"      "ATK RANGE:"
@@ -845,7 +878,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod_food_cost"              "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior"                    "Upgrade Thunderwarrior"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior_Description"        "Skills: Static Remnant"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior_Description"        "Attack: Arcane/Medium\nSkills: Static Remnant"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior_atk_speed_tooltip"		"ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior_atk_range_tooltip"		"ATK RANGE:"
@@ -854,7 +887,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior_food_cost"          "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental"                     "Upgrade Voidelemental"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental_Description"         "Skills: Brain Sap"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental_Description"         "Attack: Arcane/Light\nSkills: Brain Sap"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental_atk_speed_tooltip"   "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental_atk_range_tooltip"   "ATK RANGE:"
@@ -863,7 +896,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental_food_cost"           "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod"                           "Upgrade Voidgod"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod_Description"               "Skills: Black Hole"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod_Description"               "Attack: Arcane/Light\nSkills: Black Hole"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod_atk_damage_tooltip"        "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod_atk_speed_tooltip"         "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod_atk_range_tooltip"         "ATK RANGE:"
@@ -872,7 +905,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod_food_cost"                 "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior"                       "Upgrade Voidwarrior"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior_Description"           "Skills: Timelock"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior_Description"           "Attack: Normal/Heavy\nSkills: Timelock"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior_atk_damage_tooltip"    "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior_atk_speed_tooltip"     "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior_atk_range_tooltip"     "ATK RANGE:"
@@ -881,7 +914,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior_food_cost"             "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental"                    "Upgrade Waterelemental"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental_Description"        "Skills: ---"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental_Description"        "Attack: Arcane/Light\nSkills: ---"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental_atk_speed_tooltip"		"ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental_atk_range_tooltip"		"ATK RANGE:"
@@ -890,7 +923,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental_food_cost"          "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod"                          "Upgrade Watergod"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod_Description"              "Skills: Ice Vortex"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod_Description"              "Attack: Arcane/Light\nSkills: Ice Vortex"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod_atk_damage_tooltip"       "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod_atk_speed_tooltip"        "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod_atk_range_tooltip"        "ATK RANGE:"
@@ -899,7 +932,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod_food_cost"                "FOOD COST:"
 
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior"                      "Upgrade Waterwarrior"
-		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_Description"          "Skills: Rip Tide"
+		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_Description"          "Attack: Pierce/Medium\nSkills: Rip Tide"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_atk_damage_tooltip"   "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_atk_speed_tooltip"    "ATK RATE:"
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_atk_range_tooltip"    "ATK RANGE:"
@@ -908,7 +941,7 @@
 		"DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_food_cost"            "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_spawn_archer"                                  "Spawn Archer"
-		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_Description"                      "Skills: ---"
+		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_Description"                      "Attack: Pierce/Medium\nSkills: ---"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_atk_damage_tooltip"               "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_atk_speed_tooltip"                "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_atk_range_tooltip"                "ATK RANGE:"
@@ -917,7 +950,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_spawn_archer_food_cost"                        "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1"                          "Spawn Gyrocopter Mk1"
-		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_Description"              "Skills: Split Shot"
+		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_Description"              "Attack: Pierce/Medium\nSkills: Split Shot"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_atk_damage_tooltip"       "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_atk_speed_tooltip"        "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_atk_range_tooltip"        "ATK RANGE:"
@@ -926,7 +959,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_food_cost"                "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant"                               "Spawn Lieutnant"
-		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_Description"                   "Skills: Vigor Strike"
+		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_Description"                   "Attack: Normal/Heavy\nSkills: Vigor Strike"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_atk_damage_tooltip"            "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_atk_speed_tooltip"             "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_atk_range_tooltip"             "ATK RANGE:"
@@ -935,7 +968,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_food_cost"                     "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_spawn_militia"                                 "Spawn Militia"
-		"DOTA_Tooltip_ability_humanbuilder_spawn_militia_Description"                     "Skills: ---"
+		"DOTA_Tooltip_ability_humanbuilder_spawn_militia_Description"                     "Attack: Normal/Heavy\nSkills: ---"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_militia_atk_damage_tooltip"              "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_militia_atk_speed_tooltip"               "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_militia_atk_range_tooltip"               "ATK RANGE:"
@@ -945,7 +978,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_spawn_novice"                                  "Spawn Novice"
-		"DOTA_Tooltip_ability_humanbuilder_spawn_novice_Description"                      "Skills: Chain Fade"
+		"DOTA_Tooltip_ability_humanbuilder_spawn_novice_Description"                      "Attack: Arcane/Light\nSkills: Chain Fade"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_novice_atk_damage_tooltip"               "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_novice_atk_speed_tooltip"                "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_spawn_novice_atk_range_tooltip"                "ATK RANGE:"
@@ -954,7 +987,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_spawn_novice_food_cost"                        "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop"                            "Upgrade Archbishop"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_Description"                "Skills: Shadow Wave, Healing Aura"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_Description"                "Attack: Arcane/Light\nSkills: Shadow Wave, Healing Aura"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_atk_damage_tooltip"         "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_atk_speed_tooltip"          "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_atk_range_tooltip"          "ATK RANGE:"
@@ -963,7 +996,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_food_cost"                  "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage"                              "Upgrade Archmage"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_Description"                  "Skills: Chain Fade, Crystal Nova"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_Description"                  "Attack: Arcane/Light\nSkills: Chain Fade, Crystal Nova"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_atk_damage_tooltip"           "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_atk_speed_tooltip"            "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_atk_range_tooltip"            "ATK RANGE:"
@@ -972,7 +1005,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_food_cost"                    "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster"                           "Upgrade Blademaster"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_Description"               "Skills: Blade fury, Blade Dance"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_Description"               "Attack: Normal/Heavy\nSkills: Blade fury, Blade Dance"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_atk_damage_tooltip"        "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_atk_speed_tooltip"         "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_atk_range_tooltip"         "ATK RANGE:"
@@ -981,7 +1014,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_food_cost"                 "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_footman"                               "Upgrade Footman"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_footman_Description"                   "Skills: Shield Bash"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_footman_Description"                   "Attack: Normal/Heavy\nSkills: Shield Bash"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_footman_atk_damage_tooltip"            "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_footman_atk_speed_tooltip"             "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_footman_atk_range_tooltip"             "ATK RANGE:"
@@ -991,7 +1024,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter"                 "Upgrade Futuristic Gyrocopter"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_Description"     "Skills: Call Down, Split Shot"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_Description"     "Attack: Pierce/Medium\nSkills: Call Down, Split Shot"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_atk_speed_tooltip"		"ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_atk_range_tooltip"		"ATK RANGE:"
@@ -1001,7 +1034,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_general"                               "Upgrade General"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_general_Description"                   "Skills: Vigor Strike, Vladmir Aura"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_general_Description"                   "Attack: Normal/Heavy\nSkills: Vigor Strike, Vladmir Aura"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_general_atk_damage_tooltip"            "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_general_atk_speed_tooltip"             "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_general_atk_range_tooltip"             "ATK RANGE:"
@@ -1011,7 +1044,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gunner"                                "Upgrade Gunner"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_Description"                    "Skills: Headshot"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_Description"                    "Attack: Pierce/Medium\nSkills: Headshot"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_atk_damage_tooltip"             "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_atk_speed_tooltip"              "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_atk_range_tooltip"              "ATK RANGE:"
@@ -1021,7 +1054,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2"                        "Upgrade Gyrocopter Mk2"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_Description"            "Skills: Split Shot"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_Description"            "Attack: Pierce/Medium\nSkills: Split Shot"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_atk_damage_tooltip"     "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_atk_speed_tooltip"      "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_atk_range_tooltip"      "ATK RANGE:"
@@ -1031,7 +1064,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_hunter"                                "Upgrade Hunter"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_Description"                    "Skills: Headshot"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_Description"                    "Attack: Pierce/Medium\nSkills: Headshot"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_atk_damage_tooltip"             "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_atk_speed_tooltip"              "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_atk_range_tooltip"              "ATK RANGE:"
@@ -1041,7 +1074,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster"                  "Upgrade Icewrack Grandmaster"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_Description"      "Skills: Freezing Field"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_Description"      "Attack: Arcane/Light\nSkills: Freezing Field"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_atk_speed_tooltip"		"ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_atk_range_tooltip"		"ATK RANGE:"
@@ -1051,7 +1084,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage"                                  "Upgrade Mage"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage_Description"                      "Skills: Chain Fade, Crystal Nova"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage_Description"                      "Attack: Arcane/Light\nSkills: Chain Fade, Crystal Nova"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage_atk_damage_tooltip"               "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage_atk_speed_tooltip"                "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage_atk_range_tooltip"                "ATK RANGE:"
@@ -1060,7 +1093,7 @@
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_mage_food_cost"                        "FOOD COST:"
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_marksman"                              "Upgrade Marksman"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_Description"                  "Skills: Headshot"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_Description"                  "Attack: Pierce/Medium\nSkills: Headshot"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_atk_damage_tooltip"           "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_atk_speed_tooltip"            "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_atk_range_tooltip"            "ATK RANGE:"
@@ -1070,7 +1103,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_paladin"                               "Upgrade Paladin"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_Description"                   "Skills: Purification"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_Description"                   "Attack: Normal/Heavy\nSkills: Purification"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_atk_damage_tooltip"            "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_atk_speed_tooltip"             "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_atk_range_tooltip"             "ATK RANGE:"
@@ -1080,7 +1113,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter"                          "Upgrade Sharpshooter"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_Description"              "Skills: Headshot"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_Description"              "Attack: Pierce/Medium\nSkills: Headshot"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_atk_damage_tooltip"       "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_atk_speed_tooltip"        "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_atk_range_tooltip"        "ATK RANGE:"
@@ -1090,7 +1123,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soldier"                               "Upgrade Soldier"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_Description"                   "Skills: Shield Bash"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_Description"                   "Attack: Normal/Heavy\nSkills: Shield Bash"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_atk_damage_tooltip"            "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_atk_speed_tooltip"             "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_atk_range_tooltip"             "ATK RANGE:"
@@ -1100,7 +1133,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster"                           "Upgrade Soundmaster"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_Description"               "Skills: Deafening Blast, Lightning Storm"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_Description"               "Attack: Arcane/Light\nSkills: Deafening Blast, Lightning Storm"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_atk_damage_tooltip"        "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_atk_speed_tooltip"         "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_atk_range_tooltip"         "ATK RANGE:"
@@ -1110,7 +1143,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman"                              "Upgrade Spearman"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_Description"                  "Skills: Shield Bash"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_Description"                  "Attack: Normal/Heavy\nSkills: Shield Bash"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_atk_damage_tooltip"           "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_atk_speed_tooltip"            "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_atk_range_tooltip"            "ATK RANGE:"
@@ -1120,7 +1153,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_tactician"                             "Upgrade Tactician"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_Description"                 "Skills: Guardian Angel, Storm Bolt, Tactical Aura"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_Description"                 "Attack: Pierce/Medium\nSkills: Guardian Angel, Storm Bolt, Tactical Aura"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_atk_damage_tooltip"          "ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_atk_speed_tooltip"           "ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_atk_range_tooltip"           "ATK RANGE:"

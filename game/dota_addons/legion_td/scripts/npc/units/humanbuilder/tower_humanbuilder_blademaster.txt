@@ -34,7 +34,7 @@
 	"ProjectileModel"       ""
 	"ProjectileSpeed"       "0"
 
-	"Legion_AttackType"		"pierce"
+	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
 
 	// Bounty
