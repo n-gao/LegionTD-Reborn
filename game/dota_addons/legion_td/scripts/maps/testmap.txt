@@ -345,7 +345,7 @@
   {
     "round_quest_title"     "Jo test"
     "round_title"           "wavetitle_enchantress"
-    "bounty"                "37"
+    "bounty"                "67"
     "Unit"
     {
       "NPCName"             "unit_enchantress"

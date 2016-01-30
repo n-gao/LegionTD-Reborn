@@ -3192,7 +3192,7 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
-		"Legion_AttackType"		"pierce"
+		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
 	
 		// Bounty
@@ -11177,8 +11177,8 @@
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"medium"
 	
-		"BountyGoldMin"         "5.0"
-		"BountyGoldMax"         "5.0"
+		"BountyGoldMin"         "3.0"
+		"BountyGoldMax"         "3.0"
 	
 		"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
 		"CollisionSize"					"50"

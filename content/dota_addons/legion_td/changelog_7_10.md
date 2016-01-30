@@ -49,6 +49,10 @@
 
 - Wave Bosses attack animation times have been fixed.
 
+- Wave 15 (Enchantress) completion bounty from 37 to 67
+
+- Wave 16 (Techies) unit bounty from 5 to 3
+
 ## Builder Changes
 
 ### Human Builder
