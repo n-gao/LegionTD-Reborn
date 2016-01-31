@@ -1,4 +1,4 @@
-7.10
+0.7.10
 
 ## General Changes
 
@@ -72,6 +72,8 @@
 ### Elemental Builder
 
 - Elemental Builder gets stat bonuses and penalties on his entire legion depending on how much gold he's proportionally spent on each element. If he manages to get all elements within a threshhold of the average, he gets maximum stacks on all stats. Purchasing a God for an element (the most expensive upgrade for each element) will stabilize that element, making elemental harmony that much easier to achieve.
+
+	Each 20% gold value above or below average value per element is worth a stack, either positive or negative. The stack bonuses/penalties are: Earth, .2/-.1 armor per stack; Fire, 2%/-1% base damage per stack; Thunder, 2%/-1% magic resist and outgoing magic amp; Water, +2/-1 attack speed per stack; Void, -1%/+.5% to all incoming damage. Elemental Harmony grants 9 positive stacks of each element.
 
 ### Nature Builder
 
