@@ -7,7 +7,6 @@ LAST_WAVE_HEALTH_PER_ROUND = 2000;
 
 ai_standard = require('ai/ai_core')
 ai_techies = require('ai/waves/ai_techies')
-ai_fatty = require('ai/waves/ai_fatty')
 ai_dragon = require('ai/waves/ai_dragon')
 ai_deathprophet = require('ai/waves/ai_deathprophet')
 ai_ogre = require('ai/waves/ai_ogre')
@@ -104,7 +103,6 @@ end
 function GameSpawner.ApplyAI(creep)
   local name = creep:GetUnitName()
   if name == "unit_techies" then ai_techies.Init(creep)
-  elseif name == "unit_fatty" then ai_fatty.Init(creep)
   elseif name == "unit_dragon" then ai_dragon.Init(creep)
   elseif name == "unit_deathprophet" then ai_deathprophet.Init(creep)
   elseif name == "unit_ogre" then ai_ogre.Init(creep)
