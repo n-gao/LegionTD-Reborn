@@ -28,6 +28,8 @@ function elementalbuilder_passive_start(keys)
 		id = caster:GetPlayerID()
 		playerObj = Game:FindPlayerWithID(id)
 
+		if not Game.gameState == GAMESTATE_PREPARATION then return 1 end
+
 		--print ("u have " .. #playerObj.units )
 
 		for _, element in pairs (elementNames) do

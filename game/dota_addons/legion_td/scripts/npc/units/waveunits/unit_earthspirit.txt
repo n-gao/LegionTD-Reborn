@@ -25,7 +25,7 @@
 	"ProjectileSpeed"       "0"
 
 	"Legion_AttackType"		"normal"
-	"Legion_DefendType"		"heavy"
+	"Legion_DefendType"		"light"
 
 	"BountyGoldMin"         "5.0"
 	"BountyGoldMax"         "5.0"

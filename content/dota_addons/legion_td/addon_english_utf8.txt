@@ -72,7 +72,7 @@
 		"wavetitle_donkey"                                                                     "Donkey (Normal / Light)"
 		"wavetitle_dragon"                                                                     "Dragonlord"
 		"wavetitle_drunken"                                                                    "Drunken (Normal / Medium)"
-		"wavetitle_earthspirit"                                                                "Earthspirit (Normal / Heavy)"
+		"wavetitle_earthspirit"                                                                "Earthspirit (Normal / Light)"
 		"wavetitle_enchantress"                                                                "Enchantress (Normal / Light)"
 		"wavetitle_fatty"                                                                      "Fatty"
 		"wavetitle_gatling_sniper"                                                             "Gatling Guy (Arcane / Light)"

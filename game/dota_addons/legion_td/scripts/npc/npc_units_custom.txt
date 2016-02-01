@@ -9743,7 +9743,7 @@
 		"ProjectileSpeed"       "0"
 	
 		"Legion_AttackType"		"normal"
-		"Legion_DefendType"		"heavy"
+		"Legion_DefendType"		"light"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -9880,17 +9880,16 @@
 		"Level"                 "5"
 		"HealthBarOffset"       "450"
 	
-		"Ability1"				"alchemist_acid_spray"
-		"Ability2"				"waveboss_repel"
-		"Ability3"              "waveboss_attackspeed"
+		"Ability1"				"waveboss_repel"
+		"Ability2"              "waveboss_attackspeed"
 	
 		"ArmorPhysical"         "8"
 		"MagicalResistance"     "20"
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "62.5"
-		"AttackDamageMax"       "75.0"
+		"AttackDamageMin"       "125"
+		"AttackDamageMax"       "150"
 		"AttackRate"            "1.2"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
