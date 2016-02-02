@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/elementalbuilder/ai_earthgod.lua"
 
 	"Ability4"				"sell"
 	"Ability3"				"ability_empty_3"

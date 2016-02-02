@@ -1075,6 +1075,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/elementalbuilder/ai_earthgod.lua"
 	
 		"Ability4"				"sell"
 		"Ability3"				"ability_empty_3"
@@ -1580,6 +1581,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/elementalbuilder/ai_firewarrior.lua"
 	
 		"Ability4"							"sell"
 		"Ability3"				"ability_empty_3"
@@ -2276,6 +2278,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/elementalbuilder/ai_voidgod.lua"
 	
 		"Ability4"							"sell"
 		"Ability3"				"ability_empty_3"
@@ -2666,6 +2669,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/elementalbuilder/ai_watergod.lua"
 	
 		"Ability4"							"sell"
 		"Ability3"				"ability_empty_3"
