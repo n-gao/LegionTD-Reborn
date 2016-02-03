@@ -109,7 +109,7 @@ function elementalbuilder_passive_start(keys)
 
 		for _, unitRef in pairs(playerObj.units) do
 			local unit = unitRef.npc
-			if unit and unit:IsAlive() and caster and ability then
+			if unit and not unit:IsNull() and unit:IsAlive() and caster and ability then
 
 				unit:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_elemental_harmony_lua", {})
 
