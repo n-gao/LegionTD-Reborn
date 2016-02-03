@@ -170,6 +170,9 @@ function sell(event)
   local unit = event.caster.unit
   local player = unit.player
   unit:RemoveNPC()
+  Timers:CreateTimer(1, function ()
+      UTIL_RemoveImmediate(unit.npc)
+    end)
   local gold = unit.goldCost / 2
   if unit.buyround == Game:GetCurrentRound() then
     gold = unit.goldCost
