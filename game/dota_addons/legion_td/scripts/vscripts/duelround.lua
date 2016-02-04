@@ -19,6 +19,7 @@ function DuelRound.new(data, roundNumber, determinWinner)
   self.remainingUnitsDire = {}
   self.roundNumber = roundNumber
   self.winningCondition = determinWinner
+  self.playerscores = {}
   return self
 end
 
@@ -61,6 +62,13 @@ function DuelRound:OnEntityKilled(event)
       break
     end
   end
+  if event.entindex_attacker ~= nil then
+    killerunit = EntIndexToHScript(event.entindex_attacker)
+    killerID = killerunit:GetPlayerOwnerID()
+    if self.playerscores[killerID] == nil then self.playerScores[killerID] = 0 end
+    self.playerscores[killerID] = self.playerscores[killerID] + killed:GetMinimumGoldBounty()
+    print(killerID .. ": " .. self.playerscores[killerID])
+  end
   self:CheckEnd()
 end
 
@@ -102,10 +110,10 @@ end
 
 function DuelRound:CheckEnd()
   self:CheckUnitsAlive()
-  if next(self.remainingUnitsRadiant) == nil or next(self.remainingUnitsDire) == nil then
-    print("Rounde beendet")
-    self:End()
-  end
+  --if next(self.remainingUnitsRadiant) == nil or next(self.remainingUnitsDire) == nil then
+  --  print("Rounde beendet")
+  --  self:End()
+  --end
 end
 
 
