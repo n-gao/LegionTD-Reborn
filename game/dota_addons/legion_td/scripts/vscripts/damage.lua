@@ -16,6 +16,9 @@ function Game:DamageFilter( filterTable )
 	if damagetype == DAMAGE_TYPE_PHYSICAL then
 		local original_damage = filterTable["damage"] --Post reduction
 
+		if not Game.UnitKV[attacker:GetUnitName()] then return true end
+		if not Game.UnitKV[victim:GetUnitName()] then return true end
+
 		local attack_type = Game.UnitKV[attacker:GetUnitName()]["Legion_AttackType"] or "normal"
 		local defend_type = Game.UnitKV[victim:GetUnitName()]["Legion_DefendType"] or "medium"
 
