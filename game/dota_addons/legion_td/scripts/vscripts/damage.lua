@@ -19,8 +19,10 @@ function Game:DamageFilter( filterTable )
 		if not Game.UnitKV[attacker:GetUnitName()] then return true end
 		if not Game.UnitKV[victim:GetUnitName()] then return true end
 
-		local attack_type = Game.UnitKV[attacker:GetUnitName()]["Legion_AttackType"] or "normal"
-		local defend_type = Game.UnitKV[victim:GetUnitName()]["Legion_DefendType"] or "medium"
+		local attack_type = Game.UnitKV[attacker:GetUnitName()]["Legion_AttackType"] or "none"
+		local defend_type = Game.UnitKV[victim:GetUnitName()]["Legion_DefendType"] or "none"
+
+		if attack_type == "none" or defend_type == "none" then return true end
 
 		local damage_multiplier = Game.DamageKV[attack_type][defend_type] or 1
 
