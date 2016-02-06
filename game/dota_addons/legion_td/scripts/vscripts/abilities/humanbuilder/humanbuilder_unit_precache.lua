@@ -25,11 +25,10 @@ humanUnits = {
 	}
 
 function precache(keys)
-	print ("async precache of human builder units")
-
-	for _, unitName in pairs(humanUnits) do
-		PrecacheUnitByNameAsync(unitName, function(...) end)
-	end
-
-	
+	Timers:CreateTimer(25, function()
+		print ("async precache of human builder units")
+		for _, unitName in pairs(humanUnits) do
+			PrecacheUnitByNameAsync(unitName, function(...) end)
+		end
+	end)
 end

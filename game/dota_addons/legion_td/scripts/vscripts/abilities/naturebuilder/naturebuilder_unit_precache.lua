@@ -18,11 +18,10 @@ natureUnits = {
 	}
 
 function precache(keys)
-	print ("async precache of nature builder units")
-
-	for _, unitName in pairs(natureUnits) do
-		PrecacheUnitByNameAsync(unitName, function(...) end)
-	end
-
-	
+	Timers:CreateTimer(25, function()
+		print ("async precache of nature builder units")
+		for _, unitName in pairs(natureUnits) do
+			PrecacheUnitByNameAsync(unitName, function(...) end)
+		end
+	end)
 end
