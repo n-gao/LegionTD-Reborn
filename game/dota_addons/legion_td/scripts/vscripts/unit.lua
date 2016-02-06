@@ -179,6 +179,7 @@ function sell(event)
   end
   PlayerResource:ModifyGold(player:GetPlayerID(), gold, true, DOTA_ModifyGold_Unspecified)
   table.remove(unit.player.units, unit.player:GetUnitKey(unit))
+  player:RefreshPlayerInfo()
 end
 
 
