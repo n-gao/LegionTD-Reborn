@@ -36,7 +36,7 @@ function GameSpawner:Spawn()
   for key,value in pairs(spawners) do
     if value.isActive then
       local polar = 1
-      local spacing = 96
+      local spacing = 128
       if value.spawnpoint:GetAbsOrigin().y < 0 then polar = -1 end
       local rank1 = value.spawnpoint:GetAbsOrigin()
       local positions = {}
@@ -199,7 +199,7 @@ function GameSpawner:SendIncomingUnits(team)
     local lane = spawners[theLane]
     local unitCount = #units
     local polar = 1
-    local spacing = 96
+    local spacing = 128
     if lane.spawnpoint:GetAbsOrigin().y < 0 then polar = -1 end
     local rank1 = lane.spawnpoint:GetAbsOrigin()
     local positions = {}
