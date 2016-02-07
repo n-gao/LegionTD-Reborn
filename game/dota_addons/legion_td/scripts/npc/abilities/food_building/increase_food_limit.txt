@@ -2,7 +2,7 @@
 {
   "BaseClass"                 "ability_datadriven"
   "AbilityTextureName"      "shadow_shaman_voodoo"
-  "MaxLevel"             "1"
+  "MaxLevel"             "12"
 
   "AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
   "AbilityChannelTime" 			"1"
