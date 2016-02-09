@@ -43,7 +43,7 @@ end
 
 
 function Unit:Spawn()
-  PrecacheUnitByNameAsync(self.npcclass, function () 
+  --PrecacheUnitByNameAsync(self.npcclass, function () 
     self.npc = CreateUnitByName(self.npcclass, self.spawnposition, false, nil,
     self.owner, self.owner:GetTeamNumber())
     if self.spawnposition.y > 0 then
@@ -57,8 +57,8 @@ function Unit:Spawn()
     self.npc:SetMinimumGoldBounty(self.foodCost)
     self.npc:SetMaximumGoldBounty(self.foodCost)
     self:Lock()
-  end
-  )
+  --end
+  --)
 end
 
 
