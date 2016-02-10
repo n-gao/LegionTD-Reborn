@@ -27,7 +27,7 @@ end
 
 function DuelRound:Begin()
   self.EventHandles = {
-    ListenToGameEvent("entity_killed", Dynamic_Wrap(GameRound, "OnEntityKilled"), self)
+    ListenToGameEvent("entity_killed", Dynamic_Wrap(DuelRound, "OnEntityKilled"), self)
   }
   if not winningCondition then
     self.unstuckTimer = Timers:CreateTimer(240, function()
@@ -48,6 +48,7 @@ end
 
 --Jemand wurde getötet
 function DuelRound:OnEntityKilled(event)
+  DeepPrintTable( event )
   local killed = EntIndexToHScript(event.entindex_killed)
   if not killed then
     return
@@ -65,9 +66,9 @@ function DuelRound:OnEntityKilled(event)
   if event.entindex_attacker ~= nil then
     killerunit = EntIndexToHScript(event.entindex_attacker)
     killerID = killerunit:GetPlayerOwnerID()
-    if self.playerscores[killerID] == nil then self.playerScores[killerID] = 0 end
+    if self.playerscores[killerID] == nil then self.playerscores[killerID] = 0 end
     self.playerscores[killerID] = self.playerscores[killerID] + killed:GetMinimumGoldBounty()
-    print(killerID .. ": " .. self.playerscores[killerID])
+    print("duel score for " .. killerID .. ": " .. self.playerscores[killerID])
   end
   self:CheckEnd()
 end
