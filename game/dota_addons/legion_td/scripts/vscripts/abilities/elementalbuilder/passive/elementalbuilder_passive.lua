@@ -84,11 +84,11 @@ function elementalbuilder_passive_start(keys)
 				--print (element .. " has a god!")
 			elseif elementRatios[element] >= 1 then
 				elementStacks[element] = -math.floor(5*(1-(elementRatios[element])))
-				--print (element .. ": " .. total .. "(" .. elementRatios[element] .. " surplus), " .. elementStacks[element] .. " stacks")
 			else
 				elementStacks[element] = math.floor(5*(1-(1/elementRatios[element])))
-				--print (element .. ": " .. total .. "(" .. 1/elementRatios[element] .. " defecit), " .. elementStacks[element] .. " stacks")
 			end
+			if elementStacks[element] > 0 then elementStacks[element] = elementStacks[element] - 1 end
+			if elementStacks[element] < 0 then elementStacks[element] = elementStacks[element] + 1 end
 		end
 
 		-- check for elemental harmony
@@ -97,7 +97,7 @@ function elementalbuilder_passive_start(keys)
 
 		for _, element in pairs(elementNames) do
 			if elementSums[element] == 0 then harmony = false end
-			if (elementStacks[element] > 1) or (elementStacks[element] < -1) then harmony = false end
+			if not (elementStacks[element] == 0) then harmony = false end
 		end
 
 		if harmony then
@@ -125,9 +125,9 @@ function elementalbuilder_passive_start(keys)
 						unit:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_".. element .."_negative_lua", {})
 						if elementStacks[element] < 0 then
 							unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, 0)
-							unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, math.min(maxStacks,0-elementStacks[element]-1))
+							unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, math.min(maxStacks,0-elementStacks[element]))
 						else
-							unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, math.min(maxStacks,elementStacks[element]-1))
+							unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, math.min(maxStacks,elementStacks[element]))
 							unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 0)
 						end
 					end
@@ -152,9 +152,9 @@ function elementalbuilder_passive_start(keys)
 			if elementSums[element] > 0 then
 				if elementStacks[element] < 0 then
 					caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, 0)
-					caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, math.min(maxStacks,0-elementStacks[element]-1))
+					caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, math.min(maxStacks,0-elementStacks[element]))
 				else
-					caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, math.min(maxStacks,elementStacks[element]-1))
+					caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, math.min(maxStacks,elementStacks[element]))
 					caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 0)
 				end
 			else
