@@ -20,6 +20,9 @@ function DuelRound.new(data, roundNumber, determinWinner)
   self.roundNumber = roundNumber
   self.winningCondition = determinWinner
   self.playerscores = {}
+  for _,pl in pairs(Game.players) do
+    self.playerscores[pl:GetPlayerID()] = 0
+  end
   return self
 end
 
@@ -66,7 +69,7 @@ function DuelRound:OnEntityKilled(event)
   if event.entindex_attacker ~= nil then
     killerunit = EntIndexToHScript(event.entindex_attacker)
     killerID = killerunit:GetPlayerOwnerID()
-    if self.playerscores[killerID] == nil then self.playerscores[killerID] = 0 end
+    -- if self.playerscores[killerID] == nil then self.playerscores[killerID] = 0 end
     self.playerscores[killerID] = self.playerscores[killerID] + killed:GetMinimumGoldBounty()
     print("duel score for " .. killerID .. ": " .. self.playerscores[killerID])
   end
@@ -137,11 +140,45 @@ function DuelRound:End()
   Timers.timers[self.unstuckTimer] = nil
   self.unstuckTimer = nil
   self.EventHandles = {}
+  local highscores = {}
+  local scorescopy = shallowcopy(self.playerscores)
+  while true do
+    local highest = nil
+    for id, score in pairs(scorescopy) do
+      if highest == nil then highest = id end
+      if self.playerscores[id] > self.playerscores[highest] then
+        highest = id
+      end
+    end
+    if highest then
+      table.insert(highscores, highest)
+      scorescopy[highest] = nil
+    else
+      break
+    end
+  end
+
+
+
+
   GameRules:SendCustomMessage(victoryText .. self.bounty .. " extra gold each!", 0, 0)
   Game:RoundFinished()
 end
 
 
+function shallowcopy(orig)
+    local orig_type = type(orig)
+    local copy
+    if orig_type == 'table' then
+        copy = {}
+        for orig_key, orig_value in pairs(orig) do
+            copy[orig_key] = orig_value
+        end
+    else -- number, string, boolean, etc
+        copy = orig
+    end
+    return copy
+end
 
 function DuelRound:CheckUnitsAlive()
   local deadUnitCount = 0
