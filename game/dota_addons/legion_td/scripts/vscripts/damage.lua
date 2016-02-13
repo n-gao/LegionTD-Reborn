@@ -12,6 +12,8 @@ function Game:DamageFilter( filterTable )
 	local attacker = EntIndexToHScript( attacker_index )
 	local damagetype = filterTable["damagetype_const"]
 
+	print ("damage is happening: " .. filterTable["damage"])
+
 	-- Physical attack damage filtering
 	if damagetype == DAMAGE_TYPE_PHYSICAL then
 		local original_damage = filterTable["damage"] --Post reduction
@@ -35,7 +37,34 @@ function Game:DamageFilter( filterTable )
 	
 	-- Magic damage filtering
 	elseif damagetype == DAMAGE_TYPE_MAGICAL then
-
+		print("Magic Damage is happening: " .. filterTable["damage"])
+		local damagePercent = 100
+		if victim:HasModifier("modifier_elementalbuilder_passive_thunder_negative_lua") then
+			local a = victim:GetModifierStackCount("modifier_elementalbuilder_passive_thunder_negative_lua", victim)
+			if a > 0 then
+				damagePercent = damagePercent + a
+			end
+		end
+		if victim:HasModifier("modifier_elementalbuilder_passive_thunder_lua") then
+			local a = victim:GetModifierStackCount("modifier_elementalbuilder_passive_thunder_lua", victim)
+			if a > 0 then
+				damagePercent = damagePercent - (a*2)
+			end
+		end
+		if attacker:HasModifier("modifier_elementalbuilder_passive_thunder_negative_lua") then
+			local a = attacker:GetModifierStackCount("modifier_elementalbuilder_passive_thunder_negative_lua", attacker)
+			if a > 0 then
+				damagePercent = damagePercent - a
+			end
+		end
+		if attacker:HasModifier("modifier_elementalbuilder_passive_thunder_lua") then
+			local a = attacker:GetModifierStackCount("modifier_elementalbuilder_passive_thunder_lua", attacker)
+			if a > 0 then
+				damagePercent = damagePercent + (a*2)
+			end
+		end
+		filterTable["damage"] = filterTable["damage"] * (damagePercent/100.0)
+		print ("filtered magic damage: " .. filterTable["damage"] .. " (" .. damagePercent .. " percent)")
 	end
 
 	return true

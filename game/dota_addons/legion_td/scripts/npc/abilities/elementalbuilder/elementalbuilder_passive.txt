@@ -33,12 +33,12 @@
 		"06"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"magic_increase_percent"	"2"
+			"magic_increase_percent"	"2" // this does nothing and is hardcoded in damage filter because MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE doesn't seem to do a god damn thing
 		}
 		"07"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"magic_decrease_percent"	"-1"
+			"magic_decrease_percent"	"-1" // same
 		}
 		"08"
 		{

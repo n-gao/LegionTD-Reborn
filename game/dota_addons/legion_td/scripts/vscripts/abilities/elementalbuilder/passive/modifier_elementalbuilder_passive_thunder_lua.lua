@@ -34,21 +34,9 @@ end
 
 function modifier_elementalbuilder_passive_thunder_lua:DeclareFunctions()
 	local funcs = {
-		MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE, MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS, MODIFIER_PROPERTY_TOOLTIP
+		MODIFIER_PROPERTY_TOOLTIP
 	}
 	return funcs
-end
-
---------------------------------------------------------------------------------
-
-function modifier_elementalbuilder_passive_thunder_lua:GetModifierMagicalResistanceBonus( params )
-	return self.thunder_magic_increase * self:GetStackCount()
-end
-
---------------------------------------------------------------------------------
-
-function modifier_elementalbuilder_passive_thunder_lua:GetModifierMagicDamageOutgoing_Percentage( params )
-	return self.thunder_magic_increase * self:GetStackCount()
 end
 
 --------------------------------------------------------------------------------
