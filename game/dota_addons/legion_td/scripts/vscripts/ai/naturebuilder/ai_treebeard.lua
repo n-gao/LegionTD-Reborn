@@ -50,6 +50,8 @@ function BehaviorOvergrowth:Evaluate()
 	-- let's not choose this twice in a row
 	if AICore.currentBehavior == self then return desire end
 
+	local target = nil
+
 	if self.overgrowthAbility and self.overgrowthAbility:IsFullyCastable() then
 		local range = self.overgrowthAbility:GetCastRange()
 		local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false )
@@ -67,7 +69,7 @@ end
 
 function BehaviorOvergrowth:Begin()
 
-	self.endTime = GameRules:GetGameTime() + .2
+	self.endTime = GameRules:GetGameTime() + 2
 
 	self.order =
 	{
