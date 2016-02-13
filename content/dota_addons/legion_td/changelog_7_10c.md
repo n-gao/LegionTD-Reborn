@@ -2,6 +2,8 @@
 
 - Wave 10 Fatty: base damage from 125-150 to 85-100
 
+- Wave 22 Earth Spirit: Base Attack Time from .65 to .7
+
 - Fixed Elemental Builder's passive giving an invisible negative stack when only one element is built
 
 - Fixed Elemental Builder thunder stacks having no magic amplification effect
