@@ -125,10 +125,10 @@ end
 --Ende einer Runde
 function DuelRound:End()
   self.winningTeam = DOTA_TEAM_GOODGUYS
-  local victoryText = "Radiant wins the duel and win "
+  local victoryText = "Radiant won the duel and earn "
   if next(self.remainingUnitsRadiant) == nil then
     self.winningTeam = DOTA_TEAM_BADGUYS
-    victoryText = "Dire wins the duel and win "
+    victoryText = "Dire won the duel and earn "
   end
   if self.determinWinner then
     GameRules:SetGameWinner(self.winningTeam)
@@ -157,10 +157,10 @@ function DuelRound:End()
       break
     end
   end
-
-
-
-
+  local rank = 1
+  for _, id in ipairs(highscores) do
+    GameRules:SendCustomMessage("#" .. rank .. ": " .. PlayerResource:GetPlayerName(id) .. " - " .. self.playerscores[id], 0, 0)
+  end
   GameRules:SendCustomMessage(victoryText .. self.bounty .. " extra gold each!", 0, 0)
   Game:RoundFinished()
 end
