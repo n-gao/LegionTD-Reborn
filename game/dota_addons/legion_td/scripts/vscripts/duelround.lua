@@ -69,7 +69,7 @@ function DuelRound:OnEntityKilled(event)
   if event.entindex_attacker ~= nil then
     killerunit = EntIndexToHScript(event.entindex_attacker)
     killerID = killerunit:GetPlayerOwnerID()
-    -- if self.playerscores[killerID] == nil then self.playerscores[killerID] = 0 end
+    if self.playerscores[killerID] == nil then self.playerscores[killerID] = 0 end
     self.playerscores[killerID] = self.playerscores[killerID] + killed:GetMinimumGoldBounty()
     print("duel score for " .. killerID .. ": " .. self.playerscores[killerID])
   end

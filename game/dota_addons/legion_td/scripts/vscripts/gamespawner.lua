@@ -79,6 +79,7 @@ function GameSpawner:Spawn()
         creep.waypoints = {}
         for j = 1, 4 do
           table.insert(creep.waypoints, value.waypoints[j] + positions[i])
+          DebugDrawCircle(value.waypoints[j] + positions[i], Vector(0,255,0), 1, 50, false, 50)
         end
         creep.waypoints[4].y = value.waypoints[4].y -- make final waypoint y aligned with king regardless of formation rank
         creep.nextTarget = value.nextWaypoint
