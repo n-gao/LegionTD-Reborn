@@ -2,6 +2,8 @@
 
 - Food Limit can now only be upgraded 12 times
 
+- Leak tango production penalty from 10% to 12% per leak
+
 - Wave 10 Fatty: base damage from 125-150 to 85-100
 
 - Wave 22 Earth Spirit: Base Attack Time from .65 to .75, damage from 81.25-93.75 to 92-96
