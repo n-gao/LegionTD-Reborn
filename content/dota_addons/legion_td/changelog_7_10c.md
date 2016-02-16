@@ -2,6 +2,10 @@
 
 - Food Limit can now only be upgraded 12 times
 
+- Human Builder's passive now disables food limit upgrade
+
+- Human Builder passive food per turn from 1.2 to 2.3
+
 - Leak tango production penalty from 10% to 12% per leak
 
 - Wave 10 Fatty: base damage from 125-150 to 85-100

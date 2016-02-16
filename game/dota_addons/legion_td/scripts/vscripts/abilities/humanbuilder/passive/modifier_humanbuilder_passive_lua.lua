@@ -21,6 +21,8 @@ function modifier_humanbuilder_passive_lua:OnCreated( kv )
 		self.foodlimit = playerObj.foodlimit
 		self.givenExtraFood = 0
 		self.desiredExtraFood = 0
+
+		playerObj.lane.foodBuilding:RemoveAbility("increase_food_limit")
 	end
 
 
