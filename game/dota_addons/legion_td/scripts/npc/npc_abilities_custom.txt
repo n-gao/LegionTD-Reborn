@@ -5945,12 +5945,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_blocked"		"12"
+				"damage_blocked"		"10"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chance"				"85"
+				"chance"				"80"
 			}
 			"03"
 			{
@@ -6385,12 +6385,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_blocked"		"16"
+				"damage_blocked"		"14"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chance"				"95"
+				"chance"				"85"
 			}
 			"03"
 			{

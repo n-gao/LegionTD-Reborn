@@ -4842,7 +4842,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "380"
+		"StatusHealth"          "400"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "10"
 		"StatusManaRegen"       "10"
@@ -5043,7 +5043,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "520"
+		"StatusHealth"          "550"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
