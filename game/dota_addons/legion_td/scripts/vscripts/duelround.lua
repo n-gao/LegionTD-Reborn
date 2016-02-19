@@ -160,6 +160,8 @@ function DuelRound:End()
   local rank = 1
   for _, id in ipairs(highscores) do
     GameRules:SendCustomMessage("#" .. rank .. ": " .. PlayerResource:GetPlayerName(id) .. " - " .. self.playerscores[id], 0, 0)
+    rank = rank + 1
+    if rank > 4 then break end
   end
   GameRules:SendCustomMessage(victoryText .. self.bounty .. " extra gold each!", 0, 0)
   Game:RoundFinished()
