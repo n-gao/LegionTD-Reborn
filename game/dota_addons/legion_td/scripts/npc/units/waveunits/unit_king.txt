@@ -29,6 +29,9 @@
   "ProjectileModel"       ""
   "ProjectileSpeed"       "0"
 
+  "Legion_AttackType"     "boss"
+  "Legion_DefendType"     "boss"
+
   "BountyGoldMin"         "51.0"
   "BountyGoldMax"         "51.0"
 

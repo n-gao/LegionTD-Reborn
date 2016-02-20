@@ -4,6 +4,10 @@
 
 - Leak tango production penalty from 10% to 12% per leak
 
+- Added new attack and defend damage type, "boss", which takes and recieves full damage to all other types.
+
+- Rosh send unit changed to boss attack and defend damage type
+
 - Human Builder's passive now disables food limit upgrade
 
 - Human Builder passive food per turn from 1.2 to 2.3

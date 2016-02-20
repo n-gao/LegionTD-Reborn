@@ -30,6 +30,9 @@
 	"ProjectileModel"       "particles/neutral_fx/thunderlizard_base_attack.vpcf"
 	"ProjectileSpeed"       "900"
 
+	"Legion_AttackType"		"normal"
+	"Legion_DefendType"		"heavy"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "19"

@@ -30,6 +30,9 @@
 	"ProjectileModel"       "particles/neutral_fx/black_drake_attack.vpcf"
 	"ProjectileSpeed"       "550"
 
+	"Legion_AttackType"		"normal"
+	"Legion_DefendType"		"heavy"
+
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "17"
