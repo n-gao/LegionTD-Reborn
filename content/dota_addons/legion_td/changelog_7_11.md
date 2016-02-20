@@ -6,6 +6,12 @@
 
 - Added new attack and defend damage type, "boss", which takes and recieves full damage to all other types.
 
+- Boss attack/defend damage type applied to team kings, wave bosses, and rosh send unit.
+
+- Reduced Harpy send unit from 3 income to 2
+
+- Capped income of all send units except rosh to 10 (affects black drake, big lizard, ancient golem, flesh golem, jellyfish, hulk, beast, diablo)
+
 - Rosh send unit changed to boss attack and defend damage type
 
 - Human Builder's passive now disables food limit upgrade
@@ -23,8 +29,6 @@
 - Fixed Nature Builder Treebeard not moving down the lane after using his ability
 
 - Elemental Builder elemental harmony stacks from 9 to 10
-
-- Team Kings and bosses no longer have combat classes
 
 - Wave 10 Fatty: base damage from 125-150 to 85-100
 
