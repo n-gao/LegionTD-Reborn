@@ -4,6 +4,10 @@
 
 - Leak tango production penalty from 10% to 15% per leak
 
+- More duels! Now after every 5 rounds instead of after every 10.
+
+	Per-player duel win bounty from 25/50/100 to 0/10/20/30/45/60
+
 - Added new attack and defend damage type, "boss", which takes and recieves full damage to all other types.
 
 - Boss attack/defend damage type applied to team kings, wave bosses, and rosh send unit.
@@ -11,8 +15,6 @@
 - Reduced Harpy send unit from 3 income to 2
 
 - Capped income of all send units except rosh to 10 (affects black drake, big lizard, ancient golem, flesh golem, jellyfish, hulk, beast, diablo)
-
-- Rosh send unit changed to boss attack and defend damage type
 
 - Human Builder's passive now disables food limit upgrade
 

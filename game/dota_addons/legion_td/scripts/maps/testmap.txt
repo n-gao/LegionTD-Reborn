@@ -174,17 +174,32 @@
   "DuelRound1"
   {
     "round_title"           "Duel_Quest_Title"
-    "bounty"                "25"
+    "bounty"                "0"
   }
   "DuelRound2"
   {
     "round_title"           "Duel_Quest_Title"
-    "bounty"                "50"
+    "bounty"                "10"
   }
   "DuelRound3"
   {
     "round_title"           "Duel_Quest_Title"
-    "bounty"                "100"
+    "bounty"                "20"
+  }
+  "DuelRound4"
+  {
+    "round_title"           "Duel_Quest_Title"
+    "bounty"                "30"
+  }
+  "DuelRound5"
+  {
+    "round_title"           "Duel_Quest_Title"
+    "bounty"                "45"
+  }
+  "DuelRound6"
+  {
+    "round_title"           "Duel_Quest_Title"
+    "bounty"                "60"
   }
 
   "Round1"
