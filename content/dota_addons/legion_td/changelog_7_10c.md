@@ -2,7 +2,7 @@
 
 - Food Limit can now only be upgraded 12 times
 
-- Leak tango production penalty from 10% to 12% per leak
+- Leak tango production penalty from 10% to 15% per leak
 
 - Added new attack and defend damage type, "boss", which takes and recieves full damage to all other types.
 
