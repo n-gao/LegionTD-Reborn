@@ -10,10 +10,10 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							""
+	"Ability1"				"rosh_evasion"
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "15"
+	"ArmorPhysical"         "14"
 	"MagicalResistance"     "50"
 
 	// Attack
@@ -22,7 +22,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "225.0"
 	"AttackDamageMax"       "250.0"
-	"AttackRate"            "0.6"
+	"AttackRate"            "1.0"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "125"
@@ -51,7 +51,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "2000"
+	"StatusHealth"          "1800"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

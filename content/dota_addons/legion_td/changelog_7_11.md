@@ -12,6 +12,8 @@
 
 - Boss attack/defend damage type applied to team kings, wave bosses, and rosh send unit.
 
+- Additional changes to Rosh send unit: Attack Time from .6 to 1.0, HP from 2000 to 1800, Armor from 14 to 15, added 5% evasion.
+
 - Reduced Harpy send unit from 3 income to 2
 
 - Capped income of all send units except rosh to 10 (affects black drake, big lizard, ancient golem, flesh golem, jellyfish, hulk, beast, diablo)
