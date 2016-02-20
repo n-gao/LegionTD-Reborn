@@ -18,6 +18,8 @@
 
 - Capped income of all send units except rosh to 10 (affects black drake, big lizard, ancient golem, flesh golem, jellyfish, hulk, beast, diablo)
 
+- Some send units which were previously untyped are now normal/heavy
+
 - Human Builder's passive now disables food limit upgrade
 
 - Human Builder passive food per turn from 1.2 to 2.3
