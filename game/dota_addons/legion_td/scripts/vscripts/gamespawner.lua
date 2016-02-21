@@ -46,8 +46,12 @@ function GameSpawner:Spawn()
         if i > round(self.unitCount, columns) then
           offset = offset + (((round(self.unitCount, columns)+columns)-self.unitCount)/2)*spacing
         end
+        local voffset = 0
+        if self.unitCount > columns * 2 then
+          voffset = spacing*polar*-1
+        end
         local hpos = offset+(((i-1)%columns)*spacing)      
-        local vpos = (math.floor((i-1)/columns))*spacing*polar
+        local vpos = voffset+(math.floor((i-1)/columns))*spacing*polar
       --print ("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
         table.insert(positions, Vector(hpos, vpos, 0))
       end
