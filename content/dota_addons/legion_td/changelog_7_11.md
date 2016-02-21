@@ -16,7 +16,7 @@
 
 - Reduced Harpy send unit from 3 income to 2
 
-- Capped income of all send units except rosh to 10 (affects black drake, big lizard, ancient golem, flesh golem, jellyfish, hulk, beast, diablo)
+- Capped income of all send units except rosh to 10 (affects black drake, big lizard, ancient golem, flesh golem, jellyfish, hulk, beast, diablo), rosh income reduced to 13.
 
 - Some send units which were previously untyped are now normal/heavy
 

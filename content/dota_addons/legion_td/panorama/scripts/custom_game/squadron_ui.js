@@ -24,7 +24,7 @@ GameUI.CustomUIConfig().units =  new Array(
 	{id : 1022, cost : 480, income : 10, cooldown : 10, name : "incomeunit_hulk", icon : "send_incomeunit_hulk"},
 	{id : 1023, cost : 500, income : 10, cooldown : 10, name : "incomeunit_beast", icon : "send_incomeunit_beast"},
 	{id : 1024, cost : 550, income : 10, cooldown : 10, name : "incomeunit_diablo", icon : "send_incomeunit_diablo"},
-	{id : 1025, cost : 600, income : 16, cooldown : 10, name : "incomeunit_roshan", icon : "send_incomeunit_rosh"}
+	{id : 1025, cost : 600, income : 13, cooldown : 10, name : "incomeunit_roshan", icon : "send_incomeunit_rosh"}
 );
 
 var LEGION_ERROR_BETWEEN_ROUNDS = 0;
