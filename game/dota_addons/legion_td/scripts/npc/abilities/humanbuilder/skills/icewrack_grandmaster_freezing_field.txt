@@ -9,6 +9,8 @@
 	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 	"AbilityTextureName"			"crystal_maiden_freezing_field"
+
+	"AbilityCastRange"				"600"
 	
 	// Time		
 	//-------------------------------------------------------------------------------------------------------------

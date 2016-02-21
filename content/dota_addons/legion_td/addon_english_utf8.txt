@@ -321,7 +321,7 @@
 		"DOTA_Tooltip_modifier_naturebuilder_passive_deathknell_lua_Description"					"Whenever one of your units dies, it heals %fMODIFIER_PROPERTY_TOOLTIP%%% of its HP to a nearby ally and deals %fMODIFIER_PROPERTY_TOOLTIP%%% of its HP in magic damage to a nearby target."  
 
 		"DOTA_Tooltip_modifier_humanbuilder_passive_lua"											"Additional Food"
-		"DOTA_Tooltip_modifier_humanbuilder_passive_lua_Description"					"Gain %fMODIFIER_PROPERTY_TOOLTIP% additional food per round."  
+		"DOTA_Tooltip_modifier_humanbuilder_passive_lua_Description"					"Gain %fMODIFIER_PROPERTY_TOOLTIP% additional food per round.\nCannot upgrade food manually."  
 
 		"DOTA_Tooltip_modifier_attack_normal_lua"													"Normal Attack"
 		"DOTA_Tooltip_modifier_attack_normal_lua_Description"										"Deal 80%% to Light\nDeal 125%% to Medium\nDeal 100%% to Heavy"
@@ -1074,7 +1074,7 @@
 
 
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster"                  "Upgrade Icewrack Grandmaster"
-		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_Description"      "Attack: Arcane/Light\nSkills: Freezing Field"
+		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_Description"      "Attack: Arcane/Light\nSkills: Freezing Field, Chilled Blood"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_atk_damage_tooltip"		"ATK DAMAGE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_atk_speed_tooltip"		"ATK RATE:"
 		"DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_atk_range_tooltip"		"ATK RANGE:"

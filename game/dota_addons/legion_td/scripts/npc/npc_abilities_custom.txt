@@ -2567,7 +2567,7 @@
 	    "04"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "health_tooltip"        "190"
+	      "health_tooltip"        "250"
 	    }
 	    "05"
 	    {
@@ -3183,7 +3183,7 @@
 	    "04"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "health_tooltip"        "290"
+	      "health_tooltip"        "400"
 	    }
 	    "05"
 	    {
@@ -3295,7 +3295,7 @@
 	    "04"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "health_tooltip"        "520"
+	      "health_tooltip"        "550"
 	    }
 	    "05"
 	    {
@@ -4891,6 +4891,8 @@
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityTextureName"			"crystal_maiden_freezing_field"
+	
+		"AbilityCastRange"				"600"
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
