@@ -37,7 +37,10 @@ function modifier_humanbuilder_passive_lua:OnRefresh( kv )
 		gameEnt = GameRules.GameMode.game
 
 		playerObj = gameEnt:FindPlayerWithID(self:GetParent():GetPlayerID())
-		currentRound = gameEnt:GetCurrentRound().roundNumber
+		currentRound = 0
+		if gameEnt:GetCurrentRound() then
+			currentRound = gameEnt:GetCurrentRound().roundNumber
+		end
 		foodlimit = playerObj.foodlimit
 
 		self.desiredExtraFood = math.floor(self.food_per_turn*currentRound)
