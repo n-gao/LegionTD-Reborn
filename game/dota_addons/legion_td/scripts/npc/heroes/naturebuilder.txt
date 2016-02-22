@@ -10,7 +10,6 @@
 	"Ability4"				"naturebuilder_spawn_treant"
 	"Ability5"				"naturebuilder_spawn_hyena"
 	"Ability6"				"naturebuilder_spawn_centaur"
-	"Ability8"				"naturebuilder_precache"
 	"Ability9"				"naturebuilder_passive"
 
 	"AttributeBaseStrength"	"0"
