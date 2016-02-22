@@ -4,7 +4,7 @@
 
 - More duels! Now after every 5 rounds instead of after every 10.
 
-	Per-player duel win bounty from 25/50/100 to 0/10/20/30/45/60
+	Per-player duel win bounty from 25/50/100 to 2/10/20/30/45/60
 
 - Food Limit can now only be upgraded 12 times.
 

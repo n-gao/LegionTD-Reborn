@@ -174,7 +174,7 @@
   "DuelRound1"
   {
     "round_title"           "Duel_Quest_Title"
-    "bounty"                "0"
+    "bounty"                "2"
   }
   "DuelRound2"
   {
