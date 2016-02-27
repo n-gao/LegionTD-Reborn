@@ -553,7 +553,7 @@ function Game:CanSpawn(caster, vector)
   local CHECKINGRADIUS = 30
   local result = 2
   for _, ent in pairs(Entities:FindAllInSphere(vector, CHECKINGRADIUS)) do
-    if ent.unit then
+    if ent.unit and ent:IsAlive() then
       return 4
     end
     if ent == caster.player.lane.box then
