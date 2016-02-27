@@ -24,6 +24,8 @@ START_TANGO = 40
 START_FOOD_LIMIT = 10
 START_INCOME = 0
 
+MAX_SENDS = 45
+
 START_TANGO_LIMIT = 100
 TANGO_LIMIT_PER_ROUND = 25
 LEAKED_TANGO_MULTIPLIER = .15
@@ -801,15 +803,35 @@ function Game:SendUnit(data)
     if team == 2 and not Game.returnToSenderActive then
       print ("adding unit to Game.sendRadiant")
       table.insert(Game.sendRadiant, unit)
+      if #Game.sendRadiant > MAX_SENDS then
+        Game:LimitSends(Game.sendRadiant)
+      end
     else
       print ("adding unit to Game.sendDire")
       table.insert(Game.sendDire, unit)
+      if #Game.sendDire > MAX_SENDS then
+        Game:LimitSends(Game.sendDire)
+      end
     end
     player:RefreshPlayerInfo()
   else
     player:SendErrorCode(LEGION_ERROR_NOT_ENOUGH_TANGOS)
   end
 end
+
+function Game:LimitSends(units)
+  local lowestUnit = units[1]
+  local lowestIndex = 1
+  for i, unit in pairs(units) do
+    if unit.tangoValue < lowestUnit.tangoValue then
+      lowestUnit = unit
+      lowestIndex = i
+    end
+  end
+  units[lowestIndex]:ForceKill(false)
+  table.remove(units, lowestIndex)
+end
+
 
 
 
