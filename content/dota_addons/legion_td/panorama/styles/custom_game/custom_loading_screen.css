@@ -77,7 +77,7 @@
 #seq
 {
     overflow: clip;
-	pre-transform-scale2d: 1.35, 1.35;
+	pre-transform-scale2d: 1.0, 1.0;
 }
 
 @keyframes 'x' {}

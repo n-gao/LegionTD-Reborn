@@ -8,10 +8,7 @@
 	</scripts>
 	<Panel class="LoadingScreen">
 		<Panel id="seq" >
-			<Image id="seq_bg" class="SeqBg" src="file://{images}/custom_game/loading_screen/loading_screen.jpg" />
-		</Panel>
-		<Panel id="TitlePanel">
-			<Label id="GameTitle" text="#addon_game_name" style="" />
+			<Image id="seq_bg" class="SeqBg" src="file://{images}/custom_game/loading_screen/loading_screen.png" />
 		</Panel>
 	</Panel>
 </root>
