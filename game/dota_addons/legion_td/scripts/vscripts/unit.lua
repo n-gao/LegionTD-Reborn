@@ -205,6 +205,13 @@ end
 
 
 function UnitSpawn(event)
+  if not Game:IsBetweenRounds() then
+    print ("player trying to build unit post-spawn!")
+    playerid = event.unit:GetPlayerOwnerID()
+    player = Game:FindPlayerWithID(playerid)
+    player:SendErrorCode(LEGION_ERROR_BETWEEN_ROUNDS)
+    return
+  end
   local unit = Unit.new(Game.GetUnitNameByID(event.ability:GetSpecialValueFor("unitID")),
     event.unit:GetCursorPosition(), event.caster, event.ability:GetSpecialValueFor("food_cost"),
     event.ability:GetGoldCost(event.ability:GetLevel()))
