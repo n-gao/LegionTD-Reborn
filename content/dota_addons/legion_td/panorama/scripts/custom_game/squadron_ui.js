@@ -1,10 +1,10 @@
 "use strict";
 
 GameUI.CustomUIConfig().units =  new Array(
-	{id : 1001, cost : 20, income : 1, cooldown : 1, name : "incomeunit_kobold", icon : "send_incomeunit_kobold"},
-	{id : 1002, cost : 40, income : 1, cooldown : 2, name : "incomeunit_hill_troll_shaman", icon : "send_incomeunit_hill_troll_shaman"},
-	{id : 1003, cost : 40, income : 2, cooldown : 2, name : "incomeunit_hill_troll_warrior", icon : "send_incomeunit_hill_troll_warrior"},
-	{id : 1004, cost : 60, income : 2, cooldown : 3, name : "incomeunit_harpy", icon : "send_incomeunit_harpy"},
+	{id : 1001, cost : 20, income : 1, cooldown : 0, name : "incomeunit_kobold", icon : "send_incomeunit_kobold"},
+	{id : 1002, cost : 40, income : 1, cooldown : 0, name : "incomeunit_hill_troll_shaman", icon : "send_incomeunit_hill_troll_shaman"},
+	{id : 1003, cost : 40, income : 2, cooldown : 0, name : "incomeunit_hill_troll_warrior", icon : "send_incomeunit_hill_troll_warrior"},
+	{id : 1004, cost : 60, income : 2, cooldown : 0, name : "incomeunit_harpy", icon : "send_incomeunit_harpy"},
 	{id : 1005, cost : 80, income : 3, cooldown : 4, name : "incomeunit_ghost", icon : "send_incomeunit_ghost"},
 	{id : 1006, cost : 100, income : 4, cooldown : 5, name : "incomeunit_little_wolf", icon : "send_incomeunit_little_wolf"},
 	{id : 1007, cost : 120, income : 5, cooldown : 6, name : "incomeunit_satyr", icon : "send_incomeunit_satyr"},
