@@ -1,6 +1,6 @@
 0.7.11b
 
-- Each team can only have 45 send units in their "pit" at one time. When an additional send is purchased, the cheapest will be destroyed. (You still earn income for sends that are instantly destroyed in this way)
+- Each team can only have 90 send units in their "pit" at one time. When an additional send is purchased, the cheapest will be destroyed. (You still earn income for sends that are instantly destroyed in this way)
 
 - Purchase cooldown for the first row of units has been removed. (kobold, hill troll shaman, hill troll warrior, and harpy)
 
