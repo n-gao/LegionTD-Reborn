@@ -35,7 +35,7 @@
     "04"
     {
       "var_type"              "FIELD_INTEGER"
-      "health_tooltip"        "190"
+      "health_tooltip"        "600"
     }
     "05"
     {
