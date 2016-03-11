@@ -234,6 +234,9 @@ function GameSpawner:SendIncomingUnits(team)
         print ("k = " .. k)
 
         FindClearSpaceForUnit(unit, rank1 + positions[k], true)
+
+        unit:RemoveModifierByName("modifier_stunned")
+        unit:RemoveModifierByName("modifier_invulnerable")
         
         unit.waypoints = {}
         for j = 1, 4 do
