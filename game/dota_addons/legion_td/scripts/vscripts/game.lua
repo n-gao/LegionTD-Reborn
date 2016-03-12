@@ -800,6 +800,8 @@ function Game:SendUnit(data)
     local name = Game.GetUnitNameByID(lData.id)
     local unit = CreateUnitByName(name, spawn, true, nil, nil, team)
     unit.tangoValue = lData.cost
+    unit:AddNewModifier(nil, nil, "modifier_invulnerable", {})
+    unit:AddNewModifier(nil, nil, "modifier_stunned", {})
     if team == 2 and not Game.returnToSenderActive then
       print ("adding unit to Game.sendRadiant")
       table.insert(Game.sendRadiant, unit)
