@@ -45,6 +45,9 @@ function DuelRound:Begin()
   end
   Game.doneDuels = Game.doneDuels + 1
   self:PlaceUnits()
+  if Game.doneDuels >= 6 then
+    self:PlaceKings()
+  end
 end
 
 
@@ -74,6 +77,32 @@ function DuelRound:OnEntityKilled(event)
     print("duel score for " .. killerID .. ": " .. self.playerscores[killerID])
   end
   self:CheckEnd()
+end
+
+function DuelRound:PlaceKings()
+  Game.radiantBoss:SetAbsOrigin(Vector(0,-1100,0))
+  Game.radiantBoss:SetMoveCapability(DOTA_UNIT_CAP_MOVE_GROUND)
+  Game.radiantBoss:SetDayTimeVisionRange(2000)
+  Game.radiantBoss:SetBaseMoveSpeed(300)
+  Game.direBoss:SetAbsOrigin(Vector(0,1100,0))
+  Game.direBoss:SetMoveCapability(DOTA_UNIT_CAP_MOVE_GROUND)
+  Game.direBoss:SetDayTimeVisionRange(2000)
+  Game.direBoss:SetBaseMoveSpeed(300)
+
+  table.insert(self.remainingUnitsRadiant, Game.radiantBoss)
+  table.insert(self.remainingUnitsDire, Game.direBoss)
+
+  ExecuteOrderFromTable({
+    UnitIndex = Game.radiantBoss:entindex(), 
+    OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
+    TargetIndex = Game.direBoss:entindex(),
+  })
+
+  ExecuteOrderFromTable({
+    UnitIndex = Game.direBoss:entindex(), 
+    OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
+    TargetIndex = Game.radiantBoss:entindex(),
+  })
 end
 
 
