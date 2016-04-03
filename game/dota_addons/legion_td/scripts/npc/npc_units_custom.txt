@@ -1506,7 +1506,7 @@
 		"AttackRate"            "1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
-		"AttackRange"           "600"
+		"AttackRange"           "260"
 		"ProjectileModel"       "particles/units/heroes/hero_phoenix/phoenix_base_attack.vpcf"
 		"ProjectileSpeed"       "590"
 	

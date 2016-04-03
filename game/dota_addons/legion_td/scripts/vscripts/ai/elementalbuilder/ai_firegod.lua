@@ -5,7 +5,7 @@ EXPORTS.Init = function( self )
 		self:FindAbilityByName("firegod_supernova"):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggroInRange
-		self.skillUseRange = 100
+		self.skillUseRange = 300
 		self.Skill = UseSkillNoTarget
 		self.ability = self:FindAbilityByName("firegod_supernova")
 		self.Unstuck = Unstuck
