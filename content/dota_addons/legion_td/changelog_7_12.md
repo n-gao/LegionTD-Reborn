@@ -6,8 +6,6 @@
 
 - Setup time before duels is now less than for other rounds, 10 seconds instead of 35.
 
-- Fixed Return to Sender not working for Dire.
-
 ## Builders
 
 - Elemental Builder rework: Gods now upgrade from Elementals instead of Benders (Benders are the basic summon). Their upgrade costs have been decreased so they still have the same total gold cost, but the upgrade still requires one additional food.
@@ -29,3 +27,9 @@
 	Voidbender (100) + Upgrade to Voidelemental (90) + Upgrade to Voidgod (410) = 600
 
 - Fire God attack range from 600 to 260, and supernova trigger range from 100 to 300. (Fire God should use its ability much more now).
+
+## Misc.
+
+- Fixed Return to Sender not working for Dire.
+
+- New Russian translation provided by Fresh-_-War
