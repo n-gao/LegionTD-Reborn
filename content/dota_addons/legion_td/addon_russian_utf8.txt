@@ -17,20 +17,20 @@
 
  // ******************************** HUD ********************************
  
- "Options_title" "Результаты Голосования" 
+ "Options_title" "Голосование"
  "Option_Income_Limit" "Предел дерева" 
  "Option_Return_To_Sender" "вернуть отправителю" 
- "QuestTimer" "следующий раунд начнется через %quest_current_value% секунд" 
+ "QuestTimer" "Следующий раунд начнется через %quest_current_value% секунд" 
  "Duel_Quest_Title" "Дуэль" 
  "Round" "Раунд" 
- "Income" "Доход в следующем раунде:" 
+ "Income" "Ваш доход:" 
 		
  "end_screen_legend_kills" "убийств" 
- "end_screen_legend_leaks" "пропустил" 
+ "end_screen_legend_leaks" "упушено" 
  "end_screen_legend_tango_income" "Доход дерева" 
  "end_screen_legend_gold_income" "Доход золота" 
 		
- "gold_income_text" "/волну" 
+ "gold_income_text" "/раунд" 
  "tango_income_text" "/мин." 
  "tango_maximum_text" "Макс" 
 		
@@ -57,43 +57,43 @@
  "legion_contributor_programming" "Программист" 
  "legion_contributor_label" "Авторы" 
 		
- "Upgrade_King" "Улучшить короля" 
- "Upgrade_King_Health" "Здоровье короля" 
- "Upgrade_King_Attack" "Атака Короля" 
- "Upgrade_King_Regen" "Регенерация короля" 
+ "Upgrade_King" "Улучшить" 
+ "Upgrade_King_Health" "здоровье короля" 
+ "Upgrade_King_Attack" "атака Короля" 
+ "Upgrade_King_Regen" "регенерация короля" 
 
 
- "wavetitle_abaddon" "Абаддон (нормальный / тяжелый)" 
- "wavetitle_assassins" "ассасин (Колющий / Лёгкий)" 
- "wavetitle_chaos" "Хаосы (нормальный / тяжелый)" 
+ "wavetitle_abaddon" "Абаддон (Нормальная / Тяжелая)" 
+ "wavetitle_assassins" "ассасин (Колющая / Лёгкая)" 
+ "wavetitle_chaos" "Хаосы (Нормальная / Тяжелая)" 
  "wavetitle_chen" "Чены" 
- "wavetitle_deathprophet" "Ведьмы (магия / Колющий)" 
- "wavetitle_donkey" "Ослы (нормальный / легкий)" 
+ "wavetitle_deathprophet" "Ведьмы (Магическая / Колющая)" 
+ "wavetitle_donkey" "Ослы (Нормальная / Лёгкая)" 
  "wavetitle_dragon" "Повелители драконов" 
- "wavetitle_drunken" "Алкаши (нормальный / средний)" 
- "wavetitle_earthspirit" "Духи земли (нормальный / легкий)" 
- "wavetitle_enchantress" "Чародейки (нормальный / легкий)" 
+ "wavetitle_drunken" "Алкаши (Нормальная / Средняя)" 
+ "wavetitle_earthspirit" "Духи земли (Нормальная / Лёгкая)" 
+ "wavetitle_enchantress" "Чародейки (Нормальная / Лёгкая)" 
  "wavetitle_fatty" "Жирдяй" 
- "wavetitle_gatling_sniper" "Парни (магия / Колющий)" 
- "wavetitle_huskar" "Берсерк (Колющий / лёгкий)" 
- "wavetitle_hydra" "Гидры (магия / средний)" 
+ "wavetitle_gatling_sniper" "Парни (Магическая / Лёгкая)" 
+ "wavetitle_huskar" "Берсерк (Колющая / лёгкая)" 
+ "wavetitle_hydra" "Гидры (Магическая / Средняя)" 
  "wavetitle_king" "Царь" 
- "wavetitle_kunkka" "Кунки (нормальный / средний)" 
- "wavetitle_lightning_ball" "Пушистый шарик (Колющий / средний)" 
- "wavetitle_little_fishy" "Маленькая рыбка (нормальный / средний)" 
- "wavetitle_necro_replacement" "кровавый Берсерк (Колющий / средний)" 
- "wavetitle_not_lifestealer" "не Гули (нормальный / легкий)" 
- "wavetitle_ogre" "Огры (магия / тяжелые)" 
- "wavetitle_phantom" "Фантомы (Колющий / средний)" 
- "wavetitle_predator" "Хищник (Колющий / средний)" 
- "wavetitle_rubick" "Великие-Маги (магия / Колющий)" 
- "wavetitle_space_cow" "Космическая корова (нормальный / тяжелый)" 
- "wavetitle_techies" "Кто быстрее? (магия / средний)" 
- "wavetitle_templer" "Темплер (магия / Колющий)" 
- "wavetitle_tidehunter" "Тайды (нормальный / тяжелый)" 
- "wavetitle_tiny" "Камушки с ветками (нормальный / тяжелый)" 
- "wavetitle_unicorn" "Единороги (магия / Колющий)" 
- "wavetitle_zombie" "Зомби (магия / Колющий)"
+ "wavetitle_kunkka" "Кунки (Нормальная / Средняя)" 
+ "wavetitle_lightning_ball" "Пушистый шарик (Колющая / Средняя)" 
+ "wavetitle_little_fishy" "Маленькая рыбка (Нормальная / Средняя)" 
+ "wavetitle_necro_replacement" "кровавый Берсерк (Колющая / Средняя)" 
+ "wavetitle_not_lifestealer" "не Гули (Нормальная / Лёгкая)" 
+ "wavetitle_ogre" "Огры (Магическая / тяжелая)" 
+ "wavetitle_phantom" "Фантомы (Колющая / Средняя)" 
+ "wavetitle_predator" "Хищник (Колющая / Средняя)" 
+ "wavetitle_rubick" "Великие-Маги (Магическая / Лёгкая)" 
+ "wavetitle_space_cow" "Космическая корова (Нормальная / Тяжелая)" 
+ "wavetitle_techies" "Кто быстрее? (Магическая / Средняя)" 
+ "wavetitle_templer" "Темплер (Магическая / Колющая)" 
+ "wavetitle_tidehunter" "Тайды (Нормальная / Тяжелая)" 
+ "wavetitle_tiny" "Камушки с ветками (Нормальная / Тяжелая)" 
+ "wavetitle_unicorn" "Единороги (Магическая / Колющая)" 
+ "wavetitle_zombie" "Зомби (Магическая / Колющая)"
 
  // ******************** HEROES ******************** 
  "npc_dota_hero_invoker" "Элементный строитель" 
@@ -148,17 +148,17 @@
  "tower_naturebuilder_broodmother" "Паук" 
  "tower_naturebuilder_bug" "Таракан" 
  "tower_naturebuilder_centaur" "Кентавр" 
- "tower_naturebuilder_centaur_warrunner" "Кентавр Warrunner" 
+ "tower_naturebuilder_centaur_warrunner" "Кентавр с топором" 
  "tower_naturebuilder_druid_bear" "друид-Медведь" 
- "tower_naturebuilder_flower_treant" "цветок древ" 
+ "tower_naturebuilder_flower_treant" "Цветущее дерево" 
  "tower_naturebuilder_hyena" "гиена" 
  "tower_naturebuilder_iron_bear" "Железный Медведь" 
  "tower_naturebuilder_shroom" "Ядовитый гриб" 
  "tower_naturebuilder_spider" "Паук" 
  "tower_naturebuilder_treant" "Древень" 
- "tower_naturebuilder_treebeard" "Древень" 
+ "tower_naturebuilder_treebeard" "Особый Древень" 
  "bird_ranged" "птица дальнего боя" 
- "human_footman" "человеческого лакей" 
+ "human_footman" "защитник" 
  "unit_abaddon" "Аваддон" 
  "unit_assassins" "ассасин" 
  "unit_chaos" "случайный парень" 
@@ -214,10 +214,10 @@
  "tower_humanbuilder_archer" "Лучник" 
  "tower_humanbuilder_archmage" "Архимаг" 
  "tower_humanbuilder_blademaster" "воин Одина" 
- "tower_humanbuilder_footman" "лакей" 
+ "tower_humanbuilder_footman" "Защитник" 
  "tower_humanbuilder_futuristic_gyrocopter" "Вертолёт" 
  "tower_humanbuilder_general" "Общие" 
- "tower_humanbuilder_gunner" "стрелок" 
+ "tower_humanbuilder_gunner" "Снайпер" 
  "tower_humanbuilder_gyrocopter_mk1" "Вертолёт Мк1" 
  "tower_humanbuilder_gyrocopter_mk2" "Вертолёт Мк2" 
  "tower_humanbuilder_hunter" "Охотник" 
@@ -225,10 +225,10 @@
  "tower_humanbuilder_lieutenant" "лейтенант" 
  "tower_humanbuilder_mage" "Маг" 
  "tower_humanbuilder_marksman" "меткий стрелок" 
- "tower_humanbuilder_militia" "милиция" 
+ "tower_humanbuilder_militia" "Воин" 
  "tower_humanbuilder_novice" "Новичек" 
  "tower_humanbuilder_paladin" "Паладин" 
- "tower_humanbuilder_sharpshooter" "меткий стрелок" 
+ "tower_humanbuilder_sharpshooter" "Амазонка" 
  "tower_humanbuilder_soldier" "солдат" 
  "tower_humanbuilder_soundmaster" "Мастер звука" 
  "tower_humanbuilder_spearman" "Копьеносец" 
@@ -252,10 +252,10 @@
  "DOTA_Tooltip_modifier_item_skadi_datadriven_cold_attack" "Холодная Атака" 
  "DOTA_Tooltip_modifier_item_skadi_datadriven_cold_attack_description" "" 
 
- "DOTA_Tooltip_modifier_fury_swipes_caster_datadriven" "Пойло" 
+ "DOTA_Tooltip_modifier_fury_swipes_caster_datadriven" "Когти" 
  "DOTA_Tooltip_modifier_fury_swipes_caster_datadriven_description" "" 
 
- "DOTA_Tooltip_modifier_fury_swipes_target_datadriven" "Пойло" 
+ "DOTA_Tooltip_modifier_fury_swipes_target_datadriven" "Шрамы" 
  "DOTA_Tooltip_modifier_fury_swipes_target_datadriven_description" "" 
 
  "DOTA_Tooltip_modifier_corrosive_skin_debuff_datadriven" "Разъедает Кожу" 
@@ -292,23 +292,23 @@
  "DOTA_Tooltip_modifier_elementalbuilder_passive_description" "Получаете бонус или штраф в зависимости от баланса ценности ваших войнов разных элементов. Вы получите большой бонус, когда все 5 элементов будут в равновесии. Создайте баланс и сможете защищаться от еще нескольких волн не строя ничего нового." 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_elemental_harmony_lua" "Гармония элементов" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_elemental_harmony_lua_description" "Ваши элементы в гармонии с космосом!" 
- "DOTA_Tooltip_modifier_elementalbuilder_passive_void_lua" "Излишек вакуума" 
+ "DOTA_Tooltip_modifier_elementalbuilder_passive_void_lua" "Энергия вакуума" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_void_lua_description" "Входящий урон снижен на %fMODIFIER_PROPERTY_TOOLTIP%%%" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_void_negative_lua" "Дефицит вакуума" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_void_negative_lua_description" "входящий урон увеличен на %fMODIFIER_PROPERTY_TOOLTIP%%%" 
- "DOTA_Tooltip_modifier_elementalbuilder_passive_water_lua" "Избыток Воды" 
+ "DOTA_Tooltip_modifier_elementalbuilder_passive_water_lua" "Энергия воды" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_water_lua_description" "скорость атаки увеличена на %fMODIFIER_PROPERTY_TOOLTIP%" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_water_negative_lua" "Дефицит воды" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_water_negative_lua_description" "скорость атаки уменьшилась на %fMODIFIER_PROPERTY_TOOLTIP%" 
- "DOTA_Tooltip_modifier_elementalbuilder_passive_fire_lua" "Избыток Огня" 
+ "DOTA_Tooltip_modifier_elementalbuilder_passive_fire_lua" "Энергия огня" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_fire_lua_description" "получает %fMODIFIER_PROPERTY_TOOLTIP%%% бонус к урону" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_fire_negative_lua" "Недостаток Огня" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_fire_negative_lua_description" "получает %fMODIFIER_PROPERTY_TOOLTIP%%% штраф к урону" 
- "DOTA_Tooltip_modifier_elementalbuilder_passive_earth_lua" "Земля Лишних" 
+ "DOTA_Tooltip_modifier_elementalbuilder_passive_earth_lua" "Энергия земли" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_earth_lua_description" "получено %fMODIFIER_PROPERTY_TOOLTIP% брони" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_earth_negative_lua" "Дефицит Земли" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_earth_negative_lua_description" "потеряно %fMODIFIER_PROPERTY_TOOLTIP% брони" 
- "DOTA_Tooltip_modifier_elementalbuilder_passive_thunder_lua" "Излишки грома" 
+ "DOTA_Tooltip_modifier_elementalbuilder_passive_thunder_lua" "Энергия грома" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_thunder_lua_description" "входящий урон от заклинаний уменьшен и исходящий урон от заклинаний увеличен на %fMODIFIER_PROPERTY_TOOLTIP%%%" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_thunder_negative_lua" "Дифицит грома" 
  "DOTA_Tooltip_modifier_elementalbuilder_passive_thunder_negative_lua_description" "входящий урон от заклинаний увеличен и исходящий урон от заклинаний уменьшен на %fMODIFIER_PROPERTY_TOOLTIP%%%" 
@@ -317,19 +317,19 @@
  "DOTA_Tooltip_modifier_naturebuilder_passive_deathknell_lua_description" "всякий раз, когда один из ваших юнитов умирает, он излечивает %fMODIFIER_PROPERTY_TOOLTIP%%% своего HP, своим союзникам и наносит %fMODIFIER_PROPERTY_TOOLTIP%%% своего НР магией близлежайшей цели." 
 
  "DOTA_Tooltip_modifier_humanbuilder_passive_lua" "Дополнительное Питание" 
- "DOTA_Tooltip_modifier_humanbuilder_passive_lua_description" "набрать %fMODIFIER_PROPERTY_TOOLTIP% дополнительное питание за раунд.\n Нельзя покупать дерево вручную!" 
+ "DOTA_Tooltip_modifier_humanbuilder_passive_lua_description" "Получает %fMODIFIER_PROPERTY_TOOLTIP% дополнительной еды за раунд.\n Нельзя увеличивать предел еды вручную!" 
 
- "DOTA_Tooltip_modifier_attack_normal_lua" "Обычная Атака" 
- "DOTA_Tooltip_modifier_attack_normal_lua_description" "Наносит-80%%, по лёгкой\nНаносит 125%% по средней\nНаносит 100%% по тяжелой" 
- "DOTA_Tooltip_modifier_attack_pierce_lua" "Колющий Атака" 
- "DOTA_Tooltip_modifier_attack_pierce_lua_description" "Наносит-125%% по лёгкой\nНаносит 100%% по средней\nНаносит 80%% по тяжелой" 
- "DOTA_Tooltip_modifier_attack_arcane_lua" "Магической Атаки" 
- "DOTA_Tooltip_modifier_attack_arcane_lua_description" "Наносит-100%% по лёгкой\nНаносит 80%% по средней\nНаносит 150%% по тяжелой" 
- "DOTA_Tooltip_modifier_defend_light_lua" "Свет Обороне" 
+ "DOTA_Tooltip_modifier_attack_normal_lua" "Обычная атака" 
+ "DOTA_Tooltip_modifier_attack_normal_lua_description" "Наносит 80%%, по лёгкой\nНаносит 125%% по средней\nНаносит 100%% по тяжелой" 
+ "DOTA_Tooltip_modifier_attack_pierce_lua" "Колющая атака" 
+ "DOTA_Tooltip_modifier_attack_pierce_lua_description" "Наносит 125%% по лёгкой\nНаносит 100%% по средней\nНаносит 80%% по тяжелой" 
+ "DOTA_Tooltip_modifier_attack_arcane_lua" "Магическая атака" 
+ "DOTA_Tooltip_modifier_attack_arcane_lua_description" "Наносит 100%% по лёгкой\nНаносит 80%% по средней\nНаносит 150%% по тяжелой" 
+ "DOTA_Tooltip_modifier_defend_light_lua" "Лёгкая броня" 
  "DOTA_Tooltip_modifier_defend_light_lua_description" "Получает 80%% от нормальной\nTake 125%% от Колющей\nTake 100%% от магии" 
- "DOTA_Tooltip_modifier_defend_medium_lua" "Средний Обороны" 
+ "DOTA_Tooltip_modifier_defend_medium_lua" "Средняя броня" 
  "DOTA_Tooltip_modifier_defend_medium_lua_description" "Получает 125%% от нормальной\nTake 100%% от Колющей\nTake 80%% от магии" 
- "DOTA_Tooltip_modifier_defend_heavy_lua" "Тяжелая Защита" 
+ "DOTA_Tooltip_modifier_defend_heavy_lua" "Тяжелая защита" 
  "DOTA_Tooltip_modifier_defend_heavy_lua_description" "Получает 100%% от нормальной\nTake 80%% от Колющей\nTake 125%% от магии" 
 
 
@@ -355,8 +355,8 @@
  "DOTA_Tooltip_ability_beeing_radiant_boss" "Является Очень Тяжелым Боссом" 
  "DOTA_Tooltip_ability_beeing_radiant_boss_description" "" 
 
- "DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender" "Появление Маг Земли" 
- "DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_description" "атака: нормальная/тяжелая\nУмения: ---" 
+ "DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender" "Воин земли" 
+ "DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_description" "атака: нормальная/Тяжелая\nУмения: ---" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_atk_range_tooltip" "Радиус атаки:" 
@@ -364,8 +364,8 @@
  "DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_armor_tooltip" "броня:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_food_cost" "Требует еды:" 
 
- "DOTA_Tooltip_ability_elementalbuilder_spawn_firebender" "Появление Firebender" 
- "DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_description" "атака: Магия/Лёгкая\nУмения: ---" 
+ "DOTA_Tooltip_ability_elementalbuilder_spawn_firebender" "Огненная воительница" 
+ "DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_description" "атака: Магическая/Лёгкая\nУмения: ---" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_atk_range_tooltip" "Дальность атаки:" 
@@ -373,8 +373,8 @@
  "DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_armor_tooltip" "броня:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_firebender_food_cost" "Требует еды:" 
 
- "DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender" "Появление Thunderbender" 
- "DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_description" "атака: Магия/Лёгкая\nУмения: ---" 
+ "DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender" "Хранитель энергии" 
+ "DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_description" "атака: Магичесая/Лёгкая\nУмения: ---" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_atk_range_tooltip" "Дальность атаки:" 
@@ -382,8 +382,8 @@
  "DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_armor_tooltip" "броня:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_thunderbender_food_cost" "Требует еды:" 
 
- "DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender" "Появление Voidbender" 
- "DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_description" "атака: Арканов/средне\nУмения: ---" 
+ "DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender" "Воин вакуума" 
+ "DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_description" "атака: Магическая/Средняя\nУмения: ---" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_atk_range_tooltip" "Дальность атаки:" 
@@ -391,8 +391,8 @@
  "DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_armor_tooltip" "броня:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_voidbender_food_cost" "Требует еды:" 
 
- "DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender" "Появление Маг" 
- "DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender_description" "атака: нормальная/тяжелая\nУмения: ---" 
+ "DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender" "Водяной" 
+ "DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender_description" "атака: нормальная/Тяжелая\nУмения: ---" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_spawn_waterbender_atk_range_tooltip" "Дальность атаки:" 
@@ -585,8 +585,8 @@
  "DOTA_Tooltip_ability_iron_bear_fury_swipes_bonus_reset_time_roshan" "Время сброса бонуса на боссе:" 
  "DOTA_Tooltip_ability_iron_bear_fury_swipes_damage_per_stack" "Урон за удар:" 
 
- "DOTA_Tooltip_ability_naturebuilder_spawn_bear" "Появление Медведей" 
- "DOTA_Tooltip_ability_naturebuilder_spawn_bear_description" "атака: нормальная/тяжелая\nУмения: Крик" 
+ "DOTA_Tooltip_ability_naturebuilder_spawn_bear" "Медведь" 
+ "DOTA_Tooltip_ability_naturebuilder_spawn_bear_description" "атака: нормальная/Тяжелая\nУмения: Крик" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_bear_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_bear_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_bear_atk_range_tooltip" "Дальность атаки:" 
@@ -595,7 +595,7 @@
  "DOTA_Tooltip_ability_naturebuilder_spawn_bear_food_cost" "Требует еды:" 
 		
  "DOTA_Tooltip_ability_naturebuilder_spawn_bug" "Таракан" 
- "DOTA_Tooltip_ability_naturebuilder_spawn_bug_description" "атака: Колющий/средне\nУмения: Двойная атака" 
+ "DOTA_Tooltip_ability_naturebuilder_spawn_bug_description" "атака: Колющая/Средняя\nУмения: Двойная атака" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_bug_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_bug_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_bug_atk_range_tooltip" "Дальность атаки:" 
@@ -603,8 +603,8 @@
  "DOTA_Tooltip_ability_naturebuilder_spawn_bug_armor_tooltip" "броня:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_bug_food_cost" "Требует еды:" 
 
- "DOTA_Tooltip_ability_naturebuilder_spawn_centaur" "Появление Кентавра" 
- "DOTA_Tooltip_ability_naturebuilder_spawn_centaur_description" "атака: нормальная/тяжелая\nУмения: Массовый удар" 
+ "DOTA_Tooltip_ability_naturebuilder_spawn_centaur" "Кентавр" 
+ "DOTA_Tooltip_ability_naturebuilder_spawn_centaur_description" "атака: нормальная/Тяжелая\nУмения: Массовый удар" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_centaur_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_centaur_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_centaur_atk_range_tooltip" "Дальность атаки:" 
@@ -613,7 +613,7 @@
  "DOTA_Tooltip_ability_naturebuilder_spawn_centaur_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_naturebuilder_spawn_hyena" "Гиена" 
- "DOTA_Tooltip_ability_naturebuilder_spawn_hyena_description" "атака: нормальная/тяжелая\nУмения: Токсины" 
+ "DOTA_Tooltip_ability_naturebuilder_spawn_hyena_description" "атака: нормальная/Тяжелая\nУмения: Токсины" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_hyena_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_hyena_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_hyena_atk_range_tooltip" "Дальность атаки:" 
@@ -622,7 +622,7 @@
  "DOTA_Tooltip_ability_naturebuilder_spawn_hyena_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_naturebuilder_spawn_spider" "Паук" 
- "DOTA_Tooltip_ability_naturebuilder_spawn_spider_description" "атака: нормальная/тяжелая\nУмения: ядовитое жало" 
+ "DOTA_Tooltip_ability_naturebuilder_spawn_spider_description" "атака: нормальная/Тяжелая\nУмения: ядовитое жало" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_spider_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_spider_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_spider_atk_range_tooltip" "Дальность атаки:" 
@@ -631,7 +631,7 @@
  "DOTA_Tooltip_ability_naturebuilder_spawn_spider_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_naturebuilder_spawn_treant" "Дерево" 
- "DOTA_Tooltip_ability_naturebuilder_spawn_treant_description" "атака: нормальная/тяжелая\nУмения: Аура вампира" 
+ "DOTA_Tooltip_ability_naturebuilder_spawn_treant_description" "атака: нормальная/Тяжелая\nУмения: Аура вампира" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_treant_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_treant_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_spawn_treant_atk_range_tooltip" "Дальность атаки:" 
@@ -640,7 +640,7 @@
  "DOTA_Tooltip_ability_naturebuilder_spawn_treant_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar" "Агрессивный Кабан" 
- "DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar_description" "атака: Арканов/средне\nУмения: Токсины" 
+ "DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar_description" "атака: Магическая/Средняя\nУмения: Токсины" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar_atk_range_tooltip" "Дальность атаки:" 
@@ -649,7 +649,7 @@
  "DOTA_Tooltip_ability_naturebuilder_upgrade_agressive_boar_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug" "Большой таракан" 
- "DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug_description" "атака: Колющий/средне\nУмения: Двойная атака" 
+ "DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug_description" "атака: Колющая/Средняя\nУмения: Двойная атака" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug_atk_range_tooltip" "Дальность атаки:" 
@@ -658,7 +658,7 @@
  "DOTA_Tooltip_ability_naturebuilder_upgrade_big_bug_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur" "Большой Кентавр" 
- "DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur_description" "атака: нормальная/тяжелая\nУмения: , Каменная кожа" 
+ "DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur_description" "атака: нормальная/Тяжелая\nУмения: , Каменная кожа" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur_atk_range_tooltip" "Дальность атаки:" 
@@ -667,7 +667,7 @@
  "DOTA_Tooltip_ability_naturebuilder_upgrade_big_centaur_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother" "Паучья мать" 
- "DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother_description" "атака: нормальная/тяжелая\nУмения: Два паука" 
+ "DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother_description" "атака: нормальная/Тяжелая\nУмения: Два паука" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother_atk_range_tooltip" "Дальность атаки:" 
@@ -676,7 +676,7 @@
  "DOTA_Tooltip_ability_naturebuilder_upgrade_broodmother_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner" "Кентавр с топором" 
- "DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner_description" "атака: нормальная/тяжелая\nУмения: Удар топором" 
+ "DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner_description" "атака: нормальная/Тяжелая\nУмения: Удар топором" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner_atk_range_tooltip" "Дальность атаки:" 
@@ -685,7 +685,7 @@
  "DOTA_Tooltip_ability_naturebuilder_upgrade_centaur_warrunner_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear" "Друид Медведь" 
- "DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear_description" "атака: нормальная/тяжелая\nУмения: Beserkers звонок, Опутывают" 
+ "DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear_description" "атака: нормальная/Тяжелая\nУмения: Beserkers звонок, Опутывают" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_druid_bear_atk_range_tooltip" "Дальность атаки:" 
@@ -703,7 +703,7 @@
  "DOTA_Tooltip_ability_naturebuilder_upgrade_flower_treant_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear" "Железный медведь" 
- "DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear_description" "атака: нормальная/тяжелая\nУмения: Острые когти" 
+ "DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear_description" "атака: нормальная/Тяжелая\nУмения: Острые когти" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear_atk_range_tooltip" "Дальность атаки:" 
@@ -712,7 +712,7 @@
  "DOTA_Tooltip_ability_naturebuilder_upgrade_iron_bear_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_shroom" "Ядовитый гриб" 
- "DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_description" "атака: Арканов/хэви\nУмения: разъедающих кожу" 
+ "DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_description" "атака: Магическая/Тяжелая\nУмения: разъедающих кожу" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_atk_range_tooltip" "Дальность атаки:" 
@@ -720,8 +720,8 @@
  "DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_armor_tooltip" "броня:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_shroom_food_cost" "Требует еды:" 
 
- "DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard" "Обновление Древень" 
- "DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_description" "атака: нормальная/тяжелая\nУмения: разрастание, Синергия" 
+ "DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard" "Особый Древень" 
+ "DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_description" "атака: нормальная/Тяжелая\nУмения: разрастание, Синергия" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_naturebuilder_upgrade_treebeard_atk_range_tooltip" "Дальность атаки:" 
@@ -738,7 +738,7 @@
  "DOTA_Tooltip_ability_shroom_corrosive_skin_damage" "урон:" 
  "DOTA_Tooltip_ability_shroom_corrosive_skin_max_range_tooltip" "Масимальная дальность:" 
 
- "DOTA_Tooltip_ability_treant_vampiric_aura" "Древень Вампира Аура" 
+ "DOTA_Tooltip_ability_treant_vampiric_aura" "Аура вампиризма" 
  "DOTA_Tooltip_ability_treant_vampiric_aura_description" "" 
  "DOTA_Tooltip_ability_treant_vampiric_aura_vampiric_aura_radius" "вампира аура радиус:" 
  "DOTA_Tooltip_ability_treant_vampiric_aura_vampiric_aura" "аура вампира:" 
@@ -803,7 +803,7 @@
  "DOTA_Tooltip_ability_techies_suicide_datadriven_vision_duration" "Продолжительность:" 
 		
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental" "Скорпион" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental_description" "атака: нормальная/тяжелая\nУмения: Взрыв трупа" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental_description" "атака: нормальная/Тяжелая\nУмения: Взрыв трупа" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental_atk_range_tooltip" "Дальность атаки:" 
@@ -812,7 +812,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthelemental_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod" "Тини" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod_description" "атака: нормальная/тяжелая\nУмения: Камнепад" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod_description" "атака: нормальная/Тяжелая\nУмения: Камнепад" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod_atk_range_tooltip" "Дальность атаки:" 
@@ -821,7 +821,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthgod_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior" "Земляной боец" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior_description" "атака: нормальная/тяжелая\nУмения: ---" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior_description" "атака: нормальная/Тяжелая\nУмения: ---" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior_atk_range_tooltip" "Дальность атаки:" 
@@ -830,7 +830,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_earthwarrior_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental" "Обновление Огненный элементаль" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental_description" "атака: Арканов/средне\nУмения: пламя" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental_description" "атака: Магическая/Средняя\nУмения: пламя" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental_atk_range_tooltip" "Дальность атаки:" 
@@ -839,7 +839,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_fireelemental_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod" "Обновление Феникс" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod_description" "атака: Арканов/света\nУмения: Сверхновая" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod_description" "атака: Магическая/Лёгкая\nУмения: Сверхновая" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod_atk_range_tooltip" "Дальность атаки:" 
@@ -848,7 +848,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_firegod_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior" "Огненный боец" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior_description" "атака: нормальная/тяжелая\nУмения: Ловкий кулак" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior_description" "атака: нормальная/Тяжелая\nУмения: Ловкий кулак" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior_atk_range_tooltip" "Дальность атаки:" 
@@ -857,7 +857,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_firewarrior_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental" "Электрический элементаль" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental_description" "атака: Арканов/света\nУмения: Случайные взрывы" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental_description" "атака: Магическая/Лёгкая\nУмения: Случайные взрывы" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental_atk_range_tooltip" "Дальность атаки:" 
@@ -866,7 +866,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderelemental_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod" "Зевс" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod_description" "атака: Арканов/света\nУмения: цепная молния" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod_description" "атака: Магическая/Лёгкая\nУмения: цепная молния" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod_atk_range_tooltip" "Дальность атаки:" 
@@ -875,7 +875,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thundergod_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior" "Кинетик" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior_description" "атака: Арканов/средне\nУмения: статический остаток" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior_description" "атака: Магическая/Средняя\nУмения: статический остаток" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior_atk_range_tooltip" "Дальность атаки:" 
@@ -884,7 +884,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_thunderwarrior_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental" "Элементаль вакуума" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental_description" "атака: Арканов/света\nУмения: Высосать мозги" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental_description" "атака: Магическая/Лёгкая\nУмения: Высосать мозги" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental_atk_range_tooltip" "Дальность атаки:" 
@@ -893,7 +893,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidelemental_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod" "Энигма" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod_description" "атака: Арканов/света\nУмения: Черная дыра" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod_description" "атака: Магическая/Лёгкая\nУмения: Черная дыра" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod_atk_range_tooltip" "Дальность атаки:" 
@@ -902,7 +902,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidgod_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior" "Воид" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior_description" "атака: нормальная/тяжелая\nУмения: Остановка времени" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior_description" "атака: нормальная/Тяжелая\nУмения: Остановка времени" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior_atk_range_tooltip" "Дальность атаки:" 
@@ -911,7 +911,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_voidwarrior_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental" "Водный элементаль" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental_description" "атака: Арканов/света\nУмения: ---" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental_description" "атака: Магическая/Лёгкая\nУмения: ---" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental_atk_range_tooltip" "Дальность атаки:" 
@@ -920,7 +920,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterelemental_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod" "Древний элементаль холода" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod_description" "атака: Арканов/света\nУмения: ледяной Вихрь" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod_description" "атака: Магическая/Лёгкая\nУмения: ледяной Вихрь" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod_atk_range_tooltip" "Дальность атаки:" 
@@ -929,7 +929,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_watergod_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior" "Нага" 
- "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_description" "атака: Колющий/средне\nУмения: Снижение брони" 
+ "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_description" "атака: Колющая/Средняя\nУмения: Снижение брони" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_atk_range_tooltip" "Дальность атаки:" 
@@ -938,7 +938,7 @@
  "DOTA_Tooltip_ability_elementalbuilder_upgrade_waterwarrior_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_humanbuilder_spawn_archer" "Лучница" 
- "DOTA_Tooltip_ability_humanbuilder_spawn_archer_description" "атака: Колющий/средне\nУмения: ---" 
+ "DOTA_Tooltip_ability_humanbuilder_spawn_archer_description" "атака: Колющая/Средняя\nУмения: ---" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_archer_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_archer_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_archer_atk_range_tooltip" "Дальность атаки:" 
@@ -947,7 +947,7 @@
  "DOTA_Tooltip_ability_humanbuilder_spawn_archer_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1" "Вертолёт Мк1" 
- "DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_description" "атака: Колющий/средне\nУмения: стрельба по нескольким целям" 
+ "DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_description" "атака: Колющая/Средняя\nУмения: стрельба по нескольким целям" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_atk_range_tooltip" "Дальность атаки:" 
@@ -956,7 +956,7 @@
  "DOTA_Tooltip_ability_humanbuilder_spawn_gyrocopter_mk1_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant" "Лейтенант" 
- "DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_description" "атака: нормальная/тяжелая\nУмения: Блокировка" 
+ "DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_description" "атака: нормальная/Тяжелая\nУмения: Блокировка" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_atk_range_tooltip" "Дальность атаки:" 
@@ -965,7 +965,7 @@
  "DOTA_Tooltip_ability_humanbuilder_spawn_lieutnant_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_humanbuilder_spawn_militia" "Воин" 
- "DOTA_Tooltip_ability_humanbuilder_spawn_militia_description" "атака: нормальная/тяжелая\nУмения: ---" 
+ "DOTA_Tooltip_ability_humanbuilder_spawn_militia_description" "атака: нормальная/Тяжелая\nУмения: ---" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_militia_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_militia_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_militia_atk_range_tooltip" "Дальность атаки:" 
@@ -975,7 +975,7 @@
 
 
  "DOTA_Tooltip_ability_humanbuilder_spawn_novice" "Новичек" 
- "DOTA_Tooltip_ability_humanbuilder_spawn_novice_description" "атака: Арканов/света\nУмения: Цепная магия" 
+ "DOTA_Tooltip_ability_humanbuilder_spawn_novice_description" "атака: Магическая/Лёгкая\nУмения: Цепная магия" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_novice_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_novice_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_spawn_novice_atk_range_tooltip" "Дальность атаки:" 
@@ -984,7 +984,7 @@
  "DOTA_Tooltip_ability_humanbuilder_spawn_novice_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop" "Архиепископ" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_description" "атака: Арканов/света\nУмения: Волна лечения, Аура исцеления " 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_description" "атака: Магическая/Лёгкая\nУмения: Волна лечения, Аура исцеления " 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_atk_range_tooltip" "Дальность атаки:" 
@@ -993,7 +993,7 @@
  "DOTA_Tooltip_ability_humanbuilder_upgrade_archbishop_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_archmage" "Архимаг" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_description" "атака: Арканов/света\nУмения: Цепная магия, Волна магии" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_description" "атака: Магическая/Лёгкая\nУмения: Цепная магия, Волна магии" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_atk_range_tooltip" "Дальность атаки:" 
@@ -1002,7 +1002,7 @@
  "DOTA_Tooltip_ability_humanbuilder_upgrade_archmage_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster" "Воин Одина" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_description" "атака: нормальная/тяжелая\nУмения: Клинок ярости, Танец клинков" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_description" "атака: нормальная/Тяжелая\nУмения: Клинок ярости, Танец клинков" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_atk_range_tooltip" "Дальность атаки:" 
@@ -1010,8 +1010,8 @@
  "DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_armor_tooltip" "броня:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_blademaster_food_cost" "Требует еды:" 
 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_footman" "Лакей" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_footman_description" "атака: нормальная/тяжелая\nУмения: способность удар щитом" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_footman" "Защитник" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_footman_description" "атака: нормальная/Тяжелая\nУмения: способность удар щитом" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_footman_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_footman_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_footman_atk_range_tooltip" "Дальность атаки:" 
@@ -1021,7 +1021,7 @@
 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter" "Современный вертолёт" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_description" "атака: Колющий/средне\nУмения: Массовая стрельба, Артиллерия" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_description" "атака: Колющая/Средняя\nУмения: Массовая стрельба, Артиллерия" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_futuristic_gyrocopter_atk_range_tooltip" "Дальность атаки:" 
@@ -1031,7 +1031,7 @@
 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_general" "Генерал" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_general_description" "атака: нормальная/тяжелая\nУмения: Сильный удар, Владмир Аура" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_general_description" "атака: нормальная/Тяжелая\nУмения: Сильный удар, Владмир Аура" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_general_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_general_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_general_atk_range_tooltip" "Дальность атаки:" 
@@ -1040,8 +1040,8 @@
  "DOTA_Tooltip_ability_humanbuilder_upgrade_general_food_cost" "Требует еды:" 
 
 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_gunner" " Стрелок" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_description" "атака: Колющий/средне\nУмения: выстрел в голову" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_gunner" "Снайпер" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_description" "атака: Колющая/Средняя\nУмения: выстрел в голову" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_gunner_atk_range_tooltip" "Дальность атаки:" 
@@ -1051,7 +1051,7 @@
 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2" "Вертолёт Мк2" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_description" "атака: Колющий/средне\nУмения: Стрельба по нескольким целям" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_description" "атака: Колющая/Средняя\nУмения: Стрельба по нескольким целям" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_gyrocopter_mk2_atk_range_tooltip" "Дальность атаки:" 
@@ -1061,7 +1061,7 @@
 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_hunter" "Охотник" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_description" "атака: Колющий/средне\nУмения: выстрел в голову" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_description" "атака: Колющая/Средняя\nУмения: выстрел в голову" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_hunter_atk_range_tooltip" "Дальность атаки:" 
@@ -1071,7 +1071,7 @@
 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster" "Великий мастер льда" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_description" "атака: Арканов/света\nУмения: замораживающее поле, охлажденной крови" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_description" "атака: Магическая/Лёгкая\nУмения: замораживающее поле, охлажденной крови" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_icewrack_grandmaster_atk_range_tooltip" "Дальность атаки:" 
@@ -1081,7 +1081,7 @@
 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_mage" "Маг" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_mage_description" "атака: Арканов/света\nУмения: Цепная магия, Кристалл Нова" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_mage_description" "атака: Магическая/Лёгкая\nУмения: Цепная магия, Кристалл Нова" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_mage_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_mage_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_mage_atk_range_tooltip" "Дальность атаки:" 
@@ -1090,7 +1090,7 @@
  "DOTA_Tooltip_ability_humanbuilder_upgrade_mage_food_cost" "Требует еды:" 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_marksman" "Стрелок" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_description" "атака: Колющий/средне\nУмения: выстрел в голову" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_description" "атака: Колющая/Средняя\nУмения: выстрел в голову" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_marksman_atk_range_tooltip" "Дальность атаки:" 
@@ -1100,7 +1100,7 @@
 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_paladin" "Паладин" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_description" "атака: нормальная/тяжелая\nУмения: Лечение"
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_description" "атака: нормальная/Тяжелая\nУмения: Лечение"
  "DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_atk_range_tooltip" "Дальность атаки:" 
@@ -1109,8 +1109,8 @@
  "DOTA_Tooltip_ability_humanbuilder_upgrade_paladin_food_cost" "Требует еды:" 
 
 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter" "Снайпера" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_description" "атака: Колющий/средне\nУмения: выстрел в голову" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter" "Амазонка" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_description" "атака: Колющая/Средняя\nУмения: выстрел в голову" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_atk_range_tooltip" "Дальность атаки:" 
@@ -1119,8 +1119,8 @@
  "DOTA_Tooltip_ability_humanbuilder_upgrade_sharpshooter_food_cost" "Требует еды:" 
 
 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_soldier" "Солдата" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_description" "атака: нормальная/тяжелая\nУмения: способность удар щитом" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_soldier" "Солдат" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_description" "атака: нормальная/Тяжелая\nУмения: способность удар щитом" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_soldier_atk_range_tooltip" "Дальность атаки:" 
@@ -1130,7 +1130,7 @@
 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster" "Маг звука" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_description" "атака: Арканов/света\nУмения: оглушающий взрыв, Шторм молний" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_description" "атака: Магическая/Лёгкая\nУмения: оглушающий взрыв, Шторм молний" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_atk_range_tooltip" "Дальность атаки:" 
@@ -1139,8 +1139,8 @@
  "DOTA_Tooltip_ability_humanbuilder_upgrade_soundmaster_food_cost" "Требует еды:" 
 
 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_spearman" "Спирмен" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_description" "атака: нормальная/тяжелая\nУмения: способность удар щитом" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_spearman" "копьеносец" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_description" "атака: нормальная/Тяжелая\nУмения: способность удар щитом" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_spearman_atk_range_tooltip" "Дальность атаки:" 
@@ -1150,7 +1150,7 @@
 
 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_tactician" "Тактик" 
- "DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_description" "атака: Колющий/средне\nУмения: Ангел-Хранитель, Штормовой Болт, тактическая Аура" 
+ "DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_description" "атака: Колющая/Средняя\nУмения: Ангел-Хранитель, Штормовой Болт, тактическая Аура" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_atk_damage_tooltip" "Атака:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_atk_speed_tooltip" "Скорость атаки:" 
  "DOTA_Tooltip_ability_humanbuilder_upgrade_tactician_atk_range_tooltip" "Дальность атаки:" 
@@ -1268,7 +1268,7 @@
  "DOTA_Tooltip_ability_lieutenant_vigor_strike_crit_multiplier" "критический множитель:" 
  "DOTA_Tooltip_ability_lieutenant_vigor_strike_lifesteal_percent" "вампиризм процентов:" 
 
- "DOTA_Tooltip_ability_mage_chain_fade" "Шаровая молний" 
+ "DOTA_Tooltip_ability_mage_chain_fade" "Шаровая молния" 
  "DOTA_Tooltip_ability_mage_chain_fade_description" "Кидает шар энергии, который прыгает между врагами, нанося им урон и снижая физический урон."
  "DOTA_Tooltip_ability_mage_chain_fade_jumps" "прыжки:" 
  "DOTA_Tooltip_ability_mage_chain_fade_reduce_duration" "Уменьшение длительности:" 
