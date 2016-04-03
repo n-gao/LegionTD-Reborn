@@ -806,7 +806,14 @@ function Game:SendUnit(data)
     unit.tangoValue = lData.cost
     unit:AddNewModifier(nil, nil, "modifier_invulnerable", {})
     unit:AddNewModifier(nil, nil, "modifier_stunned", {})
-    if team == 2 and not Game.returnToSenderActive then
+    local sendFromRadiant = false
+    if team == DOTA_TEAM_GOODGUYS then
+      sendFromRadiant = not sendFromRadiant
+    end
+    if Game.returnToSenderActive then
+      sendFromRadiant = not sendFromRadiant
+    end
+    if sendFromRadiant then
       print ("adding unit to Game.sendRadiant")
       table.insert(Game.sendRadiant, unit)
       if #Game.sendRadiant > MAX_SENDS then
