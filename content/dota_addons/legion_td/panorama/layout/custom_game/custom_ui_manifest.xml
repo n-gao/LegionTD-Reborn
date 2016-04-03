@@ -1,6 +1,8 @@
 <root>
   <scripts>
       <include src="file://{resources}/scripts/custom_game/squadron_update_player.js" />
+      <include src="file://{resources}/scripts/custom_game/selection.js" />
+      <include src="file://{resources}/scripts/custom_game/selection_filter.js" />
   </scripts>
   <script>
 		GameUI.CustomUIConfig().multiteam_top_scoreboard =

@@ -15,6 +15,7 @@ require ('unit')
 require ('popups')
 require ('notifications')
 require ('damage')
+require ('selection')
 require ('wiki')
 
 RequiredUnits = {

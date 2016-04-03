@@ -32,4 +32,6 @@
 
 - Fixed Return to Sender not working for Dire.
 
+- Upgrading a unit will now select the new upgraded unit.
+
 - New Russian translation provided by Fresh-_-War

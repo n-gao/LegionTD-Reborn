@@ -221,6 +221,7 @@ end
 
 function upgrade_unit(event)
   local id = event.ability:GetSpecialValueFor("unitID")
+  playerid = event.unit:GetPlayerOwnerID()
   local newclass = Game.GetUnitNameByID(id)
   event.caster.unit.npcclass = newclass
   event.caster.unit:Respawn()
@@ -228,6 +229,7 @@ function upgrade_unit(event)
     + event.ability:GetSpecialValueFor("food_cost")
   event.caster.unit.goldCost = event.caster.unit.goldCost
     + event.ability:GetGoldCost(event.ability:GetLevel())
+  PlayerResource:NewSelection(playerid, event.caster.unit.npc)
 end
 
 
