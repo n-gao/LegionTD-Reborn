@@ -348,7 +348,7 @@ function Player:Abandon()
   print ("abandoning player on team " .. self.teamnumber)
   local goldValue = PlayerResource:GetGold(self:GetPlayerID()) -- gold in pocket
   print ("abandoning player had " .. goldValue .. " gold in pocket")
-  goldValue = goldValue + self.buildingUpgradeValue -- gold in building upgrades
+  goldValue = goldValue + (self.buildingUpgradeValue/2) -- gold in building upgrades
   print ("plus building upgrades: " .. goldValue)
   for _, unit in pairs(self.units) do -- gold in built units
     goldValue = goldValue + unit.goldCost
