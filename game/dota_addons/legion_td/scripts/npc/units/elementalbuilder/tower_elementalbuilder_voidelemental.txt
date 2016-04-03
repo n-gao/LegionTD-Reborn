@@ -10,10 +10,10 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability4"							"sell"
+	"Ability1"				"elementalbuilder_upgrade_voidgod"
+	"Ability2"				"bane_brain_sap"
 	"Ability3"				"ability_empty_3"
-	"Ability2"				"ability_empty_2"
-	"Ability1"							"bane_brain_sap"
+	"Ability4"				"sell"
 
 	// Armor
 	//----------------------------------------------------------------

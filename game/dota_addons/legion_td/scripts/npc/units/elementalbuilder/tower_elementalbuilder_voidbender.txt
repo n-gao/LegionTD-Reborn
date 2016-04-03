@@ -10,10 +10,10 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"							"elementalbuilder_upgrade_voidelemental"
-  "Ability2"							"elementalbuilder_upgrade_voidwarrior"
-  "Ability3"							"elementalbuilder_upgrade_voidgod"
-	"Ability4"							"sell"
+	"Ability1"				"elementalbuilder_upgrade_voidelemental"
+  	"Ability2"				"elementalbuilder_upgrade_voidwarrior"
+  	"Ability3"				"ability_empty_3"
+	"Ability4"				"sell"
 
 	// Armor
 	//----------------------------------------------------------------

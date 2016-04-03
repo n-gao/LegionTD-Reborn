@@ -10,10 +10,10 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
 
-	"Ability1"				"ability_empty_1"
+	"Ability1"				"elementalbuilder_upgrade_watergod"
 	"Ability2"				"ability_empty_2"
 	"Ability3"				"ability_empty_3"
-	"Ability4"							"sell"
+	"Ability4"				"sell"
 
 	// Armor
 	//----------------------------------------------------------------

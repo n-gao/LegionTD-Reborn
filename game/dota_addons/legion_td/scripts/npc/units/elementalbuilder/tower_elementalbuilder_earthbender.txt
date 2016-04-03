@@ -12,7 +12,7 @@
 
 	"Ability1"							"elementalbuilder_upgrade_earthelemental"
 	"Ability2"							"elementalbuilder_upgrade_earthwarrior"
-	"Ability3"							"elementalbuilder_upgrade_earthgod"
+	"Ability3"							"ability_empty_3"
 	"Ability4"							"sell"
 
 	// Armor
