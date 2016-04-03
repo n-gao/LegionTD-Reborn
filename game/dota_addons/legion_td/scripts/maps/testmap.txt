@@ -2,6 +2,7 @@
 {
   "FirstPrepTime"           "60"
   "PrepTimeBetweenRounds"   "35"
+  "PrepTimeBeforeDuel"      "10"
 
   "LastSpawn"
   {

@@ -184,6 +184,7 @@ function Game:ReadConfiguration()
   end
   self.initPrepTime = kv.FirstPrepTime
   self.timeBetweenRounds = kv.PrepTimeBetweenRounds
+  self.timeBeforeDuel = kv.PrepTimeBeforeDuel
   self:ReadLastSpawn(kv["LastSpawn"])
   self:ReadLastSpawnRanged(kv["LastSpawnRanged"])
   self:ReadIncomeSpawner(kv["IncomeSpawner"])
@@ -442,6 +443,9 @@ function Game:SetWaitTime()
   local waitTime = self.timeBetweenRounds
   if self.gameRound == 1 then
     waitTime = self.initPrepTime
+  end
+  if self.rounds[self.gameRound].isDuelRound then
+    waitTime = self.timeBeforeDuel
   end
   self.nextRoundTime = GameRules:GetGameTime() + waitTime
 
