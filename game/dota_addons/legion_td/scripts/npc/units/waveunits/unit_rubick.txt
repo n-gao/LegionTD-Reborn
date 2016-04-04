@@ -10,8 +10,8 @@
 
 	"Ability1"							"ogre_magi_ignite"
 
-	"ArmorPhysical"         "5"
-	"MagicalResistance"     "0"
+	"ArmorPhysical"         "3"
+	"MagicalResistance"     "15"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"

@@ -28,6 +28,22 @@
 
 - Fire God attack range from 600 to 260, and supernova trigger range from 100 to 300. (Fire God should use its ability much more now).
 
+## Waves
+
+- Wave 13 Tidehunter: Armor reduced from 15 to 12
+
+- Wave 20 King: Attack Time reduced from .9 to .8
+
+- Wave 22 Earth Spirit: from 4 armor, 550 HP to 6 armor, 500 hp
+
+- Wave 23 Kunkka: Count reduced from 12 to 10, bounty from 5 to 6, wave-end reward from 49 to 51
+
+- Wave 25 Tiny: Armor reduced from 15 to 12
+
+- Wave 28 Rubick: Armor from 5 to 3, Magic Resistance from 0 to 15
+
+- Wave 30 Dragon: Attack Time reduced from .6 to .4
+
 ## Misc.
 
 - Fixed Return to Sender not working for Dire.

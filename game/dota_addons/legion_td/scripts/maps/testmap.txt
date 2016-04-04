@@ -449,11 +449,11 @@
   {
     "round_quest_title"     "Jo test"
     "round_title"           "wavetitle_kunkka"
-    "bounty"                "49"
+    "bounty"                "51"
     "Unit"
     {
       "NPCName"             "unit_kunkka"
-      "UnitCount"           "12"
+      "UnitCount"           "10"
     }
   }
   "Round24"

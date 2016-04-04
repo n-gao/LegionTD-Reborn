@@ -9633,7 +9633,7 @@
 	  "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	  "AttackDamageMin"       "187.5"
 	  "AttackDamageMax"       "200.0"
-	  "AttackRate"            "0.6"
+	  "AttackRate"            "0.4"
 	  "AttackAnimationPoint"  "0.5"
 	  "AttackAcquisitionRange" "850"
 	  "AttackRange"           "125"
@@ -9790,7 +9790,7 @@
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
 	
-		"ArmorPhysical"         "4"
+		"ArmorPhysical"         "6"
 		"MagicalResistance"     "0"
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -9818,7 +9818,7 @@
 		"MovementSpeed"         "300"
 		"MovementTurnRate"      "0.6"
 	
-		"StatusHealth"          "550"
+		"StatusHealth"          "500"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -10283,7 +10283,7 @@
 	  "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	  "AttackDamageMin"       "325.0"
 	  "AttackDamageMax"       "350.0"
-	  "AttackRate"            "0.9"
+	  "AttackRate"            "0.8"
 	  "AttackAnimationPoint"  "0.56"
 	  "AttackAcquisitionRange" "850"
 	  "AttackRange"           "125"
@@ -10372,8 +10372,8 @@
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"medium"
 	
-		"BountyGoldMin"         "5.0"
-		"BountyGoldMax"         "5.0"
+		"BountyGoldMin"         "6.0"
+		"BountyGoldMax"         "6.0"
 	
 		"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
 		"CollisionSize"					"50"
@@ -11058,8 +11058,8 @@
 	
 		"Ability1"							"ogre_magi_ignite"
 	
-		"ArmorPhysical"         "5"
-		"MagicalResistance"     "0"
+		"ArmorPhysical"         "3"
+		"MagicalResistance"     "15"
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
@@ -11399,7 +11399,7 @@
 	
 		"Ability1"							"tidehunter_kraken_shell"
 	
-		"ArmorPhysical"         "15"
+		"ArmorPhysical"         "12"
 		"MagicalResistance"     "0"
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -11481,7 +11481,7 @@
 	
 		"Ability1"							"tiny_craggy_exterior"
 	
-		"ArmorPhysical"         "15"
+		"ArmorPhysical"         "12"
 		"MagicalResistance"     "0"
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"

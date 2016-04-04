@@ -10,7 +10,7 @@
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
 
-	"ArmorPhysical"         "4"
+	"ArmorPhysical"         "6"
 	"MagicalResistance"     "0"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -38,7 +38,7 @@
 	"MovementSpeed"         "300"
 	"MovementTurnRate"      "0.6"
 
-	"StatusHealth"          "550"
+	"StatusHealth"          "500"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

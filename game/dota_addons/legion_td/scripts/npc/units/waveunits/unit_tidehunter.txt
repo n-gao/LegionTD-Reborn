@@ -12,7 +12,7 @@
 
 	"Ability1"							"tidehunter_kraken_shell"
 
-	"ArmorPhysical"         "15"
+	"ArmorPhysical"         "12"
 	"MagicalResistance"     "0"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
