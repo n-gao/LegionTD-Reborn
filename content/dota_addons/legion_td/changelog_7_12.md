@@ -2,7 +2,7 @@
 
 ## General Changes
 
-- The final duel now decides the game as each team's king teleports to the middle of the map to settle things once and for all. During the final duel, kings have HP reduced by 30%, Health regen reduced by 20%, and a damage penalty of 15% base damage.
+- The final duel now decides the game as each team's king teleports to the middle of the map to settle things once and for all. During the final duel, kings have HP reduced by 30%, Health regen reduced by 20%, and a damage penalty of 15% of base damage.
 
 - Setup time before duels is now less than for other rounds, 10 seconds instead of 35.
 
