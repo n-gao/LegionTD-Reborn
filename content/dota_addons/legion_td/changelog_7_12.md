@@ -50,4 +50,6 @@
 
 - Upgrading a unit will now select the new upgraded unit.
 
+- Leavers now cannot earn income or spend tangos.
+
 - New Russian translation provided by Fresh-_-War

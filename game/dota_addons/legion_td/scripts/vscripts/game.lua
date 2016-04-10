@@ -490,7 +490,7 @@ function Game:RoundFinished()
   local round = self:GetCurrentRound()
   if round.bounty then
     for _,player in pairs(self.players) do
-      if player.plyEntitie and (player:GetTeamNumber() == round.winningTeam or round.winningTeam == DOTA_TEAM_NOTEAM) then
+      if player.plyEntitie and (player:GetTeamNumber() == round.winningTeam or round.winningTeam == DOTA_TEAM_NOTEAM) and not player.abandoned then
         player:Income(round.bounty)
       end
     end
