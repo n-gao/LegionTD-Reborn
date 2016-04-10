@@ -206,11 +206,11 @@
   "Round1"
   {
     "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_donkey"
-    "bounty"                "13"
+    "round_title"           "wavetitle_predator"
+    "bounty"                "22"
     "Unit"
     {
-      "NPCName"             "unit_donkey"
+      "NPCName"             "unit_predator"
       "UnitCount"           "12"
     }
   }

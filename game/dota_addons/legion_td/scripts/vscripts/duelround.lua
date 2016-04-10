@@ -89,6 +89,9 @@ function DuelRound:PlaceKings()
   Game.direBoss:SetDayTimeVisionRange(2000)
   Game.direBoss:SetBaseMoveSpeed(300)
 
+  Game.direBoss:AddNewModifier(Game.direBoss, nil, "modifier_king_duel_lua", {})
+  Game.radiantBoss:AddNewModifier(Game.radiantBoss, nil, "modifier_king_duel_lua", {})
+
   table.insert(self.remainingUnitsRadiant, Game.radiantBoss)
   table.insert(self.remainingUnitsDire, Game.direBoss)
 

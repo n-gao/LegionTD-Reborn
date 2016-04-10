@@ -156,7 +156,7 @@ function Game.new()
   LinkLuaModifier( "modifier_defend_heavy_lua", "abilities/damage/modifier_defend_heavy_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
   LinkLuaModifier( "modifier_defend_medium_lua", "abilities/damage/modifier_defend_medium_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
   LinkLuaModifier( "modifier_defend_light_lua", "abilities/damage/modifier_defend_light_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
-
+  LinkLuaModifier( "modifier_king_duel_lua", "abilities/modifier_king_duel_lua.lua", LUA_MODIFIER_MOTION_NONE)
 
   if Convars:GetBool('developer') then
     Convars:RegisterCommand("start_next_round", Dynamic_Wrap(self, "StartNextRoundCommand"), "keine Ahnung", 0)
