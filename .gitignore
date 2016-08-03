@@ -1,8 +1,13 @@
 #Ignore everything
+*.vcss_c
+*.vjs_c
+*.vxml_c
 /*
 /*/
 game/*
 game/dota_addons/*
+game/dota_addons/legion_td/materials/*
+game/dota_addons/legion_td/panorama/*
 game/dota_addons/legion_td/tools_thumbnail_cache.bin
 game/dota_addons/legion_td/tools_asset_info.bin
 content/*
@@ -16,3 +21,5 @@ content/dota_addons/*
 !content/
 !content/dota_addons/
 !content/dota_addons/legion_td/
+
+*.vpcf_c
