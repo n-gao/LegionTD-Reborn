@@ -868,6 +868,2144 @@
 			"MODIFIER_STATE_INVULNERABLE"		"MODIFIER_STATE_VALUE_ENABLED"
 		}
 	}
+
+	"tower_demonbuilder_imp"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"demonbuilder_upgrade_imp2"
+		"Ability2"				"demonbuilder_upgrade_imp3"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+
+"tower_demonbuilder_imp2"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"demonbuilder_upgrade_imp4"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      "Wearable1" { "ItemDef" "7182" } // "Form of the Umbral Descent"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp3"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      "Wearable1" { "ItemDef" "6718" } // "Malicious Sting Back"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp4"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      "Wearable1" { "ItemDef" "6574" } // "Diabolical Appendages"
+			      "Wearable1" { "ItemDef" "7182" } // "Form of the Umbral Descent"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp5"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp6"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp7"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp8"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp9"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp10"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp11"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp12"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp13"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp14"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp15"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp16"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp17"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp18"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp19"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+	"tower_demonbuilder_imp20"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_demon/shadow_demon.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      //"Wearable1" { "ItemDef" "5183" } // Diabolical Appendages"
+			      
+			    }
+
+	    
+		}
+
+
+
+	}
+"tower_demonbuilder_dog"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/items/warlock/golem/ahmhedoq/ahmhedoq.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+	    
+		}
+
+
+	}
+
 	"tower_elementalbuilder_earthbender"
 	{
 		// General
