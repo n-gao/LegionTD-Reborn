@@ -93,6 +93,29 @@ function Unit.ApplyAI(unit)
   elseif name == "tower_humanbuilder_gyrocopter_mk2" then return
   elseif name == "tower_humanbuilder_futuristic_gyrocopter" then return
   elseif name == "tower_naturebuilder_treebeard" then return
+  
+  elseif name == "tower_demonbuilder_imp" then return
+  elseif name == "tower_demonbuilder_imp2" then return
+  elseif name == "tower_demonbuilder_imp3" then return
+  elseif name == "tower_demonbuilder_imp4" then return
+  elseif name == "tower_demonbuilder_imp5" then return
+  elseif name == "tower_demonbuilder_imp6" then return
+  elseif name == "tower_demonbuilder_imp7" then return
+  elseif name == "tower_demonbuilder_imp8" then return
+  elseif name == "tower_demonbuilder_imp9" then return
+  elseif name == "tower_demonbuilder_imp10" then return
+  elseif name == "tower_demonbuilder_imp11" then return
+  elseif name == "tower_demonbuilder_imp12" then return  
+  elseif name == "tower_demonbuilder_imp13" then return
+  elseif name == "tower_demonbuilder_imp14" then return
+  elseif name == "tower_demonbuilder_imp15" then return
+  elseif name == "tower_demonbuilder_imp16" then return
+  elseif name == "tower_demonbuilder_imp17" then return
+  elseif name == "tower_demonbuilder_imp17" then return
+  elseif name == "tower_demonbuilder_imp18" then return
+  elseif name == "tower_demonbuilder_imp19" then return
+  elseif name == "tower_demonbuilder_imp20" then return
+  elseif name == "tower_demonbuilder_dog" then return
   else ai_standard.Init(unit)
   end
 end

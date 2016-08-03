@@ -213,6 +213,1417 @@
 	    }
 	  }
 	}
+
+	"demonbuilder_spawn_imp"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9001"
+	    }
+	  }
+	}
+
+"demonbuilder_upgrade_imp2"
+{
+  "BaseClass"               "ability_datadriven"
+  "AbilityTextureName"      "rattletrap_power_cogs"
+  "MaxLevel"                "1"
+
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityGoldCost"				"10"
+	"AbilityCooldown"		    "1.0"
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"unit.lua"
+			"Function"		"upgrade_unit"
+		}
+	}
+	"AbilitySpecial"
+	{
+    "01"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_damage_tooltip"    "75.0"
+    }
+    "02"
+    {
+      "var_type"              "FIELD_FLOAT"
+      "atk_speed_tooltip"     "1.0"
+    }
+    "03"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_range_tooltip"     "100"
+    }
+    "04"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "health_tooltip"        "250"
+    }
+    "05"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "armor_tooltip"         "3"
+    }
+    "06"
+    {
+      "var_type"      "FIELD_INTEGER"
+      "food_cost"     "1"
+    }
+    "07"
+    {
+      "var_type"			"FIELD_INTEGER"
+      "unitID"				"9003"
+    }
+	}
+}
+
+"demonbuilder_upgrade_imp3"
+{
+  "BaseClass"               "ability_datadriven"
+  "AbilityTextureName"      "kunkka_tidebringer"
+  "MaxLevel"                "1"
+
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityGoldCost"				"10"
+	"AbilityCooldown"		    "1.0"
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"unit.lua"
+			"Function"		"upgrade_unit"
+		}
+	}
+	"AbilitySpecial"
+	{
+    "01"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_damage_tooltip"    "75.0"
+    }
+    "02"
+    {
+      "var_type"              "FIELD_FLOAT"
+      "atk_speed_tooltip"     "1.0"
+    }
+    "03"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_range_tooltip"     "100"
+    }
+    "04"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "health_tooltip"        "250"
+    }
+    "05"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "armor_tooltip"         "3"
+    }
+    "06"
+    {
+      "var_type"      "FIELD_INTEGER"
+      "food_cost"     "1"
+    }
+    "07"
+    {
+      "var_type"			"FIELD_INTEGER"
+      "unitID"				"9004"
+    }
+	}
+}
+
+"demonbuilder_upgrade_imp4"
+{
+  "BaseClass"               "ability_datadriven"
+  "AbilityTextureName"      "bloodseeker_thirst"
+  "MaxLevel"                "1"
+
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityGoldCost"				"10"
+	"AbilityCooldown"		    "1.0"
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"unit.lua"
+			"Function"		"upgrade_unit"
+		}
+	}
+	"AbilitySpecial"
+	{
+    "01"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_damage_tooltip"    "75.0"
+    }
+    "02"
+    {
+      "var_type"              "FIELD_FLOAT"
+      "atk_speed_tooltip"     "1.0"
+    }
+    "03"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_range_tooltip"     "100"
+    }
+    "04"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "health_tooltip"        "250"
+    }
+    "05"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "armor_tooltip"         "3"
+    }
+    "06"
+    {
+      "var_type"      "FIELD_INTEGER"
+      "food_cost"     "1"
+    }
+    "07"
+    {
+      "var_type"			"FIELD_INTEGER"
+      "unitID"				"9005"
+    }
+	}
+}
+
+	"demonbuilder_spawn_imp2"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9003"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp3"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9004"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp4"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9005"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp5"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9006"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp6"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9007"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp7"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9008"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp8"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9009"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp9"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9010"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp10"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9011"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp11"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9012"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp12"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"90013"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp13"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9014"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp14"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9015"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp15"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9016"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp16"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9017"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp17"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9018"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp18"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9019"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp19"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9020"
+	    }
+	  }
+	}
+
+	"demonbuilder_spawn_imp20"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "spawn_imp"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"11"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"unit.lua"
+	      "Function"		"UnitSpawn"
+	    }
+	  }
+	  "AbilitySpecial"
+	  {
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_damage_tooltip"    "20.0"
+	    }
+	    "02"
+	    {
+	      "var_type"              "FIELD_FLOAT"
+	      "atk_speed_tooltip"     "1.0"
+	    }
+	    "03"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "atk_range_tooltip"     "90"
+	    }
+	    "04"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "health_tooltip"        "150"
+	    }
+	    "05"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "armor_tooltip"         "1"
+	    }
+	    "06"
+	    {
+	      "var_type"      "FIELD_INTEGER"
+	      "food_cost"     "1"
+	    }
+	    "07"
+	    {
+	      "var_type"			"FIELD_INTEGER"
+	      "unitID"				"9021"
+	    }
+	  }
+	}
+
+"demonbuilder_spawn_dog"
+{
+  "BaseClass"                 "ability_datadriven"
+  "AbilityTextureName"      "spawn_dog"
+  "MaxLevel"             "1"
+
+  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+  "AbilityGoldCost"				"11"
+  "AbilityCooldown"		    "1.0"
+  "AbilityCastRange"			"125"
+  "OnSpellStart"
+  {
+    "RunScript"
+    {
+      "ScriptFile"	"unit.lua"
+      "Function"		"UnitSpawn"
+    }
+  }
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_damage_tooltip"    "20.0"
+    }
+    "02"
+    {
+      "var_type"              "FIELD_FLOAT"
+      "atk_speed_tooltip"     "1.0"
+    }
+    "03"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_range_tooltip"     "90"
+    }
+    "04"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "health_tooltip"        "150"
+    }
+    "05"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "armor_tooltip"         "1"
+    }
+    "06"
+    {
+      "var_type"      "FIELD_INTEGER"
+      "food_cost"     "1"
+    }
+    "07"
+    {
+      "var_type"			"FIELD_INTEGER"
+      "unitID"				"9002"
+    }
+  }
+}
+
 	"elementalbuilder_passive"
 	{
 	    "BaseClass" "ability_datadriven"

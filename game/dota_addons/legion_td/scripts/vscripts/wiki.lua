@@ -10,7 +10,7 @@ function Game:WikiCommand()
 	local engKV = LoadKeyValues("resource/addon_english.txt")
 	local heroKV = LoadKeyValues("scripts/npc/npc_heroes.custom.txt")
 
-	local builder_list = {"naturebuilder", "elementalbuilder", "humanbuilder"}
+	local builder_list = {"naturebuilder", "elementalbuilder", "humanbuilder", "demonbuilder"}
 	local builder_list_inv = table_invert(builder_list)
 
 	local relevant_stats = {"StatusHealth", "AttackRate", "AttackDamageMin", "AttackDamageMax",

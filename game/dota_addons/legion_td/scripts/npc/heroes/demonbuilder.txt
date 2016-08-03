@@ -1,0 +1,39 @@
+"demonbuilder"
+{
+	
+	"override_hero"		"npc_dota_hero_nevermore"
+	
+	"Level"						"1"
+	"MaxLevel"				"1"
+  "AbilityLayout"   "6"
+	"Ability1"				"demonbuilder_spawn_imp"
+	"Ability2"				"demonbuilder_spawn_dog"
+	"Ability3"				""
+	"Ability4"				""
+	"Ability5"				""
+    "Ability6"              ""
+    "Ability9"				""
+
+	"AttributeBaseStrength"	"0"
+	"AttributeBaseAgility"	"0"
+	"AttributeBaseIntelligence"	"0"
+
+	"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+	"AttackDamageMin"	"1"
+	"AttackDamageMax"	"1"
+	"ArmorPhysical"		"0"
+
+	"HasInventory"			"0"
+	"MagicalResistance"		"0"
+
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+	"MovementSpeed"					"1000"
+	"MovementTurnRate"			"1.0"
+
+	"StatusHealth"			"1"
+	"StatusMana"				"0"
+
+	"VisionDaytimeRange"	"1000"
+	"VisionNighttimeRange"  "1000"
+	
+}
