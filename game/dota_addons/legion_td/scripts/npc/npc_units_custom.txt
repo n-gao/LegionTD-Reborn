@@ -92,7 +92,7 @@
 	    //----------------------------------------------------------------
 	    "TeamName" "DOTA_TEAM_GOODGUYS" // Team name.
 	    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_PIERCE"
-	    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+	    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 	    "UnitRelationshipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
 	    // Vision
 	    //----------------------------------------------------------------
@@ -170,7 +170,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_GOODGUYS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -268,7 +268,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_GOODGUYS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -938,7 +938,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -1038,7 +1038,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -1144,7 +1144,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -1249,7 +1249,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -1350,7 +1350,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -1449,7 +1449,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -1545,7 +1545,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -1649,7 +1649,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -1758,7 +1758,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -1858,7 +1858,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -1956,7 +1956,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -2052,7 +2052,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -2154,7 +2154,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2249,7 +2249,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2345,7 +2345,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2441,7 +2441,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2540,7 +2540,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2640,7 +2640,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2736,7 +2736,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2831,7 +2831,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -2932,7 +2932,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -3033,7 +3033,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -3137,7 +3137,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -3238,7 +3238,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -3337,7 +3337,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -3440,7 +3440,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -3546,7 +3546,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -3646,7 +3646,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -3746,7 +3746,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -3848,7 +3848,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -3949,7 +3949,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4051,7 +4051,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4152,7 +4152,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4259,7 +4259,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4360,7 +4360,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4460,7 +4460,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4561,7 +4561,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4664,7 +4664,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4764,7 +4764,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4864,7 +4864,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -4965,7 +4965,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5065,7 +5065,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5170,7 +5170,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5269,7 +5269,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5357,7 +5357,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5446,7 +5446,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5535,7 +5535,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5624,7 +5624,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5712,7 +5712,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5801,7 +5801,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5890,7 +5890,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -5979,7 +5979,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6068,7 +6068,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6165,7 +6165,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6254,7 +6254,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6342,7 +6342,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6431,7 +6431,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6520,7 +6520,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6609,7 +6609,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6698,7 +6698,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6787,7 +6787,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6876,7 +6876,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -6966,7 +6966,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7055,7 +7055,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7143,7 +7143,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7232,7 +7232,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7321,7 +7321,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7410,7 +7410,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7428,6 +7428,105 @@
 					"Avoidance"			"0.0"
 					"Support"			"0.0"
 				}
+			}
+		}
+	}
+	"tower_mechanicalbuilder_vacuum_cleaner"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/tinker/mom.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					"Hero_Weaver"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"				"naturebuilder_upgrade_big_bug"
+		"Ability4"				"sell"
+		"Ability2"				"weaver_geminate_attack"
+		"Ability3"				"ability_empty_3"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "35.0"
+		"AttackDamageMax"       "42.5"
+		"AttackRate"            "0.65"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "450"
+		"ProjectileModel"       "particles/units/heroes/hero_weaver/weaver_base_attack.vpcf"
+		"ProjectileSpeed"       "800"
+	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
+	
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "120"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+			"AttachWearables"
+			{
+				"Wearable1" { "ItemDef" "4636" }
+				"Wearable2" { "ItemDef" "4635" }
+				"Wearable3" { "ItemDef" "4570" }
+				"Wearable4" { "ItemDef" "4637" }
 			}
 		}
 	}
@@ -7501,7 +7600,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7592,7 +7691,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -7698,7 +7797,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7797,7 +7896,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -7898,7 +7997,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8005,7 +8104,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8104,7 +8203,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8195,7 +8294,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8296,7 +8395,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -8401,7 +8500,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8492,7 +8591,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8583,7 +8682,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8681,7 +8780,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -8778,7 +8877,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8871,7 +8970,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -8963,7 +9062,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9039,7 +9138,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -9120,7 +9219,7 @@
 		//----------------------------------------------------------------
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		// Creature Data
@@ -9189,7 +9288,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -9273,7 +9372,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9353,7 +9452,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9429,7 +9528,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9507,7 +9606,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 	
@@ -9583,7 +9682,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"precache"
 		{
@@ -9664,7 +9763,7 @@
 	
 	  "TeamName"              "DOTA_TEAM_NEUTRALS"
 	  "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	  "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+	  "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 	  "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 	  "precache"
@@ -9751,7 +9850,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9828,7 +9927,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9907,7 +10006,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -9983,7 +10082,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -10067,7 +10166,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10146,7 +10245,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10233,7 +10332,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10314,7 +10413,7 @@
 	
 	  "TeamName"              "DOTA_TEAM_NEUTRALS"
 	  "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	  "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+	  "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 	  "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 	  "precache"
@@ -10393,7 +10492,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -10476,7 +10575,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10545,7 +10644,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10611,7 +10710,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -10687,7 +10786,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -10781,7 +10880,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -10862,7 +10961,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -10944,7 +11043,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -11020,7 +11119,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -11096,7 +11195,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -11184,7 +11283,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -11265,7 +11364,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"GameSoundsFile"   "soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
@@ -11352,7 +11451,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"
@@ -11437,7 +11536,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -11519,7 +11618,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"precache"
@@ -11597,7 +11696,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Creature"
 		{
@@ -11665,7 +11764,7 @@
 	
 		"TeamName"              "DOTA_TEAM_NEUTRALS"
 		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
 		"Creature"

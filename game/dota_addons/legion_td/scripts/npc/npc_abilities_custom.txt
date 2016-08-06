@@ -1720,7 +1720,7 @@
 	            "Aura"          "modifier_supernova_burn_datadriven"
 	            "Aura_Radius"   "%aura_radius"
 	            "Aura_Teams"    "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	            "Aura_Types"    "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL"
+	            "Aura_Types"    "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 	
 	            "OnCreated"
 	            {
@@ -3435,7 +3435,7 @@
 		"BaseClass"						"ability_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityTextureName"			"dazzle_shadow_wave"
@@ -4409,7 +4409,7 @@
 								"Target"
 								{
 									"Center"		"TARGET"
-									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 									"Flags"			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 								}
 								"ModifierName"		"modifier_headshot_debuff_datadriven"
@@ -4420,7 +4420,7 @@
 								"Target"
 								{
 									"Center"		"TARGET"
-									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 								}
 								"Damage"			"%AbilityDamage"
 								"Type"				"DAMAGE_TYPE_PHYSICAL"
@@ -4813,7 +4813,7 @@
 								"Target"
 								{
 									"Center"		"TARGET"
-									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 									"Flags"			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 								}
 								"ModifierName"		"modifier_headshot_debuff_datadriven"
@@ -4824,7 +4824,7 @@
 								"Target"
 								{
 									"Center"		"TARGET"
-									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 								}
 								"Damage"			"%AbilityDamage"
 								"Type"				"DAMAGE_TYPE_PHYSICAL"
@@ -5446,7 +5446,7 @@
 								"Target"
 								{
 									"Center"		"TARGET"
-									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 									"Flags"			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 								}
 								"ModifierName"		"modifier_headshot_debuff_datadriven"
@@ -5457,7 +5457,7 @@
 								"Target"
 								{
 									"Center"		"TARGET"
-									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 								}
 								"Damage"			"%AbilityDamage"
 								"Type"				"DAMAGE_TYPE_PHYSICAL"
@@ -5782,7 +5782,7 @@
 	    "BaseClass"                     "omniknight_purification"
 	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 	    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-	    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+	    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 	    "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
 	    "AbilityUnitDamageType"         "DAMAGE_TYPE_PURE"
 	    "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_YES"
@@ -5886,7 +5886,7 @@
 								"Target"
 								{
 									"Center"		"TARGET"
-									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 									"Flags"			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 								}
 								"ModifierName"		"modifier_headshot_debuff_datadriven"
@@ -5897,7 +5897,7 @@
 								"Target"
 								{
 									"Center"		"TARGET"
-									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+									"Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 								}
 								"Damage"			"%AbilityDamage"
 								"Type"				"DAMAGE_TYPE_PHYSICAL"
@@ -10260,7 +10260,7 @@
 						"Center"			"CASTER"
 						"Radius"			"%health_radius"
 						"Teams"				"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-						"Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_OTHER"
+						"Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_OTHER"
 					}
 				}
 			}
@@ -10299,7 +10299,7 @@
 					"Aura"					"health_regen"
 					"Aura_Radius"			"%health_radius"
 					"Aura_Teams"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-					"Aura_Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL"
+					"Aura_Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 					"Aura_ApplyToCaster"	"0"
 				}
 	
@@ -10613,7 +10613,7 @@
 	    "BaseClass"             "ability_datadriven"
 	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
 	    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+	    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
 	    "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
 	    "FightRecapLevel"               "1"
@@ -10715,7 +10715,7 @@
 	                "Center"    "CASTER"
 	                "Radius"    "%small_radius"
 	                "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	                "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+	                "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 	                "Flags"     "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 	            }
 	
@@ -10741,7 +10741,7 @@
 	                "Center"    "CASTER"
 	                "Radius"    "%big_radius"
 	                "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
-	                "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+	                "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 	                "Flags"     "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 	            }
 	
