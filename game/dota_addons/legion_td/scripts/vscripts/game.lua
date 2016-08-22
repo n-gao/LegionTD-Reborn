@@ -495,10 +495,14 @@ function Game:RoundFinished()
       end
     end
   end
-  self.IncreaseRound()
+  self.gameRound = self.gameRound + 1
   self.gameState = GAMESTATE_PREPARATION
   for _,player in pairs(self.players) do
     player.tangoLimit = self:GetTangoLimit()
+  end
+  if self.gameRound > #self.rounds then
+    self.gameRound = self.gameRound - 1
+    self.finishedWaves = true
   end
 end
 
@@ -929,19 +933,11 @@ function IncreaseStack(king, modifier)
 end
 
 
-function Game:IncreaseRound()
-  Game.gameRound = Game.gameRound + 1;
-  if (Game.gameRound > #Game.rounds) then
-    Game.gameRound = Game.gameRound - 1;
-    Game.finishedWaves = true
-  end
-end
-
 
 
 function Game:StartNextRoundCommand()
   Game:ClearBoard()
-  Game:IncreaseRound()
+  Game.gameRound = Game.gameRound + 1
   Game:RespawnUnits()
   Game:StartNextRound()
 end

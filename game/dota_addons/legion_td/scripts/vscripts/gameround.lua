@@ -62,7 +62,7 @@ end
 function GameRound:CheckEnd()
   self:CheckUnitsAlive()
   if next(self.remainingUnits) == nil then
-    print("Round finished.")
+    print("Rounde beendet")
     self:End()
   end
 end

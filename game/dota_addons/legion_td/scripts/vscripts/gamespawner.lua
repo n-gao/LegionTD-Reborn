@@ -2,8 +2,8 @@ if GameSpawner == nil then
   GameSpawner = class({})
 end
 
-LAST_WAVE_DMG_PER_ROUND = 75;
-LAST_WAVE_HEALTH_PER_ROUND = 750;
+LAST_WAVE_DMG_PER_ROUND = 200;
+LAST_WAVE_HEALTH_PER_ROUND = 2000;
 
 ai_standard = require('ai/ai_core')
 ai_techies = require('ai/waves/ai_techies')
@@ -50,7 +50,7 @@ function GameSpawner:Spawn()
         if self.unitCount > columns * 2 then
           voffset = spacing*polar*-1
         end
-        local hpos = offset+(((i-1)%columns)*spacing)
+        local hpos = offset+(((i-1)%columns)*spacing)      
         local vpos = voffset+(math.floor((i-1)/columns))*spacing*polar
       --print ("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
         table.insert(positions, Vector(hpos, vpos, 0))
@@ -71,7 +71,7 @@ function GameSpawner:Spawn()
         end
         creep:Stop()
         ExecuteOrderFromTable({
-          UnitIndex = creep:entindex(),
+          UnitIndex = creep:entindex(), 
           OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
           TargetIndex = 0, --Optional.  Only used when targeting units
           AbilityIndex = 0, --Optional.  Only used when casting abilities
@@ -214,15 +214,15 @@ function GameSpawner:SendIncomingUnits(team)
       if i > round(unitCount, columns) then
         offset = offset + (((round(unitCount, columns)+columns)-unitCount)/2)*spacing
       end
-      local hpos = offset+(((i-1)%columns)*spacing)
+      local hpos = offset+(((i-1)%columns)*spacing)      
       local vpos = (math.floor((((i-1)%sendsPerMiniwave))/columns))*spacing*polar
       print ("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
       table.insert(positions, Vector(hpos, vpos, 0))
     end
 
 
-
-
+    
+      
     local k = 1
     local i = 1
 
@@ -237,7 +237,7 @@ function GameSpawner:SendIncomingUnits(team)
 
         unit:RemoveModifierByName("modifier_stunned")
         unit:RemoveModifierByName("modifier_invulnerable")
-
+        
         unit.waypoints = {}
         for j = 1, 4 do
           DebugDrawCircle(lane.waypoints[j] + positions[k], Vector(0,255,0), 1, 50, false, 50)
@@ -248,7 +248,7 @@ function GameSpawner:SendIncomingUnits(team)
         unit.wayStep = 2
 
         ExecuteOrderFromTable({
-          UnitIndex = unit:entindex(),
+          UnitIndex = unit:entindex(), 
           OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
           TargetIndex = 0, --Optional.  Only used when targeting units
           AbilityIndex = 0, --Optional.  Only used when casting abilities
@@ -267,7 +267,7 @@ function GameSpawner:SendIncomingUnits(team)
       i = i + 1
 
     end
-
+  
   end
 end
 

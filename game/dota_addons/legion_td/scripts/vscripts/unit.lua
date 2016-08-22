@@ -43,7 +43,7 @@ end
 
 
 function Unit:Spawn()
-  --PrecacheUnitByNameAsync(self.npcclass, function ()
+  --PrecacheUnitByNameAsync(self.npcclass, function () 
     self.npc = CreateUnitByName(self.npcclass, self.spawnposition, false, nil,
     self.owner, self.owner:GetTeamNumber())
     if self.spawnposition.y > 0 then
@@ -63,24 +63,24 @@ end
 
 
 
-function Unit:ApplyAI()
-  local name = self:GetUnitName()
-  if name == "tower_naturebuilder_broodmother" then ai_broodmother.Init(self)
-  elseif name == "tower_naturebuilder_big_centaur" then ai_bigcentaur.Init(self)
+function Unit.ApplyAI(unit)
+  local name = unit:GetUnitName()
+  if name == "tower_naturebuilder_broodmother" then ai_broodmother.Init(unit)
+  elseif name == "tower_naturebuilder_big_centaur" then ai_bigcentaur.Init(unit)
   elseif name == "tower_elementalbuilder_earthgod" then return
-  elseif name == "tower_elementalbuilder_fireelemental" then ai_fireelemental.Init(self)
-  elseif name == "tower_elementalbuilder_firegod" then ai_firegod.Init(self)
+  elseif name == "tower_elementalbuilder_fireelemental" then ai_fireelemental.Init(unit)
+  elseif name == "tower_elementalbuilder_firegod" then ai_firegod.Init(unit)
   elseif name == "tower_elementalbuilder_firewarrior" then return
-  elseif name == "tower_elementalbuilder_thunderelemental" then ai_thunderelemental.Init(self)
-  elseif name == "tower_elementalbuilder_thundergod" then ai_thundergod.Init(self)
-  elseif name == "tower_elementalbuilder_thunderwarrior" then ai_thunderwarrior.Init(self)
-  elseif name == "tower_elementalbuilder_voidelemental" then ai_voidelemental.Init(self)
+  elseif name == "tower_elementalbuilder_thunderelemental" then ai_thunderelemental.Init(unit)
+  elseif name == "tower_elementalbuilder_thundergod" then ai_thundergod.Init(unit)
+  elseif name == "tower_elementalbuilder_thunderwarrior" then ai_thunderwarrior.Init(unit)
+  elseif name == "tower_elementalbuilder_voidelemental" then ai_voidelemental.Init(unit)
   elseif name == "tower_elementalbuilder_voidgod" then return
   elseif name == "tower_elementalbuilder_watergod" then return
-  elseif name == "tower_elementalbuilder_waterwarrior" then ai_waterwarrior.Init(self)
-  elseif name == "tower_humanbuilder_footman" then ai_footman.Init(self)
-  elseif name == "tower_humanbuilder_soldier" then ai_soldier.Init(self)
-  elseif name == "tower_humanbuilder_spearman" then ai_spearman.Init(self)
+  elseif name == "tower_elementalbuilder_waterwarrior" then ai_waterwarrior.Init(unit)
+  elseif name == "tower_humanbuilder_footman" then ai_footman.Init(unit)
+  elseif name == "tower_humanbuilder_soldier" then ai_soldier.Init(unit)
+  elseif name == "tower_humanbuilder_spearman" then ai_spearman.Init(unit)
   elseif name == "tower_humanbuilder_paladin" then return
   elseif name == "tower_humanbuilder_blademaster" then return
   elseif name == "tower_humanbuilder_tactician" then return
@@ -93,7 +93,7 @@ function Unit:ApplyAI()
   elseif name == "tower_humanbuilder_gyrocopter_mk2" then return
   elseif name == "tower_humanbuilder_futuristic_gyrocopter" then return
   elseif name == "tower_naturebuilder_treebeard" then return
-  else ai_standard.Init(self)
+  else ai_standard.Init(unit)
   end
 end
 
@@ -130,12 +130,11 @@ function Unit:Unlock()
     self.npc:RemoveModifierByName("modifier_invulnerable")
     self.npc:SetControllableByPlayer(-1, false)
     self.npc:Stop()
-    self:EndCooldowns()
     Timers:CreateTimer(0.5, function ()
       local pos = self.npc.nextTarget
       --pos.x = self.spawnposition.x
       ExecuteOrderFromTable({
-        UnitIndex = self.npc:entindex(),
+        UnitIndex = self.npc:entindex(), 
         OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
         TargetIndex = 0, --Optional.  Only used when targeting units
         AbilityIndex = 0, --Optional.  Only used when casting abilities
@@ -144,15 +143,6 @@ function Unit:Unlock()
       })
       self.ApplyAI(self.npc)
     end)
-  end
-end
-
-function Unit:EndCooldowns()
-  for i = 0, 16, 1 do
-    local ability = self.npc:GetAbilityByIndex(i);
-    if (ability and not ability:IsNull()) then
-      ability:EndCooldown()
-    end
   end
 end
 
@@ -257,7 +247,7 @@ function OnStartTouch(trigger) -- trigger at end of lane to teleport to final de
         FindClearSpaceForUnit(npc, npc.nextTarget, true)
       end
       ExecuteOrderFromTable({
-            UnitIndex = npc:entindex(),
+            UnitIndex = npc:entindex(), 
             OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
             TargetIndex = 0, --Optional.  Only used when targeting units
             AbilityIndex = 0, --Optional.  Only used when casting abilities
