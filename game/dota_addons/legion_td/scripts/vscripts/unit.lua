@@ -117,6 +117,7 @@ end
 function Unit:ResetPosition()
   if not self.npc:IsNull() and self.npc:IsAlive() then
     FindClearSpaceForUnit(self.npc, self.spawnposition, true)
+    self.npc.nextTarget = self.nextTarget
     self:Unlock()
   end
 end
@@ -125,7 +126,6 @@ end
 
 function Unit:Unlock()
   if self.npc and not self.npc:IsNull() and self.npc:IsAlive() then
-    self.npc.nextTarget = self.nextTarget
     self.npc:RemoveModifierByName("modifier_stunned")
     self.npc:RemoveModifierByName("modifier_invulnerable")
     self.npc:SetControllableByPlayer(-1, false)
