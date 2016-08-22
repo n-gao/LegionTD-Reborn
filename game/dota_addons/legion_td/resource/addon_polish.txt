@@ -33,17 +33,17 @@
 		"DOTA_Tooltip_ability_main_building_tango_speed"                                  "Ulepsz prędkość dostawy drewna "
 		"DOTA_Tooltip_ability_main_building_tango_speed_Description"                      "Zwiększyć prędkość dostawy o 40%"
 		
-		"squadron_game_info_header_objective"			"Cel:"
-		"squadron_brief_description"					"Przetrwaj dłużej od przeciwnika. Broń swojego króla."
-		"squadron_game_info_header_how_to_play"			"Jak grać:"
-		"squadron_game_info_king"						"Broń swojego króla by przetrwać"
-		"squadron_game_info_units"						"Zbuduj jednostki by bronić swojego króla i zabijać nieprzyjacielskie jednostki"
-		"squadron_game_info_tango"						"Pilnuj swojego dochodu drewna, zwiększ go by wysyłać lepsze jednostki."
-		"squadron_info_tips_header"						"Porady:"
-		"squadron_game_info_tip01"						"- Jeżeli amsz wystarczającą ilość jednostek by przetrwać fale, wydaj złoto by zwiększyć swój dochód."
-		"squadron_game_info_tip02"						"- Wysyłaj jednostki by zwiększyć dochód złota."
-		"squadron_game_info_tip03"						"- Jeżeli przepuścisz jednostki twoi sojusznicy ci pomogą."
-		"squadron_game_info_tip04"						"- Nie wiem?"
+		"legion_game_info_header_objective"			"Cel:"
+		"legion_brief_description"					"Przetrwaj dłużej od przeciwnika. Broń swojego króla."
+		"legion_game_info_header_how_to_play"			"Jak grać:"
+		"legion_game_info_king"						"Broń swojego króla by przetrwać"
+		"legion_game_info_units"						"Zbuduj jednostki by bronić swojego króla i zabijać nieprzyjacielskie jednostki"
+		"legion_game_info_tango"						"Pilnuj swojego dochodu drewna, zwiększ go by wysyłać lepsze jednostki."
+		"legion_info_tips_header"						"Porady:"
+		"legion_game_info_tip01"						"- Jeżeli amsz wystarczającą ilość jednostek by przetrwać fale, wydaj złoto by zwiększyć swój dochód."
+		"legion_game_info_tip02"						"- Wysyłaj jednostki by zwiększyć dochód złota."
+		"legion_game_info_tip03"						"- Jeżeli przepuścisz jednostki twoi sojusznicy ci pomogą."
+		"legion_game_info_tip04"						"- Nie wiem?"
 		
 
 		// ******************** HEROES ********************

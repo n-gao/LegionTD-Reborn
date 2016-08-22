@@ -37,7 +37,7 @@ var LEGION_ERROR_DURING_DUEL = 6;
 
 function AddUnit(unit, row) {
 	var unitPanel = $.CreatePanel("Panel", row, unit.name);
-	unitPanel.BLoadLayout("file://{resources}/layout/custom_game/squadron_unit.xml", false, false);
+	unitPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_unit.xml", false, false);
 	var icon = unitPanel.FindChildInLayoutFile("UnitIcon");
 	var iconName = "file://{resources}/images/custom_game/spellicons/"+unit.icon+".png";
 	icon.SetImage(iconName);
@@ -58,7 +58,7 @@ function AddUnit(unit, row) {
 
 function NewRow(id) {
 	var unitRow = $.CreatePanel("Panel", $("#Units"), "row_" + id);
-	unitRow.BLoadLayout("file://{resources}/layout/custom_game/squadron_unit_row.xml", false, false);
+	unitRow.BLoadLayout("file://{resources}/layout/custom_game/legion_unit_row.xml", false, false);
 	return unitRow;
 }
 
@@ -169,7 +169,7 @@ function GetInfoPanel() {
 	GameEvents.Subscribe("error", ErrorMessage);
 	for (var i = 0; i < 3; i++) {
 		var upgrade = $.CreatePanel("Panel", $("#Upgrades"), "KingHealthUpgrade");
-		upgrade.BLoadLayout("file://{resources}/layout/custom_game/squadron_upgrade.xml", false, false);
+		upgrade.BLoadLayout("file://{resources}/layout/custom_game/legion_upgrade.xml", false, false);
 		upgrade.SetAttributeInt("UpgradeType", i);
 		upgrade.FindChildInLayoutFile("DescLabel1").text = $.Localize("#Upgrade_King")
 		var label = upgrade.FindChildInLayoutFile("DescLabel2");

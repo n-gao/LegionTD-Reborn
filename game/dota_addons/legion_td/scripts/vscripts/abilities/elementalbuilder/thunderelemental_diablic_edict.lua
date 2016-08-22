@@ -49,7 +49,7 @@ function diabolic_edict_repeat( params )
         nil,
         params.radius,
         DOTA_UNIT_TARGET_TEAM_ENEMY,
-        DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_MECHANICAL + DOTA_UNIT_TARGET_BUILDING,
+        DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BUILDING,
         DOTA_UNIT_TARGET_FLAG_NONE,
         FIND_ANY_ORDER,
         false)

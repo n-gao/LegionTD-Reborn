@@ -1,6 +1,6 @@
 <root>
   <scripts>
-      <include src="file://{resources}/scripts/custom_game/squadron_update_player.js" />
+      <include src="file://{resources}/scripts/custom_game/legion_update_player.js" />
       <include src="file://{resources}/scripts/custom_game/selection.js" />
       <include src="file://{resources}/scripts/custom_game/selection_filter.js" />
   </scripts>
@@ -8,7 +8,7 @@
 		GameUI.CustomUIConfig().multiteam_top_scoreboard =
 		{
 			reorder_team_scores: true,
-			LeftInjectXMLFile: "file://{resources}/layout/custom_game/squadron_round_left.xml",
+			LeftInjectXMLFile: "file://{resources}/layout/custom_game/legion_round_left.xml",
 		};
 
 
@@ -31,11 +31,11 @@
   </script>
   <Panel>
     <CustomUIElement type="HeroSelection" layoutfile="file://{resources}/layout/custom_game/multiteam_hero_select_overlay.xml" />
-    <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/squadron_ui.xml" />
+    <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/legion_ui.xml" />
     <CustomUIElement type="GameSetup" layoutfile="file://{resources}/layout/custom_game/team_select.xml" />
     <CustomUIElement type="FlyoutScoreboard" layoutfile="file://{resources}/layout/custom_game/multiteam_flyout_scoreboard.xml" />
     <CustomUIElement type="HudTopBar" layoutfile="file://{resources}/layout/custom_game/multiteam_top_scoreboard.xml" />
-		<CustomUIElement type="GameInfo" layoutfile="file://{resources}/layout/custom_game/squadron_game_info.xml" />
+		<CustomUIElement type="GameInfo" layoutfile="file://{resources}/layout/custom_game/legion_game_info.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/barebones_notifications.xml" />
   </Panel>
 </root>

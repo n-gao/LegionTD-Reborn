@@ -19,11 +19,10 @@ function RepelResetter( keys )
 
 	Timers:CreateTimer(cooldown, function()
 		if caster and ability then
-			ability:ApplyDataDrivenModifier(caster, caster, modifier_time, {})
+			--ability:ApplyDataDrivenModifier(caster, caster, modifier_time, {})
 		end
 	end)
 
 	print ("timer created")
-	
-end
 
+end

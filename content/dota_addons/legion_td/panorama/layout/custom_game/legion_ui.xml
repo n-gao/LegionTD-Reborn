@@ -1,10 +1,10 @@
 <root>
   <styles>
     <include src="file://{resources}/styles/dotastyles.css" />
-    <include src="file://{resources}/styles/custom_game/squadron_ui.css" />
+    <include src="file://{resources}/styles/custom_game/legion_ui.css" />
   </styles>
   <scripts>
-    <include src="file://{resources}/scripts/custom_game/squadron_ui.js" />
+    <include src="file://{resources}/scripts/custom_game/legion_ui.js" />
   </scripts>
   <Panel hittest="false" class="Hud">
     <Panel hittest="false" class="DontKnow">
