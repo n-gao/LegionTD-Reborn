@@ -941,8 +941,9 @@ end
 
 function Game:StartNextRoundCommand()
   Game:ClearBoard()
+  Game:IncreaseRound()
   Game:RespawnUnits()
-  Game:SkipWait()
+  Game:StartNextRound()
 end
 
 
@@ -1040,12 +1041,4 @@ function Game:SpawnUnits()
       end
     end
   end
-end
-
-function Game:SkipWait()
-  self.nextRoundTime = GameRules:GetGameTime()
-  self.quest:CompleteQuest()
-  self.nextWaveQuest:CompleteQuest()
-  self.quest.finished = 0
-  Timers:CreateTimer(0.3, function() CustomGameEventManager:Send_ServerToAllClients( "update_round", {round = self.gameRound - self.doneDuels} ) end)
 end
