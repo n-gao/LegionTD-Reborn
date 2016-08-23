@@ -1,3 +1,4 @@
+//Doyle3694
 "astralbuilder_spawn_quasar"
 {
 	"BaseClass"						"ability_datadriven"
@@ -22,7 +23,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"atk_damage_tooltip"	"46.25"
+			"atk_damage_tooltip"	"52"
 		}
 		"02"
 		{
@@ -32,17 +33,17 @@
 		"03"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"atk_range_tooltip"		"90"
+			"atk_range_tooltip"		"500"
 		}
 		"04"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"health_tooltip"		"360"
+			"health_tooltip"		"200"
 		}
 		"05"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"armor_tooltip"			"4"
+			"armor_tooltip"			"2"
 		}
 		"06"
 		{
@@ -52,7 +53,7 @@
 		"07"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"unitID"				"52"
+			"unitID"				"200"
 		}
 	}
 }
