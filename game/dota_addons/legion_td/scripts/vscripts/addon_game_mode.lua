@@ -3,9 +3,10 @@
 ]]
 
 -- Required files to be visible from anywhere
-require( 'timers' )
-require( 'barebones' )
-require( "statcollection/init" )
+require ('timers')
+require ('commands')
+require ('barebones')
+require ("statcollection/init")
 require ('game')
 require ('gameround')
 require ('duelround')
