@@ -1,4 +1,0 @@
-"astralbuilder_quasar_relativistic_jet"
-{
-
-}
