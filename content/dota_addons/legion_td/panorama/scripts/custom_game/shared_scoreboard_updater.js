@@ -64,6 +64,7 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 		_ScoreboardUpdater_SetTextSafe( playerPanel, "Level", playerInfo.player_level );
 		_ScoreboardUpdater_SetTextSafe( playerPanel, "Kills", Players.GetLastHits(playerId) );
 		_ScoreboardUpdater_SetTextSafe( playerPanel, "Leaks", morePlayerInfo.leaks );
+		_ScoreboardUpdater_SetTextSafe( playerPanel, "TowerValue", morePlayerInfo.towerValue);
 
 		var playerPortrait = playerPanel.FindChildInLayoutFile( "HeroIcon" );
 		if ( playerPortrait )

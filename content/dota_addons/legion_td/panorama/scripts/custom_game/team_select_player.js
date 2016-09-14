@@ -27,7 +27,6 @@ function OnPlayerDetailsChanged()
 	$.GetContextPanel().SetHasClass( "player_has_host_privileges", playerInfo.player_has_host_privileges );
 }
 
-
 //--------------------------------------------------------------------------------------------------
 // Entry point, update a player panel on creation and register for callbacks when the player details
 // are changed.

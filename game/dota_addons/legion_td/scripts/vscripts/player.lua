@@ -11,7 +11,6 @@ function Player.new(plyEntitie, userID)
   self.userID = userID
   self.units = {}
   self.tangos = START_TANGO
-  self.tangoLimit = 125
   self.tangoAddAmount = START_TANGO_ADD_AMOUNT
   self.tangoAddSpeed = START_TANGO_ADD_SPEED
   self.tangoAddProgress = 0
@@ -149,6 +148,15 @@ function Player:GetUsedFood()
 end
 
 
+function Player:GetTowerValue()
+  local result = 0
+  for _,unit in pairs(self.units) do
+    result = result + unit.goldCost
+  end
+  return result
+end
+
+
 --add income
 function Player:AddIncome(amount)
   self.income = self.income + amount
@@ -211,11 +219,12 @@ function Player:RefreshPlayerInfo()
       playerID = self:GetPlayerID(),
       leaks = self.leaks,
       tangoCount = self.tangos,
-      maxTangos = self.tangoLimit,
+      maxTangos = Game:GetTangoLimit(),
       goldIncome = self.income,
       tangoIncome = math.floor(self.tangoAddAmount / self.tangoAddSpeed * 60),
       currentFood = self:GetUsedFood(),
       maxFood = self.foodlimit,
+      towerValue = self:GetTowerValue()
     })
   end
 end
@@ -242,7 +251,7 @@ end
 
 
 --on leaving lane
-function leaveLane(trigger)
+function EnteredRiver(trigger)
   local hero = trigger.activator
   if hero and hero:IsRealHero() then
     local vHeroPos = hero:GetAbsOrigin()
@@ -307,10 +316,10 @@ function Player:CreateTangoTicker()
       if Game.gameState == GAMESTATE_PREPARATION and Game.gameRound == STARTING_ROUND then return (1/30) end
       if self.abandoned == true then return end
       if Game:GetCurrentRound().isDuelRound then return end
-      
+
       local tangoDelay = self.tangoAddSpeed
       if self.leaked then tangoDelay = self.tangoAddSpeed + (self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER * self.leaksPenalty) end
-      if self.tangos > self.tangoLimit then tangoDelay = tangoDelay * 5 end -- slow down production while over the maximum
+      if self.tangos > Game:GetTangoLimit() and Game:GetTangoLimit() > -1 then tangoDelay = tangoDelay * 5 end -- slow down production while over the maximum
       self.tangoAddProgress = self.tangoAddProgress + 1/tangoDelay/30
       local i = self.tangoAddProgress*math.pi*2
       if self.lane.mainBuilding:GetAbsOrigin().y > 0 then

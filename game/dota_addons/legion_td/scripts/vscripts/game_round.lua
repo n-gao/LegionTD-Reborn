@@ -15,7 +15,7 @@ function GameRound:ReadRoundConfiguration(kv, roundNumber)
 
   for key, val in pairs(kv) do
     if type(val) == "table" and val.NPCName then
-      local spawner = GameSpawner()
+      local spawner = WaveSpawner()
       spawner:ReadConfiguration( key, val, self)
       self.spawners[key] = spawner
     end

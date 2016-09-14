@@ -9,129 +9,6 @@ GAMESTATE_END = 2
 STARTING_ROUND = 1
 CHECKING_INTERVALL = 1
 
-START_HEALTH_BONUS = 450
-MAX_KING_UPGRADES = 75
-HEALTH_BONUS_ADD = 25
-START_DAMAGE_BONUS = 6
-DAMAGE_BONUS_ADD = 1
-START_BONUS_REGEN = 1
-REGEN_BONUS_ADD = 0.2
-
-START_TANGO_ADD_AMOUNT = 1
-START_TANGO_ADD_SPEED = 5.0
-START_GOLD = 100
-START_TANGO = 40
-START_FOOD_LIMIT = 10
-START_INCOME = 0
-
-MAX_SENDS = 90
-
-START_TANGO_LIMIT = 100
-TANGO_LIMIT_PER_ROUND = 25
-LEAKED_TANGO_MULTIPLIER = .15
-
-LEGION_ERROR_BETWEEN_ROUNDS = 0
-LEGION_ERROR_NOT_ENOUGH_TANGOS = 1
-LEGION_ERROR_INVALID_LOCATION = 2
-LEGION_ERROR_NOT_ENOUGH_FOOD = 3
-LEGION_ERROR_TO_CLOSE = 4
-LEGION_ERROR_TO_MANY_UPGRADES = 5
-LEGION_ERROR_DURING_DUEL = 6
-
-function Game.GetUnitNameByID(id)
-  if id == 1 then return "tower_naturebuilder_spider"
-  elseif id == 2 then return "tower_naturebuilder_bug"
-  elseif id == 3 then return "tower_naturebuilder_bear"
-  elseif id == 4 then return "tower_naturebuilder_treant"
-  elseif id == 5 then return "tower_naturebuilder_hyena"
-  elseif id == 6 then return "tower_naturebuilder_centaur"
-  elseif id == 7 then return "tower_naturebuilder_broodmother"
-  elseif id == 8 then return "tower_naturebuilder_big_bug"
-  elseif id == 9 then return "tower_naturebuilder_druid_bear"
-  elseif id == 10 then return "tower_naturebuilder_iron_bear"
-  elseif id == 11 then return "tower_naturebuilder_shroom"
-  elseif id == 12 then return "tower_naturebuilder_flower_treant"
-  elseif id == 13 then return "tower_naturebuilder_agressive_boar"
-  elseif id == 14 then return "tower_naturebuilder_big_centaur"
-  elseif id == 15 then return "tower_naturebuilder_centaur_warrunner"
-  elseif id == 16 then return "tower_naturebuilder_treebeard"
-
-  elseif id == 50 then return "tower_elementalbuilder_waterbender"
-  elseif id == 51 then return "tower_elementalbuilder_thunderbender"
-  elseif id == 52 then return "tower_elementalbuilder_earthbender"
-  elseif id == 53 then return "tower_elementalbuilder_firebender"
-  elseif id == 54 then return "tower_elementalbuilder_voidbender"
-  elseif id == 55 then return "tower_elementalbuilder_waterelemental"
-  elseif id == 56 then return "tower_elementalbuilder_waterwarrior"
-  elseif id == 57 then return "tower_elementalbuilder_watergod"
-  elseif id == 58 then return "tower_elementalbuilder_earthelemental"
-  elseif id == 59 then return "tower_elementalbuilder_earthwarrior"
-  elseif id == 60 then return "tower_elementalbuilder_earthgod"
-  elseif id == 61 then return "tower_elementalbuilder_thunderelemental"
-  elseif id == 62 then return "tower_elementalbuilder_thunderwarrior"
-  elseif id == 63 then return "tower_elementalbuilder_thundergod"
-  elseif id == 64 then return "tower_elementalbuilder_fireelemental"
-  elseif id == 65 then return "tower_elementalbuilder_firewarrior"
-  elseif id == 66 then return "tower_elementalbuilder_firegod"
-  elseif id == 67 then return "tower_elementalbuilder_voidelemental"
-  elseif id == 68 then return "tower_elementalbuilder_voidwarrior"
-  elseif id == 69 then return "tower_elementalbuilder_voidgod"
-
-  elseif id == 100 then return "tower_humanbuilder_archbishop"
-  elseif id == 101 then return "tower_humanbuilder_archer"
-  elseif id == 102 then return "tower_humanbuilder_archmage"
-  elseif id == 103 then return "tower_humanbuilder_blademaster"
-  elseif id == 104 then return "tower_humanbuilder_footman"
-  elseif id == 105 then return "tower_humanbuilder_futuristic_gyrocopter"
-  elseif id == 106 then return "tower_humanbuilder_general"
-  elseif id == 107 then return "tower_humanbuilder_gunner"
-  elseif id == 108 then return "tower_humanbuilder_gyrocopter_mk1"
-  elseif id == 109 then return "tower_humanbuilder_gyrocopter_mk2"
-  elseif id == 110 then return "tower_humanbuilder_hunter"
-  elseif id == 111 then return "tower_humanbuilder_icewrack_grandmaster"
-  elseif id == 112 then return "tower_humanbuilder_lieutenant"
-  elseif id == 113 then return "tower_humanbuilder_mage"
-  elseif id == 114 then return "tower_humanbuilder_marksman"
-  elseif id == 115 then return "tower_humanbuilder_militia"
-  elseif id == 116 then return "tower_humanbuilder_novice"
-  elseif id == 117 then return "tower_humanbuilder_paladin"
-  elseif id == 118 then return "tower_humanbuilder_sharpshooter"
-  elseif id == 119 then return "tower_humanbuilder_soldier"
-  elseif id == 120 then return "tower_humanbuilder_soundmaster"
-  elseif id == 121 then return "tower_humanbuilder_spearman"
-  elseif id == 122 then return "tower_humanbuilder_tactician"
-
-  elseif id == 1001 then return "incomeunit_kobold"
-  elseif id == 1002 then return "incomeunit_hill_troll_shaman"
-  elseif id == 1003 then return "incomeunit_hill_troll_warrior"
-  elseif id == 1004 then return "incomeunit_harpy"
-  elseif id == 1005 then return "incomeunit_ghost"
-  elseif id == 1006 then return "incomeunit_little_wolf"
-  elseif id == 1007 then return "incomeunit_satyr"
-  elseif id == 1008 then return "incomeunit_ogre_warrior"
-  elseif id == 1009 then return "incomeunit_little_centaur"
-  elseif id == 1010 then return "incomeunit_wolf"
-  elseif id == 1011 then return "incomeunit_golem"
-  elseif id == 1012 then return "incomeunit_little_golem"
-  elseif id == 1013 then return "incomeunit_centaur"
-  elseif id == 1014 then return "incomeunit_vulture"
-  elseif id == 1015 then return "incomeunit_lizard"
-  elseif id == 1016 then return "incomeunit_lycanwolf"
-  elseif id == 1017 then return "incomeunit_black_drake"
-  elseif id == 1018 then return "incomeunit_big_lizard"
-  elseif id == 1019 then return "incomeunit_ancientgolem"
-  elseif id == 1020 then return "incomeunit_fleshgolem"
-  elseif id == 1021 then return "incomeunit_jellyfish"
-  elseif id == 1022 then return "incomeunit_hulk"
-  elseif id == 1023 then return "incomeunit_beast"
-  elseif id == 1024 then return "incomeunit_diablo"
-  elseif id == 1025 then return "incomeunit_rosh"
-    -- elseif id == 16 then return "tower_naturebuilder_centaur"
-  end
-end
-
-
-
 --Neues Spiel
 function Game.new()
   local self = Game()
@@ -168,8 +45,8 @@ function Game.new()
 
   CustomGameEventManager:RegisterListener("send_unit", Dynamic_Wrap(Game, "SendUnit"))
   CustomGameEventManager:RegisterListener("upgarde_king", Dynamic_Wrap(Game, "UpgradeKing"))
-  CustomGameEventManager:RegisterListener("toggle_income_limit", Dynamic_Wrap(Game, "ToggleIncomeLimit"))
-  CustomGameEventManager:RegisterListener("toggle_return_to_sender", Dynamic_Wrap(Game, "ToggleReturnToSender"))
+  CustomGameEventManager:RegisterListener("vote_option_clicked", Dynamic_Wrap(Game, "VoteOptionClicked"))
+
   return self
 end
 
@@ -179,7 +56,7 @@ end
 function Game:ReadConfiguration()
   local kv = LoadKeyValues("scripts/maps/"..GetMapName()..".txt")
   if not kv then
-    print("voll scheiße gelaufen jetzt!!!!!!!!!!!")
+    print("Map informations are missing!")
     return
   end
   self.initPrepTime = kv.FirstPrepTime
@@ -352,7 +229,10 @@ end
 
 
 function Game:GetTangoLimit()
-  return START_TANGO_LIMIT + self.gameRound * TANGO_LIMIT_PER_ROUND
+  if (voteOptions["tango_limit"]) then
+    return START_TANGO_LIMIT + self.gameRound * TANGO_LIMIT_PER_ROUND
+  end
+  return -1
 end
 
 
@@ -377,30 +257,11 @@ function Game:Start()
   self.direBoss.healthBonus = START_HEALTH_BONUS
   self.direBoss.damageBonus = START_DAMAGE_BONUS
   self.direBoss.regenBonus = START_BONUS_REGEN
-  local incomeLimitCount = 0
-  local rtsVoteCount = 0
-  for _,player in pairs(self.players) do
-    if player.wantIncomeLimit == 1 then
-      incomeLimitCount = incomeLimitCount + 1
-    end
-    if player.wantRTS == 1 then
-      rtsVoteCount = rtsVoteCount + 1
-    end
-  end
-  self.withIncomeLimit = incomeLimitCount > (PlayerResource:GetPlayerCount() / 2)
-  self.returnToSenderActive = rtsVoteCount == PlayerResource:GetPlayerCount()
-  print("rtsVoteCount: " .. rtsVoteCount)
-  print("player count: " .. PlayerResource:GetPlayerCount())
-  if self.returnToSenderActive then
-    GameRules:SendCustomMessage("Return to Sender mode is active!", 0, 0)
-    print("return to sender is active")
-  end
-
+  CheckVoteResults()
   self:CreateGameTimer()
   -- GameRules:GetGameModeEntity():SetThink("OnThink", self, "Check", 0)
-  self:Initialice()
+  self:Initialize()
 end
-
 
 function Game:CreateGameTimer()
   if not self.gameTimer then
@@ -482,7 +343,9 @@ end
 
 --Runde beendet
 function Game:RoundFinished()
-  mode:SetFogOfWarDisabled(false)
+  if (voteOptions["fog_of_war"]) then
+    mode:SetFogOfWarDisabled(false)
+  end
   self.gridBoxes:RemoveEffects(EF_NODRAW)
   if not self.gameTimer then
     self:CreateGameTimer()
@@ -526,11 +389,13 @@ function Game:StartNextRound()
         player:Abandon()
       end
     end
-    if player.tangos > player.tangoLimit then
-      player.tangos = player.tangoLimit
+    if voteOptions["tango_limit"] and player.tangos > self:GetTangoLimit() then
+      player.tangos = self:GetTangoLimit()
     end
   end
-  mode:SetFogOfWarDisabled(true)
+  if voteOptions["fog_of_war"] then
+    mode:SetFogOfWarDisabled(true)
+  end
   self.gridBoxes:AddEffects(EF_NODRAW)
   self.gameState = GAMESTATE_FIGHTING
   self.nextRoundTime = nil
@@ -566,7 +431,7 @@ end
 
 
 --Sorgt dafür dass die Zeit aktualisiert Wird
-function Game:Initialice()
+function Game:Initialize()
   Timers:CreateTimer(0, function()
     local time = GameRules:GetGameTime()
     local minutes = math.floor(time / 60)
@@ -758,31 +623,6 @@ function Game:OnPlayerDisconnect(key)
 end
 
 
-
-
-function Game:ToggleIncomeLimit(data)
-  local lData = {
-    playerID = data.playerID,
-    value = data.value
-  }
-  local player = Game:FindPlayerWithID(lData.playerID)
-  player.wantIncomeLimit = data.value
-end
-
-
-
-function Game:ToggleReturnToSender(data)
-print ("Game:ToggleReturnToSender invoked")
-  local lData = {
-    playerID = data.playerID,
-    value = data.value
-  }
-  local player = Game:FindPlayerWithID(lData.playerID)
-  player.wantRTS = data.value
-end
-
-
-
 --sends a unit
 function Game:SendUnit(data)
   local lData = {
@@ -797,7 +637,7 @@ function Game:SendUnit(data)
     player:AddIncome(lData.income)
     local spawn = player:GetIncomeSpawner():GetAbsOrigin()
     local team = player:GetTeamNumber()
-    local name = Game.GetUnitNameByID(lData.id)
+    local name = Unit.GetUnitNameByID(lData.id)
     local unit = CreateUnitByName(name, spawn, true, nil, nil, team)
     unit.tangoValue = lData.cost
     unit:AddNewModifier(nil, nil, "modifier_invulnerable", {})
@@ -806,7 +646,7 @@ function Game:SendUnit(data)
     if team == DOTA_TEAM_GOODGUYS then
       sendFromRadiant = not sendFromRadiant
     end
-    if Game.returnToSenderActive then
+    if voteOptions["return_to_sender"] then
       sendFromRadiant = not sendFromRadiant
     end
     if sendFromRadiant then
@@ -910,6 +750,19 @@ function Game:UpgradeKingsRegen(king)
     return true
   end
   return false
+end
+
+
+function Game:VoteOptionClicked(data)
+  local lData = {
+    option = data.option,
+    playerID = data.playerID,
+    value = data.value
+  }
+  local player = Game:FindPlayerWithID(lData.playerID)
+  player["wants"..lData.option] = lData.value
+  print(lData.playerID.." voted for "..lData.option.." with "..lData.value)
+  UpdateVoteLabel(lData.option)
 end
 
 

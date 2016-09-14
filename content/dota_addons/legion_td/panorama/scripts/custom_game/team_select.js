@@ -9,6 +9,10 @@ var g_PlayerPanels = [];
 
 var g_TEAM_SPECATOR = 1;
 
+var min_wait_time = 10;
+
+var startTime = Game.GetGameTime();
+
 //--------------------------------------------------------------------------------------------------
 // Handeler for when the unssigned players panel is clicked that causes the player to be reassigned
 // to the unssigned players team
@@ -27,6 +31,9 @@ function OnLockAndStartPressed()
 	// Don't allow a forced start if there are unassigned players
 	if ( Game.GetUnassignedPlayerIDs().length > 0  )
 	return;
+
+	if (Game.GetGameTime() - startTime < min_wait_time)
+		return;
 
 	// Lock the team selection so that no more team changes can be made
 	Game.SetTeamSelectionLocked( true );
@@ -283,7 +290,12 @@ function UpdateTimer()
 	$( "#StartGameCountdownTimer" ).SetHasClass( "auto_start", autoLaunch );
 	$( "#StartGameCountdownTimer" ).SetHasClass( "forced_start", ( autoLaunch == false ) );
 
+	var remainingTime = min_wait_time - (Game.GetGameTime() - startTime);
+	$( "#WaitSecondsLabel").text = Math.round(remainingTime);
+
 	// Allow the ui to update its state based on team selection being locked or unlocked
+	$.GetContextPanel().SetHasClass( "min_time_not_reached", remainingTime > 0);
+	$.GetContextPanel().SetHasClass( "min_time_reached", remainingTime <= 0);
 	$.GetContextPanel().SetHasClass( "teams_locked", Game.GetTeamSelectionLocked() );
 	$.GetContextPanel().SetHasClass( "teams_unlocked", Game.GetTeamSelectionLocked() == false );
 

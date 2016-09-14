@@ -17,6 +17,7 @@
       <Panel class="LegendPanel ScoreCol_PlayerDetails" />
       <Label class="LegendPanel ScoreCol_Kills" text="#end_screen_legend_kills" />
       <Label class="LegendPanel ScoreCol_Leaks" text="#end_screen_legend_leaks" />
+      <Label class="LegendPanel ScoreCol_Tower_Value" text="#end_screen_legend_tower_value" />
       <Label class="LegendPanel ScoreCol_Tango_Income" text="#end_screen_legend_tango_income" />
       <Label class="LegendPanel ScoreCol_Gold_Income" text="#end_screen_legend_gold_income" />
     </Panel>
