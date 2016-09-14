@@ -36,9 +36,9 @@
   width: 90%;
   height: 200px;
 
-  padding: 5px;
+  padding: 8px;
   background-color: #111111EE;
-  box-shadow: #FFFFFF55 0px 0px 8px 0px;
+  box-shadow: #FFFFFF10 0px 0px 8px 0px;
   vertical-align: middle;
 }
 
@@ -428,6 +428,29 @@
   transition-duration: 0.2s;
 }
 
+#WaitForVoteButton
+{
+  horizontal-align: right;
+  box-shadow: fill #486ca922 -4px -4px 8px 8px;
+  border-top: 1px solid #ffffff03;
+  border-left: 1px solid #ffffff03;
+  visibility: collapse;
+}
+
+#WaitForVoteButton Label
+{
+  transition-property: opacity;
+  transition-duration: 0.2s;
+}
+
+.player_has_host_privileges #WaitForVoteButton {
+  visibility: visible;
+}
+
+.min_time_reached #WaitForVoteButton  {
+  visibility: collapse;
+}
+
 .unassigned_players #LockAndStartButton Label
 {
   opacity: 0.1;
@@ -436,6 +459,10 @@
 .player_has_host_privileges #LockAndStartButton
 {
   visibility: visible;
+}
+
+.min_time_not_reached #LockAndStartButton {
+  visibility: collapse;
 }
 
 .teams_locked #LockAndStartButton
@@ -511,7 +538,7 @@
 
 .TeamSelectTeam.local_player_on_this_team
 {
-  box-shadow: fill #ffffff40 -3px -3px 3px 6px;
+  box-shadow: fill #ffffff10 -3px -3px 6px 6px;
   //box-shadow: -3px -3px 12px 6px #FFFFFF88;
 }
 

@@ -96,13 +96,13 @@ function DuelRound:PlaceKings()
   table.insert(self.remainingUnitsDire, Game.direBoss)
 
   ExecuteOrderFromTable({
-    UnitIndex = Game.radiantBoss:entindex(), 
+    UnitIndex = Game.radiantBoss:entindex(),
     OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
     TargetIndex = Game.direBoss:entindex(),
   })
 
   ExecuteOrderFromTable({
-    UnitIndex = Game.direBoss:entindex(), 
+    UnitIndex = Game.direBoss:entindex(),
     OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
     TargetIndex = Game.radiantBoss:entindex(),
   })
@@ -128,7 +128,7 @@ function DuelRound:PlaceUnits()
           relativeposition.y = relativeposition.y * -1
         end
         relativeposition.y = relativeposition.y + unit.player.lane.box:GetBoundingMaxs().y -- we want positions relative to the "front" of the lane
-        if pl:GetTeamNumber() == DOTA_TEAM_BADGUYS then -- rotate again if spawning badguy creeps 
+        if pl:GetTeamNumber() == DOTA_TEAM_BADGUYS then -- rotate again if spawning badguy creeps
           relativeposition.x = relativeposition.x * -1
           relativeposition.y = relativeposition.y * -1
         end
@@ -232,7 +232,7 @@ function DuelRound:CheckUnitsAlive()
 end
 
 
-function touchTeleport(trigger)
+function RelocateUnit(trigger)
   print("teleporting unit!")
   local npc = trigger.activator
   if npc.unit and not npc:IsRealHero() then

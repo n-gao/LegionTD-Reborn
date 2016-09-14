@@ -20,6 +20,7 @@
 			AddContributor("func_door", "76561197993928301", $("#Programmers"));
 			AddContributor("HoodyCore", "76561198038088076", $("#GameDesigners"));
 			AddContributor("Muffet", "76561197998364533", $("#GameDesigners"));
+			AddContributor("Doyle3694", "76561198020293120", $("#Programmers"));
 	</script>
 	<Panel class="OverthrowGameInfo">
 		<Panel id="Title">

@@ -1,0 +1,8 @@
+legion_td_4v4
+{
+	material materials/overviews/legion_td_4v4.vmat
+	pos_x -5376
+	pos_y 5376
+	scale 10.500
+}
+

@@ -6,7 +6,7 @@ CommandEngine.Commands = {}
 function CommandEngine:CheckCommand( keys )
 	if not CommandEngine.initialized then CommandEngine.init() end
 	if string.sub(keys.text, 1, #CommandEngine.prefix) then
-		
+
 		local submessage = string.sub(keys.text, #CommandEngine.prefix+1)
 		local div = select(2, string.find(submessage, " "))
 		if div then div = div-1 else div = #submessage end

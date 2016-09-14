@@ -12,7 +12,7 @@
 		"RunScript"
 		{
 			"ScriptFile"	"unit.lua"
-			"Function"		"upgrade_unit"
+			"Function"		"UpgradeUnit"
 		}
 	}
 	"AbilitySpecial"

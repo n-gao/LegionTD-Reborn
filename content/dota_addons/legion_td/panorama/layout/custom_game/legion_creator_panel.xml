@@ -8,6 +8,7 @@
 	</scripts>
 	<Panel class="CreatorPlayer">
 		<DOTAAvatarImage id="PlayerAvatar" />
-		<Label id="PlayerName" text="PLAYER_NAME" />
+		<DOTAUserName id="PlayerName" />
+		<!--<Label id="PlayerName" text="PLAYER_NAME" />-->
 	</Panel>
 </root>

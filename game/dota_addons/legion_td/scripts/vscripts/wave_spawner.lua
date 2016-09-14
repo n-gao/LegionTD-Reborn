@@ -1,5 +1,5 @@
-if GameSpawner == nil then
-  GameSpawner = class({})
+if WaveSpawner == nil then
+  WaveSpawner = class({})
 end
 
 LAST_WAVE_DMG_PER_ROUND = 75;
@@ -13,7 +13,7 @@ ai_ogre = require('ai/waves/ai_ogre')
 ai_rubick = require('ai/waves/ai_rubick')
 ai_necro_replacement = require('ai/waves/ai_necro_replacement')
 
-function GameSpawner:ReadConfiguration(name, kv, gameRound)
+function WaveSpawner:ReadConfiguration(name, kv, gameRound)
   self.gameRound = gameRound
   self.name = name
   self.npcName = kv.NPCName
@@ -29,7 +29,7 @@ function round(num, nearest)
   return num, num/nearest
 end
 
-function GameSpawner:Spawn()
+function WaveSpawner:Spawn()
   local spawners = Game.lanes
   local count = 1
   --Spawn normal Wave
@@ -105,7 +105,7 @@ function GameSpawner:Spawn()
   self:SendIncomingUnits(DOTA_TEAM_BADGUYS)
 end
 
-function GameSpawner.ApplyAI(creep)
+function WaveSpawner.ApplyAI(creep)
   local name = creep:GetUnitName()
   if name == "unit_techies" then ai_techies.Init(creep)
   elseif name == "unit_dragon" then ai_dragon.Init(creep)
@@ -117,7 +117,7 @@ function GameSpawner.ApplyAI(creep)
   end
 end
 
-function GameSpawner:SendIncomingUnits(team)
+function WaveSpawner:SendIncomingUnits(team)
   local spawners = {} -- list of possible lanes that we can distribute to, indexed 1 to 4
   local count = 0 -- number of valid lanes to distribute to
   local units = {}

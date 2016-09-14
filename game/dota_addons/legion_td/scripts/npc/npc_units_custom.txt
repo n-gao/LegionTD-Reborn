@@ -102,6 +102,77 @@
 	    //----------------------------------------------------------------
 	    "AttackDesire" "1.5" // How much bots want to attack them vs other non-hero things
 	}
+	"tower_elementalbuilder_earthbender"
+	{
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/earthshaker/earthshaker.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    "Hero_Earthshaker"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"							"elementalbuilder_upgrade_earthelemental"
+		"Ability2"							"elementalbuilder_upgrade_earthwarrior"
+		"Ability3"							"ability_empty_3"
+		"Ability4"							"sell"
+	
+		"ArmorPhysical"         "4"
+		"MagicalResistance"     "0"
+	
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "43.75"
+		"AttackDamageMax"       "50.0"
+		"AttackRate"            "1.1"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "90"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
+	
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		"StatusHealth"          "360"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+		}
+	}
 	"dire_boss"
 	{
 		// General
@@ -7431,21 +7502,21 @@
 			}
 		}
 	}
-	"tower_mechanicalbuilder_vacuum_cleaner"
+	"tower_mechanicalbuilder_catapult"
 	{
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"             "npc_dota_creature"
-		"Model"                 "models/heroes/tinker/mom.vmdl"
+		"Model"                 "models/creeps/lane_creeps/creep_good_siege/creep_good_siege_new_deathsim.vmdl"
 		"ModelScale"            "0.5"
-		"SoundSet"					"Hero_Weaver"
+		"SoundSet"							"Hero_Tinker"
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
 	
-		"Ability1"				"naturebuilder_upgrade_big_bug"
+		"Ability1"				"ability_empty_1"
 		"Ability4"				"sell"
-		"Ability2"				"weaver_geminate_attack"
+		"Ability2"				"ability_empty_2"
 		"Ability3"				"ability_empty_3"
 	
 		// Armor
@@ -7463,7 +7534,7 @@
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "450"
-		"ProjectileModel"       "particles/units/heroes/hero_weaver/weaver_base_attack.vpcf"
+		"ProjectileModel"       "particles/base_attacks/ranged_siege_good.vpcf"
 		"ProjectileSpeed"       "800"
 	
 		"Legion_AttackType"		"pierce"
@@ -7521,12 +7592,97 @@
 					"Support"			"0.0"
 				}
 			}
-			"AttachWearables"
+		}
+	}
+	"tower_mechanicalbuilder_vacuum_cleaner"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/tinker/mom.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					"Hero_Weaver"
+		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability4"				"sell"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "35.0"
+		"AttackDamageMax"       "42.5"
+		"AttackRate"            "0.65"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "128"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "800"
+	
+		"Legion_AttackType"		"pierce"
+		"Legion_DefendType"		"medium"
+	
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "120"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
 			{
-				"Wearable1" { "ItemDef" "4636" }
-				"Wearable2" { "ItemDef" "4635" }
-				"Wearable3" { "ItemDef" "4570" }
-				"Wearable4" { "ItemDef" "4637" }
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
 			}
 		}
 	}

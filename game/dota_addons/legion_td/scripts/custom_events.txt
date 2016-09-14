@@ -28,15 +28,12 @@
 		"cost"						"short"
 		"playerID"					"short"
 	}
-	"toggle_income_limit"
+
+	"vote_option_clicked"
 	{
-		"playerID"						"short"
-		"value"					"bool"
-	}
-	"toggle_return_to_sender"
-	{
-		"playerID"						"short"
-		"value"					"bool"
+		"option"			"string"
+		"playerID"		"short"
+		"value"				"bool"
 	}
 
 }
