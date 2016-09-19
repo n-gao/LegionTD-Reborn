@@ -85,6 +85,7 @@ voteOptions = {}
 voteOptions["tango_limit"] = false
 voteOptions["return_to_sender"] = false
 voteOptions["fog_of_war"] = false
+voteOptions["deactivate_duels"] = false
 
 
 function UpdateAllVoteLabels()
