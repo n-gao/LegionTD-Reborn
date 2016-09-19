@@ -46,6 +46,7 @@ function Game.new()
   CustomGameEventManager:RegisterListener("send_unit", Dynamic_Wrap(Game, "SendUnit"))
   CustomGameEventManager:RegisterListener("upgarde_king", Dynamic_Wrap(Game, "UpgradeKing"))
   CustomGameEventManager:RegisterListener("vote_option_clicked", Dynamic_Wrap(Game, "VoteOptionClicked"))
+  CustomGameEventManager:RegisterListener("skip_pressed", Dynamic_Wrap(Game, "SkipPressed"))
 
   return self
 end
@@ -298,9 +299,22 @@ function Game:OnThink()
 end
 
 
+function Game:ResetSkip()
+ self:SetSkipButton(true)
+  for _,player in pairs(self.players) do
+    player.wantsSkip = false
+  end
+end
+
+function Game:SetSkipButton(state)
+  CustomGameEventManager:Send_ServerToAllClients("enable_skip", {value = state})
+end
+
 
 --Setzt die Zeit zum warten zur nächsten Runde
 function Game:SetWaitTime()
+  Game:ResetSkip()
+
   local waitTime = self.timeBetweenRounds
   if self.gameRound == 1 then
     waitTime = self.initPrepTime
@@ -322,7 +336,7 @@ function Game:SetWaitTime()
   self.quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, waitTime )
   subQuest:SetTextReplaceValue( SUBQUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished )
   subQuest:SetTextReplaceValue( SUBQUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, waitTime )
-  Timers:CreateTimer(1, function()
+  self.questTimer = Timers:CreateTimer(1, function()
     self.quest.finished = self.quest.finished - 1
     self.quest:SetTextReplaceValue( QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished )
     subQuest:SetTextReplaceValue( SUBQUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished )
@@ -337,6 +351,12 @@ function Game:SetWaitTime()
   CustomGameEventManager:Send_ServerToAllClients( "update_round", {round = self.gameRound - self.doneDuels} )
   self:RespawnUnits()
   print("Time to next Round: "..waitTime)
+end
+
+function Game:EndQuest()
+  Timers:RemoveTimer(self.questTimer)
+  self.quest:CompleteQuest()
+  self.nextWaveQuest:CompleteQuest()
 end
 
 
@@ -375,6 +395,7 @@ end
 
 --Startet nächste Runde
 function Game:StartNextRound()
+  self:SetSkipButton(false)
   print "Game:StartNextround()"
   for _,player in pairs(self.players) do
     if player.lane and player.lane.isActive then --only repair leaks if lane is active
@@ -765,8 +786,24 @@ function Game:VoteOptionClicked(data)
   UpdateVoteLabel(lData.option)
 end
 
+function Game:SkipPressed(data)
+  local lData = {
+    playerID = data.playerID
+  }
+  local player = Game:FindPlayerWithID(lData.playerID)
+  player.wantsSkip = true
+  print(lData.playerID.." wants to skip waiting time.")
+  Game:CheckSkip()
+end
 
-
+function Game:CheckSkip() 
+  for _,player in pairs(self.players) do
+    if (player.wantsSkip == false) then
+      return
+    end
+  end
+  Game:SkipWait()
+end
 
 function IncreaseStack(king, modifier)
   local bossAbility = king:GetAbilityByIndex(0)
@@ -899,9 +936,18 @@ function Game:SpawnUnits()
 end
 
 function Game:SkipWait()
+  if (not (self.nextRoundTime == nil)) then
+    local missedTime = self.nextRoundTime - GameRules:GetGameTime()
+    Game:DistributeMissedTangos(missedTime)
+  end
   self.nextRoundTime = GameRules:GetGameTime()
-  self.quest:CompleteQuest()
-  self.nextWaveQuest:CompleteQuest()
+  self:EndQuest()
   self.quest.finished = 0
   Timers:CreateTimer(0.3, function() CustomGameEventManager:Send_ServerToAllClients( "update_round", {round = self.gameRound - self.doneDuels} ) end)
+end
+
+function Game:DistributeMissedTangos(missedTime)
+  for _,player in pairs(self.players) do
+    player:AddTangos(player:GetTangoIncomeIn(missedTime))
+  end
 end

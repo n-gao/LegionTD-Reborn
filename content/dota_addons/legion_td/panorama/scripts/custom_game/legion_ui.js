@@ -173,6 +173,7 @@ function GetInfoPanel() {
 }
 
 function EnableSkip(data) {
+	$.GetContextPanel().SetHasClass("SkipPressed", data.value == 0);
 }
 
 (function () {
