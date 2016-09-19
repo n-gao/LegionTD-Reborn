@@ -79,6 +79,14 @@ function OnShopButtonPressed() {
 	$("#ShopPanel").ToggleClass("ShopPanelVisible");
 }
 
+function OnSkipButtonPressed() {
+	$.GetContextPanel().SetHasClass("SkipPressed", true);
+	var data = {
+		playerID : Players.GetLocalPlayer()
+	}
+	GameEvents.SendCustomGameEventToServer("skip_pressed", data);
+}
+
 
 function UpdatePlayerInfo(data) {
 	UpdateInfoPanel();
@@ -164,11 +172,15 @@ function GetInfoPanel() {
 	return $("InfoPanel")
 }
 
+function EnableSkip(data) {
+}
+
 (function () {
 	GameEvents.Subscribe("dota_player_update_query_unit", UpdateInfoPanel);
 	GameEvents.Subscribe("update_player_info", UpdatePlayerInfo);
 	GameEvents.Subscribe("debug", UpdateDebug);
 	GameEvents.Subscribe("error", ErrorMessage);
+    GameEvents.Subscribe("enable_skip", EnableSkip);
 	for (var i = 0; i < 3; i++) {
 		var upgrade = $.CreatePanel("Panel", $("#Upgrades"), "KingHealthUpgrade");
 		upgrade.BLoadLayout("file://{resources}/layout/custom_game/legion_upgrade.xml", false, false);

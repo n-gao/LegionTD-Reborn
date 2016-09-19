@@ -221,12 +221,20 @@ function Player:RefreshPlayerInfo()
       tangoCount = self.tangos,
       maxTangos = Game:GetTangoLimit(),
       goldIncome = self.income,
-      tangoIncome = math.floor(self.tangoAddAmount / self.tangoAddSpeed * 60),
+      tangoIncome = self:GetTangoIncomeIn(60),
       currentFood = self:GetUsedFood(),
       maxFood = self.foodlimit,
       towerValue = self:GetTowerValue()
     })
   end
+end
+
+function Player:GetTangoIncomeIn(time)
+  return math.floor(self:GetTangoIncome() * time)
+end
+
+function Player:GetTangoIncome()
+  return (self.tangoAddAmount / self.tangoAddSpeed)
 end
 
 
