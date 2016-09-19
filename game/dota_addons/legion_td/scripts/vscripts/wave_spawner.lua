@@ -2,9 +2,6 @@ if WaveSpawner == nil then
   WaveSpawner = class({})
 end
 
-LAST_WAVE_DMG_PER_ROUND = 75;
-LAST_WAVE_HEALTH_PER_ROUND = 750;
-
 ai_standard = require('ai/ai_core')
 ai_techies = require('ai/waves/ai_techies')
 ai_dragon = require('ai/waves/ai_dragon')
