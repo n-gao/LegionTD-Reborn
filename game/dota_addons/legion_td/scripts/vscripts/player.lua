@@ -90,7 +90,7 @@ function Player:SetNPC(npc)
       ability.player = self
     end
   end
-  self.hero:SetAbilityPoints(0)
+  self.hero:SetAbilityPoints(0) 
 
   --prepartaion
 

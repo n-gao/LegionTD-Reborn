@@ -19,6 +19,7 @@
 						<ToggleButton id="tango_limit" onactivate="VoteOptionClicked('tango_limit')" text="#Option_Income_Limit"/>
 						<ToggleButton id="return_to_sender" onactivate="VoteOptionClicked('return_to_sender')" text="#Option_Return_To_Sender"/>
 						<ToggleButton id="fog_of_war" onactivate="VoteOptionClicked('fog_of_war')" text="#Option_Fog_Of_War"/>
+						<ToggleButton id="deactivate_duels" onactivate="VoteOptionClicked('deactivate_duels')" text="#Option_Deactivate_Duels"/>
 					</Panel>
 				</Panel>
 			</Panel>

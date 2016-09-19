@@ -49,6 +49,8 @@ for i=1,MAX_LEVEL do
 end
 
 
+LAST_WAVE_DMG_PER_ROUND = 20;
+LAST_WAVE_HEALTH_PER_ROUND = 200;
 
 START_HEALTH_BONUS = 450
 MAX_KING_UPGRADES = 75
@@ -83,6 +85,7 @@ voteOptions = {}
 voteOptions["tango_limit"] = false
 voteOptions["return_to_sender"] = false
 voteOptions["fog_of_war"] = false
+voteOptions["deactivate_duels"] = false
 
 
 function UpdateAllVoteLabels()
