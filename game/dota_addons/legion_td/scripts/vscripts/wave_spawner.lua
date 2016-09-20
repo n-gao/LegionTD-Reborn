@@ -91,6 +91,7 @@ function WaveSpawner:Spawn()
         creep:SetBaseDamageMin(creep:GetBaseDamageMin() + self.dmgBonus)
         creep:SetBaseDamageMax(creep:GetBaseDamageMax() + self.dmgBonus)
         self.ApplyAI(creep)
+        self.ApplyHardMode(creep)
       end
     end
   end
@@ -100,6 +101,18 @@ function WaveSpawner:Spawn()
 
   self:SendIncomingUnits(DOTA_TEAM_GOODGUYS)
   self:SendIncomingUnits(DOTA_TEAM_BADGUYS)
+end
+
+function WaveSpawner.ApplyHardMode(creep)
+  if (not voteOptions["hard_mode"]) then return end
+
+  local bonusHp = creep:GetMaxHealth() * HARD_MODE_HEALTH_MULTIPLIER - creep:GetMaxHealth()
+  creep:SetMaxHealth(creep:GetMaxHealth() + bonusHp)
+  creep:SetBaseMaxHealth(creep:GetBaseMaxHealth() + bonusHp)
+  creep:Heal(bonusHp, nil)
+
+  creep:SetBaseDamageMin(creep:GetBaseDamageMin() * HARD_MODE_DAMAGE_MULTIPLIER)
+  creep:SetBaseDamageMax(creep:GetBaseDamageMax() * HARD_MODE_DAMAGE_MULTIPLIER)
 end
 
 function WaveSpawner.ApplyAI(creep)

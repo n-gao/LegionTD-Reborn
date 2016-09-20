@@ -663,6 +663,7 @@ function Game:SendUnit(data)
     unit.tangoValue = lData.cost
     unit:AddNewModifier(nil, nil, "modifier_invulnerable", {})
     unit:AddNewModifier(nil, nil, "modifier_stunned", {})
+    WaveSpawner.ApplyHardMode(unit)
     local sendFromRadiant = false
     if team == DOTA_TEAM_GOODGUYS then
       sendFromRadiant = not sendFromRadiant

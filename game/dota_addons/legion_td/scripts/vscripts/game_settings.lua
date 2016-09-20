@@ -52,6 +52,9 @@ end
 LAST_WAVE_DMG_PER_ROUND = 20;
 LAST_WAVE_HEALTH_PER_ROUND = 200;
 
+HARD_MODE_DAMAGE_MULTIPLIER = 1.5
+HARD_MODE_HEALTH_MULTIPLIER = 1.5
+
 START_HEALTH_BONUS = 450
 MAX_KING_UPGRADES = 75
 HEALTH_BONUS_ADD = 25
@@ -86,6 +89,7 @@ voteOptions["tango_limit"] = false
 voteOptions["return_to_sender"] = false
 voteOptions["fog_of_war"] = false
 voteOptions["deactivate_duels"] = false
+voteOptions["hard_mode"] = false
 
 
 function UpdateAllVoteLabels()
