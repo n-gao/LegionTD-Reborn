@@ -822,12 +822,14 @@ end
 
 function Game:IncreaseRound()
   Game.gameRound = Game.gameRound + 1;
-  if (Game.rounds[Game.gameRound].isDuelRound and voteOptions["deactivate_duels"] and not (Game.gameRound > #Game.rounds)) then
-    Game:IncreaseRound()
-  end
   if (Game.gameRound > #Game.rounds) then
-    Game.gameRound = Game.gameRound - 1;
+    Game.gameRound = Game.gameRound - 1
+    Game.doneDuels = Game.doneDuels + 1
     Game.finishedWaves = true
+  else
+    if (Game.rounds[Game.gameRound].isDuelRound and voteOptions["deactivate_duels"]) then
+      Game:IncreaseRound()
+    end
   end
 end
 
