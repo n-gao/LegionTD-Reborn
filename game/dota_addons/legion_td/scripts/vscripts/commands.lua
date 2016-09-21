@@ -2,7 +2,7 @@
 print("Commands.lua")
 CommandEngine = {}
 CommandEngine.Commands = {}
-
+CommandEngine.Variables = {}
 function CommandEngine:CheckCommand( keys )
 	if not CommandEngine.initialized then CommandEngine.init() end
 	if string.sub(keys.text, 1, #CommandEngine.prefix) then
@@ -15,14 +15,8 @@ function CommandEngine:CheckCommand( keys )
 
 		if CommandEngine.Commands[command] then
 			CommandEngine.Commands[command](self,  submessage, keys)
-			print("PlayerID: " .. self.vPlayers[keys.playerid+1].playerName .. " ran command " .. keys.text)
+			print("PlayerID: " .. keys.playerid .. " ran command " .. keys.text)
 		end
-	end
-end
-
-if GameRules:IsCheatMode() then
-	function CommandEngine.Commands.tango(instance, submessage, keys)
-		instance.vPlayers[keys.playerid+1].player:AddTangos(tonumber(submessage) or 0)
 	end
 end
 
@@ -35,3 +29,21 @@ function CommandEngine.init()
 		CommandEngine.Commands.skip = CommandEngine.Commands.start
 	end
 end
+
+if GameRules:IsCheatMode() then
+	function CommandEngine.Commands.tango(instance, submessage, keys)
+		instance.vPlayers[keys.playerid+1].player:AddTangos(tonumber(submessage) or 0)
+	end
+end
+
+function CommandEngine.Commands.settings(instance, submessage, keys)
+	if not CommandEngine.Variables.settingsCooldown then
+		Say(nil, "Current settings:", false)
+		for i,v in pairs(voteOptions) do
+			Say(nil, i .. " : " .. tostring(v), false)
+		end
+		CommandEngine.Variables.settingsCooldown = true
+		resettimer = Timers:CreateTimer(30, function() CommandEngine.Variables.settingsCooldown = false end)
+	end
+end
+CommandEngine.Commands.gamemode = CommandEngine.Commands.settings
