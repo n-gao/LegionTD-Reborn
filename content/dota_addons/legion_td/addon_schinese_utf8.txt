@@ -1,6 +1,6 @@
 ﻿"lang"
 {
-	"Language"		"SChinese"
+	"Language"		"Schinese"
 	"Tokens"
 	{		
 		"addon_game_name"								"军团战争Reborn"

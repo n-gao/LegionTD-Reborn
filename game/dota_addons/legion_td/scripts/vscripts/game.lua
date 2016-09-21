@@ -236,11 +236,20 @@ function Game:GetTangoLimit()
   return -1
 end
 
-
+function Game:GetAllActivePlayer()
+  local result = {}
+  for _,player in pairs(self.players) do
+    if player:IsActive() then
+      result[_] = player
+    end
+  end
+  return result
+end
 
 --Start des Spiels
 function Game:Start()
   print ("Game:Start()")
+  GameRules:SendCustomMessage("Remember: If you find any bug, please report it to the workshop page.",0,0)
   self.radiantKingVision = CreateUnitByName("king_vision_dummy", self.radiantBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
   self.direKingVision = CreateUnitByName("king_vision_dummy", self.direBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
   self.gridBoxes = Entities:FindByName(nil, "gridboxes")

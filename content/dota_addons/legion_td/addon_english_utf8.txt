@@ -21,15 +21,20 @@
 		"Options_title"	"Vote Options"
 		"Option_Income_Limit"	"Tango Limit"
 		"Option_Return_To_Sender"	"Return to Sender"
+		"Option_Fog_Of_War"	"Fog of War"
+		"Option_Deactivate_Duels" "Deactivate Duels"
+		"Option_Hard_Mode"	"Hard Mode"
 		"QuestTimer"    "Next round starts in %quest_current_value% seconds"
 		"Duel_Quest_Title"		"Duel"
 		"Round"			"Round"
 		"Income"			"Income:"
+		"Skip"			"Skip"
 		
 		"end_screen_legend_kills"		"Kills"
 		"end_screen_legend_leaks" 		"Leaks"
 		"end_screen_legend_tango_income"	"Tango Income"
 		"end_screen_legend_gold_income"	"Gold Income"
+		"end_screen_legend_tower_value"		"Tower Value"
 		
 		"gold_income_text"				"/round"
 		"tango_income_text"				"/min"
@@ -98,10 +103,11 @@
 		
 
 		// ******************** HEROES ********************
-		"npc_dota_hero_invoker"                                                           "Elemental Builder"
+		"npc_dota_hero_wisp"                                                           "Elemental Builder"
 		"npc_dota_hero_furion"                                                            "Nature Builder"
 		"npc_dota_hero_legion_commander"                                                  "Human Builder"
-
+		"npc_dota_hero_tinker"								"Mechanical Builder"
+		
 		// ******************** UNITS ********************
 		"dire_boss"                                                                       "Dire King"
 		"radiant_boss"                                                                    "Radiant King"
