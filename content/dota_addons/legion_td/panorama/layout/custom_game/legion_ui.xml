@@ -32,7 +32,13 @@
         <Panel hittest="false" class="ShopButtonPanel">
           <Button id="ShopButton" onactivate="OnShopButtonPressed()">
             <Image src="file://{images}/custom_game/shop.psd" />
-            <Label id="Shoplabel" text="#TangoShop" />
+            <Label id="Shoplabel" class="ButtonLabel" text="#TangoShop" />
+          </Button>
+        </Panel>
+        <Panel hittest="false" class="SkipButtonPanel" onactivate="OnSkipButtonPressed()">
+          <Button id="SkipButton">
+            <Image src="file://{images}/custom_game/skip.psd" /> 
+            <Label id="SkipLabel" class="ButtonLabel" text="#Skip"/>
           </Button>
         </Panel>
         <Panel hitetst="true" id="ShopPanel">

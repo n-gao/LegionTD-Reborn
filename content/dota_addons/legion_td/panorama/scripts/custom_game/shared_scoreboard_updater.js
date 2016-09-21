@@ -51,9 +51,11 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 			ultStateOrTime = Game.GetPlayerUltimateStateOrTime( playerId );
 			_ScoreboardUpdater_SetTextSafe( playerPanel, "TangoIncome", morePlayerInfo.tango_income );
 			_ScoreboardUpdater_SetTextSafe( playerPanel, "GoldIncome", morePlayerInfo.gold_income );
+			_ScoreboardUpdater_SetTextSafe( playerPanel, "TowerValue", morePlayerInfo.towerValue);
 		} else {
 			_ScoreboardUpdater_SetTextSafe( playerPanel, "TangoIncome", "-" );
 			_ScoreboardUpdater_SetTextSafe( playerPanel, "GoldIncome", "-" );
+		_ScoreboardUpdater_SetTextSafe( playerPanel, "TowerValue", "-" );
 		}
 		goldValue = playerInfo.player_gold;
 
@@ -64,7 +66,6 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 		_ScoreboardUpdater_SetTextSafe( playerPanel, "Level", playerInfo.player_level );
 		_ScoreboardUpdater_SetTextSafe( playerPanel, "Kills", Players.GetLastHits(playerId) );
 		_ScoreboardUpdater_SetTextSafe( playerPanel, "Leaks", morePlayerInfo.leaks );
-		_ScoreboardUpdater_SetTextSafe( playerPanel, "TowerValue", morePlayerInfo.towerValue);
 
 		var playerPortrait = playerPanel.FindChildInLayoutFile( "HeroIcon" );
 		if ( playerPortrait )

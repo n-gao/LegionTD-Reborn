@@ -1,6 +1,6 @@
 ﻿"lang"
 {
-	"Language"		"English"
+	"Language"		"Spanish"
 	"Tokens"
 	{		
 		"addon_game_name"								"Legion TD Reborn"

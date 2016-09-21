@@ -10219,6 +10219,146 @@
 			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 			"AbilityTextureName"            "treant_natures_guise"
 		}
+	"randombuilder_get_random_tier1"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "rubick_spell_steal"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"20"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"abilities/randombuilder/get_random.lua"
+	      "Function"		"GetRandomUnit"
+	    }
+	  }
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "tier"    "1"
+	    }
+	  }
+	}
+	"randombuilder_get_random_tier2"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "rubick_spell_steal"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"40"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"abilities/randombuilder/get_random.lua"
+	      "Function"		"GetRandomUnit"
+	    }
+	  }
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "tier"    "2"
+	    }
+	  }
+	}
+	"randombuilder_get_random_tier3"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "rubick_spell_steal"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"60"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"abilities/randombuilder/get_random.lua"
+	      "Function"		"GetRandomUnit"
+	    }
+	  }
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "tier"    "3"
+	    }
+	  }
+	}
+	"randombuilder_get_random_tier4"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "rubick_spell_steal"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"80"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"abilities/randombuilder/get_random.lua"
+	      "Function"		"GetRandomUnit"
+	    }
+	  }
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "tier"    "4"
+	    }
+	  }
+	}
+	"randombuilder_get_random_tier5"
+	{
+	  "BaseClass"                 "ability_datadriven"
+	  "AbilityTextureName"      "rubick_spell_steal"
+	  "MaxLevel"             "1"
+	
+	  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	  "AbilityGoldCost"				"100"
+	  "AbilityCooldown"		    "1.0"
+	  "AbilityCastRange"			"125"
+	  "OnSpellStart"
+	  {
+	    "RunScript"
+	    {
+	      "ScriptFile"	"abilities/randombuilder/get_random.lua"
+	      "Function"		"GetRandomUnit"
+	    }
+	  }
+		"AbilitySpecial"
+		{
+	    "01"
+	    {
+	      "var_type"              "FIELD_INTEGER"
+	      "tier"    "5"
+	    }
+	  }
+	}
 	"insta_kill" {
 		"BaseClass"             		"ability_datadriven"
 		"AbilityTextureName"				"lina_laguna_blade"

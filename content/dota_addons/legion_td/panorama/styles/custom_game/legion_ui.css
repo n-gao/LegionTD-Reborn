@@ -125,7 +125,23 @@
   margin-right: 5px;
 }
 
-#Shoplabel {
+
+.SkipButtonPanel {
+  horizontal-align: right;
+  vertical-align: bottom;
+  height: 40px;
+  width: 100px;
+  visibility: visible;
+  box-shadow: #54545480 0px 0px 8px 0px;
+  border-radius: 3px;
+  margin-right: 105px;
+}
+
+.SkipPressed .SkipButtonPanel  {
+  visibility: collapse;
+}
+
+.ButtonLabel {
   horizontal-align: center;
   vertical-align: middle;
   color: white;
