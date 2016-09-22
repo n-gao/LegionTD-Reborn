@@ -41,7 +41,7 @@
 
 	// Bounds
 	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
   "CollisionSize"					"40"
 	"RingRadius"            "25"
 
