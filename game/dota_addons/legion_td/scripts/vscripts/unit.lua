@@ -292,6 +292,8 @@ function UnitSpawn(event)
     playerid = event.unit:GetPlayerOwnerID()
     player = Game:FindPlayerWithID(playerid)
     player:SendErrorCode(LEGION_ERROR_BETWEEN_ROUNDS)
+    local gold = event.ability:GetGoldCost(event.ability:GetLevel())
+    player.hero:ModifyGold(gold, true, DOTA_ModifyGold_Unspecified)
     return
   end
   local unit = Unit.new(Unit.GetUnitNameByID(event.ability:GetSpecialValueFor("unitID")),
