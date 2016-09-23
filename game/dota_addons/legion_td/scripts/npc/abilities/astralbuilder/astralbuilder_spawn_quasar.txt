@@ -1,4 +1,3 @@
-//Doyle3694
 "astralbuilder_spawn_quasar"
 {
 	"BaseClass"						"ability_datadriven"

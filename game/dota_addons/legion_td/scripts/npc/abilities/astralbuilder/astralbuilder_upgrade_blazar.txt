@@ -1,4 +1,3 @@
-//Doyle3694
 "astralbuilder_upgrade_blazar"
 {
 	"BaseClass"					"ability_datadriven"

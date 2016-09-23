@@ -3,6 +3,8 @@ print("Commands.lua")
 CommandEngine = {}
 CommandEngine.Commands = {}
 CommandEngine.Variables = {}
+CommandEngine.prefix = "-"
+
 function CommandEngine:CheckCommand( keys )
 	if not CommandEngine.initialized then CommandEngine.init() end
 	if string.sub(keys.text, 1, #CommandEngine.prefix) then
@@ -21,7 +23,6 @@ function CommandEngine:CheckCommand( keys )
 end
 
 function CommandEngine.init()
-	CommandEngine.prefix = "-"
 	CommandEngine.initialized = true
 
 	if GameRules:IsCheatMode() then
@@ -33,6 +34,10 @@ end
 if GameRules:IsCheatMode() then
 	function CommandEngine.Commands.tango(instance, submessage, keys)
 		instance.vPlayers[keys.playerid+1].player:AddTangos(tonumber(submessage) or 0)
+	end
+	function CommandEngine.Commands.reinitialize(instance, submessage, keys)
+		print("Reinitialized!")
+		dofile("commands")
 	end
 end
 
@@ -47,3 +52,7 @@ function CommandEngine.Commands.settings(instance, submessage, keys)
 	end
 end
 CommandEngine.Commands.gamemode = CommandEngine.Commands.settings
+
+function CommandEngine.Commands.test(instance, submessage, keys)
+	
+end
