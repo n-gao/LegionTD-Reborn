@@ -31,7 +31,7 @@ function WaveSpawner:Spawn()
   local count = 1
   --Spawn normal Wave
   for key,value in pairs(spawners) do
-    --if not value.isActive then return end
+    if not value.isActive then return end
     local polar = 1
     local spacing = 128
     if value.spawnpoint:GetAbsOrigin().y < 0 then polar = -1 end
