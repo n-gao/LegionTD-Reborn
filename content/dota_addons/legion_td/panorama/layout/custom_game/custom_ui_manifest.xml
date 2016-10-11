@@ -37,5 +37,6 @@
     <CustomUIElement type="HudTopBar" layoutfile="file://{resources}/layout/custom_game/multiteam_top_scoreboard.xml" />
 		<CustomUIElement type="GameInfo" layoutfile="file://{resources}/layout/custom_game/game_info_panel.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/barebones_notifications.xml" />
+    <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/waveinfo_notifications.xml" />
   </Panel>
 </root>
