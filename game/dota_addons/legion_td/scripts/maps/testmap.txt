@@ -288,7 +288,7 @@
     "Unit"
     {
       "NPCName"             "unit_hydra"
-      "UnitCount"           "11"
+      "UnitCount"           "7"
     }
   }
   "Round9"

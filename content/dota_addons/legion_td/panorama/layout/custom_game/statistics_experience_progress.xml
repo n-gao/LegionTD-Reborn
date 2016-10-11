@@ -1,0 +1,14 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/statistics.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/utils.js"/>
+        <include src="file://{resources}/scripts/custom_game/steam_id_getter.js"/>
+        <include src="file://{resources}/scripts/custom_game/statistics_experience_progress.js" />
+    </scripts> 
+    <Panel class="LegionProgressBackground">
+        <Panel id="ExperienceBar" class="ExpProgressBar"/>
+        <Label id="ExperienceLabel" class="ExpProgressNumber"/>
+    </Panel>
+</root>

@@ -13,8 +13,8 @@
 	"Ability1"							"radiance aura"
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "1"
-	"MagicalResistance"     "0"
+	"ArmorPhysical"         "18"
+	"MagicalResistance"     "25"
 
 	// Attack
 	//----------------------------------------------------------------
@@ -31,7 +31,7 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
-
+	"Legion_Fraction"		"income"
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "27"
@@ -39,7 +39,7 @@
 
 	// Bounds
 	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
   "CollisionSize"					"40"
 	"RingRadius"            "25"
 

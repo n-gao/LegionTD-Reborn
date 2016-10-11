@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"ArmorPhysical"         "3"
 	"MagicalResistance"     "0"
@@ -20,12 +21,14 @@
 	"AttackRate"            "0.3"
 	"AttackAnimationPoint"  "0.2"
 	"AttackAcquisitionRange" "850"
-	"AttackRange"           "380"
+	"AttackRange"           "500"
 	"ProjectileModel"       "particles/items_fx/desolator_projectile.vpcf"
 	"ProjectileSpeed"       "2000"
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Experience"		"20"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "5.0"
 	"BountyGoldMax"         "5.0"

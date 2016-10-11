@@ -1,6 +1,10 @@
-EXPORTS = {}
+require("ai/ai_core")
 
-EXPORTS.Init = function( self )
+function Spawn(entity)
+    InitAI(thisEntity)
+end
+
+function InitAI( self )
 	self:SetContextThink( "init_think", function()
 		self:FindAbilityByName("bane_brain_sap"):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
@@ -11,5 +15,3 @@ EXPORTS.Init = function( self )
 		self:SetContextThink( "ai_voidelemental.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )
 end
-
-return EXPORTS

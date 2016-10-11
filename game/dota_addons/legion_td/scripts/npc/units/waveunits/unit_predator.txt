@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"ArmorPhysical"         "4"
 	"MagicalResistance"     "0"
@@ -25,6 +26,8 @@
 	"ProjectileSpeed"       "0"
 	"Legion_AttackType"		"pierce"
 	"Legion_DefendType"		"medium"
+	"Legion_Experience"		"30"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "6.0"
 	"BountyGoldMax"         "6.0"

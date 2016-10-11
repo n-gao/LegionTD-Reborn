@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/elementalbuilder/ai_thundergod.lua"
 
 	"Ability4"							"sell"
 	"Ability3"				"ability_empty_3"
@@ -35,6 +36,7 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Fraction"		"elemental"
 
 	// Bounty
 	//----------------------------------------------------------------

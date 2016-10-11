@@ -1,0 +1,9 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/main_hud.css" />
+    <include src="file://{resources}/styles/custom_game/shop.css" />
+  </styles>
+  <Panel hittest="false" class="ShopUnitRowPanel">
+    <Panel class="UnitRow" />
+  </Panel>
+</root>

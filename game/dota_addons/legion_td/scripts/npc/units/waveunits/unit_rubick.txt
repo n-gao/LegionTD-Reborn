@@ -7,6 +7,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/waves/ai_rubick.lua"
 
 	"Ability1"							"ogre_magi_ignite"
 
@@ -26,6 +27,8 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Experience"		"105"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "5.0"
 	"BountyGoldMax"         "5.0"

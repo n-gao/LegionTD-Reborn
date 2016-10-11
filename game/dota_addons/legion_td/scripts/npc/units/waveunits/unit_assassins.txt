@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_riki.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"assassin_backstab"
 
@@ -28,6 +29,8 @@
 
 	"Legion_AttackType"		"pierce"
 	"Legion_DefendType"		"light"
+	"Legion_Experience"		"35"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "5.0"
 	"BountyGoldMax"         "5.0"

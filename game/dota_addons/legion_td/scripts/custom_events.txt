@@ -36,4 +36,17 @@
 		"value"				"bool"
 	}
 
+	"request_stored_data"
+	{
+		"playerID"			"short"
+		"steamID"			"uint64"
+	}
+
+	"request_ranking"
+	{
+		"playerID"			"short"
+		"attribute"			"string"
+		"from"				"long"
+		"to"				"long"
+	}
 }

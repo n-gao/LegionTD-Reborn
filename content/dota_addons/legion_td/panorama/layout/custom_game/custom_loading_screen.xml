@@ -10,5 +10,5 @@
 		<Panel id="seq" >
 			<Image id="seq_bg" class="SeqBg" src="file://{images}/custom_game/loading_screen/loading_screen.png" />
 		</Panel>
-	</Panel>
+	</Panel> 
 </root>

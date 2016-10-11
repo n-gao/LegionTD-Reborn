@@ -9,11 +9,12 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_chen.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							""
 
 	"ArmorPhysical"         "10"
-	"MagicalResistance"     "0"
+	"MagicalResistance"     "10"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
@@ -28,6 +29,12 @@
 
 	"BountyGoldMin"         "6.0"
 	"BountyGoldMax"         "6.0"
+
+
+	"Legion_AttackType"   "boss"
+	"Legion_DefendType"   "boss"
+	"Legion_Experience"		"150"
+	"Legion_Fraction"		"end_wave"
 
 	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
 	"CollisionSize"					"50"

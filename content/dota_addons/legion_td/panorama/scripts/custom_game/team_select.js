@@ -9,7 +9,7 @@ var g_PlayerPanels = [];
 
 var g_TEAM_SPECATOR = 1;
 
-var min_wait_time = 10;
+var min_wait_time = 0;
 
 var startTime = Game.GetGameTime();
 
@@ -364,5 +364,4 @@ function UpdateTimer()
 
 	// Register a listener for the event which is broadcast whenever a player attempts to pick a team
 	$.RegisterForUnhandledEvent( "DOTAGame_PlayerSelectedCustomTeam", OnPlayerSelectedTeam );
-
 })();

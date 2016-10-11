@@ -15,7 +15,7 @@
 	// Armor
 	//----------------------------------------------------------------
 	"ArmorPhysical"         "10"
-	"MagicalResistance"     "0"
+	"MagicalResistance"     "25"
 
 	// Attack
 	//----------------------------------------------------------------
@@ -23,7 +23,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "125.0"
 	"AttackDamageMax"       "137.5"
-	"AttackRate"            "1.5"
+	"AttackRate"            "1.1"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "125"
@@ -32,6 +32,7 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"light"
+	"Legion_Fraction"		"income"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -40,7 +41,7 @@
 
 	// Bounds
 	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
   "CollisionSize"					"40"
 	"RingRadius"            "25"
 

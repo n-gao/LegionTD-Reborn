@@ -84,9 +84,6 @@ function Unit.GetUnitNameByID(id)
   elseif id == 120 then return "tower_humanbuilder_soundmaster"
   elseif id == 121 then return "tower_humanbuilder_spearman"
   elseif id == 122 then return "tower_humanbuilder_tactician"
-  
-      elseif id == 150 then return "tower_mechanicalbuilder_vacuum_cleaner"
-      elseif id == 151 then return "tower_mechanicalbuilder_catapult"
 
   elseif id == 1001 then return "incomeunit_kobold"
   elseif id == 1002 then return "incomeunit_hill_troll_shaman"
@@ -139,7 +136,7 @@ end
 function Unit:Spawn()
   --PrecacheUnitByNameAsync(self.npcclass, function ()
     self.npc = CreateUnitByName(self.npcclass, self.spawnposition, false, nil,
-    self.owner, self.owner:GetTeamNumber())
+      self.owner, self.owner:GetTeamNumber())
     if self.spawnposition.y > 0 then
       self.npc:SetAngles(0, 90, 0)
     else
@@ -154,43 +151,6 @@ function Unit:Spawn()
   --end
   --)
 end
-
-
-
-function Unit:ApplyAI()
-  local name = self:GetUnitName()
-  if name == "tower_naturebuilder_broodmother" then ai_broodmother.Init(self)
-  elseif name == "tower_naturebuilder_big_centaur" then ai_bigcentaur.Init(self)
-  elseif name == "tower_elementalbuilder_earthgod" then return
-  elseif name == "tower_elementalbuilder_fireelemental" then ai_fireelemental.Init(self)
-  elseif name == "tower_elementalbuilder_firegod" then ai_firegod.Init(self)
-  elseif name == "tower_elementalbuilder_firewarrior" then return
-  elseif name == "tower_elementalbuilder_thunderelemental" then ai_thunderelemental.Init(self)
-  elseif name == "tower_elementalbuilder_thundergod" then ai_thundergod.Init(self)
-  elseif name == "tower_elementalbuilder_thunderwarrior" then ai_thunderwarrior.Init(self)
-  elseif name == "tower_elementalbuilder_voidelemental" then ai_voidelemental.Init(self)
-  elseif name == "tower_elementalbuilder_voidgod" then return
-  elseif name == "tower_elementalbuilder_watergod" then return
-  elseif name == "tower_elementalbuilder_waterwarrior" then ai_waterwarrior.Init(self)
-  elseif name == "tower_humanbuilder_footman" then ai_footman.Init(self)
-  elseif name == "tower_humanbuilder_soldier" then ai_soldier.Init(self)
-  elseif name == "tower_humanbuilder_spearman" then ai_spearman.Init(self)
-  elseif name == "tower_humanbuilder_paladin" then return
-  elseif name == "tower_humanbuilder_blademaster" then return
-  elseif name == "tower_humanbuilder_tactician" then return
-  elseif name == "tower_humanbuilder_novice" then return
-  elseif name == "tower_humanbuilder_mage" then return
-  elseif name == "tower_humanbuilder_archmage" then return
-  elseif name == "tower_humanbuilder_archbishop" then return
-  elseif name == "tower_humanbuilder_soundmaster" then return
-  elseif name == "tower_humanbuilder_gyrocopter_mk1" then return
-  elseif name == "tower_humanbuilder_gyrocopter_mk2" then return
-  elseif name == "tower_humanbuilder_futuristic_gyrocopter" then return
-  elseif name == "tower_naturebuilder_treebeard" then return
-  else ai_standard.Init(self)
-  end
-end
-
 
 
 function Unit:RemoveNPC()
@@ -236,7 +196,6 @@ function Unit:Unlock()
         Position = pos, --Optional.  Only used when targeting the ground
         Queue = 0 --Optional.  Used for queueing up abilities
       })
-      self.ApplyAI(self.npc)
     end)
   end
 end
@@ -292,6 +251,8 @@ function UnitSpawn(event)
     playerid = event.unit:GetPlayerOwnerID()
     player = Game:FindPlayerWithID(playerid)
     player:SendErrorCode(LEGION_ERROR_BETWEEN_ROUNDS)
+    local gold = event.ability:GetGoldCost(event.ability:GetLevel())
+    player.hero:ModifyGold(gold, true, DOTA_ModifyGold_Unspecified)
     return
   end
   local unit = Unit.new(Unit.GetUnitNameByID(event.ability:GetSpecialValueFor("unitID")),

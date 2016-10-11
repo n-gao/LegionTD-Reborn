@@ -9,20 +9,21 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
   "Level"                 "6"
   "HealthBarOffset"       "140"
+	"Vscripts"              "ai/waves/ai_king.lua"
 
   "Ability1"							"skeleton_king_hellfire_blast"
   "Ability2"							"skeleton_king_reincarnation"
   "Ability3"              "waveboss_repel"
   "Ability4"              "waveboss_attackspeed"
 
-  "ArmorPhysical"         "15"
+  "ArmorPhysical"         "20"
   "MagicalResistance"     "30"
 
   "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
   "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
   "AttackDamageMin"       "325.0"
   "AttackDamageMax"       "350.0"
-  "AttackRate"            "0.8"
+  "AttackRate"            "0.6"
   "AttackAnimationPoint"  "0.56"
   "AttackAcquisitionRange" "850"
   "AttackRange"           "125"
@@ -31,6 +32,8 @@
 
   "Legion_AttackType"     "boss"
   "Legion_DefendType"     "boss"
+	"Legion_Experience"		"1000"
+	"Legion_Fraction"		"boss"
 
   "BountyGoldMin"         "51.0"
   "BountyGoldMax"         "51.0"
@@ -43,7 +46,7 @@
   "MovementSpeed"         "300"
   "MovementTurnRate"      "0.6"
 
-  "StatusHealth"          "5000"
+  "StatusHealth"          "4000"
   "StatusHealthRegen"     "0"
   "StatusMana"            "1000"
   "StatusManaRegen"       "100"

@@ -32,6 +32,8 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Fraction"		"income"
+	"Legion_Experience"		"40"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -40,7 +42,7 @@
 
 	// Bounds
 	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
   "CollisionSize"					"40"
 	"RingRadius"            "25"
 
@@ -52,7 +54,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "150"
+	"StatusHealth"          "200"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

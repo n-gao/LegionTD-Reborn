@@ -162,10 +162,20 @@ function DuelRound:End()
     self.winningTeam = DOTA_TEAM_BADGUYS
     victoryText = "Dire won the duel and earn "
   end
+
+  --Maybe for future use (last round duel)
   if self.determinWinner then
     GameRules:SetGameWinner(self.winningTeam)
     GameRules:Defeated()
   end
+
+  --Add won duel to stats
+  local winners = Game:GetAllPlayersOfTeam(self.winningTeam)
+  for _,winner in pairs(winners) do
+    winner:WonDuel()
+  end
+
+
   for key, val in pairs(self.EventHandles) do
     StopListeningToGameEvent(val)
   end

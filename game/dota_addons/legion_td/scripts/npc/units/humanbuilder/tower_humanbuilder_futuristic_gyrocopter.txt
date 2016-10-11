@@ -36,6 +36,7 @@
 
 	"Legion_AttackType"		"pierce"
 	"Legion_DefendType"		"medium"
+	"Legion_Fraction"		"human"
 
 
 

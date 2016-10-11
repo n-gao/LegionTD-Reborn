@@ -100,7 +100,7 @@ function GameRound:AddUnitToBeKilled(unit)
 end
 
 
---Jemand wurde getötet
+--Called when a unit dies
 function GameRound:OnEntityKilled(event)
   local killed = EntIndexToHScript(event.entindex_killed)
   if not killed or not self.remainingUnits then

@@ -1,6 +1,10 @@
-EXPORTS = {}
+require("ai/ai_core")
 
-EXPORTS.Init = function( self )
+function Spawn(entity)
+    InitAI(thisEntity)
+end
+
+function InitAI( self )
 	self:SetContextThink( "init_think", function()
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggro
@@ -10,5 +14,3 @@ EXPORTS.Init = function( self )
 		self:SetContextThink( "ai_soldier.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )
 end
-
-return EXPORTS

@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_templar_assassin.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"templar_assassin_psi_blades"
 
@@ -28,6 +29,8 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Experience"		"95"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "6.0"
 	"BountyGoldMax"         "6.0"
