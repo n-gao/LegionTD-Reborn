@@ -85,9 +85,6 @@ function Unit.GetUnitNameByID(id)
   elseif id == 121 then return "tower_humanbuilder_spearman"
   elseif id == 122 then return "tower_humanbuilder_tactician"
 
-  elseif id == 150 then return "tower_mechanicalbuilder_vacuum_cleaner"
-  elseif id == 151 then return "tower_mechanicalbuilder_catapult"
-
   elseif id == 1001 then return "incomeunit_kobold"
   elseif id == 1002 then return "incomeunit_hill_troll_shaman"
   elseif id == 1003 then return "incomeunit_hill_troll_warrior"
