@@ -34,6 +34,7 @@ var LEGION_ERROR_NOT_ENOUGH_FOOD = 3;
 var LEGION_ERROR_TO_CLOSE = 4;
 var LEGION_ERROR_TO_MANY_UPGRADES = 5;
 var LEGION_ERROR_DURING_DUEL = 6;
+var LEGION_ERROR_UNIT_LIMIT_REACHED = 7;
 
 function AddUnit(unit, row) {
 	var unitPanel = $.CreatePanel("Panel", row, unit.name);
@@ -154,6 +155,9 @@ function ErrorMessage(data) {
 		break;
 		case LEGION_ERROR_DURING_DUEL:
 		text = $.Localize("#Error_not_possible_in_last_duel");
+		break;
+		case LEGION_ERROR_UNIT_LIMIT_REACHED:
+		text = $.Localize("#Error_unit_limit_reached");
 		break;
 		default:
 		text = $.Localize("#Error_unknown");

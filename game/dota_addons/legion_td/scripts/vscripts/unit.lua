@@ -88,6 +88,12 @@ function Unit.GetUnitNameByID(id)
       elseif id == 150 then return "tower_mechanicalbuilder_vacuum_cleaner"
       elseif id == 151 then return "tower_mechanicalbuilder_catapult"
 
+  elseif id == 200 then return "tower_xbuilder_baseunit"
+  elseif id == 201 then return "tower_xbuilder_offensiveunit"
+  elseif id == 202 then return "tower_xbuilder_defensiveunit"
+  elseif id == 203 then return "tower_xbuilder_utilityunit"
+  elseif id == 204 then return "tower_xbuilder_abilityunit"
+
   elseif id == 1001 then return "incomeunit_kobold"
   elseif id == 1002 then return "incomeunit_hill_troll_shaman"
   elseif id == 1003 then return "incomeunit_hill_troll_warrior"
@@ -132,6 +138,7 @@ function Unit.new(npcclass, position, owner, foodCost, goldCost)
   self.nextTarget.x = self.spawnposition.x
   table.insert(self.player.units, self)
   self:Spawn()
+  return self
 end
 
 

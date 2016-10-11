@@ -18,7 +18,7 @@
 	"npc_dota_hero_drow_ranger" "0"
 	"npc_dota_hero_earthshaker" "0"
 	"npc_dota_hero_enchantress" "0"
-	"npc_dota_hero_enigma" "0"
+	"npc_dota_hero_enigma" "-1"
 	"npc_dota_hero_faceless_void" "0"
 	"npc_dota_hero_furion" "-1"
 	"npc_dota_hero_juggernaut" "0"

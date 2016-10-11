@@ -65,6 +65,13 @@ RequiredUnits = {
 	"incomeunit_vulture",
 	"incomeunit_wolf",
 
+	--xbuilder
+	"tower_xbuilder_baseunit",
+	"tower_xbuilder_offensiveunit",
+	"tower_xbuilder_defensiveunit",
+	"tower_xbuilder_utilityunit",
+	"tower_xbuilder_abilityunit",
+
 	--Naturebuilder
 	"tower_naturebuilder_bug",
 	"tower_naturebuilder_spider",

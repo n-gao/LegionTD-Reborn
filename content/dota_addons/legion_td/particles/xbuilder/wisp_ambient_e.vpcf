@@ -1,0 +1,115 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 24
+	m_flConstantRadius = 48.0
+	m_nConstantSequenceNumber = 5
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderTrails"
+			m_nSequenceCombineMode = "SEQUENCE_COMBINE_MODE_USE_SEQUENCE_0"
+			m_bAdditive = true
+			m_flOverbrightFactor = 2.0
+			m_hTexture = resource:"materials/particle/particle_cone_gradient_1.vtex"
+			m_bIgnoreDT = true
+			m_flLengthFadeInTime = 0.1
+			m_flMaxLength = 256.0
+			m_flRadiusScale = 0.5
+			m_flFinalTextureScaleV = -1.0
+			m_flFinalTextureOffsetV = 1.0
+			m_vEndTrailTintFactor = [ 1.0, 1.0, 4.0, 0.0 ]
+		},
+	]
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeInSimple"
+			m_flFadeInTime = 0.1
+		},
+		{
+			_class = "C_OP_FadeOutSimple"
+			m_flFadeOutTime = 0.8
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flBias = 0.9
+			m_flEndScale = 0.0
+		},
+		{
+			_class = "C_OP_PositionLock"
+		},
+		{
+			_class = "C_OP_LerpScalar"
+			m_flOutput = 0.0
+			m_nFieldOutput = 10
+		},
+		{
+			_class = "C_OP_MovementRotateParticleAroundAxis"
+			m_bLocalSpace = true
+			m_flRotRate = 64.0
+			m_vecRotAxis = [ 1.0, -2.0, 0.0 ]
+		},
+		{
+			_class = "C_OP_RemapCPtoScalar"
+			m_nCPInput = 10
+			m_nFieldOutput = 16
+			m_flOutputMin = 0.25
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 2.0
+			m_fLifetimeMin = 1.0
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+			m_fSpeedMin = 100000.0
+			m_fSpeedMax = 100000.0
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMax = [ 160, 232, 255, 255 ]
+			m_ColorMin = [ 14, 121, 254, 255 ]
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_INIT_RandomTrailLength"
+			m_flMaxLength = 0.2
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMax = 200
+			m_nAlphaMin = 25
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 64.0
+			m_flRadiusMin = 32.0
+		},
+		{
+			_class = "C_INIT_RemapCPtoVector"
+			m_nCPInput = 15
+			m_nFieldOutput = 6
+			m_vInputMax = [ 255.0, 255.0, 255.0 ]
+			m_vOutputMin = [ 0.2, 0.2, 0.2 ]
+			m_vOutputMax = [ 1.0, 1.0, 1.0 ]
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 6.0
+		},
+	]
+}

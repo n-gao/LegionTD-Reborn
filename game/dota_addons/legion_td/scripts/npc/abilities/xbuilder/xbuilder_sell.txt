@@ -1,0 +1,17 @@
+"xbuilder_sell"
+{
+	"BaseClass"					"ability_datadriven"
+	"AbilityTextureName"		"alchemist_goblins_greed"
+	"MaxLevel"					"1"
+
+	"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityCooldown"			"1.0"
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"		"abilities/xbuilder/xbuilder_unit.lua"
+			"Function"			"sell"
+		}
+	}
+}
