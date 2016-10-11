@@ -14,8 +14,8 @@
 	"Ability1"							"" //
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "1"
-	"MagicalResistance"     "0"
+	"ArmorPhysical"         "10"
+	"MagicalResistance"     "25"
 
 	// Attack
 	//----------------------------------------------------------------
@@ -32,6 +32,7 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Fraction"		"income"
 
 	// Bounty
 	//----------------------------------------------------------------

@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_spirit_breaker.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"ArmorPhysical"         "1"
 	"MagicalResistance"     "0"
@@ -24,6 +25,8 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Experience"		"12"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "4.0"
 	"BountyGoldMax"         "4.0"

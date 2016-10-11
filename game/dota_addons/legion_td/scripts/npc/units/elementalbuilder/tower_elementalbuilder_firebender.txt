@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"				"elementalbuilder_upgrade_fireelemental"
   	"Ability2"				"elementalbuilder_upgrade_firewarrior"
@@ -35,6 +36,7 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Fraction"		"elemental"
 
 	// Bounty
 	//----------------------------------------------------------------

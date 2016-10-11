@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/humanbuilder/ai_soldier.lua"
 
 	"Ability1"							"humanbuilder_upgrade_spearman"
 	"Ability2"							"humanbuilder_upgrade_paladin"
@@ -35,6 +36,7 @@
 	
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"human"
 
 	// Bounty
 	//----------------------------------------------------------------

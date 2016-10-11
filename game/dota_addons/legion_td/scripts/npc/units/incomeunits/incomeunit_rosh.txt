@@ -13,7 +13,7 @@
 	"Ability1"				"rosh_evasion"
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "14"
+	"ArmorPhysical"         "20"
 	"MagicalResistance"     "50"
 
 	// Attack
@@ -22,7 +22,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "225.0"
 	"AttackDamageMax"       "250.0"
-	"AttackRate"            "1.0"
+	"AttackRate"            "0.8"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "125"
@@ -31,6 +31,7 @@
 
 	"Legion_AttackType"		"boss"
 	"Legion_DefendType"		"boss"
+	"Legion_Fraction"		"income"
 
 	// Bounty
 	//----------------------------------------------------------------

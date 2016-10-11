@@ -1,8 +1,12 @@
-EXPORTS = {}
+require("ai/ai_core")
 
 SEARCHING_RADIUS = 300;
 
-EXPORTS.Init = function( self )
+function Spawn(entity)
+    InitAI(thisEntity)
+end
+
+function InitAI( self )
 	self:SetContextThink( "init_think", function()
     self:GetAbilityByIndex(0):SetLevel(4)
 		self.aiThink = aiThinkStandardBuff
@@ -21,9 +25,6 @@ function Bloodlust(self)
 		self:GetAbsOrigin(),
 		SEARCHING_RADIUS)
 	ally = allies[RandomInt(1, #allies)]
-  self:CastAbilityOnTarget(ally, self:GetAbilityByIndex(0), -1)
+  self:CastAbilityOnTarget(ally, self.ability, -1)
   return 1
 end
-
-
-return EXPORTS

@@ -14,7 +14,7 @@
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "1"
+	"ArmorPhysical"         "10"
 	"MagicalResistance"     "100"
 
 	// Attack
@@ -32,6 +32,7 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"income"
 
 	// Bounty
 	//----------------------------------------------------------------

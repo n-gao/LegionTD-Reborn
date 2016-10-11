@@ -59,7 +59,8 @@
 		"legion_game_info_tip04"						"- I don't know."
 		"legion_contributor_creator"						"Creator"
 		"legion_contributor_leader"						"Active Project Leader"
-		"legion_contributor_design"						"Game Design"
+		"legion_constributor_previous_leader"			"Previous Project Leader"
+		"legion_contributor_design"						"Game Designer"
 		"legion_contributor_programming"					"Programmer"
 		"legion_contributor_label"						"Contributors"
 		
@@ -107,6 +108,7 @@
 		"npc_dota_hero_furion"                                                            "Nature Builder"
 		"npc_dota_hero_legion_commander"                                                  "Human Builder"
 		"npc_dota_hero_tinker"								"Mechanical Builder"
+		"npc_dota_hero_rubick"															"Random Builder"
 		
 		// ******************** UNITS ********************
 		"dire_boss"                                                                       "Dire King"
@@ -1393,6 +1395,29 @@
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_split_shot_damage_modifier_tooltip"          "DAMAGE MODIFIER:"
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_split_shot_total_arrow_count"                "TOTAL ARROW COUNT:"
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_split_shot_range"                            "RANGE:"
+
+		"DOTA_Tooltip_ability_treebeard_synergy"                                          "Treebeard Synergy"
+		"DOTA_Tooltip_ability_treebeard_synergy_Description"                              ""
+
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier1"                             "Get Random Tier 1 Unit"
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier1_Description"                 ""
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier1_tier"                        "TIER:"
+
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier2"                             "Get Random Tier 2 Unit"
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier2_Description"                 ""
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier2_tier"                        "TIER:"
+
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier3"                             "Get Random Tier 3 Unit"
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier3_Description"                 ""
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier3_tier"                        "TIER:"
+
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier4"                             "Get Random Tier 4 Unit"
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier4_Description"                 ""
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier4_tier"                        "TIER:"
+
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier5"                             "Get Random Tier 5 Unit"
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier5_Description"                 ""
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier5_tier"                        "TIER:"
 
 	}
 }

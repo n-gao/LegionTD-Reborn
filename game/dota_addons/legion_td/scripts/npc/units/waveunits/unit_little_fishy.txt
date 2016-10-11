@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_slark.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"ArmorPhysical"         "2"
 	"MagicalResistance"     "0"
@@ -26,6 +27,8 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"medium"
+	"Legion_Experience"		"40"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "6.0"
 	"BountyGoldMax"         "6.0"

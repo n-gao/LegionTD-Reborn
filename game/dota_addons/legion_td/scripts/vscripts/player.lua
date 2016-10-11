@@ -7,7 +7,7 @@ function Player.new(plyEntitie, userID)
   local self = Player()
   self.plyEntitie = plyEntitie
   self.teamnumber = self:GetTeamNumber() -- new players don't have a team number so this is worthless here
-  plyEntitie.myPlayer = self
+  if self.plyEntitie ~= nil then plyEntitie.myPlayer = self end
   self.userID = userID
   self.units = {}
   self.tangos = START_TANGO
@@ -21,9 +21,72 @@ function Player.new(plyEntitie, userID)
   self.buildingUpgradeValue = 0
   self.missedSpawns = 0
   self.abandoned = false
+  self.earnedTangos = 0
+  self.experience = 0
+  self.fractionKills = {}
+  self.wonDuels = 0
   return self
 end
 
+function Player.newPlaceHolder()
+  return Player.new(nil, nil)
+end
+
+function Player:GetSteamID()
+  local id = PlayerResource:GetSteamID(self:GetPlayerID())
+  if id ~= -1 then
+    return tostring(id)
+  end
+  return nil
+end
+
+function Player:GetWonDuels()
+  if self.wonDuels == nil then self.wonDuels = 0 end
+  return self.wonDuels
+end
+
+function Player:WonDuel()
+  self.wonDuels = self:GetWonDuels() + 1
+end
+
+function Player:GetKillsOfFraction(fraction)
+  return self.fractionKills[fraction] or 0
+end
+
+function Player:IncreaseKillOfFraction(fraction)
+  self.fractionKills[fraction] = (self.fractionKills[fraction] or 0) + 1
+end
+
+function Player:LinkToStoredData(data)
+  self.storedData = data
+end
+
+function Player:GetExperience()
+  return self.experience or 0
+end
+
+function Player:AddExperience(amount)
+  self.experience = self:GetExperience() + amount
+end
+
+function Player:GetKills()
+  if self.plyEntitie == nil then
+    return 0
+  end
+  return PlayerResource:GetLastHits(self:GetPlayerID())
+end
+
+function Player:GetLeaks()
+  return self.leaks or 0
+end
+
+function Player:IsLinkedToStoredData()
+  return self.storedData ~= nil
+end
+
+function Player:GetEarnedTangos()
+  return self.earnedTangos or 0
+end
 
 function Player:SetPlayerEntitie(plyEntitie, userID)
   self.plyEntitie = plyEntitie
@@ -189,6 +252,7 @@ end
 
 --get team number
 function Player:GetTeamNumber()
+  if self.plyEntitie == nil then return -1 end
   return self.plyEntitie:GetTeamNumber()
 end
 
@@ -209,6 +273,10 @@ end
 function Player:AddTangos(amount)
   self.tangos = self.tangos + amount
   self:RefreshPlayerInfo()
+end
+
+function Player:GetTangos()
+  return self.tangos
 end
 
 
@@ -338,7 +406,7 @@ function Player:CreateTangoTicker()
       if self.tangoAddProgress > 1 then
         self.tangoAddProgress = self.tangoAddProgress - 1
         PopupHealing(self.lane.mainBuilding, self.tangoAddAmount)
-        self:AddTangos(self.tangoAddAmount)
+        self:IncomeTangos(self.tangoAddAmount)
       end
 
       return (1/30)
@@ -346,6 +414,16 @@ function Player:CreateTangoTicker()
   end
 end
 
+function round(num, idp)
+  local mult = 10^(idp or 0)
+  return math.floor(num * mult + 0.5) / mult
+end
+
+function Player:IncomeTangos(amount)
+  amount = round(amount)
+  self.earnedTangos = (self.earnedTangos or 0) + amount
+  self:AddTangos(amount)
+end
 
 
 function Player:SendErrorCode(code)

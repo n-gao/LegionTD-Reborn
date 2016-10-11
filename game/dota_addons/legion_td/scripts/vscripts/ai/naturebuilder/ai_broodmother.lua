@@ -1,6 +1,10 @@
-EXPORTS = {}
+require("ai/ai_core")
 
-EXPORTS.Init = function( self )
+function Spawn(entity)
+    InitAI(thisEntity)
+end
+
+function InitAI( self )
 	self:SetContextThink( "init_think", function()
     self:FindAbilityByName("brood_spawn_spiderlings"):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
@@ -11,5 +15,3 @@ EXPORTS.Init = function( self )
 		self:SetContextThink( "ai_broodmother.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )
 end
-
-return EXPORTS

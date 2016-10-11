@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_huskar.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"huskar_burning_spear"
 	"Ability2"							"huskar_berserkers_blood"
@@ -29,6 +30,8 @@
 
 	"Legion_AttackType"		"pierce"
 	"Legion_DefendType"		"light"
+	"Legion_Experience"		"110"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "6.0"
 	"BountyGoldMax"         "6.0"

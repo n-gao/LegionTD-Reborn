@@ -14,7 +14,7 @@
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "2"
+	"ArmorPhysical"         "5"
 	"MagicalResistance"     "0"
 
 	// Attack
@@ -32,6 +32,8 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"income"
+	"Legion_Experience"		"60"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -52,7 +54,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "450"
+	"StatusHealth"          "500"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

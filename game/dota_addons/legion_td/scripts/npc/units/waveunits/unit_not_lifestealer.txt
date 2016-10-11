@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"skeleton_king_vampiric_aura"
 
@@ -28,6 +29,8 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"light"
+	"Legion_Experience"		"45"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "6.0"
 	"BountyGoldMax"         "6.0"

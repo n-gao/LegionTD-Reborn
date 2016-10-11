@@ -9,13 +9,14 @@
 	"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"harpy_storm_chain_lightning"
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "0"
-	"MagicalResistance"     "0"
+	"ArmorPhysical"         "3"
+	"MagicalResistance"     "20"
 
 	// Attack
 	//----------------------------------------------------------------
@@ -32,6 +33,8 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Fraction"		"income"
+	"Legion_Experience"		"30"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -52,7 +55,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "110"
+	"StatusHealth"          "130"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "120"
 	"StatusManaRegen"       "10"

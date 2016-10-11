@@ -8,6 +8,7 @@
 	"ModelScale"            "0.6"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"ArmorPhysical"         "0"
 	"MagicalResistance"     "0"
@@ -23,6 +24,8 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Experience"		"10"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "4.0"
 	"BountyGoldMax"         "4.0"

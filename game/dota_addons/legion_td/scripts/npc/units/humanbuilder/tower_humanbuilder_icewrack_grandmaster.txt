@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability4"				"sell"
 	"Ability2"				"icewrack_grandmaster_chilled_blood"
@@ -35,6 +36,7 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Fraction"		"human"
 
 	// Bounty
 	//----------------------------------------------------------------

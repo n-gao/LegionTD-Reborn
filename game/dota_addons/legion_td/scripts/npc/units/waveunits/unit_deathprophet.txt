@@ -7,11 +7,12 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/waves/ai_deathprophet.lua"
 
 	"Ability1"							"death_prophet_exorcism"
 
-	"ArmorPhysical"         "10"
-	"MagicalResistance"     "0"
+	"ArmorPhysical"         "20"
+	"MagicalResistance"     "30"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
@@ -26,6 +27,7 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Experience"		"500"
 
 	"BountyGoldMin"         "25.0"
 	"BountyGoldMax"         "25.0"
@@ -38,7 +40,7 @@
 	"MovementSpeed"         "300"
 	"MovementTurnRate"      "0.6"
 
-	"StatusHealth"          "2200"
+	"StatusHealth"          "2800"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "400"
 	"StatusManaRegen"       "20"

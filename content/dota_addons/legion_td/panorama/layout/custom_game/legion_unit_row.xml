@@ -1,8 +1,0 @@
-<root>
-  <styles>
-    <include src="file://{resources}/styles/custom_game/legion_ui.css" />
-  </styles>
-  <Panel hittest="false" class="ShopUnitRowPanel">
-    <Panel class="UnitRow" />
-  </Panel>
-</root>

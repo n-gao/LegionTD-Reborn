@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"brewmaster_drunken_brawler"
 
@@ -28,6 +29,7 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"medium"
+	"Legion_Experience"		"130"
 
 	"BountyGoldMin"         "6.0"
 	"BountyGoldMax"         "6.0"

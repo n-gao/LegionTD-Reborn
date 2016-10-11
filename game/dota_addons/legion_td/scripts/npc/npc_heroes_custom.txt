@@ -195,7 +195,7 @@
 		"Ability5"				"randombuilder_get_random_tier5"
 	  "Ability6"        ""
 	  "Ability7"        ""
-	  "Ability9"				""
+	  "Ability9"				"randombuilder_passive"
 	
 		"AttributeBaseStrength"	"0"
 		"AttributeBaseAgility"	"0"

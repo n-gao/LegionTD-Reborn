@@ -23,7 +23,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "56.25"
 	"AttackDamageMax"       "62.5"
-	"AttackRate"            "0.9"
+	"AttackRate"            "0.8"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "125"
@@ -32,6 +32,8 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"income"
+	"Legion_Experience"		"75"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -52,7 +54,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "475"
+	"StatusHealth"          "550"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

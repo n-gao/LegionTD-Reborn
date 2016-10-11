@@ -32,6 +32,8 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Fraction"		"income"
+	"Legion_Experience"		"40"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -52,7 +54,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "150"
+	"StatusHealth"          "200"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

@@ -7,6 +7,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/waves/ai_necro_replacement.lua"
 
 	"Ability1"							"bloodseeker_bloodrage"
 
@@ -17,7 +18,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "62.5"
 	"AttackDamageMax"       "75.0"
-	"AttackRate"            "0.75"
+	"AttackRate"            "0.55"
 	"AttackAnimationPoint"  "0.2"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "128"
@@ -26,6 +27,8 @@
 
 	"Legion_AttackType"		"pierce"
 	"Legion_DefendType"		"medium"
+	"Legion_Experience"		"90"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "5.0"
 	"BountyGoldMax"         "5.0"
@@ -38,7 +41,7 @@
 	"MovementSpeed"         "300"
 	"MovementTurnRate"      "0.6"
 
-	"StatusHealth"          "450"
+	"StatusHealth"          "500"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

@@ -1,3 +1,6 @@
+require("experience")
+require("playerdata")
+
 if Game == nil then
   Game = class({})
 end
@@ -13,17 +16,21 @@ CHECKING_INTERVALL = 1
 function Game.new()
   local self = Game()
   Game = self
+  self.storage = require("libs/storage")
   ListenToGameEvent('npc_spawned', Dynamic_Wrap(Game, 'OnNPCSpawned'), self)
   ListenToGameEvent('player_connect_full', Dynamic_Wrap(Game, 'OnConnectFull'), self)
   ListenToGameEvent('player_reconnected', Dynamic_Wrap(Game, 'OnPlayerReconnect'), self)
   ListenToGameEvent('player_disconnect', Dynamic_Wrap(Game, 'OnPlayerDisconnect'), self)
   self.players = {}
+  self.playerDatas = {}
   self.sendRadiant = {}
   self.sendDire = {}
   self.sendLeaderRadiant = 1 -- we'll rotate who gets the biggest send each wave
   self.sendLeaderDire = 1 -- we'll rotate who gets the biggest send each wave
+  self.endOfRoundListeners = {}
   self.UnitKV = LoadKeyValues("scripts/npc/npc_units_custom.txt")
   self.DamageKV = LoadKeyValues("scripts/damage_table.kv")
+  self.HeroKV = LoadKeyValues("scripts/npc/npc_heroes_custom.txt")
   GameRules:GetGameModeEntity():SetDamageFilter(Dynamic_Wrap(Game, "DamageFilter"), Game)
   GameRules:GetGameModeEntity():SetExecuteOrderFilter(Dynamic_Wrap(Game, "OrderFilter"), Game)
 
@@ -47,6 +54,8 @@ function Game.new()
   CustomGameEventManager:RegisterListener("upgarde_king", Dynamic_Wrap(Game, "UpgradeKing"))
   CustomGameEventManager:RegisterListener("vote_option_clicked", Dynamic_Wrap(Game, "VoteOptionClicked"))
   CustomGameEventManager:RegisterListener("skip_pressed", Dynamic_Wrap(Game, "SkipPressed"))
+  CustomGameEventManager:RegisterListener("request_stored_data", Dynamic_Wrap(Game, "RequestStoredData"))
+  CustomGameEventManager:RegisterListener("request_ranking", Dynamic_Wrap(Game, "RequestRanking"))
 
   return self
 end
@@ -271,6 +280,7 @@ function Game:Start()
   self:CreateGameTimer()
   -- GameRules:GetGameModeEntity():SetThink("OnThink", self, "Check", 0)
   self:Initialize()
+  self:SaveDataAtEnd()
 end
 
 function Game:CreateGameTimer()
@@ -386,6 +396,9 @@ function Game:RoundFinished()
         player:Income(round.bounty)
       end
     end
+  end
+  for _,listener in pairs(self.endOfRoundListeners) do
+    listener()
   end
   self.IncreaseRound()
   self.gameState = GAMESTATE_PREPARATION
@@ -507,7 +520,7 @@ function Game:OnNPCSpawned(key)
       if Game.UnitKV[npc:GetUnitName()] then
         local attack_type = Game.UnitKV[npc:GetUnitName()]["Legion_AttackType"] or "none"
         local defend_type = Game.UnitKV[npc:GetUnitName()]["Legion_DefendType"] or "none"
-        print ("unit spawned with " .. attack_type .. "/" .. defend_type)
+        --print ("unit spawned with " .. attack_type .. "/" .. defend_type)
         npc:AddNewModifier(npc, nil, "modifier_attack_" .. attack_type .. "_lua", {})
         npc:AddNewModifier(npc, nil, "modifier_defend_" .. defend_type .. "_lua", {})
       end
@@ -631,6 +644,26 @@ function Game:OrderFilter(keys)
   return true
 end
 
+
+function Game:FindPlayerWithSteamID(steamID)
+  for _,player in pairs(self.players) do
+    if tostring(player:GetSteamID()) == tostring(steamID) then
+      return player
+    end
+  end
+  return nil
+end
+
+
+function Game:GetAllPlayersOfTeam(id)
+  local result = {}
+  for _,player in pairs(self.players) do
+    if (player:GetTeamNumber() == id) then
+      table.insert(result, player)
+    end
+  end
+  return result
+end
 
 
 function Game:FindPlayerWithID(id)
@@ -803,7 +836,18 @@ function Game:SkipPressed(data)
   local player = Game:FindPlayerWithID(lData.playerID)
   player.wantsSkip = true
   print(lData.playerID.." wants to skip waiting time.")
+  Say(nil, Game:CountSkipvotes().." out of "..#Game.players.." want to skip.", false)
   Game:CheckSkip()
+end
+
+function Game:CountSkipvotes()
+  local result = 0
+  for _,player in pairs(self.players) do
+    if (player.wantsSkip) then
+      result = result + 1
+    end
+  end
+  return result
 end
 
 function Game:CheckSkip() 
@@ -960,6 +1004,112 @@ end
 
 function Game:DistributeMissedTangos(missedTime)
   for _,player in pairs(self.players) do
-    player:AddTangos(player:GetTangoIncomeIn(missedTime))
+    player:IncomeTangos(player:GetTangoIncomeIn(missedTime))
   end
+end
+
+function Game:CreatePlayerDataFor(playerID)
+  local player = Game:FindPlayerWithID(playerID)
+  if (player == nil) then return end
+  PlayerData.CreateToPlayer(player, function(result, success)
+      if success then
+        Game:RequestStoredData({playerID = playerID, steamID = player:GetSteamID()})
+      else
+        print("Failure at creating new Playerdataset!")
+      end
+    end)
+end
+
+function Game:SendStoredData(playerID, steamID)
+  local data = PlayerData.Get(steamID):GetToStoredData()
+  data.steamID = steamID
+  local player = Game:FindPlayerWithID(playerID)
+  if (player == null) then 
+    Warning("StoredData: Cant find player "..playerID.."!")
+    return 
+  end
+  local plyEntitie = player.plyEntitie
+  CustomGameEventManager:Send_ServerToPlayer(plyEntitie, "send_stored_data", data)
+end
+
+function Game:RequestStoredData(data)
+  local lData = {
+    playerID = data.playerID,
+    steamID = data.steamID
+  }
+  local playerToSteamID = Game:FindPlayerWithSteamID(lData.steamID)
+  Game.storage:GetPlayerData(lData.steamID, function(result, success)
+    if success == false then
+      Game:CreatePlayerDataFor(lData.playerID)
+      return
+    end
+    PlayerData.AddOrUpdate(result, playerToSteamID, lData.steamID)
+    Game:SendStoredData(lData.playerID, lData.steamID)
+  end)
+end
+
+function Game:ConvertStoredData(data)
+  local result = {}
+  for k,val in pairs(data) do
+    result[k] = {}
+    result[k].SteamId = val.SteamId
+    reuslt[k].Rank = val.Rank
+    result[k].Data = PlayerData.AddOrUpdate(val.Data, nil, val.SteamId)
+  end
+end
+
+function Game:RequestRanking(data)
+  local lData = {
+    playerID = data.playerID,
+    attribute = data.attribute,
+    from = data.from,
+    to = data.to
+  }
+  Game.storage:GetRanking(lData.attribute, lData.from, lData.to, function(result, success) 
+      local sendData = Game:ConvertStoredData(result)
+      CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerID), sendData)
+    end)
+end
+
+function Game:SaveDataAtEnd()
+  HookSetWinnerFunction(function(gameRules, team)
+    for _,player in pairs(self.players) do
+      if player:GetTeamNumber() == team then
+        player.wonGame = true
+      else
+        player.lostGame = true
+      end
+      local data = player:GetToStoredData()
+      self.storage:SavePlayerData(player:GetSteamID(), data)
+    end
+  end)
+end
+
+function Game:GetAllFractions()
+  if Game.fractions ~= nil then return Game.fractions end
+  Game.fractions = {}
+  for _,unit in pairs(Game.UnitKV) do
+    local fraction = unit.Legion_Fraction or "other"
+    Game.fractions[fraction] = true
+  end
+  return Game.fractions
+end
+
+function Game:GetAllBuilders()
+   self.heroList = self.heroList or LoadKeyValues("scripts/npc/herolist.txt")
+   local result = {}
+   for builder, data in pairs(self.HeroKV) do
+    if (self.heroList[data.override_hero] or 0) ~= 0 then
+      result[builder] = data.override_hero
+    end
+   end
+   return result
+end
+
+function HookSetWinnerFunction(callback)
+    local oldSetGameWinner = GameRules.SetGameWinner
+    GameRules.SetGameWinner = function(gameRules, team)
+        callback(gameRules, team)
+        oldSetGameWinner(gameRules, team)
+    end
 end

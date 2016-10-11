@@ -90,7 +90,6 @@ function WaveSpawner:Spawn()
         creep:Heal(self.healthBonus, nil)
         creep:SetBaseDamageMin(creep:GetBaseDamageMin() + self.dmgBonus)
         creep:SetBaseDamageMax(creep:GetBaseDamageMax() + self.dmgBonus)
-        self.ApplyAI(creep)
         self.ApplyHardMode(creep)
       end
     end
@@ -113,18 +112,6 @@ function WaveSpawner.ApplyHardMode(creep)
 
   creep:SetBaseDamageMin(creep:GetBaseDamageMin() * HARD_MODE_DAMAGE_MULTIPLIER)
   creep:SetBaseDamageMax(creep:GetBaseDamageMax() * HARD_MODE_DAMAGE_MULTIPLIER)
-end
-
-function WaveSpawner.ApplyAI(creep)
-  local name = creep:GetUnitName()
-  if name == "unit_techies" then ai_techies.Init(creep)
-  elseif name == "unit_dragon" then ai_dragon.Init(creep)
-  elseif name == "unit_deathprophet" then ai_deathprophet.Init(creep)
-  elseif name == "unit_ogre" then ai_ogre.Init(creep)
-  elseif name == "unit_rubick" then ai_rubick.Init(creep)
-  elseif name == "unit_necro_replacement" then ai_necro_replacement.Init(creep)
-  else ai_standard.Init(creep)
-  end
 end
 
 function WaveSpawner:SendIncomingUnits(team)
@@ -269,7 +256,6 @@ function WaveSpawner:SendIncomingUnits(team)
         unit.nextTarget = lane.nextWaypoint
         unit.lastWaypoint = lane.lastWaypoint
         unit.lane = spawners[theLane]
-        self.ApplyAI(unit)
         self.gameRound:AddUnitToBeKilled(unit)
         k = k + 1
       end)

@@ -7,6 +7,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/waves/ai_techies.lua"
 
 	"Ability1"							"techies_suicide_datadriven"
 
@@ -28,6 +29,7 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"medium"
+	"Legion_Experience"		"100"
 
 	"BountyGoldMin"         "3.0"
 	"BountyGoldMax"         "3.0"

@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability4"							"sell"
 	"Ability1"							"weaver_geminate_attack"
@@ -35,6 +36,7 @@
 
 	"Legion_AttackType"		"pierce"
 	"Legion_DefendType"		"medium"
+	"Legion_Fraction"		"nature"
 
 	// Bounty
 	//----------------------------------------------------------------

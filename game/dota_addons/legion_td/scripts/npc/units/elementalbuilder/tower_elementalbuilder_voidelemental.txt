@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/elementalbuilder/ai_voidelemental.lua"
 
 	"Ability1"				"elementalbuilder_upgrade_voidgod"
 	"Ability2"				"bane_brain_sap"
@@ -35,6 +36,7 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
+	"Legion_Fraction"		"elemental"
 
 	// Bounty
 	//----------------------------------------------------------------

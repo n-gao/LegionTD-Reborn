@@ -7,6 +7,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"abaddon_borrowed_time"
 
@@ -15,9 +16,9 @@
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "15.0"
-	"AttackDamageMax"       "17.5"
-	"AttackRate"            "0.55"
+	"AttackDamageMin"       "14.0"
+	"AttackDamageMax"       "16.0"
+	"AttackRate"            "0.65"
 	"AttackAnimationPoint"  "0.2"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "90"
@@ -26,6 +27,8 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Experience"		"80"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "8.0"
 	"BountyGoldMax"         "8.0"
@@ -38,7 +41,7 @@
 	"MovementSpeed"         "300"
 	"MovementTurnRate"      "0.6"
 
-	"StatusHealth"          "450"
+	"StatusHealth"          "550"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

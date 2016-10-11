@@ -7,6 +7,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/waves/ai_ogre.lua"
 
 	"Ability1"							"ogre_magi_bloodlust"
 
@@ -26,6 +27,8 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"heavy"
+	"Legion_Experience"		"130"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "5.0"
 	"BountyGoldMax"         "5.0"

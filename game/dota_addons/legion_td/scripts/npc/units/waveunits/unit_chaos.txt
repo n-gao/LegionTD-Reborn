@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_chaos_knight.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"chaos_knight_chaos_strike"
 
@@ -28,6 +29,7 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Experience"		"85"
 
 	"BountyGoldMin"         "6.0"
 	"BountyGoldMax"         "6.0"

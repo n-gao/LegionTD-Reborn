@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"ArmorPhysical"         "6"
 	"MagicalResistance"     "0"
@@ -26,6 +27,8 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"light"
+	"Legion_Experience"		"95"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "5.0"
 	"BountyGoldMax"         "5.0"

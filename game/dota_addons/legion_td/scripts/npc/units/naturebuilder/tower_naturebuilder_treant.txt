@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"AbilityLayout"   "6"
 	"Ability1"							"naturebuilder_upgrade_shroom"
@@ -37,6 +38,7 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"nature"
 
 	// Bounty
 	//----------------------------------------------------------------

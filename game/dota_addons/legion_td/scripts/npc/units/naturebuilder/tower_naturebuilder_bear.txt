@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"naturebuilder_upgrade_druid_bear"
 	"Ability2"							"naturebuilder_upgrade_iron_bear"
@@ -35,6 +36,7 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"nature"
 
 	// Bounty
 	//----------------------------------------------------------------

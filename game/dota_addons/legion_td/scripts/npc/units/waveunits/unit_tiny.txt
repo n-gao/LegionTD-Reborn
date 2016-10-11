@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "140"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"tiny_craggy_exterior"
 
@@ -28,6 +29,8 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Experience"		"110"
+	"Legion_Fraction"		"wave"
 
 	"BountyGoldMin"         "5.0"
 	"BountyGoldMax"         "5.0"

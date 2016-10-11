@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"elementalbuilder_upgrade_earthgod"
 	"Ability2"							"sandking_caustic_finale"
@@ -37,6 +38,7 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"elemental"
 
 	// Bounty
 	//----------------------------------------------------------------

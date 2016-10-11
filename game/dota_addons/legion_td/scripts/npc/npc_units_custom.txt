@@ -1023,6 +1023,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"elementalbuilder_upgrade_earthelemental"
 		"Ability2"							"elementalbuilder_upgrade_earthwarrior"
@@ -1049,6 +1050,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -1121,6 +1123,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"elementalbuilder_upgrade_earthgod"
 		"Ability2"							"sandking_caustic_finale"
@@ -1149,6 +1152,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -1255,6 +1259,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -1334,6 +1339,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"				"ability_empty_1"
 		"Ability2"				"ability_empty_2"
@@ -1360,6 +1366,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -1435,6 +1442,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"				"elementalbuilder_upgrade_fireelemental"
 	  	"Ability2"				"elementalbuilder_upgrade_firewarrior"
@@ -1461,6 +1469,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -1534,6 +1543,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/elementalbuilder/ai_fireelemental.lua"
 	
 		"Ability1"				"elementalbuilder_upgrade_firegod"
 		"Ability2"				"ember_spirit_flame_guard"
@@ -1560,6 +1570,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -1630,6 +1641,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/elementalbuilder/ai_firegod.lua"
 	
 		"Ability4"							"sell"
 		"Ability3"				"ability_empty_3"
@@ -1656,6 +1668,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -1760,6 +1773,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -1843,6 +1857,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"				"elementalbuilder_upgrade_thunderelemental"
 	  	"Ability2"				"elementalbuilder_upgrade_thunderwarrior"
@@ -1869,6 +1884,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -1943,6 +1959,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/elementalbuilder/ai_thunderelemental.lua"
 	
 		"Ability1"				"elementalbuilder_upgrade_thundergod"
 		"Ability2"				"leshrac_diabolic_edict"
@@ -1969,6 +1986,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2041,6 +2059,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/elementalbuilder/ai_thundergod.lua"
 	
 		"Ability4"							"sell"
 		"Ability3"				"ability_empty_3"
@@ -2067,6 +2086,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2137,6 +2157,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/elementalbuilder/ai_thunderwarrior.lua"
 	
 		"Ability4"							"sell"
 		"Ability3"				"ability_empty_3"
@@ -2163,6 +2184,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2239,6 +2261,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dark_seer.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"				"elementalbuilder_upgrade_voidelemental"
 	  	"Ability2"				"elementalbuilder_upgrade_voidwarrior"
@@ -2265,6 +2288,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2334,6 +2358,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/elementalbuilder/ai_voidelemental.lua"
 	
 		"Ability1"				"elementalbuilder_upgrade_voidgod"
 		"Ability2"				"bane_brain_sap"
@@ -2360,6 +2385,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2456,6 +2482,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2526,6 +2553,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"							"sell"
 		"Ability3"				"ability_empty_3"
@@ -2552,6 +2580,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2625,6 +2654,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"				"elementalbuilder_upgrade_waterelemental"
 	  	"Ability2"				"elementalbuilder_upgrade_waterwarrior"
@@ -2651,6 +2681,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2725,6 +2756,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"				"elementalbuilder_upgrade_watergod"
 		"Ability2"				"ability_empty_2"
@@ -2751,6 +2783,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2847,6 +2880,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -2916,6 +2950,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_naga_siren.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/elementalbuilder/ai_waterwarrior.lua"
 	
 		"Ability4"							"sell"
 		"Ability3"				"ability_empty_3"
@@ -2942,6 +2977,7 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"elemental"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3043,6 +3079,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3117,6 +3154,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"							"sell"
 		"Ability1"							"humanbuilder_upgrade_hunter"
@@ -3144,6 +3182,7 @@
 		
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3248,6 +3287,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3349,6 +3389,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3422,6 +3463,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/humanbuilder/ai_footman.lua"
 	
 		"Ability1"				"humanbuilder_upgrade_soldier"
 		"Ability4"				"sell"
@@ -3448,6 +3490,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3549,6 +3592,7 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"human"
 	
 	
 	
@@ -3629,6 +3673,7 @@
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"AbilityLayout"			"6"
 		"Ability1"				"humanbuilder_upgrade_blademaster"
@@ -3657,6 +3702,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3731,6 +3777,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"				"sell"
 		"Ability2"				"ability_empty_2"
@@ -3757,6 +3804,7 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3857,6 +3905,7 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -3959,6 +4008,7 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4034,6 +4084,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"				"sell"
 		"Ability3"				"ability_empty_3"
@@ -4060,6 +4111,7 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4136,6 +4188,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"				"sell"
 		"Ability2"				"icewrack_grandmaster_chilled_blood"
@@ -4162,6 +4215,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4236,6 +4290,7 @@
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"				"humanbuilder_upgrade_general"
 		"Ability4"				"sell"
@@ -4262,6 +4317,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"human"
 	
 	
 		// Bounty
@@ -4370,6 +4426,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4445,6 +4502,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"				"sell"
 		"Ability1"				"humanbuilder_upgrade_sharpshooter"
@@ -4471,6 +4529,7 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4545,6 +4604,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"				"humanbuilder_upgrade_footman"
 		"Ability2"				"ability_empty_2"
@@ -4571,6 +4631,7 @@
 		
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4672,6 +4733,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4774,6 +4836,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"human"
 	
 	
 		// Bounty
@@ -4849,6 +4912,7 @@
 		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"				"sell"
 		"Ability3"				"ability_empty_3"
@@ -4875,6 +4939,7 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -4949,6 +5014,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/humanbuilder/ai_soldier.lua"
 	
 		"Ability1"							"humanbuilder_upgrade_spearman"
 		"Ability2"							"humanbuilder_upgrade_paladin"
@@ -4975,6 +5041,7 @@
 		
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -5076,6 +5143,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -5150,6 +5218,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/humanbuilder/ai_spearman.lua"
 	
 		"Ability4"							"sell"
 		"Ability3"				"ability_empty_3"
@@ -5176,6 +5245,7 @@
 		
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"human"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -5280,6 +5350,7 @@
 		
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"human"
 	
 	
 		// Bounty
@@ -5361,7 +5432,7 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "1"
+		"ArmorPhysical"         "10"
 		"MagicalResistance"     "100"
 	
 		// Attack
@@ -5379,6 +5450,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -5449,7 +5521,7 @@
 		"Ability1"							"centaur_khan_endurance_aura" // irgendein jungle creep hatte sowas.
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "8"
+		"ArmorPhysical"         "16"
 		"MagicalResistance"     "40"
 	
 		// Attack
@@ -5467,6 +5539,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -5539,7 +5612,7 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"         "20"
-		"MagicalResistance"     "0"
+		"MagicalResistance"     "80"
 	
 		// Attack
 		//----------------------------------------------------------------
@@ -5547,7 +5620,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "87.5"
 		"AttackDamageMax"       "93.75"
-		"AttackRate"            "1.5"
+		"AttackRate"            "1.2"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "350"
@@ -5556,6 +5629,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"190"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -5627,15 +5702,15 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "1"
-		"MagicalResistance"     "0"
+		"ArmorPhysical"         "10"
+		"MagicalResistance"     "25"
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "87.5"
-		"AttackDamageMax"       "93.75"
+		"AttackDamageMin"       "95.5"
+		"AttackDamageMax"       "97.75"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
@@ -5645,6 +5720,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"175"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -5716,8 +5793,8 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "4"
-		"MagicalResistance"     "0"
+		"ArmorPhysical"         "8"
+		"MagicalResistance"     "50"
 	
 		// Attack
 		//----------------------------------------------------------------
@@ -5734,6 +5811,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"100"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -5804,8 +5883,8 @@
 		"Ability1"							"radiance aura"
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "1"
-		"MagicalResistance"     "0"
+		"ArmorPhysical"         "18"
+		"MagicalResistance"     "25"
 	
 		// Attack
 		//----------------------------------------------------------------
@@ -5822,7 +5901,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
-	
+		"Legion_Fraction"		"income"
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "27"
@@ -5894,7 +5973,7 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"         "10"
-		"MagicalResistance"     "0"
+		"MagicalResistance"     "25"
 	
 		// Attack
 		//----------------------------------------------------------------
@@ -5902,7 +5981,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "125.0"
 		"AttackDamageMax"       "137.5"
-		"AttackRate"            "1.5"
+		"AttackRate"            "1.1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "125"
@@ -5911,6 +5990,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"income"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6000,6 +6080,8 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"40"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6020,7 +6102,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "150"
+		"StatusHealth"          "200"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -6080,7 +6162,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "43.75"
 		"AttackDamageMax"       "50.0"
-		"AttackRate"            "1"
+		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "125"
@@ -6089,6 +6171,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"100"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6155,13 +6239,14 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"harpy_storm_chain_lightning"
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "0"
-		"MagicalResistance"     "0"
+		"ArmorPhysical"         "3"
+		"MagicalResistance"     "20"
 	
 		// Attack
 		//----------------------------------------------------------------
@@ -6178,6 +6263,8 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"30"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6198,7 +6285,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "110"
+		"StatusHealth"          "130"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "120"
 		"StatusManaRegen"       "10"
@@ -6264,8 +6351,8 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "6.25"
-		"AttackDamageMax"       "7.5"
+		"AttackDamageMin"       "8.25"
+		"AttackDamageMax"       "9.5"
 		"AttackRate"            "0.6"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
@@ -6275,6 +6362,8 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"20"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6346,7 +6435,7 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "0"
+		"ArmorPhysical"         "4"
 		"MagicalResistance"     "0"
 	
 		// Attack
@@ -6355,7 +6444,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "6.25"
 		"AttackDamageMax"       "7.5"
-		"AttackRate"            "1"
+		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "125"
@@ -6364,6 +6453,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"20"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6384,7 +6475,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "60"
+		"StatusHealth"          "80"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -6435,7 +6526,7 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"         "16"
-		"MagicalResistance"     "0"
+		"MagicalResistance"     "25"
 	
 		// Attack
 		//----------------------------------------------------------------
@@ -6443,7 +6534,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "250.0"
 		"AttackDamageMax"       "262.5"
-		"AttackRate"            "1.2"
+		"AttackRate"            "1.0"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "125"
@@ -6452,6 +6543,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6523,8 +6615,8 @@
 		"Ability1"							"" //
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "1"
-		"MagicalResistance"     "0"
+		"ArmorPhysical"         "10"
+		"MagicalResistance"     "25"
 	
 		// Attack
 		//----------------------------------------------------------------
@@ -6541,6 +6633,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"income"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6612,7 +6705,7 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "0"
+		"ArmorPhysical"         "2"
 		"MagicalResistance"     "0"
 	
 		// Attack
@@ -6621,7 +6714,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "5.0"
 		"AttackDamageMax"       "6.25"
-		"AttackRate"            "0.6"
+		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "125"
@@ -6630,6 +6723,8 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"10"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6650,7 +6745,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "45"
+		"StatusHealth"          "55"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -6710,7 +6805,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "56.25"
 		"AttackDamageMax"       "62.5"
-		"AttackRate"            "0.9"
+		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "125"
@@ -6719,6 +6814,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"75"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6739,7 +6836,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "475"
+		"StatusHealth"          "550"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -6808,6 +6905,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6879,15 +6977,15 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "1"
+		"ArmorPhysical"         "3"
 		"MagicalResistance"     "0"
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "37.5"
-		"AttackDamageMax"       "50.0"
+		"AttackDamageMin"       "47.5"
+		"AttackDamageMax"       "60.0"
 		"AttackRate"            "0.7"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
@@ -6897,6 +6995,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"50"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6917,7 +7017,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "250"
+		"StatusHealth"          "350"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -6969,7 +7069,7 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"         "15"
-		"MagicalResistance"     "0"
+		"MagicalResistance"     "80"
 	
 		// Attack
 		//----------------------------------------------------------------
@@ -6986,6 +7086,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"135"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7058,8 +7160,8 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "1"
-		"MagicalResistance"     "0"
+		"ArmorPhysical"         "5"
+		"MagicalResistance"     "25"
 	
 		// Attack
 		//----------------------------------------------------------------
@@ -7076,6 +7178,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"150"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7147,7 +7251,7 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "2"
+		"ArmorPhysical"         "5"
 		"MagicalResistance"     "0"
 	
 		// Attack
@@ -7165,6 +7269,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"60"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7185,7 +7291,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "450"
+		"StatusHealth"          "500"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -7235,7 +7341,7 @@
 		"Ability1"				"rosh_evasion"
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "14"
+		"ArmorPhysical"         "20"
 		"MagicalResistance"     "50"
 	
 		// Attack
@@ -7244,7 +7350,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "225.0"
 		"AttackDamageMax"       "250.0"
-		"AttackRate"            "1.0"
+		"AttackRate"            "0.8"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "125"
@@ -7253,6 +7359,7 @@
 	
 		"Legion_AttackType"		"boss"
 		"Legion_DefendType"		"boss"
+		"Legion_Fraction"		"income"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7324,7 +7431,7 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "0"
+		"ArmorPhysical"         "5"
 		"MagicalResistance"     "0"
 	
 		// Attack
@@ -7342,6 +7449,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"60"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7362,7 +7471,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "300"
+		"StatusHealth"          "550"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -7420,9 +7529,9 @@
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "75.0"
+		"AttackDamageMin"       "80.0"
 		"AttackDamageMax"       "100.0"
-		"AttackRate"            "0.8"
+		"AttackRate"            "1.2"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "125"
@@ -7431,6 +7540,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"125"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7451,7 +7562,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "620"
+		"StatusHealth"          "800"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -7502,15 +7613,15 @@
 	
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"         "1"
+		"ArmorPhysical"         "5"
 		"MagicalResistance"     "0"
 	
 		// Attack
 		//----------------------------------------------------------------
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "62.5"
-		"AttackDamageMax"       "75.0"
+		"AttackDamageMin"       "75.5"
+		"AttackDamageMax"       "90.0"
 		"AttackRate"            "0.4"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
@@ -7520,6 +7631,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"income"
+		"Legion_Experience"		"90"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7865,6 +7978,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"agressive_boar_nethertoxin"
 		"Ability2"				"ability_empty_2"
@@ -7891,6 +8005,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7956,6 +8071,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"naturebuilder_upgrade_druid_bear"
 		"Ability2"							"naturebuilder_upgrade_iron_bear"
@@ -7982,6 +8098,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8062,6 +8179,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"							"sell"
 		"Ability1"							"weaver_geminate_attack"
@@ -8088,6 +8206,7 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8161,6 +8280,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/naturebuilder/ai_bigcentaur.lua"
 	
 		"Ability4"							"sell"
 		"Ability1"							"tiny_craggy_exterior"
@@ -8187,6 +8307,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8261,6 +8382,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/naturebuilder/ai_broodmother.lua"
 	
 		"Ability4"							"sell"
 		"Ability1"							"brood_spawn_spiderlings"
@@ -8287,6 +8409,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"nature"
 	
 	
 		// Bounty
@@ -8368,6 +8491,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"				"naturebuilder_upgrade_big_bug"
 		"Ability4"				"sell"
@@ -8394,6 +8518,7 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Fraction"		"nature"
 	
 	
 		// Bounty
@@ -8467,6 +8592,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 	
 		"Ability1"							"naturebuilder_upgrade_big_centaur"
@@ -8494,6 +8620,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8559,6 +8686,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"				"sell"
 		"Ability1"				"centaur_warrunner_great_cleave"
@@ -8585,6 +8713,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8660,6 +8789,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"							"sell"
 		"Ability1"							"lone_druid_spirit_bear_entangle"
@@ -8686,6 +8816,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8765,6 +8896,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"							"sell"
 		"Ability1"							"flower_treant_skadi"
@@ -8791,6 +8923,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8856,6 +8989,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"naturebuilder_upgrade_agressive_boar"
 		"Ability4"							"sell"
@@ -8882,6 +9016,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8947,6 +9082,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"							"sell"
 		"Ability1"							"iron_bear_fury_swipes"
@@ -8973,6 +9109,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -9045,6 +9182,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability4"							"sell"
 		"Ability1"							"shroom_corrosive_skin"
@@ -9071,6 +9209,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -9142,6 +9281,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"naturebuilder_upgrade_broodmother"
 		"Ability4"							"sell"
@@ -9167,6 +9307,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"nature"
 	
 	
 		// Bounty
@@ -9233,6 +9374,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"AbilityLayout"   "6"
 		"Ability1"							"naturebuilder_upgrade_shroom"
@@ -9261,6 +9403,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -9353,6 +9496,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Fraction"		"nature"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -9571,6 +9715,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"abaddon_borrowed_time"
 	
@@ -9579,9 +9724,9 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "15.0"
-		"AttackDamageMax"       "17.5"
-		"AttackRate"            "0.55"
+		"AttackDamageMin"       "14.0"
+		"AttackDamageMax"       "16.0"
+		"AttackRate"            "0.65"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "90"
@@ -9590,6 +9735,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Experience"		"80"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "8.0"
 		"BountyGoldMax"         "8.0"
@@ -9602,7 +9749,7 @@
 		"MovementSpeed"         "300"
 		"MovementTurnRate"      "0.6"
 	
-		"StatusHealth"          "450"
+		"StatusHealth"          "550"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -9655,6 +9802,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_riki.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"assassin_backstab"
 	
@@ -9674,6 +9822,8 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"light"
+		"Legion_Experience"		"35"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -9735,6 +9885,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_chaos_knight.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"chaos_knight_chaos_strike"
 	
@@ -9754,6 +9905,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Experience"		"85"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -9814,11 +9966,12 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_chen.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							""
 	
 		"ArmorPhysical"         "10"
-		"MagicalResistance"     "0"
+		"MagicalResistance"     "10"
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
@@ -9833,6 +9986,12 @@
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
+	
+	
+		"Legion_AttackType"   "boss"
+		"Legion_DefendType"   "boss"
+		"Legion_Experience"		"150"
+		"Legion_Fraction"		"end_wave"
 	
 		"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
 		"CollisionSize"					"50"
@@ -9889,11 +10048,12 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/waves/ai_deathprophet.lua"
 	
 		"Ability1"							"death_prophet_exorcism"
 	
-		"ArmorPhysical"         "10"
-		"MagicalResistance"     "0"
+		"ArmorPhysical"         "20"
+		"MagicalResistance"     "30"
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
@@ -9908,6 +10068,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Experience"		"500"
 	
 		"BountyGoldMin"         "25.0"
 		"BountyGoldMax"         "25.0"
@@ -9920,7 +10081,7 @@
 		"MovementSpeed"         "300"
 		"MovementTurnRate"      "0.6"
 	
-		"StatusHealth"          "2200"
+		"StatusHealth"          "2800"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "400"
 		"StatusManaRegen"       "20"
@@ -9969,6 +10130,7 @@
 		"ModelScale"            "0.6"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"ArmorPhysical"         "0"
 		"MagicalResistance"     "0"
@@ -9984,6 +10146,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"light"
+		"Legion_Experience"		"10"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "3.0"
 		"BountyGoldMax"         "3.0"
@@ -10044,18 +10208,19 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 	  "Level"                 "7"
 	  "HealthBarOffset"       "140"
+		"Vscripts"              "ai/waves/ai_dragon.lua"
 	
 	  "Ability1"							"dragon_knight_elder_dragon_form"
 	  "Ability2"              "waveboss_repel"
 	  "Ability3"              "waveboss_attackspeed"
 	
-	  "ArmorPhysical"         "10"
-	  "MagicalResistance"     "30"
+	  "ArmorPhysical"         "30"
+	  "MagicalResistance"     "50"
 	
 	  "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	  "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	  "AttackDamageMin"       "187.5"
-	  "AttackDamageMax"       "200.0"
+	  "AttackDamageMin"       "220.5"
+	  "AttackDamageMax"       "275.0"
 	  "AttackRate"            "0.4"
 	  "AttackAnimationPoint"  "0.5"
 	  "AttackAcquisitionRange" "850"
@@ -10065,6 +10230,8 @@
 	
 	  "Legion_AttackType"   "boss"
 	  "Legion_DefendType"   "boss"
+		"Legion_Experience"		"2000"
+		"Legion_Fraction"		"boss"
 	
 	  "BountyGoldMin"         "51.0"
 	  "BountyGoldMax"         "51.0"
@@ -10133,6 +10300,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"brewmaster_drunken_brawler"
 	
@@ -10152,6 +10320,7 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"medium"
+		"Legion_Experience"		"130"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -10212,6 +10381,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"ArmorPhysical"         "6"
 		"MagicalResistance"     "0"
@@ -10229,6 +10399,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"light"
+		"Legion_Experience"		"95"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -10289,6 +10461,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"enchantress_untouchable"
 	
@@ -10308,6 +10481,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"light"
+		"Legion_Experience"		"75"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -10364,18 +10539,19 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts"
 		"Level"                 "5"
 		"HealthBarOffset"       "450"
+		"Vscripts"              "ai/waves/ai_fatty.lua"
 	
 		"Ability1"				"waveboss_repel"
 		"Ability2"              "waveboss_attackspeed"
 	
-		"ArmorPhysical"         "8"
+		"ArmorPhysical"         "15"
 		"MagicalResistance"     "20"
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "85"
-		"AttackDamageMax"       "100"
-		"AttackRate"            "1.2"
+		"AttackDamageMin"       "90"
+		"AttackDamageMax"       "110"
+		"AttackRate"            "1.1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "300"
@@ -10384,6 +10560,8 @@
 	
 		"Legion_AttackType"		"boss"
 		"Legion_DefendType"		"boss"
+		"Legion_Experience"		"800"
+		"Legion_Fraction"		"boss"
 	
 		"BountyGoldMin"         "51.0"
 		"BountyGoldMax"         "51.0"
@@ -10396,7 +10574,7 @@
 		"MovementSpeed"         "300"
 		"MovementTurnRate"      "0.6"
 	
-		"StatusHealth"          "3100"
+		"StatusHealth"          "3500"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "130"
 		"StatusManaRegen"       "10"
@@ -10451,6 +10629,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"ArmorPhysical"         "3"
 		"MagicalResistance"     "0"
@@ -10462,12 +10641,14 @@
 		"AttackRate"            "0.3"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "850"
-		"AttackRange"           "380"
+		"AttackRange"           "500"
 		"ProjectileModel"       "particles/items_fx/desolator_projectile.vpcf"
 		"ProjectileSpeed"       "2000"
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Experience"		"20"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -10527,6 +10708,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_huskar.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"huskar_burning_spear"
 		"Ability2"							"huskar_berserkers_blood"
@@ -10547,6 +10729,8 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"light"
+		"Legion_Experience"		"110"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -10615,6 +10799,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"hydra_splitshot"
 	
@@ -10624,8 +10809,8 @@
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "10.0"
-		"AttackDamageMax"       "12.0"
-		"AttackRate"            "1.1"
+		"AttackDamageMax"       "13.0"
+		"AttackRate"            "1.2"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "400"
@@ -10634,6 +10819,8 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"medium"
+		"Legion_Experience"		"50"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -10646,7 +10833,7 @@
 		"MovementSpeed"         "300"
 		"MovementTurnRate"      "0.6"
 	
-		"StatusHealth"          "160"
+		"StatusHealth"          "180"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -10693,20 +10880,21 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
 	  "Level"                 "6"
 	  "HealthBarOffset"       "140"
+		"Vscripts"              "ai/waves/ai_king.lua"
 	
 	  "Ability1"							"skeleton_king_hellfire_blast"
 	  "Ability2"							"skeleton_king_reincarnation"
 	  "Ability3"              "waveboss_repel"
 	  "Ability4"              "waveboss_attackspeed"
 	
-	  "ArmorPhysical"         "15"
+	  "ArmorPhysical"         "20"
 	  "MagicalResistance"     "30"
 	
 	  "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	  "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	  "AttackDamageMin"       "325.0"
 	  "AttackDamageMax"       "350.0"
-	  "AttackRate"            "0.8"
+	  "AttackRate"            "0.6"
 	  "AttackAnimationPoint"  "0.56"
 	  "AttackAcquisitionRange" "850"
 	  "AttackRange"           "125"
@@ -10715,6 +10903,8 @@
 	
 	  "Legion_AttackType"     "boss"
 	  "Legion_DefendType"     "boss"
+		"Legion_Experience"		"1000"
+		"Legion_Fraction"		"boss"
 	
 	  "BountyGoldMin"         "51.0"
 	  "BountyGoldMax"         "51.0"
@@ -10727,7 +10917,7 @@
 	  "MovementSpeed"         "300"
 	  "MovementTurnRate"      "0.6"
 	
-	  "StatusHealth"          "5000"
+	  "StatusHealth"          "4000"
 	  "StatusHealthRegen"     "0"
 	  "StatusMana"            "1000"
 	  "StatusManaRegen"       "100"
@@ -10775,6 +10965,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"kunkka_tidebringer"
 	
@@ -10794,6 +10985,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"medium"
+		"Legion_Experience"		"110"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -10863,6 +11056,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"ArmorPhysical"         "5"
 		"MagicalResistance"     "0"
@@ -10875,8 +11069,11 @@
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "90"
+	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Experience"		"25"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -10929,6 +11126,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_slark.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"ArmorPhysical"         "2"
 		"MagicalResistance"     "0"
@@ -10946,6 +11144,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"medium"
+		"Legion_Experience"		"40"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -11069,6 +11269,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/waves/ai_necro_replacement.lua"
 	
 		"Ability1"							"bloodseeker_bloodrage"
 	
@@ -11079,7 +11280,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "62.5"
 		"AttackDamageMax"       "75.0"
-		"AttackRate"            "0.75"
+		"AttackRate"            "0.55"
 		"AttackAnimationPoint"  "0.2"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "128"
@@ -11088,6 +11289,8 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Experience"		"90"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -11100,7 +11303,7 @@
 		"MovementSpeed"         "300"
 		"MovementTurnRate"      "0.6"
 	
-		"StatusHealth"          "450"
+		"StatusHealth"          "500"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "0"
 		"StatusManaRegen"       "0"
@@ -11163,6 +11366,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"skeleton_king_vampiric_aura"
 	
@@ -11182,6 +11386,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"light"
+		"Legion_Experience"		"45"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -11244,6 +11450,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/waves/ai_ogre.lua"
 	
 		"Ability1"							"ogre_magi_bloodlust"
 	
@@ -11263,6 +11470,8 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"heavy"
+		"Legion_Experience"		"130"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -11326,6 +11535,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_phantom_assassin.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"phantom_assassin_blur"
 	
@@ -11345,6 +11555,8 @@
 	
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Experience"		"85"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -11405,6 +11617,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"ArmorPhysical"         "4"
 		"MagicalResistance"     "0"
@@ -11421,6 +11634,8 @@
 		"ProjectileSpeed"       "0"
 		"Legion_AttackType"		"pierce"
 		"Legion_DefendType"		"medium"
+		"Legion_Experience"		"30"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -11478,6 +11693,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/waves/ai_rubick.lua"
 	
 		"Ability1"							"ogre_magi_ignite"
 	
@@ -11497,6 +11713,8 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Experience"		"105"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -11570,6 +11788,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_spirit_breaker.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"ArmorPhysical"         "1"
 		"MagicalResistance"     "0"
@@ -11585,6 +11804,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Experience"		"12"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "4.0"
 		"BountyGoldMax"         "4.0"
@@ -11645,6 +11866,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/waves/ai_techies.lua"
 	
 		"Ability1"							"techies_suicide_datadriven"
 	
@@ -11666,6 +11888,7 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"medium"
+		"Legion_Experience"		"100"
 	
 		"BountyGoldMin"         "3.0"
 		"BountyGoldMax"         "3.0"
@@ -11734,6 +11957,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_templar_assassin.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"templar_assassin_psi_blades"
 	
@@ -11753,6 +11977,8 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Experience"		"95"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -11819,6 +12045,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"tidehunter_kraken_shell"
 	
@@ -11838,6 +12065,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Experience"		"65"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "6.0"
 		"BountyGoldMax"         "6.0"
@@ -11901,6 +12130,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"tiny_craggy_exterior"
 	
@@ -11920,6 +12150,8 @@
 	
 		"Legion_AttackType"		"normal"
 		"Legion_DefendType"		"heavy"
+		"Legion_Experience"		"110"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
@@ -11983,6 +12215,7 @@
 		"ModelScale"            "0.6"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"ArmorPhysical"         "0"
 		"MagicalResistance"     "0"
@@ -11998,6 +12231,8 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Experience"		"10"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "4.0"
 		"BountyGoldMax"         "4.0"
@@ -12049,6 +12284,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_undying.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "140"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"ArmorPhysical"         "6"
 		"MagicalResistance"     "0"
@@ -12066,6 +12302,8 @@
 	
 		"Legion_AttackType"		"arcane"
 		"Legion_DefendType"		"light"
+		"Legion_Experience"		"55"
+		"Legion_Fraction"		"wave"
 	
 		"BountyGoldMin"         "5.0"
 		"BountyGoldMax"         "5.0"
