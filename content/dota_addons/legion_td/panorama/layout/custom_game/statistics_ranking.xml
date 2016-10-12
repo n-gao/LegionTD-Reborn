@@ -11,6 +11,7 @@
   </scripts>
   <Panel hittest="false" class="RankingStatisticRoot">
     <Panel id="RankingList">
+      <Label text="Coming soon." style="color: white; text-align: center; font-size: 14px; width: 200px; margin-top: 20px;"/>
     </Panel>  
   </Panel>
 </root>

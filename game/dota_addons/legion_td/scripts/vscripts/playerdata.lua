@@ -2,8 +2,11 @@ PlayerData = PlayerData or class({})
 PlayerData.datas = {}
 
 function PlayerData.CreateToPlayer(player, callback)
+  local result = PlayerData.Get(player:GetSteamID())
+  if result ~= nil then  return result end
   local result = PlayerData.new(nil, player)
-  Game.storage:SavePlayerData(self:GetSteamID(), result:GetToStoredData(), callback)
+  Game.storage:SavePlayerData(result.steamID, result:GetToStoredData(), function() end)
+  callback(result, true)
   return result
 end
 
@@ -24,8 +27,8 @@ end
 function PlayerData.new(storedData, player, steamID)
   local self = PlayerData()
   self.storedData = storedData or {}
-  self.player = player or Player.newPlaceHolder()
   self.steamID = steamID or self.player:GetSteamID()
+  self.player = player or Game:FindPlayerWithSteamID(self.steamID) or Player.newPlaceHolder()
   PlayerData.datas[self.steamID] = self
   return self
 end

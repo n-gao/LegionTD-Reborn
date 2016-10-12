@@ -1048,7 +1048,7 @@ function Game:RequestStoredData(data)
   end)
 end
 
-function Game:ConvertStoredData(data)
+function Game:ConvertRankingData(data)
   local result = {}
   for k,val in pairs(data) do
     result[k] = {}
@@ -1066,7 +1066,7 @@ function Game:RequestRanking(data)
     to = data.to
   }
   Game.storage:GetRanking(lData.attribute, lData.from, lData.to, function(result, success) 
-      local sendData = Game:ConvertStoredData(result)
+      local sendData = Game:ConvertRankingData(result)
       CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerID), sendData)
     end)
 end
