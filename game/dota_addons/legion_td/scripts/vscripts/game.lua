@@ -1100,7 +1100,7 @@ function Game:SaveDataAtEnd()
       else
         player.lostGame = true
       end
-      local data = PlayerData.Get(player:GetSteamID())
+      local data = PlayerData.Get(player:GetSteamID()):GetToStoredData()
       self.storage:SavePlayerData(player:GetSteamID(), data)
     end
   end)

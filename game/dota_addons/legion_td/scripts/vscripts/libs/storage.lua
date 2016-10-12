@@ -4,7 +4,7 @@ DataAttribute = "data"
 FailureAttribute = "failure"
 
 Storage = {}
-Storage.serverURL = "http://localhost:50623/api/PlayerData"
+Storage.serverURL = "http://localhost:5000/api/playerdata"
 
 Storage.app_id = 1
 
@@ -19,6 +19,15 @@ Storage.cachedData = {}
 Storage.rankings = {}
 
 Storage.rankingEntries = {}
+
+function Storage:Init()
+    local data = LoadKeyValues("scripts/vscripts/libs/storage.kv")
+    if data == nil then return end
+    Storage.serverURL = data.url
+    Storage.app_id = data.customGameId
+end
+
+Storage:Init()
 
 function Storage:GetRanking(attribute, from, to, callback)
     if (self:ContainsCachedRankings(attribute, from, to)) then
@@ -200,7 +209,8 @@ function Storage:SavePlayerData(steam_id, toStore, callback)
     end
 
     self:InvalidateData(steam_id)
-
+    print("WANTS TO STORE:")
+    DeepPrintTable(toStore)
     local data = JSON:encode(toStore)
     self:SendHttpRequest("POST", {
         customGameId = self.app_id,
