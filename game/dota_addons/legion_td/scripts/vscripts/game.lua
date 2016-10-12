@@ -1071,20 +1071,6 @@ function Game:RequestRanking(data)
     end)
 end
 
-function Game:SaveDataAtEnd()
-  HookSetWinnerFunction(function(gameRules, team)
-    for _,player in pairs(self.players) do
-      if player:GetTeamNumber() == team then
-        player.wonGame = true
-      else
-        player.lostGame = true
-      end
-      local data = player:GetToStoredData()
-      self.storage:SavePlayerData(player:GetSteamID(), data)
-    end
-  end)
-end
-
 function Game:GetAllFractions()
   if Game.fractions ~= nil then return Game.fractions end
   Game.fractions = {}
@@ -1105,6 +1091,21 @@ function Game:GetAllBuilders()
    end
    return result
 end
+
+function Game:SaveDataAtEnd()
+  HookSetWinnerFunction(function(gameRules, team)
+    for _,player in pairs(self.players) do
+      if player:GetTeamNumber() == team then
+        player.wonGame = true
+      else
+        player.lostGame = true
+      end
+      local data = PlayerData.Get(player:GetSteamID())
+      self.storage:SavePlayerData(player:GetSteamID(), data)
+    end
+  end)
+end
+
 
 function HookSetWinnerFunction(callback)
     local oldSetGameWinner = GameRules.SetGameWinner

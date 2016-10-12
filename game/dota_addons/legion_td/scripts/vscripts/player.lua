@@ -414,13 +414,13 @@ function Player:CreateTangoTicker()
   end
 end
 
-function round(num, idp)
+function my_round(num, idp)
   local mult = 10^(idp or 0)
   return math.floor(num * mult + 0.5) / mult
 end
 
 function Player:IncomeTangos(amount)
-  amount = round(amount)
+  amount = my_round(amount)
   self.earnedTangos = (self.earnedTangos or 0) + amount
   self:AddTangos(amount)
 end
