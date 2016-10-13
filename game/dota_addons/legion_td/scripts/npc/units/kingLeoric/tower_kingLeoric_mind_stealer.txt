@@ -1,0 +1,83 @@
+tower_kingLeoric_mind_stealer
+{
+	"BaseClass"					"npc_dota_creature"
+	"Model"						"models/heroes/silencer/silencer.vmdl"
+	"SoundSet"					"Hero_Silencer"
+	"ModelScale"				"1.0"
+	"HealthBarOffset"			"150"
+	"Level"						"1"
+	"Vscripts"					"ai/ai_default.lua"
+
+	"Ability1"					""
+	"Ability2"					"kingLeoric_upgrade_mind_breaker"
+	"Ability3"					""
+	"Ability4"					"sell"
+
+	"ArmorPhysical"				"1"
+	"MagicalResistance"			"0"
+
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"			"50"
+	"AttackDamageMax"			"100"
+	"AttackRate"				"1"
+	"AttackAnimationPoint"		"0.5"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"				"450"
+	"AttackRangeBuffer"			"250"
+	"ProjectileModel"			"particles/units/heroes/hero_silencer/silencer_base_attack.vpcf"
+	"ProjectileSpeed"			"1000"
+
+	"Legion_AttackType"			"normal"
+	"Legion_DefendType"			"medium"
+	"Legion_Fraction"			""
+
+	"BountyXP"					"0"
+	"BountyGoldMin"				"0"
+	"BountyGoldMax"				"0"
+
+	"BoundsHullName"			"DOTA_HULL_SIZE_REFULAR"
+	"RingRadius"				"30"
+
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"				"270"
+	"MovementTurnRate"			"0.5"
+
+	"StatusHealth"				"85"
+	"StatusHealthRegen"			"0"
+	"StatusMana"				"0"
+	"StatusManaRegen"			"0"
+
+	"VisionDaytimeRange"		"1400"
+	"VisionNighttimeRange"		"800"
+
+	"TeamName"					"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	"Creature"
+	{
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"				"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"0.0"
+			}
+		}
+		"AttachWearables"
+		{
+			"Wearable1" { "ItemDef" "6483" }
+			"Wearable2" { "ItemDef" "6862" }
+			"Wearable3" { "ItemDef" "6863" }
+			"Wearable4" { "ItemDef" "6864" }
+			"Wearable5" { "ItemDef" "6865" }
+			"Wearable6" { "ItemDef" "6876" }
+		}
+	}
+}
