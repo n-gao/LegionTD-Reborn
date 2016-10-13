@@ -21,7 +21,7 @@ Storage.rankings = {}
 Storage.rankingEntries = {}
 
 function Storage:Init()
-    local data = LoadKeyValues("scripts/vscripts/libs/storage.kv")
+    local data = LoadKeyValues("scripts/vscripts/libs/storage_settings.kv")
     if data == nil then return end
     Storage.serverURL = data.url
     Storage.app_id = data.customGameId

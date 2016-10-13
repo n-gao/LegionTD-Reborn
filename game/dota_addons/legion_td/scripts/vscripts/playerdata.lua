@@ -59,6 +59,11 @@ function PlayerData:GetToStoredData()
   for builder, count in pairs(playedBuilders) do
     result[builder] = count
   end
+  for key, value in pairs(self.storedData) do
+    if result[key] == nil then
+      result[key] = value
+    end
+  end
   return result
 end
 
