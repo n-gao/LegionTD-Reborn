@@ -10419,7 +10419,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts"
 		"Level"                 "5"
 		"HealthBarOffset"       "450"
-		"Vscripts"              "ai/waves/ai_fatty.lua"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"				"waveboss_repel"
 		"Ability2"              "waveboss_attackspeed"
