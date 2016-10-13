@@ -8,3 +8,4 @@ game/dota_addons/legion_td/tools_thumbnail_cache.bin
 game/dota_addons/legion_td/tools_asset_info.bin
 
 *.vpcf_c
+game/dota_addons/legion_td/scripts/vscripts/libs/storage_settings.kv

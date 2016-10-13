@@ -8,7 +8,7 @@ function LeftLane(trigger)
       local ability = npc:FindAbilityByName("ability_phased")
       ability:SetLevel(1)
       if npc.lane.player then
-        npc.lane.player:Leaked(self, npc:GetLevel())
+        npc.lane.player:Leaked(npc, npc:GetLevel())
       end
       npc:SetMinimumGoldBounty(1)
       npc:SetMaximumGoldBounty(1)

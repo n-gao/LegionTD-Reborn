@@ -9,7 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
-	"Vscripts"              "ai/ai_default.lua"
+	"Vscripts"              "ai/incomeunits/ai_harpy.lua"
 
 	"Ability1"							"harpy_storm_chain_lightning"
 
@@ -24,7 +24,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "8.75"
 	"AttackDamageMax"       "11.25"
-	"AttackRate"            "0.7"
+	"AttackRate"            "1"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "300"

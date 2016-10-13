@@ -3,25 +3,6 @@ if Unit == nil then
 end
 
 
-ai_standard = require('ai/ai_core')
---Naturebuilder AI
-ai_broodmother = require('ai/naturebuilder/ai_broodmother')
-ai_bigcentaur = require('ai/naturebuilder/ai_bigcentaur')
---Elementalbuilder AI
-ai_fireelemental = require('ai/elementalbuilder/ai_fireelemental')
-ai_firegod = require('ai/elementalbuilder/ai_firegod')
-ai_thunderelemental = require('ai/elementalbuilder/ai_thunderelemental')
-ai_thundergod = require('ai/elementalbuilder/ai_thundergod')
-ai_thunderwarrior = require('ai/elementalbuilder/ai_thunderwarrior')
-ai_voidelemental = require('ai/elementalbuilder/ai_voidelemental')
-ai_waterwarrior = require('ai/elementalbuilder/ai_waterwarrior')
---Humanbuilder AI
-ai_militia = require('ai/humanbuilder/ai_militia')
-ai_footman = require('ai/humanbuilder/ai_footman')
-ai_soldier = require('ai/humanbuilder/ai_soldier')
-ai_spearman = require('ai/humanbuilder/ai_spearman')
-
-
 function Unit.GetUnitNameByID(id)
   if id == 1 then return "tower_naturebuilder_spider"
   elseif id == 2 then return "tower_naturebuilder_bug"

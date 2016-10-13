@@ -5283,6 +5283,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							""
 	
@@ -5373,6 +5374,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"centaur_khan_endurance_aura" // irgendein jungle creep hatte sowas.
 		// Armor
@@ -5462,6 +5464,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"hill_troll_shaman_regen_aura"
 	
@@ -5553,6 +5556,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							""
 	
@@ -5644,6 +5648,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							""
 	
@@ -5735,6 +5740,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"radiance aura"
 		// Armor
@@ -5823,6 +5829,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_undying.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"necrolyte_heartstopper_aura" // (von necro)
 	
@@ -5913,6 +5920,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"ghost_frost_attack"
 	
@@ -6004,6 +6012,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							""
 	
@@ -6095,7 +6104,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
-		"Vscripts"              "ai/ai_default.lua"
+		"Vscripts"              "ai/incomeunits/ai_harpy.lua"
 	
 		"Ability1"							"harpy_storm_chain_lightning"
 	
@@ -6110,7 +6119,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "8.75"
 		"AttackDamageMax"       "11.25"
-		"AttackRate"            "0.7"
+		"AttackRate"            "1"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "300"
@@ -6195,6 +6204,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"satyr_hellcaller_unholy_aura"
 	
@@ -6286,6 +6296,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							""
 	
@@ -6377,6 +6388,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"alpha_wolf_command_aura"
 		// Armor
@@ -6467,6 +6479,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"" //
 		// Armor
@@ -6556,6 +6569,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							""
 	
@@ -6647,6 +6661,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							""
 	
@@ -6738,6 +6753,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							""
 	
@@ -6828,6 +6844,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"giant_wolf_critical_strike"
 	
@@ -6919,6 +6936,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"enraged_wildkin_toughness_aura"
 	
@@ -7011,6 +7029,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"alpha_wolf_critical_strike"
 	
@@ -7102,6 +7121,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							""
 	
@@ -7193,6 +7213,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"				"rosh_evasion"
 		// Armor
@@ -7282,6 +7303,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							""
 	
@@ -7373,6 +7395,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							""
 	
@@ -7464,6 +7487,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 		"Level"                 "1"
 		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"							"alpha_wolf_critical_strike"
 	
@@ -11867,7 +11891,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts"
 		"Level"                 "5"
 		"HealthBarOffset"       "450"
-		"Vscripts"              "ai/waves/ai_fatty.lua"
+		"Vscripts"              "ai/ai_default.lua"
 	
 		"Ability1"				"waveboss_repel"
 		"Ability2"              "waveboss_attackspeed"
@@ -12208,7 +12232,7 @@
 		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
 	  "Level"                 "6"
 	  "HealthBarOffset"       "140"
-		"Vscripts"              "ai/waves/ai_king.lua"
+		"Vscripts"              "ai/ai_default.lua"
 	
 	  "Ability1"							"skeleton_king_hellfire_blast"
 	  "Ability2"							"skeleton_king_reincarnation"

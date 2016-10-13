@@ -2,7 +2,6 @@
 require ('precache')
 require ('game_settings')
 require ('timers')
-require ('commands')
 require ('barebones')
 require ("statcollection/init")
 require ('game')
@@ -17,6 +16,7 @@ require ('damage')
 require ('selection')
 require ('wiki')
 require ('wave_unit')
+require ('commands')
 
 function Precache( context )
 	-- NOTE: IT IS RECOMMENDED TO USE A MINIMAL AMOUNT OF LUA PRECACHING, AND A MAXIMAL AMOUNT OF DATADRIVEN PRECACHING.

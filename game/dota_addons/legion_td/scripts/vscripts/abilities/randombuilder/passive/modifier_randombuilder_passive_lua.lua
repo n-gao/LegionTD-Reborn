@@ -3,7 +3,7 @@ modifier_randombuilder_passive_lua = class({})
 --------------------------------------------------------------------------------
 
 function modifier_randombuilder_passive_lua:GetTexture()
-	return "shadow_shaman_voodoo"
+	return "alchemist_goblins_greed"
 end
 
 --------------------------------------------------------------------------------

@@ -10,6 +10,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"alpha_wolf_critical_strike"
 

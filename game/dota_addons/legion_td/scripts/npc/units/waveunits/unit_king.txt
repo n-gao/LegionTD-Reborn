@@ -9,7 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
   "Level"                 "6"
   "HealthBarOffset"       "140"
-	"Vscripts"              "ai/waves/ai_king.lua"
+	"Vscripts"              "ai/ai_default.lua"
 
   "Ability1"							"skeleton_king_hellfire_blast"
   "Ability2"							"skeleton_king_reincarnation"

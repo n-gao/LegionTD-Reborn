@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"				"rosh_evasion"
 	// Armor

@@ -32,12 +32,6 @@ function AddNotification(msg, panel) {
   
   notification.AddClass('NotificationMessage');
 
-  if (msg.style){
-    for (var key in msg.style){
-      var value = msg.style[key]
-      notification.style[key] = value;
-    }
-  }
 }
 
 (function () {
