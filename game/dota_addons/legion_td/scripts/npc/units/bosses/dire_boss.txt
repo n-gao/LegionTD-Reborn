@@ -19,12 +19,12 @@
 
 	// Attack
 	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "68.75"
 	"AttackDamageMax"       "81.25"
 	"AttackRate"            "0.8"
-	"AttackAnimationPoint"  "0.2"
+	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "125"
 	"AttackRange"           "715"
 	"ProjectileModel"       "particles/base_attacks/ranged_tower_bad.vpcf"

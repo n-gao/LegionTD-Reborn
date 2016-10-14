@@ -22,7 +22,7 @@
 		GameUI.CustomUIConfig().GameDesigners.forEach(function(entry){ AddContributor("", entry, $("#GameDesigners"))});
 		GameUI.CustomUIConfig().Creator.forEach(function(entry){ AddContributor("", entry, $("#Creators"))});
 		GameUI.CustomUIConfig().PreviousLeaders.forEach(function(entry){ AddContributor("", entry, $("#PreviousLeaders"))});
-		GameUI.CustomUIConfig().Leaders.forEach(function(entry){ AddContributor("", entry, $("#Leaders"))});
+		//GameUI.CustomUIConfig().Leaders.forEach(function(entry){ AddContributor("", entry, $("#Leaders"))});
 	</script>
 	<Panel class="OverthrowGameInfo">
 		<Panel id="Title">
@@ -30,7 +30,7 @@
 		</Panel>
 		<Label id="ObjectiveHeader" class="Header" html="true" text="#game_info_panel_header_objective" />
 		<Label id="BriefDescription" text="#legion_brief_description" />
-		<Label id="HowToPlayHeader" class="Header" html="true" text="#game_info_panel_header_how_to_play" />
+		<Label id="HowToPlayHeader" class="Header" html="true" text="#me_info_panel_header_how_to_play" />
 		<Panel id="ThroneRow" class="InfoRow">
 			<Label id="ThroneText" html="true" text="#game_info_panel_king" />
       <Image id="ThroneImage" src="file://{images}/custom_game/game_info/omni.psd" />
@@ -54,9 +54,9 @@
 				<Label id="ContributorPanelLabel" text="#legion_contributor_label" />
 				<Label class="ContributorLabel" text="#legion_contributor_creator" />
 				<Panel id="Creators" class="ContributorPanel" hitetst="false" />
-				<Label class="ContributorLabel" text="#legion_contributor_leader" />
-				<Panel id="Leaders" class="ContributorPanel" hitetst="false" />
-				<Label class="ContributorLabel" text="#legion_contributor_previous_leader" />
+				<!--<Label class="ContributorLabel" text="#legion_contributor_leader" />
+				<Panel id="Leaders" class="ContributorPanel" hitetst="false" />-->
+				<Label class="ContributorLabel" text="#legion_contributor_previous_leader" /> 
 				<Panel id="PreviousLeaders" class="ContributorPanel" hitetst="false" />
 				<Label class="ContributorLabel" text="#legion_contributor_design" />
 				<Panel id="GameDesigners" class="ContributorPanel" hitetst="false" />
