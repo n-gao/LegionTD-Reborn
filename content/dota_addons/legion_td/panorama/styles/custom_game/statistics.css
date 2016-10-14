@@ -1,6 +1,6 @@
 #StatisticsButtonPanel {
   width: 300px;
-  height: fit-content;
+  height: fit-children;
   vertical-align: bottom;
   margin-bottom: 300px;
   flow-children: down;
@@ -88,7 +88,7 @@
 
 #LowerStatisticsButton {
   width: 300px;
-  height: fit-content;
+  height: fit-children;
   background-color: #111111F0;
   visibility: visible;
   flow-children: down;
@@ -112,8 +112,8 @@
 }
 
 #StatisticsOuterPanel {
-  width: fit-content;
-  height: fit-content;
+  width: fit-children;
+  height: fit-children;
   flow-children: down;
   box-shadow: 0px 0px 20px black;
   transition-property: opacity;
@@ -136,14 +136,14 @@
 
 #StatisticsHeader {
   width: 100%;
-  height: fit-content;
+  height: fit-children;
   min-height: 50px;
   background-color: #050505FE;
 }
 
 #StatisticsBody {
-  width: fit-content;
-  height: fit-content;
+  width: fit-children;
+  height: fit-children;
   background-color: #111111FD;
   flow-children: right;
   padding: 5px;
@@ -159,8 +159,8 @@
 }
 
 .StatisticPanel  {
-  width: fit-content;
-  height: fit-content;
+  width: fit-children;
+  height: fit-children;
   min-width: 200px;
   min-height: 100px;
   margin: 10px 10px 10px 10px;
@@ -172,7 +172,7 @@
 }
 
 .StatisticLabelPanel {
-  width: fit-content;
+  width: fit-children;
   height: 25px;
   vertical-align: top;
   horizontal-align: left;
@@ -190,7 +190,7 @@
 
 .StatisticHeader {
   width: 100%;
-  height: fit-content;
+  height: fit-children;
 }
 
 .ExpProgressNumber {
@@ -208,6 +208,6 @@
 }
 
 .StatisticContent {
-  width: fit-content;
-  height: fit-content;
+  width: fit-children;
+  height: fit-children;
 }

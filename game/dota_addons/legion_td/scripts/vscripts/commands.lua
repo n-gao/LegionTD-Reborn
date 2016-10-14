@@ -60,6 +60,7 @@ function CommandEngine.Commands.settings(instance, submessage, keys)
 end
 
 function CommandEngine.waveInfo(waveNum, playerid)
+	if waveNum == nil then return end
 	if #Game.rounds < waveNum then return end
 
 	local name = CommandEngine.Variables.waveKV["Round"..tostring(waveNum)]["Unit"]["NPCName"]

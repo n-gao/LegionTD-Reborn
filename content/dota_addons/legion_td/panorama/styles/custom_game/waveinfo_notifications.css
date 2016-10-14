@@ -33,16 +33,16 @@
     opacity: 1;
     margin-top: 64px;
     visibility: visible;
-    background-color: #4286f4;
+    background-color: #222222EE;
+    padding: 5px;
 }
 
 .NotificationMessage
 {
-    color: white;
+    color: #EEEEEE;
     vertical-align: center;
     horizontal-align: left;
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 16px;
     text-align: left;
     margin-left: 10px;
     margin-right: 10px;
@@ -51,11 +51,11 @@
 @keyframes 'scalein' {
   from {
     opacity:0;
-    transform: scaleX(2) scaleY(2);
+    transform: translateX(200px);
   }
 
   to {
     opacity:1;
-    transform: scaleX(1) scaleY(1);
+    transform: translateX(0px);
   }
 }

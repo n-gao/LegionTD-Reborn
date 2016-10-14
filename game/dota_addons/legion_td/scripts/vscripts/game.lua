@@ -1048,7 +1048,7 @@ function Game:RequestStoredData(data)
   end)
 end
 
-function Game:ConvertStoredData(data)
+function Game:ConvertRankingData(data)
   local result = {}
   for k,val in pairs(data) do
     result[k] = {}
@@ -1066,23 +1066,9 @@ function Game:RequestRanking(data)
     to = data.to
   }
   Game.storage:GetRanking(lData.attribute, lData.from, lData.to, function(result, success) 
-      local sendData = Game:ConvertStoredData(result)
+      local sendData = Game:ConvertRankingData(result)
       CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerID), sendData)
     end)
-end
-
-function Game:SaveDataAtEnd()
-  HookSetWinnerFunction(function(gameRules, team)
-    for _,player in pairs(self.players) do
-      if player:GetTeamNumber() == team then
-        player.wonGame = true
-      else
-        player.lostGame = true
-      end
-      local data = player:GetToStoredData()
-      self.storage:SavePlayerData(player:GetSteamID(), data)
-    end
-  end)
 end
 
 function Game:GetAllFractions()
@@ -1105,6 +1091,21 @@ function Game:GetAllBuilders()
    end
    return result
 end
+
+function Game:SaveDataAtEnd()
+  HookSetWinnerFunction(function(gameRules, team)
+    for _,player in pairs(self.players) do
+      if player:GetTeamNumber() == team then
+        player.wonGame = true
+      else
+        player.lostGame = true
+      end
+      local data = PlayerData.Get(player:GetSteamID()):GetToStoredData()
+      self.storage:SavePlayerData(player:GetSteamID(), data)
+    end
+  end)
+end
+
 
 function HookSetWinnerFunction(callback)
     local oldSetGameWinner = GameRules.SetGameWinner

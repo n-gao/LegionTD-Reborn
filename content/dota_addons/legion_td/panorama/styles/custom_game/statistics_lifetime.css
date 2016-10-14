@@ -1,7 +1,7 @@
 #LifetimeAttributes {
     flow-children: down;
     width: 100%;
-    height: fit-content;
+    height: fit-children;
 }
 
 .LifetimeAttribute {
@@ -20,6 +20,6 @@
 .LifetimeStatisticRoot {
     flow-children: down;
     width: 300px;
-    height: fit-content;
+    height: fit-children;
     margin-top: 5px;
 }

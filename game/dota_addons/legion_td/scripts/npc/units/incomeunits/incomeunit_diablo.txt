@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"radiance aura"
 	// Armor

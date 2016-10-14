@@ -1,7 +1,11 @@
 require("libs/json")
 
+DataAttribute = "data"
+FailureAttribute = "failure"
+
 Storage = {}
-Storage.serverURL = "http://localhost:7777/api/GameInformations"
+Storage.serverURL = "http://localhost:5000/api/playerdata"
+
 Storage.app_id = 1
 
 Storage.online = true
@@ -13,7 +17,17 @@ Storage.rankingRequests = {}
 Storage.cachedData = {}
 
 Storage.rankings = {}
+
 Storage.rankingEntries = {}
+
+function Storage:Init()
+    local data = LoadKeyValues("scripts/vscripts/libs/storage_settings.kv")
+    if data == nil then return end
+    Storage.serverURL = data.url
+    Storage.app_id = data.customGameId
+end
+
+Storage:Init()
 
 function Storage:GetRanking(attribute, from, to, callback)
     if (self:ContainsCachedRankings(attribute, from, to)) then
@@ -62,7 +76,7 @@ end
 
 function Storage:RequestRankingFromTo(attribute, from, to)
     self:SendHttpRequest("GET", {
-        appId = self.app_id,
+        customGameId = self.app_id,
         attribute = attribute,
         from = from,
         to = to
@@ -155,21 +169,21 @@ function Storage:GetPlayerData(steam_id, callback)
     self.requested[steam_id] = {}
     table.insert(self.requested[steam_id], callback)
     self:SendHttpRequest("GET", {
-        appId = self.app_id,
+        customGameId = self.app_id,
         steamId = steam_id,
-        }, 
+        },
         function(result)
             local resultTable = JSON:decode(result)
             print("GET RESPONSE:")
             DeepPrintTable(resultTable)
             if resultTable ~= nil then
-                if resultTable["Data"] ~= nil then
-                    self.cachedData[steam_id] = resultTable["Data"]
+                if resultTable[DataAttribute] ~= nil then
+                    self.cachedData[steam_id] = resultTable[DataAttribute]
                     self:CallRequestedCallbacks(steam_id, self.cachedData[steam_id], true)
                     return
                 end
-                if resultTable["failure"] ~= nil then
-                    print(resultTable["failure"])
+                if resultTable[FailureAttribute] ~= nil then
+                    print(resultTable[FailureAttribute])
                     self:CallRequestedCallbacks(steam_id, resultTable, false)
                     return
                 end
@@ -195,10 +209,11 @@ function Storage:SavePlayerData(steam_id, toStore, callback)
     end
 
     self:InvalidateData(steam_id)
-
+    print("WANTS TO STORE:")
+    DeepPrintTable(toStore)
     local data = JSON:encode(toStore)
     self:SendHttpRequest("POST", {
-        appId = self.app_id,
+        customGameId = self.app_id,
         steamId = steam_id,
         data = data,
         }, function (result) 
@@ -209,7 +224,7 @@ function Storage:SavePlayerData(steam_id, toStore, callback)
                 return
             end
             if resultTable ~= nil then
-                callback(resultTable, resultTable["failure"] == nil)
+                callback(resultTable, resultTable[FailureAttribute] == nil)
             else
                 callback(resultTable, false)
             end
