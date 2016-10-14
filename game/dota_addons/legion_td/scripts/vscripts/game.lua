@@ -1056,6 +1056,7 @@ function Game:ConvertRankingData(data)
     reuslt[k].Rank = val.Rank
     result[k].Data = PlayerData.AddOrUpdate(val.Data, nil, val.SteamId)
   end
+  return result
 end
 
 function Game:RequestRanking(data)
@@ -1065,9 +1066,13 @@ function Game:RequestRanking(data)
     from = data.from,
     to = data.to
   }
-  Game.storage:GetRanking(lData.attribute, lData.from, lData.to, function(result, success) 
+  Game.storage:GetRanking(lData.attribute, lData.from, lData.to, function(result, success)
+      --print("First result")
+      --DeepPrintTable(result)
       local sendData = Game:ConvertRankingData(result)
-      CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerID), sendData)
+      --print("Converted")
+      --DeepPrintTable(sendData)
+      CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerID), "send_rankings", sendData)
     end)
 end
 

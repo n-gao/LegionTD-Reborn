@@ -141,9 +141,10 @@ function Storage:GetCachedRankings(attribute, from, to)
 end
 
 function Storage:AddCachedRanking(attribute, data)
+
     local ranking = self.rankings[attribute] or {}
-    for k,v in pairs(data.Ranking) do
-        ranking[k - 1 + data.From] = v
+    for k,v in pairs(data.ranking) do
+        ranking[k - 1 + data.from] = v
     end
     self.rankingEntries[attribute] = data.PlayerCount
     self.rankings[attribute] = ranking

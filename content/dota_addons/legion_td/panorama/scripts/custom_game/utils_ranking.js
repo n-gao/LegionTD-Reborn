@@ -51,5 +51,5 @@ function InitRanking() {
 
 (function() {
     InitRanking();
-    //RequestRankingFromTo("kills", 0, 5);
+    //RequestRankingFromTo("kills", 0, 1);
 })();
