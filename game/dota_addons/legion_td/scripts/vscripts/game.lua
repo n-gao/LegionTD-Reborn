@@ -843,7 +843,7 @@ end
 function Game:CountSkipvotes()
   local result = 0
   for _,player in pairs(self.players) do
-    if (player.wantsSkip) then
+    if player:WantsToSkip() then
       result = result + 1
     end
   end
@@ -852,7 +852,7 @@ end
 
 function Game:CheckSkip() 
   for _,player in pairs(self.players) do
-    if (player.wantsSkip == false) then
+    if not player:WantsToSkip() then
       return
     end
   end
