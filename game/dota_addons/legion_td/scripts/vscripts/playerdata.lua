@@ -33,6 +33,14 @@ function PlayerData.new(storedData, player, steamID)
   return self
 end
 
+function PlayerData.newWithoutSave(storedData, player, steamID)
+  local self = PlayerData()
+  self.storedData = storedData or {}
+  self.steamID = steamID or self.player:GetSteamID()
+  self.player = player or Game:FindPlayerWithSteamID(self.steamID) or Player.newPlaceHolder()
+  return self
+end
+
 function PlayerData:OverrideStoredData(storedData)
   self.storedData = storedData or {}
 end

@@ -1,4 +1,5 @@
-require("libs/json")
+JSON = require("libs/json")
+JSON.decodeIntegerStringificationLength = 10
 
 DataAttribute = "data"
 FailureAttribute = "failure"
@@ -82,8 +83,6 @@ function Storage:RequestRankingFromTo(attribute, from, to)
         to = to
     }, function(result)
         local resultTable = JSON:decode(result)
-        print("GET RANKING RESPONSE:")
-        DeepPrintTable(resultTable)
         if resultTable ~= nil then
             if resultTable["failure"] ~= nil then
                 print(resultTable["failure"])
@@ -141,12 +140,13 @@ function Storage:GetCachedRankings(attribute, from, to)
 end
 
 function Storage:AddCachedRanking(attribute, data)
-
     local ranking = self.rankings[attribute] or {}
     for k,v in pairs(data.ranking) do
         ranking[k - 1 + data.from] = v
     end
-    self.rankingEntries[attribute] = data.PlayerCount
+    print("GET RANKING RESPONSE:")
+    DeepPrintTable(data)
+    self.rankingEntries[attribute] = data.playerCount
     self.rankings[attribute] = ranking
 end
 
@@ -260,6 +260,7 @@ function Storage:SendHttpRequest(method, data, callback)
     --req:SetHTTPRequestGetOrPostParameter("steamId", "76561198027964324")
     --req:SetHTTPRequestGetOrPostParameter("appId", "1")
     req:Send(function(result)
+            print(result.Body)
             if (result.Body == "") then
                 self.online = false
             end

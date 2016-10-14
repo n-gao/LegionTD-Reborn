@@ -57,10 +57,6 @@ function Player:IncreaseKillOfFraction(fraction)
   self.fractionKills[fraction] = (self.fractionKills[fraction] or 0) + 1
 end
 
-function Player:LinkToStoredData(data)
-  self.storedData = data
-end
-
 function Player:GetExperience()
   return self.experience or 0
 end
@@ -78,10 +74,6 @@ end
 
 function Player:GetLeaks()
   return self.leaks or 0
-end
-
-function Player:IsLinkedToStoredData()
-  return self.storedData ~= nil
 end
 
 function Player:GetEarnedTangos()
