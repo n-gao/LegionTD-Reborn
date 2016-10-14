@@ -7884,7 +7884,7 @@
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityGoldCost"						"125"
 		"AbilityCooldown"						"1.0"
 		"AbilityCastRange"						"125"
 		"OnSpellStart"
@@ -7900,27 +7900,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"100"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"90"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"200"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"3"
 			}
 			"06"
 			{
@@ -7942,7 +7942,7 @@
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityGoldCost"						"140"
 		"AbilityCooldown"						"1.0"
 		"AbilityCastRange"						"125"
 		"OnSpellStart"
@@ -7958,27 +7958,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"150"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"90"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"250"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"10"
 			}
 			"06"
 			{
@@ -8000,7 +8000,7 @@
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityGoldCost"						"160"
 		"AbilityCooldown"						"1.0"
 		"AbilityCastRange"						"125"
 		"OnSpellStart"
@@ -8016,27 +8016,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"175"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"200"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"125"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"5"
 			}
 			"06"
 			{
@@ -8058,7 +8058,7 @@
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityGoldCost"						"50"
 		"AbilityCooldown"						"1.0"
 		"AbilityCastRange"						"125"
 		"OnSpellStart"
@@ -8074,22 +8074,22 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"75"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"450"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"85"
 			}
 			"05"
 			{
@@ -8116,7 +8116,7 @@
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityGoldCost"						"20"
 		"AbilityCooldown"						"1.0"
 		"AbilityCastRange"						"125"
 		"OnSpellStart"
@@ -8132,27 +8132,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"14"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"0.5"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"90"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"85"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"0"
 			}
 			"06"
 			{
@@ -8172,17 +8172,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"200"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8190,27 +8188,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"150"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"90"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"500"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"4"
 			}
 			"06"
 			{
@@ -8230,17 +8228,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"150"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8248,27 +8244,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"160"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				".8"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"90"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"450"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"15"
 			}
 			"06"
 			{
@@ -8288,17 +8284,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"450"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8306,27 +8300,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"275"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"90"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"750"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"15"
 			}
 			"06"
 			{
@@ -8346,17 +8340,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"175"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8364,27 +8356,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"150"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"90"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"250"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"4"
 			}
 			"06"
 			{
@@ -8404,17 +8396,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"110"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8422,12 +8412,12 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"150"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"0.5"
 			}
 			"03"
 			{
@@ -8437,7 +8427,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"130"
 			}
 			"05"
 			{
@@ -8462,17 +8452,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"170"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8480,22 +8468,22 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"220"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"550"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"175"
 			}
 			"05"
 			{
@@ -8520,17 +8508,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"300"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8538,27 +8524,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"250"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"300"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"150"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"5"
 			}
 			"06"
 			{
@@ -8578,17 +8564,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"250"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8596,27 +8580,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"200"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				".8"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"235"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"300"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"5"
 			}
 			"06"
 			{
@@ -8636,17 +8620,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"100"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8654,27 +8636,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"60"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"90"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"300"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"2"
 			}
 			"06"
 			{
@@ -8694,17 +8676,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"200"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8712,22 +8692,22 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"225"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"2"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"550"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"175"
 			}
 			"05"
 			{
@@ -8752,17 +8732,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"500"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8770,27 +8748,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"350"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"90"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"475"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"20"
 			}
 			"06"
 			{
@@ -8810,17 +8788,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"200"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8828,27 +8804,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"250"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"400"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"175"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"5"
 			}
 			"06"
 			{
@@ -8868,17 +8844,15 @@
 		"AbilityTextureName"					"spawn_archer"
 		"MaxLevel"								"1"
 	
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-		"AbilityGoldCost"						"40"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"						"225"
 		"AbilityCooldown"						"1.0"
-		"AbilityCastRange"						"125"
 		"OnSpellStart"
 		{
 			"RunScript"
 			{
 				"ScriptFile"					"unit.lua"
-				"Function"						"UnitSpawn"
+				"Function"						"UpgradeUnit"
 			}
 		}
 		"AbilitySpecial"
@@ -8886,27 +8860,27 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"68.75"
+				"atk_damage_tooltip"			"225"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				".9"
+				"atk_speed_tooltip"				"1"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_range_tooltip"				"500"
+				"atk_range_tooltip"				"90"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"health_tooltip"				"60"
+				"health_tooltip"				"375"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"armor_tooltip"					"1"
+				"armor_tooltip"					"15"
 			}
 			"06"
 			{
@@ -8917,6 +8891,69 @@
 			{
 				"var_type"						"FIELD_INTEGER"
 				"unitID"						"317"
+			}
+		}
+	}
+	"zealot_scarab_beetle_swarm"
+	{
+		"BaseClass"             		"weaver_the_swarm"
+		"AbilityTextureName"			"ability_name"
+		"MaxLevel" 						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+	
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastRange"				"500"
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"0"
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"1"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"attack_rate"		"1"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"count"				"12"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"armor_reduction"	"0.5"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"16"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"destroy_attacks"	"8"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"100"
+			}
+			"08"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"speed"				"600"
+			}
+			"09"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"spawn_radius"		"300"
 			}
 		}
 	}

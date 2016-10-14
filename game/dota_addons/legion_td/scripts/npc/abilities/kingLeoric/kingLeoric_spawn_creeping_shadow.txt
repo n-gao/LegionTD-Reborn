@@ -6,7 +6,7 @@ kingLeoric_spawn_creeping_shadow
 
 	"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
 	"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC"
-	"AbilityGoldCost"						"40"
+	"AbilityGoldCost"						"125"
 	"AbilityCooldown"						"1.0"
 	"AbilityCastRange"						"125"
 	"OnSpellStart"
@@ -22,27 +22,27 @@ kingLeoric_spawn_creeping_shadow
 		"01"
 		{
 			"var_type"						"FIELD_INTEGER"
-			"atk_damage_tooltip"			"68.75"
+			"atk_damage_tooltip"			"100"
 		}
 		"02"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"atk_speed_tooltip"				".9"
+			"atk_speed_tooltip"				"1"
 		}
 		"03"
 		{
 			"var_type"						"FIELD_INTEGER"
-			"atk_range_tooltip"				"500"
+			"atk_range_tooltip"				"90"
 		}
 		"04"
 		{
 			"var_type"						"FIELD_INTEGER"
-			"health_tooltip"				"60"
+			"health_tooltip"				"200"
 		}
 		"05"
 		{
 			"var_type"						"FIELD_INTEGER"
-			"armor_tooltip"					"1"
+			"armor_tooltip"					"3"
 		}
 		"06"
 		{

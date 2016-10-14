@@ -36,7 +36,7 @@ tower_kingLeoric_nimble_edge
 	"BountyGoldMin"				"0"
 	"BountyGoldMax"				"0"
 
-	"BoundsHullName"			"DOTA_HULL_SIZE_REFULAR"
+	"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
 	"RingRadius"				"30"
 
 	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -72,11 +72,11 @@ tower_kingLeoric_nimble_edge
 		}
 		"AttachWearables"
 		{
-			"Wearable1" { "ItemDef" "" }
-			"Wearable2" { "ItemDef" "" }
-			"Wearable3" { "ItemDef" "" }
-			"Wearable4" { "ItemDef" "" }
-			"Wearable5" { "ItemDef" "" }
+			"Wearable1" { "ItemDef" "9319" }
+			"Wearable2" { "ItemDef" "9320" }
+			"Wearable3" { "ItemDef" "9321" }
+			"Wearable4" { "ItemDef" "9322" }
+			"Wearable5" { "ItemDef" "9323" }
 		}
 	}
 }

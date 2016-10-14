@@ -1,26 +1,25 @@
 tower_kingLeoric_trickster
 {
 	"BaseClass"					"npc_dota_creature"
-	"Model"						""
-	"SoundSet"					""
-	"GameSoundsFile"			""
+	"Model"						"models/heroes/rikimaru/rikimaru.vmdl"
+	"SoundSet"					"Hero_Riki"
 	"ModelScale"				"1.0"
 	"HealthBarOffset"			"150"
 	"Level"						"1"
 	"Vscripts"					"ai/ai_default.lua"
 
 	"Ability1"					""
-	"Ability2"					""
-	"Ability3"					""
+	"Ability2"					"kingLeoric_upgrade_stealth_assassin"
+	"Ability3"					"kingLeoric_upgrade_blood_drinker"
 	"Ability4"					"sell"
 
-	"ArmorPhysical"				"0"
+	"ArmorPhysical"				"15"
 	"MagicalResistance"			"0"
 
 	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"			"1"
-	"AttackDamageMax"			"1"
+	"AttackDamageMin"			"100"
+	"AttackDamageMax"			"350"
 	"AttackRate"				"1"
 	"AttackAnimationPoint"		"0.5"
 	"AttackAcquisitionRange"	"850"
@@ -37,15 +36,15 @@ tower_kingLeoric_trickster
 	"BountyGoldMin"				"0"
 	"BountyGoldMax"				"0"
 
-	"BoundsHullName"			"DOTA_HULL_SIZE_REFULAR"
+	"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
 	"RingRadius"				"30"
 
 	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"				"300"
+	"MovementSpeed"				"270"
 	"MovementTurnRate"			"0.5"
 
-	"StatusHealth"				"360"
-	"StatusHealthRegen"			"0"
+	"StatusHealth"				"375"
+	"StatusHealthRegen"			"5"
 	"StatusMana"				"0"
 	"StatusManaRegen"			"0"
 
@@ -73,10 +72,12 @@ tower_kingLeoric_trickster
 		}
 		"AttachWearables"
 		{
-			"Wearable1" { "ItemDef" "" }
-			"Wearable2" { "ItemDef" "" }
-			"Wearable3" { "ItemDef" "" }
-			"Wearable4" { "ItemDef" "" }
+			"Wearable1" { "ItemDef" "7990" }
+			"Wearable2" { "ItemDef" "7154" }
+			"Wearable3" { "ItemDef" "7159" }
+			"Wearable4" { "ItemDef" "7161" }
+			"Wearable5" { "ItemDef" "7162" }
+			"Wearable6" { "ItemDef" "7165" }
 		}
 	}
 }

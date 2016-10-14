@@ -1,9 +1,8 @@
 tower_kingLeoric_blood_drinker
 {
 	"BaseClass"					"npc_dota_creature"
-	"Model"						""
-	"SoundSet"					""
-	"GameSoundsFile"			""
+	"Model"						"models/heroes/blood_seeker/blood_seeker.vmdl"
+	"SoundSet"					"Hero_Bloodseeker"
 	"ModelScale"				"1.0"
 	"HealthBarOffset"			"150"
 	"Level"						"1"
@@ -14,13 +13,13 @@ tower_kingLeoric_blood_drinker
 	"Ability3"					""
 	"Ability4"					"sell"
 
-	"ArmorPhysical"				"0"
+	"ArmorPhysical"				"15"
 	"MagicalResistance"			"0"
 
 	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"			"1"
-	"AttackDamageMax"			"1"
+	"AttackDamageMin"			"200"
+	"AttackDamageMax"			"350"
 	"AttackRate"				"1"
 	"AttackAnimationPoint"		"0.5"
 	"AttackAcquisitionRange"	"850"
@@ -37,15 +36,15 @@ tower_kingLeoric_blood_drinker
 	"BountyGoldMin"				"0"
 	"BountyGoldMax"				"0"
 
-	"BoundsHullName"			"DOTA_HULL_SIZE_REFULAR"
+	"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
 	"RingRadius"				"30"
 
 	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"				"300"
+	"MovementSpeed"				"270"
 	"MovementTurnRate"			"0.5"
 
-	"StatusHealth"				"360"
-	"StatusHealthRegen"			"0"
+	"StatusHealth"				"750"
+	"StatusHealthRegen"			"20"
 	"StatusMana"				"0"
 	"StatusManaRegen"			"0"
 
@@ -73,10 +72,13 @@ tower_kingLeoric_blood_drinker
 		}
 		"AttachWearables"
 		{
-			"Wearable1" { "ItemDef" "" }
-			"Wearable2" { "ItemDef" "" }
-			"Wearable3" { "ItemDef" "" }
-			"Wearable4" { "ItemDef" "" }
+			"Wearable1" { "ItemDef" "6650" }
+			"Wearable2" { "ItemDef" "6651" }
+			"Wearable3" { "ItemDef" "6652" }
+			"Wearable4" { "ItemDef" "7426" }
+			"Wearable5" { "ItemDef" "6654" }
+			"Wearable6" { "ItemDef" "6655" }
+			"Wearable7" { "ItemDef" "7425" }
 		}
 	}
 }

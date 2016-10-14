@@ -1,9 +1,8 @@
 tower_kingLeoric_timekeeper
 {
 	"BaseClass"					"npc_dota_creature"
-	"Model"						""
-	"SoundSet"					""
-	"GameSoundsFile"			""
+	"Model"						"models/heroes/lanaya/lanaya.vmdl"
+	"SoundSet"					"Hero_TemplarAssassin"
 	"ModelScale"				"1.0"
 	"HealthBarOffset"			"150"
 	"Level"						"1"
@@ -14,20 +13,20 @@ tower_kingLeoric_timekeeper
 	"Ability3"					""
 	"Ability4"					"sell"
 
-	"ArmorPhysical"				"0"
+	"ArmorPhysical"				"5"
 	"MagicalResistance"			"0"
 
-	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"			"1"
-	"AttackDamageMax"			"1"
+	"AttackDamageMin"			"100"
+	"AttackDamageMax"			"400"
 	"AttackRate"				"1"
 	"AttackAnimationPoint"		"0.5"
 	"AttackAcquisitionRange"	"850"
-	"AttackRange"				"90"
+	"AttackRange"				"400"
 	"AttackRangeBuffer"			"250"
-	"ProjectileModel"			""
-	"ProjectileSpeed"			"0"
+	"ProjectileModel"			"particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
+	"ProjectileSpeed"			"900"
 
 	"Legion_AttackType"			"normal"
 	"Legion_DefendType"			"medium"
@@ -37,14 +36,14 @@ tower_kingLeoric_timekeeper
 	"BountyGoldMin"				"0"
 	"BountyGoldMax"				"0"
 
-	"BoundsHullName"			"DOTA_HULL_SIZE_REFULAR"
+	"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
 	"RingRadius"				"30"
 
 	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"				"300"
+	"MovementSpeed"				"270"
 	"MovementTurnRate"			"0.5"
 
-	"StatusHealth"				"360"
+	"StatusHealth"				"175"
 	"StatusHealthRegen"			"0"
 	"StatusMana"				"0"
 	"StatusManaRegen"			"0"
@@ -73,10 +72,10 @@ tower_kingLeoric_timekeeper
 		}
 		"AttachWearables"
 		{
-			"Wearable1" { "ItemDef" "" }
-			"Wearable2" { "ItemDef" "" }
-			"Wearable3" { "ItemDef" "" }
-			"Wearable4" { "ItemDef" "" }
+			"Wearable1" { "ItemDef" "7433" }
+			"Wearable2" { "ItemDef" "7435" }
+			"Wearable3" { "ItemDef" "7436" }
+			"Wearable4" { "ItemDef" "9318" }
 		}
 	}
 }

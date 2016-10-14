@@ -36,7 +36,7 @@ tower_kingLeoric_bloodknife
 	"BountyGoldMin"				"0"
 	"BountyGoldMax"				"0"
 
-	"BoundsHullName"			"DOTA_HULL_SIZE_REFULAR"
+	"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
 	"RingRadius"				"30"
 
 	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -72,7 +72,11 @@ tower_kingLeoric_bloodknife
 		}
 		"AttachWearables"
 		{
-			"Wearable1" { "ItemDef" "7247" }
+			"Wearable1" { "ItemDef" "137" }
+			"Wearable2" { "ItemDef" "138" }
+			"Wearable3" { "ItemDef" "139" }
+			"Wearable4" { "ItemDef" "7247" }
+			"Wearable5" { "ItemDef" "141" }
 		}
 	}
 }
