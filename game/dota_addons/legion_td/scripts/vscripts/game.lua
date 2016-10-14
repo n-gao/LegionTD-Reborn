@@ -41,6 +41,7 @@ function Game.new()
   LinkLuaModifier( "modifier_defend_medium_lua", "abilities/damage/modifier_defend_medium_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
   LinkLuaModifier( "modifier_defend_light_lua", "abilities/damage/modifier_defend_light_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
   LinkLuaModifier( "modifier_king_duel_lua", "abilities/modifier_king_duel_lua.lua", LUA_MODIFIER_MOTION_NONE)
+  LinkLuaModifier( "modifier_unit_freeze_lua", "abilities/modifier_unit_freeze_lua.lua", LUA_MODIFIER_MOTION_NONE)
 
   if Convars:GetBool('developer') then
     Convars:RegisterCommand("start_next_round", Dynamic_Wrap(self, "StartNextRoundCommand"), "keine Ahnung", 0)
@@ -704,7 +705,7 @@ function Game:SendUnit(data)
     local unit = CreateUnitByName(name, spawn, true, nil, nil, team)
     unit.tangoValue = lData.cost
     unit:AddNewModifier(nil, nil, "modifier_invulnerable", {})
-    unit:AddNewModifier(nil, nil, "modifier_stunned", {})
+    unit:AddNewModifier(nil, nil, "modifier_unit_freeze_lua", {})
     WaveSpawner.ApplyHardMode(unit)
     local sendFromRadiant = false
     if team == DOTA_TEAM_GOODGUYS then
@@ -1066,6 +1067,7 @@ function Game:RequestRanking(data)
     from = data.from,
     to = data.to
   }
+
   Game.storage:GetRanking(lData.attribute, lData.from, lData.to, function(result, success)
       --print("First result")
       --DeepPrintTable(result)
@@ -1074,6 +1076,20 @@ function Game:RequestRanking(data)
       --DeepPrintTable(sendData)
       CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerID), "send_rankings", sendData)
     end)
+end
+
+function Game:SaveDataAtEnd()
+  HookSetWinnerFunction(function(gameRules, team)
+    for _,player in pairs(self.players) do
+      if player:GetTeamNumber() == team then
+        player.wonGame = true
+      else
+        player.lostGame = true
+      end
+      local data = player:GetToStoredData()
+      self.storage:SavePlayerData(player:GetSteamID(), data)
+    end
+  end)
 end
 
 function Game:GetAllFractions()
@@ -1096,21 +1112,6 @@ function Game:GetAllBuilders()
    end
    return result
 end
-
-function Game:SaveDataAtEnd()
-  HookSetWinnerFunction(function(gameRules, team)
-    for _,player in pairs(self.players) do
-      if player:GetTeamNumber() == team then
-        player.wonGame = true
-      else
-        player.lostGame = true
-      end
-      local data = PlayerData.Get(player:GetSteamID()):GetToStoredData()
-      self.storage:SavePlayerData(player:GetSteamID(), data)
-    end
-  end)
-end
-
 
 function HookSetWinnerFunction(callback)
     local oldSetGameWinner = GameRules.SetGameWinner
