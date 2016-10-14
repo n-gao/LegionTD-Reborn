@@ -2,6 +2,7 @@ if Unit == nil then
   Unit = class({})
 end
 
+LinkLuaModifier( "modifier_unit_freeze_lua", "abilities/modifier_unit_freeze_lua.lua", LUA_MODIFIER_MOTION_NONE)
 
 function Unit.GetUnitNameByID(id)
   if id == 1 then return "tower_naturebuilder_spider"
@@ -65,6 +66,25 @@ function Unit.GetUnitNameByID(id)
   elseif id == 120 then return "tower_humanbuilder_soundmaster"
   elseif id == 121 then return "tower_humanbuilder_spearman"
   elseif id == 122 then return "tower_humanbuilder_tactician"
+
+  elseif id == 300 then return "tower_kingLeoric_creeping_shadow"
+  elseif id == 301 then return "tower_kingLeoric_jester"
+  elseif id == 302 then return "tower_kingLeoric_lotus"
+  elseif id == 303 then return "tower_kingLeoric_mind_stealer"
+  elseif id == 304 then return "tower_kingLeoric_zealot_scarab"
+  elseif id == 305 then return "tower_kingLeoric_alpha_predator"
+  elseif id == 306 then return "tower_kingLeoric_bloodknife"
+  elseif id == 307 then return "tower_kingLeoric_blood_drinker"
+  elseif id == 308 then return "tower_kingLeoric_dark_wraith"
+  elseif id == 309 then return "tower_kingLeoric_mind_breaker"
+  elseif id == 310 then return "tower_kingLeoric_mind_slicer"
+  elseif id == 311 then return "tower_kingLeoric_nightshade"
+  elseif id == 312 then return "tower_kingLeoric_nimble_edge"
+  elseif id == 313 then return "tower_kingLeoric_shadow_hunter"
+  elseif id == 314 then return "tower_kingLeoric_silent_champion"
+  elseif id == 315 then return "tower_kingLeoric_stealth_assassin"
+  elseif id == 316 then return "tower_kingLeoric_timekeeper"
+  elseif id == 317 then return "tower_kingLeoric_trickster"
 
   elseif id == 1001 then return "incomeunit_kobold"
   elseif id == 1002 then return "incomeunit_hill_troll_shaman"
@@ -161,7 +181,7 @@ end
 
 function Unit:Unlock()
   if self.npc and not self.npc:IsNull() and self.npc:IsAlive() then
-    self.npc:RemoveModifierByName("modifier_stunned")
+    self.npc:RemoveModifierByName("modifier_unit_freeze_lua")
     self.npc:RemoveModifierByName("modifier_invulnerable")
     self.npc:SetControllableByPlayer(-1, false)
     self.npc:Stop()
@@ -195,7 +215,7 @@ end
 function Unit:Lock()
   if not self.npc:IsNull() and self.npc:IsAlive() then
     self.npc:AddNewModifier(nil, nil, "modifier_invulnerable", {})
-    self.npc:AddNewModifier(nil, nil, "modifier_stunned", {})
+    self.npc:AddNewModifier(nil, nil, "modifier_unit_freeze_lua", {})
     self:GivePlayerControl()
   end
 end

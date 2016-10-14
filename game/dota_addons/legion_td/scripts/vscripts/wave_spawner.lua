@@ -2,6 +2,16 @@ if WaveSpawner == nil then
   WaveSpawner = class({})
 end
 
+
+
+ai_standard = require('ai/ai_core')
+ai_techies = require('ai/waves/ai_techies')
+ai_dragon = require('ai/waves/ai_dragon')
+ai_deathprophet = require('ai/waves/ai_deathprophet')
+ai_ogre = require('ai/waves/ai_ogre')
+ai_rubick = require('ai/waves/ai_rubick')
+ai_necro_replacement = require('ai/waves/ai_necro_replacement')
+
 function WaveSpawner:ReadConfiguration(name, kv, gameRound)
   self.gameRound = gameRound
   self.name = name
@@ -224,7 +234,7 @@ function WaveSpawner:SendIncomingUnits(team)
 
         FindClearSpaceForUnit(unit, rank1 + positions[k], true)
 
-        unit:RemoveModifierByName("modifier_stunned")
+        unit:RemoveModifierByName("modifier_unit_freeze_lua")
         unit:RemoveModifierByName("modifier_invulnerable")
 
         unit.waypoints = {}
