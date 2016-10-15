@@ -1,7 +1,41 @@
 "use strict";
 
+var rankingPositionCallbacks = {}
+
 function GetCallbacks() {
     return GameUI.CustomUIConfig().Rankings.Callbacks;
+}
+
+function GetRPCallbacks(attribute, steamId) {
+    if (rankingPositionCallbacks[attribute] == null) {
+        rankingPositionCallbacks[attribute] = {};
+    }
+    if (rankingPositionCallbacks[attribute][steamId] == null) {
+        rankingPositionCallbacks[attribute][steamId] = [];
+    }
+    return rankingPositionCallbacks[attribute][steamId];
+}
+
+function RequestRankingPosition(attribute, steamId, callback) {
+    var data = {
+        playerId : Players.GetLocalPlayer(),
+        attribute : attribute,
+        steamId : steamId,
+    }
+    GetRPCallbacks(attribute, steamId).push(callback);
+    GameEvents.SendCustomGameEventToServer("request_ranking_position", data);
+}
+
+function CallRPCallbacks(attribute, steamId, rank) {
+    var callbacks = GetRPCallbacks(attribute, steamId);
+    for (var i = callbacks.length - 1; i >= 0; i--) {
+        callbacks[i](rank);
+        callbacks.splice(i, 1);
+    }
+}
+
+function ReceiveRankingPosition(data) {
+    CallRPCallbacks(data.attribute, data.steamId, data.rank);
 }
 
 function RequestRankingFromTo(attribute, start, end, callback) {
@@ -37,8 +71,9 @@ function GetRankings() {
 }
 
 function UpdateRanking(data) {
+    $.Msg(data);
     var ranking = GetRanking(data.attribute);
-    for (var i = 0; i <= data.count; i++) {
+    for (var i = 0; i < data.count; i++) {
         ranking[data[i].rank] = data[i].steamId
         GetStoredData()[data[i].steamId] = data[i].data
     }
@@ -62,6 +97,7 @@ function HasDataFor(callbackData) {
         if (ranking[i] == null) {
             return false;
         }
+
     }
     return true;
 }
@@ -71,7 +107,9 @@ function InitRanking() {
         GameUI.CustomUIConfig().Rankings = {};
         GameUI.CustomUIConfig().Rankings.Callbacks = [];
         GameUI.CustomUIConfig().Rankings.Requests = [];
+        GameUI.CustomUIConfig().RankingPositions = {};
 	    GameEvents.Subscribe("send_rankings", UpdateRanking);
+        GameEvents.Subscribe("send_ranking_position", ReceiveRankingPosition);
     //}
 }
 

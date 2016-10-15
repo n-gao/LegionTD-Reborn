@@ -20,12 +20,17 @@
       </DropDown>
     </Panel>
     <Panel id="RankingLabels" styles="width: 100%;">
-      <Label text="#Rank" class="RankingRank"/>
-      <Label text="Missing Text" id="RankingAttributeLabel" class="RankingValue"/>
-      <Label text="#Player" class="RankingName"/>
+      <Label text="#Rank" class="RankingRank Headline"/>
+      <Label text="Missing Text" id="RankingAttributeLabel" class="RankingValue Headline"/>
+      <Label text="#Player" class="RankingName Headline"/>
     </Panel>
-    <Panel id="RankingList" >
+    <Panel id="RankingList">
       <!--<Label text="Coming soon." style="color: white; text-align: center; font-size: 14px; width: 200px; margin-top: 20px;"/>-->
-    </Panel>  
+    </Panel>
+    <Panel id="RankingLocal">
+      <Label text="#Rank" id="RankingLocalRank" class="RankingRank StatisticsText"/>
+      <Label text="Missing Text" id="RankingLocalValue" class="RankingValue StatisticsText"/>
+      <DOTAUserName steamid="local" class="RankingName StatisticsText"/>
+    </Panel>
   </Panel>
 </root>

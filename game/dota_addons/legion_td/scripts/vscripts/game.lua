@@ -57,6 +57,8 @@ function Game.new()
   CustomGameEventManager:RegisterListener("skip_pressed", Dynamic_Wrap(Game, "SkipPressed"))
   CustomGameEventManager:RegisterListener("request_stored_data", Dynamic_Wrap(Game, "RequestStoredData"))
   CustomGameEventManager:RegisterListener("request_ranking", Dynamic_Wrap(Game, "RequestRanking"))
+  CustomGameEventManager:RegisterListener("request_ranking_position", Dynamic_Wrap(Game, "RequestRankingPosition"))
+
 
   return self
 end
@@ -217,24 +219,28 @@ function Game:ReadRoundConfiguration(kv)
   self.doneDuels = 0
   local duelRoundCount = 0
   while true do
-    local roundName = string.format("Round%d", #self.rounds + 1 - duelRoundCount)
+    local roundName = string.format("Round%d", self:GetRoundCount() + 1 - duelRoundCount)
     local roundData = kv[roundName]
     if roundData == nil then
       return
     end
     local roundObj = GameRound()
-    roundObj:ReadRoundConfiguration(roundData, #self.rounds + 1 - duelRoundCount)
+    roundObj:ReadRoundConfiguration(roundData, self:GetRoundCount() + 1 - duelRoundCount)
     table.insert(self.rounds, roundObj)
-    if #self.rounds % 5 == duelRoundCount then
+    if self:GetRoundCount() % 5 == duelRoundCount then
       local duelRoundName = "DuelRound"..(duelRoundCount + 1)
       local duelRoundData = kv[duelRoundName]
       if duelRoundData then
-        table.insert(self.rounds, DuelRound.new(duelRoundData, #self.rounds + 1, false))
+        table.insert(self.rounds, DuelRound.new(duelRoundData, self:GetRoundCount() + 1, false))
         duelRoundCount = duelRoundCount + 1
       end
     end
-    print("Round "..#self.rounds.." loaded")
+    print("Round "..self:GetRoundCount().." loaded")
   end
+end
+
+function Game:GetRoundCount()
+  return table.count(self.rounds)
 end
 
 
@@ -876,7 +882,7 @@ end
 
 function Game:IncreaseRound()
   Game.gameRound = Game.gameRound + 1;
-  if (Game.gameRound > #Game.rounds) then
+  if (Game.gameRound > Game:GetRoundCount()) then
     Game.gameRound = Game.gameRound - 1
     Game.doneDuels = Game.doneDuels + 1
     Game.finishedWaves = true
@@ -1069,9 +1075,28 @@ function Game:RequestRanking(data)
   }
   Game.storage:GetRanking(lData.attribute, lData.from, lData.to, function(result, success)
       local sendData = Game:ConvertRankingData(result)
-      sendData.count = #sendData
+      sendData.count = table.count(sendData)
       sendData.attribute = lData.attribute
       CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerID), "send_rankings", sendData)
+    end)
+end
+
+function table.count(tab)
+  local result = 0
+  for k,v in pairs(tab) do
+    result = result + 1
+  end
+  return result
+end
+
+function Game:RequestRankingPosition(data)
+  local lData = {
+    playerId = data.playerId,
+    attribute = data.attribute,
+    steamId = data.steamId,
+  }
+  Game.storage:GetRankingPosition(lData.attribute, lData.steamId, function(result)
+      CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerId), "send_ranking_position", result)
     end)
 end
 
@@ -1083,7 +1108,7 @@ function Game:SaveDataAtEnd()
       else
         player.lostGame = true
       end
-      local data = player:GetToStoredData()
+      local data = PlayerData.Get(player:GetSteamID()):GetToStoredData()
       self.storage:SavePlayerData(player:GetSteamID(), data)
     end
   end)

@@ -10,16 +10,41 @@ Storage.serverURL = "http://localhost:5000/api/playerdata"
 Storage.app_id = 1
 
 Storage.online = true
-
+--key: steamId
+--value: table
+----key: assigned by table.insert
+----value: callback
 Storage.requested = {}
-
-Storage.rankingRequests = {}
-
+--key: steamId
+--value: data
 Storage.cachedData = {}
-
+--key: attribute
+--value: table
+----key: assinged by table.insert
+----value: { from, to, callback }
+Storage.rankingRequests = {}
+--key: attribute
+--value: table
+----key: rank
+----value: data
 Storage.rankings = {}
-
+--key: attribute
+--value: table
+----key: attribute
+----value: playerCount
 Storage.rankingEntries = {}
+--key: attribute
+--value: table
+----key: steamId
+----value: rank
+Storage.rankingPositions = {}
+--key: attribute
+--value: table
+----key: steamId
+----value: table
+------key: assigned by table.insert
+------value: callback
+Storage.rankingPositionRequests = {}
 
 function Storage:Init()
     local data = LoadKeyValues("scripts/vscripts/libs/storage_settings.kv")
@@ -29,6 +54,51 @@ function Storage:Init()
 end
 
 Storage:Init()
+
+function Storage:GetRankingPosition(attribute, steamId, callback)
+    local rankingPositions = self:GetRankingPositions(attribute)
+    if rankingPositions[steamId] ~= nil then
+        return callback({attribute = attribute, steamId = steamId, rank =rankingPositions[steamId]})
+    end
+    table.insert(self:GetRankingPositionCallbacks(attribute, steamId), callback)
+    self:RequestRankingPosition(attribute, steamId)
+end
+
+function Storage:RequestRankingPosition(attribute, steamId)
+    self:SendHttpRequest("GET", {
+        customGameId = self.app_id,
+        steamId = steamId,
+        attribute = attribute
+    }, function(result)
+        local resultTable = JSON:decode(result)
+        print("GET RANKING POSITION RESPONSE")
+        DeepPrintTable(resultTable)
+        self:GetRankingPositions(resultTable.attribute)[resultTable.steamId] = resultTable.rank
+        local callbacks = self:GetRankingPositionCallbacks(resultTable.attribute, resultTable.steamId)
+        for k, callback in pairs(callbacks) do
+            callback(resultTable)
+            callbacks[k] = nil
+        end
+    end)
+end
+
+function Storage:GetRankingPositionCallbacks(attribute, steamId)
+    if self.rankingPositionRequests[attribute] == nil then
+        self.rankingPositionRequests[attribute] = {}
+    end
+    local attributeCallbacks = self.rankingPositionRequests[attribute]
+    if attributeCallbacks[steamId] == nil then
+        attributeCallbacks[steamId] = {}
+    end
+    return attributeCallbacks[steamId]
+end
+
+function Storage:GetRankingPositions(attribute)
+    if self.rankingPositions[attribute] == nil then
+        self.rankingPositions[attribute] = {}
+    end
+    return self.rankingPositions[attribute]
+end
 
 function Storage:GetRanking(attribute, from, to, callback)
     if (self:ContainsCachedRankings(attribute, from, to)) then

@@ -38,3 +38,12 @@
 .RankingName {
     horizontal-align: right;
 }
+
+.Headline {
+    text-transform: uppercase;
+}
+
+#RankingLocal {
+    width: 100%;
+    margin-top: 10px;
+}

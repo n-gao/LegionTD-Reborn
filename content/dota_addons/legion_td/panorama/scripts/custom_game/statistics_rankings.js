@@ -17,6 +17,11 @@ function SetRanking(newAttribute) {
             AddRankingEntry(attribute, result[i], i + start);
         }
     });
+    var steamId = Game.GetLocalPlayerInfo().player_steamid
+    RequestRankingPosition(attribute, steamId, function(result) {
+        $("#RankingLocalRank").text = result;
+        $("#RankingLocalValue").text = GetDataOf(steamId, attribute);
+    })
 }
 
 function ClearRanking() {
