@@ -9,7 +9,7 @@ var g_PlayerPanels = [];
 
 var g_TEAM_SPECATOR = 1;
 
-var min_wait_time = 0;
+var min_wait_time = 20;
 
 var startTime = Game.GetGameTime();
 

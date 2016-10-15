@@ -41,6 +41,7 @@ function Game.new()
   LinkLuaModifier( "modifier_defend_medium_lua", "abilities/damage/modifier_defend_medium_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
   LinkLuaModifier( "modifier_defend_light_lua", "abilities/damage/modifier_defend_light_lua.lua" ,LUA_MODIFIER_MOTION_NONE )
   LinkLuaModifier( "modifier_king_duel_lua", "abilities/modifier_king_duel_lua.lua", LUA_MODIFIER_MOTION_NONE)
+  LinkLuaModifier( "modifier_unit_freeze_lua", "abilities/modifier_unit_freeze_lua.lua", LUA_MODIFIER_MOTION_NONE)
 
   if Convars:GetBool('developer') then
     Convars:RegisterCommand("start_next_round", Dynamic_Wrap(self, "StartNextRoundCommand"), "keine Ahnung", 0)
@@ -56,6 +57,8 @@ function Game.new()
   CustomGameEventManager:RegisterListener("skip_pressed", Dynamic_Wrap(Game, "SkipPressed"))
   CustomGameEventManager:RegisterListener("request_stored_data", Dynamic_Wrap(Game, "RequestStoredData"))
   CustomGameEventManager:RegisterListener("request_ranking", Dynamic_Wrap(Game, "RequestRanking"))
+  CustomGameEventManager:RegisterListener("request_ranking_position", Dynamic_Wrap(Game, "RequestRankingPosition"))
+
 
   return self
 end
@@ -216,24 +219,28 @@ function Game:ReadRoundConfiguration(kv)
   self.doneDuels = 0
   local duelRoundCount = 0
   while true do
-    local roundName = string.format("Round%d", #self.rounds + 1 - duelRoundCount)
+    local roundName = string.format("Round%d", self:GetRoundCount() + 1 - duelRoundCount)
     local roundData = kv[roundName]
     if roundData == nil then
       return
     end
     local roundObj = GameRound()
-    roundObj:ReadRoundConfiguration(roundData, #self.rounds + 1 - duelRoundCount)
+    roundObj:ReadRoundConfiguration(roundData, self:GetRoundCount() + 1 - duelRoundCount)
     table.insert(self.rounds, roundObj)
-    if #self.rounds % 5 == duelRoundCount then
+    if self:GetRoundCount() % 5 == duelRoundCount then
       local duelRoundName = "DuelRound"..(duelRoundCount + 1)
       local duelRoundData = kv[duelRoundName]
       if duelRoundData then
-        table.insert(self.rounds, DuelRound.new(duelRoundData, #self.rounds + 1, false))
+        table.insert(self.rounds, DuelRound.new(duelRoundData, self:GetRoundCount() + 1, false))
         duelRoundCount = duelRoundCount + 1
       end
     end
-    print("Round "..#self.rounds.." loaded")
+    print("Round "..self:GetRoundCount().." loaded")
   end
+end
+
+function Game:GetRoundCount()
+  return table.count(self.rounds)
 end
 
 
@@ -704,7 +711,7 @@ function Game:SendUnit(data)
     local unit = CreateUnitByName(name, spawn, true, nil, nil, team)
     unit.tangoValue = lData.cost
     unit:AddNewModifier(nil, nil, "modifier_invulnerable", {})
-    unit:AddNewModifier(nil, nil, "modifier_stunned", {})
+    unit:AddNewModifier(nil, nil, "modifier_unit_freeze_lua", {})
     WaveSpawner.ApplyHardMode(unit)
     local sendFromRadiant = false
     if team == DOTA_TEAM_GOODGUYS then
@@ -843,7 +850,7 @@ end
 function Game:CountSkipvotes()
   local result = 0
   for _,player in pairs(self.players) do
-    if (player.wantsSkip) then
+    if player:WantsToSkip() then
       result = result + 1
     end
   end
@@ -852,7 +859,7 @@ end
 
 function Game:CheckSkip() 
   for _,player in pairs(self.players) do
-    if (player.wantsSkip == false) then
+    if not player:WantsToSkip() then
       return
     end
   end
@@ -875,7 +882,7 @@ end
 
 function Game:IncreaseRound()
   Game.gameRound = Game.gameRound + 1;
-  if (Game.gameRound > #Game.rounds) then
+  if (Game.gameRound > Game:GetRoundCount()) then
     Game.gameRound = Game.gameRound - 1
     Game.doneDuels = Game.doneDuels + 1
     Game.finishedWaves = true
@@ -1052,10 +1059,11 @@ function Game:ConvertRankingData(data)
   local result = {}
   for k,val in pairs(data) do
     result[k] = {}
-    result[k].SteamId = val.SteamId
-    reuslt[k].Rank = val.Rank
-    result[k].Data = PlayerData.AddOrUpdate(val.Data, nil, val.SteamId)
+    result[k].steamId = val.steamId
+    result[k].rank = val.rank
+    result[k].data = PlayerData.newWithoutSave(val.data, nil, val.steamId):GetToStoredData()
   end
+  return result
 end
 
 function Game:RequestRanking(data)
@@ -1065,10 +1073,45 @@ function Game:RequestRanking(data)
     from = data.from,
     to = data.to
   }
-  Game.storage:GetRanking(lData.attribute, lData.from, lData.to, function(result, success) 
+  Game.storage:GetRanking(lData.attribute, lData.from, lData.to, function(result, success)
       local sendData = Game:ConvertRankingData(result)
-      CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerID), sendData)
+      sendData.count = table.count(sendData)
+      sendData.attribute = lData.attribute
+      CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerID), "send_rankings", sendData)
     end)
+end
+
+function table.count(tab)
+  local result = 0
+  for k,v in pairs(tab) do
+    result = result + 1
+  end
+  return result
+end
+
+function Game:RequestRankingPosition(data)
+  local lData = {
+    playerId = data.playerId,
+    attribute = data.attribute,
+    steamId = data.steamId,
+  }
+  Game.storage:GetRankingPosition(lData.attribute, lData.steamId, function(result)
+      CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerId), "send_ranking_position", result)
+    end)
+end
+
+function Game:SaveDataAtEnd()
+  HookSetWinnerFunction(function(gameRules, team)
+    for _,player in pairs(self.players) do
+      if player:GetTeamNumber() == team then
+        player.wonGame = true
+      else
+        player.lostGame = true
+      end
+      local data = PlayerData.Get(player:GetSteamID()):GetToStoredData()
+      self.storage:SavePlayerData(player:GetSteamID(), data)
+    end
+  end)
 end
 
 function Game:GetAllFractions()
@@ -1091,21 +1134,6 @@ function Game:GetAllBuilders()
    end
    return result
 end
-
-function Game:SaveDataAtEnd()
-  HookSetWinnerFunction(function(gameRules, team)
-    for _,player in pairs(self.players) do
-      if player:GetTeamNumber() == team then
-        player.wonGame = true
-      else
-        player.lostGame = true
-      end
-      local data = PlayerData.Get(player:GetSteamID()):GetToStoredData()
-      self.storage:SavePlayerData(player:GetSteamID(), data)
-    end
-  end)
-end
-
 
 function HookSetWinnerFunction(callback)
     local oldSetGameWinner = GameRules.SetGameWinner

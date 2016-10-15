@@ -1,0 +1,49 @@
+.RankingStatisticRoot {
+    flow-children: down;
+}
+
+#RankingAttributePanel {
+    width: 100%;
+}
+
+#RankingAttributeDropDown {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#RankingLabels {
+    width: 100%;
+    margin: 5px;
+}
+
+#RankingList {
+    flow-children: down;
+    max-height: 700px;
+    overflow: scroll;
+}
+
+.RankingAttribute {
+    width: 400px;
+}
+
+.RankingRank {
+    horizontal-align: left;
+}
+
+.RankingValue {
+    horizontal-align: middle;
+}
+
+.RankingName {
+    horizontal-align: right;
+}
+
+.Headline {
+    text-transform: uppercase;
+}
+
+#RankingLocal {
+    width: 100%;
+    margin-top: 10px;
+}

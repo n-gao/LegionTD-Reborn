@@ -1,5 +1,6 @@
 <root>
   <styles>
+    <include src="file://{resources}/styles/dotastyles.css" />
     <include src="file://{resources}/styles/custom_game/main_hud.css" />
     <include src="file://{resources}/styles/custom_game/statistics.css" />
     <include src="file://{resources}/styles/custom_game/statistics_rankings.css" />
@@ -10,8 +11,26 @@
     <include src="file://{resources}/scripts/custom_game/statistics_rankings.js" />
   </scripts>
   <Panel hittest="false" class="RankingStatisticRoot">
+    <Panel id="RankingAttributePanel">
+      <DropDown id="RankingAttributeDropDown" oninputsubmit="OnRankingChanged()">
+        <Label text="#attribute_experience" id="experience"/>
+        <Label text="#attribute_kills" id="kills"/>
+        <Label text="#attribute_won_games" id="won_games"/> 
+        <Label text="#attribute_earned_tangos" id="earned_tangos"/> 
+      </DropDown>
+    </Panel>
+    <Panel id="RankingLabels" styles="width: 100%;">
+      <Label text="#Rank" class="RankingRank Headline"/>
+      <Label text="Missing Text" id="RankingAttributeLabel" class="RankingValue Headline"/>
+      <Label text="#Player" class="RankingName Headline"/>
+    </Panel>
     <Panel id="RankingList">
-      <Label text="Coming soon." style="color: white; text-align: center; font-size: 14px; width: 200px; margin-top: 20px;"/>
-    </Panel>  
+      <!--<Label text="Coming soon." style="color: white; text-align: center; font-size: 14px; width: 200px; margin-top: 20px;"/>-->
+    </Panel>
+    <Panel id="RankingLocal">
+      <Label text="#Rank" id="RankingLocalRank" class="RankingRank StatisticsText"/>
+      <Label text="Missing Text" id="RankingLocalValue" class="RankingValue StatisticsText"/>
+      <DOTAUserName steamid="local" class="RankingName StatisticsText"/>
+    </Panel>
   </Panel>
 </root>

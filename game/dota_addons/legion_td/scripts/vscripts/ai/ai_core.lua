@@ -2,6 +2,8 @@ STANDARD_THINK_TIME = 0.1
 
 EXPORTS = {}
 
+LinkLuaModifier( "modifier_unit_freeze_lua", "abilities/modifier_unit_freeze_lua.lua", LUA_MODIFIER_MOTION_NONE)
+
 EXPORTS.Init = function( self )
 	self:SetContextThink( "init_think", function()
 		self.aiThink = aiThinkStandard
@@ -17,7 +19,7 @@ function aiThinkStandard(self)
 	if not self:IsAlive() and not self:HasModifier("modifier_invulnerable") then
 		return
 	end
-	if self:HasModifier("modifier_stunned") or GameRules:IsGamePaused() then
+	if self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() then
 		return STANDARD_THINK_TIME
 	end
 	if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
@@ -34,7 +36,7 @@ function aiThinkStandardBuff(self)
 	if not self:IsAlive() and not self:HasModifier("modifier_invulnerable") then
 		return
 	end
-	if self:HasModifier("modifier_stunned") or GameRules:IsGamePaused() then
+	if self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() then
 		return STANDARD_THINK_TIME
 	end
 	if self.ability:IsCooldownReady() then
@@ -53,7 +55,7 @@ function aiThinkStandardSkill(self)
 	if not self:IsAlive() and not self:HasModifier("modifier_invulnerable") then
 		return
 	end
-	if self:HasModifier("modifier_stunned") or GameRules:IsGamePaused() then
+	if self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() then
 		return STANDARD_THINK_TIME
 	end
 	if self:CheckIfHasAggro() and self.ability:IsCooldownReady() then

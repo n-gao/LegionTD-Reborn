@@ -2,6 +2,7 @@ if Unit == nil then
   Unit = class({})
 end
 
+LinkLuaModifier( "modifier_unit_freeze_lua", "abilities/modifier_unit_freeze_lua.lua", LUA_MODIFIER_MOTION_NONE)
 
 function Unit.GetUnitNameByID(id)
   if id == 1 then return "tower_naturebuilder_spider"
@@ -180,7 +181,7 @@ end
 
 function Unit:Unlock()
   if self.npc and not self.npc:IsNull() and self.npc:IsAlive() then
-    self.npc:RemoveModifierByName("modifier_stunned")
+    self.npc:RemoveModifierByName("modifier_unit_freeze_lua")
     self.npc:RemoveModifierByName("modifier_invulnerable")
     self.npc:SetControllableByPlayer(-1, false)
     self.npc:Stop()
@@ -214,7 +215,7 @@ end
 function Unit:Lock()
   if not self.npc:IsNull() and self.npc:IsAlive() then
     self.npc:AddNewModifier(nil, nil, "modifier_invulnerable", {})
-    self.npc:AddNewModifier(nil, nil, "modifier_stunned", {})
+    self.npc:AddNewModifier(nil, nil, "modifier_unit_freeze_lua", {})
     self:GivePlayerControl()
   end
 end

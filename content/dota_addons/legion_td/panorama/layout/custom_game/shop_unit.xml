@@ -5,7 +5,7 @@
     <include src="file://{resources}/styles/custom_game/shop.css" />
   </styles>
   <scripts>
-    <include src="file://{resources}/scripts/custom_game/legion_unit.js" />
+    <include src="file://{resources}/scripts/custom_game/shop_unit.js" />
   </scripts>
   <Panel hittest="true" class="ShopUnitPanel">
     <Button class="UnitButton" onmouseover="OnHover()" onmouseout="OnEndHover()" onactivate="OnUnitClicked()">
