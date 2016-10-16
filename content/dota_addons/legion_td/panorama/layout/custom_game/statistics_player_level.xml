@@ -5,7 +5,7 @@
     <scripts>
         <include src="file://{resources}/scripts/custom_game/utils.js"/>
         <include src="file://{resources}/scripts/custom_game/steam_id_getter.js"/>
-        <include src="file://{resources}/scripts/custom_game/legion_player_level.js"/>
+        <include src="file://{resources}/scripts/custom_game/statistics_player_level.js"/>
     </scripts>
     <Panel class="LegionLevelIconPanel">
         <Panel class="LegionLevelIconBackground">

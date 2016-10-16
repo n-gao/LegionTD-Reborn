@@ -47,3 +47,13 @@
     width: 100%;
     margin-top: 10px;
 }
+
+
+DOTAAvatarImage
+{
+  width: 32px;
+  height: 32px;
+  background-color: black;
+  vertical-align: top;
+  box-shadow: black 0px 0px 5px 2px;
+}
