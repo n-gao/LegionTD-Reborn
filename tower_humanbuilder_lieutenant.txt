@@ -1,0 +1,109 @@
+"tower_humanbuilder_lieutenant"
+{
+	// General
+	//----------------------------------------------------------------
+	"BaseClass"             "npc_dota_creature"
+	"Model"                 "models/heroes/sven/sven.vmdl"
+	"ModelScale"            "0.55"
+	"SoundSet"				"Hero_Sven"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
+	"Level"                 "1"
+	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
+
+	"Ability1"				"humanbuilder_upgrade_general"
+	"Ability4"				"sell"
+	"Ability3"				"ability_empty_3"
+	"Ability2"				"lieutenant_vigor_strike"
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"         "6"
+	"MagicalResistance"     "0"
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"       "56.25"
+	"AttackDamageMax"       "68.75"
+	"AttackRate"            "1.0"
+	"AttackAnimationPoint"  "0.5"
+	"AttackAcquisitionRange" "850"
+	"AttackRange"           "90"
+	"ProjectileModel"       ""
+	"ProjectileSpeed"       "0"
+
+	"Legion_AttackType"		"normal"
+	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"human"
+
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyGoldMin"         "0"
+	"BountyGoldMax"         "0"
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	"RingRadius"            "30"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"         "270"
+	"MovementTurnRate"      "0.6"
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"          "300"
+	"StatusHealthRegen"     "0"
+	"StatusMana"            "1"
+	"StatusManaRegen"       "0"
+
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"    "1400"
+	"VisionNighttimeRange"  "800"
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"              "DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	// Creature Data
+	//----------------------------------------------------------------
+	"Creature"
+	{
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"				"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"0.0"
+			}
+		}
+    "AttachWearables"
+    {
+      "Wearable1" { "ItemDef" "16" } // "Sven's Mask"
+      "Wearable2" { "ItemDef" "17" } // "Sven's Sword"
+      "Wearable3" { "ItemDef" "18" } // "Sven's Belt"
+      "Wearable4" { "ItemDef" "19" } // "Sven's Gauntlet"
+      "Wearable5" { "ItemDef" "20" } // "Sven's Shoulder"
+      "Wearable5" { "ItemDef" "581" } // "Sven's Back"
+//    "Wearable1" { "ItemDef" "5653" } // "Helm of the Warrior's Retribution"
+//    "Wearable2" { "ItemDef" "5647" } // "Sword of the Warrior's Retribution"
+//    "Wearable3" { "ItemDef" "5648" } // "Belt of the Warrior's Retribution"
+//    "Wearable4" { "ItemDef" "5652" } // "Gauntlet of the Warrior's Retribution"
+//    "Wearable5" { "ItemDef" "5645" } // "Pauldron of the Warrior's Retribution"
+//    "Wearable5" { "ItemDef" "5650" } // "Cape of the Warrior's Retribution"
+    }
+	}
+}

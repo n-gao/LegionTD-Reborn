@@ -1,0 +1,108 @@
+"tower_humanbuilder_futuristic_gyrocopter"
+{
+	// General
+	//----------------------------------------------------------------
+	"BaseClass"             "npc_dota_creature"
+	"Model"                 "models/heroes/gyro/gyro.vmdl"
+	"ModelScale"            "0.55"
+	"SoundSet"				"Hero_Gyrocopter"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_gyrocopter.vsndevts"
+	"Level"                 "1"
+	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/humanbuilder/ai_futuristic_gyrocopter.lua"
+
+	"Ability4"				"sell"
+	"Ability2"				"futuristic_gyrocopter_call_down"
+	"Ability3"				"ability_empty_3"
+	"Ability1"				"futuristic_gyrocopter_split_shot"
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"         "1"
+	"MagicalResistance"     "0"
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"       "300.0"
+	"AttackDamageMax"       "300.0"
+	"AttackRate"            "1"
+	"AttackAnimationPoint"  "0.2"
+	"AttackAcquisitionRange" "850"
+	"AttackRange"           "400"
+	"ProjectileModel"       "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
+	"ProjectileSpeed"       "3000"
+
+	"Legion_AttackType"		"pierce"
+	"Legion_DefendType"		"medium"
+	"Legion_Fraction"		"human"
+
+
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyGoldMin"         "0"
+	"BountyGoldMax"         "0"
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	"RingRadius"            "30"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"         "270"
+	"MovementTurnRate"      "0.6"
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"          "400"
+	"StatusHealthRegen"     "0"
+	"StatusMana"            "0"
+	"StatusManaRegen"       "0"
+
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"    "1400"
+	"VisionNighttimeRange"  "800"
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"              "DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	// Creature Data
+	//----------------------------------------------------------------
+	"Creature"
+	{
+		"DisableClumpingBehavior"       "1"
+		"DefaultState"				"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"0.0"
+			}
+		}
+    "AttachWearables"
+    {
+      "Wearable1" { "ItemDef" "126" } 	//"Gyrocopter's Bottles"
+      "Wearable2" { "ItemDef" "131" } 	//"Gyrocopter's head"
+      "Wearable4" { "ItemDef" "9261" } 	//"Atomic Ray Thrusters"
+      "Wearable5" { "ItemDef" "178" } 	//"Gyrocopter's Propeller"
+      "Wearable6" { "ItemDef" "527" } 	//"Gyrocopter's Ambient Effects"
+      "Wearable7" { "ItemDef" "6898" } 	//"Bonnet of the Rainmaker"
+      "Wearable8" { "ItemDef" "7121" } 	//"Olde Cap of the Rainmaker"
+      "Wearable9" { "ItemDef" "6899" } 	//"Wings of the Rainmaker"
+      "Wearable10" { "ItemDef" "6903" } 	//"Chassis of the Rainmaker"
+      // not used: gyrocopter's default homing missile
+    }
+	}
+}

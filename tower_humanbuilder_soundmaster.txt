@@ -1,0 +1,102 @@
+"tower_humanbuilder_soundmaster"
+{
+	// General
+	//----------------------------------------------------------------
+	"BaseClass"             "npc_dota_creature"
+	"Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
+	"ModelScale"            "0.55"
+	"SoundSet"				"Hero_CrystalMaiden"
+	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
+	"Level"                 "1"
+	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/humanbuilder/ai_soundmaster.lua"
+
+	"Ability4"				"sell"
+	"Ability3"				"ability_empty_3"
+	"Ability1"				"soundmaster_deafening_blast"
+	"Ability2"				"soundmaster_lightning_storm"
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"         "0"
+	"MagicalResistance"     "0"
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"       "68.75"
+	"AttackDamageMax"       "68.75"
+	"AttackRate"            "1.7"
+	"AttackAnimationPoint"  "0.5"
+	"AttackAcquisitionRange" "850"
+	"AttackRange"           "500"
+	"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
+	"ProjectileSpeed"       "420"
+
+	"Legion_AttackType"		"arcane"
+	"Legion_DefendType"		"light"
+	"Legion_Fraction"		"human"
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyGoldMin"         "0"
+	"BountyGoldMax"         "0"
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	"RingRadius"            "30"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"         "270"
+	"MovementTurnRate"      "0.6"
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"          "100"
+	"StatusHealthRegen"     "0"
+	"StatusMana"            "0"
+	"StatusManaRegen"       "0"
+
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"    "1400"
+	"VisionNighttimeRange"  "800"
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"              "DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	// Creature Data
+	//----------------------------------------------------------------
+	"Creature"
+	{
+		"DisableClumpingBehavior"       "1"
+		"DefaultState"				"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"0.0"
+			}
+		}
+    "AttachWearables"
+    {
+      "Wearable1" { "ItemDef" "8695" } // "Cape of the Glacial Magnolia"
+      "Wearable2" { "ItemDef" "8697" } // "Mantle of the Glacial Magnolia"
+      "Wearable3" { "ItemDef" "4383" } // "Staff of the Crystalline Queen"
+      "Wearable4" { "ItemDef" "4420" } // "Bracers of the Crystalline Queen"
+      "Wearable5" { "ItemDef" "4540" } // "Tiara of the Crystalline Queen"
+      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
+    }
+	}
+}
