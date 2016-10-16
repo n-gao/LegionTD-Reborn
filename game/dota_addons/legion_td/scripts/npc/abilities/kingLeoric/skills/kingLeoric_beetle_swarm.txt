@@ -1,7 +1,7 @@
-"zealot_scarab_beetle_swarm"
+"kingLeoric_beetle_swarm"
 {
 	"BaseClass"             		"weaver_the_swarm"
-	"AbilityTextureName"			"ability_name"
+	"AbilityTextureName"			"weaver_the_swarm"
 	"MaxLevel" 						"1"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 	"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
@@ -17,12 +17,12 @@
 		"01"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"damage"			"1"
+			"damage"			"2"
 		}
 		"02"
 		{
 			"var_type"			"FIELD_FLOAT"
-			"attack_rate"		"1"
+			"attack_rate"		"2"
 		}
 		"03"
 		{
@@ -31,8 +31,8 @@
 		}
 		"04"
 		{
-			"var_type"			"FIELD_FLOAT"
-			"armor_reduction"	"0.5"
+			"var_type"			"FIELD_INTEGER"
+			"armor_reduction"	"1"
 		}
 		"05"
 		{

@@ -3,7 +3,7 @@ tower_kingLeoric_blood_drinker
 	"BaseClass"					"npc_dota_creature"
 	"Model"						"models/heroes/blood_seeker/blood_seeker.vmdl"
 	"SoundSet"					"Hero_Bloodseeker"
-	"ModelScale"				"1.0"
+	"ModelScale"				"0.5"
 	"HealthBarOffset"			"150"
 	"Level"						"1"
 	"Vscripts"					"ai/ai_default.lua"

@@ -3,7 +3,7 @@ tower_kingLeoric_mind_slicer
 	"BaseClass"					"npc_dota_creature"
 	"Model"						"models/heroes/silencer/silencer.vmdl"
 	"SoundSet"					"Hero_Silencer"
-	"ModelScale"				"1.0"
+	"ModelScale"				"0.5"
 	"HealthBarOffset"			"150"
 	"Level"						"1"
 	"Vscripts"					"ai/ai_default.lua"

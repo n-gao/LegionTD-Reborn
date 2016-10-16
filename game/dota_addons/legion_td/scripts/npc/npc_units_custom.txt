@@ -8563,7 +8563,7 @@
 		"Level"						"1"
 		"Vscripts"					"ai/ai_default.lua"
 	
-		"Ability1"					""
+		"Ability1"					"kingLeoric_spiked_carapace"
 		"Ability2"					"kingLeoric_upgrade_alpha_predator"
 		"Ability3"					""
 		"Ability4"					"sell"
@@ -8973,7 +8973,7 @@
 		"Level"						"1"
 		"Vscripts"					"ai/ai_default.lua"
 	
-		"Ability1"					""
+		"Ability1"					"kingLeoric_beetle_swarm"
 		"Ability2"					"kingLeoric_upgrade_shadow_hunter"
 		"Ability3"					""
 		"Ability4"					"sell"

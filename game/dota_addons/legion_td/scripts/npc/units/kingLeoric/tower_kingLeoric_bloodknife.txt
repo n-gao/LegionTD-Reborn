@@ -3,7 +3,7 @@ tower_kingLeoric_bloodknife
 	"BaseClass"					"npc_dota_creature"
 	"Model"						"models/heroes/phantom_assassin/phantom_assassin.vmdl"
 	"SoundSet"					"Hero_PhantomAssassin"
-	"ModelScale"				"1.0"
+	"ModelScale"				"0.5"
 	"HealthBarOffset"			"150"
 	"Level"						"1"
 	"Vscripts"					"ai/ai_default.lua"

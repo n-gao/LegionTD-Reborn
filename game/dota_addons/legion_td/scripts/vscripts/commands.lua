@@ -141,11 +141,11 @@ function CommandEngine.Commands.wave(instance, submessage, keys)
 end
 
 function CommandEngine.Commands.info(instance, submessage, keys)
-	CommandEngine.waveInfo(Game.gameRound, keys.playerid)
+	CommandEngine.waveInfo(Game.gameRound-Game.doneDuels, keys.playerid)
 end
 
 function CommandEngine.Commands.infonext(instance, submessage, keys)
-	CommandEngine.waveInfo(Game.gameRound+1, keys.playerid)
+	CommandEngine.waveInfo(Game.gameRound-Game.doneDuels+1, keys.playerid)
 end
 
 CommandEngine.Commands.gamemode = CommandEngine.Commands.settings
