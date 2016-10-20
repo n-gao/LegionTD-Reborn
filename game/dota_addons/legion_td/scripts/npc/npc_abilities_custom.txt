@@ -3265,7 +3265,7 @@
 	  "MaxLevel"                "1"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"				"130"
+		"AbilityGoldCost"				"180"
 		"AbilityCooldown"		    "1.0"
 		"OnSpellStart"
 		{
@@ -4141,12 +4141,12 @@
 				"03"
 				{
 					"var_type"					"FIELD_INTEGER"
-					"damage_first"				"200"
+					"damage_first"				"160"
 				}
 				"04"
 				{
 					"var_type"					"FIELD_INTEGER"
-					"damage_second"				"200"
+					"damage_second"				"130"
 				}
 				"05"
 				{
@@ -7884,7 +7884,7 @@
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"AbilityChannelTime" 			"1"
 		"AbilityDuration" 				"1"
-		"AbilityGoldCost"					"50"
+		"AbilityGoldCost"					"50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 100 102 104 106 108 110"
 		"OnChannelSucceeded"
 		{
 			"RunScript"
@@ -7918,7 +7918,7 @@
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"AbilityChannelTime" 			"1"
 		"AbilityDuration" 				"1"
-		"AbilityGoldCost"					"60 120 180 240 300"
+		"AbilityGoldCost"					"90 180 290 400 510"
 		"OnChannelSucceeded"
 		{
 			"RunScript"

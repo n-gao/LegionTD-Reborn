@@ -81,6 +81,10 @@ function OnShopButtonPressed() {
 	$("#ShopPanel").ToggleClass("ShopPanelVisible");
 }
 
+function OnMinimizedButtonPressed() {
+	$("#LowerStatisticsButton").ToggleClass("Minimized");
+}
+
 function OnSkipButtonPressed() {
 	$.GetContextPanel().SetHasClass("SkipPressed", true);
 	var data = {

@@ -30,7 +30,10 @@
     <Panel id="RankingLocal">
       <Label text="#Rank" id="RankingLocalRank" class="RankingRank StatisticsText"/>
       <Label text="Missing Text" id="RankingLocalValue" class="RankingValue StatisticsText"/>
-      <DOTAUserName steamid="local" class="RankingName StatisticsText"/>
+        <Panel class="RankingName">
+            <DOTAUserName id="Name" steamid="local" class="StatisticsText"/>
+            <DOTAAvatarImage id="Avater" steamid="local"/>
+        </Panel>
     </Panel>
   </Panel>
 </root>

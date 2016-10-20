@@ -10,9 +10,9 @@
     <Panel class="RankingAttribute">
         <Label  text="Rank" id="Rank" class="RankingRank StatisticsText"/>
         <Label text="Value" id="Value" class="RankingValue StatisticsText"/>
-        <Panel class="RankingName" styles="flow-children: right;">
-                <DOTAUserName id="Name" class="StatisticsText"/>
-                <DOTAAvatarImage steamid="local"/>
+        <Panel class="RankingName">
+            <DOTAUserName id="Name" class="StatisticsText"/>
+            <DOTAAvatarImage id="Avater" steamid="local"/>
         </Panel>
     </Panel>
 </root>

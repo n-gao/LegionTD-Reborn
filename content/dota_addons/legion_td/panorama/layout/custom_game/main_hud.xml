@@ -60,7 +60,10 @@
 
       <Panel hitetst="false" id="StatisticsButtonPanel">
         <Button id="StatisticsButton" onactivate="OnStatisticsButtonPressed()">
-            <Panel id="UpperStatisticsButton"> 
+            <Panel id="UpperStatisticsButton">
+              <Button id="MinimizeButton" onactivate="OnMinimizedButtonPressed()">
+                  <Image src="file://{images}/custom_game/minimize_arrow.psd" id="MinimizeArrow"/>
+              </Button>
               <Label id="StatisticsButtonLabel" class="ButtonLabel" text="#Statistics"/>
               <Image src="file://{images}/custom_game/statistics_arrow.psd" id="StatisticsArrow" />
             </Panel>
