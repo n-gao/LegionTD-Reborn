@@ -20,7 +20,7 @@
     "01"
     {
       "var_type"              "FIELD_INTEGER"
-      "atk_damage_tooltip"    "656.25"
+      "atk_damage_tooltip"    "590.25"
     }
     "02"
     {
@@ -35,17 +35,17 @@
     "04"
     {
       "var_type"              "FIELD_INTEGER"
-      "health_tooltip"        "1400"
+      "health_tooltip"        "1325"
     }
     "05"
     {
       "var_type"              "FIELD_INTEGER"
-      "armor_tooltip"         "3"
+      "armor_tooltip"         "5"
     }
     "06"
     {
       "var_type"      "FIELD_INTEGER"
-      "food_cost"     "1"
+      "food_cost"     "2"
     }
     "07"
     {

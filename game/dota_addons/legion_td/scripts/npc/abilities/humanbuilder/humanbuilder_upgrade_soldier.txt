@@ -5,7 +5,7 @@
   "MaxLevel"                "1"
 
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityGoldCost"				"90"
+	"AbilityGoldCost"				"85"
 	"AbilityCooldown"		    "1.0"
 	"OnSpellStart"
 	{
@@ -20,7 +20,7 @@
     "01"
     {
       "var_type"              "FIELD_INTEGER"
-      "atk_damage_tooltip"    "106.25"
+      "atk_damage_tooltip"    "88.25"
     }
     "02"
     {
@@ -35,7 +35,7 @@
     "04"
     {
       "var_type"              "FIELD_INTEGER"
-      "health_tooltip"        "400"
+      "health_tooltip"        "240"
     }
     "05"
     {
@@ -45,7 +45,7 @@
     "06"
     {
       "var_type"      "FIELD_INTEGER"
-      "food_cost"     "1"
+      "food_cost"     "2"
     }
     "07"
     {

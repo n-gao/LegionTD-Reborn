@@ -2,7 +2,7 @@
 {
   "BaseClass"                "ability_datadriven"
   "AbilityTextureName"      "rattletrap_power_cogs"
-  "MaxLevel"                "1"
+  "MaxLevel"                "2"
 
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 	"AbilityGoldCost"				"425"
@@ -45,7 +45,7 @@
     "06"
     {
       "var_type"      "FIELD_INTEGER"
-      "food_cost"     "1"
+      "food_cost"     "2"
     }
     "07"
     {

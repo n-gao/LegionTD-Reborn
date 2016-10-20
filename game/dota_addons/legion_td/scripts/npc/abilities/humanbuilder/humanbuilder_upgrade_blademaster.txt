@@ -30,7 +30,7 @@
     "03"
     {
       "var_type"              "FIELD_INTEGER"
-      "atk_range_tooltip"     "100"
+      "atk_range_tooltip"     "120"
     }
     "04"
     {
@@ -45,7 +45,7 @@
     "06"
     {
       "var_type"      "FIELD_INTEGER"
-      "food_cost"     "1"
+      "food_cost"     "2"
     }
     "07"
     {
