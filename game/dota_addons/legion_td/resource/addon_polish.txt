@@ -17,24 +17,35 @@
 
 
 
-		// ******************************** HUD ********************************
-		"Options_title"	"Opcje głosowania"
-		"Option_Income_Limit"	"Tango Limit"
-		"Option_Return_To_Sender"	"Zwróć do wysyłającego"
-		"Option_Fog_Of_War"	"Mgła wojny"
-		"Option_Deactivate_Duels" "Bez duelów"
-		"Option_Hard_Mode"	"Hard Mode"
-		"QuestTimer"    "Następna runda za %quest_current_value% sekund"
-		"Duel_Quest_Title"		"Duel"
-		"Round"			"Runda"
-		"Income"			"Przychód:"
-		"Skip"			"Pomiń"
+     // ******************************** HUD ********************************
+   		"Options_title"	"Opcje głosowania"
+   		"Option_Income_Limit"	"Limit Tango"
+   		"Option_Return_To_Sender"	"Zwróć do wysyłającego"
+   		"Option_Fog_Of_War"	"Mgła wojny"
+   		"Option_Deactivate_Duels" "Bez Duelów"
+   		"Option_Hard_Mode"	"Hard Mode"
+   		"QuestTimer"    "Następna runda zacznie się za %quest_current_value% sekund"
+   		"Duel_Quest_Title"		"Duel"
+   		"Round"			"Runda"
+   		"Income"			"Przychódz:"
+   		"Skip"			"Pomiń"
+   		"Rank"			"Ranking"
+   		"Player"		"Gracz"
 
-		"end_screen_legend_kills"		"Zabicia"
-		"end_screen_legend_leaks" 		"Przepuszczeń"
-		"end_screen_legend_tango_income"	"Wydobycie Tango"
-		"end_screen_legend_gold_income"	"Wydobycie Golda"
-		"end_screen_legend_tower_value"		"Wartość wieży"
+   		"end_screen_legend_kills"		"Zabójstwa"
+   		"end_screen_legend_leaks" 		"Przepuszczenia"
+     	"end_screen_legend_tango_income"	"Przychód Tango"
+    	"end_screen_legend_gold_income"	"Przychód Złota"
+      "end_screen_legend_tower_value"		"Wartość wieży"
+
+   		"attribute_experience"			"Doświadczenie"
+   		"attribute_kills"				"Zabójstwa"
+   		"attribute_won_games"			"Wygrane Gry"
+   		"attribute_earned_tangos"		"Wydobyte Tango"
+
+   		"gold_income_text"				"/runde"
+   		"tango_income_text"				"/min"
+   		"tango_maximum_text"			"max"
 
 		"gold_income_text"				"/runde"
 		"tango_income_text"				"/min"
