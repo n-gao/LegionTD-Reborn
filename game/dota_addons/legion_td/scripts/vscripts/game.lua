@@ -1101,6 +1101,7 @@ function Game:RequestRankingPosition(data)
 end
 
 function Game:SaveDataAtEnd()
+  if GameRules:IsCheatMode() then return end
   HookSetWinnerFunction(function(gameRules, team)
     for _,player in pairs(self.players) do
       if player:GetTeamNumber() == team then

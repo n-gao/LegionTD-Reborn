@@ -2506,7 +2506,7 @@
 	    "03"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_range_tooltip"     "100"
+	      "atk_range_tooltip"     "120"
 	    }
 	    "04"
 	    {
@@ -2521,7 +2521,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "2"
 	    }
 	    "07"
 	    {
@@ -2593,7 +2593,7 @@
 	  "MaxLevel"                "1"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"				"300"
+		"AbilityGoldCost"				"320"
 		"AbilityCooldown"		    "1.0"
 		"OnSpellStart"
 		{
@@ -2633,7 +2633,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "3"
 	    }
 	    "07"
 	    {
@@ -2801,7 +2801,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "2"
 	    }
 	    "07"
 	    {
@@ -2913,7 +2913,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "2"
 	    }
 	    "07"
 	    {
@@ -3153,7 +3153,7 @@
 	  "MaxLevel"                "1"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"				"90"
+		"AbilityGoldCost"				"85"
 		"AbilityCooldown"		    "1.0"
 		"OnSpellStart"
 		{
@@ -3168,7 +3168,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "106.25"
+	      "atk_damage_tooltip"    "88.25"
 	    }
 	    "02"
 	    {
@@ -3183,7 +3183,7 @@
 	    "04"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "health_tooltip"        "400"
+	      "health_tooltip"        "240"
 	    }
 	    "05"
 	    {
@@ -3193,7 +3193,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "2"
 	    }
 	    "07"
 	    {
@@ -3305,7 +3305,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "3"
 	    }
 	    "07"
 	    {
@@ -3361,7 +3361,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "3"
 	    }
 	    "07"
 	    {
@@ -7381,7 +7381,7 @@
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityType"								"DOTA_ABILITY_TYPE_BASIC"
 	
-		"AbilityCooldown"						"10.0"
+		"AbilityCooldown"						"15.0"
 	
 		"OnSpellStart"
 		{
@@ -7396,7 +7396,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"tango_cost"		"480"
+				"tango_cost"		"495"
 			}
 			"02"
 			{
@@ -7717,7 +7717,7 @@
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityType"								"DOTA_ABILITY_TYPE_BASIC"
 	
-		"AbilityCooldown"						"10.0"
+		"AbilityCooldown"						"20.0"
 	
 		"OnSpellStart"
 		{
@@ -7732,7 +7732,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"tango_cost"		"600"
+				"tango_cost"		"625"
 			}
 			"02"
 			{
@@ -8659,7 +8659,7 @@
 	{
 	  "BaseClass"                "ability_datadriven"
 	  "AbilityTextureName"      "rattletrap_power_cogs"
-	  "MaxLevel"                "1"
+	  "MaxLevel"                "2"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityGoldCost"				"425"
@@ -8702,7 +8702,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "2"
 	    }
 	    "07"
 	    {
@@ -8789,7 +8789,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "656.25"
+	      "atk_damage_tooltip"    "590.25"
 	    }
 	    "02"
 	    {
@@ -8804,17 +8804,17 @@
 	    "04"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "health_tooltip"        "1400"
+	      "health_tooltip"        "1325"
 	    }
 	    "05"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "armor_tooltip"         "3"
+	      "armor_tooltip"         "5"
 	    }
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "2"
 	    }
 	    "07"
 	    {
@@ -9094,7 +9094,7 @@
 	    "06"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "food_cost"              "1"
+	      "food_cost"              "2"
 	    }
 	    "07"
 	    {
