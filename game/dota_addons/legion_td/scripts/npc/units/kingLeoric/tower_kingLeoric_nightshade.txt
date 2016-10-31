@@ -1,4 +1,4 @@
-tower_kingLeoric_nightshade
+"tower_kingLeoric_nightshade"
 {
 	"BaseClass"					"npc_dota_creature"
 	"Model"						"models/heroes/lanaya/lanaya.vmdl"
@@ -8,9 +8,9 @@ tower_kingLeoric_nightshade
 	"Level"						"1"
 	"Vscripts"					"ai/ai_default.lua"
 
-	"Ability1"					""
-	"Ability2"					"kingLeoric_upgrade_timekeeper"
-	"Ability3"					""
+	"Ability1"					"kingLeoric_psi_blades"
+	"Ability2"					"kingLeoric_chaos_strike"
+	"Ability3"					"kingLeoric_upgrade_timekeeper"
 	"Ability4"					"sell"
 
 	"ArmorPhysical"				"5"
@@ -36,7 +36,7 @@ tower_kingLeoric_nightshade
 	"BountyGoldMin"				"0"
 	"BountyGoldMax"				"0"
 
-	"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+	"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 	"RingRadius"				"30"
 
 	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"

@@ -1,4 +1,4 @@
-tower_kingLeoric_shadow_hunter
+"tower_kingLeoric_shadow_hunter"
 {
 	"BaseClass"					"npc_dota_creature"
 	"Model"						"models/heroes/nerubian_assassin/nerubian_assassin.vmdl"
@@ -6,7 +6,7 @@ tower_kingLeoric_shadow_hunter
 	"ModelScale"				"0.5"
 	"HealthBarOffset"			"150"
 	"Level"						"1"
-	"Vscripts"					"ai/ai_default.lua"
+	"Vscripts"					"ai/kingLeoric/ai_kingLeoric_shadow_hunter.lua"
 
 	"Ability1"					"kingLeoric_spiked_carapace"
 	"Ability2"					"kingLeoric_upgrade_alpha_predator"
@@ -36,7 +36,7 @@ tower_kingLeoric_shadow_hunter
 	"BountyGoldMin"				"0"
 	"BountyGoldMax"				"0"
 
-	"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+	"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 	"RingRadius"				"30"
 
 	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"

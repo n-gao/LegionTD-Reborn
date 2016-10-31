@@ -1,4 +1,4 @@
-tower_kingLeoric_trickster
+"tower_kingLeoric_trickster"
 {
 	"BaseClass"					"npc_dota_creature"
 	"Model"						"models/heroes/rikimaru/rikimaru.vmdl"
@@ -6,12 +6,14 @@ tower_kingLeoric_trickster
 	"ModelScale"				"0.5"
 	"HealthBarOffset"			"150"
 	"Level"						"1"
-	"Vscripts"					"ai/ai_default.lua"
+	"Vscripts"					"ai/kingLeoric/ai_kingLeoric_trickster.lua"
 
-	"Ability1"					""
-	"Ability2"					"kingLeoric_upgrade_stealth_assassin"
-	"Ability3"					"kingLeoric_upgrade_blood_drinker"
-	"Ability4"					"sell"
+	"AbilityLayout"				"6"
+	"Ability1"					"kingLeoric_backstab"
+	"Ability2"					"kingLeoric_mesmerize"
+	"Ability3"					"kingLeoric_upgrade_stealth_assassin"
+	"Ability4"					"kingLeoric_upgrade_blood_drinker"
+	"Ability5"					"sell"
 
 	"ArmorPhysical"				"15"
 	"MagicalResistance"			"0"
@@ -36,7 +38,7 @@ tower_kingLeoric_trickster
 	"BountyGoldMin"				"0"
 	"BountyGoldMax"				"0"
 
-	"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+	"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 	"RingRadius"				"30"
 
 	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"

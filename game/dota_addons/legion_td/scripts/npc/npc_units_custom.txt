@@ -7568,18 +7568,18 @@
 			}
 		}
 	}
-	tower_kingLeoric_alpha_predator
+	"tower_kingLeoric_alpha_predator"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/nerubian_assassin/nerubian_assassin.vmdl"
 		"SoundSet"					"Hero_NyxAssassin"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
-		"Vscripts"					"ai/ai_default.lua"
+		"Vscripts"					"ai/kingLeoric/ai_kingLeoric_alpha_predator.lua"
 	
-		"Ability1"					""
-		"Ability2"					""
+		"Ability1"					"kingLeoric_spiked_carapace"
+		"Ability2"					"kingLeoric_quill_spray"
 		"Ability3"					""
 		"Ability4"					"sell"
 	
@@ -7606,7 +7606,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -7649,18 +7649,18 @@
 			}
 		}
 	}
-	tower_kingLeoric_bloodknife
+	"tower_kingLeoric_bloodknife"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/phantom_assassin/phantom_assassin.vmdl"
 		"SoundSet"					"Hero_PhantomAssassin"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
 		"Vscripts"					"ai/ai_default.lua"
 	
-		"Ability1"					""
-		"Ability2"					""
+		"Ability1"					"kingLeoric_coup_de_grace"
+		"Ability2"					"kingLeoric_concealment"
 		"Ability3"					""
 		"Ability4"					"sell"
 	
@@ -7687,7 +7687,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -7731,18 +7731,18 @@
 			}
 		}
 	}
-	tower_kingLeoric_blood_drinker
+	"tower_kingLeoric_blood_drinker"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/blood_seeker/blood_seeker.vmdl"
 		"SoundSet"					"Hero_Bloodseeker"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
-		"Vscripts"					"ai/ai_default.lua"
+		"Vscripts"					"ai/kingLeoric/ai_kingLeoric_blood_drinker.lua"
 	
-		"Ability1"					""
-		"Ability2"					""
+		"Ability1"					"kingLeoric_bloodrage"
+		"Ability2"					"kingLeoric_soul_rend"
 		"Ability3"					""
 		"Ability4"					"sell"
 	
@@ -7769,7 +7769,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -7815,17 +7815,17 @@
 			}
 		}
 	}
-	tower_kingLeoric_creeping_shadow
+	"tower_kingLeoric_creeping_shadow"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/phantom_assassin/phantom_assassin.vmdl"
 		"SoundSet"					"Hero_PhantomAssassin"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
 		"Vscripts"					"ai/ai_default.lua"
 	
-		"Ability1"					""
+		"Ability1"					"kingLeoric_wounding_strike"
 		"Ability2"					"kingLeoric_upgrade_dark_wraith"
 		"Ability3"					""
 		"Ability4"					"sell"
@@ -7853,7 +7853,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -7897,17 +7897,17 @@
 			}
 		}
 	}
-	tower_kingLeoric_dark_wraith
+	"tower_kingLeoric_dark_wraith"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/phantom_assassin/phantom_assassin.vmdl"
 		"SoundSet"					"Hero_PhantomAssassin"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
 		"Vscripts"					"ai/ai_default.lua"
 	
-		"Ability1"					""
+		"Ability1"					"kingLeoric_critical_strike"
 		"Ability2"					"kingLeoric_upgrade_nimble_edge"
 		"Ability3"					""
 		"Ability4"					"sell"
@@ -7935,7 +7935,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -7979,17 +7979,17 @@
 			}
 		}
 	}
-	tower_kingLeoric_jester
+	"tower_kingLeoric_jester"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/rikimaru/rikimaru.vmdl"
 		"SoundSet"					"Hero_Riki"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
 		"Vscripts"					"ai/ai_default.lua"
 	
-		"Ability1"					""
+		"Ability1"					"kingLeoric_backstab"
 		"Ability2"					"kingLeoric_upgrade_trickster"
 		"Ability3"					""
 		"Ability4"					"sell"
@@ -8017,7 +8017,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -8062,17 +8062,17 @@
 			}
 		}
 	}
-	tower_kingLeoric_lotus
+	"tower_kingLeoric_lotus"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/lanaya/lanaya.vmdl"
 		"SoundSet"					"Hero_TemplarAssassin"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
 		"Vscripts"					"ai/ai_default.lua"
 	
-		"Ability1"					""
+		"Ability1"					"kingLeoric_psi_blades"
 		"Ability2"					"kingLeoric_upgrade_nightshade"
 		"Ability3"					""
 		"Ability4"					"sell"
@@ -8100,7 +8100,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -8142,17 +8142,17 @@
 			}
 		}
 	}
-	tower_kingLeoric_mind_breaker
+	"tower_kingLeoric_mind_breaker"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/silencer/silencer.vmdl"
 		"SoundSet"					"Hero_Silencer"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
-		"Vscripts"					"ai/ai_default.lua"
+		"Vscripts"					"ai/kingLeoric/ai_kingLeoric_mind_breaker.lua"
 	
-		"Ability1"					""
+		"Ability1"					"kingLeoric_disequilibriate"
 		"Ability2"					"kingLeoric_upgrade_mind_slicer"
 		"Ability3"					"kingLeoric_upgrade_silent_champion"
 		"Ability4"					"sell"
@@ -8180,7 +8180,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -8225,17 +8225,17 @@
 			}
 		}
 	}
-	tower_kingLeoric_mind_slicer
+	"tower_kingLeoric_mind_slicer"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/silencer/silencer.vmdl"
 		"SoundSet"					"Hero_Silencer"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
 		"Vscripts"					"ai/ai_default.lua"
 	
-		"Ability1"					""
+		"Ability1"					"kingLeoric_weaken"
 		"Ability2"					""
 		"Ability3"					""
 		"Ability4"					"sell"
@@ -8263,7 +8263,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -8308,17 +8308,17 @@
 			}
 		}
 	}
-	tower_kingLeoric_mind_stealer
+	"tower_kingLeoric_mind_stealer"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/silencer/silencer.vmdl"
 		"SoundSet"					"Hero_Silencer"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
-		"Vscripts"					"ai/ai_default.lua"
+		"Vscripts"					"ai/kingLeoric/ai_kingLeoric_mind_stealer.lua"
 	
-		"Ability1"					""
+		"Ability1"					"kingLeoric_hinder"
 		"Ability2"					"kingLeoric_upgrade_mind_breaker"
 		"Ability3"					""
 		"Ability4"					"sell"
@@ -8346,7 +8346,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -8391,19 +8391,19 @@
 			}
 		}
 	}
-	tower_kingLeoric_nightshade
+	"tower_kingLeoric_nightshade"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/lanaya/lanaya.vmdl"
 		"SoundSet"					"Hero_TemplarAssassin"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
 		"Vscripts"					"ai/ai_default.lua"
 	
-		"Ability1"					""
-		"Ability2"					"kingLeoric_upgrade_timekeeper"
-		"Ability3"					""
+		"Ability1"					"kingLeoric_psi_blades"
+		"Ability2"					"kingLeoric_chaos_strike"
+		"Ability3"					"kingLeoric_upgrade_timekeeper"
 		"Ability4"					"sell"
 	
 		"ArmorPhysical"				"5"
@@ -8429,7 +8429,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -8471,18 +8471,18 @@
 			}
 		}
 	}
-	tower_kingLeoric_nimble_edge
+	"tower_kingLeoric_nimble_edge"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/phantom_assassin/phantom_assassin.vmdl"
 		"SoundSet"					"Hero_PhantomAssassin"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
 		"Vscripts"					"ai/ai_default.lua"
 	
-		"Ability1"					""
-		"Ability2"					""
+		"Ability1"					"kingLeoric_coup_de_grace"
+		"Ability2"					"kingLeoric_crescent"
 		"Ability3"					"kingLeoric_upgrade_bloodknife"
 		"Ability4"					"sell"
 	
@@ -8509,7 +8509,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -8553,15 +8553,15 @@
 			}
 		}
 	}
-	tower_kingLeoric_shadow_hunter
+	"tower_kingLeoric_shadow_hunter"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/nerubian_assassin/nerubian_assassin.vmdl"
 		"SoundSet"					"Hero_NyxAssassin"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
-		"Vscripts"					"ai/ai_default.lua"
+		"Vscripts"					"ai/kingLeoric/ai_kingLeoric_shadow_hunter.lua"
 	
 		"Ability1"					"kingLeoric_spiked_carapace"
 		"Ability2"					"kingLeoric_upgrade_alpha_predator"
@@ -8591,7 +8591,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -8634,18 +8634,18 @@
 			}
 		}
 	}
-	tower_kingLeoric_silent_champion
+	"tower_kingLeoric_silent_champion"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/death_prophet/death_prophet.vmdl"
 		"SoundSet"					"Hero_DeathProphet"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
-		"Vscripts"					"ai/ai_default.lua"
+		"Vscripts"					"ai/kingLeoric/ai_kingLeoric_silent_champion.lua"
 	
-		"Ability1"					""
-		"Ability2"					""
+		"Ability1"					"kingLeoric_fatigue"
+		"Ability2"					"kingLeoric_cacophony"
 		"Ability3"					""
 		"Ability4"					"sell"
 	
@@ -8672,7 +8672,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -8717,18 +8717,18 @@
 			}
 		}
 	}
-	tower_kingLeoric_stealth_assassin
+	"tower_kingLeoric_stealth_assassin"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/bounty_hunter/bounty_hunter.vmdl"
 		"SoundSet"					"Hero_BountyHunter"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
 		"Vscripts"					"ai/ai_default.lua"
 	
-		"Ability1"					""
-		"Ability2"					""
+		"Ability1"					"kingLeoric_jinada"
+		"Ability2"					"kingLeoric_mortal_strike"
 		"Ability3"					""
 		"Ability4"					"sell"
 	
@@ -8755,7 +8755,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"	
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -8800,18 +8800,18 @@
 			}
 		}
 	}
-	tower_kingLeoric_timekeeper
+	"tower_kingLeoric_timekeeper"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/lanaya/lanaya.vmdl"
 		"SoundSet"					"Hero_TemplarAssassin"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
 		"Vscripts"					"ai/ai_default.lua"
 	
-		"Ability1"					""
-		"Ability2"					""
+		"Ability1"					"kingLeoric_psi_blades"
+		"Ability2"					"kingLeoric_augment_aura"
 		"Ability3"					""
 		"Ability4"					"sell"
 	
@@ -8838,7 +8838,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -8881,20 +8881,22 @@
 			}
 		}
 	}
-	tower_kingLeoric_trickster
+	"tower_kingLeoric_trickster"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/heroes/rikimaru/rikimaru.vmdl"
 		"SoundSet"					"Hero_Riki"
-		"ModelScale"				"1.0"
+		"ModelScale"				"0.5"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
-		"Vscripts"					"ai/ai_default.lua"
+		"Vscripts"					"ai/kingLeoric/ai_kingLeoric_trickster.lua"
 	
-		"Ability1"					""
-		"Ability2"					"kingLeoric_upgrade_stealth_assassin"
-		"Ability3"					"kingLeoric_upgrade_blood_drinker"
-		"Ability4"					"sell"
+		"AbilityLayout"				"6"
+		"Ability1"					"kingLeoric_backstab"
+		"Ability2"					"kingLeoric_mesmerize"
+		"Ability3"					"kingLeoric_upgrade_stealth_assassin"
+		"Ability4"					"kingLeoric_upgrade_blood_drinker"
+		"Ability5"					"sell"
 	
 		"ArmorPhysical"				"15"
 		"MagicalResistance"			"0"
@@ -8919,7 +8921,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
@@ -8964,14 +8966,14 @@
 			}
 		}
 	}
-	tower_kingLeoric_zealot_scarab
+	"tower_kingLeoric_zealot_scarab"
 	{
 		"BaseClass"					"npc_dota_creature"
 		"Model"						"models/items/courier/scribbinsthescarab/scribbinsthescarab.vmdl"
 		"ModelScale"				"1.0"
 		"HealthBarOffset"			"150"
 		"Level"						"1"
-		"Vscripts"					"ai/ai_default.lua"
+		"Vscripts"					"ai/kingLeoric/ai_kingLeoric_zealot_scarab.lua"
 	
 		"Ability1"					"kingLeoric_beetle_swarm"
 		"Ability2"					"kingLeoric_upgrade_shadow_hunter"
@@ -9001,7 +9003,7 @@
 		"BountyGoldMin"				"0"
 		"BountyGoldMax"				"0"
 	
-		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"30"
 	
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"

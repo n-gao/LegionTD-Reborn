@@ -10,8 +10,9 @@ function InitAI( self )
 		self.CheckIfHasAggro = CheckIfHasAggro
 		self.NextWayPoint = NextWayPoint
 		self.Unstuck = Unstuck
-		self.Skill = UseSkillOnTarget
-		self.ability = self:GetAbilityByIndex(0)
+		self.ability = {}
+		self.ability[1] = self:GetAbilityByIndex(0)
+		self.ability[1].Skill = UseSkillOnTarget
 		self:SetContextThink( "ai_techies.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )
 end

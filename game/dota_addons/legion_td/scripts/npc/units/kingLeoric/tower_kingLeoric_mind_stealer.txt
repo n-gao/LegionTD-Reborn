@@ -1,4 +1,4 @@
-tower_kingLeoric_mind_stealer
+"tower_kingLeoric_mind_stealer"
 {
 	"BaseClass"					"npc_dota_creature"
 	"Model"						"models/heroes/silencer/silencer.vmdl"
@@ -6,9 +6,9 @@ tower_kingLeoric_mind_stealer
 	"ModelScale"				"0.5"
 	"HealthBarOffset"			"150"
 	"Level"						"1"
-	"Vscripts"					"ai/ai_default.lua"
+	"Vscripts"					"ai/kingLeoric/ai_kingLeoric_mind_stealer.lua"
 
-	"Ability1"					""
+	"Ability1"					"kingLeoric_hinder"
 	"Ability2"					"kingLeoric_upgrade_mind_breaker"
 	"Ability3"					""
 	"Ability4"					"sell"
@@ -36,7 +36,7 @@ tower_kingLeoric_mind_stealer
 	"BountyGoldMin"				"0"
 	"BountyGoldMax"				"0"
 
-	"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+	"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 	"RingRadius"				"30"
 
 	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"

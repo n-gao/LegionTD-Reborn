@@ -1,11 +1,11 @@
-tower_kingLeoric_zealot_scarab
+"tower_kingLeoric_zealot_scarab"
 {
 	"BaseClass"					"npc_dota_creature"
 	"Model"						"models/items/courier/scribbinsthescarab/scribbinsthescarab.vmdl"
 	"ModelScale"				"1.0"
 	"HealthBarOffset"			"150"
 	"Level"						"1"
-	"Vscripts"					"ai/ai_default.lua"
+	"Vscripts"					"ai/kingLeoric/ai_kingLeoric_zealot_scarab.lua"
 
 	"Ability1"					"kingLeoric_beetle_swarm"
 	"Ability2"					"kingLeoric_upgrade_shadow_hunter"
@@ -35,7 +35,7 @@ tower_kingLeoric_zealot_scarab
 	"BountyGoldMin"				"0"
 	"BountyGoldMax"				"0"
 
-	"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+	"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 	"RingRadius"				"30"
 
 	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"

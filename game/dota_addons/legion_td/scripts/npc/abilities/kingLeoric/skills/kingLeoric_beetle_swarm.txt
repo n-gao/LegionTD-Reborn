@@ -5,7 +5,7 @@
 	"MaxLevel" 						"1"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 	"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
 	"AbilityCastPoint"				"0.3"
 	"AbilityCastRange"				"500"

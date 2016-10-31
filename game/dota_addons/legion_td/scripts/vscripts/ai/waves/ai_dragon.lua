@@ -9,8 +9,9 @@ function InitAI( self )
     self:GetAbilityByIndex(0):SetLevel(3)
 		self.aiThink = aiThinkStandardBuff
 		self.CheckIfHasAggro = CheckIfHasAggro
-		self.Skill = UseSkillNoTarget
-		self.ability = self:GetAbilityByIndex(0)
+		self.ability = {}
+		self.ability[1] = self:GetAbilityByIndex(0)
+		self.ability[1].Skill = UseSkillNoTarget
 		self.NextWayPoint = NextWayPoint
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_dragon.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )

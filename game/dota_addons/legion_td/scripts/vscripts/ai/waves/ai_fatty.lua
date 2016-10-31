@@ -8,8 +8,9 @@ function InitAI( self )
 	self:SetContextThink( "init_think", function()
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggro
-		self.Skill = UseSkillOnTargetPosition
-		self.ability = self:GetAbilityByIndex(0)
+		self.ability = {}
+		self.ability[1] = self:GetAbilityByIndex(0)
+		self.ability[1].Skill = UseSkillOnTargetPosition
 		self.ability:SetLevel(1)
 		self.NextWayPoint = NextWayPoint
 		self.Unstuck = Unstuck

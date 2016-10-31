@@ -1,0 +1,28 @@
+"kingLeoric_psi_blades"
+{
+	"BaseClass"						"templar_assassin_psi_blades"
+	"AbilityTextureName"			"templar_assassin_psi_blades"
+	"MaxLevel"						"1"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_attack_range"		"100"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"attack_spill_range"		"700"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"attack_spill_width"		"75"
+		}
+	}
+}	
