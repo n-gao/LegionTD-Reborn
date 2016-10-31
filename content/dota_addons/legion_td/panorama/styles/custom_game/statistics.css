@@ -83,7 +83,9 @@
   width: 300px;
   text-transform: uppercase;
   text-align: left;
-  margin-left: 10px;
+  vertical-align: center;
+  margin-top: 5px;
+  margin-left: 35px;
 }
 
 #LowerStatisticsButton {
@@ -92,6 +94,26 @@
   background-color: #111111F0;
   visibility: visible;
   flow-children: down;
+}
+
+#MinimizeButton {
+  height: 100%;
+}
+
+#MinimizeArrow {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  horizontal-align: left;
+  margin-left: 10px;
+}
+
+#LowerStatisticsButton.Minimized {
+  visibility: collapse;
+}
+
+#LowerStatisticsButton:not(Minimized) {
+  visibility: visible;
 }
 
 #StatisticsArrow {

@@ -7,7 +7,7 @@
 	"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 	"AbilityType"								"DOTA_ABILITY_TYPE_BASIC"
 
-	"AbilityCooldown"						"10.0"
+	"AbilityCooldown"						"15.0"
 
 	"OnSpellStart"
 	{
@@ -22,7 +22,7 @@
 		"01"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"tango_cost"		"480"
+			"tango_cost"		"495"
 		}
 		"02"
 		{

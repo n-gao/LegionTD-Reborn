@@ -2506,7 +2506,7 @@
 	    "03"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_range_tooltip"     "100"
+	      "atk_range_tooltip"     "120"
 	    }
 	    "04"
 	    {
@@ -2521,7 +2521,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "2"
 	    }
 	    "07"
 	    {
@@ -2593,7 +2593,7 @@
 	  "MaxLevel"                "1"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"				"300"
+		"AbilityGoldCost"				"320"
 		"AbilityCooldown"		    "1.0"
 		"OnSpellStart"
 		{
@@ -2633,7 +2633,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "3"
 	    }
 	    "07"
 	    {
@@ -2801,7 +2801,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "2"
 	    }
 	    "07"
 	    {
@@ -2913,7 +2913,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "2"
 	    }
 	    "07"
 	    {
@@ -3153,7 +3153,7 @@
 	  "MaxLevel"                "1"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"				"90"
+		"AbilityGoldCost"				"85"
 		"AbilityCooldown"		    "1.0"
 		"OnSpellStart"
 		{
@@ -3168,7 +3168,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "106.25"
+	      "atk_damage_tooltip"    "88.25"
 	    }
 	    "02"
 	    {
@@ -3183,7 +3183,7 @@
 	    "04"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "health_tooltip"        "400"
+	      "health_tooltip"        "240"
 	    }
 	    "05"
 	    {
@@ -3193,7 +3193,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "2"
 	    }
 	    "07"
 	    {
@@ -3265,7 +3265,7 @@
 	  "MaxLevel"                "1"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"				"130"
+		"AbilityGoldCost"				"180"
 		"AbilityCooldown"		    "1.0"
 		"OnSpellStart"
 		{
@@ -3305,7 +3305,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "3"
 	    }
 	    "07"
 	    {
@@ -3361,7 +3361,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "3"
 	    }
 	    "07"
 	    {
@@ -4141,12 +4141,12 @@
 				"03"
 				{
 					"var_type"					"FIELD_INTEGER"
-					"damage_first"				"200"
+					"damage_first"				"160"
 				}
 				"04"
 				{
 					"var_type"					"FIELD_INTEGER"
-					"damage_second"				"200"
+					"damage_second"				"130"
 				}
 				"05"
 				{
@@ -7381,7 +7381,7 @@
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityType"								"DOTA_ABILITY_TYPE_BASIC"
 	
-		"AbilityCooldown"						"10.0"
+		"AbilityCooldown"						"15.0"
 	
 		"OnSpellStart"
 		{
@@ -7396,7 +7396,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"tango_cost"		"480"
+				"tango_cost"		"495"
 			}
 			"02"
 			{
@@ -7717,7 +7717,7 @@
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityType"								"DOTA_ABILITY_TYPE_BASIC"
 	
-		"AbilityCooldown"						"10.0"
+		"AbilityCooldown"						"20.0"
 	
 		"OnSpellStart"
 		{
@@ -7732,7 +7732,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"tango_cost"		"600"
+				"tango_cost"		"625"
 			}
 			"02"
 			{
@@ -9899,7 +9899,7 @@
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"AbilityChannelTime" 			"1"
 		"AbilityDuration" 				"1"
-		"AbilityGoldCost"					"50"
+		"AbilityGoldCost"					"50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 100 102 104 106 108 110"
 		"OnChannelSucceeded"
 		{
 			"RunScript"
@@ -9933,7 +9933,7 @@
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"AbilityChannelTime" 			"1"
 		"AbilityDuration" 				"1"
-		"AbilityGoldCost"					"60 120 180 240 300"
+		"AbilityGoldCost"					"90 180 290 400 510"
 		"OnChannelSucceeded"
 		{
 			"RunScript"
@@ -10674,7 +10674,7 @@
 	{
 	  "BaseClass"                "ability_datadriven"
 	  "AbilityTextureName"      "rattletrap_power_cogs"
-	  "MaxLevel"                "1"
+	  "MaxLevel"                "2"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityGoldCost"				"425"
@@ -10717,7 +10717,7 @@
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "2"
 	    }
 	    "07"
 	    {
@@ -10804,7 +10804,7 @@
 	    "01"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "atk_damage_tooltip"    "656.25"
+	      "atk_damage_tooltip"    "590.25"
 	    }
 	    "02"
 	    {
@@ -10819,17 +10819,17 @@
 	    "04"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "health_tooltip"        "1400"
+	      "health_tooltip"        "1325"
 	    }
 	    "05"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "armor_tooltip"         "3"
+	      "armor_tooltip"         "5"
 	    }
 	    "06"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "food_cost"     "1"
+	      "food_cost"     "2"
 	    }
 	    "07"
 	    {
@@ -11109,7 +11109,7 @@
 	    "06"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "food_cost"              "1"
+	      "food_cost"              "2"
 	    }
 	    "07"
 	    {

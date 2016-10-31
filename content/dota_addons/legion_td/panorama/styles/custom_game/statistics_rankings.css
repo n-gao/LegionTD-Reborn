@@ -45,5 +45,26 @@
 
 #RankingLocal {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-top: 1px solid #AAAAAA;
+    padding-top: 5px;
+    padding-left: -5px;
+    padding-right: -5px;
+}
+
+#Name {
+    margin-right: 40px;
+    max-width: 100px;
+    overflow: scroll;
+}
+
+DOTAAvatarImage
+{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  vertical-align: top;
+  horizontal-align: right;
 }
