@@ -5,7 +5,7 @@ DataAttribute = "data"
 FailureAttribute = "failure"
 
 Storage = {}
-Storage.serverURL = "http://localhost:5000/api/playerdata"
+Storage.serverURL = "http://localhost:5000/api/player"
 
 Storage.app_id = 1
 
@@ -73,6 +73,7 @@ function Storage:RequestRankingPosition(attribute, steamId)
         local resultTable = JSON:decode(result)
         print("GET RANKING POSITION RESPONSE")
         DeepPrintTable(resultTable)
+        if resultTable == nil then return end
         self:GetRankingPositions(resultTable.attribute)[resultTable.steamId] = resultTable.rank
         local callbacks = self:GetRankingPositionCallbacks(resultTable.attribute, resultTable.steamId)
         for k, callback in pairs(callbacks) do
@@ -287,7 +288,7 @@ function Storage:SavePlayerData(steam_id, toStore, callback)
         customGameId = self.app_id,
         steamId = steam_id,
         data = data,
-        }, function (result) 
+        }, function (result)
             local resultTable = JSON:decode(result)
             print("POST RESPONSE")
             DeepPrintTable(resultTable)
@@ -324,7 +325,7 @@ function Storage:SendHttpRequest(method, data, callback)
 
     local req = CreateHTTPRequest(method, self.serverURL)
 
-    for key, value in pairs(data) do 
+    for key, value in pairs(data) do
         req:SetHTTPRequestGetOrPostParameter(key, tostring(value))
     end
     --req:SetHTTPRequestGetOrPostParameter("steamId", "76561198027964324")
