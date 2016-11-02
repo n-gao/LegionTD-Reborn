@@ -17,7 +17,7 @@
 		"02"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"great_cleave_damage"	"35"
+			"great_cleave_damage"	"15"
 		}
 	}
 }

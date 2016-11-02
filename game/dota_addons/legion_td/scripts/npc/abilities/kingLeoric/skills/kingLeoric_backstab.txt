@@ -24,8 +24,8 @@
 	{
 		"01"
 		{
-			"var_type"					"FIELD_INTEGER"
-			"agility_damage"			"50 75 100 125"
+			"var_type"					"FIELD_FLOAT"
+			"dmg_multiplier"			"2.25"
 		}
 		"02"
 		{

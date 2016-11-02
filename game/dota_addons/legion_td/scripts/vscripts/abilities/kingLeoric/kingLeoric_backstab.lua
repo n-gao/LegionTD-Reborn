@@ -7,7 +7,8 @@
 function CheckBackstab(params)
 	
 	local ability = params.ability
-	local agility_damage_multiplier = ability:GetLevelSpecialValueFor("agility_damage", ability:GetLevel() - 1) / 100
+	local multiplier = ability.GetSpecialValueFor("dmg_multiplier")-1
+	local backstabAngle = ability:GetSpecialValueFor("backstab_angle") / 2
 
 	-- The y value of the angles vector contains the angle we actually want: where units are directionally facing in the world.
 	local victim_angle = params.target:GetAnglesAsVector().y
@@ -27,17 +28,12 @@ function CheckBackstab(params)
 	result_angle = math.abs(result_angle)
 	
 	-- Check for the backstab angle.
-	if result_angle >= (180 - (ability:GetSpecialValueFor("backstab_angle") / 2)) and result_angle <= (180 + (ability:GetSpecialValueFor("backstab_angle") / 2)) then 
-		-- Play the sound on the victim.
+	if result_angle >= (180 - (backstabAngle)) and result_angle <= (180 + (backstabAngle)) then 
+
 		EmitSoundOn(params.sound, params.target)
-		-- Create the back particle effect.
 		local particle = ParticleManager:CreateParticle(params.particle, PATTACH_ABSORIGIN_FOLLOW, params.target) 
-		-- Set Control Point 1 for the backstab particle; this controls where it's positioned in the world. In this case, it should be positioned on the victim.
 		ParticleManager:SetParticleControlEnt(particle, 1, params.target, PATTACH_POINT_FOLLOW, "attach_hitloc", params.target:GetAbsOrigin(), true) 
-		-- Apply extra backstab damage based on Riki's agility
-		ApplyDamage({victim = params.target, attacker = params.attacker, damage = params.attacker:GetAverageTrueAttackDamage() * agility_damage_multiplier, damage_type = ability:GetAbilityDamageType()})
-	else
-		--EmitSoundOn(params.sound2, params.target)
-		-- uncomment this if regular (non-backstab) attack has no sound
+
+		ApplyDamage({victim = params.target, attacker = params.attacker, damage = params.damage * multiplier, damage_type = ability:GetAbilityDamageType()})
 	end
 end

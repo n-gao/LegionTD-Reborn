@@ -1,30 +1,4 @@
 require("ai/ai_core")
-print("y")
-function aiThinkStandardSkill(self)
-	if not self:IsAlive() and not self:HasModifier("modifier_invulnerable") then
-		return
-	end
-
-	if self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() then
-		return STANDARD_THINK_TIME
-	end
-	if self:CheckIfHasAggro() then
-		for i,v in ipairs(self.ability) do
-			if v:IsCooldownReady() then
-				v.Skill(self, v)
-			end
-		end
-	end
-
-	if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
-		return self:NextWayPoint()
-	end
-
-	if self:IsIdle() and not self:CheckIfHasAggro() then
-		return self:Unstuck()
-	end
-	return STANDARD_THINK_TIME
-end
 
 function Spawn(entity)
     InitAI(thisEntity)

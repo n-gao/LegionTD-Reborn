@@ -8941,8 +8941,8 @@
 		{
 			"01"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"agility_damage"			"50 75 100 125"
+				"var_type"					"FIELD_FLOAT"
+				"dmg_multiplier"			"2.25"
 			}
 			"02"
 			{
@@ -9016,7 +9016,7 @@
 			"06"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"destroy_attacks"	"8"
+				"destroy_attacks"	"3"
 			}
 			"07"
 			{
@@ -9232,7 +9232,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"great_cleave_damage"	"35"
+				"great_cleave_damage"	"15"
 			}
 		}
 	}
@@ -9333,7 +9333,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage"			"14"
+				"damage"			"2"
 			}
 			"02"
 			{
@@ -9343,7 +9343,7 @@
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"duration"			"4"
+				"duration"			"3"
 			}
 			"04"
 			{
@@ -9353,7 +9353,7 @@
 			"05"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"movespeed"			"-9"
+				"movespeed"			"-5"
 			}
 		}
 	}	
@@ -9545,15 +9545,27 @@
 			}
 		}
 	}
+	// From Dota 2 Spell Library https://github.com/Pizzalol/SpellLibrary
+	// Rewrite of Templar Assasssin Psi Blades
+	// Author: YOLOSPAGHETTI
+	// Date: April 2, 2016
+	// Version: 6.86
+	// Type: Datadriven
 	"kingLeoric_psi_blades"
 	{
-		"BaseClass"						"templar_assassin_psi_blades"
-		"AbilityTextureName"			"templar_assassin_psi_blades"
-		"MaxLevel"						"1"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-	
+		"BaseClass"							"ability_datadriven"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"				"DAMAGE_TYPE_PURE"
+		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+		"SpellImmunityType"					"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"				"templar_assassin_psi_blades"
+		
+		"precache"
+		{
+			"particle"						"particles/units/heroes/hero_templar_assassin/templar_assassin_psi_blade.vpcf"
+		}
+		
 		"AbilitySpecial"
 		{
 			"01"
@@ -9571,8 +9583,47 @@
 				"var_type"					"FIELD_INTEGER"
 				"attack_spill_width"		"75"
 			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"dmg_multiplier"			"0.25"
+			}
 		}
-	}	
+	
+		"OnProjectileHitUnit"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"abilities/kingLeoric/kingLeoric_psi_blades.lua"
+				"Function"		"DealDamage"
+			}
+		}
+		
+		"Modifiers"
+		{
+			"modifier_kingLeoric_psi_blades"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"abilities/kingLeoric/kingLeoric_psi_blades.lua"
+						"Function"		"CheckAngles"
+						"particle"		"particles/units/heroes/hero_templar_assassin/templar_assassin_psi_blade.vpcf"
+						"damage"		"%attack_damage"
+					}
+				}
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"%bonus_attack_range"
+				}
+			}
+		}
+	}
 	"kingLeoric_quill_spray"
 	{
 		"BaseClass"             		"bristleback_quill_spray"

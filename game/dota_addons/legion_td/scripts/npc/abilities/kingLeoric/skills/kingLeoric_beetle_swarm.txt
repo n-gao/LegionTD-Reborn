@@ -42,7 +42,7 @@
 		"06"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"destroy_attacks"	"8"
+			"destroy_attacks"	"3"
 		}
 		"07"
 		{

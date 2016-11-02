@@ -18,7 +18,7 @@
 		"01"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"damage"			"14"
+			"damage"			"2"
 		}
 		"02"
 		{
@@ -28,7 +28,7 @@
 		"03"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"duration"			"4"
+			"duration"			"3"
 		}
 		"04"
 		{
@@ -38,7 +38,7 @@
 		"05"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"movespeed"			"-9"
+			"movespeed"			"-5"
 		}
 	}
 }	
