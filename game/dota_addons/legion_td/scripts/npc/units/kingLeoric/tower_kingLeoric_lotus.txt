@@ -10,7 +10,7 @@
 
 	"Ability1"					"kingLeoric_psi_blades"
 	"Ability2"					"kingLeoric_upgrade_nightshade"
-	"Ability3"					""
+	"Ability3"					"ability_empty_3"
 	"Ability4"					"sell"
 
 	"ArmorPhysical"				"5"

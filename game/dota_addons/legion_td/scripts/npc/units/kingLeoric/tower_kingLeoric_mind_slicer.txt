@@ -9,8 +9,8 @@
 	"Vscripts"					"ai/ai_default.lua"
 
 	"Ability1"					"kingLeoric_weaken"
-	"Ability2"					""
-	"Ability3"					""
+	"Ability2"					"ability_empty_2"
+	"Ability3"					"ability_empty_3"
 	"Ability4"					"sell"
 
 	"ArmorPhysical"				"1"

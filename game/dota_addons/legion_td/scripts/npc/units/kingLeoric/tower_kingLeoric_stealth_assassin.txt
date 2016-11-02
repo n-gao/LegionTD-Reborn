@@ -10,7 +10,7 @@
 
 	"Ability1"					"kingLeoric_jinada"
 	"Ability2"					"kingLeoric_mortal_strike"
-	"Ability3"					""
+	"Ability3"					"ability_empty_3"
 	"Ability4"					"sell"
 
 	"ArmorPhysical"				"20"

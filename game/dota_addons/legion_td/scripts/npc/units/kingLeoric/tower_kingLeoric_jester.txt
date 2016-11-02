@@ -10,7 +10,7 @@
 
 	"Ability1"					"kingLeoric_backstab"
 	"Ability2"					"kingLeoric_upgrade_trickster"
-	"Ability3"					""
+	"Ability3"					"ability_empty_3"
 	"Ability4"					"sell"
 
 	"ArmorPhysical"				"10"

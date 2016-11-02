@@ -9,7 +9,7 @@
 
 	"Ability1"					"kingLeoric_beetle_swarm"
 	"Ability2"					"kingLeoric_upgrade_shadow_hunter"
-	"Ability3"					""
+	"Ability3"					"ability_empty_3"
 	"Ability4"					"sell"
 
 	"ArmorPhysical"				"0"

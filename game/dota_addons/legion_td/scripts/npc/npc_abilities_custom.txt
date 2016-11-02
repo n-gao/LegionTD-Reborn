@@ -8074,12 +8074,12 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"atk_damage_tooltip"			"75"
+				"atk_damage_tooltip"			"50"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"atk_speed_tooltip"				"1"
+				"atk_speed_tooltip"				"1.2"
 			}
 			"03"
 			{
@@ -8169,7 +8169,7 @@
 	kingLeoric_upgrade_alpha_predator
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -8225,7 +8225,7 @@
 	kingLeoric_upgrade_bloodknife
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -8281,7 +8281,7 @@
 	kingLeoric_upgrade_blood_drinker
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -8337,7 +8337,7 @@
 	kingLeoric_upgrade_dark_wraith
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -8393,7 +8393,7 @@
 	kingLeoric_upgrade_mind_breaker
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -8449,7 +8449,7 @@
 	kingLeoric_upgrade_mind_slicer
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -8505,7 +8505,7 @@
 	kingLeoric_upgrade_nightshade
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -8561,7 +8561,7 @@
 	kingLeoric_upgrade_nimble_edge
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -8617,7 +8617,7 @@
 	kingLeoric_upgrade_shadow_hunter
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -8673,7 +8673,7 @@
 	kingLeoric_upgrade_silent_champion
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -8729,7 +8729,7 @@
 	kingLeoric_upgrade_stealth_assassin
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -8785,7 +8785,7 @@
 	kingLeoric_upgrade_timekeeper
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
@@ -8841,7 +8841,7 @@
 	kingLeoric_upgrade_trickster
 	{
 		"BaseClass"								"ability_datadriven"
-		"AbilityTextureName"					"spawn_archer"
+		"AbilityTextureName"					"rattletrap_power_cogs"
 		"MaxLevel"								"1"
 	
 		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"

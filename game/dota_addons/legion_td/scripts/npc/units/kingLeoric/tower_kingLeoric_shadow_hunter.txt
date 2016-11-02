@@ -10,7 +10,7 @@
 
 	"Ability1"					"kingLeoric_spiked_carapace"
 	"Ability2"					"kingLeoric_upgrade_alpha_predator"
-	"Ability3"					""
+	"Ability3"					"ability_empty_3"
 	"Ability4"					"sell"
 
 	"ArmorPhysical"				"2"

@@ -10,7 +10,7 @@
 
 	"Ability1"					"kingLeoric_coup_de_grace"
 	"Ability2"					"kingLeoric_concealment"
-	"Ability3"					""
+	"Ability3"					"ability_empty_3"
 	"Ability4"					"sell"
 
 	"ArmorPhysical"				"15"
