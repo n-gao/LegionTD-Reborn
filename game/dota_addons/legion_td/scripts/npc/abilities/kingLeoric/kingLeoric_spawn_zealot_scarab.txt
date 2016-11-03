@@ -22,7 +22,7 @@ kingLeoric_spawn_zealot_scarab
 		"01"
 		{
 			"var_type"						"FIELD_INTEGER"
-			"atk_damage_tooltip"			"14"
+			"atk_damage_tooltip"			"16"
 		}
 		"02"
 		{
@@ -42,7 +42,7 @@ kingLeoric_spawn_zealot_scarab
 		"05"
 		{
 			"var_type"						"FIELD_INTEGER"
-			"armor_tooltip"					"0"
+			"armor_tooltip"					"1"
 		}
 		"06"
 		{

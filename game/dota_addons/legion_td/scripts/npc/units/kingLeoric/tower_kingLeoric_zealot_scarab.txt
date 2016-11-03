@@ -12,13 +12,13 @@
 	"Ability3"					"ability_empty_3"
 	"Ability4"					"sell"
 
-	"ArmorPhysical"				"0"
+	"ArmorPhysical"				"1"
 	"MagicalResistance"			"0"
 
 	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"			"9"
-	"AttackDamageMax"			"19"
+	"AttackDamageMin"			"11"
+	"AttackDamageMax"			"21"
 	"AttackRate"				"0.5"
 	"AttackAnimationPoint"		"0.5"
 	"AttackAcquisitionRange"	"850"
