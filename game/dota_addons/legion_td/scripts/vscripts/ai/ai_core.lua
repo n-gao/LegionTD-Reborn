@@ -32,7 +32,7 @@ function aiThinkStandard(self)
 	return STANDARD_THINK_TIME
 end
 
-function aiThinkStandardBuff(self)
+--[[function aiThinkStandardBuff(self)
 	if not self:IsAlive() and not self:HasModifier("modifier_invulnerable") then
 		return
 	end
@@ -49,7 +49,7 @@ function aiThinkStandardBuff(self)
 		return self:Unstuck()
 	end
 	return STANDARD_THINK_TIME
-end
+end]]--
 
 function aiThinkStandardSkill(self)
 

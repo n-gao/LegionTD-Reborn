@@ -7,7 +7,7 @@
 function CheckBackstab(params)
 	
 	local ability = params.ability
-	local multiplier = ability.GetSpecialValueFor("dmg_multiplier")-1
+	local multiplier = ability:GetSpecialValueFor("dmg_multiplier") - 1
 	local backstabAngle = ability:GetSpecialValueFor("backstab_angle") / 2
 
 	-- The y value of the angles vector contains the angle we actually want: where units are directionally facing in the world.
