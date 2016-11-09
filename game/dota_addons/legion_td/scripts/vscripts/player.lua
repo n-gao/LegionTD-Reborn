@@ -421,7 +421,8 @@ end
 function Player:SendErrorCode(code)
   if self.plyEntitie then
     CustomGameEventManager:Send_ServerToPlayer(self:GetPlayer(), "error", {
-      errorCode = code
+      errorCode = code,
+      error = errorStrings[code]
     })
   end
 end

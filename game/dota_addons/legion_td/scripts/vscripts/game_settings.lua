@@ -84,6 +84,15 @@ LEGION_ERROR_TO_CLOSE = 4
 LEGION_ERROR_TO_MANY_UPGRADES = 5
 LEGION_ERROR_DURING_DUEL = 6
 
+errorStrings = {}
+errorStrings[LEGION_ERROR_BETWEEN_ROUNDS] = "#Error_not_between_rounds"
+errorStrings[LEGION_ERROR_NOT_ENOUGH_TANGOS] = "#Error_not_enough_tangos"
+errorStrings[LEGION_ERROR_INVALID_LOCATION] = "#Error_invalid_location"
+errorStrings[LEGION_ERROR_NOT_ENOUGH_FOOD] = "#Error_not_enough_food"
+errorStrings[LEGION_ERROR_TO_CLOSE] = "#Error_to_close_to_another"
+errorStrings[LEGION_ERROR_TO_MANY_UPGRADES] = "#Error_to_many_king_upgrades"
+errorStrings[LEGION_ERROR_DURING_DUEL] = "#Error_not_possible_in_last_duel"
+
 voteOptions = {}
 voteOptions["tango_limit"] = false
 voteOptions["return_to_sender"] = false

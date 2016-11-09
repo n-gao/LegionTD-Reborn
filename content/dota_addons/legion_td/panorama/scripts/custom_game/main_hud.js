@@ -141,33 +141,7 @@ function UpdateDebug(data) {
 
 function ErrorMessage(data) {
 	$.GetContextPanel().SetHasClass("error_appeared", true);
-	var text;
-	switch (data.errorCode) {
-		case LEGION_ERROR_BETWEEN_ROUNDS:
-		text = $.Localize("#Error_not_between_rounds");
-		break;
-		case LEGION_ERROR_NOT_ENOUGH_TANGOS:
-		text = $.Localize("#Error_not_enough_tangos");
-		break;
-		case LEGION_ERROR_INVALID_LOCATION:
-		text = $.Localize("#Error_invalid_location");
-		break;
-		case LEGION_ERROR_NOT_ENOUGH_FOOD:
-		text = $.Localize("#Error_not_enough_food");
-		break;
-		case LEGION_ERROR_TO_CLOSE:
-		text = $.Localize("#Error_to_close_to_another");
-		break;
-		case LEGION_ERROR_TO_MANY_UPGRADES:
-		text = $.Localize("#Error_to_many_king_upgrades");
-		break;
-		case LEGION_ERROR_DURING_DUEL:
-		text = $.Localize("#Error_not_possible_in_last_duel");
-		break;
-		default:
-		text = $.Localize("#Error_unknown");
-	}
-	$("#ErrorMessage").text = text;
+	$("#ErrorMessage").text = $.Localize(data.error);
 
 	$.Schedule(1, ClearErrorMessage);
 }
