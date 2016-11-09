@@ -1930,7 +1930,7 @@
 	    "01"
 	    {
 	      "var_type"      "FIELD_INTEGER"
-	      "tango_cost"         "30"
+	      "tango_cost"         "25"
 	    }
 	    "02"
 	    {
@@ -3300,7 +3300,7 @@
 	    "05"
 	    {
 	      "var_type"              "FIELD_INTEGER"
-	      "armor_tooltip"         "6"
+	      "armor_tooltip"         "4"
 	    }
 	    "06"
 	    {
@@ -7884,7 +7884,7 @@
 		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"AbilityChannelTime" 			"1"
 		"AbilityDuration" 				"1"
-		"AbilityGoldCost"					"50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 100 102 104 106 108 110"
+		"AbilityGoldCost"					"50 54 58 62 66 70 74 78 82 86 90 94 98 102 106 110 114 118 122 126 130 134 138 142 146 150 154 158 162 166 170"
 		"OnChannelSucceeded"
 		{
 			"RunScript"

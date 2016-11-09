@@ -14,13 +14,13 @@
 	"Ability1"							"skeleton_king_vampiric_aura"
 
 	"ArmorPhysical"         "6"
-	"MagicalResistance"     "10"
+	"MagicalResistance"     "20"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "15.0"
 	"AttackDamageMax"       "18.75"
-	"AttackRate"            "0.8"
+	"AttackRate"            "0.7"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "90"
@@ -43,7 +43,7 @@
 	"MovementSpeed"         "300"
 	"MovementTurnRate"      "0.6"
 
-	"StatusHealth"          "280"
+	"StatusHealth"          "300"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
