@@ -4,14 +4,18 @@ PlayerData.datas = {}
 function PlayerData.CreateToPlayer(player, callback)
   local result = PlayerData.Get(player:GetSteamID())
   if result ~= nil then  return result end
-  local result = PlayerData.new(nil, player)
+  local result = PlayerData.New(nil, player)
   Game.storage:SavePlayerData(result.steamID, result:GetToStoredData(), function() end)
   callback(result, true)
   return result
 end
 
+function PlayerData.GetByPlayer(player)
+  return PlayerData.datas[player:GetSteamID()] or PlayerData.New(nil, player, player:GetSteamID())
+end
+
 function PlayerData.Get(steamID)
-  return PlayerData.datas[steamID] or PlayerData.new(nil, nil, steamID)
+  return PlayerData.datas[steamID] or PlayerData.New(nil, nil, steamID)
 end
 
 function PlayerData.AddOrUpdate(storedData, player, steamID)
@@ -21,23 +25,23 @@ function PlayerData.AddOrUpdate(storedData, player, steamID)
     self:OverridePlayer(player)
     return self
   end
-  return PlayerData.new(storedData, player, steamID)
+  return PlayerData.New(storedData, player, steamID)
 end
 
-function PlayerData.new(storedData, player, steamID)
+function PlayerData.New(storedData, player, steamID)
   local self = PlayerData()
   self.storedData = storedData or {}
   self.steamID = steamID or self.player:GetSteamID()
-  self.player = player or Game:FindPlayerWithSteamID(self.steamID) or Player.newPlaceHolder()
+  self.player = player or Game:FindPlayerWithSteamID(self.steamID) or Player.NewPlaceHolder()
   PlayerData.datas[self.steamID] = self
   return self
 end
 
-function PlayerData.newWithoutSave(storedData, player, steamID)
+function PlayerData.NewWithoutSave(storedData, player, steamID)
   local self = PlayerData()
   self.storedData = storedData or {}
   self.steamID = steamID or self.player:GetSteamID()
-  self.player = player or Game:FindPlayerWithSteamID(self.steamID) or Player.newPlaceHolder()
+  self.player = player or Game:FindPlayerWithSteamID(self.steamID) or Player.NewPlaceHolder()
   return self
 end
 
@@ -46,7 +50,7 @@ function PlayerData:OverrideStoredData(storedData)
 end
 
 function PlayerData:OverridePlayer(player)
-  self.player = player or Player.newPlaceHolder()
+  self.player = player or Player.NewPlaceHolder()
 end
 
 function PlayerData:GetToStoredData()
@@ -71,6 +75,22 @@ function PlayerData:GetToStoredData()
     if result[key] == nil then
       result[key] = value
     end
+  end
+  return result
+end
+
+
+function PlayerData:GetMatchData()
+  local result = {
+    experience = self.player:GetExperience(),
+    earned_tangos = self.player:GetEarnedTangos(),
+    won_duels = self.player:GetWonDuels(),
+    fraction = self.player:GetFraction(),
+    team = self.player:GetTeamNumber()
+  }
+  local unitData = self:GetUnitData()
+  for key, value in pairs(unitData) do
+    result[key] = value
   end
   return result
 end
@@ -148,5 +168,19 @@ end
 function PlayerData:GetTotalEarnedTangos()
   local result = self.player:GetEarnedTangos()
   result = result + self:SaveGetStoredAttribute("earned_tangos")
+  return result
+end
+
+function PlayerData:GetUnitData()
+  local result = {}
+  for unit, value in pairs(self.player.killedUnits) do
+    result["killed_"..unit] = value
+  end
+  for unit, value in pairs(self.player.leakedUnits) do
+    result["leaked_"..unit] = value
+  end
+  for unit, value in pairs(self.player.buildUnits) do
+    result["build_"..unit] = value
+  end
   return result
 end

@@ -25,10 +25,33 @@ function Player.new(plyEntitie, userID)
   self.experience = 0
   self.fractionKills = {}
   self.wonDuels = 0
+  self.buildUnits = {}
+  self.killedUnits = {}
+  self.leakedUnits = {}
   return self
 end
 
-function Player.newPlaceHolder()
+function Player:BuildUnit(unit)
+  self.buildUnits[unit.npcclass] = (self.buildUnits[unit.npcclass] or 0) + 1
+end
+
+function Player:KilledUnit(killed)
+  self.killedUnits[killed:GetUnitName()] = (self.killedUnits[killed:GetUnitName()] or 0) + 1
+  local fraction = Game.UnitKV[killed:GetUnitName()].Legion_Fraction or "other"
+  self:IncreaseKillOfFraction(fraction)
+end
+
+function Player:GetFraction()
+  local heroName = self.hero:GetUnitName()
+  for _,data in pairs(Game.HeroKV) do
+    if data.override_hero == heroName then
+      return data.Legion_Fraction
+    end
+  end
+  return "other"
+end
+
+function Player.NewPlaceHolder()
   return Player.new(nil, nil)
 end
 
@@ -112,6 +135,8 @@ end
 --sets hero to player
 function Player:SetNPC(npc)
   self.hero = npc
+  print(self.hero:GetUnitName())
+  print(self:GetFraction())
   self.playerID = self:GetPlayerID()
   npc.player = self
   self.teamnumber = self.hero:GetTeamNumber()
@@ -125,7 +150,7 @@ function Player:SetNPC(npc)
   while Game.lanes[""..laneID].isUsed do
     laneID = laneID + 1
     if not Game.lanes[""..laneID] then
-      print("FUUUUUUUCK")
+      print("FUUUUUUU...")
       break
     end
   end
@@ -302,6 +327,7 @@ function Player:Leaked(unit, level)
   self.leaked = true
   self.leaks = self.leaks + 1
   self.leaksPenalty = self.leaksPenalty + level
+  self.leakedUnits[unit:GetUnitName()] = (self.leakedUnits[unit:GetUnitName()] or 0) + 1
   self:RefreshPlayerInfo()
 end
 

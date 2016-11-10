@@ -19,7 +19,7 @@ function ExperienceTracker:OnUnitKilled(entry)
         print(killed:GetUnitName())
         print(murderer:GetUnitName())
     end
-    player:IncreaseKillOfFraction(fraction)
+    player:KilledUnit(killed)
 end
 
 ExperienceTracker:init()

@@ -303,6 +303,33 @@ function Storage:SavePlayerData(steam_id, toStore, callback)
         end)
 end
 
+function Storage:SaveMatchData(winner, matchData)
+    if (self.online == false) then
+        if (callback ~= nil) then
+            callback(nil, false)
+        end
+        return
+    end
+    DeepPrintTable(matchData)
+    self:SendHttpRequest("POST", {
+            customGameId = self.app_id,
+            winner = winner,
+            matchData = JSON:encode(matchData)
+        }, function(result)
+        local resultTable = JSON:decode(result)
+        print("POST MATCH RESPONSE")
+        DeepPrintTable(resultTable)
+        if callback == nil then
+            return
+        end
+            if resultTable ~= nil then
+                callback(resultTable, resultTable[FailureAttribute] == nil)
+            else
+                callback(resultTable, false)
+            end
+    end)
+end
+
 function Storage:SetServerURL(url)
     self.serverURL = url
 end
@@ -328,8 +355,6 @@ function Storage:SendHttpRequest(method, data, callback)
     for key, value in pairs(data) do
         req:SetHTTPRequestGetOrPostParameter(key, tostring(value))
     end
-    --req:SetHTTPRequestGetOrPostParameter("steamId", "76561198027964324")
-    --req:SetHTTPRequestGetOrPostParameter("appId", "1")
     req:Send(function(result)
             print(result.Body)
             if (result.Body == "") then
