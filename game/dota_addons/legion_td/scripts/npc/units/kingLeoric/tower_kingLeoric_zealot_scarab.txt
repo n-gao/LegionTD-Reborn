@@ -7,7 +7,7 @@
 	"Level"						"1"
 	"Vscripts"					"ai/kingLeoric/ai_kingLeoric_zealot_scarab.lua"
 
-	"Ability1"					"kingLeoric_beetle_swarm"
+	"Ability1"					"kingLeoric_quill_spray"
 	"Ability2"					"kingLeoric_upgrade_shadow_hunter"
 	"Ability3"					"ability_empty_3"
 	"Ability4"					"sell"

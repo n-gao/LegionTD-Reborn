@@ -49,13 +49,13 @@
 		"ApplyModifier"
 		{
 			"Target"					"CASTER"
-			"ModifierName"				"modifier_spiked_carapace_buff_datadriven"
+			"ModifierName"				"modifier_kingLeoric_spiked_carapace_buff"
 		}
 	}
 	
 	"Modifiers"
 	{
-		"modifier_spiked_carapace_buff_datadriven"
+		"modifier_kingLeoric_spiked_carapace_buff"
 		{
 			"IsBuff"					"0"
 			"IsPurgable"				"0"
@@ -72,7 +72,7 @@
 			}
 		}
 		
-		"modifier_spiked_carapaced_stun_datadriven"
+		"modifier_kingLeoric_spiked_carapace_stun"
 		{
 			"IsDebuff"						"1"
 			"Duration"						"%stun_duration"

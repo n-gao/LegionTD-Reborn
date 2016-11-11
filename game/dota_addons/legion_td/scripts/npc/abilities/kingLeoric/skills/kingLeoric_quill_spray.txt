@@ -22,12 +22,12 @@
 		"02"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"quill_base_damage"		"40.0"
+			"quill_base_damage"		"10.0"
 		}
 		"03"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"quill_stack_damage"	"10.0"
+			"quill_stack_damage"	"5.0"
 		}
 		"04"
 		{
@@ -37,7 +37,7 @@
 		"05"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"max_damage"			"200"
+			"max_damage"			"50.0"
 		}
 	}
 }

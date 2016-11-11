@@ -84,6 +84,7 @@
 		"Ability3"					"kingLeoric_spawn_creeping_shadow"
 		"Ability4"					"kingLeoric_spawn_lotus"
 		"Ability5"					"kingLeoric_spawn_jester"
+		"Ability6"					"kingLeoric_frenzy"
 	
 		"AttributeBaseStrength"		"0"
 		"AttributeBaseAgility"		"0"

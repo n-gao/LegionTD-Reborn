@@ -9,8 +9,8 @@
 	"Vscripts"					"ai/kingLeoric/ai_kingLeoric_alpha_predator.lua"
 
 	"Ability1"					"kingLeoric_spiked_carapace"
-	"Ability2"					"kingLeoric_quill_spray"
-	"Ability3"					"ability_empty_3"
+	"Ability2"					"kingLeoric_snot_spray"
+	"Ability3"					"kingLeoric_memento"
 	"Ability4"					"sell"
 
 	"ArmorPhysical"				"4"

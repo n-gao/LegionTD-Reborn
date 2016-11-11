@@ -9,8 +9,8 @@
 	"Vscripts"					"ai/kingLeoric/ai_kingLeoric_shadow_hunter.lua"
 
 	"Ability1"					"kingLeoric_spiked_carapace"
-	"Ability2"					"kingLeoric_upgrade_alpha_predator"
-	"Ability3"					"ability_empty_3"
+	"Ability2"					"kingLeoric_snot_spray"
+	"Ability3"					"kingLeoric_upgrade_alpha_predator"
 	"Ability4"					"sell"
 
 	"ArmorPhysical"				"2"

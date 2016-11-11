@@ -9313,6 +9313,43 @@
 			} 
 		}
 	}
+	"kingLeoric_frenzy"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/kingLeoric/kingLeoric_frenzy.lua"
+		"AbilityTextureName"		"ogre_magi_bloodlust"
+		"MaxLevel"					"1"
+	
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+	
+		"AbilityCastPoint"			"0.0"
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attackspeed_bonus"		"80"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movespeed_bonus"		"16"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"5.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cooldown"				"5"
+			}
+		}
+	}
 	"kingLeoric_hinder"
 	{
 		"BaseClass"             		"silencer_curse_of_the_silent"
@@ -9466,6 +9503,160 @@
 		}
 	
 	}
+	
+	// Rewrite of the Techies Suicide ability
+	// Author: Pizzalol
+	// Date: 25.03.2015.
+	"kingLeoric_memento"
+	{
+		"BaseClass"							"ability_datadriven"
+		"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+		"SpellImmunityType"					"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitDamageType"				"DAMAGE_TYPE_PHYSICAL"
+		"MaxLevel"							"1"
+		"AbilityTextureName"				"techies_suicide"
+	
+		"precache"
+		{
+			"soundfile"						"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"		
+			"particle"						"particles/units/heroes/hero_techies/techies_suicide_base.vpcf"
+		}
+	
+		"AbilityCastRange"					"100"
+		"AbilityCastPoint"					"0.0"
+		"AbilityCooldown"					"150.0"
+		"AbilityManaCost"					"0"
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"small_radius"				"100"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"big_radius"				"300"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"200"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"partial_damage"			"100"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"auto_activate_threshold"	"75"
+			}
+		}
+	
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"			"Hero_Techies.Suicide"
+				"Target" 				"CASTER"
+			}
+	
+			"FireEffect"
+			{
+				"EffectName"			"particles/units/heroes/hero_techies/techies_suicide_base.vpcf"
+				"EffectAttachType"		"follow_origin"
+				"Target"				"CASTER"
+			}
+	
+			"ActOnTargets"
+			{
+				"Target"
+				{
+					"Center"			"CASTER"
+					"Radius"			"%small_radius"
+					"Teams"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+					"Flags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+				}
+			
+				"Action"    
+				{
+					"Damage"
+					{
+						"Target"
+						{
+							"Center"	"TARGET"
+							"Flags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+						}
+						"Type"			"DAMAGE_TYPE_PHYSICAL"
+						"Damage"		"%damage - %partial_damage"
+					}
+				}
+			}
+	
+			"ActOnTargets"
+			{
+				"Target"
+				{
+					"Center"			"CASTER"
+					"Radius"			"%big_radius"
+					"Teams"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+					"Flags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+				}
+			
+				"Action"    
+				{
+					"Damage"
+					{
+						"Target"
+						{
+							"Center"	"TARGET"
+							"Flags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+						}
+						"Type"			"DAMAGE_TYPE_PHYSICAL"
+						"Damage"		"%partial_damage"
+					}
+				}
+			}
+	
+			"DelayedAction"
+			{
+				"Delay"		"0.03"
+				"Action"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"abilities/kingLeoric/kingLeoric_memento.lua"
+						"Function"		"Suicide"
+					}
+				}
+			}	
+		}
+		"Modifiers"
+		{
+			"modifier_suicide_passive"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+	
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"abilities/kingLeoric/kingLeoric_memento.lua"
+						"Function"		"AutoActivate"
+					}
+				}
+			}
+		}
+	}
+	
 	"kingLeoric_mesmerize"
 	{
 		"BaseClass"						"slardar_amplify_damage"
@@ -9648,12 +9839,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"quill_base_damage"		"40.0"
+				"quill_base_damage"		"10.0"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"quill_stack_damage"	"10.0"
+				"quill_stack_damage"	"5.0"
 			}
 			"04"
 			{
@@ -9663,7 +9854,109 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"max_damage"			"200"
+				"max_damage"			"50.0"
+			}
+		}
+	}
+	"kingLeoric_snot_spray"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"bristleback_viscous_nasal_goo"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel" 						"1"
+	
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"5"
+		"AbilityManaCost"				"0"
+	
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"goo_speed"					"1000"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"goo_duration"				"5.0"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"armor_per_stack"			"-2.2"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"base_move_slow"			"-20"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"move_slow_per_stack"		"-6"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"attackspeed_base"			"-15"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"attackspeed_per_stack"		"-5"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage_per_second"			"8"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"stack_limit"				"4"
+			}
+			"10"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"radius"					"500.0"
+			}
+		}
+	
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"		"Hero_Bristleback.ViscousGoo.Cast"
+				"Target"			"CASTER"
+			}
+	
+			"TrackingProjectile"
+			{
+				"Target"			"TARGET"
+				"EffectName"		"particles/units/heroes/hero_bristleback/bristleback_viscous_nasal_goo.vpcf"
+				"Dodgeable"			"1"
+				"ProvidesVision"	"0"
+				"MoveSpeed"			"%goo_speed"
+			}
+		}
+	
+		"OnProjectileHitUnit"
+		{
+			"FireSound"
+			{
+				"EffectName"		"Hero_Bristleback.ViscousGoo.Target"
+				"Target"			"TARGET"
+			}
+	
+			"RunScript"
+			{
+				"ScriptFile"		"abilities/kingLeoric/kingLeoric_snot_spray.lua"
+				"Function"			"snot_spray_hit"
 			}
 		}
 	}
@@ -9713,13 +10006,13 @@
 					"Types"				"DOTA_UNIT_TARGET_HERO"
 				}
 	
-				"ModifierName"			"modifier_soul_rend_debuff"
+				"ModifierName"			"modifier_kingLeoric_soul_rend_debuff"
 			}
 		}
 		
 		"Modifiers"
 		{
-			"modifier_soul_rend_debuff"
+			"modifier_kingLeoric_soul_rend_debuff"
 			{
 				"Duration"						"%soul_rend_duration"
 				
@@ -9791,13 +10084,13 @@
 			"ApplyModifier"
 			{
 				"Target"					"CASTER"
-				"ModifierName"				"modifier_spiked_carapace_buff_datadriven"
+				"ModifierName"				"modifier_kingLeoric_spiked_carapace_buff"
 			}
 		}
 		
 		"Modifiers"
 		{
-			"modifier_spiked_carapace_buff_datadriven"
+			"modifier_kingLeoric_spiked_carapace_buff"
 			{
 				"IsBuff"					"0"
 				"IsPurgable"				"0"
@@ -9814,7 +10107,7 @@
 				}
 			}
 			
-			"modifier_spiked_carapaced_stun_datadriven"
+			"modifier_kingLeoric_spiked_carapace_stun"
 			{
 				"IsDebuff"						"1"
 				"Duration"						"%stun_duration"
@@ -12693,81 +12986,81 @@
 		}
 	"hydra_splitshot"
 	{
-		"BaseClass"             		"ability_datadriven"
-		"AbilityTextureName"			"medusa_split_shot"
-		"MaxLevel" 						"1"
-		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"radius"				"500"
-			}
-			"02"
-			{
-				"var_type"			"FIELD_INTEGER"
-				"targets"				"2"
-			}
-			"03"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"projectile_speed"	"650"
-			}
-			"04"
-			{
-				"var_type"			"FIELD_FLOAT"
-				"damge_perc"		"0.75"
-			}
-		}
-		"Modifiers"
-		{
-			"splitshot"
-			{
-				"Passive"			"1"
-				"IsHidden"			"1"
-				"IsDebuff"			"0"
-				"OnAttack"
-				{
-					"ActOnTargets"
-					{
-						"Target"
-						{
-							"Center"  	"CASTER"
-							"MaxTargets" "%targets"
-							"Radius" 	"%radius"
-							"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-							"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-						}
-						"Action"
-						{
-							"TrackingProjectile"
-							{
-								"Target"				"TARGET"
-								"EffectName"		"particles/units/heroes/hero_lion/lion_base_attack.vpcf"
-								"Dodgeable"			"0"
-								"ProvidesVision"	"0"
-								"MoveSpeed"        	"%projectile_speed"
-								"SourceAttachment"	"DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
-							}
-						}
-					}
-				}
-			}
-		}
-		"OnProjectileHitUnit"
-		{
-			"DeleteOnHit"	"1"
-			"RunScript"
-			{
-				"ScriptFile"	"abilities/waveunits/hydra_splitshot"
-				"Function"		"SplitShotHit"
-			}
-		}
-		"precache"
-		{
-			"particle"  "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
-		}
+	    "BaseClass"                     "ability_datadriven"
+	    "AbilityTextureName"            "medusa_split_shot"
+	    "MaxLevel"                      "1"
+	    "AbilityBehavior"                       "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	    "AbilitySpecial"
+	    {
+	        "01"
+	        {
+	            "var_type"          "FIELD_INTEGER"
+	            "radius"                "500"
+	        }
+	        "02"
+	        {
+	            "var_type"          "FIELD_INTEGER"
+	            "targets"               "2"
+	        }
+	        "03"
+	        {
+	            "var_type"          "FIELD_FLOAT"
+	            "projectile_speed"  "650"
+	        }
+	        "04"
+	        {
+	            "var_type"          "FIELD_FLOAT"
+	            "damge_perc"        "0.75"
+	        }
+	    }
+	    "Modifiers"
+	    {
+	        "splitshot"
+	        {
+	            "Passive"           "1"
+	            "IsHidden"          "1"
+	            "IsDebuff"          "0"
+	            "OnAttack"
+	            {
+	                "ActOnTargets"
+	                {
+	                    "Target"
+	                    {
+	                        "Center"    "CASTER"
+	                        "MaxTargets" "%targets"
+	                        "Radius"    "%radius"
+	                        "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+	                        "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	                    }
+	                    "Action"
+	                    {
+	                        "TrackingProjectile"
+	                        {
+	                            "Target"                "TARGET"
+	                            "EffectName"        "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
+	                            "Dodgeable"         "0"
+	                            "ProvidesVision"    "0"
+	                            "MoveSpeed"         "%projectile_speed"
+	                            "SourceAttachment"  "DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }
+	    "OnProjectileHitUnit"
+	    {
+	        "DeleteOnHit"   "1"
+	        "RunScript"
+	        {
+	            "ScriptFile"    "abilities/waveunits/hydra_splitshot"
+	            "Function"      "SplitShotHit"
+	        }
+	    }
+	    "precache"
+	    {
+	        "particle"  "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
+	    }
 	}
 	// Rewrite of the Necrophos Heartstopper Aura ability
 	// Author: Pizzalol

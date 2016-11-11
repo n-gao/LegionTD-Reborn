@@ -52,33 +52,44 @@ if GameRules:IsCheatMode() then
 	end
 
 	function CommandEngine.Commands.skip(instance, submessage, keys)
+		local Game = GameRules.GameMode.game
 		Game:ClearBoard()
 		Game:RespawnUnits()
 		Game:SkipWait()
 	end
 
 	function CommandEngine.Commands.start(instance, submessage, keys)
+		local Game = GameRules.GameMode.game
 		if Game:IsBetweenRounds() then Game:SkipWait() end
 	end
 
 	function CommandEngine.Commands.stop(instance, submessage, keys)
+		local Game = GameRules.GameMode.game
 		Game:ClearBoard()
 		Game:RespawnUnits()
 	end
 
 	function CommandEngine.Commands.restart(instance, submessage, keys)
+		local Game = GameRules.GameMode.game
 		Game:ClearBoard()
-		Game.gameRound = 1
 		Game:RespawnUnits()
-		Game:StartNextRound()
+		Game.gameRound = 1
+		Game.doneDuels = 0
 	end
 
 	function CommandEngine.Commands.setwave(instance, submessage, keys)
+		local Game = GameRules.GameMode.game
 		submessage = tonumber(submessage)
 		if not submessage or submessage > Game:GetRoundCount() then return end
 		Game:ClearBoard()
-		Game.gameRound = submessage + Game.doneDuels
 		Game:RespawnUnits()
+		Game.gameRound = submessage + Game.doneDuels
+		Game.doneDuels = 0
+		for i=1,submessage do
+			if Game.rounds[i].isDuelRound then
+				Game.doneDuels = Game.doneDuels+1
+			end
+		end
 	end
 end
 
