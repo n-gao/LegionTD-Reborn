@@ -287,6 +287,7 @@ function Game:Start()
   self:CreateGameTimer()
   -- GameRules:GetGameModeEntity():SetThink("OnThink", self, "Check", 0)
   self:Initialize()
+  self:SaveMatchAtEnd()
   self:SaveDataAtEnd()
 end
 
@@ -1061,7 +1062,7 @@ function Game:ConvertRankingData(data)
     result[k] = {}
     result[k].steamId = val.steamId
     result[k].rank = val.rank
-    result[k].data = PlayerData.newWithoutSave(val.data, nil, val.steamId):GetToStoredData()
+    result[k].data = PlayerData.NewWithoutSave(val.data, nil, val.steamId):GetToStoredData()
   end
   return result
 end
@@ -1112,6 +1113,19 @@ function Game:SaveDataAtEnd()
       local data = PlayerData.Get(player:GetSteamID()):GetToStoredData()
       self.storage:SavePlayerData(player:GetSteamID(), data)
     end
+  end)
+end
+
+function Game:SaveMatchAtEnd()
+  if GameRules:IsCheatMode() then return end
+  HookSetWinnerFunction(function(gameRules, team)
+    local matchData = {}
+    for _, player in pairs(self.players) do
+      matchData[player:GetSteamID()] = PlayerData.GetByPlayer(player):GetMatchData()
+    end
+    self.storage:SaveMatchData(team, matchData, function(response, success)
+      print(success)
+    end)
   end)
 end
 

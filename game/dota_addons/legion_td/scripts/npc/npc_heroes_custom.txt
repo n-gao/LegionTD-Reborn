@@ -19,6 +19,8 @@
 		"AttributeBaseAgility"	"0"
 		"AttributeBaseIntelligence"	"0"
 	
+		"Legion_Fraction"		"elemental"
+	
 		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackDamageMin"	"1"
 		"AttackDamageMax"	"1"
@@ -53,6 +55,8 @@
 		"AttributeBaseStrength"	"0"
 		"AttributeBaseAgility"	"0"
 		"AttributeBaseIntelligence"	"0"
+		
+		"Legion_Fraction"		"human"
 	
 		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackDamageMin"	"1"
@@ -161,6 +165,8 @@
 		"AttributeBaseStrength"	"0"
 		"AttributeBaseAgility"	"0"
 		"AttributeBaseIntelligence"	"0"
+		
+		"Legion_Fraction"		"nature"
 	
 		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackDamageMin"	"1"
@@ -198,6 +204,8 @@
 		"AttributeBaseStrength"	"0"
 		"AttributeBaseAgility"	"0"
 		"AttributeBaseIntelligence"	"0"
+		
+		"Legion_Fraction"		"random"
 	
 		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackDamageMin"	"1"

@@ -40,7 +40,7 @@
     "05"
     {
       "var_type"              "FIELD_INTEGER"
-      "armor_tooltip"         "6"
+      "armor_tooltip"         "4"
     }
     "06"
     {

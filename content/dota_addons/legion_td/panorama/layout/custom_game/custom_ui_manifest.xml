@@ -31,6 +31,7 @@
   </script>
   <Panel>
     <CustomUIElement type="HeroSelection" layoutfile="file://{resources}/layout/custom_game/multiteam_hero_select_overlay.xml" />
+    <CustomUIElement type="HeroSelection" layoutfile="file://{resources}/layout/custom_game/new_builder_notification.xml"/>
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/main_hud.xml" />
     <CustomUIElement type="GameSetup" layoutfile="file://{resources}/layout/custom_game/team_select.xml" />
     <CustomUIElement type="FlyoutScoreboard" layoutfile="file://{resources}/layout/custom_game/multiteam_flyout_scoreboard.xml" />
