@@ -1,0 +1,50 @@
+"hell_spikes"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"             "tidehunter_ravage"
+    "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+    "FightRecapLevel"               "2"
+    "AbilityTextureName"            "tidehunter_ravage"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"              "0"
+    "AbilityCastPoint"              "0.3"
+    
+    // Time     
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"               "20"
+
+    // Damage.
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityDamage"                 "70"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"               "0"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"          "FIELD_INTEGER"
+            "radius"            "1525"
+        }
+        "02"
+        {
+            "var_type"          "FIELD_INTEGER"
+            "speed"             "775"
+        }
+        "03"
+        {   
+            "var_type"          "FIELD_FLOAT"
+            "duration"          "2.02"
+        }
+    }
+}
