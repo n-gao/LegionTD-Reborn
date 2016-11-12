@@ -7,7 +7,7 @@ CommandEngine.Variables.waveKV = LoadKeyValues("scripts/maps/"..GetMapName()..".
 CommandEngine.Variables.damageKV = LoadKeyValues("scripts/damage_table.kv")
 
 function CommandEngine:CheckCommand( keys )
-	if not CommandEngine.initialized then CommandEngine.init() end
+	--if not CommandEngine.initialized then CommandEngine.init() end
 	if string.sub(keys.text, 1, #CommandEngine.prefix) then
 
 		local submessage = string.sub(keys.text, #CommandEngine.prefix+1)
@@ -23,18 +23,22 @@ function CommandEngine:CheckCommand( keys )
 	end
 end
 
-function CommandEngine.init()
+--[[function CommandEngine.init()
 	CommandEngine.initialized = true
 
 	if GameRules:IsCheatMode() then
 		CommandEngine.Commands.start = GameRules.GameMode.game.StartNextRoundCommand
 		CommandEngine.Commands.skip = CommandEngine.Commands.start
 	end
-end
+end]]--
 
 if GameRules:IsCheatMode() then
 	function CommandEngine.Commands.tango(instance, submessage, keys)
 		instance.vPlayers[keys.playerid+1].player:AddTangos(tonumber(submessage) or 0)
+	end
+
+	function CommandEngine.Commands.food(instance, submessage, keys)
+		instance.vPlayers[keys.playerid+1].player.foodlimit = instance.vPlayers[keys.playerid+1].player.foodlimit + (tonumber(submessage) or 0)
 	end
 
 	function CommandEngine.Commands.reinitialize(instance, submessage, keys)
@@ -45,6 +49,47 @@ if GameRules:IsCheatMode() then
 	-- Fill this with whatever, used for testing (accompanied by reinitialize)
 	function CommandEngine.Commands.test(instance, submessage, keys)
 
+	end
+
+	function CommandEngine.Commands.skip(instance, submessage, keys)
+		local Game = GameRules.GameMode.game
+		Game:ClearBoard()
+		Game:RespawnUnits()
+		Game:SkipWait()
+	end
+
+	function CommandEngine.Commands.start(instance, submessage, keys)
+		local Game = GameRules.GameMode.game
+		if Game:IsBetweenRounds() then Game:SkipWait() end
+	end
+
+	function CommandEngine.Commands.stop(instance, submessage, keys)
+		local Game = GameRules.GameMode.game
+		Game:ClearBoard()
+		Game:RespawnUnits()
+	end
+
+	function CommandEngine.Commands.restart(instance, submessage, keys)
+		local Game = GameRules.GameMode.game
+		Game:ClearBoard()
+		Game:RespawnUnits()
+		Game.gameRound = 1
+		Game.doneDuels = 0
+	end
+
+	function CommandEngine.Commands.setwave(instance, submessage, keys)
+		local Game = GameRules.GameMode.game
+		submessage = tonumber(submessage)
+		if not submessage or submessage > Game:GetRoundCount() then return end
+		Game:ClearBoard()
+		Game:RespawnUnits()
+		Game.gameRound = submessage + Game.doneDuels
+		Game.doneDuels = 0
+		for i=1,submessage do
+			if Game.rounds[i].isDuelRound then
+				Game.doneDuels = Game.doneDuels+1
+			end
+		end
 	end
 end
 
@@ -136,16 +181,16 @@ function CommandEngine.waveInfo(waveNum, playerid)
 	end
 end
 
-function CommandEngine.Commands.wave(instance, submessage, keys)
+function CommandEngine.Commands.infowave(instance, submessage, keys)
 	CommandEngine.waveInfo(tonumber(submessage), keys.playerid)
 end
 
 function CommandEngine.Commands.info(instance, submessage, keys)
-	CommandEngine.waveInfo(Game.gameRound, keys.playerid)
+	CommandEngine.waveInfo(Game.gameRound-Game.doneDuels, keys.playerid)
 end
 
 function CommandEngine.Commands.infonext(instance, submessage, keys)
-	CommandEngine.waveInfo(Game.gameRound+1, keys.playerid)
+	CommandEngine.waveInfo(Game.gameRound-Game.doneDuels+1, keys.playerid)
 end
 
 CommandEngine.Commands.gamemode = CommandEngine.Commands.settings

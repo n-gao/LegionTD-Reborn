@@ -9,8 +9,9 @@ function InitAI( self )
     self:FindAbilityByName("brood_spawn_spiderlings"):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggro
-		self.Skill = UseSkillNoTarget
-		self.ability = self:FindAbilityByName("brood_spawn_spiderlings")
+		self.ability = {}
+		self.ability[1] = self:FindAbilityByName("brood_spawn_spiderlings")
+		self.ability[1].Skill = UseSkillNoTarget
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_broodmother.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )

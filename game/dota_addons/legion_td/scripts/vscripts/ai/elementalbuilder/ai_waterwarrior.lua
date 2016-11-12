@@ -10,8 +10,9 @@ function InitAI( self )
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggroInRange
 		self.skillUseRange = 80
-		self.Skill = UseSkillNoTarget
-		self.ability = self:FindAbilityByName("naga_siren_rip_tide")
+		self.ability = {}
+		self.ability[1] = self:FindAbilityByName("naga_siren_rip_tide")
+		self.ability[1].Skill = UseSkillNoTarget
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_waterwarrior.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )

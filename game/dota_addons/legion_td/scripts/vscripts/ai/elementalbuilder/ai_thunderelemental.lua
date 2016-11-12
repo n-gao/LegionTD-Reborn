@@ -9,8 +9,9 @@ function InitAI( self )
 		self:FindAbilityByName("leshrac_diabolic_edict"):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggro
-		self.Skill = UseSkillNoTarget
-		self.ability = self:FindAbilityByName("leshrac_diabolic_edict")
+		self.ability = {}
+		self.ability[1] = self:FindAbilityByName("leshrac_diabolic_edict")
+		self.ability[1].Skill = UseSkillNoTarget
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_thunderelemental.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )
