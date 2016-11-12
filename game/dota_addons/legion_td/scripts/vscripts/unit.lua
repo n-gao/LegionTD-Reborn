@@ -148,10 +148,11 @@ function Unit.new(npcclass, position, owner, foodCost, goldCost)
   local self = Unit()
   self.owner = owner
   self.player = owner.player
+  self.npcclass = npcclass
+  self.player:BuildUnit(self)
   self.buyround = Game:GetCurrentRound()
   self.goldCost = goldCost
   self.foodCost = foodCost
-  self.npcclass = npcclass
   self.spawnposition = position
   self.target = self.player.lane.unitWaypoint
   self.nextTarget = self.target:GetAbsOrigin()
@@ -296,6 +297,7 @@ function UpgradeUnit(event)
   playerid = event.unit:GetPlayerOwnerID()
   local newclass = Unit.GetUnitNameByID(id)
   event.caster.unit.npcclass = newclass
+  event.caster.unit.player:BuildUnit(event.caster.unit)
   event.caster.unit:Respawn()
   event.caster.unit.foodCost = event.caster.unit.foodCost
     + event.ability:GetSpecialValueFor("food_cost")
