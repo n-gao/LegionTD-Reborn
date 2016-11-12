@@ -53,7 +53,7 @@ function Storage:Init()
     Storage.app_id = data.customGameId
 end
 
-Storage:Init()
+--Storage:Init()
 
 function Storage:GetRankingPosition(attribute, steamId, callback)
     local rankingPositions = self:GetRankingPositions(attribute)
