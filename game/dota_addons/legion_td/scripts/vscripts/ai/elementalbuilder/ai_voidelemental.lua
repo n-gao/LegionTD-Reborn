@@ -9,8 +9,9 @@ function InitAI( self )
 		self:FindAbilityByName("bane_brain_sap"):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggro
-		self.Skill = UseSkillOnTarget
-		self.ability = self:FindAbilityByName("bane_brain_sap")
+		self.ability = {}
+		self.ability[1] = self:FindAbilityByName("bane_brain_sap")
+		self.ability[1].Skill = UseSkillOnTarget
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_voidelemental.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )

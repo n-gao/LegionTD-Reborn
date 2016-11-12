@@ -32,7 +32,7 @@ function aiThinkStandard(self)
 	return STANDARD_THINK_TIME
 end
 
-function aiThinkStandardBuff(self)
+--[[function aiThinkStandardBuff(self)
 	if not self:IsAlive() and not self:HasModifier("modifier_invulnerable") then
 		return
 	end
@@ -49,44 +49,52 @@ function aiThinkStandardBuff(self)
 		return self:Unstuck()
 	end
 	return STANDARD_THINK_TIME
-end
+end]]--
 
 function aiThinkStandardSkill(self)
+
 	if not self:IsAlive() and not self:HasModifier("modifier_invulnerable") then
 		return
 	end
 	if self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() then
 		return STANDARD_THINK_TIME
 	end
-	if self:CheckIfHasAggro() and self.ability:IsCooldownReady() then
-		return self:Skill()
+
+	if self:CheckIfHasAggro() then
+		for i,v in ipairs(self.ability) do
+			if v:IsCooldownReady() then
+				v.Skill(self, v)
+			end
+		end
 	end
+
 	if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
 		return self:NextWayPoint()
 	end
+
 	if self:IsIdle() and not self:CheckIfHasAggro() then
 		return self:Unstuck()
 	end
 	return STANDARD_THINK_TIME
 end
 
-function UseSkillNoTarget(self)
-	self:CastAbilityNoTarget(self.ability, -1)
+function UseSkillNoTarget(self, ability)
+	self:CastAbilityNoTarget(ability, -1)
 	return 1
 end
 
-function UseSkillOnTargetPosition(self)
-	self:CastAbilityOnPosition(self:GetAggroTarget():GetAbsOrigin(), self.ability, -1)
+function UseSkillOnTargetPosition(self, ability)
+	self:CastAbilityOnPosition(self:GetAggroTarget():GetAbsOrigin(), ability, -1)
 	return 1
 end
 
-function UseSkillOnTarget(self)
-	self:CastAbilityOnTarget(self:GetAggroTarget(), self.ability, -1)
+function UseSkillOnTarget(self, ability)
+	self:CastAbilityOnTarget(self:GetAggroTarget(), ability, -1)
 	return 1
 end
 
-function UseSkillOnSelf(self)
-	self:CastAbilityOnTarget(self, self.ability, -1)
+function UseSkillOnSelf(self, ability)
+	self:CastAbilityOnTarget(self, ability, -1)
 	return 1
 end
 

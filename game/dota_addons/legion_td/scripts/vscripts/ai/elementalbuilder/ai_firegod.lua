@@ -10,8 +10,9 @@ function InitAI( self )
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggroInRange
 		self.skillUseRange = 300
-		self.Skill = UseSkillNoTarget
-		self.ability = self:FindAbilityByName("firegod_supernova")
+		self.ability = {}
+		self.ability[1] = self:FindAbilityByName("firegod_supernova")
+		self.ability[1].Skill = UseSkillNoTarget
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_firegod.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )
