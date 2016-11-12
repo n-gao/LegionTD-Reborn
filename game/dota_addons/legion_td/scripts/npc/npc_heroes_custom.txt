@@ -189,4 +189,41 @@
 		"VisionDaytimeRange"	"1000"
 		"VisionNighttimeRange""1000"
 	}
+    "undeadbuilder"
+    {
+        "override_hero"     "npc_dota_hero_necrolyte"
+        "Level"                     "1"
+        "MaxLevel"              "1"
+      "AbilityLayout"   "6"
+        "Ability1"              "undeadbuilder_spawn_zombie"
+        "Ability2"              "undeadbuilder_spawn_mutilated_butcher"
+        "Ability3"              "undeadbuilder_spawn_acolyte"
+        "Ability4"              "undeadbuilder_spawn_nether_drake"
+        "Ability5"              "undeadbuilder_spawn_vampire"
+      "Ability6"        "undeadbuilder_spawn_tormented_soul"
+      "Ability7"        ""
+      "Ability9"                ""
+    
+        "AttributeBaseStrength" "0"
+        "AttributeBaseAgility"  "0"
+        "AttributeBaseIntelligence" "0"
+    
+        "AttackCapabilities"    "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageMin"   "1"
+        "AttackDamageMax"   "1"
+        "ArmorPhysical"     "0"
+    
+        "HasInventory"          "0"
+        "MagicalResistance" "0"
+    
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_FLY"
+        "MovementSpeed"                 "1000"
+        "MovementTurnRate"          "1.0"
+    
+        "StatusHealth"          "1"
+        "StatusMana"                "0"
+    
+        "VisionDaytimeRange"    "1000"
+        "VisionNighttimeRange""1000"
+    }
 }

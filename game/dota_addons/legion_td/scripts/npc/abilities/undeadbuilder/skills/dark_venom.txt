@@ -1,0 +1,73 @@
+"dark_venom"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"             "ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+    "MaxLevel"                      "1"
+    "AbilityTextureName"            "dark_venom"
+    
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"               "0"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "armor_removed"         "-1"
+        }
+        "02"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "max_armor_removed"     "10"
+        }
+        "03"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "duration"              "5"
+        }
+        // Extra
+        "04"
+        {
+            "var_type"              "FIELD_INTEGER"
+            "mana_cost"             "0"
+        }
+    }
+
+    "Modifiers"
+    {
+        "modifier_melting_strike_datadriven"
+        {
+            "Passive"       "1"
+            "IsHidden"      "1"
+
+            "OnAttackLanded"
+            // "%attack_damage" is set to the damage value before mitigation
+            {
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/undeadbuilder/dark_venom.lua"
+                    "Function"      "DarkVenom"
+                    "modifier_armor"    "modifier_melting_strike_armor_datadriven"
+                }
+            }
+        }
+
+        "modifier_melting_strike_armor_datadriven"
+        {
+            "IsHidden"      "0"
+            "IsPurgable"    "0"
+            "IsDebuff"      "1"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "%armor_removed"
+            }
+        }
+    }
+}

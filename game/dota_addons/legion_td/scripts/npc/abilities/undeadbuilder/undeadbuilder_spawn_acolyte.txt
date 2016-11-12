@@ -1,0 +1,68 @@
+"undeadbuilder_spawn_acolyte"
+{
+  "BaseClass"                 "ability_datadriven"
+  "AbilityTextureName"      "spawn_acolyte"
+  "MaxLevel"             "1"
+
+  "AbilityBehavior"             "DOTA_ABILITY_BEHAVIOR_POINT"
+  "AbilityUnitTargetType"   "DOTA_UNIT_TARGET_BASIC"
+  "AbilityGoldCost"             "80"
+  "AbilityCooldown"         "1.0"
+  "AbilityCastRange"            "125"
+  "OnSpellStart"
+  {
+    "RunScript"
+    {
+      "ScriptFile"  "unit.lua"
+      "Function"        "UnitSpawn"
+    }
+  }
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_damage_tooltip"    "22.5"
+    }
+    "02"
+    {
+      "var_type"              "FIELD_FLOAT"
+      "atk_speed_tooltip"     "1"
+    }
+    "03"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "atk_range_tooltip"     "600"
+    }
+    "04"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "health_tooltip"        "50"
+    }
+    "05"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "armor_tooltip"         "1"
+    }
+    "06"
+    {
+      "var_type"      "FIELD_INTEGER"
+      "food_cost"     "1"
+    }
+    "07"
+    {
+      "var_type"            "FIELD_INTEGER"
+      "unitID"              "1030"
+    }
+  }
+  "precache"
+  {
+    "model"  "models/heroes/pugna/pugna.vmdl"
+    "soundfile" "soundevents/game_sounds_heroes/game_sounds_pugna.vsndevts"
+
+    "model" "models/heroes/pugna/pugna.vmdl"
+
+    "model" "models/items/furion/treant_flower_1.vmdl"
+    "particle"  "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
+  }
+}
