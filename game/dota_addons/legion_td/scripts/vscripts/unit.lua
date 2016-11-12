@@ -111,6 +111,34 @@ function Unit.GetUnitNameByID(id)
   elseif id == 1023 then return "incomeunit_beast"
   elseif id == 1024 then return "incomeunit_diablo"
   elseif id == 1025 then return "incomeunit_rosh"
+
+  elseif id == 1026 then return "tower_undeadbuilder_zombie"
+  elseif id == 1027 then return "tower_undeadbuilder_butcher"
+  elseif id == 1028 then return "tower_undeadbuilder_nether_drake"
+  elseif id == 1029 then return "tower_undeadbuilder_vampire"
+  elseif id == 1030 then return "tower_undeadbuilder_acolyte"
+  elseif id == 1031 then return "tower_undeadbuilder_golem"
+  elseif id == 1032 then return "tower_undeadbuilder_corrupted_golem"
+  elseif id == 1033 then return "tower_undeadbuilder_abomination"
+  elseif id == 1034 then return "tower_undeadbuilder_devourer"
+  elseif id == 1035 then return "tower_undeadbuilder_greater_zombie"
+  elseif id == 1036 then return "tower_undeadbuilder_flesh_ripper"
+  elseif id == 1037 then return "tower_undeadbuilder_mutilated_butcher"
+  elseif id == 1038 then return "tower_undeadbuilder_disciple"
+  elseif id == 1039 then return "tower_undeadbuilder_follower"
+  elseif id == 1040 then return "tower_undeadbuilder_recomposer"
+  elseif id == 1041 then return "tower_undeadbuilder_cultist"
+  elseif id == 1042 then return "tower_undeadbuilder_interrupter"
+  elseif id == 1043 then return "tower_undeadbuilder_greater_vampire"
+  elseif id == 1044 then return "tower_undeadbuilder_vampire_king"
+  elseif id == 1045 then return "tower_undeadbuilder_lifestealer"
+  elseif id == 1046 then return "tower_undeadbuilder_consumer"
+  elseif id == 1047 then return "tower_undeadbuilder_tormented_soul"
+  elseif id == 1048 then return "tower_undeadbuilder_evil_spirit"
+  elseif id == 1049 then return "tower_undeadbuilder_tormentor"
+  elseif id == 1050 then return "tower_undeadbuilder_the_forgotten_one"
+  elseif id == 1051 then return "tower_undeadbuilder_corruptor"
+  elseif id == 1052 then return "tower_undeadbuilder_possessed_corruptor"
     -- elseif id == 16 then return "tower_naturebuilder_centaur"
   end
 end
@@ -120,11 +148,10 @@ function Unit.new(npcclass, position, owner, foodCost, goldCost)
   local self = Unit()
   self.owner = owner
   self.player = owner.player
-  self.npcclass = npcclass
-  self.player:BuildUnit(self)
   self.buyround = Game:GetCurrentRound()
   self.goldCost = goldCost
   self.foodCost = foodCost
+  self.npcclass = npcclass
   self.spawnposition = position
   self.target = self.player.lane.unitWaypoint
   self.nextTarget = self.target:GetAbsOrigin()
@@ -269,7 +296,6 @@ function UpgradeUnit(event)
   playerid = event.unit:GetPlayerOwnerID()
   local newclass = Unit.GetUnitNameByID(id)
   event.caster.unit.npcclass = newclass
-  event.caster.unit.player:BuildUnit(event.caster.unit)
   event.caster.unit:Respawn()
   event.caster.unit.foodCost = event.caster.unit.foodCost
     + event.ability:GetSpecialValueFor("food_cost")
