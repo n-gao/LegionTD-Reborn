@@ -28,7 +28,7 @@
 	"AttackDamageMin"       "375.0"
 	"AttackDamageMax"       "400.0"
 	"AttackRate"            "0.45"
-	"AttackAnimationPoint"  "0.5"
+	"AttackAnimationPoint"  "0.4"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "350"
 	"ProjectileModel"       "particles/units/heroes/hero_enigma/enigma_base_attack.vpcf"

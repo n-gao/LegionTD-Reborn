@@ -42,6 +42,7 @@ function Player:KilledUnit(killed)
 end
 
 function Player:GetFraction()
+  if self.hero == nil then return "other" end
   local heroName = self.hero:GetUnitName()
   for _,data in pairs(Game.HeroKV) do
     if data.override_hero == heroName then

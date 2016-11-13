@@ -13,8 +13,8 @@
 
 	"Ability1"							"brewmaster_drunken_brawler"
 
-	"ArmorPhysical"         "5"
-	"MagicalResistance"     "0"
+	"ArmorPhysical"         "9"
+	"MagicalResistance"     "25"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
@@ -42,7 +42,7 @@
 	"MovementSpeed"         "300"
 	"MovementTurnRate"      "0.6"
 
-	"StatusHealth"          "620"
+	"StatusHealth"          "650"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

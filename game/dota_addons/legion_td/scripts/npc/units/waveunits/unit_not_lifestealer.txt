@@ -13,7 +13,7 @@
 
 	"Ability1"							"skeleton_king_vampiric_aura"
 
-	"ArmorPhysical"         "6"
+	"ArmorPhysical"         "4"
 	"MagicalResistance"     "20"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -43,7 +43,7 @@
 	"MovementSpeed"         "300"
 	"MovementTurnRate"      "0.6"
 
-	"StatusHealth"          "300"
+	"StatusHealth"          "280"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

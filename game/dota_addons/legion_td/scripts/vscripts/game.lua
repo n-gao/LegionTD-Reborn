@@ -428,11 +428,11 @@ function Game:StartNextRound()
   self:SetSkipButton(false)
   print "Game:StartNextround()"
   for _,player in pairs(self.players) do
-    if player.lane and player.lane.isActive then --only repair leaks if lane is active
+    if player:IsActive() then --only repair leaks if lane is active
       player.leaked = false;
       player.leaksPenalty = 0;
     end
-    if player.lane and (not player.lane.isActive) then
+    if player.lane and not player.lane.isActive then
       player.missedSpawns = player.missedSpawns + 1
     end
     if not player.abandoned then

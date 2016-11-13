@@ -6,7 +6,7 @@ end
 
 function InitAI( self )
 	self:SetContextThink( "init_think", function()
-		self:FindAbilityByName("storm_spirit_static_remnant"):SetLevel(1)
+		self:FindAbilityByName("storm_spirit_static_remnant"):SetLevel(2)
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggro
 		self.Skill = UseSkillNoTarget

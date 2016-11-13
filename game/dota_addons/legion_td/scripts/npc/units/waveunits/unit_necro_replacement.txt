@@ -11,7 +11,7 @@
 
 	"Ability1"							"bloodseeker_bloodrage"
 
-	"ArmorPhysical"         "5"
+	"ArmorPhysical"         "6"
 	"MagicalResistance"     "0"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"

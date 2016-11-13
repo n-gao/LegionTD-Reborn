@@ -63,12 +63,12 @@
 		"06"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"damage"				"100"
+			"damage"				"150"
 		}
 		"07"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"knockback_duration"	"2"
+			"knockback_duration"	"2.5"
 		}
 		"08"
 		{

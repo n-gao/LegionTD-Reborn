@@ -14,7 +14,7 @@
 	"Ability1"				"waveboss_repel"
 	"Ability2"              "waveboss_attackspeed"
 
-	"ArmorPhysical"         "15"
+	"ArmorPhysical"         "10"
 	"MagicalResistance"     "100"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"

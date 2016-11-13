@@ -11,8 +11,8 @@
 
 	"Ability1"							"ogre_magi_bloodlust"
 
-	"ArmorPhysical"         "5"
-	"MagicalResistance"     "0"
+	"ArmorPhysical"         "10"
+	"MagicalResistance"     "25"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"

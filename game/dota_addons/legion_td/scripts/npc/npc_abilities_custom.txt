@@ -3265,7 +3265,7 @@
 	  "MaxLevel"                "1"
 	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"				"180"
+		"AbilityGoldCost"				"160"
 		"AbilityCooldown"		    "1.0"
 		"OnSpellStart"
 		{
@@ -3393,7 +3393,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"aura_regen"		"10"
+				"aura_regen"		"15"
 			}
 			"03"
 			{
@@ -3493,7 +3493,7 @@
 			"05"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage"			"40"
+				"damage"			"60"
 			}
 		}
 	
@@ -4871,7 +4871,7 @@
 				"01"
 				{
 					"var_type"			"FIELD_FLOAT"
-					"bonus_hp"			"10"
+					"bonus_hp"			"100"
 				}
 				"02"
 				{
@@ -4925,7 +4925,7 @@
 			"06"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"debuff_slow"	"-20"
+				"debuff_slow"	"-40"
 			}
 			"07"
 			{
@@ -4940,12 +4940,12 @@
 			"09"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage"			"60"
+				"damage"			"90"
 			}
 			"10"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"freeze_damage"		"10"
+				"freeze_damage"		"30"
 			}
 		}
 		
@@ -6120,12 +6120,12 @@
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage"				"100"
+				"damage"				"150"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"knockback_duration"	"2"
+				"knockback_duration"	"2.5"
 			}
 			"08"
 			{
@@ -6330,7 +6330,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"resist_debuff"			"-20"
+				"resist_debuff"			"-30"
 			}
 		}
 	
