@@ -28,6 +28,7 @@ SpawnAbilities.tier5 = {
     "humanbuilder_spawn_lieutnant",
     "naturebuilder_spawn_hyena",
     "elementalbuilder_spawn_voidbender",
+    "naturebuilder_spawn_centaur",
 }
 
 SpawnAbilities.tier6 = {

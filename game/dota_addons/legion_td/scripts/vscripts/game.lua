@@ -709,6 +709,7 @@ function Game:SendUnit(data)
     local spawn = player:GetIncomeSpawner():GetAbsOrigin()
     local team = player:GetTeamNumber()
     local name = Unit.GetUnitNameByID(lData.id)
+    player:BuildUnit(name)
     local unit = CreateUnitByName(name, spawn, true, nil, nil, team)
     unit.tangoValue = lData.cost
     unit:AddNewModifier(nil, nil, "modifier_invulnerable", {})

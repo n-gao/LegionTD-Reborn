@@ -31,8 +31,8 @@ function Player.new(plyEntitie, userID)
   return self
 end
 
-function Player:BuildUnit(unit)
-  self.buildUnits[unit.npcclass] = (self.buildUnits[unit.npcclass] or 0) + 1
+function Player:BuildUnit(unitname)
+  self.buildUnits[unitname] = (self.buildUnits[unitname] or 0) + 1
 end
 
 function Player:KilledUnit(killed)
