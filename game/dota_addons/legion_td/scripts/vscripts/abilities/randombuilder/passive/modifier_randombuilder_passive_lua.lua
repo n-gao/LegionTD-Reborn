@@ -22,7 +22,7 @@ function modifier_randombuilder_passive_lua:PayInterest()
 	if not IsServer() then return end
 	if self.gameEnt:GetCurrentRound().isDuelRound then return end
 	local interest = self.interestRate * self.playerObj:GetTangos()
-	self.playerObj:IncomeTangos(interest)
+	self.playerObj:Income(interest)
 end
 
 --------------------------------------------------------------------------------
