@@ -1,17 +1,19 @@
-"elementalbuilder_upgrade_firegod"
+"humanbuilder_spawn_lieutenant"
 {
 	"BaseClass"	"ability_datadriven"
-	"AbilityTextureName"	"rattletrap_power_cogs"
+	"AbilityTextureName"	"spawn_lieutenant"
 	"MaxLevel"	"1"
-	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityGoldCost"	"270"
+	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
+	"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	"AbilityGoldCost"	"140"
 	"AbilityCooldown"	"1.0"
+	"AbilityCastRange"	"125"
 	"OnSpellStart"
 	{
 		"RunScript"
 		{
 			"ScriptFile"	"unit.lua"
-			"Function"	"UpgradeUnit"
+			"Function"	"UnitSpawn"
 		}
 
 	}
@@ -21,31 +23,31 @@
 		"01"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"atk_damage_tooltip"	"562.5"
+			"atk_damage_tooltip"	"62.5"
 		}
 
 		"02"
 		{
 			"var_type"	"FIELD_FLOAT"
-			"atk_speed_tooltip"	"1"
+			"atk_speed_tooltip"	"1.0"
 		}
 
 		"03"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"atk_range_tooltip"	"260"
+			"atk_range_tooltip"	"90"
 		}
 
 		"04"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"health_tooltip"	"860"
+			"health_tooltip"	"300"
 		}
 
 		"05"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"armor_tooltip"	"0"
+			"armor_tooltip"	"6"
 		}
 
 		"06"
@@ -57,7 +59,7 @@
 		"07"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"unitID"	"66"
+			"unitID"	"112"
 		}
 
 	}
