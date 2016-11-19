@@ -25,10 +25,10 @@
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "68.75"
-	"AttackDamageMax"       "87.5"
-	"AttackRate"            "0.33"
-	"AttackAnimationPoint"  "0.5"
+	"AttackDamageMin"       "45.75"
+	"AttackDamageMax"       "49.5"
+	"AttackRate"            "0.43"
+	"AttackAnimationPoint"  "0.3"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "400"
 	"ProjectileModel"       "particles/units/heroes/hero_morphling/morphling_base_attack.vpcf"
@@ -56,7 +56,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "200"
+	"StatusHealth"          "120"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
