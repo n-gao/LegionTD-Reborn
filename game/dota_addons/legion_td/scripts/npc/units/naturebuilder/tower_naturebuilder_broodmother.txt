@@ -57,7 +57,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "150"
+	"StatusHealth"          "130"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

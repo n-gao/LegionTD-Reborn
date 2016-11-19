@@ -27,10 +27,10 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "45.75"
 	"AttackDamageMax"       "49.5"
-	"AttackRate"            "0.43"
+	"AttackRate"            "0.46"
 	"AttackAnimationPoint"  "0.3"
 	"AttackAcquisitionRange" "850"
-	"AttackRange"           "400"
+	"AttackRange"           "440"
 	"ProjectileModel"       "particles/units/heroes/hero_morphling/morphling_base_attack.vpcf"
 	"ProjectileSpeed"       "850"
 
@@ -56,7 +56,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "120"
+	"StatusHealth"          "100"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

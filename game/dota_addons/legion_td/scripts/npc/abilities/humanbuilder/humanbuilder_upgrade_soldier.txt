@@ -4,7 +4,7 @@
 	"AbilityTextureName"	"rattletrap_power_cogs"
 	"MaxLevel"	"1"
 	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityGoldCost"	"85"
+	"AbilityGoldCost"	"95"
 	"AbilityCooldown"	"1.0"
 	"OnSpellStart"
 	{

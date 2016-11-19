@@ -27,7 +27,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "267.5"
 	"AttackDamageMax"       "287.5"
-	"AttackRate"            "1.1"
+	"AttackRate"            "1.2"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "100"
@@ -56,7 +56,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "680"
+	"StatusHealth"          "550"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

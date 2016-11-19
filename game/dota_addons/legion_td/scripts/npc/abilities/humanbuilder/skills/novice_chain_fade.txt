@@ -32,7 +32,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"jumps"					"4"
+			"jumps"					"3"
 		}
 		"02"
 		{
