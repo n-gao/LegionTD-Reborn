@@ -68,12 +68,12 @@
 		"07"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"knockback_duration"	"2.5"
+			"knockback_duration"	"2"
 		}
 		"08"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"disarm_duration"		"2.0"
+			"disarm_duration"		"1.5"
 		}
 	}
 

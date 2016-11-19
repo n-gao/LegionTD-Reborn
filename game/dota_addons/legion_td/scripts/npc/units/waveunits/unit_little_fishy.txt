@@ -19,7 +19,7 @@
 	"AttackDamageMin"       "15.0"
 	"AttackDamageMax"       "17.5"
 	"AttackRate"            "0.5"
-	"AttackAnimationPoint"  "0.5"
+	"AttackAnimationPoint"  "0.4"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "90"
 	"ProjectileModel"       ""
@@ -41,7 +41,7 @@
 	"MovementSpeed"         "450"
 	"MovementTurnRate"      "0.6"
 
-	"StatusHealth"          "190"
+	"StatusHealth"          "180"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
