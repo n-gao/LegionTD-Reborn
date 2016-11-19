@@ -28,7 +28,7 @@
 	"AttackDamageMin"       "99"
 	"AttackDamageMax"       "99"
 	"AttackRate"            "1.5"
-	"AttackAnimationPoint"  "0.2"
+	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "400"
 	"ProjectileModel"       "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
