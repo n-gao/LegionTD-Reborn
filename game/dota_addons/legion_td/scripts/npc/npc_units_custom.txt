@@ -4478,7 +4478,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "30.75"
 		"AttackDamageMax"       "46.25"
-		"AttackRate"            "1.4"
+		"AttackRate"            "1.3"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "90"
@@ -4507,7 +4507,7 @@
 	
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"          "80"
+		"StatusHealth"          "95"
 		"StatusHealthRegen"     "0"
 		"StatusMana"            "10"
 		"StatusManaRegen"       "10"
@@ -9740,7 +9740,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "2.5"
 		"AttackDamageMax"       "3.75"
-		"AttackRate"            "1.25"
+		"AttackRate"            "1.55"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "90"
@@ -10237,7 +10237,7 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "1.25"
+		"AttackDamageMin"       "2.0"
 		"AttackDamageMax"       "2.5"
 		"AttackRate"            "0.3"
 		"AttackAnimationPoint"  "0.2"
@@ -10664,7 +10664,7 @@
 	
 		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "5.0"
+		"AttackDamageMin"       "6.0"
 		"AttackDamageMax"       "7.5"
 		"AttackRate"            "0.5"
 		"AttackAnimationPoint"  "0.2"
@@ -11398,7 +11398,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "7.5"
 		"AttackDamageMax"       "8.75"
-		"AttackRate"            "1.35"
+		"AttackRate"            "1.55"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "90"
@@ -11825,7 +11825,7 @@
 		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"       "3.75"
 		"AttackDamageMax"       "5.0"
-		"AttackRate"            "1.25"
+		"AttackRate"            "1.55"
 		"AttackAnimationPoint"  "0.5"
 		"AttackAcquisitionRange" "850"
 		"AttackRange"           "90"
