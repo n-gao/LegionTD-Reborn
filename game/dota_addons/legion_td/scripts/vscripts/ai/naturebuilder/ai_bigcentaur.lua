@@ -7,11 +7,11 @@ end
 function InitAI( self )
 	self:SetContextThink( "init_think", function()
 		self.aiThink = aiThinkStandardSkill
-		self.CheckIfHasAggro = CheckIfHasAggroInRange
-		self.skillUseRange = 80
-		self.ability = {}
-		self.ability[1] = self:FindAbilityByName("centaur_hoof_stomp_datadriven")
-		self.ability[1].Skill = UseSkillNoTarget
+		self.abilities = {}
+		self.abilities[1] = self:FindAbilityByName("centaur_hoof_stomp_datadriven")
+		self.abilities[1].Skill = UseSkillNoTarget
+		self.abilities[1].SkillTrigger = CheckIfHasAggroInRange
+		self.abilities[1].SkillUseRange = 80
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_bigcentaur.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )

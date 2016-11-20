@@ -7,10 +7,10 @@ end
 function InitAI( self )
 	self:SetContextThink( "init_think", function()
 		self.aiThink = aiThinkStandardSkill
-		self.CheckIfHasAggro = CheckIfHasAggro
-		self.ability = {}
-		self.ability[1] = self:FindAbilityByName("kingLeoric_mesmerize")
-		self.ability[1].Skill = UseSkillOnTarget
+		self.abilities = {}
+		self.abilities[1] = self:FindAbilityByName("kingLeoric_mesmerize")
+		self.abilities[1].Skill = UseSkillTargetMostEHPPhysical
+		self.abilities[1].SkillTrigger = CheckAbilityRange
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_alpha_predator.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )

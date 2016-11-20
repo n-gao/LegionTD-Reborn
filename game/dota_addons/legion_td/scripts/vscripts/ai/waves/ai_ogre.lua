@@ -10,10 +10,10 @@ function InitAI( self )
 	self:SetContextThink( "init_think", function()
     self:GetAbilityByIndex(0):SetLevel(4)
 		self.aiThink = aiThinkStandardSkill
-		self.CheckIfHasAggro = CheckIfHasAggro
-		self.ability = {}
-		self.ability[1] = self:GetAbilityByIndex(0)
-		self.ability[1].Skill = Bloodlust
+		self.abilities = {}
+		self.abilities[1] = self:GetAbilityByIndex(0)
+		self.abilities[1].Skill = Bloodlust
+		self.abilities[1].SkillTrigger = CheckIfHasAggro
 		self.NextWayPoint = NextWayPoint
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_ogre.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )

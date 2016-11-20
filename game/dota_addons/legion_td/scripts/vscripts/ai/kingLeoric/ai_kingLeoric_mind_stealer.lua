@@ -7,11 +7,12 @@ end
 function InitAI( self )
 	self:SetContextThink( "init_think", function()
 		self.aiThink = aiThinkStandardSkill
-		self.CheckIfHasAggro = CheckIfHasAggro
-		self.ability = {}
-		self.ability[1] = self:FindAbilityByName("kingLeoric_hinder")
-		self.ability[1].Skill = UseSkillOnTargetPosition
+		self.abilities = {}
+		self.abilities[1] = self:FindAbilityByName("kingLeoric_hinder")
+		self.abilities[1].Skill = UseSkillTargetPositionOptimalRadius
+		self.abilities[1].SkillTrigger = CheckAbilityRange
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_mind_stealer.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )
 end
+

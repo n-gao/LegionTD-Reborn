@@ -7,10 +7,10 @@ end
 function InitAI( self )
 	self:SetContextThink( "init_think", function()
 		self.aiThink = aiThinkStandardSkill
-		self.CheckIfHasAggro = CheckIfHasAggro
-		self.ability = {}
-		self.ability[1] = self:FindAbilityByName("spearman_shield_bash")
-		self.ability[1].Skill = UseSkillOnTarget
+		self.abilities = {}
+		self.abilities[1] = self:FindAbilityByName("spearman_shield_bash")
+		self.abilities[1].Skill = UseSkillOnTarget
+		self.abilities[1].SkillTrigger = CheckIfHasAggro
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_spearman.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )

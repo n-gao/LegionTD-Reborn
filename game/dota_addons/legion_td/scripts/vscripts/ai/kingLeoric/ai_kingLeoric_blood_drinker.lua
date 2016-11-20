@@ -7,12 +7,13 @@ end
 function InitAI( self )
 	self:SetContextThink( "init_think", function()
 		self.aiThink = aiThinkStandardSkill
-		self.CheckIfHasAggro = CheckIfHasAggro
-		self.ability = {}
-		self.ability[1] = self:FindAbilityByName("kingLeoric_bloodrage")
-		self.ability[1].Skill = UseSkillOnSelf
-		self.ability[2] = self:FindAbilityByName("kingLeoric_soul_rend")
-		self.ability[2].Skill = UseSkillOnTarget
+		self.abilities = {}
+		self.abilities[1] = self:FindAbilityByName("kingLeoric_bloodrage")
+		self.abilities[1].Skill = UseSkillOnSelf
+		self.abilities[1].SkillTrigger = function() return true end
+		self.abilities[2] = self:FindAbilityByName("kingLeoric_soul_rend")
+		self.abilities[2].Skill = UseSkillTargetMostEHPPhysical
+		self.abilities[2].SkillTrigger = CheckAbilityRange
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_blood_drinker.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )
