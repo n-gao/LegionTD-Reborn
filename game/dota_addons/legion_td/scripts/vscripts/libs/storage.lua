@@ -56,7 +56,7 @@ end
 Storage:Init()
 
 function Storage:RequestRankingPositions(attribute, steamIds)
-    for(_,steamId in pairs(steamIds)) do
+    for _,steamId in pairs(steamIds) do
         local callbacks = self:GetRankingPositionCallbacks(attribute, steamId)
         table.insert(callbacks, function(result) end)
     end
@@ -66,10 +66,10 @@ function Storage:RequestRankingPositions(attribute, steamIds)
         steamIds = JSON:encode(steamIds)
     }, function(result)
         local resultTable = JSON:decode(result)
-        print("GET RANKING POSITIONS RESPONSE"
+        print("GET RANKING POSITIONS RESPONSE")
         DeepPrintTable(resultTable)
         if (resultTable == nil) then return end
-        for (_,ranking in pairs(resultTable)) do
+        for _,ranking in pairs(resultTable) do
             self:GetRankingPosition(ranking.attribute)[ranking.steamId] = ranking.rank
             local callbacks = self:GetRankingPositionCallbacks(ranking.attribute, ranking.steamId)
             for k, callback in pairs(callbacks) do
@@ -77,7 +77,6 @@ function Storage:RequestRankingPositions(attribute, steamIds)
                 callbacks[k] = nil
             end
         end
-        )
     end)
 end
 
