@@ -30,7 +30,6 @@ function elementalbuilder_passive_start(keys)
 
 		if not Game.gameState == GAMESTATE_PREPARATION then return 1 end
 
-		--print ("u have " .. #playerObj.units )
 
 		for _, element in pairs (elementNames) do
 			elementSums[element] = 0
@@ -75,19 +74,15 @@ function elementalbuilder_passive_start(keys)
 
 		local valueAvg = valueSum / elementCount
 
-		print ("Element Count: " .. elementCount .. ", Total value: " .. valueSum .. ", average " .. valueAvg)
 
 		for element, total in pairs(elementSums) do
 			elementRatios[element] = total / valueAvg
 			if elementGods[element] then
 				elementStacks[element] = 1
-				print (element .. " has a god!")
 			elseif elementRatios[element] >= 1 then
 				elementStacks[element] = -math.floor(5*(1-(elementRatios[element])))
-				print ("elementRatios(" .. element .. "): " .. elementRatios[element])
 			else
 				elementStacks[element] = math.floor(5*(1-(1/elementRatios[element])))
-				print ("elementRatios(" .. element .. "): " .. elementRatios[element] .. " reciprocal of " .. 1/elementRatios[element])
 			end
 			if elementStacks[element] > 0 then elementStacks[element] = elementStacks[element] - 1 end
 			if elementStacks[element] < 0 then elementStacks[element] = elementStacks[element] + 1 end
@@ -103,7 +98,6 @@ function elementalbuilder_passive_start(keys)
 		end
 
 		if harmony then
-			--print ("we have harmony")
 			for _, element in pairs(elementNames) do
 				elementStacks[element] = maxStacks
 			end
