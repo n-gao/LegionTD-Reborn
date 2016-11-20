@@ -27,12 +27,12 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "45.75"
 	"AttackDamageMax"       "49.5"
-	"AttackRate"            "0.46"
+	"AttackRate"            "0.4"
 	"AttackAnimationPoint"  "0.3"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "440"
 	"ProjectileModel"       "particles/units/heroes/hero_morphling/morphling_base_attack.vpcf"
-	"ProjectileSpeed"       "850"
+	"ProjectileSpeed"       "1200"
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"light"
@@ -56,7 +56,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "100"
+	"StatusHealth"          "190"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

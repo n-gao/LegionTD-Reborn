@@ -11,14 +11,14 @@
 	"HealthBarOffset"       "140"
 	"Vscripts"              "ai/ai_default.lua"
 
-	"ArmorPhysical"         "6"
+	"ArmorPhysical"         "4"
 	"MagicalResistance"     "0"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "91"
 	"AttackDamageMax"       "96"
-	"AttackRate"            "0.75"
+	"AttackRate"            "0.85"
 	"AttackAnimationPoint"  "0.2"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "90"

@@ -357,6 +357,9 @@ function Storage:SendHttpRequest(method, data, callback)
     end
     req:Send(function(result)
             print(result.Body)
+            if (string.match(result.Body, "<html>")) then
+                result.Body = ""
+            end
             if (result.Body == "") then
                 self.online = false
             end

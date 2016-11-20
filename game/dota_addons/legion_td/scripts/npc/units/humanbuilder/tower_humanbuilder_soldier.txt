@@ -18,7 +18,7 @@
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "3"
+	"ArmorPhysical"         "4"
 	"MagicalResistance"     "0"
 
 	// Attack
@@ -27,7 +27,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "100.0"
 	"AttackDamageMax"       "112.5"
-	"AttackRate"            "1.2"
+	"AttackRate"            "1.3"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "100"
@@ -56,7 +56,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "420"
+	"StatusHealth"          "550"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "10"
 	"StatusManaRegen"       "10"
