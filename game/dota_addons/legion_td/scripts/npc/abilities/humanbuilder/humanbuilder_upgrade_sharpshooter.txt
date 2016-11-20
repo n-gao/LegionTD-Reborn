@@ -21,13 +21,13 @@
 		"01"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"atk_damage_tooltip"	"410"
+			"atk_damage_tooltip"	"425"
 		}
 
 		"02"
 		{
 			"var_type"	"FIELD_FLOAT"
-			"atk_speed_tooltip"	"1.3"
+			"atk_speed_tooltip"	"1.1"
 		}
 
 		"03"
