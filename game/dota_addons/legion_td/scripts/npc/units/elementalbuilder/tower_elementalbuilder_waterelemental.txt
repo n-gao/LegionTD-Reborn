@@ -30,7 +30,7 @@
 	"AttackRate"            "0.4"
 	"AttackAnimationPoint"  "0.3"
 	"AttackAcquisitionRange" "850"
-	"AttackRange"           "440"
+	"AttackRange"           "520"
 	"ProjectileModel"       "particles/units/heroes/hero_morphling/morphling_base_attack.vpcf"
 	"ProjectileSpeed"       "1200"
 
@@ -56,7 +56,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "190"
+	"StatusHealth"          "150"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"

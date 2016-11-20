@@ -33,13 +33,13 @@
 		"03"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"atk_range_tooltip"	"440"
+			"atk_range_tooltip"	"520"
 		}
 
 		"04"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"health_tooltip"	"190"
+			"health_tooltip"	"150"
 		}
 
 		"05"
