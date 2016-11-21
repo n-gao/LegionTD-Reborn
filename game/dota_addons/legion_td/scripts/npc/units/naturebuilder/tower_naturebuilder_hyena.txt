@@ -27,7 +27,7 @@
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "165.5"
 	"AttackDamageMax"       "188.0"
-	"AttackRate"            "0.95"
+	"AttackRate"            "0.85"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "400"

@@ -30,7 +30,7 @@
 	"AttackRate"            "1"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
-	"AttackRange"           "500"
+	"AttackRange"           "600"
 	"ProjectileModel"       "particles/units/heroes/hero_zuus/zuus_base_attack.vpcf"
 	"ProjectileSpeed"       "900"
 

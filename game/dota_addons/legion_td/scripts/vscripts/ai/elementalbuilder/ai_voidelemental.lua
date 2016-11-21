@@ -6,7 +6,7 @@ end
 
 function InitAI( self )
 	self:SetContextThink( "init_think", function()
-		self:FindAbilityByName("bane_brain_sap"):SetLevel(1)
+		self:FindAbilityByName("bane_brain_sap"):SetLevel(3)
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggro
 		self.Skill = UseSkillOnTarget
