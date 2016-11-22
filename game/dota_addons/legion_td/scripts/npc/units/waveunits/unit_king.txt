@@ -16,14 +16,14 @@
   "Ability3"              "waveboss_repel"
   "Ability4"              "waveboss_attackspeed"
 
-  "ArmorPhysical"         "20"
+  "ArmorPhysical"         "18"
   "MagicalResistance"     "100"
 
   "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
   "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
   "AttackDamageMin"       "325.0"
   "AttackDamageMax"       "350.0"
-  "AttackRate"            "0.6"
+  "AttackRate"            "0.75"
   "AttackAnimationPoint"  "0.56"
   "AttackAcquisitionRange" "850"
   "AttackRange"           "125"
@@ -46,7 +46,7 @@
   "MovementSpeed"         "300"
   "MovementTurnRate"      "0.6"
 
-  "StatusHealth"          "4000"
+  "StatusHealth"          "3500"
   "StatusHealthRegen"     "0"
   "StatusMana"            "1000"
   "StatusManaRegen"       "100"

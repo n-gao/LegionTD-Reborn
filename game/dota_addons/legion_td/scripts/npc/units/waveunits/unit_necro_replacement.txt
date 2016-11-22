@@ -11,14 +11,14 @@
 
 	"Ability1"							"bloodseeker_bloodrage"
 
-	"ArmorPhysical"         "6"
+	"ArmorPhysical"         "5"
 	"MagicalResistance"     "0"
 
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	"AttackDamageMin"       "62.5"
 	"AttackDamageMax"       "75.0"
-	"AttackRate"            "0.55"
+	"AttackRate"            "0.75"
 	"AttackAnimationPoint"  "0.2"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "128"
