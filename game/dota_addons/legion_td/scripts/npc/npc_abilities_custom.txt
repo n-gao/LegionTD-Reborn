@@ -2295,13 +2295,13 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"60"
+				"health_tooltip"	"50"
 			}
 	
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"1"
+				"armor_tooltip"	"0"
 			}
 	
 			"06"
@@ -2344,13 +2344,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"99"
+				"atk_damage_tooltip"	"104"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1.5"
+				"atk_speed_tooltip"	"1.2"
 			}
 	
 			"03"
@@ -2417,7 +2417,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.7"
+				"atk_speed_tooltip"	"0.8"
 			}
 	
 			"03"
@@ -2478,13 +2478,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"20"
+				"atk_damage_tooltip"	"20.5"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1"
+				"atk_speed_tooltip"	"1.05"
 			}
 	
 			"03"
@@ -2496,7 +2496,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"100"
+				"health_tooltip"	"120"
 			}
 	
 			"05"
@@ -2740,7 +2740,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"357.75"
+				"atk_damage_tooltip"	"412.75"
 			}
 	
 			"02"
@@ -2811,7 +2811,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1.03"
+				"atk_speed_tooltip"	"1.0"
 			}
 	
 			"03"
@@ -2823,7 +2823,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"295"
+				"health_tooltip"	"330"
 			}
 	
 			"05"
@@ -2870,7 +2870,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"235"
+				"atk_damage_tooltip"	"245"
 			}
 	
 			"02"
@@ -2888,7 +2888,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"500"
+				"health_tooltip"	"620"
 			}
 	
 			"05"
@@ -2941,7 +2941,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.6"
+				"atk_speed_tooltip"	"0.65"
 			}
 	
 			"03"
@@ -3006,7 +3006,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.46"
+				"atk_speed_tooltip"	"0.405"
 			}
 	
 			"03"
@@ -3136,7 +3136,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.9"
+				"atk_speed_tooltip"	"0.8"
 			}
 	
 			"03"
@@ -3148,7 +3148,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"160"
+				"health_tooltip"	"120"
 			}
 	
 			"05"
@@ -3325,13 +3325,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"151.25"
+				"atk_damage_tooltip"	"161.25"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.7"
+				"atk_speed_tooltip"	"0.65"
 			}
 	
 			"03"
@@ -3343,7 +3343,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"280"
+				"health_tooltip"	"220"
 			}
 	
 			"05"
@@ -3396,7 +3396,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.6"
+				"atk_speed_tooltip"	"0.5"
 			}
 	
 			"03"
@@ -3455,7 +3455,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"425"
+				"atk_damage_tooltip"	"474"
 			}
 	
 			"02"
@@ -3473,7 +3473,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"275"
+				"health_tooltip"	"350"
 			}
 	
 			"05"
@@ -3538,7 +3538,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"550"
+				"health_tooltip"	"630"
 			}
 	
 			"05"
@@ -3668,7 +3668,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"900"
+				"health_tooltip"	"1000"
 			}
 	
 			"05"
@@ -3715,13 +3715,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"315.5"
+				"atk_damage_tooltip"	"365.5"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.4"
+				"atk_speed_tooltip"	"0.33"
 			}
 	
 			"03"

@@ -628,12 +628,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"1.0"
+				"duration"				"2.0"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration_creep"		"1.0"
+				"duration_creep"		"2.0"
 			}
 			"03"
 			{
