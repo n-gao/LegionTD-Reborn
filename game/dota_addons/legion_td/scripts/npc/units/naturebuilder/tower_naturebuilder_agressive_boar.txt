@@ -25,7 +25,7 @@
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "297.0"
+	"AttackDamageMin"       "317.0"
 	"AttackDamageMax"       "322.0"
 	"AttackRate"            "0.6"
 	"AttackAnimationPoint"  "0.5"
