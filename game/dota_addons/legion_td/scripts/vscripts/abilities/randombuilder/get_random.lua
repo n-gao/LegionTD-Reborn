@@ -25,7 +25,7 @@ SpawnAbilities.tier4 = {
 }
 
 SpawnAbilities.tier5 = {
-    "humanbuilder_spawn_lieutnant",
+    "humanbuilder_spawn_lieutenant",
     "naturebuilder_spawn_hyena",
     "elementalbuilder_spawn_voidbender",
     "naturebuilder_spawn_centaur",
