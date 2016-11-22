@@ -52,7 +52,7 @@ function BehaviorBH:Evaluate()
 
 	if self.BHAbility and self.BHAbility:IsFullyCastable() then
 		local range = self.BHAbility:GetCastRange()
-		local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_ANY_ORDER, false )
+		local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, 500, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_ANY_ORDER, false )
 		if #enemies > 0 then target = enemies[1] end
 	end
 

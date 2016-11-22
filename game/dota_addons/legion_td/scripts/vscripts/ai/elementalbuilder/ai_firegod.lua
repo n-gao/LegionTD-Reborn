@@ -9,7 +9,7 @@ function InitAI( self )
 		self:FindAbilityByName("firegod_supernova"):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
 		self.CheckIfHasAggro = CheckIfHasAggroInRange
-		self.skillUseRange = 300
+		self.skillUseRange = 600
 		self.Skill = UseSkillNoTarget
 		self.ability = self:FindAbilityByName("firegod_supernova")
 		self.Unstuck = Unstuck

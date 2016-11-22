@@ -30,7 +30,7 @@
 	"AttackRate"            "0.75"
 	"AttackAnimationPoint"  "0.4"
 	"AttackAcquisitionRange" "850"
-	"AttackRange"           "350"
+	"AttackRange"           "400"
 	"ProjectileModel"       "particles/units/heroes/hero_enigma/enigma_base_attack.vpcf"
 	"ProjectileSpeed"       "500"
 
