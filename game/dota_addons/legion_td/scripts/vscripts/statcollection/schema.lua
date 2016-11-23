@@ -22,12 +22,12 @@ function customSchema:init()
 
             -- Print the schema data to the console
             if statCollection.TESTING then
-                PrintSchema(game,players)
+                PrintSchema(game, players)
             end
 
             -- Send custom stats
             if statCollection.HAS_SCHEMA then
-                statCollection:sendCustom({game=game, players=players})
+                statCollection:sendCustom({ game = game, players = players })
             end
         end
     end, nil)
@@ -62,7 +62,6 @@ function BuildPlayersArray()
 
                     -- Example functions for generic stats are defined in statcollection/lib/utilities.lua
                     -- Add player values here as someValue = GetSomePlayerValue(),
-
                 })
             end
         end
@@ -72,7 +71,7 @@ function BuildPlayersArray()
 end
 
 -- Prints the custom schema, required to get an schemaID
-function PrintSchema( gameArray, playerArray )
+function PrintSchema(gameArray, playerArray)
     print("-------- GAME DATA --------")
     DeepPrintTable(gameArray)
     print("\n-------- PLAYER DATA --------")
@@ -96,10 +95,10 @@ function customSchema:submitRound(isLastRound)
     local game = BuildGameArray()
     local players = BuildPlayersArray()
 
-    statCollection:sendCustom({game=game, players=players})
+    statCollection:sendCustom({ game = game, players = players })
 
     isLastRound = isLastRound or false --If the function is passed with no parameter, default to false.
-    return {winners = winners, lastRound = isLastRound}
+    return { winners = winners, lastRound = isLastRound }
 end
 
 -- A list of players marking who won this round

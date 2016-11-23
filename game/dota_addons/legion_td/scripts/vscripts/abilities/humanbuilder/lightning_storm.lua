@@ -1,4 +1,4 @@
-function lightning_storm_start( keys )
+function lightning_storm_start(keys)
     local target = keys.target
     local caster = keys.caster
     local ability = keys.ability
@@ -10,19 +10,21 @@ function lightning_storm_start( keys )
     ability.slow_movement_speed = ability:GetLevelSpecialValueFor("slow_movement_speed", ability:GetLevel() - 1)
     ability.damage = ability:GetAbilityDamage()
 
-    lightning_storm_repeat({ caster=caster,
-        initial_target=target, 
-        jump_count=ability.jump_count, 
-        radius=ability.radius,
-        jump_delay=ability.jump_delay,
-        slow_duration=ability.slow_duration,
-        slow_movement_speed=ability.slow_movement_speed,
-        damage=ability.damage,
-        ability=ability,
-        bounceTable={} })
+    lightning_storm_repeat({
+        caster = caster,
+        initial_target = target,
+        jump_count = ability.jump_count,
+        radius = ability.radius,
+        jump_delay = ability.jump_delay,
+        slow_duration = ability.slow_duration,
+        slow_movement_speed = ability.slow_movement_speed,
+        damage = ability.damage,
+        ability = ability,
+        bounceTable = {}
+    })
 end
 
-function lightning_storm_repeat( params )
+function lightning_storm_repeat(params)
     if params.jump_count == 0 or params.initial_target == nil then
         return
     end
@@ -40,7 +42,8 @@ function lightning_storm_repeat( params )
         victim = params.initial_target,
         damage = params.damage,
         damage_type = DAMAGE_TYPE_MAGICAL,
-        ability = params.ability}
+        ability = params.ability
+    }
     ApplyDamage(damageTable)
 
     -- if unit is still alive, apply slow with glow particle
@@ -62,7 +65,7 @@ function lightning_storm_repeat( params )
         false)
 
     params.initial_target = nil
-    for k,v in pairs(unitsInRange) do
+    for k, v in pairs(unitsInRange) do
         if params.bounceTable[v] == nil then
             params.initial_target = v
             break
@@ -72,9 +75,8 @@ function lightning_storm_repeat( params )
     params.jump_count = params.jump_count - 1
 
     -- run the function again in jump_delay seconds
-    Timers:CreateTimer(params.jump_delay, 
+    Timers:CreateTimer(params.jump_delay,
         function()
-            lightning_storm_repeat( params )
-        end
-    )
+            lightning_storm_repeat(params)
+        end)
 end

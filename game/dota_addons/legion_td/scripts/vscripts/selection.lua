@@ -49,15 +49,15 @@ function CDOTA_PlayerResource:NewSelection(playerID, unit_args)
     local player = self:GetPlayer(playerID)
     if player then
         local entities = Selection:GetEntIndexListFromTable(unit_args)
-        CustomGameEventManager:Send_ServerToPlayer(player, "selection_new", {entities = entities})
+        CustomGameEventManager:Send_ServerToPlayer(player, "selection_new", { entities = entities })
     end
-end 
+end
 
 function CDOTA_PlayerResource:AddToSelection(playerID, unit_args)
     local player = self:GetPlayer(playerID)
     if player then
         local entities = Selection:GetEntIndexListFromTable(unit_args)
-        CustomGameEventManager:Send_ServerToPlayer(player, "selection_add", {entities = entities})
+        CustomGameEventManager:Send_ServerToPlayer(player, "selection_add", { entities = entities })
     end
 end
 
@@ -65,7 +65,7 @@ function CDOTA_PlayerResource:RemoveFromSelection(playerID, unit_args)
     local player = self:GetPlayer(playerID)
     if player then
         local entities = Selection:GetEntIndexListFromTable(unit_args)
-        CustomGameEventManager:Send_ServerToPlayer(player, "selection_remove", {entities = entities})
+        CustomGameEventManager:Send_ServerToPlayer(player, "selection_remove", { entities = entities })
     end
 end
 
@@ -81,18 +81,18 @@ function CDOTA_PlayerResource:GetSelectedEntities(playerID)
 end
 
 function CDOTA_PlayerResource:GetMainSelectedEntity(playerID)
-    local selectedEntities = self:GetSelectedEntities(playerID) 
+    local selectedEntities = self:GetSelectedEntities(playerID)
     return selectedEntities and selectedEntities["0"]
 end
 
 function CDOTA_PlayerResource:IsUnitSelected(playerID, unit)
     if not unit then return false end
-    local entIndex = type(unit)=="number" and unit or IsValidEntity(unit) and unit:GetEntityIndex()
+    local entIndex = type(unit) == "number" and unit or IsValidEntity(unit) and unit:GetEntityIndex()
     if not entIndex then return false end
-    
+
     local selectedEntities = self:GetSelectedEntities(playerID)
-    for _,v in pairs(selectedEntities) do
-        if v==entIndex then
+    for _, v in pairs(selectedEntities) do
+        if v == entIndex then
             return true
         end
     end
@@ -107,7 +107,7 @@ end
 
 function CDOTA_PlayerResource:SetDefaultSelectionEntity(playerID, unit)
     if not unit then unit = -1 end
-    local entIndex = type(unit)=="number" and unit or unit:GetEntityIndex()
+    local entIndex = type(unit) == "number" and unit or unit:GetEntityIndex()
     local hero = self:GetSelectedHeroEntity(playerID)
     if hero then
         hero:SetSelectionOverride(unit)
@@ -116,9 +116,9 @@ end
 
 function CDOTA_BaseNPC:SetSelectionOverride(reselect_unit)
     local unit = self
-    local reselectIndex = type(reselect_unit)=="number" and reselect_unit or reselect_unit:GetEntityIndex()
+    local reselectIndex = type(reselect_unit) == "number" and reselect_unit or reselect_unit:GetEntityIndex()
 
-    CustomNetTables:SetTableValue("selection", tostring(unit:GetEntityIndex()), {entity = reselectIndex})
+    CustomNetTables:SetTableValue("selection", tostring(unit:GetEntityIndex()), { entity = reselectIndex })
 end
 
 ------------------------------------------------------------------------
@@ -144,19 +144,19 @@ end
 -- Internal function to build an entity index list out of various inputs
 function Selection:GetEntIndexListFromTable(unit_args)
     local entities = {}
-    if type(unit_args)=="number" then
+    if type(unit_args) == "number" then
         table.insert(entities, unit_args) -- Entity Index
-    -- Check contents of the table
-    elseif type(unit_args)=="table" then
+        -- Check contents of the table
+    elseif type(unit_args) == "table" then
         if unit_args.IsCreature then
             table.insert(entities, unit_args:GetEntityIndex()) -- NPC Handle
         else
-            for _,arg in pairs(unit_args) do
+            for _, arg in pairs(unit_args) do
                 -- Table of entity index values
-                if type(arg)=="number" then
+                if type(arg) == "number" then
                     table.insert(entities, arg)
-                -- Table of npc handles
-                elseif type(arg)=="table" then
+                    -- Table of npc handles
+                elseif type(arg) == "table" then
                     if arg.IsCreature then
                         table.insert(entities, arg:GetEntityIndex())
                     end
