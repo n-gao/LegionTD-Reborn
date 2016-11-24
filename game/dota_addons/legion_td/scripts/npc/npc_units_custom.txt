@@ -4975,7 +4975,7 @@
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"	"112.5"
 		"AttackDamageMax"	"125.0"
-		"AttackRate"	"0.5"
+		"AttackRate"	"1.0"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"125"
@@ -4992,7 +4992,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"	"270"
 		"MovementTurnRate"	"0.6"
-		"StatusHealth"	"700"
+		"StatusHealth"	"1600"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -5036,9 +5036,9 @@
 		"MagicalResistance"	"40"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"112.5"
-		"AttackDamageMax"	"125.0"
-		"AttackRate"	"0.3"
+		"AttackDamageMin"	"152.5"
+		"AttackDamageMax"	"155.0"
+		"AttackRate"	"0.52"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"125"
@@ -5099,9 +5099,9 @@
 		"MagicalResistance"	"80"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"87.5"
+		"AttackDamageMin"	"90.5"
 		"AttackDamageMax"	"93.75"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.05"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"350"
@@ -5163,9 +5163,9 @@
 		"MagicalResistance"	"25"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"95.5"
-		"AttackDamageMax"	"97.75"
-		"AttackRate"	"0.6"
+		"AttackDamageMin"	"120.5"
+		"AttackDamageMax"	"125.75"
+		"AttackRate"	"0.7"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"350"
@@ -5183,7 +5183,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"	"270"
 		"MovementTurnRate"	"0.6"
-		"StatusHealth"	"800"
+		"StatusHealth"	"700"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -5214,95 +5214,67 @@
 	}
 	"incomeunit_centaur"
 	{
-		// General
-		//----------------------------------------------------------------
-		"BaseClass"             "npc_dota_creature"
-		"Model"                 "models/creeps/neutral_creeps/n_creep_centaur_lrg/n_creep_centaur_lrg.vmdl"
-		"ModelScale"            "0.5"
-		"SoundSet"					"n_creep_Melee"
-		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
-		"Level"                 "1"
-		"HealthBarOffset"       "150"
-		"Vscripts"              "ai/ai_default.lua"
-	
-		"Ability1"							""
-	
-		// Armor
-		//----------------------------------------------------------------
-		"ArmorPhysical"         "8"
-		"MagicalResistance"     "50"
-	
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "62.5"
-		"AttackDamageMax"       "87.5"
-		"AttackRate"            "0.6"
-		"AttackAnimationPoint"  "0.5"
-		"AttackAcquisitionRange" "850"
-		"AttackRange"           "125"
-		"ProjectileModel"       ""
-		"ProjectileSpeed"       "0"
-	
-		"Legion_AttackType"		"normal"
-		"Legion_DefendType"		"heavy"
-		"Legion_Fraction"		"income"
-		"Legion_Experience"		"100"
-	
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyGoldMin"         "10"
-		"BountyGoldMax"         "10"
-	
-		// Bounds
-		//----------------------------------------------------------------
-		"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-	  "CollisionSize"					"40"
-		"RingRadius"            "25"
-	
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         "270"
-		"MovementTurnRate"      "0.6"
-	
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"          "600"
-		"StatusHealthRegen"     "0"
-		"StatusMana"            "0"
-		"StatusManaRegen"       "0"
-	
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"    "1400"
-		"VisionNighttimeRange"  "800"
-	
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"              "DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-	
-		// Creature Data
-		//----------------------------------------------------------------
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/creeps/neutral_creeps/n_creep_centaur_lrg/n_creep_centaur_lrg.vmdl"
+		"ModelScale"	"0.5"
+		"SoundSet"	"n_creep_Melee"
+		"GameSoundsFile"	"soundevents/game_sounds_creeps.vsndevts"
+		"Level"	"1"
+		"HealthBarOffset"	"150"
+		"Vscripts"	"ai/ai_default.lua"
+		"Ability1"	""
+		"ArmorPhysical"	"8"
+		"MagicalResistance"	"50"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"	"62.5"
+		"AttackDamageMax"	"87.5"
+		"AttackRate"	"0.6"
+		"AttackAnimationPoint"	"0.5"
+		"AttackAcquisitionRange"	"850"
+		"AttackRange"	"125"
+		"ProjectileModel"	""
+		"ProjectileSpeed"	"0"
+		"Legion_AttackType"	"normal"
+		"Legion_DefendType"	"heavy"
+		"Legion_Fraction"	"income"
+		"Legion_Experience"	"100"
+		"BountyGoldMin"	"10"
+		"BountyGoldMax"	"10"
+		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+		"CollisionSize"	"40"
+		"RingRadius"	"25"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"	"270"
+		"MovementTurnRate"	"0.6"
+		"StatusHealth"	"600"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"VisionDaytimeRange"	"1400"
+		"VisionNighttimeRange"	"800"
+		"TeamName"	"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Creature"
 		{
-			"DisableClumpingBehavior"       "1"
-			"DefaultState"				"Invade"
+			"DisableClumpingBehavior"	"1"
+			"DefaultState"	"Invade"
 			"States"
 			{
 				"Invade"
 				{
-					"Name"				"Invade"
-					"Aggression"		"100.0"
-					"Avoidance"			"0.0"
-					"Support"			"0.0"
+					"Name"	"Invade"
+					"Aggression"	"100.0"
+					"Avoidance"	"0.0"
+					"Support"	"0.0"
 				}
+	
 			}
+	
 		}
+	
 	}
 	"incomeunit_diablo"
 	{
@@ -5319,9 +5291,9 @@
 		"MagicalResistance"	"25"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"187.5"
+		"AttackDamageMin"	"197.5"
 		"AttackDamageMax"	"200.0"
-		"AttackRate"	"0.8"
+		"AttackRate"	"1.0"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"125"
@@ -5445,9 +5417,9 @@
 		"MagicalResistance"	"0"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"25.0"
-		"AttackDamageMax"	"31.25"
-		"AttackRate"	"0.4"
+		"AttackDamageMin"	"27.0"
+		"AttackDamageMax"	"29.25"
+		"AttackRate"	"0.8"
 		"AttackAnimationPoint"	"0.8"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"300"
@@ -5601,9 +5573,9 @@
 		"MagicalResistance"	"20"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"8.75"
-		"AttackDamageMax"	"11.25"
-		"AttackRate"	"1"
+		"AttackDamageMin"	"12.75"
+		"AttackDamageMax"	"13.25"
+		"AttackRate"	"0.6"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"300"
@@ -5621,7 +5593,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"	"270"
 		"MovementTurnRate"	"0.6"
-		"StatusHealth"	"130"
+		"StatusHealth"	"160"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"120"
 		"StatusManaRegen"	"10"
@@ -5662,95 +5634,67 @@
 	}
 	"incomeunit_hill_troll_shaman"
 	{
-		// General
-		//----------------------------------------------------------------
-		"BaseClass"             "npc_dota_creature"
-		"Model"                 "models/creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_high_priest.vmdl"
-		"ModelScale"            "0.5"
-		"SoundSet"							"n_creep_Ranged"
-		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
-		"Level"                 "1"
-		"HealthBarOffset"       "150"
-		"Vscripts"              "ai/ai_default.lua"
-	
-		"Ability1"							"satyr_hellcaller_unholy_aura"
-	
-		// Armor
-		//----------------------------------------------------------------
-		"ArmorPhysical"         "0"
-		"MagicalResistance"     "0"
-	
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "8.25"
-		"AttackDamageMax"       "9.5"
-		"AttackRate"            "0.6"
-		"AttackAnimationPoint"  "0.5"
-		"AttackAcquisitionRange" "850"
-		"AttackRange"           "300"
-		"ProjectileModel"       "particles/units/heroes/hero_chen/chen_base_attack.vpcf"
-		"ProjectileSpeed"       "650"
-	
-		"Legion_AttackType"		"arcane"
-		"Legion_DefendType"		"light"
-		"Legion_Fraction"		"income"
-		"Legion_Experience"		"20"
-	
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyGoldMin"         "1"
-		"BountyGoldMax"         "1"
-	
-		// Bounds
-		//----------------------------------------------------------------
-		"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-		"CollisionSize"					"40"
-		"RingRadius"            "30"
-	
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         "270"
-		"MovementTurnRate"      "0.6"
-	
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"          "60"
-		"StatusHealthRegen"     "0"
-		"StatusMana"            "0"
-		"StatusManaRegen"       "0"
-	
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"    "1400"
-		"VisionNighttimeRange"  "800"
-	
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"              "DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-	
-		// Creature Data
-		//----------------------------------------------------------------
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_high_priest.vmdl"
+		"ModelScale"	"0.5"
+		"SoundSet"	"n_creep_Ranged"
+		"GameSoundsFile"	"soundevents/game_sounds_creeps.vsndevts"
+		"Level"	"1"
+		"HealthBarOffset"	"150"
+		"Vscripts"	"ai/ai_default.lua"
+		"Ability1"	"satyr_hellcaller_unholy_aura"
+		"ArmorPhysical"	"0"
+		"MagicalResistance"	"0"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"	"8.25"
+		"AttackDamageMax"	"9.5"
+		"AttackRate"	"0.8"
+		"AttackAnimationPoint"	"0.5"
+		"AttackAcquisitionRange"	"850"
+		"AttackRange"	"300"
+		"ProjectileModel"	"particles/units/heroes/hero_chen/chen_base_attack.vpcf"
+		"ProjectileSpeed"	"650"
+		"Legion_AttackType"	"arcane"
+		"Legion_DefendType"	"light"
+		"Legion_Fraction"	"income"
+		"Legion_Experience"	"20"
+		"BountyGoldMin"	"1"
+		"BountyGoldMax"	"1"
+		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+		"CollisionSize"	"40"
+		"RingRadius"	"30"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"	"270"
+		"MovementTurnRate"	"0.6"
+		"StatusHealth"	"160"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"VisionDaytimeRange"	"1400"
+		"VisionNighttimeRange"	"800"
+		"TeamName"	"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Creature"
 		{
-			"DisableClumpingBehavior"       "1"
-			"DefaultState"				"Invade"
+			"DisableClumpingBehavior"	"1"
+			"DefaultState"	"Invade"
 			"States"
 			{
 				"Invade"
 				{
-					"Name"				"Invade"
-					"Aggression"		"100.0"
-					"Avoidance"			"0.0"
-					"Support"			"0.0"
+					"Name"	"Invade"
+					"Aggression"	"100.0"
+					"Avoidance"	"0.0"
+					"Support"	"0.0"
 				}
+	
 			}
+	
 		}
+	
 	}
 	"incomeunit_hill_troll_warrior"
 	{
@@ -5767,9 +5711,9 @@
 		"MagicalResistance"	"0"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"6.25"
-		"AttackDamageMax"	"7.5"
-		"AttackRate"	"0.5"
+		"AttackDamageMin"	"12.0"
+		"AttackDamageMax"	"12.5"
+		"AttackRate"	"0.9"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"125"
@@ -5787,7 +5731,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"	"270"
 		"MovementTurnRate"	"0.6"
-		"StatusHealth"	"80"
+		"StatusHealth"	"145"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -5818,93 +5762,66 @@
 	}
 	"incomeunit_hulk"
 	{
-		// General
-		//----------------------------------------------------------------
-		"BaseClass"             "npc_dota_creature"
-		"Model"                 "models/creeps/lane_creeps/creep_radiant_hulk/creep_radiant_ancient_hulk.vmdl"
-		"ModelScale"            "0.7"
-		"SoundSet"					"n_creep_Melee"
-		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
-		"Level"                 "1"
-		"HealthBarOffset"       "150"
-		"Vscripts"              "ai/ai_default.lua"
-	
-		"Ability1"							"alpha_wolf_command_aura"
-		// Armor
-		//----------------------------------------------------------------
-		"ArmorPhysical"         "16"
-		"MagicalResistance"     "25"
-	
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "250.0"
-		"AttackDamageMax"       "262.5"
-		"AttackRate"            "1.0"
-		"AttackAnimationPoint"  "0.5"
-		"AttackAcquisitionRange" "850"
-		"AttackRange"           "125"
-		"ProjectileModel"       ""
-		"ProjectileSpeed"       "0"
-	
-		"Legion_AttackType"		"normal"
-		"Legion_DefendType"		"heavy"
-		"Legion_Fraction"		"income"
-	
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyGoldMin"         "24"
-		"BountyGoldMax"         "24"
-	
-		// Bounds
-		//----------------------------------------------------------------
-		"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-	  "CollisionSize"					"40"
-		"RingRadius"            "25"
-	
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         "270"
-		"MovementTurnRate"      "0.6"
-	
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"          "1600"
-		"StatusHealthRegen"     "0"
-		"StatusMana"            "0"
-		"StatusManaRegen"       "0"
-	
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"    "1400"
-		"VisionNighttimeRange"  "800"
-	
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"              "DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-	
-		// Creature Data
-		//----------------------------------------------------------------
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/creeps/lane_creeps/creep_radiant_hulk/creep_radiant_ancient_hulk.vmdl"
+		"ModelScale"	"0.7"
+		"SoundSet"	"n_creep_Melee"
+		"GameSoundsFile"	"soundevents/game_sounds_creeps.vsndevts"
+		"Level"	"1"
+		"HealthBarOffset"	"150"
+		"Vscripts"	"ai/ai_default.lua"
+		"Ability1"	"alpha_wolf_command_aura"
+		"ArmorPhysical"	"16"
+		"MagicalResistance"	"25"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"	"150.0"
+		"AttackDamageMax"	"162.5"
+		"AttackRate"	"0.9"
+		"AttackAnimationPoint"	"0.5"
+		"AttackAcquisitionRange"	"850"
+		"AttackRange"	"125"
+		"ProjectileModel"	""
+		"ProjectileSpeed"	"0"
+		"Legion_AttackType"	"normal"
+		"Legion_DefendType"	"heavy"
+		"Legion_Fraction"	"income"
+		"BountyGoldMin"	"24"
+		"BountyGoldMax"	"24"
+		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+		"CollisionSize"	"40"
+		"RingRadius"	"25"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"	"270"
+		"MovementTurnRate"	"0.6"
+		"StatusHealth"	"1600"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"VisionDaytimeRange"	"1400"
+		"VisionNighttimeRange"	"800"
+		"TeamName"	"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Creature"
 		{
-			"DisableClumpingBehavior"       "1"
-			"DefaultState"				"Invade"
+			"DisableClumpingBehavior"	"1"
+			"DefaultState"	"Invade"
 			"States"
 			{
 				"Invade"
 				{
-					"Name"				"Invade"
-					"Aggression"		"100.0"
-					"Avoidance"			"0.0"
-					"Support"			"0.0"
+					"Name"	"Invade"
+					"Aggression"	"100.0"
+					"Avoidance"	"0.0"
+					"Support"	"0.0"
 				}
+	
 			}
+	
 		}
+	
 	}
 	"incomeunit_jellyfish"
 	{
@@ -5923,7 +5840,7 @@
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"	"162.5"
 		"AttackDamageMax"	"175.0"
-		"AttackRate"	"0.5"
+		"AttackRate"	"0.63"
 		"AttackAnimationPoint"	"0.4"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"300"
@@ -5986,7 +5903,7 @@
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"	"5.0"
 		"AttackDamageMax"	"6.25"
-		"AttackRate"	"0.5"
+		"AttackRate"	"0.9"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"125"
@@ -6045,12 +5962,12 @@
 		"Vscripts"	"ai/ai_default.lua"
 		"Ability1"	""
 		"ArmorPhysical"	"8"
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"25"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"	"56.25"
 		"AttackDamageMax"	"62.5"
-		"AttackRate"	"0.8"
+		"AttackRate"	"1.3"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"125"
@@ -6068,7 +5985,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"	"270"
 		"MovementTurnRate"	"0.6"
-		"StatusHealth"	"550"
+		"StatusHealth"	"600"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -6099,94 +6016,66 @@
 	}
 	"incomeunit_little_golem"
 	{
-		// General
-		//----------------------------------------------------------------
-		"BaseClass"             "npc_dota_creature"
-		"Model"                 "models/creeps/neutral_creeps/n_creep_golem_b/n_creep_golem_b.vmdl"
-		"ModelScale"            "0.35"
-		"SoundSet"					"n_creep_Melee"
-		"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
-		"Level"                 "1"
-		"HealthBarOffset"       "150"
-		"Vscripts"              "ai/ai_default.lua"
-	
-		"Ability1"							""
-	
-		// Armor
-		//----------------------------------------------------------------
-		"ArmorPhysical"         "2"
-		"MagicalResistance"     "0"
-	
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "25.0"
-		"AttackDamageMax"       "27.5"
-		"AttackRate"            "1"
-		"AttackAnimationPoint"  "0.5"
-		"AttackAcquisitionRange" "850"
-		"AttackRange"           "125"
-		"ProjectileModel"       ""
-		"ProjectileSpeed"       "0"
-	
-		"Legion_AttackType"		"normal"
-		"Legion_DefendType"		"heavy"
-		"Legion_Fraction"		"income"
-	
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyGoldMin"         "3"
-		"BountyGoldMax"         "3"
-	
-		// Bounds
-		//----------------------------------------------------------------
-		"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-	  "CollisionSize"					"30"
-		"RingRadius"            "25"
-	
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         "270"
-		"MovementTurnRate"      "0.6"
-	
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"          "100"
-		"StatusHealthRegen"     "0"
-		"StatusMana"            "0"
-		"StatusManaRegen"       "0"
-	
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"    "1400"
-		"VisionNighttimeRange"  "800"
-	
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"              "DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-	
-		// Creature Data
-		//----------------------------------------------------------------
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/creeps/neutral_creeps/n_creep_golem_b/n_creep_golem_b.vmdl"
+		"ModelScale"	"0.35"
+		"SoundSet"	"n_creep_Melee"
+		"GameSoundsFile"	"soundevents/game_sounds_creeps.vsndevts"
+		"Level"	"1"
+		"HealthBarOffset"	"150"
+		"Vscripts"	"ai/ai_default.lua"
+		"Ability1"	""
+		"ArmorPhysical"	"2"
+		"MagicalResistance"	"0"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"	"25.0"
+		"AttackDamageMax"	"27.5"
+		"AttackRate"	"1"
+		"AttackAnimationPoint"	"0.5"
+		"AttackAcquisitionRange"	"850"
+		"AttackRange"	"125"
+		"ProjectileModel"	""
+		"ProjectileSpeed"	"0"
+		"Legion_AttackType"	"normal"
+		"Legion_DefendType"	"heavy"
+		"Legion_Fraction"	"income"
+		"BountyGoldMin"	"3"
+		"BountyGoldMax"	"3"
+		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+		"CollisionSize"	"30"
+		"RingRadius"	"25"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"	"270"
+		"MovementTurnRate"	"0.6"
+		"StatusHealth"	"100"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"VisionDaytimeRange"	"1400"
+		"VisionNighttimeRange"	"800"
+		"TeamName"	"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 		"Creature"
 		{
-			"DisableClumpingBehavior"       "1"
-			"DefaultState"				"Invade"
+			"DisableClumpingBehavior"	"1"
+			"DefaultState"	"Invade"
 			"States"
 			{
 				"Invade"
 				{
-					"Name"				"Invade"
-					"Aggression"		"100.0"
-					"Avoidance"			"0.0"
-					"Support"			"0.0"
+					"Name"	"Invade"
+					"Aggression"	"100.0"
+					"Avoidance"	"0.0"
+					"Support"	"0.0"
 				}
+	
 			}
+	
 		}
+	
 	}
 	"incomeunit_little_wolf"
 	{
@@ -6203,9 +6092,9 @@
 		"MagicalResistance"	"0"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"47.5"
-		"AttackDamageMax"	"60.0"
-		"AttackRate"	"0.7"
+		"AttackDamageMin"	"40.5"
+		"AttackDamageMax"	"42.0"
+		"AttackRate"	"1.1"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"125"
@@ -6425,7 +6314,7 @@
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"	"50.0"
 		"AttackDamageMax"	"56.25"
-		"AttackRate"	"0.6"
+		"AttackRate"	"1.1"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"125"
@@ -6489,7 +6378,7 @@
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
 		"AttackDamageMin"	"225.0"
 		"AttackDamageMax"	"250.0"
-		"AttackRate"	"0.8"
+		"AttackRate"	"0.9"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"125"
@@ -6506,7 +6395,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"	"270"
 		"MovementTurnRate"	"0.6"
-		"StatusHealth"	"1800"
+		"StatusHealth"	"1500"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -6550,9 +6439,9 @@
 		"MagicalResistance"	"0"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"37.5"
-		"AttackDamageMax"	"43.75"
-		"AttackRate"	"0.5"
+		"AttackDamageMin"	"33.5"
+		"AttackDamageMax"	"35.75"
+		"AttackRate"	"0.8"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"125"
@@ -6570,7 +6459,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"	"270"
 		"MovementTurnRate"	"0.6"
-		"StatusHealth"	"550"
+		"StatusHealth"	"400"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"

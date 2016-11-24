@@ -25,7 +25,7 @@ GameUI.CustomUIConfig().units =
 	{"id" : 1022, "cost" : 650, "income" : 10, "cooldown" : 21, "name" : "incomeunit_hulk", "icon" : "send_incomeunit_hulk"},
 	{"id" : 1023, "cost" : 700, "income" : 10, "cooldown" : 22, "name" : "incomeunit_beast", "icon" : "send_incomeunit_beast"},
 	{"id" : 1024, "cost" : 750, "income" : 10, "cooldown" : 25, "name" : "incomeunit_diablo", "icon" : "send_incomeunit_diablo"},
-	{"id" : 1025, "cost" : 800, "income" : 12, "cooldown" : 30, "name" : "incomeunit_roshan", "icon" : "send_incomeunit_rosh"}
+	{"id" : 1025, "cost" : 800, "income" : 12, "cooldown" : 30, "name" : "incomeunit_rosh", "icon" : "send_incomeunit_rosh"}
 ]
 ;
 
