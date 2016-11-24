@@ -1,91 +1,63 @@
-
 "incomeunit_jellyfish"
 {
-	// General
-	//----------------------------------------------------------------
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/items/courier/echo_wisp/echo_wisp.vmdl"
-	"ModelScale"            "0.7"
-	"SoundSet"					"n_creep_Ranged"
-	"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "150"
-	"Vscripts"              "ai/ai_default.lua"
-
-	"Ability1"							"" //
-	// Armor
-	//----------------------------------------------------------------
-	"ArmorPhysical"         "10"
-	"MagicalResistance"     "25"
-
-	// Attack
-	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "162.5"
-	"AttackDamageMax"       "175.0"
-	"AttackRate"            "0.5"
-	"AttackAnimationPoint"  "0.4"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "300"
-	"ProjectileModel"       "particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf"
-	"ProjectileSpeed"       "1500"
-
-	"Legion_AttackType"		"arcane"
-	"Legion_DefendType"		"light"
-	"Legion_Fraction"		"income"
-
-	// Bounty
-	//----------------------------------------------------------------
-	"BountyGoldMin"         "22"
-	"BountyGoldMax"         "22"
-
-	// Bounds
-	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-  "CollisionSize"					"40"
-	"RingRadius"            "25"
-
-	// Movement
-	//----------------------------------------------------------------
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "270"
-	"MovementTurnRate"      "0.6"
-
-	// Status
-	//----------------------------------------------------------------
-	"StatusHealth"          "990"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
-
-	// Vision
-	//----------------------------------------------------------------
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	// Team
-	//----------------------------------------------------------------
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-	// Creature Data
-	//----------------------------------------------------------------
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/items/courier/echo_wisp/echo_wisp.vmdl"
+	"ModelScale"	"0.7"
+	"SoundSet"	"n_creep_Ranged"
+	"GameSoundsFile"	"soundevents/game_sounds_creeps.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"150"
+	"Vscripts"	"ai/ai_default.lua"
+	"Ability1"	""
+	"ArmorPhysical"	"10"
+	"MagicalResistance"	"25"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"162.5"
+	"AttackDamageMax"	"175.0"
+	"AttackRate"	"0.5"
+	"AttackAnimationPoint"	"0.4"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"300"
+	"ProjectileModel"	"particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf"
+	"ProjectileSpeed"	"1500"
+	"Legion_AttackType"	"arcane"
+	"Legion_DefendType"	"light"
+	"Legion_Fraction"	"income"
+	"BountyGoldMin"	"22"
+	"BountyGoldMax"	"22"
+	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+	"CollisionSize"	"40"
+	"RingRadius"	"25"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"270"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"990"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"0"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"0.0"
 			}
+
 		}
+
 	}
+
 }

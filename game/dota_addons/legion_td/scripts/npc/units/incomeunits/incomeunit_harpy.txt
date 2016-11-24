@@ -1,100 +1,74 @@
 "incomeunit_harpy"
 {
-	// General
-	//----------------------------------------------------------------
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/creeps/neutral_creeps/n_creep_harpy_a/n_creep_harpy_a.vmdl"
-	"ModelScale"            "0.5"
-	"SoundSet"							"n_creep_Ranged"
-	"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "150"
-	"Vscripts"              "ai/incomeunits/ai_harpy.lua"
-
-	"Ability1"							"harpy_storm_chain_lightning"
-
-	// Armor
-	//----------------------------------------------------------------
-	"ArmorPhysical"         "3"
-	"MagicalResistance"     "20"
-
-	// Attack
-	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "8.75"
-	"AttackDamageMax"       "11.25"
-	"AttackRate"            "1"
-	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "300"
-	"ProjectileModel"       "particles/econ/items/razor/razor_punctured_crest/razor_static_link_beam_blade.vpcf"
-	"ProjectileSpeed"       "500"
-
-	"Legion_AttackType"		"arcane"
-	"Legion_DefendType"		"light"
-	"Legion_Fraction"		"income"
-	"Legion_Experience"		"30"
-
-	// Bounty
-	//----------------------------------------------------------------
-	"BountyGoldMin"         "3"
-	"BountyGoldMax"         "3"
-
-	// Bounds
-	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"					"40"
-	"RingRadius"            "25"
-
-	// Movement
-	//----------------------------------------------------------------
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "270"
-	"MovementTurnRate"      "0.6"
-
-	// Status
-	//----------------------------------------------------------------
-	"StatusHealth"          "130"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "120"
-	"StatusManaRegen"       "10"
-
-	// Vision
-	//----------------------------------------------------------------
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	// Team
-	//----------------------------------------------------------------
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-	// Creature Data
-	//----------------------------------------------------------------
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/creeps/neutral_creeps/n_creep_harpy_a/n_creep_harpy_a.vmdl"
+	"ModelScale"	"0.5"
+	"SoundSet"	"n_creep_Ranged"
+	"GameSoundsFile"	"soundevents/game_sounds_creeps.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"150"
+	"Vscripts"	"ai/incomeunits/ai_harpy.lua"
+	"Ability1"	"harpy_storm_chain_lightning"
+	"ArmorPhysical"	"3"
+	"MagicalResistance"	"20"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"8.75"
+	"AttackDamageMax"	"11.25"
+	"AttackRate"	"1"
+	"AttackAnimationPoint"	"0.5"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"300"
+	"ProjectileModel"	"particles/econ/items/razor/razor_punctured_crest/razor_static_link_beam_blade.vpcf"
+	"ProjectileSpeed"	"500"
+	"Legion_AttackType"	"arcane"
+	"Legion_DefendType"	"light"
+	"Legion_Fraction"	"income"
+	"Legion_Experience"	"30"
+	"BountyGoldMin"	"3"
+	"BountyGoldMax"	"3"
+	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+	"CollisionSize"	"40"
+	"RingRadius"	"25"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"270"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"130"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"120"
+	"StatusManaRegen"	"10"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"0.0"
 			}
+
 		}
+
 		"OffensiveAbilities"
 		{
 			"Ability1"
 			{
-				"Name"        "harpy_storm_chain_lightning"
-				"Damage"			"1"
+				"Name"	"harpy_storm_chain_lightning"
+				"Damage"	"1"
 			}
+
 		}
+
 	}
+
 }

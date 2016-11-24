@@ -1,102 +1,99 @@
 "tower_humanbuilder_icewrack_grandmaster"
 {
-	// General
-	//----------------------------------------------------------------
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
-	"ModelScale"            "0.55"
-	"SoundSet"					    "Hero_CrystalMaiden"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "150"
-	"Vscripts"              "ai/ai_default.lua"
-
-	"Ability4"				"sell"
-	"Ability2"				"icewrack_grandmaster_chilled_blood"
-	"Ability3"				"ability_empty_3"
-	"Ability1"				"icewrack_grandmaster_freezing_field"
-
-	// Armor
-	//----------------------------------------------------------------
-	"ArmorPhysical"         "0"
-	"MagicalResistance"     "0"
-
-	// Attack
-	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "150.0"
-	"AttackDamageMax"       "170.0"
-	"AttackRate"            "1.0"
-	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "600"
-	"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
-	"ProjectileSpeed"       "400"
-
-	"Legion_AttackType"		"arcane"
-	"Legion_DefendType"		"light"
-	"Legion_Fraction"		"human"
-
-	// Bounty
-	//----------------------------------------------------------------
-	"BountyGoldMin"         "0"
-	"BountyGoldMax"         "0"
-
-	// Bounds
-	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-	"RingRadius"            "30"
-
-	// Movement
-	//----------------------------------------------------------------
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "270"
-	"MovementTurnRate"      "0.6"
-
-	// Status
-	//----------------------------------------------------------------
-	"StatusHealth"          "100"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
-
-	// Vision
-	//----------------------------------------------------------------
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	// Team
-	//----------------------------------------------------------------
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-	// Creature Data
-	//----------------------------------------------------------------
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/heroes/crystal_maiden/crystal_maiden.vmdl"
+	"ModelScale"	"0.55"
+	"SoundSet"	"Hero_CrystalMaiden"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"150"
+	"Vscripts"	"ai/ai_default.lua"
+	"Ability4"	"sell"
+	"Ability2"	"icewrack_grandmaster_chilled_blood"
+	"Ability3"	"ability_empty_3"
+	"Ability1"	"icewrack_grandmaster_freezing_field"
+	"ArmorPhysical"	"0"
+	"MagicalResistance"	"0"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"150.0"
+	"AttackDamageMax"	"170.0"
+	"AttackRate"	"1.0"
+	"AttackAnimationPoint"	"0.5"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"600"
+	"ProjectileModel"	"particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
+	"ProjectileSpeed"	"400"
+	"Legion_AttackType"	"arcane"
+	"Legion_DefendType"	"light"
+	"Legion_Fraction"	"human"
+	"BountyGoldMin"	"0"
+	"BountyGoldMax"	"0"
+	"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
+	"RingRadius"	"30"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"270"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"100"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"0"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"0.0"
 			}
+
 		}
-    "AttachWearables"
-    {
-      "Wearable1" { "ItemDef" "4386" } // Cape of the Crystalline Queen
-      "Wearable2" { "ItemDef" "9326" } // "Guard of the Tundra Warden"
-      "Wearable3" { "ItemDef" "6573" } // "Sceptre of Icewrack"
-      "Wearable4" { "ItemDef" "9324" } // "Gauntlets of the Tundra Warden"
-      "Wearable5" { "ItemDef" "6686" } // "Yulsaria's Glacier"
-      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
-    }
+
+		"AttachWearables"
+		{
+			"Wearable1"
+			{
+				"ItemDef"	"4386"
+			}
+
+			"Wearable2"
+			{
+				"ItemDef"	"9326"
+			}
+
+			"Wearable3"
+			{
+				"ItemDef"	"6573"
+			}
+
+			"Wearable4"
+			{
+				"ItemDef"	"9324"
+			}
+
+			"Wearable5"
+			{
+				"ItemDef"	"6686"
+			}
+
+			"Wearable6"
+			{
+				"ItemDef"	"502"
+			}
+
+		}
+
 	}
+
 }
