@@ -1,79 +1,87 @@
-//Gatling Sniper
-//------------------------------------------------------------------
 "unit_gatling_sniper"
 {
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/sniper/sniper.vmdl"
-	"ModelScale"            "0.6"
-	"SoundSet"					"Hero_Sniper"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "140"
-	"Vscripts"              "ai/ai_default.lua"
-
-	"ArmorPhysical"         "3"
-	"MagicalResistance"     "0"
-
-	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "1.5"
-	"AttackDamageMax"       "2.0"
-	"AttackRate"            "0.35"
-	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "500"
-	"ProjectileModel"       "particles/items_fx/desolator_projectile.vpcf"
-	"ProjectileSpeed"       "2000"
-
-	"Legion_AttackType"		"arcane"
-	"Legion_DefendType"		"light"
-	"Legion_Experience"		"20"
-	"Legion_Fraction"		"wave"
-
-	"BountyGoldMin"         "5.0"
-	"BountyGoldMax"         "5.0"
-
-	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"					"50"
-	"RingRadius"            "50"
-
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "300"
-	"MovementTurnRate"      "0.6"
-
-	"StatusHealth"          "70"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
-
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/heroes/sniper/sniper.vmdl"
+	"ModelScale"	"0.6"
+	"SoundSet"	"Hero_Sniper"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"140"
+	"Vscripts"	"ai/ai_default.lua"
+	"ArmorPhysical"	"2"
+	"MagicalResistance"	"0"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"1.5"
+	"AttackDamageMax"	"2.0"
+	"AttackRate"	"0.35"
+	"AttackAnimationPoint"	"0.2"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"500"
+	"ProjectileModel"	"particles/items_fx/desolator_projectile.vpcf"
+	"ProjectileSpeed"	"2000"
+	"Legion_AttackType"	"arcane"
+	"Legion_DefendType"	"light"
+	"Legion_Experience"	"20"
+	"Legion_Fraction"	"wave"
+	"BountyGoldMin"	"5.0"
+	"BountyGoldMax"	"5.0"
+	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+	"CollisionSize"	"50"
+	"RingRadius"	"50"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"300"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"70"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"0"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"0.0"
 			}
+
 		}
+
 		"AttachWearables"
 		{
-			"Wearable1" { "ItemDef" "4698" }
-			"Wearable2" { "ItemDef" "4700" }
-			"Wearable3"	{ "ItemDef"	"4701"}
-			"Wearable4" { "ItemDef"	"6895"}
+			"Wearable1"
+			{
+				"ItemDef"	"4698"
+			}
+
+			"Wearable2"
+			{
+				"ItemDef"	"4700"
+			}
+
+			"Wearable3"
+			{
+				"ItemDef"	"4701"
+			}
+
+			"Wearable4"
+			{
+				"ItemDef"	"6895"
+			}
+
 		}
+
 	}
+
 }

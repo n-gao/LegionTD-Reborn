@@ -1,78 +1,87 @@
-//Predator Nyx
-//------------------------------------------------------------------
 "unit_predator"
 {
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/nerubian_assassin/nerubian_assassin.vmdl"
-	"ModelScale"            "0.6"
-	"SoundSet"					"Hero_NyxAssassin"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "140"
-	"Vscripts"              "ai/ai_default.lua"
-
-	"ArmorPhysical"         "4"
-	"MagicalResistance"     "0"
-
-	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "11.25"
-	"AttackDamageMax"       "13.75"
-	"AttackRate"            "0.75"
-	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "90"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
-	"Legion_AttackType"		"pierce"
-	"Legion_DefendType"		"medium"
-	"Legion_Experience"		"30"
-	"Legion_Fraction"		"wave"
-
-	"BountyGoldMin"         "6.0"
-	"BountyGoldMax"         "6.0"
-
-	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"					"50"
-	"RingRadius"            "50"
-
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "300"
-	"MovementTurnRate"      "0.6"
-
-	"StatusHealth"          "130"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
-
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/heroes/nerubian_assassin/nerubian_assassin.vmdl"
+	"ModelScale"	"0.6"
+	"SoundSet"	"Hero_NyxAssassin"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"140"
+	"Vscripts"	"ai/ai_default.lua"
+	"ArmorPhysical"	"4"
+	"MagicalResistance"	"0"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"10.25"
+	"AttackDamageMax"	"11.75"
+	"AttackRate"	"0.85"
+	"AttackAnimationPoint"	"0.2"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"90"
+	"ProjectileModel"	""
+	"ProjectileSpeed"	"0"
+	"Legion_AttackType"	"pierce"
+	"Legion_DefendType"	"medium"
+	"Legion_Experience"	"30"
+	"Legion_Fraction"	"wave"
+	"BountyGoldMin"	"6.0"
+	"BountyGoldMax"	"6.0"
+	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+	"CollisionSize"	"50"
+	"RingRadius"	"50"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"300"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"120"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"0"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"0.0"
 			}
+
 		}
+
 		"AttachWearables"
 		{
-			"Wearable1" { "ItemDef" "5202" }
-			"Wearable2" { "ItemDef" "5201" }
-			"Wearable4" { "ItemDef" "5203" }
-			"Wearable5" { "ItemDef" "5204" }
+			"Wearable1"
+			{
+				"ItemDef"	"5202"
+			}
+
+			"Wearable2"
+			{
+				"ItemDef"	"5201"
+			}
+
+			"Wearable4"
+			{
+				"ItemDef"	"5203"
+			}
+
+			"Wearable5"
+			{
+				"ItemDef"	"5204"
+			}
+
 		}
+
 	}
+
 }

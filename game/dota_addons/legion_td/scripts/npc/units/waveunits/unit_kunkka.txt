@@ -1,90 +1,109 @@
-//Assassins
-//------------------------------------------------------------------
 "unit_kunkka"
 {
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/kunkka/kunkka.vmdl"
-	"ModelScale"            "0.6"
-	"SoundSet"				"Hero_Kunkka"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "140"
-	"Vscripts"              "ai/ai_default.lua"
-
-	"Ability1"							"kunkka_tidebringer"
-
-	"ArmorPhysical"         "4"
-	"MagicalResistance"     "0"
-
-	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "36"
-	"AttackDamageMax"       "40"
-	"AttackRate"            "1.0"
-	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "90"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
-
-	"Legion_AttackType"		"normal"
-	"Legion_DefendType"		"medium"
-	"Legion_Experience"		"110"
-	"Legion_Fraction"		"wave"
-
-	"BountyGoldMin"         "6.0"
-	"BountyGoldMax"         "6.0"
-
-	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"					"50"
-	"RingRadius"            "50"
-
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "300"
-	"MovementTurnRate"      "0.6"
-
-	"StatusHealth"          "520"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "200"
-	"StatusManaRegen"       "0"
-
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-	"precache"
-	{
-
-	}
-
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/heroes/kunkka/kunkka.vmdl"
+	"ModelScale"	"0.6"
+	"SoundSet"	"Hero_Kunkka"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"140"
+	"Vscripts"	"ai/ai_default.lua"
+	"Ability1"	"kunkka_tidebringer"
+	"ArmorPhysical"	"4"
+	"MagicalResistance"	"0"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"56"
+	"AttackDamageMax"	"60"
+	"AttackRate"	"0.7"
+	"AttackAnimationPoint"	"0.2"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"90"
+	"ProjectileModel"	""
+	"ProjectileSpeed"	"0"
+	"Legion_AttackType"	"normal"
+	"Legion_DefendType"	"medium"
+	"Legion_Experience"	"110"
+	"Legion_Fraction"	"wave"
+	"BountyGoldMin"	"6.0"
+	"BountyGoldMax"	"6.0"
+	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+	"CollisionSize"	"50"
+	"RingRadius"	"50"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"300"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"570"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"200"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	"precache"	""
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"100.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"100.0"
 			}
+
 		}
+
 		"AttachWearables"
 		{
-			"Wearable1" { "ItemDef" "6428" }
-			"Wearable2" { "ItemDef" "6782" }
-			"Wearable3" { "ItemDef" "6430" }
-			"Wearable4" { "ItemDef" "6777" }
-			"Wearable5" { "ItemDef" "6778" }
-			"Wearable6" { "ItemDef" "6779" }
-			"Wearable7" { "ItemDef" "6780" }
-			"Wearable8" { "ItemDef" "6781" }
+			"Wearable1"
+			{
+				"ItemDef"	"6428"
+			}
+
+			"Wearable2"
+			{
+				"ItemDef"	"6782"
+			}
+
+			"Wearable3"
+			{
+				"ItemDef"	"6430"
+			}
+
+			"Wearable4"
+			{
+				"ItemDef"	"6777"
+			}
+
+			"Wearable5"
+			{
+				"ItemDef"	"6778"
+			}
+
+			"Wearable6"
+			{
+				"ItemDef"	"6779"
+			}
+
+			"Wearable7"
+			{
+				"ItemDef"	"6780"
+			}
+
+			"Wearable8"
+			{
+				"ItemDef"	"6781"
+			}
+
 		}
+
 	}
+
 }
