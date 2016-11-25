@@ -1,0 +1,164 @@
+"tower_demonbuilder_clinkz3"
+{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/clinkz/clinkz.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"ability_empty_1"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "20"
+		"AttackDamageMax"       "20"
+		"AttackRate"            "1.0"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "390"
+		"ProjectileModel"       "particles/units/heroes/hero_clinkz/clinkz_searing_arrow.vpcf"
+		"ProjectileSpeed"       "900"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "400"
+		"MovementTurnRate"      "2.0"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "150"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      "Wearable1" { "ItemDef" "7346" } // "Compendium Scorched Fletcher Gloves"
+			      "Wearable2" { "ItemDef" "7345" } // "Compendium Scorched Fletcher Bow"
+			      "Wearable3" { "ItemDef" "7350" } // "Compendium Scorched Fletcher Pauldrons"
+			      "Wearable4" { "ItemDef" "7349" } // "Compendium Scorched Fletcher Quiver"
+			      "Wearable5" { "ItemDef" "7347" } // "Compendium Scorched Fletcher Helm"
+			      "Wearable6" { "ItemDef" "56" } // "Clinkz Skull"
+			      
+			      // 56 Clinkz Skull						head
+			      // 57 Clinkz Bow 							weapon
+			      // 58 Clinkz Shoulder Pads 				shoulder
+			      // 59 Clinkz Quiver						back
+			      // 60 Clinkz Horns 						head
+			      // 61 Clinkz Gloves 						hand
+
+			      // 523 Clinkz's Ambient Effects 			"particles/units/heroes/hero_clinkz/clinkz_body_fire.vpcf
+			      // 328 particles/units/heroes/hero_clinkz/clinkz_body_fire.vpcf 
+			      // 656 "particles/econ/items/clinkz/ti6_quest/clinkz_ti6_quest_ambient.vpcf"
+
+			      // 4378 Runic Bow of Corruption 			weapon
+			      // 4600 Demon Spine Recurve Bow 			weapon
+			      // 4758 Molten Genezis 					weapon
+				  // 4618 Bow of the Searing Soul 			weapon
+
+			      // 4374 Skeletal Claw of the Vandal 		Gloves
+			      // 4588 Shredder of the Vandal 			weapon
+			      // 4590 Torn Guard of the Vandal 			shoulder
+			      // 4591 Dark Quiver of the Vandal 		back			      
+			      // 4605 Demon Guise of the Vandal 		head
+
+			      // 4741 Bow of the Crypt Guardian 		weapon 
+			      // 4742 Pauldrons of the Crypt Guardian 	shoulder			      
+			      // 4971 Horns of the Crypt Guardian		helmet
+			      // 4972 Gauntlets of the Crypt Guardian   hand
+			      // 4973 Demon Quiver of the Crypt Guardian back
+
+			      // 5151 Lost Hills Shield					back
+			      // 5152 Lost Hills Bow 					weapon
+			      // 5153 Lost Hills Gauntlets 				hand
+			      // 5154 Lost Hills Helm 					helmet
+			      // 5155 Lost Hills Shoulder 				Shoulder
+
+			      // 7130 Scorched Fletcher Bow 			weapon
+			      // 7135 Scorched Fletcher Gloves			hand
+			      // 7141 Scorched Fletcher Quiver			back
+			      // 7142 Scorched Fletcher Pauldrons   	hand
+			      // 7348 Scorched Fletcher Helm 			helmet
+
+			      // 7345 Compendium Scorched Fletcher Bow  weapon
+			      // 7346 Compendium Scorched Fletcher Gloves hand
+			      // 7347 Compendium Scorched Fletcher Helm helmet			      
+			      // 7349 Compendium Scorched Fletcher Quiver
+			      // 7350 Compendium Scorched Fletcher Pauldrons
+
+			      // 7916 Bow of the Urushin Huntsman		weapon
+			      // 7917 Talons of the Urushin Huntsman    hand
+			      // 7918 Wrap of the Urushin Huntsman		head 
+			      // 7919 Sentinels of the Urushin Huntsma  Shoulder
+			      // 7929 Quiver of the Urushin Huntsman    back
+
+			      // 8290 Hood of the Fallen Cloak 			head
+			      // 8291 Bow of the Fallen Cloak 			weapon
+			      // 8292 Gloves of the Fallen Cloak 		hand
+			      // 8293 Quiver of the Fallen Cloak 		back
+			      // 8294 Shoulders of the Fallen Cloak 	shoulder
+			    }
+
+	    
+		}
+
+
+
+	}

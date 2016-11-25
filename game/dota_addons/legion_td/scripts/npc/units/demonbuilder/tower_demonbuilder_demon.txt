@@ -1,0 +1,124 @@
+"tower_demonbuilder_demon"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/shadow_fiend/shadow_fiend.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"demonbuilder_upgrade_infernal"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "4"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "235"
+		"AttackDamageMax"       "270"
+		"AttackRate"            "0.9"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "100"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       ""
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "250"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "600"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      "Wearable1" { "ItemDef" "387" } // "Shadow Fiend's Head"
+			      "Wearable2" { "ItemDef" "486" } // "Shadow Fiend's Shoulders"
+				  "Wearable3" { "ItemDef" "488" } // "Shadow Fiend's Arms"
+
+
+			      // 387 Shadow Fiend's Head 						Head
+			      // 486 Shadow Fiend's Shoulders 					Shoulders
+			      // 488 Shadow Fiend's Arms 						Arms
+
+			      // 509 Shadow Fiend's Ambient Effects
+			      // 209 particles/units/heroes/hero_nevermore/shadow_fiend_ambient_eyes.vpcf
+			      // 352 particles/econ/items/shadow_fiend/sf_fire_arcana/sf_fire_arcana_ambient.vpcf
+			      // 354 particles/econ/items/shadow_fiend/sf_fire_arcana/sf_fire_arcana_ambient_eyes.vpcf
+			      // 463 particles/econ/items/shadow_fiend/sf_desolation/shadow_fiend_desolation_ambient.vpcf
+
+
+			      // 6260 Horned Visage of the Ravenous Fiend 		Head
+			      // 6261 Claws of the Ravenous Fiend 				Arms
+			      // 6262 Belt of the Ravenous Fiend 				Belt
+			      // 6263 Ragged Shoulders of the Ravenous Fiend 	back
+
+			      // 6996 Demon Eater 								Head
+
+			      // 7188 Horns of the Diabolical Fiend 			Head
+			      // 7193 Arms of the Diabolical Fiend 				Arms
+			      // 7279 Armor of the Diabolical Fiend 			Shoulders
+
+			      // 8259 Arms of Desolation 						Arms
+			      
+			    }
+		}
+	}
