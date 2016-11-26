@@ -1,0 +1,181 @@
+"tower_demonbuilder_winged_nightmare"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/queenofpain/queenofpain.vmdl"
+		"ModelScale"            "0.5"
+		"SoundSet"					    ""
+		"GameSoundsFile"				""
+		"Level"                 "1"
+		"HealthBarOffset"       "151"
+	
+		"Ability1"				"demonbuilder_upgrade_dark_angel"
+		"Ability2"				"ability_empty_2"
+		"Ability3"				"ability_empty_3"
+		"Ability4"				"sell"
+	
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "1"
+		"MagicalResistance"     "0"
+	
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "130"
+		"AttackDamageMax"       "142"
+		"AttackRate"            "0.6"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "700"
+		"ProjectileModel"       "particles/units/heroes/hero_queenofpain/queen_base_attack.vpcf"
+		"ProjectileSpeed"       "900"
+		
+		"Legion_AttackType"		"normal"
+		"Legion_DefendType"		"heavy"
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
+	
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
+	
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "250"
+		"MovementTurnRate"      "0.6"
+	
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "175"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "10"
+		"StatusManaRegen"       "10"
+	
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+	
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"AttachWearables"
+			    {
+			      "Wearable1" { "ItemDef" "26" } // "Queen of Pain's Weapon"
+			      "Wearable1" { "ItemDef" "82" } // "Queen of Pain's Wings "
+			      "Wearable1" { "ItemDef" "83" } // "Queen of Pain's Armor"
+			      "Wearable1" { "ItemDef" "84" } // "Queen of Pain's Hair"
+
+			      
+			      // 26 Queen of Pain's Weapon						weapon
+			      // 82 Queen of Pain's Wings 						back
+			      // 83 Queen of Pain's Armor 						shoulder
+			      // 84 Queen of Pain's Hair 						head
+
+			      // 4480 Wings of the Ruby Web 					back
+
+			      // 4517 Horns of the Wicked Succubus 				head
+			      // 4542 Dirk of the Wicked Succubus 				weapon
+			      // 4543 Wings of the Wicked Succubus 				back
+			      // 4550 Wraps of the Wicked Succubus 				shoulder
+
+			      // 4664 Torment Unbound 							back
+			      // 4665 Chain of Enduring Torment 				shoulder
+			      // 4666 Tiara of Enduring Torment 				head
+			      // 4667 Dagger of Enduring Torment 				weapon
+
+			      // 4962 Tear of Agony 							weapon
+
+			      // 5157 Shade of Anguish 							head
+			      // 5159 Guard of Anguish 							shoulder
+			      // 5160 Dagger of Anguish 						weapon
+			      // 5162 Maze of Anguish 							back
+
+			      // 5183 Wings of Vincere 							back
+			      // 5184 Crown of Vincere 							head
+			      // 5185 Guards of Vincere 						shoulder
+			      // 5186 Mace of Vincere 							weapon
+
+			      // 5296 Chained Wings								back
+			      // 5335 Chained Beauty 							head
+			      // 5359 Chained Spur 								weapon
+			      // 5361 Chained Guard 							shoulder
+
+			      // 5587 Epaulette of Blight 						shoulder
+			      // 5588 Horns of Blight 							head
+			      // 5589 Shard of Blight 							weapon
+			      // 5590 Wings of Blight 							back
+
+			      // 6572 Wings of Searing Pain 					back
+
+			      // 6601 Shoulders of the Dark Angel 				shoulder
+			      // 6602 Wings of the Dark Angel  					back
+			      // 6603 Horns of the Dark Angel 					head
+			      // 6604 Dagger of the Dark Angel 					weapon
+
+			      // 6683 Tormentor's Diadem 						head
+			      // 6839 Crimson Agony 							weapon
+			      // 6840 Crown of Sanguine Royalty 				head
+			      // 6841 Wings of Royal Ascension 					back
+			      // 6842 Vestments of Sanguine Royalty 			shoulder
+
+			      // 7189 Sash of Twilight Shade 					shoulder
+			      // 7190 Wings of Twilight Shade 					back
+			      // 7191 Dagger of Twilight Shade 					weapon
+			      // 7192 Style of Twilight Shade  					head
+
+			      // 7212 Bloodfeather Wings 						back
+
+			      // 7527 Wingers of the Arch Temptress 			back
+			      // 7528 Horns of the Arch Temptress 				head
+			      // 7529 Armor of the Arch Temptress 				shoulder
+			      // 7530 Dagger or the Arch Temptress 				weapon
+
+			      // 7548 Sinner's Embrace 							back
+
+			      // 7635 Pauldrons of the Obsidian Nightmare 		shoulder
+			      // 7636 Horns of the Obsidian Nightmare 			head
+			      // 7637 Blade of the Obsidian Nightmare 			weapon
+			      // 7638 Wings of the Obsidian Nightmare      		back
+
+			      // 7750 Veil of the Parasol's Sting 				back
+			      // 7753 Ancipitous Strike of the Parasol's Sting 	weapon
+			      // 7754 Jabot of the Parasol's Sting 				shoulder
+			      // 7755 Ferronniere of the Parasol's Sting 		head
+
+			      // 8107 Prongs of Delightful Affliction 			head
+			      // 8231 Mantle of Delightful Affliction 			shoulder
+			      // 8232 Span of Delightful Affliction 			back
+			      // 8233 Dagger of Delightful Affliction 			weapon
+			    }	    
+		}
+	}
