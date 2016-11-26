@@ -8,12 +8,14 @@
 	"Ability2"				"humanbuilder_spawn_archer"
 	"Ability3"				"humanbuilder_spawn_novice"
 	"Ability4"				"humanbuilder_spawn_gyrocopter_mk1"
-	"Ability5"				"humanbuilder_spawn_lieutnant"
+	"Ability5"				"humanbuilder_spawn_lieutenant"
 	"Ability9"				"humanbuilder_passive"
 
 	"AttributeBaseStrength"	"0"
 	"AttributeBaseAgility"	"0"
 	"AttributeBaseIntelligence"	"0"
+	
+	"Legion_Fraction"		"human"
 
 	"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
 	"AttackDamageMin"	"1"

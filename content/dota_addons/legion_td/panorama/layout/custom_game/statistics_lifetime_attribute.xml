@@ -1,0 +1,14 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/main_hud.css" />
+        <include src="file://{resources}/styles/custom_game/statistics.css" />
+        <include src="file://{resources}/styles/custom_game/statistics_lifetime.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/statistics_lifetime_attribute.js" />
+    </scripts>
+    <Panel class="LifetimeAttribute">
+        <Label text="Key" id="Key" class="LifetimeKey StatisticsText"/>
+        <Label text="Value" id="Value" class="LifetimeValue StatisticsText"/>
+    </Panel>
+</root>

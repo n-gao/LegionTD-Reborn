@@ -10,7 +10,7 @@
 ]]
 
 
-function diabolic_edict_start( keys )
+function diabolic_edict_start(keys)
     local caster = keys.caster
     local ability = keys.ability
 
@@ -20,16 +20,18 @@ function diabolic_edict_start( keys )
     ability.tower_bonus = ability:GetLevelSpecialValueFor("tower_bonus", ability:GetLevel() - 1)
     ability.damage = ability:GetAbilityDamage()
 
-    diabolic_edict_repeat({ caster=caster,
-        num_explosions=ability.num_explosions,
-        explosion_delay=ability.explosion_delay,
-        radius=ability.radius,
-        damage=ability.damage,
-        tower_bonus=ability.tower_bonus,
-        ability=ability })
+    diabolic_edict_repeat({
+        caster = caster,
+        num_explosions = ability.num_explosions,
+        explosion_delay = ability.explosion_delay,
+        radius = ability.radius,
+        damage = ability.damage,
+        tower_bonus = ability.tower_bonus,
+        ability = ability
+    })
 end
 
-function diabolic_edict_repeat( params )
+function diabolic_edict_repeat(params)
     if params.num_explosions == 0 then
         StopSoundEvent("Hero_Leshrac.Diabolic_Edict_lp", params.caster)
         return
@@ -49,7 +51,7 @@ function diabolic_edict_repeat( params )
         nil,
         params.radius,
         DOTA_UNIT_TARGET_TEAM_ENEMY,
-        DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_MECHANICAL + DOTA_UNIT_TARGET_BUILDING,
+        DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BUILDING,
         DOTA_UNIT_TARGET_FLAG_NONE,
         FIND_ANY_ORDER,
         false)
@@ -72,7 +74,7 @@ function diabolic_edict_repeat( params )
         --tower_bonus
         local damage = params.damage
         if target:IsTower() then
-            damage = damage * (1 + params.tower_bonus/100)
+            damage = damage * (1 + params.tower_bonus / 100)
         end
 
         local damageTable = {
@@ -80,7 +82,8 @@ function diabolic_edict_repeat( params )
             victim = target,
             damage = damage,
             damage_type = DAMAGE_TYPE_PHYSICAL,
-            ability = params.ability}
+            ability = params.ability
+        }
         ApplyDamage(damageTable)
     end
     params.caster:EmitSound("Hero_Leshrac.Diabolic_Edict")
@@ -90,9 +93,8 @@ function diabolic_edict_repeat( params )
     -- run the function again in jump_delay seconds
     Timers:CreateTimer(params.explosion_delay,
         function()
-            diabolic_edict_repeat( params )
-        end
-    )
+            diabolic_edict_repeat(params)
+        end)
 end
 
 function GetRandomXYInCircle(radius)

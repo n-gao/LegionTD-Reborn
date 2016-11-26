@@ -9,20 +9,21 @@
 	"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability1"							"alpha_wolf_critical_strike"
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "1"
+	"ArmorPhysical"         "5"
 	"MagicalResistance"     "0"
 
 	// Attack
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "62.5"
-	"AttackDamageMax"       "75.0"
+	"AttackDamageMin"       "75.5"
+	"AttackDamageMax"       "90.0"
 	"AttackRate"            "0.4"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
@@ -32,6 +33,8 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"income"
+	"Legion_Experience"		"90"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -40,7 +43,7 @@
 
 	// Bounds
 	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
   "CollisionSize"					"40"
 	"RingRadius"            "25"
 
@@ -66,7 +69,7 @@
 	//----------------------------------------------------------------
 	"TeamName"              "DOTA_TEAM_NEUTRALS"
 	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
 	// Creature Data

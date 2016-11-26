@@ -1,0 +1,28 @@
+"randombuilder_get_random_tier1"
+{
+  "BaseClass"                 "ability_datadriven"
+  "AbilityTextureName"      "rubick_spell_steal"
+  "MaxLevel"             "1"
+
+  "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+  "AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+  "AbilityGoldCost"				"0"
+  "AbilityCooldown"		    "1.0"
+  "AbilityCastRange"			"125"
+  "OnSpellStart"
+  {
+    "RunScript"
+    {
+      "ScriptFile"	"abilities/randombuilder/get_random.lua"
+      "Function"		"GetRandomUnit"
+    }
+  }
+	"AbilitySpecial"
+	{
+    "01"
+    {
+      "var_type"              "FIELD_INTEGER"
+      "tier"    "1"
+    }
+  }
+}

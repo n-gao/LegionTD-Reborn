@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_weaver.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability4"							"sell"
 	"Ability1"							"weaver_geminate_attack"
@@ -17,16 +18,16 @@
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "1"
+	"ArmorPhysical"         "0"
 	"MagicalResistance"     "0"
 
 	// Attack
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "68.75"
+	"AttackDamageMin"       "88.75"
 	"AttackDamageMax"       "93.75"
-	"AttackRate"            "0.45"
+	"AttackRate"            "0.85"
 	"AttackAnimationPoint"  "0.55"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "500"
@@ -35,6 +36,7 @@
 
 	"Legion_AttackType"		"pierce"
 	"Legion_DefendType"		"medium"
+	"Legion_Fraction"		"nature"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -54,7 +56,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "210"
+	"StatusHealth"          "120"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
@@ -68,7 +70,7 @@
 	//----------------------------------------------------------------
 	"TeamName"              "DOTA_TEAM_NEUTRALS"
 	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
 	// Creature Data

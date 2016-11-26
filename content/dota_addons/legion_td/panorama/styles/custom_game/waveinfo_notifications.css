@@ -1,0 +1,61 @@
+/*Shameless copy with some modifications of notifications library by bmddota https://github.com/bmddota/barebones*/
+
+.BarebonesBaseHud
+{
+    width: 100%;
+    height: 100%;
+}
+
+.BarebonesTopNotifications
+{
+    width: 100%;
+    height: 100%;
+    flow-children: down;
+}
+
+.NotificationLine
+{
+    margin-top: 0px;
+    flow-children: right;
+    horizontal-align: left;
+    vertical-align: middle;
+    text-align: left;
+    animation-name: scalein;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+}
+
+#WaveInfoNotifications
+{
+    flow-children: down;
+    horizontal-align: right;
+    text-align: left;
+    opacity: 1;
+    margin-top: 64px;
+    visibility: visible;
+    background-color: #222222EE;
+    padding: 5px;
+}
+
+.NotificationMessage
+{
+    color: #EEEEEE;
+    vertical-align: center;
+    horizontal-align: left;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@keyframes 'scalein' {
+  from {
+    opacity:0;
+    transform: translateX(200px);
+  }
+
+  to {
+    opacity:1;
+    transform: translateX(0px);
+  }
+}

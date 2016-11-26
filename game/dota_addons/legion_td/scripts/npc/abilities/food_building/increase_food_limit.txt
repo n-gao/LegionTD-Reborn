@@ -5,15 +5,15 @@
   "MaxLevel"             "12"
 
   "AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
-  "AbilityChannelTime" 			"1"
-  "AbilityDuration" 				"1"
+  "AbilityChannelTime" 			"10"
+  "AbilityDuration" 				"10"
   "AbilityGoldCost"         "20"
   "AbilitySpecial"
   {
     "01"
     {
       "var_type"      "FIELD_INTEGER"
-      "tango_cost"         "30"
+      "tango_cost"         "25"
     }
     "02"
     {

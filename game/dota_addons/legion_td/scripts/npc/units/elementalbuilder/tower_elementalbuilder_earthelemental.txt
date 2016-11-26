@@ -1,106 +1,100 @@
 "tower_elementalbuilder_earthelemental"
 {
-	// General
-	//----------------------------------------------------------------
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/sand_king/sand_king.vmdl"
-	"ModelScale"            "0.5"
-	"SoundSet"					    "Hero_SandKing"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "150"
-
-	"Ability1"							"elementalbuilder_upgrade_earthgod"
-	"Ability2"							"sandking_caustic_finale"
-	"Ability3"							"ability_empty_3"
-	"Ability4"							"sell"
-
-
-
-	// Armor
-	//----------------------------------------------------------------
-	"ArmorPhysical"         "4"
-	"MagicalResistance"     "0"
-
-	// Attack
-	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "56.25"
-	"AttackDamageMax"       "81.25"
-	"AttackRate"            "0.8"
-	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "90"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
-
-	"Legion_AttackType"		"normal"
-	"Legion_DefendType"		"heavy"
-
-	// Bounty
-	//----------------------------------------------------------------
-	"BountyGoldMin"         "0"
-	"BountyGoldMax"         "0"
-
-	// Bounds
-	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-	"RingRadius"            "30"
-
-	// Movement
-	//----------------------------------------------------------------
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "270"
-	"MovementTurnRate"      "0.6"
-
-	// Status
-	//----------------------------------------------------------------
-	"StatusHealth"          "1010"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
-
-	// Vision
-	//----------------------------------------------------------------
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	// Team
-	//----------------------------------------------------------------
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/heroes/sand_king/sand_king.vmdl"
+	"ModelScale"	"0.5"
+	"SoundSet"	"Hero_SandKing"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"150"
+	"Vscripts"	"ai/ai_default.lua"
+	"Ability1"	"elementalbuilder_upgrade_earthgod"
+	"Ability2"	"sandking_caustic_finale"
+	"Ability3"	"ability_empty_3"
+	"Ability4"	"sell"
+	"ArmorPhysical"	"4"
+	"MagicalResistance"	"0"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"147.25"
+	"AttackDamageMax"	"156.25"
+	"AttackRate"	"0.7"
+	"AttackAnimationPoint"	"0.4"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"90"
+	"ProjectileModel"	""
+	"ProjectileSpeed"	"0"
+	"Legion_AttackType"	"normal"
+	"Legion_DefendType"	"heavy"
+	"Legion_Fraction"	"elemental"
+	"BountyGoldMin"	"0"
+	"BountyGoldMax"	"0"
+	"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
+	"RingRadius"	"30"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"270"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"600"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"0"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	"precache"
 	{
-		"particle"  "particles/units/heroes/hero_sandking/sandking_caustic_finale_debuff.vpcf"
-		"particle"  "particles/units/heroes/hero_sandking/sandking_caustic_finale_explode.vpcf"
+		"particle"	"particles/units/heroes/hero_sandking/sandking_caustic_finale_debuff.vpcf"
+		"particle"	"particles/units/heroes/hero_sandking/sandking_caustic_finale_explode.vpcf"
 	}
-	// Creature Data
-	//----------------------------------------------------------------
+
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"0.0"
 			}
+
 		}
+
 		"AttachWearables"
 		{
-			"Wearable1" { "ItemDef" "4382" }
-			"Wearable2" { "ItemDef" "4712" }
-			"Wearable3" { "ItemDef" "4713" }
-			"Wearable4" { "ItemDef" "4771" }
-      "Wearable5" { "ItemDef" "4381" }
+			"Wearable1"
+			{
+				"ItemDef"	"4382"
+			}
+
+			"Wearable2"
+			{
+				"ItemDef"	"4712"
+			}
+
+			"Wearable3"
+			{
+				"ItemDef"	"4713"
+			}
+
+			"Wearable4"
+			{
+				"ItemDef"	"4771"
+			}
+
+			"Wearable5"
+			{
+				"ItemDef"	"4381"
+			}
+
 		}
+
 	}
+
 }

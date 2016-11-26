@@ -34,7 +34,7 @@
         "01"
         {
             "var_type"          "FIELD_INTEGER"
-            "aura_radius"       "300"
+            "aura_radius"       "600"
         }
         "02"
         {
@@ -189,7 +189,7 @@
             "Aura"          "modifier_supernova_burn_datadriven"
             "Aura_Radius"   "%aura_radius"
             "Aura_Teams"    "DOTA_UNIT_TARGET_TEAM_ENEMY"
-            "Aura_Types"    "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL"
+            "Aura_Types"    "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
 
             "OnCreated"
             {

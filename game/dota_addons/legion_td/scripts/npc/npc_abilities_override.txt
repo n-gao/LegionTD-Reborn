@@ -113,7 +113,7 @@
 
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"1.5"
+		"AbilityCooldown"				"1"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -181,12 +181,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"far_radius"			"75"
+				"far_radius"			"105"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"pull_radius"			"120"
+				"pull_radius"			"150"
 			}
 			"04"
 			{
@@ -196,7 +196,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"near_radius"			"55"
+				"near_radius"			"75"
 			}
 			"06"
 			{
@@ -371,7 +371,7 @@
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"damage_per_second"				"25"
+				"damage_per_second"				"50"
 			}
 		}
 	}
@@ -748,6 +748,58 @@
 			{
 				"var_type"			"FIELD_INTEGER"
 				"static_remnant_damage"			"180"
+			}
+		}
+	}
+		"harpy_storm_chain_lightning"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5319"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		// Unit Targeting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"900"
+		"AbilityCastPoint"				"0.5"
+		"AbilityCooldown"				"4.0"
+		"AbilityManaCost"				"50"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"initial_damage"		"10"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"jump_range"			"500"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"jump_delay"			"0.25"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_percent_loss"	"25.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_targets"			"4"
 			}
 		}
 	}

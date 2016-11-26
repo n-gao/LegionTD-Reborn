@@ -1,89 +1,64 @@
 "incomeunit_little_centaur"
 {
-	// General
-	//----------------------------------------------------------------
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/creeps/neutral_creeps/n_creep_centaur_med/n_creep_centaur_med.vmdl"
-	"ModelScale"            "0.5"
-	"SoundSet"					"n_creep_Melee"
-	"GameSoundsFile"				"soundevents/game_sounds_creeps.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "150"
-
-	"Ability1"							""
-
-	// Armor
-	//----------------------------------------------------------------
-	"ArmorPhysical"         "8"
-	"MagicalResistance"     "0"
-
-	// Attack
-	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "56.25"
-	"AttackDamageMax"       "62.5"
-	"AttackRate"            "0.9"
-	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "125"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
-
-	"Legion_AttackType"		"normal"
-	"Legion_DefendType"		"heavy"
-
-	// Bounty
-	//----------------------------------------------------------------
-	"BountyGoldMin"         "7"
-	"BountyGoldMax"         "7"
-
-	// Bounds
-	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-  "CollisionSize"					"40"
-	"RingRadius"            "25"
-
-	// Movement
-	//----------------------------------------------------------------
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "270"
-	"MovementTurnRate"      "0.6"
-
-	// Status
-	//----------------------------------------------------------------
-	"StatusHealth"          "475"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
-
-	// Vision
-	//----------------------------------------------------------------
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	// Team
-	//----------------------------------------------------------------
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-	// Creature Data
-	//----------------------------------------------------------------
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/creeps/neutral_creeps/n_creep_centaur_med/n_creep_centaur_med.vmdl"
+	"ModelScale"	"0.5"
+	"SoundSet"	"n_creep_Melee"
+	"GameSoundsFile"	"soundevents/game_sounds_creeps.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"150"
+	"Vscripts"	"ai/ai_default.lua"
+	"Ability1"	""
+	"ArmorPhysical"	"8"
+	"MagicalResistance"	"25"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"56.25"
+	"AttackDamageMax"	"62.5"
+	"AttackRate"	"1.3"
+	"AttackAnimationPoint"	"0.5"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"125"
+	"ProjectileModel"	""
+	"ProjectileSpeed"	"0"
+	"Legion_AttackType"	"normal"
+	"Legion_DefendType"	"heavy"
+	"Legion_Fraction"	"income"
+	"Legion_Experience"	"75"
+	"BountyGoldMin"	"7"
+	"BountyGoldMax"	"7"
+	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+	"CollisionSize"	"40"
+	"RingRadius"	"25"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"270"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"600"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"0"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"0.0"
 			}
+
 		}
+
 	}
+
 }

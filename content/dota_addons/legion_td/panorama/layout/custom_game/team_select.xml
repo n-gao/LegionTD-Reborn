@@ -16,7 +16,11 @@
 				<Panel id="OptionListGroup">
 					<Label id="OptionTitle" text="#Options_title" />
 					<Panel id="Options">
-						<ToggleButton id="RtsToggle" onactivate="ReturnToSenderTogglePressed()" text="#Option_Return_To_Sender"/>
+						<ToggleButton id="tango_limit" onactivate="VoteOptionClicked('tango_limit')" text="#Option_Income_Limit"/>
+						<ToggleButton id="return_to_sender" onactivate="VoteOptionClicked('return_to_sender')" text="#Option_Return_To_Sender"/>
+						<ToggleButton id="fog_of_war" onactivate="VoteOptionClicked('fog_of_war')" text="#Option_Fog_Of_War"/>
+						<ToggleButton id="deactivate_duels" onactivate="VoteOptionClicked('deactivate_duels')" text="#Option_Deactivate_Duels"/>
+						<ToggleButton id="hard_mode" onactivate="VoteOptionClicked('hard_mode')" text="#Option_Hard_Mode"/>
 					</Panel>
 				</Panel>
 			</Panel>
@@ -78,6 +82,9 @@
 				</Panel>
 
 				<!--Start and lock button-->
+				<Button id="WaitForVoteButton" class="PlayButton">
+					<Label id="WaitSecondsLabel" text ="10" />
+				</Button>
 				<Button id="LockAndStartButton" class="PlayButton" onactivate="OnLockAndStartPressed()">
 					<Label text="#custom_game_team_select_lock_start" />
 				</Button>
@@ -87,5 +94,6 @@
 
 			</Panel>
 		</Panel>
+		
 	</Panel>
 </root>

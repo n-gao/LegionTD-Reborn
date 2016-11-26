@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"AbilityLayout"   "6"
 	"Ability1"							"naturebuilder_upgrade_shroom"
@@ -19,16 +20,16 @@
 
 	// Armor
 	//----------------------------------------------------------------
-	"ArmorPhysical"         "4"
+	"ArmorPhysical"         "1"
 	"MagicalResistance"     "30"
 
 	// Attack
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "43.75"
+	"AttackDamageMin"       "55.75"
 	"AttackDamageMax"       "62.5"
-	"AttackRate"            "0.5"
+	"AttackRate"            "0.62"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "90"
@@ -37,6 +38,7 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"nature"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -56,7 +58,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "450"
+	"StatusHealth"          "350"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
@@ -70,7 +72,7 @@
 	//----------------------------------------------------------------
 	"TeamName"              "DOTA_TEAM_NEUTRALS"
 	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
 	// Creature Data

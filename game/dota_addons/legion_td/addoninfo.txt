@@ -1,9 +1,9 @@
 "AddonInfo"
 {
   "TeamCount" "2"
-  "maps"  "testmap"
+  "maps"  "legion_td_4v4"
   "IsPlayable"  "1"
-  "testmap"
+  "legion_td_4v4"
   {
     "MaxPlayers"    "8"
   }

@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability4"				"sell"
 	"Ability2"				"ability_empty_2"
@@ -24,10 +25,10 @@
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "112.5"
-	"AttackDamageMax"       "125.0"
-	"AttackRate"            ".6"
-	"AttackAnimationPoint"  "0.5"
+	"AttackDamageMin"       "162.5"
+	"AttackDamageMax"       "175.0"
+	"AttackRate"            "0.405"
+	"AttackAnimationPoint"  "0.35"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "350"
 	"ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
@@ -35,6 +36,7 @@
 
 	"Legion_AttackType"		"pierce"
 	"Legion_DefendType"		"medium"
+	"Legion_Fraction"		"human"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -54,7 +56,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "175"
+	"StatusHealth"          "350"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
@@ -68,7 +70,7 @@
 	//----------------------------------------------------------------
 	"TeamName"              "DOTA_TEAM_NEUTRALS"
 	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
 	// Creature Data

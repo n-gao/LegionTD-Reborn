@@ -9,6 +9,7 @@
 	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"Ability4"							"sell"
 	"Ability1"							"shroom_corrosive_skin"
@@ -24,9 +25,9 @@
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "37.5"
-	"AttackDamageMax"       "50.0"
-	"AttackRate"            "0.5"
+	"AttackDamageMin"       "107.5"
+	"AttackDamageMax"       "112.0"
+	"AttackRate"            "0.6"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "90"
@@ -35,6 +36,7 @@
 
 	"Legion_AttackType"		"arcane"
 	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"nature"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -54,7 +56,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "880"
+	"StatusHealth"          "950"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
@@ -68,7 +70,7 @@
 	//----------------------------------------------------------------
 	"TeamName"              "DOTA_TEAM_NEUTRALS"
 	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
 	"precache"

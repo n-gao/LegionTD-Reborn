@@ -24,7 +24,7 @@
 		"04"
 		{
 			"var_type"			"FIELD_FLOAT"
-			"damge_perc"		"0.75"
+			"damge_perc"		"0.55"
 		}
 	}
 	"Modifiers"

@@ -1,0 +1,70 @@
+.RankingStatisticRoot {
+    flow-children: down;
+}
+
+#RankingAttributePanel {
+    width: 100%;
+}
+
+#RankingAttributeDropDown {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#RankingLabels {
+    width: 100%;
+    margin: 5px;
+}
+
+#RankingList {
+    flow-children: down;
+    max-height: 700px;
+    overflow: scroll;
+}
+
+.RankingAttribute {
+    width: 400px;
+}
+
+.RankingRank {
+    horizontal-align: left;
+}
+
+.RankingValue {
+    horizontal-align: middle;
+}
+
+.RankingName {
+    horizontal-align: right;
+}
+
+.Headline {
+    text-transform: uppercase;
+}
+
+#RankingLocal {
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-top: 1px solid #AAAAAA;
+    padding-top: 5px;
+    padding-left: -5px;
+    padding-right: -5px;
+}
+
+#Name {
+    margin-right: 40px;
+    max-width: 100px;
+    overflow: scroll;
+}
+
+DOTAAvatarImage
+{
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  vertical-align: top;
+  horizontal-align: right;
+}

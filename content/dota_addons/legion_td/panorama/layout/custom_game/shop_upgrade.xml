@@ -1,0 +1,20 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/main_hud.css" />
+    <include src="file://{resources}/styles/custom_game/shop.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/shop_upgrade.js" />
+  </scripts>
+  <Panel hittest="true">
+    <Button id="KingHealthPanel" onmouseover="OnHover()" onmouseout="OnEndHover()" onactivate="OnUpgradeClicked()" class="Upgrade">
+      <DOTAAbilityImage id="Icon" src="file://{resources}/images/custom_game/spellicons/attribute_bonus.png" />
+      <Panel class="TangoCostPanel">
+        <Label class="TangoCost" text="Cost: 100"/>
+        <Label class="GoldIncome" text="Income: 3" />
+        <Label id="DescLabel1" text="Upgrade" />
+        <Label id="DescLabel2" text="Upgrade" />
+      </Panel>
+    </Button>
+  </Panel>
+</root>

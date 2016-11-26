@@ -1,0 +1,21 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/shop_unit.css" />
+    <include src="file://{resources}/styles/custom_game/main_hud.css" />
+    <include src="file://{resources}/styles/custom_game/shop.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/shop_unit.js" />
+  </scripts>
+  <Panel hittest="true" class="ShopUnitPanel">
+    <Button class="UnitButton" onmouseover="OnHover()" onmouseout="OnEndHover()" onactivate="OnUnitClicked()">
+      <DOTAAbilityImage id="UnitIcon" src="file://{resources}/images/custom_game/spellicons/send_incomeunit_golem.png" />
+      <Panel id="UnitTangoCostPanel" class="TangoCostPanel">
+        <Label id="TangoCostLabel" class="TangoCost" text="0" />
+        <Label id="GoldIncomeLabel" class="GoldIncome" text="0" />
+        <Label id="DescLabel" text="Skill: --" />
+      </Panel>
+      <Panel id="UnitTint" />
+    </Button>
+  </Panel>
+</root>

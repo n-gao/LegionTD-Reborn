@@ -1,4 +1,4 @@
-function Suicide( keys )
+function Suicide(keys)
     local caster = keys.caster
     local caster_location = caster:GetAbsOrigin()
     local ability = keys.ability

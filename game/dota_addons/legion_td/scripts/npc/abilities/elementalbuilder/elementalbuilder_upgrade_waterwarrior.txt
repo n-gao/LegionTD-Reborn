@@ -1,56 +1,65 @@
 "elementalbuilder_upgrade_waterwarrior"
 {
-  "BaseClass"               "ability_datadriven"
-  "AbilityTextureName"      "rattletrap_power_cogs"
-  "MaxLevel"                "1"
-
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityGoldCost"				"105"
-	"AbilityCooldown"		    "1.0"
+	"BaseClass"	"ability_datadriven"
+	"AbilityTextureName"	"rattletrap_power_cogs"
+	"MaxLevel"	"1"
+	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityGoldCost"	"135"
+	"AbilityCooldown"	"1.0"
 	"OnSpellStart"
 	{
 		"RunScript"
 		{
 			"ScriptFile"	"unit.lua"
-			"Function"		"upgrade_unit"
+			"Function"	"UpgradeUnit"
 		}
+
 	}
+
 	"AbilitySpecial"
 	{
-    "01"
-    {
-      "var_type"              "FIELD_INTEGER"
-      "atk_damage_tooltip"    "65.0"
-    }
-    "02"
-    {
-      "var_type"              "FIELD_FLOAT"
-      "atk_speed_tooltip"     "0.85"
-    }
-    "03"
-    {
-      "var_type"              "FIELD_INTEGER"
-      "atk_range_tooltip"     "90"
-    }
-    "04"
-    {
-      "var_type"              "FIELD_INTEGER"
-      "health_tooltip"        "500"
-    }
-    "05"
-    {
-      "var_type"              "FIELD_INTEGER"
-      "armor_tooltip"         "5"
-    }
-    "06"
-    {
-      "var_type"      "FIELD_INTEGER"
-      "food_cost"     "1"
-    }
-    "07"
-    {
-      "var_type"			"FIELD_INTEGER"
-      "unitID"				"56"
-    }
+		"01"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_damage_tooltip"	"93.125"
+		}
+
+		"02"
+		{
+			"var_type"	"FIELD_FLOAT"
+			"atk_speed_tooltip"	"0.67"
+		}
+
+		"03"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_range_tooltip"	"90"
+		}
+
+		"04"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"health_tooltip"	"520"
+		}
+
+		"05"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"armor_tooltip"	"0"
+		}
+
+		"06"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"food_cost"	"1"
+		}
+
+		"07"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"unitID"	"56"
+		}
+
 	}
+
 }

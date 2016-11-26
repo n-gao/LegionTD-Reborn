@@ -1,87 +1,75 @@
 "tower_naturebuilder_treebeard"
 {
-	// General
-	//----------------------------------------------------------------
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/treant_protector/treant_protector.mdl"
-	"ModelScale"            "0.5"
-	"SoundSet"				"Hero_Treant"
-	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "150"
-	"Vscripts"              "ai/naturebuilder/ai_treebeard.lua"
-
-	"Ability4"				"sell"
-	"Ability1"				"treebeard_overgrowth"
-	"Ability2"				"treebeard_synergy"
-	"Ability3"				"ability_empty_3"
-
-	// Armor
-	//----------------------------------------------------------------
-	"ArmorPhysical"         "7"
-	"MagicalResistance"     "40"
-
-	// Attack
-	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "300"
-	"AttackDamageMax"       "325"
-	"AttackRate"            "1"
-	"AttackAnimationPoint"  "0.6"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "100"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
-
-	"Legion_AttackType"		"normal"
-	"Legion_DefendType"		"heavy"
-
-	// Bounty
-	//----------------------------------------------------------------
-	"BountyGoldMin"         "0"
-	"BountyGoldMax"         "0"
-
-	// Bounds
-	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-	"RingRadius"            "30"
-
-	// Movement
-	//----------------------------------------------------------------
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "270"
-	"MovementTurnRate"      "0.6"
-
-	// Status
-	//----------------------------------------------------------------
-	"StatusHealth"          "1220"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
-
-	// Vision
-	//----------------------------------------------------------------
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	// Team
-	//----------------------------------------------------------------
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/heroes/treant_protector/treant_protector.mdl"
+	"ModelScale"	"0.5"
+	"SoundSet"	"Hero_Treant"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"150"
+	"Vscripts"	"ai/naturebuilder/ai_treebeard.lua"
+	"Ability4"	"sell"
+	"Ability1"	"treebeard_overgrowth"
+	"Ability2"	"treebeard_synergy"
+	"Ability3"	"ability_empty_3"
+	"ArmorPhysical"	"6"
+	"MagicalResistance"	"40"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"350"
+	"AttackDamageMax"	"375"
+	"AttackRate"	"0.75"
+	"AttackAnimationPoint"	"0.6"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"100"
+	"ProjectileModel"	""
+	"ProjectileSpeed"	"0"
+	"Legion_AttackType"	"normal"
+	"Legion_DefendType"	"heavy"
+	"Legion_Fraction"	"nature"
+	"BountyGoldMin"	"0"
+	"BountyGoldMax"	"0"
+	"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
+	"RingRadius"	"30"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"270"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"1700"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"0"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	"Creature"
-    {
-        "AttachWearables" // Default npc_dota_hero_treant
-        {
-            "1" { "ItemDef" "230" } // Treant Protector's Feet
-            "2" { "ItemDef" "229" } // Treant Protector's Hands
-            "3" { "ItemDef" "227" } // Treant Protector's Head
-            "4" { "ItemDef" "228" } // Treant Protector's Foliage
-        }
-    }
+	{
+		"AttachWearables"
+		{
+			"1"
+			{
+				"ItemDef"	"230"
+			}
 
+			"2"
+			{
+				"ItemDef"	"229"
+			}
+
+			"3"
+			{
+				"ItemDef"	"227"
+			}
+
+			"4"
+			{
+				"ItemDef"	"228"
+			}
+
+		}
+
+	}
 
 }

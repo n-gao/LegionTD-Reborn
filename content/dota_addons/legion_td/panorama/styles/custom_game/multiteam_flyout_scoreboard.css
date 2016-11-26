@@ -1,11 +1,11 @@
-@define BACKGROUND_COLOR: #111111;
+@define BACKGROUND_COLOR: #1A1A1A;
 @define BACKGROUND_COLOR_WHITE: #FFFFFF28;
 
 .FlyoutScoreboardRoot
 {
 	horizontal-align: left;
 	vertical-align: top;
-	margin-top: 200px;
+	margin-top: 150px;
 	flow-children: down;
 	padding: 10px;
 
@@ -80,7 +80,7 @@
 
 .local_player_team #PlayersContainer
 {
-	box-shadow: fill #ffffff40 -3px -3px 3px 6px;
+	box-shadow: fill #44444490 -1px -1px 1px 2px;
 }
 
 .TeamId
@@ -134,20 +134,20 @@
 {
 	text-shadow: 2px 2px 2px black;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 14px;
 	vertical-align: middle;
 	color: #e3e3e3;
 }
 
 .PlayerRow
 {
-	height: 32px;
+	height: 40px;
 }
 
 #PlayerRowContainer
 {
 	flow-children: right;
-	height: 32px;
+	height: 48px;
 }
 
 #HeroIcon
@@ -160,7 +160,8 @@
 #KillsContainer,
 #LeaksContainer,
 #GoldIncomeContainer,
-#TangoIncomeContainer
+#TangoIncomeContainer,
+#TowerValueContainer
 {
 	height: 100%;
 }
@@ -211,7 +212,8 @@
 #Kills,
 #Leaks,
 #GoldIncome,
-#TangoIncome
+#TangoIncome,
+#TowerValue
 {
 	vertical-align: center;
 	font-size: 18px;
@@ -223,7 +225,7 @@
 #PlayerName
 {
 	color: white;
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: -4px;
 	margin-top: 0px;
 	white-space: nowrap;
@@ -232,9 +234,9 @@
 #HeroNameAndDescription
 {
 	color: #898b8c;
-	font-size: 13px;
+	font-size: 14px;
 	text-shadow: 2px 2px 2px black;
-	margin-top: -1px;
+	margin-top: 4px;
 }
 #MuteButton
 {
@@ -274,7 +276,7 @@
 	vertical-align: bottom;
 	horizontal-align: right;
 	color: #ffd300;
-	font-size: 13px;
+	font-size: 14px;
 	text-shadow: 2px 2px 2px black;
 	visibility: collapse;
 }
@@ -300,6 +302,7 @@
 .is_local_player #GoldIncome,
 .is_local_player #TangoIncome,
 .is_local_player #Level,
+.is_local_player #TowerValue,
 .is_local_player #HeroName
 {
 	color: white;
@@ -312,12 +315,12 @@
 
 .ScoreCol_PlayerDetails
 {
-	width: 170px;
+	width: 150px;
 }
 
 .ScoreCol_Hero
 {
-	width: 53px;
+	width: 75px;
 }
 
 .ScoreCol_TeamScore
@@ -329,8 +332,9 @@
 .ScoreCol_Kills,
 .ScoreCol_Leaks,
 .ScoreCol_Gold_Income,
-.ScoreCol_Tango_Income
+.ScoreCol_Tango_Income,
+.ScoreCol_Tower_Value
 {
-	width: 50px;
+	width: 60px;
 	text-align: center;
 }

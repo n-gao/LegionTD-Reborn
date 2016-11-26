@@ -28,15 +28,25 @@
 		"cost"						"short"
 		"playerID"					"short"
 	}
-	"toggle_income_limit"
+
+	"vote_option_clicked"
 	{
-		"playerID"						"short"
-		"value"					"bool"
-	}
-	"toggle_return_to_sender"
-	{
-		"playerID"						"short"
-		"value"					"bool"
+		"option"			"string"
+		"playerID"		"short"
+		"value"				"bool"
 	}
 
+	"request_stored_data"
+	{
+		"playerID"			"short"
+		"steamID"			"uint64"
+	}
+
+	"request_ranking"
+	{
+		"playerID"			"short"
+		"attribute"			"string"
+		"from"				"long"
+		"to"				"long"
+	}
 }

@@ -1,56 +1,65 @@
 "naturebuilder_upgrade_big_centaur"
 {
-  "BaseClass"                "ability_datadriven"
-  "AbilityTextureName"      "rattletrap_power_cogs"
-  "MaxLevel"                "1"
-
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityGoldCost"				"425"
-	"AbilityCooldown"		    "1.0"
+	"BaseClass"	"ability_datadriven"
+	"AbilityTextureName"	"rattletrap_power_cogs"
+	"MaxLevel"	"2"
+	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityGoldCost"	"425"
+	"AbilityCooldown"	"1.0"
 	"OnSpellStart"
 	{
 		"RunScript"
 		{
 			"ScriptFile"	"unit.lua"
-			"Function"		"upgrade_unit"
+			"Function"	"UpgradeUnit"
 		}
+
 	}
+
 	"AbilitySpecial"
 	{
-    "01"
-    {
-      "var_type"              "FIELD_INTEGER"
-      "atk_damage_tooltip"    "531.25"
-    }
-    "02"
-    {
-      "var_type"              "FIELD_FLOAT"
-      "atk_speed_tooltip"     "1.3"
-    }
-    "03"
-    {
-      "var_type"              "FIELD_INTEGER"
-      "atk_range_tooltip"     "90"
-    }
-    "04"
-    {
-      "var_type"              "FIELD_INTEGER"
-      "health_tooltip"        "2040"
-    }
-    "05"
-    {
-      "var_type"              "FIELD_INTEGER"
-      "armor_tooltip"         "6"
-    }
-    "06"
-    {
-      "var_type"      "FIELD_INTEGER"
-      "food_cost"     "1"
-    }
-    "07"
-    {
-      "var_type"			"FIELD_INTEGER"
-      "unitID"				"14"
-    }
+		"01"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_damage_tooltip"	"416.25"
+		}
+
+		"02"
+		{
+			"var_type"	"FIELD_FLOAT"
+			"atk_speed_tooltip"	"0.87"
+		}
+
+		"03"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_range_tooltip"	"90"
+		}
+
+		"04"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"health_tooltip"	"2000"
+		}
+
+		"05"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"armor_tooltip"	"8"
+		}
+
+		"06"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"food_cost"	"2"
+		}
+
+		"07"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"unitID"	"14"
+		}
+
 	}
+
 }

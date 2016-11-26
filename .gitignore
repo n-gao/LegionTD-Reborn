@@ -1,18 +1,11 @@
 #Ignore everything
-/*
-/*/
-game/*
-game/dota_addons/*
+*.vcss_c
+*.vjs_c
+*.vxml_c
+game/dota_addons/legion_td/materials/*
+game/dota_addons/legion_td/panorama/*
 game/dota_addons/legion_td/tools_thumbnail_cache.bin
 game/dota_addons/legion_td/tools_asset_info.bin
-content/*
-content/dota_addons/*
 
-#But not these files
-!.gitignore
-!game/
-!game/dota_addons/
-!game/dota_addons/legion_td
-!content/
-!content/dota_addons/
-!content/dota_addons/legion_td/
+*.vpcf_c
+game/dota_addons/legion_td/scripts/vscripts/libs/storage_settings.kv

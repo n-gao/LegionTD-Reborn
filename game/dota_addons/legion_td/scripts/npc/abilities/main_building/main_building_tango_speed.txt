@@ -6,7 +6,7 @@
 	"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 	"AbilityChannelTime" 			"1"
 	"AbilityDuration" 				"1"
-	"AbilityGoldCost"					"60 120 180 240 300"
+	"AbilityGoldCost"					"90 180 290 400 510"
 	"OnChannelSucceeded"
 	{
 		"RunScript"

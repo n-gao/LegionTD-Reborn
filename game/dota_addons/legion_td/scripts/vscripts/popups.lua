@@ -1,5 +1,5 @@
 local popup = {}
- 
+
 POPUP_SYMBOL_PRE_PLUS = 0
 POPUP_SYMBOL_PRE_MINUS = 1
 POPUP_SYMBOL_PRE_SADFACE = 2
@@ -122,13 +122,13 @@ function PopupMultiplier(target, number)
     local particleName = "particles/custom/alchemist_unstable_concoction_timer.vpcf"
     local preSymbol = 0 --none
     local postSymbol = 4 --crit
-    local digits = string.len(number)+1
+    local digits = string.len(number) + 1
     local targetPos = target:GetAbsOrigin()
 
-    local particle = ParticleManager:CreateParticle( particleName, PATTACH_CUSTOMORIGIN, target )
-    ParticleManager:SetParticleControl(particle, 0, Vector(targetPos.x, targetPos.y, targetPos.z+322))
-    ParticleManager:SetParticleControl( particle, 1, Vector( preSymbol, number, postSymbol) )
-    ParticleManager:SetParticleControl( particle, 2, Vector( digits, 0, 0) )
+    local particle = ParticleManager:CreateParticle(particleName, PATTACH_CUSTOMORIGIN, target)
+    ParticleManager:SetParticleControl(particle, 0, Vector(targetPos.x, targetPos.y, targetPos.z + 322))
+    ParticleManager:SetParticleControl(particle, 1, Vector(preSymbol, number, postSymbol))
+    ParticleManager:SetParticleControl(particle, 2, Vector(digits, 0, 0))
 end
 
 function PopupLegion(target, number)
@@ -136,17 +136,17 @@ function PopupLegion(target, number)
 
     local digits = string.len(number)
     local targetPos = target:GetAbsOrigin()
-    local particle = ParticleManager:CreateParticle( particleName, PATTACH_CUSTOMORIGIN, target )
-    ParticleManager:SetParticleControl( particle, 1, Vector( 10, number, 0) )
-    ParticleManager:SetParticleControl( particle, 2, Vector( digits, 0, 0) )
-    ParticleManager:SetParticleControl( particle, 3, Vector(targetPos.x, targetPos.y, targetPos.z+322) )
+    local particle = ParticleManager:CreateParticle(particleName, PATTACH_CUSTOMORIGIN, target)
+    ParticleManager:SetParticleControl(particle, 1, Vector(10, number, 0))
+    ParticleManager:SetParticleControl(particle, 2, Vector(digits, 0, 0))
+    ParticleManager:SetParticleControl(particle, 3, Vector(targetPos.x, targetPos.y, targetPos.z + 322))
 end
 
 function PopupKillbanner(target, name)
     -- Possible names: firstblood, doublekill, triplekill, rampage, multikill_generic
-    local particleName = "particles/econ/events/killbanners/screen_killbanner_compendium14_"..name..".vpcf"
+    local particleName = "particles/econ/events/killbanners/screen_killbanner_compendium14_" .. name .. ".vpcf"
 
-    local particle = ParticleManager:CreateParticle( particleName, PATTACH_EYES_FOLLOW, target )
+    local particle = ParticleManager:CreateParticle(particleName, PATTACH_EYES_FOLLOW, target)
 end
 
 return popups

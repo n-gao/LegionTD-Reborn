@@ -51,9 +51,11 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 			ultStateOrTime = Game.GetPlayerUltimateStateOrTime( playerId );
 			_ScoreboardUpdater_SetTextSafe( playerPanel, "TangoIncome", morePlayerInfo.tango_income );
 			_ScoreboardUpdater_SetTextSafe( playerPanel, "GoldIncome", morePlayerInfo.gold_income );
+			_ScoreboardUpdater_SetTextSafe( playerPanel, "TowerValue", morePlayerInfo.towerValue);
 		} else {
 			_ScoreboardUpdater_SetTextSafe( playerPanel, "TangoIncome", "-" );
 			_ScoreboardUpdater_SetTextSafe( playerPanel, "GoldIncome", "-" );
+		_ScoreboardUpdater_SetTextSafe( playerPanel, "TowerValue", "-" );
 		}
 		goldValue = playerInfo.player_gold;
 

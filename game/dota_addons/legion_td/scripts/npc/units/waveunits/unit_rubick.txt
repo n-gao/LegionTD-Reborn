@@ -1,90 +1,104 @@
 "unit_rubick"
 {
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/rubick/rubick.vmdl"
-	"ModelScale"            "0.6"
-	"SoundSet"							"Hero_Rubick"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "140"
-
-	"Ability1"							"ogre_magi_ignite"
-
-	"ArmorPhysical"         "3"
-	"MagicalResistance"     "15"
-
-	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "75.0"
-	"AttackDamageMax"       "87.5"
-	"AttackRate"            "0.55"
-	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "400"
-	"ProjectileModel"       "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
-	"ProjectileSpeed"       "600"
-
-	"Legion_AttackType"		"arcane"
-	"Legion_DefendType"		"light"
-
-	"BountyGoldMin"         "5.0"
-	"BountyGoldMax"         "5.0"
-
-	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"					"50"
-	"RingRadius"            "50"
-
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "300"
-	"MovementTurnRate"      "0.6"
-
-	"StatusHealth"          "650"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "150"
-	"StatusManaRegen"       "10"
-
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/heroes/rubick/rubick.vmdl"
+	"ModelScale"	"0.6"
+	"SoundSet"	"Hero_Rubick"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"140"
+	"Vscripts"	"ai/waves/ai_rubick.lua"
+	"Ability1"	"ogre_magi_ignite"
+	"ArmorPhysical"	"3"
+	"MagicalResistance"	"15"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"75.0"
+	"AttackDamageMax"	"87.5"
+	"AttackRate"	"0.75"
+	"AttackAnimationPoint"	"0.2"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"400"
+	"ProjectileModel"	"particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
+	"ProjectileSpeed"	"600"
+	"Legion_AttackType"	"arcane"
+	"Legion_DefendType"	"light"
+	"Legion_Experience"	"105"
+	"Legion_Fraction"	"wave"
+	"BountyGoldMin"	"5.0"
+	"BountyGoldMax"	"5.0"
+	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+	"CollisionSize"	"50"
+	"RingRadius"	"50"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"300"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"850"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"150"
+	"StatusManaRegen"	"10"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	"precache"
 	{
-		"particle"  "particles/units/heroes/hero_ogre_magi/ogre_magi_ignite.vpcf"
+		"particle"	"particles/units/heroes/hero_ogre_magi/ogre_magi_ignite.vpcf"
 	}
 
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"100.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"100.0"
 			}
+
 		}
+
 		"OffensiveAbilitites"
 		{
 			"Ability1"
 			{
-				"Name"				"ogre_magi_ignite"
-				"Damage"			"1"
-				"Debuff"			"1"
+				"Name"	"ogre_magi_ignite"
+				"Damage"	"1"
+				"Debuff"	"1"
 			}
+
 		}
+
 		"AttachWearables"
 		{
-			"Wearable1" { "ItemDef" "204" }
-			"Wearable2" { "ItemDef" "419" }
-			"Wearable3" { "ItemDef" "203" }
-			"Wearable4" { "ItemDef" "205" }
+			"Wearable1"
+			{
+				"ItemDef"	"204"
+			}
+
+			"Wearable2"
+			{
+				"ItemDef"	"419"
+			}
+
+			"Wearable3"
+			{
+				"ItemDef"	"203"
+			}
+
+			"Wearable4"
+			{
+				"ItemDef"	"205"
+			}
+
 		}
+
 	}
+
 }

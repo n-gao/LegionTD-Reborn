@@ -9,6 +9,7 @@
 	"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 	"Level"                 "1"
 	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/ai_default.lua"
 
 	"AbilityLayout"			"6"
 	"Ability1"				"humanbuilder_upgrade_blademaster"
@@ -26,9 +27,9 @@
 	//----------------------------------------------------------------
 	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "87.5"
-	"AttackDamageMax"       "100.0"
-	"AttackRate"            "1.0"
+	"AttackDamageMin"       "297.5"
+	"AttackDamageMax"       "327.5"
+	"AttackRate"            "0.65"
 	"AttackAnimationPoint"  "0.5"
 	"AttackAcquisitionRange" "850"
 	"AttackRange"           "100"
@@ -37,6 +38,7 @@
 
 	"Legion_AttackType"		"normal"
 	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"human"
 
 	// Bounty
 	//----------------------------------------------------------------
@@ -56,7 +58,7 @@
 
 	// Status
 	//----------------------------------------------------------------
-	"StatusHealth"          "600"
+	"StatusHealth"          "1050"
 	"StatusHealthRegen"     "0"
 	"StatusMana"            "0"
 	"StatusManaRegen"       "0"
@@ -70,7 +72,7 @@
 	//----------------------------------------------------------------
 	"TeamName"              "DOTA_TEAM_NEUTRALS"
 	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
 	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
 	// Creature Data

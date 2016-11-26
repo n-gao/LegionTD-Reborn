@@ -11,7 +11,7 @@
 	"AbilityCastRange"				"150"
 	"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
 
-	"AbilityCooldown"               "2"
+	"AbilityCooldown"               "4"
 	"AbilityManaCost"               "0"
 
 	"AbilityDamage"                 "120"
@@ -31,7 +31,7 @@
 		"03"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"stun_duration"			"1.2"
+			"stun_duration"			"0.8"
 		}
 	}
 

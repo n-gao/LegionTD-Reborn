@@ -1,96 +1,70 @@
 "tower_elementalbuilder_thundergod"
 {
-	// General
-	//----------------------------------------------------------------
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/zuus/zuus.vmdl"
-	"ModelScale"            "0.5"
-	"SoundSet"					    "Hero_Zuus"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "150"
-
-	"Ability4"							"sell"
-	"Ability3"				"ability_empty_3"
-	"Ability2"				"ability_empty_2"
-	"Ability1"							"zuus_arc_lightning"
-
-	// Armor
-	//----------------------------------------------------------------
-	"ArmorPhysical"         "0"
-	"MagicalResistance"     "0"
-
-	// Attack
-	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "12.5"
-	"AttackDamageMax"       "25.0"
-	"AttackRate"            "1"
-	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "500"
-	"ProjectileModel"       "particles/units/heroes/hero_zuus/zuus_base_attack.vpcf"
-	"ProjectileSpeed"       "900"
-
-	"Legion_AttackType"		"arcane"
-	"Legion_DefendType"		"light"
-
-	// Bounty
-	//----------------------------------------------------------------
-	"BountyGoldMin"         "0"
-	"BountyGoldMax"         "0"
-
-	// Bounds
-	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-	"RingRadius"            "30"
-
-	// Movement
-	//----------------------------------------------------------------
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "270"
-	"MovementTurnRate"      "0.6"
-
-	// Status
-	//----------------------------------------------------------------
-	"StatusHealth"          "550"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
-
-	// Vision
-	//----------------------------------------------------------------
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	// Team
-	//----------------------------------------------------------------
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_SOFT"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/heroes/zuus/zuus.vmdl"
+	"ModelScale"	"0.5"
+	"SoundSet"	"Hero_Zuus"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"150"
+	"Vscripts"	"ai/elementalbuilder/ai_thundergod.lua"
+	"Ability4"	"sell"
+	"Ability3"	"ability_empty_3"
+	"Ability2"	"ability_empty_2"
+	"Ability1"	"zuus_arc_lightning"
+	"ArmorPhysical"	"0"
+	"MagicalResistance"	"0"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"12.5"
+	"AttackDamageMax"	"25.0"
+	"AttackRate"	"1"
+	"AttackAnimationPoint"	"0.5"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"600"
+	"ProjectileModel"	"particles/units/heroes/hero_zuus/zuus_base_attack.vpcf"
+	"ProjectileSpeed"	"900"
+	"Legion_AttackType"	"arcane"
+	"Legion_DefendType"	"light"
+	"Legion_Fraction"	"elemental"
+	"BountyGoldMin"	"0"
+	"BountyGoldMax"	"0"
+	"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
+	"RingRadius"	"30"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"270"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"620"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"0"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	"precache"
 	{
-		"particle"  "particles/units/heroes/hero_zuus/zuus_arc_lightning_head.vpcf"
+		"particle"	"particles/units/heroes/hero_zuus/zuus_arc_lightning_head.vpcf"
 	}
 
-	// Creature Data
-	//----------------------------------------------------------------
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"0.0"
 			}
+
 		}
+
 	}
+
 }

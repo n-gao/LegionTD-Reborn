@@ -21,15 +21,20 @@
 		"Options_title"	"Vote Options"
 		"Option_Income_Limit"	"Tango Limit"
 		"Option_Return_To_Sender"	"Return to Sender"
+		"Option_Fog_Of_War"	"Fog of War"
+		"Option_Deactivate_Duels" "Deactivate Duels"
+		"Option_Hard_Mode"	"Hard Mode"
 		"QuestTimer"    "Next round starts in %quest_current_value% seconds"
 		"Duel_Quest_Title"		"Duel"
 		"Round"			"Round"
 		"Income"			"Income:"
+		"Skip"			"Skip"
 		
 		"end_screen_legend_kills"		"Kills"
 		"end_screen_legend_leaks" 		"Leaks"
 		"end_screen_legend_tango_income"	"Tango Income"
 		"end_screen_legend_gold_income"	"Gold Income"
+		"end_screen_legend_tower_value"		"Tower Value"
 		
 		"gold_income_text"				"/round"
 		"tango_income_text"				"/min"
@@ -41,20 +46,21 @@
 		"DOTA_Tooltip_ability_main_building_tango_speed"                                  "Upgrade Tango Speed"
 		"DOTA_Tooltip_ability_main_building_tango_speed_Description"                      "Decreases time between ticks by 40%"
 		
-		"squadron_game_info_header_objective"			"Objective:"
-		"squadron_brief_description"					"Survive longer than your enemy! Defend your King"
-		"squadron_game_info_header_how_to_play"			"How To Play:"
-		"squadron_game_info_king"						"Defend your king to survive."
-		"squadron_game_info_units"						"Build units to defend and earn gold for kills."
-		"squadron_game_info_tango"						"Keep an eye on your Tango income, increase it to send mighty units."
-		"squadron_info_tips_header"						"Tips:"
-		"squadron_game_info_tip01"						"- If you have enough units to survive, use your gold to increase your Tango income."
-		"squadron_game_info_tip02"						"- Send units to increase your gold income."
-		"squadron_game_info_tip03"						"- If you let units pass, your teammates will help."
-		"squadron_game_info_tip04"						"- I don't know."
+		"legion_game_info_header_objective"			"Objective:"
+		"legion_brief_description"					"Survive longer than your enemy! Defend your King"
+		"legion_game_info_header_how_to_play"			"How To Play:"
+		"legion_game_info_king"						"Defend your king to survive."
+		"legion_game_info_units"						"Build units to defend and earn gold for kills."
+		"legion_game_info_tango"						"Keep an eye on your Tango income, increase it to send mighty units."
+		"legion_info_tips_header"						"Tips:"
+		"legion_game_info_tip01"						"- If you have enough units to survive, use your gold to increase your Tango income."
+		"legion_game_info_tip02"						"- Send units to increase your gold income."
+		"legion_game_info_tip03"						"- If you let units pass, your teammates will help."
+		"legion_game_info_tip04"						"- I don't know."
 		"legion_contributor_creator"						"Creator"
 		"legion_contributor_leader"						"Active Project Leader"
-		"legion_contributor_design"						"Game Design"
+		"legion_constributor_previous_leader"			"Previous Project Leader"
+		"legion_contributor_design"						"Game Designer"
 		"legion_contributor_programming"					"Programmer"
 		"legion_contributor_label"						"Contributors"
 		
@@ -98,10 +104,12 @@
 		
 
 		// ******************** HEROES ********************
-		"npc_dota_hero_invoker"                                                           "Elemental Builder"
+		"npc_dota_hero_wisp"                                                           "Elemental Builder"
 		"npc_dota_hero_furion"                                                            "Nature Builder"
 		"npc_dota_hero_legion_commander"                                                  "Human Builder"
-
+		"npc_dota_hero_tinker"								"Mechanical Builder"
+		"npc_dota_hero_rubick"															"Random Builder"
+		
 		// ******************** UNITS ********************
 		"dire_boss"                                                                       "Dire King"
 		"radiant_boss"                                                                    "Radiant King"
@@ -1387,6 +1395,29 @@
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_split_shot_damage_modifier_tooltip"          "DAMAGE MODIFIER:"
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_split_shot_total_arrow_count"                "TOTAL ARROW COUNT:"
 		"DOTA_Tooltip_ability_futuristic_gyrocopter_split_shot_range"                            "RANGE:"
+
+		"DOTA_Tooltip_ability_treebeard_synergy"                                          "Treebeard Synergy"
+		"DOTA_Tooltip_ability_treebeard_synergy_Description"                              ""
+
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier1"                             "Get Random Tier 1 Unit"
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier1_Description"                 ""
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier1_tier"                        "TIER:"
+
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier2"                             "Get Random Tier 2 Unit"
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier2_Description"                 ""
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier2_tier"                        "TIER:"
+
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier3"                             "Get Random Tier 3 Unit"
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier3_Description"                 ""
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier3_tier"                        "TIER:"
+
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier4"                             "Get Random Tier 4 Unit"
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier4_Description"                 ""
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier4_tier"                        "TIER:"
+
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier5"                             "Get Random Tier 5 Unit"
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier5_Description"                 ""
+		"DOTA_Tooltip_ability_randombuilder_get_random_tier5_tier"                        "TIER:"
 
 	}
 }

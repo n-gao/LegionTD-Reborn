@@ -1,0 +1,24 @@
+#LifetimeAttributes {
+    flow-children: down;
+    width: 100%;
+    height: fit-children;
+}
+
+.LifetimeAttribute {
+    flow-children: right;
+    width: 100%;
+}
+
+.LifetimeKey {
+    horizontal-align: left;
+}
+
+.LifetimeValue {
+    horizontal-align: right; 
+}
+
+.LifetimeStatisticRoot {
+    flow-children: down;
+    width: 300px;
+    height: fit-children;
+}
