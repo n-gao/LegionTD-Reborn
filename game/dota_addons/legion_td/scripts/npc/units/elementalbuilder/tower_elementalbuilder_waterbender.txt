@@ -1,99 +1,99 @@
 "tower_elementalbuilder_waterbender"
 {
-	"BaseClass"	"npc_dota_creature"
-	"Model"	"models/heroes/tidehunter/tidehunter.vmdl"
-	"ModelScale"	"0.5"
-	"SoundSet"	"Hero_Tidehunter"
-	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
-	"Level"	"1"
-	"HealthBarOffset"	"150"
-	"Vscripts"	"ai/ai_default.lua"
-	"Ability1"	"elementalbuilder_upgrade_waterelemental"
-	"Ability2"	"elementalbuilder_upgrade_waterwarrior"
-	"Ability3"	"ability_empty_3"
-	"Ability4"	"sell"
-	"ArmorPhysical"	"1"
-	"MagicalResistance"	"0"
-	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"	"24.25"
-	"AttackDamageMax"	"26.5"
-	"AttackRate"	"0.85"
-	"AttackAnimationPoint"	"0.5"
-	"AttackAcquisitionRange"	"850"
-	"AttackRange"	"90"
-	"ProjectileModel"	""
-	"ProjectileSpeed"	"0"
-	"Legion_AttackType"	"normal"
-	"Legion_DefendType"	"heavy"
-	"Legion_Fraction"	"elemental"
-	"BountyGoldMin"	"0"
-	"BountyGoldMax"	"0"
-	"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-	"RingRadius"	"30"
-	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"	"270"
-	"MovementTurnRate"	"0.6"
-	"StatusHealth"	"135"
-	"StatusHealthRegen"	"0"
-	"StatusMana"	"0"
-	"StatusManaRegen"	"0"
-	"VisionDaytimeRange"	"1400"
-	"VisionNighttimeRange"	"800"
-	"TeamName"	"DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-	"Creature"
-	{
-		"DisableClumpingBehavior"	"1"
-		"DefaultState"	"Invade"
-		"States"
-		{
-			"Invade"
-			{
-				"Name"	"Invade"
-				"Aggression"	"100.0"
-				"Avoidance"	"0.0"
-				"Support"	"0.0"
-			}
+    "BaseClass" "npc_dota_creature"
+    "Model" "models/heroes/tidehunter/tidehunter.vmdl"
+    "ModelScale"    "0.5"
+    "SoundSet"  "Hero_Tidehunter"
+    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
+    "Level" "1"
+    "HealthBarOffset"   "150"
+    "Vscripts"  "ai/ai_default.lua"
+    "Ability1"  "elementalbuilder_upgrade_waterelemental"
+    "Ability2"  "elementalbuilder_upgrade_waterwarrior"
+    "Ability3"  "ability_empty_3"
+    "Ability4"  "sell"
+    "ArmorPhysical" "1"
+    "MagicalResistance" "0"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"   "24.25"
+    "AttackDamageMax"   "26.5"
+    "AttackRate"    "0.85"
+    "AttackAnimationPoint"  "0.5"
+    "AttackAcquisitionRange"    "850"
+    "AttackRange"   "90"
+    "ProjectileModel"   ""
+    "ProjectileSpeed"   "0"
+    "Legion_AttackType" "normal"
+    "Legion_DefendType" "heavy"
+    "Legion_Fraction"   "elemental"
+    "BountyGoldMin" "0"
+    "BountyGoldMax" "0"
+    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
+    "RingRadius"    "30"
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed" "270"
+    "MovementTurnRate"  "0.6"
+    "StatusHealth"  "140"
+    "StatusHealthRegen" "0"
+    "StatusMana"    "0"
+    "StatusManaRegen"   "0"
+    "VisionDaytimeRange"    "1400"
+    "VisionNighttimeRange"  "800"
+    "TeamName"  "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "Creature"
+    {
+        "DisableClumpingBehavior"   "1"
+        "DefaultState"  "Invade"
+        "States"
+        {
+            "Invade"
+            {
+                "Name"  "Invade"
+                "Aggression"    "100.0"
+                "Avoidance" "0.0"
+                "Support"   "0.0"
+            }
 
-		}
+        }
 
-		"AttachWearables"
-		{
-			"Wearable1"
-			{
-				"ItemDef"	"6467"
-			}
+        "AttachWearables"
+        {
+            "Wearable1"
+            {
+                "ItemDef"   "6467"
+            }
 
-			"Wearable2"
-			{
-				"ItemDef"	"6468"
-			}
+            "Wearable2"
+            {
+                "ItemDef"   "6468"
+            }
 
-			"Wearable3"
-			{
-				"ItemDef"	"6469"
-			}
+            "Wearable3"
+            {
+                "ItemDef"   "6469"
+            }
 
-			"Wearable4"
-			{
-				"ItemDef"	"6470"
-			}
+            "Wearable4"
+            {
+                "ItemDef"   "6470"
+            }
 
-			"Wearable5"
-			{
-				"ItemDef"	"6471"
-			}
+            "Wearable5"
+            {
+                "ItemDef"   "6471"
+            }
 
-			"Wearable6"
-			{
-				"ItemDef"	"6472"
-			}
+            "Wearable6"
+            {
+                "ItemDef"   "6472"
+            }
 
-		}
+        }
 
-	}
+    }
 
 }

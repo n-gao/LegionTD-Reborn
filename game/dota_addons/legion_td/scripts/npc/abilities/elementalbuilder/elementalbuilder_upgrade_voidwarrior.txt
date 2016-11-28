@@ -27,7 +27,7 @@
 		"02"
 		{
 			"var_type"	"FIELD_FLOAT"
-			"atk_speed_tooltip"	"0.45"
+			"atk_speed_tooltip"	"0.4"
 		}
 
 		"03"
@@ -39,7 +39,7 @@
 		"04"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"health_tooltip"	"590"
+			"health_tooltip"	"630"
 		}
 
 		"05"

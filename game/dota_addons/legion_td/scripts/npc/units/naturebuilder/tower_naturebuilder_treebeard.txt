@@ -1,75 +1,75 @@
 "tower_naturebuilder_treebeard"
 {
-	"BaseClass"	"npc_dota_creature"
-	"Model"	"models/heroes/treant_protector/treant_protector.mdl"
-	"ModelScale"	"0.5"
-	"SoundSet"	"Hero_Treant"
-	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
-	"Level"	"1"
-	"HealthBarOffset"	"150"
-	"Vscripts"	"ai/naturebuilder/ai_treebeard.lua"
-	"Ability4"	"sell"
-	"Ability1"	"treebeard_overgrowth"
-	"Ability2"	"treebeard_synergy"
-	"Ability3"	"ability_empty_3"
-	"ArmorPhysical"	"6"
-	"MagicalResistance"	"40"
-	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"	"350"
-	"AttackDamageMax"	"375"
-	"AttackRate"	"0.75"
-	"AttackAnimationPoint"	"0.6"
-	"AttackAcquisitionRange"	"850"
-	"AttackRange"	"100"
-	"ProjectileModel"	""
-	"ProjectileSpeed"	"0"
-	"Legion_AttackType"	"normal"
-	"Legion_DefendType"	"heavy"
-	"Legion_Fraction"	"nature"
-	"BountyGoldMin"	"0"
-	"BountyGoldMax"	"0"
-	"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-	"RingRadius"	"30"
-	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"	"270"
-	"MovementTurnRate"	"0.6"
-	"StatusHealth"	"1700"
-	"StatusHealthRegen"	"0"
-	"StatusMana"	"0"
-	"StatusManaRegen"	"0"
-	"VisionDaytimeRange"	"1400"
-	"VisionNighttimeRange"	"800"
-	"TeamName"	"DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-	"Creature"
-	{
-		"AttachWearables"
-		{
-			"1"
-			{
-				"ItemDef"	"230"
-			}
+    "BaseClass" "npc_dota_creature"
+    "Model" "models/heroes/treant_protector/treant_protector.mdl"
+    "ModelScale"    "0.5"
+    "SoundSet"  "Hero_Treant"
+    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
+    "Level" "1"
+    "HealthBarOffset"   "150"
+    "Vscripts"  "ai/naturebuilder/ai_treebeard.lua"
+    "Ability4"  "sell"
+    "Ability1"  "treebeard_overgrowth"
+    "Ability2"  "treebeard_synergy"
+    "Ability3"  "ability_empty_3"
+    "ArmorPhysical" "6"
+    "MagicalResistance" "40"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"   "320"
+    "AttackDamageMax"   "345"
+    "AttackRate"    "0.65"
+    "AttackAnimationPoint"  "0.6"
+    "AttackAcquisitionRange"    "850"
+    "AttackRange"   "100"
+    "ProjectileModel"   ""
+    "ProjectileSpeed"   "0"
+    "Legion_AttackType" "normal"
+    "Legion_DefendType" "heavy"
+    "Legion_Fraction"   "nature"
+    "BountyGoldMin" "0"
+    "BountyGoldMax" "0"
+    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
+    "RingRadius"    "30"
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed" "270"
+    "MovementTurnRate"  "0.6"
+    "StatusHealth"  "1700"
+    "StatusHealthRegen" "0"
+    "StatusMana"    "0"
+    "StatusManaRegen"   "0"
+    "VisionDaytimeRange"    "1400"
+    "VisionNighttimeRange"  "800"
+    "TeamName"  "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "Creature"
+    {
+        "AttachWearables"
+        {
+            "1"
+            {
+                "ItemDef"   "230"
+            }
 
-			"2"
-			{
-				"ItemDef"	"229"
-			}
+            "2"
+            {
+                "ItemDef"   "229"
+            }
 
-			"3"
-			{
-				"ItemDef"	"227"
-			}
+            "3"
+            {
+                "ItemDef"   "227"
+            }
 
-			"4"
-			{
-				"ItemDef"	"228"
-			}
+            "4"
+            {
+                "ItemDef"   "228"
+            }
 
-		}
+        }
 
-	}
+    }
 
 }

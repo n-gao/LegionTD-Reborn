@@ -1,107 +1,107 @@
 "tower_naturebuilder_druid_bear"
 {
-	// General
-	//----------------------------------------------------------------
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/items/lone_druid/true_form/form_of_the_atniw/form_of_the_atniw.vmdl"
-	"ModelScale"            "0.5"
-	"SoundSet"					"LoneDruid_SpiritBear"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "150"
-	"Vscripts"              "ai/ai_default.lua"
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"             "npc_dota_creature"
+    "Model"                 "models/items/lone_druid/true_form/form_of_the_atniw/form_of_the_atniw.vmdl"
+    "ModelScale"            "0.5"
+    "SoundSet"                  "LoneDruid_SpiritBear"
+    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
+    "Level"                 "1"
+    "HealthBarOffset"       "150"
+    "Vscripts"              "ai/ai_default.lua"
 
-	"Ability4"							"sell"
-	"Ability1"							"lone_druid_spirit_bear_entangle"
-	"Ability2"							"axe_berserkers_call"
-	"Ability3"				"ability_empty_3"
+    "Ability4"                          "sell"
+    "Ability1"                          "lone_druid_spirit_bear_entangle"
+    "Ability2"                          "axe_berserkers_call"
+    "Ability3"              "ability_empty_3"
 
-	// Armor
-	//----------------------------------------------------------------
-	"ArmorPhysical"         "5"
-	"MagicalResistance"     "20"
+    // Armor
+    //----------------------------------------------------------------
+    "ArmorPhysical"         "5"
+    "MagicalResistance"     "20"
 
-	// Attack
-	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "125.0"
-	"AttackDamageMax"       "147.5"
-	"AttackRate"            "0.8"
-	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "90"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
+    // Attack
+    //----------------------------------------------------------------
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"       "125.0"
+    "AttackDamageMax"       "147.5"
+    "AttackRate"            "0.7"
+    "AttackAnimationPoint"  "0.5"
+    "AttackAcquisitionRange" "850"
+    "AttackRange"           "90"
+    "ProjectileModel"       ""
+    "ProjectileSpeed"       "0"
 
-	"Legion_AttackType"		"normal"
-	"Legion_DefendType"		"heavy"
-	"Legion_Fraction"		"nature"
+    "Legion_AttackType"     "normal"
+    "Legion_DefendType"     "heavy"
+    "Legion_Fraction"       "nature"
 
-	// Bounty
-	//----------------------------------------------------------------
-	"BountyGoldMin"         "0"
-	"BountyGoldMax"         "0"
+    // Bounty
+    //----------------------------------------------------------------
+    "BountyGoldMin"         "0"
+    "BountyGoldMax"         "0"
 
-	// Bounds
-	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-	"RingRadius"            "30"
+    // Bounds
+    //----------------------------------------------------------------
+    "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+    "RingRadius"            "30"
 
-	// Movement
-	//----------------------------------------------------------------
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "270"
-	"MovementTurnRate"      "0.6"
+    // Movement
+    //----------------------------------------------------------------
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"         "270"
+    "MovementTurnRate"      "0.6"
 
-	// Status
-	//----------------------------------------------------------------
-	"StatusHealth"          "1350"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "80"
-	"StatusManaRegen"       "10"
+    // Status
+    //----------------------------------------------------------------
+    "StatusHealth"          "1350"
+    "StatusHealthRegen"     "0"
+    "StatusMana"            "80"
+    "StatusManaRegen"       "10"
 
-	// Vision
-	//----------------------------------------------------------------
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
+    // Vision
+    //----------------------------------------------------------------
+    "VisionDaytimeRange"    "1400"
+    "VisionNighttimeRange"  "800"
 
-	// Team
-	//----------------------------------------------------------------
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    // Team
+    //----------------------------------------------------------------
+    "TeamName"              "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
-	"precache"
-	{
-		"particle"  "particles/units/heroes/hero_axe/axe_beserkers_call.vpcf"
-	}
-	// Creature Data
-	//----------------------------------------------------------------
-	"Creature"
-	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
-		"States"
-		{
-			"Invade"
-			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"100.0"
-			}
-		}
-		"DefensiveAbilities"
-		{
-			"Ability1"
-			{
-				"Name"     "axe_berserkers_call"
-				"Buff"						"1"
-				"AOE"             "1"
-				"Radius"          "300"
-			}
-		}
-	}
+    "precache"
+    {
+        "particle"  "particles/units/heroes/hero_axe/axe_beserkers_call.vpcf"
+    }
+    // Creature Data
+    //----------------------------------------------------------------
+    "Creature"
+    {
+        "DisableClumpingBehavior"       "1"
+        "DefaultState"              "Invade"
+        "States"
+        {
+            "Invade"
+            {
+                "Name"              "Invade"
+                "Aggression"        "100.0"
+                "Avoidance"         "0.0"
+                "Support"           "100.0"
+            }
+        }
+        "DefensiveAbilities"
+        {
+            "Ability1"
+            {
+                "Name"     "axe_berserkers_call"
+                "Buff"                      "1"
+                "AOE"             "1"
+                "Radius"          "300"
+            }
+        }
+    }
 }

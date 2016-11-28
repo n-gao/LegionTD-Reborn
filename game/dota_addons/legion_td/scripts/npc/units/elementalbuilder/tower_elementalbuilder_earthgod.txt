@@ -1,105 +1,105 @@
 "tower_elementalbuilder_earthgod"
 {
-	"BaseClass"	"npc_dota_creature"
-	"Model"	"models/heroes/tiny_04/tiny_04.vmdl"
-	"ModelScale"	"0.5"
-	"SoundSet"	"Hero_Tiny"
-	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
-	"Level"	"1"
-	"HealthBarOffset"	"150"
-	"Vscripts"	"ai/elementalbuilder/ai_earthgod.lua"
-	"Ability4"	"sell"
-	"Ability3"	"ability_empty_3"
-	"Ability2"	"ability_empty_2"
-	"Ability1"	"tiny_avalanche"
-	"Ability8"	"tiny_grow"
-	"ArmorPhysical"	"5"
-	"MagicalResistance"	"0"
-	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"	"282.5"
-	"AttackDamageMax"	"295.0"
-	"AttackRate"	"0.8"
-	"AttackAnimationPoint"	"0.7"
-	"AttackAcquisitionRange"	"850"
-	"AttackRange"	"150"
-	"ProjectileModel"	""
-	"ProjectileSpeed"	"0"
-	"Legion_AttackType"	"normal"
-	"Legion_DefendType"	"heavy"
-	"Legion_Fraction"	"elemental"
-	"BountyGoldMin"	"0"
-	"BountyGoldMax"	"0"
-	"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-	"RingRadius"	"30"
-	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"	"270"
-	"MovementTurnRate"	"0.6"
-	"StatusHealth"	"1050"
-	"StatusHealthRegen"	"0"
-	"StatusMana"	"100"
-	"StatusManaRegen"	"0"
-	"VisionDaytimeRange"	"1400"
-	"VisionNighttimeRange"	"800"
-	"TeamName"	"DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-	"precache"
-	{
-		"particle"	"particles/units/heroes/hero_tiny/tiny_avalanche.vpcf"
-	}
+    "BaseClass" "npc_dota_creature"
+    "Model" "models/heroes/tiny_04/tiny_04.vmdl"
+    "ModelScale"    "0.5"
+    "SoundSet"  "Hero_Tiny"
+    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
+    "Level" "1"
+    "HealthBarOffset"   "150"
+    "Vscripts"  "ai/elementalbuilder/ai_earthgod.lua"
+    "Ability4"  "sell"
+    "Ability3"  "ability_empty_3"
+    "Ability2"  "ability_empty_2"
+    "Ability1"  "tiny_avalanche"
+    "Ability8"  "tiny_grow"
+    "ArmorPhysical" "5"
+    "MagicalResistance" "0"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"   "282.5"
+    "AttackDamageMax"   "295.0"
+    "AttackRate"    "0.75"
+    "AttackAnimationPoint"  "0.7"
+    "AttackAcquisitionRange"    "850"
+    "AttackRange"   "150"
+    "ProjectileModel"   ""
+    "ProjectileSpeed"   "0"
+    "Legion_AttackType" "normal"
+    "Legion_DefendType" "heavy"
+    "Legion_Fraction"   "elemental"
+    "BountyGoldMin" "0"
+    "BountyGoldMax" "0"
+    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
+    "RingRadius"    "30"
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed" "270"
+    "MovementTurnRate"  "0.6"
+    "StatusHealth"  "1050"
+    "StatusHealthRegen" "0"
+    "StatusMana"    "100"
+    "StatusManaRegen"   "0"
+    "VisionDaytimeRange"    "1400"
+    "VisionNighttimeRange"  "800"
+    "TeamName"  "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "precache"
+    {
+        "particle"  "particles/units/heroes/hero_tiny/tiny_avalanche.vpcf"
+    }
 
-	"Creature"
-	{
-		"DisableClumpingBehavior"	"1"
-		"DefaultState"	"Invade"
-		"States"
-		{
-			"Invade"
-			{
-				"Name"	"Invade"
-				"Aggression"	"100.0"
-				"Avoidance"	"0.0"
-				"Support"	"0.0"
-			}
+    "Creature"
+    {
+        "DisableClumpingBehavior"   "1"
+        "DefaultState"  "Invade"
+        "States"
+        {
+            "Invade"
+            {
+                "Name"  "Invade"
+                "Aggression"    "100.0"
+                "Avoidance" "0.0"
+                "Support"   "0.0"
+            }
 
-		}
+        }
 
-		"AttachWearables"
-		{
-			"Wearable1"
-			{
-				"ItemDef"	"493"
-			}
+        "AttachWearables"
+        {
+            "Wearable1"
+            {
+                "ItemDef"   "493"
+            }
 
-			"Wearable2"
-			{
-				"ItemDef"	"494"
-			}
+            "Wearable2"
+            {
+                "ItemDef"   "494"
+            }
 
-			"Wearable3"
-			{
-				"ItemDef"	"495"
-			}
+            "Wearable3"
+            {
+                "ItemDef"   "495"
+            }
 
-			"Wearable4"
-			{
-				"ItemDef"	"496"
-			}
+            "Wearable4"
+            {
+                "ItemDef"   "496"
+            }
 
-			"Wearable5"
-			{
-				"ItemDef"	"497"
-			}
+            "Wearable5"
+            {
+                "ItemDef"   "497"
+            }
 
-			"Wearable6"
-			{
-				"ItemDef"	"516"
-			}
+            "Wearable6"
+            {
+                "ItemDef"   "516"
+            }
 
-		}
+        }
 
-	}
+    }
 
 }

@@ -1,99 +1,99 @@
 "tower_humanbuilder_footman"
 {
-	"BaseClass"	"npc_dota_creature"
-	"Model"	"models/heroes/dragon_knight/dragon_knight.vmdl"
-	"ModelScale"	"0.55"
-	"SoundSet"	"Hero_DragonKnight"
-	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
-	"Level"	"1"
-	"HealthBarOffset"	"150"
-	"Vscripts"	"ai/humanbuilder/ai_footman.lua"
-	"Ability1"	"humanbuilder_upgrade_soldier"
-	"Ability4"	"sell"
-	"Ability2"	"footman_shield_bash"
-	"Ability3"	"ability_empty_3"
-	"ArmorPhysical"	"3"
-	"MagicalResistance"	"0"
-	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"	"60.0"
-	"AttackDamageMax"	"65.0"
-	"AttackRate"	"1.0"
-	"AttackAnimationPoint"	"0.7"
-	"AttackAcquisitionRange"	"850"
-	"AttackRange"	"100"
-	"ProjectileModel"	""
-	"ProjectileSpeed"	"0"
-	"Legion_AttackType"	"normal"
-	"Legion_DefendType"	"heavy"
-	"Legion_Fraction"	"human"
-	"BountyGoldMin"	"0"
-	"BountyGoldMax"	"0"
-	"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
-	"RingRadius"	"30"
-	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"	"270"
-	"MovementTurnRate"	"0.6"
-	"StatusHealth"	"330"
-	"StatusHealthRegen"	"0"
-	"StatusMana"	"10"
-	"StatusManaRegen"	"10"
-	"VisionDaytimeRange"	"1400"
-	"VisionNighttimeRange"	"800"
-	"TeamName"	"DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-	"Creature"
-	{
-		"DisableClumpingBehavior"	"1"
-		"DefaultState"	"Invade"
-		"States"
-		{
-			"Invade"
-			{
-				"Name"	"Invade"
-				"Aggression"	"100.0"
-				"Avoidance"	"0.0"
-				"Support"	"0.0"
-			}
+    "BaseClass" "npc_dota_creature"
+    "Model" "models/heroes/dragon_knight/dragon_knight.vmdl"
+    "ModelScale"    "0.55"
+    "SoundSet"  "Hero_DragonKnight"
+    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+    "Level" "1"
+    "HealthBarOffset"   "150"
+    "Vscripts"  "ai/humanbuilder/ai_footman.lua"
+    "Ability1"  "humanbuilder_upgrade_soldier"
+    "Ability4"  "sell"
+    "Ability2"  "footman_shield_bash"
+    "Ability3"  "ability_empty_3"
+    "ArmorPhysical" "3"
+    "MagicalResistance" "0"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"   "60.0"
+    "AttackDamageMax"   "65.0"
+    "AttackRate"    "1.0"
+    "AttackAnimationPoint"  "0.7"
+    "AttackAcquisitionRange"    "850"
+    "AttackRange"   "100"
+    "ProjectileModel"   ""
+    "ProjectileSpeed"   "0"
+    "Legion_AttackType" "normal"
+    "Legion_DefendType" "heavy"
+    "Legion_Fraction"   "human"
+    "BountyGoldMin" "0"
+    "BountyGoldMax" "0"
+    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
+    "RingRadius"    "30"
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed" "270"
+    "MovementTurnRate"  "0.6"
+    "StatusHealth"  "300"
+    "StatusHealthRegen" "0"
+    "StatusMana"    "10"
+    "StatusManaRegen"   "10"
+    "VisionDaytimeRange"    "1400"
+    "VisionNighttimeRange"  "800"
+    "TeamName"  "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "Creature"
+    {
+        "DisableClumpingBehavior"   "1"
+        "DefaultState"  "Invade"
+        "States"
+        {
+            "Invade"
+            {
+                "Name"  "Invade"
+                "Aggression"    "100.0"
+                "Avoidance" "0.0"
+                "Support"   "0.0"
+            }
 
-		}
+        }
 
-		"AttachWearables"
-		{
-			"Wearable1"
-			{
-				"ItemDef"	"4095"
-			}
+        "AttachWearables"
+        {
+            "Wearable1"
+            {
+                "ItemDef"   "4095"
+            }
 
-			"Wearable2"
-			{
-				"ItemDef"	"4114"
-			}
+            "Wearable2"
+            {
+                "ItemDef"   "4114"
+            }
 
-			"Wearable3"
-			{
-				"ItemDef"	"4115"
-			}
+            "Wearable3"
+            {
+                "ItemDef"   "4115"
+            }
 
-			"Wearable4"
-			{
-				"ItemDef"	"4116"
-			}
+            "Wearable4"
+            {
+                "ItemDef"   "4116"
+            }
 
-			"Wearable5"
-			{
-				"ItemDef"	"4117"
-			}
+            "Wearable5"
+            {
+                "ItemDef"   "4117"
+            }
 
-			"Wearable6"
-			{
-				"ItemDef"	"4154"
-			}
+            "Wearable6"
+            {
+                "ItemDef"   "4154"
+            }
 
-		}
+        }
 
-	}
+    }
 
 }
