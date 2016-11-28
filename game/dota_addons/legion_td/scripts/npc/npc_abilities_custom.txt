@@ -8682,13 +8682,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"176.75"
+				"atk_damage_tooltip"	"191.75"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.65"
+				"atk_speed_tooltip"	"0.62"
 			}
 	
 			"03"
@@ -8908,7 +8908,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"490"
+				"health_tooltip"	"650"
 			}
 	
 			"05"
