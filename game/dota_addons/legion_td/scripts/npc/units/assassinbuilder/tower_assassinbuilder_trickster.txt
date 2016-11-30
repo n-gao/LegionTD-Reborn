@@ -9,9 +9,9 @@
 	"Vscripts"					"ai/assassinbuilder/ai_assassinbuilder_trickster.lua"
 
 	"AbilityLayout"				"6"
-	"Ability1"					""
-	"Ability2"					"assassinbuilder_mesmerize"
-	"Ability3"					"assassinbuilder_upgrade_stealth_assassin"
+	"Ability1"					"assassinbuilder_mesmerize"
+	"Ability2"					"assassinbuilder_upgrade_stealth_assassin"
+	"Ability3"					"ability_empty_3"
 	"Ability4"					"sell"
 	"Ability5"					"assassinbuilder_upgrade_blood_drinker"
 
