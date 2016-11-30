@@ -1,0 +1,63 @@
+"assassinbuilder_beetle_swarm"
+{
+	"BaseClass"             		"weaver_the_swarm"
+	"AbilityTextureName"			"weaver_the_swarm"
+	"MaxLevel" 						"1"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+	"AbilityCastPoint"				"0.3"
+	"AbilityCastRange"				"500"
+	"AbilityCooldown"				"10"
+	"AbilityManaCost"				"0"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"damage"			"2"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"attack_rate"		"2"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"count"				"12"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"armor_reduction"	"1"
+		}
+		"05"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"duration"			"16"
+		}
+		"06"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"destroy_attacks"	"3"
+		}
+		"07"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"radius"			"100"
+		}
+		"08"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"speed"				"600"
+		}
+		"09"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"spawn_radius"		"300"
+		}
+	}
+}

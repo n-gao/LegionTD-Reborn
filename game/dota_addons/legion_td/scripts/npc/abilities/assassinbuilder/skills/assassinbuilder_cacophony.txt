@@ -1,0 +1,51 @@
+"assassinbuilder_cacophony"
+{
+	"BaseClass"						"vengefulspirit_wave_of_terror"
+	"AbilityTextureName"			"vengefulspirit_wave_of_terror"
+	"MaxLevel" 						"1"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+	
+	"AbilityCastRange"				"1400"
+	"AbilityCastPoint"				"0"
+	"AbilityCooldown"				"20"
+	"AbilityDuration"				"15"
+	"AbilityDamage"					"0"
+	"AbilityManaCost"				"0"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"wave_speed"		"2000.0"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"wave_width"		"300"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"armor_reduction"	"-5"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"tooltip_duration"	"15"
+		}
+		"05"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"vision_aoe"		"500"
+		}
+		"06"
+		{
+			"var_type"			"FIELD_FLOAT"
+			"vision_duration"	"3.0"
+		}
+		
+	}
+}

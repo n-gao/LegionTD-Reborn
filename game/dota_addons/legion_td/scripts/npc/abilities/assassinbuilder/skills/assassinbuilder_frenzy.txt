@@ -1,0 +1,37 @@
+"assassinbuilder_frenzy"
+{
+	"BaseClass"					"ability_lua"
+	"ScriptFile"				"abilities/assassinbuilder/assassinbuilder_frenzy.lua"
+	"AbilityTextureName"		"ogre_magi_bloodlust"
+	"MaxLevel"					"1"
+
+	"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"AbilityUnitTargetTeam"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	"AbilityUnitTargetType"		"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+
+	"AbilityCastPoint"			"0.0"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"attackspeed_bonus"		"80"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"movespeed_bonus"		"16"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"duration"				"5.0"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"cooldown"				"5"
+		}
+	}
+}
