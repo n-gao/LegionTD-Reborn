@@ -1,9 +1,9 @@
 SpawnAbilities = {}
 
 SpawnAbilities.tier1 = {
-   "humanbuilder_spawn_militia",
-   "naturebuilder_spawn_spider",
-   "elementalbuilder_spawn_waterbender",
+    "humanbuilder_spawn_militia",
+    "naturebuilder_spawn_spider",
+    "elementalbuilder_spawn_waterbender",
 }
 
 SpawnAbilities.tier2 = {
@@ -25,9 +25,10 @@ SpawnAbilities.tier4 = {
 }
 
 SpawnAbilities.tier5 = {
-    "humanbuilder_spawn_lieutnant",
+    "humanbuilder_spawn_lieutenant",
     "naturebuilder_spawn_hyena",
     "elementalbuilder_spawn_voidbender",
+    "naturebuilder_spawn_centaur",
 }
 
 SpawnAbilities.tier6 = {
@@ -40,10 +41,10 @@ function GetRandomUnit(event)
     event.unit:RemoveAbility(event.ability:GetName())
     print(tier)
     print(index)
-    local ind = math.random(#SpawnAbilities["tier"..tier])
+    local ind = math.random(#SpawnAbilities["tier" .. tier])
     print(ind)
-    local ability = event.unit:AddAbility(SpawnAbilities["tier"..tier][ind])
-    print(SpawnAbilities["tier"..tier][ind])
+    local ability = event.unit:AddAbility(SpawnAbilities["tier" .. tier][ind])
+    print(SpawnAbilities["tier" .. tier][ind])
     ability:SetAbilityIndex(index)
     ability:SetLevel(1)
 end

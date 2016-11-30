@@ -1,89 +1,105 @@
 "unit_techies"
 {
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/techies/techies.vmdl"
-	"ModelScale"            "0.7"
-	"SoundSet"				    	"Hero_Techies"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "140"
-	"Vscripts"              "ai/waves/ai_techies.lua"
-
-	"Ability1"							"techies_suicide_datadriven"
-
-  "UseNeutralCreepBehavior" "0"
-
-	"ArmorPhysical"         "3"
-	"MagicalResistance"     "0"
-
-	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "0.0"
-	"AttackDamageMax"       "0.0"
-	"AttackRate"            "0"
-	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "0"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
-
-	"Legion_AttackType"		"arcane"
-	"Legion_DefendType"		"medium"
-	"Legion_Experience"		"100"
-
-	"BountyGoldMin"         "3.0"
-	"BountyGoldMax"         "3.0"
-
-	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"					"50"
-	"RingRadius"            "50"
-
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "320"
-	"MovementTurnRate"      "0.6"
-
-	"StatusHealth"          "100"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "1000"
-	"StatusManaRegen"       "0"
-
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-	"GameSoundsFile"   "soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
-
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/heroes/techies/techies.vmdl"
+	"ModelScale"	"0.7"
+	"SoundSet"	"Hero_Techies"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"140"
+	"Vscripts"	"ai/waves/ai_techies.lua"
+	"Ability1"	"techies_suicide_datadriven"
+	"UseNeutralCreepBehavior"	"0"
+	"ArmorPhysical"	"3"
+	"MagicalResistance"	"0"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"0.0"
+	"AttackDamageMax"	"0.0"
+	"AttackRate"	"0"
+	"AttackAnimationPoint"	"0.2"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"0"
+	"ProjectileModel"	""
+	"ProjectileSpeed"	"0"
+	"Legion_AttackType"	"arcane"
+	"Legion_DefendType"	"medium"
+	"Legion_Experience"	"100"
+	"BountyGoldMin"	"3.0"
+	"BountyGoldMax"	"3.0"
+	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+	"CollisionSize"	"50"
+	"RingRadius"	"50"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"320"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"230"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"1000"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
 	"precache"
 	{
-			"soundfile"     "soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
-			"particle"      "particles/units/heroes/hero_techies/techies_suicide_base.vpcf"
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
+		"particle"	"particles/units/heroes/hero_techies/techies_suicide_base.vpcf"
 	}
+
 	"Creature"
 	{
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
-				"RoamDistance"  "0.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"0.0"
+				"RoamDistance"	"0.0"
 			}
+
 		}
-		"DefaultState"				"Invade"
+
+		"DefaultState"	"Invade"
 		"AttachWearables"
 		{
-			"Wearable1" { "ItemDef" "490" }
-			"Wearable2" { "ItemDef" "394" }
-			"Wearable3" { "ItemDef" "487" }
-			"Wearable4" { "ItemDef" "489" }
-			"Wearable5" { "ItemDef" "491" }
-			"Wearable6" { "ItemDef" "492" }
+			"Wearable1"
+			{
+				"ItemDef"	"490"
+			}
+
+			"Wearable2"
+			{
+				"ItemDef"	"394"
+			}
+
+			"Wearable3"
+			{
+				"ItemDef"	"487"
+			}
+
+			"Wearable4"
+			{
+				"ItemDef"	"489"
+			}
+
+			"Wearable5"
+			{
+				"ItemDef"	"491"
+			}
+
+			"Wearable6"
+			{
+				"ItemDef"	"492"
+			}
+
 		}
+
 	}
+
 }

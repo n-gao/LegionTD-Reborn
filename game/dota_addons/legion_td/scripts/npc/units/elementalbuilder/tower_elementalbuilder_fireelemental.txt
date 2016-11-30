@@ -1,98 +1,70 @@
 "tower_elementalbuilder_fireelemental"
 {
-	// General
-	//----------------------------------------------------------------
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/brewmaster/brewmaster_firespirit.vmdl"
-	"ModelScale"            "0.5"
-	"SoundSet"					    "Brewmaster_Fire"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "150"
-	"Vscripts"              "ai/elementalbuilder/ai_fireelemental.lua"
+    "BaseClass" "npc_dota_creature"
+    "Model" "models/heroes/brewmaster/brewmaster_firespirit.vmdl"
+    "ModelScale"    "0.5"
+    "SoundSet"  "Brewmaster_Fire"
+    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
+    "Level" "1"
+    "HealthBarOffset"   "150"
+    "Vscripts"  "ai/elementalbuilder/ai_fireelemental.lua"
+    "Ability1"  "elementalbuilder_upgrade_firegod"
+    "Ability2"  "ember_spirit_flame_guard"
+    "Ability3"  "ability_empty_3"
+    "Ability4"  "sell"
+    "ArmorPhysical" "2"
+    "MagicalResistance" "0"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"   "102.5"
+    "AttackDamageMax"   "115.0"
+    "AttackRate"    "0.76"
+    "AttackAnimationPoint"  "0.4"
+    "AttackAcquisitionRange"    "850"
+    "AttackRange"   "100"
+    "ProjectileModel"   ""
+    "ProjectileSpeed"   "0"
+    "Legion_AttackType" "arcane"
+    "Legion_DefendType" "medium"
+    "Legion_Fraction"   "elemental"
+    "BountyGoldMin" "0"
+    "BountyGoldMax" "0"
+    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
+    "RingRadius"    "30"
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed" "270"
+    "MovementTurnRate"  "0.6"
+    "StatusHealth"  "710"
+    "StatusHealthRegen" "0"
+    "StatusMana"    "0"
+    "StatusManaRegen"   "0"
+    "VisionDaytimeRange"    "1400"
+    "VisionNighttimeRange"  "800"
+    "TeamName"  "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "precache"
+    {
+        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_flameguard.vpcf"
+    }
 
-	"Ability1"				"elementalbuilder_upgrade_firegod"
-	"Ability2"				"ember_spirit_flame_guard"
-	"Ability3"				"ability_empty_3"
-	"Ability4"				"sell"
+    "Creature"
+    {
+        "DisableClumpingBehavior"   "1"
+        "DefaultState"  "Invade"
+        "States"
+        {
+            "Invade"
+            {
+                "Name"  "Invade"
+                "Aggression"    "100.0"
+                "Avoidance" "0.0"
+                "Support"   "0.0"
+            }
 
-	// Armor
-	//----------------------------------------------------------------
-	"ArmorPhysical"         "4"
-	"MagicalResistance"     "0"
+        }
 
-	// Attack
-	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "62.5"
-	"AttackDamageMax"       "75.0"
-	"AttackRate"            "1"
-	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "100"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
+    }
 
-	"Legion_AttackType"		"arcane"
-	"Legion_DefendType"		"medium"
-	"Legion_Fraction"		"elemental"
-
-	// Bounty
-	//----------------------------------------------------------------
-	"BountyGoldMin"         "0"
-	"BountyGoldMax"         "0"
-
-	// Bounds
-	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-	"RingRadius"            "30"
-
-	// Movement
-	//----------------------------------------------------------------
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "270"
-	"MovementTurnRate"      "0.6"
-
-	// Status
-	//----------------------------------------------------------------
-	"StatusHealth"          "900"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
-
-	// Vision
-	//----------------------------------------------------------------
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	// Team
-	//----------------------------------------------------------------
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-	"precache"
-	{
-		"particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_flameguard.vpcf"
-	}
-
-	// Creature Data
-	//----------------------------------------------------------------
-	"Creature"
-	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
-		"States"
-		{
-			"Invade"
-			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
-			}
-		}
-	}
 }

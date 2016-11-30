@@ -12,38 +12,38 @@ Storage.app_id = 1
 Storage.online = true
 --key: steamId
 --value: table
-----key: assigned by table.insert
-----value: callback
+--- -key: assigned by table.insert
+---- value: callback
 Storage.requested = {}
 --key: steamId
 --value: data
 Storage.cachedData = {}
 --key: attribute
 --value: table
-----key: assinged by table.insert
-----value: { from, to, callback }
+--- -key: assinged by table.insert
+---- value: { from, to, callback }
 Storage.rankingRequests = {}
 --key: attribute
 --value: table
-----key: rank
-----value: data
+--- -key: rank
+---- value: data
 Storage.rankings = {}
 --key: attribute
 --value: table
-----key: attribute
-----value: playerCount
+--- -key: attribute
+---- value: playerCount
 Storage.rankingEntries = {}
 --key: attribute
 --value: table
-----key: steamId
-----value: rank
+--- -key: steamId
+---- value: rank
 Storage.rankingPositions = {}
 --key: attribute
 --value: table
-----key: steamId
-----value: table
-------key: assigned by table.insert
-------value: callback
+--- -key: steamId
+---- value: table
+------ key: assigned by table.insert
+------ value: callback
 Storage.rankingPositionRequests = {}
 
 function Storage:Init()
@@ -55,12 +55,41 @@ end
 
 --Storage:Init()
 
+function Storage:RequestRankingPositions(attribute, steamIds)
+    for _, steamId in pairs(steamIds) do
+        local callbacks = self:GetRankingPositionCallbacks(attribute, steamId)
+        table.insert(callbacks, function(result) end)
+    end
+    self:SendHttpRequest("GET", {
+        customGameId = self.app_id,
+        attribute = attribute,
+        steamIds = JSON:encode(steamIds)
+    }, function(result)
+        local resultTable = JSON:decode(result)
+        print("GET RANKING POSITIONS RESPONSE")
+        DeepPrintTable(resultTable)
+        if (resultTable == nil) then return end
+        for _, ranking in pairs(resultTable) do
+            self:GetRankingPosition(ranking.attribute)[ranking.steamId] = ranking.rank
+            local callbacks = self:GetRankingPositionCallbacks(ranking.attribute, ranking.steamId)
+            for k, callback in pairs(callbacks) do
+                callback(ranking)
+                callbacks[k] = nil
+            end
+        end
+    end)
+end
+
 function Storage:GetRankingPosition(attribute, steamId, callback)
     local rankingPositions = self:GetRankingPositions(attribute)
     if rankingPositions[steamId] ~= nil then
-        return callback({attribute = attribute, steamId = steamId, rank =rankingPositions[steamId]})
+        return callback({ attribute = attribute, steamId = steamId, rank = rankingPositions[steamId] })
     end
-    table.insert(self:GetRankingPositionCallbacks(attribute, steamId), callback)
+    local callbacks = self:GetRankingPositionCallbacks(attribute, steamId)
+    table.insert(callbacks, callback)
+    if (#callbacks > 1) then
+        return
+    end
     self:RequestRankingPosition(attribute, steamId)
 end
 
@@ -87,11 +116,11 @@ function Storage:GetRankingPositionCallbacks(attribute, steamId)
     if self.rankingPositionRequests[attribute] == nil then
         self.rankingPositionRequests[attribute] = {}
     end
-    local attributeCallbacks = self.rankingPositionRequests[attribute]
-    if attributeCallbacks[steamId] == nil then
-        attributeCallbacks[steamId] = {}
+    local callbacks = self.rankingPositionRequests[attribute]
+    if callbacks[steamId] == nil then
+        callbacks[steamId] = {}
     end
-    return attributeCallbacks[steamId]
+    return callbacks[steamId]
 end
 
 function Storage:GetRankingPositions(attribute)
@@ -107,7 +136,7 @@ function Storage:GetRanking(attribute, from, to, callback)
         return
     end
     self:RequestMissing(attribute, from, to)
-    local requestData = {from = from, to = to, callback = callback }
+    local requestData = { from = from, to = to, callback = callback }
     table.insert(self:GetRankingRequestsFor(attribute), requestData)
 end
 
@@ -212,7 +241,7 @@ end
 
 function Storage:AddCachedRanking(attribute, data)
     local ranking = self.rankings[attribute] or {}
-    for k,v in pairs(data.ranking) do
+    for k, v in pairs(data.ranking) do
         ranking[k - 1 + data.from] = v
     end
     print("GET RANKING RESPONSE:")
@@ -243,7 +272,7 @@ function Storage:GetPlayerData(steam_id, callback)
     self:SendHttpRequest("GET", {
         customGameId = self.app_id,
         steamId = steam_id,
-        },
+    },
         function(result)
             local resultTable = JSON:decode(result)
             print("GET RESPONSE:")
@@ -267,7 +296,7 @@ end
 
 function Storage:CallRequestedCallbacks(steam_id, result, success)
     if (self.requested[steam_id] == nil) then return end
-    for _,callback in pairs(self.requested[steam_id]) do
+    for _, callback in pairs(self.requested[steam_id]) do
         callback(result, success)
     end
 end
@@ -288,19 +317,19 @@ function Storage:SavePlayerData(steam_id, toStore, callback)
         customGameId = self.app_id,
         steamId = steam_id,
         data = data,
-        }, function (result)
-            local resultTable = JSON:decode(result)
-            print("POST RESPONSE")
-            DeepPrintTable(resultTable)
-            if callback == nil then
-                return
-            end
-            if resultTable ~= nil then
-                callback(resultTable, resultTable[FailureAttribute] == nil)
-            else
-                callback(resultTable, false)
-            end
-        end)
+    }, function(result)
+        local resultTable = JSON:decode(result)
+        print("POST RESPONSE")
+        DeepPrintTable(resultTable)
+        if callback == nil then
+            return
+        end
+        if resultTable ~= nil then
+            callback(resultTable, resultTable[FailureAttribute] == nil)
+        else
+            callback(resultTable, false)
+        end
+    end)
 end
 
 function Storage:SaveMatchData(winner, matchData)
@@ -312,21 +341,21 @@ function Storage:SaveMatchData(winner, matchData)
     end
     DeepPrintTable(matchData)
     self:SendHttpRequest("POST", {
-            customGameId = self.app_id,
-            winner = winner,
-            matchData = JSON:encode(matchData)
-        }, function(result)
+        customGameId = self.app_id,
+        winner = winner,
+        matchData = JSON:encode(matchData)
+    }, function(result)
         local resultTable = JSON:decode(result)
         print("POST MATCH RESPONSE")
         DeepPrintTable(resultTable)
         if callback == nil then
             return
         end
-            if resultTable ~= nil then
-                callback(resultTable, resultTable[FailureAttribute] == nil)
-            else
-                callback(resultTable, false)
-            end
+        if resultTable ~= nil then
+            callback(resultTable, resultTable[FailureAttribute] == nil)
+        else
+            callback(resultTable, false)
+        end
     end)
 end
 
@@ -356,12 +385,15 @@ function Storage:SendHttpRequest(method, data, callback)
         req:SetHTTPRequestGetOrPostParameter(key, tostring(value))
     end
     req:Send(function(result)
-            print(result.Body)
-            if (result.Body == "") then
-                self.online = false
-            end
-            callback(result.Body)
-        end)
+        print(result.Body)
+        if (string.match(result.Body, "<html>")) then
+            result.Body = ""
+        end
+        if (result.Body == "") then
+            self.online = false
+        end
+        callback(result.Body)
+    end)
 end
 
 return Storage

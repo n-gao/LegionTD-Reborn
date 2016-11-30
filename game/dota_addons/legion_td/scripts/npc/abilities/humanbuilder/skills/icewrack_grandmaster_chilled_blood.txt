@@ -18,7 +18,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"bonus_hp"			"10"
+				"bonus_hp"			"100"
 			}
 			"02"
 			{

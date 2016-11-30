@@ -1,102 +1,94 @@
 "tower_humanbuilder_archer"
 {
-	// General
-	//----------------------------------------------------------------
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/windrunner/windrunner.vmdl"
-	"ModelScale"            "0.55"
-	"SoundSet"					    "Hero_Windrunner"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "150"
-	"Vscripts"              "ai/ai_default.lua"
-
-	"Ability4"							"sell"
-	"Ability1"							"humanbuilder_upgrade_hunter"
-	"Ability2"							"ability_empty_2"
-	"Ability3"							"ability_empty_3"
-	
-
-	// Armor
-	//----------------------------------------------------------------
-	"ArmorPhysical"         "1"
-	"MagicalResistance"     "0"
-
-	// Attack
-	//----------------------------------------------------------------
-	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "62.5"
-	"AttackDamageMax"       "75.0"
-	"AttackRate"            ".9"
-	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "500"
-	"ProjectileModel"       "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
-	"ProjectileSpeed"       "900"
-	
-	"Legion_AttackType"		"pierce"
-	"Legion_DefendType"		"medium"
-	"Legion_Fraction"		"human"
-
-	// Bounty
-	//----------------------------------------------------------------
-	"BountyGoldMin"         "0"
-	"BountyGoldMax"         "0"
-
-	// Bounds
-	//----------------------------------------------------------------
-	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-	"RingRadius"            "30"
-
-	// Movement
-	//----------------------------------------------------------------
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "270"
-	"MovementTurnRate"      "0.6"
-
-	// Status
-	//----------------------------------------------------------------
-	"StatusHealth"          "60"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
-
-	// Vision
-	//----------------------------------------------------------------
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	// Team
-	//----------------------------------------------------------------
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-	// Creature Data
-	//----------------------------------------------------------------
-	"Creature"
-	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
-		"States"
-		{
-			"Invade"
-			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
-			}
-		}
-    "AttachWearables"
+    "BaseClass" "npc_dota_creature"
+    "Model" "models/heroes/windrunner/windrunner.vmdl"
+    "ModelScale"    "0.55"
+    "SoundSet"  "Hero_Windrunner"
+    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
+    "Level" "1"
+    "HealthBarOffset"   "150"
+    "Vscripts"  "ai/ai_default.lua"
+    "Ability4"  "sell"
+    "Ability1"  "humanbuilder_upgrade_hunter"
+    "Ability2"  "ability_empty_2"
+    "Ability3"  "ability_empty_3"
+    "ArmorPhysical" "0"
+    "MagicalResistance" "0"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"   "30"
+    "AttackDamageMax"   "32"
+    "AttackRate"    "0.83"
+    "AttackAnimationPoint"  "0.5"
+    "AttackAcquisitionRange"    "850"
+    "AttackRange"   "500"
+    "ProjectileModel"   "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
+    "ProjectileSpeed"   "900"
+    "Legion_AttackType" "pierce"
+    "Legion_DefendType" "medium"
+    "Legion_Fraction"   "human"
+    "BountyGoldMin" "0"
+    "BountyGoldMax" "0"
+    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
+    "RingRadius"    "30"
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed" "270"
+    "MovementTurnRate"  "0.6"
+    "StatusHealth"  "50"
+    "StatusHealthRegen" "0"
+    "StatusMana"    "0"
+    "StatusManaRegen"   "0"
+    "VisionDaytimeRange"    "1400"
+    "VisionNighttimeRange"  "800"
+    "TeamName"  "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "Creature"
     {
-      "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
-      "Wearable2" { "ItemDef" "4180" } // "Nature's Shortbow"
-      "Wearable3" { "ItemDef" "23" } // "Wind Ranger's Shoulder Pads"
-      "Wearable4" { "ItemDef" "5278" } // Cloak of the Northern Wind
-      "Wearable5" { "ItemDef" "25" } // "Wind Ranger's Quiver"
+        "DisableClumpingBehavior"   "1"
+        "DefaultState"  "Invade"
+        "States"
+        {
+            "Invade"
+            {
+                "Name"  "Invade"
+                "Aggression"    "100.0"
+                "Avoidance" "0.0"
+                "Support"   "0.0"
+            }
+
+        }
+
+        "AttachWearables"
+        {
+            "Wearable1"
+            {
+                "ItemDef"   "21"
+            }
+
+            "Wearable2"
+            {
+                "ItemDef"   "4180"
+            }
+
+            "Wearable3"
+            {
+                "ItemDef"   "23"
+            }
+
+            "Wearable4"
+            {
+                "ItemDef"   "5278"
+            }
+
+            "Wearable5"
+            {
+                "ItemDef"   "25"
+            }
+
+        }
+
     }
-	}
+
 }

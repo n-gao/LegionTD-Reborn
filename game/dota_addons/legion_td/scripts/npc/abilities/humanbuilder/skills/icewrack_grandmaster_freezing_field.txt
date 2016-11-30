@@ -43,7 +43,7 @@
 		"06"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"debuff_slow"	"-20"
+			"debuff_slow"	"-40"
 		}
 		"07"
 		{
@@ -58,12 +58,12 @@
 		"09"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"damage"			"60"
+			"damage"			"90"
 		}
 		"10"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"freeze_damage"		"10"
+			"freeze_damage"		"30"
 		}
 	}
 	

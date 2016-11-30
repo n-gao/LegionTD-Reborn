@@ -113,7 +113,7 @@
 
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"1.5"
+		"AbilityCooldown"				"1"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -181,12 +181,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"far_radius"			"75"
+				"far_radius"			"105"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"pull_radius"			"120"
+				"pull_radius"			"150"
 			}
 			"04"
 			{
@@ -196,7 +196,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"near_radius"			"55"
+				"near_radius"			"75"
 			}
 			"06"
 			{
@@ -371,7 +371,7 @@
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"damage_per_second"				"25"
+				"damage_per_second"				"50"
 			}
 		}
 	}

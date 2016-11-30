@@ -1,71 +1,61 @@
-//*********************************FIXEN***********
-//Leutekugel
-//------------------------------------------------------------------
 "unit_lightning_ball"
 {
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/phoenix/phoenix_spirit.vmdl"
-	"ModelScale"            "2"
-	"SoundSet"					"Hero_Phoenix"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "140"
-	"Vscripts"              "ai/ai_default.lua"
-
-	"ArmorPhysical"         "5"
-	"MagicalResistance"     "0"
-
-	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "5.0"
-	"AttackDamageMax"       "7.5"
-	"AttackRate"            "0.5"
-	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "90"
-
-	"Legion_AttackType"		"pierce"
-	"Legion_DefendType"		"medium"
-	"Legion_Experience"		"25"
-	"Legion_Fraction"		"wave"
-
-	"BountyGoldMin"         "5.0"
-	"BountyGoldMax"         "5.0"
-
-	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"					"50"
-	"RingRadius"            "50"
-
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "300"
-	"MovementTurnRate"      "0.6"
-
-	"StatusHealth"          "100"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
-
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/heroes/phoenix/phoenix_spirit.vmdl"
+	"ModelScale"	"2"
+	"SoundSet"	"Hero_Phoenix"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"140"
+	"Vscripts"	"ai/ai_default.lua"
+	"ArmorPhysical"	"3"
+	"MagicalResistance"	"0"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"8"
+	"AttackDamageMax"	"9.5"
+	"AttackRate"	"0.7"
+	"AttackAnimationPoint"	"0.2"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"90"
+	"Legion_AttackType"	"pierce"
+	"Legion_DefendType"	"medium"
+	"Legion_Experience"	"25"
+	"Legion_Fraction"	"wave"
+	"BountyGoldMin"	"5.0"
+	"BountyGoldMax"	"5.0"
+	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+	"CollisionSize"	"50"
+	"RingRadius"	"50"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"300"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"130"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"0"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"0.0"
 			}
+
 		}
+
 	}
+
 }

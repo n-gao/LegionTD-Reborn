@@ -1,15 +1,15 @@
-function Jinada( keys )
-	local ability = keys.ability
-	local level = ability:GetLevel() - 1
-	local cooldown = ability:GetCooldown(ability:GetLevel() - 1)
-	local caster = keys.caster	
-	local modifierName = keys.modifiername
+function Jinada(keys)
+    local ability = keys.ability
+    local level = ability:GetLevel() - 1
+    local cooldown = ability:GetCooldown(ability:GetLevel() - 1)
+    local caster = keys.caster
+    local modifierName = keys.modifiername
 
-	ability:StartCooldown(cooldown)
+    ability:StartCooldown(cooldown)
 
-	caster:RemoveModifierByName(modifierName) 
+    caster:RemoveModifierByName(modifierName)
 
-	Timers:CreateTimer(cooldown, function()
-		ability:ApplyDataDrivenModifier(caster, caster, modifierName, {})
-	end)	
+    Timers:CreateTimer(cooldown, function()
+        ability:ApplyDataDrivenModifier(caster, caster, modifierName, {})
+    end)
 end

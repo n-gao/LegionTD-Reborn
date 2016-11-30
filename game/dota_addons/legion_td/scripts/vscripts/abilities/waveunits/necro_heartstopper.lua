@@ -1,7 +1,7 @@
 --[[Author: Pizzalol
     Date: 11.07.2015.
     Deals damage based on the max HP of the target]]
-function HeartstopperAura( keys )
+function HeartstopperAura(keys)
     local caster = keys.caster
     local ability = keys.ability
     local target = keys.target

@@ -1,86 +1,88 @@
-//Definitiv nicht Lifestealer
-//------------------------------------------------------------------
 "unit_not_lifestealer"
 {
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/life_stealer/life_stealer.vmdl"
-	"ModelScale"            "0.6"
-	"SoundSet"		"Hero_LifeStealer"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "140"
-	"Vscripts"              "ai/ai_default.lua"
-
-	"Ability1"							"skeleton_king_vampiric_aura"
-
-	"ArmorPhysical"         "6"
-	"MagicalResistance"     "20"
-
-	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "15.0"
-	"AttackDamageMax"       "18.75"
-	"AttackRate"            "0.7"
-	"AttackAnimationPoint"  "0.5"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "90"
-	"ProjectileModel"       ""
-	"ProjectileSpeed"       "0"
-
-	"Legion_AttackType"		"normal"
-	"Legion_DefendType"		"light"
-	"Legion_Experience"		"45"
-	"Legion_Fraction"		"wave"
-
-	"BountyGoldMin"         "6.0"
-	"BountyGoldMax"         "6.0"
-
-	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"			"50"
-	"RingRadius"            "50"
-
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "300"
-	"MovementTurnRate"      "0.6"
-
-	"StatusHealth"          "300"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "0"
-	"StatusManaRegen"       "0"
-
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
-
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/heroes/life_stealer/life_stealer.vmdl"
+	"ModelScale"	"0.6"
+	"SoundSet"	"Hero_LifeStealer"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"140"
+	"Vscripts"	"ai/ai_default.lua"
+	"Ability1"	"skeleton_king_vampiric_aura"
+	"ArmorPhysical"	"4"
+	"MagicalResistance"	"20"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"18.0"
+	"AttackDamageMax"	"20.25"
+	"AttackRate"	"0.85"
+	"AttackAnimationPoint"	"0.5"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"90"
+	"ProjectileModel"	""
+	"ProjectileSpeed"	"0"
+	"Legion_AttackType"	"normal"
+	"Legion_DefendType"	"light"
+	"Legion_Experience"	"45"
+	"Legion_Fraction"	"wave"
+	"BountyGoldMin"	"6.0"
+	"BountyGoldMax"	"6.0"
+	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+	"CollisionSize"	"50"
+	"RingRadius"	"50"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"300"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"240"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"0"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	"precache"
 	{
-		"particle"  "particles/units/heroes/hero_life_stealer/life_stealer_feast.vpcf"
+		"particle"	"particles/units/heroes/hero_life_stealer/life_stealer_feast.vpcf"
 	}
 
 	"Creature"
 	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
 		"States"
 		{
 			"Invade"
 			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"0.0"
 			}
-		}
-		"AttachWearables"
-		{
-			"Wearable1" { "ItemDef" "6634"}
-			"Wearable2" { "ItemDef" "4243"}
-			"Wearable3"	{ "ItemDef"	"6321"}
 
 		}
+
+		"AttachWearables"
+		{
+			"Wearable1"
+			{
+				"ItemDef"	"6634"
+			}
+
+			"Wearable2"
+			{
+				"ItemDef"	"4243"
+			}
+
+			"Wearable3"
+			{
+				"ItemDef"	"6321"
+			}
+
+		}
+
 	}
+
 }
