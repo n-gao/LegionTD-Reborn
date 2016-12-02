@@ -1641,7 +1641,7 @@
 	    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"   "75.5"
 	    "AttackDamageMax"   "80.0"
-	    "AttackRate"    "1.21"
+	    "AttackRate"    "1.17"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange"    "850"
 	    "AttackRange"   "370"
@@ -2309,7 +2309,7 @@
 	    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"   "24.25"
 	    "AttackDamageMax"   "26.5"
-	    "AttackRate"    "0.85"
+	    "AttackRate"    "0.8"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange"    "850"
 	    "AttackRange"   "90"
@@ -2406,8 +2406,8 @@
 	    "MagicalResistance" "0"
 	    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-	    "AttackDamageMin"   "55.75"
-	    "AttackDamageMax"   "59.5"
+	    "AttackDamageMin"   "57.75"
+	    "AttackDamageMax"   "60.5"
 	    "AttackRate"    "0.4"
 	    "AttackAnimationPoint"  "0.3"
 	    "AttackAcquisitionRange"    "850"
@@ -2482,7 +2482,7 @@
 	    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"   "135.0"
 	    "AttackDamageMax"   "160.0"
-	    "AttackRate"    "1.25"
+	    "AttackRate"    "1.2"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange"    "850"
 	    "AttackRange"   "375"
@@ -2556,7 +2556,7 @@
 	    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"   "87.5"
 	    "AttackDamageMax"   "98.75"
-	    "AttackRate"    "0.67"
+	    "AttackRate"    "0.64"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange"    "850"
 	    "AttackRange"   "90"
@@ -2757,7 +2757,7 @@
 	    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"   "30"
 	    "AttackDamageMax"   "32"
-	    "AttackRate"    "0.83"
+	    "AttackRate"    "0.8"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange"    "850"
 	    "AttackRange"   "500"
@@ -3054,7 +3054,7 @@
 	    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"   "60.0"
 	    "AttackDamageMax"   "65.0"
-	    "AttackRate"    "1.0"
+	    "AttackRate"    "0.9"
 	    "AttackAnimationPoint"  "0.7"
 	    "AttackAcquisitionRange"    "850"
 	    "AttackRange"   "100"
@@ -3380,7 +3380,7 @@
 	    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"       "128.5"
 	    "AttackDamageMax"       "135.0"
-	    "AttackRate"            "0.4"
+	    "AttackRate"            "0.35"
 	    "AttackAnimationPoint"  "0.35"
 	    "AttackAcquisitionRange" "850"
 	    "AttackRange"           "350"
@@ -3670,7 +3670,7 @@
 	    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"   "80.0"
 	    "AttackDamageMax"   "95.5"
-	    "AttackRate"    "0.8"
+	    "AttackRate"    "0.73"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange"    "850"
 	    "AttackRange"   "550"
@@ -3944,95 +3944,95 @@
 	}
 	"tower_humanbuilder_mage"
 	{
-		// General
-		//----------------------------------------------------------------
-		"BaseClass"             "npc_dota_creature"
-		"Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
-		"ModelScale"            "0.55"
-		"SoundSet"					    "Hero_CrystalMaiden"
-		"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
-		"Level"                 "1"
-		"HealthBarOffset"       "150"
-		"Vscripts"              "ai/humanbuilder/ai_mage.lua"
+	    // General
+	    //----------------------------------------------------------------
+	    "BaseClass"             "npc_dota_creature"
+	    "Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
+	    "ModelScale"            "0.55"
+	    "SoundSet"                      "Hero_CrystalMaiden"
+	    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_crystal_maiden.vsndevts"
+	    "Level"                 "1"
+	    "HealthBarOffset"       "150"
+	    "Vscripts"              "ai/humanbuilder/ai_mage.lua"
 	
-		"Ability4"				"sell"
-		"Ability1"				"humanbuilder_upgrade_archmage"
-		"Ability2"				"mage_chain_fade"
-		"Ability3"				"mage_crystal_nova"
+	    "Ability4"              "sell"
+	    "Ability1"              "humanbuilder_upgrade_archmage"
+	    "Ability2"              "mage_chain_fade"
+	    "Ability3"              "mage_crystal_nova"
 	
-		// Armor
-		//----------------------------------------------------------------
-		"ArmorPhysical"         "0"
-		"MagicalResistance"     "0"
+	    // Armor
+	    //----------------------------------------------------------------
+	    "ArmorPhysical"         "0"
+	    "MagicalResistance"     "0"
 	
-		// Attack
-		//----------------------------------------------------------------
-		"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"       "66.25"
-		"AttackDamageMax"       "78.75"
-		"AttackRate"            "1.0"
-		"AttackAnimationPoint"  "0.5"
-		"AttackAcquisitionRange" "850"
-		"AttackRange"           "450"
-		"ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
-		"ProjectileSpeed"       "400"
+	    // Attack
+	    //----------------------------------------------------------------
+	    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+	    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"       "66.25"
+	    "AttackDamageMax"       "78.75"
+	    "AttackRate"            "1.0"
+	    "AttackAnimationPoint"  "0.5"
+	    "AttackAcquisitionRange" "850"
+	    "AttackRange"           "450"
+	    "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
+	    "ProjectileSpeed"       "400"
 	
-		"Legion_AttackType"		"arcane"
-		"Legion_DefendType"		"light"
-		"Legion_Fraction"		"human"
+	    "Legion_AttackType"     "arcane"
+	    "Legion_DefendType"     "light"
+	    "Legion_Fraction"       "human"
 	
-		// Bounty
-		//----------------------------------------------------------------
-		"BountyGoldMin"         "0"
-		"BountyGoldMax"         "0"
+	    // Bounty
+	    //----------------------------------------------------------------
+	    "BountyGoldMin"         "0"
+	    "BountyGoldMax"         "0"
 	
-		// Bounds
-		//----------------------------------------------------------------
-		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-		"RingRadius"            "30"
+	    // Bounds
+	    //----------------------------------------------------------------
+	    "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"            "30"
 	
-		// Movement
-		//----------------------------------------------------------------
-		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"         "270"
-		"MovementTurnRate"      "0.6"
+	    // Movement
+	    //----------------------------------------------------------------
+	    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"         "270"
+	    "MovementTurnRate"      "0.6"
 	
-		// Status
-		//----------------------------------------------------------------
-		"StatusHealth"          "65"
-		"StatusHealthRegen"     "0"
-		"StatusMana"            "0"
-		"StatusManaRegen"       "0"
+	    // Status
+	    //----------------------------------------------------------------
+	    "StatusHealth"          "65"
+	    "StatusHealthRegen"     "0"
+	    "StatusMana"            "0"
+	    "StatusManaRegen"       "0"
 	
-		// Vision
-		//----------------------------------------------------------------
-		"VisionDaytimeRange"    "1400"
-		"VisionNighttimeRange"  "800"
+	    // Vision
+	    //----------------------------------------------------------------
+	    "VisionDaytimeRange"    "1400"
+	    "VisionNighttimeRange"  "800"
 	
-		// Team
-		//----------------------------------------------------------------
-		"TeamName"              "DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	    // Team
+	    //----------------------------------------------------------------
+	    "TeamName"              "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	
-		// Creature Data
-		//----------------------------------------------------------------
-		"Creature"
-		{
-			"DisableClumpingBehavior"       "1"
-			"DefaultState"				"Invade"
-			"States"
-			{
-				"Invade"
-				{
-					"Name"				"Invade"
-					"Aggression"		"100.0"
-					"Avoidance"			"0.0"
-					"Support"			"0.0"
-				}
-			}
+	    // Creature Data
+	    //----------------------------------------------------------------
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"       "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
 	    "AttachWearables"
 	    {
 	      "Wearable1" { "ItemDef" "38" } // "Crystal Maiden's Cape"
@@ -4043,7 +4043,7 @@
 	      "Wearable5" { "ItemDef" "311" } // "Crystal Maiden's Headdress"
 	      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
 	    }
-		}
+	    }
 	}
 	"tower_humanbuilder_marksman"
 	{
@@ -4074,7 +4074,7 @@
 	    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"       "145.0"
 	    "AttackDamageMax"       "152.5"
-	    "AttackRate"            "0.65"
+	    "AttackRate"            "0.6"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange" "850"
 	    "AttackRange"           "600"
@@ -4478,7 +4478,7 @@
 	    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"       "427.5"
 	    "AttackDamageMax"       "437.5"
-	    "AttackRate"            "1.1"
+	    "AttackRate"            "1.0"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange" "850"
 	    "AttackRange"           "900"
@@ -4580,7 +4580,7 @@
 	    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"       "100.0"
 	    "AttackDamageMax"       "112.5"
-	    "AttackRate"            "0.94"
+	    "AttackRate"            "0.85"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange" "850"
 	    "AttackRange"           "100"
@@ -4782,8 +4782,8 @@
 	    //----------------------------------------------------------------
 	    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	    "AttackDamageMin"       "134.5"
-	    "AttackDamageMax"       "145.5"
+	    "AttackDamageMin"       "140.5"
+	    "AttackDamageMax"       "150.5"
 	    "AttackRate"            "0.6"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange" "850"
@@ -4813,7 +4813,7 @@
 	
 	    // Status
 	    //----------------------------------------------------------------
-	    "StatusHealth"          "900"
+	    "StatusHealth"          "950"
 	    "StatusHealthRegen"     "0"
 	    "StatusMana"            "0"
 	    "StatusManaRegen"       "0"
@@ -7795,7 +7795,7 @@
 	    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"       "127.5"
 	    "AttackDamageMax"       "132.0"
-	    "AttackRate"            "1.0"
+	    "AttackRate"            "1.3"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange" "850"
 	    "AttackRange"           "90"
