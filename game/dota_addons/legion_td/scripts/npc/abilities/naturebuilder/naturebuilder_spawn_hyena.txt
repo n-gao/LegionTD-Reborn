@@ -5,7 +5,7 @@
 	"MaxLevel"	"1"
 	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
 	"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
-	"AbilityGoldCost"	"220"
+	"AbilityGoldCost"	"180"
 	"AbilityCooldown"	"1.0"
 	"AbilityCastRange"	"125"
 	"OnSpellStart"
@@ -23,13 +23,13 @@
 		"01"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"atk_damage_tooltip"	"191.75"
+			"atk_damage_tooltip"	"120.5"
 		}
 
 		"02"
 		{
 			"var_type"	"FIELD_FLOAT"
-			"atk_speed_tooltip"	"0.62"
+			"atk_speed_tooltip"	"0.58"
 		}
 
 		"03"

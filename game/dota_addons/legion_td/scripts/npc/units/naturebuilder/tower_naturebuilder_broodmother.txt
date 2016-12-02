@@ -13,7 +13,7 @@
 
     "Ability4"                          "sell"
     "Ability1"                          "brood_spawn_spiderlings"
-    "Ability2"              "ability_empty_2"
+    "Ability2"              "broodmother_poison_sting"
     "Ability3"              "ability_empty_3"
 
     // Armor

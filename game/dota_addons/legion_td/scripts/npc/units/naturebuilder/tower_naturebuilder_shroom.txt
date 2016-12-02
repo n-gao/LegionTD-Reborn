@@ -9,11 +9,11 @@
     "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
     "Level"                 "1"
     "HealthBarOffset"       "150"
-    "Vscripts"              "ai/ai_default.lua"
+    "Vscripts"              "ai/naturebuilder/ai_shroom.lua"
 
     "Ability4"                          "sell"
     "Ability1"                          "shroom_corrosive_skin"
-    "Ability2"              "ability_empty_2"
+    "Ability2"              "shroom_venomous_gale"
     "Ability3"              "ability_empty_3"
 
     // Armor
@@ -27,7 +27,7 @@
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
     "AttackDamageMin"       "127.5"
     "AttackDamageMax"       "132.0"
-    "AttackRate"            "0.6"
+    "AttackRate"            "1.3"
     "AttackAnimationPoint"  "0.5"
     "AttackAcquisitionRange" "850"
     "AttackRange"           "90"
