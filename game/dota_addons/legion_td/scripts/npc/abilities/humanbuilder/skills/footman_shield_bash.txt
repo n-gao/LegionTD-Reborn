@@ -21,7 +21,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"damage_blocked"		"3"
+			"damage_blocked"		"2"
 		}
 		"02"
 		{
