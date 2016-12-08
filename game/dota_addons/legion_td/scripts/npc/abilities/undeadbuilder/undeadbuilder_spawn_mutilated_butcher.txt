@@ -1,0 +1,72 @@
+"undeadbuilder_spawn_mutilated_butcher"
+{
+	"BaseClass"	"ability_datadriven"
+	"AbilityTextureName"	"spawn_butcher"
+	"MaxLevel"	"1"
+	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
+	"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	"AbilityGoldCost"	"70"
+	"AbilityCooldown"	"1.0"
+	"AbilityCastRange"	"125"
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"unit.lua"
+			"Function"	"UnitSpawn"
+		}
+
+	}
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_damage_tooltip"	"100"
+		}
+
+		"02"
+		{
+			"var_type"	"FIELD_FLOAT"
+			"atk_speed_tooltip"	"2"
+		}
+
+		"03"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_range_tooltip"	"90"
+		}
+
+		"04"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"health_tooltip"	"180"
+		}
+
+		"05"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"armor_tooltip"	"6"
+		}
+
+		"06"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"food_cost"	"1"
+		}
+
+		"07"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"unitID"	"411"
+		}
+
+	}
+
+	"precache"
+	{
+		"model"	"models/heroes/pudge/pudge.vmdl"
+	}
+
+}

@@ -1,0 +1,44 @@
+"frenzy"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"             "ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityTextureName"            "necronomicon_warrior_sight"
+
+
+    // Stats
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityModifierSupportBonus"   "5"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+    }
+
+    "Modifiers"
+    {
+        "frenzy_aura"
+        {
+            "IsHidden"  "1"
+            "Passive"   "1"
+                
+            "Aura"                  "frenzy_modifier_datadriven"
+            "Aura_Radius"           "300"
+            "Aura_Teams"            "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+            "Aura_Types"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        }
+
+        "frenzy_modifier_datadriven"
+        {
+            "Duration" "0.5"
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "40"
+            }
+        }
+    }
+}
