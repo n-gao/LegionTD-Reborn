@@ -9436,7 +9436,7 @@
 	                       
 	    "Ability1"                          "undeadbuilder_upgrade_recomposer"
 	    "Ability2"                          "undeadbuilder_upgrade_cultist"
-	    "Ability3"                          "undeadbuilder_upgrade_interruptor"
+	    "Ability3"                          "undeadbuilder_upgrade_interrupter"
 	    "Ability4"                          "perfected_nether_blast"
 	    "Ability5"                          "sell"
 	
