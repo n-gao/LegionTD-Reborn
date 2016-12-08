@@ -1,7 +1,7 @@
 assassinbuilder_spawn_creeping_shadow
 {
 	"BaseClass"								"ability_datadriven"
-	"AbilityTextureName"					"spawn_archer"
+	"AbilityTextureName"					"spawn_creeping_shadow"
 	"MaxLevel"								"1"
 
 	"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
