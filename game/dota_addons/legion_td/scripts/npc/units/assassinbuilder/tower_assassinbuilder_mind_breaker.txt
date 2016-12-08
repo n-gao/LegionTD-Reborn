@@ -1,0 +1,82 @@
+"tower_assassinbuilder_mind_breaker"
+{
+    "BaseClass"                 "npc_dota_creature"
+    "Model"                     "models/heroes/silencer/silencer.vmdl"
+    "SoundSet"                  "Hero_Silencer"
+    "ModelScale"                "0.5"
+    "HealthBarOffset"           "150"
+    "Level"                     "1"
+
+    "Ability1"                  "assassinbuilder_disequilibriate"
+    "Ability2"                  "assassinbuilder_upgrade_mind_slicer"
+    "Ability3"                  "assassinbuilder_upgrade_silent_champion"
+    "Ability4"                  "sell"
+
+    "ArmorPhysical"             "1"
+    "MagicalResistance"         "0"
+
+    "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"           "100"
+    "AttackDamageMax"           "200"
+    "AttackRate"                "0.5"
+    "AttackAnimationPoint"      "0.5"
+    "AttackAcquisitionRange"    "850"
+    "AttackRange"               "500"
+    "AttackRangeBuffer"         "250"
+    "ProjectileModel"           "particles/units/heroes/hero_silencer/silencer_base_attack.vpcf"
+    "ProjectileSpeed"           "1000"
+
+    "Legion_AttackType"         "normal"
+    "Legion_DefendType"         "medium"
+    "Legion_Fraction"           ""
+
+    "BountyXP"                  "0"
+    "BountyGoldMin"             "0"
+    "BountyGoldMax"             "0"
+
+    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+    "RingRadius"                "30"
+
+    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"             "270"
+    "MovementTurnRate"          "0.5"
+
+    "StatusHealth"              "130"
+    "StatusHealthRegen"         "0"
+    "StatusMana"                "0"
+    "StatusManaRegen"           "0"
+
+    "VisionDaytimeRange"        "1400"
+    "VisionNighttimeRange"      "800"
+
+    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+    "Creature"
+    {
+        "DisableClumpingBehavior"   "1"
+        "DefaultState"              "Invade"
+        "States"
+        {
+            "Invade"
+            {
+                "Name"              "Invade"
+                "Aggression"        "100.0"
+                "Avoidance"         "0.0"
+                "Support"           "0.0"
+            }
+        }
+        "AttachWearables"
+        {
+            "Wearable1" { "ItemDef" "6387" }
+            "Wearable2" { "ItemDef" "6389" }
+            "Wearable3" { "ItemDef" "6390" }
+            "Wearable4" { "ItemDef" "6391" }
+            "Wearable5" { "ItemDef" "6393" }
+            "Wearable6" { "ItemDef" "6394" }
+        }
+    }
+}

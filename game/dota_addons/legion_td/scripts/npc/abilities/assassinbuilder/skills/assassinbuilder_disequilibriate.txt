@@ -1,0 +1,29 @@
+"assassinbuilder_disequilibriate"
+{
+	"BaseClass"             		"forged_spirit_melting_strike"
+	"AbilityTextureName"			"forged_spirit_melting_strike"
+	"MaxLevel" 						"1"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	
+	"AbilityManaCost"				"0"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"armor_removed"			"1"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"max_armor_removed"		"10"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"duration"				"5"
+		}
+	}
+}

@@ -1,0 +1,41 @@
+"assassinbuilder_bloodrage"
+{
+	"BaseClass"						"bloodseeker_bloodrage"
+	"AbilityTextureName"			"bloodseeker_bloodrage"
+	"MaxLevel"						"1"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+	"AbilityCastPoint"				"0"
+	"AbilityCooldown"				"12"
+	"AbilityManaCost"				"0"		
+	"AbilityCastRange"				"800"
+	"AbilityModifierSupportValue"	"0.1"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"duration"					"12"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"damage_increase_pct"		"40"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"health_bonus_pct"			"25"
+		}
+		"04"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"health_bonus_creep_pct"	"25"
+		}
+	}
+}
