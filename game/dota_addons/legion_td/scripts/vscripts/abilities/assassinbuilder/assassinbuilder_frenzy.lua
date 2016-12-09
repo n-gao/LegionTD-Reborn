@@ -29,16 +29,13 @@ function assassinbuilder_frenzy:OnOwnerSpawned(  )
 end
 
 function assassinbuilder_frenzy:OnAbilityPhaseStart(  )
-	local Game = GameRules.GameMode.game
 	if IsServer() then
+		local Game = GameRules.GameMode.game
 		if self.cooldown == nil or self.cooldown <= GameRules.GameMode.game.gameRound - GameRules.GameMode.game.doneDuels then
 			if not Game:IsBetweenRounds() then
 				return true
 			else
-				local message = "In between rounds"
-				local playerID = self:GetCaster():GetPlayerID()
-				Notifications:ClearBottom(playerID)
-				Notifications:Bottom(playerID, {text=message, duration=5, style={color="red", ["font-size"]="30px"}})
+				self:GetCaster().player:SendErrorCode(LEGION_ERROR_BETWEEN_ROUNDS)
 				return false
 			end
 		else
