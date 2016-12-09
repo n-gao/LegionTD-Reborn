@@ -405,13 +405,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"16"
+				"atk_damage_tooltip"	"11.5"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.5"
+				"atk_speed_tooltip"	"1.0"
 			}
 	
 			"03"
@@ -429,7 +429,7 @@
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"1"
+				"armor_tooltip"	"0"
 			}
 	
 			"06"
@@ -583,7 +583,7 @@
 		"AbilityTextureName"	"rattletrap_power_cogs"
 		"MaxLevel"	"1"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"	"450"
+		"AbilityGoldCost"	"300"
 		"AbilityCooldown"	"1.0"
 		"OnSpellStart"
 		{
@@ -1103,7 +1103,7 @@
 		"AbilityTextureName"	"rattletrap_power_cogs"
 		"MaxLevel"	"1"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"	"500"
+		"AbilityGoldCost"	"220"
 		"AbilityCooldown"	"1.0"
 		"OnSpellStart"
 		{
@@ -2224,7 +2224,7 @@
 	
 		"AbilityCastRange"				"400"
 		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"5"
+		"AbilityCooldown"				"6"
 		"AbilityManaCost"				"0"
 	
 		"AbilitySpecial"
@@ -2237,22 +2237,22 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"quill_base_damage"		"10.0"
+				"quill_base_damage"		"3.0"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"quill_stack_damage"	"5.0"
+				"quill_stack_damage"	"4.0"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"quill_stack_duration"	"10.0"
+				"quill_stack_duration"	"3.0"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"max_damage"			"50.0"
+				"max_damage"			"9.0"
 			}
 		}
 	}

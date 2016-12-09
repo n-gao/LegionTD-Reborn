@@ -13,14 +13,14 @@
     "Ability3"                  "ability_empty_3"
     "Ability4"                  "sell"
 
-    "ArmorPhysical"             "1"
+    "ArmorPhysical"             "4"
     "MagicalResistance"         "0"
 
     "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"           "150"
-    "AttackDamageMax"           "300"
-    "AttackRate"                "2"
+    "AttackDamageMin"           "190"
+    "AttackDamageMax"           "210"
+    "AttackRate"                "0.9"
     "AttackAnimationPoint"      "0.5"
     "AttackAcquisitionRange"    "850"
     "AttackRange"               "550"
@@ -43,7 +43,7 @@
     "MovementSpeed"             "270"
     "MovementTurnRate"          "0.5"
 
-    "StatusHealth"              "175"
+    "StatusHealth"              "700"
     "StatusHealthRegen"         "0"
     "StatusMana"                "0"
     "StatusManaRegen"           "0"
