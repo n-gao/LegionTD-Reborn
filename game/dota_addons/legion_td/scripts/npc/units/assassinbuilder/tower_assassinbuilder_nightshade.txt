@@ -28,9 +28,9 @@
     "ProjectileModel"           "particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
     "ProjectileSpeed"           "900"
 
-    "Legion_AttackType"         "normal"
+    "Legion_AttackType"         "arcane"
     "Legion_DefendType"         "medium"
-    "Legion_Fraction"           ""
+	"Legion_Fraction"		"assassin"
 
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"

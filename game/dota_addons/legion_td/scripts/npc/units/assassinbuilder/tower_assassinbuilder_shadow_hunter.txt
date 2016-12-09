@@ -29,8 +29,8 @@
     "ProjectileSpeed"           "0"
 
     "Legion_AttackType"         "normal"
-    "Legion_DefendType"         "medium"
-    "Legion_Fraction"           ""
+    "Legion_DefendType"         "heavy"
+	"Legion_Fraction"		"assassin"
 
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"

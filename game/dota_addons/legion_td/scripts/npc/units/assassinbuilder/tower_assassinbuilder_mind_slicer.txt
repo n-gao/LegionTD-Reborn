@@ -28,9 +28,9 @@
     "ProjectileModel"           "particles/units/heroes/hero_silencer/silencer_base_attack.vpcf"
     "ProjectileSpeed"           "1000"
 
-    "Legion_AttackType"         "normal"
-    "Legion_DefendType"         "medium"
-    "Legion_Fraction"           ""
+    "Legion_AttackType"         "pierce"
+    "Legion_DefendType"         "light"
+	"Legion_Fraction"		"assassin"
 
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"

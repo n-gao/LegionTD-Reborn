@@ -30,7 +30,7 @@
 
     "Legion_AttackType"         "normal"
     "Legion_DefendType"         "medium"
-    "Legion_Fraction"           ""
+	"Legion_Fraction"		"assassin"
 
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"
