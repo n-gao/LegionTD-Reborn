@@ -849,7 +849,7 @@
 	    "ModelScale"                "0.5"
 	    "HealthBarOffset"           "150"
 	    "Level"                     "1"
-	    "Vscripts"                  "ai/ai_default.lua"
+	    "Vscripts"                  "ai/assassinbuilder/ai_assassinbuilder_mind_stealer.lua"
 	
 	    "Ability1"                  "assassinbuilder_hinder"
 	    "Ability2"                  "assassinbuilder_upgrade_mind_breaker"

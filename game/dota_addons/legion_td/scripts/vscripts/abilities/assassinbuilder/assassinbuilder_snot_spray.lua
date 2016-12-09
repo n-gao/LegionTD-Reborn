@@ -80,6 +80,7 @@ function modifier_assassinbuilder_snot_spray:OnRefresh( param )
 end
 
 function modifier_assassinbuilder_snot_spray:OnIntervalThink()
+	if not IsServer() then return end
 	local caster = self:GetCaster()
 	local target = self:GetParent()
 	local ability = self:GetAbility()
