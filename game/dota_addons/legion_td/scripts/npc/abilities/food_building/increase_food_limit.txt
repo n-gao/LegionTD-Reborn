@@ -5,8 +5,8 @@
   "MaxLevel"             "12"
 
   "AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
-  "AbilityChannelTime" 			"10"
-  "AbilityDuration" 				"10"
+  "AbilityChannelTime" 			"15"
+  "AbilityDuration" 				"15"
   "AbilityGoldCost"         "20"
   "AbilitySpecial"
   {

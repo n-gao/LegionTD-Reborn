@@ -137,13 +137,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"100"
+				"atk_damage_tooltip"	"72.5"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1"
+				"atk_speed_tooltip"	"0.72"
 			}
 	
 			"03"
@@ -155,7 +155,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"200"
+				"health_tooltip"	"300"
 			}
 	
 			"05"
@@ -204,13 +204,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"225"
+				"atk_damage_tooltip"	"100"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1"
+				"atk_speed_tooltip"	"0.7"
 			}
 	
 			"03"
@@ -222,13 +222,13 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"250"
+				"health_tooltip"	"300"
 			}
 	
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"10"
+				"armor_tooltip"	"4"
 			}
 	
 			"06"
@@ -338,7 +338,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"55"
+				"atk_damage_tooltip"	"40"
 			}
 	
 			"02"
@@ -356,13 +356,13 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"85"
+				"health_tooltip"	"70"
 			}
 	
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"1"
+				"armor_tooltip"	"2"
 			}
 	
 			"06"
@@ -470,13 +470,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"150"
+				"atk_damage_tooltip"	"95"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1"
+				"atk_speed_tooltip"	"0.7"
 			}
 	
 			"03"
@@ -488,19 +488,19 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"500"
+				"health_tooltip"	"800"
 			}
 	
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"4"
+				"armor_tooltip"	"7"
 			}
 	
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"food_cost"	"1"
+				"food_cost"	"2"
 			}
 	
 			"07"
@@ -600,13 +600,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"275"
+				"atk_damage_tooltip"	"340"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1"
+				"atk_speed_tooltip"	"0.7"
 			}
 	
 			"03"
@@ -618,7 +618,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"750"
+				"health_tooltip"	"1300"
 			}
 	
 			"05"
@@ -665,13 +665,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"150"
+				"atk_damage_tooltip"	"165"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1"
+				"atk_speed_tooltip"	"0.65"
 			}
 	
 			"03"
@@ -683,7 +683,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"250"
+				"health_tooltip"	"650"
 			}
 	
 			"05"
@@ -730,7 +730,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"150"
+				"atk_damage_tooltip"	"100"
 			}
 	
 			"02"
@@ -748,7 +748,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"130"
+				"health_tooltip"	"160"
 			}
 	
 			"05"
@@ -795,13 +795,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"220"
+				"atk_damage_tooltip"	"190"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1"
+				"atk_speed_tooltip"	"0.5"
 			}
 	
 			"03"
@@ -813,13 +813,13 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"175"
+				"health_tooltip"	"300"
 			}
 	
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"1"
+				"armor_tooltip"	"4"
 			}
 	
 			"06"
@@ -860,13 +860,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"250"
+				"atk_damage_tooltip"	"235"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1"
+				"atk_speed_tooltip"	"0.8"
 			}
 	
 			"03"
@@ -878,7 +878,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"150"
+				"health_tooltip"	"400"
 			}
 	
 			"05"
@@ -925,13 +925,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"200"
+				"atk_damage_tooltip"	"225"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.8"
+				"atk_speed_tooltip"	"0.7"
 			}
 	
 			"03"
@@ -943,7 +943,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"300"
+				"health_tooltip"	"700"
 			}
 	
 			"05"
@@ -990,13 +990,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"60"
+				"atk_damage_tooltip"	"50"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1"
+				"atk_speed_tooltip"	"0.9"
 			}
 	
 			"03"
@@ -1008,7 +1008,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"300"
+				"health_tooltip"	"420"
 			}
 	
 			"05"
@@ -1020,7 +1020,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"food_cost"	"1"
+				"food_cost"	"2"
 			}
 	
 			"07"
@@ -1055,13 +1055,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"225"
+				"atk_damage_tooltip"	"200"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"2"
+				"atk_speed_tooltip"	"0.9"
 			}
 	
 			"03"
@@ -1073,13 +1073,13 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"175"
+				"health_tooltip"	"700"
 			}
 	
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"1"
+				"armor_tooltip"	"4"
 			}
 	
 			"06"
@@ -1120,13 +1120,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"350"
+				"atk_damage_tooltip"	"220"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1"
+				"atk_speed_tooltip"	"0.6"
 			}
 	
 			"03"
@@ -1138,13 +1138,13 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"475"
+				"health_tooltip"	"1100"
 			}
 	
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"20"
+				"armor_tooltip"	"12"
 			}
 	
 			"06"
@@ -1191,7 +1191,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1"
+				"atk_speed_tooltip"	"0.75"
 			}
 	
 			"03"
@@ -1203,7 +1203,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"175"
+				"health_tooltip"	"550"
 			}
 	
 			"05"
@@ -1250,13 +1250,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"300"
+				"atk_damage_tooltip"	"185"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1"
+				"atk_speed_tooltip"	"0.65"
 			}
 	
 			"03"
@@ -1268,13 +1268,13 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"375"
+				"health_tooltip"	"850"
 			}
 	
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"15"
+				"armor_tooltip"	"8"
 			}
 	
 			"06"
@@ -4623,8 +4623,8 @@
 	  "MaxLevel"             "12"
 	
 	  "AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
-	  "AbilityChannelTime" 			"10"
-	  "AbilityDuration" 				"10"
+	  "AbilityChannelTime" 			"15"
+	  "AbilityDuration" 				"15"
 	  "AbilityGoldCost"         "20"
 	  "AbilitySpecial"
 	  {
