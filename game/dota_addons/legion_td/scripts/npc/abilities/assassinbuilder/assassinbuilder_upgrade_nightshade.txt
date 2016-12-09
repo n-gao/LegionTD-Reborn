@@ -1,0 +1,65 @@
+"assassinbuilder_upgrade_nightshade"
+{
+	"BaseClass"	"ability_datadriven"
+	"AbilityTextureName"	"rattletrap_power_cogs"
+	"MaxLevel"	"1"
+	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityGoldCost"	"300"
+	"AbilityCooldown"	"1.0"
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"unit.lua"
+			"Function"	"UpgradeUnit"
+		}
+
+	}
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_damage_tooltip"	"235"
+		}
+
+		"02"
+		{
+			"var_type"	"FIELD_FLOAT"
+			"atk_speed_tooltip"	"0.8"
+		}
+
+		"03"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_range_tooltip"	"300"
+		}
+
+		"04"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"health_tooltip"	"400"
+		}
+
+		"05"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"armor_tooltip"	"5"
+		}
+
+		"06"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"food_cost"	"1"
+		}
+
+		"07"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"unitID"	"311"
+		}
+
+	}
+
+}

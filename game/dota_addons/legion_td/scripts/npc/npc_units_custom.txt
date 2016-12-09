@@ -102,6 +102,1482 @@
 	    //----------------------------------------------------------------
 	    "AttackDesire" "1.5" // How much bots want to attack them vs other non-hero things
 	}
+	"tower_assassinbuilder_alpha_predator"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/nerubian_assassin/nerubian_assassin.vmdl"
+	    "SoundSet"                  "Hero_NyxAssassin"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/assassinbuilder/ai_assassinbuilder_alpha_predator.lua"
+	
+	    "Ability1"                  "assassinbuilder_spiked_carapace"
+	    "Ability2"                  "assassinbuilder_snot_spray"
+	    "Ability3"                  "assassinbuilder_memento"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "4"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "90"
+	    "AttackDamageMax"           "100"
+	    "AttackRate"                "0.7"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "90"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           ""
+	    "ProjectileSpeed"           "0"
+	
+	    "Legion_AttackType"         "normal"
+	    "Legion_DefendType"         "heavy"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "800"
+	    "StatusHealthRegen"         "10"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "5926" }
+	            "Wearable2" { "ItemDef" "5927" }
+	            "Wearable3" { "ItemDef" "5928" }
+	            "Wearable4" { "ItemDef" "5929" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_bloodknife"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/phantom_assassin/phantom_assassin.vmdl"
+	    "SoundSet"                  "Hero_PhantomAssassin"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/ai_default.lua"
+	
+	    "Ability1"                  "assassinbuilder_coup_de_grace"
+	    "Ability2"                  "assassinbuilder_concealment"
+	    "Ability3"                  "ability_empty_3"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "15"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "210"
+	    "AttackDamageMax"           "240"
+	    "AttackRate"                "0.6"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "90"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           ""
+	    "ProjectileSpeed"           "0"
+	
+	    "Legion_AttackType"         "normal"
+	    "Legion_DefendType"         "medium"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "650"
+	    "StatusHealthRegen"         "10"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "137" }
+	            "Wearable2" { "ItemDef" "138" }
+	            "Wearable3" { "ItemDef" "139" }
+	            "Wearable4" { "ItemDef" "7247" }
+	            "Wearable5" { "ItemDef" "141" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_blood_drinker"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/blood_seeker/blood_seeker.vmdl"
+	    "SoundSet"                  "Hero_Bloodseeker"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/assassinbuilder/ai_assassinbuilder_blood_drinker.lua"
+	
+	    "Ability1"                  "assassinbuilder_bloodrage"
+	    "Ability2"                  "assassinbuilder_soul_rend"
+	    "Ability3"                  "ability_empty_3"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "15"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "320"
+	    "AttackDamageMax"           "360"
+	    "AttackRate"                "0.7"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "90"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           ""
+	    "ProjectileSpeed"           "0"
+	
+	    "Legion_AttackType"         "normal"
+	    "Legion_DefendType"         "medium"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "1300"
+	    "StatusHealthRegen"         "20"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "6650" }
+	            "Wearable2" { "ItemDef" "6651" }
+	            "Wearable3" { "ItemDef" "6652" }
+	            "Wearable4" { "ItemDef" "7426" }
+	            "Wearable5" { "ItemDef" "6654" }
+	            "Wearable6" { "ItemDef" "6655" }
+	            "Wearable7" { "ItemDef" "7425" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_creeping_shadow"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/phantom_assassin/phantom_assassin.vmdl"
+	    "SoundSet"                  "Hero_PhantomAssassin"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/ai_default.lua"
+	
+	    "Ability1"                  "assassinbuilder_wounding_strike"
+	    "Ability2"                  "assassinbuilder_upgrade_dark_wraith"
+	    "Ability3"                  "ability_empty_3"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "3"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "70"
+	    "AttackDamageMax"           "75"
+	    "AttackRate"                "0.72"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "90"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           ""
+	    "ProjectileSpeed"           "0"
+	
+	    "Legion_AttackType"         "normal"
+	    "Legion_DefendType"         "medium"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "300"
+	    "StatusHealthRegen"         "3"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "8011" }
+	            "Wearable2" { "ItemDef" "8012" }
+	            "Wearable3" { "ItemDef" "8013" }
+	            "Wearable4" { "ItemDef" "8014" }
+	            "Wearable5" { "ItemDef" "8015" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_dark_wraith"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/phantom_assassin/phantom_assassin.vmdl"
+	    "SoundSet"                  "Hero_PhantomAssassin"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/ai_default.lua"
+	
+	    "Ability1"                  "assassinbuilder_critical_strike"
+	    "Ability2"                  "assassinbuilder_upgrade_nimble_edge"
+	    "Ability3"                  "ability_empty_3"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "4"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "155"
+	    "AttackDamageMax"           "175"
+	    "AttackRate"                "0.65"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "90"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           ""
+	    "ProjectileSpeed"           "0"
+	
+	    "Legion_AttackType"         "normal"
+	    "Legion_DefendType"         "medium"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "650"
+	    "StatusHealthRegen"         "4"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "7597" }
+	            "Wearable2" { "ItemDef" "7598" }
+	            "Wearable3" { "ItemDef" "7599" }
+	            "Wearable4" { "ItemDef" "7600" }
+	            "Wearable5" { "ItemDef" "7601" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_jester"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/rikimaru/rikimaru.vmdl"
+	    "SoundSet"                  "Hero_Riki"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/ai_default.lua"
+	
+	    "Ability1"                  "assassinbuilder_upgrade_trickster"
+	    "Ability2"                  "ability_empty_2"
+	    "Ability3"                  "ability_empty_3"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "4"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "90"
+	    "AttackDamageMax"           "110"
+	    "AttackRate"                "0.7"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "90"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           ""
+	    "ProjectileSpeed"           "0"
+	
+	    "Legion_AttackType"         "normal"
+	    "Legion_DefendType"         "medium"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "300"
+	    "StatusHealthRegen"         "5"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "4874" }
+	            "Wearable2" { "ItemDef" "4875" }
+	            "Wearable3" { "ItemDef" "4876" }
+	            "Wearable4" { "ItemDef" "4877" }
+	            "Wearable5" { "ItemDef" "4878" }
+	            "Wearable6" { "ItemDef" "7976" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_lotus"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/lanaya/lanaya.vmdl"
+	    "SoundSet"                  "Hero_TemplarAssassin"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/ai_default.lua"
+	
+	    "Ability1"                  "assassinbuilder_psi_blades"
+	    "Ability2"                  "assassinbuilder_upgrade_nightshade"
+	    "Ability3"                  "ability_empty_3"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "5"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "150"
+	    "AttackDamageMax"           "200"
+	    "AttackRate"                "1"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "200"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           "particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
+	    "ProjectileSpeed"           "900"
+	
+	    "Legion_AttackType"         "arcane"
+	    "Legion_DefendType"         "medium"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "125"
+	    "StatusHealthRegen"         "0"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "8867" }
+	            "Wearable2" { "ItemDef" "8868" }
+	            "Wearable3" { "ItemDef" "8872" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_mind_breaker"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/silencer/silencer.vmdl"
+	    "SoundSet"                  "Hero_Silencer"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	
+	    "Ability1"                  "assassinbuilder_disequilibriate"
+	    "Ability2"                  "assassinbuilder_upgrade_mind_slicer"
+	    "Ability3"                  "assassinbuilder_upgrade_silent_champion"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "1"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "90"
+	    "AttackDamageMax"           "110"
+	    "AttackRate"                "0.5"
+	    "AttackAnimationPoint"      "0.4"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "500"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           "particles/units/heroes/hero_silencer/silencer_base_attack.vpcf"
+	    "ProjectileSpeed"           "1000"
+	
+	    "Legion_AttackType"         "pierce"
+	    "Legion_DefendType"         "light"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "160"
+	    "StatusHealthRegen"         "0"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "6387" }
+	            "Wearable2" { "ItemDef" "6389" }
+	            "Wearable3" { "ItemDef" "6390" }
+	            "Wearable4" { "ItemDef" "6391" }
+	            "Wearable5" { "ItemDef" "6393" }
+	            "Wearable6" { "ItemDef" "6394" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_mind_slicer"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/silencer/silencer.vmdl"
+	    "SoundSet"                  "Hero_Silencer"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/ai_default.lua"
+	
+	    "Ability1"                  "assassinbuilder_weaken"
+	    "Ability2"                  "ability_empty_2"
+	    "Ability3"                  "ability_empty_3"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "4"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "180"
+	    "AttackDamageMax"           "200"
+	    "AttackRate"                "0.5"
+	    "AttackAnimationPoint"      "0.4"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "550"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           "particles/units/heroes/hero_silencer/silencer_base_attack.vpcf"
+	    "ProjectileSpeed"           "1000"
+	
+	    "Legion_AttackType"         "pierce"
+	    "Legion_DefendType"         "light"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "300"
+	    "StatusHealthRegen"         "0"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "8122" }
+	            "Wearable2" { "ItemDef" "8123" }
+	            "Wearable3" { "ItemDef" "8124" }
+	            "Wearable4" { "ItemDef" "8125" }
+	            "Wearable5" { "ItemDef" "8126" }
+	            "Wearable6" { "ItemDef" "8235" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_mind_stealer"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/silencer/silencer.vmdl"
+	    "SoundSet"                  "Hero_Silencer"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/assassinbuilder/ai_assassinbuilder_mind_stealer.lua"
+	
+	    "Ability1"                  "assassinbuilder_hinder"
+	    "Ability2"                  "assassinbuilder_upgrade_mind_breaker"
+	    "Ability3"                  "ability_empty_3"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "2"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "38"
+	    "AttackDamageMax"           "42"
+	    "AttackRate"                "1.0"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "450"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           "particles/units/heroes/hero_silencer/silencer_base_attack.vpcf"
+	    "ProjectileSpeed"           "1000"
+	
+	    "Legion_AttackType"         "pierce"
+	    "Legion_DefendType"         "light"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "70"
+	    "StatusHealthRegen"         "0"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "6483" }
+	            "Wearable2" { "ItemDef" "6862" }
+	            "Wearable3" { "ItemDef" "6863" }
+	            "Wearable4" { "ItemDef" "6864" }
+	            "Wearable5" { "ItemDef" "6865" }
+	            "Wearable6" { "ItemDef" "6876" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_nightshade"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/lanaya/lanaya.vmdl"
+	    "SoundSet"                  "Hero_TemplarAssassin"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/ai_default.lua"
+	
+	    "Ability1"                  "assassinbuilder_psi_blades"
+	    "Ability2"                  "assassinbuilder_chaos_strike"
+	    "Ability3"                  "assassinbuilder_upgrade_timekeeper"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "5"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "220"
+	    "AttackDamageMax"           "250"
+	    "AttackRate"                "0.8"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "300"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           "particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
+	    "ProjectileSpeed"           "900"
+	
+	    "Legion_AttackType"         "arcane"
+	    "Legion_DefendType"         "medium"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "400"
+	    "StatusHealthRegen"         "0"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "5229" }
+	            "Wearable2" { "ItemDef" "5230" }
+	            "Wearable3" { "ItemDef" "5231" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_nimble_edge"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/phantom_assassin/phantom_assassin.vmdl"
+	    "SoundSet"                  "Hero_PhantomAssassin"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/ai_default.lua"
+	
+	    "Ability1"                  "assassinbuilder_coup_de_grace"
+	    "Ability2"                  "assassinbuilder_crescent"
+	    "Ability3"                  "assassinbuilder_upgrade_bloodknife"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "5"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "200"
+	    "AttackDamageMax"           "250"
+	    "AttackRate"                "0.7"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "235"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           ""
+	    "ProjectileSpeed"           "0"
+	
+	    "Legion_AttackType"         "normal"
+	    "Legion_DefendType"         "medium"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "700"
+	    "StatusHealthRegen"         "5"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "9319" }
+	            "Wearable2" { "ItemDef" "9320" }
+	            "Wearable3" { "ItemDef" "9321" }
+	            "Wearable4" { "ItemDef" "9322" }
+	            "Wearable5" { "ItemDef" "9323" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_shadow_hunter"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/nerubian_assassin/nerubian_assassin.vmdl"
+	    "SoundSet"                  "Hero_NyxAssassin"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/assassinbuilder/ai_assassinbuilder_shadow_hunter.lua"
+	
+	    "Ability1"                  "assassinbuilder_spiked_carapace"
+	    "Ability2"                  "assassinbuilder_snot_spray"
+	    "Ability3"                  "assassinbuilder_upgrade_alpha_predator"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "1"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "45"
+	    "AttackDamageMax"           "55"
+	    "AttackRate"                "0.9"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "90"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           ""
+	    "ProjectileSpeed"           "0"
+	
+	    "Legion_AttackType"         "normal"
+	    "Legion_DefendType"         "heavy"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "350"
+	    "StatusHealthRegen"         "5"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "5201" }
+	            "Wearable2" { "ItemDef" "5202" }
+	            "Wearable3" { "ItemDef" "5203" }
+	            "Wearable4" { "ItemDef" "5204" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_silent_champion"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/death_prophet/death_prophet.vmdl"
+	    "SoundSet"                  "Hero_DeathProphet"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/assassinbuilder/ai_assassinbuilder_silent_champion.lua"
+	
+	    "Ability1"                  "assassinbuilder_fatigue"
+	    "Ability2"                  "assassinbuilder_cacophony"
+	    "Ability3"                  "ability_empty_3"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "4"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "190"
+	    "AttackDamageMax"           "210"
+	    "AttackRate"                "0.9"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "550"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
+	    "ProjectileSpeed"           "1000"
+	
+	    "Legion_AttackType"         "arcane"
+	    "Legion_DefendType"         "light"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "700"
+	    "StatusHealthRegen"         "0"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "7205" }
+	            "Wearable2" { "ItemDef" "7206" }
+	            "Wearable3" { "ItemDef" "7317" }
+	            "Wearable4" { "ItemDef" "7318" }
+	            "Wearable5" { "ItemDef" "7319" } 
+	            "Wearable6" { "itemDef" "6694" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_stealth_assassin"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/bounty_hunter/bounty_hunter.vmdl"
+	    "SoundSet"                  "Hero_BountyHunter"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/ai_default.lua"
+	
+	    "Ability1"                  "assassinbuilder_jinada"
+	    "Ability2"                  "assassinbuilder_mortal_strike"
+	    "Ability3"                  "ability_empty_3"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "12"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "200"
+	    "AttackDamageMax"           "240"
+	    "AttackRate"                "0.6"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "90"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           ""
+	    "ProjectileSpeed"           "0"
+	
+	    "Legion_AttackType"         "normal"
+	    "Legion_DefendType"         "medium"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"   
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "1100"
+	    "StatusHealthRegen"         "10"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "6525" }
+	            "Wearable2" { "ItemDef" "8009" }
+	            "Wearable3" { "ItemDef" "6527" }
+	            "Wearable4" { "ItemDef" "6528" }
+	            "Wearable5" { "ItemDef" "6529" }
+	            "Wearable6" { "ItemDef" "6537" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_timekeeper"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/lanaya/lanaya.vmdl"
+	    "SoundSet"                  "Hero_TemplarAssassin"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/ai_default.lua"
+	
+	    "Ability1"                  "assassinbuilder_psi_blades"
+	    "Ability2"                  "assassinbuilder_augment_aura"
+	    "Ability3"                  "ability_empty_3"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "5"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "240"
+	    "AttackDamageMax"           "260"
+	    "AttackRate"                "0.75"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "400"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           "particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
+	    "ProjectileSpeed"           "900"
+	
+	    "Legion_AttackType"         "arcane"
+	    "Legion_DefendType"         "medium"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "550"
+	    "StatusHealthRegen"         "0"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "7433" }
+	            "Wearable2" { "ItemDef" "7435" }
+	            "Wearable3" { "ItemDef" "7436" }
+	            "Wearable4" { "ItemDef" "9318" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_trickster"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/heroes/rikimaru/rikimaru.vmdl"
+	    "SoundSet"                  "Hero_Riki"
+	    "ModelScale"                "0.5"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/assassinbuilder/ai_assassinbuilder_trickster.lua"
+	
+	    "AbilityLayout"             "4"
+	    "Ability1"                  "assassinbuilder_mesmerize"
+	    "Ability2"                  "assassinbuilder_upgrade_stealth_assassin"
+	    "Ability3"                  "assassinbuilder_upgrade_blood_drinker"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "8"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "180"
+	    "AttackDamageMax"           "190"
+	    "AttackRate"                "0.65"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "90"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           ""
+	    "ProjectileSpeed"           "0"
+	
+	    "Legion_AttackType"         "normal"
+	    "Legion_DefendType"         "medium"
+		"Legion_Fraction"		"assassin"
+	    
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "850"
+	    "StatusHealthRegen"         "5"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "7990" }
+	            "Wearable2" { "ItemDef" "7154" }
+	            "Wearable3" { "ItemDef" "7159" }
+	            "Wearable4" { "ItemDef" "7161" }
+	            "Wearable5" { "ItemDef" "7162" }
+	            "Wearable6" { "ItemDef" "7165" }
+	        }
+	    }
+	}
+	"tower_assassinbuilder_zealot_scarab"
+	{
+	    "BaseClass"                 "npc_dota_creature"
+	    "Model"                     "models/items/courier/scribbinsthescarab/scribbinsthescarab.vmdl"
+	    "ModelScale"                "1.0"
+	    "HealthBarOffset"           "150"
+	    "Level"                     "1"
+	    "Vscripts"                  "ai/assassinbuilder/ai_assassinbuilder_zealot_scarab.lua"
+	
+	    "Ability1"                  "assassinbuilder_quill_spray"
+	    "Ability2"                  "assassinbuilder_upgrade_shadow_hunter"
+	    "Ability3"                  "ability_empty_3"
+	    "Ability4"                  "sell"
+	
+	    "ArmorPhysical"             "0"
+	    "MagicalResistance"         "0"
+	
+	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
+	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
+	    "AttackDamageMin"           "11"
+	    "AttackDamageMax"           "12"
+	    "AttackRate"                "1.0"
+	    "AttackAnimationPoint"      "0.5"
+	    "AttackAcquisitionRange"    "850"
+	    "AttackRange"               "90"
+	    "AttackRangeBuffer"         "250"
+	    "ProjectileModel"           ""
+	    "ProjectileSpeed"           "0"
+	
+	    "Legion_AttackType"         "normal"
+	    "Legion_DefendType"         "heavy"
+		"Legion_Fraction"		"assassin"
+	
+	    "BountyXP"                  "0"
+	    "BountyGoldMin"             "0"
+	    "BountyGoldMax"             "0"
+	
+	    "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
+	    "RingRadius"                "30"
+	
+	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+	    "MovementSpeed"             "270"
+	    "MovementTurnRate"          "0.5"
+	
+	    "StatusHealth"              "85"
+	    "StatusHealthRegen"         "0"
+	    "StatusMana"                "0"
+	    "StatusManaRegen"           "0"
+	
+	    "VisionDaytimeRange"        "1400"
+	    "VisionNighttimeRange"      "800"
+	
+	    "TeamName"                  "DOTA_TEAM_NEUTRALS"
+	    "CombatClassAttack"         "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	    "CombatClassDefend"         "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	    "UnitRelationShipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	
+	    "Creature"
+	    {
+	        "DisableClumpingBehavior"   "1"
+	        "DefaultState"              "Invade"
+	        "States"
+	        {
+	            "Invade"
+	            {
+	                "Name"              "Invade"
+	                "Aggression"        "100.0"
+	                "Avoidance"         "0.0"
+	                "Support"           "0.0"
+	            }
+	        }
+	        "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "" }
+	            "Wearable2" { "ItemDef" "" }
+	            "Wearable3" { "ItemDef" "" }
+	            "Wearable4" { "ItemDef" "" }
+	        }
+	    }
+	}
 	"dire_boss"
 	{
 		// General
@@ -1639,9 +3115,9 @@
 	    "MagicalResistance" "0"
 	    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
 	    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-	    "AttackDamageMin"   "75.5"
-	    "AttackDamageMax"   "80.0"
-	    "AttackRate"    "1.17"
+	    "AttackDamageMin"   "60.5"
+	    "AttackDamageMax"   "65.0"
+	    "AttackRate"    "0.9"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange"    "850"
 	    "AttackRange"   "370"

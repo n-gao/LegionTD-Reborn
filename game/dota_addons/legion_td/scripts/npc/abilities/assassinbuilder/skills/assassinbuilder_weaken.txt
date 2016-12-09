@@ -1,0 +1,72 @@
+// From Dota 2 Spell Library https://github.com/Pizzalol/SpellLibrary
+// Rewrite of Desolator
+// Author: Rook
+// Date: February 4, 2015
+
+"assassinbuilder_weaken"
+{
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"templar_assassin_meld"
+	"MaxLevel" 						"1"
+	"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"corruption_armor"		"-7"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"corruption_duration"	"15.0"
+		}
+	}
+	
+	"Modifiers"
+	{
+		"modifier_assassinbuilder_weaken_caster"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+			"Attributes" 		"MODIFIER_ATTRIBUTE_MULTIPLE"
+
+			"Orb"
+			{
+				"Priority"				"DOTA_ORB_PRIORITY_ITEM"
+				"ProjectileName"		"particles/items_fx/desolator_projectile.vpcf"
+				"CastAttack"			"0"
+			}
+
+			"OnOrbFire"
+			{
+				"ApplyModifier"
+				{
+					"Target"			"TARGET"
+					"ModifierName"		"modifier_assassinbuilder_weaken_target"
+				}
+				
+				"FireSound"
+				{
+					"EffectName"		"Item_Desolator.Target"
+					"Target"			"TARGET"
+				}
+			}
+		}
+
+		"modifier_assassinbuilder_weaken_target"
+		{
+			"Duration"				"%corruption_duration"
+			"Passive"				"0"
+			"IsHidden"				"0"
+			
+			"Properties"
+		{
+				"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"%corruption_armor"
+			}
+		}
+	}
+}

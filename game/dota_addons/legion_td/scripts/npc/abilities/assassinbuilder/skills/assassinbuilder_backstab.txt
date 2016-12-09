@@ -1,0 +1,57 @@
+// From Dota 2 Spell Library https://github.com/Pizzalol/SpellLibrary
+// Rewrite of Cloak and Dagger
+// Author: YOLOSPAGHETTI
+// Date: February 4, 2016
+// Version: 6.86
+// Type: Datadriven
+
+"assassinbuilder_backstab"
+{
+	"BaseClass"							"ability_datadriven"
+	"AbilityTextureName"				"assassinbuilder_backstab"
+	"MaxLevel"							"1"
+	"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityUnitDamageType"				"DAMAGE_TYPE_PHYSICAL"
+
+	"precache"
+	{
+		"soundfile"						"sounds/weapons/hero/riki/riki_backstab.vsnd"
+		"soundfile"						"sounds/weapons/hero/riki/riki_attack1.vsnd"
+		"particle"						"particles/units/heroes/hero_riki/riki_backstab.vpcf"
+	}
+	
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"dmg_multiplier"			"2.25"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"backstab_angle"			"105"
+		}
+	}
+
+	"Modifiers"
+	{
+		"modifier_backstab_datadriven"
+		{
+			"Passive"	"1"
+			"IsHidden"	"1"
+
+			"OnAttackLanded"
+			{
+				"RunScript"
+				{
+					"ScriptFile"		"abilities/assassinbuilder/assassinbuilder_backstab.lua"
+					"Function"			"CheckBackstab"
+					"particle"			"particles/units/heroes/hero_riki/riki_backstab.vpcf"
+					"sound"				"Hero_Riki.Backstab"
+					"sound2"			"Hero_Riki.Attack"
+				}
+			}
+		}
+	}
+}
