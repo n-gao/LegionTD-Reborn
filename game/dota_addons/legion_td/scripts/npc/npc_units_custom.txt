@@ -117,7 +117,7 @@
 	    "Ability3"                  "assassinbuilder_memento"
 	    "Ability4"                  "sell"
 	
-	    "ArmorPhysical"             "6"
+	    "ArmorPhysical"             "4"
 	    "MagicalResistance"         "0"
 	
 	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -228,7 +228,7 @@
 	    "MovementSpeed"             "270"
 	    "MovementTurnRate"          "0.5"
 	
-	    "StatusHealth"              "850"
+	    "StatusHealth"              "650"
 	    "StatusHealthRegen"         "10"
 	    "StatusMana"                "0"
 	    "StatusManaRegen"           "0"
@@ -1101,7 +1101,7 @@
 	    "Ability3"                  "assassinbuilder_upgrade_alpha_predator"
 	    "Ability4"                  "sell"
 	
-	    "ArmorPhysical"             "2"
+	    "ArmorPhysical"             "1"
 	    "MagicalResistance"         "0"
 	
 	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"

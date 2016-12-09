@@ -494,7 +494,7 @@
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"6"
+				"armor_tooltip"	"4"
 			}
 	
 			"06"
@@ -553,7 +553,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"850"
+				"health_tooltip"	"650"
 			}
 	
 			"05"
@@ -1014,7 +1014,7 @@
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"2"
+				"armor_tooltip"	"1"
 			}
 	
 			"06"
@@ -1768,7 +1768,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage"			"2"
+				"damage"			"3"
 			}
 			"02"
 			{

@@ -13,7 +13,7 @@
     "Ability3"                  "assassinbuilder_upgrade_alpha_predator"
     "Ability4"                  "sell"
 
-    "ArmorPhysical"             "2"
+    "ArmorPhysical"             "1"
     "MagicalResistance"         "0"
 
     "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
