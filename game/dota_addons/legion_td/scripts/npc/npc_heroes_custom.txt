@@ -17,6 +17,8 @@
 		"AttributeBaseStrength"		"0"
 		"AttributeBaseAgility"		"0"
 		"AttributeBaseIntelligence"	"0"
+		
+		"Legion_Fraction"		"assassin"
 	
 		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackDamageMin"			"1"

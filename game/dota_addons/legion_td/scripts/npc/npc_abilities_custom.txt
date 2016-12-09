@@ -3079,13 +3079,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"77.75"
+				"atk_damage_tooltip"	"62.75"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1.17"
+				"atk_speed_tooltip"	"0.9"
 			}
 	
 			"03"
