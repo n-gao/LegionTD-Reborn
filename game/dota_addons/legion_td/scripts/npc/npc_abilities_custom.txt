@@ -494,13 +494,13 @@
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"7"
+				"armor_tooltip"	"6"
 			}
 	
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"food_cost"	"2"
+				"food_cost"	"1"
 			}
 	
 			"07"
@@ -535,13 +535,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"160"
+				"atk_damage_tooltip"	"225"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.8"
+				"atk_speed_tooltip"	"0.6"
 			}
 	
 			"03"
@@ -553,7 +553,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"450"
+				"health_tooltip"	"850"
 			}
 	
 			"05"
@@ -1008,7 +1008,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"420"
+				"health_tooltip"	"350"
 			}
 	
 			"05"
@@ -1020,7 +1020,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"food_cost"	"2"
+				"food_cost"	"1"
 			}
 	
 			"07"

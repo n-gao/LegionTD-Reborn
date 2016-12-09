@@ -13,7 +13,7 @@
     "Ability3"                  "assassinbuilder_memento"
     "Ability4"                  "sell"
 
-    "ArmorPhysical"             "7"
+    "ArmorPhysical"             "6"
     "MagicalResistance"         "0"
 
     "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -40,7 +40,7 @@
     "RingRadius"                "30"
 
     "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"             "300"
+    "MovementSpeed"             "270"
     "MovementTurnRate"          "0.5"
 
     "StatusHealth"              "800"

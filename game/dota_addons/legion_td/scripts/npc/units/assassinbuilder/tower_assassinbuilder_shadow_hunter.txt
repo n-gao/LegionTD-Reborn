@@ -40,10 +40,10 @@
     "RingRadius"                "30"
 
     "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"             "250"
+    "MovementSpeed"             "270"
     "MovementTurnRate"          "0.5"
 
-    "StatusHealth"              "420"
+    "StatusHealth"              "350"
     "StatusHealthRegen"         "5"
     "StatusMana"                "0"
     "StatusManaRegen"           "0"

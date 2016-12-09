@@ -117,7 +117,7 @@
 	    "Ability3"                  "assassinbuilder_memento"
 	    "Ability4"                  "sell"
 	
-	    "ArmorPhysical"             "7"
+	    "ArmorPhysical"             "6"
 	    "MagicalResistance"         "0"
 	
 	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -144,7 +144,7 @@
 	    "RingRadius"                "30"
 	
 	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
-	    "MovementSpeed"             "300"
+	    "MovementSpeed"             "270"
 	    "MovementTurnRate"          "0.5"
 	
 	    "StatusHealth"              "800"
@@ -203,9 +203,9 @@
 	
 	    "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
 	    "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
-	    "AttackDamageMin"           "120"
-	    "AttackDamageMax"           "200"
-	    "AttackRate"                "0.8"
+	    "AttackDamageMin"           "210"
+	    "AttackDamageMax"           "240"
+	    "AttackRate"                "0.6"
 	    "AttackAnimationPoint"      "0.5"
 	    "AttackAcquisitionRange"    "850"
 	    "AttackRange"               "90"
@@ -228,7 +228,7 @@
 	    "MovementSpeed"             "270"
 	    "MovementTurnRate"          "0.5"
 	
-	    "StatusHealth"              "450"
+	    "StatusHealth"              "850"
 	    "StatusHealthRegen"         "10"
 	    "StatusMana"                "0"
 	    "StatusManaRegen"           "0"
@@ -1128,10 +1128,10 @@
 	    "RingRadius"                "30"
 	
 	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
-	    "MovementSpeed"             "250"
+	    "MovementSpeed"             "270"
 	    "MovementTurnRate"          "0.5"
 	
-	    "StatusHealth"              "420"
+	    "StatusHealth"              "350"
 	    "StatusHealthRegen"         "5"
 	    "StatusMana"                "0"
 	    "StatusManaRegen"           "0"
@@ -1539,7 +1539,7 @@
 	    "RingRadius"                "30"
 	
 	    "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
-	    "MovementSpeed"             "350"
+	    "MovementSpeed"             "270"
 	    "MovementTurnRate"          "0.5"
 	
 	    "StatusHealth"              "85"

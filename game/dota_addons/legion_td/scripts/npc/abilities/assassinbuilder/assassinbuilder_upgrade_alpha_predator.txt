@@ -45,13 +45,13 @@
 		"05"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"armor_tooltip"	"7"
+			"armor_tooltip"	"6"
 		}
 
 		"06"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"food_cost"	"2"
+			"food_cost"	"1"
 		}
 
 		"07"

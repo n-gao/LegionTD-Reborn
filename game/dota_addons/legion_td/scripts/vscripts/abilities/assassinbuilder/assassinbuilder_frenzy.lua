@@ -57,7 +57,7 @@ function assassinbuilder_frenzy:OnSpellStart()
 	if IsServer() then
 		local caster = self:GetCaster()
 		for i,v in pairs(self.player.units) do
-			if not v.npc:IsNull() then
+			if not v.npc:IsNull() and v.npc:IsAlive() then
 				local mod = v.npc:AddNewModifier(self.player.hero, self, "modifier_assassinbuilder_frenzy", {duration = self:GetSpecialValueFor("duration")})
 				mod.ability = self
 			end
@@ -143,18 +143,22 @@ function modifier_assassinbuilder_frenzy_cooldown:DeclareFunctions(  )
 end
 
 function modifier_assassinbuilder_frenzy_cooldown:OnCreated(  )
-	self:StartIntervalThink(0.2)
+	if (IsServer()) then 
+		self:StartIntervalThink(0.2)
+	end
 end
 
 function modifier_assassinbuilder_frenzy_cooldown:OnIntervalThink()
-	local ability = self:GetAbility()
-	local cooldown = ability.cooldown - (GameRules.GameMode.game.gameRound - GameRules.GameMode.game.doneDuels)
-	if cooldown < 1 then 
-		cooldown = 0
-	else
-		ability:StartCooldown(cooldown)
+	if (IsServer()) then
+		local ability = self:GetAbility()
+		local cooldown = ability.cooldown - (GameRules.GameMode.game.gameRound - GameRules.GameMode.game.doneDuels)
+		if cooldown < 1 then 
+			cooldown = 0
+		else
+			ability:StartCooldown(cooldown)
+		end
+		self:SetStackCount(cooldown)
 	end
-	self:SetStackCount(cooldown)
 end
 
 function modifier_assassinbuilder_frenzy_cooldown:OnTooltip( params )
