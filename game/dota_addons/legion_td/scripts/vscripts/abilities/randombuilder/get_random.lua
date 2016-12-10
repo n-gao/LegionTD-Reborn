@@ -51,5 +51,6 @@ function GetRandomUnit(event)
     local ability = event.unit:AddAbility(SpawnAbilities["tier" .. tier][ind])
     print(SpawnAbilities["tier" .. tier][ind])
     ability:SetAbilityIndex(index)
+    ability.player = event.caster.player
     ability:SetLevel(1)
 end
