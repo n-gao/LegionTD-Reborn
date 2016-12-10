@@ -28,7 +28,7 @@
 		"03"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"armor_per_stack"			"-2.2"
+			"armor_per_stack"			"-0.7"
 		}
 		"04"
 		{
@@ -43,12 +43,12 @@
 		"06"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"attackspeed_base"			"-15"
+			"attackspeed_base"			"-5"
 		}
 		"07"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"attackspeed_per_stack"		"-5"
+			"attackspeed_per_stack"		"-2"
 		}
 		"08"
 		{
