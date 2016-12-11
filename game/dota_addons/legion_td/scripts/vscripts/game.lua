@@ -592,9 +592,6 @@ function Game:OrderFilter(keys)
         else
             if ability:GetOwner() and ability:GetOwner().player then
                 player = ability:GetOwner().player
-                if not string.find(ability:GetName(), "upgrade") then
-                    return false;
-                end
             else
                 return true
             end
