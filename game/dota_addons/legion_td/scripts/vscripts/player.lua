@@ -487,7 +487,7 @@ function Player:Abandon()
     print("distributing " .. goldEach .. " abandon gold to " .. #distributePlayers .. " players")
     for _, player in pairs(distributePlayers) do
         print("cha-ching")
-        player.hero:ModifyGold(goldEach, true, DOTA_ModifyGold_Unspecified)
+        --player.hero:ModifyGold(goldEach, true, DOTA_ModifyGold_Unspecified)
     end
     self.abandoned = true
 end
