@@ -302,9 +302,7 @@ end
 
 --Wird jede viertel Sekunde aufgerufen, überprüft Spielstatus
 function Game:OnThink()
-    print("Thinking")
     if self.gameState == GAMESTATE_PREPARATION then
-        print("Preparing")
         --festlegung der vorbereitungszeit
         if not self.nextRoundTime then
             if not self.finishedWaves then
@@ -314,12 +312,10 @@ function Game:OnThink()
                 self:StartNextRound()
             end
         elseif self.nextRoundTime <= GameRules:GetGameTime() then
-            print("Start next round")
             self:StartNextRound()
         end
     end
     if self.gameState == GAMESTATE_FIGHTING then
-        print("fighting")
         self.rounds[self.gameRound]:CheckEnd()
     end
     if self.gameState == GAMESTATE_END then

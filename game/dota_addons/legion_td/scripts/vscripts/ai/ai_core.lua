@@ -15,7 +15,7 @@ EXPORTS.Init = function( self )
 end
 
 function aiThinkStandard(self)
-	if not self:IsAlive() and not self:HasModifier("modifier_invulnerable") then
+	if not self:IsAlive() or self:HasModifier("modifier_invulnerable") then
 		return
 	end
 	if self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() then
@@ -51,8 +51,7 @@ end
 end]]--
 
 function aiThinkStandardSkill(self)
-
-	if not self:IsAlive() and not self:HasModifier("modifier_invulnerable") then
+	if not self:IsAlive() or self:HasModifier("modifier_invulnerable") then
 		return
 	end
 	if self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() then
