@@ -302,7 +302,9 @@ end
 
 --Wird jede viertel Sekunde aufgerufen, überprüft Spielstatus
 function Game:OnThink()
+    print("Thinking")
     if self.gameState == GAMESTATE_PREPARATION then
+        print("Preparing")
         --festlegung der vorbereitungszeit
         if not self.nextRoundTime then
             if not self.finishedWaves then
@@ -312,10 +314,12 @@ function Game:OnThink()
                 self:StartNextRound()
             end
         elseif self.nextRoundTime <= GameRules:GetGameTime() then
+            print("Start next round")
             self:StartNextRound()
         end
     end
     if self.gameState == GAMESTATE_FIGHTING then
+        print("fighting")
         self.rounds[self.gameRound]:CheckEnd()
     end
     if self.gameState == GAMESTATE_END then
@@ -349,7 +353,7 @@ function Game:SetWaitTime()
     end
     self.nextRoundTime = GameRules:GetGameTime() + waitTime
 
-    self.quest = SpawnEntityFromTableSynchronous("quest", { name = "QuestName", title = "#QuestTimer" })
+    --[[self.quest = SpawnEntityFromTableSynchronous("quest", { name = "QuestName", title = "#QuestTimer" })
     self.nextWaveQuest = SpawnEntityFromTableSynchronous("quest", { name = "QuestName", title = "#" .. self.rounds[self.gameRound].roundTitle })
     self.quest.finished = waitTime
     local subQuest = SpawnEntityFromTableSynchronous("subquest_base", {
@@ -371,7 +375,7 @@ function Game:SetWaitTime()
             return
         end
         return 1
-    end)
+    end)--]]
 
     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels })
     self:RespawnUnits()
@@ -379,9 +383,9 @@ function Game:SetWaitTime()
 end
 
 function Game:EndQuest()
-    Timers:RemoveTimer(self.questTimer)
-    self.quest:CompleteQuest()
-    self.nextWaveQuest:CompleteQuest()
+    --Timers:RemoveTimer(self.questTimer)
+    --self.quest:CompleteQuest()
+    --self.nextWaveQuest:CompleteQuest()
 end
 
 
@@ -1009,9 +1013,10 @@ function Game:SkipWait()
         Game:DistributeMissedTangos(missedTime)
     end
     self.nextRoundTime = GameRules:GetGameTime()
-    self:EndQuest()
-    self.quest.finished = 0
-    Timers:CreateTimer(0.3, function() CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels }) end)
+    --self:EndQuest()
+    --self.quest.finished = 0
+    Timers:CreateTimer(0.3, function()
+     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels }) end)
 end
 
 function Game:DistributeMissedTangos(missedTime)

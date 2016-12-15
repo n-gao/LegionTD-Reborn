@@ -13,6 +13,7 @@
     <Panel hittest="false" class="DontKnow">
 
       <Panel hittest="false" class="InfoPanel" id="InfoPanel">
+        <Image src="file://{images}/custom_game/info-background.psd" class="info-background"/>
         <Panel hittest="false" class="TangoCount">
           <Image id="tangoimage" src="file://{images}/custom_game/tango.psd" />
           <Label id="tangos" text="30" />
@@ -52,6 +53,9 @@
             <Panel id="Units"></Panel>
           </Panel>
         </Panel>
+      </Panel>
+
+      <Panel hittest="false" id="clockPanelInjection">
       </Panel>
 
       <Panel hittest="false" id="ErrorPanel">

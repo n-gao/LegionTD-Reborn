@@ -165,6 +165,11 @@ function InitStatisticsOverlay() {
 	AutoRequestStoredDataFor(Game.GetLocalPlayerInfo().player_steamid);
 }
 
+function InjectClock() {
+	var clockPanel = $.CreatePanel("Panel", $("#clockPanelInjection"), "ClockPanel");
+	clockPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_round_left.xml", false, false);
+}
+
 (function () {
 	GameEvents.Subscribe("dota_player_update_query_unit", UpdateInfoPanel);
 	GameEvents.Subscribe("update_player_info", UpdatePlayerInfo);
@@ -197,4 +202,5 @@ function InitStatisticsOverlay() {
 	}
 	AddUnits(GameUI.CustomUIConfig().units);
 	InitStatisticsOverlay();
+	InjectClock();
 })();
