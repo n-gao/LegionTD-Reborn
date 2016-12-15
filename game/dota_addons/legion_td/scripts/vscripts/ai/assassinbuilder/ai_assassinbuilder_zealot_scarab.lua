@@ -11,6 +11,7 @@ function InitAI( self )
 		self.abilities[1] = self:FindAbilityByName("assassinbuilder_quill_spray")
 		self.abilities[1].Skill = UseSkillNoTarget
 		self.abilities[1].SkillTrigger = SkillTrigger
+		self.abilities = {}
 		self.Unstuck = Unstuck
 		self:SetContextThink( "ai_alpha_predator.aiThink", Dynamic_Wrap( self, "aiThink" ), 0 )
 	end, 0 )

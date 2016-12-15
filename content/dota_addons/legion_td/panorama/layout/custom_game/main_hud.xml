@@ -59,6 +59,10 @@
         </Panel>
       </Panel>
 
+      <Panel hittest="false" class="CountDown" style="visibility: collapse;">
+        <Label id="countDown" text="1:00"/>
+      </Panel>
+
       <Panel hittest="false" id="clockPanelInjection">
       </Panel>
 

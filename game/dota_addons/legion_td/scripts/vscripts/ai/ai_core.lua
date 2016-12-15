@@ -15,10 +15,10 @@ EXPORTS.Init = function( self )
 end
 
 function aiThinkStandard(self)
-	if not self:IsAlive() or self:HasModifier("modifier_invulnerable") then
+	if not self:IsAlive() then
 		return
 	end
-	if self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() then
+	if self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or self:HasModifier("modifier_invulnerable") then
 		return STANDARD_THINK_TIME
 	end
 	if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
@@ -51,7 +51,7 @@ end
 end]]--
 
 function aiThinkStandardSkill(self)
-	if not self:IsAlive() or self:HasModifier("modifier_invulnerable") then
+	if not self:IsAlive() then
 		return
 	end
 	if self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() then

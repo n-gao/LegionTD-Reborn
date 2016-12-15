@@ -6,7 +6,7 @@ end
 
 function InitAI( self )
 	self:SetContextThink( "init_think", function()
-    self:FindAbilityByName("brood_spawn_spiderlings"):SetLevel(1)
+    	self:FindAbilityByName("brood_spawn_spiderlings"):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
 		self.abilities = {}
 		self.abilities[1] = self:FindAbilityByName("brood_spawn_spiderlings")
