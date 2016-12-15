@@ -5,7 +5,7 @@
 {
 	horizontal-align: left;
 	vertical-align: top;
-	margin-top: 150px;
+	margin-top: 100px;
 	flow-children: down;
 	padding: 10px;
 
@@ -310,7 +310,7 @@
 
 .ScoreCol_TeamInfo
 {
-	width: 60px;
+	width: 30px;
 }
 
 .ScoreCol_PlayerDetails

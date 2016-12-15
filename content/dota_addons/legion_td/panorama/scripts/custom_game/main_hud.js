@@ -170,7 +170,13 @@ function InjectClock() {
 	clockPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_round_left.xml", false, false);
 }
 
+function UpdateGold() {
+	$("#gold").text = Players.GetGold(Players.GetLocalPlayer());
+	$.Schedule(0.1, UpdateGold);
+}
+
 (function () {
+	UpdateGold();
 	GameEvents.Subscribe("dota_player_update_query_unit", UpdateInfoPanel);
 	GameEvents.Subscribe("update_player_info", UpdatePlayerInfo);
 	GameEvents.Subscribe("debug", UpdateDebug);

@@ -84,9 +84,9 @@
   margin-top: 2px;
   margin-left: 44px;
   font-size: 20px;
+  text-shadow: 2px 2px 2px #000000;
   color: #27c13f;
   text-align: left;
-  text-shadow: 2px 2px 2px #000000;
 }
 
 #ErrorPanel {
@@ -156,4 +156,22 @@
 #test {
   width: 400px;
   height: 400px;
+}
+
+.GoldCount {
+  margin-left: 16px;
+  margin-top: 16px;
+  color: gold;
+  flow-children: right;
+}
+
+#gold {
+  color: gold;
+  font-size: 20px;
+  margin-left: 8px;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+#tangoimage {
+
 }

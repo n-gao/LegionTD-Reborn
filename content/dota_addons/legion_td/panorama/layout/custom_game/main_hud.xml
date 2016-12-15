@@ -13,7 +13,11 @@
     <Panel hittest="false" class="DontKnow">
 
       <Panel hittest="false" class="InfoPanel" id="InfoPanel">
-        <Image src="file://{images}/custom_game/info-background.psd" class="info-background"/>
+        <Image hittest="true" src="file://{images}/custom_game/info-background.psd" class="info-background"/>
+        <Panel hittest="false" class="GoldCount">
+            <Image id="goldimage" src="file://{images}/custom_game/gold.psd"/>
+            <Label id="gold" text="0"/>
+        </Panel>
         <Panel hittest="false" class="TangoCount">
           <Image id="tangoimage" src="file://{images}/custom_game/tango.psd" />
           <Label id="tangos" text="30" />

@@ -2,7 +2,7 @@
   width: 300px;
   height: fit-children;
   vertical-align: bottom;
-  margin-bottom: 300px;
+  margin-bottom: 275px;
   flow-children: down;
   transition: all 2s linear;
 }
