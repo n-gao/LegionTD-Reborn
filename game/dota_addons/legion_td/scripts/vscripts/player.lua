@@ -105,6 +105,7 @@ function Player:GetEarnedTangos()
 end
 
 function Player:SetPlayerEntitie(plyEntitie, userID)
+    GameRules:SetGoldPerTick(0)
     self.plyEntitie = plyEntitie
     self.userID = userID
     plyEntitie.myPlayer = self

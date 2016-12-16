@@ -54,7 +54,7 @@ function aiThinkStandardSkill(self)
 	if not self:IsAlive() then
 		return
 	end
-	if self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() then
+	if self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or self:HasModifier("modifier_invulnerable")  then
 		return STANDARD_THINK_TIME
 	end
 
