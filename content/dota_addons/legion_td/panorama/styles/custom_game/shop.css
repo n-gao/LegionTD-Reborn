@@ -46,7 +46,7 @@
 #ShopPanel {
   width: 330px;
   height: 600px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
   background-color: #111111;
   transform: translatex(330px);
   transition-property: transform;

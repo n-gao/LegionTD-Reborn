@@ -295,6 +295,14 @@ function Game:CreateGameTimer()
         self.gameTimer = Timers:CreateTimer(0, function()
             return self:OnThink()
         end)
+        self.countDownTimer = Timers:CreateTimer(1, function()
+            if (self.nextRoundTime) then
+                CustomGameEventManager:Send_ServerToAllClients("update_countdown", { betweenRounds = Game:IsBetweenRounds(), seconds = Game.nextRoundTime - GameRules:GetGameTime()})
+            else
+                CustomGameEventManager:Send_ServerToAllClients("update_countdown", { betweenRounds = Game:IsBetweenRounds(), seconds = -1})
+            end
+            return 1
+        end)
     end
 end
 
@@ -348,30 +356,6 @@ function Game:SetWaitTime()
         waitTime = self.timeBeforeDuel
     end
     self.nextRoundTime = GameRules:GetGameTime() + waitTime
-
-    --[[self.quest = SpawnEntityFromTableSynchronous("quest", { name = "QuestName", title = "#QuestTimer" })
-    self.nextWaveQuest = SpawnEntityFromTableSynchronous("quest", { name = "QuestName", title = "#" .. self.rounds[self.gameRound].roundTitle })
-    self.quest.finished = waitTime
-    local subQuest = SpawnEntityFromTableSynchronous("subquest_base", {
-        show_progress_bar = true,
-        progress_bar_hue_shift = -119
-    })
-    self.quest:AddSubquest(subQuest)
-    self.quest:SetTextReplaceValue(QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished)
-    self.quest:SetTextReplaceValue(QUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, waitTime)
-    subQuest:SetTextReplaceValue(SUBQUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished)
-    subQuest:SetTextReplaceValue(SUBQUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, waitTime)
-    self.questTimer = Timers:CreateTimer(1, function()
-        self.quest.finished = self.quest.finished - 1
-        self.quest:SetTextReplaceValue(QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished)
-        subQuest:SetTextReplaceValue(SUBQUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished)
-        if self.quest.finished == 0 then
-            self.quest:CompleteQuest()
-            self.nextWaveQuest:CompleteQuest()
-            return
-        end
-        return 1
-    end)--]]
 
     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels })
     self:RespawnUnits()

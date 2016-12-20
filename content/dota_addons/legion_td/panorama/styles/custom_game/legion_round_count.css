@@ -8,12 +8,18 @@
 .RoundPanel {
   flow-children: down;
   width: 100px;
-  height: 100px;
+  height: 110px;
+  transition-property: height;
+  transition-duration: 0.3s;
 
   background-image: url("file://{images}/custom_game/goal_logo.psd");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100% 100%;
+}
+
+.RoundPanel.BetweenRounds {
+  height: 150px;
 }
 
 #Round {
@@ -42,7 +48,7 @@
 
 #Time
 {
-  margin-top: -26px;
+  margin-top: -22px;
   font-size: 18px;
   font-weight: bolder;
   color: white;
@@ -50,4 +56,20 @@
   text-align: center;
   width: 100%;
   text-overflow: clip;
+}
+
+#CountDown {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 2px 2px 2px #7b612b;
+  text-align: center;
+  width: 100%;
+  text-overflow: clip;
+  visibility: collapse;
+}
+
+.BetweenRounds #CountDown {
+  visibility: visible;
 }
