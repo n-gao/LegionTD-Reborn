@@ -1773,7 +1773,7 @@
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"radius"			"425"
+				"radius"			"225"
 			}
 			"03"
 			{
@@ -2242,7 +2242,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"quill_stack_damage"	"4.0"
+				"quill_stack_damage"	"3.0"
 			}
 			"04"
 			{
@@ -2291,7 +2291,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"armor_per_stack"			"-0.7"
+				"armor_per_stack"			"-0.5"
 			}
 			"04"
 			{
@@ -2316,7 +2316,7 @@
 			"08"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"damage_per_second"			"8"
+				"damage_per_second"			"6"
 			}
 			"09"
 			{
@@ -2460,7 +2460,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"stun_duration"				"1"
+				"stun_duration"				"0.75"
 			}
 			"03"
 			{
@@ -3084,13 +3084,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"62.75"
+				"atk_damage_tooltip"	"32.75"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.9"
+				"atk_speed_tooltip"	"0.43"
 			}
 	
 			"03"
@@ -3224,7 +3224,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.7"
+				"atk_speed_tooltip"	"0.65"
 			}
 	
 			"03"
@@ -3236,7 +3236,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"140"
+				"health_tooltip"	"160"
 			}
 	
 			"05"
@@ -6206,7 +6206,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"food_cost"	"3"
+				"food_cost"	"2"
 			}
 	
 			"07"
@@ -12408,7 +12408,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"stun_duration"					"2.0"
+				"stun_duration"					"1.0"
 			}
 			"03"
 			{

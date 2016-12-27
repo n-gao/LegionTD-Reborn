@@ -12,5 +12,5 @@ function Suicide( keys )
 	local caster = keys.caster
 	local ability = keys.ability
 
-	caster:Kill(ability, caster)
+	caster:ForceKill(false)
 end

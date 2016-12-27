@@ -51,7 +51,7 @@
 		"06"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"food_cost"	"3"
+			"food_cost"	"2"
 		}
 
 		"07"

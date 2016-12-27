@@ -28,7 +28,7 @@
 		"03"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"armor_per_stack"			"-0.7"
+			"armor_per_stack"			"-0.5"
 		}
 		"04"
 		{
@@ -53,7 +53,7 @@
 		"08"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"damage_per_second"			"8"
+			"damage_per_second"			"6"
 		}
 		"09"
 		{

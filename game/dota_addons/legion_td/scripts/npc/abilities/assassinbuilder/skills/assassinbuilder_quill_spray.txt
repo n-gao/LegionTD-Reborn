@@ -27,7 +27,7 @@
 		"03"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"quill_stack_damage"	"4.0"
+			"quill_stack_damage"	"3.0"
 		}
 		"04"
 		{
