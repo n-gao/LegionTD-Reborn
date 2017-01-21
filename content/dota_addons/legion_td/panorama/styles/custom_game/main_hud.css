@@ -19,11 +19,11 @@
 } 
 
 .TangoCount {
-  width: 80px;
+  width: 160px;
   height: 25px;
-  horizontal-align: right;
+  horizontal-align: left;
   margin-top: 16px;
-  margin-right: 16px;
+  margin-left: 100px;
 }
 
 .DebugPanel {

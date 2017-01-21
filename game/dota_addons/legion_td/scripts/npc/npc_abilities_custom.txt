@@ -3224,7 +3224,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.65"
+				"atk_speed_tooltip"	"0.62"
 			}
 	
 			"03"
@@ -3236,7 +3236,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"160"
+				"health_tooltip"	"190"
 			}
 	
 			"05"
@@ -4134,7 +4134,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1.2"
+				"atk_speed_tooltip"	"0.9"
 			}
 	
 			"03"
@@ -4199,7 +4199,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.64"
+				"atk_speed_tooltip"	"0.6"
 			}
 	
 			"03"
@@ -13477,7 +13477,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"tangos_interest_rate"			"0.06"
+				"tangos_interest_rate"			"0.05"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"max_income_multiplier"	"5"
 			}
 		}
 	
