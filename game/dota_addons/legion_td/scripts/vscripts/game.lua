@@ -535,6 +535,14 @@ function Game:OnConnectFull(keys)
             table.insert(self.players, newPlayer)
         end
     end
+    
+    for _,p in pairs(self.players) do
+        local data = {
+            playerID = p:GetPlayerID(),
+            steamID = p:GetSteamID()
+        }
+        self:RequestStoredData(data)
+    end
 end
 
 
