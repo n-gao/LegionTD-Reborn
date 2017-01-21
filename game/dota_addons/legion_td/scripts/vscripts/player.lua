@@ -488,6 +488,6 @@ function Player:Abandon()
 end
 
 function Player:WantsToSkip()
-    if not self:IsActive() then return true end
+    if not self:IsActive() then return false end
     return self.wantsSkip or false
 end
