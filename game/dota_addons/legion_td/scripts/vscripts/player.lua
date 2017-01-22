@@ -481,19 +481,13 @@ function Player:Abandon()
         end
     end
     goldEach = math.floor(goldValue / #distributePlayers)
-    GameRules:SendCustomMessage("player abandoned. " .. goldEach .. " gold distributed to each remaining player.", 0, 0)
     PlayerResource:SetGold(self:GetPlayerID(), 0, true)
     PlayerResource:SetGold(self:GetPlayerID(), 0, false)
     self.income = 0
-    print("distributing " .. goldEach .. " abandon gold to " .. #distributePlayers .. " players")
-    for _, player in pairs(distributePlayers) do
-        print("cha-ching")
-        --player.hero:ModifyGold(goldEach, true, DOTA_ModifyGold_Unspecified)
-    end
     self.abandoned = true
 end
 
 function Player:WantsToSkip()
-    if not self:IsActive() then return true end
+    if not self:IsActive() then return false end
     return self.wantsSkip or false
 end

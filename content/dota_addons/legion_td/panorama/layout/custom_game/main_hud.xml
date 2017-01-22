@@ -46,7 +46,7 @@
         <Panel hittest="false" class="SkipButtonPanel">
           <Button id="SkipButton" onactivate="OnSkipButtonPressed()">
             <Image src="file://{images}/custom_game/skip.psd" /> 
-            <Label id="SkipLabel" class="ButtonLabel" text="#Skip"/>
+            <Label id="SkipLabel" class="ButtonLabel" text="#Ready"/>
           </Button>
         </Panel>
         <Panel hitetst="true" id="ShopPanel">

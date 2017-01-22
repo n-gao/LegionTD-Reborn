@@ -827,7 +827,8 @@ function Game:SkipPressed(data)
     local player = Game:FindPlayerWithID(lData.playerID)
     player.wantsSkip = true
     print(lData.playerID .. " wants to skip waiting time.")
-    Say(nil, Game:CountSkipvotes() .. " out of " .. #Game.players .. " want to skip.", false)
+
+    Game:FormatSkipMessage(Game:CountSkipvotes(), Game:CountRemainingPlayers())
     Game:CheckSkip()
 end
 
@@ -841,9 +842,29 @@ function Game:CountSkipvotes()
     return result
 end
 
+function Game:CountRemainingPlayers()
+    local count = 0
+    for _, player in pairs(self.players) do
+        if player:IsActive() then
+            count = count + 1
+        end
+    end
+    return count
+end
+
+function Game:FormatSkipMessage(votes, remaining)
+    local message = ""
+    if votes == 1 then
+        message = votes .. " player is ready for the next round. " .. remaining .. " votes needed."
+    else
+        message = votes .. " players are ready for the next round. " .. remaining .. " votes needed."
+    end
+    GameRules:SendCustomMessage(message, 0, 0)
+end
+
 function Game:CheckSkip()
     for _, player in pairs(self.players) do
-        if not player:WantsToSkip() then
+        if player:IsActive() and not player:WantsToSkip() then
             return
         end
     end
