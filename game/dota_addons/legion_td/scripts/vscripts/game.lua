@@ -1036,6 +1036,9 @@ function Game:SpawnUnits()
 end
 
 function Game:SkipWait()
+    if (self.nextRoundTime == nil) then
+        return
+    end
     if (not (self.nextRoundTime == nil)) then
         local missedTime = self.nextRoundTime - GameRules:GetGameTime()
         Game:DistributeMissedTangos(missedTime)
