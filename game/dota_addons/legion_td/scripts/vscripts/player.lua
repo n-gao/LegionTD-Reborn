@@ -403,6 +403,10 @@ function Player:GetUnitKey(unit)
 end
 
 
+function Player:HasAbandoned()
+    return self.abandoned
+end
+
 
 function Player:CreateTangoTicker()
     if (not Timers.timers[self.timer]) and (self.lane.mainBuilding) and (Game:GetCurrentRound()) then
