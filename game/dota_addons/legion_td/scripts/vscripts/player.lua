@@ -271,7 +271,11 @@ end
 
 --get team number
 function Player:GetTeamNumber()
+    if (self.teamnumber) then
+        return self.teamnumber
+    end
     if self.plyEntitie == nil then return -1 end
+    self.teamnumber = self.plyEntitie:GetTeamNumber()
     return self.plyEntitie:GetTeamNumber()
 end
 
