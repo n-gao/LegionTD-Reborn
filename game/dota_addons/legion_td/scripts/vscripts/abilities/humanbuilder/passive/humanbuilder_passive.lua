@@ -10,18 +10,7 @@ function humanbuilder_passive_start(keys)
         playerObj = Game:FindPlayerWithID(id)
 
         if not Game.gameState == GAMESTATE_PREPARATION then return 1 end
-
-        -- print ("u have " .. #playerObj.units )
-
-        -- for _, unitRef in pairs(playerObj.units) do
-        -- 	local unit = unitRef.npc
-        -- 	if unit and not unit:IsNull() and unit:IsAlive() then
-
-        -- 		unit:AddNewModifier(caster, ability, "modifier_naturebuilder_passive_deathknell_lua", {})
-
-        -- 	end
-        -- end
-
+        
         --apply the modifiers to the hero as well for display
 
 
