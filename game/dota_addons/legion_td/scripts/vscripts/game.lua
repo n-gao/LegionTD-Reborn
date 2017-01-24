@@ -310,6 +310,7 @@ end
 
 --Wird jede viertel Sekunde aufgerufen, überprüft Spielstatus
 function Game:OnThink()
+    self:CheckPlayerAbandon()
     if self.gameState == GAMESTATE_PREPARATION then
         --festlegung der vorbereitungszeit
         if not self.nextRoundTime then
@@ -329,6 +330,15 @@ function Game:OnThink()
     if self.gameState == GAMESTATE_END then
     end
     return 0.25
+end
+
+
+function Game:CheckPlayerAbandon()
+    for _,player in pairs(self.players) do
+        if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
+            GameRules:SendCustomMessage("<p color='red'>"..PlayerResource:GetPlayerName(player:GetPlayerID()).." abandoned the game.</p>")
+        end
+    end
 end
 
 
