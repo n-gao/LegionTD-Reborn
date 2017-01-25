@@ -1,0 +1,44 @@
+"assassinbuilder_hinder"
+{
+	"BaseClass"             		"silencer_curse_of_the_silent"
+	"AbilityTextureName"			"silencer_curse_of_the_silent"
+	"MaxLevel" 						"1"
+	"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+	"AbilityCastRange"				"1000"
+	"AbilityCastPoint"				"0"
+	"AbilityCooldown"				"10"
+	"AbilityManaCost"				"0"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"damage"			"3"
+		}
+		"02"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"radius"			"225"
+		}
+		"03"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"duration"			"3"
+		}
+		"04"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"penalty_duration"	"3"
+		}
+		"05"
+		{
+			"var_type"			"FIELD_INTEGER"
+			"movespeed"			"-5"
+		}
+	}
+}	

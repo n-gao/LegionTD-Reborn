@@ -1,0 +1,65 @@
+"assassinbuilder_upgrade_timekeeper"
+{
+	"BaseClass"	"ability_datadriven"
+	"AbilityTextureName"	"rattletrap_power_cogs"
+	"MaxLevel"	"1"
+	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityGoldCost"	"200"
+	"AbilityCooldown"	"1.0"
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"unit.lua"
+			"Function"	"UpgradeUnit"
+		}
+
+	}
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_damage_tooltip"	"250"
+		}
+
+		"02"
+		{
+			"var_type"	"FIELD_FLOAT"
+			"atk_speed_tooltip"	"0.75"
+		}
+
+		"03"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_range_tooltip"	"400"
+		}
+
+		"04"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"health_tooltip"	"550"
+		}
+
+		"05"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"armor_tooltip"	"5"
+		}
+
+		"06"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"food_cost"	"1"
+		}
+
+		"07"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"unitID"	"316"
+		}
+
+	}
+
+}

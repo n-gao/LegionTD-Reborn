@@ -19,9 +19,11 @@
 } 
 
 .TangoCount {
-  width: 110px;
+  width: 160px;
   height: 25px;
-  margin-left: 95px;
+  horizontal-align: left;
+  margin-top: 16px;
+  margin-left: 100px;
 }
 
 .DebugPanel {
@@ -29,7 +31,8 @@
 }
 
 .IncomePanel {
-  margin-top: 37px;
+  margin-left: 16px;
+  margin-top: 48px;
   font-size: 20px;
   color: #111111;
   text-shadow: 2px 2px 2px #000000;
@@ -37,13 +40,14 @@
 }
 
 .Incomes {
-  margin-top: 16px;
+  margin-top: 24px;
   font-size: 20px;
   font-weight: normal;
 }
 
 .FoodPanel {
-  margin-top: 120px;
+  margin-top: 100px;
+  margin-left: 16px;
 }
 
 #incomeLabel {
@@ -80,9 +84,9 @@
   margin-top: 2px;
   margin-left: 44px;
   font-size: 20px;
+  text-shadow: 2px 2px 2px #000000;
   color: #27c13f;
   text-align: left;
-  text-shadow: 2px 2px 2px #000000;
 }
 
 #ErrorPanel {
@@ -114,15 +118,15 @@
   text-shadow: 2px 2px 2px #000000;
 }
 
-.ShopButtonPanel {
-  horizontal-align: right;
-  vertical-align: bottom;
-  height: 40px;
+.info-background {
+  box-shadow: #00000022 0px 0px 16px 0px;
+}
+
+#clockPanelInjection {
+  horizontal-align: center;
+  vertical-align: top;
   width: 100px;
-  box-shadow: #54545480 0px 0px 8px 0px;
-  visibility: visible;
-  border-radius: 3px;
-  margin-right: 5px;
+  height: 150px;
 }
 
 
@@ -152,4 +156,22 @@
 #test {
   width: 400px;
   height: 400px;
+}
+
+.GoldCount {
+  margin-left: 16px;
+  margin-top: 16px;
+  color: gold;
+  flow-children: right;
+}
+
+#gold {
+  color: gold;
+  font-size: 20px;
+  margin-left: 8px;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+#tangoimage {
+
 }

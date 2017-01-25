@@ -13,6 +13,11 @@
     <Panel hittest="false" class="DontKnow">
 
       <Panel hittest="false" class="InfoPanel" id="InfoPanel">
+        <Image hittest="true" src="file://{images}/custom_game/info-background.psd" class="info-background"/>
+        <Panel hittest="false" class="GoldCount">
+            <Image id="goldimage" src="file://{images}/custom_game/gold.psd"/>
+            <Label id="gold" text="0"/>
+        </Panel>
         <Panel hittest="false" class="TangoCount">
           <Image id="tangoimage" src="file://{images}/custom_game/tango.psd" />
           <Label id="tangos" text="30" />
@@ -41,7 +46,7 @@
         <Panel hittest="false" class="SkipButtonPanel">
           <Button id="SkipButton" onactivate="OnSkipButtonPressed()">
             <Image src="file://{images}/custom_game/skip.psd" /> 
-            <Label id="SkipLabel" class="ButtonLabel" text="#Skip"/>
+            <Label id="SkipLabel" class="ButtonLabel" text="#Ready"/>
           </Button>
         </Panel>
         <Panel hitetst="true" id="ShopPanel">
@@ -52,6 +57,9 @@
             <Panel id="Units"></Panel>
           </Panel>
         </Panel>
+      </Panel>
+
+      <Panel hittest="false" id="clockPanelInjection">
       </Panel>
 
       <Panel hittest="false" id="ErrorPanel">

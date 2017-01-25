@@ -1,0 +1,154 @@
+
+// Rewrite of the Techies Suicide ability
+// Author: Pizzalol
+// Date: 25.03.2015.
+"assassinbuilder_memento"
+{
+	"BaseClass"							"ability_datadriven"
+	"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE"
+	"AbilityUnitTargetTeam"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+	"SpellImmunityType"					"SPELL_IMMUNITY_ENEMIES_YES"
+	"AbilityUnitDamageType"				"DAMAGE_TYPE_PHYSICAL"
+	"MaxLevel"							"1"
+	"AbilityTextureName"				"techies_suicide"
+
+	"precache"
+	{
+		"soundfile"						"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"		
+		"particle"						"particles/units/heroes/hero_techies/techies_suicide_base.vpcf"
+	}
+
+	"AbilityCastRange"					"100"
+	"AbilityCastPoint"					"0.0"
+	"AbilityCooldown"					"150.0"
+	"AbilityManaCost"					"0"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"small_radius"				"100"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"big_radius"				"300"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"damage"					"200"
+		}
+		"04"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"partial_damage"			"100"
+		}
+		"05"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"auto_activate_threshold"	"75"
+		}
+	}
+
+	"OnSpellStart"
+	{
+		"FireSound"
+		{
+			"EffectName"			"Hero_Techies.Suicide"
+			"Target" 				"CASTER"
+		}
+
+		"FireEffect"
+		{
+			"EffectName"			"particles/units/heroes/hero_techies/techies_suicide_base.vpcf"
+			"EffectAttachType"		"follow_origin"
+			"Target"				"CASTER"
+		}
+
+		"ActOnTargets"
+		{
+			"Target"
+			{
+				"Center"			"CASTER"
+				"Radius"			"%small_radius"
+				"Teams"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+				"Flags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+			}
+		
+			"Action"    
+			{
+				"Damage"
+				{
+					"Target"
+					{
+						"Center"	"TARGET"
+						"Flags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+					}
+					"Type"			"DAMAGE_TYPE_PHYSICAL"
+					"Damage"		"%damage - %partial_damage"
+				}
+			}
+		}
+
+		"ActOnTargets"
+		{
+			"Target"
+			{
+				"Center"			"CASTER"
+				"Radius"			"%big_radius"
+				"Teams"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
+				"Types"				"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+				"Flags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+			}
+		
+			"Action"    
+			{
+				"Damage"
+				{
+					"Target"
+					{
+						"Center"	"TARGET"
+						"Flags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+					}
+					"Type"			"DAMAGE_TYPE_PHYSICAL"
+					"Damage"		"%partial_damage"
+				}
+			}
+		}
+
+		"DelayedAction"
+		{
+			"Delay"		"0.03"
+			"Action"
+			{
+				"RunScript"
+				{
+					"ScriptFile"	"abilities/assassinbuilder/assassinbuilder_memento.lua"
+					"Function"		"Suicide"
+				}
+			}
+		}	
+	}
+	"Modifiers"
+	{
+		"modifier_suicide_passive"
+		{
+			"Passive"			"1"
+			"IsHidden"			"1"
+
+			"OnTakeDamage"
+			{
+				"RunScript"
+				{
+					"ScriptFile"	"abilities/assassinbuilder/assassinbuilder_memento.lua"
+					"Function"		"AutoActivate"
+				}
+			}
+		}
+	}
+}
+

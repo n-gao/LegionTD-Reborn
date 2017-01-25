@@ -1,0 +1,102 @@
+"assassinbuilder_snot_spray"
+{
+	"BaseClass"             		"ability_datadriven"
+	"AbilityTextureName"			"bristleback_viscous_nasal_goo"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	"MaxLevel" 						"1"
+
+	"AbilityCastRange"				"600"
+	"AbilityCastPoint"				"0.0"
+	"AbilityCooldown"				"5"
+	"AbilityManaCost"				"0"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"goo_speed"					"1000"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"goo_duration"				"5.0"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"armor_per_stack"			"-0.5"
+		}
+		"04"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"base_move_slow"			"-20"
+		}
+		"05"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"move_slow_per_stack"		"-6"
+		}
+		"06"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"attackspeed_base"			"-5"
+		}
+		"07"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"attackspeed_per_stack"		"-2"
+		}
+		"08"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"damage_per_second"			"6"
+		}
+		"09"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"stack_limit"				"4"
+		}
+		"10"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"radius"					"500.0"
+		}
+	}
+
+	"OnSpellStart"
+	{
+		"FireSound"
+		{
+			"EffectName"		"Hero_Bristleback.ViscousGoo.Cast"
+			"Target"			"CASTER"
+		}
+
+		"TrackingProjectile"
+		{
+			"Target"			"TARGET"
+			"EffectName"		"particles/units/heroes/hero_bristleback/bristleback_viscous_nasal_goo.vpcf"
+			"Dodgeable"			"1"
+			"ProvidesVision"	"0"
+			"MoveSpeed"			"%goo_speed"
+		}
+	}
+
+	"OnProjectileHitUnit"
+	{
+		"FireSound"
+		{
+			"EffectName"		"Hero_Bristleback.ViscousGoo.Target"
+			"Target"			"TARGET"
+		}
+
+		"RunScript"
+		{
+			"ScriptFile"		"abilities/assassinbuilder/assassinbuilder_snot_spray.lua"
+			"Function"			"snot_spray_hit"
+		}
+	}
+}

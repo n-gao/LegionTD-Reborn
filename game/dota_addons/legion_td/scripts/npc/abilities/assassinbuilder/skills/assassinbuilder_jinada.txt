@@ -1,0 +1,109 @@
+// From Dota 2 Spell Library https://github.com/Pizzalol/SpellLibrary
+// Rewrite of the Bounty Hunter Jinda
+// Author: chrislotix
+// Date: November 28, 2015
+// Version: 6.85
+"assassinbuilder_jinada"
+{
+	"BaseClass"				"ability_datadriven"
+	"AbilityTextureName"	"bounty_hunter_jinada"
+	"MaxLevel"				"1"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+	"precache"
+	{
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_bounty_hunter.vsndevts"
+		"particle"	"particles/units/heroes/hero_bounty_hunter/bounty_hunter_jinda_slow.vpcf"
+		"particle"	"particles/units/heroes/hero_bounty_hunter/status_effect_bounty_hunter_jinda_slow.vpcf"
+	}
+
+	"AbilityCooldown"				"6.0"
+	
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"crit_multiplier"		"225"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_movespeed"		"-15"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"bonus_attackspeed"		"-15"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"duration"				"3.0"
+		}
+	}
+
+	"Modifiers"
+	{
+
+		"modifier_assassinbuilder_jinada_caster"
+		{
+			"Passive"	"1"
+			"IsHidden"	"1"
+
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"%crit_multiplier"
+			}
+
+			"OnAttackLanded"
+			{
+
+				"ApplyModifier"
+				{
+					"ModifierName"			"modifier_assassinbuilder_jinada_slow"
+					"Target"				"TARGET"
+				}
+
+				"FireEffect"
+				{
+					"EffectName"			"particles/units/heroes/hero_bounty_hunter/bounty_hunter_jinda_slow.vpcf"
+					"EffectAttachType"		"attach_hitloc"
+					"Target"				"TARGET"
+				}
+
+				"FireSound"
+				{
+					"EffectName"			"Hero_BountyHunter.Jinada"
+					"Target"				"TARGET"
+				}
+
+				"RunScript"
+				{
+					"ScriptFile"			"abilities/assassinbuilder/assassinbuilder_jinada.lua"
+					"Function"				"Jinada"
+					
+				}
+
+
+			}
+
+		}
+
+		"modifier_assassinbuilder_jinada_slow"
+		{
+			"IsDebuff"	"1"
+			"Duration"	"%duration"
+			"StatusEffectName"	"particles/units/heroes/hero_bounty_hunter/status_effect_bounty_hunter_jinda_slow.vpcf"
+			"StatusEffectPriority"	"3"
+
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%bonus_movespeed"
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%bonus_attackspeed"
+			}
+		}
+
+	}
+
+}

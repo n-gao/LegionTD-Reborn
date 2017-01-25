@@ -1,0 +1,31 @@
+"assassinbuilder_mesmerize"
+{
+	"BaseClass"						"slardar_amplify_damage"
+	"AbilityTextureName"			"slardar_amplify_damage"
+	"MaxLevel"						"1"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+	"AbilityCastRange"				"500"
+	"AbilityCastPoint"				"0"
+	"AbilityCooldown"				"5"
+	"AbilityManaCost"				"0"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"armor_reduction"		"-15"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"duration"				"10.0"
+		}
+	}
+}

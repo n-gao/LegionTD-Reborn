@@ -18,7 +18,14 @@ function UpdateRound(data)
   $("#CurrentRound").text = roundText;
 }
 
+function UpdateCountDown(data) {
+  $("#RoundPanel").SetHasClass("BetweenRounds", data.betweenRounds);
+  var countDownText = Math.round(data.seconds) + "s";
+  $("#CountDown").text = countDownText;
+}
+
 (function() {
+    GameEvents.Subscribe("update_countdown", UpdateCountDown);
     GameEvents.Subscribe("update_time", UpdateTimer);
     GameEvents.Subscribe("update_round", UpdateRound);
 })();

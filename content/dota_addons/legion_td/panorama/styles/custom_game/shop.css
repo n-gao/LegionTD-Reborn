@@ -21,11 +21,21 @@
   margin-right: 5px;
 }
 
+.ShopButtonPanel {
+  horizontal-align: right;
+  vertical-align: bottom;
+  height: 40px;
+  width: 106px;
+  box-shadow: #54545480 0px 0px 8px 0px;
+  visibility: visible;
+  border-radius: 3px;
+}
+
 
 #OuterShopPanel {
   horizontal-align: right;
   vertical-align: bottom;
-  margin-bottom: 205px;
+  margin-bottom: 16px;
 }
 
 #ShopPanel.ShopPanelVisible {
@@ -36,7 +46,7 @@
 #ShopPanel {
   width: 330px;
   height: 600px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
   background-color: #111111;
   transform: translatex(330px);
   transition-property: transform;

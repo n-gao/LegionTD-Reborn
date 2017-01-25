@@ -1,0 +1,26 @@
+"assassinbuilder_concealment"
+{
+	"BaseClass"						"phantom_assassin_blur"
+	"AbilityTextureName"			"phantom_assassin_blur"
+	"MaxLevel"						"1"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"bonus_evasion"				"50"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"transparency_fade"			"0.0"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"radius"					"0"
+		}
+	}
+}

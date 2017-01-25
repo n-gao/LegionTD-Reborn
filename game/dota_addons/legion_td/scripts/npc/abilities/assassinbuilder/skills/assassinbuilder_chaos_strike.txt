@@ -1,0 +1,37 @@
+"assassinbuilder_chaos_strike"
+{
+	"BaseClass"						"chaos_knight_chaos_strike"
+	"AbilityTextureName"			"chaos_knight_chaos_strike"
+	"MaxLevel"						"1"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"crit_chance"				"20"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"crit_damage"				"275"
+		}			
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"armor_reduction"			"-5"
+		}
+		"04"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"armor_reduction_tooltip"	"5"
+		}			
+		"05"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"armor_duration"			"8"
+		}
+		
+	}
+}

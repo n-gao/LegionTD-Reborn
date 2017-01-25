@@ -7,10 +7,11 @@
     <include src="file://{resources}/scripts/custom_game/legion_round_count.js" />
   </scripts>
   <Panel class="RoundCountLeft">
-    <Panel class="RoundPanel">
+    <Panel class="RoundPanel" id="RoundPanel">
       <Label id="Round" text="#Round" />
       <Label id="CurrentRound" text="1" />
       <Label id="Time" text="--:--" />
+      <Label id="CountDown" text="--:--"/>
     </Panel>
   </Panel>
 </root>

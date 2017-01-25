@@ -41,6 +41,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"FightRecapLevel"				"1"
 
 		// Casting
@@ -68,6 +69,7 @@
 			{
 				"var_type"			"FIELD_INTEGER"
 				"num_explosions"	"30"
+				"LinkedSpecialBonus"	"special_bonus_unique_leshrac_1"
 			}
 
 			"02"
@@ -109,7 +111,7 @@
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"75"
+		"AbilityDamage"					"150"
 
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
@@ -131,7 +133,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"jump_count"			"6"
+				"jump_count"			"4"
 			}
 			"03"
 			{

@@ -105,6 +105,7 @@ function Player:GetEarnedTangos()
 end
 
 function Player:SetPlayerEntitie(plyEntitie, userID)
+    GameRules:SetGoldPerTick(0)
     self.plyEntitie = plyEntitie
     self.userID = userID
     plyEntitie.myPlayer = self
@@ -270,7 +271,11 @@ end
 
 --get team number
 function Player:GetTeamNumber()
+    if (self.teamnumber) then
+        return self.teamnumber
+    end
     if self.plyEntitie == nil then return -1 end
+    self.teamnumber = self.plyEntitie:GetTeamNumber()
     return self.plyEntitie:GetTeamNumber()
 end
 
@@ -402,6 +407,10 @@ function Player:GetUnitKey(unit)
 end
 
 
+function Player:HasAbandoned()
+    return self.abandoned
+end
+
 
 function Player:CreateTangoTicker()
     if (not Timers.timers[self.timer]) and (self.lane.mainBuilding) and (Game:GetCurrentRound()) then
@@ -480,19 +489,13 @@ function Player:Abandon()
         end
     end
     goldEach = math.floor(goldValue / #distributePlayers)
-    GameRules:SendCustomMessage("player abandoned. " .. goldEach .. " gold distributed to each remaining player.", 0, 0)
     PlayerResource:SetGold(self:GetPlayerID(), 0, true)
     PlayerResource:SetGold(self:GetPlayerID(), 0, false)
     self.income = 0
-    print("distributing " .. goldEach .. " abandon gold to " .. #distributePlayers .. " players")
-    for _, player in pairs(distributePlayers) do
-        print("cha-ching")
-        player.hero:ModifyGold(goldEach, true, DOTA_ModifyGold_Unspecified)
-    end
     self.abandoned = true
 end
 
 function Player:WantsToSkip()
-    if not self:IsActive() then return true end
+    if not self:IsActive() then return false end
     return self.wantsSkip or false
 end

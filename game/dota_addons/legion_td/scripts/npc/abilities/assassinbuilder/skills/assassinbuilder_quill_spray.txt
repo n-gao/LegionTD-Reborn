@@ -1,0 +1,48 @@
+"assassinbuilder_quill_spray"
+{
+	"BaseClass"             		"bristleback_quill_spray"
+	"AbilityTextureName"			"bristleback_quill_spray"
+	"MaxLevel" 						"1"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+	"AbilityCastRange"				"400"
+	"AbilityCastPoint"				"0.0"
+	"AbilityCooldown"				"6"
+	"AbilityManaCost"				"0"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"radius"				"400"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"quill_base_damage"		"3.0"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"quill_stack_damage"	"3.0"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"quill_stack_duration"	"3.0"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"max_damage"			"9.0"
+		}
+		"06"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"projectile_speed"		"2400"
+		}
+	}
+}

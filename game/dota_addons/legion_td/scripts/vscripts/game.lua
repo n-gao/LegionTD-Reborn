@@ -295,6 +295,14 @@ function Game:CreateGameTimer()
         self.gameTimer = Timers:CreateTimer(0, function()
             return self:OnThink()
         end)
+        self.countDownTimer = Timers:CreateTimer(1, function()
+            if (self.nextRoundTime) then
+                CustomGameEventManager:Send_ServerToAllClients("update_countdown", { betweenRounds = Game:IsBetweenRounds(), seconds = Game.nextRoundTime - GameRules:GetGameTime()})
+            else
+                CustomGameEventManager:Send_ServerToAllClients("update_countdown", { betweenRounds = Game:IsBetweenRounds(), seconds = -1})
+            end
+            return 1
+        end)
     end
 end
 
@@ -302,6 +310,7 @@ end
 
 --Wird jede viertel Sekunde aufgerufen, überprüft Spielstatus
 function Game:OnThink()
+    --self:CheckPlayerAbandon()
     if self.gameState == GAMESTATE_PREPARATION then
         --festlegung der vorbereitungszeit
         if not self.nextRoundTime then
@@ -321,6 +330,15 @@ function Game:OnThink()
     if self.gameState == GAMESTATE_END then
     end
     return 0.25
+end
+
+
+function Game:CheckPlayerAbandon()
+    for _,player in pairs(self.players) do
+        if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
+            GameRules:SendCustomMessage("<p color='red'>"..PlayerResource:GetPlayerName(player:GetPlayerID()).." abandoned the game.</p>")
+        end
+    end
 end
 
 
@@ -349,39 +367,15 @@ function Game:SetWaitTime()
     end
     self.nextRoundTime = GameRules:GetGameTime() + waitTime
 
-    self.quest = SpawnEntityFromTableSynchronous("quest", { name = "QuestName", title = "#QuestTimer" })
-    self.nextWaveQuest = SpawnEntityFromTableSynchronous("quest", { name = "QuestName", title = "#" .. self.rounds[self.gameRound].roundTitle })
-    self.quest.finished = waitTime
-    local subQuest = SpawnEntityFromTableSynchronous("subquest_base", {
-        show_progress_bar = true,
-        progress_bar_hue_shift = -119
-    })
-    self.quest:AddSubquest(subQuest)
-    self.quest:SetTextReplaceValue(QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished)
-    self.quest:SetTextReplaceValue(QUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, waitTime)
-    subQuest:SetTextReplaceValue(SUBQUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished)
-    subQuest:SetTextReplaceValue(SUBQUEST_TEXT_REPLACE_VALUE_TARGET_VALUE, waitTime)
-    self.questTimer = Timers:CreateTimer(1, function()
-        self.quest.finished = self.quest.finished - 1
-        self.quest:SetTextReplaceValue(QUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished)
-        subQuest:SetTextReplaceValue(SUBQUEST_TEXT_REPLACE_VALUE_CURRENT_VALUE, self.quest.finished)
-        if self.quest.finished == 0 then
-            self.quest:CompleteQuest()
-            self.nextWaveQuest:CompleteQuest()
-            return
-        end
-        return 1
-    end)
-
     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels })
     self:RespawnUnits()
     print("Time to next Round: " .. waitTime)
 end
 
 function Game:EndQuest()
-    Timers:RemoveTimer(self.questTimer)
-    self.quest:CompleteQuest()
-    self.nextWaveQuest:CompleteQuest()
+    --Timers:RemoveTimer(self.questTimer)
+    --self.quest:CompleteQuest()
+    --self.nextWaveQuest:CompleteQuest()
 end
 
 
@@ -401,6 +395,9 @@ function Game:RoundFinished()
             if player.plyEntitie and (player:GetTeamNumber() == round.winningTeam or round.winningTeam == DOTA_TEAM_NOTEAM) and not player.abandoned then
                 player:Income(round.bounty)
             end
+        end
+        if (round.winningTeam == DOTA_TEAM_NOTEAM) then
+            GameRules:SendCustomMessage("Every player gained <b color='gold'>"..round.bounty.."</b> for surviving.", 0, 0)
         end
     end
     for _, listener in pairs(self.endOfRoundListeners) do
@@ -436,6 +433,7 @@ function Game:StartNextRound()
         if not player.abandoned then
             if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
                 player:Abandon()
+                self:CheckTeamLeft(player:GetTeamNumber())
             end
         end
         if voteOptions["tango_limit"] and player.tangos > self:GetTangoLimit() then
@@ -451,6 +449,24 @@ function Game:StartNextRound()
     self.rounds[self.gameRound]:Begin()
     print "Game:StartNextround() about to call self:UnlockUnits()"
     self:UnlockUnits()
+end
+
+function Game:CheckTeamLeft(team)
+    for _,player in pairs(self.players) do
+        if (player:GetTeamNumber() == team) then
+            if (not player:HasAbandoned()) then
+                return
+            end
+        end
+    end
+    local winner = 0
+    if team == DOTA_TEAM_GOODGUYS then
+        winner = DOTA_TEAM_BADGUYS
+    else
+        winner = DOTA_TEAM_GOODGUYS
+    end
+    GameRules:SetGameWinner(winner)
+    GameRules:Defeated()
 end
 
 
@@ -550,6 +566,14 @@ function Game:OnConnectFull(keys)
             local newPlayer = Player.new(ply, keys.userid)
             table.insert(self.players, newPlayer)
         end
+    end
+    
+    for _,p in pairs(self.players) do
+        local data = {
+            playerID = p:GetPlayerID(),
+            steamID = p:GetSteamID()
+        }
+        self:RequestStoredData(data)
     end
 end
 
@@ -843,7 +867,8 @@ function Game:SkipPressed(data)
     local player = Game:FindPlayerWithID(lData.playerID)
     player.wantsSkip = true
     print(lData.playerID .. " wants to skip waiting time.")
-    Say(nil, Game:CountSkipvotes() .. " out of " .. #Game.players .. " want to skip.", false)
+
+    Game:FormatSkipMessage(Game:CountSkipvotes(), Game:CountRemainingPlayers())
     Game:CheckSkip()
 end
 
@@ -857,9 +882,29 @@ function Game:CountSkipvotes()
     return result
 end
 
+function Game:CountRemainingPlayers()
+    local count = 0
+    for _, player in pairs(self.players) do
+        if player:IsActive() then
+            count = count + 1
+        end
+    end
+    return count
+end
+
+function Game:FormatSkipMessage(votes, remaining)
+    local message = ""
+    if votes == 1 then
+        message = votes .. " player is ready for the next round. " .. remaining .. " votes needed."
+    else
+        message = votes .. " players are ready for the next round. " .. remaining .. " votes needed."
+    end
+    GameRules:SendCustomMessage(message, 0, 0)
+end
+
 function Game:CheckSkip()
     for _, player in pairs(self.players) do
-        if not player:WantsToSkip() then
+        if player:IsActive() and not player:WantsToSkip() then
             return
         end
     end
@@ -1004,14 +1049,18 @@ function Game:SpawnUnits()
 end
 
 function Game:SkipWait()
+    if (self.nextRoundTime == nil) then
+        return
+    end
     if (not (self.nextRoundTime == nil)) then
         local missedTime = self.nextRoundTime - GameRules:GetGameTime()
         Game:DistributeMissedTangos(missedTime)
     end
     self.nextRoundTime = GameRules:GetGameTime()
-    self:EndQuest()
-    self.quest.finished = 0
-    Timers:CreateTimer(0.3, function() CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels }) end)
+    --self:EndQuest()
+    --self.quest.finished = 0
+    Timers:CreateTimer(0.3, function()
+     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels }) end)
 end
 
 function Game:DistributeMissedTangos(missedTime)

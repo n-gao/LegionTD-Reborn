@@ -205,7 +205,7 @@ function DuelRound:End()
         rank = rank + 1
         if rank > 4 then break end
     end
-    GameRules:SendCustomMessage(victoryText .. self.bounty .. " extra gold each!", 0, 0)
+    GameRules:SendCustomMessage(victoryText .. "<b color='gold'>" .. self.bounty .. "</b> extra gold each!", 0, 0)
     Game:RoundFinished()
 end
 

@@ -8,6 +8,7 @@ end
 --------------------------------------------------------------------------------
 function modifier_randombuilder_passive_lua:OnCreated(kv)
     self.interestRate = self:GetAbility():GetSpecialValueFor("tangos_interest_rate")
+    self.maxIncomeMultiplier = self:GetAbility():GetSpecialValueFor("max_income_multiplier")
 
     if IsServer() then
         self.gameEnt = GameRules.GameMode.game
@@ -20,6 +21,10 @@ function modifier_randombuilder_passive_lua:PayInterest()
     if not IsServer() then return end
     if self.gameEnt:GetCurrentRound().isDuelRound then return end
     local interest = self.interestRate * self.playerObj:GetTangos()
+    if (interest > Game.gameRound * self.maxIncomeMultiplier) then
+        interest = Game.gameRound * self.maxIncomeMultiplier;
+    end
+    print("Payed "..interest.." gold to randombuilder.");
     self.playerObj:Income(interest)
 end
 

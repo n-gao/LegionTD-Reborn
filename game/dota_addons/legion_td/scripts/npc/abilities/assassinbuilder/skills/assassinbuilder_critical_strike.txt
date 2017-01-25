@@ -1,0 +1,23 @@
+"assassinbuilder_critical_strike"
+{
+	"BaseClass"						"phantom_assassin_coup_de_grace"
+	"AbilityTextureName"			"alpha_wolf_critical_strike"
+	"MaxLevel"						"1"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"crit_bonus"				"220"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"crit_chance"				"30"
+		}
+	}
+}
