@@ -1,0 +1,65 @@
+"undeadbuilder_upgrade_greater_vampire"
+{
+	"BaseClass"	"ability_datadriven"
+	"AbilityTextureName"	"spawn_vampire"
+	"MaxLevel"	"1"
+	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityGoldCost"	"50"
+	"AbilityCooldown"	"1.0"
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"unit.lua"
+			"Function"	"UpgradeUnit"
+		}
+
+	}
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_damage_tooltip"	"115"
+		}
+
+		"02"
+		{
+			"var_type"	"FIELD_FLOAT"
+			"atk_speed_tooltip"	"0.7"
+		}
+
+		"03"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_range_tooltip"	"90"
+		}
+
+		"04"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"health_tooltip"	"750"
+		}
+
+		"05"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"armor_tooltip"	"8"
+		}
+
+		"06"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"food_cost"	"1"
+		}
+
+		"07"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"unitID"	"417"
+		}
+
+	}
+
+}
