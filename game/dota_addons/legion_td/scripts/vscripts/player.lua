@@ -104,6 +104,11 @@ function Player:GetEarnedTangos()
     return self.earnedTangos or 0
 end
 
+function Player:Reconnected(plyEntitie)
+    self:SetPlayerEntitie(plyEntitie)
+    self.missedSpawns = 0
+end
+
 function Player:SetPlayerEntitie(plyEntitie, userID)
     GameRules:SetGoldPerTick(0)
     self.plyEntitie = plyEntitie

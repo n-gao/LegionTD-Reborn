@@ -88,6 +88,15 @@ end
 
 
 
+function Game:OnPlayerDisconnect(key)
+    local entIndex = keys.index + 1
+    local ply = EntIndexToHScript(entIndex)
+    DeepPrintTable(key)
+    self.player[key.userid]:Reconnected(ply)
+end
+
+
+
 function Game:ReadDuelSpawn(kvDue)
     self.duelSpawn = {}
     if not (type(kvDue) == "table") then
@@ -564,7 +573,7 @@ function Game:OnConnectFull(keys)
         else
             print("Game:OnConnectFull(): Player object not found for player entIndex " .. entIndex .. " playerID " .. playerID .. "; Creating.")
             local newPlayer = Player.new(ply, keys.userid)
-            table.insert(self.players, newPlayer)
+            self.players[keys.userid] = newPlayer
         end
     end
     
