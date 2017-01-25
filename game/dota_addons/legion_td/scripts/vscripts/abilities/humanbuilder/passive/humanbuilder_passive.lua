@@ -4,19 +4,6 @@ function humanbuilder_passive_start(keys)
     local ability = keys.ability
     local caster = keys.caster
 
-    Timers:CreateTimer(function()
-
-        id = caster:GetPlayerID()
-        playerObj = Game:FindPlayerWithID(id)
-
-        if not Game.gameState == GAMESTATE_PREPARATION then return 1 end
-        
-        --apply the modifiers to the hero as well for display
-
-
-        caster:AddNewModifier(caster, ability, "modifier_humanbuilder_passive_lua", {})
-
-
-        return 1 -- slowish
-    end)
+    caster:AddNewModifier(caster, ability, "modifier_humanbuilder_passive_lua", {})
+    table.insert(Game.endOfRoundListeners, function() caster:AddNewModifier(caster, ability, "modifier_humanbuilder_passive_lua", {}) end)
 end

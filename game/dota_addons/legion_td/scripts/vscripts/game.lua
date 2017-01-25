@@ -310,7 +310,7 @@ end
 
 --Wird jede viertel Sekunde aufgerufen, überprüft Spielstatus
 function Game:OnThink()
-    self:CheckPlayerAbandon()
+    --self:CheckPlayerAbandon()
     if self.gameState == GAMESTATE_PREPARATION then
         --festlegung der vorbereitungszeit
         if not self.nextRoundTime then
@@ -396,7 +396,9 @@ function Game:RoundFinished()
                 player:Income(round.bounty)
             end
         end
-        GameRules:SendCustomMessage("Every player gained <b color='gold'>"..round.bounty.."</b> for surviving.", 0, 0)
+        if (round.winningTeam == DOTA_TEAM_NOTEAM) then
+            GameRules:SendCustomMessage("Every player gained <b color='gold'>"..round.bounty.."</b> for surviving.", 0, 0)
+        end
     end
     for _, listener in pairs(self.endOfRoundListeners) do
         listener()

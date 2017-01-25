@@ -1,4 +1,4 @@
-"bist_du_ein_spasti"
+"legion_td_4v4"
 {
   "FirstPrepTime"           "60"
   "PrepTimeBetweenRounds"   "35"
@@ -361,7 +361,7 @@
   {
     "round_quest_title"     "Jo test"
     "round_title"           "wavetitle_enchantress"
-    "bounty"                "67"
+    "bounty"                "37"
     "Unit"
     {
       "NPCName"             "unit_enchantress"
