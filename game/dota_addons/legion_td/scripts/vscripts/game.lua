@@ -59,6 +59,9 @@ function Game.new()
     CustomGameEventManager:RegisterListener("request_ranking", Dynamic_Wrap(Game, "RequestRanking"))
     CustomGameEventManager:RegisterListener("request_ranking_position", Dynamic_Wrap(Game, "RequestRankingPosition"))
 
+    GameRules:SetSafeToLeave(false)
+    GameRules:SetStrategyTime(0)
+    GameRules:SetHeroSelectionTime(45)
     return self
 end
 
@@ -89,10 +92,7 @@ end
 
 
 function Game:OnPlayerDisconnect(key)
-    local entIndex = keys.index + 1
-    local ply = EntIndexToHScript(entIndex)
-    DeepPrintTable(key)
-    self.player[key.userid]:Reconnected(ply)
+    self.player[key.userid]:Reconnected()
 end
 
 
