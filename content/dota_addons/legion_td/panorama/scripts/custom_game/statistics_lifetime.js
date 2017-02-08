@@ -49,4 +49,5 @@ function CapitalizeFirstLetter(str) {
     InitFractionKillAttribute("human");
     InitFractionKillAttribute("elemental");
     InitFractionKillAttribute("nature");
+    InitFractionKillAttribute("assassin");
 })();

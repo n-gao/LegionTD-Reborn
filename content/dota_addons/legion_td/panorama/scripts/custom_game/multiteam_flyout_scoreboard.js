@@ -1,18 +1,17 @@
 "use strict";
 
 var g_ScoreboardHandle = null;
+var locked = false;
 
 function SetFlyoutScoreboardVisible( bVisible )
 {
-	$.GetContextPanel().SetHasClass( "flyout_scoreboard_visible", bVisible );
-	if ( bVisible )
-	{
-		ScoreboardUpdater_SetScoreboardActive( g_ScoreboardHandle, true );
-	}
-	else
-	{
-		ScoreboardUpdater_SetScoreboardActive( g_ScoreboardHandle, false );
-	}
+	var b = bVisible || locked;
+	$.GetContextPanel().SetHasClass( "flyout_scoreboard_visible", b);
+	ScoreboardUpdater_SetScoreboardActive( g_ScoreboardHandle, b);
+}
+
+function SwitchLock() {
+	locked = !locked;
 }
 
 (function()

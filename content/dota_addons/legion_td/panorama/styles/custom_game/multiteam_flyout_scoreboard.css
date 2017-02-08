@@ -338,3 +338,12 @@
 	width: 60px;
 	text-align: center;
 }
+
+#SettingsContainer {
+	width: 100%;
+	background-color: #222;
+	margin-top: 4px;
+	margin-left: 31px;
+	margin-right: 1px;
+	padding: 4px;
+}

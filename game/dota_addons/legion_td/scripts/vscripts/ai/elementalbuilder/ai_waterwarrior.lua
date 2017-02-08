@@ -6,10 +6,10 @@ end
 
 function InitAI( self )
 	self:SetContextThink( "init_think", function()
-		self:FindAbilityByName("naga_siren_rip_tide"):SetLevel(1)
+		self:FindAbilityByName("waterwarrior_rip_tide"):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
 		self.abilities = {}
-		self.abilities[1] = self:FindAbilityByName("naga_siren_rip_tide")
+		self.abilities[1] = self:FindAbilityByName("waterwarrior_rip_tide")
 		self.abilities[1].Skill = UseSkillNoTarget
 		self.abilities[1].SkillTrigger = CheckIfHasAggroInRange
 		self.abilities[1].SkillUseRange = 80

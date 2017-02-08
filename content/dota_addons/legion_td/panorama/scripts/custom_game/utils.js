@@ -113,8 +113,8 @@ function GetLevelOf(steamID) {
 }
 
 function GetRequiredExpForLevel(level) {
-    if (level > 100)
-        return 9999999999999999;
+    if (level > 300)
+        return 9999999999999999999;
     return level * level * 500 - 500;
 }
 

@@ -106,7 +106,7 @@ end
 
 function Player:Reconnected()
     --self:SetPlayerEntitie(plyEntitie)
-    self.missedSpawns = 0
+    --self.missedSpawns = 0
 end
 
 function Player:SetPlayerEntitie(plyEntitie, userID)
@@ -120,7 +120,7 @@ function Player:SetPlayerEntitie(plyEntitie, userID)
     for _, unit in pairs(self.units) do
         unit:GivePlayerControl()
     end
-    self.missedSpawns = 0
+    --self.missedSpawns = 0
 end
 
 

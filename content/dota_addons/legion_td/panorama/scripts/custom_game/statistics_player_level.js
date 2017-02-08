@@ -10,7 +10,10 @@ function GetLevel(steamId) {
 function UpdateLevel() {
     var storedData = GetStoredDataFor(steam_id);
     var level = GetLevelOf(steam_id); 
-    $("#LevelIcon").SetImage(path + LeftPad(level, "0", 3) + filetype);
+    var iconLevel = (level - 1) % 100 + 1;
+    $("#LegionLevelBackground").SetHasClass("silver", level > 100);
+    $("#LegionLevelBackground").SetHasClass("gold", level > 200);
+    $("#LevelIcon").SetImage(path + LeftPad(iconLevel, "0", 3) + filetype);
     $("#LevelLabel").text = level;
     $.Schedule(1, UpdateLevel);
 }

@@ -21,8 +21,17 @@
 .LegionLevelIconBackground {
   width: 90px;
   height: 90px;
-  background-color: gradient(radial, 50% 50%, 0% 0%, 60% 60%, from(#444444), to(#888888));
+  background-color: gradient(radial, 50% 50%, 0% 0%, 60% 60%, from(#663300), to(#cd7f32));
   border-radius: 50%;
+}
+
+.LegionLevelIconBackground.silver {
+  background-color: gradient(radial, 50% 50%, 0% 0%, 60% 60%, from(#888888 ), to(#c0c0c0));
+}
+
+.LegionLevelIconBackground.gold {
+  background-color: gradient(radial, 50% 50%, 0% 0%, 60% 60%, from(#a48623 ), to(#d4af37 ));
+
 }
 
 .LegionLevelIcon {

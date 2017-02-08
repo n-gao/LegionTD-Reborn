@@ -11,7 +11,7 @@
     "Ability4"  "sell"
     "Ability3"  "ability_empty_3"
     "Ability2"  "ability_empty_2"
-    "Ability1"  "naga_siren_rip_tide"
+    "Ability1"  "waterwarrior_rip_tide"
     "ArmorPhysical" "0"
     "MagicalResistance" "10"
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"

@@ -443,7 +443,7 @@ function Game:StartNextRound()
         if not player.abandoned then
             if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
                 player:Abandon()
-                self:CheckTeamLeft(player:GetTeamNumber())
+                --self:CheckTeamLeft(player:GetTeamNumber())
             end
         end
         if voteOptions["tango_limit"] and player.tangos > self:GetTangoLimit() then
@@ -462,12 +462,18 @@ function Game:StartNextRound()
 end
 
 function Game:CheckTeamLeft(team)
+    local count = 0;
+    local abandoned = 0;
     for _,player in pairs(self.players) do
         if (player:GetTeamNumber() == team) then
-            if (not player:HasAbandoned()) then
-                return
+            count = count + 1
+            if (player:HasAbandoned()) then
+                abandoned = abandoned + 1
             end
         end
+    end
+    if not (count == abandoned) then
+        return
     end
     local winner = 0
     if team == DOTA_TEAM_GOODGUYS then

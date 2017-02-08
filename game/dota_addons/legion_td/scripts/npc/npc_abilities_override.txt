@@ -255,12 +255,20 @@
 		"AbilityManaCost"				"0"
 
 
+		
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"tooltip_brain_sap_heal_amt"		"240"
+				"brain_sap_damage"				"240"
+				"LinkedSpecialBonus"			"special_bonus_unique_bane_2"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"tooltip_brain_sap_heal_amt"	"240"
+				"LinkedSpecialBonus"			"special_bonus_unique_bane_2"
 			}
 		}
 	}
@@ -691,7 +699,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"160"
+				"radius"					"260"
 			}
 			"03"
 			{
