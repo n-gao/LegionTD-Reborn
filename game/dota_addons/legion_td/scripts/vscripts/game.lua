@@ -270,6 +270,16 @@ function Game:GetAllActivePlayer()
     return result
 end
 
+
+function Game:RandomHeroes()
+    for _,player in pairs(self.players) do 
+        if not PlayerResource:HasSelectedHero(player:GetPlayerID()) then
+            player.plyEntitie:MakeRandomHeroSelection()
+        end
+    end
+end
+
+
 --Start des Spiels
 function Game:Start()
     print("Game:Start()")
@@ -344,7 +354,8 @@ end
 
 function Game:CheckPlayerAbandon()
     for _,player in pairs(self.players) do
-        if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
+        if player.calledAbandon == false and (player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED) then
+            player.calledAbandon = true
             GameRules:SendCustomMessage("<p color='red'>"..PlayerResource:GetPlayerName(player:GetPlayerID()).." abandoned the game.</p>")
         end
     end
@@ -443,7 +454,7 @@ function Game:StartNextRound()
         if not player.abandoned then
             if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
                 player:Abandon()
-                --self:CheckTeamLeft(player:GetTeamNumber())
+                self:CheckTeamLeft(player:GetTeamNumber())
             end
         end
         if voteOptions["tango_limit"] and player.tangos > self:GetTangoLimit() then
@@ -462,24 +473,16 @@ function Game:StartNextRound()
 end
 
 function Game:CheckTeamLeft(team)
-    local count = 0;
-    local abandoned = 0;
     for _,player in pairs(self.players) do
         if (player:GetTeamNumber() == team) then
-            count = count + 1
-            if (player:HasAbandoned()) then
-                abandoned = abandoned + 1
+            if (not player:HasAbandoned()) then
+                return
             end
         end
     end
-    if not (count == abandoned) then
-        return
-    end
-    local winner = 0
+    local winner = DOTA_TEAM_GOODGUYS
     if team == DOTA_TEAM_GOODGUYS then
         winner = DOTA_TEAM_BADGUYS
-    else
-        winner = DOTA_TEAM_GOODGUYS
     end
     GameRules:SetGameWinner(winner)
     GameRules:Defeated()

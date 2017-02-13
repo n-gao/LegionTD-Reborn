@@ -28,6 +28,7 @@ function Player.new(plyEntitie, userID)
     self.buildUnits = {}
     self.killedUnits = {}
     self.leakedUnits = {}
+    self.calledAbandon = false
     return self
 end
 
@@ -277,12 +278,16 @@ end
 
 --get team number
 function Player:GetTeamNumber()
-    if (self.teamnumber) then
+    if self.plyEntitie == nil and self.teamnumber and self.hero == nil then
         return self.teamnumber
     end
-    if self.plyEntitie == nil then return -1 end
-    self.teamnumber = self.plyEntitie:GetTeamNumber()
-    return self.plyEntitie:GetTeamNumber()
+    if self.plyEntitie == nil and self.hero == nil then return -1 end
+    if self.hero == nil then
+        self.teamnumber = self.plyEntitie:GetTeamNumber()
+    else
+        self.teamnumber = self.hero:GetTeamNumber()
+    end
+    return self.teamnumber
 end
 
 

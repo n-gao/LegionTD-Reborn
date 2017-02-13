@@ -367,12 +367,12 @@
 				"var_type"						"FIELD_INTEGER"
 				"radius"						"200"
 			}
-
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"absorb_amount"					"50"
-			}
+				"absorb_amount"					"120"
+				"LinkedSpecialBonus"			"special_bonus_unique_ember_spirit_1"
+			}	
 			"04"
 			{
 				"var_type"						"FIELD_FLOAT"
