@@ -440,6 +440,8 @@ end
 
 --Startet nächste Runde
 function Game:StartNextRound()
+    self:CheckTeamLeft(DOTA_TEAM_GOODGUYS)
+    self:CheckTeamLeft(DOTA_TEAM_BADGUYS)
     self:SetSkipButton(false)
     print "Game:StartNextround()"
     for _, player in pairs(self.players) do
@@ -450,11 +452,9 @@ function Game:StartNextRound()
         if player.lane and not player.lane.isActive then
             player.missedSpawns = player.missedSpawns + 1
         end
-        print("test")
         if not player.abandoned then
             if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
                 player:Abandon()
-                self:CheckTeamLeft(player:GetTeamNumber())
             end
         end
         if voteOptions["tango_limit"] and player.tangos > self:GetTangoLimit() then
@@ -473,12 +473,17 @@ function Game:StartNextRound()
 end
 
 function Game:CheckTeamLeft(team)
+    local isEmpty = true
     for _,player in pairs(self.players) do
         if (player:GetTeamNumber() == team) then
+            isEmpty = false
             if (not player:HasAbandoned()) then
                 return
             end
         end
+    end
+    if isEmpty then
+        return
     end
     local winner = DOTA_TEAM_GOODGUYS
     if team == DOTA_TEAM_GOODGUYS then
