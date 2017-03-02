@@ -3626,13 +3626,13 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"750"
+				"health_tooltip"	"800"
 			}
 	
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"1"
+				"armor_tooltip"	"4"
 			}
 	
 			"06"
@@ -3673,7 +3673,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"88.75"
+				"atk_damage_tooltip"	"63.75"
 			}
 	
 			"02"
@@ -3691,7 +3691,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"600"
+				"health_tooltip"	"550"
 			}
 	
 			"05"
@@ -3803,13 +3803,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"129.5"
+				"atk_damage_tooltip"	"109.5"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"0.97"
+				"atk_speed_tooltip"	"0.85"
 			}
 	
 			"03"
@@ -3821,13 +3821,13 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"670"
+				"health_tooltip"	"720"
 			}
 	
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"2"
+				"armor_tooltip"	"4"
 			}
 	
 			"06"
@@ -4621,6 +4621,52 @@
 	        }
 	    }
 	}
+	"thunderwarrior_overload"
+		{
+	        "BaseClass"                     "storm_spirit_overload"
+			"AbilityTextureName"			"storm_spirit_overload"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+			"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+			"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+			"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+			"MaxLevel"						"1"
+			
+			"AbilityDuration"				"0.6"
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityDamage"					"40"
+	
+			// Stats
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilityModifierSupportBonus"	"40"
+	
+			// Special
+			//-------------------------------------------------------------------------------------------------------------
+			"AbilitySpecial"
+			{
+				"01"
+				{
+					"var_type"						"FIELD_INTEGER"
+					"overload_aoe"					"300"
+				}
+				
+				"02"
+				{
+					"var_type"						"FIELD_INTEGER"
+					"overload_move_slow"			"-80"
+				}
+				
+				"03"
+				{
+					"var_type"						"FIELD_INTEGER"
+					"overload_attack_slow"			"-50"
+				}
+				"04"
+				{
+					"var_type"						"FIELD_FLOAT"
+					"tooltip_duration"				"0.6"
+				}
+			}
+		}
 	"waterwarrior_rip_tide"
 	{
 	    // General
@@ -7187,7 +7233,7 @@
 				"07"
 				{
 					"var_type"					"FIELD_INTEGER"
-					"radius"					"300"
+					"radius"					"250"
 				}
 				"08"
 				{
@@ -10993,12 +11039,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_percent"		"10"
+				"damage_percent"		"15"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"heal_percent"			"10"
+				"heal_percent"			"15"
 			}
 		}
 	
@@ -13987,6 +14033,105 @@
 			"particle"  "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
 		}
 	}
+	// Rewrite of Skeleton Wraith King Reincarnation
+	// Author: Noya
+	// Date: 12.1.2015.
+	// Notes: "MODIFIER_PROPERTY_REINCARNATION" is Unhandled, this uses lua Kill and gives the gold back when the caster dies
+	//        It still counts the death count for the player, because there's currently no way to decrease deaths (only lua IncrementDeaths)
+	"king_reincarnation"
+	{
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "BaseClass"             "ability_datadriven"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	    "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+	    "FightRecapLevel"               "2"
+	    "AbilityTextureName"            "skeleton_king_reincarnation"
+	    
+	    // Time     
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCooldown"               "260 160 60"
+	
+	    // Cost
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityManaCost"               "160"
+	
+	    // Stats
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityModifierSupportValue"   "0.2"   // Slow isn't the main function of this ability.
+	
+	    "AbilitySpecial"
+	    {
+	        "01"
+	        {
+	            "var_type"              "FIELD_FLOAT"
+	            "reincarnate_time"      "3.0 3.0 3.0"
+	        }
+	        "02"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "slow_radius"           "900"
+	        }
+	        "03"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "movespeed"             "-75"
+	        }
+	        "04"
+	        {
+	            "var_type"              "FIELD_INTEGER"
+	            "attackslow_tooltip"    "-75"
+	        }
+	        "05"
+	        {
+	            "var_type"              "FIELD_FLOAT"
+	            "slow_duration"         "5.0"
+	        }
+	    }
+	
+	    "precache"
+	    {
+	        "soundfile" "soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
+	        "particle"  "particles/units/heroes/hero_skeletonking/wraith_king_reincarnate.vpcf"
+	        "particle"  "particles/units/heroes/hero_skeletonking/skeleton_king_death.vpcf"
+	        "particle"  "particles/units/heroes/hero_skeletonking/wraith_king_reincarnate_slow_debuff.vpcf"
+	    }
+	
+	    "Modifiers"
+	    {
+	        "modifier_reincarnation"
+	        {
+	            "Passive"   "1"
+	            "IsHidden"  "1"
+	
+	            "OnTakeDamage"
+	            {
+	                "RunScript"
+	                {
+	                    "ScriptFile"        "abilities/waveunits/king_reincarnation.lua"
+	                    "Function"          "Reincarnation"
+	                }
+	            }
+	        }
+	
+	        "modifier_reincarnation_slow"
+	        {
+	            "IsDebuff"  "1"
+	            "Duration"  "%slow_duration"
+	
+	            "EffectName"        "particles/units/heroes/hero_skeletonking/wraith_king_reincarnate_slow_debuff.vpcf"
+	            "EffectAttachType"  "follow_origin"
+	
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"  "%movespeed"
+	                "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"  "%attackslow_tooltip"
+	            }
+	        }
+	    }
+	}
+	
 	// Rewrite of the Necrophos Heartstopper Aura ability
 	// Author: Pizzalol
 	// Date: 11.07.2015.

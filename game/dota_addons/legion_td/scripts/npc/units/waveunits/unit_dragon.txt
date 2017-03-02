@@ -1,111 +1,111 @@
 "unit_dragon"
 {
-	"BaseClass"	"npc_dota_creature"
-	"Model"	"models/heroes/dragon_knight/dragon_knight.vmdl"
-	"ModelScale"	"2"
-	"SoundSet"	"Hero_DragonKnight"
-	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
-	"Level"	"7"
-	"HealthBarOffset"	"140"
-	"Vscripts"	"ai/waves/ai_dragon.lua"
-	"Ability1"	"dragon_knight_elder_dragon_form"
-	"Ability2"	"waveboss_repel"
-	"Ability3"	"waveboss_attackspeed"
-	"ArmorPhysical"	"25"
-	"MagicalResistance"	"100"
-	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"	"400.5"
-	"AttackDamageMax"	"445.0"
-	"AttackRate"	"0.8"
-	"AttackAnimationPoint"	"0.4"
-	"AttackAcquisitionRange"	"850"
-	"AttackRange"	"125"
-	"ProjectileModel"	""
-	"ProjectileSpeed"	"650"
-	"Legion_AttackType"	"boss"
-	"Legion_DefendType"	"boss"
-	"Legion_Experience"	"2000"
-	"Legion_Fraction"	"boss"
-	"BountyGoldMin"	"51.0"
-	"BountyGoldMax"	"51.0"
-	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"	"50"
-	"RingRadius"	"50"
-	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"	"300"
-	"MovementTurnRate"	"0.6"
-	"StatusHealth"	"6000"
-	"StatusHealthRegen"	"0"
-	"StatusMana"	"1000"
-	"StatusManaRegen"	"100"
-	"VisionDaytimeRange"	"1400"
-	"VisionNighttimeRange"	"800"
-	"TeamName"	"DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-	"precache"
-	{
-		"model"	"models/heroes/dragon_knight/dragon_knight_dragon.vmdl"
-		"particle"	"particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_frost.vpcf"
-	}
+    "BaseClass" "npc_dota_creature"
+    "Model" "models/heroes/dragon_knight/dragon_knight.vmdl"
+    "ModelScale"    "2"
+    "SoundSet"  "Hero_DragonKnight"
+    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+    "Level" "7"
+    "HealthBarOffset"   "140"
+    "Vscripts"  "ai/waves/ai_dragon.lua"
+    "Ability1"  "dragon_knight_elder_dragon_form"
+    "Ability2"  "waveboss_repel"
+    "Ability3"  "waveboss_attackspeed"
+    "ArmorPhysical" "25"
+    "MagicalResistance" "100"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"   "400.5"
+    "AttackDamageMax"   "445.0"
+    "AttackRate"    "0.8"
+    "AttackAnimationPoint"  "0.4"
+    "AttackAcquisitionRange"    "850"
+    "AttackRange"   "125"
+    "ProjectileModel"   ""
+    "ProjectileSpeed"   "650"
+    "Legion_AttackType" "boss"
+    "Legion_DefendType" "boss"
+    "Legion_Experience" "2000"
+    "Legion_Fraction"   "boss"
+    "BountyGoldMin" "51.0"
+    "BountyGoldMax" "51.0"
+    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
+    "CollisionSize" "50"
+    "RingRadius"    "50"
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed" "300"
+    "MovementTurnRate"  "0.6"
+    "StatusHealth"  "6000"
+    "StatusHealthRegen" "0"
+    "StatusMana"    "1000"
+    "StatusManaRegen"   "100"
+    "VisionDaytimeRange"    "1400"
+    "VisionNighttimeRange"  "800"
+    "TeamName"  "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "precache"
+    {
+        "model" "models/heroes/dragon_knight/dragon_knight_dragon.vmdl"
+        "particle"  "particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_frost.vpcf"
+    }
 
-	"Creature"
-	{
-		"DisableClumpingBehavior"	"1"
-		"DefaultState"	"Invade"
-		"States"
-		{
-			"Invade"
-			{
-				"Name"	"Invade"
-				"Aggression"	"100.0"
-				"Avoidance"	"0.0"
-				"Support"	"0.0"
-			}
+    "Creature"
+    {
+        "DisableClumpingBehavior"   "1"
+        "DefaultState"  "Invade"
+        "States"
+        {
+            "Invade"
+            {
+                "Name"  "Invade"
+                "Aggression"    "100.0"
+                "Avoidance" "0.0"
+                "Support"   "0.0"
+            }
 
-		}
+        }
 
-		"AttachWearables"
-		{
-			"Wearable1"
-			{
-				"ItemDef"	"6615"
-			}
+        "AttachWearables"
+        {
+            "Wearable1"
+            {
+                "ItemDef"   "6615"
+            }
 
-			"Wearable2"
-			{
-				"ItemDef"	"6790"
-			}
+            "Wearable2"
+            {
+                "ItemDef"   "6790"
+            }
 
-			"Wearable3"
-			{
-				"ItemDef"	"6788"
-			}
+            "Wearable3"
+            {
+                "ItemDef"   "6788"
+            }
 
-			"Wearable4"
-			{
-				"ItemDef"	"6792"
-			}
+            "Wearable4"
+            {
+                "ItemDef"   "6792"
+            }
 
-			"Wearable5"
-			{
-				"ItemDef"	"6789"
-			}
+            "Wearable5"
+            {
+                "ItemDef"   "6789"
+            }
 
-			"Wearable6"
-			{
-				"ItemDef"	"6791"
-			}
+            "Wearable6"
+            {
+                "ItemDef"   "6791"
+            }
 
-			"Wearable7"
-			{
-				"ItemDef"	"6787"
-			}
+            "Wearable7"
+            {
+                "ItemDef"   "6787"
+            }
 
-		}
+        }
 
-	}
+    }
 
 }

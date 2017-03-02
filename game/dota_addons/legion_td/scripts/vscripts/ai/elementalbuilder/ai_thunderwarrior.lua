@@ -7,6 +7,7 @@ end
 function InitAI( self )
 	self:SetContextThink( "init_think", function()
 		self:FindAbilityByName("storm_spirit_static_remnant"):SetLevel(1)
+		self:FindAbilityByName("thunderwarrior_overload"):SetLevel(1)
 		self.aiThink = aiThinkStandardSkill
 		self.abilities = {}
 		self.abilities[1] = self:FindAbilityByName("storm_spirit_static_remnant")
