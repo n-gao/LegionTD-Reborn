@@ -9,6 +9,7 @@ end
 function modifier_randombuilder_passive_lua:OnCreated(kv)
     self.interestRate = self:GetAbility():GetSpecialValueFor("tangos_interest_rate")
     self.maxIncomeMultiplier = self:GetAbility():GetSpecialValueFor("max_income_multiplier")
+    print("Searching "..self.interestRate)
 
     if IsServer() then
         self.gameEnt = GameRules.GameMode.game
@@ -42,7 +43,7 @@ end
 
 --------------------------------------------------------------------------------
 function modifier_randombuilder_passive_lua:OnTooltip(params)
-    return self.interestRate
+    return math.floor(self.interestRate * 100)
 end
 
 --------------------------------------------------------------------------------
