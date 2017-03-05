@@ -684,6 +684,7 @@
 	    "ModelScale"                "0.5"
 	    "HealthBarOffset"           "150"
 	    "Level"                     "1"
+	    "Vscripts"                  "ai/ai_default.lua"
 	
 	    "Ability1"                  "assassinbuilder_disequilibriate"
 	    "Ability2"                  "assassinbuilder_upgrade_mind_slicer"
@@ -722,8 +723,8 @@
 	
 	    "StatusHealth"              "160"
 	    "StatusHealthRegen"         "0"
-	    "StatusMana"                "0"
-	    "StatusManaRegen"           "0"
+	    "StatusMana"                "100"
+	    "StatusManaRegen"           "2"
 	
 	    "VisionDaytimeRange"        "1400"
 	    "VisionNighttimeRange"      "800"
@@ -11182,7 +11183,7 @@
 	    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
 	    "MovementSpeed" "300"
 	    "MovementTurnRate"  "0.6"
-	    "StatusHealth"  "2750"
+	    "StatusHealth"  "2200"
 	    "StatusHealthRegen" "0"
 	    "StatusMana"    "1000"
 	    "StatusManaRegen"   "100"

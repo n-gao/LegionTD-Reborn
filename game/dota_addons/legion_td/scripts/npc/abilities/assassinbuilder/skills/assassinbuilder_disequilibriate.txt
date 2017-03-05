@@ -1,6 +1,6 @@
 "assassinbuilder_disequilibriate"
 {
-	"BaseClass"             		"forged_spirit_melting_strike"
+	"BaseClass"						"ability_datadriven"
 	"AbilityTextureName"			"forged_spirit_melting_strike"
 	"MaxLevel" 						"1"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
@@ -13,12 +13,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"armor_removed"			"1"
-		}
-		"02"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"max_armor_removed"		"10"
+			"armor_removed"			"-3"
 		}
 		"03"
 		{
@@ -26,4 +21,47 @@
 			"duration"				"5"
 		}
 	}
+    
+    "Modifiers"
+    {
+        "modifier_disequilibriate"
+        {
+            "Passive"           "1"
+            "IsHidden"          "1"
+            "Attributes"        "MODIFIER_ATTRIBUTE_MULTIPLE"
+            
+            "Orb"
+            {
+                "Priority"              "DOTA_ORB_PRIORITY_ITEM"
+                "ProjectileName"        "particles/units/heroes/hero_silencer/silencer_base_attack.vpc"
+                "CastAttack"            "0"
+            }
+
+            "OnOrbFire"
+            {
+                "ApplyModifier"
+                {
+                    "Target"            "TARGET"
+                    "ModifierName"      "modifier_disequilibriate_debuff"
+                }
+                
+                "FireSound"
+                {
+                    "EffectName"        "Item_Desolator.Target"
+                    "Target"            "TARGET"
+                }
+            }
+        }
+        "modifier_disequilibriate_debuff"
+        {
+            "Duration"              "%duration"
+            "Passive"               "0"
+            "IsHidden"              "0"
+            
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"        "%armor_removed"
+            }
+        }
+    }
 }
