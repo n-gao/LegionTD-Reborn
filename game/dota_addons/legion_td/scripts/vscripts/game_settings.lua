@@ -73,6 +73,7 @@ START_INCOME = 0
 if Convars:GetBool('developer') then
     START_GOLD = 100000
     START_TANGO = 100000
+    START_FOOD_LIMIT = 100000
 end
 
 MAX_SENDS = 90

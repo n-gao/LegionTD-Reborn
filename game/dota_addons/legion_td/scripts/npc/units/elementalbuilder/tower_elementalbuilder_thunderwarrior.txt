@@ -11,7 +11,7 @@
     "Ability4"  "sell"
     "Ability3"  "ability_empty_3"
     "Ability2"  "thunderwarrior_overload"
-    "Ability1"  "storm_spirit_static_remnant"
+    "Ability1"  "thunderwarrior_static_remnant"
     "ArmorPhysical" "4"
     "MagicalResistance" "25"
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"

@@ -379,7 +379,7 @@ function Storage:SendHttpRequest(method, data, callback)
     print("Send Data")
     DeepPrintTable(data)
 
-    local req = CreateHTTPRequest(method, self.serverURL)
+    local req = CreateHTTPRequestScriptVM(method, self.serverURL)
 
     for key, value in pairs(data) do
         req:SetHTTPRequestGetOrPostParameter(key, tostring(value))
