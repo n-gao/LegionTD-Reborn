@@ -27,7 +27,6 @@ function modifier_naturebuilder_passive_deathknell_lua:OnCreated(kv)
             unitName = unitRef.npcclass
             if string.find(unitName, "treebeard") then
                 doublePassive = true
-                print("Treebeard Found")
             end
         end
 
@@ -61,7 +60,6 @@ function modifier_naturebuilder_passive_deathknell_lua:OnRefresh(kv)
             unitName = unitRef.npcclass
             if string.find(unitName, "treebeard") then
                 doublePassive = true
-                print("Treebeard Found")
             end
         end
 
@@ -95,7 +93,6 @@ function modifier_naturebuilder_passive_deathknell_lua:OnDeath(params)
     local deadUnitOwnerID = deadUnit:GetPlayerOwnerID()
 
     if self:GetParent():GetPlayerID() == deadUnitOwnerID then
-        print("ZZzzzzzaap!")
 
         -- do hurt
 
