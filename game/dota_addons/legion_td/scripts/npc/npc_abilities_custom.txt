@@ -14628,7 +14628,7 @@
 	        "09"
 	        {
 	            "var_type"                  "FIELD_FLOAT"
-	            "damage_boss_multiplier"    "8"
+	            "damage_boss_multiplier"    "5"
 	        }
 	    }
 	
