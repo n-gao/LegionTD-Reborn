@@ -3720,13 +3720,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"63.75"
+				"atk_damage_tooltip"	"65.25"
 			}
 	
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"atk_speed_tooltip"	"1.3"
+				"atk_speed_tooltip"	"1.25"
 			}
 	
 			"03"
@@ -4264,7 +4264,7 @@
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_tooltip"	"0"
+				"armor_tooltip"	"3"
 			}
 	
 			"06"
@@ -12161,7 +12161,7 @@
 		"AbilityTextureName"	"rattletrap_power_cogs"
 		"MaxLevel"	"1"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"	"210"
+		"AbilityGoldCost"	"180"
 		"AbilityCooldown"	"1.0"
 		"OnSpellStart"
 		{
@@ -12226,7 +12226,7 @@
 		"AbilityTextureName"	"rattletrap_power_cogs"
 		"MaxLevel"	"1"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityGoldCost"	"230"
+		"AbilityGoldCost"	"250"
 		"AbilityCooldown"	"1.0"
 		"OnSpellStart"
 		{
@@ -12662,6 +12662,30 @@
 	        }
 	    }
 	}
+	//=================================================================================================================
+	// Ability: Weaver's Geminate Attack
+	//=================================================================================================================
+	"big_bug_geminate_attack"
+	{
+	    // General
+		"BaseClass"             		"weaver_geminate_attack"
+		"AbilityTextureName"			"weaver_geminate_attack"
+	    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+	    
+	    "AbilityCooldown"				"5.0"
+	        
+	    // Special	
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilitySpecial"
+	    {
+	        "01"
+	        {
+	            "var_type"				"FIELD_FLOAT"
+	            "delay"			"0.25"
+	        }
+	    }		
+	}
 	"brood_spawn_spiderlings"
 	{
 		"BaseClass"             		"ability_datadriven"
@@ -12685,6 +12709,30 @@
 				"Function"		"SpawnSpiderlings"
 			}
 		}
+	}
+	//=================================================================================================================
+	// Ability: Weaver's Geminate Attack
+	//=================================================================================================================
+	"bug_geminate_attack"
+	{
+	    // General
+		"BaseClass"             		"weaver_geminate_attack"
+		"AbilityTextureName"			"weaver_geminate_attack"
+	    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+	    
+	    "AbilityCooldown"				"7.0"
+	        
+	    // Special	
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilitySpecial"
+	    {
+	        "01"
+	        {
+	            "var_type"				"FIELD_FLOAT"
+	            "delay"			"0.25"
+	        }
+	    }		
 	}
 	"centaur_hoof_stomp_datadriven"
 	{
@@ -13634,6 +13682,30 @@
 			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 			"AbilityTextureName"            "treant_natures_guise"
 		}
+	//=================================================================================================================
+	// Ability: Weaver's Geminate Attack
+	//=================================================================================================================
+	"very_big_bug_geminate_attack"
+	{
+	    // General
+		"BaseClass"             		"weaver_geminate_attack"
+		"AbilityTextureName"			"weaver_geminate_attack"
+	    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+	    
+	    "AbilityCooldown"				"3.0"
+	        
+	    // Special	
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilitySpecial"
+	    {
+	        "01"
+	        {
+	            "var_type"				"FIELD_FLOAT"
+	            "delay"			"0.25"
+	        }
+	    }		
+	}
 	"randombuilder_get_random_tier1"
 	{
 	  "BaseClass"                 "ability_datadriven"
@@ -14553,6 +14625,11 @@
 	            "var_type"                  "FIELD_FLOAT"
 	            "vision_duration"           "2.0"
 	        }
+	        "09"
+	        {
+	            "var_type"                  "FIELD_FLOAT"
+	            "damage_boss_multiplier"    "8"
+	        }
 	    }
 	
 	    "OnSpellStart"
@@ -14626,6 +14703,11 @@
 	                    "Damage"        "%partial_damage"
 	                }
 	            }
+	        }
+	
+	        "RunScript" {
+	            "ScriptFile"    "abilities/waveunits/techies_suicide.lua"
+	            "Function"      "DamageBosses"
 	        }
 	
 	        "DelayedAction"
