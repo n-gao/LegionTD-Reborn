@@ -8144,7 +8144,7 @@
 	    "AttackRate"    "0.57"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange"    "850"
-	    "AttackRange"   "420"
+	    "AttackRange"   "500"
 	    "ProjectileModel"   "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 	    "ProjectileSpeed"   "775"
 	    "Legion_AttackType" "arcane"
@@ -8157,7 +8157,7 @@
 	    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
 	    "MovementSpeed" "270"
 	    "MovementTurnRate"  "0.6"
-	    "StatusHealth"  "650"
+	    "StatusHealth"  "700"
 	    "StatusHealthRegen" "0"
 	    "StatusMana"    "0"
 	    "StatusManaRegen"   "0"
@@ -8195,7 +8195,7 @@
 	    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
 	    "Level" "1"
 	    "HealthBarOffset"   "150"
-	    "Vscripts"  "ai/ai_default.lua"
+	    "Vscripts"  "ai/naturebuilder/ai_bear.lua"
 	    "Ability1"  "naturebuilder_upgrade_druid_bear"
 	    "Ability2"  "naturebuilder_upgrade_iron_bear"
 	    "Ability4"  "sell"
@@ -8249,18 +8249,6 @@
 	                "Aggression"    "100.0"
 	                "Avoidance" "0.0"
 	                "Support"   "100.0"
-	            }
-	
-	        }
-	
-	        "DefensiveAbilities"
-	        {
-	            "Ability1"
-	            {
-	                "Name"  "axe_berserkers_call"
-	                "Buff"  "1"
-	                "AOE"   "1"
-	                "Radius"    "300"
 	            }
 	
 	        }
@@ -8889,7 +8877,7 @@
 	    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
 	    "Level"                 "1"
 	    "HealthBarOffset"       "150"
-	    "Vscripts"              "ai/ai_default.lua"
+	    "Vscripts"              "ai/naturebuilder/ai_bear.lua"
 	
 	    "Ability4"                          "sell"
 	    "Ability1"                          "lone_druid_spirit_bear_entangle"
@@ -8971,16 +8959,6 @@
 	                "Aggression"        "100.0"
 	                "Avoidance"         "0.0"
 	                "Support"           "100.0"
-	            }
-	        }
-	        "DefensiveAbilities"
-	        {
-	            "Ability1"
-	            {
-	                "Name"     "axe_berserkers_call"
-	                "Buff"                      "1"
-	                "AOE"             "1"
-	                "Radius"          "300"
 	            }
 	        }
 	    }
