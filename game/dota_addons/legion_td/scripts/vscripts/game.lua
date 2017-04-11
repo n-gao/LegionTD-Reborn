@@ -9,7 +9,7 @@ end
 GAMESTATE_PREPARATION = 0
 GAMESTATE_FIGHTING = 1
 GAMESTATE_END = 2
-STARTING_ROUND = 15
+STARTING_ROUND = 1
 CHECKING_INTERVALL = 1
 
 --Neues Spiel
@@ -509,10 +509,10 @@ function Game:CanSpawn(caster, vector)
     local result = 2
     for _, ent in pairs(Entities:FindAllInSphere(vector, CHECKINGRADIUS)) do
         if ent.unit and ent:IsAlive() then
-            return 4
+            return LEGION_ERROR_TO_CLOSE
         end
         if ent == caster.player.lane.box then
-            result = 1
+            result = LEGION_ERROR_NOT_ENOUGH_TANGOS
         end
     end
     return result
@@ -1213,7 +1213,7 @@ function Game:SaveDataAtEnd()
 end
 
 function Game:SaveMatchAtEnd()
-    --if GameRules:IsCheatMode() then return end
+    if GameRules:IsCheatMode() then return end
     HookSetWinnerFunction(function(gameRules, team)
         local matchData = {}
         for _, player in pairs(self.players) do
