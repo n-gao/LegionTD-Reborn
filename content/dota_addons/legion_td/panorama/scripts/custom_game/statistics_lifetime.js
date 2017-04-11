@@ -37,10 +37,13 @@ function CapitalizeFirstLetter(str) {
     GameUI.CustomUIConfig().ValueFunctions = {};
     InitAttribute("Level", function() { return GetLevelOf(steam_id);});
     InitSimpleAttribute("Experience", "experience");
+    InitSimpleAttribute("Rating", "rating");
     InitSimpleAttribute("Won Games", "won_games");
     InitSimpleAttribute("Lost Games", "lost_games");
-    InitAttribute("Winrate", GetWinRate);
+    InitSimpleAttribute("Win Rate", "win_rate");
     InitSimpleAttribute("Won Duels", "won_duels");
+    InitSimpleAttribute("Lost Duels", "lost_duels");
+    InitSimpleAttribute("Duel Win Rate", "duel_win_rate");
     InitSimpleAttribute("Earned Tangos", "earned_tangos");
     InitSimpleAttribute("Kills", "kills");
     InitSimpleAttribute("Leaks", "leaks");
