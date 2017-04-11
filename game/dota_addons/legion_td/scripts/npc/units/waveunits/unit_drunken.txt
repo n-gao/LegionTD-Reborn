@@ -24,6 +24,7 @@
 	"Legion_AttackType"	"normal"
 	"Legion_DefendType"	"medium"
 	"Legion_Experience"	"130"
+    "Legion_Fraction"   "boss"
 	"BountyGoldMin"	"6.0"
 	"BountyGoldMax"	"6.0"
 	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"

@@ -89,7 +89,7 @@ function GetAllF1ctions(steamID) {
 }
 
 function GetKillsOfFraction(steamID, fraction) {
-    return GetDataOf(steamID, "kills_" + fraction);
+    return GetDataOf(steamID, "killed_" + fraction);
 }
 
 function GetKillsOf(steamID) {

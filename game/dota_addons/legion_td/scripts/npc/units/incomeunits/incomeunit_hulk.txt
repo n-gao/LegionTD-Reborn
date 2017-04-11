@@ -24,6 +24,7 @@
 	"Legion_AttackType"	"normal"
 	"Legion_DefendType"	"heavy"
 	"Legion_Fraction"	"income"
+    "Legion_Experience" "270"
 	"BountyGoldMin"	"60"
 	"BountyGoldMax"	"60"
 	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"

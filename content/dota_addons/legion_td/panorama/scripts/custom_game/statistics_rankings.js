@@ -38,5 +38,5 @@ function AddRankingEntry(attribute, steamID, rank) {
 } 
 
 (function() {
-    SetRanking("experience");
+    SetRanking("rating");
 })();

@@ -13,6 +13,7 @@
   <Panel hittest="false" class="RankingStatisticRoot">
     <Panel id="RankingAttributePanel">
       <DropDown id="RankingAttributeDropDown" oninputsubmit="OnRankingChanged()">
+        <Label text="#attribute_rating" id="rating"/>
         <Label text="#attribute_experience" id="experience"/>
         <Label text="#attribute_kills" id="kills"/>
         <Label text="#attribute_won_games" id="won_games"/> 

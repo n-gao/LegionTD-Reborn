@@ -1,0 +1,64 @@
+//Saving match
+//Player Data
+{
+    "1" : {
+        "fraction" : "nature",
+        "team"     : "2",
+        "abandoned" : "false",
+        "earned_tangos" : "5",
+        "earned_gold" : "100",
+        "killed_tower_naturebuilder_big_bug" : "2",
+        "build_tower_naturebuilder_bug" : "1",
+    },
+    "2" : {
+        "fraction" : "nature",
+        "team"     : "3",
+        "abandoned" : "false",
+        "earned_tangos" : "5",
+        "earned_gold" : "100",
+        "killed_tower_naturebuilder_big_bug" : "2",
+        "build_tower_naturebuilder_bug" : "1",
+    },
+    "3" : {
+        "fraction" : "nature",
+        "team"     : "3",
+        "abandoned" : "false",
+        "earned_tangos" : "5",
+        "earned_gold" : "100",
+        "killed_tower_naturebuilder_big_bug" : "2",
+        "build_tower_naturebuilder_bug" : "1",
+    },
+    "4" : {
+        "fraction" : "nature",
+        "team"     : "3",
+        "abandoned" : "false",
+        "earned_tangos" : "5",
+        "earned_gold" : "100",
+        "killed_tower_naturebuilder_big_bug" : "2",
+        "build_tower_naturebuilder_bug" : "1",
+    }
+}
+
+//Duel Data
+{
+    "1" : {
+        "winner"    :   "2",
+        "time"      :   "600",
+    },
+    "2" : {
+        "winner"    :   "2",
+        "time"      :   "1200",
+    },
+    "3" : {
+        "winner"    :   "2",
+        "time"      :   "1800",
+    }
+}
+
+//Update Unit
+{
+    "tower_naturebuilder_big_bug" : {
+        "experience"    :   "100",
+        "fraction"      :   "nature"
+    }
+}

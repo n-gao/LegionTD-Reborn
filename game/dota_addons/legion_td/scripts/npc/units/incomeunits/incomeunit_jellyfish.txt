@@ -24,6 +24,7 @@
     "Legion_AttackType" "arcane"
     "Legion_DefendType" "light"
     "Legion_Fraction"   "income"
+    "Legion_Experience" "250"
     "BountyGoldMin" "55"
     "BountyGoldMax" "55"
     "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"

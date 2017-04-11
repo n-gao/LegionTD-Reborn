@@ -9,7 +9,7 @@ end
 GAMESTATE_PREPARATION = 0
 GAMESTATE_FIGHTING = 1
 GAMESTATE_END = 2
-STARTING_ROUND = 1
+STARTING_ROUND = 15
 CHECKING_INTERVALL = 1
 
 --Neues Spiel
@@ -225,6 +225,7 @@ end
 function Game:ReadRoundConfiguration(kv)
     self.rounds = {}
     self.doneDuels = 0
+    self.lastWaveCount = 0
     local duelRoundCount = 0
     while true do
         local roundName = string.format("Round%d", self:GetRoundCount() + 1 - duelRoundCount)
@@ -387,7 +388,7 @@ function Game:SetWaitTime()
     end
     self.nextRoundTime = GameRules:GetGameTime() + waitTime
 
-    CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels })
+    CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels - self.lastWaveCount })
     self:RespawnUnits()
     print("Time to next Round: " .. waitTime)
 end
@@ -598,6 +599,10 @@ function Game:OnConnectFull(keys)
             steamID = p:GetSteamID()
         }
         self:RequestStoredData(data)
+
+        if Convars:GetBool('developer') then
+            Game:UpdateUnitData()
+        end
     end
 end
 
@@ -953,11 +958,12 @@ function Game:IncreaseRound()
     Game.gameRound = Game.gameRound + 1;
     if (Game.gameRound > Game:GetRoundCount()) then
         Game.gameRound = Game.gameRound - 1
-        Game.doneDuels = Game.doneDuels + 1
+        Game.lastWaveCount = Game.lastWaveCount + 1
         Game.finishedWaves = true
     else
         if (Game.rounds[Game.gameRound].isDuelRound and voteOptions["deactivate_duels"]) then
             Game:IncreaseRound()
+            Game.doneDuels = Game.doneDuels + 1
         end
     end
 end
@@ -1084,7 +1090,7 @@ function Game:SkipWait()
     --self:EndQuest()
     --self.quest.finished = 0
     Timers:CreateTimer(0.3, function()
-     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels }) end)
+     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels - self.lastWaveCount }) end)
 end
 
 function Game:DistributeMissedTangos(missedTime)
@@ -1178,6 +1184,19 @@ function Game:RequestRankingPosition(data)
     end)
 end
 
+
+function Game:UpdateUnitData()
+    local unitData = {}
+    for unit, data in pairs(Game.UnitKV) do
+        unitData[unit] = {
+            fraction = data.Legion_Fraction or "other",
+            experience = data.Legion_Experience or 0
+        }
+    end
+    Game.storage:UpdateUnitData(unitData);
+end
+
+
 function Game:SaveDataAtEnd()
     if GameRules:IsCheatMode() then return end
     HookSetWinnerFunction(function(gameRules, team)
@@ -1194,13 +1213,15 @@ function Game:SaveDataAtEnd()
 end
 
 function Game:SaveMatchAtEnd()
-    if GameRules:IsCheatMode() then return end
+    --if GameRules:IsCheatMode() then return end
     HookSetWinnerFunction(function(gameRules, team)
         local matchData = {}
         for _, player in pairs(self.players) do
             matchData[player:GetSteamID()] = PlayerData.GetByPlayer(player):GetMatchData()
         end
-        self.storage:SaveMatchData(team, matchData, function(response, success)
+        local duration = GameRules:GetGameTime()
+        local wave = Game.gameRound + Game.lastWaveCount
+        self.storage:SaveMatchData(team, duration, wave, matchData, DuelRound.doneDuels, function(response, success)
             print(success)
         end)
     end)

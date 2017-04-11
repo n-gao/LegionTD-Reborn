@@ -96,8 +96,9 @@ end
 function Storage:RequestRankingPosition(attribute, steamId)
     self:SendHttpRequest("GET", {
         customGameId = self.app_id,
+        method = "ranking_position",
         steamId = steamId,
-        attribute = attribute
+        rankingType = attribute
     }, function(result)
         local resultTable = JSON:decode(result)
         print("GET RANKING POSITION RESPONSE")
@@ -178,7 +179,8 @@ end
 function Storage:RequestRankingFromTo(attribute, from, to)
     self:SendHttpRequest("GET", {
         customGameId = self.app_id,
-        attribute = attribute,
+        method = "ranking",
+        rankingType = attribute,
         from = from,
         to = to
     }, function(result)
@@ -271,6 +273,7 @@ function Storage:GetPlayerData(steam_id, callback)
     table.insert(self.requested[steam_id], callback)
     self:SendHttpRequest("GET", {
         customGameId = self.app_id,
+        method = "info",
         steamId = steam_id,
     },
         function(result)
@@ -308,7 +311,7 @@ function Storage:SavePlayerData(steam_id, toStore, callback)
         end
         return
     end
-
+    if true then return end
     self:InvalidateData(steam_id)
     print("WANTS TO STORE:")
     DeepPrintTable(toStore)
@@ -332,18 +335,22 @@ function Storage:SavePlayerData(steam_id, toStore, callback)
     end)
 end
 
-function Storage:SaveMatchData(winner, matchData)
+function Storage:SaveMatchData(winner, duration, lastWave, playerData, duelData, callback)
     if (self.online == false) then
         if (callback ~= nil) then
             callback(nil, false)
         end
         return
     end
-    DeepPrintTable(matchData)
+    DeepPrintTable(playerData)
     self:SendHttpRequest("POST", {
         customGameId = self.app_id,
+        method = "save_match",
         winner = winner,
-        matchData = JSON:encode(matchData)
+        duration = duration,
+        lastWave = lastWave,
+        playerData = JSON:encode(playerData),
+        duelData = JSON:encode(duelData)
     }, function(result)
         local resultTable = JSON:decode(result)
         print("POST MATCH RESPONSE")
@@ -356,6 +363,20 @@ function Storage:SaveMatchData(winner, matchData)
         else
             callback(resultTable, false)
         end
+    end)
+end
+
+function Storage:UpdateUnitData(unitData)
+    if (self.online == false) then
+        return
+    end
+    self:SendHttpRequest("POST", {
+        method = "update_units",
+        data = JSON:encode(unitData)
+    }, function(result)
+        local resultTable = JSON:decode(result)
+        print("UPDATING UNITS RESPONSE")
+        DeepPrintTable(resultTable)
     end)
 end
 

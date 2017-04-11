@@ -1613,7 +1613,7 @@
 	
 		"Legion_AttackType"		"boss"
 		"Legion_DefendType"		"boss"
-	
+	    "Legion_Fraction"   "king"
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "9"
@@ -1711,6 +1711,7 @@
 	
 		"Legion_AttackType"		"boss"
 		"Legion_DefendType"		"boss"
+	    "Legion_Fraction"   "king"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6461,6 +6462,7 @@
 		"Legion_AttackType"	"normal"
 		"Legion_DefendType"	"heavy"
 		"Legion_Fraction"	"income"
+	    "Legion_Experience" "210"
 		"BountyGoldMin"	"45"
 		"BountyGoldMax"	"45"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -6524,6 +6526,7 @@
 		"Legion_AttackType"	"normal"
 		"Legion_DefendType"	"heavy"
 		"Legion_Fraction"	"income"
+	    "Legion_Experience" "290"
 		"BountyGoldMin"	"65"
 		"BountyGoldMax"	"65"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -6779,6 +6782,7 @@
 		"Legion_AttackType"	"arcane"
 		"Legion_DefendType"	"light"
 		"Legion_Fraction"	"income"
+	    "Legion_Experience" "310"
 		"BountyGoldMin"	"70"
 		"BountyGoldMax"	"70"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -6842,6 +6846,7 @@
 		"Legion_AttackType"	"normal"
 		"Legion_DefendType"	"light"
 		"Legion_Fraction"	"income"
+	    "Legion_Experience" "230"
 		"BountyGoldMin"	"50"
 		"BountyGoldMax"	"50"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7263,6 +7268,7 @@
 		"Legion_AttackType"	"normal"
 		"Legion_DefendType"	"heavy"
 		"Legion_Fraction"	"income"
+	    "Legion_Experience" "270"
 		"BountyGoldMin"	"60"
 		"BountyGoldMax"	"60"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7326,6 +7332,7 @@
 	    "Legion_AttackType" "arcane"
 	    "Legion_DefendType" "light"
 	    "Legion_Fraction"   "income"
+	    "Legion_Experience" "250"
 	    "BountyGoldMin" "55"
 	    "BountyGoldMax" "55"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -7864,6 +7871,7 @@
 		"Legion_AttackType"	"boss"
 		"Legion_DefendType"	"boss"
 		"Legion_Fraction"	"income"
+	    "Legion_Experience" "350"
 		"BountyGoldMin"	"75"
 		"BountyGoldMax"	"75"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -10037,6 +10045,7 @@
 		"Legion_AttackType"	"normal"
 		"Legion_DefendType"	"heavy"
 		"Legion_Experience"	"85"
+	    "Legion_Fraction"   "boss"
 		"BountyGoldMin"	"6.0"
 		"BountyGoldMax"	"6.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -10227,6 +10236,7 @@
 		"Legion_AttackType"	"arcane"
 		"Legion_DefendType"	"light"
 		"Legion_Experience"	"500"
+	    "Legion_Fraction"   "boss"
 		"BountyGoldMin"	"25.0"
 		"BountyGoldMax"	"25.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -10504,6 +10514,7 @@
 		"Legion_AttackType"	"normal"
 		"Legion_DefendType"	"medium"
 		"Legion_Experience"	"130"
+	    "Legion_Fraction"   "boss"
 		"BountyGoldMin"	"6.0"
 		"BountyGoldMax"	"6.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -12213,6 +12224,7 @@
 		"Legion_AttackType"	"arcane"
 		"Legion_DefendType"	"medium"
 		"Legion_Experience"	"100"
+	    "Legion_Fraction"   "wave"
 		"BountyGoldMin"	"3.0"
 		"BountyGoldMax"	"3.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"

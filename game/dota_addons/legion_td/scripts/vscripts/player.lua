@@ -28,12 +28,25 @@ function Player.new(plyEntitie, userID)
     self.buildUnits = {}
     self.killedUnits = {}
     self.leakedUnits = {}
+    self.sendUnits = {}
     self.calledAbandon = false
     return self
 end
 
 function Player:BuildUnit(unitname)
     self.buildUnits[unitname] = (self.buildUnits[unitname] or 0) + 1
+end
+
+function Player:SendedUnit(unitname)
+    self.sendUnits[unitname] = (self.sendUnits[unitname] or 0) + 1
+end
+
+function Player:GetSends()
+    local result = 0
+    for _,c in pairs(self.sendUnits) do
+        result = result + c
+    end
+    return c
 end
 
 function Player:KilledUnit(killed)
@@ -474,7 +487,14 @@ function Player:SendErrorCode(code)
     end
 end
 
-
+function Player:GetNetworth()
+    local goldValue = PlayerResource:GetGold(self:GetPlayerID())
+    goldValue = goldValue + self.buildingUpgradeValue
+    for _, unit in pairs(self.units) do
+        goldValue = goldValue + unit.goldCost
+    end
+    return goldValue
+end
 
 function Player:IsActive()
     return self.lane and self.lane.isActive
@@ -484,7 +504,7 @@ function Player:Abandon()
     print("abandoning player on team " .. self.teamnumber)
     local goldValue = PlayerResource:GetGold(self:GetPlayerID()) -- gold in pocket
     print("abandoning player had " .. goldValue .. " gold in pocket")
-    goldValue = goldValue + (self.buildingUpgradeValue / 2) -- gold in building upgrades
+    goldValue = goldValue + (self.buildingUpgradeValue) -- gold in building upgrades
     print("plus building upgrades: " .. goldValue)
     for _, unit in pairs(self.units) do -- gold in built units
         goldValue = goldValue + unit.goldCost
