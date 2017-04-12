@@ -12,6 +12,7 @@ function SetRanking(newAttribute) {
     attribute = newAttribute;
     RequestRankingFromTo(attribute, start, end, function(result) {
         ClearRanking();
+        $.Msg("Filling statistic ranking");
         $("#RankingAttributeLabel").text = $("#RankingAttributeDropDown").GetSelected().text;
         for (var i = start; i < result.length; i++) {
             AddRankingEntry(attribute, result[i], i + start);

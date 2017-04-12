@@ -760,7 +760,7 @@ function Game:SendUnit(data)
         local spawn = player:GetIncomeSpawner():GetAbsOrigin()
         local team = player:GetTeamNumber()
         local name = Unit.GetUnitNameByID(lData.id)
-        player:BuildUnit(name)
+        player:SendUnit(name)
         local unit = CreateUnitByName(name, spawn, true, nil, nil, team)
         unit.tangoValue = lData.cost
         unit:AddNewModifier(nil, nil, "modifier_invulnerable", {})
@@ -1213,7 +1213,7 @@ function Game:SaveDataAtEnd()
 end
 
 function Game:SaveMatchAtEnd()
-    if GameRules:IsCheatMode() then return end
+    --if GameRules:IsCheatMode() then return end
     HookSetWinnerFunction(function(gameRules, team)
         local matchData = {}
         for _, player in pairs(self.players) do
@@ -1221,7 +1221,7 @@ function Game:SaveMatchAtEnd()
         end
         local duration = GameRules:GetGameTime()
         local wave = Game.gameRound + Game.lastWaveCount
-        self.storage:SaveMatchData(team, duration, wave, matchData, DuelRound.doneDuels, function(response, success)
+        self.storage:SaveMatchData(team, duration, wave, matchData, DuelRound.doneRounds, function(response, success)
             print(success)
         end)
     end)

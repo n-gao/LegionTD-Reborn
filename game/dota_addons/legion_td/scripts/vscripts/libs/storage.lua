@@ -66,7 +66,7 @@ function Storage:RequestRankingPositions(attribute, steamIds)
         steamIds = JSON:encode(steamIds)
     }, function(result)
         local resultTable = JSON:decode(result)
-        print("GET RANKING POSITIONS RESPONSE")
+        print("[STORAGE] Get Ranking Position Response")
         DeepPrintTable(resultTable)
         if (resultTable == nil) then return end
         for _, ranking in pairs(resultTable) do
@@ -246,7 +246,7 @@ function Storage:AddCachedRanking(attribute, data)
     for k, v in pairs(data.ranking) do
         ranking[k - 1 + data.from] = v
     end
-    print("GET RANKING RESPONSE:")
+    print("[STORAGE] Get Ranking Response")
     DeepPrintTable(data)
     self.rankingEntries[attribute] = data.playerCount
     self.rankings[attribute] = ranking
@@ -278,7 +278,7 @@ function Storage:GetPlayerData(steam_id, callback)
     },
         function(result)
             local resultTable = JSON:decode(result)
-            print("GET RESPONSE:")
+            print("[STORAGE] Get Player Info Response")
             DeepPrintTable(resultTable)
             if resultTable ~= nil then
                 if resultTable[DataAttribute] ~= nil then
@@ -353,7 +353,7 @@ function Storage:SaveMatchData(winner, duration, lastWave, playerData, duelData,
         duelData = JSON:encode(duelData)
     }, function(result)
         local resultTable = JSON:decode(result)
-        print("POST MATCH RESPONSE")
+        print("[STORAGE] Post Match Response")
         DeepPrintTable(resultTable)
         if callback == nil then
             return
@@ -375,7 +375,7 @@ function Storage:UpdateUnitData(unitData)
         data = JSON:encode(unitData)
     }, function(result)
         local resultTable = JSON:decode(result)
-        print("UPDATING UNITS RESPONSE")
+        print("[STORAGE] Updating Unit Response")
         DeepPrintTable(resultTable)
     end)
 end
@@ -397,7 +397,7 @@ function Storage:InvalidateAll()
 end
 
 function Storage:SendHttpRequest(method, data, callback)
-    print("Send Data")
+    print("[STORAGE] Send Data")
     DeepPrintTable(data)
 
     local req = CreateHTTPRequestScriptVM(method, self.serverURL)

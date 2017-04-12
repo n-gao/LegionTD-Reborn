@@ -163,7 +163,7 @@ function DuelRound:End()
         victoryText = "Dire won the duel and earn "
     end
 
-    DuelRound.doneRounds[Game.doneDuels] = {
+    DuelRound.doneRounds[""..Game.doneDuels] = {
         winner = self.winningTeam,
         time = GameRules:GetGameTime()
     }

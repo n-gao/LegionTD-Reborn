@@ -37,7 +37,7 @@ function Player:BuildUnit(unitname)
     self.buildUnits[unitname] = (self.buildUnits[unitname] or 0) + 1
 end
 
-function Player:SendedUnit(unitname)
+function Player:SendUnit(unitname)
     self.sendUnits[unitname] = (self.sendUnits[unitname] or 0) + 1
 end
 
