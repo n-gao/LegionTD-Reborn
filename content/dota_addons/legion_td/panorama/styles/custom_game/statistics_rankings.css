@@ -19,7 +19,7 @@
 
 #RankingList {
     flow-children: down;
-    max-height: 700px;
+    max-height: 450px;
     overflow: scroll;
 }
 

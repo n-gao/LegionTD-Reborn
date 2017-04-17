@@ -380,6 +380,21 @@ function Storage:UpdateUnitData(unitData)
     end)
 end
 
+function Storage:GetMatchHistory(steamId, from, to, callback)
+    if (self.online == false) then return end
+    self:SendHttpRequest("GET", {
+        method = "match_history",
+        steamId = steamId,
+        from = from,
+        to = to
+    }, function(result)
+        local resultTable = JSON:decode(result)
+        print("[STORAGE] Get Match History Response")
+        DeepPrintTable(resultTable)
+        callback(resultTable)
+    end)
+end
+
 function Storage:SetServerURL(url)
     self.serverURL = url
 end

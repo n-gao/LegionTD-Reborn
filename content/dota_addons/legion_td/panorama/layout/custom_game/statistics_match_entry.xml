@@ -1,0 +1,19 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/main_hud.css" />
+        <include src="file://{resources}/styles/custom_game/statistics.css" />
+        <include src="file://{resources}/styles/custom_game/statistics_match_history.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/statistics_match_entry.js" />
+    </scripts>
+    <Panel class="MatchEntry">
+        <Label text="Date" id="Date" class="StatisticsText"/>
+        <Panel class="Builder">
+            <Image src="file://{resources}/images/custom_game/buildericons/human.png" id="BuilderImage"/>
+            <Label text="BuilderName" id="BuilderName" class="StatisticsText"/>
+        </Panel>
+        <Label text="+0" id="Result" class="StatisticsText"/>
+        <Label text="00:00" id="Duration" class="StatisticsText"/>
+    </Panel>
+</root>

@@ -45,6 +45,9 @@ function CapitalizeFirstLetter(str) {
     InitSimpleAttribute("Lost Duels", "lost_duels");
     InitSimpleAttribute("Duel Win Rate", "duel_win_rate");
     InitSimpleAttribute("Earned Tangos", "earned_tangos");
+    InitSimpleAttribute("Tangos per Minute", "tangos_per_minute");
+    InitSimpleAttribute("Earned Gold", "earned_gold");
+    InitSimpleAttribute("Gold per Minute", "gold_per_minute");
     InitSimpleAttribute("Kills", "kills");
     InitSimpleAttribute("Leaks", "leaks");
     InitFractionKillAttribute("wave");

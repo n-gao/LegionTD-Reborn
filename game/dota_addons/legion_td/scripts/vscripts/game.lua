@@ -58,6 +58,7 @@ function Game.new()
     CustomGameEventManager:RegisterListener("request_stored_data", Dynamic_Wrap(Game, "RequestStoredData"))
     CustomGameEventManager:RegisterListener("request_ranking", Dynamic_Wrap(Game, "RequestRanking"))
     CustomGameEventManager:RegisterListener("request_ranking_position", Dynamic_Wrap(Game, "RequestRankingPosition"))
+    CustomGameEventManager:RegisterListener("request_match_history", Dynamic_Wrap(Game, "RequestMatchHistory"))
 
     GameRules:SetSafeToLeave(false)
     GameRules:SetStrategyTime(0)
@@ -1181,6 +1182,18 @@ function Game:RequestRankingPosition(data)
     }
     Game.storage:GetRankingPosition(lData.attribute, lData.steamId, function(result)
         CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerId), "send_ranking_position", result)
+    end)
+end
+
+function Game:RequestMatchHistory(data)
+    local lData = {
+        playerId = data.playerId,
+        steamId = data.steamId,
+        from = data.from,
+        to = data.to
+    }
+    Game.storage:GetMatchHistory(lData.steamId, lData.from, lData.to, function(result)
+        CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerId), "send_match_history", result)
     end)
 end
 

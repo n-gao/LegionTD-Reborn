@@ -1,7 +1,7 @@
 "use strict";
 var attribute = "experience";
 var start = 0;
-var end = 15;
+var end = 25;
 
 function OnRankingChanged() {
     SetRanking($("#RankingAttributeDropDown").GetSelected().id);
