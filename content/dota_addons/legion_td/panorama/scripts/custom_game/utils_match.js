@@ -22,7 +22,7 @@ function UpdateMatchHistory(data) {
 function RequestMatchHistory(from, to, callback) {
     var data = {
         playerId : Players.GetLocalPlayer(),
-        steamId : "76561198334931074",
+        steamId : Game.GetLocalPlayerInfo().player_steamid,
         from : from,
         to : to,
     }
