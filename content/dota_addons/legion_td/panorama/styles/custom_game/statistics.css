@@ -18,6 +18,11 @@
   horizontal-align: center;
 }
 
+.Headline {
+    text-transform: uppercase;
+    margin: 5px;
+}
+
 .LegionLevelIconBackground {
   width: 90px;
   height: 90px;

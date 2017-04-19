@@ -5,7 +5,7 @@
 #MatchList {
     flow-children: down;
     overflow: scroll;
-    max-height: 450px;
+    max-height: 560px;
 }
 
 .MatchEntry {
@@ -41,7 +41,7 @@
 }
 
 #Duration {
-    width: 75px;
+    width: 100px;
     text-align: center;
 }
 

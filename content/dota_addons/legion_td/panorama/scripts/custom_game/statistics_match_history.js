@@ -25,8 +25,6 @@ function ClearMatchList() {
             var id = result[i];
             var match = GetMatchData(id);
             AddMatchEntry(match);
-            AddMatchEntry(match);
-            AddMatchEntry(match);
         }
     });  
 })();

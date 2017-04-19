@@ -28,7 +28,7 @@ function formatDate(date) {
 
 (function() {
     var won = $.GetContextPanel().GetAttributeInt("Won", 0);
-    var result = $.GetContextPanel().GetAttributeInt("Result", 0);
+    var result = $.GetContextPanel().GetAttributeInt("RatingChange", 0);
     var duration = $.GetContextPanel().GetAttributeInt("Duration", 0);
     var builder = $.GetContextPanel().GetAttributeString("Builder", 0);
     var date = $.GetContextPanel().GetAttributeString("Date", "");
