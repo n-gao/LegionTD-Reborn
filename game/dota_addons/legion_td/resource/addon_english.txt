@@ -1,4 +1,4 @@
-﻿"lang"
+"lang"
 {
 	"Language"		"English"
 	"Tokens"
@@ -39,10 +39,13 @@
 		"end_screen_legend_gold_income"	"Gold Income"
 		"end_screen_legend_tower_value"		"Tower Value"
 
+		"attribute_rating"				"Rating"
 		"attribute_experience"			"Experience"
 		"attribute_kills"				"Kills"
 		"attribute_won_games"			"Won Games"
 		"attribute_earned_tangos"		"Earned Tangos"
+		"attribute_tangos_per_minute"	"Tangos per Minute"
+		"attribute_gold_per_minute"		"Gold per Minute"
 		
 		"gold_income_text"				"/round"
 		"tango_income_text"				"/min"
@@ -79,6 +82,8 @@
 
 		"Coming_Soon"									"Coming soon™"
 		"Check_out_workshop"							"Check out the workshop page!"				
+    
+		"ScoreboardCheckbox"							"Show always"
 
 		"wavetitle_abaddon"                                                                    "Abaddon (Normal / Heavy)"
 		"wavetitle_assassins"                                                                  "Assassin (Pierce / Light)"
@@ -216,6 +221,9 @@
 		"elementalbuilder"                                                                "Elemental Builder"
 		"naturebuilder"                                                                   "Nature Builder"
 		"humanbuilder"                                                                    "Human Builder"
+    
+		"randombuilder"                                                                    "Random Builder"
+		"assassinbuilder"                                                                    "Assassin Builder"
 		"npc_dota_hero_ancient_apparition_barebones"                                      "Testbuilder"
 		"tower_elementalbuilder_earthelemental"                                           "Earthelemental"
 		"tower_elementalbuilder_earthgod"                                                 "Earthgod"
@@ -330,7 +338,8 @@
 		"DOTA_Tooltip_modifier_tactical_aura_Description"                                 ""
 
 		"DOTA_Tooltip_modifier_elementalbuilder_passive"  								"Elemental Alignment"
-		"DOTA_Tooltip_modifier_elementalbuilder_passive_description"  					"Gain bonuses and penalties depending on the elemental gold balance of your legion. Gain a big bonus when all 5 elements are balanced. Elemental Gods will ensure their element is always balanced."
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_description"  					"Gain bonuses and penalties depending on the elemental gold balance of your legion. Towers increase their element stacks but reduce another one.\n Water decreases Fire.\n Thunder decreases Water.\n Earth decreases Void.\n Fire decreases Earth.\n Void decreases Thunder.\n Towertypes:\n God +10/-4.\n Warrior +6/-3.\n Elemental +4/-2.\n Bender +2/-1."
+
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_elemental_harmony_lua"						"Elemental Harmony"
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_elemental_harmony_lua_Description"			"Your totality eclipses the cosm!"
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_void_lua"									"Void Surplus"
@@ -1473,7 +1482,7 @@
 		"DOTA_Tooltip_ability_randombuilder_get_random_tier5_tier"                        "TIER:"
 
 		"DOTA_Tooltip_modifier_randombuilder_passive_lua"											"Tango Interest Rate"
-		"DOTA_Tooltip_modifier_randombuilder_passive_lua_Description"						"Gain %fMODIFIER_PROPERTY_TOOLTIP% of your current tangos at the end of a round. \n But to a maximum of 5*current round."  
+		"DOTA_Tooltip_modifier_randombuilder_passive_lua_Description"						"Gain %fMODIFIER_PROPERTY_TOOLTIP%%% of your current tangos at the end of a round,\n but to a maximum of 5*current round."  
 
 		"DOTA_Tooltip_ability_assassinbuilder_spawn_creeping_shadow"                           "Spawn Creeping Shadow"
 		"DOTA_Tooltip_ability_assassinbuilder_spawn_creeping_shadow_Description"               "Attack: Normal/Medium\nSkills: Wounding Strike"
