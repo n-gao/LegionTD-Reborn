@@ -121,7 +121,7 @@
 
 .teams_locked #TeamListLockedIcon
 {
-     visibility: visible;
+  visibility: visible;
 }
 
 #TeamsListRoot
@@ -143,7 +143,7 @@
 
 .player_has_host_privileges #ShuffleTeamAssignmentButton
 {
-  /*visibility: visible;*/
+  visibility: visible;
 }
 
 #ShuffleTeamAssignmentButton Label

@@ -6,7 +6,6 @@
     "ModelScale"                "0.5"
     "HealthBarOffset"           "150"
     "Level"                     "1"
-    "Vscripts"                  "ai/ai_default.lua"
 
     "Ability1"                  "assassinbuilder_disequilibriate"
     "Ability2"                  "assassinbuilder_upgrade_mind_slicer"
@@ -45,8 +44,8 @@
 
     "StatusHealth"              "160"
     "StatusHealthRegen"         "0"
-    "StatusMana"                "100"
-    "StatusManaRegen"           "2"
+    "StatusMana"                "0"
+    "StatusManaRegen"           "0"
 
     "VisionDaytimeRange"        "1400"
     "VisionNighttimeRange"      "800"

@@ -1,7 +1,7 @@
 "use strict";
 var attribute = "experience";
 var start = 0;
-var end = 25;
+var end = 15;
 
 function OnRankingChanged() {
     SetRanking($("#RankingAttributeDropDown").GetSelected().id);
@@ -12,7 +12,6 @@ function SetRanking(newAttribute) {
     attribute = newAttribute;
     RequestRankingFromTo(attribute, start, end, function(result) {
         ClearRanking();
-        $.Msg("Filling statistic ranking");
         $("#RankingAttributeLabel").text = $("#RankingAttributeDropDown").GetSelected().text;
         for (var i = start; i < result.length; i++) {
             AddRankingEntry(attribute, result[i], i + start);
@@ -39,5 +38,5 @@ function AddRankingEntry(attribute, steamID, rank) {
 } 
 
 (function() {
-    SetRanking("rating");
+    SetRanking("experience");
 })();

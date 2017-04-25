@@ -82,6 +82,7 @@
 
 		"Coming_Soon"									"Coming soon™"
 		"Check_out_workshop"							"Check out the workshop page!"				
+    
 		"ScoreboardCheckbox"							"Show always"
 
 		"wavetitle_abaddon"                                                                    "Abaddon (Normal / Heavy)"
@@ -220,6 +221,7 @@
 		"elementalbuilder"                                                                "Elemental Builder"
 		"naturebuilder"                                                                   "Nature Builder"
 		"humanbuilder"                                                                    "Human Builder"
+    
 		"randombuilder"                                                                    "Random Builder"
 		"assassinbuilder"                                                                    "Assassin Builder"
 		"npc_dota_hero_ancient_apparition_barebones"                                      "Testbuilder"
@@ -337,6 +339,7 @@
 
 		"DOTA_Tooltip_modifier_elementalbuilder_passive"  								"Elemental Alignment"
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_description"  					"Gain bonuses and penalties depending on the elemental gold balance of your legion. Towers increase their element stacks but reduce another one.\n Water decreases Fire.\n Thunder decreases Water.\n Earth decreases Void.\n Fire decreases Earth.\n Void decreases Thunder.\n Towertypes:\n God +10/-4.\n Warrior +6/-3.\n Elemental +4/-2.\n Bender +2/-1."
+
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_elemental_harmony_lua"						"Elemental Harmony"
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_elemental_harmony_lua_Description"			"Your totality eclipses the cosm!"
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_void_lua"									"Void Surplus"

@@ -5,25 +5,16 @@
 	"MaxLevel"						"1"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-	
+			
 	"AbilitySpecial"
-	{						
+	{
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"cleave_starting_width"			"150"
-		}			
-		"02"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"cleave_ending_width"			"300"
-		}			
-		"03"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"cleave_distance"			"350"
+			"great_cleave_radius"	"350"
 		}
-		"04"
+		
+		"02"
 		{
 			"var_type"				"FIELD_INTEGER"
 			"great_cleave_damage"	"15"

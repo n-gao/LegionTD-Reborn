@@ -22,8 +22,5 @@
       <Label class="LegendPanel ScoreCol_Gold_Income" text="#end_screen_legend_gold_income" />
     </Panel>
     <Panel id="TeamsContainer" />
-    <Panel id="SettingsContainer">
-        <ToggleButton text="#ScoreboardCheckbox" checked="false"  onactivate="SwitchLock()"/>
-    </Panel>
   </Panel>
 </root>

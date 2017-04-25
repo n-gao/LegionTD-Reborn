@@ -8,7 +8,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"tangos_interest_rate"			"0.03"
+			"tangos_interest_rate"			"0.05"
 		}
 		"02"
 		{

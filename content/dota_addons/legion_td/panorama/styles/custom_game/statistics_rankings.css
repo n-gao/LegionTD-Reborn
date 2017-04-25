@@ -19,7 +19,7 @@
 
 #RankingList {
     flow-children: down;
-    max-height: 450px;
+    max-height: 700px;
     overflow: scroll;
 }
 
@@ -37,6 +37,10 @@
 
 .RankingName {
     horizontal-align: right;
+}
+
+.Headline {
+    text-transform: uppercase;
 }
 
 #RankingLocal {

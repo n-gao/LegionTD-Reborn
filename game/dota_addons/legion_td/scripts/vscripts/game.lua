@@ -58,11 +58,7 @@ function Game.new()
     CustomGameEventManager:RegisterListener("request_stored_data", Dynamic_Wrap(Game, "RequestStoredData"))
     CustomGameEventManager:RegisterListener("request_ranking", Dynamic_Wrap(Game, "RequestRanking"))
     CustomGameEventManager:RegisterListener("request_ranking_position", Dynamic_Wrap(Game, "RequestRankingPosition"))
-    CustomGameEventManager:RegisterListener("request_match_history", Dynamic_Wrap(Game, "RequestMatchHistory"))
 
-    GameRules:SetSafeToLeave(false)
-    GameRules:SetStrategyTime(0)
-    GameRules:SetHeroSelectionTime(45)
     return self
 end
 
@@ -88,12 +84,6 @@ function Game:ReadConfiguration()
     self.radiantBoss = Entities:FindByName(nil, "radiant_boss")
     self.direBoss = Entities:FindByName(nil, "dire_boss")
     print("everything loaded")
-end
-
-
-
-function Game:OnPlayerDisconnect(key)
-    self.player[key.userid]:Reconnected()
 end
 
 
@@ -226,7 +216,6 @@ end
 function Game:ReadRoundConfiguration(kv)
     self.rounds = {}
     self.doneDuels = 0
-    self.lastWaveCount = 0
     local duelRoundCount = 0
     while true do
         local roundName = string.format("Round%d", self:GetRoundCount() + 1 - duelRoundCount)
@@ -271,16 +260,6 @@ function Game:GetAllActivePlayer()
     end
     return result
 end
-
-
-function Game:RandomHeroes()
-    for _,player in pairs(self.players) do 
-        if not PlayerResource:HasSelectedHero(player:GetPlayerID()) then
-            player.plyEntitie:MakeRandomHeroSelection()
-        end
-    end
-end
-
 
 --Start des Spiels
 function Game:Start()
@@ -331,7 +310,7 @@ end
 
 --Wird jede viertel Sekunde aufgerufen, überprüft Spielstatus
 function Game:OnThink()
-    self:CheckPlayerAbandon()
+    --self:CheckPlayerAbandon()
     if self.gameState == GAMESTATE_PREPARATION then
         --festlegung der vorbereitungszeit
         if not self.nextRoundTime then
@@ -356,8 +335,7 @@ end
 
 function Game:CheckPlayerAbandon()
     for _,player in pairs(self.players) do
-        if player.calledAbandon == false and (player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED) then
-            player.calledAbandon = true
+        if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
             GameRules:SendCustomMessage("<p color='red'>"..PlayerResource:GetPlayerName(player:GetPlayerID()).." abandoned the game.</p>")
         end
     end
@@ -389,7 +367,7 @@ function Game:SetWaitTime()
     end
     self.nextRoundTime = GameRules:GetGameTime() + waitTime
 
-    CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels - self.lastWaveCount })
+    CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels })
     self:RespawnUnits()
     print("Time to next Round: " .. waitTime)
 end
@@ -442,8 +420,6 @@ end
 
 --Startet nächste Runde
 function Game:StartNextRound()
-    self:CheckTeamLeft(DOTA_TEAM_GOODGUYS)
-    self:CheckTeamLeft(DOTA_TEAM_BADGUYS)
     self:SetSkipButton(false)
     print "Game:StartNextround()"
     for _, player in pairs(self.players) do
@@ -457,6 +433,7 @@ function Game:StartNextRound()
         if not player.abandoned then
             if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
                 player:Abandon()
+                self:CheckTeamLeft(player:GetTeamNumber())
             end
         end
         if voteOptions["tango_limit"] and player.tangos > self:GetTangoLimit() then
@@ -475,21 +452,18 @@ function Game:StartNextRound()
 end
 
 function Game:CheckTeamLeft(team)
-    local isEmpty = true
     for _,player in pairs(self.players) do
         if (player:GetTeamNumber() == team) then
-            isEmpty = false
             if (not player:HasAbandoned()) then
                 return
             end
         end
     end
-    if isEmpty then
-        return
-    end
-    local winner = DOTA_TEAM_GOODGUYS
+    local winner = 0
     if team == DOTA_TEAM_GOODGUYS then
         winner = DOTA_TEAM_BADGUYS
+    else
+        winner = DOTA_TEAM_GOODGUYS
     end
     GameRules:SetGameWinner(winner)
     GameRules:Defeated()
@@ -510,10 +484,10 @@ function Game:CanSpawn(caster, vector)
     local result = 2
     for _, ent in pairs(Entities:FindAllInSphere(vector, CHECKINGRADIUS)) do
         if ent.unit and ent:IsAlive() then
-            return LEGION_ERROR_TO_CLOSE
+            return 4
         end
         if ent == caster.player.lane.box then
-            result = LEGION_ERROR_NOT_ENOUGH_TANGOS
+            result = 1
         end
     end
     return result
@@ -590,7 +564,7 @@ function Game:OnConnectFull(keys)
         else
             print("Game:OnConnectFull(): Player object not found for player entIndex " .. entIndex .. " playerID " .. playerID .. "; Creating.")
             local newPlayer = Player.new(ply, keys.userid)
-            self.players[keys.userid] = newPlayer
+            table.insert(self.players, newPlayer)
         end
     end
     
@@ -600,10 +574,6 @@ function Game:OnConnectFull(keys)
             steamID = p:GetSteamID()
         }
         self:RequestStoredData(data)
-
-        if Convars:GetBool('developer') then
-            Game:UpdateUnitData()
-        end
     end
 end
 
@@ -761,7 +731,7 @@ function Game:SendUnit(data)
         local spawn = player:GetIncomeSpawner():GetAbsOrigin()
         local team = player:GetTeamNumber()
         local name = Unit.GetUnitNameByID(lData.id)
-        player:SendUnit(name)
+        player:BuildUnit(name)
         local unit = CreateUnitByName(name, spawn, true, nil, nil, team)
         unit.tangoValue = lData.cost
         unit:AddNewModifier(nil, nil, "modifier_invulnerable", {})
@@ -959,12 +929,11 @@ function Game:IncreaseRound()
     Game.gameRound = Game.gameRound + 1;
     if (Game.gameRound > Game:GetRoundCount()) then
         Game.gameRound = Game.gameRound - 1
-        Game.lastWaveCount = Game.lastWaveCount + 1
+        Game.doneDuels = Game.doneDuels + 1
         Game.finishedWaves = true
     else
         if (Game.rounds[Game.gameRound].isDuelRound and voteOptions["deactivate_duels"]) then
             Game:IncreaseRound()
-            Game.doneDuels = Game.doneDuels + 1
         end
     end
 end
@@ -1091,7 +1060,7 @@ function Game:SkipWait()
     --self:EndQuest()
     --self.quest.finished = 0
     Timers:CreateTimer(0.3, function()
-     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels - self.lastWaveCount }) end)
+     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels }) end)
 end
 
 function Game:DistributeMissedTangos(missedTime)
@@ -1185,31 +1154,6 @@ function Game:RequestRankingPosition(data)
     end)
 end
 
-function Game:RequestMatchHistory(data)
-    local lData = {
-        playerId = data.playerId,
-        steamId = data.steamId,
-        from = data.from,
-        to = data.to
-    }
-    Game.storage:GetMatchHistory(lData.steamId, lData.from, lData.to, function(result)
-        CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerId), "send_match_history", result)
-    end)
-end
-
-
-function Game:UpdateUnitData()
-    local unitData = {}
-    for unit, data in pairs(Game.UnitKV) do
-        unitData[unit] = {
-            fraction = data.Legion_Fraction or "other",
-            experience = data.Legion_Experience or 0
-        }
-    end
-    Game.storage:UpdateUnitData(unitData);
-end
-
-
 function Game:SaveDataAtEnd()
     if GameRules:IsCheatMode() then return end
     HookSetWinnerFunction(function(gameRules, team)
@@ -1226,15 +1170,13 @@ function Game:SaveDataAtEnd()
 end
 
 function Game:SaveMatchAtEnd()
-    --if GameRules:IsCheatMode() then return end
+    if GameRules:IsCheatMode() then return end
     HookSetWinnerFunction(function(gameRules, team)
         local matchData = {}
         for _, player in pairs(self.players) do
             matchData[player:GetSteamID()] = PlayerData.GetByPlayer(player):GetMatchData()
         end
-        local duration = GameRules:GetGameTime()
-        local wave = Game.gameRound + Game.lastWaveCount
-        self.storage:SaveMatchData(team, duration, wave, matchData, DuelRound.doneRounds, function(response, success)
+        self.storage:SaveMatchData(team, matchData, function(response, success)
             print(success)
         end)
     end)

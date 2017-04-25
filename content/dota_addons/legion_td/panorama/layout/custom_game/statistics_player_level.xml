@@ -8,7 +8,7 @@
         <include src="file://{resources}/scripts/custom_game/statistics_player_level.js"/>
     </scripts>
     <Panel class="LegionLevelIconPanel">
-        <Panel class="LegionLevelIconBackground" id="LegionLevelBackground">
+        <Panel class="LegionLevelIconBackground">
             <Image id="LevelIcon" class="LegionLevelIcon" src="file://{images}/custom_game/levels/001.png"/>
         </Panel>
         <Label id="LevelLabel" class="LegionLevelNumber" text="1"/>

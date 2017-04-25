@@ -84,11 +84,9 @@ function PlayerData:GetMatchData()
     local result = {
         experience = self.player:GetExperience(),
         earned_tangos = self.player:GetEarnedTangos(),
-        earned_gold = self.player:GetNetworth(),
         won_duels = self.player:GetWonDuels(),
         fraction = self.player:GetFraction(),
-        team = self.player:GetTeamNumber(),
-        abandoned = self.player:HasAbandoned()
+        team = self.player:GetTeamNumber()
     }
     local unitData = self:GetUnitData()
     for key, value in pairs(unitData) do
@@ -122,7 +120,7 @@ function PlayerData:GetTotalFractionKills()
     local fractions = Game:GetAllFractions()
     for fraction, _ in pairs(fractions) do
         local kills = self.player:GetKillsOfFraction(fraction)
-        local key = "killed_" .. fraction;
+        local key = "kills_" .. fraction;
         kills = kills + self:SaveGetStoredAttribute(key)
         result[key] = kills
     end
@@ -167,12 +165,6 @@ function PlayerData:GetTotalLeaks()
     return result
 end
 
-function PlayerData:GetTotalSends()
-    local result = self.player:GetSends()
-    result = result + self:SaveGetStoredAttribute("sends")
-    return result
-end
-
 function PlayerData:GetTotalEarnedTangos()
     local result = self.player:GetEarnedTangos()
     result = result + self:SaveGetStoredAttribute("earned_tangos")
@@ -189,9 +181,6 @@ function PlayerData:GetUnitData()
     end
     for unit, value in pairs(self.player.buildUnits) do
         result["build_" .. unit] = value
-    end
-    for unit, value in pairs(self.player.sendUnits) do
-        result["send_" .. unit] = value
     end
     return result
 end

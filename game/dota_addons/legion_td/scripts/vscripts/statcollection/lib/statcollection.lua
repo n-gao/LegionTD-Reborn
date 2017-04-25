@@ -513,7 +513,7 @@ end
 -- Sends the payload data for the given stage, and return the result
 function statCollection:sendStage(stageName, payload, callback)
     -- Create the request
-    local req = CreateHTTPRequestScriptVM('POST', postLocation .. stageName)
+    local req = CreateHTTPRequest('POST', postLocation .. stageName)
     --print(json.encode(payload))
     -- Add the data
     req:SetHTTPRequestGetOrPostParameter('payload', json.encode(payload))

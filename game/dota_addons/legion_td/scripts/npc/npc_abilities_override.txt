@@ -111,7 +111,7 @@
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"110"
+		"AbilityDamage"					"150"
 
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
@@ -255,20 +255,12 @@
 		"AbilityManaCost"				"0"
 
 
-		
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"brain_sap_damage"				"240"
-				"LinkedSpecialBonus"			"special_bonus_unique_bane_2"
-			}
-			"02"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"tooltip_brain_sap_heal_amt"	"240"
-				"LinkedSpecialBonus"			"special_bonus_unique_bane_2"
+				"tooltip_brain_sap_heal_amt"		"240"
 			}
 		}
 	}
@@ -290,7 +282,7 @@
 
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"3.2"
+		"AbilityCooldown"				"4.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -367,12 +359,12 @@
 				"var_type"						"FIELD_INTEGER"
 				"radius"						"200"
 			}
+
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"absorb_amount"					"120"
-				"LinkedSpecialBonus"			"special_bonus_unique_ember_spirit_1"
-			}	
+				"absorb_amount"					"50"
+			}
 			"04"
 			{
 				"var_type"						"FIELD_FLOAT"
@@ -699,7 +691,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"260"
+				"radius"					"160"
 			}
 			"03"
 			{
