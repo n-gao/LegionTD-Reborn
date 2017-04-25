@@ -25,6 +25,7 @@
 	"Legion_AttackType"	"arcane"
 	"Legion_DefendType"	"medium"
 	"Legion_Experience"	"100"
+    "Legion_Fraction"   "wave"
 	"BountyGoldMin"	"3.0"
 	"BountyGoldMax"	"3.0"
 	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"

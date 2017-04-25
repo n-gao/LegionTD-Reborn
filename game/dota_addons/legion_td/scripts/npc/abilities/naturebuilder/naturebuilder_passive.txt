@@ -8,12 +8,12 @@
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"damage_percent"		"10"
+			"damage_percent"		"20"
 		}
 		"02"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"heal_percent"			"10"
+			"heal_percent"			"30"
 		}
 	}
 

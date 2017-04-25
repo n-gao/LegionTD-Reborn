@@ -28,11 +28,25 @@ function Player.new(plyEntitie, userID)
     self.buildUnits = {}
     self.killedUnits = {}
     self.leakedUnits = {}
+    self.sendUnits = {}
+    self.calledAbandon = false
     return self
 end
 
 function Player:BuildUnit(unitname)
     self.buildUnits[unitname] = (self.buildUnits[unitname] or 0) + 1
+end
+
+function Player:SendUnit(unitname)
+    self.sendUnits[unitname] = (self.sendUnits[unitname] or 0) + 1
+end
+
+function Player:GetSends()
+    local result = 0
+    for _,c in pairs(self.sendUnits) do
+        result = result + c
+    end
+    return c
 end
 
 function Player:KilledUnit(killed)
@@ -104,6 +118,11 @@ function Player:GetEarnedTangos()
     return self.earnedTangos or 0
 end
 
+function Player:Reconnected()
+    --self:SetPlayerEntitie(plyEntitie)
+    --self.missedSpawns = 0
+end
+
 function Player:SetPlayerEntitie(plyEntitie, userID)
     GameRules:SetGoldPerTick(0)
     self.plyEntitie = plyEntitie
@@ -115,6 +134,7 @@ function Player:SetPlayerEntitie(plyEntitie, userID)
     for _, unit in pairs(self.units) do
         unit:GivePlayerControl()
     end
+    --self.missedSpawns = 0
 end
 
 
@@ -271,12 +291,16 @@ end
 
 --get team number
 function Player:GetTeamNumber()
-    if (self.teamnumber) then
+    if self.plyEntitie == nil and self.teamnumber and self.hero == nil then
         return self.teamnumber
     end
-    if self.plyEntitie == nil then return -1 end
-    self.teamnumber = self.plyEntitie:GetTeamNumber()
-    return self.plyEntitie:GetTeamNumber()
+    if self.plyEntitie == nil and self.hero == nil then return -1 end
+    if self.hero == nil then
+        self.teamnumber = self.plyEntitie:GetTeamNumber()
+    else
+        self.teamnumber = self.hero:GetTeamNumber()
+    end
+    return self.teamnumber
 end
 
 
@@ -463,7 +487,14 @@ function Player:SendErrorCode(code)
     end
 end
 
-
+function Player:GetNetworth()
+    local goldValue = PlayerResource:GetGold(self:GetPlayerID())
+    goldValue = goldValue + self.buildingUpgradeValue
+    for _, unit in pairs(self.units) do
+        goldValue = goldValue + unit.goldCost
+    end
+    return goldValue
+end
 
 function Player:IsActive()
     return self.lane and self.lane.isActive
@@ -473,7 +504,7 @@ function Player:Abandon()
     print("abandoning player on team " .. self.teamnumber)
     local goldValue = PlayerResource:GetGold(self:GetPlayerID()) -- gold in pocket
     print("abandoning player had " .. goldValue .. " gold in pocket")
-    goldValue = goldValue + (self.buildingUpgradeValue / 2) -- gold in building upgrades
+    goldValue = goldValue + (self.buildingUpgradeValue) -- gold in building upgrades
     print("plus building upgrades: " .. goldValue)
     for _, unit in pairs(self.units) do -- gold in built units
         goldValue = goldValue + unit.goldCost

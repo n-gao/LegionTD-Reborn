@@ -9,7 +9,7 @@
     "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
     "Level"                 "1"
     "HealthBarOffset"       "150"
-    "Vscripts"              "ai/ai_default.lua"
+    "Vscripts"              "ai/naturebuilder/ai_bear.lua"
 
     "Ability4"                          "sell"
     "Ability1"                          "lone_druid_spirit_bear_entangle"
@@ -91,16 +91,6 @@
                 "Aggression"        "100.0"
                 "Avoidance"         "0.0"
                 "Support"           "100.0"
-            }
-        }
-        "DefensiveAbilities"
-        {
-            "Ability1"
-            {
-                "Name"     "axe_berserkers_call"
-                "Buff"                      "1"
-                "AOE"             "1"
-                "Radius"          "300"
             }
         }
     }

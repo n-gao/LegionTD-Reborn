@@ -1,0 +1,51 @@
+.MatchStatisticsRoot {
+    flow-children: down;
+}
+
+#MatchList {
+    flow-children: down;
+    overflow: scroll;
+    max-height: 560px;
+}
+
+.MatchEntry {
+    flow-children: right;
+}
+
+#Date {
+    width: 150px;
+}
+
+.Builder {
+    width: 175px;
+    flow-children: right;
+}
+
+#BuilderImage {
+    height: 25px;
+    width: 50px;
+    vertical-align: center;
+}
+
+#Result {
+    width: 75px;
+    text-align: right;
+}
+
+#Result.Won {
+    color: green;
+}
+
+#Result.Lost {
+    color: red;
+}
+
+#Duration {
+    width: 100px;
+    text-align: center;
+}
+
+.MatchListCaption {
+    width: 100%;
+    flow-children: right;
+}

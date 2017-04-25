@@ -45,7 +45,7 @@
 		"05"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"armor_tooltip"	"0"
+			"armor_tooltip"	"3"
 		}
 
 		"06"

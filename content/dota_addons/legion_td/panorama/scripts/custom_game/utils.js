@@ -89,7 +89,7 @@ function GetAllF1ctions(steamID) {
 }
 
 function GetKillsOfFraction(steamID, fraction) {
-    return GetDataOf(steamID, "kills_" + fraction);
+    return GetDataOf(steamID, "killed_" + fraction);
 }
 
 function GetKillsOf(steamID) {
@@ -113,8 +113,8 @@ function GetLevelOf(steamID) {
 }
 
 function GetRequiredExpForLevel(level) {
-    if (level > 100)
-        return 9999999999999999;
+    if (level > 300)
+        return 9999999999999999999;
     return level * level * 500 - 500;
 }
 

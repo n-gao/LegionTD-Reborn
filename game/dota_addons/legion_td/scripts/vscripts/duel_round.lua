@@ -2,7 +2,7 @@ if not DuelRound then
     DuelRound = class({})
 end
 
-
+DuelRound.doneRounds = {}
 
 function DuelRound.new(data, roundNumber, determinWinner)
     local self = DuelRound()
@@ -162,6 +162,11 @@ function DuelRound:End()
         self.winningTeam = DOTA_TEAM_BADGUYS
         victoryText = "Dire won the duel and earn "
     end
+
+    DuelRound.doneRounds[""..Game.doneDuels] = {
+        winner = self.winningTeam,
+        time = GameRules:GetGameTime()
+    }
 
     --Maybe for future use (last round duel)
     if self.determinWinner then
