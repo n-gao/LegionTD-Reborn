@@ -13,7 +13,7 @@
 
     "Ability4"                          "sell"
     "Ability1"                          "naturebuilder_upgrade_very_big_bug"
-    "Ability2"              "big_bug_geminate_attack"
+    "Ability2"              "weaver_geminate_attack"
     "Ability3"              "ability_empty_3"
 
     // Armor

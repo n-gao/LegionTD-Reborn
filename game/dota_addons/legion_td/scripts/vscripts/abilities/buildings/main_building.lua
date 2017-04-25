@@ -7,7 +7,7 @@ function add_tango_collector(event)
         return
     end
     player:SetTangoAddAmount(newTangoAdd)
-    player.buildingUpgradeValue = player.buildingUpgradeValue + event.ability:GetGoldCost(event.ability:GetLevel())
+    player.buildingUpgradeValue = player.buildingUpgradeValue + event.ability:GetGoldCost(-1)
     if event.ability:GetLevel() == event.ability:GetMaxLevel() then
         event.caster:RemoveAbility(event.ability:GetAbilityName())
     else
@@ -19,7 +19,7 @@ function increase_tango_speed(event)
     local player = event.caster.player
     local newTangoSpeed = player.tangoAddSpeed * 0.6
     player:SetTangoAddSpeed(newTangoSpeed)
-    player.buildingUpgradeValue = player.buildingUpgradeValue + event.ability:GetGoldCost(event.ability:GetLevel())
+    player.buildingUpgradeValue = player.buildingUpgradeValue + event.ability:GetGoldCost(-1)
     if event.ability:GetLevel() == event.ability:GetMaxLevel() then
         event.caster:RemoveAbility(event.ability:GetAbilityName())
     else

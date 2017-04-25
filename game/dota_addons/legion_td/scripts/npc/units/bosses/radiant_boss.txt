@@ -32,7 +32,6 @@
 
 	"Legion_AttackType"		"boss"
 	"Legion_DefendType"		"boss"
-    "Legion_Fraction"   "king"
 
 	// Bounty
 	//----------------------------------------------------------------

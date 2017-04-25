@@ -16,24 +16,11 @@ function elementalbuilder_passive_start(keys)
     local ability = keys.ability
     local caster = keys.caster
     local elementNames = { "water", "thunder", "earth", "fire", "void" }
-    local inverseElements = {
-        water = "fire",
-        thunder = "water",
-        earth = "void",
-        fire = "earth",
-        void = "thunder"
-    }
+    local elementNames_inv = table_invert(elementNames)
     local elementSums = {}
     local elementRatios = {}
     local elementStacks = {}
-    --Worth 10 but -4
     local elementGods = {}
-    --Worth 6 but -3
-    local elementWarriors = {}
-    --Worth 4 but -2
-    local elementElemental = {}
-    --Worth 2 but -1
-    local elementBender = {}
     local maxStacks = 10
 
     Timers:CreateTimer(function()
@@ -49,56 +36,9 @@ function elementalbuilder_passive_start(keys)
             elementSums[element] = 0
             elementRatios[element] = 0
             elementStacks[element] = 0
-            elementGods[element] = 0
-            elementWarriors[element] = 0
-            elementElemental[element] = 0
-            elementBender[element] = 0
+            elementGods[element] = nil
         end
 
-        for _, unitRef in pairs(playerObj.units) do -- count gods, warriors, elementals and benders
-            unitName = unitRef.npcclass
-            for _, element in pairs(elementNames) do
-                if string.find(unitName, element) then
-                    if string.find(unitName, "god") then
-                        elementGods[element] = elementGods[element] + 1
-                    elseif string.find(unitName, "warrior") then
-                        elementWarriors[element] = elementWarriors[element] + 1
-                    elseif string.find(unitName, "bender") then
-                        elementBender[element] = elementBender[element] + 1
-                    elseif string.find(unitName, "elemental") then
-                        elementElemental[element] = elementElemental[element] + 1
-                    end
-                    break
-                end
-            end
-        end
-
-        --print("calculating stacks")
-        for element, count in pairs(elementGods) do
-            local inverseElement = inverseElements[element]
-            elementStacks[element] = elementStacks[element] + 8 * count
-            elementStacks[inverseElement] = elementStacks[inverseElement] - 4 * count
-        end
-        for element, count in pairs(elementWarriors) do
-            local inverseElement = inverseElements[element]
-            elementStacks[element] = elementStacks[element] + 6 * count
-            elementStacks[inverseElement] = elementStacks[inverseElement] - 3 * count
-        end
-        for element, count in pairs(elementElemental) do
-            local inverseElement = inverseElements[element]
-            elementStacks[element] = elementStacks[element] + 4 * count
-            elementStacks[inverseElement] = elementStacks[inverseElement] - 2 * count
-        end
-        for element, count in pairs(elementBender) do
-            local inverseElement = inverseElements[element]
-            elementStacks[element] = elementStacks[element] + 2 * count
-            elementStacks[inverseElement] = elementStacks[inverseElement] - 1 * count
-        end
-        --for element, stacks in pairs(elementStacks) do
-        --    print(element.." "..stacks)
-        --end
-
-        --[[
         local valueSum = 0 -- total value of all towers without god-overseen elements
 
         for _, unitRef in pairs(playerObj.units) do -- lets look for gods first
@@ -135,19 +75,19 @@ function elementalbuilder_passive_start(keys)
 
         local valueAvg = valueSum / elementCount
 
-        --print("Element Count: " .. elementCount .. ", Total value: " .. valueSum .. ", average " .. valueAvg)
+        print("Element Count: " .. elementCount .. ", Total value: " .. valueSum .. ", average " .. valueAvg)
 
         for element, total in pairs(elementSums) do
             elementRatios[element] = total / valueAvg
             if elementGods[element] then
                 elementStacks[element] = 1
-          --      print(element .. " has a god!")
+                print(element .. " has a god!")
             elseif elementRatios[element] >= 1 then
-                elementStacks[element] = math.floor(5 * (elementRatios[element] - 1))
-          --      print("elementRatios(" .. element .. "): " .. elementRatios[element])
+                elementStacks[element] = -math.floor(5 * (1 - (elementRatios[element])))
+                print("elementRatios(" .. element .. "): " .. elementRatios[element])
             else
                 elementStacks[element] = math.floor(5 * (1 - (1 / elementRatios[element])))
-          --      print("elementRatios(" .. element .. "): " .. elementRatios[element] .. " reciprocal of " .. 1 / elementRatios[element])
+                print("elementRatios(" .. element .. "): " .. elementRatios[element] .. " reciprocal of " .. 1 / elementRatios[element])
             end
             if elementStacks[element] > 0 then elementStacks[element] = elementStacks[element] - 1 end
             if elementStacks[element] < 0 then elementStacks[element] = elementStacks[element] + 1 end
@@ -162,14 +102,12 @@ function elementalbuilder_passive_start(keys)
             if not (elementStacks[element] == 0) then harmony = false end
         end
 
-
         if harmony then
             --print ("we have harmony")
             for _, element in pairs(elementNames) do
                 elementStacks[element] = maxStacks
             end
         end
-        --]]
 
         for _, unitRef in pairs(playerObj.units) do
             local unit = unitRef.npc
@@ -184,7 +122,7 @@ function elementalbuilder_passive_start(keys)
                 end
 
                 for _, element in pairs(elementNames) do
-                  --  if elementSums[element] > 0 then
+                    if elementSums[element] > 0 then
                         unit:AddNewModifier(unit, ability, "modifier_elementalbuilder_passive_" .. element .. "_lua", {})
                         unit:AddNewModifier(unit, ability, "modifier_elementalbuilder_passive_" .. element .. "_negative_lua", {})
                         if elementStacks[element] < 0 then
@@ -194,7 +132,7 @@ function elementalbuilder_passive_start(keys)
                             unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", unit, math.min(maxStacks, elementStacks[element]))
                             unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", unit, 0)
                         end
-                  --  end
+                    end
                 end
             end
         end
@@ -213,7 +151,7 @@ function elementalbuilder_passive_start(keys)
         for _, element in pairs(elementNames) do
             caster:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_" .. element .. "_lua", {})
             caster:AddNewModifier(caster, ability, "modifier_elementalbuilder_passive_" .. element .. "_negative_lua", {})
-            --if elementSums[element] > 0 then
+            if elementSums[element] > 0 then
                 if elementStacks[element] < 0 then
                     caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, 0)
                     caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, math.min(maxStacks, 0 - elementStacks[element]))
@@ -221,10 +159,10 @@ function elementalbuilder_passive_start(keys)
                     caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, math.min(maxStacks, elementStacks[element]))
                     caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 0)
                 end
-            --else
-            --    caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, 0)
-            --    caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 0)
-            --end
+            else
+                caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, 0)
+                caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 0)
+            end
         end
 
         return 1 -- slowish

@@ -1,0 +1,28 @@
+"undeadbuilder_passive"
+{
+    "BaseClass" "ability_datadriven"
+    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+    "AbilityTextureName"            "necrolyte_sadist"
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "food_per_turn"         "2.3"
+        }
+    }
+
+
+
+    "Modifiers"
+    {
+        "modifier_undeadbuilder_passive"
+        {
+            "Passive"   "1"
+            "IsHidden"  "1"
+        }
+    }
+}
+
+

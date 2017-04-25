@@ -12,7 +12,7 @@
     "Vscripts"              "ai/ai_default.lua"
 
     "Ability4"                          "sell"
-    "Ability1"                          "very_big_bug_geminate_attack"
+    "Ability1"                          "weaver_geminate_attack"
     "Ability2"              "ability_empty_2"
     "Ability3"              "ability_empty_3"
 

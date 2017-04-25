@@ -269,8 +269,6 @@ function GameMode:OnGameRulesStateChange(keys)
                 return 1
             end
         })
-    elseif newState == DOTA_GAMERULES_STATE_STRATEGY_TIME then
-        Game:RandomHeroes()
     elseif newState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
         GameMode:OnGameInProgress()
         if not self.game.isRunning then

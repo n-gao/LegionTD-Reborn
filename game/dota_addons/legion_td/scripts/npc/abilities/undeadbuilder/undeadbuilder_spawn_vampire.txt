@@ -1,0 +1,72 @@
+"undeadbuilder_spawn_vampire"
+{
+	"BaseClass"	"ability_datadriven"
+	"AbilityTextureName"	"spawn_vampire"
+	"MaxLevel"	"1"
+	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
+	"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	"AbilityGoldCost"	"140"
+	"AbilityCooldown"	"1.0"
+	"AbilityCastRange"	"125"
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"unit.lua"
+			"Function"	"UnitSpawn"
+		}
+
+	}
+
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_damage_tooltip"	"32.5"
+		}
+
+		"02"
+		{
+			"var_type"	"FIELD_FLOAT"
+			"atk_speed_tooltip"	"0.7"
+		}
+
+		"03"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atk_range_tooltip"	"90"
+		}
+
+		"04"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"health_tooltip"	"500"
+		}
+
+		"05"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"armor_tooltip"	"7"
+		}
+
+		"06"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"food_cost"	"1"
+		}
+
+		"07"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"unitID"	"403"
+		}
+
+	}
+
+	"precache"
+	{
+		"model"	"models/heroes/nightstalker/nightstalker.vmdl"
+	}
+
+}

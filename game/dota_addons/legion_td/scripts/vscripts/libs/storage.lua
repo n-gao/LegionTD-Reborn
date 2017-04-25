@@ -66,7 +66,7 @@ function Storage:RequestRankingPositions(attribute, steamIds)
         steamIds = JSON:encode(steamIds)
     }, function(result)
         local resultTable = JSON:decode(result)
-        print("[STORAGE] Get Ranking Position Response")
+        print("GET RANKING POSITIONS RESPONSE")
         DeepPrintTable(resultTable)
         if (resultTable == nil) then return end
         for _, ranking in pairs(resultTable) do
@@ -96,9 +96,8 @@ end
 function Storage:RequestRankingPosition(attribute, steamId)
     self:SendHttpRequest("GET", {
         customGameId = self.app_id,
-        method = "ranking_position",
         steamId = steamId,
-        rankingType = attribute
+        attribute = attribute
     }, function(result)
         local resultTable = JSON:decode(result)
         print("GET RANKING POSITION RESPONSE")
@@ -179,8 +178,7 @@ end
 function Storage:RequestRankingFromTo(attribute, from, to)
     self:SendHttpRequest("GET", {
         customGameId = self.app_id,
-        method = "ranking",
-        rankingType = attribute,
+        attribute = attribute,
         from = from,
         to = to
     }, function(result)
@@ -246,7 +244,7 @@ function Storage:AddCachedRanking(attribute, data)
     for k, v in pairs(data.ranking) do
         ranking[k - 1 + data.from] = v
     end
-    print("[STORAGE] Get Ranking Response")
+    print("GET RANKING RESPONSE:")
     DeepPrintTable(data)
     self.rankingEntries[attribute] = data.playerCount
     self.rankings[attribute] = ranking
@@ -273,12 +271,11 @@ function Storage:GetPlayerData(steam_id, callback)
     table.insert(self.requested[steam_id], callback)
     self:SendHttpRequest("GET", {
         customGameId = self.app_id,
-        method = "info",
         steamId = steam_id,
     },
         function(result)
             local resultTable = JSON:decode(result)
-            print("[STORAGE] Get Player Info Response")
+            print("GET RESPONSE:")
             DeepPrintTable(resultTable)
             if resultTable ~= nil then
                 if resultTable[DataAttribute] ~= nil then
@@ -311,7 +308,7 @@ function Storage:SavePlayerData(steam_id, toStore, callback)
         end
         return
     end
-    if true then return end
+
     self:InvalidateData(steam_id)
     print("WANTS TO STORE:")
     DeepPrintTable(toStore)
@@ -335,25 +332,21 @@ function Storage:SavePlayerData(steam_id, toStore, callback)
     end)
 end
 
-function Storage:SaveMatchData(winner, duration, lastWave, playerData, duelData, callback)
+function Storage:SaveMatchData(winner, matchData)
     if (self.online == false) then
         if (callback ~= nil) then
             callback(nil, false)
         end
         return
     end
-    DeepPrintTable(playerData)
+    DeepPrintTable(matchData)
     self:SendHttpRequest("POST", {
         customGameId = self.app_id,
-        method = "save_match",
         winner = winner,
-        duration = duration,
-        lastWave = lastWave,
-        playerData = JSON:encode(playerData),
-        duelData = JSON:encode(duelData)
+        matchData = JSON:encode(matchData)
     }, function(result)
         local resultTable = JSON:decode(result)
-        print("[STORAGE] Post Match Response")
+        print("POST MATCH RESPONSE")
         DeepPrintTable(resultTable)
         if callback == nil then
             return
@@ -363,35 +356,6 @@ function Storage:SaveMatchData(winner, duration, lastWave, playerData, duelData,
         else
             callback(resultTable, false)
         end
-    end)
-end
-
-function Storage:UpdateUnitData(unitData)
-    if (self.online == false) then
-        return
-    end
-    self:SendHttpRequest("POST", {
-        method = "update_units",
-        data = JSON:encode(unitData)
-    }, function(result)
-        local resultTable = JSON:decode(result)
-        print("[STORAGE] Updating Unit Response")
-        DeepPrintTable(resultTable)
-    end)
-end
-
-function Storage:GetMatchHistory(steamId, from, to, callback)
-    if (self.online == false) then return end
-    self:SendHttpRequest("GET", {
-        method = "match_history",
-        steamId = steamId,
-        from = from,
-        to = to
-    }, function(result)
-        local resultTable = JSON:decode(result)
-        print("[STORAGE] Get Match History Response")
-        DeepPrintTable(resultTable)
-        callback(resultTable)
     end)
 end
 
@@ -412,10 +376,10 @@ function Storage:InvalidateAll()
 end
 
 function Storage:SendHttpRequest(method, data, callback)
-    print("[STORAGE] Send Data")
+    print("Send Data")
     DeepPrintTable(data)
 
-    local req = CreateHTTPRequestScriptVM(method, self.serverURL)
+    local req = CreateHTTPRequest(method, self.serverURL)
 
     for key, value in pairs(data) do
         req:SetHTTPRequestGetOrPostParameter(key, tostring(value))

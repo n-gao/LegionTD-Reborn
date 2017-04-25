@@ -13,7 +13,7 @@ function OnUpgradeClicked() {
 		id : Players.GetLocalPlayer(),
 		type : $.GetContextPanel().GetAttributeInt("UpgradeType", 0),
 		cost : 100,
-		income : 4
+		income : 3
 	};
 	GameEvents.SendCustomGameEventToServer("upgarde_king", data);
 }

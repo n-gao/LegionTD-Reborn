@@ -7,7 +7,6 @@ end
 function InitAI( self )
 	self:SetContextThink( "init_think", function()
     self:GetAbilityByIndex(0):SetLevel(4)
-    self:GetAbilityByIndex(1):SetLevel(3)
 		self.aiThink = aiThinkStandardSkill
 		self.abilities = {}
 		self.abilities[1] = self:GetAbilityByIndex(0)
