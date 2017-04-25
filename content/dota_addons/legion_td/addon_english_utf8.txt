@@ -29,6 +29,7 @@
 		"Round"			"Round"
 		"Income"			"Income:"
 		"Skip"			"Skip"
+		"Ready"			"Ready"
 		"Rank"			"Rank"
 		"Player"		"Player"
 		
@@ -38,10 +39,13 @@
 		"end_screen_legend_gold_income"	"Gold Income"
 		"end_screen_legend_tower_value"		"Tower Value"
 
+		"attribute_rating"				"Rating"
 		"attribute_experience"			"Experience"
 		"attribute_kills"				"Kills"
 		"attribute_won_games"			"Won Games"
 		"attribute_earned_tangos"		"Earned Tangos"
+		"attribute_tangos_per_minute"	"Tangos per Minute"
+		"attribute_gold_per_minute"		"Gold per Minute"
 		
 		"gold_income_text"				"/round"
 		"tango_income_text"				"/min"
@@ -78,6 +82,7 @@
 
 		"Coming_Soon"									"Coming soon™"
 		"Check_out_workshop"							"Check out the workshop page!"				
+		"ScoreboardCheckbox"							"Show always"
 
 		"wavetitle_abaddon"                                                                    "Abaddon (Normal / Heavy)"
 		"wavetitle_assassins"                                                                  "Assassin (Pierce / Light)"
@@ -119,6 +124,7 @@
 		"npc_dota_hero_tinker"								"Mechanical Builder"
 		"npc_dota_hero_rubick"															"Random Builder"
 		"npc_dota_hero_skeleton_king"                                                     "Assassin Builder"
+		"npc_dota_hero_necrolyte"														"Undead Builder"
 		
 		// ******************** UNITS ********************
 		"dire_boss"                                                                       "Dire King"
@@ -215,6 +221,9 @@
 		"elementalbuilder"                                                                "Elemental Builder"
 		"naturebuilder"                                                                   "Nature Builder"
 		"humanbuilder"                                                                    "Human Builder"
+		"randombuilder"                                                                    "Random Builder"
+		"assassinbuilder"                                                                    "Assassin Builder"
+		"undeadbuilder"                                                                    "Undead Builder"
 		"npc_dota_hero_ancient_apparition_barebones"                                      "Testbuilder"
 		"tower_elementalbuilder_earthelemental"                                           "Earthelemental"
 		"tower_elementalbuilder_earthgod"                                                 "Earthgod"
@@ -329,7 +338,7 @@
 		"DOTA_Tooltip_modifier_tactical_aura_Description"                                 ""
 
 		"DOTA_Tooltip_modifier_elementalbuilder_passive"  								"Elemental Alignment"
-		"DOTA_Tooltip_modifier_elementalbuilder_passive_description"  					"Gain bonuses and penalties depending on the elemental gold balance of your legion. Gain a big bonus when all 5 elements are balanced. Elemental Gods will ensure their element is always balanced."
+		"DOTA_Tooltip_modifier_elementalbuilder_passive_description"  					"Gain bonuses and penalties depending on the elemental gold balance of your legion. Towers increase their element stacks but reduce another one.\n Water decreases Fire.\n Thunder decreases Water.\n Earth decreases Void.\n Fire decreases Earth.\n Void decreases Thunder.\n Towertypes:\n God +10/-4.\n Warrior +6/-3.\n Elemental +4/-2.\n Bender +2/-1."
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_elemental_harmony_lua"						"Elemental Harmony"
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_elemental_harmony_lua_Description"			"Your totality eclipses the cosm!"
 		"DOTA_Tooltip_modifier_elementalbuilder_passive_void_lua"									"Void Surplus"
@@ -1472,7 +1481,7 @@
 		"DOTA_Tooltip_ability_randombuilder_get_random_tier5_tier"                        "TIER:"
 
 		"DOTA_Tooltip_modifier_randombuilder_passive_lua"											"Tango Interest Rate"
-		"DOTA_Tooltip_modifier_randombuilder_passive_lua_Description"						"Gain %fMODIFIER_PROPERTY_TOOLTIP% of your current tangos at the end of a round."  
+		"DOTA_Tooltip_modifier_randombuilder_passive_lua_Description"						"Gain %fMODIFIER_PROPERTY_TOOLTIP%%% of your current tangos at the end of a round,\n but to a maximum of 5*current round."  
 
 		"DOTA_Tooltip_ability_assassinbuilder_spawn_creeping_shadow"                           "Spawn Creeping Shadow"
 		"DOTA_Tooltip_ability_assassinbuilder_spawn_creeping_shadow_Description"               "Attack: Normal/Medium\nSkills: Wounding Strike"
@@ -1805,5 +1814,84 @@
 		"DOTA_Tooltip_ability_assassinbuilder_snot_spray_stack_limit"                          "Stack limit:"
 		"DOTA_Tooltip_ability_assassinbuilder_snot_spray_radius"                               "Radius"					
 
+
+		"DOTA_Tooltip_ability_assassinbuilder_bloodrage_health_bonus_pct"                 "HEALTH BONUS PCT:"
+
+		"DOTA_Tooltip_ability_assassinbuilder_cacophony_vision_aoe"                       "VISION AOE:"
+		"DOTA_Tooltip_ability_assassinbuilder_cacophony_vision_duration"                  "VISION DURATION:"
+
+		"DOTA_Tooltip_ability_assassinbuilder_quill_spray_projectile_speed"               "PROJECTILE SPEED:"
+
+		"DOTA_Tooltip_ability_assassinbuilder_snot_spray_goo_speed"                       "GOO SPEED:"
+
+		"DOTA_Tooltip_ability_beeing_dire_boss_health_bonus"                              "HEALTH BONUS:"
+		"DOTA_Tooltip_ability_beeing_dire_boss_health_bonus_per_stack"                    "HEALTH BONUS PER STACK:"
+
+		"DOTA_Tooltip_ability_elementalbuilder_passive"                                   "Elementalbuilder Passive"
+		"DOTA_Tooltip_ability_elementalbuilder_passive_Description"                       ""
+		"DOTA_Tooltip_ability_elementalbuilder_passive_cooldown_reduction_percent"        "COOLDOWN REDUCTION PERCENT:"
+		"DOTA_Tooltip_ability_elementalbuilder_passive_armor_increase"                    "ARMOR INCREASE:"
+		"DOTA_Tooltip_ability_elementalbuilder_passive_armor_decrease"                    "ARMOR DECREASE:"
+		"DOTA_Tooltip_ability_elementalbuilder_passive_basedamagepercent_increase"        "BASEDAMAGEPERCENT INCREASE:"
+		"DOTA_Tooltip_ability_elementalbuilder_passive_basedamagepercent_decrease"        "BASEDAMAGEPERCENT DECREASE:"
+		"DOTA_Tooltip_ability_elementalbuilder_passive_magic_increase_percent"            "MAGIC INCREASE PERCENT:"
+		"DOTA_Tooltip_ability_elementalbuilder_passive_magic_decrease_percent"            "MAGIC DECREASE PERCENT:"
+		"DOTA_Tooltip_ability_elementalbuilder_passive_attackspeed_increase"              "ATTACKSPEED INCREASE:"
+		"DOTA_Tooltip_ability_elementalbuilder_passive_attackspeed_decrease"              "ATTACKSPEED DECREASE:"
+		"DOTA_Tooltip_ability_elementalbuilder_passive_incomingdamage_decrease_percent"   "INCOMINGDAMAGE DECREASE PERCENT:"
+		"DOTA_Tooltip_ability_elementalbuilder_passive_incomingdamage_increase_percent"   "INCOMINGDAMAGE INCREASE PERCENT:"
+
+		"DOTA_Tooltip_ability_humanbuilder_passive"                                       "Humanbuilder Passive"
+		"DOTA_Tooltip_ability_humanbuilder_passive_Description"                           ""
+		"DOTA_Tooltip_ability_humanbuilder_passive_food_per_turn"                         "FOOD PER TURN:"
+
+		"DOTA_Tooltip_ability_futuristic_gyrocopter_split_shot_damage_modifier"           "DAMAGE MODIFIER:"
+		"DOTA_Tooltip_ability_futuristic_gyrocopter_split_shot_arrow_count"               "ARROW COUNT:"
+		"DOTA_Tooltip_ability_futuristic_gyrocopter_split_shot_projectile_speed"          "PROJECTILE SPEED:"
+
+		"DOTA_Tooltip_ability_gyrocopter_mk1_split_shot_damage_modifier"                  "DAMAGE MODIFIER:"
+		"DOTA_Tooltip_ability_gyrocopter_mk1_split_shot_arrow_count"                      "ARROW COUNT:"
+		"DOTA_Tooltip_ability_gyrocopter_mk1_split_shot_projectile_speed"                 "PROJECTILE SPEED:"
+
+		"DOTA_Tooltip_ability_gyrocopter_mk2_split_shot_damage_modifier"                  "DAMAGE MODIFIER:"
+		"DOTA_Tooltip_ability_gyrocopter_mk2_split_shot_arrow_count"                      "ARROW COUNT:"
+		"DOTA_Tooltip_ability_gyrocopter_mk2_split_shot_projectile_speed"                 "PROJECTILE SPEED:"
+
+		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_debuff_duration"        "DEBUFF DURATION:"
+		"DOTA_Tooltip_ability_icewrack_grandmaster_freezing_field_explosion_max_dist"     "EXPLOSION MAX DIST:"
+
+		"DOTA_Tooltip_ability_militia_shield_bash"                                        "Militia Shield Bash"
+		"DOTA_Tooltip_ability_militia_shield_bash_Description"                            ""
+		"DOTA_Tooltip_ability_militia_shield_bash_stun_duration"                          "STUN DURATION:"
+		"DOTA_Tooltip_ability_militia_shield_bash_damage_blocked"                         "DAMAGE BLOCKED:"
+		"DOTA_Tooltip_ability_militia_shield_bash_chance"                                 "CHANCE:"
+
+		"DOTA_Tooltip_ability_tactician_storm_bolt_bolt_speed"                            "BOLT SPEED:"
+		"DOTA_Tooltip_ability_tactician_storm_bolt_vision_radius"                         "VISION RADIUS:"
+
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_very_big_bug"                         "Upgrade Very Big Bug"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_very_big_bug_Description"             ""
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_very_big_bug_atk_damage_tooltip"      "ATK DAMAGE TOOLTIP:"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_very_big_bug_atk_speed_tooltip"       "ATK SPEED TOOLTIP:"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_very_big_bug_atk_range_tooltip"       "ATK RANGE TOOLTIP:"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_very_big_bug_health_tooltip"          "HEALTH TOOLTIP:"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_very_big_bug_armor_tooltip"           "ARMOR TOOLTIP:"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_very_big_bug_food_cost"               "FOOD COST:"
+		"DOTA_Tooltip_ability_naturebuilder_upgrade_very_big_bug_unitID"                  "UNITID:"
+
+		"DOTA_Tooltip_ability_shroom_venomous_gale"                                       "Shroom Venomous Gale"
+		"DOTA_Tooltip_ability_shroom_venomous_gale_Description"                           ""
+		"DOTA_Tooltip_ability_shroom_venomous_gale_duration"                              "DURATION:"
+		"DOTA_Tooltip_ability_shroom_venomous_gale_strike_damage"                         "STRIKE DAMAGE:"
+		"DOTA_Tooltip_ability_shroom_venomous_gale_tick_damage"                           "TICK DAMAGE:"
+		"DOTA_Tooltip_ability_shroom_venomous_gale_tick_interval"                         "TICK INTERVAL:"
+		"DOTA_Tooltip_ability_shroom_venomous_gale_movement_slow"                         "MOVEMENT SLOW:"
+		"DOTA_Tooltip_ability_shroom_venomous_gale_radius"                                "RADIUS:"
+		"DOTA_Tooltip_ability_shroom_venomous_gale_speed"                                 "SPEED:"
+		"DOTA_Tooltip_ability_shroom_venomous_gale_distance"                              "DISTANCE:"
+
+		"DOTA_Tooltip_ability_randombuilder_passive"                                      "Randombuilder Passive"
+		"DOTA_Tooltip_ability_randombuilder_passive_Description"                          ""
+		"DOTA_Tooltip_ability_randombuilder_passive_tangos_interest_rate"                 "TANGOS INTEREST RATE:"
 	}
 }

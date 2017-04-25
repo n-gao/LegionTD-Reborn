@@ -124,6 +124,7 @@
 		"npc_dota_hero_tinker"								"Mechanical Builder"
 		"npc_dota_hero_rubick"															"Random Builder"
 		"npc_dota_hero_skeleton_king"                                                     "Assassin Builder"
+		"npc_dota_hero_necrolyte"														"Undead Builder"
 		
 		// ******************** UNITS ********************
 		"dire_boss"                                                                       "Dire King"
@@ -222,6 +223,7 @@
 		"humanbuilder"                                                                    "Human Builder"
 		"randombuilder"                                                                    "Random Builder"
 		"assassinbuilder"                                                                    "Assassin Builder"
+		"undeadbuilder"                                                                    "Undead Builder"
 		"npc_dota_hero_ancient_apparition_barebones"                                      "Testbuilder"
 		"tower_elementalbuilder_earthelemental"                                           "Earthelemental"
 		"tower_elementalbuilder_earthgod"                                                 "Earthgod"
