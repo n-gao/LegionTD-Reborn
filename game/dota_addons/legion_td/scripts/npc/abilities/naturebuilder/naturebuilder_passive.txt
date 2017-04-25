@@ -13,7 +13,7 @@
 		"02"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"heal_percent"			"20"
+			"heal_percent"			"30"
 		}
 	}
 

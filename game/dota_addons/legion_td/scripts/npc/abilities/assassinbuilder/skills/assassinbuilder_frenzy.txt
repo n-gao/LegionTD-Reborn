@@ -16,7 +16,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"attackspeed_bonus"		"80"
+			"attackspeed_bonus"		"100"
 		}
 		"02"
 		{
@@ -26,12 +26,12 @@
 		"03"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"duration"				"5.0"
+			"duration"				"7.0"
 		}
 		"04"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"cooldown"				"5"
+			"cooldown"				"3"
 		}
 	}
 }
