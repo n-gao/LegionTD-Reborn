@@ -34,6 +34,8 @@ function Reincarnation( event )
         -- Kill, counts as death for the player but doesn't count the kill for the killer unit
         caster:SetHealth(1)
         ability.isReincarnating = true
+        caster:AddNewModifier(nil, nil, "modifier_invulnerable", {})
+        
         --caster:Kill(caster, nil)
         -- Disable buyback.
         --caster:SetBuybackEnabled(false)
@@ -81,6 +83,7 @@ function Reincarnation( event )
                 grave:RemoveSelf()
                 caster:SetHealth(caster:GetMaxHealth())
                 ability.isReincarnating = false
+                self.npc:RemoveModifierByName("modifier_invulnerable")
             end)     
 
         -- Sounds

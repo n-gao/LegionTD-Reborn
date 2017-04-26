@@ -33,7 +33,7 @@ function WaveSpawner:Spawn()
     local count = 1
     --Spawn normal Wave
     for key, value in pairs(spawners) do
-        if value.isActive then
+        if SpawnOnLane(value) then
             local polar = 1
             local spacing = 128
             if value.spawnpoint:GetAbsOrigin().y < 0 then polar = -1 end
@@ -128,8 +128,9 @@ function WaveSpawner:SendIncomingUnits(team)
         units = Game.sendRadiant
         Game.sendRadiant = {}
         for i = 5, 8 do
-            if Game.lanes["" .. i].isActive then
-                spawners[count + 1] = Game.lanes["" .. i]
+            local lane = Game.lanes["" .. i]
+            if SpawnOnLane(lane) then
+                spawners[count + 1] = lane
                 distributedValues[count + 1] = 0
                 distributedUnits[count + 1] = {}
                 count = count + 1
@@ -138,7 +139,8 @@ function WaveSpawner:SendIncomingUnits(team)
         Game.sendLeaderDire = Game.sendLeaderDire + 1
         if Game.sendLeaderDire > 4 then Game.sendLeaderDire = 1 end
         for i = 1, 4 do
-            if Game.lanes["" .. Game.sendLeaderDire + 4].isActive then break end
+            local lane = Game.lanes["" .. Game.sendLeaderDire + 4]
+            if SpawnOnLane(Game.lanes["" .. Game.sendLeaderDire + 4]) then break end
             Game.sendLeaderDire = Game.sendLeaderDire + 1
             if Game.sendLeaderDire > 4 then Game.sendLeaderDire = 1 end
         end
@@ -148,7 +150,7 @@ function WaveSpawner:SendIncomingUnits(team)
         units = Game.sendDire
         Game.sendDire = {}
         for i = 1, 4 do
-            if Game.lanes["" .. i].isActive then
+            if SpawnOnLane(Game.lanes["" .. i]) then
                 spawners[count + 1] = Game.lanes["" .. i]
                 distributedValues[count + 1] = 0
                 distributedUnits[count + 1] = {}
@@ -158,7 +160,7 @@ function WaveSpawner:SendIncomingUnits(team)
         Game.sendLeaderRadiant = Game.sendLeaderRadiant + 1
         if Game.sendLeaderRadiant > 4 then Game.sendLeaderRadiant = 1 end
         for i = 1, 4 do
-            if Game.lanes["" .. Game.sendLeaderRadiant].isActive then break end
+            if SpawnOnLane(Game.lanes["" .. Game.sendLeaderRadiant]) then break end
             Game.sendLeaderRadiant = Game.sendLeaderRadiant + 1
             if Game.sendLeaderRadiant > 4 then Game.sendLeaderRadiant = 1 end
         end
@@ -265,6 +267,12 @@ function WaveSpawner:SendIncomingUnits(team)
             i = i + 1
         end
     end
+end
+
+
+
+function SpawnOnLane(lane)
+    return lane.player and not lane.player:HasAbandoned() and lane.player.hero
 end
 
 
