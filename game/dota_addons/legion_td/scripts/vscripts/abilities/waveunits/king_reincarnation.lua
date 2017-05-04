@@ -83,7 +83,7 @@ function Reincarnation( event )
                 grave:RemoveSelf()
                 caster:SetHealth(caster:GetMaxHealth())
                 ability.isReincarnating = false
-                self.npc:RemoveModifierByName("modifier_invulnerable")
+                caster:RemoveModifierByName("modifier_invulnerable")
             end)     
 
         -- Sounds
