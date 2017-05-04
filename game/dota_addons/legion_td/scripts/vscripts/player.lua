@@ -134,6 +134,7 @@ function Player:SetPlayerEntitie(plyEntitie, userID)
     for _, unit in pairs(self.units) do
         unit:GivePlayerControl()
     end
+    self.roundLeft = nil
     --self.missedSpawns = 0
 end
 
@@ -147,6 +148,7 @@ function Player:RemoveEntitie()
 
     self.leaksPenalty = 25
     self.leaked = true
+    self.roundLeft = Game.gameRound
     if self.lane then
         self.lane.isActive = false
     end

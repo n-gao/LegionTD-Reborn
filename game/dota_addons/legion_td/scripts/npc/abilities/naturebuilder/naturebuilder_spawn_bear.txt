@@ -29,7 +29,7 @@
 		"02"
 		{
 			"var_type"	"FIELD_FLOAT"
-			"atk_speed_tooltip"	"0.93"
+			"atk_speed_tooltip"	"1.0"
 		}
 
 		"03"
@@ -41,13 +41,13 @@
 		"04"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"health_tooltip"	"530"
+			"health_tooltip"	"500"
 		}
 
 		"05"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"armor_tooltip"	"3"
+			"armor_tooltip"	"2"
 		}
 
 		"06"

@@ -277,7 +277,7 @@
     "Unit"
     {
       "NPCName"             "unit_assassins"
-      "UnitCount"           "4"
+      "UnitCount"           "12"
     }
   }
   "Round8"
@@ -343,7 +343,7 @@
     "Unit"
     {
       "NPCName"             "unit_tidehunter"
-      "UnitCount"           "3"
+      "UnitCount"           "12"
     }
   }
   "Round14"

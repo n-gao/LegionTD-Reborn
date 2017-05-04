@@ -272,7 +272,7 @@ end
 
 
 function SpawnOnLane(lane)
-    return lane.player and not lane.player:HasAbandoned() and lane.player.hero
+    return lane.player and not lane.player:HasAbandoned() and lane.player.hero and (lane.player.roundLeft == nil or Game.gameRound - lane.player.roundLeft < 2)
 end
 
 

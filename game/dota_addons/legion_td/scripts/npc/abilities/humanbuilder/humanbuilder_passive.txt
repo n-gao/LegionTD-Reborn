@@ -8,7 +8,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"food_per_turn"			"1.8"
+			"food_per_turn"			"2.1"
 		}
 	}
 
