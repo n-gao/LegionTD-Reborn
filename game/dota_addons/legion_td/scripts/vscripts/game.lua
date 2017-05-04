@@ -1040,7 +1040,7 @@ end
 function Game:UnlockUnits()
     print "Doing Game:UnlockUnits()"
     for _, player in pairs(self.players) do
-        if player:IsActive() then
+        if player:ShouldSpawn() then
             for __, unit in pairs(player.units) do
                 unit:Unlock()
             end

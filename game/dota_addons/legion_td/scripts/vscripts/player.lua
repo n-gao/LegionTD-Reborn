@@ -139,6 +139,11 @@ function Player:SetPlayerEntitie(plyEntitie, userID)
 end
 
 
+function Player:ShouldSpawn()
+    return self.lane and not self:HasAbandoned() and self.hero and (self.roundLeft == nil or Game.gameRound - self.roundLeft < 2)
+end
+
+
 function Player:RemoveEntitie()
     print("User " .. self.userID .. " removed.")
     self.plyEntitie = nil
