@@ -2806,7 +2806,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"armor_decrease"				"-.3"
+				"armor_decrease"				"-.5"
 			}
 			"04"
 			{
@@ -2816,7 +2816,7 @@
 			"05"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"basedamagepercent_decrease"	"-2"
+				"basedamagepercent_decrease"	"-4"
 			}
 			"06"
 			{
@@ -2826,7 +2826,7 @@
 			"07"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"magic_decrease_percent"	"-1" // same
+				"magic_decrease_percent"	"-3" // same
 			}
 			"08"
 			{
@@ -2836,7 +2836,7 @@
 			"09"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"attackspeed_decrease"	"-2"
+				"attackspeed_decrease"	"-4"
 			}
 			"10"
 			{
@@ -2846,7 +2846,7 @@
 			"11"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"incomingdamage_increase_percent"	".7"
+				"incomingdamage_increase_percent"	"5"
 			}
 		}
 	
@@ -4983,7 +4983,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"food_per_turn"			"1.8"
+				"food_per_turn"			"2.1"
 			}
 		}
 	

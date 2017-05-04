@@ -35,6 +35,7 @@ function elementalbuilder_passive_start(keys)
     --Worth 2 but -1
     local elementBender = {}
     local maxStacks = 10
+    local maxNegativeStacks = 30
 
     Timers:CreateTimer(function()
 
@@ -189,7 +190,7 @@ function elementalbuilder_passive_start(keys)
                         unit:AddNewModifier(unit, ability, "modifier_elementalbuilder_passive_" .. element .. "_negative_lua", {})
                         if elementStacks[element] < 0 then
                             unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", unit, 0)
-                            unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", unit, math.min(maxStacks, 0 - elementStacks[element]))
+                            unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", unit, math.min(maxNegativeStacks, 0 - elementStacks[element]))
                         else
                             unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", unit, math.min(maxStacks, elementStacks[element]))
                             unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", unit, 0)
@@ -216,7 +217,7 @@ function elementalbuilder_passive_start(keys)
             --if elementSums[element] > 0 then
                 if elementStacks[element] < 0 then
                     caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, 0)
-                    caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, math.min(maxStacks, 0 - elementStacks[element]))
+                    caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, math.min(maxNegativeStacks, 0 - elementStacks[element]))
                 else
                     caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", caster, math.min(maxStacks, elementStacks[element]))
                     caster:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", caster, 0)
