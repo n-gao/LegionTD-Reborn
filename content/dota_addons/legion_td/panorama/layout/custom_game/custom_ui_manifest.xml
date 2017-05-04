@@ -5,6 +5,7 @@
       <include src="file://{resources}/scripts/custom_game/selection_filter.js" />
   </scripts>
   <script>
+    $.Msg("hello world");
 		GameUI.CustomUIConfig().multiteam_top_scoreboard =
 		{
 			reorder_team_scores: true,

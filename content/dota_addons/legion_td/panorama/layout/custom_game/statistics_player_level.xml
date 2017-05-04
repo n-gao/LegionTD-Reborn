@@ -9,7 +9,7 @@
     </scripts>
     <Panel class="LegionLevelIconPanel">
         <Panel class="LegionLevelIconBackground" id="LegionLevelBackground">
-            <Image id="LevelIcon" class="LegionLevelIcon" src="file://{images}/custom_game/levels/001.png"/>
+            <Image id="LevelIcon" class="LegionLevelIcon" src="file://{images}/custom_game/levels/061.png"/>
         </Panel>
         <Label id="LevelLabel" class="LegionLevelNumber" text="1"/>
     </Panel> 
