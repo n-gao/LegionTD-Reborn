@@ -2806,7 +2806,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"armor_decrease"				"-.5"
+				"armor_decrease"				"-.6"
 			}
 			"04"
 			{
@@ -2816,7 +2816,7 @@
 			"05"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"basedamagepercent_decrease"	"-4"
+				"basedamagepercent_decrease"	"-6"
 			}
 			"06"
 			{
@@ -2826,7 +2826,7 @@
 			"07"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"magic_decrease_percent"	"-3" // same
+				"magic_decrease_percent"	"-4" // same
 			}
 			"08"
 			{
@@ -2836,7 +2836,7 @@
 			"09"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"attackspeed_decrease"	"-4"
+				"attackspeed_decrease"	"-6"
 			}
 			"10"
 			{
@@ -2846,7 +2846,7 @@
 			"11"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"incomingdamage_increase_percent"	"5"
+				"incomingdamage_increase_percent"	"6"
 			}
 		}
 	

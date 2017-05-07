@@ -354,7 +354,7 @@
     "Unit"
     {
       "NPCName"             "unit_abaddon"
-      "UnitCount"           "8"
+      "UnitCount"           "7"
     }
   }
   "Round15"
@@ -387,7 +387,7 @@
     "Unit"
     {
       "NPCName"             "unit_chaos"
-      "UnitCount"           "12"
+      "UnitCount"           "13"
     }
   }
   "Round18"
@@ -486,7 +486,7 @@
     "Unit"
     {
       "NPCName"             "unit_drunken"
-      "UnitCount"           "12"
+      "UnitCount"           "14"
     }
   }
   "Round27"
