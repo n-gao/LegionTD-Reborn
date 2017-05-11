@@ -92,12 +92,6 @@ end
 
 
 
-function Game:OnPlayerDisconnect(key)
-    self.player[key.userid]:Reconnected()
-end
-
-
-
 function Game:ReadDuelSpawn(kvDue)
     self.duelSpawn = {}
     if not (type(kvDue) == "table") then
@@ -309,6 +303,10 @@ function Game:Start()
     self:Initialize()
     self:SaveMatchAtEnd()
     self:SaveDataAtEnd()
+    
+    if Convars:GetBool('developer') then
+        Game:UpdateUnitData()
+    end
 end
 
 function Game:CreateGameTimer()
@@ -586,7 +584,7 @@ function Game:OnConnectFull(keys)
         local player = self:FindPlayerWithID(playerID)
         if player then
             print("Game:OnConnectFull(): Player object found for existing player.")
-            player:SetPlayerEntitie(ply, keys.userid)
+            player:SetPlayerEntity(ply, keys.userid)
         else
             print("Game:OnConnectFull(): Player object not found for player entIndex " .. entIndex .. " playerID " .. playerID .. "; Creating.")
             local newPlayer = Player.new(ply, keys.userid)
@@ -600,9 +598,20 @@ function Game:OnConnectFull(keys)
             steamID = p:GetSteamID()
         }
         self:RequestStoredData(data)
+    end
+end
 
-        if Convars:GetBool('developer') then
-            Game:UpdateUnitData()
+
+function Game:OnPlayerReconnect(keys)
+    local entIndex = keys.index + 1
+    local ply = EntIndexToHScript(entIndex)
+    local playerID = ply:GetPlayerID()
+    if not PlayerResource:IsBroadcaster(playerID) then
+        local player = self:FindPlayerWithID(playerID)
+        if player then
+            player:SetPlayerEntity(ply, keys.userid)
+        else
+            print("Who reconnected?! " .. playerID)
         end
     end
 end
@@ -1136,7 +1145,7 @@ function Game:RequestStoredData(data)
             return
         end
         PlayerData.AddOrUpdate(result, playerToSteamID, lData.steamID)
-        Game:SendStoredData(lData.playerID, lData.steamID)
+        --Game:SendStoredData(lData.playerID, lData.steamID)
     end)
 end
 

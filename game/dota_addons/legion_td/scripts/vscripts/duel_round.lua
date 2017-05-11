@@ -113,7 +113,7 @@ end
 
 function DuelRound:PlaceUnits()
     for _, pl in pairs(Game.players) do
-        if pl:IsActive() then
+        if pl:ShouldSpawn() then
             local spawnPoint = Game.duelSpawn["" .. pl:GetTeamNumber()]
             local target = Game.duelTargets["" .. pl:GetTeamNumber()]
             local team = self.remainingUnitsRadiant

@@ -119,11 +119,11 @@ function Player:GetEarnedTangos()
 end
 
 function Player:Reconnected()
-    --self:SetPlayerEntitie(plyEntitie)
+    --self:SetPlayerEntity(plyEntitie)
     --self.missedSpawns = 0
 end
 
-function Player:SetPlayerEntitie(plyEntitie, userID)
+function Player:SetPlayerEntity(plyEntitie, userID)
     GameRules:SetGoldPerTick(0)
     self.plyEntitie = plyEntitie
     self.userID = userID
@@ -140,7 +140,7 @@ end
 
 
 function Player:ShouldSpawn()
-    return self.lane and not self:HasAbandoned() and self.hero and (self.roundLeft == nil or Game.gameRound - self.roundLeft < 2)
+    return self.lane and not self:HasAbandoned() and self.hero and (self.roundLeft == nil or Game.gameRound - self.roundLeft < 2 or Game:GetCurrentRound().isDuelRound)
 end
 
 

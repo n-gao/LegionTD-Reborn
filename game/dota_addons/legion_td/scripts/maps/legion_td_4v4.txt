@@ -343,7 +343,7 @@
     "Unit"
     {
       "NPCName"             "unit_tidehunter"
-      "UnitCount"           "12"
+      "UnitCount"           "14"
     }
   }
   "Round14"
