@@ -1,0 +1,109 @@
+"tower_naturebuilder_broodmother"
+{
+	// General
+	//----------------------------------------------------------------
+	"BaseClass"             "npc_dota_creature"
+	"Model"                 "models/heroes/broodmother/broodmother.vmdl"
+	"ModelScale"            "0.5"
+	"SoundSet"			"Hero_Broodmother"
+	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
+	"Level"                 "1"
+	"HealthBarOffset"       "150"
+	"Vscripts"              "ai/naturebuilder/ai_broodmother.lua"
+
+	"Ability4"							"sell"
+	"Ability1"							"brood_spawn_spiderlings"
+	"Ability2"				"ability_empty_2"
+	"Ability3"				"ability_empty_3"
+
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"         "1"
+	"MagicalResistance"     "0"
+
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"       "31.25"
+	"AttackDamageMax"       "37.5"
+	"AttackRate"            "0.5"
+	"AttackAnimationPoint"  "0.5"
+	"AttackAcquisitionRange" "850"
+	"AttackRange"           "90"
+	"ProjectileModel"       ""
+	"ProjectileSpeed"       "0"
+
+	"Legion_AttackType"		"normal"
+	"Legion_DefendType"		"heavy"
+	"Legion_Fraction"		"nature"
+
+
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyGoldMin"         "0"
+	"BountyGoldMax"         "0"
+
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+	"RingRadius"            "30"
+
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"         "270"
+	"MovementTurnRate"      "0.6"
+
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"          "180"
+	"StatusHealthRegen"     "0"
+	"StatusMana"            "0"
+	"StatusManaRegen"       "0"
+
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"    "1400"
+	"VisionNighttimeRange"  "800"
+
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"              "DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+	// Creature Data
+	//----------------------------------------------------------------
+	"Creature"
+	{
+		"DisableClumpingBehavior"       "1"
+		"DefaultState"				"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"				"Invade"
+				"Aggression"		"100.0"
+				"Avoidance"			"0.0"
+				"Support"			"100.0"
+			}
+		}
+		"DefensiveAbilities"
+		{
+			"Ability1"
+			{
+				"Name"     "brood_spawn_spiderlings"
+				"Buff"						"1"
+			}
+		}
+		"AttachWearables"
+		{
+			"Wearable1" { "ItemDef" "7617" }
+			"Wearable2" { "ItemDef" "7615" }
+			"Wearable3" { "ItemDef" "7517" }
+			"Wearable4" { "ItemDef" "7518" }
+		}
+	}
+}
