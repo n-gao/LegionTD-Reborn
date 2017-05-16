@@ -1145,7 +1145,7 @@ function Game:RequestStoredData(data)
             return
         end
         PlayerData.AddOrUpdate(result, playerToSteamID, lData.steamID)
-        --Game:SendStoredData(lData.playerID, lData.steamID)
+        Game:SendStoredData(lData.playerID, lData.steamID)
     end)
 end
 
