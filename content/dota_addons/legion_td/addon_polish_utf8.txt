@@ -123,8 +123,8 @@
 		"npc_dota_hero_rubick"															"Random Builder"
 
 		// ******************** UNITS ********************
-		"dire_boss"                                                                       "Dire King"
-		"radiant_boss"                                                                    "Radiant King"
+		"dire_king"                                                                       "Dire King"
+		"radiant_king"                                                                    "Radiant King"
 		"dire_food_building"                                                              "Dire Food Building"
 		"dire_main_building"                                                              "Dire Main Building"
 		"dire_unit_building"                                                              "Dire Unit Building"
@@ -372,11 +372,11 @@
 		"DOTA_Tooltip_ability_ability_empty_3"                                            "Empty Ability E"
 		"DOTA_Tooltip_ability_ability_empty_3_Description"                                "Just taking up space."
 
-		"DOTA_Tooltip_ability_beeing_dire_boss"                                           "Is Dire Boss"
-		"DOTA_Tooltip_ability_beeing_dire_boss_Description"                               ""
+		"DOTA_Tooltip_ability_being_dire_king"                                           "Is Dire Boss"
+		"DOTA_Tooltip_ability_being_dire_king_Description"                               ""
 
-		"DOTA_Tooltip_ability_beeing_radiant_boss"                                        "Is Radiant Boss"
-		"DOTA_Tooltip_ability_beeing_radiant_boss_Description"                            ""
+		"DOTA_Tooltip_ability_being_radiant_king"                                        "Is Radiant Boss"
+		"DOTA_Tooltip_ability_being_radiant_king_Description"                            ""
 
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender"                         "Przyzwij Earthbender"
 		"DOTA_Tooltip_ability_elementalbuilder_spawn_earthbender_Description"             "Atak: Zwykły/Ciężki\nUmiejętności: ---"

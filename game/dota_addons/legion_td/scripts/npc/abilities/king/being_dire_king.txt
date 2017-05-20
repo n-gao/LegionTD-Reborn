@@ -1,0 +1,57 @@
+"being_dire_king"
+{
+  "BaseClass"                 "ability_datadriven"
+  "AbilityTextureName"      "doom_bringer_doom"
+  "MaxLevel"             "1"
+
+  "AbilityBehavior"     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+  "AbilitySpecial"
+  {
+    "01"
+    {
+      "var_type"      "FIELD_INTEGER"
+      "health_bonus"         "450"
+    }
+    "02"
+    {
+      "var_type"      "FIELD_INTEGER"
+      "health_bonus_per_stack"      "25"
+    }
+  }
+
+  "Modifiers"
+  {
+    "isBoss"
+    {
+      "Passive"      "1"
+      "IsHidden"      "0"
+      "IsDebuff"      "0"
+
+      "States"
+      {
+        "MODIFIER_STATE_CANNOT_MISS"      "MODIFIER_STATE_VALUE_ENABLED"
+      }
+
+      "OnDeath"
+      {
+        "RunScript"
+        {
+          "ScriptFile"  "abilities/king/being_king"
+          "Function"    "BossDied"
+        }
+      }
+    }
+    "boss_upgrade_health_stack"
+    {
+      "IsBuff"      "1"
+    }
+    "boss_upgrade_attack_stack"
+    {
+      "IsBuff"      "1"
+    }
+    "boss_upgrade_regen_stack"
+    {
+      "IsBuff"      "1"
+    }
+  }
+}

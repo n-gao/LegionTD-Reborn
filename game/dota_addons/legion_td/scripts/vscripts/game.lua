@@ -85,8 +85,8 @@ function Game:ReadConfiguration()
     self:ReadDuelTargets(kv["DuelTarget"])
     self:ReadLanes(kv["Lanes"])
     self:ReadRoundConfiguration(kv)
-    self.radiantBoss = Entities:FindByName(nil, "radiant_boss")
-    self.direBoss = Entities:FindByName(nil, "dire_boss")
+    self.radiantBoss = Entities:FindByName(nil, "radiant_king")
+    self.direBoss = Entities:FindByName(nil, "dire_king")
     print("everything loaded")
 end
 
@@ -1108,6 +1108,21 @@ function Game:DistributeMissedTangos(missedTime)
         player:IncomeTangos(player:GetTangoIncomeIn(missedTime))
     end
 end
+
+
+
+function Game:GetActivePlayerInTeam(team)
+    local result = 0
+    for _, player in pairs(Game.players) do
+        if (player:GetTeamNumber() == team and player:ShouldSpawn()) then
+            result = result + 1
+        end
+    end
+    return result
+end
+
+
+
 
 function Game:CreatePlayerDataFor(playerID)
     local player = Game:FindPlayerWithID(playerID)

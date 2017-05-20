@@ -1,7 +1,7 @@
 RequiredUnits = {
     -- Bosses
-    "radiant_boss",
-    "dire_boss",
+    "radiant_king",
+    "dire_king",
 
     -- Waves
     "unit_abaddon",
