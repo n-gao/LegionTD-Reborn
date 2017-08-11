@@ -41,6 +41,7 @@
 #ShopPanel.ShopPanelVisible {
   transform: translatex(0px);
   visibility: visible;
+  opacity: 1;
 }
 
 #ShopPanel {

@@ -2710,12 +2710,12 @@
 			"04"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"basedamagepercent_increase"	"6"
+				"basedamagepercent_increase"	"5"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"basedamagepercent_decrease"	"-6"
+				"basedamagepercent_decrease"	"-5"
 			}
 			"06"
 			{
@@ -2730,22 +2730,22 @@
 			"08"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"attackspeed_increase"	"6"
+				"attackspeed_increase"	"5"
 			}
 			"09"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"attackspeed_decrease"	"-6"
+				"attackspeed_decrease"	"-5"
 			}
 			"10"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"incomingdamage_decrease_percent"	"-6"
+				"incomingdamage_decrease_percent"	"-5"
 			}
 			"11"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"incomingdamage_increase_percent"	"6"
+				"incomingdamage_increase_percent"	"5"
 			}
 		}
 	
