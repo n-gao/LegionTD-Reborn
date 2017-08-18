@@ -1,12 +1,5 @@
 var LifetimeStatsPanel;
 
-function OnClosePressed() {
-    $.GetContextPanel().SetHasClass("HideStatistics", true)
-    $.Schedule(0.2, function(){
-        $.GetContextPanel().SetHasClass("ShowStatistics", false);
-        $.GetContextPanel().SetHasClass("HideStatistics", false)});
-}
-
 
 function CreateStatisticsPanel(name, parent, contentName) {
     LifetimeStatsPanel = $.CreatePanel("Panel", parent, name);

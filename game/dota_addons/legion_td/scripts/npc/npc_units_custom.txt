@@ -2342,10 +2342,10 @@
 	"tower_elementalbuilder_earthgod"
 	{
 	    "BaseClass" "npc_dota_creature"
-	    "Model" "models/heroes/tiny_04/tiny_04.vmdl"
+	    "Model" "models/heroes/sand_king/sand_king.vmdl"
 	    "ModelScale"    "0.5"
-	    "SoundSet"  "Hero_Tiny"
-	    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
+	    "SoundSet"  "Hero_SandKing"
+	    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 	    "Level" "1"
 	    "HealthBarOffset"   "150"
 	    "Vscripts"  "ai/elementalbuilder/ai_earthgod.lua"
@@ -2409,34 +2409,30 @@
 	
 	        "AttachWearables"
 	        {
+	
 	            "Wearable1"
 	            {
-	                "ItemDef"   "493"
+	                "ItemDef"   "8074"
 	            }
 	
 	            "Wearable2"
 	            {
-	                "ItemDef"   "494"
+	                "ItemDef"   "7305"
 	            }
 	
 	            "Wearable3"
 	            {
-	                "ItemDef"   "495"
+	                "ItemDef"   "7446"
 	            }
 	
 	            "Wearable4"
 	            {
-	                "ItemDef"   "496"
+	                "ItemDef"   "7444"
 	            }
 	
 	            "Wearable5"
 	            {
-	                "ItemDef"   "497"
-	            }
-	
-	            "Wearable6"
-	            {
-	                "ItemDef"   "516"
+	                "ItemDef"   "7809"
 	            }
 	
 	        }
