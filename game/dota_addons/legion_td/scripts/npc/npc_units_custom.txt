@@ -178,8 +178,8 @@
 	        {
 	            "Wearable1" { "ItemDef" "5926" }
 	            "Wearable2" { "ItemDef" "5927" }
-	            "Wearable3" { "ItemDef" "5928" }
-	            "Wearable4" { "ItemDef" "5929" }
+	            "Wearable3" { "ItemDef" "8005" }
+	            "Wearable4" { "ItemDef" "5929" } 
 	        }
 	    }
 	}
@@ -341,7 +341,7 @@
 	        {
 	            "Wearable1" { "ItemDef" "6650" }
 	            "Wearable2" { "ItemDef" "6651" }
-	            "Wearable3" { "ItemDef" "6652" }
+	            "Wearable3" { "ItemDef" "9241" }
 	            "Wearable4" { "ItemDef" "7426" }
 	            "Wearable5" { "ItemDef" "6654" }
 	            "Wearable6" { "ItemDef" "6655" }
@@ -1331,6 +1331,7 @@
 	            "Wearable4" { "ItemDef" "6528" }
 	            "Wearable5" { "ItemDef" "6529" }
 	            "Wearable6" { "ItemDef" "6537" }
+				"Wearable7"	{ "ItemDef"	"6543" }
 	        }
 	    }
 	}
@@ -4308,7 +4309,7 @@
 	    "AttachWearables"
 	    {
 	        "Wearable1" { "ItemDef" "6775" } // "Mask of the Bladesrunner"
-	        "Wearable2" { "ItemDef" "6847" } // "Sword of the Bladesrunner"
+	        "Wearable2" { "ItemDef" "8986" } // "Sword of the Bladeform Aesthete"
 	        "Wearable3" { "ItemDef" "6773" } // "Shoulders of the Bladesrunner"
 	        "Wearable4" { "ItemDef" "6826" } // "Gloves of the Bladesrunner"
 	        "Wearable5" { "ItemDef" "6774" } // "Belt of the Bladesrunner"
@@ -4725,11 +4726,11 @@
 	        }
 	    "AttachWearables"
 	    {
-	      "Wearable1" { "ItemDef" "281" }
-	      "Wearable2" { "ItemDef" "282" }
-	      "Wearable3" { "ItemDef" "283" }
-	      "Wearable4" { "ItemDef" "284" }
-	      "Wearable5" { "ItemDef" "285" }
+	      "Wearable1" { "ItemDef" "6895" }
+	      "Wearable2" { "ItemDef" "9093" }
+	      "Wearable3" { "ItemDef" "9096" }
+	      "Wearable4" { "ItemDef" "9095" }
+	      "Wearable5" { "ItemDef" "9455" }
 	    }
 	    }
 	}
@@ -5719,15 +5720,16 @@
 					"Support"			"0.0"
 				}
 			}
-	    "AttachWearables"
-	    {
-	      "Wearable1" { "ItemDef" "13" }
-	      "Wearable2" { "ItemDef" "42" }
-	      "Wearable3" { "ItemDef" "43" }
-	      "Wearable4" { "ItemDef" "44" }
-	      "Wearable5" { "ItemDef" "45" }
-	      "Wearable6" { "ItemDef" "46" }
-	    }
+			"AttachWearables"
+			{
+			"Wearable1" { "ItemDef" "7580" }  
+			"Wearable2" { "ItemDef" "8958" }
+			"Wearable3" { "ItemDef" "8173" }
+			"Wearable4" { "ItemDef" "8954" }
+			"Wearable5" { "ItemDef" "8957" }
+			"Wearable6" { "ItemDef" "4317" }
+			"Wearable7" { "ItemDef" "45" }
+			}
 		}
 	}
 	"tower_humanbuilder_sharpshooter"
@@ -6127,16 +6129,16 @@
 	                "Support"           "0.0"
 	            }
 	        }
-	    "AttachWearables"
-	    {
-	      "Wearable1" { "ItemDef" "7420" } // "Shield of the Wurmblood"
-	      "Wearable2" { "ItemDef" "7416" } // "Helm of the Wurmblood"
-	      "Wearable3" { "ItemDef" "7418" } // "Gauntlets of the Wurmblood"
-	      "Wearable4" { "ItemDef" "7419" } // "Tassets of the Wurmblood"
-	      "Wearable5" { "ItemDef" "7417" } // "Cuirass of the Wurmblood"
-	      "Wearable6" { "ItemDef" "7421" } // "Lance of the Wurmblood"
-	    }
-	    }
+	     "AttachWearables"
+		{
+			"Wearable1" { "ItemDef" "9134" } // "Burning Shield of the Outland Ravager"
+			"Wearable2" { "ItemDef" "9132" } // "Helm of the Outland Ravager"
+			"Wearable3" { "ItemDef" "9130" } // "Bracers of the Outland Ravager"
+			"Wearable4" { "ItemDef" "9133" } // "Armor of the Outland Ravager"
+			"Wearable5" { "ItemDef" "9131" } // "Mantle of the Outland Ravager"
+			"Wearable6" { "ItemDef" "7421" } // "Lance of the Wurmblood"
+		}
+		}
 	}
 	"tower_humanbuilder_tactician"
 	{
@@ -6216,7 +6218,7 @@
 	
 	            "Wearable3"
 	            {
-	                "ItemDef"   "8672"
+	                "ItemDef"   "8301"
 	            }
 	
 	            "Wearable4"
@@ -8571,10 +8573,10 @@
 	        }
 	        "AttachWearables"
 	        {
-	            "Wearable1" { "ItemDef" "7617" }
-	            "Wearable2" { "ItemDef" "7615" }
-	            "Wearable3" { "ItemDef" "7517" }
-	            "Wearable4" { "ItemDef" "7518" }
+	            "Wearable1" { "ItemDef" "9090" }
+	            "Wearable2" { "ItemDef" "9091" }
+	            "Wearable3" { "ItemDef" "8397" }
+	            "Wearable4" { "ItemDef" "5516" }
 	        }
 	    }
 	}
@@ -9228,6 +9230,7 @@
 	            "Wearable2" { "ItemDef" "4293" }
 	            "Wearable3" { "ItemDef" "4292" }
 	            "Wearable4" { "ItemDef" "4294" }
+				"Wearable5"	{ "ItemDef"	"7654" }
 	        }
 	    }
 	}
@@ -9657,10 +9660,10 @@
 	        }
 	        "AttachWearables"
 	        {
-	            "Wearable1" { "ItemDef" "7578" }
-	            "Wearable2" { "ItemDef" "6130" }
+	            "Wearable1" { "ItemDef" "6130" }
+	            "Wearable2" { "ItemDef" "7578" }
 	            "Wearable3" { "ItemDef" "7468" }
-	            "Wearable4" { "ItemDef" "4820" }
+	            "Wearable4" { "ItemDef" "7810" }
 	            "Wearable5" { "ItemDef" "6134" }
 	        }
 	    }

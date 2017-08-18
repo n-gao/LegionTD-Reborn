@@ -15,7 +15,7 @@
   horizontal-align: right;
   vertical-align: bottom;
   width: 205px;
-  height: 195px;
+  height: 170px;
 } 
 
 .TangoCount {
@@ -78,6 +78,7 @@
 #tangoimage {
   width: 41px;
   height: 30px;
+  margin-left: 5px;
 }
 
 #tangos {
@@ -153,6 +154,33 @@
   text-shadow: 2px 2px 2px #000000;
 }
 
+.SkipButtonPanel2 {
+  horizontal-align: right;
+  vertical-align: bottom;
+  height: 40px;
+  width: 100px;
+  visibility: visible;
+  box-shadow: #54545480 0px 0px 8px 0px;
+  border-radius: 3px;
+  margin-right: 105px;
+  visibility: collapse;
+}
+
+.SkipPressed .SkipButtonPanel2  {
+  visibility: visible;
+}
+
+
+.ButtonLabel2 {
+  horizontal-align: center;
+  vertical-align: middle;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000000;
+  font-size: 15px;
+}
+
+
 #test {
   width: 400px;
   height: 400px;
@@ -163,12 +191,13 @@
   margin-top: 16px;
   color: gold;
   flow-children: right;
+   margin-left: 10px;
 }
 
 #gold {
   color: gold;
   font-size: 20px;
-  margin-left: 8px;
+  margin-left: 2px;
   text-shadow: 2px 2px 2px #000000;
 }
 

@@ -87,6 +87,10 @@ function OnSkipButtonPressed() {
 	GameEvents.SendCustomGameEventToServer("skip_pressed", data);
 }
 
+function OnSkipButtonPressed2() {
+	$.GetContextPanel().SetHasClass("SkipPressed2", true);
+}
+
 function OnStatisticsButtonPressed() {
 	overlay.ToggleClass("ShowStatistics");
 } 
