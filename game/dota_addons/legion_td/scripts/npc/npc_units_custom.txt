@@ -12908,8 +12908,8 @@
 	"unit_donkey"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/props_gameplay/donkey.vmdl"
-		"ModelScale"	"0.6"
+		"Model"	"models/items/courier/duskie/duskie.vmdl"
+		"ModelScale"	"0.8"
 		"Level"	"1"
 		"HealthBarOffset"	"140"
 		"Vscripts"	"ai/ai_default.lua"
@@ -12958,20 +12958,6 @@
 					"Aggression"	"100.0"
 					"Avoidance"	"0.0"
 					"Support"	"0.0"
-				}
-	
-			}
-	
-			"AttachWearables"
-			{
-				"Wearable1"
-				{
-					"ItemDef"	"63"
-				}
-	
-				"Wearable6"
-				{
-					"ItemDef"	"68"
 				}
 	
 			}
@@ -13049,43 +13035,14 @@
 	        }
 	
 	        "AttachWearables"
-	        {
-	            "Wearable1"
-	            {
-	                "ItemDef"   "6615"
-	            }
-	
-	            "Wearable2"
-	            {
-	                "ItemDef"   "6790"
-	            }
-	
-	            "Wearable3"
-	            {
-	                "ItemDef"   "6788"
-	            }
-	
-	            "Wearable4"
-	            {
-	                "ItemDef"   "6792"
-	            }
-	
-	            "Wearable5"
-	            {
-	                "ItemDef"   "6789"
-	            }
-	
-	            "Wearable6"
-	            {
-	                "ItemDef"   "6791"
-	            }
-	
-	            "Wearable7"
-	            {
-	                "ItemDef"   "6787"
-	            }
-	
-	        }
+		{
+			"Wearable1" { "ItemDef" "9134" } // "Burning Shield of the Outland Ravager"
+			"Wearable2" { "ItemDef" "9132" } // "Helm of the Outland Ravager"
+			"Wearable3" { "ItemDef" "9130" } // "Bracers of the Outland Ravager"
+			"Wearable4" { "ItemDef" "9133" } // "Armor of the Outland Ravager"
+			"Wearable5" { "ItemDef" "9131" } // "Mantle of the Outland Ravager"
+			"Wearable6" { "ItemDef" "6337" } // "Heavy Wingblade"
+		}
 	
 	    }
 	
@@ -13342,6 +13299,10 @@
 				{
 					"ItemDef"	"5428"
 				}
+				"Wearable2"
+				{
+					"ItemDef"	"5024"
+				}
 	
 			}
 	
@@ -13419,37 +13380,37 @@
 	        {
 	            "Wearable1"
 	            {
-	                "ItemDef"   "7545"
+	                "ItemDef"   "6202"
 	            }
 	
 	            "Wearable2"
 	            {
-	                "ItemDef"   "7541"
+	                "ItemDef"   "4007"
 	            }
 	
 	            "Wearable3"
 	            {
-	                "ItemDef"   "7542"
+	                "ItemDef"   "4760"
 	            }
 	
 	            "Wearable4"
 	            {
-	                "ItemDef"   "7544"
+	                "ItemDef"   "7171"
 	            }
 	
 	            "Wearable5"
 	            {
-	                "ItemDef"   "7543"
+	                "ItemDef"   "6298"
 	            }
 	
 	            "Wearable6"
 	            {
-	                "ItemDef"   "7546"
+	                "ItemDef"   "6115"
 	            }
 	
 	            "Wearable7"
 	            {
-	                "ItemDef"   "7547"
+	                "ItemDef"   "8498"
 	            }
 	
 	        }
@@ -13718,15 +13679,10 @@
 	
 				"Wearable2"
 				{
-					"ItemDef"	"6940"
-				}
-	
-				"Wearable3"
-				{
 					"ItemDef"	"8191"
 				}
 	
-				"Wearable4"
+				"Wearable3"
 				{
 					"ItemDef"	"8196"
 				}
@@ -13921,8 +13877,8 @@
 	"unit_lightning_ball"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/heroes/phoenix/phoenix_spirit.vmdl"
-		"ModelScale"	"2"
+		"Model"	"models/items/courier/grim_wolf/grim_wolf.vmdl"
+		"ModelScale"	"1"
 		"SoundSet"	"Hero_Phoenix"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts"
 		"Level"	"1"
@@ -14038,6 +13994,34 @@
 				}
 	
 			}
+			
+			"AttachWearables"
+	        {
+	            "Wearable1"
+	            {
+	                "ItemDef"   "7465"
+	            }
+	
+	            "Wearable2"
+	            {
+	                "ItemDef"   "7712"
+	            }
+	
+	            "Wearable3"
+	            {
+	                "ItemDef"   "7713"
+	            }
+	
+	            "Wearable4"
+	            {
+	                "ItemDef"   "7711"
+	            }
+			}
+			
+			
+			
+			
+			
 	
 		}
 	
@@ -14295,24 +14279,30 @@
 	
 	        }
 	
-	        "AttachWearables"
+			 "AttachWearables"
 	        {
 	            "Wearable1"
 	            {
-	                "ItemDef"   "6634"
+	                "ItemDef"   "9105"
 	            }
 	
 	            "Wearable2"
 	            {
-	                "ItemDef"   "4243"
+	                "ItemDef"   "9199"
 	            }
 	
 	            "Wearable3"
 	            {
-	                "ItemDef"   "6321"
+	                "ItemDef"   "6319"
+	            }
+	
+	            "Wearable4"
+	            {
+	                "ItemDef"   "6463"
 	            }
 	
 	        }
+	
 	
 	    }
 	
@@ -14676,22 +14666,22 @@
 	        {
 	            "Wearable1"
 	            {
-	                "ItemDef"   "204"
+	                "ItemDef"   "9521"
 	            }
 	
 	            "Wearable2"
 	            {
-	                "ItemDef"   "419"
+	                "ItemDef"   "8591"
 	            }
 	
 	            "Wearable3"
 	            {
-	                "ItemDef"   "203"
+	                "ItemDef"   "8592"
 	            }
 	
 	            "Wearable4"
 	            {
-	                "ItemDef"   "205"
+	                "ItemDef"   "9715"
 	            }
 	
 	        }
@@ -14803,7 +14793,7 @@
 	{
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/techies/techies.vmdl"
-		"ModelScale"	"0.7"
+		"ModelScale"	"0.5"
 		"SoundSet"	"Hero_Techies"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
 		"Level"	"1"
@@ -15068,21 +15058,15 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7408"
+					"ItemDef"	"4131"
 				}
 	
 				"Wearable2"
 				{
-					"ItemDef"	"36"
-				}
-	
-				"Wearable4"
-				{
-					"ItemDef"	"37"
+					"ItemDef"	"6471"
 				}
 	
 			}
-	
 		}
 	
 	}
