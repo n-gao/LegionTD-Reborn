@@ -49,6 +49,12 @@
             <Label id="SkipLabel" class="ButtonLabel" text="#Ready"/>
           </Button>
         </Panel>
+		<Panel hittest="false" class="SkipButtonPanel2">
+		<Button id="SkipButton" onactivate="OnSkipButtonPressed2()">
+            <Image src="file://{images}/custom_game/skipready.png" />
+			<Label id="SkipLabel" class="ButtonLabel2" text="You're Ready"/>
+		</Button>
+		</Panel>
         <Panel hitetst="true" id="ShopPanel">
           <Panel id="UpgradePanel">
             <Panel id="Upgrades"></Panel>
