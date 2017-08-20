@@ -70,14 +70,15 @@
                 "Support"           "0.0"
             }
         }
-        "AttachWearables"
-        {
-            "Wearable1" { "ItemDef" "6525" }
-            "Wearable2" { "ItemDef" "8009" }
-            "Wearable3" { "ItemDef" "6527" }
-            "Wearable4" { "ItemDef" "6528" }
-            "Wearable5" { "ItemDef" "6529" }
-            "Wearable6" { "ItemDef" "6537" }
-        }
+         "AttachWearables"
+	        {
+	            "Wearable1" { "ItemDef" "6525" }
+	            "Wearable2" { "ItemDef" "8009" }
+	            "Wearable3" { "ItemDef" "6527" }
+	            "Wearable4" { "ItemDef" "6528" }
+	            "Wearable5" { "ItemDef" "6529" }
+	            "Wearable6" { "ItemDef" "6537" }
+				"Wearable7"	{ "ItemDef"	"6543" }
+	        }
     }
 }

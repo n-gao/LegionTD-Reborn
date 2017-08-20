@@ -1,8 +1,8 @@
 "unit_lightning_ball"
 {
 	"BaseClass"	"npc_dota_creature"
-	"Model"	"models/heroes/phoenix/phoenix_spirit.vmdl"
-	"ModelScale"	"2"
+	"Model"	"models/items/courier/grim_wolf/grim_wolf.vmdl"
+	"ModelScale"	"1"
 	"SoundSet"	"Hero_Phoenix"
 	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts"
 	"Level"	"1"
