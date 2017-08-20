@@ -11,7 +11,6 @@ function OnEndHover() {
 }
 
 function OnUnitClicked() {
-	print("Try open shop ");
 	var panel = $.GetContextPanel();
 	var morePlayerInfos = GameUI.CustomUIConfig().morePlayerInfos[Players.GetLocalPlayer()];
 	if (Game.GetDOTATime(false, false) > panel.GetAttributeInt("nextUse", 0)) {

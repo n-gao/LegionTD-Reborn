@@ -30,7 +30,7 @@
 
     "Legion_AttackType"         "arcane"
     "Legion_DefendType"         "light"
-	"Legion_Fraction"		"assassin"
+    "Legion_Fraction"       "assassin"
 
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"

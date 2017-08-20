@@ -218,12 +218,12 @@ DOTAHud.IsBeforeGameplay.HUDFlipped #minimap_container
 
 #GlyphScanContainer
 {
-    margin-left: 244px;
+    /* margin-left: 244px;
     height: 280px;
     width: 10px;
 	background-image: url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex");
     vertical-align: bottom;
-    background-size: cover;
+    background-size: cover; */
 }
 
 #RoshanTimerContainer
