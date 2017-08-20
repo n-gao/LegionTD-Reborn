@@ -35,7 +35,7 @@ function CapitalizeFirstLetter(str) {
 
 function ToPercentage(str) {
     if (str === -1) return 0+'%';
-    var win_rate = parseFloat(str.replace(',','.'));
+    var win_rate = parseFloat(str == undefined ? "NaN" : str.replace(',','.'));
     if (win_rate === NaN)
         win_rate = 0;
     return Math.floor(win_rate*100)+'%';

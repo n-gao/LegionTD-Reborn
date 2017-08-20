@@ -203,10 +203,9 @@ function UpdateGold() {
 			icon.SetImage("file://{resources}/images/custom_game/spellicons/enchantress_natures_attendants.png");
 			break;
 			default:
-
 		}
 	}
 	AddUnits(GameUI.CustomUIConfig().units);
-	InitStatisticsOverlay();
 	InjectClock();
+	InitStatisticsOverlay();
 })();
