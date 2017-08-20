@@ -5,7 +5,6 @@
       <include src="file://{resources}/scripts/custom_game/selection_filter.js" />
   </scripts>
   <script>
-    $.Msg("hello world");
 		GameUI.CustomUIConfig().multiteam_top_scoreboard =
 		{
 			reorder_team_scores: true,
@@ -25,6 +24,8 @@
     GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_SHOP, false );
     GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_COURIER, false );
     GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_PROTECT, false );
+
+    GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_ITEMS, false ); 
 
     GameUI.CustomUIConfig().team_colors = {}
     GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_GOODGUYS] = "#38902d;";
