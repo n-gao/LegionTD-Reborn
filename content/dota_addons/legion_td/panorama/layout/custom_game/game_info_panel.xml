@@ -12,8 +12,8 @@
 			newPlayerPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_creator_panel.xml", false, false);
 		}
  
-		GameUI.CustomUIConfig().Programmers = [ "76561198027964324", "76561197993928301", "76561198020293120", "76561198076658426" ];
-		GameUI.CustomUIConfig().GameDesigners = [ "76561198027964324", "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120" ];
+		GameUI.CustomUIConfig().Programmers = [ "76561198027964324", "76561197993928301", "76561198020293120", "76561198076658426", "76561198249367546" ];
+		GameUI.CustomUIConfig().GameDesigners = [ "76561198027964324", "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120", "76561198249367546" ];
 		GameUI.CustomUIConfig().Creator = [ "76561198027964324" ];
 		GameUI.CustomUIConfig().Leaders = [ "76561198027964324" ];
 		GameUI.CustomUIConfig().PreviousLeaders = [ "76561197993928301" ];
