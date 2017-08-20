@@ -4,6 +4,8 @@
     <include src="file://{resources}/styles/custom_game/main_hud.css" />
     <include src="file://{resources}/styles/custom_game/statistics.css" />
     <include src="file://{resources}/styles/custom_game/shop.css" />
+	<include src="file://{resources}/styles/hud/hud_reborn.css" />
+	<include src="file://{resources}/styles/hud/dota_hud_buff.css" />
   </styles>
   <scripts>
     <include src="file://{resources}/scripts/custom_game/utils.js" />
