@@ -202,7 +202,7 @@
     "round_title"           "Duel_Quest_Title"
     "bounty"                "60"
   }
-
+ 
   "Round1"
   {
     "round_quest_title"     "Jo test"
@@ -533,6 +533,7 @@
       "UnitCount"           "1"
     }
   }
+  
   "Round31"
   {
     "round_quest_title"     "Jo test"
