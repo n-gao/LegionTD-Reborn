@@ -212,4 +212,9 @@ function UpdateGold() {
 	AddUnits(GameUI.CustomUIConfig().units);
 	InjectClock();
 	InitStatisticsOverlay();
+
+	GameUI.CustomUIConfig().dotaUi.FindChildTraverse("inventory").Children().forEach(function(element) {
+		element.style.visibility = "collapse";
+	});
+	$("#StatisticsButtonPanel").SetParent(GameUI.CustomUIConfig().dotaUi.FindChildTraverse("inventory"));
 })();

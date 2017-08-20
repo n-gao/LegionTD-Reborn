@@ -1,11 +1,12 @@
 #StatisticsButtonPanel {
-  width: 200px;
-  height: fit-children;
+  width: 100%;
+  height: 100%;
   vertical-align: bottom;
-  margin-bottom: 0px;
-  margin-left:	1118px;
+  horizontal-align: left;
+  margin-left:	0px;
   flow-children: down;
   transition: all 2s linear;
+  background-color: #AAAAAA00;
 }
 
 #StatisticsButtonPanel:hover {
