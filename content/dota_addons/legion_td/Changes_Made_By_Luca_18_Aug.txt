@@ -1,0 +1,39 @@
+Changes Made by Luca
+===========================================
+This Update focuses on the Visual Changes.
+===========================================
+
+## Misc Changes
+-------------------------------------------
+Removed Tower Showcase // Game Starts Instantly
+
+
+## Visuals.General
+-------------------------------------------
+Tweaked the Right Bottom Corner Info Panel. // Ready-Tango Shop - Gold panel.
+shop.css/.TangoCostPanel = transition-duration: 0.1s; to transition-duration: 0.2s; //Hover Duration Increased on the "Unit Panels"
+Added "You are Ready" Button. Appears after you pressed "Ready" // Thinking to add "Wave Started". https://im4.ezgif.com/tmp/ezgif-4-86c6864d0d.gif (Gif of the Change)
+
+
+## Visuals.Builder Unit Wearables
+-------------------------------------------
+Human Builder
+------------------
+Spearman: Added "Outland Ravager" Set rather than the old set. Weapon is still Spear. // http://imgur.com/a/jEQti
+Paladin: Added New Items. // 
+Gunner: Added new Items // http://imgur.com/a/aTu6Q
+Blademaster: Only Changed Weapon.
+Tactician: Only Changed Shield.
+
+Assassin Builder
+------------------
+Blood Drinker: Added Immortal Helmet Instead of Default Helmet
+Stealth Assassin: Off-Hand Wasn't defined, Fixed that. Now He has Off-Hand Weapon.
+Alpha Predator: Changed Weapon to Better One.
+
+
+Nature Builder
+------------------
+Broodmother: Added New Items.
+Very Big Bug: Added New Immortal Back.
+Iron Bear: Added Claws as 5th Item.

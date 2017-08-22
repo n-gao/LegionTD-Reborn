@@ -89,14 +89,14 @@
                 "Support"           "0.0"
             }
         }
-    "AttachWearables"
-    {
-      "Wearable1" { "ItemDef" "7420" } // "Shield of the Wurmblood"
-      "Wearable2" { "ItemDef" "7416" } // "Helm of the Wurmblood"
-      "Wearable3" { "ItemDef" "7418" } // "Gauntlets of the Wurmblood"
-      "Wearable4" { "ItemDef" "7419" } // "Tassets of the Wurmblood"
-      "Wearable5" { "ItemDef" "7417" } // "Cuirass of the Wurmblood"
-      "Wearable6" { "ItemDef" "7421" } // "Lance of the Wurmblood"
-    }
+   "AttachWearables"
+		{
+			"Wearable1" { "ItemDef" "9134" } // "Burning Shield of the Outland Ravager"
+			"Wearable2" { "ItemDef" "9132" } // "Helm of the Outland Ravager"
+			"Wearable3" { "ItemDef" "9130" } // "Bracers of the Outland Ravager"
+			"Wearable4" { "ItemDef" "9133" } // "Armor of the Outland Ravager"
+			"Wearable5" { "ItemDef" "9131" } // "Mantle of the Outland Ravager"
+			"Wearable6" { "ItemDef" "7421" } // "Lance of the Wurmblood"
+		}
     }
 }

@@ -87,6 +87,10 @@ function OnSkipButtonPressed() {
 	GameEvents.SendCustomGameEventToServer("skip_pressed", data);
 }
 
+function OnSkipButtonPressed2() {
+	$.GetContextPanel().SetHasClass("SkipPressed2", true);
+}
+
 function OnStatisticsButtonPressed() {
 	overlay.ToggleClass("ShowStatistics");
 } 
@@ -203,10 +207,14 @@ function UpdateGold() {
 			icon.SetImage("file://{resources}/images/custom_game/spellicons/enchantress_natures_attendants.png");
 			break;
 			default:
-
 		}
 	}
 	AddUnits(GameUI.CustomUIConfig().units);
-	InitStatisticsOverlay();
 	InjectClock();
+	InitStatisticsOverlay();
+
+	GameUI.CustomUIConfig().dotaUi.FindChildTraverse("inventory").Children().forEach(function(element) {
+		element.style.visibility = "collapse";
+	});
+	$("#StatisticsButtonPanel").SetParent(GameUI.CustomUIConfig().dotaUi.FindChildTraverse("inventory"));
 })();

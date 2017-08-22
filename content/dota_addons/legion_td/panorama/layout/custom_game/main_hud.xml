@@ -49,6 +49,12 @@
             <Label id="SkipLabel" class="ButtonLabel" text="#Ready"/>
           </Button>
         </Panel>
+		<Panel hittest="false" class="SkipButtonPanel2">
+		<Button id="SkipButton" onactivate="OnSkipButtonPressed2()">
+            <Image src="file://{images}/custom_game/skipready.png" />
+			<Label id="SkipLabel" class="ButtonLabel2" text="You're Ready"/>
+		</Button>
+		</Panel>
         <Panel hitetst="true" id="ShopPanel">
           <Panel id="UpgradePanel">
             <Panel id="Upgrades"></Panel>
@@ -68,13 +74,13 @@
 
       <Panel hitetst="false" id="StatisticsButtonPanel">
         <Button id="StatisticsButton" onactivate="OnStatisticsButtonPressed()">
-            <Panel id="UpperStatisticsButton">
+            <!-- <Panel id="UpperStatisticsButton">
               <Button id="MinimizeButton" onactivate="OnMinimizedButtonPressed()">
                   <Image src="file://{images}/custom_game/minimize_arrow.psd" id="MinimizeArrow"/>
               </Button>
               <Label id="StatisticsButtonLabel" class="ButtonLabel" text="#Statistics"/>
               <Image src="file://{images}/custom_game/statistics_arrow.psd" id="StatisticsArrow" />
-            </Panel>
+            </Panel> -->
             <Panel id="LowerStatisticsButton">
                 <Panel id="LegionLevelHook" style="horizontal-align: center;" />
                 <Panel id="LegionProgressHook" style="width: 100%;"/> 

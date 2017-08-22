@@ -1,10 +1,12 @@
 #StatisticsButtonPanel {
-  width: 300px;
-  height: fit-children;
+  width: 100%;
+  height: 100%;
   vertical-align: bottom;
-  margin-bottom: 275px;
+  horizontal-align: left;
+  margin-left:	0px;
   flow-children: down;
   transition: all 2s linear;
+  background-color: #AAAAAA00;
 }
 
 #StatisticsButtonPanel:hover {
@@ -89,41 +91,34 @@
 #UpperStatisticsButton {
   width: 300px;
   height: 40px;
-  background-color: #050505FE;
+  background-image: url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex");
   visibility: visible;
 }
 
 #StatisticsButtonLabel {
   width: 300px;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   vertical-align: center;
   margin-top: 5px;
-  margin-left: 35px;
 }
 
 #LowerStatisticsButton {
   width: 300px;
-  height: fit-children;
-  background-color: #111111F0;
+  height: 145px;
+  background-image: url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex");
+  background-size: 100%;	
   visibility: visible;
   flow-children: down;
-}
-
-#MinimizeButton {
-  height: 100%;
+  
 }
 
 #MinimizeArrow {
-  width: 18px;
-  height: 18px;
-  vertical-align: middle;
-  horizontal-align: left;
-  margin-left: 10px;
+  width: 0px;
+  height: 0px;
 }
 
 #LowerStatisticsButton.Minimized {
-  visibility: collapse;
 }
 
 #LowerStatisticsButton:not(Minimized) {

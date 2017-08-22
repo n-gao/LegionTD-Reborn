@@ -5,7 +5,6 @@
       <include src="file://{resources}/scripts/custom_game/selection_filter.js" />
   </scripts>
   <script>
-    $.Msg("hello world");
 		GameUI.CustomUIConfig().multiteam_top_scoreboard =
 		{
 			reorder_team_scores: true,
@@ -25,6 +24,9 @@
     GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_SHOP, false );
     GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_COURIER, false );
     GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_PROTECT, false );
+    
+    GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_SCAN, false );
+        GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_ITEMS, true ); 
 
     GameUI.CustomUIConfig().team_colors = {}
     GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_GOODGUYS] = "#38902d;";
@@ -33,11 +35,13 @@
     var newUI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
 
     newUI.FindChildTraverse("StatBranch").style.visibility = "collapse";
+
+    GameUI.CustomUIConfig().dotaUi = newUI;
   </script>
   <Panel>
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/main_hud.xml" />
     <CustomUIElement type="FlyoutScoreboard" layoutfile="file://{resources}/layout/custom_game/multiteam_flyout_scoreboard.xml" />
-		<CustomUIElement type="GameInfo" layoutfile="file://{resources}/layout/custom_game/game_info_panel.xml" />
+	<CustomUIElement type="GameInfo" layoutfile="file://{resources}/layout/custom_game/game_info_panel.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/barebones_notifications.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/waveinfo_notifications.xml" />
   </Panel>

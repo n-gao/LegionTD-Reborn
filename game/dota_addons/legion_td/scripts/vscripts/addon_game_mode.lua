@@ -41,4 +41,5 @@ end
 function Activate()
     GameRules.GameMode = GameMode()
     GameRules.GameMode:InitGameMode()
+	GameRules:SetShowcaseTime(0)
 end

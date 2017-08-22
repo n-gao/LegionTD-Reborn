@@ -89,13 +89,13 @@
                 "Support"           "0.0"
             }
         }
-    "AttachWearables"
-    {
-        "Wearable1" { "ItemDef" "6775" } // "Mask of the Bladesrunner"
-        "Wearable2" { "ItemDef" "6847" } // "Sword of the Bladesrunner"
-        "Wearable3" { "ItemDef" "6773" } // "Shoulders of the Bladesrunner"
-        "Wearable4" { "ItemDef" "6826" } // "Gloves of the Bladesrunner"
-        "Wearable5" { "ItemDef" "6774" } // "Belt of the Bladesrunner"
-    }
+     "AttachWearables"
+	    {
+	        "Wearable1" { "ItemDef" "6775" } // "Mask of the Bladesrunner"
+	        "Wearable2" { "ItemDef" "8986" } // "Sword of the Bladeform Aesthete"
+	        "Wearable3" { "ItemDef" "6773" } // "Shoulders of the Bladesrunner"
+	        "Wearable4" { "ItemDef" "6826" } // "Gloves of the Bladesrunner"
+	        "Wearable5" { "ItemDef" "6774" } // "Belt of the Bladesrunner"
+	    }
     }
 }

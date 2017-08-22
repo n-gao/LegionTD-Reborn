@@ -35,12 +35,13 @@
 #OuterShopPanel {
   horizontal-align: right;
   vertical-align: bottom;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 }
 
 #ShopPanel.ShopPanelVisible {
   transform: translatex(0px);
   visibility: visible;
+  opacity: 1;
 }
 
 #ShopPanel {
