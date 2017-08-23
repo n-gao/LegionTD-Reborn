@@ -23,22 +23,13 @@ function CommandEngine:CheckCommand(keys)
     end
 end
 
-function CommandEngine.init()
-    CommandEngine.initialized = true
-
-    if GameRules:IsCheatMode() then
-        CommandEngine.Commands.start = GameRules.GameMode.game.StartNextRoundCommand
-        CommandEngine.Commands.skip = CommandEngine.Commands.start
-    end
-end
-
 if GameRules:IsCheatMode() then
     function CommandEngine.Commands.tango(instance, submessage, keys)
         instance.vPlayers[keys.playerid + 1].player:AddTangos(tonumber(submessage) or 0)
     end
 
     function CommandEngine.Commands.reinitialize(instance, submessage, keys)
-        print("Reinitialized commands!")
+        print("Reinitializing commands!")
         dofile("commands")
     end
 
@@ -146,6 +137,15 @@ end
 
 function CommandEngine.Commands.infonext(instance, submessage, keys)
     CommandEngine.waveInfo(Game.gameRound + 1, keys.playerid)
+end
+
+function CommandEngine.init()
+    CommandEngine.initialized = true
+
+    if GameRules:IsCheatMode() then
+        CommandEngine.Commands.start = GameRules.GameMode.game.StartNextRoundCommand
+        CommandEngine.Commands.skip = CommandEngine.Commands.start
+    end
 end
 
 CommandEngine.Commands.gamemode = CommandEngine.Commands.settings
