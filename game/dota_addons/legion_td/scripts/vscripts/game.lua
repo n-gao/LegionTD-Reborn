@@ -216,32 +216,38 @@ end
 
 
 
---Liest Runden ein
 function Game:ReadRoundConfiguration(kv)
     self.rounds = {}
     self.doneDuels = 0
     self.lastWaveCount = 0
     local duelRoundCount = 0
+    local i = 1
     while true do
-        local roundName = string.format("Round%d", self:GetRoundCount() + 1 - duelRoundCount)
-        local roundData = kv[roundName]
-        if roundData == nil then
+        local roundData = kv["Rounds"][tostring(i)]
+        if not roundData then break end
+
+        local roundType = roundData["round_type"]
+        local roundObj
+
+        if roundType == "wave" then
+            roundObj = GameRound()
+            roundObj:ReadRoundConfiguration(roundData, self:GetRoundCount() + 1 - duelRoundCount)
+        elseif roundType == "duel" then
+            roundObj = DuelRound.new(roundData, self:GetRoundCount() + 1, false)
+            duelRoundCount = duelRoundCount + 1
+        else
+            print("FATAL ERROR: Reading rounds, could not read round type")
             return
         end
-        local roundObj = GameRound()
-        roundObj:ReadRoundConfiguration(roundData, self:GetRoundCount() + 1 - duelRoundCount)
+
         table.insert(self.rounds, roundObj)
-        if self:GetRoundCount() % 5 == duelRoundCount then
-            local duelRoundName = "DuelRound" .. (duelRoundCount + 1)
-            local duelRoundData = kv[duelRoundName]
-            if duelRoundData then
-                table.insert(self.rounds, DuelRound.new(duelRoundData, self:GetRoundCount() + 1, false))
-                duelRoundCount = duelRoundCount + 1
-            end
-        end
-        print("Round " .. self:GetRoundCount() .. " loaded")
+
+        print("Round " .. i .. " loaded: " .. roundType)
+        i = i + 1
     end
 end
+
+
 
 function Game:GetRoundCount()
     return table.count(self.rounds)

@@ -172,377 +172,440 @@
     }
   }
 
-  "DuelRound1"
+  "Rounds"
   {
-    "round_title"           "Duel_Quest_Title"
-    "bounty"                "2"
-  }
-  "DuelRound2"
-  {
-    "round_title"           "Duel_Quest_Title"
-    "bounty"                "10"
-  }
-  "DuelRound3"
-  {
-    "round_title"           "Duel_Quest_Title"
-    "bounty"                "20"
-  }
-  "DuelRound4"
-  {
-    "round_title"           "Duel_Quest_Title"
-    "bounty"                "30"
-  }
-  "DuelRound5"
-  {
-    "round_title"           "Duel_Quest_Title"
-    "bounty"                "45"
-  }
-  "DuelRound6"
-  {
-    "round_title"           "Duel_Quest_Title"
-    "bounty"                "60"
-  }
- 
-  "Round1"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_donkey"
-    "bounty"                "13"
-    "Unit"
+    "1"                       // Wave 1
     {
-      "NPCName"             "unit_donkey"
-      "UnitCount"           "12"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_donkey"
+      "bounty"                "13"
+      "Unit"
+      {
+        "NPCName"             "unit_donkey"
+        "UnitCount"           "12"
+      }
     }
-  }
-  "Round2"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_unicorn"
-    "bounty"                "15"
-    "Unit"
+
+    "2"                       // Wave 2
     {
-      "NPCName"             "unit_unicorn"
-      "UnitCount"           "15"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_unicorn"
+      "bounty"                "15"
+      "Unit"
+      {
+        "NPCName"             "unit_unicorn"
+        "UnitCount"           "15"
+      }
     }
-  }
-  "Round3"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_space_cow"
-    "bounty"                "17"
-    "Unit"
+
+    "3"                       // Wave 3
     {
-      "NPCName"             "unit_space_cow"
-      "UnitCount"           "15"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_space_cow"
+      "bounty"                "17"
+      "Unit"
+      {
+        "NPCName"             "unit_space_cow"
+        "UnitCount"           "15"
+      }
     }
-  }
-  "Round4"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_gatling_sniper"
-    "bounty"                "18"
-    "Unit"
+
+    "4"                       // Wave 4
     {
-      "NPCName"             "unit_gatling_sniper"
-      "UnitCount"           "12"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_gatling_sniper"
+      "bounty"                "18"
+      "Unit"
+      {
+        "NPCName"             "unit_gatling_sniper"
+        "UnitCount"           "12"
+      }
     }
-  }
-  "Round5"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_lightning_ball"
-    "bounty"                "22"
-    "Unit"
+
+    "5"                       // Wave 5
     {
-      "NPCName"             "unit_lightning_ball"
-      "UnitCount"           "12"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_lightning_ball"
+      "bounty"                "22"
+      "Unit"
+      {
+        "NPCName"             "unit_lightning_ball"
+        "UnitCount"           "12"
+      }
     }
-  }
-  "Round6"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_predator"
-    "bounty"                "22"
-    "Unit"
+
+    "6"                       // Duel 1
     {
-      "NPCName"             "unit_predator"
-      "UnitCount"           "12"
+      "round_type"            "duel"
+      "round_title"           "Duel_Quest_Title"
+      "bounty"                "2"
     }
-  }
-  "Round7"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_assassins"
-    "bounty"                "23"
-    "Unit"
+
+    "7"                       // Wave 6
     {
-      "NPCName"             "unit_assassins"
-      "UnitCount"           "12"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_predator"
+      "bounty"                "22"
+      "Unit"
+      {
+        "NPCName"             "unit_predator"
+        "UnitCount"           "12"
+      }
     }
-  }
-  "Round8"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_hydra"
-    "bounty"                "25"
-    "Unit"
+
+    "8"                       // Wave 7
     {
-      "NPCName"             "unit_hydra"
-      "UnitCount"           "11"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_assassins"
+      "bounty"                "23"
+      "Unit"
+      {
+        "NPCName"             "unit_assassins"
+        "UnitCount"           "12"
+      }
     }
-  }
-  "Round9"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_not_lifestealer"
-    "bounty"                "27"
-    "Unit"
+
+    "9"                       // Wave 8
     {
-      "NPCName"             "unit_not_lifestealer"
-      "UnitCount"           "12"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_hydra"
+      "bounty"                "25"
+      "Unit"
+      {
+        "NPCName"             "unit_hydra"
+        "UnitCount"           "11"
+      }
     }
-  }
-  "Round10"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_fatty"
-    "bounty"                "28"
-    "Unit"
+
+    "10"                      // Wave 9
     {
-      "NPCName"             "unit_fatty"
-      "UnitCount"           "1"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_not_lifestealer"
+      "bounty"                "27"
+      "Unit"
+      {
+        "NPCName"             "unit_not_lifestealer"
+        "UnitCount"           "12"
+      }
     }
-  }
-  "Round11"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_little_fishy"
-    "bounty"                "30"
-    "Unit"
+
+    "11"                      // Wave 10
     {
-      "NPCName"             "unit_little_fishy"
-      "UnitCount"           "18"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_fatty"
+      "bounty"                "28"
+      "Unit"
+      {
+        "NPCName"             "unit_fatty"
+        "UnitCount"           "1"
+      }
     }
-  }
-  "Round12"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_zombie"
-    "bounty"                "32"
-    "Unit"
+
+    "12"                      // Duel 2
     {
-      "NPCName"             "unit_zombie"
-      "UnitCount"           "15"
+      "round_type"            "duel"
+      "round_title"           "Duel_Quest_Title"
+      "bounty"                "10"
     }
-  }
-  "Round13"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_tidehunter"
-    "bounty"                "33"
-    "Unit"
+
+    "13"                      // Wave 11
     {
-      "NPCName"             "unit_tidehunter"
-      "UnitCount"           "14"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_little_fishy"
+      "bounty"                "30"
+      "Unit"
+      {
+        "NPCName"             "unit_little_fishy"
+        "UnitCount"           "18"
+      }
     }
-  }
-  "Round14"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_abaddon"
-    "bounty"                "35"
-    "Unit"
+
+    "14"                      // Wave 12
     {
-      "NPCName"             "unit_abaddon"
-      "UnitCount"           "7"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_zombie"
+      "bounty"                "32"
+      "Unit"
+      {
+        "NPCName"             "unit_zombie"
+        "UnitCount"           "15"
+      }
     }
-  }
-  "Round15"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_enchantress"
-    "bounty"                "37"
-    "Unit"
+
+    "15"                      // Wave 13
     {
-      "NPCName"             "unit_enchantress"
-      "UnitCount"           "12"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_tidehunter"
+      "bounty"                "33"
+      "Unit"
+      {
+        "NPCName"             "unit_tidehunter"
+        "UnitCount"           "14"
+      }
     }
-  }
-  "Round16"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_techies"
-    "bounty"                "70"
-    "Unit"
+
+    "16"                      // Wave 14
     {
-      "NPCName"             "unit_techies"
-      "UnitCount"           "15"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_abaddon"
+      "bounty"                "35"
+      "Unit"
+      {
+        "NPCName"             "unit_abaddon"
+        "UnitCount"           "7"
+      }
     }
-  }
-  "Round17"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_chaos"
-    "bounty"                "40"
-    "Unit"
+
+    "17"                      // Wave 15
     {
-      "NPCName"             "unit_chaos"
-      "UnitCount"           "13"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_enchantress"
+      "bounty"                "37"
+      "Unit"
+      {
+        "NPCName"             "unit_enchantress"
+        "UnitCount"           "12"
+      }
     }
-  }
-  "Round18"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_phantom"
-    "bounty"                "42"
-    "Unit"
+
+    "18"                      // Duel 3
     {
-      "NPCName"             "unit_phantom"
-      "UnitCount"           "15"
+      "round_type"            "duel"
+      "round_title"           "Duel_Quest_Title"
+      "bounty"                "20"
     }
-  }
-  "Round19"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_necro_replacement"
-    "bounty"                "43"
-    "Unit"
+
+    "19"                      // Wave 16
     {
-      "NPCName"             "unit_necro_replacement"
-      "UnitCount"           "12"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_techies"
+      "bounty"                "70"
+      "Unit"
+      {
+        "NPCName"             "unit_techies"
+        "UnitCount"           "15"
+      }
     }
-  }
-  "Round20"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_king"
-    "bounty"                "45"
-    "Unit"
+
+    "20"                      // Wave 17
     {
-      "NPCName"             "unit_king"
-      "UnitCount"           "1"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_chaos"
+      "bounty"                "40"
+      "Unit"
+      {
+        "NPCName"             "unit_chaos"
+        "UnitCount"           "13"
+      }
     }
-  }
-  "Round21"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_templer"
-    "bounty"                "46"
-    "Unit"
+
+    "21"                      // Wave 18
     {
-      "NPCName"             "unit_templer"
-      "UnitCount"           "12"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_phantom"
+      "bounty"                "42"
+      "Unit"
+      {
+        "NPCName"             "unit_phantom"
+        "UnitCount"           "15"
+      }
     }
-  }
-  "Round22"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_earthspirit"
-    "bounty"                "48"
-    "Unit"
+
+    "22"                      // Wave 19
     {
-      "NPCName"             "unit_earthspirit"
-      "UnitCount"           "15"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_necro_replacement"
+      "bounty"                "43"
+      "Unit"
+      {
+        "NPCName"             "unit_necro_replacement"
+        "UnitCount"           "12"
+      }
     }
-  }
-  "Round23"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_kunkka"
-    "bounty"                "51"
-    "Unit"
+
+    "23"                      // Wave 20
     {
-      "NPCName"             "unit_kunkka"
-      "UnitCount"           "10"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_king"
+      "bounty"                "45"
+      "Unit"
+      {
+        "NPCName"             "unit_king"
+        "UnitCount"           "1"
+      }
     }
-  }
-  "Round24"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_huskar"
-    "bounty"                "51"
-    "Unit"
+
+    "24"                      // Duel 4
     {
-      "NPCName"             "unit_huskar"
-      "UnitCount"           "12"
+      "round_type"            "duel"
+      "round_title"           "Duel_Quest_Title"
+      "bounty"                "30"
     }
-  }
-  "Round25"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_tiny"
-    "bounty"                "52"
-    "Unit"
+
+    "25"                      // Wave 21
     {
-      "NPCName"             "unit_tiny"
-      "UnitCount"           "15"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_templer"
+      "bounty"                "46"
+      "Unit"
+      {
+        "NPCName"             "unit_templer"
+        "UnitCount"           "12"
+      }
     }
-  }
-  "Round26"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_drunken"
-    "bounty"                "54"
-    "Unit"
+
+    "26"                      // Wave 22
     {
-      "NPCName"             "unit_drunken"
-      "UnitCount"           "14"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_earthspirit"
+      "bounty"                "48"
+      "Unit"
+      {
+        "NPCName"             "unit_earthspirit"
+        "UnitCount"           "15"
+      }
     }
-  }
-  "Round27"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_deathprophet"
-    "bounty"                "55"
-    "Unit"
+
+    "27"                      // Wave 23
     {
-      "NPCName"             "unit_deathprophet"
-      "UnitCount"           "3"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_kunkka"
+      "bounty"                "51"
+      "Unit"
+      {
+        "NPCName"             "unit_kunkka"
+        "UnitCount"           "10"
+      }
     }
-  }
-  "Round28"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_rubick"
-    "bounty"                "57"
-    "Unit"
+
+    "28"                      // Wave 24
     {
-      "NPCName"             "unit_rubick"
-      "UnitCount"           "15"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_huskar"
+      "bounty"                "51"
+      "Unit"
+      {
+        "NPCName"             "unit_huskar"
+        "UnitCount"           "12"
+      }
     }
-  }
-  "Round29"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_ogre"
-    "bounty"                "58"
-    "Unit"
+
+    "29"                      // Wave 25
     {
-      "NPCName"             "unit_ogre"
-      "UnitCount"           "12"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_tiny"
+      "bounty"                "52"
+      "Unit"
+      {
+        "NPCName"             "unit_tiny"
+        "UnitCount"           "15"
+      }
     }
-  }
-  "Round30"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_dragon"
-    "bounty"                "60"
-    "Unit"
+
+    "30"                      // Duel 5
     {
-      "NPCName"             "unit_dragon"
-      "UnitCount"           "1"
+      "round_type"            "duel"
+      "round_title"           "Duel_Quest_Title"
+      "bounty"                "45"
     }
-  }
-  
-  "Round31"
-  {
-    "round_quest_title"     "Jo test"
-    "round_title"           "wavetitle_chen"
-    "bounty"                "61"
-    "Unit"
+
+    "31"                      // Wave 26
     {
-      "NPCName"             "unit_chen"
-      "UnitCount"           "12"
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_drunken"
+      "bounty"                "54"
+      "Unit"
+      {
+        "NPCName"             "unit_drunken"
+        "UnitCount"           "14"
+      }
+    }
+    "32"                      // Wave 27
+    {
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_deathprophet"
+      "bounty"                "55"
+      "Unit"
+      {
+        "NPCName"             "unit_deathprophet"
+        "UnitCount"           "3"
+      }
+    }
+    "33"                      // Wave 28
+    {
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_rubick"
+      "bounty"                "57"
+      "Unit"
+      {
+        "NPCName"             "unit_rubick"
+        "UnitCount"           "15"
+      }
+    }
+    "34"                      // Wave 29
+    {
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_ogre"
+      "bounty"                "58"
+      "Unit"
+      {
+        "NPCName"             "unit_ogre"
+        "UnitCount"           "12"
+      }
+    }
+    "35"                      // Wave 30
+    {
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_dragon"
+      "bounty"                "60"
+      "Unit"
+      {
+        "NPCName"             "unit_dragon"
+        "UnitCount"           "1"
+      }
+    }
+
+    "36"                      // Wave 31
+    {
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_chen"
+      "bounty"                "61"
+      "Unit"
+      {
+        "NPCName"             "unit_chen"
+        "UnitCount"           "12"
+      }
     }
   }
 }
