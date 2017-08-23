@@ -255,6 +255,12 @@ end
 
 
 
+function Game:GetCurrentWaveNumber()
+    return self.gameRound - self.doneDuels - self.lastWaveCount
+end
+
+
+
 function Game:GetTangoLimit()
     if (voteOptions["tango_limit"]) then
         return START_TANGO_LIMIT + self.gameRound * TANGO_LIMIT_PER_ROUND
@@ -393,7 +399,7 @@ function Game:SetWaitTime()
     end
     self.nextRoundTime = GameRules:GetGameTime() + waitTime
 
-    CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels - self.lastWaveCount })
+    CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self:GetCurrentWaveNumber() })
     self:RespawnUnits()
     print("Time to next Round: " .. waitTime)
 end
@@ -1106,7 +1112,7 @@ function Game:SkipWait()
     --self:EndQuest()
     --self.quest.finished = 0
     Timers:CreateTimer(0.3, function()
-     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels - self.lastWaveCount }) end)
+     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self:GetCurrentWaveNumber() }) end)
 end
 
 function Game:DistributeMissedTangos(missedTime)

@@ -30,16 +30,16 @@ end
 
 function assassinbuilder_frenzy:OnAbilityPhaseStart(  )
 	if IsServer() then
-		local Game = GameRules.GameMode.game
-		if self.cooldown == nil or self.cooldown <= GameRules.GameMode.game.gameRound - GameRules.GameMode.game.doneDuels then
-			if not Game:IsBetweenRounds() then
+		local game = GameRules.GameMode.game
+		if self.cooldown == nil or self.cooldown <= game.gameRound - game.doneDuels then
+			if not game:IsBetweenRounds() then
 				return true
 			else
 				self:GetCaster().player:SendErrorCode(LEGION_ERROR_BETWEEN_ROUNDS)
 				return false
 			end
 		else
-			local message = (self.cooldown - (GameRules.GameMode.game.gameRound - GameRules.GameMode.game.doneDuels)).." rounds left on cooldown"
+			local message = (self.cooldown - (game.gameRound - game.doneDuels)).." rounds left on cooldown"
 			local playerID = self:GetCaster():GetPlayerID()
 			Notifications:ClearBottom(playerID)
 			Notifications:Bottom(playerID, {text=message, duration=5, style={color="red", ["font-size"]="30px"}})
@@ -53,6 +53,7 @@ end
 function assassinbuilder_frenzy:OnSpellStart()
 	if IsServer() then
 		local caster = self:GetCaster()
+		local game = GameRules.GameMode.game
 		for i,v in pairs(self.player.units) do
 			if not v.npc:IsNull() and v.npc:IsAlive() then
 				local mod = v.npc:AddNewModifier(self.player.hero, self, "modifier_assassinbuilder_frenzy", {duration = self:GetSpecialValueFor("duration")})
@@ -61,7 +62,7 @@ function assassinbuilder_frenzy:OnSpellStart()
 		end
 		local mod = self.player.hero:AddNewModifier(self.player.hero, self, "modifier_assassinbuilder_frenzy", {duration = self:GetSpecialValueFor("duration")})
 		mod.ability = self
-		self.cooldown = GameRules.GameMode.game.gameRound - GameRules.GameMode.game.doneDuels + self:GetSpecialValueFor("cooldown")
+		self.cooldown = game.gameRound - game.doneDuels + self:GetSpecialValueFor("cooldown")
 		self.player.hero:AddNewModifier(self.player.hero, self, "modifier_assassinbuilder_frenzy_cooldown", {})
 		return true
 	else
@@ -147,8 +148,9 @@ end
 
 function modifier_assassinbuilder_frenzy_cooldown:OnIntervalThink()
 	if (IsServer()) then
+		local game = GameRules.GameMode.game
 		local ability = self:GetAbility()
-		local cooldown = ability.cooldown - (GameRules.GameMode.game.gameRound - GameRules.GameMode.game.doneDuels)
+		local cooldown = ability.cooldown - (game.gameRound - game.doneDuels)
 		if cooldown < 1 then 
 			cooldown = 0
 		else
