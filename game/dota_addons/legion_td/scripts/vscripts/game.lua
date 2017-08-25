@@ -402,9 +402,6 @@ end
 
 --Runde beendet
 function Game:RoundFinished()
-    if (voteOptions["fog_of_war"]) then
-        mode:SetFogOfWarDisabled(false)
-    end
     self.gridBoxes:RemoveEffects(EF_NODRAW)
     if not self.gameTimer then
         self:CreateGameTimer()
@@ -521,6 +518,9 @@ end
 
 --Sorgt dafür dass die Zeit aktualisiert Wird
 function Game:Initialize()
+    if (voteOptions["fog_of_war"]) then
+        mode:SetFogOfWarDisabled(false)
+    end
     Timers:CreateTimer(0, function()
         local time = GameRules:GetGameTime()
         local minutes = math.floor(time / 60)
