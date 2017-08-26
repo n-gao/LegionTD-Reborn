@@ -231,7 +231,7 @@ function Game:ReadRoundConfiguration(kv)
 
         if roundType == "wave" then
             roundObj = GameRound()
-            roundObj:ReadRoundConfiguration(roundData, self:GetRoundCount() + 1 - duelRoundCount)
+            roundObj:ReadRoundConfiguration(roundData, self, self:GetRoundCount() + 1 - duelRoundCount)
         elseif roundType == "duel" then
             roundObj = DuelRound.new(roundData, self:GetRoundCount() + 1, false)
             duelRoundCount = duelRoundCount + 1
