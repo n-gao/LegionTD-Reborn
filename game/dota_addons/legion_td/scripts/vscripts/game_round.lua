@@ -4,8 +4,9 @@ end
 
 
 --Liest Rundeninfos ein
-function GameRound:ReadRoundConfiguration(kv, roundNumber)
+function GameRound:ReadRoundConfiguration(kv, game, roundNumber)
     self.roundNumber = roundNumber
+    self.game = game
     self.roundQuestTitle = kv.round_quest_title or "Kaputt"
     self.roundTitle = kv.round_title or "Kaputt"
     self.bounty = kv.bounty
@@ -33,8 +34,8 @@ function GameRound:Begin()
         ListenToGameEvent("entity_killed", Dynamic_Wrap(GameRound, "OnEntityKilled"), self)
     }
     self.unstuckTimer = Timers:CreateTimer(180, function()
-        if Game:GetCurrentRound() == self then
-            Game:ClearBoard()
+        if self.game:GetCurrentRound() == self then
+            self.game:ClearBoard()
             print("Unstuck")
         end
     end)
@@ -54,7 +55,7 @@ function GameRound:End()
     if Timers.timers[self.unstuckTimer] then Timers.timers[self.unstuckTimer] = nil end
     self.unstuckTimer = nil
     self.EventHandles = {}
-    Game:RoundFinished()
+    self.game:RoundFinished()
 end
 
 
