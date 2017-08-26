@@ -6,6 +6,15 @@ CommandEngine.prefix = "-"
 CommandEngine.Variables.waveKV = LoadKeyValues("scripts/maps/" .. GetMapName() .. ".txt")
 CommandEngine.Variables.damageKV = LoadKeyValues("scripts/damage_table.kv")
 
+function CommandEngine.init()
+    CommandEngine.initialized = true
+
+    if GameRules:IsCheatMode() then
+        CommandEngine.Commands.start = GameRules.GameMode.game.StartNextRoundCommand
+        CommandEngine.Commands.skip = CommandEngine.Commands.start
+    end
+end
+
 function CommandEngine:CheckCommand(keys)
     if not CommandEngine.initialized then CommandEngine.init() end
     if string.sub(keys.text, 1, #CommandEngine.prefix) then
@@ -18,34 +27,8 @@ function CommandEngine:CheckCommand(keys)
 
         if CommandEngine.Commands[command] then
             CommandEngine.Commands[command](self, submessage, keys)
-            print("PlayerID: " .. keys.playerid .. " ran command " .. keys.text)
+            print("PlayerID " .. keys.playerid .. " ran command " .. keys.text)
         end
-    end
-end
-
-if GameRules:IsCheatMode() then
-    function CommandEngine.Commands.tango(instance, submessage, keys)
-        instance.vPlayers[keys.playerid + 1].player:AddTangos(tonumber(submessage) or 0)
-    end
-
-    function CommandEngine.Commands.reinitialize(instance, submessage, keys)
-        print("Reinitializing commands!")
-        dofile("commands")
-    end
-
-    -- Fill this with whatever, used for testing (accompanied by reinitialize)
-    function CommandEngine.Commands.test(instance, submessage, keys)
-    end
-end
-
-function CommandEngine.Commands.settings(instance, submessage, keys)
-    if CommandEngine.Variables.settingsCooldown then return end
-    CommandEngine.Variables.settingsCooldown = true
-    resettimer = Timers:CreateTimer(30, function() CommandEngine.Variables.settingsCooldown = false end)
-
-    Say(nil, "Current settings:", false)
-    for i, v in pairs(voteOptions) do
-        Say(nil, i .. " : " .. tostring(v), false)
     end
 end
 
@@ -121,7 +104,7 @@ function CommandEngine.waveInfo(waveNum, playerid)
         table.insert(lines, line)
     end
 
-    player = PlayerResource:GetPlayer(playerid)
+    local player = PlayerResource:GetPlayer(playerid)
     for i, v in pairs(lines) do
         CustomGameEventManager:Send_ServerToPlayer(player, "waveinfo_notification", { text = v, duration = 15, style = { color = "black", ["font-size"] = "25px", ["line-height"] = "0px" } })
     end
@@ -139,12 +122,34 @@ function CommandEngine.Commands.infonext(instance, submessage, keys)
     CommandEngine.waveInfo(Game.gameRound + 1, keys.playerid)
 end
 
-function CommandEngine.init()
-    CommandEngine.initialized = true
+function CommandEngine.Commands.settings(instance, submessage, keys)
+    if CommandEngine.Variables.settingsCooldown then return end
+    CommandEngine.Variables.settingsCooldown = true
+    local resettimer = Timers:CreateTimer(30, function() CommandEngine.Variables.settingsCooldown = false end)
 
-    if GameRules:IsCheatMode() then
-        CommandEngine.Commands.start = GameRules.GameMode.game.StartNextRoundCommand
-        CommandEngine.Commands.skip = CommandEngine.Commands.start
+    Say(nil, "Current settings:", false)
+    for i, v in pairs(voteOptions) do
+        Say(nil, i .. " : " .. tostring(v), false)
+    end
+end
+
+if GameRules:IsCheatMode() then
+    function CommandEngine.Commands.tango(instance, submessage, keys)
+        instance.vPlayers[keys.playerid + 1].player:AddTangos(tonumber(submessage) or 0)
+    end
+
+    function CommandEngine.Commands.reinitialize(instance, submessage, keys)
+        print("Reinitializing commands!")
+        dofile("commands")
+    end
+
+    -- Fill this with whatever, used for testing (accompanied by reinitialize)
+    function CommandEngine.Commands.test(instance, submessage, keys)
+    end
+
+    function CommandEngine.Commands.setwave(instance, submessage, keys)
+        local i = tonumber(submessage)
+        GameRules.GameMode.game:SetNextRound(i)
     end
 end
 

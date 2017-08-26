@@ -992,6 +992,14 @@ end
 
 
 
+function Game:SetNextRound(i)
+    self:GetCurrentRound():KillAll()
+    self.gameRound = i
+    Timers.CreateTimer(0.3, function() self:SkipWait() end)
+end
+
+
+
 function Game:StartNextRoundCommand()
     Game:ClearBoard()
     Game:RespawnUnits()
