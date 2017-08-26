@@ -48,6 +48,7 @@ function DuelRound:Begin()
     if Game.doneDuels >= 6 then
         self:PlaceKings()
     end
+    self:CheckEnd()
 end
 
 
