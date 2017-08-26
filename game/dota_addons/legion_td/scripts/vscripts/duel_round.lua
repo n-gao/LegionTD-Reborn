@@ -6,13 +6,9 @@ DuelRound.doneRounds = {}
 
 function DuelRound.new(data, roundNumber, determinWinner)
     local self = DuelRound()
-    if data then
-        self.roundTitle = data.round_title
-        self.bounty = data.bounty
-    else
-        self.roundTitle = "Final Round"
-        self.bounty = 0
-    end
+    self.roundTitle = data.round_title
+    self.bounty = data.bounty
+    self.final_duel = (data.determines_winner == "true")
     self.isDuelRound = true
     self.winningTeam = DOTA_TEAM_NOTEAM
     self.remainingUnitsRadiant = {}
@@ -45,7 +41,7 @@ function DuelRound:Begin()
     end
     Game.doneDuels = Game.doneDuels + 1
     self:PlaceUnits()
-    if Game.doneDuels >= 6 then
+    if voteOptions["final_duel"] and self.final_duel then
         self:PlaceKings()
     end
     self:CheckEnd()

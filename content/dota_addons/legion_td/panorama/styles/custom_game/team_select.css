@@ -19,7 +19,7 @@
 
 #OptionList
 {
-  width: 300px;
+  width: 400px;
   height: 100%;
   flow-children: down;
   padding-left: 16px;
@@ -34,7 +34,7 @@
 #OptionListGroup
 {
   width: 90%;
-  height: 200px;
+  height: 220px;
 
   padding: 8px;
   background-color: #111111EE;

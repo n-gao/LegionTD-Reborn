@@ -243,6 +243,7 @@
     {
       "round_type"            "duel"
       "round_title"           "Duel_Quest_Title"
+      "determines_winner"     "false"
       "bounty"                "2"
     }
 
@@ -315,6 +316,7 @@
     {
       "round_type"            "duel"
       "round_title"           "Duel_Quest_Title"
+      "determines_winner"     "false"
       "bounty"                "10"
     }
 
@@ -387,6 +389,7 @@
     {
       "round_type"            "duel"
       "round_title"           "Duel_Quest_Title"
+      "determines_winner"     "false"
       "bounty"                "20"
     }
 
@@ -459,6 +462,7 @@
     {
       "round_type"            "duel"
       "round_title"           "Duel_Quest_Title"
+      "determines_winner"     "false"
       "bounty"                "30"
     }
 
@@ -531,6 +535,7 @@
     {
       "round_type"            "duel"
       "round_title"           "Duel_Quest_Title"
+      "determines_winner"     "false"
       "bounty"                "45"
     }
 
@@ -599,6 +604,7 @@
     {
       "round_type"            "duel"
       "round_title"           "Duel_Quest_Title"
+      "determines_winner"     "true"
       "bounty"                "150"
     }
 
