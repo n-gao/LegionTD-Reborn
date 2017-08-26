@@ -35,7 +35,7 @@ function DuelRound:Begin()
     if not winningCondition then
         self.unstuckTimer = Timers:CreateTimer(240, function()
             if Game:GetCurrentRound() == self then
-                Game:ClearBoard()
+                self:End()
                 print("Unstuck")
             end
         end)
