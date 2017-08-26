@@ -781,7 +781,7 @@ function Game:SendUnit(data)
         player:AddIncome(lData.income)
         local spawn = player:GetIncomeSpawner():GetAbsOrigin()
         local team = player:GetTeamNumber()
-        local name = Unit.GetUnitNameByID(lData.id)
+        local name = Unit:GetUnitNameByID(lData.id)
         player:SendUnit(name)
         local unit = CreateUnitByName(name, spawn, true, nil, nil, team)
         unit.tangoValue = lData.cost
