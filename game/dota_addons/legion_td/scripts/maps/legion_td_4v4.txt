@@ -595,7 +595,14 @@
       }
     }
 
-    "36"                      // Wave 31
+    "36"                      // Duel 6
+    {
+      "round_type"            "duel"
+      "round_title"           "Duel_Quest_Title"
+      "bounty"                "150"
+    }
+
+    "37"                      // Wave 31
     {
       "round_type"            "wave"
       "round_quest_title"     "Jo test"
