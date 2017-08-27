@@ -233,7 +233,7 @@ function Game:ReadRoundConfiguration(kv)
             roundObj = GameRound()
             roundObj:ReadRoundConfiguration(roundData, self, self:GetRoundCount() + 1 - duelRoundCount)
         elseif roundType == "duel" then
-            roundObj = DuelRound.new(roundData, self:GetRoundCount() + 1, false)
+            roundObj = DuelRound.new(roundData, self, self:GetRoundCount() + 1)
             duelRoundCount = duelRoundCount + 1
         else
             print("FATAL ERROR: Reading rounds, could not read round type")
