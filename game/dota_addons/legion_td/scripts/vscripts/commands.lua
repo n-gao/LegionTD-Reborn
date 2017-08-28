@@ -33,13 +33,25 @@ function CommandEngine:CheckCommand(keys)
 end
 
 function CommandEngine.waveInfo(waveNum, playerid)
-    if waveNum == nil then return end
-    if #Game.rounds < waveNum then return end
+    local waveKV = CommandEngine.Variables.waveKV.Rounds
+    if waveNum == nil then print("waveInfo canceled: index nil") return end
+    if #Game.rounds <= waveNum then print("waveInfo canceled: index out of bounds") return end
+    
+    local roundNum = waveNum
+    local i = 1
+    while i <= roundNum do
+        if Game.rounds[i].isDuelRound then
+            roundNum = roundNum + 1
+            if #Game.rounds <= roundNum then print("waveInfo canceled: index out of bounds") return end
+        end
+        i = i + 1
+    end
+    print("waveInfo: "..roundNum)
 
-    local name = CommandEngine.Variables.waveKV["Round" .. tostring(waveNum)]["Unit"]["NPCName"]
-    local amount = CommandEngine.Variables.waveKV["Round" .. tostring(waveNum)]["Unit"]["UnitCount"] or 0
+    local name = waveKV[tostring(roundNum)]["Unit"]["NPCName"]
+    local amount = waveKV[tostring(roundNum)]["Unit"]["UnitCount"] or 0
 
-    local wavebounty = CommandEngine.Variables.waveKV["Round" .. tostring(waveNum)]["bounty"] or 0
+    local wavebounty = waveKV[tostring(roundNum)]["bounty"] or 0
     local unitbounty = Game.UnitKV[name]["BountyGoldMin"] or 0
     local total = tonumber(wavebounty) + (tonumber(unitbounty) * tonumber(amount))
 
@@ -65,7 +77,7 @@ function CommandEngine.waveInfo(waveNum, playerid)
     end
 
     local lines = {
-        "Wave " .. tostring(waveNum) .. ":",
+        "Wave " .. waveNum .. ":",
         amount .. "x " .. name .. " (" .. attackType .. " / " .. defendType .. ")",
         "Total " .. total .. " Gold (" .. wavebounty .. "g + " .. amount .. "x " .. unitbounty .. "g)",
         "Health: " .. health .. " Armor: " .. armor,
@@ -115,11 +127,11 @@ function CommandEngine.Commands.wave(instance, submessage, keys)
 end
 
 function CommandEngine.Commands.info(instance, submessage, keys)
-    CommandEngine.waveInfo(Game.gameRound, keys.playerid)
+    CommandEngine.waveInfo(Game:GetCurrentWaveNumber(), keys.playerid)
 end
 
 function CommandEngine.Commands.infonext(instance, submessage, keys)
-    CommandEngine.waveInfo(Game.gameRound + 1, keys.playerid)
+    CommandEngine.waveInfo(Game:GetCurrentWaveNumber() + 1, keys.playerid)
 end
 
 function CommandEngine.Commands.settings(instance, submessage, keys)
@@ -145,11 +157,11 @@ if GameRules:IsCheatMode() then
 
     -- Fill this with whatever, used for testing (accompanied by reinitialize)
     function CommandEngine.Commands.test(instance, submessage, keys)
+        Game.SkipWait()
     end
 
     function CommandEngine.Commands.setwave(instance, submessage, keys)
-        local i = tonumber(submessage)
-        GameRules.GameMode.game:SetNextRound(i)
+        Game:SetNextRound(tonumber(submessage))
     end
 end
 

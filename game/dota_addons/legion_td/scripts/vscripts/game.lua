@@ -982,44 +982,54 @@ end
 
 
 
+function Game:RecountDuels()
+    local duelCount = 0
+    local i = 1
+    while i < self.gameRound do
+        if self.rounds[tonumber(i)].isDuelRound then
+            duelCount = duelCount + 1
+        end
+        i = i + 1
+    end
+    self.doneDuels = duelCount
+    print("Recounted duels")
+end
+
+
+
 function Game:SetNextRound(i)
-    self:GetCurrentRound():KillAll()
+    local curRound = self:GetCurrentRound()
     self.gameRound = i
-    Timers.CreateTimer(0.3, function() self:SkipWait() end)
+    self:RecountDuels()
+    self.gameRound = i-1
+    curRound:End()
+    self:OnThink()
+    self:SkipWait()
+    print("Set round to " .. i)
 end
 
 
 
 function Game:StartNextRoundCommand()
-    Game:ClearBoard()
-    Game:RespawnUnits()
-    Game:SkipWait()
+    self:SetNextRound(self.gameRound+1)
 end
 
 
 
 function Game:RestartRoundCommand()
-    Game:ClearBoard()
-    Game:RespawnUnits()
-    Game:StartNextRound()
+    self:SetNextRound(self.gameRound)
 end
 
 
 
 function Game:StartPreviousRoundCommand()
-    Game:ClearBoard()
-    Game.gameRound = Game.gameRound - 1
-    Game:RespawnUnits()
-    Game:StartNextRound()
+    self:SetNextRound(self.gameRound-1)
 end
 
 
 
 function Game:RestartCommand()
-    Game:ClearBoard()
-    Game.gameRound = 1
-    Game:RespawnUnits()
-    Game:StartNextRound()
+    self:SetNextRound(1)
 end
 
 

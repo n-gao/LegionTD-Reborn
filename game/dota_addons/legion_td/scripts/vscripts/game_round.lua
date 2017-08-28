@@ -13,6 +13,7 @@ function GameRound:ReadRoundConfiguration(kv, game, roundNumber)
     self.winningTeam = DOTA_TEAM_NOTEAM
     self.spawners = {}
     self.remainingUnits = {}
+    self.EventHandles = {}
 
     for key, val in pairs(kv) do
         if type(val) == "table" and val.NPCName then
@@ -35,7 +36,7 @@ function GameRound:Begin()
     }
     self.unstuckTimer = Timers:CreateTimer(180, function()
         if self.game:GetCurrentRound() == self then
-            self.game:ClearBoard()
+            self:KillAll(true)
             print("Unstuck")
         end
     end)
@@ -55,6 +56,7 @@ function GameRound:End()
     if Timers.timers[self.unstuckTimer] then Timers.timers[self.unstuckTimer] = nil end
     self.unstuckTimer = nil
     self.EventHandles = {}
+    self:KillAll(true)
     if self.bounty then
         for _, player in pairs(self.game.players) do
             player:Income(self.bounty)
@@ -119,21 +121,28 @@ function GameRound:OnEntityKilled(event)
             break
         end
     end
-    print("" .. #self.remainingUnits .. " units left")
     self:CheckEnd()
 end
 
 
 
-function GameRound:KillAll()
+function GameRound:KillAll(skipAsync)
     if not self.remainingUnits then
         return
     end
-    for _, ent in pairs(self.remainingUnits) do
-        Timers:CreateTimer(0, function()
+    if not skipAsync then
+        for _, ent in pairs(self.remainingUnits) do
+            Timers:CreateTimer(0, function()
+                if not ent:IsNull() then
+                    ent:ForceKill(false)
+                end
+            end)
+        end
+    else
+        for _, ent in pairs(self.remainingUnits) do
             if not ent:IsNull() then
                 ent:ForceKill(false)
             end
-        end)
+        end
     end
 end
