@@ -11,6 +11,7 @@ function CommandEngine.init()
 
     if GameRules:IsCheatMode() then
         CommandEngine.Commands.start = GameRules.GameMode.game.StartNextRoundCommand
+        CommandEngine.Commands.stop = Game.StopRound
         CommandEngine.Commands.skip = CommandEngine.Commands.start
     end
 end
@@ -157,7 +158,6 @@ if GameRules:IsCheatMode() then
 
     -- Fill this with whatever, used for testing (accompanied by reinitialize)
     function CommandEngine.Commands.test(instance, submessage, keys)
-        Game.SkipWait()
     end
 
     function CommandEngine.Commands.setwave(instance, submessage, keys)

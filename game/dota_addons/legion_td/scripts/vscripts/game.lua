@@ -1034,6 +1034,12 @@ end
 
 
 
+function Game:StopRound()
+    Game:GetCurrentRound():End()
+end
+
+
+
 function Game:ClearBoard()
     for _, round in pairs(self.rounds) do
         if not round.isDuelRound then
