@@ -196,6 +196,14 @@ function DuelRound:End()
         rank = rank + 1
         if rank > 4 then break end
     end
+
+    if self.bounty then
+        for _, player in pairs(self.game.players) do
+            if player.plyEntitie and player:GetTeamNumber() == self.winningTeam and not player.abandoned then
+                player:Income(self.bounty)
+            end
+        end
+    end
     GameRules:SendCustomMessage(victoryText .. "<b color='gold'>" .. self.bounty .. "</b> extra gold each!", 0, 0)
     self.game:RoundFinished()
 end

@@ -55,6 +55,12 @@ function GameRound:End()
     if Timers.timers[self.unstuckTimer] then Timers.timers[self.unstuckTimer] = nil end
     self.unstuckTimer = nil
     self.EventHandles = {}
+    if self.bounty then
+        for _, player in pairs(self.game.players) do
+            player:Income(self.bounty)
+        end
+        GameRules:SendCustomMessage("Every player gained <b color='gold'>"..self.bounty.."</b> for surviving.", 0, 0)
+    end
     self.game:RoundFinished()
 end
 

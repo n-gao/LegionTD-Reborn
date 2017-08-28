@@ -421,20 +421,10 @@ function Game:RoundFinished()
     if not self.gameTimer then
         self:CreateGameTimer()
     end
-    local round = self:GetCurrentRound()
-    if round.bounty then
-        for _, player in pairs(self.players) do
-            if player.plyEntitie and (player:GetTeamNumber() == round.winningTeam or round.winningTeam == DOTA_TEAM_NOTEAM) and not player.abandoned then
-                player:Income(round.bounty)
-            end
-        end
-        if (round.winningTeam == DOTA_TEAM_NOTEAM) then
-            GameRules:SendCustomMessage("Every player gained <b color='gold'>"..round.bounty.."</b> for surviving.", 0, 0)
-        end
-    end
     for _, listener in pairs(self.endOfRoundListeners) do
         listener()
     end
+
     self.IncreaseRound()
     self.gameState = GAMESTATE_PREPARATION
     for _, player in pairs(self.players) do
