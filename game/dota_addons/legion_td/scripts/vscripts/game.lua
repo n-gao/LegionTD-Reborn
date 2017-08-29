@@ -997,7 +997,7 @@ end
 
 
 
-function Game:SetNextRound(i)
+function Game:SetRound(i)
     local curRound = self:GetCurrentRound()
     self.gameRound = i
     self:RecountDuels()
@@ -1011,31 +1011,37 @@ end
 
 
 function Game:StartNextRoundCommand()
-    self:SetNextRound(self.gameRound+1)
+    if Game.gameState == GAMESTATE_PREPARATION then
+        Game:SkipWait()
+    elseif Game.gameState == GAMESTATE_FIGHTING then
+        Game:SetRound(Game.gameRound+1)
+    end
 end
 
 
 
 function Game:RestartRoundCommand()
-    self:SetNextRound(self.gameRound)
+    Game:SetRound(Game.gameRound)
 end
 
 
 
 function Game:StartPreviousRoundCommand()
-    self:SetNextRound(self.gameRound-1)
+    Game:SetRound(Game.gameRound-1)
 end
 
 
 
 function Game:RestartCommand()
-    self:SetNextRound(1)
+    Game:SetRound(1)
 end
 
 
 
 function Game:StopRound()
-    Game:GetCurrentRound():End()
+    if Game.gameState == GAMESTATE_FIGHTING then
+        Game:GetCurrentRound():End()
+    end
 end
 
 

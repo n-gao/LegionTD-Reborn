@@ -10,8 +10,8 @@ function CommandEngine.init()
     CommandEngine.initialized = true
 
     if GameRules:IsCheatMode() then
-        CommandEngine.Commands.start = GameRules.GameMode.game.StartNextRoundCommand
         CommandEngine.Commands.stop = Game.StopRound
+        CommandEngine.Commands.start = Game.StartNextRoundCommand
         CommandEngine.Commands.skip = CommandEngine.Commands.start
     end
 end
@@ -161,7 +161,7 @@ if GameRules:IsCheatMode() then
     end
 
     function CommandEngine.Commands.setwave(instance, submessage, keys)
-        Game:SetNextRound(tonumber(submessage))
+        Game:SetRound(tonumber(submessage))
     end
 end
 
