@@ -231,9 +231,9 @@ function Game:ReadRoundConfiguration(kv)
 
         if roundType == "wave" then
             roundObj = GameRound()
-            roundObj:ReadRoundConfiguration(roundData, self:GetRoundCount() + 1 - duelRoundCount)
+            roundObj:ReadRoundConfiguration(roundData, self, self:GetRoundCount() + 1 - duelRoundCount)
         elseif roundType == "duel" then
-            roundObj = DuelRound.new(roundData, self:GetRoundCount() + 1, false)
+            roundObj = DuelRound.new(roundData, self, self:GetRoundCount() + 1)
             duelRoundCount = duelRoundCount + 1
         else
             print("FATAL ERROR: Reading rounds, could not read round type")
@@ -251,6 +251,12 @@ end
 
 function Game:GetRoundCount()
     return table.count(self.rounds)
+end
+
+
+
+function Game:GetCurrentWaveNumber()
+    return self.gameRound - self.doneDuels - self.lastWaveCount
 end
 
 
@@ -393,7 +399,7 @@ function Game:SetWaitTime()
     end
     self.nextRoundTime = GameRules:GetGameTime() + waitTime
 
-    CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels - self.lastWaveCount })
+    CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self:GetCurrentWaveNumber() })
     self:RespawnUnits()
     print("Time to next Round: " .. waitTime)
 end
@@ -412,20 +418,10 @@ function Game:RoundFinished()
     if not self.gameTimer then
         self:CreateGameTimer()
     end
-    local round = self:GetCurrentRound()
-    if round.bounty then
-        for _, player in pairs(self.players) do
-            if player.plyEntitie and (player:GetTeamNumber() == round.winningTeam or round.winningTeam == DOTA_TEAM_NOTEAM) and not player.abandoned then
-                player:Income(round.bounty)
-            end
-        end
-        if (round.winningTeam == DOTA_TEAM_NOTEAM) then
-            GameRules:SendCustomMessage("Every player gained <b color='gold'>"..round.bounty.."</b> for surviving.", 0, 0)
-        end
-    end
     for _, listener in pairs(self.endOfRoundListeners) do
         listener()
     end
+
     self.IncreaseRound()
     self.gameState = GAMESTATE_PREPARATION
     for _, player in pairs(self.players) do
@@ -775,7 +771,7 @@ function Game:SendUnit(data)
         player:AddIncome(lData.income)
         local spawn = player:GetIncomeSpawner():GetAbsOrigin()
         local team = player:GetTeamNumber()
-        local name = Unit.GetUnitNameByID(lData.id)
+        local name = Unit:GetUnitNameByID(lData.id)
         player:SendUnit(name)
         local unit = CreateUnitByName(name, spawn, true, nil, nil, team)
         unit.tangoValue = lData.cost
@@ -986,36 +982,66 @@ end
 
 
 
+function Game:RecountDuels()
+    local duelCount = 0
+    local i = 1
+    while i < self.gameRound do
+        if self.rounds[tonumber(i)].isDuelRound then
+            duelCount = duelCount + 1
+        end
+        i = i + 1
+    end
+    self.doneDuels = duelCount
+    print("Recounted duels")
+end
+
+
+
+function Game:SetRound(i)
+    local curRound = self:GetCurrentRound()
+    self.gameRound = i
+    self:RecountDuels()
+    self.gameRound = i-1
+    curRound:End()
+    self:OnThink()
+    self:SkipWait()
+    print("Set round to " .. i)
+end
+
+
+
 function Game:StartNextRoundCommand()
-    Game:ClearBoard()
-    Game:RespawnUnits()
-    Game:SkipWait()
+    if Game.gameState == GAMESTATE_PREPARATION then
+        Game:SkipWait()
+    elseif Game.gameState == GAMESTATE_FIGHTING then
+        Game:SetRound(Game.gameRound+1)
+    end
 end
 
 
 
 function Game:RestartRoundCommand()
-    Game:ClearBoard()
-    Game:RespawnUnits()
-    Game:StartNextRound()
+    Game:SetRound(Game.gameRound)
 end
 
 
 
 function Game:StartPreviousRoundCommand()
-    Game:ClearBoard()
-    Game.gameRound = Game.gameRound - 1
-    Game:RespawnUnits()
-    Game:StartNextRound()
+    Game:SetRound(Game.gameRound-1)
 end
 
 
 
 function Game:RestartCommand()
-    Game:ClearBoard()
-    Game.gameRound = 1
-    Game:RespawnUnits()
-    Game:StartNextRound()
+    Game:SetRound(1)
+end
+
+
+
+function Game:StopRound()
+    if Game.gameState == GAMESTATE_FIGHTING then
+        Game:GetCurrentRound():End()
+    end
 end
 
 
@@ -1106,7 +1132,7 @@ function Game:SkipWait()
     --self:EndQuest()
     --self.quest.finished = 0
     Timers:CreateTimer(0.3, function()
-     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self.gameRound - self.doneDuels - self.lastWaveCount }) end)
+     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self:GetCurrentWaveNumber() }) end)
 end
 
 function Game:DistributeMissedTangos(missedTime)

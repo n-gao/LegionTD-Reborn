@@ -6,6 +6,16 @@ CommandEngine.prefix = "-"
 CommandEngine.Variables.waveKV = LoadKeyValues("scripts/maps/" .. GetMapName() .. ".txt")
 CommandEngine.Variables.damageKV = LoadKeyValues("scripts/damage_table.kv")
 
+function CommandEngine.init()
+    CommandEngine.initialized = true
+
+    if GameRules:IsCheatMode() then
+        CommandEngine.Commands.stop = Game.StopRound
+        CommandEngine.Commands.start = Game.StartNextRoundCommand
+        CommandEngine.Commands.skip = CommandEngine.Commands.start
+    end
+end
+
 function CommandEngine:CheckCommand(keys)
     if not CommandEngine.initialized then CommandEngine.init() end
     if string.sub(keys.text, 1, #CommandEngine.prefix) then
@@ -18,45 +28,31 @@ function CommandEngine:CheckCommand(keys)
 
         if CommandEngine.Commands[command] then
             CommandEngine.Commands[command](self, submessage, keys)
-            print("PlayerID: " .. keys.playerid .. " ran command " .. keys.text)
+            print("PlayerID " .. keys.playerid .. " ran command " .. keys.text)
         end
     end
 end
 
-if GameRules:IsCheatMode() then
-    function CommandEngine.Commands.tango(instance, submessage, keys)
-        instance.vPlayers[keys.playerid + 1].player:AddTangos(tonumber(submessage) or 0)
-    end
-
-    function CommandEngine.Commands.reinitialize(instance, submessage, keys)
-        print("Reinitializing commands!")
-        dofile("commands")
-    end
-
-    -- Fill this with whatever, used for testing (accompanied by reinitialize)
-    function CommandEngine.Commands.test(instance, submessage, keys)
-    end
-end
-
-function CommandEngine.Commands.settings(instance, submessage, keys)
-    if CommandEngine.Variables.settingsCooldown then return end
-    CommandEngine.Variables.settingsCooldown = true
-    resettimer = Timers:CreateTimer(30, function() CommandEngine.Variables.settingsCooldown = false end)
-
-    Say(nil, "Current settings:", false)
-    for i, v in pairs(voteOptions) do
-        Say(nil, i .. " : " .. tostring(v), false)
-    end
-end
-
 function CommandEngine.waveInfo(waveNum, playerid)
-    if waveNum == nil then return end
-    if #Game.rounds < waveNum then return end
+    local waveKV = CommandEngine.Variables.waveKV.Rounds
+    if waveNum == nil then print("waveInfo canceled: index nil") return end
+    if #Game.rounds <= waveNum then print("waveInfo canceled: index out of bounds") return end
+    
+    local roundNum = waveNum
+    local i = 1
+    while i <= roundNum do
+        if Game.rounds[i].isDuelRound then
+            roundNum = roundNum + 1
+            if #Game.rounds <= roundNum then print("waveInfo canceled: index out of bounds") return end
+        end
+        i = i + 1
+    end
+    print("waveInfo: "..roundNum)
 
-    local name = CommandEngine.Variables.waveKV["Round" .. tostring(waveNum)]["Unit"]["NPCName"]
-    local amount = CommandEngine.Variables.waveKV["Round" .. tostring(waveNum)]["Unit"]["UnitCount"] or 0
+    local name = waveKV[tostring(roundNum)]["Unit"]["NPCName"]
+    local amount = waveKV[tostring(roundNum)]["Unit"]["UnitCount"] or 0
 
-    local wavebounty = CommandEngine.Variables.waveKV["Round" .. tostring(waveNum)]["bounty"] or 0
+    local wavebounty = waveKV[tostring(roundNum)]["bounty"] or 0
     local unitbounty = Game.UnitKV[name]["BountyGoldMin"] or 0
     local total = tonumber(wavebounty) + (tonumber(unitbounty) * tonumber(amount))
 
@@ -82,7 +78,7 @@ function CommandEngine.waveInfo(waveNum, playerid)
     end
 
     local lines = {
-        "Wave " .. tostring(waveNum) .. ":",
+        "Wave " .. waveNum .. ":",
         amount .. "x " .. name .. " (" .. attackType .. " / " .. defendType .. ")",
         "Total " .. total .. " Gold (" .. wavebounty .. "g + " .. amount .. "x " .. unitbounty .. "g)",
         "Health: " .. health .. " Armor: " .. armor,
@@ -121,7 +117,7 @@ function CommandEngine.waveInfo(waveNum, playerid)
         table.insert(lines, line)
     end
 
-    player = PlayerResource:GetPlayer(playerid)
+    local player = PlayerResource:GetPlayer(playerid)
     for i, v in pairs(lines) do
         CustomGameEventManager:Send_ServerToPlayer(player, "waveinfo_notification", { text = v, duration = 15, style = { color = "black", ["font-size"] = "25px", ["line-height"] = "0px" } })
     end
@@ -132,19 +128,40 @@ function CommandEngine.Commands.wave(instance, submessage, keys)
 end
 
 function CommandEngine.Commands.info(instance, submessage, keys)
-    CommandEngine.waveInfo(Game.gameRound, keys.playerid)
+    CommandEngine.waveInfo(Game:GetCurrentWaveNumber(), keys.playerid)
 end
 
 function CommandEngine.Commands.infonext(instance, submessage, keys)
-    CommandEngine.waveInfo(Game.gameRound + 1, keys.playerid)
+    CommandEngine.waveInfo(Game:GetCurrentWaveNumber() + 1, keys.playerid)
 end
 
-function CommandEngine.init()
-    CommandEngine.initialized = true
+function CommandEngine.Commands.settings(instance, submessage, keys)
+    if CommandEngine.Variables.settingsCooldown then return end
+    CommandEngine.Variables.settingsCooldown = true
+    local resettimer = Timers:CreateTimer(30, function() CommandEngine.Variables.settingsCooldown = false end)
 
-    if GameRules:IsCheatMode() then
-        CommandEngine.Commands.start = GameRules.GameMode.game.StartNextRoundCommand
-        CommandEngine.Commands.skip = CommandEngine.Commands.start
+    Say(nil, "Current settings:", false)
+    for i, v in pairs(voteOptions) do
+        Say(nil, i .. " : " .. tostring(v), false)
+    end
+end
+
+if GameRules:IsCheatMode() then
+    function CommandEngine.Commands.tango(instance, submessage, keys)
+        instance.vPlayers[keys.playerid + 1].player:AddTangos(tonumber(submessage) or 0)
+    end
+
+    function CommandEngine.Commands.reinitialize(instance, submessage, keys)
+        print("Reinitializing commands!")
+        dofile("commands")
+    end
+
+    -- Fill this with whatever, used for testing (accompanied by reinitialize)
+    function CommandEngine.Commands.test(instance, submessage, keys)
+    end
+
+    function CommandEngine.Commands.setwave(instance, submessage, keys)
+        Game:SetRound(tonumber(submessage))
     end
 end
 

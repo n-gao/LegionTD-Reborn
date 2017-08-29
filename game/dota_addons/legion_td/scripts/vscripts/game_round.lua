@@ -4,14 +4,16 @@ end
 
 
 --Liest Rundeninfos ein
-function GameRound:ReadRoundConfiguration(kv, roundNumber)
+function GameRound:ReadRoundConfiguration(kv, game, roundNumber)
     self.roundNumber = roundNumber
+    self.game = game
     self.roundQuestTitle = kv.round_quest_title or "Kaputt"
     self.roundTitle = kv.round_title or "Kaputt"
     self.bounty = kv.bounty
     self.winningTeam = DOTA_TEAM_NOTEAM
     self.spawners = {}
     self.remainingUnits = {}
+    self.EventHandles = {}
 
     for key, val in pairs(kv) do
         if type(val) == "table" and val.NPCName then
@@ -33,8 +35,8 @@ function GameRound:Begin()
         ListenToGameEvent("entity_killed", Dynamic_Wrap(GameRound, "OnEntityKilled"), self)
     }
     self.unstuckTimer = Timers:CreateTimer(180, function()
-        if Game:GetCurrentRound() == self then
-            Game:ClearBoard()
+        if self.game:GetCurrentRound() == self then
+            self:KillAll(true)
             print("Unstuck")
         end
     end)
@@ -54,7 +56,14 @@ function GameRound:End()
     if Timers.timers[self.unstuckTimer] then Timers.timers[self.unstuckTimer] = nil end
     self.unstuckTimer = nil
     self.EventHandles = {}
-    Game:RoundFinished()
+    self:KillAll(true)
+    if self.bounty then
+        for _, player in pairs(self.game.players) do
+            player:Income(self.bounty)
+        end
+        GameRules:SendCustomMessage("Every player gained <b color='gold'>"..self.bounty.."</b> for surviving.", 0, 0)
+    end
+    self.game:RoundFinished()
 end
 
 
@@ -112,21 +121,28 @@ function GameRound:OnEntityKilled(event)
             break
         end
     end
-    print("" .. #self.remainingUnits .. " units left")
     self:CheckEnd()
 end
 
 
 
-function GameRound:KillAll()
+function GameRound:KillAll(skipAsync)
     if not self.remainingUnits then
         return
     end
-    for _, ent in pairs(self.remainingUnits) do
-        Timers:CreateTimer(0, function()
+    if not skipAsync then
+        for _, ent in pairs(self.remainingUnits) do
+            Timers:CreateTimer(0, function()
+                if not ent:IsNull() then
+                    ent:ForceKill(false)
+                end
+            end)
+        end
+    else
+        for _, ent in pairs(self.remainingUnits) do
             if not ent:IsNull() then
                 ent:ForceKill(false)
             end
-        end)
+        end
     end
 end
