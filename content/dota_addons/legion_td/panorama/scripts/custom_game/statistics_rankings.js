@@ -10,7 +10,7 @@ function OnRankingChanged() {
 function SetRanking(newAttribute) {
     $.Msg("Changed Ranking to " + newAttribute);
     attribute = newAttribute;
-    RequestRankingFromTo(attribute, start, end, function(result) {
+    RequestRankingFromTo(attribute, start, end, function (result) {
         ClearRanking();
         $.Msg("Filling statistic ranking");
         $("#RankingAttributeLabel").text = $("#RankingAttributeDropDown").GetSelected().text;
@@ -19,7 +19,7 @@ function SetRanking(newAttribute) {
         }
     });
     var steamId = Game.GetLocalPlayerInfo().player_steamid
-    RequestRankingPosition(attribute, steamId, function(result) {
+    RequestRankingPosition(attribute, steamId, function (result) {
         $("#RankingLocalRank").text = result;
         $("#RankingLocalValue").text = GetDataOf(steamId, attribute);
     })
@@ -35,9 +35,9 @@ function AddRankingEntry(attribute, steamID, rank) {
     entry.SetAttributeString("SteamID", steamID);
     entry.SetAttributeString("Rank", rank);
     entry.SetAttributeString("Value", value);
-    entry.BLoadLayout("file://{resources}/layout/custom_game/statistics_rankings_entry.xml", false, false);	
-} 
+    entry.BLoadLayout("file://{resources}/layout/custom_game/statistics_rankings_entry.xml", false, false);
+}
 
-(function() {
+(function () {
     SetRanking("rating");
 })();

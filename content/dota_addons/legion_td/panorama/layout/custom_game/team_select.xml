@@ -26,8 +26,8 @@
 				</Panel>
 			</Panel>
 			<!--Teams List, left hand panel-->
-			<Panel id="TeamsList" >
-				<Panel id="TeamsListGroup" >
+			<Panel id="TeamsList">
+				<Panel id="TeamsListGroup">
 					<Panel id="TeamListHeader">
 						<Label id="TeamListHeaderLabel" text="#custom_game_team_select" />
 						<Image id="TeamListLockedIcon" src="file://{images}/control_icons/lock_small.png" />
@@ -39,12 +39,9 @@
 					</Button>
 				</Panel>
 			</Panel>
-
 			<!--Game Info and Unassigned players, right hand panel-->
 			<Panel id="GameAndPlayersRoot">
-
-				<Panel id="GameInfoPanel" >
-
+				<Panel id="GameInfoPanel">
 					<!--Game mode and map-->
 					<Panel id="CustomGameModeName">
 						<Label id="GameModeNameLabel" text="#addon_game_name" />
@@ -52,22 +49,19 @@
 					<Panel id="MapInfo">
 						<Label id="MapInfoLabel" text="#LoadingScreenMapInfo" />
 					</Panel>
-
 					<!--Countdown timer-->
 					<Panel id="StartGameCountdownTimer">
 						<Image id="TimerBg" src="file://{images}/status_icons/timer_background.psd" />
 						<Image id="TimerRing" src="file://{images}/status_icons/timer_ring.psd" />
 						<Label id="TeamSelectTimer" text="#custom_game_team_select_timer" />
-						<Panel id="TimerLabelBox" >
+						<Panel id="TimerLabelBox">
 							<Label id="TimerLabelAutoStart" text="#custom_game_team_select_auto_start" />
 							<Label id="TimerLabelGameStart" text="#custom_game_team_select_starting" />
 						</Panel>
 					</Panel>
-
 				</Panel>
-
 				<!--Unassigned players-->
-				<Panel id="UnassignedPlayerPanel" >
+				<Panel id="UnassignedPlayerPanel">
 					<Button id="UnassignedPlayersButton" onactivate="OnLeaveTeamPressed()">
 						<Panel id="UnassignedPlayersHeader">
 							<Label text="#custom_game_team_select_unassigned_players" />
@@ -75,13 +69,11 @@
 						<Panel id="UnassignedPlayersDivider" />
 						<Panel id="UnassignedPlayersContainer" />
 					</Button>
-
 					<Button id="AutoAssignButton" onactivate="OnAutoAssignPressed()">
 						<Image src="file://{images}/control_icons/double_arrow_left.png" />
 						<Label text="#custom_game_team_select_auto_assign" />
 					</Button>
 				</Panel>
-
 				<!--Start and lock button-->
 				<Button id="WaitForVoteButton" class="PlayButton">
 					<Label id="WaitSecondsLabel" text ="10" />
@@ -92,9 +84,7 @@
 				<Button id="CancelAndUnlockButton" class="PlayButton" onactivate="OnCancelAndUnlockPressed()">
 					<Label text="#custom_game_team_select_cancel_unlock" />
 				</Button>
-
 			</Panel>
 		</Panel>
-		
 	</Panel>
 </root>

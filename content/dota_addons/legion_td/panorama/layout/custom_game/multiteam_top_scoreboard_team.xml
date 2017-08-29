@@ -1,9 +1,9 @@
 <root>
-    <styles>
+	<styles>
 		<include src="file://{resources}/styles/dotastyles.css" />
 		<include src="file://{resources}/styles/custom_game/multiteam_top_scoreboard.css" />
 		<include src="file://{resources}/styles/custom_game/shared_scoreboard_styles.css" />
-    </styles>
+	</styles>
 	<script>
 	(function()
 	{
@@ -28,10 +28,8 @@
 			<Panel hittest="false" id="TeamOverlayBar">
 				<Panel hittest="false" id="TeamDarkenWash" />
 				<Panel hittest="false" id="LogoAndScore">
-					<Panel hittest="false" id="TeamLogo" />
-				</Panel>
+					<Panel hittest="false" id="TeamLogo" /></Panel>
 			</Panel>
 		</Panel>
-		<Panel hittest="false" id="TeamOverlayXMLFile" />
-	</Panel>
+		<Panel hittest="false" id="TeamOverlayXMLFile" /></Panel>
 </root>

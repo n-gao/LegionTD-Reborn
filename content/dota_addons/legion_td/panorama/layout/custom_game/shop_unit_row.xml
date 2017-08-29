@@ -4,6 +4,5 @@
     <include src="file://{resources}/styles/custom_game/shop.css" />
   </styles>
   <Panel hittest="false" class="ShopUnitRowPanel">
-    <Panel class="UnitRow" />
-  </Panel>
+    <Panel class="UnitRow" /></Panel>
 </root>

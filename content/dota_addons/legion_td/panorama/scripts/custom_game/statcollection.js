@@ -1,25 +1,24 @@
 "use strict";
 
-function OnClientCheckIn (args) {
+function OnClientCheckIn(args) {
 
-    var payload = { 
+    var payload = {
         modIdentifier: args.modID,
         steamID32: GetSteamID32(),
         matchID: args.matchID,
         schemaVersion: args.schemaVersion
     }
 
-    $.Msg('Sending: ',payload)
+    $.Msg('Sending: ', payload)
 
-    $.AsyncWebRequest( 'http://getdotastats.com/s2/api/s2_check_in.php', 
-    {
-       type: 'POST',
-       data: {payload: JSON.stringify(payload)},
-       success: function( data )
-       {
-            $.Msg('GDS Reply: ', data)
-       }
-    });
+    $.AsyncWebRequest('http://getdotastats.com/s2/api/s2_check_in.php',
+        {
+            type: 'POST',
+            data: { payload: JSON.stringify(payload) },
+            success: function (data) {
+                $.Msg('GDS Reply: ', data)
+            }
+        });
 }
 
 function GetSteamID32() {
@@ -35,6 +34,6 @@ function GetSteamID32() {
 (function () {
     $.Msg("StatCollection Client Loaded")
 
-    GameEvents.Subscribe( "statcollection_client", OnClientCheckIn );
+    GameEvents.Subscribe("statcollection_client", OnClientCheckIn);
 
 })();

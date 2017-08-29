@@ -156,10 +156,10 @@ function CheckVoteResults()
         end
         if (voteOptions[option]) then
             print(option .. " is active.")
-            GameRules:SendCustomMessage(voteOptionsText[option].. " is active.", 0, 0)
+            GameRules:SendCustomMessage(voteOptionsText[option] .. " is active.", 0, 0)
         else
             print(option .. " is not active.")
-            GameRules:SendCustomMessage(voteOptionsText[option].. " is not active.", 0, 0)
+            GameRules:SendCustomMessage(voteOptionsText[option] .. " is not active.", 0, 0)
         end
     end
     GameRules:GetGameModeEntity():SetFogOfWarDisabled(not voteOptions["fog_of_war"])

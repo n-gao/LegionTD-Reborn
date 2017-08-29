@@ -14,9 +14,9 @@ function UpdatePlayerInfo(data) {
 	playerinfo.towerValue = data.towerValue;
 }
 
-(function() {
+(function () {
 	GameEvents.Subscribe("update_player_info", UpdatePlayerInfo);
 	for (var i = 0; i < GameUI.CustomUIConfig().morePlayerInfos.length; i++) {
-		GameUI.CustomUIConfig().morePlayerInfos[i] = {tango_count : 0, max_tangos : 0, gold_income : 0, tango_income : 0, leaks : 0, current_food : 0, max_food : 10, tower_value : 0}
+		GameUI.CustomUIConfig().morePlayerInfos[i] = { tango_count: 0, max_tangos: 0, gold_income: 0, tango_income: 0, leaks: 0, current_food: 0, max_food: 10, tower_value: 0 }
 	}
 })();

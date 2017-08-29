@@ -8,7 +8,7 @@
         <include src="file://{resources}/scripts/custom_game/statistics_rankings_entry.js" />
     </scripts>
     <Panel class="RankingAttribute">
-        <Label  text="Rank" id="Rank" class="RankingRank StatisticsText"/>
+        <Label text="Rank" id="Rank" class="RankingRank StatisticsText"/>
         <Label text="Value" id="Value" class="RankingValue StatisticsText"/>
         <Panel class="RankingName">
             <DOTAUserName id="Name" class="StatisticsText"/>

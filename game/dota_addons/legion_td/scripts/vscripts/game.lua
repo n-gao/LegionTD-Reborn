@@ -33,7 +33,7 @@ function Game.new()
     self.HeroKV = LoadKeyValues("scripts/npc/npc_heroes_custom.txt")
     GameRules:GetGameModeEntity():SetDamageFilter(Dynamic_Wrap(Game, "DamageFilter"), Game)
     GameRules:GetGameModeEntity():SetExecuteOrderFilter(Dynamic_Wrap(Game, "OrderFilter"), Game)
-
+    
     LinkLuaModifier("modifier_attack_arcane_lua", "abilities/damage/modifier_attack_arcane_lua.lua", LUA_MODIFIER_MOTION_NONE)
     LinkLuaModifier("modifier_attack_normal_lua", "abilities/damage/modifier_attack_normal_lua.lua", LUA_MODIFIER_MOTION_NONE)
     LinkLuaModifier("modifier_attack_pierce_lua", "abilities/damage/modifier_attack_pierce_lua.lua", LUA_MODIFIER_MOTION_NONE)
@@ -42,7 +42,7 @@ function Game.new()
     LinkLuaModifier("modifier_defend_light_lua", "abilities/damage/modifier_defend_light_lua.lua", LUA_MODIFIER_MOTION_NONE)
     LinkLuaModifier("modifier_king_duel_lua", "abilities/modifier_king_duel_lua.lua", LUA_MODIFIER_MOTION_NONE)
     LinkLuaModifier("modifier_unit_freeze_lua", "abilities/modifier_unit_freeze_lua.lua", LUA_MODIFIER_MOTION_NONE)
-
+    
     if Convars:GetBool('developer') then
         Convars:RegisterCommand("start_next_round", Dynamic_Wrap(self, "StartNextRoundCommand"), "keine Ahnung", 0)
         Convars:RegisterCommand("start_prev_round", Dynamic_Wrap(self, "StartPreviousRoundCommand"), "keine Ahnung", 0)
@@ -50,7 +50,7 @@ function Game.new()
         Convars:RegisterCommand("reset", Dynamic_Wrap(self, "RestartCommand"), "keine Ahnung", 0)
         Convars:RegisterCommand("wiki", Dynamic_Wrap(self, "WikiCommand"), "no idea", 0)
     end
-
+    
     CustomGameEventManager:RegisterListener("send_unit", Dynamic_Wrap(Game, "SendUnit"))
     CustomGameEventManager:RegisterListener("upgarde_king", Dynamic_Wrap(Game, "UpgradeKing"))
     CustomGameEventManager:RegisterListener("vote_option_clicked", Dynamic_Wrap(Game, "VoteOptionClicked"))
@@ -59,7 +59,7 @@ function Game.new()
     CustomGameEventManager:RegisterListener("request_ranking", Dynamic_Wrap(Game, "RequestRanking"))
     CustomGameEventManager:RegisterListener("request_ranking_position", Dynamic_Wrap(Game, "RequestRankingPosition"))
     CustomGameEventManager:RegisterListener("request_match_history", Dynamic_Wrap(Game, "RequestMatchHistory"))
-
+    
     GameRules:SetSafeToLeave(false)
     GameRules:SetStrategyTime(0)
     GameRules:SetHeroSelectionTime(45)
@@ -193,7 +193,7 @@ function Game:ReadLanes(kvSpawns)
         local lfoodBuilding = Entities:FindByName(nil, sp.FoodBuilding)
         local llastWaypoint = Entities:FindByName(nil, sp.LastWaypoint)
         if lspawn and lwaypoint and lheroSpawn and lunitWaypoint and lbox
-                and lfoodBuilding and lmainBuilding and lnextWaypoint and llastWaypoint then
+            and lfoodBuilding and lmainBuilding and lnextWaypoint and llastWaypoint then
             print("Lane " .. ind .. " found.")
             self.lanes[ind] = {
                 spawnpoint = lspawn,
@@ -201,7 +201,7 @@ function Game:ReadLanes(kvSpawns)
                 nextWaypoint = lnextWaypoint:GetAbsOrigin(),
                 midWaypoint = lmidWaypoint:GetAbsOrigin(),
                 lastWaypoint = llastWaypoint:GetAbsOrigin(),
-                waypoints = { lwaypoint:GetAbsOrigin(), lnextWaypoint:GetAbsOrigin(), lmidWaypoint:GetAbsOrigin(), llastWaypoint:GetAbsOrigin(), },
+                waypoints = {lwaypoint:GetAbsOrigin(), lnextWaypoint:GetAbsOrigin(), lmidWaypoint:GetAbsOrigin(), llastWaypoint:GetAbsOrigin(), },
                 heroSpawn = lheroSpawn,
                 unitWaypoint = lunitWaypoint,
                 box = lbox,
@@ -225,10 +225,10 @@ function Game:ReadRoundConfiguration(kv)
     while true do
         local roundData = kv["Rounds"][tostring(i)]
         if not roundData then break end
-
+        
         local roundType = roundData["round_type"]
         local roundObj
-
+        
         if roundType == "wave" then
             roundObj = GameRound()
             roundObj:ReadRoundConfiguration(roundData, self, self:GetRoundCount() + 1 - duelRoundCount)
@@ -239,9 +239,9 @@ function Game:ReadRoundConfiguration(kv)
             print("FATAL ERROR: Reading rounds, could not read round type")
             return
         end
-
+        
         table.insert(self.rounds, roundObj)
-
+        
         print("Round " .. i .. " loaded: " .. roundType)
         i = i + 1
     end
@@ -280,7 +280,7 @@ end
 
 
 function Game:RandomHeroes()
-    for _,player in pairs(self.players) do 
+    for _, player in pairs(self.players) do
         if not PlayerResource:HasSelectedHero(player:GetPlayerID()) then
             player.plyEntitie:MakeRandomHeroSelection()
         end
@@ -328,9 +328,9 @@ function Game:CreateGameTimer()
         end)
         self.countDownTimer = Timers:CreateTimer(1, function()
             if (self.nextRoundTime) then
-                CustomGameEventManager:Send_ServerToAllClients("update_countdown", { betweenRounds = Game:IsBetweenRounds(), seconds = Game.nextRoundTime - GameRules:GetGameTime()})
+                CustomGameEventManager:Send_ServerToAllClients("update_countdown", {betweenRounds = Game:IsBetweenRounds(), seconds = Game.nextRoundTime - GameRules:GetGameTime()})
             else
-                CustomGameEventManager:Send_ServerToAllClients("update_countdown", { betweenRounds = Game:IsBetweenRounds(), seconds = -1})
+                CustomGameEventManager:Send_ServerToAllClients("update_countdown", {betweenRounds = Game:IsBetweenRounds(), seconds = -1})
             end
             return 1
         end)
@@ -359,16 +359,16 @@ function Game:OnThink()
         self.rounds[self.gameRound]:CheckEnd()
     end
     if self.gameState == GAMESTATE_END then
-    end
+        end
     return 0.25
 end
 
 
 function Game:CheckPlayerAbandon()
-    for _,player in pairs(self.players) do
+    for _, player in pairs(self.players) do
         if player.calledAbandon == false and (player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED) then
             player.calledAbandon = true
-            GameRules:SendCustomMessage("<p color='red'>"..PlayerResource:GetPlayerName(player:GetPlayerID()).." abandoned the game.</p>")
+            GameRules:SendCustomMessage("<p color='red'>" .. PlayerResource:GetPlayerName(player:GetPlayerID()) .. " abandoned the game.</p>")
         end
     end
 end
@@ -382,14 +382,14 @@ function Game:ResetSkip()
 end
 
 function Game:SetSkipButton(state)
-    CustomGameEventManager:Send_ServerToAllClients("enable_skip", { value = state })
+    CustomGameEventManager:Send_ServerToAllClients("enable_skip", {value = state})
 end
 
 
 --Setzt die Zeit zum warten zur nächsten Runde
 function Game:SetWaitTime()
     Game:ResetSkip()
-
+    
     local waitTime = self.timeBetweenRounds
     if self.gameRound == 1 then
         waitTime = self.initPrepTime
@@ -398,16 +398,16 @@ function Game:SetWaitTime()
         waitTime = self.timeBeforeDuel
     end
     self.nextRoundTime = GameRules:GetGameTime() + waitTime
-
-    CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self:GetCurrentWaveNumber() })
+    
+    CustomGameEventManager:Send_ServerToAllClients("update_round", {round = self:GetCurrentWaveNumber()})
     self:RespawnUnits()
     print("Time to next Round: " .. waitTime)
 end
 
 function Game:EndQuest()
-    --Timers:RemoveTimer(self.questTimer)
-    --self.quest:CompleteQuest()
-    --self.nextWaveQuest:CompleteQuest()
+--Timers:RemoveTimer(self.questTimer)
+--self.quest:CompleteQuest()
+--self.nextWaveQuest:CompleteQuest()
 end
 
 
@@ -421,7 +421,7 @@ function Game:RoundFinished()
     for _, listener in pairs(self.endOfRoundListeners) do
         listener()
     end
-
+    
     self.IncreaseRound()
     self.gameState = GAMESTATE_PREPARATION
     for _, player in pairs(self.players) do
@@ -473,7 +473,7 @@ end
 
 function Game:CheckTeamLeft(team)
     local isEmpty = true
-    for _,player in pairs(self.players) do
+    for _, player in pairs(self.players) do
         if (player:GetTeamNumber() == team) then
             isEmpty = false
             if (not player:HasAbandoned()) then
@@ -544,7 +544,7 @@ function Game:Initialize()
             timer_second = secondsString
         }
         CustomGameEventManager:Send_ServerToAllClients("update_time", data)
-        GameRules:SetTimeOfDay(0.26) -- always day!
+        GameRules:SetTimeOfDay(0.26)-- always day!
         return 1
     end)
 end
@@ -594,7 +594,7 @@ function Game:OnConnectFull(keys)
         end
     end
     
-    for _,p in pairs(self.players) do
+    for _, p in pairs(self.players) do
         local data = {
             playerID = p:GetPlayerID(),
             steamID = p:GetSteamID()
@@ -627,12 +627,12 @@ function Game:OrderFilter(keys)
     for _, key in pairs(keys.units) do
         table.insert(units, EntIndexToHScript(key))
     end
-
+    
     local issuingPlayer = self:FindPlayerWithID(keys.issuer_player_id_const)
     if issuingPlayer then
         if issuingPlayer.abandoned == true then return false end
     end
-
+    
     if order == DOTA_UNIT_ORDER_HOLD_POSITION then
         for _, u in pairs(units) do
             if u.unit then
@@ -640,14 +640,14 @@ function Game:OrderFilter(keys)
             end
         end
     end
-
-
+    
+    
     local player = nil
     if unit then
         player = unit.player
     end
-
-
+    
+    
     local ability = EntIndexToHScript(keys.entindex_ability)
     -- if it is an ability
     if ability then
@@ -683,7 +683,7 @@ function Game:OrderFilter(keys)
                 return false
             end
         end
-
+        
         --Tower Special Case
         if string.find(ability:GetName(), "spawn") then
             --between rounds?
@@ -908,7 +908,7 @@ function Game:SkipPressed(data)
     local player = Game:FindPlayerWithID(lData.playerID)
     player.wantsSkip = true
     print(lData.playerID .. " wants to skip waiting time.")
-
+    
     Game:FormatSkipMessage(Game:CountSkipvotes(), Game:CountRemainingPlayers())
     Game:CheckSkip()
 end
@@ -1001,7 +1001,7 @@ function Game:SetRound(i)
     local curRound = self:GetCurrentRound()
     self.gameRound = i
     self:RecountDuels()
-    self.gameRound = i-1
+    self.gameRound = i - 1
     curRound:End()
     self:OnThink()
     self:SkipWait()
@@ -1014,7 +1014,7 @@ function Game:StartNextRoundCommand()
     if Game.gameState == GAMESTATE_PREPARATION then
         Game:SkipWait()
     elseif Game.gameState == GAMESTATE_FIGHTING then
-        Game:SetRound(Game.gameRound+1)
+        Game:SetRound(Game.gameRound + 1)
     end
 end
 
@@ -1027,7 +1027,7 @@ end
 
 
 function Game:StartPreviousRoundCommand()
-    Game:SetRound(Game.gameRound-1)
+    Game:SetRound(Game.gameRound - 1)
 end
 
 
@@ -1132,7 +1132,7 @@ function Game:SkipWait()
     --self:EndQuest()
     --self.quest.finished = 0
     Timers:CreateTimer(0.3, function()
-     CustomGameEventManager:Send_ServerToAllClients("update_round", { round = self:GetCurrentWaveNumber() }) end)
+        CustomGameEventManager:Send_ServerToAllClients("update_round", {round = self:GetCurrentWaveNumber()}) end)
 end
 
 function Game:DistributeMissedTangos(missedTime)
@@ -1161,7 +1161,7 @@ function Game:CreatePlayerDataFor(playerID)
     if (player == nil) then return end
     PlayerData.CreateToPlayer(player, function(result, success)
         if success then
-            Game:RequestStoredData({ playerID = playerID, steamID = player:GetSteamID() })
+            Game:RequestStoredData({playerID = playerID, steamID = player:GetSteamID()})
         else
             print("Failure at creating new Playerdataset!")
         end

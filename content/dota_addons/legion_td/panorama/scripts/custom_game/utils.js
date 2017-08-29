@@ -18,11 +18,11 @@ function Contains(arr, obj) {
 }
 
 function RequestStoredDataFor(steamId) {
-	var data = {
-		playerID : Players.GetLocalPlayer(),
-        steamID : steamId 
-	}
-	GameEvents.SendCustomGameEventToServer("request_stored_data", data); 
+    var data = {
+        playerID: Players.GetLocalPlayer(),
+        steamID: steamId
+    }
+    GameEvents.SendCustomGameEventToServer("request_stored_data", data);
 }
 
 function AutoRequestStoredDataFor(steamId) {
@@ -42,7 +42,7 @@ function GetStoredDataFor(steamId) {
 }
 
 function UpdateData(data) {
-    GetStoredData()[""+data.steamID] = data;
+    GetStoredData()["" + data.steamID] = data;
 }
 
 function RefreshRequestes() {
@@ -59,7 +59,7 @@ function Init() {
     if (GameUI.CustomUIConfig().StoredData == null) {
         GameUI.CustomUIConfig().StoredData = {};
         GameUI.CustomUIConfig().StoredData.Requests = [];
-	    GameEvents.Subscribe("send_stored_data", UpdateData);
+        GameEvents.Subscribe("send_stored_data", UpdateData);
         RefreshRequestes();
     }
 }
@@ -142,9 +142,9 @@ function GetExpForNextLevel(steamID) {
 function GetExpPercantage(steamID) {
     var exp = GetExpSinceLastLevel(steamID);
     var required = GetExpForNextLevel(steamID);
-    return exp/required;
+    return exp / required;
 }
 
-(function() {
+(function () {
     Init();
 })();

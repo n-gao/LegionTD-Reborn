@@ -7,8 +7,8 @@ function AddMatchEntry(matchData) {
     entry.SetAttributeInt("Duration", matchData.duration);
     entry.SetAttributeInt("Won", matchData.won);
     entry.SetAttributeString("Date", matchData.date);
-    entry.SetAttributeString("Builder", matchData.builder); 
-    entry.SetAttributeString("Training", matchData.isTraining); 
+    entry.SetAttributeString("Builder", matchData.builder);
+    entry.SetAttributeString("Training", matchData.isTraining);
     entry.BLoadLayout("file://{resources}/layout/custom_game/statistics_match_entry.xml", false, false);
 }
 
@@ -16,9 +16,9 @@ function ClearMatchList() {
     $("#MatchList").RemoveAndDeleteChildren();
 }
 
-(function() {
+(function () {
     ClearMatchList();
-    RequestMatchHistory(0, 5, function(result) {
+    RequestMatchHistory(0, 5, function (result) {
         for (var i in result) {
             if (result[i] === undefined)
                 continue;
@@ -26,5 +26,5 @@ function ClearMatchList() {
             var match = GetMatchData(id);
             AddMatchEntry(match);
         }
-    });  
+    });
 })();

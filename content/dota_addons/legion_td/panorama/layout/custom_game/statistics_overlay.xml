@@ -9,14 +9,12 @@
   </scripts>
   <Panel hittest="false" class="StatisticsOverlayRoot">
     <Panel hittest="true" id="StatisticsOuterPanel">
-        <Panel hittest="true" id="StatisticsHeader">
-            <Button id="CloseButton" class="ButtonClass" onactivate="OnClosePressed()">
-                <Image src="file://{images}/custom_game/cross.psd" />
-            </Button> 
-        </Panel>
-        <Panel hittest="true" id="StatisticsBody">
-
-        </Panel>
+      <Panel hittest="true" id="StatisticsHeader">
+        <Button id="CloseButton" class="ButtonClass" onactivate="OnClosePressed()">
+          <Image src="file://{images}/custom_game/cross.psd" />
+        </Button>
+      </Panel>
+      <Panel hittest="true" id="StatisticsBody"></Panel>
     </Panel>
   </Panel>
 </root>

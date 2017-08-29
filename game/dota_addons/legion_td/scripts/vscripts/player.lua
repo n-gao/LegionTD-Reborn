@@ -6,7 +6,7 @@ end
 function Player.new(plyEntitie, userID)
     local self = Player()
     self.plyEntitie = plyEntitie
-    self.teamnumber = self:GetTeamNumber() -- new players don't have a team number so this is worthless here
+    self.teamnumber = self:GetTeamNumber()-- new players don't have a team number so this is worthless here
     if self.plyEntitie ~= nil then plyEntitie.myPlayer = self end
     self.userID = userID
     self.units = {}
@@ -43,7 +43,7 @@ end
 
 function Player:GetSends()
     local result = 0
-    for _,c in pairs(self.sendUnits) do
+    for _, c in pairs(self.sendUnits) do
         result = result + c
     end
     return c
@@ -119,8 +119,8 @@ function Player:GetEarnedTangos()
 end
 
 function Player:Reconnected()
-    --self:SetPlayerEntity(plyEntitie)
-    --self.missedSpawns = 0
+--self:SetPlayerEntity(plyEntitie)
+--self.missedSpawns = 0
 end
 
 function Player:SetPlayerEntity(plyEntitie, userID)
@@ -135,7 +135,7 @@ function Player:SetPlayerEntity(plyEntitie, userID)
         unit:GivePlayerControl()
     end
     self.roundLeft = nil
-    --self.missedSpawns = 0
+--self.missedSpawns = 0
 end
 
 
@@ -147,10 +147,10 @@ end
 function Player:RemoveEntitie()
     print("User " .. self.userID .. " removed.")
     self.plyEntitie = nil
-
+    
     -- why is this here
     self.userID = -1
-
+    
     self.leaksPenalty = 25
     self.leaked = true
     self.roundLeft = Game.gameRound
@@ -183,14 +183,14 @@ function Player:SetNPC(npc)
             break
         end
     end
-
+    
     self.lane = Game.lanes["" .. laneID]
     self.lane.player = self
     self.lane.isUsed = true
     self.lane.isActive = true
     self:PrepareBuilding(self.lane.mainBuilding)
     self:PrepareBuilding(self.lane.foodBuilding)
-
+    
     --skill abilities
     for i = 0, self.hero:GetAbilityCount() - 2 do
         local ability = self.hero:GetAbilityByIndex(i)
@@ -200,14 +200,13 @@ function Player:SetNPC(npc)
         end
     end
     self.hero:SetAbilityPoints(0)
-
+    
     --prepartaion
-
     self.tangoCheckingTimer = Timers:CreateTimer(0, function()
         self:CreateTangoTicker()
         return CHECKING_INTERVALL
     end)
-
+    
     npc:AddNewModifier(nil, nil, "modifier_invulnerable", {})
     Timers:CreateTimer(0.2, function()
         self:ToSpawn()
@@ -445,30 +444,30 @@ end
 
 function Player:CreateTangoTicker()
     if (not Timers.timers[self.timer]) and (self.lane.mainBuilding) and (Game:GetCurrentRound()) then
-
+        
         self.timer = Timers:CreateTimer(function()
-
-            if Game.gameState == GAMESTATE_PREPARATION and Game.gameRound == STARTING_ROUND then return (1 / 30) end
-            if self.abandoned == true then return end
-            if Game:GetCurrentRound().isDuelRound then return end
-
-            local tangoDelay = self.tangoAddSpeed
-            if self.leaked then tangoDelay = self.tangoAddSpeed + (self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER * self.leaksPenalty) end
-            if self.tangos > Game:GetTangoLimit() and Game:GetTangoLimit() > -1 then tangoDelay = tangoDelay * 5 end -- slow down production while over the maximum
-            self.tangoAddProgress = self.tangoAddProgress + 1 / tangoDelay / 30
-            local i = self.tangoAddProgress * math.pi * 2
-            if self.lane.mainBuilding:GetAbsOrigin().y > 0 then
-                i = i + math.pi
-            end
-            self.lane.mainBuilding:SetForwardVector(Vector(math.sin(i), math.cos(i), 0))
-
-            if self.tangoAddProgress > 1 then
-                self.tangoAddProgress = self.tangoAddProgress - 1
-                PopupHealing(self.lane.mainBuilding, self.tangoAddAmount)
-                self:IncomeTangos(self.tangoAddAmount)
-            end
-
-            return (1 / 30)
+                
+                if Game.gameState == GAMESTATE_PREPARATION and Game.gameRound == STARTING_ROUND then return (1 / 30) end
+                if self.abandoned == true then return end
+                if Game:GetCurrentRound().isDuelRound then return end
+                
+                local tangoDelay = self.tangoAddSpeed
+                if self.leaked then tangoDelay = self.tangoAddSpeed + (self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER * self.leaksPenalty) end
+                if self.tangos > Game:GetTangoLimit() and Game:GetTangoLimit() > -1 then tangoDelay = tangoDelay * 5 end -- slow down production while over the maximum
+                self.tangoAddProgress = self.tangoAddProgress + 1 / tangoDelay / 30
+                local i = self.tangoAddProgress * math.pi * 2
+                if self.lane.mainBuilding:GetAbsOrigin().y > 0 then
+                    i = i + math.pi
+                end
+                self.lane.mainBuilding:SetForwardVector(Vector(math.sin(i), math.cos(i), 0))
+                
+                if self.tangoAddProgress > 1 then
+                    self.tangoAddProgress = self.tangoAddProgress - 1
+                    PopupHealing(self.lane.mainBuilding, self.tangoAddAmount)
+                    self:IncomeTangos(self.tangoAddAmount)
+                end
+                
+                return (1 / 30)
         end)
     end
 end
@@ -509,9 +508,9 @@ end
 
 function Player:Abandon()
     print("abandoning player on team " .. self.teamnumber)
-    local goldValue = PlayerResource:GetGold(self:GetPlayerID()) -- gold in pocket
+    local goldValue = PlayerResource:GetGold(self:GetPlayerID())-- gold in pocket
     print("abandoning player had " .. goldValue .. " gold in pocket")
-    goldValue = goldValue + (self.buildingUpgradeValue) -- gold in building upgrades
+    goldValue = goldValue + (self.buildingUpgradeValue)-- gold in building upgrades
     print("plus building upgrades: " .. goldValue)
     for _, unit in pairs(self.units) do -- gold in built units
         goldValue = goldValue + unit.goldCost

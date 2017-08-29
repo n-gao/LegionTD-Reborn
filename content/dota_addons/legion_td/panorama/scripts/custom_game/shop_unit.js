@@ -15,10 +15,10 @@ function OnUnitClicked() {
 	var morePlayerInfos = GameUI.CustomUIConfig().morePlayerInfos[Players.GetLocalPlayer()];
 	if (Game.GetDOTATime(false, false) > panel.GetAttributeInt("nextUse", 0)) {
 		data = {
-			id : panel.GetAttributeInt("id", 0),
-			cost : panel.GetAttributeInt("cost", 0),
-			income : panel.GetAttributeInt("income", 0),
-			playerID : Players.GetLocalPlayer()
+			id: panel.GetAttributeInt("id", 0),
+			cost: panel.GetAttributeInt("cost", 0),
+			income: panel.GetAttributeInt("income", 0),
+			playerID: Players.GetLocalPlayer()
 		};
 		GameEvents.SendCustomGameEventToServer("send_unit", data);
 		if (morePlayerInfos.tango_count >= data.cost) {
@@ -30,7 +30,7 @@ function OnUnitClicked() {
 function SendUnitSucessfull(data) {
 	if (data.sucessfull) {
 		SetCooldown();
-	}else {
+	} else {
 
 	}
 }

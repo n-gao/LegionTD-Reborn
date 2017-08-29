@@ -14,7 +14,7 @@ function GameRound:ReadRoundConfiguration(kv, game, roundNumber)
     self.spawners = {}
     self.remainingUnits = {}
     self.EventHandles = {}
-
+    
     for key, val in pairs(kv) do
         if type(val) == "table" and val.NPCName then
             local spawner = WaveSpawner()
@@ -29,7 +29,7 @@ end
 function GameRound:Begin()
     print("Runde " .. self.roundNumber .. " started.")
     self.remainingUnits = {}
-
+    
     self.EventHandles = {
         ListenToGameEvent("npc_spawned", Dynamic_Wrap(GameRound, "OnNPCSpawned"), self),
         ListenToGameEvent("entity_killed", Dynamic_Wrap(GameRound, "OnEntityKilled"), self)
@@ -61,7 +61,7 @@ function GameRound:End()
         for _, player in pairs(self.game.players) do
             player:Income(self.bounty)
         end
-        GameRules:SendCustomMessage("Every player gained <b color='gold'>"..self.bounty.."</b> for surviving.", 0, 0)
+        GameRules:SendCustomMessage("Every player gained <b color='gold'>" .. self.bounty .. "</b> for surviving.", 0, 0)
     end
     self.game:RoundFinished()
 end

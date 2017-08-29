@@ -45,8 +45,8 @@ function Unit:Spawn()
     self.npc:SetMinimumGoldBounty(self.foodCost)
     self.npc:SetMaximumGoldBounty(self.foodCost)
     self:Lock()
-    --end
-    --)
+--end
+--)
 end
 
 
@@ -167,14 +167,14 @@ function UpgradeUnit(event)
     event.caster.unit.player:BuildUnit(newclass)
     event.caster.unit:Respawn()
     event.caster.unit.foodCost = event.caster.unit.foodCost
-            + event.ability:GetSpecialValueFor("food_cost")
+        + event.ability:GetSpecialValueFor("food_cost")
     event.caster.unit.goldCost = event.caster.unit.goldCost
-            + event.ability:GetGoldCost(event.ability:GetLevel())
+        + event.ability:GetGoldCost(event.ability:GetLevel())
     PlayerResource:NewSelection(playerid, event.caster.unit.npc)
 end
 
 
-function OnEndReached(trigger) -- trigger at end of lane to teleport to final defense
+function OnEndReached(trigger)-- trigger at end of lane to teleport to final defense
     local npc = trigger.activator
     if npc.unit and not npc:IsRealHero() then
         if not (npc:GetTeamNumber() == DOTA_TEAM_NEUTRALS) then

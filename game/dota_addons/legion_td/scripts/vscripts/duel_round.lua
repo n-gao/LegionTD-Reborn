@@ -80,19 +80,19 @@ function DuelRound:PlaceKings()
     self.game.direBoss:SetMoveCapability(DOTA_UNIT_CAP_MOVE_GROUND)
     self.game.direBoss:SetDayTimeVisionRange(2000)
     self.game.direBoss:SetBaseMoveSpeed(300)
-
+    
     self.game.direBoss:AddNewModifier(self.game.direBoss, nil, "modifier_king_duel_lua", {})
     self.game.radiantBoss:AddNewModifier(self.game.radiantBoss, nil, "modifier_king_duel_lua", {})
-
+    
     table.insert(self.remainingUnitsRadiant, self.game.radiantBoss)
     table.insert(self.remainingUnitsDire, self.game.direBoss)
-
+    
     ExecuteOrderFromTable({
         UnitIndex = self.game.radiantBoss:entindex(),
         OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
         TargetIndex = self.game.direBoss:entindex(),
     })
-
+    
     ExecuteOrderFromTable({
         UnitIndex = self.game.direBoss:entindex(),
         OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
@@ -154,19 +154,19 @@ function DuelRound:End()
         self.winningTeam = DOTA_TEAM_BADGUYS
         victoryText = "Dire won the duel and earn "
     end
-
-    DuelRound.doneRounds[""..self.game.doneDuels] = {
+    
+    DuelRound.doneRounds["" .. self.game.doneDuels] = {
         winner = self.winningTeam,
         time = GameRules:GetGameTime()
     }
-
+    
     --Add won duel to stats
     local winners = self.game:GetAllPlayersOfTeam(self.winningTeam)
     for _, winner in pairs(winners) do
         winner:WonDuel()
     end
-
-
+    
+    
     for key, val in pairs(self.EventHandles) do
         StopListeningToGameEvent(val)
     end
@@ -196,7 +196,7 @@ function DuelRound:End()
         rank = rank + 1
         if rank > 4 then break end
     end
-
+    
     if self.bounty then
         for _, player in pairs(self.game.players) do
             if player.plyEntitie and player:GetTeamNumber() == self.winningTeam and not player.abandoned then

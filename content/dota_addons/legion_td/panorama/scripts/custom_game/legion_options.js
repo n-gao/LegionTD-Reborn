@@ -3,22 +3,22 @@ var voteOptionNames = [];
 
 function IncomeTogglePressed() {
   var data = {
-    playerID : Players.GetLocalPlayer(),
-    value : $("#IncomeToggle").checked
+    playerID: Players.GetLocalPlayer(),
+    value: $("#IncomeToggle").checked
   };
   GameEvents.SendCustomGameEventToServer("toggle_income_limit", data);
 }
 
 function VoteOptionClicked(opt) {
   var data = {
-    option : opt,
-    playerID : Players.GetLocalPlayer(),
-    value : $("#" + opt).checked
+    option: opt,
+    playerID: Players.GetLocalPlayer(),
+    value: $("#" + opt).checked
   };
   GameEvents.SendCustomGameEventToServer("vote_option_clicked", data);
 }
 
-function UpdateVoteLabel(data)  {
+function UpdateVoteLabel(data) {
   if (voteOptionNames[data.option] == null) {
     voteOptionNames[data.option] = $("#" + data.option).text;
   }
@@ -27,5 +27,5 @@ function UpdateVoteLabel(data)  {
 }
 
 (function () {
-	GameEvents.Subscribe("update_vote_label", UpdateVoteLabel);
+  GameEvents.Subscribe("update_vote_label", UpdateVoteLabel);
 })();

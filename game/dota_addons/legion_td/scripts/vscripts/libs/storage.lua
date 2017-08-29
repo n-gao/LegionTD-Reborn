@@ -83,7 +83,7 @@ end
 function Storage:GetRankingPosition(attribute, steamId, callback)
     local rankingPositions = self:GetRankingPositions(attribute)
     if rankingPositions[steamId] ~= nil then
-        return callback({ attribute = attribute, steamId = steamId, rank = rankingPositions[steamId] })
+        return callback({attribute = attribute, steamId = steamId, rank = rankingPositions[steamId]})
     end
     local callbacks = self:GetRankingPositionCallbacks(attribute, steamId)
     table.insert(callbacks, callback)
@@ -137,7 +137,7 @@ function Storage:GetRanking(attribute, from, to, callback)
         return
     end
     self:RequestMissing(attribute, from, to)
-    local requestData = { from = from, to = to, callback = callback }
+    local requestData = {from = from, to = to, callback = callback}
     table.insert(self:GetRankingRequestsFor(attribute), requestData)
 end
 
@@ -276,25 +276,25 @@ function Storage:GetPlayerData(steam_id, callback)
         method = "info",
         steamId = steam_id,
     },
-        function(result)
-            local resultTable = JSON:decode(result)
-            print("[STORAGE] Get Player Info Response")
-            DeepPrintTable(resultTable)
-            if resultTable ~= nil then
-                if resultTable[DataAttribute] ~= nil then
-                    self.cachedData[steam_id] = resultTable[DataAttribute]
-                    self:CallRequestedCallbacks(steam_id, self.cachedData[steam_id], true)
-                    return
-                end
-                if resultTable[FailureAttribute] ~= nil then
-                    print(resultTable[FailureAttribute])
-                    self:CallRequestedCallbacks(steam_id, resultTable, false)
-                    return
-                end
-                self:CallRequestedCallbacks(steam_id, nil, false)
+    function(result)
+        local resultTable = JSON:decode(result)
+        print("[STORAGE] Get Player Info Response")
+        DeepPrintTable(resultTable)
+        if resultTable ~= nil then
+            if resultTable[DataAttribute] ~= nil then
+                self.cachedData[steam_id] = resultTable[DataAttribute]
+                self:CallRequestedCallbacks(steam_id, self.cachedData[steam_id], true)
+                return
+            end
+            if resultTable[FailureAttribute] ~= nil then
+                print(resultTable[FailureAttribute])
+                self:CallRequestedCallbacks(steam_id, resultTable, false)
+                return
             end
             self:CallRequestedCallbacks(steam_id, nil, false)
-        end)
+        end
+        self:CallRequestedCallbacks(steam_id, nil, false)
+    end)
 end
 
 function Storage:CallRequestedCallbacks(steam_id, result, success)
@@ -414,9 +414,9 @@ end
 function Storage:SendHttpRequest(method, data, callback)
     print("[STORAGE] Send Data")
     DeepPrintTable(data)
-
+    
     local req = CreateHTTPRequestScriptVM(method, self.serverURL)
-
+    
     for key, value in pairs(data) do
         req:SetHTTPRequestGetOrPostParameter(key, tostring(value))
     end

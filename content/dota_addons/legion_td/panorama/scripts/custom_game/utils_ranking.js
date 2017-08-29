@@ -18,9 +18,9 @@ function GetRPCallbacks(attribute, steamId) {
 
 function RequestRankingPosition(attribute, steamId, callback) {
     var data = {
-        playerId : Players.GetLocalPlayer(),
-        attribute : attribute,
-        steamId : steamId,
+        playerId: Players.GetLocalPlayer(),
+        attribute: attribute,
+        steamId: steamId,
     }
     GetRPCallbacks(attribute, steamId).push(callback);
     GameEvents.SendCustomGameEventToServer("request_ranking_position", data);
@@ -40,13 +40,13 @@ function ReceiveRankingPosition(data) {
 
 function RequestRankingFromTo(attribute, start, end, callback) {
     var data = {
-        playerID : Players.GetLocalPlayer(),
-        attribute : attribute,
-        from : start,
-        to : end
+        playerID: Players.GetLocalPlayer(),
+        attribute: attribute,
+        from: start,
+        to: end
     }
     GameEvents.SendCustomGameEventToServer("request_ranking", data);
-    GetCallbacks().push({ attribute : attribute, start : start, end : end, callback : callback});
+    GetCallbacks().push({ attribute: attribute, start: start, end: end, callback: callback });
 }
 
 function GetRankingFromTo(attribute, start, end) {
@@ -104,15 +104,15 @@ function HasDataFor(callbackData) {
 
 function InitRanking() {
     //if (GameUI.CustomUIConfig().Rankings == null) {
-        GameUI.CustomUIConfig().Rankings = {};
-        GameUI.CustomUIConfig().Rankings.Callbacks = [];
-        GameUI.CustomUIConfig().Rankings.Requests = [];
-        GameUI.CustomUIConfig().RankingPositions = {};
-	    GameEvents.Subscribe("send_rankings", UpdateRanking);
-        GameEvents.Subscribe("send_ranking_position", ReceiveRankingPosition);
+    GameUI.CustomUIConfig().Rankings = {};
+    GameUI.CustomUIConfig().Rankings.Callbacks = [];
+    GameUI.CustomUIConfig().Rankings.Requests = [];
+    GameUI.CustomUIConfig().RankingPositions = {};
+    GameEvents.Subscribe("send_rankings", UpdateRanking);
+    GameEvents.Subscribe("send_ranking_position", ReceiveRankingPosition);
     //}
 }
 
-(function() {
+(function () {
     InitRanking();
 })();
