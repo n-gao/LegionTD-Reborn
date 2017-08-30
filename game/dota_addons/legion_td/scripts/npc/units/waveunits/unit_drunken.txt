@@ -1,93 +1,93 @@
 "unit_drunken"
 {
-	"BaseClass"	"npc_dota_creature"
-	"Model"	"models/heroes/brewmaster/brewmaster.vmdl"
-	"ModelScale"	"0.6"
-	"SoundSet"	"Hero_Brewmaster"
-	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
-	"Level"	"1"
-	"HealthBarOffset"	"140"
-	"Vscripts"	"ai/ai_default.lua"
-	"Ability1"	"brewmaster_drunken_brawler"
-	"ArmorPhysical"	"9"
-	"MagicalResistance"	"25"
-	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"	"68.75"
-	"AttackDamageMax"	"81.25"
-	"AttackRate"	"0.6"
-	"AttackAnimationPoint"	"0.2"
-	"AttackAcquisitionRange"	"850"
-	"AttackRange"	"90"
-	"ProjectileModel"	""
-	"ProjectileSpeed"	"0"
-	"Legion_AttackType"	"normal"
-	"Legion_DefendType"	"medium"
-	"Legion_Experience"	"130"
+    "BaseClass" "npc_dota_creature"
+    "Model" "models/heroes/brewmaster/brewmaster.vmdl"
+    "ModelScale"    "0.6"
+    "SoundSet"  "Hero_Brewmaster"
+    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
+    "Level" "1"
+    "HealthBarOffset"   "140"
+    "Vscripts"  "ai/ai_default.lua"
+    "Ability1"  "brewmaster_drunken_brawler"
+    "ArmorPhysical" "9"
+    "MagicalResistance" "25"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"   "68.75"
+    "AttackDamageMax"   "81.25"
+    "AttackRate"    "0.6"
+    "AttackAnimationPoint"  "0.2"
+    "AttackAcquisitionRange"    "850"
+    "AttackRange"   "90"
+    "ProjectileModel"   ""
+    "ProjectileSpeed"   "0"
+    "Legion_AttackType" "normal"
+    "Legion_DefendType" "medium"
+    "Legion_Experience" "130"
     "Legion_Fraction"   "boss"
-	"BountyGoldMin"	"7.0"
-	"BountyGoldMax"	"7.0"
-	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"	"50"
-	"RingRadius"	"50"
-	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"	"295"
-	"MovementTurnRate"	"0.6"
-	"StatusHealth"	"750"
-	"StatusHealthRegen"	"0"
-	"StatusMana"	"0"
-	"StatusManaRegen"	"0"
-	"VisionDaytimeRange"	"1400"
-	"VisionNighttimeRange"	"800"
-	"TeamName"	"DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-	"Creature"
-	{
-		"DisableClumpingBehavior"	"1"
-		"DefaultState"	"Invade"
-		"States"
-		{
-			"Invade"
-			{
-				"Name"	"Invade"
-				"Aggression"	"100.0"
-				"Avoidance"	"0.0"
-				"Support"	"0.0"
-			}
+    "BountyGoldMin" "7.0"
+    "BountyGoldMax" "7.0"
+    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
+    "CollisionSize" "50"
+    "RingRadius"    "50"
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed" "295"
+    "MovementTurnRate"  "0.6"
+    "StatusHealth"  "750"
+    "StatusHealthRegen" "0"
+    "StatusMana"    "0"
+    "StatusManaRegen"   "0"
+    "VisionDaytimeRange"    "1400"
+    "VisionNighttimeRange"  "800"
+    "TeamName"  "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "Creature"
+    {
+        "DisableClumpingBehavior"   "1"
+        "DefaultState"  "Invade"
+        "States"
+        {
+            "Invade"
+            {
+                "Name"  "Invade"
+                "Aggression"    "100.0"
+                "Avoidance" "0.0"
+                "Support"   "0.0"
+            }
 
-		}
+        }
 
-		"AttachWearables"
-		{
-			"Wearable1"
-			{
-				"ItemDef"	"6967"
-			}
+        "AttachWearables"
+        {
+            "Wearable1"
+            {
+                "ItemDef"   "6967"
+            }
 
-			"Wearable2"
-			{
-				"ItemDef"	"6966"
-			}
+            "Wearable2"
+            {
+                "ItemDef"   "6966"
+            }
 
-			"Wearable3"
-			{
-				"ItemDef"	"6968"
-			}
+            "Wearable3"
+            {
+                "ItemDef"   "6968"
+            }
 
-			"Wearable4"
-			{
-				"ItemDef"	"5641"
-			}
+            "Wearable4"
+            {
+                "ItemDef"   "5641"
+            }
 
-			"Wearable5"
-			{
-				"ItemDef"	"6969"
-			}
+            "Wearable5"
+            {
+                "ItemDef"   "6969"
+            }
 
-		}
+        }
 
-	}
+    }
 
 }
