@@ -620,5 +620,79 @@
         "UnitCount"           "12"
       }
     }
+	
+	"38"                      // Wave 32
+    {
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_ancienthulk"
+      "bounty"                "62"
+      "Unit"
+      {
+        "NPCName"             "unit_ancienthulk"
+        "UnitCount"           "12"
+      }
+    }
+	
+	"39"                      // Wave 33
+    {
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_skeleton"
+      "bounty"                "63"
+      "Unit"
+      {
+        "NPCName"             "unit_skeleton"
+        "UnitCount"           "15"
+      }
+    }
+	
+	"40"                      // Wave 34
+    {
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_dragonspawn"
+      "bounty"                "64"
+      "Unit"
+      {
+        "NPCName"             "unit_dragonspawn"
+        "UnitCount"           "5"
+      }
+    }
+	
+	"41"                      // Wave 35
+    {
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_ursa"
+      "bounty"                "65"
+      "Unit"
+      {
+        "NPCName"             "unit_ursa"
+        "UnitCount"           "13"
+      }
+    }
+	
+	"42"                      // Duel 7
+    {
+      "round_type"            "duel"
+      "round_title"           "Duel_Quest_Title"
+      "determines_winner"     "true"
+      "bounty"                "160"
+    }
+	
+	"43"                      // Wave 36
+    {
+      "round_type"            "wave"
+      "round_quest_title"     "Jo test"
+      "round_title"           "wavetitle_golemwarrior"
+      "bounty"                "66"
+      "Unit"
+      {
+        "NPCName"             "unit_golemwarrior"
+        "UnitCount"           "10"
+      }
+    }
+	
   }
 }
