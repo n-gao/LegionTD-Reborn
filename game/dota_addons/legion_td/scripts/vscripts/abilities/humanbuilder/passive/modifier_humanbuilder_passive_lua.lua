@@ -28,15 +28,10 @@ end
 function modifier_humanbuilder_passive_lua:OnRefresh(kv)
     if IsServer() then
 
-        -- gameEnt = GameRules:GetGameModeEntity()
-        gameEnt = GameRules.GameMode.game
-
-        playerObj = gameEnt:FindPlayerWithID(self:GetParent():GetPlayerID())
-        currentRound = 0
-        if gameEnt:GetCurrentRound() then
-            currentRound = gameEnt:GetCurrentRound().roundNumber
-        end
-        foodlimit = playerObj.foodlimit
+        local game = GameRules.GameMode.game
+        local currentRound = game:GetCurrentWaveNumber()
+        local playerObj = game:FindPlayerWithID(self:GetParent():GetPlayerID())
+        local foodlimit = playerObj.foodlimit
 
         self.desiredExtraFood = math.floor(self.food_per_turn * currentRound)
         if self.givenExtraFood < self.desiredExtraFood then

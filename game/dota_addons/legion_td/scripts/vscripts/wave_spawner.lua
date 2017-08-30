@@ -54,12 +54,11 @@ function WaveSpawner:Spawn()
                 --print ("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
                 table.insert(positions, Vector(hpos, vpos, 0))
             end
-
+            
             -- print ("RANK AND FILE:")
             -- for _, v in ipairs(positions) do
             --   print(v.x .. ", " .. v.y)
             -- end
-
             for i = 1, self.unitCount do
                 local creep = CreateUnitByName(self.npcName,
                     positions[i] + rank1, true, nil, nil, DOTA_TEAM_NEUTRALS)
@@ -96,28 +95,28 @@ function WaveSpawner:Spawn()
             end
         end
     end
-
+    
     self.dmgBonus = self.dmgBonus + LAST_WAVE_DMG_PER_ROUND
     self.healthBonus = self.healthBonus + LAST_WAVE_HEALTH_PER_ROUND
-
+    
     self:SendIncomingUnits(DOTA_TEAM_GOODGUYS)
     self:SendIncomingUnits(DOTA_TEAM_BADGUYS)
 end
 
 function WaveSpawner.ApplyHardMode(creep)
     if (not voteOptions["hard_mode"]) then return end
-
+    
     local bonusHp = creep:GetMaxHealth() * HARD_MODE_HEALTH_MULTIPLIER - creep:GetMaxHealth()
     creep:SetMaxHealth(creep:GetMaxHealth() + bonusHp)
     creep:SetBaseMaxHealth(creep:GetBaseMaxHealth() + bonusHp)
     creep:Heal(bonusHp, nil)
-
+    
     creep:SetBaseDamageMin(creep:GetBaseDamageMin() * HARD_MODE_DAMAGE_MULTIPLIER)
     creep:SetBaseDamageMax(creep:GetBaseDamageMax() * HARD_MODE_DAMAGE_MULTIPLIER)
 end
 
 function WaveSpawner:SendIncomingUnits(team)
-    local spawners = {} -- list of possible lanes that we can distribute to, indexed 1 to 4
+    local spawners = {}-- list of possible lanes that we can distribute to, indexed 1 to 4
     local count = 0 -- number of valid lanes to distribute to
     local units = {}
     local distributedValues = {}
@@ -167,11 +166,11 @@ function WaveSpawner:SendIncomingUnits(team)
         print("Game.sendLeaderRadiant is now " .. Game.sendLeaderRadiant)
         leader = Game.sendLeaderRadiant
     end
-
-    table.sort(units, function(a, b) return a.tangoValue > b.tangoValue end) -- sort units by their tango value
-
+    
+    table.sort(units, function(a, b) return a.tangoValue > b.tangoValue end)-- sort units by their tango value
+    
     print("Assigning send units-")
-
+    
     for _, unit in ipairs(units) do
         if next(spawners) == nil then
             unit:ForceKill(false)
@@ -183,9 +182,9 @@ function WaveSpawner:SendIncomingUnits(team)
                     break
                 end
             end
-
+            
             table.insert(distributedUnits[theLane], unit)
-
+            
             distributedValues[theLane] = distributedValues[theLane] + unit.tangoValue
             tempLowestValue = distributedValues[theLane]
             for _, j in pairs(distributedValues) do
@@ -195,13 +194,13 @@ function WaveSpawner:SendIncomingUnits(team)
             lowestValue = tempLowestValue
         end
     end
-
+    
     print("Moving send units-")
-
+    
     local sendsPerMiniwave = 15
-
+    
     for theLane, units in pairs(distributedUnits) do
-
+        
         local lane = spawners[theLane]
         local unitCount = #units
         local polar = 1
@@ -220,50 +219,50 @@ function WaveSpawner:SendIncomingUnits(team)
             print("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
             table.insert(positions, Vector(hpos, vpos, 0))
         end
-
-
-
-
+        
+        
+        
+        
         local k = 1
         local i = 1
-
+        
         for _, unit in pairs(units) do
-
+            
             Timers:CreateTimer((math.floor((i - 1) / sendsPerMiniwave) * 2) + 2, function()
-
-                print("i = " .. i)
-                print("k = " .. k)
-
-                FindClearSpaceForUnit(unit, rank1 + positions[k], true)
-
-                unit:RemoveModifierByName("modifier_unit_freeze_lua")
-                unit:RemoveModifierByName("modifier_invulnerable")
-
-                unit.waypoints = {}
-                for j = 1, 4 do
-                    DebugDrawCircle(lane.waypoints[j] + positions[k], Vector(0, 255, 0), 1, 50, false, 50)
-                    table.insert(unit.waypoints, lane.waypoints[j] + positions[k])
-                end
-
-                unit.waypoints[4].y = unit.waypoints[4].y -- make final waypoint y aligned with king regardless of formation rank
-                unit.wayStep = 2
-
-                ExecuteOrderFromTable({
-                    UnitIndex = unit:entindex(),
-                    OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
-                    TargetIndex = 0, --Optional.  Only used when targeting units
-                    AbilityIndex = 0, --Optional.  Only used when casting abilities
-                    Position = unit.waypoints[unit.wayStep], --Optional.  Only used when targeting the ground
-                    Queue = 0 --Optional.  Used for queueing up abilities
-                })
-                unit:SetTeam(DOTA_TEAM_NEUTRALS)
-                unit.nextTarget = lane.nextWaypoint
-                unit.lastWaypoint = lane.lastWaypoint
-                unit.lane = spawners[theLane]
-                self.gameRound:AddUnitToBeKilled(unit)
-                k = k + 1
+                    
+                    print("i = " .. i)
+                    print("k = " .. k)
+                    
+                    FindClearSpaceForUnit(unit, rank1 + positions[k], true)
+                    
+                    unit:RemoveModifierByName("modifier_unit_freeze_lua")
+                    unit:RemoveModifierByName("modifier_invulnerable")
+                    
+                    unit.waypoints = {}
+                    for j = 1, 4 do
+                        DebugDrawCircle(lane.waypoints[j] + positions[k], Vector(0, 255, 0), 1, 50, false, 50)
+                        table.insert(unit.waypoints, lane.waypoints[j] + positions[k])
+                    end
+                    
+                    unit.waypoints[4].y = unit.waypoints[4].y -- make final waypoint y aligned with king regardless of formation rank
+                    unit.wayStep = 2
+                    
+                    ExecuteOrderFromTable({
+                        UnitIndex = unit:entindex(),
+                        OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
+                        TargetIndex = 0, --Optional.  Only used when targeting units
+                        AbilityIndex = 0, --Optional.  Only used when casting abilities
+                        Position = unit.waypoints[unit.wayStep], --Optional.  Only used when targeting the ground
+                        Queue = 0 --Optional.  Used for queueing up abilities
+                    })
+                    unit:SetTeam(DOTA_TEAM_NEUTRALS)
+                    unit.nextTarget = lane.nextWaypoint
+                    unit.lastWaypoint = lane.lastWaypoint
+                    unit.lane = spawners[theLane]
+                    self.gameRound:AddUnitToBeKilled(unit)
+                    k = k + 1
             end)
-
+            
             i = i + 1
         end
     end

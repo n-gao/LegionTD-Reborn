@@ -9,7 +9,6 @@
     <include src="file://{resources}/scripts/custom_game/statistics_lifetime.js" />
   </scripts>
   <Panel hittest="false" class="LifetimeStatisticRoot">
-    <Panel id="LifetimeAttributes">
-    </Panel>  
+    <Panel id="LifetimeAttributes"></Panel>
   </Panel>
 </root>

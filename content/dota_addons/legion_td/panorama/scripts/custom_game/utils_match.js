@@ -21,10 +21,10 @@ function UpdateMatchHistory(data) {
 
 function RequestMatchHistory(from, to, callback) {
     var data = {
-        playerId : Players.GetLocalPlayer(),
-        steamId : Game.GetLocalPlayerInfo().player_steamid,
-        from : from,
-        to : to,
+        playerId: Players.GetLocalPlayer(),
+        steamId: Game.GetLocalPlayerInfo().player_steamid,
+        from: from,
+        to: to,
     }
     GameEvents.SendCustomGameEventToServer("request_match_history", data);
     GetHistoryCallbacks().push(callback);
@@ -51,8 +51,8 @@ function InitMatches() {
     if (GameUI.CustomUIConfig().Matches == null) {
         GameUI.CustomUIConfig().Matches = {};
         GameUI.CustomUIConfig().MatchesRequests = [];
-	    GameEvents.Subscribe("send_match", UpdateMatch);
-	    GameEvents.Subscribe("send_match_history", UpdateMatchHistory);
+        GameEvents.Subscribe("send_match", UpdateMatch);
+        GameEvents.Subscribe("send_match_history", UpdateMatchHistory);
         RefreshRequestes();
 
         GameUI.CustomUIConfig().MatchHistory = {};
@@ -72,6 +72,6 @@ function GetMatchHistory() {
     return GameUI.CustomUIConfig().MatchHistory;
 }
 
-(function() {
+(function () {
     InitMatches();
 })();

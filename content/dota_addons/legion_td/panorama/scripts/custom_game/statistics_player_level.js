@@ -6,10 +6,10 @@ var filetype = ".png";
 function GetLevel(steamId) {
     return Math.ceil(Math.random() * 100);
 }
- 
+
 function UpdateLevel() {
     var storedData = GetStoredDataFor(steam_id);
-    var level = GetLevelOf(steam_id); 
+    var level = GetLevelOf(steam_id);
     var iconLevel = (level - 1) % 100 + 1;
     $("#LegionLevelBackground").SetHasClass("silver", level > 100);
     $("#LegionLevelBackground").SetHasClass("gold", level > 200);
@@ -18,7 +18,7 @@ function UpdateLevel() {
     $.Schedule(1, UpdateLevel);
 }
 
-(function() {
+(function () {
     RequestStoredDataFor(steam_id);
     UpdateLevel();
 })();

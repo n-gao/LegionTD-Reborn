@@ -10,9 +10,8 @@
   <Panel hittest="true" class="StatisticPanel">
     <Panel hittest="true" class="StatisticHeader">
       <Panel hittest="true" class="StatisticLabelPanel">
-          <Label id="HeaderLabel" class="StatisticLabel" text="test"/>
+        <Label id="HeaderLabel" class="StatisticLabel" text="test"/>
       </Panel>
     </Panel>
-    <Panel id="Content" class="StatisticContent" />
-  </Panel>
+    <Panel id="Content" class="StatisticContent" /></Panel>
 </root>

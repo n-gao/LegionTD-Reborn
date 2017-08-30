@@ -5,28 +5,28 @@ function GetMinutes(seconds) {
 }
 
 function formatDate(date) {
-  var monthNames = [
-    "January", "February", "March",
-    "April", "May", "June", "July",
-    "August", "September", "October",
-    "November", "December"
-  ];
+    var monthNames = [
+        "January", "February", "March",
+        "April", "May", "June", "July",
+        "August", "September", "October",
+        "November", "December"
+    ];
 
-  var day = date.getDate();
-  var month = date.getMonth();
-  var year = date.getFullYear();
-  var hour = date.getHours();
-  var minutes = date.getMinutes();
+    var day = date.getDate();
+    var month = date.getMonth();
+    var year = date.getFullYear();
+    var hour = date.getHours();
+    var minutes = date.getMinutes();
 
-  return (day > 9 ? '' : '0') + day + '.' 
-        + (month > 9 ? '' : '0') + month + '.' 
+    return (day > 9 ? '' : '0') + day + '.'
+        + (month > 9 ? '' : '0') + month + '.'
         + year + ' '
         + (hour > 9 ? '' : '0') + hour + ':'
         + (minutes > 9 ? '' : '0') + minutes;
 }
 
 
-(function() {
+(function () {
     var won = $.GetContextPanel().GetAttributeInt("Won", 0);
     var result = $.GetContextPanel().GetAttributeInt("RatingChange", 0);
     var duration = $.GetContextPanel().GetAttributeInt("Duration", 0);
@@ -39,8 +39,8 @@ function formatDate(date) {
     $("#Result").SetHasClass("Lost", !won);
     var min = GetMinutes(duration);
     var seconds = duration - min * 60;
-    $("#Duration").text = min+":"+seconds;
+    $("#Duration").text = min + ":" + seconds;
     $("#Date").text = formatDate(d);
-    $("#BuilderName").text = $.Localize(builder+"builder");
-    $("#BuilderImage").SetImage("file://{resources}/images/custom_game/buildericons/"+builder+".png");
+    $("#BuilderName").text = $.Localize(builder + "builder");
+    $("#BuilderImage").SetImage("file://{resources}/images/custom_game/buildericons/" + builder + ".png");
 })();

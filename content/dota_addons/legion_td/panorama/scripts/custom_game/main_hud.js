@@ -1,33 +1,33 @@
 "use strict";
 
-GameUI.CustomUIConfig().units =  
-[
-	{"id" : 1001, "cost" : 20, "income" : 1, "cooldown" : 1, "name" : "incomeunit_kobold", "icon" : "send_incomeunit_kobold"},
-	{"id" : 1002, "cost" : 45, "income" : 2, "cooldown" : 2, "name" : "incomeunit_hill_troll_shaman", "icon" : "send_incomeunit_hill_troll_shaman"},
-	{"id" : 1003, "cost" : 50, "income" : 2, "cooldown" : 3, "name" : "incomeunit_hill_troll_warrior", "icon" : "send_incomeunit_hill_troll_warrior"},
-	{"id" : 1004, "cost" : 75, "income" : 3, "cooldown" : 4, "name" : "incomeunit_harpy", "icon" : "send_incomeunit_harpy"},
-	{"id" : 1005, "cost" : 100, "income" : 4, "cooldown" : 5, "name" : "incomeunit_ghost", "icon" : "send_incomeunit_ghost"},
-	{"id" : 1006, "cost" : 125, "income" : 5, "cooldown" : 6, "name" : "incomeunit_little_wolf", "icon" : "send_incomeunit_little_wolf"},
-	{"id" : 1007, "cost" : 150, "income" : 6, "cooldown" : 7, "name" : "incomeunit_satyr", "icon" : "send_incomeunit_satyr"},
-	{"id" : 1008, "cost" : 175, "income" : 6, "cooldown" : 8, "name" : "incomeunit_ogre_warrior", "icon" : "send_incomeunit_ogre_warrior"},
-	{"id" : 1009, "cost" : 200, "income" : 7, "cooldown" : 9, "name" : "incomeunit_little_centaur", "icon" : "send_incomeunit_little_centaur"},
-	{"id" : 1010, "cost" : 225, "income" : 8, "cooldown" : 10, "name" : "incomeunit_wolf", "icon" : "send_incomeunit_wolf"},
-	{"id" : 1011, "cost" : 250, "income" : 9, "cooldown" : 11, "name" : "incomeunit_golem", "icon" : "send_incomeunit_golem"},
-	{"id" : 1013, "cost" : 275, "income" : 10, "cooldown" : 12, "name" : "incomeunit_centaur", "icon" : "send_incomeunit_centaur"},
-	{"id" : 1014, "cost" : 300, "income" : 11, "cooldown" : 13, "name" : "incomeunit_vulture", "icon" : "send_incomeunit_vulture"},
-	{"id" : 1015, "cost" : 325, "income" : 12, "cooldown" : 14, "name" : "incomeunit_lizard", "icon" : "send_incomeunit_lizard"},
-	{"id" : 1016, "cost" : 400, "income" : 13, "cooldown" : 15, "name" : "incomeunit_lycanwolf", "icon" : "send_incomeunit_lycanwolf"},
-	{"id" : 1017, "cost" : 425, "income" : 14, "cooldown" : 16, "name" : "incomeunit_black_drake", "icon" : "send_incomeunit_black_drake"},
-	{"id" : 1018, "cost" : 450, "income" : 15, "cooldown" : 17, "name" : "incomeunit_big_lizard", "icon" : "send_incomeunit_big_lizard"},
-	{"id" : 1019, "cost" : 500, "income" : 16, "cooldown" : 18, "name" : "incomeunit_ancientgolem", "icon" : "send_incomeunit_ancient_golem"},
-	{"id" : 1020, "cost" : 550, "income" : 17, "cooldown" : 19, "name" : "incomeunit_fleshgolem", "icon" : "send_incomeunit_fleshgolem"},
-	{"id" : 1021, "cost" : 600, "income" : 18, "cooldown" : 20, "name" : "incomeunit_jellyfish", "icon" : "send_incomeunit_jellyfish"},
-	{"id" : 1022, "cost" : 650, "income" : 19, "cooldown" : 21, "name" : "incomeunit_hulk", "icon" : "send_incomeunit_hulk"},
-	{"id" : 1023, "cost" : 700, "income" : 20, "cooldown" : 22, "name" : "incomeunit_beast", "icon" : "send_incomeunit_beast"},
-	{"id" : 1024, "cost" : 750, "income" : 21, "cooldown" : 25, "name" : "incomeunit_diablo", "icon" : "send_incomeunit_diablo"},
-	{"id" : 1025, "cost" : 800, "income" : 22, "cooldown" : 30, "name" : "incomeunit_rosh", "icon" : "send_incomeunit_rosh"}
-]
-;
+GameUI.CustomUIConfig().units =
+	[
+		{ "id": 1001, "cost": 20, "income": 1, "cooldown": 1, "name": "incomeunit_kobold", "icon": "send_incomeunit_kobold" },
+		{ "id": 1002, "cost": 45, "income": 2, "cooldown": 2, "name": "incomeunit_hill_troll_shaman", "icon": "send_incomeunit_hill_troll_shaman" },
+		{ "id": 1003, "cost": 50, "income": 2, "cooldown": 3, "name": "incomeunit_hill_troll_warrior", "icon": "send_incomeunit_hill_troll_warrior" },
+		{ "id": 1004, "cost": 75, "income": 3, "cooldown": 4, "name": "incomeunit_harpy", "icon": "send_incomeunit_harpy" },
+		{ "id": 1005, "cost": 100, "income": 4, "cooldown": 5, "name": "incomeunit_ghost", "icon": "send_incomeunit_ghost" },
+		{ "id": 1006, "cost": 125, "income": 5, "cooldown": 6, "name": "incomeunit_little_wolf", "icon": "send_incomeunit_little_wolf" },
+		{ "id": 1007, "cost": 150, "income": 6, "cooldown": 7, "name": "incomeunit_satyr", "icon": "send_incomeunit_satyr" },
+		{ "id": 1008, "cost": 175, "income": 6, "cooldown": 8, "name": "incomeunit_ogre_warrior", "icon": "send_incomeunit_ogre_warrior" },
+		{ "id": 1009, "cost": 200, "income": 7, "cooldown": 9, "name": "incomeunit_little_centaur", "icon": "send_incomeunit_little_centaur" },
+		{ "id": 1010, "cost": 225, "income": 8, "cooldown": 10, "name": "incomeunit_wolf", "icon": "send_incomeunit_wolf" },
+		{ "id": 1011, "cost": 250, "income": 9, "cooldown": 11, "name": "incomeunit_golem", "icon": "send_incomeunit_golem" },
+		{ "id": 1013, "cost": 275, "income": 10, "cooldown": 12, "name": "incomeunit_centaur", "icon": "send_incomeunit_centaur" },
+		{ "id": 1014, "cost": 300, "income": 11, "cooldown": 13, "name": "incomeunit_vulture", "icon": "send_incomeunit_vulture" },
+		{ "id": 1015, "cost": 325, "income": 12, "cooldown": 14, "name": "incomeunit_lizard", "icon": "send_incomeunit_lizard" },
+		{ "id": 1016, "cost": 400, "income": 13, "cooldown": 15, "name": "incomeunit_lycanwolf", "icon": "send_incomeunit_lycanwolf" },
+		{ "id": 1017, "cost": 425, "income": 14, "cooldown": 16, "name": "incomeunit_black_drake", "icon": "send_incomeunit_black_drake" },
+		{ "id": 1018, "cost": 450, "income": 15, "cooldown": 17, "name": "incomeunit_big_lizard", "icon": "send_incomeunit_big_lizard" },
+		{ "id": 1019, "cost": 500, "income": 16, "cooldown": 18, "name": "incomeunit_ancientgolem", "icon": "send_incomeunit_ancient_golem" },
+		{ "id": 1020, "cost": 550, "income": 17, "cooldown": 19, "name": "incomeunit_fleshgolem", "icon": "send_incomeunit_fleshgolem" },
+		{ "id": 1021, "cost": 600, "income": 18, "cooldown": 20, "name": "incomeunit_jellyfish", "icon": "send_incomeunit_jellyfish" },
+		{ "id": 1022, "cost": 650, "income": 19, "cooldown": 21, "name": "incomeunit_hulk", "icon": "send_incomeunit_hulk" },
+		{ "id": 1023, "cost": 700, "income": 20, "cooldown": 22, "name": "incomeunit_beast", "icon": "send_incomeunit_beast" },
+		{ "id": 1024, "cost": 750, "income": 21, "cooldown": 25, "name": "incomeunit_diablo", "icon": "send_incomeunit_diablo" },
+		{ "id": 1025, "cost": 800, "income": 22, "cooldown": 30, "name": "incomeunit_rosh", "icon": "send_incomeunit_rosh" }
+	]
+	;
 
 var overlay = null;
 
@@ -35,14 +35,14 @@ function AddUnit(unit, row) {
 	var unitPanel = $.CreatePanel("Panel", row, unit.name);
 	unitPanel.BLoadLayout("file://{resources}/layout/custom_game/shop_unit.xml", false, false);
 	var icon = unitPanel.FindChildInLayoutFile("UnitIcon");
-	var iconName = "file://{resources}/images/custom_game/spellicons/"+unit.icon+".png";
+	var iconName = "file://{resources}/images/custom_game/spellicons/" + unit.icon + ".png";
 	icon.SetImage(iconName);
 	var cost = unitPanel.FindChildInLayoutFile("TangoCostLabel");
 	var income = unitPanel.FindChildInLayoutFile("GoldIncomeLabel");
 	var desc = unitPanel.FindChildInLayoutFile("DescLabel");
 	income.text = "Income: " + unit.income;
-	cost.text = "Cost: "+ unit.cost;
-	desc.text = $.Localize("#DOTA_Tooltip_ability_"+unit.icon+"_Description").split(": ").pop();
+	cost.text = "Cost: " + unit.cost;
+	desc.text = $.Localize("#DOTA_Tooltip_ability_" + unit.icon + "_Description").split(": ").pop();
 	unitPanel.SetAttributeInt("id", unit.id);
 	unitPanel.SetAttributeInt("cost", unit.cost);
 	unitPanel.SetAttributeInt("cooldown", unit.cooldown);
@@ -82,7 +82,7 @@ function OnMinimizedButtonPressed() {
 function OnSkipButtonPressed() {
 	$.GetContextPanel().SetHasClass("SkipPressed", true);
 	var data = {
-		playerID : Players.GetLocalPlayer()
+		playerID: Players.GetLocalPlayer()
 	}
 	GameEvents.SendCustomGameEventToServer("skip_pressed", data);
 }
@@ -93,7 +93,7 @@ function OnSkipButtonPressed2() {
 
 function OnStatisticsButtonPressed() {
 	overlay.ToggleClass("ShowStatistics");
-} 
+}
 
 function UpdatePlayerInfo(data) {
 	UpdateInfoPanel();
@@ -105,8 +105,7 @@ function UpdateInfoPanel() {
 	var displayedPlayer = Players.GetLocalPlayer();
 	var localPlayer = Game.GetLocalPlayerInfo();
 	var localPlayerTeamId = -1;
-	if ( localPlayer )
-	{
+	if (localPlayer) {
 		localPlayerTeamId = localPlayer.player_team_id;
 	}
 
@@ -125,7 +124,7 @@ function UpdateInfoPanel() {
 	$("#goldIncome").text = "" + infos.gold_income + $.Localize("#gold_income_text");
 	$("#tangoIncome").text = "" + infos.tango_income + $.Localize("#tango_income_text");
 	if (infos.max_tangos != -1)
-	 	$("#tangoIncome").text += "\n" + infos.max_tangos + " " + $.Localize("#tango_maximum_text");
+		$("#tangoIncome").text += "\n" + infos.max_tangos + " " + $.Localize("#tango_maximum_text");
 	$("#foodLabel").text = "" + infos.current_food + "/" + infos.max_food;
 }
 
@@ -185,7 +184,7 @@ function UpdateGold() {
 	GameEvents.Subscribe("update_player_info", UpdatePlayerInfo);
 	GameEvents.Subscribe("debug", UpdateDebug);
 	GameEvents.Subscribe("error", ErrorMessage);
-    GameEvents.Subscribe("enable_skip", EnableSkip);
+	GameEvents.Subscribe("enable_skip", EnableSkip);
 	for (var i = 0; i < 3; i++) {
 		var upgrade = $.CreatePanel("Panel", $("#Upgrades"), "KingHealthUpgrade");
 		upgrade.BLoadLayout("file://{resources}/layout/custom_game/shop_upgrade.xml", false, false);
@@ -195,21 +194,26 @@ function UpdateGold() {
 		var icon = upgrade.FindChildInLayoutFile("Icon");
 		switch (i) {
 			case 0:
-			label.text = $.Localize("#Upgrade_King_Health");
-			icon.SetImage("file://{resources}/images/custom_game/spellicons/omniknight_purification.png");
-			break;
+				label.text = $.Localize("#Upgrade_King_Health");
+				icon.SetImage("file://{resources}/images/custom_game/spellicons/omniknight_purification.png");
+				break;
 			case 1:
-			label.text = $.Localize("#Upgrade_King_Attack");
-			icon.SetImage("file://{resources}/images/custom_game/spellicons/juggernaut_blade_dance.png");
-			break;
+				label.text = $.Localize("#Upgrade_King_Attack");
+				icon.SetImage("file://{resources}/images/custom_game/spellicons/juggernaut_blade_dance.png");
+				break;
 			case 2:
-			label.text = $.Localize("#Upgrade_King_Regen");
-			icon.SetImage("file://{resources}/images/custom_game/spellicons/enchantress_natures_attendants.png");
-			break;
+				label.text = $.Localize("#Upgrade_King_Regen");
+				icon.SetImage("file://{resources}/images/custom_game/spellicons/enchantress_natures_attendants.png");
+				break;
 			default:
 		}
 	}
 	AddUnits(GameUI.CustomUIConfig().units);
 	InjectClock();
 	InitStatisticsOverlay();
+
+	GameUI.CustomUIConfig().dotaUi.FindChildTraverse("inventory").Children().forEach(function (element) {
+		element.style.visibility = "collapse";
+	});
+	$("#StatisticsButtonPanel").SetParent(GameUI.CustomUIConfig().dotaUi.FindChildTraverse("inventory"));
 })();

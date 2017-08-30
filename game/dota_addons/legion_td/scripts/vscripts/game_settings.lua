@@ -105,6 +105,7 @@ voteOptions["return_to_sender"] = false
 voteOptions["fog_of_war"] = false
 voteOptions["deactivate_duels"] = false
 voteOptions["hard_mode"] = false
+voteOptions["final_duel"] = false
 
 
 voteOptionsText = {}
@@ -113,6 +114,7 @@ voteOptionsText["return_to_sender"] = "Return to sender"
 voteOptionsText["fog_of_war"] = "Fog of war"
 voteOptionsText["deactivate_duels"] = "Deactivate duels"
 voteOptionsText["hard_mode"] = "Hard mode"
+voteOptionsText["final_duel"] = "Final Duel"
 
 
 function UpdateAllVoteLabels()
@@ -154,10 +156,10 @@ function CheckVoteResults()
         end
         if (voteOptions[option]) then
             print(option .. " is active.")
-            GameRules:SendCustomMessage(voteOptionsText[option].. " is active.", 0, 0)
+            GameRules:SendCustomMessage(voteOptionsText[option] .. " is active.", 0, 0)
         else
-            print(option .. " is deactived.")
-            GameRules:SendCustomMessage(voteOptionsText[option].. " is deactived.", 0, 0)
+            print(option .. " is not active.")
+            GameRules:SendCustomMessage(voteOptionsText[option] .. " is not active.", 0, 0)
         end
     end
     GameRules:GetGameModeEntity():SetFogOfWarDisabled(not voteOptions["fog_of_war"])

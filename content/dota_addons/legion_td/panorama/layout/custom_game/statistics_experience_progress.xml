@@ -6,7 +6,7 @@
         <include src="file://{resources}/scripts/custom_game/utils.js"/>
         <include src="file://{resources}/scripts/custom_game/steam_id_getter.js"/>
         <include src="file://{resources}/scripts/custom_game/statistics_experience_progress.js" />
-    </scripts> 
+    </scripts>
     <Panel class="LegionProgressBackground">
         <Panel id="ExperienceBar" class="ExpProgressBar"/>
         <Label id="ExperienceLabel" class="ExpProgressNumber"/>

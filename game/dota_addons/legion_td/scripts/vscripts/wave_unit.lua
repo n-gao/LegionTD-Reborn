@@ -12,7 +12,7 @@ function LeftLane(trigger)
             end
             npc:SetMinimumGoldBounty(1)
             npc:SetMaximumGoldBounty(1)
-            --npc.nextTarget = npc.lastWaypoint
+        --npc.nextTarget = npc.lastWaypoint
         end
     end
 end

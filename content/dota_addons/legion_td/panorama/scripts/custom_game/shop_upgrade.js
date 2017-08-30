@@ -10,10 +10,10 @@ function OnEndHover() {
 
 function OnUpgradeClicked() {
 	var data = {
-		id : Players.GetLocalPlayer(),
-		type : $.GetContextPanel().GetAttributeInt("UpgradeType", 0),
-		cost : 100,
-		income : 4
+		id: Players.GetLocalPlayer(),
+		type: $.GetContextPanel().GetAttributeInt("UpgradeType", 0),
+		cost: 100,
+		income: 4
 	};
 	GameEvents.SendCustomGameEventToServer("upgarde_king", data);
 }

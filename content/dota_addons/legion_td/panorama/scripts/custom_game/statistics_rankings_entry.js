@@ -1,7 +1,7 @@
 "use strict";
 
 
-(function() {
+(function () {
     $("#Name").steamid = $.GetContextPanel().GetAttributeString("SteamID", "Missing Rank");
     $("#Avater").steamid = $.GetContextPanel().GetAttributeString("SteamID", "Missing Rank");
     $("#Rank").text = $.GetContextPanel().GetAttributeString("Rank", "Missing Rank");

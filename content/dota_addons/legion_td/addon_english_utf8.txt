@@ -24,6 +24,7 @@
 		"Option_Fog_Of_War"	"Fog of War"
 		"Option_Deactivate_Duels" "Deactivate Duels"
 		"Option_Hard_Mode"	"Hard Mode"
+		"Option_Final_Duel"	"Final Duel (Disables Infinite Wave)"
 		"QuestTimer"    "Next round starts in %quest_current_value% seconds"
 		"Duel_Quest_Title"		"Duel"
 		"Round"			"Round"

@@ -11,8 +11,7 @@
 			newPlayerPanel.SetAttributeString("creator_name", name);
 			newPlayerPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_creator_panel.xml", false, false);
 		}
- 
-		GameUI.CustomUIConfig().Programmers = [ "76561198027964324", "76561197993928301", "76561198020293120", "76561198076658426", "76561198249367546" ];
+ 		GameUI.CustomUIConfig().Programmers = [ "76561198027964324", "76561197993928301", "76561198020293120", "76561198076658426", "76561198249367546" ];
 		GameUI.CustomUIConfig().GameDesigners = [ "76561198027964324", "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120", "76561198249367546" ];
 		GameUI.CustomUIConfig().Creator = [ "76561198027964324" ];
 		GameUI.CustomUIConfig().Leaders = [ "76561198027964324" ];
@@ -33,15 +32,15 @@
 		<Label id="HowToPlayHeader" class="Header" html="true" text="#legion_game_info_header_how_to_play" />
 		<Panel id="ThroneRow" class="InfoRow">
 			<Label id="ThroneText" html="true" text="#legion_game_info_king" />
-      <Image id="ThroneImage" src="file://{images}/custom_game/game_info/omni.psd" />
+			<Image id="ThroneImage" src="file://{images}/custom_game/game_info/omni.psd" />
 		</Panel>
 		<Panel id="CoinsRow" class="InfoRow">
-    <Image id="CoinsImage" src="file://{images}/custom_game/game_info/ursa.psd" />
-		<Label id="CoinsText" html="true" text="#legion_game_info_units" />
+			<Image id="CoinsImage" src="file://{images}/custom_game/game_info/ursa.psd" />
+			<Label id="CoinsText" html="true" text="#legion_game_info_units" />
 		</Panel>
 		<Panel id="ItemsRow" class="InfoRow">
 			<Label id="ItemsText" html="true" text="#legion_game_info_tango" />
-      <Image id="ItemsImage" src="file://{images}/custom_game/game_info/tower.psd" />
+			<Image id="ItemsImage" src="file://{images}/custom_game/game_info/tower.psd" />
 		</Panel>
 		<Label id="TipsHeader" class="Header" html="true" text="#legion_info_tips_header" />
 		<Panel id="TipsRow" class="InfoRow">
@@ -50,18 +49,16 @@
 			<Label id="TipText03" class="TipText" html="true" text="#legion_game_info_tip03" />
 			<Label id="TipText04" class="TipText" html="true" text="#legion_game_info_tip04" />
 		</Panel>
-			<Panel id="CreatorPanel" hittest="false">
-				<Label id="ContributorPanelLabel" text="#legion_contributor_label" />
-				<Label class="ContributorLabel" text="#legion_contributor_creator" />
-				<Panel id="Creators" class="ContributorPanel" hitetst="false" />
-				<!--<Label class="ContributorLabel" text="#legion_contributor_leader" />
-				<Panel id="Leaders" class="ContributorPanel" hitetst="false" />-->
-				<Label class="ContributorLabel" text="#legion_contributor_previous_leader" /> 
-				<Panel id="PreviousLeaders" class="ContributorPanel" hitetst="false" />
-				<Label class="ContributorLabel" text="#legion_contributor_design" />
-				<Panel id="GameDesigners" class="ContributorPanel" hitetst="false" />
-				<Label class="ContributorLabel" text="#legion_contributor_programming" />
-				<Panel id="Programmers" class="ContributorPanel" hitetst="false" />
-			</Panel>
+		<Panel id="CreatorPanel" hittest="false">
+			<Label id="ContributorPanelLabel" text="#legion_contributor_label" />
+			<Label class="ContributorLabel" text="#legion_contributor_creator" />
+			<Panel id="Creators" class="ContributorPanel" hitetst="false" />
+			<!--<Label class="ContributorLabel" text="#legion_contributor_leader" /><Panel id="Leaders" class="ContributorPanel" hitetst="false" />-->
+			<Label class="ContributorLabel" text="#legion_contributor_previous_leader" />
+			<Panel id="PreviousLeaders" class="ContributorPanel" hitetst="false" />
+			<Label class="ContributorLabel" text="#legion_contributor_design" />
+			<Panel id="GameDesigners" class="ContributorPanel" hitetst="false" />
+			<Label class="ContributorLabel" text="#legion_contributor_programming" />
+			<Panel id="Programmers" class="ContributorPanel" hitetst="false" /></Panel>
 	</Panel>
 </root>

@@ -1,14 +1,10 @@
 <root>
     <styles>
-		<include src="file://{resources}/styles/dotastyles.css" />
-		<include src="file://{resources}/styles/custom_game/new_builder_notification.css" />
+        <include src="file://{resources}/styles/dotastyles.css" />
+        <include src="file://{resources}/styles/custom_game/new_builder_notification.css" />
     </styles>
     <Panel class="main_hud_Root" hittest="false">
-        <!--<Panel class="SceneRoot right" hittest="false" styles="horizontal-align:right;">
-            <DOTAScenePanel class="Scene" unit="npc_dota_hero_skeleton_king"/>
-            <Label class="SceneLabel" text="#Coming_Soon" />
-            <Label class="SceneUnderLabel" text="#Check_out_workshop"/>
-        </Panel>-->
+        <!--<Panel class="SceneRoot right" hittest="false" styles="horizontal-align:right;"><DOTAScenePanel class="Scene" unit="npc_dota_hero_skeleton_king"/><Label class="SceneLabel" text="#Coming_Soon" /><Label class="SceneUnderLabel" text="#Check_out_workshop"/></Panel>-->
         <Panel class="SceneRoot right" hittest="false" styles="horizontal-align:left;">
             <DOTAScenePanel class="Scene" unit="npc_dota_hero_necrolyte"/>
             <Label class="SceneLabel" text="#Coming_Soon" />

@@ -12,10 +12,10 @@
   </scripts>
   <Panel hittest="false" class="MatchStatisticsRoot">
     <Panel class="MatchListCaption">
-        <Label text="#Date" id="Date" class="Headline"/>
-        <Label text="#Builder" class="Headline Builder"/>
-        <Label text="#Result" id="Result" class="Headline"/>
-        <Label text="#Duration" id="Duration" class="Headline"/>
+      <Label text="#Date" id="Date" class="Headline"/>
+      <Label text="#Builder" class="Headline Builder"/>
+      <Label text="#Result" id="Result" class="Headline"/>
+      <Label text="#Duration" id="Duration" class="Headline"/>
     </Panel>
     <Panel id="MatchList">
       <Label text="Coming soon." style="color: white; text-align: center; font-size: 14px; width: 200px; margin-top: 20px;"/>
