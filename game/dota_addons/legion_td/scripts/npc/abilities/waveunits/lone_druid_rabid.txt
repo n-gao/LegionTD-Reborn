@@ -1,0 +1,106 @@
+"lone_druid_rabid"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"            			"ability_datadriven"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+    "FightRecapLevel"               "1"
+    "AbilityTextureName"            "lone_druid_rabid"
+    
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"              "0.0 0.0 0.0 0.0"
+
+    // Time     
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"               "30.0 30.0 30.0 30.0"
+    "AbilityDuration"               "18.0 22.0 26.0 30.0"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"               "0 0 0 0 "
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"          "FIELD_INTEGER"
+            "bonus_attack_speed"        "10"       
+        }
+        "02"
+        {
+            "var_type"          "FIELD_INTEGER"
+            "bonus_move_speed"  "10"
+        }
+        "03"
+        {
+            "var_type"          "FIELD_FLOAT"
+            "rabid_duration"    "10.0 10.0 10.0 10.0"
+        }
+    }
+
+    "precache"
+    {
+        "particle"  "particles/units/heroes/hero_lone_druid/lone_druid_rabid_buff.vpcf"
+        "particle"  "particles/units/heroes/hero_lone_druid/lone_druid_rabid_buff_speed_ring.vpcf"
+        "soundfile" "soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
+    }
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "ScriptFile"    "abilities/waveunits/lone_druid_rabid"
+            "Function"      "Rabid"
+            "Target"
+            {
+                "Center"        "CASTER"
+                "Radius"        "GLOBAL"
+                "Teams"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+                "Types"         "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+            }
+            "unit_name"     "npc_dota_lone_druid_bear"
+        }
+
+        "FireSound"
+        {
+            "EffectName"    "Hero_LoneDruid.Rabid"
+            "Target"        "CASTER"
+        }
+    }
+
+    "Modifiers"
+    {
+        
+        "modifier_rabid"
+        {
+            "EffectName"        "particles/units/heroes/hero_lone_druid/lone_druid_rabid_buff_speed_ring.vpcf"
+            "EffectAttachType"  "follow_origin"
+
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "EffectName"        "particles/units/heroes/hero_lone_druid/lone_druid_rabid_buff.vpcf"
+                    "EffectAttachType"  "follow_overhead"
+                    "Target"            "TARGET"
+
+                    "ControlPointEntities"
+                    {
+                        "TARGET"    "follow_overhead"
+                        "TARGET"    "follow_overhead"
+                        "TARGET"    "follow_overhead"
+                    }
+                }
+            }
+
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"  "%bonus_attack_speed"
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"  "%bonus_move_speed"
+            }
+        }
+    }
+}

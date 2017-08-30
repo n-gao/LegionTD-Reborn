@@ -17484,6 +17484,112 @@
 	    }
 	}
 	
+	"lone_druid_rabid"
+	{
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "BaseClass"            			"ability_datadriven"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	    "FightRecapLevel"               "1"
+	    "AbilityTextureName"            "lone_druid_rabid"
+	    
+	    // Casting
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCastPoint"              "0.0 0.0 0.0 0.0"
+	
+	    // Time     
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCooldown"               "30.0 30.0 30.0 30.0"
+	    "AbilityDuration"               "18.0 22.0 26.0 30.0"
+	
+	    // Cost
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityManaCost"               "0 0 0 0 "
+	
+	    // Special
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilitySpecial"
+	    {
+	        "01"
+	        {
+	            "var_type"          "FIELD_INTEGER"
+	            "bonus_attack_speed"        "10"       
+	        }
+	        "02"
+	        {
+	            "var_type"          "FIELD_INTEGER"
+	            "bonus_move_speed"  "10"
+	        }
+	        "03"
+	        {
+	            "var_type"          "FIELD_FLOAT"
+	            "rabid_duration"    "10.0 10.0 10.0 10.0"
+	        }
+	    }
+	
+	    "precache"
+	    {
+	        "particle"  "particles/units/heroes/hero_lone_druid/lone_druid_rabid_buff.vpcf"
+	        "particle"  "particles/units/heroes/hero_lone_druid/lone_druid_rabid_buff_speed_ring.vpcf"
+	        "soundfile" "soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
+	    }
+	
+	    "OnSpellStart"
+	    {
+	        "RunScript"
+	        {
+	            "ScriptFile"    "abilities/waveunits/lone_druid_rabid"
+	            "Function"      "Rabid"
+	            "Target"
+	            {
+	                "Center"        "CASTER"
+	                "Radius"        "GLOBAL"
+	                "Teams"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	                "Types"         "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+	            }
+	            "unit_name"     "npc_dota_lone_druid_bear"
+	        }
+	
+	        "FireSound"
+	        {
+	            "EffectName"    "Hero_LoneDruid.Rabid"
+	            "Target"        "CASTER"
+	        }
+	    }
+	
+	    "Modifiers"
+	    {
+	        
+	        "modifier_rabid"
+	        {
+	            "EffectName"        "particles/units/heroes/hero_lone_druid/lone_druid_rabid_buff_speed_ring.vpcf"
+	            "EffectAttachType"  "follow_origin"
+	
+	            "OnCreated"
+	            {
+	                "AttachEffect"
+	                {
+	                    "EffectName"        "particles/units/heroes/hero_lone_druid/lone_druid_rabid_buff.vpcf"
+	                    "EffectAttachType"  "follow_overhead"
+	                    "Target"            "TARGET"
+	
+	                    "ControlPointEntities"
+	                    {
+	                        "TARGET"    "follow_overhead"
+	                        "TARGET"    "follow_overhead"
+	                        "TARGET"    "follow_overhead"
+	                    }
+	                }
+	            }
+	
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"  "%bonus_attack_speed"
+	                "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"  "%bonus_move_speed"
+	            }
+	        }
+	    }
+	}
 	// Rewrite of the Necrophos Heartstopper Aura ability
 	// Author: Pizzalol
 	// Date: 11.07.2015.
@@ -17851,6 +17957,172 @@
 	                {
 	                    "ScriptFile"    "abilities/waveunits/techies_suicide.lua"
 	                    "Function"      "Suicide"
+	                }
+	            }
+	        }
+	    }
+	}
+	"treant_living_armor"
+	{
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "BaseClass"                "ability_datadriven"
+	    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
+	    "AbilityUnitTargetTeam"            "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	    "AbilityUnitTargetType"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING | DOTA_UNIT_TARGET_MECHANICAL"            
+	    "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+	    "SpellImmunityType"                "SPELL_IMMUNITY_ALLIES_NO"
+	        
+	    "AbilityCastRange"                "0"
+	    "AbilityCastPoint"                "0.5 0.5 0.5 0.5"
+	    "FightRecapLevel"                "1"
+	    "AbilityTextureName"            "treant_living_armor"
+	        
+	    // Time        
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityCooldown"                "32.0 26.0 20.0 14.0"
+	
+	    // Cost
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilityManaCost"                "0"
+	        
+	    "AbilitySpecial"
+	    {
+	        "01"
+	        {
+	            "var_type"            "FIELD_INTEGER"
+	            "damage_count"        "4 5 6 7"
+	        }
+	        "02"
+	        {
+	            "var_type"            "FIELD_INTEGER"
+	            "health_regen"        "4 7 10 13"
+	        }
+	        "03"
+	        {
+	            "var_type"            "FIELD_INTEGER"
+	            "damage_block"        "20 40 60 80"
+	        }
+	        "04"
+	        {
+	            "var_type"            "FIELD_FLOAT"
+	            "duration"            "15.0"
+	        }
+	    }
+	    "OnSpellStart"
+	    {
+	        "RunScript"
+	        {
+	            "ScriptFile"    "abilities/waveunits/treant_living_armor"
+	            "Function"        "ApplyLivingArmor"
+	        }
+	    }
+	    "Modifiers"
+	    {
+	        "modifier_living_armor_datadriven_stacks"
+	        {
+	            "IsBuff" "1"
+	        }
+	        "modifier_living_armor_datadriven"
+	        {
+	            "IsHidden"    "1"
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"   "%health_regen"
+	            }
+	            "OnTakeDamage"
+	            {
+	                "RunScript"
+	                {
+	                    "ScriptFile"    "abilities/waveunits/treant_living_armor"
+	                    "Function"        "HandleLivingArmor"
+	                    "damage"        "%attack_damage"
+	                }
+	            }
+	            "OnDestroy"
+	            {
+	                "RunScript"
+	                {
+	                    "ScriptFile"    "abilities/waveunits/treant_living_armor"
+	                    "Function"        "RemoveParticle"
+	                }    
+	            }
+	        }
+	    }
+	}
+	"ursa_fury_swipes"
+	{
+	    // General
+	    //-------------------------------------------------------------------------------------------------------------
+	    "BaseClass"             "ability_datadriven"
+	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	    "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
+	    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+	    "AbilityTextureName"            "ursa_fury_swipes"
+	            
+	    // Special
+	    //-------------------------------------------------------------------------------------------------------------
+	    "AbilitySpecial"
+	    {
+	        "01"
+	        {
+	            "var_type"                      "FIELD_FLOAT"
+	            "bonus_reset_time"              "15"
+	        }
+	        "02"
+	        {
+	            "var_type"                      "FIELD_FLOAT"
+	            "bonus_reset_time_roshan"       "6"
+	        }
+	        "03"
+	        {
+	            "var_type"                      "FIELD_INTEGER"
+	            "damage_per_stack"              "15 20 25 30"
+	        }
+	    }
+	    
+	    // Data driven
+	    //-------------------------------------------------------------------------------------------------------------
+	    "precache"
+	    {
+	        "particle"                          "particles/units/heroes/hero_ursa/ursa_fury_swipes.vpcf"
+	        "particle"                          "particles/units/heroes/hero_ursa/ursa_fury_swipes_debuff.vpcf"
+	    }
+	    
+	    "Modifiers"
+	    {
+	        "modifier_fury_swipes_caster_datadriven"
+	        {
+	            "Passive"                       "1"
+	            "IsHidden"                      "0"
+	            "IsPurgable"                    "0"
+	        
+	            "OnAttackLanded"
+	            {
+	                "RunScript"
+	                {
+	                    "ScriptFile"            "abilities/waveunits/ursa_fury_swipes.lua"
+	                    "Function"              "fury_swipes_attack"
+	                }
+	            }
+	        }
+	        
+	        "modifier_fury_swipes_target_datadriven"
+	        {
+	            "IsHidden"                  "0"
+	            "IsPurgable"                "0"
+	            "IsDebuff"                  "1"
+	            
+	            "EffectName"                "particles/units/heroes/hero_ursa/ursa_fury_swipes_debuff.vpcf"
+	            "EffectAttachType"          "follow_overhead"
+	            
+	            "OnCreated"
+	            {
+	                "AttachEffect"
+	                {
+	                    "Target"                "TARGET"
+	                    "EffectName"            "particles/units/heroes/hero_ursa/ursa_fury_swipes.vpcf"
+	                    "EffectAttachType"      "follow_overhead"
 	                }
 	            }
 	        }
