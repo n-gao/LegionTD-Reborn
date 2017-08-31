@@ -12554,7 +12554,7 @@
 	    "BountyGoldMax" "7.0"
 	    "Legion_AttackType" "normal"
 	    "Legion_DefendType" "heavy"
-	    "Legion_Experience" "155"
+	    "Legion_Experience" "160"
 	    "Legion_Fraction"   "wave"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
 	    "CollisionSize" "50"
@@ -13123,7 +13123,7 @@
 	    "Level" "1"
 	    "HealthBarOffset"   "140"
 	    "Vscripts"	"ai/waves/ai_dragonspawn.lua"
-	    "Ability1"  "treant_living_armor"
+	    "Ability1"  "dragonspawn_living_armor"
 	    "ArmorPhysical" "13"
 	    "MagicalResistance" "40"
 	    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -13140,7 +13140,7 @@
 	    "BountyGoldMax" "23.0"
 	    "Legion_AttackType" "normal"
 	    "Legion_DefendType" "heavy"
-	    "Legion_Experience" "155"
+	    "Legion_Experience" "500"
 	    "Legion_Fraction"   "wave"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
 	    "CollisionSize" "50"
@@ -13148,7 +13148,7 @@
 	    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
 	    "MovementSpeed" "300"
 	    "MovementTurnRate"  "0.6"
-	    "StatusHealth"  "3500"
+	    "StatusHealth"  "3200"
 	    "StatusHealthRegen" "0"
 	    "StatusMana"    "0"
 	    "StatusManaRegen"   "0"
@@ -13661,7 +13661,7 @@
 	    "BountyGoldMax" "12.0"
 	    "Legion_AttackType" "boss"
 	    "Legion_DefendType" "boss"
-	    "Legion_Experience" "170"
+	    "Legion_Experience" "250"
 	    "Legion_Fraction"   "end_wave"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
 	    "CollisionSize" "50"
@@ -13695,7 +13695,13 @@
 	
 	        }
 	    }
-	
+	    "precache"
+	    {
+	        "particle" "particles/econ/items/warlock/warlock_lost_ores/golem_lores_hulk_swipe.vpcf"
+	        "particle" "particles/econ/items/warlock/warlock_lost_ores/golem_lores_hulk_swipe_glow.vpcf"
+	        "particle" "particles/econ/items/warlock/warlock_lost_ores/golem_lores_hulk_swipe_left.vpcf"
+	        "particle" "particles/econ/items/warlock/warlock_lost_ores/golem_lores_hulk_swipe_right.vpcf"
+	    }
 	}
 	"unit_huskar"
 	{
@@ -14908,7 +14914,7 @@
 	    "BountyGoldMax" "7.0"
 	    "Legion_AttackType" "normal"
 	    "Legion_DefendType" "normal"
-	    "Legion_Experience" "155"
+	    "Legion_Experience" "170"
 	    "Legion_Fraction"   "wave"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
 	    "CollisionSize" "50"
@@ -15413,10 +15419,10 @@
 	"unit_ursa"
 	{
 	    "BaseClass" "npc_dota_creature"
-	    "Model" "models/creeps/neutral_creeps/n_creep_dragonspawn_a/n_creep_dragonspawn_a.vmdl"
+	    "Model" "models/heroes/ursa/ursa.vmdl"
 	    "ModelScale"    "1"
-	    "SoundSet"  "n_creep_Melee"
-	    "GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
+	    "SoundSet"                  "Hero_Ursa"
+	    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts"
 	    "Level" "1"
 	    "HealthBarOffset"   "140"
 	    "Vscripts"  "ai/ai_default.lua"
@@ -15437,7 +15443,7 @@
 	    "BountyGoldMax" "9.0"
 	    "Legion_AttackType" "normal"
 	    "Legion_DefendType" "heavy"
-	    "Legion_Experience" "155"
+	    "Legion_Experience" "200"
 	    "Legion_Fraction"   "wave"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
 	    "CollisionSize" "50"
