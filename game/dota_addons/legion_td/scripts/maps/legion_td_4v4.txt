@@ -177,7 +177,6 @@
     "1"                       // Wave 1
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_donkey"
       "bounty"                "13"
       "Unit"
@@ -190,7 +189,6 @@
     "2"                       // Wave 2
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_unicorn"
       "bounty"                "15"
       "Unit"
@@ -203,7 +201,6 @@
     "3"                       // Wave 3
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_space_cow"
       "bounty"                "17"
       "Unit"
@@ -216,7 +213,6 @@
     "4"                       // Wave 4
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_gatling_sniper"
       "bounty"                "18"
       "Unit"
@@ -229,7 +225,6 @@
     "5"                       // Wave 5
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_lightning_ball"
       "bounty"                "22"
       "Unit"
@@ -250,7 +245,6 @@
     "7"                       // Wave 6
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_predator"
       "bounty"                "22"
       "Unit"
@@ -263,7 +257,6 @@
     "8"                       // Wave 7
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_assassins"
       "bounty"                "23"
       "Unit"
@@ -276,7 +269,6 @@
     "9"                       // Wave 8
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_hydra"
       "bounty"                "25"
       "Unit"
@@ -289,7 +281,6 @@
     "10"                      // Wave 9
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_not_lifestealer"
       "bounty"                "27"
       "Unit"
@@ -302,7 +293,6 @@
     "11"                      // Wave 10
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_fatty"
       "bounty"                "28"
       "Unit"
@@ -323,7 +313,6 @@
     "13"                      // Wave 11
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_little_fishy"
       "bounty"                "30"
       "Unit"
@@ -336,7 +325,6 @@
     "14"                      // Wave 12
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_zombie"
       "bounty"                "32"
       "Unit"
@@ -349,7 +337,6 @@
     "15"                      // Wave 13
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_tidehunter"
       "bounty"                "33"
       "Unit"
@@ -362,7 +349,6 @@
     "16"                      // Wave 14
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_abaddon"
       "bounty"                "35"
       "Unit"
@@ -375,7 +361,6 @@
     "17"                      // Wave 15
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_enchantress"
       "bounty"                "37"
       "Unit"
@@ -396,7 +381,6 @@
     "19"                      // Wave 16
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_techies"
       "bounty"                "70"
       "Unit"
@@ -409,7 +393,6 @@
     "20"                      // Wave 17
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_chaos"
       "bounty"                "40"
       "Unit"
@@ -422,7 +405,6 @@
     "21"                      // Wave 18
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_phantom"
       "bounty"                "42"
       "Unit"
@@ -435,7 +417,6 @@
     "22"                      // Wave 19
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_necro_replacement"
       "bounty"                "43"
       "Unit"
@@ -448,7 +429,6 @@
     "23"                      // Wave 20
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_king"
       "bounty"                "45"
       "Unit"
@@ -469,7 +449,6 @@
     "25"                      // Wave 21
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_templer"
       "bounty"                "46"
       "Unit"
@@ -482,7 +461,6 @@
     "26"                      // Wave 22
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_earthspirit"
       "bounty"                "48"
       "Unit"
@@ -495,7 +473,6 @@
     "27"                      // Wave 23
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_kunkka"
       "bounty"                "51"
       "Unit"
@@ -508,7 +485,6 @@
     "28"                      // Wave 24
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_huskar"
       "bounty"                "51"
       "Unit"
@@ -521,7 +497,6 @@
     "29"                      // Wave 25
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_tiny"
       "bounty"                "52"
       "Unit"
@@ -542,7 +517,6 @@
     "31"                      // Wave 26
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_drunken"
       "bounty"                "54"
       "Unit"
@@ -554,7 +528,6 @@
     "32"                      // Wave 27
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_deathprophet"
       "bounty"                "55"
       "Unit"
@@ -566,7 +539,6 @@
     "33"                      // Wave 28
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_rubick"
       "bounty"                "57"
       "Unit"
@@ -578,7 +550,6 @@
     "34"                      // Wave 29
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_ogre"
       "bounty"                "58"
       "Unit"
@@ -590,7 +561,6 @@
     "35"                      // Wave 30
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_dragon"
       "bounty"                "60"
       "Unit"
@@ -611,14 +581,82 @@
     "37"                      // Wave 31
     {
       "round_type"            "wave"
-      "round_quest_title"     "Jo test"
       "round_title"           "wavetitle_chen"
-      "bounty"                "61"
+      "bounty"                "62"
       "Unit"
       {
         "NPCName"             "unit_chen"
         "UnitCount"           "12"
       }
     }
+	
+	"38"                      // Wave 32
+    {
+      "round_type"            "wave"
+      "round_title"           "wavetitle_ancienthulk"
+      "bounty"                "63"
+      "Unit"
+      {
+        "NPCName"             "unit_ancienthulk"
+        "UnitCount"           "12"
+      }
+    }
+	
+	"39"                      // Wave 33
+    {
+      "round_type"            "wave"
+      "round_title"           "wavetitle_skeleton"
+      "bounty"                "65"
+      "Unit"
+      {
+        "NPCName"             "unit_skeleton"
+        "UnitCount"           "15"
+      }
+    }
+	
+	"40"                      // Wave 34
+    {
+      "round_type"            "wave"
+      "round_title"           "wavetitle_dragonspawn"
+      "bounty"                "66"
+      "Unit"
+      {
+        "NPCName"             "unit_dragonspawn"
+        "UnitCount"           "5"
+      }
+    }
+	
+	"41"                      // Wave 35
+    {
+      "round_type"            "wave"
+      "round_title"           "wavetitle_ursa"
+      "bounty"                "68"
+      "Unit"
+      {
+        "NPCName"             "unit_ursa"
+        "UnitCount"           "13"
+      }
+    }
+	
+	"42"                      // Duel 7
+    {
+      "round_type"            "duel"
+      "round_title"           "Duel_Quest_Title"
+      "determines_winner"     "true"
+      "bounty"                "160"
+    }
+	
+	"43"                      // Wave 36
+    {
+      "round_type"            "wave"
+      "round_title"           "wavetitle_golemwarrior"
+      "bounty"                "70"
+      "Unit"
+      {
+        "NPCName"             "unit_golemwarrior"
+        "UnitCount"           "10"
+      }
+    }
+	
   }
 }
