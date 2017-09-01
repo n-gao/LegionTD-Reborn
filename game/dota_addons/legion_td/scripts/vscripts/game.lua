@@ -419,7 +419,7 @@ function Game:RoundFinished()
         self:CreateGameTimer()
     end
     for _, listener in pairs(self.endOfRoundListeners) do
-        listener()
+        pcall(listener)
     end
     
     self.IncreaseRound()
