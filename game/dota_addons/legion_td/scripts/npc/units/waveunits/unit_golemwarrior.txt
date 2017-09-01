@@ -25,7 +25,7 @@
     "BountyGoldMax" "12.0"
     "Legion_AttackType" "boss"
     "Legion_DefendType" "boss"
-    "Legion_Experience" "170"
+    "Legion_Experience" "250"
     "Legion_Fraction"   "end_wave"
     "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
     "CollisionSize" "50"
@@ -59,5 +59,11 @@
 
         }
     }
-
+    "precache"
+    {
+        "particle" "particles/econ/items/warlock/warlock_lost_ores/golem_lores_hulk_swipe.vpcf"
+        "particle" "particles/econ/items/warlock/warlock_lost_ores/golem_lores_hulk_swipe_glow.vpcf"
+        "particle" "particles/econ/items/warlock/warlock_lost_ores/golem_lores_hulk_swipe_left.vpcf"
+        "particle" "particles/econ/items/warlock/warlock_lost_ores/golem_lores_hulk_swipe_right.vpcf"
+    }
 }

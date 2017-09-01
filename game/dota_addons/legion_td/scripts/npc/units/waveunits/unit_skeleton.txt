@@ -25,7 +25,7 @@
     "BountyGoldMax" "7.0"
     "Legion_AttackType" "normal"
     "Legion_DefendType" "normal"
-    "Legion_Experience" "155"
+    "Legion_Experience" "170"
     "Legion_Fraction"   "wave"
     "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
     "CollisionSize" "50"

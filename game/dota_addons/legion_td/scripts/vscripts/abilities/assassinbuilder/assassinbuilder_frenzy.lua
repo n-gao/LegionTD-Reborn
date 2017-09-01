@@ -62,8 +62,16 @@ function assassinbuilder_frenzy:OnSpellStart()
 		end
 		local mod = self.player.hero:AddNewModifier(self.player.hero, self, "modifier_assassinbuilder_frenzy", {duration = self:GetSpecialValueFor("duration")})
 		mod.ability = self
-		self.cooldown = game.gameRound - game.doneDuels + self:GetSpecialValueFor("cooldown")
-		self.player.hero:AddNewModifier(self.player.hero, self, "modifier_assassinbuilder_frenzy_cooldown", {})
+		self.cooldown = game:GetCurrentWaveNumber() + self:GetSpecialValueFor("cooldown")
+		self.cooldownModifier = self.player.hero:AddNewModifier(self.player.hero, self, "modifier_assassinbuilder_frenzy_cooldown", {})
+		self.cooldownModifier:SetStackCount(self.cooldown)
+
+		if (self.roundListener == null) then
+			self.roundListener = function() self:NextRound() end
+			table.insert(game.endOfRoundListeners, self.roundListener)
+		end
+		self:SetActivated(false)
+			
 		return true
 	else
 		return false
@@ -72,6 +80,21 @@ end
 
 function assassinbuilder_frenzy:ProcsMagicStick(  ) 
 	return false 
+end
+
+function assassinbuilder_frenzy:NextRound()
+	if (IsServer() and not (cooldown == 0)) then
+		local game = GameRules.GameMode.game
+		local cooldown = self.cooldown - game:GetCurrentWaveNumber()
+		self.cooldownModifier:SetStackCount(cooldown)
+		if cooldown < 1 then 
+			cooldown = 0
+			self:SetActivated(true)
+			self.cooldownModifier:Destroy()
+		else
+			self:SetActivated(false)
+		end
+	end
 end
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -141,23 +164,7 @@ function modifier_assassinbuilder_frenzy_cooldown:DeclareFunctions(  )
 end
 
 function modifier_assassinbuilder_frenzy_cooldown:OnCreated(  )
-	if (IsServer()) then 
-		self:StartIntervalThink(0.2)
-	end
-end
 
-function modifier_assassinbuilder_frenzy_cooldown:OnIntervalThink()
-	if (IsServer()) then
-		local game = GameRules.GameMode.game
-		local ability = self:GetAbility()
-		local cooldown = ability.cooldown - (game.gameRound - game.doneDuels)
-		if cooldown < 1 then 
-			cooldown = 0
-		else
-			ability:StartCooldown(cooldown)
-		end
-		self:SetStackCount(cooldown)
-	end
 end
 
 function modifier_assassinbuilder_frenzy_cooldown:OnTooltip( params )

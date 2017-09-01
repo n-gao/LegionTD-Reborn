@@ -1,4 +1,13 @@
-"treant_living_armor"
+// Rewrite of Treant Protector Living Armor
+// Author: Yahnich
+// Date: October 1, 2016
+// Version: 6.88
+// Type: Datadriven
+//
+// ----- FILE REQUIREMENTS -----
+// Script files:
+// scripts/vscripts/heroes/hero_treant/living_armor.lua
+"dragonspawn_living_armor"
 {
     // General
     //-------------------------------------------------------------------------------------------------------------
@@ -49,7 +58,7 @@
     {
         "RunScript"
         {
-            "ScriptFile"    "abilities/waveunits/treant_living_armor"
+            "ScriptFile"    "abilities/waveunits/dragonspawn_living_armor"
             "Function"        "ApplyLivingArmor"
         }
     }
@@ -70,7 +79,7 @@
             {
                 "RunScript"
                 {
-                    "ScriptFile"    "abilities/waveunits/treant_living_armor"
+                    "ScriptFile"    "abilities/waveunits/dragonspawn_living_armor"
                     "Function"        "HandleLivingArmor"
                     "damage"        "%attack_damage"
                 }
@@ -79,7 +88,7 @@
             {
                 "RunScript"
                 {
-                    "ScriptFile"    "abilities/waveunits/treant_living_armor"
+                    "ScriptFile"    "abilities/waveunits/dragonspawn_living_armor"
                     "Function"        "RemoveParticle"
                 }    
             }
