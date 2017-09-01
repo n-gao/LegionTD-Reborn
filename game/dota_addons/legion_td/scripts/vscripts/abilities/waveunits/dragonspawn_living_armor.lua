@@ -45,6 +45,5 @@ function HandleLivingArmor(keys)
 end
 
 function RemoveParticle(keys)
-    local target = keys.unit
-    >ParticleManager:DestroyParticle(target.LivingArmorParticle, false)
+
 end

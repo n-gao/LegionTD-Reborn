@@ -1,10 +1,10 @@
 "unit_space_cow"
 {
 	"BaseClass"	"npc_dota_creature"
-	"Model"	"models/creeps/lane_creeps/creep_radiant_hulk/creep_radiant_diretide_ancient_hulk.vmdl"
-	"ModelScale"	"0.7"
-	"SoundSet"	"n_creep_Melee"
-	"GameSoundsFile"	"soundevents/game_sounds_creeps.vsndevts"
+	"Model"	"models/heroes/spirit_breaker/spirit_breaker.vmdl"
+	"ModelScale"	"0.6"
+	"SoundSet"	"Hero_Spirit_Breaker"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spirit_breaker.vsndevts"
 	"Level"	"1"
 	"HealthBarOffset"	"140"
 	"Vscripts"	"ai/ai_default.lua"
@@ -52,6 +52,45 @@
 				"Aggression"	"100.0"
 				"Avoidance"	"0.0"
 				"Support"	"0.0"
+			}
+
+		}
+		
+		"AttachWearables"
+		{
+			"Wearable1"
+			{
+				"ItemDef"	"106"
+			}
+
+			"Wearable2"
+			{
+				"ItemDef"	"111"
+			}
+
+			"Wearable3"
+			{
+				"ItemDef"	"112"
+			}
+
+			"Wearable4"
+			{
+				"ItemDef"	"113"
+			}
+
+			"Wearable5"
+			{
+				"ItemDef"	"114"
+			}
+
+			"Wearable6"
+			{
+				"ItemDef"	"115"
+			}
+
+			"Wearable7"
+			{
+				"ItemDef"	"116"
 			}
 
 		}
