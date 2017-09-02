@@ -34,9 +34,9 @@
     "ProjectileModel"       ""
     "ProjectileSpeed"       "0"
     
-    "Legion_AttackType"     "normal"
-    "Legion_DefendType"     "heavy"
-    "Legion_Fraction"       "human"
+    "LegionAttackType"     "normal"
+    "LegionDefendType"     "heavy"
+    "LegionFraction"       "human"
 
     // Bounty
     //----------------------------------------------------------------

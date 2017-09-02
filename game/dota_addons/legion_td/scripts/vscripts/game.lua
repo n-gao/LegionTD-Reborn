@@ -566,8 +566,8 @@ function Game:OnNPCSpawned(key)
             end
         else -- not a hero
             if Game.UnitKV[npc:GetUnitName()] then
-                local attack_type = Game.UnitKV[npc:GetUnitName()]["Legion_AttackType"] or "none"
-                local defend_type = Game.UnitKV[npc:GetUnitName()]["Legion_DefendType"] or "none"
+                local attack_type = Game.UnitKV[npc:GetUnitName()]["LegionAttackType"] or "none"
+                local defend_type = Game.UnitKV[npc:GetUnitName()]["LegionDefendType"] or "none"
                 --print ("unit spawned with " .. attack_type .. "/" .. defend_type)
                 npc:AddNewModifier(npc, nil, "modifier_attack_" .. attack_type .. "_lua", {})
                 npc:AddNewModifier(npc, nil, "modifier_defend_" .. defend_type .. "_lua", {})
@@ -1257,10 +1257,7 @@ end
 function Game:UpdateUnitData()
     local unitData = {}
     for unit, data in pairs(Game.UnitKV) do
-        unitData[unit] = {
-            fraction = data.Legion_Fraction or "other",
-            experience = data.Legion_Experience or 0
-        }
+        unitData[unit] = data
     end
     Game.storage:UpdateUnitData(unitData);
 end
@@ -1300,7 +1297,7 @@ function Game:GetAllFractions()
     if Game.fractions ~= nil then return Game.fractions end
     Game.fractions = {}
     for _, unit in pairs(Game.UnitKV) do
-        local fraction = unit.Legion_Fraction or "other"
+        local fraction = unit.LegionFraction or "other"
         Game.fractions[fraction] = true
     end
     return Game.fractions

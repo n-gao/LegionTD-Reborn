@@ -31,9 +31,9 @@
 	"ProjectileModel"       "particles/base_attacks/ranged_tower_bad.vpcf"
 	"ProjectileSpeed"       "900"
 
-	"Legion_AttackType"		"boss"
-	"Legion_DefendType"		"boss"
-    "Legion_Fraction"   "king"
+	"LegionAttackType"		"boss"
+	"LegionDefendType"		"boss"
+    "LegionFraction"   "king"
 	// Bounty
 	//----------------------------------------------------------------
 	"BountyGoldMin"         "9"

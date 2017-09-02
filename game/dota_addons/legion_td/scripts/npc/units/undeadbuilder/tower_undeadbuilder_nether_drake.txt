@@ -34,9 +34,9 @@
     "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
     "ProjectileSpeed"       "600"
     
-    "Legion_AttackType"     "pierce"
-    "Legion_DefendType"     "light"
-    "Legion_Fraction"       "undead"
+    "LegionAttackType"     "pierce"
+    "LegionDefendType"     "light"
+    "LegionFraction"       "undead"
 
     // Bounty
     //----------------------------------------------------------------

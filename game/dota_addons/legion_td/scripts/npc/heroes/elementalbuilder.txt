@@ -29,7 +29,7 @@
   "Ability23"        "special_bonus_undefined"
   "Ability24"        "special_bonus_undefined"
 
-	"Legion_Fraction"		"elemental"
+	"LegionFraction"		"elemental"
 
 	"AttributeBaseStrength"		"0"
 	"AttributeBaseAgility"		"0"
