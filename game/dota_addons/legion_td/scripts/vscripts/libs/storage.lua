@@ -426,7 +426,7 @@ function Storage:SendHttpRequest(method, data, callback)
             result.Body = ""
         end
         if (result.Body == "") then
-            self.online = false
+            --self.online = false
         end
         callback(result.Body)
     end)

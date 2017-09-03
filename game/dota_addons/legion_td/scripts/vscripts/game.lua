@@ -201,7 +201,7 @@ function Game:ReadLanes(kvSpawns)
                 nextWaypoint = lnextWaypoint:GetAbsOrigin(),
                 midWaypoint = lmidWaypoint:GetAbsOrigin(),
                 lastWaypoint = llastWaypoint:GetAbsOrigin(),
-                waypoints = {lwaypoint:GetAbsOrigin(), lnextWaypoint:GetAbsOrigin(), lmidWaypoint:GetAbsOrigin(), llastWaypoint:GetAbsOrigin(), },
+                waypoints = {lwaypoint:GetAbsOrigin(), lnextWaypoint:GetAbsOrigin(), lmidWaypoint:GetAbsOrigin(), llastWaypoint:GetAbsOrigin() },
                 heroSpawn = lheroSpawn,
                 unitWaypoint = lunitWaypoint,
                 box = lbox,
@@ -1279,7 +1279,7 @@ function Game:SaveDataAtEnd()
 end
 
 function Game:SaveMatchAtEnd()
-    --if GameRules:IsCheatMode() then return end
+    if GameRules:IsCheatMode() then return end
     HookSetWinnerFunction(function(gameRules, team)
         local matchData = {}
         for _, player in pairs(self.players) do

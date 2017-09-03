@@ -32,12 +32,12 @@ function WaveSpawner:Spawn()
     local spawners = Game.lanes
     local count = 1
     --Spawn normal Wave
-    for key, value in pairs(spawners) do
-        if SpawnOnLane(value) then
+    for key, lane in pairs(spawners) do
+        if SpawnOnLane(lane) then
             local polar = 1
             local spacing = 128
-            if value.spawnpoint:GetAbsOrigin().y < 0 then polar = -1 end
-            local rank1 = value.spawnpoint:GetAbsOrigin()
+            if lane.spawnpoint:GetAbsOrigin().y < 0 then polar = -1 end
+            local rank1 = lane.spawnpoint:GetAbsOrigin()
             local positions = {}
             local columns = 5
             for i = 1, self.unitCount do
@@ -79,13 +79,14 @@ function WaveSpawner:Spawn()
                 creep:MoveToPositionAggressive(Vector(positions[i].x, 0, 0))
                 creep.wayStep = 2
                 creep.waypoints = {}
-                for j = 1, 4 do
-                    table.insert(creep.waypoints, value.waypoints[j] + positions[i])
-                    DebugDrawCircle(value.waypoints[j] + positions[i], Vector(0, 255, 0), 1, 50, false, 50)
+                local wpCount = #lane.waypoints
+                for j = 1, wpCount do
+                    table.insert(creep.waypoints, lane.waypoints[j] + positions[i])
+                    DebugDrawCircle(lane.waypoints[j] + positions[i], Vector(0, 255, 0), 1, 50, false, 50)
                 end
-                creep.waypoints[4].y = value.waypoints[4].y -- make final waypoint y aligned with king regardless of formation rank
-                creep.nextTarget = value.nextWaypoint
-                creep.lane = value
+                creep.waypoints[wpCount].y = lane.waypoints[wpCount].y -- make final waypoint y aligned with king regardless of formation rank
+                creep.nextTarget = lane.nextWaypoint
+                creep.lane = lane
                 creep:SetMaxHealth(creep:GetMaxHealth() + self.healthBonus)
                 creep:SetBaseMaxHealth(creep:GetBaseMaxHealth() + self.healthBonus)
                 creep:Heal(self.healthBonus, nil)
