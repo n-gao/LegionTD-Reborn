@@ -31,6 +31,7 @@ function Game.new()
     self.UnitKV = LoadKeyValues("scripts/npc/npc_units_custom.txt")
     self.DamageKV = LoadKeyValues("scripts/damage_table.kv")
     self.HeroKV = LoadKeyValues("scripts/npc/npc_heroes_custom.txt")
+    self.AbilityKV = LoadKeyValues("scripts/npc/npc_abilities_custom.txt")
     GameRules:GetGameModeEntity():SetDamageFilter(Dynamic_Wrap(Game, "DamageFilter"), Game)
     GameRules:GetGameModeEntity():SetExecuteOrderFilter(Dynamic_Wrap(Game, "OrderFilter"), Game)
     
@@ -317,6 +318,7 @@ function Game:Start()
     self:SaveDataAtEnd()
     
     if Convars:GetBool('developer') then
+        Game:UpdateAbilityData()
         Game:UpdateUnitData()
     end
 end
@@ -1255,11 +1257,12 @@ end
 
 
 function Game:UpdateUnitData()
-    local unitData = {}
-    for unit, data in pairs(Game.UnitKV) do
-        unitData[unit] = data
-    end
-    Game.storage:UpdateUnitData(unitData);
+    Game.storage:UpdateUnitData(Game.UnitKV);
+end
+
+
+function Game:UpdateAbilityData()
+    Game.storage:UpdateAbilityData(Game.AbilityKV);
 end
 
 
