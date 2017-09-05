@@ -34,9 +34,9 @@
     "ProjectileModel"       "particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
     "ProjectileSpeed"       "750"
 
-    "Legion_AttackType"     "arcane"
-    "Legion_DefendType"     "light"
-    "Legion_Fraction"       "nature"
+    "LegionAttackType"     "arcane"
+    "LegionDefendType"     "light"
+    "LegionFraction"       "nature"
 
     // Bounty
     //----------------------------------------------------------------

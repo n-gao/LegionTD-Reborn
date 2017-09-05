@@ -132,9 +132,9 @@
 	    "ProjectileModel"           ""
 	    "ProjectileSpeed"           "0"
 	
-	    "Legion_AttackType"         "normal"
-	    "Legion_DefendType"         "heavy"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "normal"
+	    "LegionDefendType"         "heavy"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -213,9 +213,9 @@
 	    "ProjectileModel"           ""
 	    "ProjectileSpeed"           "0"
 	
-	    "Legion_AttackType"         "normal"
-	    "Legion_DefendType"         "medium"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "normal"
+	    "LegionDefendType"         "medium"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -295,9 +295,9 @@
 	    "ProjectileModel"           ""
 	    "ProjectileSpeed"           "0"
 	
-	    "Legion_AttackType"         "normal"
-	    "Legion_DefendType"         "medium"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "normal"
+	    "LegionDefendType"         "medium"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -379,9 +379,9 @@
 	    "ProjectileModel"           ""
 	    "ProjectileSpeed"           "0"
 	
-	    "Legion_AttackType"         "normal"
-	    "Legion_DefendType"         "medium"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "normal"
+	    "LegionDefendType"         "medium"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -461,9 +461,9 @@
 	    "ProjectileModel"           ""
 	    "ProjectileSpeed"           "0"
 	
-	    "Legion_AttackType"         "normal"
-	    "Legion_DefendType"         "medium"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "normal"
+	    "LegionDefendType"         "medium"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -543,9 +543,9 @@
 	    "ProjectileModel"           ""
 	    "ProjectileSpeed"           "0"
 	
-	    "Legion_AttackType"         "normal"
-	    "Legion_DefendType"         "medium"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "normal"
+	    "LegionDefendType"         "medium"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -626,9 +626,9 @@
 	    "ProjectileModel"           "particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
 	    "ProjectileSpeed"           "900"
 	
-	    "Legion_AttackType"         "arcane"
-	    "Legion_DefendType"         "medium"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "arcane"
+	    "LegionDefendType"         "medium"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -706,9 +706,9 @@
 	    "ProjectileModel"           "particles/units/heroes/hero_silencer/silencer_base_attack.vpcf"
 	    "ProjectileSpeed"           "1000"
 	
-	    "Legion_AttackType"         "pierce"
-	    "Legion_DefendType"         "light"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "pierce"
+	    "LegionDefendType"         "light"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -789,9 +789,9 @@
 	    "ProjectileModel"           "particles/units/heroes/hero_silencer/silencer_base_attack.vpcf"
 	    "ProjectileSpeed"           "1000"
 	
-	    "Legion_AttackType"         "pierce"
-	    "Legion_DefendType"         "light"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "pierce"
+	    "LegionDefendType"         "light"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -872,9 +872,9 @@
 	    "ProjectileModel"           "particles/units/heroes/hero_silencer/silencer_base_attack.vpcf"
 	    "ProjectileSpeed"           "1000"
 	
-	    "Legion_AttackType"         "pierce"
-	    "Legion_DefendType"         "light"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "pierce"
+	    "LegionDefendType"         "light"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -955,9 +955,9 @@
 	    "ProjectileModel"           "particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
 	    "ProjectileSpeed"           "900"
 	
-	    "Legion_AttackType"         "arcane"
-	    "Legion_DefendType"         "medium"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "arcane"
+	    "LegionDefendType"         "medium"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -1035,9 +1035,9 @@
 	    "ProjectileModel"           ""
 	    "ProjectileSpeed"           "0"
 	
-	    "Legion_AttackType"         "normal"
-	    "Legion_DefendType"         "medium"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "normal"
+	    "LegionDefendType"         "medium"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -1117,9 +1117,9 @@
 	    "ProjectileModel"           ""
 	    "ProjectileSpeed"           "0"
 	
-	    "Legion_AttackType"         "normal"
-	    "Legion_DefendType"         "heavy"
-	    "Legion_Fraction"       "assassin"
+	    "LegionAttackType"         "normal"
+	    "LegionDefendType"         "heavy"
+	    "LegionFraction"       "assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -1198,9 +1198,9 @@
 	    "ProjectileModel"           "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
 	    "ProjectileSpeed"           "1000"
 	
-	    "Legion_AttackType"         "arcane"
-	    "Legion_DefendType"         "light"
-	    "Legion_Fraction"       "assassin"
+	    "LegionAttackType"         "arcane"
+	    "LegionDefendType"         "light"
+	    "LegionFraction"       "assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -1281,9 +1281,9 @@
 	    "ProjectileModel"           ""
 	    "ProjectileSpeed"           "0"
 	
-	    "Legion_AttackType"         "normal"
-	    "Legion_DefendType"         "medium"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "normal"
+	    "LegionDefendType"         "medium"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -1365,9 +1365,9 @@
 	    "ProjectileModel"           "particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
 	    "ProjectileSpeed"           "900"
 	
-	    "Legion_AttackType"         "arcane"
-	    "Legion_DefendType"         "medium"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "arcane"
+	    "LegionDefendType"         "medium"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -1447,9 +1447,9 @@
 	    "ProjectileModel"           ""
 	    "ProjectileSpeed"           "0"
 	
-	    "Legion_AttackType"         "normal"
-	    "Legion_DefendType"         "medium"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "normal"
+	    "LegionDefendType"         "medium"
+		"LegionFraction"		"assassin"
 	    
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -1529,9 +1529,9 @@
 	    "ProjectileModel"           ""
 	    "ProjectileSpeed"           "0"
 	
-	    "Legion_AttackType"         "normal"
-	    "Legion_DefendType"         "heavy"
-		"Legion_Fraction"		"assassin"
+	    "LegionAttackType"         "normal"
+	    "LegionDefendType"         "heavy"
+		"LegionFraction"		"assassin"
 	
 	    "BountyXP"                  "0"
 	    "BountyGoldMin"             "0"
@@ -2176,9 +2176,9 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -2265,9 +2265,9 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -2366,9 +2366,9 @@
 	    "AttackRange"   "150"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -2470,9 +2470,9 @@
 	    "AttackRange"   "95"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -2574,9 +2574,9 @@
 	    "AttackRange"   "500"
 	    "ProjectileModel"   "particles/units/heroes/hero_lina/lina_base_attack.vpcf"
 	    "ProjectileSpeed"   "900"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "light"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "light"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -2668,9 +2668,9 @@
 	    "AttackRange"   "100"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "medium"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "medium"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -2738,9 +2738,9 @@
 	    "AttackRange"   "260"
 	    "ProjectileModel"   "particles/units/heroes/hero_phoenix/phoenix_base_attack.vpcf"
 	    "ProjectileSpeed"   "590"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "light"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "light"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -2820,9 +2820,9 @@
 	    "AttackRange"   "100"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -2929,9 +2929,9 @@
 	    "AttackRange"   "370"
 	    "ProjectileModel"   "particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf"
 	    "ProjectileSpeed"   "1000"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "light"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "light"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -3028,9 +3028,9 @@
 	    "AttackRange"   "250"
 	    "ProjectileModel"   "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
 	    "ProjectileSpeed"   "900"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "light"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "light"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -3117,9 +3117,9 @@
 	    "AttackRange"   "600"
 	    "ProjectileModel"   "particles/units/heroes/hero_zuus/zuus_base_attack.vpcf"
 	    "ProjectileSpeed"   "900"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "light"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "light"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -3187,9 +3187,9 @@
 	    "AttackRange"   "200"
 	    "ProjectileModel"   "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
 	    "ProjectileSpeed"   "900"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "medium"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "medium"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -3276,9 +3276,9 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "medium"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "medium"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -3350,9 +3350,9 @@
 	    "AttackRange"   "375"
 	    "ProjectileModel"   "particles/units/heroes/hero_enigma/enigma_base_attack.vpcf"
 	    "ProjectileSpeed"   "650"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "light"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "light"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -3424,9 +3424,9 @@
 	    "AttackRange"   "400"
 	    "ProjectileModel"   "particles/units/heroes/hero_enigma/enigma_base_attack.vpcf"
 	    "ProjectileSpeed"   "500"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "light"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "light"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -3503,9 +3503,9 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -3597,9 +3597,9 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -3696,9 +3696,9 @@
 	    "AttackRange"   "520"
 	    "ProjectileModel"   "particles/units/heroes/hero_morphling/morphling_base_attack.vpcf"
 	    "ProjectileSpeed"   "1200"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "light"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "light"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -3770,9 +3770,9 @@
 	    "AttackRange"   "375"
 	    "ProjectileModel"   "particles/units/heroes/hero_ancient_apparition/ancient_apparition_base_attack.vpcf"
 	    "ProjectileSpeed"   "700"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "light"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "light"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -3844,9 +3844,9 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "pierce"
-	    "Legion_DefendType" "medium"
-	    "Legion_Fraction"   "elemental"
+	    "LegionAttackType" "pierce"
+	    "LegionDefendType" "medium"
+	    "LegionFraction"   "elemental"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -3953,9 +3953,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 	    "ProjectileSpeed"       "400"
 	
-	    "Legion_AttackType"     "arcane"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "human"
+	    "LegionAttackType"     "arcane"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "human"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -4045,9 +4045,9 @@
 	    "AttackRange"   "500"
 	    "ProjectileModel"   "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
 	    "ProjectileSpeed"   "900"
-	    "Legion_AttackType" "pierce"
-	    "Legion_DefendType" "medium"
-	    "Legion_Fraction"   "human"
+	    "LegionAttackType" "pierce"
+	    "LegionDefendType" "medium"
+	    "LegionFraction"   "human"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -4142,9 +4142,9 @@
 		"AttackRange"	"500"
 		"ProjectileModel"	"particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"	"400"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"light"
-		"Legion_Fraction"	"human"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"light"
+		"LegionFraction"	"human"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -4251,9 +4251,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "human"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "human"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -4342,9 +4342,9 @@
 	    "AttackRange"   "100"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "human"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "human"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -4441,9 +4441,9 @@
 		"AttackRange"	"400"
 		"ProjectileModel"	"particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
 		"ProjectileSpeed"	"3000"
-		"Legion_AttackType"	"pierce"
-		"Legion_DefendType"	"medium"
-		"Legion_Fraction"	"human"
+		"LegionAttackType"	"pierce"
+		"LegionDefendType"	"medium"
+		"LegionFraction"	"human"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -4567,9 +4567,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "human"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "human"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -4669,9 +4669,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
 	    "ProjectileSpeed"       "3000"
 	
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "human"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "human"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -4760,9 +4760,9 @@
 		"AttackRange"	"400"
 		"ProjectileModel"	"particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
 		"ProjectileSpeed"	"2000"
-		"Legion_AttackType"	"pierce"
-		"Legion_DefendType"	"medium"
-		"Legion_Fraction"	"human"
+		"LegionAttackType"	"pierce"
+		"LegionDefendType"	"medium"
+		"LegionFraction"	"human"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -4859,9 +4859,9 @@
 	    "AttackRange"   "400"
 	    "ProjectileModel"   "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
 	    "ProjectileSpeed"   "2500"
-	    "Legion_AttackType" "pierce"
-	    "Legion_DefendType" "medium"
-	    "Legion_Fraction"   "human"
+	    "LegionAttackType" "pierce"
+	    "LegionDefendType" "medium"
+	    "LegionFraction"   "human"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -4958,9 +4958,9 @@
 	    "AttackRange"   "550"
 	    "ProjectileModel"   "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
 	    "ProjectileSpeed"   "950"
-	    "Legion_AttackType" "pierce"
-	    "Legion_DefendType" "medium"
-	    "Legion_Fraction"   "human"
+	    "LegionAttackType" "pierce"
+	    "LegionDefendType" "medium"
+	    "LegionFraction"   "human"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -5052,9 +5052,9 @@
 		"AttackRange"	"600"
 		"ProjectileModel"	"particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"	"400"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"light"
-		"Legion_Fraction"	"human"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"light"
+		"LegionFraction"	"human"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -5151,9 +5151,9 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "human"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "human"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -5260,9 +5260,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 	    "ProjectileSpeed"       "400"
 	
-	    "Legion_AttackType"     "arcane"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "human"
+	    "LegionAttackType"     "arcane"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "human"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -5363,9 +5363,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
 	    "ProjectileSpeed"       "1000"
 	
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "human"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "human"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -5455,9 +5455,9 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "human"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "human"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -5554,9 +5554,9 @@
 		"AttackRange"	"400"
 		"ProjectileModel"	"particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"	"400"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"light"
-		"Legion_Fraction"	"human"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"light"
+		"LegionFraction"	"human"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_HERO"
@@ -5664,9 +5664,9 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
-		"Legion_AttackType"		"normal"
-		"Legion_DefendType"		"heavy"
-		"Legion_Fraction"		"human"
+		"LegionAttackType"		"normal"
+		"LegionDefendType"		"heavy"
+		"LegionFraction"		"human"
 	
 	
 		// Bounty
@@ -5768,9 +5768,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
 	    "ProjectileSpeed"       "1050"
 	
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "human"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "human"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -5870,9 +5870,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "human"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "human"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -5972,9 +5972,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 	    "ProjectileSpeed"       "420"
 	
-	    "Legion_AttackType"     "arcane"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "human"
+	    "LegionAttackType"     "arcane"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "human"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -6074,9 +6074,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "human"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "human"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -6168,9 +6168,9 @@
 	    "AttackRange"   "600"
 	    "ProjectileModel"   "particles/units/heroes/hero_luna/luna_base_attack.vpcf"
 	    "ProjectileSpeed"   "800"
-	    "Legion_AttackType" "pierce"
-	    "Legion_DefendType" "medium"
-	    "Legion_Fraction"   "human"
+	    "LegionAttackType" "pierce"
+	    "LegionDefendType" "medium"
+	    "LegionFraction"   "human"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -6264,10 +6264,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-	    "Legion_Experience" "210"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+	    "LegionExperience" "210"
 		"BountyGoldMin"	"45"
 		"BountyGoldMax"	"45"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -6328,10 +6328,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-	    "Legion_Experience" "290"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+	    "LegionExperience" "290"
 		"BountyGoldMin"	"65"
 		"BountyGoldMax"	"65"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -6392,10 +6392,10 @@
 		"AttackRange"	"350"
 		"ProjectileModel"	"particles/neutral_fx/thunderlizard_base_attack.vpcf"
 		"ProjectileSpeed"	"900"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"190"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+		"LegionExperience"	"190"
 		"BountyGoldMin"	"41"
 		"BountyGoldMax"	"41"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -6456,10 +6456,10 @@
 		"AttackRange"	"350"
 		"ProjectileModel"	"particles/neutral_fx/black_drake_attack.vpcf"
 		"ProjectileSpeed"	"550"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"175"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+		"LegionExperience"	"175"
 		"BountyGoldMin"	"38"
 		"BountyGoldMax"	"38"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -6520,10 +6520,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"100"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+		"LegionExperience"	"100"
 		"BountyGoldMin"	"29"
 		"BountyGoldMax"	"29"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -6584,10 +6584,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"light"
-		"Legion_Fraction"	"income"
-	    "Legion_Experience" "310"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"light"
+		"LegionFraction"	"income"
+	    "LegionExperience" "310"
 		"BountyGoldMin"	"70"
 		"BountyGoldMax"	"70"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -6648,10 +6648,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"light"
-		"Legion_Fraction"	"income"
-	    "Legion_Experience" "230"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"light"
+		"LegionFraction"	"income"
+	    "LegionExperience" "230"
 		"BountyGoldMin"	"50"
 		"BountyGoldMax"	"50"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -6712,10 +6712,10 @@
 		"AttackRange"	"300"
 		"ProjectileModel"	"particles/neutral_fx/ghost_base_attack.vpcf"
 		"ProjectileSpeed"	"400"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"light"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"40"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"light"
+		"LegionFraction"	"income"
+		"LegionExperience"	"40"
 		"BountyGoldMin"	"9"
 		"BountyGoldMax"	"10"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -6786,10 +6786,10 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
-		"Legion_AttackType"		"normal"
-		"Legion_DefendType"		"heavy"
-		"Legion_Fraction"		"income"
-		"Legion_Experience"		"100"
+		"LegionAttackType"		"normal"
+		"LegionDefendType"		"heavy"
+		"LegionFraction"		"income"
+		"LegionExperience"		"100"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -6868,10 +6868,10 @@
 		"AttackRange"	"300"
 		"ProjectileModel"	"particles/econ/items/razor/razor_punctured_crest/razor_static_link_beam_blade.vpcf"
 		"ProjectileSpeed"	"500"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"light"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"30"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"light"
+		"LegionFraction"	"income"
+		"LegionExperience"	"30"
 		"BountyGoldMin"	"6"
 		"BountyGoldMax"	"7"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -6942,10 +6942,10 @@
 		"AttackRange"	"300"
 		"ProjectileModel"	"particles/units/heroes/hero_chen/chen_base_attack.vpcf"
 		"ProjectileSpeed"	"650"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"light"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"20"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"light"
+		"LegionFraction"	"income"
+		"LegionExperience"	"20"
 		"BountyGoldMin"	"4"
 		"BountyGoldMax"	"5"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7006,10 +7006,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"20"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+		"LegionExperience"	"20"
 		"BountyGoldMin"	"4"
 		"BountyGoldMax"	"5"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7070,10 +7070,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-	    "Legion_Experience" "270"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+	    "LegionExperience" "270"
 		"BountyGoldMin"	"60"
 		"BountyGoldMax"	"60"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7134,10 +7134,10 @@
 	    "AttackRange"   "300"
 	    "ProjectileModel"   "particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf"
 	    "ProjectileSpeed"   "1500"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "light"
-	    "Legion_Fraction"   "income"
-	    "Legion_Experience" "250"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "light"
+	    "LegionFraction"   "income"
+	    "LegionExperience" "250"
 	    "BountyGoldMin" "55"
 	    "BountyGoldMax" "55"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -7198,10 +7198,10 @@
 	    "AttackRange"   "125"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "pierce"
-	    "Legion_DefendType" "medium"
-	    "Legion_Fraction"   "income"
-	    "Legion_Experience" "10"
+	    "LegionAttackType" "pierce"
+	    "LegionDefendType" "medium"
+	    "LegionFraction"   "income"
+	    "LegionExperience" "10"
 	    "BountyGoldMin" "2"
 	    "BountyGoldMax" "3"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -7262,10 +7262,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"75"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+		"LegionExperience"	"75"
 		"BountyGoldMin"	"20"
 		"BountyGoldMax"	"20"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7326,9 +7326,9 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
 		"BountyGoldMin"	"3"
 		"BountyGoldMax"	"3"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7389,10 +7389,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"50"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+		"LegionExperience"	"50"
 		"BountyGoldMin"	"12"
 		"BountyGoldMax"	"13"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7463,10 +7463,10 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
-		"Legion_AttackType"		"normal"
-		"Legion_DefendType"		"heavy"
-		"Legion_Fraction"		"income"
-		"Legion_Experience"		"135"
+		"LegionAttackType"		"normal"
+		"LegionDefendType"		"heavy"
+		"LegionFraction"		"income"
+		"LegionExperience"		"135"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7545,10 +7545,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"150"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+		"LegionExperience"	"150"
 		"BountyGoldMin"	"35"
 		"BountyGoldMax"	"35"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7609,10 +7609,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"60"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+		"LegionExperience"	"60"
 		"BountyGoldMin"	"17"
 		"BountyGoldMax"	"17"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7673,10 +7673,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"boss"
-		"Legion_DefendType"	"boss"
-		"Legion_Fraction"	"income"
-	    "Legion_Experience" "350"
+		"LegionAttackType"	"boss"
+		"LegionDefendType"	"boss"
+		"LegionFraction"	"income"
+	    "LegionExperience" "350"
 		"BountyGoldMin"	"75"
 		"BountyGoldMax"	"75"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7737,10 +7737,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"60"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+		"LegionExperience"	"60"
 		"BountyGoldMin"	"14"
 		"BountyGoldMax"	"14"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7801,10 +7801,10 @@
 		"AttackRange"	"125"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Fraction"	"income"
-		"Legion_Experience"	"125"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionFraction"	"income"
+		"LegionExperience"	"125"
 		"BountyGoldMin"	"29"
 		"BountyGoldMax"	"29"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -7875,10 +7875,10 @@
 		"ProjectileModel"       ""
 		"ProjectileSpeed"       "0"
 	
-		"Legion_AttackType"		"normal"
-		"Legion_DefendType"		"heavy"
-		"Legion_Fraction"		"income"
-		"Legion_Experience"		"90"
+		"LegionAttackType"		"normal"
+		"LegionDefendType"		"heavy"
+		"LegionFraction"		"income"
+		"LegionExperience"		"90"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -7967,9 +7967,9 @@
 		"ProjectileModel"       "particles/base_attacks/ranged_tower_bad.vpcf"
 		"ProjectileSpeed"       "900"
 	
-		"Legion_AttackType"		"boss"
-		"Legion_DefendType"		"boss"
-	    "Legion_Fraction"   "king"
+		"LegionAttackType"		"boss"
+		"LegionDefendType"		"boss"
+	    "LegionFraction"   "king"
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyGoldMin"         "9"
@@ -8066,9 +8066,9 @@
 		"ProjectileModel"       "particles/base_attacks/ranged_tower_good.vpcf"
 		"ProjectileSpeed"       "900"
 	
-		"Legion_AttackType"		"boss"
-		"Legion_DefendType"		"boss"
-	    "Legion_Fraction"   "king"
+		"LegionAttackType"		"boss"
+		"LegionDefendType"		"boss"
+	    "LegionFraction"   "king"
 	
 		// Bounty
 		//----------------------------------------------------------------
@@ -8159,9 +8159,9 @@
 	    "AttackRange"   "500"
 	    "ProjectileModel"   "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 	    "ProjectileSpeed"   "775"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "medium"
-	    "Legion_Fraction"   "nature"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "medium"
+	    "LegionFraction"   "nature"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -8224,9 +8224,9 @@
 	    "AttackRange"   "125"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "nature"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "nature"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -8304,9 +8304,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_weaver/weaver_base_attack.vpcf"
 	    "ProjectileSpeed"       "900"
 	
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "nature"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "nature"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -8405,9 +8405,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "nature"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "nature"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -8507,9 +8507,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "nature"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "nature"
 	
 	
 	    // Bounty
@@ -8616,9 +8616,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_weaver/weaver_base_attack.vpcf"
 	    "ProjectileSpeed"       "800"
 	
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "nature"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "nature"
 	
 	
 	    // Bounty
@@ -8718,9 +8718,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "nature"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "nature"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -8811,9 +8811,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "nature"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "nature"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -8914,9 +8914,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "nature"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "nature"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -9011,9 +9011,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
 	    "ProjectileSpeed"       "750"
 	
-	    "Legion_AttackType"     "arcane"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "nature"
+	    "LegionAttackType"     "arcane"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "nature"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -9094,9 +9094,9 @@
 	    "AttackRange"   "400"
 	    "ProjectileModel"   "particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 	    "ProjectileSpeed"   "750"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "nature"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "nature"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -9169,9 +9169,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "nature"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "nature"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -9270,9 +9270,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	
-	    "Legion_AttackType"     "arcane"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "nature"
+	    "LegionAttackType"     "arcane"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "nature"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -9358,9 +9358,9 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "nature"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "nature"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -9435,9 +9435,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "nature"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "nature"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -9518,9 +9518,9 @@
 	    "AttackRange"   "100"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Fraction"   "nature"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionFraction"   "nature"
 	    "BountyGoldMin" "0"
 	    "BountyGoldMax" "0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -9603,9 +9603,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_weaver/weaver_base_attack.vpcf"
 	    "ProjectileSpeed"       "900"
 	
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "nature"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "nature"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -9865,9 +9865,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -9962,9 +9962,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 	    "ProjectileSpeed"       "700"
 	    
-	    "Legion_AttackType"     "arcane"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "arcane"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -10059,9 +10059,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -10153,9 +10153,9 @@
 	    "AttackAcquisitionRange" "850"
 	    "AttackRange"           "90"
 	    
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -10249,9 +10249,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -10345,9 +10345,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
 	    "ProjectileSpeed"       "600"
 	    
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -10441,9 +10441,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 	    "ProjectileSpeed"       "700"
 	    
-	    "Legion_AttackType"     "arcane"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "arcane"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -10538,9 +10538,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -10635,9 +10635,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 	    "ProjectileSpeed"       "700"
 	    
-	    "Legion_AttackType"     "arcane"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "arcane"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -10731,9 +10731,9 @@
 	    "ProjectileModel"       "particles/econ/items/shadow_fiend/sf_desolation/sf_base_attack_desolation.vpcf"
 	    "ProjectileSpeed"       "600"
 	    
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -10829,9 +10829,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -10926,9 +10926,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 	    "ProjectileSpeed"       "700"
 	    
-	    "Legion_AttackType"     "arcane"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "arcane"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -11022,9 +11022,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -11117,9 +11117,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
 	    "ProjectileSpeed"       "600"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -11213,9 +11213,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -11308,9 +11308,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 	    "ProjectileSpeed"       "700"
 	    
-	    "Legion_AttackType"     "arcane"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "arcane"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -11402,9 +11402,9 @@
 	    "AttackAcquisitionRange" "850"
 	    "AttackRange"           "90"
 	    
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -11499,9 +11499,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "heavy"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "heavy"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -11595,9 +11595,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
 	    "ProjectileSpeed"       "600"
 	    
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -11691,9 +11691,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
 	    "ProjectileSpeed"       "600"
 	    
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -11787,9 +11787,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 	    "ProjectileSpeed"       "700"
 	    
-	    "Legion_AttackType"     "arcane"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "arcane"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -11883,9 +11883,9 @@
 	    "ProjectileModel"       "particles/econ/items/shadow_fiend/sf_desolation/sf_base_attack_desolation.vpcf"
 	    "ProjectileSpeed"       "600"
 	    
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -11981,9 +11981,9 @@
 	    "ProjectileModel"       "particles/econ/items/shadow_fiend/sf_desolation/sf_base_attack_desolation.vpcf"
 	    "ProjectileSpeed"       "600"
 	    
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -12079,9 +12079,9 @@
 	    "ProjectileModel"       "particles/econ/items/shadow_fiend/sf_desolation/sf_base_attack_desolation.vpcf"
 	    "ProjectileSpeed"       "600"
 	    
-	    "Legion_AttackType"     "pierce"
-	    "Legion_DefendType"     "light"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "pierce"
+	    "LegionDefendType"     "light"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -12178,9 +12178,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
 	    "ProjectileSpeed"       "600"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -12273,9 +12273,9 @@
 	    "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
 	    "ProjectileSpeed"       "600"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -12369,9 +12369,9 @@
 	    "ProjectileModel"       ""
 	    "ProjectileSpeed"       "0"
 	    
-	    "Legion_AttackType"     "normal"
-	    "Legion_DefendType"     "medium"
-	    "Legion_Fraction"       "undead"
+	    "LegionAttackType"     "normal"
+	    "LegionDefendType"     "medium"
+	    "LegionFraction"       "undead"
 	
 	    // Bounty
 	    //----------------------------------------------------------------
@@ -12452,10 +12452,10 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Experience" "80"
-	    "Legion_Fraction"   "wave"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionExperience" "80"
+	    "LegionFraction"   "wave"
 	    "BountyGoldMin" "8.0"
 	    "BountyGoldMax" "8.0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -12552,10 +12552,10 @@
 	    "ProjectileSpeed"   "200"
 	    "BountyGoldMin" "7.0"
 	    "BountyGoldMax" "7.0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Experience" "160"
-	    "Legion_Fraction"   "wave"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionExperience" "160"
+	    "LegionFraction"   "wave"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
 	    "CollisionSize" "50"
 	    "RingRadius"    "50"
@@ -12613,10 +12613,10 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "pierce"
-	    "Legion_DefendType" "light"
-	    "Legion_Experience" "35"
-	    "Legion_Fraction"   "wave"
+	    "LegionAttackType" "pierce"
+	    "LegionDefendType" "light"
+	    "LegionExperience" "35"
+	    "LegionFraction"   "wave"
 	    "BountyGoldMin" "5.0"
 	    "BountyGoldMax" "5.0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -12711,10 +12711,10 @@
 		"AttackRange"	"90"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Experience"	"85"
-	    "Legion_Fraction"   "boss"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionExperience"	"85"
+	    "LegionFraction"   "boss"
 		"BountyGoldMin"	"6.0"
 		"BountyGoldMax"	"6.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -12806,10 +12806,10 @@
 	    "ProjectileSpeed"   "200"
 	    "BountyGoldMin" "6.0"
 	    "BountyGoldMax" "6.0"
-	    "Legion_AttackType" "boss"
-	    "Legion_DefendType" "boss"
-	    "Legion_Experience" "150"
-	    "Legion_Fraction"   "end_wave"
+	    "LegionAttackType" "boss"
+	    "LegionDefendType" "boss"
+	    "LegionExperience" "150"
+	    "LegionFraction"   "end_wave"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
 	    "CollisionSize" "50"
 	    "RingRadius"    "50"
@@ -12902,10 +12902,10 @@
 		"AttackRange"	"400"
 		"ProjectileModel"	"particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
 		"ProjectileSpeed"	"600"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"light"
-		"Legion_Experience"	"500"
-	    "Legion_Fraction"   "boss"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"light"
+		"LegionExperience"	"500"
+	    "LegionFraction"   "boss"
 		"BountyGoldMin"	"25.0"
 		"BountyGoldMax"	"25.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -12990,10 +12990,10 @@
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange"    "850"
 	    "AttackRange"   "90"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "light"
-	    "Legion_Experience" "10"
-	    "Legion_Fraction"   "wave"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "light"
+	    "LegionExperience" "10"
+	    "LegionFraction"   "wave"
 	    "BountyGoldMin" "4.0"
 	    "BountyGoldMax" "4.0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -13056,10 +13056,10 @@
 	        "AttackRange"   "125"
 	        "ProjectileModel"   ""
 	        "ProjectileSpeed"   "650"
-	        "Legion_AttackType" "boss"
-	        "Legion_DefendType" "boss"
-	        "Legion_Experience" "2000"
-	        "Legion_Fraction"   "boss"
+	        "LegionAttackType" "boss"
+	        "LegionDefendType" "boss"
+	        "LegionExperience" "2000"
+	        "LegionFraction"   "boss"
 	        "BountyGoldMin" "70.0"
 	        "BountyGoldMax" "70.0"
 	        "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -13138,10 +13138,10 @@
 	    "ProjectileSpeed"   "200"
 	    "BountyGoldMin" "23.0"
 	    "BountyGoldMax" "23.0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Experience" "500"
-	    "Legion_Fraction"   "wave"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionExperience" "500"
+	    "LegionFraction"   "wave"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
 	    "CollisionSize" "50"
 	    "RingRadius"    "50"
@@ -13199,10 +13199,10 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "medium"
-	    "Legion_Experience" "130"
-	    "Legion_Fraction"   "boss"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "medium"
+	    "LegionExperience" "130"
+	    "LegionFraction"   "boss"
 	    "BountyGoldMin" "7.0"
 	    "BountyGoldMax" "7.0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -13291,10 +13291,10 @@
 		"AttackRange"	"90"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"light"
-		"Legion_Experience"	"95"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"light"
+		"LegionExperience"	"95"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"5.0"
 		"BountyGoldMax"	"5.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -13384,10 +13384,10 @@
 			"AttackRange"	"250"
 			"ProjectileModel"	"particles/units/heroes/hero_enchantress/enchantress_impetus.vpcf"
 			"ProjectileSpeed"	"600"
-			"Legion_AttackType"	"normal"
-			"Legion_DefendType"	"light"
-			"Legion_Experience"	"75"
-			"Legion_Fraction"	"wave"
+			"LegionAttackType"	"normal"
+			"LegionDefendType"	"light"
+			"LegionExperience"	"75"
+			"LegionFraction"	"wave"
 			"BountyGoldMin"	"5.0"
 			"BountyGoldMax"	"5.0"
 			"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -13462,10 +13462,10 @@
 		    "AttackRange"   "300"
 		    "ProjectileModel"   ""
 		    "ProjectileSpeed"   "0"
-		    "Legion_AttackType" "boss"
-		    "Legion_DefendType" "boss"
-		    "Legion_Experience" "800"
-		    "Legion_Fraction"   "boss"
+		    "LegionAttackType" "boss"
+		    "LegionDefendType" "boss"
+		    "LegionExperience" "800"
+		    "LegionFraction"   "boss"
 		    "BountyGoldMin" "51.0"
 		    "BountyGoldMax" "51.0"
 		    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
@@ -13569,10 +13569,10 @@
 		"AttackRange"	"500"
 		"ProjectileModel"	"particles/items_fx/desolator_projectile.vpcf"
 		"ProjectileSpeed"	"2000"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"light"
-		"Legion_Experience"	"20"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"light"
+		"LegionExperience"	"20"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"5.0"
 		"BountyGoldMax"	"5.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -13659,10 +13659,10 @@
 	    "ProjectileSpeed"   "200"
 	    "BountyGoldMin" "12.0"
 	    "BountyGoldMax" "12.0"
-	    "Legion_AttackType" "boss"
-	    "Legion_DefendType" "boss"
-	    "Legion_Experience" "250"
-	    "Legion_Fraction"   "end_wave"
+	    "LegionAttackType" "boss"
+	    "LegionDefendType" "boss"
+	    "LegionExperience" "250"
+	    "LegionFraction"   "end_wave"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
 	    "CollisionSize" "50"
 	    "RingRadius"    "50"
@@ -13727,10 +13727,10 @@
 		"AttackRange"	"300"
 		"ProjectileModel"	"particles/units/heroes/hero_huskar/huskar_base_attack.vpcf"
 		"ProjectileSpeed"	"600"
-		"Legion_AttackType"	"pierce"
-		"Legion_DefendType"	"light"
-		"Legion_Experience"	"110"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"pierce"
+		"LegionDefendType"	"light"
+		"LegionExperience"	"110"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"6.0"
 		"BountyGoldMax"	"6.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -13830,10 +13830,10 @@
 		"AttackRange"	"400"
 		"ProjectileModel"	"particles/units/heroes/hero_lion/lion_base_attack.vpcf"
 		"ProjectileSpeed"	"650"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"medium"
-		"Legion_Experience"	"50"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"medium"
+		"LegionExperience"	"50"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"6.0"
 		"BountyGoldMax"	"6.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -13916,10 +13916,10 @@
 	    "AttackRange"   "125"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "boss"
-	    "Legion_DefendType" "boss"
-	    "Legion_Experience" "1000"
-	    "Legion_Fraction"   "boss"
+	    "LegionAttackType" "boss"
+	    "LegionDefendType" "boss"
+	    "LegionExperience" "1000"
+	    "LegionFraction"   "boss"
 	    "BountyGoldMin" "51.0"
 	    "BountyGoldMax" "51.0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -13986,10 +13986,10 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "medium"
-	    "Legion_Experience" "110"
-	    "Legion_Fraction"   "wave"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "medium"
+	    "LegionExperience" "110"
+	    "LegionFraction"   "wave"
 	    "BountyGoldMin" "6.0"
 	    "BountyGoldMax" "6.0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -14092,10 +14092,10 @@
 		"AttackAnimationPoint"	"0.2"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"90"
-		"Legion_AttackType"	"pierce"
-		"Legion_DefendType"	"medium"
-		"Legion_Experience"	"25"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"pierce"
+		"LegionDefendType"	"medium"
+		"LegionExperience"	"25"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"5.0"
 		"BountyGoldMax"	"5.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -14155,10 +14155,10 @@
 			"AttackRange"	"90"
 			"ProjectileModel"	""
 			"ProjectileSpeed"	"0"
-			"Legion_AttackType"	"normal"
-			"Legion_DefendType"	"medium"
-			"Legion_Experience"	"40"
-			"Legion_Fraction"	"wave"
+			"LegionAttackType"	"normal"
+			"LegionDefendType"	"medium"
+			"LegionExperience"	"40"
+			"LegionFraction"	"wave"
 			"BountyGoldMin"	"6.0"
 			"BountyGoldMax"	"6.0"
 			"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -14320,10 +14320,10 @@
 		"AttackRange"	"128"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"pierce"
-		"Legion_DefendType"	"medium"
-		"Legion_Experience"	"90"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"pierce"
+		"LegionDefendType"	"medium"
+		"LegionExperience"	"90"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"5.0"
 		"BountyGoldMax"	"5.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -14434,10 +14434,10 @@
 		    "AttackRange"   "90"
 		    "ProjectileModel"   ""
 		    "ProjectileSpeed"   "0"
-		    "Legion_AttackType" "normal"
-		    "Legion_DefendType" "light"
-		    "Legion_Experience" "45"
-		    "Legion_Fraction"   "wave"
+		    "LegionAttackType" "normal"
+		    "LegionDefendType" "light"
+		    "LegionExperience" "45"
+		    "LegionFraction"   "wave"
 		    "BountyGoldMin" "6.0"
 		    "BountyGoldMax" "6.0"
 		    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -14528,10 +14528,10 @@
 	    "AttackRange"   "90"
 	    "ProjectileModel"   ""
 	    "ProjectileSpeed"   "0"
-	    "Legion_AttackType" "arcane"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Experience" "130"
-	    "Legion_Fraction"   "wave"
+	    "LegionAttackType" "arcane"
+	    "LegionDefendType" "heavy"
+	    "LegionExperience" "130"
+	    "LegionFraction"   "wave"
 	    "BountyGoldMin" "5.0"
 	    "BountyGoldMax" "5.0"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -14626,10 +14626,10 @@
 		"AttackRange"	"90"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"pierce"
-		"Legion_DefendType"	"medium"
-		"Legion_Experience"	"85"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"pierce"
+		"LegionDefendType"	"medium"
+		"LegionExperience"	"85"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"5.0"
 		"BountyGoldMax"	"5.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -14718,10 +14718,10 @@
 		"AttackRange"	"90"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"pierce"
-		"Legion_DefendType"	"medium"
-		"Legion_Experience"	"30"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"pierce"
+		"LegionDefendType"	"medium"
+		"LegionExperience"	"30"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"6.0"
 		"BountyGoldMax"	"6.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -14806,10 +14806,10 @@
 	        "AttackRange"   "400"
 	        "ProjectileModel"   "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
 	        "ProjectileSpeed"   "600"
-	        "Legion_AttackType" "arcane"
-	        "Legion_DefendType" "light"
-	        "Legion_Experience" "105"
-	        "Legion_Fraction"   "wave"
+	        "LegionAttackType" "arcane"
+	        "LegionDefendType" "light"
+	        "LegionExperience" "105"
+	        "LegionFraction"   "wave"
 	        "BountyGoldMin" "5.0"
 	        "BountyGoldMax" "5.0"
 	        "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
@@ -14912,10 +14912,10 @@
 	    "ProjectileSpeed"   "200"
 	    "BountyGoldMin" "7.0"
 	    "BountyGoldMax" "7.0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "normal"
-	    "Legion_Experience" "170"
-	    "Legion_Fraction"   "wave"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "normal"
+	    "LegionExperience" "170"
+	    "LegionFraction"   "wave"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
 	    "CollisionSize" "50"
 	    "RingRadius"    "50"
@@ -14953,10 +14953,10 @@
 	"unit_space_cow"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/creeps/lane_creeps/creep_radiant_hulk/creep_radiant_diretide_ancient_hulk.vmdl"
-		"ModelScale"	"0.7"
-		"SoundSet"	"n_creep_Melee"
-		"GameSoundsFile"	"soundevents/game_sounds_creeps.vsndevts"
+		"Model"	"models/heroes/spirit_breaker/spirit_breaker.vmdl"
+		"ModelScale"	"0.6"
+		"SoundSet"	"Hero_Spirit_Breaker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spirit_breaker.vsndevts"
 		"Level"	"1"
 		"HealthBarOffset"	"140"
 		"Vscripts"	"ai/ai_default.lua"
@@ -14970,10 +14970,10 @@
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"90"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Experience"	"12"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionExperience"	"12"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"5.0"
 		"BountyGoldMax"	"5.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -15007,87 +15007,155 @@
 				}
 	
 			}
+			
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"106"
+				}
+	
+				"Wearable2"
+				{
+					"ItemDef"	"111"
+				}
+	
+				"Wearable3"
+				{
+					"ItemDef"	"112"
+				}
+	
+				"Wearable4"
+				{
+					"ItemDef"	"113"
+				}
+	
+				"Wearable5"
+				{
+					"ItemDef"	"114"
+				}
+	
+				"Wearable6"
+				{
+					"ItemDef"	"115"
+				}
+	
+				"Wearable7"
+				{
+					"ItemDef"	"116"
+				}
+	
+			}
 	
 		}
 	
 	}
-	"unit_enchantress"
+	"unit_techies"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/techies/techies.vmdl"
+		"ModelScale"	"0.7"
+		"SoundSet"	"Hero_Techies"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
+		"Level"	"1"
+		"HealthBarOffset"	"140"
+		"Vscripts"	"ai/waves/ai_techies.lua"
+		"Ability1"	"techies_suicide_datadriven"
+		"UseNeutralCreepBehavior"	"0"
+		"ArmorPhysical"	"3"
+		"MagicalResistance"	"0"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"	"0.0"
+		"AttackDamageMax"	"0.0"
+		"AttackRate"	"0"
+		"AttackAnimationPoint"	"0.2"
+		"AttackAcquisitionRange"	"850"
+		"AttackRange"	"0"
+		"ProjectileModel"	""
+		"ProjectileSpeed"	"0"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"medium"
+		"LegionExperience"	"100"
+	    "LegionFraction"   "wave"
+		"BountyGoldMin"	"3.0"
+		"BountyGoldMax"	"3.0"
+		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+		"CollisionSize"	"50"
+		"RingRadius"	"50"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"	"320"
+		"MovementTurnRate"	"0.6"
+		"StatusHealth"	"230"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"1000"
+		"StatusManaRegen"	"0"
+		"VisionDaytimeRange"	"1400"
+		"VisionNighttimeRange"	"800"
+		"TeamName"	"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
+		"precache"
 		{
-			"BaseClass"	"npc_dota_creature"
-			"Model"	"models/heroes/enchantress/enchantress.vmdl"
-			"ModelScale"	"0.7"
-			"SoundSet"	"Hero_Enchantress"
-			"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
-			"Level"	"1"
-			"HealthBarOffset"	"140"
-			"Vscripts"	"ai/ai_default.lua"
-			"Ability1"	"enchantress_untouchable"
-			"ArmorPhysical"	"3"
-			"MagicalResistance"	"0"
-			"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-			"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-			"AttackDamageMin"	"20.75"
-			"AttackDamageMax"	"22.25"
-			"AttackRate"	"0.46"
-			"AttackAnimationPoint"	"0.3"
-			"AttackAcquisitionRange"	"850"
-			"AttackRange"	"250"
-			"ProjectileModel"	"particles/units/heroes/hero_enchantress/enchantress_impetus.vpcf"
-			"ProjectileSpeed"	"600"
-			"Legion_AttackType"	"normal"
-			"Legion_DefendType"	"light"
-			"Legion_Experience"	"75"
-			"Legion_Fraction"	"wave"
-			"BountyGoldMin"	"5.0"
-			"BountyGoldMax"	"5.0"
-			"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
-			"CollisionSize"	"50"
-			"RingRadius"	"50"
-			"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-			"MovementSpeed"	"300"
-			"MovementTurnRate"	"0.6"
-			"StatusHealth"	"340"
-			"StatusHealthRegen"	"0"
-			"StatusMana"	"0"
-			"StatusManaRegen"	"0"
-			"VisionDaytimeRange"	"1400"
-			"VisionNighttimeRange"	"800"
-			"TeamName"	"DOTA_TEAM_NEUTRALS"
-			"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-			"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-			"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-			"Creature"
-			{
-				"DisableClumpingBehavior"	"1"
-				"DefaultState"	"Invade"
-				"States"
-				{
-					"Invade"
-					{
-						"Name"	"Invade"
-						"Aggression"	"100.0"
-						"Avoidance"	"0.0"
-						"Support"	"0.0"
-					}
-		
-				}
-		
-				"AttachWearables"
-				{
-					"Wearable1"
-					{
-						"ItemDef"	"5428"
-					}
-					"Wearable2"
-					{
-						"ItemDef"	"5024"
-					}
-		
-				}
-		
-			}
-		
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
+			"particle"	"particles/units/heroes/hero_techies/techies_suicide_base.vpcf"
 		}
+	
+		"Creature"
+		{
+			"States"
+			{
+				"Invade"
+				{
+					"Name"	"Invade"
+					"Aggression"	"100.0"
+					"Avoidance"	"0.0"
+					"Support"	"0.0"
+					"RoamDistance"	"0.0"
+				}
+	
+			}
+	
+			"DefaultState"	"Invade"
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"490"
+				}
+	
+				"Wearable2"
+				{
+					"ItemDef"	"394"
+				}
+	
+				"Wearable3"
+				{
+					"ItemDef"	"487"
+				}
+	
+				"Wearable4"
+				{
+					"ItemDef"	"489"
+				}
+	
+				"Wearable5"
+				{
+					"ItemDef"	"491"
+				}
+	
+				"Wearable6"
+				{
+					"ItemDef"	"492"
+				}
+	
+			}
+	
+		}
+	
+	}
 	"unit_templer"
 	{
 		"BaseClass"	"npc_dota_creature"
@@ -15111,10 +15179,10 @@
 		"AttackRange"	"200"
 		"ProjectileModel"	"particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
 		"ProjectileSpeed"	"700"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"light"
-		"Legion_Experience"	"95"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"light"
+		"LegionExperience"	"95"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"6.0"
 		"BountyGoldMax"	"6.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -15204,10 +15272,10 @@
 			"AttackRange"	"90"
 			"ProjectileModel"	""
 			"ProjectileSpeed"	"0"
-			"Legion_AttackType"	"normal"
-			"Legion_DefendType"	"heavy"
-			"Legion_Experience"	"65"
-			"Legion_Fraction"	"wave"
+			"LegionAttackType"	"normal"
+			"LegionDefendType"	"heavy"
+			"LegionExperience"	"65"
+			"LegionFraction"	"wave"
 			"BountyGoldMin"	"6.0"
 			"BountyGoldMax"	"6.0"
 			"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -15286,10 +15354,10 @@
 		"AttackRange"	"100"
 		"ProjectileModel"	""
 		"ProjectileSpeed"	"0"
-		"Legion_AttackType"	"normal"
-		"Legion_DefendType"	"heavy"
-		"Legion_Experience"	"110"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"normal"
+		"LegionDefendType"	"heavy"
+		"LegionExperience"	"110"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"5.0"
 		"BountyGoldMax"	"5.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -15375,10 +15443,10 @@
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"
 		"AttackRange"	"90"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"light"
-		"Legion_Experience"	"10"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"light"
+		"LegionExperience"	"10"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"5.0"
 		"BountyGoldMax"	"5.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
@@ -15433,7 +15501,7 @@
 	    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
 	    "AttackDamageMin"   "110.0"
 	    "AttackDamageMax"   "132.5"
-	    "AttackRate"    "0.55"
+	    "AttackRate"    "0.48"
 	    "AttackAnimationPoint"  "0.2"
 	    "AttackAcquisitionRange"    "850"
 	    "AttackRange"   "100"
@@ -15441,10 +15509,10 @@
 	    "ProjectileSpeed"   "200"
 	    "BountyGoldMin" "9.0"
 	    "BountyGoldMax" "9.0"
-	    "Legion_AttackType" "normal"
-	    "Legion_DefendType" "heavy"
-	    "Legion_Experience" "200"
-	    "Legion_Fraction"   "wave"
+	    "LegionAttackType" "normal"
+	    "LegionDefendType" "heavy"
+	    "LegionExperience" "200"
+	    "LegionFraction"   "wave"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
 	    "CollisionSize" "50"
 	    "RingRadius"    "50"
@@ -15501,10 +15569,10 @@
 		"AttackRange"	"250"
 		"ProjectileModel"	"particles/units/heroes/hero_pugna/pugna_base_attack.vpcf"
 		"ProjectileSpeed"	"250"
-		"Legion_AttackType"	"arcane"
-		"Legion_DefendType"	"light"
-		"Legion_Experience"	"55"
-		"Legion_Fraction"	"wave"
+		"LegionAttackType"	"arcane"
+		"LegionDefendType"	"light"
+		"LegionExperience"	"55"
+		"LegionFraction"	"wave"
 		"BountyGoldMin"	"5.0"
 		"BountyGoldMax"	"5.0"
 		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"

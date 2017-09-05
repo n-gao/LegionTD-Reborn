@@ -31,6 +31,7 @@ function Game.new()
     self.UnitKV = LoadKeyValues("scripts/npc/npc_units_custom.txt")
     self.DamageKV = LoadKeyValues("scripts/damage_table.kv")
     self.HeroKV = LoadKeyValues("scripts/npc/npc_heroes_custom.txt")
+    self.AbilityKV = LoadKeyValues("scripts/npc/npc_abilities_custom.txt")
     GameRules:GetGameModeEntity():SetDamageFilter(Dynamic_Wrap(Game, "DamageFilter"), Game)
     GameRules:GetGameModeEntity():SetExecuteOrderFilter(Dynamic_Wrap(Game, "OrderFilter"), Game)
     
@@ -201,7 +202,7 @@ function Game:ReadLanes(kvSpawns)
                 nextWaypoint = lnextWaypoint:GetAbsOrigin(),
                 midWaypoint = lmidWaypoint:GetAbsOrigin(),
                 lastWaypoint = llastWaypoint:GetAbsOrigin(),
-                waypoints = {lwaypoint:GetAbsOrigin(), lnextWaypoint:GetAbsOrigin(), lmidWaypoint:GetAbsOrigin(), llastWaypoint:GetAbsOrigin(), },
+                waypoints = {lwaypoint:GetAbsOrigin(), lnextWaypoint:GetAbsOrigin(), lmidWaypoint:GetAbsOrigin(), llastWaypoint:GetAbsOrigin() },
                 heroSpawn = lheroSpawn,
                 unitWaypoint = lunitWaypoint,
                 box = lbox,
@@ -317,6 +318,7 @@ function Game:Start()
     self:SaveDataAtEnd()
     
     if Convars:GetBool('developer') then
+        Game:UpdateAbilityData()
         Game:UpdateUnitData()
     end
 end
@@ -419,7 +421,7 @@ function Game:RoundFinished()
         self:CreateGameTimer()
     end
     for _, listener in pairs(self.endOfRoundListeners) do
-        listener()
+        pcall(listener)
     end
     
     self.IncreaseRound()
@@ -566,8 +568,8 @@ function Game:OnNPCSpawned(key)
             end
         else -- not a hero
             if Game.UnitKV[npc:GetUnitName()] then
-                local attack_type = Game.UnitKV[npc:GetUnitName()]["Legion_AttackType"] or "none"
-                local defend_type = Game.UnitKV[npc:GetUnitName()]["Legion_DefendType"] or "none"
+                local attack_type = Game.UnitKV[npc:GetUnitName()]["LegionAttackType"] or "none"
+                local defend_type = Game.UnitKV[npc:GetUnitName()]["LegionDefendType"] or "none"
                 --print ("unit spawned with " .. attack_type .. "/" .. defend_type)
                 npc:AddNewModifier(npc, nil, "modifier_attack_" .. attack_type .. "_lua", {})
                 npc:AddNewModifier(npc, nil, "modifier_defend_" .. defend_type .. "_lua", {})
@@ -1255,14 +1257,12 @@ end
 
 
 function Game:UpdateUnitData()
-    local unitData = {}
-    for unit, data in pairs(Game.UnitKV) do
-        unitData[unit] = {
-            fraction = data.Legion_Fraction or "other",
-            experience = data.Legion_Experience or 0
-        }
-    end
-    Game.storage:UpdateUnitData(unitData);
+    Game.storage:UpdateUnitData(Game.UnitKV);
+end
+
+
+function Game:UpdateAbilityData()
+    Game.storage:UpdateAbilityData(Game.AbilityKV);
 end
 
 
@@ -1282,7 +1282,7 @@ function Game:SaveDataAtEnd()
 end
 
 function Game:SaveMatchAtEnd()
-    --if GameRules:IsCheatMode() then return end
+    if GameRules:IsCheatMode() then return end
     HookSetWinnerFunction(function(gameRules, team)
         local matchData = {}
         for _, player in pairs(self.players) do
@@ -1300,7 +1300,7 @@ function Game:GetAllFractions()
     if Game.fractions ~= nil then return Game.fractions end
     Game.fractions = {}
     for _, unit in pairs(Game.UnitKV) do
-        local fraction = unit.Legion_Fraction or "other"
+        local fraction = unit.LegionFraction or "other"
         Game.fractions[fraction] = true
     end
     return Game.fractions

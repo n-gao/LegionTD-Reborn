@@ -158,7 +158,7 @@ end
 
 function NextWayPoint(self)
     --	print("lane creep hit waypoint " .. self.wayStep)
-    if self.wayStep < 4 then
+    if self.wayStep < #self.waypoints then
         self.wayStep = self.wayStep + 1
         ExecuteOrderFromTable({
             UnitIndex = self:entindex(),

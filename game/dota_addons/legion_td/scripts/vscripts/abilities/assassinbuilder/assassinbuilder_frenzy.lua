@@ -83,7 +83,10 @@ function assassinbuilder_frenzy:ProcsMagicStick(  )
 end
 
 function assassinbuilder_frenzy:NextRound()
-	if (IsServer() and not (cooldown == 0)) then
+	if (IsServer()) then
+		if (self.cooldown == 0) then
+			return
+		end
 		local game = GameRules.GameMode.game
 		local cooldown = self.cooldown - game:GetCurrentWaveNumber()
 		self.cooldownModifier:SetStackCount(cooldown)

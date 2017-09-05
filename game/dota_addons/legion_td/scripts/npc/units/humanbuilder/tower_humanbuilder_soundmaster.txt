@@ -34,9 +34,9 @@
     "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
     "ProjectileSpeed"       "420"
 
-    "Legion_AttackType"     "arcane"
-    "Legion_DefendType"     "light"
-    "Legion_Fraction"       "human"
+    "LegionAttackType"     "arcane"
+    "LegionDefendType"     "light"
+    "LegionFraction"       "human"
 
     // Bounty
     //----------------------------------------------------------------

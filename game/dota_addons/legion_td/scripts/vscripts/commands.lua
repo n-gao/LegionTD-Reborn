@@ -68,8 +68,8 @@ function CommandEngine.waveInfo(waveNum, playerid)
     if damageMax then damageMax = (math.floor(damageMax * 1000)) / 1000 end -- rounding floating point from KV's
     if attackRate then attackRate = (math.floor(attackRate * 1000)) / 1000 end -- rounding floating point from KV's
     
-    local attackType = Game.UnitKV[name]["Legion_AttackType"] or "none"
-    local defendType = Game.UnitKV[name]["Legion_DefendType"] or "none"
+    local attackType = Game.UnitKV[name]["LegionAttackType"] or "none"
+    local defendType = Game.UnitKV[name]["LegionDefendType"] or "none"
     local attackCapabilities = Game.UnitKV[name]["AttackCapabilities"] or "none"
     
     if attackCapabilities == "DOTA_UNIT_CAP_MELEE_ATTACK" then attackCapabilities = "Melee"

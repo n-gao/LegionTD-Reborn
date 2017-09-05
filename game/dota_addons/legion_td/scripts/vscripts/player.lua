@@ -51,7 +51,7 @@ end
 
 function Player:KilledUnit(killed)
     self.killedUnits[killed:GetUnitName()] = (self.killedUnits[killed:GetUnitName()] or 0) + 1
-    local fraction = Game.UnitKV[killed:GetUnitName()].Legion_Fraction or "other"
+    local fraction = Game.UnitKV[killed:GetUnitName()].LegionFraction or "other"
     self:IncreaseKillOfFraction(fraction)
 end
 
@@ -60,7 +60,7 @@ function Player:GetFraction()
     local heroName = self.hero:GetUnitName()
     for _, data in pairs(Game.HeroKV) do
         if data.override_hero == heroName then
-            return data.Legion_Fraction
+            return data.LegionFraction
         end
     end
     return "other"

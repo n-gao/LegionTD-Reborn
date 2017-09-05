@@ -10,6 +10,8 @@ function Jinada(keys)
     caster:RemoveModifierByName(modifierName)
 
     Timers:CreateTimer(cooldown, function()
-        ability:ApplyDataDrivenModifier(caster, caster, modifierName, {})
+        if (not ability:IsNull()) then
+            ability:ApplyDataDrivenModifier(caster, caster, modifierName, {})
+        end
     end)
 end

@@ -375,7 +375,21 @@ function Storage:UpdateUnitData(unitData)
         data = JSON:encode(unitData)
     }, function(result)
         local resultTable = JSON:decode(result)
-        print("[STORAGE] Updating Unit Response")
+        print("[STORAGE] Updating Units Response")
+        DeepPrintTable(resultTable)
+    end)
+end
+
+function Storage:UpdateAbilityData(abilityData)
+    if (self.online == false) then
+        return
+    end
+    self:SendHttpRequest("POST", {
+        method = "update_abilities",
+        data = JSON:encode(abilityData)
+    }, function (result)
+        local resultTable = JSON:decode(result)
+        print("[STORAGE] Updating Abilities Response")
         DeepPrintTable(resultTable)
     end)
 end
@@ -426,7 +440,7 @@ function Storage:SendHttpRequest(method, data, callback)
             result.Body = ""
         end
         if (result.Body == "") then
-            self.online = false
+            --self.online = false
         end
         callback(result.Body)
     end)

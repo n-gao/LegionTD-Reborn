@@ -31,10 +31,10 @@
 	"ProjectileModel"       ""
 	"ProjectileSpeed"       "0"
 
-	"Legion_AttackType"		"normal"
-	"Legion_DefendType"		"heavy"
-	"Legion_Fraction"		"income"
-	"Legion_Experience"		"135"
+	"LegionAttackType"		"normal"
+	"LegionDefendType"		"heavy"
+	"LegionFraction"		"income"
+	"LegionExperience"		"135"
 
 	// Bounty
 	//----------------------------------------------------------------

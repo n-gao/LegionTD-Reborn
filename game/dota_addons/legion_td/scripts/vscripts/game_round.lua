@@ -25,9 +25,9 @@ function GameRound:ReadRoundConfiguration(kv, game, roundNumber)
 end
 
 
---Begin der Runde
+
 function GameRound:Begin()
-    print("Runde " .. self.roundNumber .. " started.")
+    print("Round " .. self.roundNumber .. " started.")
     self.remainingUnits = {}
     
     self.EventHandles = {
@@ -48,7 +48,7 @@ function GameRound:Begin()
     print("did GameRound:Begin() Spawn()-ing")
 end
 
---Ende einer Runde
+
 function GameRound:End()
     for key, val in pairs(self.EventHandles) do
         StopListeningToGameEvent(val)

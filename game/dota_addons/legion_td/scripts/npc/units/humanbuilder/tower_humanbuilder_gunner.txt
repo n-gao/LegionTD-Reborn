@@ -34,9 +34,9 @@
     "ProjectileModel"       "particles/units/heroes/hero_sniper/sniper_base_attack.vpcf"
     "ProjectileSpeed"       "3000"
 
-    "Legion_AttackType"     "pierce"
-    "Legion_DefendType"     "medium"
-    "Legion_Fraction"       "human"
+    "LegionAttackType"     "pierce"
+    "LegionDefendType"     "medium"
+    "LegionFraction"       "human"
 
     // Bounty
     //----------------------------------------------------------------

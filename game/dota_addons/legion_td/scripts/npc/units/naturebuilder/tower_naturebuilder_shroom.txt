@@ -34,9 +34,9 @@
     "ProjectileModel"       ""
     "ProjectileSpeed"       "0"
 
-    "Legion_AttackType"     "arcane"
-    "Legion_DefendType"     "heavy"
-    "Legion_Fraction"       "nature"
+    "LegionAttackType"     "arcane"
+    "LegionDefendType"     "heavy"
+    "LegionFraction"       "nature"
 
     // Bounty
     //----------------------------------------------------------------

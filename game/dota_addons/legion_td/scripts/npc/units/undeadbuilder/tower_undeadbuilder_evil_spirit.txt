@@ -34,9 +34,9 @@
     "ProjectileModel"       "particles/econ/items/shadow_fiend/sf_desolation/sf_base_attack_desolation.vpcf"
     "ProjectileSpeed"       "600"
     
-    "Legion_AttackType"     "pierce"
-    "Legion_DefendType"     "light"
-    "Legion_Fraction"       "undead"
+    "LegionAttackType"     "pierce"
+    "LegionDefendType"     "light"
+    "LegionFraction"       "undead"
 
     // Bounty
     //----------------------------------------------------------------

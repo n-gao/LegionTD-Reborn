@@ -29,9 +29,9 @@
     "ProjectileModel"           ""
     "ProjectileSpeed"           "0"
 
-    "Legion_AttackType"         "normal"
-    "Legion_DefendType"         "medium"
-	"Legion_Fraction"		"assassin"
+    "LegionAttackType"         "normal"
+    "LegionDefendType"         "medium"
+	"LegionFraction"		"assassin"
     
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"
