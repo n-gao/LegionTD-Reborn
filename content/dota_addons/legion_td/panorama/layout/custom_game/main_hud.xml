@@ -37,7 +37,7 @@
         <Panel hittest="false" class="ShopButtonPanel">
           <Button id="ShopButton" onactivate="OnShopButtonPressed()">
             <Image src="file://{images}/custom_game/shop.psd" />
-            <Label id="Shoplabel" class="ButtonLabel" text="#TangoShop" />
+            <Label id="Shoplabel" class="ButtonLabel" text="Tango Shop" />
           </Button>
         </Panel>
         <Panel hittest="false" class="SkipButtonPanel">
