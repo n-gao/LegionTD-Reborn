@@ -588,7 +588,7 @@
 {
   font-size: 20px;
   vertical-align: top;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 4px #000000;
   margin-left: 1px;
   margin-top: 1px;
   text-transform: uppercase;
@@ -739,7 +739,7 @@ DOTAAvatarImage
 
 .TeamSelectEmptySlot #PlayerName
 {
-  color: #454545;
+  color: #6C6C6C;
   letter-spacing: 1px;
   font-size: 18px;
 }

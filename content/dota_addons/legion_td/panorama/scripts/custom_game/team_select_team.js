@@ -56,14 +56,15 @@ function OnJoinTeamPressed()
 		var teamBackgroundGradient = $( "#TeamBackgroundGradient" );
 		if ( teamBackgroundGradient )
 		{
-			var gradientText = 'gradient( linear, -800% -1600%, 50% 100%, from( ' + teamColor + ' ), to( #00000088 ) );';
+			var gradientText = 'gradient( linear, 0% 0%, 70% 100%, from( ' + teamColor + '77 ), color-stop(0.75, #00000077), to( #00000077) );';
 			teamBackgroundGradient.style.backgroundColor = gradientText;	
 		}
 
 		var teamBackgroundGradientHighlight = $( "#TeamBackgroundGradientHighlight" );
 		if ( teamBackgroundGradientHighlight )
 		{
-			var gradientText = 'gradient( linear, -800% -1600%, 90% 100%, from( ' + teamColor + ' ), to( #00000088 ) );';
+			var gradientText = 'gradient( linear, 0% 0%, 80% 100%, from( ' + teamColor + 'AA ), color-stop(0.9, #00000088), to( #00000088 ) );';
+			// var gradientText = 'gradient( linear, -800% -1600%, 90% 100%, from( ' + teamColor + ' ), to( #00000088 ) );';
 			teamBackgroundGradientHighlight.style.backgroundColor = gradientText;
 		}
 
