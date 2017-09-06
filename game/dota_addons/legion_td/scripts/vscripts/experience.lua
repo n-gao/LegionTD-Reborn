@@ -15,11 +15,8 @@ function ExperienceTracker:OnUnitKilled(entry)
     local experience = Game.UnitKV[killed:GetUnitName()].LegionExperience or 0
     local fraction = Game.UnitKV[killed:GetUnitName()].LegionFraction or "other"
     player:AddExperience(experience)
-    if (fraction == "humans") then
-        print(killed:GetUnitName())
-        print(murderer:GetUnitName())
-    end
     player:KilledUnit(killed)
+    player:RefreshPlayerInfo()
 end
 
 ExperienceTracker:init()

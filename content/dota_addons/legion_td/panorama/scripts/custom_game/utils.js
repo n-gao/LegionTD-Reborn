@@ -25,13 +25,6 @@ function RequestStoredDataFor(steamId) {
     GameEvents.SendCustomGameEventToServer("request_stored_data", data);
 }
 
-function AutoRequestStoredDataFor(steamId) {
-    Init();
-    if (!Contains(GameUI.CustomUIConfig().StoredData.Requests, steamId)) {
-        GameUI.CustomUIConfig().StoredData.Requests.push(steamId);
-    }
-}
-
 function StackTrace() {
     var err = new Error();
     $.Msg(err.stack);
@@ -45,11 +38,6 @@ function UpdateData(data) {
     GetStoredData()["" + data.steamID] = data;
 }
 
-function RefreshRequestes() {
-    $.Each(GetStoredData().Requests, RequestStoredDataFor);
-    $.Schedule(1, RefreshRequestes);
-}
-
 function GetStoredData() {
     Init();
     return GameUI.CustomUIConfig().StoredData;
@@ -60,7 +48,6 @@ function Init() {
         GameUI.CustomUIConfig().StoredData = {};
         GameUI.CustomUIConfig().StoredData.Requests = [];
         GameEvents.Subscribe("send_stored_data", UpdateData);
-        RefreshRequestes();
     }
 }
 

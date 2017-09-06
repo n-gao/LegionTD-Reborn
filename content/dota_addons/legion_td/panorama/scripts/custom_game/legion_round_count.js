@@ -1,31 +1,35 @@
 "use strict";
 
-function UpdateTimer(data)
-{
-  var timerText = "";
-  timerText += data.timer_minute;
-  timerText += ":";
-  timerText += data.timer_second;
+var nextRoundTime = 0;
 
-  $("#Time").text = timerText;
+function RoundChanged(data) {
+    $("#CurrentRound").text = "" + data.displayRound;
+    $("#RoundPanel").SetHasClass("BetweenRounds", data.state == 0);
+    nextRoundTime = data.nextRoundTime;
+    $.Msg("Round updated:");
+    $.Msg(data);
+    UpdateTime();
 }
 
-function UpdateRound(data)
-{
-  var roundText = "";
-  roundText += data.round;
-
-  $("#CurrentRound").text = roundText;
+function PeriodicallyUpdateTime() {
+  UpdateTime();
+  $.Schedule(0.1, PeriodicallyUpdateTime);
 }
 
-function UpdateCountDown(data) {
-  $("#RoundPanel").SetHasClass("BetweenRounds", data.betweenRounds);
-  var countDownText = Math.round(data.seconds) + "s";
-  $("#CountDown").text = countDownText;
+function UpdateTime() {
+    var time = Game.GetGameTime();
+    var mins = Math.floor(time/60);
+    var secs = Math.floor(time) % 60;
+    $("#Time").text = pad(mins, 2) + ":" + pad(secs, 2);
+    $("#CountDown").text = Math.round(nextRoundTime - time) + "s";
+}
+
+function pad (num, max) {
+    var str = num.toString();
+    return str.length < max ? pad("0" + str, max) : str;
 }
 
 (function() {
-    GameEvents.Subscribe("update_countdown", UpdateCountDown);
-    GameEvents.Subscribe("update_time", UpdateTimer);
-    GameEvents.Subscribe("update_round", UpdateRound);
+    PeriodicallyUpdateTime();
+    GameEvents.Subscribe("round_changed", RoundChanged);
 })();

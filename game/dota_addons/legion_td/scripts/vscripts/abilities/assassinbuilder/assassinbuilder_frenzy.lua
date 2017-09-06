@@ -62,7 +62,7 @@ function assassinbuilder_frenzy:OnSpellStart()
 		end
 		local mod = self.player.hero:AddNewModifier(self.player.hero, self, "modifier_assassinbuilder_frenzy", {duration = self:GetSpecialValueFor("duration")})
 		mod.ability = self
-		self.cooldown = game:GetCurrentWaveNumber() + self:GetSpecialValueFor("cooldown")
+		self.cooldown = game:GetDisplayRound() + self:GetSpecialValueFor("cooldown")
 		self.cooldownModifier = self.player.hero:AddNewModifier(self.player.hero, self, "modifier_assassinbuilder_frenzy_cooldown", {})
 		self.cooldownModifier:SetStackCount(self.cooldown)
 
@@ -88,7 +88,7 @@ function assassinbuilder_frenzy:NextRound()
 			return
 		end
 		local game = GameRules.GameMode.game
-		local cooldown = self.cooldown - game:GetCurrentWaveNumber()
+		local cooldown = self.cooldown - game:GetDisplayRound()
 		self.cooldownModifier:SetStackCount(cooldown)
 		if cooldown < 1 then 
 			cooldown = 0

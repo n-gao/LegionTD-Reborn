@@ -49,4 +49,13 @@
 		"from"				"long"
 		"to"				"long"
 	}
+
+	"round_changed"
+	{
+		"round"				"short"
+		"displayRound"		"short"
+		"state"				"short"
+		"isDuel"			"bool"
+		"nextRoundTime"		"int"
+	}
 }

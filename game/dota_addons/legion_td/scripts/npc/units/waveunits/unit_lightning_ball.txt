@@ -55,7 +55,12 @@
 			}
 
 		}
+	}
 
+	"precache" 
+	{
+		"particle"	"particles/units/heroes/hero_lycan/lycan_claw_blur.vpcf"
+		"particle"	"particles/units/heroes/hero_lycan/lycan_claw_blur_b.vpcf"
 	}
 
 }

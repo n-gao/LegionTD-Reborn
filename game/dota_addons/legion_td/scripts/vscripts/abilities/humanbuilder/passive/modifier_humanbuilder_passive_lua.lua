@@ -29,7 +29,7 @@ function modifier_humanbuilder_passive_lua:OnRefresh(kv)
     if IsServer() then
 
         local game = GameRules.GameMode.game
-        local currentRound = game:GetCurrentWaveNumber()
+        local currentRound = game:GetDisplayRound()
         local playerObj = game:FindPlayerWithID(self:GetParent():GetPlayerID())
         local foodlimit = playerObj.foodlimit
 

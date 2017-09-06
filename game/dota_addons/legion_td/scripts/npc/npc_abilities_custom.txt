@@ -5009,7 +5009,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"31"
+				"atk_damage_tooltip"	"34"
 			}
 	
 			"02"
@@ -5027,7 +5027,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"50"
+				"health_tooltip"	"60"
 			}
 	
 			"05"
@@ -5210,7 +5210,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"atk_damage_tooltip"	"20.5"
+				"atk_damage_tooltip"	"22.5"
 			}
 	
 			"02"
@@ -5228,7 +5228,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_tooltip"	"115"
+				"health_tooltip"	"125"
 			}
 	
 			"05"

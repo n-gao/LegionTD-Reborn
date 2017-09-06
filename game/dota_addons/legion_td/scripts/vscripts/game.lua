@@ -256,7 +256,7 @@ end
 
 
 
-function Game:GetCurrentWaveNumber()
+function Game:GetDisplayRound()
     return self.gameRound - self.doneDuels - self.lastWaveCount
 end
 
@@ -296,9 +296,9 @@ function Game:Start()
     self.radiantKingVision = CreateUnitByName("king_vision_dummy", self.radiantBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
     self.direKingVision = CreateUnitByName("king_vision_dummy", self.direBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
     self.gridBoxes = Entities:FindByName(nil, "gridboxes")
-    self.gameState = GAMESTATE_PREPARATION
     self.gameRound = STARTING_ROUND
     self.isRunning = true
+    self:SetGameState(GAMESTATE_PREPARATION)
     Timers:CreateTimer(0, function()
         for _, player in pairs(self.players) do
             player:RefreshPlayerInfo()
@@ -330,13 +330,20 @@ function Game:CreateGameTimer()
         end)
         self.countDownTimer = Timers:CreateTimer(1, function()
             if (self.nextRoundTime) then
-                CustomGameEventManager:Send_ServerToAllClients("update_countdown", {betweenRounds = Game:IsBetweenRounds(), seconds = Game.nextRoundTime - GameRules:GetGameTime()})
+                CustomGameEventManager:Send_ServerToAllClients("update_countdown", {betweenRounds = Game:IsBetweenRounds(), seconds = Game:GetRemainingBuildingTime()})
             else
                 CustomGameEventManager:Send_ServerToAllClients("update_countdown", {betweenRounds = Game:IsBetweenRounds(), seconds = -1})
             end
             return 1
         end)
     end
+end
+
+function Game:GetRemainingBuildingTime()
+    if (self.gameState ~= GAMESTATE_PREPARATION) then
+        return 0
+    end
+    return Game.nextRoundTime - GameRules:GetGameTime()
 end
 
 
@@ -346,14 +353,7 @@ function Game:OnThink()
     self:CheckPlayerAbandon()
     if self.gameState == GAMESTATE_PREPARATION then
         --festlegung der vorbereitungszeit
-        if not self.nextRoundTime then
-            if not self.finishedWaves then
-                self:SetWaitTime()
-            else
-                self:ResetUnitPositions()
-                self:StartNextRound()
-            end
-        elseif self.nextRoundTime <= GameRules:GetGameTime() then
+        if self.nextRoundTime <= GameRules:GetGameTime() then
             self:StartNextRound()
         end
     end
@@ -363,6 +363,26 @@ function Game:OnThink()
     if self.gameState == GAMESTATE_END then
         end
     return 0.25
+end
+
+function Game:SetGameState(newState)
+    local oldState = self.gameState
+    self.gameState = newState
+    if self.gameState == GAMESTATE_PREPARATION then
+        self:SetNextRoundTime()
+    end
+    if self.gameState ~= self.oldState then
+        self:SendRoundChanged()
+    end
+end
+
+function Game:SetNextRoundTime()
+    if not self.finishedWaves then
+        self:SetWaitTime()
+    else
+        self:ResetUnitPositions()
+        self:StartNextRound()
+    end
 end
 
 
@@ -377,16 +397,20 @@ end
 
 
 function Game:ResetSkip()
-    self:SetSkipButton(true)
     for _, player in pairs(self.players) do
         player.wantsSkip = false
     end
 end
 
-function Game:SetSkipButton(state)
-    CustomGameEventManager:Send_ServerToAllClients("enable_skip", {value = state})
+function Game:SendRoundChanged()
+    CustomGameEventManager:Send_ServerToAllClients("round_changed", {
+        round = self.gameRound,
+        displayRound = self:GetDisplayRound(),
+        isDuel = self:GetCurrentRound().isDuelRound == true,
+        state = self.gameState,
+        nextRoundTime = self.nextRoundTime,
+    });
 end
-
 
 --Setzt die Zeit zum warten zur nächsten Runde
 function Game:SetWaitTime()
@@ -401,15 +425,8 @@ function Game:SetWaitTime()
     end
     self.nextRoundTime = GameRules:GetGameTime() + waitTime
     
-    CustomGameEventManager:Send_ServerToAllClients("update_round", {round = self:GetCurrentWaveNumber()})
     self:RespawnUnits()
     print("Time to next Round: " .. waitTime)
-end
-
-function Game:EndQuest()
---Timers:RemoveTimer(self.questTimer)
---self.quest:CompleteQuest()
---self.nextWaveQuest:CompleteQuest()
 end
 
 
@@ -425,7 +442,7 @@ function Game:RoundFinished()
     end
     
     self.IncreaseRound()
-    self.gameState = GAMESTATE_PREPARATION
+    self:SetGameState(GAMESTATE_PREPARATION)
     for _, player in pairs(self.players) do
         player.tangoLimit = self:GetTangoLimit()
     end
@@ -443,7 +460,6 @@ end
 function Game:StartNextRound()
     self:CheckTeamLeft(DOTA_TEAM_GOODGUYS)
     self:CheckTeamLeft(DOTA_TEAM_BADGUYS)
-    self:SetSkipButton(false)
     print "Game:StartNextround()"
     for _, player in pairs(self.players) do
         if player:IsActive() then --only repair leaks if lane is active
@@ -466,11 +482,11 @@ function Game:StartNextRound()
         mode:SetFogOfWarDisabled(true)
     end
     self.gridBoxes:AddEffects(EF_NODRAW)
-    self.gameState = GAMESTATE_FIGHTING
     self.nextRoundTime = nil
     self.rounds[self.gameRound]:Begin()
     print "Game:StartNextround() about to call self:UnlockUnits()"
     self:UnlockUnits()
+    self:SetGameState(GAMESTATE_FIGHTING)
 end
 
 function Game:CheckTeamLeft(team)
@@ -526,26 +542,6 @@ function Game:Initialize()
         mode:SetFogOfWarDisabled(false)
     end
     Timers:CreateTimer(0, function()
-        local time = GameRules:GetGameTime()
-        local minutes = math.floor(time / 60)
-        local seconds = math.floor(time % 60)
-        local minutesString = ""
-        if minutes >= 10 then
-            minutesString = "" .. minutes
-        else
-            minutesString = "0" .. minutes
-        end
-        local secondsString = ""
-        if seconds >= 10 then
-            secondsString = "" .. seconds
-        else
-            secondsString = "0" .. seconds
-        end
-        data = {
-            timer_minute = minutesString,
-            timer_second = secondsString
-        }
-        CustomGameEventManager:Send_ServerToAllClients("update_time", data)
         GameRules:SetTimeOfDay(0.26)-- always day!
         return 1
     end)
@@ -800,7 +796,6 @@ function Game:SendUnit(data)
                 Game:LimitSends(Game.sendDire)
             end
         end
-        player:RefreshPlayerInfo()
     else
         player:SendErrorCode(LEGION_ERROR_NOT_ENOUGH_TANGOS)
     end
@@ -1131,10 +1126,6 @@ function Game:SkipWait()
         Game:DistributeMissedTangos(missedTime)
     end
     self.nextRoundTime = GameRules:GetGameTime()
-    --self:EndQuest()
-    --self.quest.finished = 0
-    Timers:CreateTimer(0.3, function()
-        CustomGameEventManager:Send_ServerToAllClients("update_round", {round = self:GetCurrentWaveNumber()}) end)
 end
 
 function Game:DistributeMissedTangos(missedTime)

@@ -153,7 +153,7 @@ function GetInfoPanel() {
 }
 
 function EnableSkip(data) {
-	$.GetContextPanel().SetHasClass("SkipPressed", data.value == 0);
+	$.GetContextPanel().SetHasClass("SkipPressed", data.state != 0);
 }
 
 function InitStatisticsOverlay() {
@@ -165,7 +165,7 @@ function InitStatisticsOverlay() {
 	var playerProgress = $.CreatePanel("Panel", $("#LegionProgressHook"), "PlayerProgress");
 	playerProgress.SetAttributeString("steam_id", Game.GetLocalPlayerInfo().player_steamid);
 	playerProgress.BLoadLayout("file://{resources}/layout/custom_game/statistics_experience_progress.xml", false, false);
-	AutoRequestStoredDataFor(Game.GetLocalPlayerInfo().player_steamid);
+	RequestStoredDataFor(Game.GetLocalPlayerInfo().player_steamid);
 }
 
 function InjectClock() {
@@ -184,7 +184,7 @@ function UpdateGold() {
 	GameEvents.Subscribe("update_player_info", UpdatePlayerInfo);
 	GameEvents.Subscribe("debug", UpdateDebug);
 	GameEvents.Subscribe("error", ErrorMessage);
-	GameEvents.Subscribe("enable_skip", EnableSkip);
+	GameEvents.Subscribe("round_changed", EnableSkip);
 	for (var i = 0; i < 3; i++) {
 		var upgrade = $.CreatePanel("Panel", $("#Upgrades"), "KingHealthUpgrade");
 		upgrade.BLoadLayout("file://{resources}/layout/custom_game/shop_upgrade.xml", false, false);

@@ -128,11 +128,11 @@ function CommandEngine.Commands.wave(instance, submessage, keys)
 end
 
 function CommandEngine.Commands.info(instance, submessage, keys)
-    CommandEngine.waveInfo(Game:GetCurrentWaveNumber(), keys.playerid)
+    CommandEngine.waveInfo(Game:GetDisplayRound(), keys.playerid)
 end
 
 function CommandEngine.Commands.infonext(instance, submessage, keys)
-    CommandEngine.waveInfo(Game:GetCurrentWaveNumber() + 1, keys.playerid)
+    CommandEngine.waveInfo(Game:GetDisplayRound() + 1, keys.playerid)
 end
 
 function CommandEngine.Commands.settings(instance, submessage, keys)

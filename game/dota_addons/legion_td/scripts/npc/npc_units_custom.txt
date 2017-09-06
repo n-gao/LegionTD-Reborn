@@ -12809,7 +12809,7 @@
 	    "LegionAttackType" "boss"
 	    "LegionDefendType" "boss"
 	    "LegionExperience" "150"
-	    "LegionFraction"   "end_wave"
+	    "LegionFraction"   "wave"
 	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
 	    "CollisionSize" "50"
 	    "RingRadius"    "50"
@@ -14129,7 +14129,12 @@
 				}
 	
 			}
+		}
 	
+		"precache" 
+		{
+			"particle"	"particles/units/heroes/hero_lycan/lycan_claw_blur.vpcf"
+			"particle"	"particles/units/heroes/hero_lycan/lycan_claw_blur_b.vpcf"
 		}
 	
 	}

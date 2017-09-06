@@ -101,6 +101,7 @@ end
 
 function Player:AddExperience(amount)
     self.experience = self:GetExperience() + amount
+    self:RefreshPlayerInfo()
 end
 
 function Player:GetKills()
@@ -275,6 +276,7 @@ end
 --adds income to gold
 function Player:Income(bounty)
     PlayerResource:ModifyGold(self:GetPlayerID(), self.income + bounty, true, DOTA_ModifyGold_Unspecified)
+    self:RefreshPlayerInfo()
 end
 
 
@@ -347,6 +349,7 @@ function Player:RefreshPlayerInfo()
             maxFood = self.foodlimit,
             towerValue = self:GetTowerValue()
         })
+        Game:SendStoredData(self:GetPlayerID(), self:GetSteamID())
     end
 end
 
