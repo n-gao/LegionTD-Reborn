@@ -53,7 +53,6 @@ function InitMatches() {
         GameUI.CustomUIConfig().MatchesRequests = [];
         GameEvents.Subscribe("send_match", UpdateMatch);
         GameEvents.Subscribe("send_match_history", UpdateMatchHistory);
-        RefreshRequestes();
 
         GameUI.CustomUIConfig().MatchHistory = {};
         GameUI.CustomUIConfig().MatchHistoryCallbacks = [];
