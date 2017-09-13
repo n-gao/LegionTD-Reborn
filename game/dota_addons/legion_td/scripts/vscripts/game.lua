@@ -1265,7 +1265,7 @@ function Game:UpdateAbilityData()
     local data = {}
     for name,d in pairs(Game.AbilityKV) do
         data[name] = d
-        data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
+        data[name].DisplayName = Game.EnglishLocalizationKV.Tokens["DOTA_Tooltip_ability_"..name] or name
         print(data[name].DisplayName)
     end
     Game.storage:UpdateAbilityData(data);
