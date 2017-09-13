@@ -394,6 +394,20 @@ function Storage:UpdateAbilityData(abilityData)
     end)
 end
 
+function Storage:UpdateBuilderData(builderData)
+    if (self.online == false) then
+        return
+    end
+    self:SendHttpRequest("POST", {
+        method = "update_heroes",
+        data = JSON:encode(builderData)
+    }, function (result)
+        local resultTable = JSON:decode(result)
+        print("[STORAGE] Updating Builder Response")
+        DeepPrintTable(resultTable)
+    end)
+end
+
 function Storage:GetMatchHistory(steamId, from, to, callback)
     if (self.online == false) then return end
     self:SendHttpRequest("GET", {

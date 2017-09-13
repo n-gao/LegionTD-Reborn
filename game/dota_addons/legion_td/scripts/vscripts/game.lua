@@ -32,6 +32,8 @@ function Game.new()
     self.DamageKV = LoadKeyValues("scripts/damage_table.kv")
     self.HeroKV = LoadKeyValues("scripts/npc/npc_heroes_custom.txt")
     self.AbilityKV = LoadKeyValues("scripts/npc/npc_abilities_custom.txt")
+    self.EnglishLocalizationKV = LoadKeyValues("resource/addon_english.txt")
+    DeepPrintTable(self.EnglishLocalizationKV)
     GameRules:GetGameModeEntity():SetDamageFilter(Dynamic_Wrap(Game, "DamageFilter"), Game)
     GameRules:GetGameModeEntity():SetExecuteOrderFilter(Dynamic_Wrap(Game, "OrderFilter"), Game)
     
@@ -320,6 +322,7 @@ function Game:Start()
     if Convars:GetBool('developer') then
         Game:UpdateAbilityData()
         Game:UpdateUnitData()
+        Game:UpdateBuilderData()
     end
 end
 
@@ -1248,12 +1251,35 @@ end
 
 
 function Game:UpdateUnitData()
+    local data = {}
+    for name,d in pairs(Game.UnitKV) do
+        data[name] = d
+        data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
+        print(data[name].DisplayName)
+    end
     Game.storage:UpdateUnitData(Game.UnitKV);
 end
 
 
 function Game:UpdateAbilityData()
-    Game.storage:UpdateAbilityData(Game.AbilityKV);
+    local data = {}
+    for name,d in pairs(Game.AbilityKV) do
+        data[name] = d
+        data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
+        print(data[name].DisplayName)
+    end
+    Game.storage:UpdateAbilityData(data);
+end
+
+
+function Game:UpdateBuilderData()
+    local data = {}
+    for name,d in pairs(Game.HeroKV) do
+        data[name] = d
+        data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
+        print(data[name].DisplayName)
+    end
+    Game.storage:UpdateBuilderData(data);
 end
 
 
