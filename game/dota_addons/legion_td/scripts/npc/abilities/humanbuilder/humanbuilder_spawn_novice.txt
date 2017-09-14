@@ -29,19 +29,19 @@
 		"02"
 		{
 			"var_type"	"FIELD_FLOAT"
-			"atk_speed_tooltip"	"1.0"
+			"atk_speed_tooltip"	"0.8"
 		}
 
 		"03"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"atk_range_tooltip"	"400"
+			"atk_range_tooltip"	"500"
 		}
 
 		"04"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"health_tooltip"	"50"
+			"health_tooltip"	"75"
 		}
 
 		"05"

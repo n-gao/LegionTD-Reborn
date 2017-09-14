@@ -27,7 +27,7 @@
 		"02"
 		{
 			"var_type"	"FIELD_FLOAT"
-			"atk_speed_tooltip"	"0.9"
+			"atk_speed_tooltip"	"0.86"
 		}
 
 		"03"
@@ -45,7 +45,7 @@
 		"05"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"armor_tooltip"	"3"
+			"armor_tooltip"	"4"
 		}
 
 		"06"

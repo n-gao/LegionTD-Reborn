@@ -13,7 +13,7 @@
     "Ability3"                  "assassinbuilder_upgrade_silent_champion"
     "Ability4"                  "sell"
 
-    "ArmorPhysical"             "1"
+    "ArmorPhysical"             "3"
     "MagicalResistance"         "0"
 
     "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -30,7 +30,7 @@
 
     "LegionAttackType"         "pierce"
     "LegionDefendType"         "light"
-	"LegionFraction"		"assassin"
+    "LegionFraction"        "assassin"
 
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"
@@ -43,7 +43,7 @@
     "MovementSpeed"             "270"
     "MovementTurnRate"          "0.5"
 
-    "StatusHealth"              "160"
+    "StatusHealth"              "200"
     "StatusHealthRegen"         "0"
     "StatusMana"                "100"
     "StatusManaRegen"           "2"

@@ -13,14 +13,14 @@
     "Ability3"                  "ability_empty_3"
     "Ability4"                  "sell"
 
-    "ArmorPhysical"             "3"
+    "ArmorPhysical"             "4"
     "MagicalResistance"         "0"
 
     "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"           "70"
-    "AttackDamageMax"           "75"
-    "AttackRate"                "0.72"
+    "AttackDamageMin"           "85"
+    "AttackDamageMax"           "95"
+    "AttackRate"                "0.7"
     "AttackAnimationPoint"      "0.5"
     "AttackAcquisitionRange"    "850"
     "AttackRange"               "90"
@@ -30,7 +30,7 @@
 
     "LegionAttackType"         "normal"
     "LegionDefendType"         "medium"
-	"LegionFraction"		"assassin"
+    "LegionFraction"        "assassin"
 
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"
@@ -43,7 +43,7 @@
     "MovementSpeed"             "270"
     "MovementTurnRate"          "0.5"
 
-    "StatusHealth"              "300"
+    "StatusHealth"              "350"
     "StatusHealthRegen"         "3"
     "StatusMana"                "0"
     "StatusManaRegen"           "0"

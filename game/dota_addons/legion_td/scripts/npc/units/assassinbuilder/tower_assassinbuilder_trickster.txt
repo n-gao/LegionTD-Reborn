@@ -14,14 +14,14 @@
     "Ability3"                  "assassinbuilder_upgrade_blood_drinker"
     "Ability4"                  "sell"
 
-    "ArmorPhysical"             "8"
+    "ArmorPhysical"             "9"
     "MagicalResistance"         "0"
 
     "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
     "AttackDamageMin"           "180"
     "AttackDamageMax"           "190"
-    "AttackRate"                "0.65"
+    "AttackRate"                "0.6"
     "AttackAnimationPoint"      "0.5"
     "AttackAcquisitionRange"    "850"
     "AttackRange"               "90"
@@ -31,7 +31,7 @@
 
     "LegionAttackType"         "normal"
     "LegionDefendType"         "medium"
-	"LegionFraction"		"assassin"
+    "LegionFraction"        "assassin"
     
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"
@@ -45,7 +45,7 @@
     "MovementTurnRate"          "0.5"
 
     "StatusHealth"              "850"
-    "StatusHealthRegen"         "5"
+    "StatusHealthRegen"         "30"
     "StatusMana"                "0"
     "StatusManaRegen"           "0"
 

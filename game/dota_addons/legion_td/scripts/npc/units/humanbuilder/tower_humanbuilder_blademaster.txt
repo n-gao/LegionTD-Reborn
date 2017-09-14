@@ -19,15 +19,15 @@
     // Armor
     //----------------------------------------------------------------
     "ArmorPhysical"         "8"
-    "MagicalResistance"     "0"
+    "MagicalResistance"     "50"
 
     // Attack
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "405.5"
-    "AttackDamageMax"       "420.0"
-    "AttackRate"            "0.425"
+    "AttackDamageMin"       "465.5"
+    "AttackDamageMax"       "480.0"
+    "AttackRate"            "0.42"
     "AttackAnimationPoint"  "0.35"
     "AttackAcquisitionRange" "850"
     "AttackRange"           "100"
@@ -56,7 +56,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "1150"
+    "StatusHealth"          "1250"
     "StatusHealthRegen"     "0"
     "StatusMana"            "1"
     "StatusManaRegen"       "0"
@@ -90,12 +90,12 @@
             }
         }
      "AttachWearables"
-	    {
-	        "Wearable1" { "ItemDef" "6775" } // "Mask of the Bladesrunner"
-	        "Wearable2" { "ItemDef" "8986" } // "Sword of the Bladeform Aesthete"
-	        "Wearable3" { "ItemDef" "6773" } // "Shoulders of the Bladesrunner"
-	        "Wearable4" { "ItemDef" "6826" } // "Gloves of the Bladesrunner"
-	        "Wearable5" { "ItemDef" "6774" } // "Belt of the Bladesrunner"
-	    }
+        {
+            "Wearable1" { "ItemDef" "6775" } // "Mask of the Bladesrunner"
+            "Wearable2" { "ItemDef" "8986" } // "Sword of the Bladeform Aesthete"
+            "Wearable3" { "ItemDef" "6773" } // "Shoulders of the Bladesrunner"
+            "Wearable4" { "ItemDef" "6826" } // "Gloves of the Bladesrunner"
+            "Wearable5" { "ItemDef" "6774" } // "Belt of the Bladesrunner"
+        }
     }
 }

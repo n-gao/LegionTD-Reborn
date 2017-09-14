@@ -19,7 +19,7 @@
     "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
     "AttackDamageMin"           "11"
     "AttackDamageMax"           "12"
-    "AttackRate"                "1.0"
+    "AttackRate"                "0.8"
     "AttackAnimationPoint"      "0.5"
     "AttackAcquisitionRange"    "850"
     "AttackRange"               "90"
@@ -29,7 +29,7 @@
 
     "LegionAttackType"         "normal"
     "LegionDefendType"         "heavy"
-	"LegionFraction"		"assassin"
+    "LegionFraction"        "assassin"
 
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"

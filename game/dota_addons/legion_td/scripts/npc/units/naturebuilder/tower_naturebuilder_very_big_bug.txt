@@ -56,7 +56,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "300"
+    "StatusHealth"          "350"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"
@@ -90,12 +90,12 @@
             }
         }
         "AttachWearables"
-	        {
-	            "Wearable1" { "ItemDef" "6130" }
-	            "Wearable2" { "ItemDef" "7578" }
-	            "Wearable3" { "ItemDef" "7468" }
-	            "Wearable4" { "ItemDef" "7810" }
-	            "Wearable5" { "ItemDef" "6134" }
-	        }
+            {
+                "Wearable1" { "ItemDef" "6130" }
+                "Wearable2" { "ItemDef" "7578" }
+                "Wearable3" { "ItemDef" "7468" }
+                "Wearable4" { "ItemDef" "7810" }
+                "Wearable5" { "ItemDef" "6134" }
+            }
     }
 }

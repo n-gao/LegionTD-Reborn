@@ -27,13 +27,13 @@
 		"02"
 		{
 			"var_type"	"FIELD_FLOAT"
-			"atk_speed_tooltip"	"0.85"
+			"atk_speed_tooltip"	"0.67"
 		}
 
 		"03"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"atk_range_tooltip"	"200"
+			"atk_range_tooltip"	"260"
 		}
 
 		"04"

@@ -10,10 +10,10 @@
 
     "Ability1"                  "assassinbuilder_coup_de_grace"
     "Ability2"                  "assassinbuilder_concealment"
-    "Ability3"                  "ability_empty_3"
+    "Ability3"                  "assassinbuilder_crescent"
     "Ability4"                  "sell"
 
-    "ArmorPhysical"             "15"
+    "ArmorPhysical"             "10"
     "MagicalResistance"         "0"
 
     "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -30,7 +30,7 @@
 
     "LegionAttackType"         "normal"
     "LegionDefendType"         "medium"
-	"LegionFraction"		"assassin"
+    "LegionFraction"        "assassin"
 
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"
@@ -43,7 +43,7 @@
     "MovementSpeed"             "270"
     "MovementTurnRate"          "0.5"
 
-    "StatusHealth"              "650"
+    "StatusHealth"              "700"
     "StatusHealthRegen"         "10"
     "StatusMana"                "0"
     "StatusManaRegen"           "0"

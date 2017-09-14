@@ -25,9 +25,9 @@
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "100.0"
-    "AttackDamageMax"       "107.5"
-    "AttackRate"            "0.45"
+    "AttackDamageMin"       "85.0"
+    "AttackDamageMax"       "95.5"
+    "AttackRate"            "0.4"
     "AttackAnimationPoint"  "0.4"
     "AttackAcquisitionRange" "850"
     "AttackRange"           "90"
@@ -90,12 +90,12 @@
             }
         }
         "AttachWearables"
-	        {
-	            "Wearable1" { "ItemDef" "4295" }
-	            "Wearable2" { "ItemDef" "4293" }
-	            "Wearable3" { "ItemDef" "4292" }
-	            "Wearable4" { "ItemDef" "4294" }
-				"Wearable5"	{ "ItemDef"	"7654" }
-	        }
+            {
+                "Wearable1" { "ItemDef" "4295" }
+                "Wearable2" { "ItemDef" "4293" }
+                "Wearable3" { "ItemDef" "4292" }
+                "Wearable4" { "ItemDef" "4294" }
+                "Wearable5" { "ItemDef" "7654" }
+            }
     }
 }

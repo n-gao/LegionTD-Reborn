@@ -21,7 +21,7 @@
 		"01"
 		{
 			"var_type"						"FIELD_INTEGER"
-			"aura_regen"		"15"
+			"aura_regen"		"25"
 		}
 		"03"
 		{

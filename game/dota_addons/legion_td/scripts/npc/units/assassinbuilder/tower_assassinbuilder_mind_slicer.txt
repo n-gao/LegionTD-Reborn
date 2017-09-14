@@ -20,7 +20,7 @@
     "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
     "AttackDamageMin"           "180"
     "AttackDamageMax"           "200"
-    "AttackRate"                "0.5"
+    "AttackRate"                "0.58"
     "AttackAnimationPoint"      "0.4"
     "AttackAcquisitionRange"    "850"
     "AttackRange"               "550"
@@ -30,7 +30,7 @@
 
     "LegionAttackType"         "pierce"
     "LegionDefendType"         "light"
-	"LegionFraction"		"assassin"
+    "LegionFraction"        "assassin"
 
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"
@@ -43,7 +43,7 @@
     "MovementSpeed"             "270"
     "MovementTurnRate"          "0.5"
 
-    "StatusHealth"              "300"
+    "StatusHealth"              "370"
     "StatusHealthRegen"         "0"
     "StatusMana"                "0"
     "StatusManaRegen"           "0"

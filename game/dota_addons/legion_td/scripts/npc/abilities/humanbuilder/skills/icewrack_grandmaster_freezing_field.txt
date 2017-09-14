@@ -48,7 +48,7 @@
 		"07"
 		{
 			"var_type"			"FIELD_FLOAT"
-			"debuff_duration"		"2.5"
+			"debuff_duration"		"2"
 		}
 		"08"
 		{
@@ -63,7 +63,7 @@
 		"10"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"freeze_damage"		"30"
+			"freeze_damage"		"25"
 		}
 	}
 	

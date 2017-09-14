@@ -23,12 +23,12 @@
 		"04"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"basedamagepercent_increase"	"5"
+			"basedamagepercent_increase"	"3"
 		}
 		"05"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"basedamagepercent_decrease"	"-5"
+			"basedamagepercent_decrease"	"-3"
 		}
 		"06"
 		{
@@ -53,12 +53,12 @@
 		"10"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"incomingdamage_decrease_percent"	"-5"
+			"incomingdamage_decrease_percent"	"-2"
 		}
 		"11"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"incomingdamage_increase_percent"	"5"
+			"incomingdamage_increase_percent"	"2"
 		}
 	}
 
