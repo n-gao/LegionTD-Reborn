@@ -51,6 +51,9 @@ function Storage:Init()
     if data == nil then return end
     Storage.serverURL = data.url
     Storage.app_id = data.customGameId
+    if Convars:GetBool('developer') then
+        Storage.serverURL = data.debugUrl
+    end
 end
 
 Storage:Init()
