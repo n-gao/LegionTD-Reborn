@@ -42,7 +42,7 @@
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"attackspeed_slow"	"-10"
+				"attackspeed_slow"	"-17"
 			}
 			"04"
 			{

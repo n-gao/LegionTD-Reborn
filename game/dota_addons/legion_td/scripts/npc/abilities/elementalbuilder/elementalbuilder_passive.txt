@@ -13,22 +13,22 @@
 		"02"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"armor_increase"				".6"
+			"armor_increase"				".7"
 		}
 		"03"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"armor_decrease"				"-.6"
+			"armor_decrease"				"-.7"
 		}
 		"04"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"basedamagepercent_increase"	"3"
+			"basedamagepercent_increase"	"3.5"
 		}
 		"05"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"basedamagepercent_decrease"	"-3"
+			"basedamagepercent_decrease"	"-3.5"
 		}
 		"06"
 		{
@@ -53,12 +53,12 @@
 		"10"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"incomingdamage_decrease_percent"	"-2"
+			"incomingdamage_decrease_percent"	"-3.2"
 		}
 		"11"
 		{
 			"var_type"						"FIELD_FLOAT"
-			"incomingdamage_increase_percent"	"2"
+			"incomingdamage_increase_percent"	"3.2"
 		}
 	}
 

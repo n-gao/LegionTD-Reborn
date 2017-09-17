@@ -124,6 +124,14 @@
                     "Function"      "BladeFuryStop"
                 }
             }
+            "OnDeath"
+            {
+                "FireSound"
+                {
+                    "EffectName"    "Hero_Juggernaut.BladeFuryStop"
+                    "Target"        "CASTER"
+                }
+            }
         }
     }   
 }

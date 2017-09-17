@@ -63,7 +63,7 @@
 		"05"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"resist_debuff"			"-30"
+			"resist_debuff"			"-25"
 		}
 	}
 
