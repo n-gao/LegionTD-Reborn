@@ -50,7 +50,7 @@
   <Panel>
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/main_hud.xml" />
     <CustomUIElement type="FlyoutScoreboard" layoutfile="file://{resources}/layout/custom_game/multiteam_flyout_scoreboard.xml" />
-	<CustomUIElement type="GameInfo" layoutfile="file://{resources}/layout/custom_game/game_info_panel.xml" />
+	  <CustomUIElement type="GameInfo" layoutfile="file://{resources}/layout/custom_game/game_info_panel.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/barebones_notifications.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/waveinfo_notifications.xml" />
   </Panel>

@@ -33,7 +33,6 @@ function Game.new()
     self.HeroKV = LoadKeyValues("scripts/npc/npc_heroes_custom.txt")
     self.AbilityKV = LoadKeyValues("scripts/npc/npc_abilities_custom.txt")
     self.EnglishLocalizationKV = LoadKeyValues("resource/addon_english.txt")
-    DeepPrintTable(self.EnglishLocalizationKV)
     GameRules:GetGameModeEntity():SetDamageFilter(Dynamic_Wrap(Game, "DamageFilter"), Game)
     GameRules:GetGameModeEntity():SetExecuteOrderFilter(Dynamic_Wrap(Game, "OrderFilter"), Game)
     
