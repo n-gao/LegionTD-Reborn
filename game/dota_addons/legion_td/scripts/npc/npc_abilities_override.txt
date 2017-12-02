@@ -128,14 +128,20 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"500"
+				"arc_damage"			"85"
+				"LinkedSpecialBonus"	"special_bonus_unique_zeus_2"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"jump_count"			"4"
+				"radius"				"500"
 			}
 			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"jump_count"			"4"
+			}
+			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"jump_delay"			"0.25"
@@ -361,18 +367,19 @@
 				"var_type"						"FIELD_FLOAT"
 				"duration"						"10.0"
 			}
-
+			
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
 				"radius"						"200"
-			}
+			}	
+			
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
 				"absorb_amount"					"120"
 				"LinkedSpecialBonus"			"special_bonus_unique_ember_spirit_1"
-			}	
+			}				
 			"04"
 			{
 				"var_type"						"FIELD_FLOAT"
@@ -382,8 +389,10 @@
 			{
 				"var_type"						"FIELD_INTEGER"
 				"damage_per_second"				"40"
+				"LinkedSpecialBonus"			"special_bonus_unique_ember_spirit_3"
 			}
 		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
 	//=================================================================================================================
 	// Ancient Apparition: Ice Vortex
