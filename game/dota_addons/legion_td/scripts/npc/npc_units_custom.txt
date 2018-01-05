@@ -12530,8 +12530,8 @@
 	"unit_ancienthulk"
 	{
 	    "BaseClass" "npc_dota_creature"
-	    "Model" "models/creeps/lane_creeps/creep_dire_hulk/creep_dire_diretide_ancient_hulk.vmdl"
-	    "ModelScale"    "0.8"
+		"Model" "models/creeps/lane_creeps/creep_dire_hulk/creep_dire_diretide_ancient_hulk.vmdl"
+		"ModelScale"    "0.8"
 	    "SoundSet"  "n_creep_Melee"
 	    "GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
 	    "Level" "1"
@@ -12593,10 +12593,10 @@
 	"unit_assassins"
 	{
 	    "BaseClass" "npc_dota_creature"
-	    "Model" "models/heroes/rikimaru/rikimaru.vmdl"
-	    "ModelScale"    "0.6"
-	    "SoundSet"  "Hero_Riki"
-	    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_riki.vsndevts"
+	    "Model" "models/creeps/neutral_creeps/n_creep_satyr_a/n_creep_satyr_a.vmdl"
+	    "ModelScale"    "1"
+	    "SoundSet"  "n_creep_Melee"
+	    "GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
 	    "Level" "1"
 	    "HealthBarOffset"   "140"
 	    "Vscripts"  "ai/ai_default.lua"
@@ -12647,40 +12647,6 @@
 	                "Aggression"    "100.0"
 	                "Avoidance" "0.0"
 	                "Support"   "0.0"
-	            }
-	
-	        }
-	
-	        "AttachWearables"
-	        {
-	            "Wearable1"
-	            {
-	                "ItemDef"   "5267"
-	            }
-	
-	            "Wearable2"
-	            {
-	                "ItemDef"   "8445"
-	            }
-	
-	            "Wearable3"
-	            {
-	                "ItemDef"   "8444"
-	            }
-	
-	            "Wearable4"
-	            {
-	                "ItemDef"   "8443"
-	            }
-	
-	            "Wearable5"
-	            {
-	                "ItemDef"   "8441"
-	            }
-	
-	            "Wearable6"
-	            {
-	                "ItemDef"   "8442"
 	            }
 	
 	        }
@@ -12975,8 +12941,8 @@
 	"unit_donkey"
 	{
 	    "BaseClass" "npc_dota_creature"
-	    "Model" "models/items/courier/duskie/duskie.vmdl"
-	    "ModelScale"    "0.6"
+	    "Model" "models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.vmdl"
+	    "ModelScale"    "1"
 	    "Level" "1"
 	    "HealthBarOffset"   "140"
 	    "Vscripts"  "ai/ai_default.lua"
@@ -12984,8 +12950,8 @@
 	    "MagicalResistance" "0"
 	    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
 	    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-	    "AttackDamageMin"   "2.75"
-	    "AttackDamageMax"   "4"
+	    "AttackDamageMin"   "3"
+	    "AttackDamageMax"   "5"
 	    "AttackRate"    "1.55"
 	    "AttackAnimationPoint"  "0.5"
 	    "AttackAcquisitionRange"    "850"
@@ -14699,10 +14665,10 @@
 	"unit_predator"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/heroes/nerubian_assassin/nerubian_assassin.vmdl"
+		"Model"	"models/items/furion/treant_flower_1.vmdl"
 		"ModelScale"	"0.6"
 		"SoundSet"	"Hero_NyxAssassin"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
+		"GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
 		"Level"	"1"
 		"HealthBarOffset"	"140"
 		"Vscripts"	"ai/ai_default.lua"
@@ -14752,30 +14718,6 @@
 					"Aggression"	"100.0"
 					"Avoidance"	"0.0"
 					"Support"	"0.0"
-				}
-	
-			}
-	
-			"AttachWearables"
-			{
-				"Wearable1"
-				{
-					"ItemDef"	"5202"
-				}
-	
-				"Wearable2"
-				{
-					"ItemDef"	"5201"
-				}
-	
-				"Wearable4"
-				{
-					"ItemDef"	"5203"
-				}
-	
-				"Wearable5"
-				{
-					"ItemDef"	"5204"
 				}
 	
 			}
@@ -14953,10 +14895,10 @@
 	"unit_space_cow"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/heroes/spirit_breaker/spirit_breaker.vmdl"
-		"ModelScale"	"0.6"
+		"Model"	"models/creeps/lane_creeps/creep_bad_melee/creep_bad_melee_mega.vmdl"
+		"ModelScale"	"1"
 		"SoundSet"	"Hero_Spirit_Breaker"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spirit_breaker.vsndevts"
+		"GameSoundsFile"	"soundevents/game_sounds_creeps.vsndevts"
 		"Level"	"1"
 		"HealthBarOffset"	"140"
 		"Vscripts"	"ai/ai_default.lua"
@@ -15008,44 +14950,6 @@
 	
 			}
 			
-			"AttachWearables"
-			{
-				"Wearable1"
-				{
-					"ItemDef"	"106"
-				}
-	
-				"Wearable2"
-				{
-					"ItemDef"	"111"
-				}
-	
-				"Wearable3"
-				{
-					"ItemDef"	"112"
-				}
-	
-				"Wearable4"
-				{
-					"ItemDef"	"113"
-				}
-	
-				"Wearable5"
-				{
-					"ItemDef"	"114"
-				}
-	
-				"Wearable6"
-				{
-					"ItemDef"	"115"
-				}
-	
-				"Wearable7"
-				{
-					"ItemDef"	"116"
-				}
-	
-			}
 	
 		}
 	
@@ -15427,7 +15331,7 @@
 	"unit_unicorn"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/items/courier/butch_pudge_dog/butch_pudge_dog.vmdl"
+		"Model"	"models/creeps/lane_creeps/creep_bad_melee/creep_bad_melee.vmdl"
 		"GameSoundsFile"	""
 		"ModelScale"	"1"
 		"Level"	"1"
@@ -15437,8 +15341,8 @@
 		"MagicalResistance"	"0"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"4"
-		"AttackDamageMax"	"4.75"
+		"AttackDamageMin"	"4.5"
+		"AttackDamageMax"	"5"
 		"AttackRate"	"1.1"
 		"AttackAnimationPoint"	"0.5"
 		"AttackAcquisitionRange"	"850"

@@ -1,10 +1,10 @@
 "unit_predator"
 {
 	"BaseClass"	"npc_dota_creature"
-	"Model"	"models/heroes/nerubian_assassin/nerubian_assassin.vmdl"
-	"ModelScale"	"0.6"
+	"Model"	"models/items/furion/treant_flower_1.vmdl"
+	"ModelScale"	"1"
 	"SoundSet"	"Hero_NyxAssassin"
-	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
+	"GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
 	"Level"	"1"
 	"HealthBarOffset"	"140"
 	"Vscripts"	"ai/ai_default.lua"
@@ -54,30 +54,6 @@
 				"Aggression"	"100.0"
 				"Avoidance"	"0.0"
 				"Support"	"0.0"
-			}
-
-		}
-
-		"AttachWearables"
-		{
-			"Wearable1"
-			{
-				"ItemDef"	"5202"
-			}
-
-			"Wearable2"
-			{
-				"ItemDef"	"5201"
-			}
-
-			"Wearable4"
-			{
-				"ItemDef"	"5203"
-			}
-
-			"Wearable5"
-			{
-				"ItemDef"	"5204"
 			}
 
 		}
