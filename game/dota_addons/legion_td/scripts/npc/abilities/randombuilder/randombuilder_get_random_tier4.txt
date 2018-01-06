@@ -1,7 +1,7 @@
 "randombuilder_get_random_tier4"
 {
   "BaseClass"                 "ability_datadriven"
-  "AbilityTextureName"      "rubick_spell_steal"
+  "AbilityTextureName"        "spell_rubick"
   "MaxLevel"             "1"
 
   "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
