@@ -8383,7 +8383,7 @@
 	    "Vscripts"              "ai/naturebuilder/ai_bigcentaur.lua"
 	
 	    "Ability4"           "sell"
-	    "Ability1"           ""
+	    "Ability1"           "bristleback_bristleback"
 	    "Ability2"           "centaur_hoof_stomp_datadriven"
 	    "Ability3"           "ability_empty_3"
 	
@@ -8698,7 +8698,7 @@
 	    "Ability1"                          "naturebuilder_upgrade_big_centaur"
 	    "Ability2"                          "naturebuilder_upgrade_centaur_warrunner"
 	    "Ability4"                          "sell"
-	    "Ability3"                          ""
+	    "Ability3"                          "bristleback_bristleback"
 	
 	    // Armor
 	    //----------------------------------------------------------------
