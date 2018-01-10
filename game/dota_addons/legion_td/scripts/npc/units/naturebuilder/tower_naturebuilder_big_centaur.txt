@@ -11,10 +11,10 @@
     "HealthBarOffset"       "150"
     "Vscripts"              "ai/naturebuilder/ai_bigcentaur.lua"
 
-    "Ability4"                          "sell"
-    "Ability1"                          "tiny_craggy_exterior"
-    "Ability2"                          "centaur_hoof_stomp_datadriven"
-    "Ability3"              "ability_empty_3"
+    "Ability4"           "sell"
+    "Ability1"           ""
+    "Ability2"           "centaur_hoof_stomp_datadriven"
+    "Ability3"           "ability_empty_3"
 
     // Armor
     //----------------------------------------------------------------
