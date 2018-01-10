@@ -1,82 +1,82 @@
 "unit_tidehunter"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/heroes/tidehunter/tidehunter.vmdl"
-		"ModelScale"	"0.7"
-		"SoundSet"	"Hero_Tidehunter"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
-		"Level"	"1"
-		"HealthBarOffset"	"140"
-		"Vscripts"	"ai/ai_default.lua"
-		"Ability1"	"tidehunter_kraken_shell"
-		"ArmorPhysical"	"12"
-		"MagicalResistance"	"0"
-		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-		"AttackDamageMin"	"21"
-		"AttackDamageMax"	"26"
-		"AttackRate"	"0.8"
-		"AttackAnimationPoint"	"0.2"
-		"AttackAcquisitionRange"	"850"
-		"AttackRange"	"90"
-		"ProjectileModel"	""
-		"ProjectileSpeed"	"0"
-		"LegionAttackType"	"normal"
-		"LegionDefendType"	"heavy"
-		"LegionExperience"	"65"
-		"LegionFraction"	"wave"
-		"BountyGoldMin"	"6.0"
-		"BountyGoldMax"	"6.0"
-		"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
-		"CollisionSize"	"50"
-		"RingRadius"	"50"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementSpeed"	"300"
-		"MovementTurnRate"	"0.6"
-		"StatusHealth"	"350"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"VisionDaytimeRange"	"1400"
-		"VisionNighttimeRange"	"800"
-		"TeamName"	"DOTA_TEAM_NEUTRALS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-		"precache"
-		{
-			"particle"	"particles/units/heroes/hero_tidehunter/tidehunter_krakenshell_purge.vpcf"
-		}
-	
-		"Creature"
-		{
-			"DisableClumpingBehavior"	"1"
-			"DefaultState"	"Invade"
-			"States"
-			{
-				"Invade"
-				{
-					"Name"	"Invade"
-					"Aggression"	"100.0"
-					"Avoidance"	"0.0"
-					"Support"	"0.0"
-				}
-	
-			}
-	
-			"AttachWearables"
-			{
-				"Wearable1"
-				{
-					"ItemDef"	"4131"
-				}
-	
-				"Wearable2"
-				{
-					"ItemDef"	"6471"
-				}
-	
-			}
-		}
-	
-	}
+    {
+        "BaseClass" "npc_dota_creature"
+        "Model" "models/heroes/tidehunter/tidehunter.vmdl"
+        "ModelScale"    "0.7"
+        "SoundSet"  "Hero_Tidehunter"
+        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
+        "Level" "1"
+        "HealthBarOffset"   "140"
+        "Vscripts"  "ai/ai_default.lua"
+        "Ability1"  "tidehunter_kraken_shell"
+        "ArmorPhysical" "12"
+        "MagicalResistance" "0"
+        "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"   "21"
+        "AttackDamageMax"   "26"
+        "AttackRate"    "0.8"
+        "AttackAnimationPoint"  "0.2"
+        "AttackAcquisitionRange"    "850"
+        "AttackRange"   "90"
+        "ProjectileModel"   ""
+        "ProjectileSpeed"   "0"
+        "LegionAttackType"  "normal"
+        "LegionDefendType"  "heavy"
+        "LegionExperience"  "65"
+        "LegionFraction"    "wave"
+        "BountyGoldMin" "6.0"
+        "BountyGoldMax" "6.0"
+        "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
+        "CollisionSize" "50"
+        "RingRadius"    "50"
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed" "300"
+        "MovementTurnRate"  "0.6"
+        "StatusHealth"  "350"
+        "StatusHealthRegen" "0"
+        "StatusMana"    "0"
+        "StatusManaRegen"   "0"
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+        "TeamName"  "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+        "precache"
+        {
+            "particle"  "particles/units/heroes/hero_tidehunter/tidehunter_krakenshell_purge.vpcf"
+        }
+    
+        "Creature"
+        {
+            "DisableClumpingBehavior"   "1"
+            "DefaultState"  "Invade"
+            "States"
+            {
+                "Invade"
+                {
+                    "Name"  "Invade"
+                    "Aggression"    "100.0"
+                    "Avoidance" "0.0"
+                    "Support"   "0.0"
+                }
+    
+            }
+    
+            "AttachWearables"
+            {
+                "Wearable1"
+                {
+                    "ItemDef"   "4131"
+                }
+    
+                "Wearable2"
+                {
+                    "ItemDef"   "6471"
+                }
+    
+            }
+        }
+    
+    }
