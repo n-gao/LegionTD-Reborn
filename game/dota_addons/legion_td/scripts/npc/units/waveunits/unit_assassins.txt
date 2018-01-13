@@ -2,7 +2,7 @@
 {
     "BaseClass" "npc_dota_creature"
     "Model" "models/heroes/rikimaru/rikimaru.vmdl"
-    "ModelScale"    "0.6"
+    "ModelScale"    "1"
     "SoundSet"  "Hero_Riki"
     "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_riki.vsndevts"
     "Level" "1"

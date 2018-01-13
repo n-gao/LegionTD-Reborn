@@ -1,9 +1,9 @@
 "assassin_backstab"
 {
 	"BaseClass"									"ability_datadriven"
-	"AbilityTextureName"				"riki_backstab"
+	"AbilityTextureName"						"backstab"
 	"MaxLevel"									"1"
-	"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilityBehavior"							"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	"AbilitySpecial"
 	{
 		"01"

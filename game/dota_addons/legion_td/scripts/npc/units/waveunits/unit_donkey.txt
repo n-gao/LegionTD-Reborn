@@ -1,8 +1,9 @@
 "unit_donkey"
 {
     "BaseClass" "npc_dota_creature"
-    "Model" "models/items/courier/duskie/duskie.vmdl"
-    "ModelScale"    "0.6"
+    "Model" "models/creeps/lane_creeps/creep_radiant_melee/radiant_melee.vmdl"
+    "GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
+    "ModelScale"    "0.9"
     "Level" "1"
     "HealthBarOffset"   "140"
     "Vscripts"  "ai/ai_default.lua"
