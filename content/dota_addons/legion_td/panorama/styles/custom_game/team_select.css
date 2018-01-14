@@ -542,8 +542,8 @@
 
 .TeamSelectTeam.local_player_on_this_team
 {
-  box-shadow: fill #ffffff10 -3px -3px 6px 6px;
-  //box-shadow: -3px -3px 12px 6px #FFFFFF88;
+  box-shadow: fill #ffffff09 -6px -3px 6px 6px;
+  //box-shadow: -3px -3px 12px 6px #FFFFFF22;
 }
 
 .TeamSelectTeam:hover

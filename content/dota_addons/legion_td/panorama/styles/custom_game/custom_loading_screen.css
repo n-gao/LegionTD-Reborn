@@ -12,9 +12,12 @@
 .OverthrowGameInfo2
 {
   height: 803px;
-  width: 645px;
+  width: 610px;
   margin-top: 120px;
   margin-left: 20px;
+  padding: 8px;
+  border-radius: 16px;
+  flow-children: down;
   background-color: gradient( linear, 0% 0%, 0.1% 0%, from( #111111 ), color-stop( 0.01, #202327 ), color-stop( 0.2, #141619ff ), to( #000000dd ) );
 }
 
@@ -61,7 +64,7 @@ Label
 #CoinsText,
 #ItemsText
 {
-    width: 50%;
+	width: fill-parent-flow(1.0);
 }
 
 .Header
@@ -84,7 +87,6 @@ Label
 
 #BriefDescription
 {
-	margin-top: 55px;
 	margin-left: 25px;
 	color: white;
 	font-size: 20px;
@@ -92,19 +94,19 @@ Label
 
 #HowToPlayHeader
 {
-	margin-top: 95px;
 	margin-left: 10px;
 	color: yellow;
 	font-size: 35px;	
 }
+
 #ThroneRow
 {
-    margin-top: 120px;
+	margin-top: -50px;
 }
 
 #ThroneText
 {
-    margin-top: 55px;
+	vertical-align: center;
 	margin-left: -35px;
 	text-align: right;
 	color: white;
@@ -113,14 +115,14 @@ Label
 
 #ThroneImage
 {
-    margin-top: -35px;
+	vertical-align: center;
     width: 200px;
     height: 200px;
 }
 
 #CoinsRow
 {
-    margin-top: 190px;
+	margin-top: -50px;
 	margin-left: 20px;
 }
 
@@ -128,24 +130,24 @@ Label
 {
     width: 200px;
     height: 200px;
-	margin-top: 30px;
+	vertical-align: center;
 	margin-left: -40px;
 }
 
 #CoinsText
 {
-    margin-top: 130px;
+	vertical-align: center;
 	font-size: 20px;
 	color: white;
 }
 
 #ItemsRow
 {
-    margin-top: 420px;
 }
 
 #ItemsImage
 {
+	width: 200px;
 	margin-left: 10px;
 	margin-top: -75px;
 }
@@ -170,8 +172,8 @@ Label
 
 #TipsHeader
 {
-	margin-top: 560px;
 	margin-left: 13px;
+    margin-top: -60px;
 }
 
 #TipsRow
@@ -179,7 +181,6 @@ Label
 	flow-children: down;
 	margin-right: 92px;
 	margin-left: 5px;
-	margin-top: 600px;
 }
 
 .TipText
