@@ -3,12 +3,33 @@
 		<include src="file://{resources}/styles/dotastyles.css" />
 		<include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
 	</styles>
-	<scripts>
-		<incldue src="file://{resources}/scripts/custom_game/legion_loading_screen.js" />
-	</scripts>
-	<Panel class="LoadingScreen">
-		<Panel id="seq" >
-			<Image id="seq_bg" class="SeqBg" src="file://{images}/custom_game/loading_screen/loading_screen.png" />
+	<Panel class="OverthrowGameInfo">
+		<Panel id="Title">
+			<Label id="LegionTitle" html="true" text="Legion TD: Reborn" />
 		</Panel>
-	</Panel> 
+		<Panel class="OverthrowGameInfo2">
+		<Label id="ObjectiveHeader" class="Header" html="true" text="#legion_game_info_header_objective" />
+		<Label id="BriefDescription" text="Try to survive longer than your enemy and defend your King!" />
+		<Label id="HowToPlayHeader" class="Header" html="true" text="#legion_game_info_header_how_to_play" />
+		<Panel id="ThroneRow" class="InfoRow">
+			<Label id="ThroneText" html="true" text="Defend your king with others to survive!" />
+			<Image id="ThroneImage" src="file://{images}/custom_game/game_info/defend.png" />
+		</Panel>
+		<Panel id="CoinsRow" class="InfoRow">
+			<Image id="CoinsImage" src="file://{images}/custom_game/game_info/units.png" />
+			<Label id="CoinsText" html="true" text="#legion_game_info_units" />
+		</Panel>
+		<Panel id="ItemsRow" class="InfoRow">
+			<Label id="ItemsText" html="true" text="Keep an eye on your Tango income," />
+			<Label id="ItemsText2" html="true" text="increase it to send mighty units." />
+			<Image id="ItemsImage" src="file://{images}/custom_game/game_info/keepeye.png" />
+		</Panel>
+		<Label id="TipsHeader" class="Header" html="true" text="#legion_info_tips_header" />
+		<Panel id="TipsRow" class="InfoRow">
+			<Label id="TipText01" class="TipText" html="true" text="#legion_game_info_tip01" />
+			<Label id="TipText02" class="TipText" html="true" text="#legion_game_info_tip02" />
+			<Label id="TipText03" class="TipText" html="true" text="#legion_game_info_tip03" />
+			<Label id="TipText04" class="TipText" html="true" text="#legion_game_info_tip04" />
+		</Panel></Panel>
+	</Panel>
 </root>

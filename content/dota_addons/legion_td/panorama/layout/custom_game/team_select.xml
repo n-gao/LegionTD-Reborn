@@ -12,6 +12,8 @@
 		<Panel hittest="false" id="TeamSelectContainer" selectionpos="auto">
 			<!--Empty space to let the loading screen and chat be visible-->
 			<Panel hittest="false" id="TeamsSelectEmptySpace" />
+			<!--Teams List, left hand panel-->
+			<Panel id="TeamsList"><Image id="DiscordImage" src="file://{images}/custom_game/game_info/Discord.png" onactivate="ExternalBrowserGoToURL('https://discordapp.com/invite/MZhmZt3');"/>
 			<Panel id="OptionList">
 				<Panel id="OptionListGroup">
 					<Label id="OptionTitle" text="#Options_title" />
@@ -25,8 +27,6 @@
 					</Panel>
 				</Panel>
 			</Panel>
-			<!--Teams List, left hand panel-->
-			<Panel id="TeamsList">
 				<Panel id="TeamsListGroup">
 					<Panel id="TeamListHeader">
 						<Label id="TeamListHeaderLabel" text="#custom_game_team_select" />
@@ -85,6 +85,7 @@
 					<Label text="#custom_game_team_select_cancel_unlock" />
 				</Button>
 			</Panel>
+
 		</Panel>
 	</Panel>
 </root>
