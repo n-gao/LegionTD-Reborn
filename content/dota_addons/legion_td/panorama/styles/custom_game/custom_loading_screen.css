@@ -2,215 +2,215 @@
 @define TimingFunc: linear;
 @define IterationCount: 1;
 
-.LoadingScreen
+.OverthrowGameInfo
 {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    overflow: clip;
+   width: 100%;
+   height: 100%;
+   background-image: url("file://{images}/custom_game/game_info/loading.jpg");
 }
 
-#GameModeDescription
+.OverthrowGameInfo2
 {
-    font-size: 27px;
+  height: 803px;
+  width: 610px;
+  margin-top: 120px;
+  margin-left: 20px;
+  padding: 8px;
+  border-radius: 16px;
+  flow-children: down;
+  background-color: gradient( linear, 0% 0%, 0.1% 0%, from( #111111 ), color-stop( 0.01, #202327 ), color-stop( 0.2, #141619ff ), to( #000000dd ) );
+}
+
+
+Label
+{
+    font-size: 18px;
+    color: #999999;
+    vertical-align: top;
+}
+
+#Title
+{
+    flow-children: right;
+}
+
+#TitleIcon
+{
+    width: 64px;
+    height: 64px;
+    vertical-align: center;
+}
+
+#TitleName
+{
+    color: cyan;
+    font-size: 64px;
+    margin-left: -5px;
+    margin-top: 16px;
+    text-transform: uppercase;
+    vertical-align: center;
+}
+
+#LegionTitle
+{
+	font-size: 70px;
+	font-weight: bold;
+	margin-top: 32px;
+	margin-left: 20px;
+	color: white;
 	text-transform: uppercase;
-	color: #cccccc;
+}
+#ThroneText,
+#CoinsText,
+#ItemsText
+{
+	width: fill-parent-flow(1.0);
 }
 
-#GameModeHints
+.Header
 {
-	margin: 10px;
-	font-size: 18px;
-	color: #8f9092;
+	font-size: 35px;
+    font-weight: bold;
+	margin-top: 36px;
+	text-transform: uppercase;
+	color: yellow;
 }
 
-#GameModeImage
+
+#ObjectiveHeader
 {
-	horizontal-align: center;
+	margin-top: 5px;
+	margin-left: 10px;
+	color: yellow;
+	font-size: 35px;
+}
+
+#BriefDescription
+{
+	margin-left: 25px;
+	color: white;
+	font-size: 20px;
+}
+
+#HowToPlayHeader
+{
+	margin-left: 10px;
+	color: yellow;
+	font-size: 35px;	
+}
+
+#ThroneRow
+{
+	margin-top: -50px;
+}
+
+#ThroneText
+{
+	vertical-align: center;
+	margin-left: -35px;
+	text-align: right;
+	color: white;
+	font-size: 20px;
+}
+
+#ThroneImage
+{
+	vertical-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+#CoinsRow
+{
+	margin-top: -50px;
+	margin-left: 20px;
+}
+
+#CoinsImage
+{
+    width: 200px;
+    height: 200px;
+	vertical-align: center;
+	margin-left: -40px;
+}
+
+#CoinsText
+{
+	vertical-align: center;
+	font-size: 20px;
+	color: white;
+}
+
+#ItemsRow
+{
+}
+
+#ItemsImage
+{
 	width: 200px;
-	height: 150px;
-
-	box-shadow: inset black 5px 5px 10px 10px;
+	margin-left: 10px;
+	margin-top: -75px;
 }
 
-#TitlePanel
+#ItemsText
 {
-	horizontal-align: left;
-	vertical-align: bottom;
-	margin-bottom: 150px;
-	margin-left: 100px;
-	flow-children: right;
+    margin-top: 40px;
+	margin-left: 0px;
+	text-align: right;
+	color: white;
+	font-size: 20px;
 }
 
-#OverthrowIcon
+#ItemsText2
 {
-	width: 80px;
-	height: 80px;
-	vertical-align: center;
-	margin-right: 15px;
+    margin-top: 60px;
+	margin-left: -247px;
+	text-align: right;
+	color: white;
+	font-size: 20px;
 }
 
-#GameTitle
+#TipsHeader
 {
-	margin-bottom: -15px;
-	vertical-align: center;
-	text-transform: uppercase;
-	font-size: 80px;
-	color: #cccccc;
-	text-shadow: 2px 2px 2px #000000;
+	margin-left: 13px;
+    margin-top: -60px;
 }
 
-.SeqImg
+#TipsRow
 {
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: 100% 100%;
+	flow-children: down;
+	margin-right: 92px;
+	margin-left: 5px;
 }
 
-.SeqBg
+.TipText
 {
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: 100% 100%;
+	margin-left: 16px;
+    margin-top: 0px;
+	color: white;
+	font-size: 20px;
 }
 
-#seq
+.InfoRow
 {
-    overflow: clip;
-	pre-transform-scale2d: 1.0, 1.0;
+    flow-children: right;
+    width: 100%;
 }
 
-@keyframes 'x' {}
 
-#seq_bg
+Label .midas_throne,
+Label .overboss,
+Label .treasure
 {
-	animation-name: seq_bg_anim;
-	animation-duration: TotalLength;
-	animation-timing-function: TimingFunc;
-	animation-iteration-count: IterationCount;
-    margin-left: 0px;
+    color: #cccccc;
+    font-weight: bold;
 }
 
-@keyframes 'seq_bg_anim'
+Label .items,
+Label .gold,
+Label .xp
 {
-	0%
-	{
-	}
-
-	100%
-	{
-	}
+    color: #fcaf3d;
+    font-weight: bold;
 }
 
-#seq_beastmaster_pets
-{
-	margin-left: 1015px;
-	margin-top: 120px;
-	animation-name: seq_beastmaster_pets_anim;
-	animation-duration: TotalLength;
-	animation-timing-function: TimingFunc;
-	animation-iteration-count: IterationCount;
-}
-
-@keyframes 'seq_beastmaster_pets_anim'
-{
-	0%
-	{
-		transform: translateX( 50px ) translateY( 10px );
-        pre-transform-scale2d: 0.90;
-	}
-
-	100%
-	{
-	}
-}
-
-#seq_beastmaster
-{
-	margin-left: 435px;
-	margin-top: 140px;
-	animation-name: seq_beastmaster_anim;
-	animation-duration: TotalLength;
-	animation-timing-function: TimingFunc;
-	animation-iteration-count: IterationCount;
-}
-
-@keyframes 'seq_beastmaster_anim'
-{
-	0%
-	{
-		transform: translateX( 80px ) translateY( -20px );
-	}
-
-	100%
-	{
-	}
-}
-
-#seq_juggernaut
-{
-	margin-left: 400px;
-	margin-top: 325px;
-	animation-name: seq_juggernaut_anim;
-	animation-duration: TotalLength;
-	animation-timing-function: TimingFunc;
-	animation-iteration-count: IterationCount;
-	pre-transform-scale2d: 0.90;
-}
-
-@keyframes 'seq_juggernaut_anim'
-{
-	0%
-	{
-		transform: translateX( 120px ) translateY( 20px );
-	}
-
-	100%
-	{
-	}
-}
-
-#seq_luna
-{
-	margin-left: 8px;
-	margin-top: 0px;
-	animation-name: seq_luna_anim;
-	animation-duration: TotalLength;
-	animation-timing-function: TimingFunc;
-	animation-iteration-count: IterationCount;
-	pre-transform-scale2d: 1.05;
-}
-
-@keyframes 'seq_luna_anim'
-{
-	0%
-	{
-		transform: translateX( 120px ) translateY( 50px );
-	}
-
-	100%
-	{
-	}
-}
-
-#seq_coins
-{
-	margin-left: -150px;
-	margin-top: 200px;
-	animation-name: seq_coins_anim;
-	animation-duration: TotalLength;
-	animation-timing-function: TimingFunc;
-	animation-iteration-count: IterationCount;
-}
-
-@keyframes 'seq_coins_anim'
-{
-	0%
-	{
-		transform: translateX( 200px ) translateY( -100px );
-	}
-
-	100%
-	{
-	}
-}

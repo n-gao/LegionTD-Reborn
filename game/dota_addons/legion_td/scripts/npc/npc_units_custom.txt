@@ -4892,7 +4892,7 @@
     {
         "BaseClass" "npc_dota_creature"
         "Model" "models/heroes/rikimaru/rikimaru.vmdl"
-        "ModelScale"    "0.6"
+        "ModelScale"    "1"
         "SoundSet"  "Hero_Riki"
         "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_riki.vsndevts"
         "Level" "1"
@@ -5806,8 +5806,9 @@
     "unit_donkey"
     {
         "BaseClass" "npc_dota_creature"
-        "Model" "models/items/courier/duskie/duskie.vmdl"
-        "ModelScale"    "0.6"
+		"Model" "models/creeps/lane_creeps/creep_radiant_melee/radiant_melee.vmdl"
+		"GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
+		"ModelScale"    "0.9"
         "Level" "1"
         "HealthBarOffset"   "140"
         "Vscripts"  "ai/ai_default.lua"
@@ -9194,10 +9195,9 @@
     "unit_space_cow"
     {
     	"BaseClass"	"npc_dota_creature"
-    	"Model"	"models/heroes/spirit_breaker/spirit_breaker.vmdl"
-    	"ModelScale"	"0.6"
-    	"SoundSet"	"Hero_Spirit_Breaker"
-    	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spirit_breaker.vsndevts"
+		"Model"	"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.vmdl"
+		"ModelScale"	"0.75"
+		"GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
     	"Level"	"1"
     	"HealthBarOffset"	"140"
     	"Vscripts"	"ai/ai_default.lua"
@@ -9248,46 +9248,6 @@
     			}
 
     		}
-		
-    		"AttachWearables"
-    		{
-    			"Wearable1"
-    			{
-    				"ItemDef"	"106"
-    			}
-
-    			"Wearable2"
-    			{
-    				"ItemDef"	"111"
-    			}
-
-    			"Wearable3"
-    			{
-    				"ItemDef"	"112"
-    			}
-
-    			"Wearable4"
-    			{
-    				"ItemDef"	"113"
-    			}
-
-    			"Wearable5"
-    			{
-    				"ItemDef"	"114"
-    			}
-
-    			"Wearable6"
-    			{
-    				"ItemDef"	"115"
-    			}
-
-    			"Wearable7"
-    			{
-    				"ItemDef"	"116"
-    			}
-
-    		}
-
     	}
 
     }
@@ -10427,7 +10387,7 @@
     	"Level"	"1"
     	"HealthBarOffset"	"140"
     	"Vscripts"	"ai/ai_default.lua"
-    	"Ability1"	"tiny_craggy_exterior"
+    	"Ability1"	"meepo_geostrike"
     	"ArmorPhysical"	"10"
     	"MagicalResistance"	"20"
     	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -10676,9 +10636,9 @@
     "unit_unicorn"
     {
     	"BaseClass"	"npc_dota_creature"
-    	"Model"	"models/items/courier/butch_pudge_dog/butch_pudge_dog.vmdl"
-    	"GameSoundsFile"	""
-    	"ModelScale"	"1"
+		"Model"	"models/creeps/lane_creeps/creep_radiant_melee/radiant_melee_mega.vmdl"
+		"GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
+		"ModelScale"    "0.9"
     	"Level"	"1"
     	"HealthBarOffset"	"140"
     	"Vscripts"	"ai/ai_default.lua"
@@ -11704,9 +11664,9 @@
         "Vscripts"              "ai/naturebuilder/ai_bigcentaur.lua"
 
         "Ability4"                          "sell"
-        "Ability1"                          "tiny_craggy_exterior"
+        "Ability1"                          "antimage_spell_shield"
         "Ability2"                          "centaur_hoof_stomp_datadriven"
-        "Ability3"              "ability_empty_3"
+        "Ability3"             				"ability_empty_3"
 
         // Armor
         //----------------------------------------------------------------
@@ -12019,7 +11979,7 @@
         "Ability1"                          "naturebuilder_upgrade_big_centaur"
         "Ability2"                          "naturebuilder_upgrade_centaur_warrunner"
         "Ability4"                          "sell"
-        "Ability3"                          "tiny_craggy_exterior"
+        "Ability3"                          "antimage_spell_shield"
 
         // Armor
         //----------------------------------------------------------------

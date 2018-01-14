@@ -1,10 +1,11 @@
 #CreatorPanel {
-  vertical-align: bottom;
+  vertical-align: top;
   flow-children: down;
-  margin-top: 20px;
+  margin-top: -45px;
+  margin-left: -20px;
   padding: 10px;
   background-color: #111111FD;
-  box-shadow: black 0px 0px 50px 2px;
+  box-shadow: black 0px 0px 10px 2px;
 }
 
 .ContributorPanel {

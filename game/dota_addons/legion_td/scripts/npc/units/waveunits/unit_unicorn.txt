@@ -1,9 +1,9 @@
 "unit_unicorn"
 {
 	"BaseClass"	"npc_dota_creature"
-	"Model"	"models/items/courier/butch_pudge_dog/butch_pudge_dog.vmdl"
-	"GameSoundsFile"	""
-	"ModelScale"	"1"
+	"Model"	"models/creeps/lane_creeps/creep_radiant_melee/radiant_melee_mega.vmdl"
+	"GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
+    "ModelScale"    "0.9"
 	"Level"	"1"
 	"HealthBarOffset"	"140"
 	"Vscripts"	"ai/ai_default.lua"

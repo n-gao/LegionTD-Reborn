@@ -17,28 +17,33 @@
   width: fill-parent-flow(1);
 }
 
+#DiscordImage
+{
+	margin-top: 880px;
+	margin-left: 50px;
+	width: 260px;
+	height: 80px;
+}
+
 #OptionList
 {
   width: 400px;
   height: 100%;
   flow-children: down;
-  padding-left: 16px;
-  margin-left: 16px;
-  background-color: gradient( linear, 100% 0%, 100% 100%, from( #111111 ), color-stop( 0.01, #202327 ), color-stop( 0.2, #141619ff ), to( #000000dd ) );
-  box-shadow: black -4px -4px 8px 8px;
-
+  padding-left: 12px;
+  margin-left: -8px;
   animation-name: TeamsListAppear;
   animation-duration: 0.75s;
+  margin-top: -600px;
 }
 
 #OptionListGroup
 {
-  width: 90%;
+  width: 100%;
   height: 220px;
 
   padding: 8px;
-  background-color: #111111EE;
-  box-shadow: #FFFFFF10 0px 0px 8px 0px;
+  background-color: transparent;
   vertical-align: middle;
 }
 
@@ -64,9 +69,7 @@
   flow-children: down;
   padding-left: 16px;
   padding-right: 16px;
-  background-color: gradient( linear, 100% 0%, 100% 100%, from( #111111 ), color-stop( 0.01, #202327 ), color-stop( 0.2, #141619ff ), to( #000000dd ) );
-  box-shadow: black 0px -4px 0px 8px;
-
+  background-color: gradient( linear, 0% 0%, 0.1% 0%, from( #111111 ), color-stop( 0.01, #202327 ), color-stop( 0.2, #141619ff ), to( #000000dd ) );
   animation-name: TeamsListAppear;
   animation-duration: 0.75s;
 }
@@ -89,6 +92,7 @@
   width: 100%;
   vertical-align: center;
   flow-children: down;
+  margin-top: -1220px;
 }
 
 #TeamListHeader
@@ -538,8 +542,8 @@
 
 .TeamSelectTeam.local_player_on_this_team
 {
-  box-shadow: fill #ffffff10 -3px -3px 6px 6px;
-  //box-shadow: -3px -3px 12px 6px #FFFFFF88;
+  box-shadow: fill #ffffff09 -6px -3px 6px 6px;
+  //box-shadow: -3px -3px 12px 6px #FFFFFF22;
 }
 
 .TeamSelectTeam:hover

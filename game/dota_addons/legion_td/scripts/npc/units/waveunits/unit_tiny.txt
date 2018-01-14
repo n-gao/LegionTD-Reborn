@@ -8,7 +8,7 @@
 	"Level"	"1"
 	"HealthBarOffset"	"140"
 	"Vscripts"	"ai/ai_default.lua"
-	"Ability1"	"tiny_craggy_exterior"
+	"Ability1"	"meepo_geostrike"
 	"ArmorPhysical"	"10"
 	"MagicalResistance"	"20"
 	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
