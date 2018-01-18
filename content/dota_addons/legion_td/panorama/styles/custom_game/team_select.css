@@ -17,24 +17,32 @@
   width: fill-parent-flow(1);
 }
 
-#DiscordImage
+#Discord
 {
-	margin-top: 880px;
-	margin-left: 50px;
+  width: 100%;
+  flow-children: down;
+}
+
+#DiscordImage2
+{
 	width: 260px;
-	height: 80px;
+  height: 80px;
+  horizontal-align: center;
+}
+
+#DiscordText2
+{
+  padding-top: 8px;
+  horizontal-align: center;
+  font-size: 20px;
 }
 
 #OptionList
 {
   width: 400px;
-  height: 100%;
   flow-children: down;
-  padding-left: 12px;
-  margin-left: -8px;
   animation-name: TeamsListAppear;
   animation-duration: 0.75s;
-  margin-top: -600px;
 }
 
 #OptionListGroup
@@ -62,16 +70,27 @@
   flow-children: down;
 }
 
-#TeamsList
+#TeamsListWrapper
 {
   width: 400px;
   height: 100%;
-  flow-children: down;
-  padding-left: 16px;
-  padding-right: 16px;
   background-color: gradient( linear, 0% 0%, 0.1% 0%, from( #111111 ), color-stop( 0.01, #202327 ), color-stop( 0.2, #141619ff ), to( #000000dd ) );
   animation-name: TeamsListAppear;
   animation-duration: 0.75s;
+}
+
+#TeamsList
+{
+  width: 100%;
+  flow-children: down;
+  padding-left: 16px;
+  padding-right: 16px;
+  vertical-align: center;
+}
+
+#TeamsList > Panel
+{
+  padding: 12px 0;
 }
 
 @keyframes 'TeamsListAppear'
@@ -92,7 +111,6 @@
   width: 100%;
   vertical-align: center;
   flow-children: down;
-  margin-top: -1220px;
 }
 
 #TeamListHeader
@@ -133,6 +151,11 @@
   width: 100%;
   flow-children: down;
   overflow: clip scroll;
+}
+
+#TeamsList
+{
+  flow-children: down;
 }
 
 #ShuffleTeamAssignmentButton

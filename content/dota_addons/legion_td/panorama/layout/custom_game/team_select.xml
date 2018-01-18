@@ -13,30 +13,36 @@
 			<!--Empty space to let the loading screen and chat be visible-->
 			<Panel hittest="false" id="TeamsSelectEmptySpace" />
 			<!--Teams List, left hand panel-->
-			<Panel id="TeamsList"><Image id="DiscordImage" src="file://{images}/custom_game/game_info/Discord.png" onactivate="ExternalBrowserGoToURL('https://discordapp.com/invite/MZhmZt3');"/>
-			<Panel id="OptionList">
-				<Panel id="OptionListGroup">
-					<Label id="OptionTitle" text="#Options_title" />
-					<Panel id="Options">
-						<ToggleButton id="tango_limit" onactivate="VoteOptionClicked('tango_limit')" text="#Option_Income_Limit"/>
-						<ToggleButton id="return_to_sender" onactivate="VoteOptionClicked('return_to_sender')" text="#Option_Return_To_Sender"/>
-						<ToggleButton id="fog_of_war" onactivate="VoteOptionClicked('fog_of_war')" text="#Option_Fog_Of_War"/>
-						<ToggleButton id="deactivate_duels" onactivate="VoteOptionClicked('deactivate_duels')" text="#Option_Deactivate_Duels"/>
-						<ToggleButton id="hard_mode" onactivate="VoteOptionClicked('hard_mode')" text="#Option_Hard_Mode"/>
-						<ToggleButton id="final_duel" onactivate="VoteOptionClicked('final_duel')" text="#Option_Final_Duel"/>
+			<Panel id="TeamsListWrapper">
+				<Panel id="TeamsList">
+					<Panel id="TeamsListGroup">
+						<Panel id="TeamListHeader">
+							<Label id="TeamListHeaderLabel" text="#custom_game_team_select" />
+							<Image id="TeamListLockedIcon" src="file://{images}/control_icons/lock_small.png" />
+						</Panel>
+						<Panel id="TeamsListRoot" />
+						<Button id="ShuffleTeamAssignmentButton" onactivate="OnShufflePlayersPressed()">
+							<Label text="#custom_game_team_select_shuffle" />
+							<Image src="file://{images}/control_icons/shuffle.psd" />
+						</Button>
 					</Panel>
-				</Panel>
-			</Panel>
-				<Panel id="TeamsListGroup">
-					<Panel id="TeamListHeader">
-						<Label id="TeamListHeaderLabel" text="#custom_game_team_select" />
-						<Image id="TeamListLockedIcon" src="file://{images}/control_icons/lock_small.png" />
+					<Panel id="OptionList">
+						<Panel id="OptionListGroup">
+							<Label id="OptionTitle" text="#Options_title" />
+							<Panel id="Options">
+								<ToggleButton id="tango_limit" onactivate="VoteOptionClicked('tango_limit')" text="#Option_Income_Limit"/>
+								<ToggleButton id="return_to_sender" onactivate="VoteOptionClicked('return_to_sender')" text="#Option_Return_To_Sender"/>
+								<ToggleButton id="fog_of_war" onactivate="VoteOptionClicked('fog_of_war')" text="#Option_Fog_Of_War"/>
+								<ToggleButton id="deactivate_duels" onactivate="VoteOptionClicked('deactivate_duels')" text="#Option_Deactivate_Duels"/>
+								<ToggleButton id="hard_mode" onactivate="VoteOptionClicked('hard_mode')" text="#Option_Hard_Mode"/>
+								<ToggleButton id="final_duel" onactivate="VoteOptionClicked('final_duel')" text="#Option_Final_Duel"/>
+							</Panel>
+						</Panel>
 					</Panel>
-					<Panel id="TeamsListRoot" />
-					<Button id="ShuffleTeamAssignmentButton" onactivate="OnShufflePlayersPressed()">
-						<Label text="#custom_game_team_select_shuffle" />
-						<Image src="file://{images}/control_icons/shuffle.psd" />
-					</Button>
+					<Panel id="Discord">
+						<Image id="DiscordImage2" src="file://{images}/custom_game/game_info/Discord.png" onactivate="ExternalBrowserGoToURL('https://discordapp.com/invite/MZhmZt3');"/>
+						<Label id="DiscordText2" text="#discord_builder_info"/>
+					</Panel>
 				</Panel>
 			</Panel>
 			<!--Game Info and Unassigned players, right hand panel-->
