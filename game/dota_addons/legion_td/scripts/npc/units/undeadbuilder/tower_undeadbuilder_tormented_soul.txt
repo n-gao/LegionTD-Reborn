@@ -12,8 +12,6 @@
     "Vscripts"              "ai/ai_default.lua"
 
     "Ability1"              "undeadbuilder_upgrade_evil_spirit"
-    "Ability2"              "splash_attack"
-    "Ability3"              "ability_empty_3"
     "Ability4"              "sell"
 
     // Armor
@@ -25,8 +23,8 @@
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "70"
-    "AttackDamageMax"       "100"
+    "AttackDamageMin"       "110"
+    "AttackDamageMax"       "120"
     "AttackRate"            "0.5"
     "AttackAnimationPoint"  "0.2"
     "AttackAcquisitionRange" "850"
@@ -56,7 +54,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "160"
+    "StatusHealth"          "240"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"

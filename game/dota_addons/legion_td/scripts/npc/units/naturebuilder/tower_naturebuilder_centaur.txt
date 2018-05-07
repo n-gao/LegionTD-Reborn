@@ -15,7 +15,7 @@
     "Ability1"                          "naturebuilder_upgrade_big_centaur"
     "Ability2"                          "naturebuilder_upgrade_centaur_warrunner"
     "Ability4"                          "sell"
-    "Ability3"                          "bristleback_bristleback"
+    "Ability3"                          "antimage_spell_shield"
 
     // Armor
     //----------------------------------------------------------------

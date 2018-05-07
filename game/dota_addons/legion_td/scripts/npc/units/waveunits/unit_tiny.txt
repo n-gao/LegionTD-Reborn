@@ -1,93 +1,93 @@
 "unit_tiny"
 {
-    "BaseClass" "npc_dota_creature"
-    "Model" "models/heroes/tiny_02/tiny_02.vmdl"
-    "ModelScale"    "0.6"
-    "SoundSet"  "Hero_Tiny"
-    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
-    "Level" "1"
-    "HealthBarOffset"   "140"
-    "Vscripts"  "ai/ai_default.lua"
-    "Ability1"  "tiny_craggy_exterior_datadriven"
-    "ArmorPhysical" "10"
-    "MagicalResistance" "20"
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"   "87.5"
-    "AttackDamageMax"   "93.75"
-    "AttackRate"    "1"
-    "AttackAnimationPoint"  "0.2"
-    "AttackAcquisitionRange"    "850"
-    "AttackRange"   "100"
-    "ProjectileModel"   ""
-    "ProjectileSpeed"   "0"
-    "LegionAttackType"  "normal"
-    "LegionDefendType"  "heavy"
-    "LegionExperience"  "110"
-    "LegionFraction"    "wave"
-    "BountyGoldMin" "5.0"
-    "BountyGoldMax" "5.0"
-    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
-    "CollisionSize" "50"
-    "RingRadius"    "50"
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed" "300"
-    "MovementTurnRate"  "0.6"
-    "StatusHealth"  "600"
-    "StatusHealthRegen" "0"
-    "StatusMana"    "0"
-    "StatusManaRegen"   "0"
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-    "TeamName"  "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-    "precache"
-    {
-        "particle"  "particles/units/heroes/hero_tiny/tiny_craggy_hit.vpcf"
-    }
+	"BaseClass"	"npc_dota_creature"
+	"Model"	"models/heroes/tiny_02/tiny_02.vmdl"
+	"ModelScale"	"0.6"
+	"SoundSet"	"Hero_Tiny"
+	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
+	"Level"	"1"
+	"HealthBarOffset"	"140"
+	"Vscripts"	"ai/ai_default.lua"
+	"Ability1"	"meepo_geostrike"
+	"ArmorPhysical"	"10"
+	"MagicalResistance"	"20"
+	"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"	"87.5"
+	"AttackDamageMax"	"93.75"
+	"AttackRate"	"1"
+	"AttackAnimationPoint"	"0.2"
+	"AttackAcquisitionRange"	"850"
+	"AttackRange"	"100"
+	"ProjectileModel"	""
+	"ProjectileSpeed"	"0"
+	"LegionAttackType"	"normal"
+	"LegionDefendType"	"heavy"
+	"LegionExperience"	"110"
+	"LegionFraction"	"wave"
+	"BountyGoldMin"	"5.0"
+	"BountyGoldMax"	"5.0"
+	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
+	"CollisionSize"	"50"
+	"RingRadius"	"50"
+	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"	"300"
+	"MovementTurnRate"	"0.6"
+	"StatusHealth"	"600"
+	"StatusHealthRegen"	"0"
+	"StatusMana"	"0"
+	"StatusManaRegen"	"0"
+	"VisionDaytimeRange"	"1400"
+	"VisionNighttimeRange"	"800"
+	"TeamName"	"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	"precache"
+	{
+		"particle"	"particles/units/heroes/hero_tiny/tiny_craggy_hit.vpcf"
+	}
 
-    "Creature"
-    {
-        "DisableClumpingBehavior"   "1"
-        "DefaultState"  "Invade"
-        "States"
-        {
-            "Invade"
-            {
-                "Name"  "Invade"
-                "Aggression"    "100.0"
-                "Avoidance" "0.0"
-                "Support"   "100.0"
-            }
+	"Creature"
+	{
+		"DisableClumpingBehavior"	"1"
+		"DefaultState"	"Invade"
+		"States"
+		{
+			"Invade"
+			{
+				"Name"	"Invade"
+				"Aggression"	"100.0"
+				"Avoidance"	"0.0"
+				"Support"	"100.0"
+			}
 
-        }
+		}
 
-        "AttachWearables"
-        {
-            "Wearable1"
-            {
-                "ItemDef"   "494"
-            }
+		"AttachWearables"
+		{
+			"Wearable1"
+			{
+				"ItemDef"	"494"
+			}
 
-            "Wearable2"
-            {
-                "ItemDef"   "493"
-            }
+			"Wearable2"
+			{
+				"ItemDef"	"493"
+			}
 
-            "Wearable3"
-            {
-                "ItemDef"   "495"
-            }
+			"Wearable3"
+			{
+				"ItemDef"	"495"
+			}
 
-            "Wearable3"
-            {
-                "ItemDef"   "496"
-            }
+			"Wearable3"
+			{
+				"ItemDef"	"496"
+			}
 
-        }
+		}
 
-    }
+	}
 
 }

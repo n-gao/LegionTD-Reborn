@@ -14,16 +14,15 @@
     "Ability4"                          "sell"
     "Ability1"                          "undeadbuilder_upgrade_disciple"
     "Ability2"                          "acolyte_nether_blast"
-    "Ability3"                          "ability_empty_3"
 
     // Armor
     //----------------------------------------------------------------
-    "ArmorPhysical"         "1"
+    "ArmorPhysical"         "0"
     "MagicalResistance"     "0"
 
     // Attack
     //----------------------------------------------------------------
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
     "AttackDamageMin"       "20"
     "AttackDamageMax"       "25"
@@ -89,8 +88,14 @@
                 "Support"           "0.0"
             }
         }
-    "AttachWearables"
-    {
-    }
+		"AttachWearables"
+            {
+                    "Wearable1" { "ItemDef" "6443" }
+                    "Wearable2" { "ItemDef" "5912" }
+                    "Wearable3" { "ItemDef" "5913" }
+                    "Wearable4" { "ItemDef" "5915" }
+                    "Wearable5" { "ItemDef" "5916" }
+					"Wearable6" { "ItemDef" "5917" }
+            }
     }
 }

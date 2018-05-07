@@ -4,7 +4,7 @@
 	"AbilityTextureName"	"spawn_vampire"
 	"MaxLevel"	"1"
 	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityGoldCost"	"50"
+	"AbilityGoldCost"	"175"
 	"AbilityCooldown"	"1.0"
 	"OnSpellStart"
 	{

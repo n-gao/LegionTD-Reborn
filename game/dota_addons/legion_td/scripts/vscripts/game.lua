@@ -1,5 +1,6 @@
 require("experience")
 require("playerdata")
+require("notifications")
 
 if Game == nil then
     Game = class({})
@@ -289,11 +290,10 @@ function Game:RandomHeroes()
     end
 end
 
-
 --Start des Spiels
 function Game:Start()
     print("Game:Start()")
-    GameRules:SendCustomMessage("Remember: If you find any bug, please report it to the workshop page.", 0, 0)
+	Notifications:TopToAll({text="<b color='red'>Remember:</b> <b color='white'>If you find any bug, please report it to the Discord.</b> ", duration=10.0})
     self.radiantKingVision = CreateUnitByName("king_vision_dummy", self.radiantBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
     self.direKingVision = CreateUnitByName("king_vision_dummy", self.direBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
     self.gridBoxes = Entities:FindByName(nil, "gridboxes")
@@ -935,9 +935,9 @@ end
 function Game:FormatSkipMessage(votes, remaining)
     local message = ""
     if votes == 1 then
-        message = votes .. " player is ready for the next round. " .. remaining .. " votes needed."
+        message = "<b color='LawnGreen'>" .. votes .. " player</b> <b color='white'>is ready for the next round.</b><b color='LawnGreen'> " .. remaining .. " votes</b> <b color='white'>needed.</b>"
     else
-        message = votes .. " players are ready for the next round. " .. remaining .. " votes needed."
+        message = "<b color='LawnGreen'>" .. votes .. " players</b> <b color='white'>are ready for the next round.</b><b color='LawnGreen'> " .. remaining .. " votes</b> <b color='white'>needed.</b>"
     end
     GameRules:SendCustomMessage(message, 0, 0)
 end

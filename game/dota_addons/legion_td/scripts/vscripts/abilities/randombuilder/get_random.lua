@@ -5,6 +5,7 @@ SpawnAbilities.tier1 = {
     "naturebuilder_spawn_spider",
     "elementalbuilder_spawn_waterbender",
     "assassinbuilder_spawn_zealot_scarab",
+	"undeadbuilder_spawn_zombie",
 }
 
 SpawnAbilities.tier2 = {
@@ -12,6 +13,7 @@ SpawnAbilities.tier2 = {
     "naturebuilder_spawn_bug",
     "elementalbuilder_spawn_thunderbender",
     "assassinbuilder_spawn_mind_stealer",
+	"undeadbuilder_spawn_mutilated_butcher",
 }
 
 SpawnAbilities.tier3 = {
@@ -19,6 +21,7 @@ SpawnAbilities.tier3 = {
     "naturebuilder_spawn_bear",
     "elementalbuilder_spawn_earthbender",
     "assassinbuilder_spawn_creeping_shadow",
+	"undeadbuilder_spawn_acolyte",
 }
 
 SpawnAbilities.tier4 = {
@@ -27,6 +30,7 @@ SpawnAbilities.tier4 = {
     "elementalbuilder_spawn_firebender",
     "assassinbuilder_spawn_lotus",
     "naturebuilder_spawn_hyena",
+	"undeadbuilder_spawn_nether_drake",
 }
 
 SpawnAbilities.tier5 = {
@@ -34,10 +38,12 @@ SpawnAbilities.tier5 = {
     "elementalbuilder_spawn_voidbender",
     "naturebuilder_spawn_centaur",
     "assassinbuilder_spawn_jester",
+	"undeadbuilder_spawn_vampire",
 }
 
 SpawnAbilities.tier6 = {
     "naturebuilder_spawn_centaur",
+	"undeadbuilder_spawn_tormented_soul",
 }
 
 function GetRandomUnit(event)

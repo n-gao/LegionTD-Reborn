@@ -14,7 +14,6 @@
     "Ability4"                          "sell"
     "Ability1"                          "undeadbuilder_upgrade_tormentor"
     "Ability2"                          "splash_attack"
-    "Ability3"                          "ability_empty_3"
 
     // Armor
     //----------------------------------------------------------------
@@ -25,8 +24,8 @@
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "100"
-    "AttackDamageMax"       "130"
+    "AttackDamageMin"       "150"
+    "AttackDamageMax"       "160"
     "AttackRate"            "0.5"
     "AttackAnimationPoint"  "0.2"
     "AttackAcquisitionRange" "850"
@@ -56,7 +55,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "200"
+    "StatusHealth"          "360"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"
@@ -90,9 +89,10 @@
             }
         }
     "AttachWearables"
-    {
-        "Wearable1" { "ItemDef" "387" }
-        "Wearable3" { "ItemDef" "488" }
-    }
+		{
+                    "Wearable1" { "ItemDef" "9494" }
+                    "Wearable2" { "ItemDef" "9495" }
+                    "Wearable3" { "ItemDef" "9496" }
+        }
     }
 }

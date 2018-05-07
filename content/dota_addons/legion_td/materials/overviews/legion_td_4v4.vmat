@@ -1,9 +1,6 @@
-// THIS FILE IS AUTO-GENERATED
-
-Layer0
+"Layer0"
 {
-	shader "ui.vfx"
-
-	//---- Color ----
-	Texture "materials/overviews/legion_td_4v4.tga"
+	"Shader"	"ui.vfx"
+	"F_TRANSLUCENT"	"0"
+	"Texture"	"materials/overviews/legion_td_4v4.tga"
 }

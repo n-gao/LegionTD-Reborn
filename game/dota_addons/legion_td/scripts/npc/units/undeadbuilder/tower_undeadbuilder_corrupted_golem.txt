@@ -13,12 +13,11 @@
 
     "Ability4"                          "sell"
     "Ability1"                          "magic_resistance"
-    "Ability2"                          "ability_empty_2"
-    "Ability3"                          "ability_empty_3"
+    "Ability2"                          "frostmourne_datadriven"
 
     // Armor
     //----------------------------------------------------------------
-    "ArmorPhysical"         "7"
+    "ArmorPhysical"         "8"
     "MagicalResistance"     "0"
 
     // Attack
@@ -56,7 +55,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "1300"
+    "StatusHealth"          "1500"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"

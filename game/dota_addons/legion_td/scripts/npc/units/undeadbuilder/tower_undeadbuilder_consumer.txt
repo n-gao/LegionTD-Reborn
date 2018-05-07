@@ -14,7 +14,6 @@
     "Ability4"                          "sell"
     "Ability1"                          "feast"
     "Ability2"                          "rage"
-    "Ability3"                          "ability_empty_3"
 
     // Armor
     //----------------------------------------------------------------
@@ -88,7 +87,11 @@
             }
         }
     "AttachWearables"
-    {
-    }
+		{
+                    "Wearable1" { "ItemDef" "9215" }
+                    "Wearable2" { "ItemDef" "7475" }
+                    "Wearable3" { "ItemDef" "7473" }
+                    "Wearable4" { "ItemDef" "7474" }
+		}
     }
 }

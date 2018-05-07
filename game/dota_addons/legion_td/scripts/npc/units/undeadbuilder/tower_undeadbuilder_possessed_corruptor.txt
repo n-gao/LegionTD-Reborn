@@ -12,9 +12,8 @@
     "Vscripts"              "ai/undeadbuilder/ai_nether_drake.lua"
 
     "Ability4"                          "sell"
-    "Ability1"                          "dark_venom"
-    "Ability2"                          "ability_empty_2"
-    "Ability3"                          "ability_empty_3"
+    "Ability2"                          "viper_corrosive_skin_datadriven"
+    "Ability1"                          "sven_warcry_datadriven"
 
     // Armor
     //----------------------------------------------------------------
@@ -25,8 +24,8 @@
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "140"
-    "AttackDamageMax"       "200"
+    "AttackDamageMin"       "180"
+    "AttackDamageMax"       "240"
     "AttackRate"            "0.5"
     "AttackAnimationPoint"  "0.3"
     "AttackAcquisitionRange" "850"
@@ -56,7 +55,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "270"
+    "StatusHealth"          "650"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"
@@ -90,7 +89,9 @@
             }
         }
     "AttachWearables"
-    {
-    }
+		{
+                    "Wearable1" { "ItemDef" "9233" }
+                    "Wearable2" { "ItemDef" "7995" }
+        }
     }
 }

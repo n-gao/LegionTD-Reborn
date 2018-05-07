@@ -4,7 +4,7 @@
     //----------------------------------------------------------------
     "BaseClass"             "npc_dota_creature"
     "Model"                 "models/heroes/nightstalker/nightstalker.vmdl"
-    "ModelScale"            "0.55"
+    "ModelScale"            "0.65"
     "SoundSet"                      "Hero_Viper"
     "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_nightstalker.vsndevts"
     "Level"                 "1"
@@ -89,7 +89,12 @@
             }
         }
     "AttachWearables"
-    {
-    }
+		{
+                    "Wearable1" { "ItemDef" "5083" }
+                    "Wearable2" { "ItemDef" "5085" }
+                    "Wearable3" { "ItemDef" "5086" }
+                    "Wearable4" { "ItemDef" "5087" }
+                    "Wearable5" { "ItemDef" "5088" }
+		}
     }
 }

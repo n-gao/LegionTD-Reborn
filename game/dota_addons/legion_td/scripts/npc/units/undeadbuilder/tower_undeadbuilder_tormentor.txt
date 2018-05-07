@@ -14,7 +14,7 @@
 
     "Ability1"                          "undeadbuilder_upgrade_the_forgotten_one"
     "Ability2"              "splash_attack"
-    "Ability3"              "ability_empty_3"
+    "Ability3"              "nevermore_dark_lord_datadriven"
     "Ability4"                          "sell"
     
     // Armor
@@ -26,8 +26,8 @@
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "130"
-    "AttackDamageMax"       "160"
+    "AttackDamageMin"       "180"
+    "AttackDamageMax"       "200"
     "AttackRate"            "0.5"
     "AttackAnimationPoint"  "0.2"
     "AttackAcquisitionRange" "850"
@@ -57,7 +57,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "260"
+    "StatusHealth"          "450"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"
@@ -92,9 +92,9 @@
         }
     "AttachWearables"
     {
-        "Wearable1" { "ItemDef" "387" }
-        "Wearable2" { "ItemDef" "486" }
-        "Wearable3" { "ItemDef" "488" }
+        "Wearable1" { "ItemDef" "7193" }
+        "Wearable2" { "ItemDef" "7279" }
+        "Wearable3" { "ItemDef" "7188" }
     }
     }
 }

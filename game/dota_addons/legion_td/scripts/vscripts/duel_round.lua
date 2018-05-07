@@ -149,10 +149,10 @@ end
 --Ende einer Runde
 function DuelRound:End()
     self.winningTeam = DOTA_TEAM_GOODGUYS
-    local victoryText = "Radiant won the duel and earn "
+    local victoryText = "<b color='LawnGreen'>Radiant</b> <b color='white'>won the duel and earned</b> "
     if next(self.remainingUnitsRadiant) == nil then
         self.winningTeam = DOTA_TEAM_BADGUYS
-        victoryText = "Dire won the duel and earn "
+        victoryText = "<b color='red'>Dire</b> <b color='white'>won the duel and earned</b> "
     end
     
     DuelRound.doneRounds["" .. self.game.doneDuels] = {
@@ -192,7 +192,7 @@ function DuelRound:End()
     end
     local rank = 1
     for _, id in ipairs(highscores) do
-        GameRules:SendCustomMessage("#" .. rank .. ": " .. PlayerResource:GetPlayerName(id) .. " - " .. self.playerscores[id], 0, 0)
+        GameRules:SendCustomMessage("<b color='LawnGreen'>#" .. rank .. ":</b> " .. PlayerResource:GetPlayerName(id) .. " <b color='cyan'>-</b> " .. self.playerscores[id], 0, 0)
         rank = rank + 1
         if rank > 4 then break end
     end
@@ -204,7 +204,7 @@ function DuelRound:End()
             end
         end
     end
-    GameRules:SendCustomMessage(victoryText .. "<b color='gold'>" .. self.bounty .. "</b> extra gold each!", 0, 0)
+    GameRules:SendCustomMessage("<b color='white'>" .. victoryText .. "</b><b color='gold'>" .. self.bounty .. "</b> <b color='gold'>extra gold</b><b color='white'> each!</b>", 0, 0)
     self.game:RoundFinished()
 end
 

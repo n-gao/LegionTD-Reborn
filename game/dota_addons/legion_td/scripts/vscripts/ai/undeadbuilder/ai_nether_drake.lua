@@ -8,7 +8,7 @@ behaviorSystem = {} -- create the global so we can assign to it
 
 function Spawn( entityKeyValues )
     thisEntity:SetContextThink( "AIThink", AIThink, 1 )
-    behaviorSystem = AICore:CreateBehaviorSystem( { BehaviorNone, BehaviorDarkVenomAttack } ) 
+    behaviorSystem = AICore:CreateBehaviorSystem( { BehaviorNone, BehaviorStartWarcry } ) 
 end
 
 function AIThink() -- For some reason AddThinkToEnt doesn't accept member functions
@@ -40,36 +40,34 @@ end
 
 --------------------------------------------------------------------------------------------------------
 
-BehaviorDarkVenomAttack = {}
+BehaviorStartWarcry = {}
 
-function BehaviorDarkVenomAttack:Evaluate()
-    self.darkVenomAbility = thisEntity:FindAbilityByName("dark_venom")
+-- Use Warcry when there's at least one enemy in range
+function BehaviorStartWarcry:Evaluate()
+    self.fadeAbility = thisEntity:FindAbilityByName("sven_warcry_datadriven")
 
-    local range = thisEntity:GetAttackRange() -- use the attack range of this unit
+    local range = 600
     local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false )
-    local target
-
-    if #enemies > 0 then
-        self.target = enemies[1]
+        
+    if #enemies > 0 and self.fadeAbility:GetToggleState() == false then
         return 2 
     end
     return 0
 end
 
-function BehaviorDarkVenomAttack:Begin()
+function BehaviorStartWarcry:Begin()
+    self.fadeAbility = thisEntity:FindAbilityByName("sven_warcry_datadriven")
+
     self.endTime = GameRules:GetGameTime() + .1
 
     self.order =
     {
-        OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
+        OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
         UnitIndex = thisEntity:entindex(),
-        TargetIndex = self.target:entindex(),
-        AbilityIndex = self.darkVenomAbility:entindex()
+        AbilityIndex = self.fadeAbility:entindex()
     }
 end
 
-BehaviorDarkVenomAttack.Continue = BehaviorDarkVenomAttack.Begin --if we re-enter this ability, we might have a different target; might as well do a full reset
+BehaviorStartWarcry.Continue = BehaviorStartWarcry.Begin --if we re-enter this ability, we might have a different target; might as well do a full reset
 
---------------------------------------------------------------------------------------------------------
-
-AICore.possibleBehaviors = { BehaviorNone, BehaviorDarkVenomAttack }
+AICore.possibleBehaviors = { BehaviorNone, BehaviorStartWarcry }

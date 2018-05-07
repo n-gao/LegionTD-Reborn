@@ -4,7 +4,7 @@
     //----------------------------------------------------------------
     "BaseClass"             "npc_dota_creature"
     "Model"                 "models/heroes/undying/undying.vmdl"
-    "ModelScale"            "0.55"
+    "ModelScale"            "0.75"
     "SoundSet"                      "Hero_Undying"
     "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_undying.vsndevts"
     "Level"                 "1"
@@ -14,19 +14,19 @@
     "Ability4"                          "sell"
     "Ability1"                          "undeadbuilder_upgrade_golem"
     "Ability2"                          "undeadbuilder_upgrade_flesh_ripper"
-    "Ability3"                          "ability_empty_3"
+    "Ability3"                          "frostmourne_datadriven"
 
     // Armor
     //----------------------------------------------------------------
-    "ArmorPhysical"         "5"
+    "ArmorPhysical"         "3"
     "MagicalResistance"     "0"
 
     // Attack
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "50"
-    "AttackDamageMax"       "70"
+    "AttackDamageMin"       "60"
+    "AttackDamageMax"       "80"
     "AttackRate"            "1"
     "AttackAnimationPoint"  "0.5"
     "AttackAcquisitionRange" "850"
@@ -56,7 +56,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "350"
+    "StatusHealth"          "300"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"

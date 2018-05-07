@@ -4,7 +4,7 @@
     //-------------------------------------------------------------------------------------------------------------
     "BaseClass"             "ability_datadriven"
     "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityTextureName"            "rubick_null_field"
+    "AbilityTextureName"            "resistance"
 
     // Special
     //-------------------------------------------------------------------------------------------------------------
@@ -13,12 +13,12 @@
         "01"
         {
             "var_type"                      "FIELD_INTEGER"
-            "magic_damage_reduction_pct"    "10 14 18 22"
+            "magic_damage_reduction_pct"    "35"
         }
         "02"
         {
             "var_type"                      "FIELD_INTEGER"
-            "radius"                        "900 900 900 900"
+            "radius"                        "900"
         }
     }
     
