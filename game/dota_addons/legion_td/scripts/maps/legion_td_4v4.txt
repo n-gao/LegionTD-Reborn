@@ -178,7 +178,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_donkey"
-      "bounty"                "13"
+      "bounty"                "15"
       "Unit"
       {
         "NPCName"             "unit_donkey"
@@ -190,7 +190,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_unicorn"
-      "bounty"                "15"
+      "bounty"                "16"
       "Unit"
       {
         "NPCName"             "unit_unicorn"
@@ -226,7 +226,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_lightning_ball"
-      "bounty"                "22"
+      "bounty"                "19"
       "Unit"
       {
         "NPCName"             "unit_lightning_ball"
@@ -239,14 +239,14 @@
       "round_type"            "duel"
       "round_title"           "Duel_Quest_Title"
       "determines_winner"     "false"
-      "bounty"                "2"
+      "bounty"                "5"
     }
 
     "7"                       // Wave 6
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_predator"
-      "bounty"                "22"
+      "bounty"                "20"
       "Unit"
       {
         "NPCName"             "unit_predator"
@@ -258,7 +258,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_assassins"
-      "bounty"                "23"
+      "bounty"                "22"
       "Unit"
       {
         "NPCName"             "unit_assassins"
@@ -270,7 +270,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_hydra"
-      "bounty"                "25"
+      "bounty"                "24"
       "Unit"
       {
         "NPCName"             "unit_hydra"
@@ -282,7 +282,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_not_lifestealer"
-      "bounty"                "27"
+      "bounty"                "26"
       "Unit"
       {
         "NPCName"             "unit_not_lifestealer"
@@ -307,7 +307,7 @@
       "round_type"            "duel"
       "round_title"           "Duel_Quest_Title"
       "determines_winner"     "false"
-      "bounty"                "10"
+      "bounty"                "15"
     }
 
     "13"                      // Wave 11
@@ -338,7 +338,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_tidehunter"
-      "bounty"                "33"
+      "bounty"                "34"
       "Unit"
       {
         "NPCName"             "unit_tidehunter"
@@ -350,7 +350,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_abaddon"
-      "bounty"                "35"
+      "bounty"                "36"
       "Unit"
       {
         "NPCName"             "unit_abaddon"
@@ -362,7 +362,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_enchantress"
-      "bounty"                "37"
+      "bounty"                "38"
       "Unit"
       {
         "NPCName"             "unit_enchantress"
@@ -375,7 +375,7 @@
       "round_type"            "duel"
       "round_title"           "Duel_Quest_Title"
       "determines_winner"     "false"
-      "bounty"                "20"
+      "bounty"                "25"
     }
 
     "19"                      // Wave 16
@@ -394,7 +394,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_chaos"
-      "bounty"                "40"
+      "bounty"                "45"
       "Unit"
       {
         "NPCName"             "unit_chaos"
@@ -406,7 +406,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_phantom"
-      "bounty"                "42"
+      "bounty"                "46"
       "Unit"
       {
         "NPCName"             "unit_phantom"
@@ -418,7 +418,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_necro_replacement"
-      "bounty"                "43"
+      "bounty"                "47"
       "Unit"
       {
         "NPCName"             "unit_necro_replacement"
@@ -430,7 +430,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_king"
-      "bounty"                "45"
+      "bounty"                "50"
       "Unit"
       {
         "NPCName"             "unit_king"
@@ -443,14 +443,14 @@
       "round_type"            "duel"
       "round_title"           "Duel_Quest_Title"
       "determines_winner"     "false"
-      "bounty"                "30"
+      "bounty"                "35"
     }
 
     "25"                      // Wave 21
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_templer"
-      "bounty"                "46"
+      "bounty"                "52"
       "Unit"
       {
         "NPCName"             "unit_templer"
@@ -462,7 +462,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_earthspirit"
-      "bounty"                "48"
+      "bounty"                "54"
       "Unit"
       {
         "NPCName"             "unit_earthspirit"
@@ -474,7 +474,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_kunkka"
-      "bounty"                "51"
+      "bounty"                "56"
       "Unit"
       {
         "NPCName"             "unit_kunkka"
@@ -486,7 +486,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_huskar"
-      "bounty"                "51"
+      "bounty"                "58"
       "Unit"
       {
         "NPCName"             "unit_huskar"
@@ -498,7 +498,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_tiny"
-      "bounty"                "52"
+      "bounty"                "60"
       "Unit"
       {
         "NPCName"             "unit_tiny"
@@ -511,14 +511,14 @@
       "round_type"            "duel"
       "round_title"           "Duel_Quest_Title"
       "determines_winner"     "false"
-      "bounty"                "45"
+      "bounty"                "50"
     }
 
     "31"                      // Wave 26
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_drunken"
-      "bounty"                "54"
+      "bounty"                "62"
       "Unit"
       {
         "NPCName"             "unit_drunken"
@@ -529,7 +529,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_deathprophet"
-      "bounty"                "55"
+      "bounty"                "64"
       "Unit"
       {
         "NPCName"             "unit_deathprophet"
@@ -540,7 +540,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_rubick"
-      "bounty"                "57"
+      "bounty"                "66"
       "Unit"
       {
         "NPCName"             "unit_rubick"
@@ -551,7 +551,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_ogre"
-      "bounty"                "58"
+      "bounty"                "68"
       "Unit"
       {
         "NPCName"             "unit_ogre"
@@ -562,7 +562,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_dragon"
-      "bounty"                "60"
+      "bounty"                "70"
       "Unit"
       {
         "NPCName"             "unit_dragon"
@@ -582,7 +582,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_chen"
-      "bounty"                "62"
+      "bounty"                "72"
       "Unit"
       {
         "NPCName"             "unit_chen"
@@ -594,7 +594,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_ancienthulk"
-      "bounty"                "63"
+      "bounty"                "74"
       "Unit"
       {
         "NPCName"             "unit_ancienthulk"
@@ -606,7 +606,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_skeleton"
-      "bounty"                "65"
+      "bounty"                "76"
       "Unit"
       {
         "NPCName"             "unit_skeleton"
@@ -618,7 +618,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_dragonspawn"
-      "bounty"                "66"
+      "bounty"                "78"
       "Unit"
       {
         "NPCName"             "unit_dragonspawn"
@@ -630,7 +630,7 @@
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_ursa"
-      "bounty"                "68"
+      "bounty"                "80"
       "Unit"
       {
         "NPCName"             "unit_ursa"
@@ -643,14 +643,14 @@
       "round_type"            "duel"
       "round_title"           "Duel_Quest_Title"
       "determines_winner"     "true"
-      "bounty"                "160"
+      "bounty"                "200"
     }
 	
 	"43"                      // Wave 36
     {
       "round_type"            "wave"
       "round_title"           "wavetitle_golemwarrior"
-      "bounty"                "70"
+      "bounty"                "82"
       "Unit"
       {
         "NPCName"             "unit_golemwarrior"
