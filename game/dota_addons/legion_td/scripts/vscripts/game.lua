@@ -145,7 +145,6 @@ function Game:ReadIncomeSpawner(kvInc)
 end
 
 
---List Punkte für die letzte Verteidigung ein
 function Game:ReadLastSpawn(kvLast)
     self.lastDefends = {}
     if type(kvLast) ~= "table" then
@@ -178,7 +177,6 @@ end
 
 
 
---List Spawnpunkte ein
 function Game:ReadLanes(kvSpawns)
     self.lanes = {}
     if type(kvSpawns) ~= "table" then
@@ -293,6 +291,7 @@ end
 --Start des Spiels
 function Game:Start()
     print("Game:Start()")
+    print(GetDedicatedServerKey('v1'))
 	Notifications:TopToAll({text="<b color='red'>Remember:</b> <b color='white'>If you find any bug, please report it to the Discord.</b> ", duration=10.0})
     self.radiantKingVision = CreateUnitByName("king_vision_dummy", self.radiantBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
     self.direKingVision = CreateUnitByName("king_vision_dummy", self.direBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
@@ -1251,10 +1250,10 @@ end
 
 function Game:UpdateUnitData()
     local data = {}
-    for name,d in pairs(Game.UnitKV) do
+    for name, d in pairs(Game.UnitKV) do
         data[name] = d
         data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
-        print(data[name].DisplayName)
+        -- print(data[name].DisplayName)
     end
     Game.storage:UpdateUnitData(Game.UnitKV);
 end
@@ -1265,7 +1264,7 @@ function Game:UpdateAbilityData()
     for name,d in pairs(Game.AbilityKV) do
         data[name] = d
         data[name].DisplayName = Game.EnglishLocalizationKV.Tokens["DOTA_Tooltip_ability_"..name] or name
-        print(data[name].DisplayName)
+        -- print(data[name].DisplayName)
     end
     Game.storage:UpdateAbilityData(data);
 end
@@ -1276,7 +1275,7 @@ function Game:UpdateBuilderData()
     for name,d in pairs(Game.HeroKV) do
         data[name] = d
         data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
-        print(data[name].DisplayName)
+        -- print(data[name].DisplayName)
     end
     Game.storage:UpdateBuilderData(data);
 end

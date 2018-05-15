@@ -89,14 +89,14 @@
                 "Support"           "0.0"
             }
         }
-    "AttachWearables"
-    {
-      "Wearable1" { "ItemDef" "5735" } // "Cape of the Frozen Feather"
-      "Wearable2" { "ItemDef" "5736" } // "Pauldrons of the Frozen Feather"
-      "Wearable3" { "ItemDef" "5737" } // "Staff of the Frozen Feather"
-      "Wearable4" { "ItemDef" "5734" } // "Bracers of the Frozen Feather"
-      "Wearable5" { "ItemDef" "5738" } // "Hood of the Frozen Feather"
-      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
-    }
+        "AttachWearables"
+        {
+            "Wearable1" { "ItemDef" "5735" } // "Cape of the Frozen Feather"
+            "Wearable2" { "ItemDef" "5736" } // "Pauldrons of the Frozen Feather"
+            "Wearable3" { "ItemDef" "5737" } // "Staff of the Frozen Feather"
+            "Wearable4" { "ItemDef" "5734" } // "Bracers of the Frozen Feather"
+            "Wearable5" { "ItemDef" "5738" } // "Hood of the Frozen Feather"
+            "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
+        }
     }
 }

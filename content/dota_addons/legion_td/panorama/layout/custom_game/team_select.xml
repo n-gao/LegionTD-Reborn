@@ -37,7 +37,7 @@
 								<ToggleButton id="hard_mode" onactivate="VoteOptionClicked('hard_mode')" text="#Option_Hard_Mode"/>
 								<ToggleButton id="final_duel" onactivate="VoteOptionClicked('final_duel')" text="#Option_Final_Duel"/>
 							</Panel>
-						</Panel>
+						</Panel> 
 					</Panel>
 				</Panel>
 			</Panel>
