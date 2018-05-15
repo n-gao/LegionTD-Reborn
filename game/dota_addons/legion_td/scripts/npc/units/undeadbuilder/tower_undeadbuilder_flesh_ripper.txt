@@ -13,12 +13,11 @@
 
     "Ability4"                          "sell"
     "Ability1"                          "frenzy"
-    "Ability2"                          "ability_empty_2"
-    "Ability3"                          "ability_empty_3"
+    "Ability2"                          "sandking_caustic_finale_datadriven"
 
     // Armor
     //----------------------------------------------------------------
-    "ArmorPhysical"         "5"
+    "ArmorPhysical"         "6"
     "MagicalResistance"     "0"
 
     // Attack
@@ -56,7 +55,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "200"
+    "StatusHealth"          "600"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"

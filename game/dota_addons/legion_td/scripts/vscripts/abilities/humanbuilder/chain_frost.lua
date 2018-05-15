@@ -46,7 +46,6 @@ function ChainFrost(event)
 
         if target_to_jump then
 
-            print("Bounce number " .. ability.jump_counter)
             -- Create the next projectile
             local info = {
                 Target = target_to_jump,
@@ -65,11 +64,11 @@ function ChainFrost(event)
             -- Add one to the jump counter for this bounce
             ability.jump_counter = ability.jump_counter + 1
         else
-            print("Can't find a target, End Chain")
+            -- print("Can't find a target, End Chain")
             ability.jump_counter = nil
         end
     else
-        print("No more bounces left, End Chain")
+        -- print("No more bounces left, End Chain")
         ability.jump_counter = nil
     end
 end

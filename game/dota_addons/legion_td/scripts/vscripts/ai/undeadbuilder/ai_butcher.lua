@@ -44,7 +44,7 @@ BehaviorStartRot = {}
 
 -- turn on rot when there's at least one enemy in range
 function BehaviorStartRot:Evaluate()
-    self.fadeAbility = thisEntity:FindAbilityByName("butcher_rot")
+    self.fadeAbility = thisEntity:FindAbilityByName("pudge_rot_lua")
 
     local range = 250
     local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false )
@@ -56,7 +56,7 @@ function BehaviorStartRot:Evaluate()
 end
 
 function BehaviorStartRot:Begin()
-    self.fadeAbility = thisEntity:FindAbilityByName("butcher_rot")
+    self.fadeAbility = thisEntity:FindAbilityByName("pudge_rot_lua")
     self.endTime = GameRules:GetGameTime() + .1
 
     self.order =
@@ -75,7 +75,7 @@ BehaviorStopRot = {}
 
 -- if rot is turned on and there is no enemies around we want to turn it off
 function BehaviorStopRot:Evaluate()
-    self.fadeAbility = thisEntity:FindAbilityByName("butcher_rot")
+    self.fadeAbility = thisEntity:FindAbilityByName("pudge_rot_lua")
 
     local range = 250
     local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false )
@@ -87,7 +87,7 @@ function BehaviorStopRot:Evaluate()
 end
 
 function BehaviorStopRot:Begin()
-    self.fadeAbility = thisEntity:FindAbilityByName("butcher_rot")    
+    self.fadeAbility = thisEntity:FindAbilityByName("pudge_rot_lua")    
     self.endTime = GameRules:GetGameTime() + .1
 
     self.order =

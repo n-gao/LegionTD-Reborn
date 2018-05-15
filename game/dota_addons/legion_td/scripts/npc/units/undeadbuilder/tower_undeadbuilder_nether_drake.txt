@@ -9,12 +9,11 @@
     "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
     "Level"                 "1"
     "HealthBarOffset"       "120"
-    "Vscripts"              "ai/undeadbuilder/ai_nether_drake.lua"
+    "Vscripts"              "ai_default"
 
     "Ability4"                          "sell"
     "Ability1"                          "undeadbuilder_upgrade_corruptor"
-    "Ability2"                          "dark_venom"
-    "Ability3"                          "ability_empty_3"
+    "Ability2"                          "viper_corrosive_skin_datadriven"
 
     // Armor
     //----------------------------------------------------------------
@@ -25,8 +24,8 @@
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "50"
-    "AttackDamageMax"       "70"
+    "AttackDamageMin"       "80"
+    "AttackDamageMax"       "100"
     "AttackRate"            "0.5"
     "AttackAnimationPoint"  "0.3"
     "AttackAcquisitionRange" "850"
@@ -90,7 +89,9 @@
             }
         }
     "AttachWearables"
-    {
-    }
+		{
+                    "Wearable1" { "ItemDef" "611" }
+                    "Wearable2" { "ItemDef" "623" }
+        }
     }
 }

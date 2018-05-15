@@ -37,11 +37,7 @@
 								<ToggleButton id="hard_mode" onactivate="VoteOptionClicked('hard_mode')" text="#Option_Hard_Mode"/>
 								<ToggleButton id="final_duel" onactivate="VoteOptionClicked('final_duel')" text="#Option_Final_Duel"/>
 							</Panel>
-						</Panel>
-					</Panel>
-					<Panel id="Discord">
-						<Image id="DiscordImage2" src="file://{images}/custom_game/game_info/Discord.png" onactivate="ExternalBrowserGoToURL('https://discordapp.com/invite/MZhmZt3');"/>
-						<Label id="DiscordText2" text="#discord_builder_info"/>
+						</Panel> 
 					</Panel>
 				</Panel>
 			</Panel>

@@ -20,7 +20,7 @@ end
 BehaviorNone = {}
 
 function BehaviorNone:Evaluate()
-    self.devourAbility = thisEntity:FindAbilityByName("devour")
+    self.devourAbility = thisEntity:FindAbilityByName("pudge_dismember_lua")
     -- if he's devouring we won't interrupt
     if thisEntity:IsChanneling() == true then
         return 0
@@ -48,8 +48,8 @@ BehaviorStartRot = {}
 
 -- turn on rot when there's at least one enemy in range
 function BehaviorStartRot:Evaluate()
-    self.fadeAbility = thisEntity:FindAbilityByName("butcher_rot")
-    self.devourAbility = thisEntity:FindAbilityByName("devour")
+    self.fadeAbility = thisEntity:FindAbilityByName("improved_pudge_rot_lua")
+    self.devourAbility = thisEntity:FindAbilityByName("pudge_dismember_lua")
 
     -- if he's devouring we won't interrupt
     if self.devourAbility:IsChanneling() == true then
@@ -66,8 +66,8 @@ function BehaviorStartRot:Evaluate()
 end
 
 function BehaviorStartRot:Begin()
-    self.fadeAbility = thisEntity:FindAbilityByName("butcher_rot")
-    self.devourAbility = thisEntity:FindAbilityByName("devour")
+    self.fadeAbility = thisEntity:FindAbilityByName("improved_pudge_rot_lua")
+    self.devourAbility = thisEntity:FindAbilityByName("pudge_dismember_lua")
 
     self.endTime = GameRules:GetGameTime() + .1
 
@@ -87,8 +87,8 @@ BehaviorStopRot = {}
 
 -- if rot is turned on and there is no enemies around we want to turn it off
 function BehaviorStopRot:Evaluate()
-    self.fadeAbility = thisEntity:FindAbilityByName("butcher_rot")
-    self.devourAbility = thisEntity:FindAbilityByName("devour")
+    self.fadeAbility = thisEntity:FindAbilityByName("improved_pudge_rot_lua")
+    self.devourAbility = thisEntity:FindAbilityByName("pudge_dismember_lua")
 
     -- if he's devouring we won't interrupt
     if self.devourAbility:IsChanneling() == true then
@@ -105,7 +105,7 @@ function BehaviorStopRot:Evaluate()
 end
 
 function BehaviorStopRot:Begin()
-    self.fadeAbility = thisEntity:FindAbilityByName("butcher_rot")    
+    self.fadeAbility = thisEntity:FindAbilityByName("improved_pudge_rot_lua")    
     self.endTime = GameRules:GetGameTime() + .1
 
     self.order =
@@ -123,7 +123,7 @@ BehaviorStartDevouring = {}
 
 -- turn on rot when there's at least one enemy in range
 function BehaviorStartDevouring:Evaluate()
-    self.fadeAbility = thisEntity:FindAbilityByName("devour")
+    self.fadeAbility = thisEntity:FindAbilityByName("pudge_dismember_lua")
 
     local range = 200
     local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false )
@@ -138,7 +138,7 @@ function BehaviorStartDevouring:Evaluate()
 end
 
 function BehaviorStartDevouring:Begin()
-    self.devourAbility = thisEntity:FindAbilityByName("devour")
+    self.devourAbility = thisEntity:FindAbilityByName("pudge_dismember_lua")
 
     -- self.endTime = GameRules:GetGameTime() + .1
     -- self.endTime = GameRules:GetGameTime() + self.devourAbility:GetChannelTime()

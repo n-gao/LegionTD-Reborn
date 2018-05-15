@@ -204,9 +204,7 @@ function ShadowWave(keys)
             end
         end
     end
-    -- print ("hurt_table")
     for _, v in pairs(hurt_table) do
-        -- print (v)
         -- Play the particle
         local damage_particle = ParticleManager:CreateParticle(shadow_wave_damage_particle, PATTACH_CUSTOMORIGIN, caster)
         ParticleManager:SetParticleControlEnt(damage_particle, 0, v, PATTACH_POINT_FOLLOW, "attach_hitloc", v:GetAbsOrigin(), true)

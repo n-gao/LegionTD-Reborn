@@ -1,5 +1,6 @@
 require("experience")
 require("playerdata")
+require("notifications")
 
 if Game == nil then
     Game = class({})
@@ -144,7 +145,6 @@ function Game:ReadIncomeSpawner(kvInc)
 end
 
 
---List Punkte für die letzte Verteidigung ein
 function Game:ReadLastSpawn(kvLast)
     self.lastDefends = {}
     if type(kvLast) ~= "table" then
@@ -177,7 +177,6 @@ end
 
 
 
---List Spawnpunkte ein
 function Game:ReadLanes(kvSpawns)
     self.lanes = {}
     if type(kvSpawns) ~= "table" then
@@ -289,11 +288,11 @@ function Game:RandomHeroes()
     end
 end
 
-
 --Start des Spiels
 function Game:Start()
     print("Game:Start()")
-    GameRules:SendCustomMessage("Remember: If you find any bug, please report it to the workshop page.", 0, 0)
+    print(GetDedicatedServerKey('v1'))
+	Notifications:TopToAll({text="<b color='red'>Remember:</b> <b color='white'>If you find any bug, please report it to the Discord.</b> ", duration=10.0})
     self.radiantKingVision = CreateUnitByName("king_vision_dummy", self.radiantBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
     self.direKingVision = CreateUnitByName("king_vision_dummy", self.direBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
     self.gridBoxes = Entities:FindByName(nil, "gridboxes")
@@ -935,9 +934,9 @@ end
 function Game:FormatSkipMessage(votes, remaining)
     local message = ""
     if votes == 1 then
-        message = votes .. " player is ready for the next round. " .. remaining .. " votes needed."
+        message = "<b color='LawnGreen'>" .. votes .. " player</b> <b color='white'>is ready for the next round.</b><b color='LawnGreen'> " .. remaining .. " votes</b> <b color='white'>needed.</b>"
     else
-        message = votes .. " players are ready for the next round. " .. remaining .. " votes needed."
+        message = "<b color='LawnGreen'>" .. votes .. " players</b> <b color='white'>are ready for the next round.</b><b color='LawnGreen'> " .. remaining .. " votes</b> <b color='white'>needed.</b>"
     end
     GameRules:SendCustomMessage(message, 0, 0)
 end
@@ -1251,10 +1250,10 @@ end
 
 function Game:UpdateUnitData()
     local data = {}
-    for name,d in pairs(Game.UnitKV) do
+    for name, d in pairs(Game.UnitKV) do
         data[name] = d
         data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
-        print(data[name].DisplayName)
+        -- print(data[name].DisplayName)
     end
     Game.storage:UpdateUnitData(Game.UnitKV);
 end
@@ -1265,7 +1264,7 @@ function Game:UpdateAbilityData()
     for name,d in pairs(Game.AbilityKV) do
         data[name] = d
         data[name].DisplayName = Game.EnglishLocalizationKV.Tokens["DOTA_Tooltip_ability_"..name] or name
-        print(data[name].DisplayName)
+        -- print(data[name].DisplayName)
     end
     Game.storage:UpdateAbilityData(data);
 end
@@ -1276,7 +1275,7 @@ function Game:UpdateBuilderData()
     for name,d in pairs(Game.HeroKV) do
         data[name] = d
         data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
-        print(data[name].DisplayName)
+        -- print(data[name].DisplayName)
     end
     Game.storage:UpdateBuilderData(data);
 end

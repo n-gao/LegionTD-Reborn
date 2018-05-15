@@ -36,7 +36,6 @@ function static_remnant_init( keys )
 			
 			-- If there is at least one unit, explode
 			if #units > 0 then
-				print( "deal damage" )
 				for k, v in pairs( units ) do
 					local damageTable = {
 						victim = v,
@@ -58,7 +57,6 @@ function static_remnant_init( keys )
 			
 			-- Check if timer should be expired
 			if remnant_timer >= ability_duration then
-				print( "killing" )
 				dummy:RemoveSelf()
 				return nil
 			else

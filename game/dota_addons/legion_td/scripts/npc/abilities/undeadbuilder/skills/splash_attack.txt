@@ -4,7 +4,7 @@
     //-------------------------------------------------------------------------------------------------------------
     "BaseClass"             "black_dragon_splash_attack"
     "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityTextureName"            "splash_attack"
+    "AbilityTextureName"            "splash"
 
     // Special
     //-------------------------------------------------------------------------------------------------------------
@@ -13,7 +13,7 @@
         "01"
         {
             "var_type"                      "FIELD_INTEGER"
-            "damage_percent_close"    "30"
+            "damage_percent_close"    "45"
         }
         "02"
         {
@@ -23,7 +23,7 @@
         "03"
         {
             "var_type"                      "FIELD_INTEGER"
-            "damage_percent_mid"                        "20"
+            "damage_percent_mid"                        "40"
         }
         "04"
         {
@@ -33,7 +33,7 @@
         "05"
         {
             "var_type"                      "FIELD_INTEGER"
-            "damage_percent_far"                        "10"
+            "damage_percent_far"                        "35"
         }
     }
 

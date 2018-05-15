@@ -9,16 +9,16 @@
     "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_nightstalker.vsndevts"
     "Level"                 "1"
     "HealthBarOffset"       "120"
-    "Vscripts"              "ai/ai_default.lua"
+    "Vscripts"              "ai/undeadbuilder/ai_forgotten_one.lua"
 
     "Ability1"              "splash_attack"
-    "Ability2"              "ability_empty_2"
-    "Ability3"              "ability_empty_3"
+    "Ability2"              "nevermore_dark_lord_datadriven"
+    "Ability3"              "ursa_overpower_datadriven"
     "Ability4"              "sell"
     
     // Armor
     //----------------------------------------------------------------
-    "ArmorPhysical"         "1"
+    "ArmorPhysical"         "4"
     "MagicalResistance"     "0"
 
     // Attack
@@ -26,7 +26,7 @@
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
     "AttackDamageMin"       "200"
-    "AttackDamageMax"       "300"
+    "AttackDamageMax"       "220"
     "AttackRate"            "0.5"
     "AttackAnimationPoint"  "0.2"
     "AttackAcquisitionRange" "850"
@@ -56,7 +56,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "160"
+    "StatusHealth"          "660"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"
@@ -92,6 +92,8 @@
     "AttachWearables"
     {
         "Wearable1" { "ItemDef" "6996"}
+		"Wearable2" { "ItemDef" "8259"}
+		"Wearable3" { "ItemDef" "9020"}
     }
 
     }

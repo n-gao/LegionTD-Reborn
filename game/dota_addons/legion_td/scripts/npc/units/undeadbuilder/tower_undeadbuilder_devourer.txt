@@ -12,9 +12,8 @@
     "Vscripts"              "ai/undeadbuilder/ai_devourer.lua"
 
     "Ability4"                          "sell"
-    "Ability1"                          "devour"
-    "Ability2"                          "butcher_rot"
-    "Ability3"                          "ability_empty_3"
+    "Ability1"                          "pudge_dismember_lua"
+    "Ability2"                          "improved_pudge_rot_lua"
   
 
     // Armor
@@ -90,9 +89,43 @@
                 "Support"           "0.0"
             }
         }
-    "AttachWearables"
-    {
-      "Wearable1" { "ItemDef" "260" } // "Pudge's left arm"
-    }
+			"AttachWearables"
+    	        {
+    	            "Wearable1"
+    	            {
+    	                "ItemDef"   "6202"
+    	            }
+	
+    	            "Wearable2"
+    	            {
+    	                "ItemDef"   "4007"
+    	            }
+	
+    	            "Wearable3"
+    	            {
+    	                "ItemDef"   "6226"
+    	            }
+	
+    	            "Wearable4"
+    	            {
+    	                "ItemDef"   "7171"
+    	            }
+	
+    	            "Wearable5"
+    	            {
+    	                "ItemDef"   "6298"
+    	            }
+	
+    	            "Wearable6"
+    	            {
+    	                "ItemDef"   "6115"
+    	            }
+	
+    	            "Wearable7"
+    	            {
+    	                "ItemDef"   "8498"
+    	            }
+	
+    	        }
     }
 }

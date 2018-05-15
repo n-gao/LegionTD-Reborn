@@ -42,6 +42,7 @@ USE_CUSTOM_HERO_LEVELS = true -- Should we allow heroes to have custom levels?
 MAX_LEVEL = 50 -- What level should we let heroes get to?
 USE_CUSTOM_XP_VALUES = true -- Should we use custom XP values to level up heroes, or the default Dota numbers?
 
+
 -- Fill this table up with the required XP per level if you want to change it
 XP_PER_LEVEL_TABLE = {}
 for i = 1, MAX_LEVEL do
@@ -156,10 +157,10 @@ function CheckVoteResults()
         end
         if (voteOptions[option]) then
             print(option .. " is active.")
-            GameRules:SendCustomMessage(voteOptionsText[option] .. " is active.", 0, 0)
+            GameRules:SendCustomMessage("<b color='white'>" .. voteOptionsText[option] .. " is</b> <b color='LawnGreen'>active.</b>", 0, 0)
         else
             print(option .. " is not active.")
-            GameRules:SendCustomMessage(voteOptionsText[option] .. " is not active.", 0, 0)
+            GameRules:SendCustomMessage("<b color='white'>" .. voteOptionsText[option] .. " is</b> <b color='red'>disabled.</b>", 0, 0)
         end
     end
     GameRules:GetGameModeEntity():SetFogOfWarDisabled(not voteOptions["fog_of_war"])

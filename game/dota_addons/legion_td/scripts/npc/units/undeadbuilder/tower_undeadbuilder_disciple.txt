@@ -14,7 +14,6 @@
     "Ability4"                          "sell"
     "Ability1"                          "undeadbuilder_upgrade_follower"
     "Ability2"                          "improved_nether_blast"
-    "Ability3"                          "ability_empty_3"
 
     // Armor
     //----------------------------------------------------------------
@@ -23,7 +22,7 @@
 
     // Attack
     //----------------------------------------------------------------
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
     "AttackDamageMin"       "30"
     "AttackDamageMax"       "35"
@@ -89,8 +88,14 @@
                 "Support"           "0.0"
             }
         }
-    "AttachWearables"
-    {
-    }
+			"AttachWearables"
+                {
+                    "Wearable1" { "ItemDef" "5992" }
+                    "Wearable2" { "ItemDef" "5996" }
+                    "Wearable3" { "ItemDef" "5994" }
+                    "Wearable4" { "ItemDef" "5997" }
+                    "Wearable5" { "ItemDef" "6000" }
+					"Wearable6" { "ItemDef" "6001" }
+                }
     }
 }

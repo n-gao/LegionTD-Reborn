@@ -5,6 +5,19 @@
   "MaxLevel"             "1"
 
   "AbilityBehavior"     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+  "AbilitySpecial"
+      {
+        "01"
+        {
+          "var_type"      "FIELD_INTEGER"
+          "health_bonus"         "450"
+        }
+        "02"
+        {
+          "var_type"      "FIELD_INTEGER"
+          "health_bonus_per_stack"      "25"
+        }
+      }
 
   "Modifiers"
   {
