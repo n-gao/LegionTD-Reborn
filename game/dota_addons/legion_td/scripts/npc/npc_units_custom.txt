@@ -9984,7 +9984,7 @@
 
         // Status
         //----------------------------------------------------------------
-        "StatusHealth"          "420"
+        "StatusHealth"          "500"
         "StatusHealthRegen"     "0"
         "StatusMana"            "0"
         "StatusManaRegen"       "0"
@@ -10442,8 +10442,8 @@
         "LegionDefendType" "light"
         "LegionExperience" "35"
         "LegionFraction"   "wave"
-        "BountyGoldMin" "5.0"
-        "BountyGoldMax" "5.0"
+        "BountyGoldMin" "8.0"
+        "BountyGoldMax" "8.0"
         "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
         "CollisionSize" "50"
         "RingRadius"    "50"
@@ -10625,7 +10625,7 @@
 
         // Armor
         //----------------------------------------------------------------
-        "ArmorPhysical"         "8"
+        "ArmorPhysical"         "10"
         "MagicalResistance"     "0"
 
         // Attack
@@ -10663,7 +10663,7 @@
 
         // Status
         //----------------------------------------------------------------
-        "StatusHealth"          "1500"
+        "StatusHealth"          "1700"
         "StatusHealthRegen"     "0"
         "StatusMana"            "0"
         "StatusManaRegen"       "0"
@@ -11104,8 +11104,8 @@
         "MagicalResistance" "0"
         "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
         "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-        "AttackDamageMin"   "2.75"
-        "AttackDamageMax"   "4"
+        "AttackDamageMin"   "2.0"
+        "AttackDamageMax"   "3.75"
         "AttackRate"    "1.55"
         "AttackAnimationPoint"  "0.5"
         "AttackAcquisitionRange"    "850"
@@ -11114,8 +11114,8 @@
         "LegionDefendType" "light"
         "LegionExperience" "10"
         "LegionFraction"   "wave"
-        "BountyGoldMin" "5.0"
-        "BountyGoldMax" "5.0"
+        "BountyGoldMin" "8.0"
+        "BountyGoldMax" "8.0"
         "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
         "CollisionSize" "50"
         "RingRadius"    "50"
@@ -11480,7 +11480,7 @@
 
         "Ability4"                          "sell"
         "Ability1"                          "undeadbuilder_upgrade_tormentor"
-        "Ability2"                          "splash_attack"
+        "Ability2"                          "nevermore_dark_lord_datadriven"
 
         // Armor
         //----------------------------------------------------------------
@@ -12066,7 +12066,7 @@
 
         // Status
         //----------------------------------------------------------------
-        "StatusHealth"          "700"
+        "StatusHealth"          "900"
         "StatusHealthRegen"     "0"
         "StatusMana"            "0"
         "StatusManaRegen"       "0"
@@ -12209,8 +12209,8 @@
     	    "LegionDefendType" "boss"
     	    "LegionExperience" "800"
     	    "LegionFraction"   "boss"
-    	    "BountyGoldMin" "51.0"
-    	    "BountyGoldMax" "51.0"
+    	    "BountyGoldMin" "100.0"
+    	    "BountyGoldMax" "100.0"
     	    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
     	    "CollisionSize" "300"
     	    "RingRadius"    "300"
@@ -12508,8 +12508,8 @@
     	"LegionDefendType"	"light"
     	"LegionExperience"	"20"
     	"LegionFraction"	"wave"
-    	"BountyGoldMin"	"6.0"
-    	"BountyGoldMax"	"6.0"
+    	"BountyGoldMin"	"9.0"
+    	"BountyGoldMax"	"9.0"
     	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
     	"CollisionSize"	"50"
     	"RingRadius"	"50"
@@ -12963,8 +12963,8 @@
     	"LegionDefendType"	"medium"
     	"LegionExperience"	"50"
     	"LegionFraction"	"wave"
-    	"BountyGoldMin"	"6.0"
-    	"BountyGoldMax"	"6.0"
+    	"BountyGoldMin"	"9.0"
+    	"BountyGoldMax"	"9.0"
     	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
     	"CollisionSize"	"50"
     	"RingRadius"	"50"
@@ -13619,8 +13619,8 @@
     	"LegionDefendType"	"medium"
     	"LegionExperience"	"25"
     	"LegionFraction"	"wave"
-    	"BountyGoldMin"	"6.0"
-    	"BountyGoldMax"	"6.0"
+    	"BountyGoldMin"	"9.0"
+    	"BountyGoldMax"	"9.0"
     	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
     	"CollisionSize"	"50"
     	"RingRadius"	"50"
@@ -13959,8 +13959,8 @@
     	    "LegionDefendType" "light"
     	    "LegionExperience" "45"
     	    "LegionFraction"   "wave"
-    	    "BountyGoldMin" "6.0"
-    	    "BountyGoldMax" "6.0"
+    	    "BountyGoldMin" "9.0"
+    	    "BountyGoldMax" "9.0"
     	    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
     	    "CollisionSize" "50"
     	    "RingRadius"    "50"
@@ -14244,8 +14244,8 @@
         //----------------------------------------------------------------
         "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
         "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-        "AttackDamageMin"       "200"
-        "AttackDamageMax"       "220"
+        "AttackDamageMin"       "300"
+        "AttackDamageMax"       "320"
         "AttackRate"            "0.5"
         "AttackAnimationPoint"  "0.2"
         "AttackAcquisitionRange" "850"
@@ -14539,8 +14539,8 @@
         //----------------------------------------------------------------
         "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
         "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-        "AttackDamageMin"       "30"
-        "AttackDamageMax"       "35"
+        "AttackDamageMin"       "64"
+        "AttackDamageMax"       "70"
         "AttackRate"            "0.7"
         "AttackAnimationPoint"  "0.5"
         "AttackAcquisitionRange" "850"
@@ -14828,8 +14828,8 @@
     	"LegionDefendType"	"medium"
     	"LegionExperience"	"30"
     	"LegionFraction"	"wave"
-    	"BountyGoldMin"	"6.0"
-    	"BountyGoldMax"	"6.0"
+    	"BountyGoldMin"	"9.0"
+    	"BountyGoldMax"	"9.0"
     	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
     	"CollisionSize"	"50"
     	"RingRadius"	"50"
@@ -15079,8 +15079,8 @@
     	"LegionDefendType"	"heavy"
     	"LegionExperience"	"12"
     	"LegionFraction"	"wave"
-    	"BountyGoldMin"	"6.0"
-    	"BountyGoldMax"	"6.0"
+    	"BountyGoldMin"	"9.0"
+    	"BountyGoldMax"	"9.0"
     	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
     	"CollisionSize"	"50"
     	"RingRadius"	"50"
@@ -15513,8 +15513,8 @@
     	"LegionDefendType"	"light"
     	"LegionExperience"	"10"
     	"LegionFraction"	"wave"
-    	"BountyGoldMin"	"6.0"
-    	"BountyGoldMax"	"6.0"
+    	"BountyGoldMin"	"9.0"
+    	"BountyGoldMax"	"9.0"
     	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
     	"CollisionSize"	"50"
     	"RingRadius"	"50"

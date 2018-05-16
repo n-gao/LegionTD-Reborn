@@ -13,7 +13,7 @@
 
     "Ability4"                          "sell"
     "Ability1"                          "undeadbuilder_upgrade_tormentor"
-    "Ability2"                          "splash_attack"
+    "Ability2"                          "nevermore_dark_lord_datadriven"
 
     // Armor
     //----------------------------------------------------------------
