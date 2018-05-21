@@ -4,7 +4,7 @@
 	"AbilityTextureName"	"spawn_acolyte"
 	"MaxLevel"	"1"
 	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityGoldCost"	"200"
+	"AbilityGoldCost"	"180"
 	"AbilityCooldown"	"1.0"
 	"OnSpellStart"
 	{
@@ -21,13 +21,13 @@
 		"01"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"atk_damage_tooltip"	"47.5"
+			"atk_damage_tooltip"	"75"
 		}
 
 		"02"
 		{
 			"var_type"	"FIELD_FLOAT"
-			"atk_speed_tooltip"	"1"
+			"atk_speed_tooltip"	"0.90"
 		}
 
 		"03"
@@ -39,13 +39,13 @@
 		"04"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"health_tooltip"	"250"
+			"health_tooltip"	"500"
 		}
 
 		"05"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"armor_tooltip"	"1"
+			"armor_tooltip"	"4"
 		}
 
 		"06"

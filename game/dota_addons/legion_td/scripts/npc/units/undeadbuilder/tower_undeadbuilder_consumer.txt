@@ -17,16 +17,16 @@
 
     // Armor
     //----------------------------------------------------------------
-    "ArmorPhysical"         "7"
+    "ArmorPhysical"         "5"
     "MagicalResistance"     "0"
 
     // Attack
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "60"
-    "AttackDamageMax"       "90"
-    "AttackRate"            "0.5"
+    "AttackDamageMin"       "165"
+    "AttackDamageMax"       "165"
+    "AttackRate"            "1"
     "AttackAnimationPoint"  "0.2"
     "AttackAcquisitionRange" "850"
     "AttackRange"           "90"
@@ -53,7 +53,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "600"
+    "StatusHealth"          "850"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"
@@ -87,11 +87,11 @@
             }
         }
     "AttachWearables"
-		{
+        {
                     "Wearable1" { "ItemDef" "9215" }
                     "Wearable2" { "ItemDef" "7475" }
                     "Wearable3" { "ItemDef" "7473" }
                     "Wearable4" { "ItemDef" "7474" }
-		}
+        }
     }
 }

@@ -17,15 +17,15 @@
 
     // Armor
     //----------------------------------------------------------------
-    "ArmorPhysical"         "1"
+    "ArmorPhysical"         "3"
     "MagicalResistance"     "0"
 
     // Attack
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "30"
-    "AttackDamageMax"       "35"
+    "AttackDamageMin"       "55"
+    "AttackDamageMax"       "55"
     "AttackRate"            "1"
     "AttackAnimationPoint"  "0.5"
     "AttackAcquisitionRange" "850"
@@ -55,7 +55,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "100"
+    "StatusHealth"          "150"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"
@@ -88,14 +88,14 @@
                 "Support"           "0.0"
             }
         }
-			"AttachWearables"
+            "AttachWearables"
                 {
                     "Wearable1" { "ItemDef" "5992" }
                     "Wearable2" { "ItemDef" "5996" }
                     "Wearable3" { "ItemDef" "5994" }
                     "Wearable4" { "ItemDef" "5997" }
                     "Wearable5" { "ItemDef" "6000" }
-					"Wearable6" { "ItemDef" "6001" }
+                    "Wearable6" { "ItemDef" "6001" }
                 }
     }
 }

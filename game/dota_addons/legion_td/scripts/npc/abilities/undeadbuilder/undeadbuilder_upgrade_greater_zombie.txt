@@ -4,7 +4,7 @@
 	"AbilityTextureName"	"spawn_zombie"
 	"MaxLevel"	"1"
 	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityGoldCost"	"80"
+	"AbilityGoldCost"	"65"
 	"AbilityCooldown"	"1.0"
 	"OnSpellStart"
 	{
@@ -21,7 +21,7 @@
 		"01"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"atk_damage_tooltip"	"60"
+			"atk_damage_tooltip"	"85"
 		}
 
 		"02"
@@ -39,13 +39,13 @@
 		"04"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"health_tooltip"	"350"
+			"health_tooltip"	"325"
 		}
 
 		"05"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"armor_tooltip"	"5"
+			"armor_tooltip"	"3"
 		}
 
 		"06"

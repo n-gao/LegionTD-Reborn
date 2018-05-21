@@ -18,16 +18,16 @@
 
     // Armor
     //----------------------------------------------------------------
-    "ArmorPhysical"         "6"
+    "ArmorPhysical"         "7"
     "MagicalResistance"     "0"
 
     // Attack
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "200"
-    "AttackDamageMax"       "220"
-    "AttackRate"            "2"
+    "AttackDamageMin"       "160"
+    "AttackDamageMax"       "160"
+    "AttackRate"            "0.80"
     "AttackAnimationPoint"  "0.5"
     "AttackAcquisitionRange" "850"
     "AttackRange"           "90"
@@ -56,7 +56,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "820"
+    "StatusHealth"          "850"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"
@@ -89,43 +89,43 @@
                 "Support"           "0.0"
             }
         }
-			"AttachWearables"
-    	        {
-    	            "Wearable1"
-    	            {
-    	                "ItemDef"   "6202"
-    	            }
-	
-    	            "Wearable2"
-    	            {
-    	                "ItemDef"   "4007"
-    	            }
-	
-    	            "Wearable3"
-    	            {
-    	                "ItemDef"   "6226"
-    	            }
-	
-    	            "Wearable4"
-    	            {
-    	                "ItemDef"   "7171"
-    	            }
-	
-    	            "Wearable5"
-    	            {
-    	                "ItemDef"   "6298"
-    	            }
-	
-    	            "Wearable6"
-    	            {
-    	                "ItemDef"   "6115"
-    	            }
-	
-    	            "Wearable7"
-    	            {
-    	                "ItemDef"   "8498"
-    	            }
-	
-    	        }
+            "AttachWearables"
+                {
+                    "Wearable1"
+                    {
+                        "ItemDef"   "6202"
+                    }
+    
+                    "Wearable2"
+                    {
+                        "ItemDef"   "4007"
+                    }
+    
+                    "Wearable3"
+                    {
+                        "ItemDef"   "6226"
+                    }
+    
+                    "Wearable4"
+                    {
+                        "ItemDef"   "7171"
+                    }
+    
+                    "Wearable5"
+                    {
+                        "ItemDef"   "6298"
+                    }
+    
+                    "Wearable6"
+                    {
+                        "ItemDef"   "6115"
+                    }
+    
+                    "Wearable7"
+                    {
+                        "ItemDef"   "8498"
+                    }
+    
+                }
     }
 }

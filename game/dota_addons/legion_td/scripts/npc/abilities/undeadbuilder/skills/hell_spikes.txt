@@ -34,17 +34,17 @@
         "01"
         {
             "var_type"          "FIELD_INTEGER"
-            "radius"            "1525"
+            "radius"            "600"
         }
         "02"
         {
             "var_type"          "FIELD_INTEGER"
-            "speed"             "775"
+            "speed"             "725"
         }
         "03"
         {   
             "var_type"          "FIELD_FLOAT"
-            "duration"          "2.02"
+            "duration"          "2.4"
         }
     }
 }

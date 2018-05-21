@@ -4,7 +4,7 @@
 	"AbilityTextureName"	"spawn_golem"
 	"MaxLevel"	"1"
 	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-	"AbilityGoldCost"	"105"
+	"AbilityGoldCost"	"95"
 	"AbilityCooldown"	"1.0"
 	"OnSpellStart"
 	{
@@ -21,7 +21,7 @@
 		"01"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"atk_damage_tooltip"	"95"
+			"atk_damage_tooltip"	"110"
 		}
 
 		"02"
@@ -39,7 +39,7 @@
 		"04"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"health_tooltip"	"700"
+			"health_tooltip"	"850"
 		}
 
 		"05"

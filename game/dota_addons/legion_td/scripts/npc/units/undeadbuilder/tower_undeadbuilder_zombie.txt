@@ -8,7 +8,7 @@
     "SoundSet"                      "Hero_Undying"
     "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_undying.vsndevts"
     "Level"                 "1"
-    "HealthBarOffset"       "120"
+    "HealthBarOffset"       "130"
     "Vscripts"              "ai/ai_default.lua"
 
     "Ability4"                          "sell"
@@ -23,9 +23,9 @@
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "35"
-    "AttackDamageMax"       "40"
-    "AttackRate"            "1"
+    "AttackDamageMin"       "30"
+    "AttackDamageMax"       "30"
+    "AttackRate"            "0.5"
     "AttackAnimationPoint"  "0.5"
     "AttackAcquisitionRange" "850"
     "AttackRange"           "90"
