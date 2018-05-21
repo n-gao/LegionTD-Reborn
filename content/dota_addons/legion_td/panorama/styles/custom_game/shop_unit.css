@@ -3,8 +3,9 @@
   height: 90px;
   transition-property: transform;
   transition-duration: 0.1s;
-  margin-left: 18px;
-  margin-top: 5px;
+  margin: 6px;
+  border-radius: 6px;
+  box-shadow: fill #000000 0px 0px 8px 0px;
 }
 
 
@@ -13,6 +14,7 @@
 }
 
 .Hovered #UnitTangoCostPanel {
+  padding-top: 4px;
   height: 90px;
 }
 

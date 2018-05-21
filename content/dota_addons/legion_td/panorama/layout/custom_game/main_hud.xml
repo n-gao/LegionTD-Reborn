@@ -49,20 +49,20 @@
         <Panel hittest="false" class="SkipButtonPanel2">
           <Button id="SkipButton" onactivate="OnSkipButtonPressed2()">
             <Image src="file://{images}/custom_game/skipready.png" />
-            <Label id="SkipLabel" class="ButtonLabel2" text="You're Ready"/>
+            <Label id="SkipLabel" class="ButtonLabel2" text="#ReadyPressed"/>
           </Button>
         </Panel>
         <Panel hittest="true" id="ShopPanel">
-		<Panel id="TitlePanel">
-			<Label id="TitleText" text="Recruit Units" />
-		</Panel>
-          <Panel id="UnitPanel">
-            <Panel id="Units"></Panel>
-			<Panel id="Upgrades"></Panel>
+          <Panel class="TitlePanel">
+            <Label class="TitleText" text="#RecruitUnits" />
           </Panel>
-		  		<Panel id="TitlePanel2">
-			<Label id="TitleText" text="King Upgrades" />
-		</Panel>
+          <Panel id="UnitPanel"></Panel>
+		  		<Panel class="TitlePanel">
+            <Label class="TitleText" text="#KingUpgrade" />
+          </Panel>
+          <Panel class="UpgradeWrapper">
+            <Panel id="Upgrades"></Panel>
+          </Panel>
 		  </Panel>
       </Panel>
       <Panel hittest="false" id="clockPanelInjection"></Panel>

@@ -40,8 +40,8 @@ function AddUnit(unit, row) {
 	var cost = unitPanel.FindChildInLayoutFile("TangoCostLabel");
 	var income = unitPanel.FindChildInLayoutFile("GoldIncomeLabel");
 	var desc = unitPanel.FindChildInLayoutFile("DescLabel");
-	income.text = "Income: " + unit.income;
-	cost.text = "Cost: " + unit.cost;
+	income.text = "+" + unit.income + "/R";
+	cost.text = unit.cost;
 	desc.text = $.Localize("#DOTA_Tooltip_ability_" + unit.icon + "_Description").split(": ").pop();
 	unitPanel.SetAttributeInt("id", unit.id);
 	unitPanel.SetAttributeInt("cost", unit.cost);
@@ -53,7 +53,7 @@ function AddUnit(unit, row) {
 }
 
 function NewRow(id) {
-	var unitRow = $.CreatePanel("Panel", $("#Units"), "row_" + id);
+	var unitRow = $.CreatePanel("Panel", $("#UnitPanel"), "row_" + id);
 	unitRow.BLoadLayout("file://{resources}/layout/custom_game/shop_unit_row.xml", false, false);
 	return unitRow;
 }
