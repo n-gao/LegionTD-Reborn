@@ -68,7 +68,7 @@
 		"07"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"knockback_duration"	"2"
+			"knockback_duration"	"0.3"
 		}
 		"08"
 		{
