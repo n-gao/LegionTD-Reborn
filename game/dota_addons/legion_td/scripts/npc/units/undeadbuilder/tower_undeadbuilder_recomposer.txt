@@ -18,16 +18,16 @@
 
     // Armor
     //----------------------------------------------------------------
-    "ArmorPhysical"         "3"
+    "ArmorPhysical"         "4"
     "MagicalResistance"     "0"
 
     // Attack
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "45"
-    "AttackDamageMax"       "50"
-    "AttackRate"            "1"
+    "AttackDamageMin"       "75"
+    "AttackDamageMax"       "75"
+    "AttackRate"            "0.90"
     "AttackAnimationPoint"  "0.5"
     "AttackAcquisitionRange" "850"
     "AttackRange"           "600"
@@ -56,7 +56,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "250"
+    "StatusHealth"          "500"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"

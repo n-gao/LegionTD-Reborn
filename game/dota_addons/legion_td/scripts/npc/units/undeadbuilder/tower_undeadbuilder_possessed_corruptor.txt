@@ -9,24 +9,24 @@
     "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
     "Level"                 "1"
     "HealthBarOffset"       "120"
-    "Vscripts"              "ai/undeadbuilder/ai_nether_drake.lua"
+    "Vscripts"              "ai/undeadbuilder/ai_possessed_corruptor.lua"
 
     "Ability4"                          "sell"
     "Ability2"                          "viper_corrosive_skin_datadriven"
-    "Ability1"                          "sven_warcry_datadriven"
+    "Ability1"                          "viper_nethertoxin"
 
     // Armor
     //----------------------------------------------------------------
-    "ArmorPhysical"         "1"
+    "ArmorPhysical"         "3"
     "MagicalResistance"     "0"
 
     // Attack
     //----------------------------------------------------------------
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
     "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "180"
-    "AttackDamageMax"       "240"
-    "AttackRate"            "0.5"
+    "AttackDamageMin"       "225"
+    "AttackDamageMax"       "225"
+    "AttackRate"            "0.95"
     "AttackAnimationPoint"  "0.3"
     "AttackAcquisitionRange" "850"
     "AttackRange"           "500"
@@ -55,7 +55,7 @@
 
     // Status
     //----------------------------------------------------------------
-    "StatusHealth"          "650"
+    "StatusHealth"          "750"
     "StatusHealthRegen"     "0"
     "StatusMana"            "0"
     "StatusManaRegen"       "0"
