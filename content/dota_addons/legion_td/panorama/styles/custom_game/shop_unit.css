@@ -1,35 +1,32 @@
-.UnitButton {
-  margin: 3px 3px 3px 3px;
-  width: 74px;
-  height: 74px;
-  transform: scaleX(0.92) scaleY(0.92);
+ .UnitButton {
+  width: 90px;
+  height: 90px;
   transition-property: transform;
   transition-duration: 0.1s;
+  margin: 6px;
+  border-radius: 6px;
+  box-shadow: fill #000000 0px 0px 8px 0px;
 }
 
-.UnitButton:hover {
-  transform: scaleX(1) scaleY(1);
-}
-
-.UnitButton:active {
-  transform: scaleX(0.9) scaleY(0.9);
-}
 
 #UnitTangoCostPanel {
   height: 18px;
 }
 
 .Hovered #UnitTangoCostPanel {
-  height: 74px;
+  padding-top: 4px;
+  height: 90px;
 }
 
 #TangoCostLabel {
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 #GoldIncomeLabel {
   color: gold;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #DescLabel {
@@ -41,8 +38,8 @@
 }
 
 #UnitTint {
-  width: 100%;
-  height: 100%;
+  width: 130px;
+  height: 150px;
   background-color: #981717A0;
   opacity: 0;
   transition-property: transform, opacity;
