@@ -45,7 +45,7 @@ BehaviorCastHellSpikes = {}
 function BehaviorCastHellSpikes:Evaluate()
     self.fadeAbility = thisEntity:FindAbilityByName("hell_spikes")
 
-    local range = 525
+    local range = 700
     local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false )
     local cooldown = self.fadeAbility:GetCooldownTimeRemaining()
 
