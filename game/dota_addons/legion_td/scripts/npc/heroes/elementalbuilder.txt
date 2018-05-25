@@ -9,7 +9,7 @@
 	"Ability3"				"elementalbuilder_spawn_earthbender"
 	"Ability4"				"elementalbuilder_spawn_firebender"
 	"Ability5"				"elementalbuilder_spawn_voidbender"
-  "Ability6"        ""
+  "Ability6"        "dummy_passive_vulnerable"
   "Ability7"        ""
   "Ability8"        ""
   "Ability9"				"elementalbuilder_passive"

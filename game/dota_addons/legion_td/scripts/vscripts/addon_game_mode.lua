@@ -28,6 +28,9 @@ function Precache(context)
     
     See GameMode:PostLoadPrecache() in barebones.lua for more information
     ]]
+	
+	PrecacheUnitByNameSync("npc_dota_hero_axe", context)
+	
     print("[BAREBONES] Performing pre-load precache")
     
     for _, r in pairs(RequiredUnits) do
