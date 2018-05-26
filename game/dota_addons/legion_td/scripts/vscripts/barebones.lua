@@ -219,7 +219,7 @@ function GameMode:OnHeroInGame(hero)
     -- This line for example will set the starting gold of every hero to 500 unreliable gold
     hero:SetGold(START_GOLD, false)
 	
-	local innate_ability = hero:FindAbilityByName("dummy_passive_vulnerable")
+	local innate_ability = hero:FindAbilityByName("builder_invulnerable")
 		if innate_ability then
 			innate_ability:SetLevel(1)
 			innate_ability:SetHidden(true);

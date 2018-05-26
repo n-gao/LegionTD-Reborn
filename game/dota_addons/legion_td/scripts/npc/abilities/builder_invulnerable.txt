@@ -1,4 +1,4 @@
-	"dummy_passive_vulnerable"
+"builder_invulnerable"
 {
 	"BaseClass" 			"ability_datadriven"
 	"AbilityBehavior" 		"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -6,7 +6,7 @@
 	"AbilityTextureName"	"holdout_guardian_angel"
 	"Modifiers"
 	{
-		"dummy_modifier"
+		"builder_invulnerable_modifier"
 		{
 			"Passive"	"1"
 			"States"
