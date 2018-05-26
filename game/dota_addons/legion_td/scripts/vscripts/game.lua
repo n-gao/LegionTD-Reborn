@@ -90,6 +90,9 @@ function Game:ReadConfiguration()
     self:ReadRoundConfiguration(kv)
     self.radiantBoss = Entities:FindByName(nil, "radiant_king")
     self.direBoss = Entities:FindByName(nil, "dire_king")
+    if voteOptions["fog_of_war"] then
+        mode:SetFogOfWarDisabled(true)
+    end
     print("everything loaded")
 end
 
@@ -478,9 +481,6 @@ function Game:StartNextRound()
         if voteOptions["tango_limit"] and player.tangos > self:GetTangoLimit() then
             player.tangos = self:GetTangoLimit()
         end
-    end
-    if voteOptions["fog_of_war"] then
-        mode:SetFogOfWarDisabled(true)
     end
     self.gridBoxes:AddEffects(EF_NODRAW)
     self.nextRoundTime = nil
