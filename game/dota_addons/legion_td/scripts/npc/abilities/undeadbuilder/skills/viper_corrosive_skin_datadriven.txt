@@ -14,6 +14,7 @@
 	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 	"AbilityTextureName"			"viper_corrosive_skin"
+	"MaxLevel"						"1"
 
 	// Precache
 	//-------------------------------------------------------------------------------------------------------------
@@ -39,22 +40,22 @@
 		"02"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"bonus_movement_speed"		"-10 -15 -20 -25"
+			"bonus_movement_speed"		"-20"
 		}
 		"03"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"bonus_attack_speed"		"-10 -15 -20 -25"
+			"bonus_attack_speed"		"-25"
 		}
 		"04"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"bonus_magic_resistance"	"10 15 20 25"
+			"bonus_magic_resistance"	"45"
 		}
 		"05"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"damage"					"10 15 20 25"
+			"damage"					"55"
 		}
 		"06"
 		{
