@@ -9,7 +9,7 @@
 	"Ability3"				"randombuilder_get_random_tier3"
 	"Ability4"				"randombuilder_get_random_tier4"
 	"Ability5"				"randombuilder_get_random_tier5"
-  "Ability6"        ""
+  "Ability6"        "builder_invulnerable"
   "Ability7"        ""
   "Ability8"        ""
   "Ability9"				"randombuilder_passive"

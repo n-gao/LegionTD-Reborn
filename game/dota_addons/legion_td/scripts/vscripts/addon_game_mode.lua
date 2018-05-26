@@ -28,6 +28,7 @@ function Precache(context)
     
     See GameMode:PostLoadPrecache() in barebones.lua for more information
     ]]
+	
     print("[BAREBONES] Performing pre-load precache")
     
     for _, r in pairs(RequiredUnits) do

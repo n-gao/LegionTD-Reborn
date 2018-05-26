@@ -207,8 +207,6 @@ function Player:SetNPC(npc)
         self:CreateTangoTicker()
         return CHECKING_INTERVALL
     end)
-    
-    npc:AddNewModifier(nil, nil, "modifier_invulnerable", {})
     Timers:CreateTimer(0.2, function()
         self:ToSpawn()
     end)

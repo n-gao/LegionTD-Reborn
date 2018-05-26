@@ -10,7 +10,7 @@
         "Ability4"              "undeadbuilder_spawn_nether_drake"
         "Ability5"              "undeadbuilder_spawn_vampire"
       "Ability6"        "undeadbuilder_spawn_tormented_soul"
-      "Ability7"        ""
+      "Ability7"        "builder_invulnerable"
       "Ability9"                "undeadbuilder_passive"
 			"Ability10"        "special_bonus_undefined"
 			"Ability11"        "special_bonus_undefined"

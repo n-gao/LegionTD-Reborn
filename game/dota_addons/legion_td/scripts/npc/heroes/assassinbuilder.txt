@@ -11,7 +11,7 @@
 	"Ability4"					"assassinbuilder_spawn_lotus"
 	"Ability5"					"assassinbuilder_spawn_jester"
 	"Ability6"					"assassinbuilder_frenzy"
-  "Ability7"        ""
+  "Ability7"        "builder_invulnerable"
   "Ability8"        ""
   "Ability9"        ""
   "Ability10"        "special_bonus_undefined"
