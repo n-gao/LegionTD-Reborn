@@ -54,8 +54,8 @@
   color: White;
 }
 
-#ShopPanel.ShopPanelVisible {
-  transform: translatex(400px);
+#ShopPanel.ShopPanelVisible { 
+  transform: translatex(395px);
   margin-bottom: 180px;
   visibility: visible;
   opacity: 1;
