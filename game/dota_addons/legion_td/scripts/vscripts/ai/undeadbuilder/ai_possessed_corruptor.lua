@@ -41,7 +41,7 @@ BehaviorNether = {}
 function BehaviorNether:Evaluate()
     self.fadeAbility = thisEntity:FindAbilityByName("viper_nethertoxin")
 
-    local range = 400
+    local range = 600
     local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false )
     local cooldown = self.fadeAbility:GetCooldownTimeRemaining()
 
