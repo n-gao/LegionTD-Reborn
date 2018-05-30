@@ -36,7 +36,7 @@
 		"Player"							"Player"
 		"RecruitUnits"						"Recruit Units"
 		"KingUpgrade"						"King Upgrades"
-		"Upgrade_King"						"Upgrade:"
+		"Upgrade_King"						"Upgrade"
 		"Upgrade_King_Health"				"Health"
 		"Upgrade_King_Attack"				"Attack"
 		"Upgrade_King_Regen"				"Regen"
