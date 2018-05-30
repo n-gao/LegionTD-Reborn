@@ -13,7 +13,7 @@
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.2"
-		"AbilityCastRange"				"400"
+		"AbilityCastRange"				"700"
         "MaxLevel"                      "1"
 
 		// Time		
@@ -32,12 +32,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage"			    "20"
+				"damage"			    "50"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"		        "300"
+				"radius"		        "500"
 			}
 			"03"
 			{
@@ -47,7 +47,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"			    "3"
+				"duration"			    "4"
 			}
 			"05"
 			{
