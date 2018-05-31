@@ -189,8 +189,7 @@ function UpdateGold() {
 		var upgrade = $.CreatePanel("Panel", $("#Upgrades"), "KingHealthUpgrade");
 		upgrade.BLoadLayout("file://{resources}/layout/custom_game/shop_upgrade.xml", false, false);
 		upgrade.SetAttributeInt("UpgradeType", i);
-		upgrade.FindChildInLayoutFile("DescLabel1").text = $.Localize("#Upgrade_King")
-		var label = upgrade.FindChildInLayoutFile("DescLabel2");
+		var label = upgrade.FindChildInLayoutFile("DescLabel");
 		var icon = upgrade.FindChildInLayoutFile("Icon");
 		switch (i) {
 			case 0:

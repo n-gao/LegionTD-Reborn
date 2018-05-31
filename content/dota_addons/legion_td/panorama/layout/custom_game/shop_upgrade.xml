@@ -11,9 +11,8 @@
       <DOTAAbilityImage id="Icon" src="file://{resources}/images/custom_game/spellicons/attribute_bonus.png" />
       <Panel class="TangoCostPanel">
         <Label class="TangoCost" text="100"/>
-        <Label class="GoldIncome" text="Income: 4" />
-        <Label id="DescLabel1" text="Upgrade" />
-        <Label id="DescLabel2" text="Upgrade" />
+        <Label class="GoldIncome" text="4/R" />
+        <Label id="DescLabel" text="Upgrade" />
       </Panel>
     </Button>
   </Panel>
