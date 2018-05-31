@@ -11,10 +11,11 @@
 
 #UnitTangoCostPanel {
   height: 18px;
+  padding-top: 0px;
 }
 
 .Hovered #UnitTangoCostPanel {
-  padding-top: 4px;
+  padding: 4px;
   height: 90px;
 }
 
@@ -33,10 +34,10 @@
 #DescLabel {
   horizontal-align: center;
   vertical-align: top;
-  margin-top: 45px;
   color: white;
-  font-size: 14px;
-  visibility: collapse;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  visibility: visible;
 }
 
 #UnitTint {
