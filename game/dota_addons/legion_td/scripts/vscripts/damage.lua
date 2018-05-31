@@ -62,7 +62,7 @@ function Game:DamageFilter(filterTable)
             end
         end
         filterTable["damage"] = filterTable["damage"] * (damagePercent / 100.0)
-        print("filtered magic damage: " .. filterTable["damage"] .. " (" .. damagePercent .. " percent)")
+        -- print("filtered magic damage: " .. filterTable["damage"] .. " (" .. damagePercent .. " percent)")
     end
     
     return true

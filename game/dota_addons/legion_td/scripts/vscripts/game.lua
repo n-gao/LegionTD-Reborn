@@ -17,6 +17,7 @@ CHECKING_INTERVALL = 1
 function Game.new()
     local self = Game()
     Game = self
+    self.precached = {}
     self.storage = require("libs/storage")
     ListenToGameEvent('npc_spawned', Dynamic_Wrap(Game, 'OnNPCSpawned'), self)
     ListenToGameEvent('player_connect_full', Dynamic_Wrap(Game, 'OnConnectFull'), self)
@@ -66,6 +67,7 @@ function Game.new()
     GameRules:SetSafeToLeave(false)
     GameRules:SetStrategyTime(0)
     GameRules:SetHeroSelectionTime(45)
+
     return self
 end
 
@@ -249,6 +251,8 @@ function Game:ReadRoundConfiguration(kv)
         print("Round " .. i .. " loaded: " .. roundType)
         i = i + 1
     end
+    self:PrecacheRounds()
+    self:PrecacheIncomeUnits()
 end
 
 
@@ -1338,4 +1342,45 @@ function HookSetWinnerFunction(callback)
         callback(gameRules, team)
         oldSetGameWinner(gameRules, team)
     end
+end
+
+function Game:PrecacheRounds()
+    for _, round in pairs(self.rounds) do
+        if round.spawners ~= nil then
+            for _, spawner in pairs(round.spawners) do
+                self:PrecacheUnit(spawner.npcName)
+            end
+        end
+    end
+end
+
+function Game:PrecacheIncomeUnits()
+    print("Precaching for fraction incomeunits")
+    units = {}
+    i = 1
+    for name, table in pairs(self.UnitKV) do
+        if string.find(name, "incomeunit") then
+            self:PrecacheUnit(name)
+        end
+    end
+end
+
+function Game:PrecacheFraction(fraction)
+    print("Precaching for fraction " .. fraction)
+    units = {}
+    i = 1
+    for name, table in pairs(self.UnitKV) do
+        if string.find(name, fraction) then
+            self:PrecacheUnit(name)
+        end
+    end
+end
+
+function Game:PrecacheUnit(unitname)
+    if self.precached[unitname] ~= nil then
+        return
+    end
+    print("Precaching " .. unitname)
+    self.precached[unitname] = true
+    PrecacheUnitByNameAsync(unitname, function(...) end)
 end

@@ -60,7 +60,7 @@
   text-transform: uppercase;
   font-size: 22px;
   letter-spacing: 1px;
-  color: #667273;
+  color: #a6b2b3;
 }
 
 #Options
@@ -70,13 +70,19 @@
   flow-children: down;
 }
 
+#Options ToggleButton Label
+{
+  color: #a6b2b3;
+}
+
 #TeamsListWrapper
 {
   width: 400px;
   height: 100%;
-  background-color: gradient( linear, 0% 0%, 0.1% 0%, from( #111111 ), color-stop( 0.01, #202327 ), color-stop( 0.2, #141619ff ), to( #000000dd ) );
+  background-color: gradient( linear, 0% 0%, 0.1% 0%, from( #00000000 ), color-stop( 0.1, #202327 ), color-stop( 0.1, #141619ff ), to( #000000ee ) );
   animation-name: TeamsListAppear;
   animation-duration: 0.75s;
+  box-shadow: #00000088 0 0 16px 0;
 }
 
 #TeamsList
@@ -126,7 +132,7 @@
   text-transform: uppercase;
   font-size: 22px;
   letter-spacing: 1px;
-  color: #667273;
+  color: #a6b2b3;
   //margin-top: 16px;
   margin-left: 8px;
 }
@@ -549,13 +555,14 @@
 }
 
 
-
 .TeamSelectTeam
 {
+  margin-bottom: 6px;
+  margin-top: 6px;
   width: 100%;
-  margin: 6px;
   background-color: gradient( linear, 100% 0%, 100% 100%, from( #272b30 ), color-stop( 0.6, #181a1e ), to( #181a1e ) );
 
+  box-shadow: fill #00000029 0px 0px 16px 0px;
   //box-shadow: fill #44444430 -5px -5px 9px 9px;
   //border-top: 1px solid #ffffff10;
   //border-right: 1px solid #000000ff;
@@ -565,7 +572,7 @@
 
 .TeamSelectTeam.local_player_on_this_team
 {
-  box-shadow: fill #ffffff09 -6px -3px 6px 6px;
+  box-shadow: fill #ffffff09 0px 0px 16px 0px;
   //box-shadow: -3px -3px 12px 6px #FFFFFF22;
 }
 

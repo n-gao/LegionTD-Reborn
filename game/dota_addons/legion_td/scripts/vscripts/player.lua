@@ -161,13 +161,17 @@ function Player:RemoveEntitie()
 end
 
 
+function Player:Precache()
+    fraction = self:GetFraction()
+    Game:PrecacheFraction(fraction)
+end
+
 
 --sets hero to player
 function Player:SetNPC(npc)
     self.hero = npc
-    print(self.hero:GetUnitName())
-    print(self:GetFraction())
     self.playerID = self:GetPlayerID()
+    self:Precache()
     npc.player = self
     self.teamnumber = self.hero:GetTeamNumber()
     print("new player set to team " .. self.teamnumber)
