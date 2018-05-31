@@ -554,13 +554,11 @@
   visibility: visible;
 }
 
-.TeamSelectTeamWrapper {
-  margin-bottom: 6px;
-  margin-top: 6px;
-}
 
 .TeamSelectTeam
 {
+  margin-bottom: 6px;
+  margin-top: 6px;
   width: 100%;
   background-color: gradient( linear, 100% 0%, 100% 100%, from( #272b30 ), color-stop( 0.6, #181a1e ), to( #181a1e ) );
 

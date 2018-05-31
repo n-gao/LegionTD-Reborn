@@ -6,7 +6,7 @@
 	<scripts>
 		<include src="file://{resources}/scripts/custom_game/team_select_team.js" />
 	</scripts>
-	<Panel class="TeamSelectTeamWrapper">
+	<!-- <Panel class="TeamSelectTeamWrapper"> -->
 		<Button class="TeamSelectTeam" onactivate="OnJoinTeamPressed()">
 			<Panel id="TeamBackgroundGradient" />
 			<Panel id="TeamBackgroundGradientHighlight" />
@@ -19,5 +19,5 @@
 				<Panel id="TeamPlayerDivider" />
 				<Panel id="PlayerList" /></Panel>
 		</Button>
-	</Panel>
+	<!-- </Panel> -->
 </root>
