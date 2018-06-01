@@ -2634,5 +2634,70 @@
 
 		"DOTA_Tooltip_modifier_repel_datadriven"                                          "Repel"
 		"DOTA_Tooltip_modifier_repel_datadriven_Description"                              ""
+
+		"DOTA_Tooltip_ability_fireelemental_flame_guard"                                  "Flame Guard"
+		"DOTA_Tooltip_ability_fireelemental_flame_guard_Description"                      ""
+		"DOTA_Tooltip_ability_fireelemental_flame_guard_duration"                         "DURATION:"
+		"DOTA_Tooltip_ability_fireelemental_flame_guard_radius"                           "RADIUS:"
+		"DOTA_Tooltip_ability_fireelemental_flame_guard_absorb_amount"                    "ABSORB AMOUNT:"
+		"DOTA_Tooltip_ability_fireelemental_flame_guard_tick_interval"                    "TICK INTERVAL:"
+		"DOTA_Tooltip_ability_fireelemental_flame_guard_damage_per_second"                "DAMAGE PER SECOND:"
+
+		"DOTA_Tooltip_ability_firewarrior_sleight_of_fist"                                "Sleight Of Fist"
+		"DOTA_Tooltip_ability_firewarrior_sleight_of_fist_Description"                    ""
+		"DOTA_Tooltip_ability_firewarrior_sleight_of_fist_radius"                         "RADIUS:"
+		"DOTA_Tooltip_ability_firewarrior_sleight_of_fist_bonus_hero_damage"              "BONUS HERO DAMAGE:"
+		"DOTA_Tooltip_ability_firewarrior_sleight_of_fist_attack_interval"                "ATTACK INTERVAL:"
+		"DOTA_Tooltip_ability_firewarrior_sleight_of_fist_creep_damage_penalty"           "DAMAGE PENALTY:"
+
+		"DOTA_Tooltip_ability_thunderelemental_diabolic_edict"                            "Thunderelemental Diabolic Edict"
+		"DOTA_Tooltip_ability_thunderelemental_diabolic_edict_Description"                ""
+		"DOTA_Tooltip_ability_thunderelemental_diabolic_edict_num_explosions"             "NUM EXPLOSIONS:"
+		"DOTA_Tooltip_ability_thunderelemental_diabolic_edict_radius"                     "RADIUS:"
+		"DOTA_Tooltip_ability_thunderelemental_diabolic_edict_tower_bonus"                "TOWER BONUS:"
+		"DOTA_Tooltip_ability_thunderelemental_diabolic_edict_explosion_delay"            "EXPLOSION DELAY:"
+
+		"DOTA_Tooltip_ability_thundergod_arc_lightning"                                   "Thundergod Arc Lightning"
+		"DOTA_Tooltip_ability_thundergod_arc_lightning_Description"                       ""
+		"DOTA_Tooltip_ability_thundergod_arc_lightning_radius"                            "RADIUS:"
+		"DOTA_Tooltip_ability_thundergod_arc_lightning_jump_count"                        "JUMP COUNT:"
+		"DOTA_Tooltip_ability_thundergod_arc_lightning_jump_delay"                        "JUMP DELAY:"
+
+		"DOTA_Tooltip_ability_voidelemental_brain_sap"                                    "Voidelemental Brain Sap"
+		"DOTA_Tooltip_ability_voidelemental_brain_sap_Description"                        ""
+		"DOTA_Tooltip_ability_voidelemental_brain_sap_tooltip_brain_sap_heal_amt"         "TOOLTIP BRAIN SAP HEAL AMT:"
+
+		"DOTA_Tooltip_ability_voidgod_black_hole"                                         "Black Hole"
+		"DOTA_Tooltip_ability_voidgod_black_hole_Description"                             ""
+		"DOTA_Tooltip_ability_voidgod_black_hole_pull_speed"                              "PULL SPEED:"
+		"DOTA_Tooltip_ability_voidgod_black_hole_far_radius"                              "FAR RADIUS:"
+		"DOTA_Tooltip_ability_voidgod_black_hole_near_radius"                             "NEAR RADIUS:"
+		"DOTA_Tooltip_ability_voidgod_black_hole_damage"                                  "DAMAGE:"
+		"DOTA_Tooltip_ability_voidgod_black_hole_duration"                                "DURATION:"
+
+		"DOTA_Tooltip_ability_voidwarrior_time_lock"                                      "Time Lock"
+		"DOTA_Tooltip_ability_voidwarrior_time_lock_Description"                          ""
+		"DOTA_Tooltip_ability_voidwarrior_time_lock_duration"                             "DURATION:"
+		"DOTA_Tooltip_ability_voidwarrior_time_lock_chance_pct"                           "CHANCE PCT:"
+		"DOTA_Tooltip_ability_voidwarrior_time_lock_bonus_damage"                         "BONUS DAMAGE:"
+
+		"DOTA_Tooltip_ability_watergod_ice_vortex"                                        "Ice Vortex"
+		"DOTA_Tooltip_ability_watergod_ice_vortex_Description"                            ""
+		"DOTA_Tooltip_ability_watergod_ice_vortex_radius"                                 "RADIUS:"
+		"DOTA_Tooltip_ability_watergod_ice_vortex_movement_speed_pct"                     "MOVEMENT SPEED PCT:"
+		"DOTA_Tooltip_ability_watergod_ice_vortex_spell_resist_pct"                       "SPELL RESIST PCT:"
+		"DOTA_Tooltip_ability_watergod_ice_vortex_duration"                               "DURATION:"
+
+		"DOTA_Tooltip_ability_ancienthulk_rabid"                                          "Rabid"
+		"DOTA_Tooltip_ability_ancienthulk_rabid_Description"                              ""
+		"DOTA_Tooltip_ability_ancienthulk_rabid_bonus_attack_speed"                       "BONUS ATTACK SPEED:"
+		"DOTA_Tooltip_ability_ancienthulk_rabid_bonus_move_speed"                         "BONUS MOVE SPEED:"
+		"DOTA_Tooltip_ability_ancienthulk_rabid_rabid_duration"                           "RABID DURATION:"
+
+		"DOTA_Tooltip_ability_ursa_fury_swipes_datadriven"                                "Swipes"
+		"DOTA_Tooltip_ability_ursa_fury_swipes_datadriven_Description"                    ""
+		"DOTA_Tooltip_ability_ursa_fury_swipes_datadriven_bonus_reset_time"               "RESET TIME:"
+		"DOTA_Tooltip_ability_ursa_fury_swipes_datadriven_damage_per_stack"               "DAMAGE PER STACK:"
+
 	}
 }
