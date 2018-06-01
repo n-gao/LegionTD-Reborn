@@ -44,7 +44,7 @@ end
 BehaviorVortex = {}
 
 function BehaviorVortex:Evaluate()
-    self.VortexAbility = thisEntity:FindAbilityByName("ancient_apparition_ice_vortex")
+    self.VortexAbility = thisEntity:FindAbilityByName("watergod_ice_vortex")
     local desire = 0
     local target
 

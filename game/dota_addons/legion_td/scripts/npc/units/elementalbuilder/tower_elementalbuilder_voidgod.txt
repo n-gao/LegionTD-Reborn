@@ -11,7 +11,7 @@
     "Ability4"  "sell"
     "Ability3"  "ability_empty_3"
     "Ability2"  "ability_empty_2"
-    "Ability1"  "enigma_black_hole"
+    "Ability1"  "voidgod_black_hole"
     "ArmorPhysical" "5"
     "MagicalResistance" "0"
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"

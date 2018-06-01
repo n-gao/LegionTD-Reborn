@@ -9,7 +9,7 @@
     "HealthBarOffset"   "150"
     "Vscripts"  "ai/elementalbuilder/ai_fireelemental.lua"
     "Ability1"  "elementalbuilder_upgrade_firegod"
-    "Ability2"  "ember_spirit_flame_guard"
+    "Ability2"  "fireelemental_flame_guard"
     "Ability3"  "ability_empty_3"
     "Ability4"  "sell"
     "ArmorPhysical" "2"

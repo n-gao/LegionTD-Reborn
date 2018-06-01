@@ -43,7 +43,7 @@ end
 BehaviorBH = {}
 
 function BehaviorBH:Evaluate()
-    self.BHAbility = thisEntity:FindAbilityByName("enigma_black_hole")
+    self.BHAbility = thisEntity:FindAbilityByName("voidgod_black_hole")
     local desire = 0
     local target
 

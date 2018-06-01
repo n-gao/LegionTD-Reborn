@@ -11,7 +11,7 @@
     "Ability4"  "sell"
     "Ability3"  "ability_empty_3"
     "Ability2"  "ability_empty_2"
-    "Ability1"  "ember_spirit_sleight_of_fist"
+    "Ability1"  "firewarrior_sleight_of_fist"
     "ArmorPhysical" "4"
     "MagicalResistance" "25"
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"

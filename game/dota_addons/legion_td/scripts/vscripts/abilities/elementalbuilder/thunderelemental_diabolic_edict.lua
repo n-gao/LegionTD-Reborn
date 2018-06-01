@@ -10,7 +10,7 @@
 ]]
 
 
-function diabolic_edict_start(keys)
+function diabolic_edict_start( keys )
     local caster = keys.caster
     local ability = keys.ability
 
@@ -20,18 +20,16 @@ function diabolic_edict_start(keys)
     ability.tower_bonus = ability:GetLevelSpecialValueFor("tower_bonus", ability:GetLevel() - 1)
     ability.damage = ability:GetAbilityDamage()
 
-    diabolic_edict_repeat({
-        caster = caster,
-        num_explosions = ability.num_explosions,
-        explosion_delay = ability.explosion_delay,
-        radius = ability.radius,
-        damage = ability.damage,
-        tower_bonus = ability.tower_bonus,
-        ability = ability
-    })
+    diabolic_edict_repeat({ caster=caster,
+        num_explosions=ability.num_explosions,
+        explosion_delay=ability.explosion_delay,
+        radius=ability.radius,
+        damage=ability.damage,
+        tower_bonus=ability.tower_bonus,
+        ability=ability })
 end
 
-function diabolic_edict_repeat(params)
+function diabolic_edict_repeat( params )
     if params.num_explosions == 0 then
         StopSoundEvent("Hero_Leshrac.Diabolic_Edict_lp", params.caster)
         return
@@ -59,8 +57,8 @@ function diabolic_edict_repeat(params)
     local target = unitsInRange[1]
 
     local pulse = ParticleManager:CreateParticle("particles/units/heroes/hero_leshrac/leshrac_diabolic_edict.vpcf", PATTACH_WORLDORIGIN, params.caster)
-
-    -- if target is nil then pick a random spot to do explosion,
+    
+    -- if target is nil then pick a random spot to do explosion, 
     -- otherwise do it on target and cause damage
     if target == nil then
         x, y = GetRandomXYInCircle(params.radius)
@@ -74,7 +72,7 @@ function diabolic_edict_repeat(params)
         --tower_bonus
         local damage = params.damage
         if target:IsTower() then
-            damage = damage * (1 + params.tower_bonus / 100)
+            damage = damage * (1 + params.tower_bonus/100)
         end
 
         local damageTable = {
@@ -82,8 +80,7 @@ function diabolic_edict_repeat(params)
             victim = target,
             damage = damage,
             damage_type = DAMAGE_TYPE_PHYSICAL,
-            ability = params.ability
-        }
+            ability = params.ability}
         ApplyDamage(damageTable)
     end
     params.caster:EmitSound("Hero_Leshrac.Diabolic_Edict")
@@ -91,10 +88,11 @@ function diabolic_edict_repeat(params)
     params.num_explosions = params.num_explosions - 1
 
     -- run the function again in jump_delay seconds
-    Timers:CreateTimer(params.explosion_delay,
+    Timers:CreateTimer(params.explosion_delay, 
         function()
-            diabolic_edict_repeat(params)
-        end)
+            diabolic_edict_repeat( params )
+        end
+    )
 end
 
 function GetRandomXYInCircle(radius)

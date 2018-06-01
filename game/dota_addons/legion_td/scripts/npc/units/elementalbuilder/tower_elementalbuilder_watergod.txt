@@ -11,7 +11,7 @@
     "Ability4"  "sell"
     "Ability3"  "ability_empty_3"
     "Ability2"  "ability_empty_2"
-    "Ability1"  "ancient_apparition_ice_vortex"
+    "Ability1"  "watergod_ice_vortex"
     "ArmorPhysical" "3"
     "MagicalResistance" "0"
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"

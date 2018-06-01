@@ -8,7 +8,7 @@
     "Level" "1"
     "HealthBarOffset"   "140"
     "Vscripts"	"ai/waves/ai_ancienthulk.lua"
-    "Ability1"  "lone_druid_rabid"
+    "Ability1"  "ancienthulk_rabid"
     "ArmorPhysical" "13"
     "MagicalResistance" "30"
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"

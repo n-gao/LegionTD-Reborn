@@ -12,7 +12,6 @@
     "Ability3"  "ability_empty_3"
     "Ability2"  "ability_empty_2"
     "Ability1"  "tiny_avalanche"
-    "Ability8"  "tiny_grow"
     "ArmorPhysical" "5"
     "MagicalResistance" "25"
     "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"

@@ -9,7 +9,7 @@
     "HealthBarOffset"   "150"
     "Vscripts"  "ai/elementalbuilder/ai_thunderelemental.lua"
     "Ability1"  "elementalbuilder_upgrade_thundergod"
-    "Ability2"  "leshrac_diabolic_edict"
+    "Ability2"  "thunderelemental_diabolic_edict"
     "Ability3"  "ability_empty_3"
     "Ability4"  "sell"
     "ArmorPhysical" "3"

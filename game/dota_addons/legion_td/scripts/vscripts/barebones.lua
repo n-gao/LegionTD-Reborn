@@ -29,6 +29,11 @@ function GameMode:InitGameMode()
     GameRules:SetHeroMinimapIconScale(MINIMAP_ICON_SIZE)
     GameRules:SetCreepMinimapIconScale(MINIMAP_CREEP_ICON_SIZE)
     GameRules:SetRuneMinimapIconScale(MINIMAP_RUNE_ICON_SIZE)
+
+    -- Disable runes
+    for rune=1, 12, 1 do
+        GameRules:GetGameModeEntity():SetRuneEnabled(rune, false)
+    end
     print('[BAREBONES] GameRules set')
     
     -- Listeners - Event Hooks

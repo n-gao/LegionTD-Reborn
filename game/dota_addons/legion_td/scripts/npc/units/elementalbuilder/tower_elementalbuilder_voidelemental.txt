@@ -9,7 +9,7 @@
     "HealthBarOffset"   "150"
     "Vscripts"  "ai/elementalbuilder/ai_voidelemental.lua"
     "Ability1"  "elementalbuilder_upgrade_voidgod"
-    "Ability2"  "bane_brain_sap"
+    "Ability2"  "voidelemental_brain_sap"
     "Ability3"  "ability_empty_3"
     "Ability4"  "sell"
     "ArmorPhysical" "1"

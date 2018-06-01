@@ -9,7 +9,7 @@
     "HealthBarOffset"   "150"
     "Vscripts"  "ai/ai_default.lua"
     "Ability1"  "elementalbuilder_upgrade_earthgod"
-    "Ability2"  "sandking_caustic_finale"
+    "Ability2"  "earthelemental_caustic_finale"
     "Ability3"  "ability_empty_3"
     "Ability4"  "sell"
     "ArmorPhysical" "4"

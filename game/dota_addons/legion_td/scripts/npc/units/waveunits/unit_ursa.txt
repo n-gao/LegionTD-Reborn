@@ -8,7 +8,7 @@
     "Level" "1"
     "HealthBarOffset"   "140"
     "Vscripts"  "ai/ai_default.lua"
-    "Ability1"  "ursa_fury_swipes"
+    "Ability1"  "ursa_fury_swipes_datadriven"
     "ArmorPhysical" "20"
     "MagicalResistance" "15"
     "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"

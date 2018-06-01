@@ -44,7 +44,7 @@ end
 BehaviorFist = {}
 
 function BehaviorFist:Evaluate()
-    self.FistAbility = thisEntity:FindAbilityByName("ember_spirit_sleight_of_fist")
+    self.FistAbility = thisEntity:FindAbilityByName("firewarrior_sleight_of_fist")
     local desire = 0
     local target
 
