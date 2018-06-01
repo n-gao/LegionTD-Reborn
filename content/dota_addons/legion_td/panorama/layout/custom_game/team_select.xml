@@ -39,6 +39,10 @@
 							</Panel>
 						</Panel> 
 					</Panel>
+					<Panel id="Discord">
+						<Image id="DiscordImage" src="file://{images}/custom_game/game_info/Discord.png" onactivate="ExternalBrowserGoToURL('https://discord.gg/A6Xep26');"/>
+						<!-- <Label id="DiscordText" text="#discord_builder_info"/> -->
+					</Panel>
 				</Panel>
 			</Panel>
 			<!--Game Info and Unassigned players, right hand panel-->

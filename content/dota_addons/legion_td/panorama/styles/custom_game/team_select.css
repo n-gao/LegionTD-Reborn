@@ -19,18 +19,34 @@
 
 #Discord
 {
-  width: 100%;
+  /* width: 100%; */
+  horizontal-align: center;
+  width: 300px;
+  height: 130px;
   flow-children: down;
 }
 
-#DiscordImage2
+#DiscordImage:hover
 {
+  width: 273px;
+  height: 84px;
+  box-shadow: #000000ff 0px 0px 16px 0px;
+}
+
+#DiscordImage
+{
+  box-shadow: #00000044 0px 0px 8px 0px;
+  border-radius: 8px;
 	width: 260px;
   height: 80px;
   horizontal-align: center;
+  vertical-align: middle;
+  transition-property: height, width, box-shadow;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
 }
 
-#DiscordText2
+#DiscordText
 {
   padding-top: 8px;
   horizontal-align: center;
@@ -568,11 +584,13 @@
   //border-right: 1px solid #000000ff;
   //border-left: 1px solid #ffffff10;
   //border-bottom: 1px solid #000000ff;
+  transition-property: box-shadow;
+  transition-duration: 0.3s;
 }
 
 .TeamSelectTeam.local_player_on_this_team
 {
-  box-shadow: fill #ffffff09 0px 0px 16px 0px;
+  box-shadow: fill #eeeeee09 0px 0px 16px 0px;
   //box-shadow: -3px -3px 12px 6px #FFFFFF22;
 }
 
@@ -585,23 +603,32 @@
 {
   width: 100%;
   height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition-property: background-color, opacity;
+  transition-duration: 0.15s;
 }
 
 .teams_unlocked .TeamSelectTeam:hover #TeamBackgroundGradient
 {
-  visibility: collapse;
+  /* visibility: collapse; */
+  opacity: 0;
 }
 
 #TeamBackgroundGradientHighlight
 {
   width: 100%;
   height: 100%;
-  visibility: collapse;
+  /* visibility: collapse; */
+  opacity: 0;
+  transition-property: background-color, opacity;
+  transition-duration: 0.15s;
 }
 
 .teams_unlocked .TeamSelectTeam:hover #TeamBackgroundGradientHighlight
 {
-  visibility: visible;
+  /* visibility: visible; */
+  opacity: 1;
 }
 
 #TeamGroup
