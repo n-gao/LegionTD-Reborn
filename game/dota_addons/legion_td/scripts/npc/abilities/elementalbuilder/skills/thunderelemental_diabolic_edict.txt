@@ -40,7 +40,7 @@
 	
 	// Damage.
 	//-------------------------------------------------------------------------------------------------------------
-	"AbilityDamage"					"40"
+	"AbilityDamage"					"45"
 	"AbilityDuration"				"10"
 	
 	// Special
@@ -50,7 +50,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"num_explosions"		"30"
+			"num_explosions"		"40"
 		}
 		
 		"02"

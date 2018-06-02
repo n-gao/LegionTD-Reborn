@@ -55,7 +55,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"creep_damage_penalty"			"-20"
+				"creep_damage_penalty"			"-25"
 			}
 	}
 	

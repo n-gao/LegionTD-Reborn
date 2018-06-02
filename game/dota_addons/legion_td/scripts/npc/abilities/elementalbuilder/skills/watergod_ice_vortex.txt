@@ -52,12 +52,12 @@
 		"02"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"movement_speed_pct"	"-15"
+			"movement_speed_pct"	"-35"
 		}
 		"03"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"spell_resist_pct"		"-15"
+			"spell_resist_pct"		"-35"
 		}
 		"04"
 		{

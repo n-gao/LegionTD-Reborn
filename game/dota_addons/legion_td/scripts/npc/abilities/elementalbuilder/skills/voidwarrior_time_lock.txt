@@ -43,7 +43,7 @@
 		"03"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"chance_pct"			"25"
+			"chance_pct"			"35"
 		}
 		"04"
 		{
