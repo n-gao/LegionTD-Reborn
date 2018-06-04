@@ -12,11 +12,12 @@
 {
 	// General
 	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"				"ability_datadriven"
+	"BaseClass"						"ability_datadriven"
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 	"AbilityTextureName"			"ember_spirit_flame_guard"
+	"MaxLevel"						"1"
 	
 	// Casting
 	//-------------------------------------------------------------------------------------------------------------
@@ -165,7 +166,7 @@
 						"Damage"
 						{
 							"Target"		"TARGET"
-							"Damage"		"%damage_per_second * %tick_interval"
+							"Damage"		"40"
 							"Type"			"DAMAGE_TYPE_MAGICAL"
 						}
 					}
