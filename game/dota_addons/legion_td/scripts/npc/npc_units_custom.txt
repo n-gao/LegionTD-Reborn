@@ -1,7 +1,7 @@
 "DOTAUnits"
 {
+    "tower_assassinbuilder_alpha_predator"
     {
-        // Attack
         "BaseClass"                 "npc_dota_creature"
         "Model"                     "models/heroes/nerubian_assassin/nerubian_assassin.vmdl"
         "SoundSet"                  "Hero_NyxAssassin"
