@@ -25,7 +25,7 @@
         "03"
         {
             "var_type"                      "FIELD_INTEGER"
-            "damage_per_stack"              "15"
+            "damage_per_stack"              "18"
         }
     }
 
