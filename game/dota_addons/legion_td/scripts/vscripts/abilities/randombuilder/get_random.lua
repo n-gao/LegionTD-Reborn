@@ -57,6 +57,4 @@ function GetRandomUnit(event)
     ability:SetAbilityIndex(index)
     ability.player = event.caster.player
     ability:SetLevel(1)
-    -- Precaching
-    Game:PrecacheUnit(UnitTable[ability:GetSpecialValueFor("unitID")])
 end

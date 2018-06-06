@@ -31,9 +31,7 @@ function Precache(context)
 	
     print("[BAREBONES] Performing pre-load precache")
     
-    for _, r in pairs(RequiredUnits) do
-        PrecacheUnitByNameSync(r, context)
-    end
+    Precacher(10):PrecacheEverything(context)
 end
 
 -- Create the game mode when we activate

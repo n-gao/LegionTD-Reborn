@@ -1,3 +1,59 @@
+Precacher = Precacher or class({
+    constructor = function(self, numWaves)
+        self.UnitKV = LoadKeyValues("scripts/npc/npc_units_custom.txt")
+        self.HeroKV = LoadKeyValues("scripts/npc/npc_heroes_custom.txt")
+        self.AbilityKV = LoadKeyValues("scripts/npc/npc_abilities_custom.txt")
+        self.UnitTable = dofile("config_unit")
+        self.MapKV = LoadKeyValues("scripts/maps/" .. GetMapName() .. ".txt")
+        self.numWaves = numWaves
+    end
+})
+
+function Precacher:PrecacheEverything(context)
+    for name, table in pairs(self.AbilityKV) do
+        if table.AbilitySpecial ~= nil then
+            for _, entry in pairs(table.AbilitySpecial) do
+                for key, value in pairs(entry) do
+                    if key == 'unitID' then
+                        unitName = self.UnitTable[value]
+                        print('Precaching ' .. unitName)
+                        if string.find(name, 'spawn') then
+                            PrecacheUnitByNameSync(unitName, context)
+                        elseif string.find(name, 'upgrade') then
+                            PrecacheUnitByNameAsync(unitName, function (...) end)
+                        end
+                    end
+                end
+            end
+        end
+    end
+    self:PrecacheRounds(context)
+    self:PrecacheIncomeUnits(context)
+    PrecacheUnitByNameSync('radiant_king', context)
+    PrecacheUnitByNameSync('dire_king', context)
+end
+
+function Precacher:PrecacheRounds(context)
+    for i, round in pairs(self.MapKV.Rounds) do
+        if round.round_type == 'wave' then
+            if tonumber(i) <= self.numWaves then
+                PrecacheUnitByNameSync(round.Unit.NPCName, context)
+            else
+                PrecacheUnitByNameAsync(round.Unit.NPCName, function (...) end)
+            end
+        end
+    end
+end
+
+function Precacher:PrecacheIncomeUnits(context)
+    print("Precaching incomeunits")
+    for name, table in pairs(self.UnitKV) do
+        if string.find(name, "incomeunit") then
+            PrecacheUnitByNameSync(name, context)
+        end
+    end
+end
+
 RequiredUnits = {
         -- Bosses
         "radiant_king",
