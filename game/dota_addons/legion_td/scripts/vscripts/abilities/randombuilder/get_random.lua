@@ -38,7 +38,7 @@ SpawnAbilities.tier5 = {
     "humanbuilder_spawn_lieutenant",
     "elementalbuilder_spawn_voidbender",
     "assassinbuilder_spawn_jester",
-	"naturebuilder_spawn_hyena"
+	"naturebuilder_spawn_hyena",
 	"undeadbuilder_spawn_vampire",
 }
 
