@@ -44,6 +44,10 @@ function diabolic_edict_repeat( params )
     EmitSoundOn("Hero_Leshrac.Lightning_Storm", params.initial_target)]]
 
     -- find next target (closest one to previous one)
+    if params.caster:IsNull() then
+        return
+    end
+
     unitsInRange = FindUnitsInRadius(params.caster:GetTeamNumber(),
         params.caster:GetAbsOrigin(),
         nil,
