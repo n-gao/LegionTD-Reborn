@@ -29,7 +29,6 @@ function Player.new(plyEntitie, userID)
     self.killedUnits = {}
     self.leakedUnits = {}
     self.sendUnits = {}
-    self.calledAbandon = false
     return self
 end
 
@@ -129,9 +128,6 @@ function Player:SetPlayerEntity(plyEntitie, userID)
     self.plyEntitie = plyEntitie
     self.userID = userID
     plyEntitie.myPlayer = self
-    if self.lane and not self.abandoned then
-        self.lane.isActive = true
-    end
     for _, unit in pairs(self.units) do
         unit:GivePlayerControl()
     end
@@ -141,7 +137,7 @@ end
 
 
 function Player:ShouldSpawn()
-    return self.lane and not self:HasAbandoned() and self.hero and (self.roundLeft == nil or Game.gameRound - self.roundLeft < 2 or Game:GetCurrentRound().isDuelRound)
+    return self.lane ~= nil and self:IsActive() and not self:HasAbandoned() and self.hero ~= nil
 end
 
 
@@ -155,9 +151,6 @@ function Player:RemoveEntitie()
     self.leaksPenalty = 25
     self.leaked = true
     self.roundLeft = Game.gameRound
-    if self.lane then
-        self.lane.isActive = false
-    end
 end
 
 
@@ -186,7 +179,6 @@ function Player:SetNPC(npc)
     self.lane = Game.lanes["" .. laneID]
     self.lane.player = self
     self.lane.isUsed = true
-    self.lane.isActive = true
     self:PrepareBuilding(self.lane.mainBuilding)
     self:PrepareBuilding(self.lane.foodBuilding)
     
@@ -502,7 +494,12 @@ function Player:GetNetworth()
 end
 
 function Player:IsActive()
-    return self.lane and self.lane.isActive
+    return self:IsConnected() and not self:HasAbandoned()
+    -- return self.lane and self.lane.isActive
+end
+
+function Player:IsConnected()
+    return PlayerResource:GetConnectionState(self:GetPlayerID()) == DOTA_CONNECTION_STATE_CONNECTED
 end
 
 function Player:Abandon()
@@ -519,7 +516,7 @@ function Player:Abandon()
     print("plus units: " .. goldValue)
     distributePlayers = {}
     for _, player in pairs(Game.players) do
-        if player:IsActive() == true and player.teamnumber == self.teamnumber then
+        if player:IsActive() and player.teamnumber == self.teamnumber then
             print("player " .. player:GetPlayerID() .. " (teamnumber " .. player.teamnumber .. ") is eligible!")
             table.insert(distributePlayers, player)
         end
@@ -529,9 +526,10 @@ function Player:Abandon()
     PlayerResource:SetGold(self:GetPlayerID(), 0, false)
     self.income = 0
     self.abandoned = true
+    GameRules:SendCustomMessage("<p color='red'>" .. PlayerResource:GetPlayerName(player:GetPlayerID()) .. " abandoned the game.</p>", 0, 0)
 end
 
 function Player:WantsToSkip()
-    if not self:IsActive() then return false end
+    if not self:IsActive() then return true end
     return self.wantsSkip or false
 end

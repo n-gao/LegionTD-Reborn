@@ -260,13 +260,6 @@ function WaveSpawner:SendIncomingUnits(team)
 end
 
 
-
-function SpawnOnLane(lane)
-    return lane.player and not lane.player:HasAbandoned() and lane.player.hero and (lane.player.roundLeft == nil or Game.gameRound - lane.player.roundLeft < 2)
-end
-
-
-
 function KingTrigger(trigger)
     local npc = trigger.activator
     if npc and not npc:IsRealHero() then
@@ -275,4 +268,8 @@ function KingTrigger(trigger)
             npc:RemoveModifierByName("modifier_phased")
         end
     end
+end
+
+function SpawnOnLane(lane)
+    return lane.player and lane.player:ShouldSpawn()
 end

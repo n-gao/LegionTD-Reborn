@@ -279,9 +279,9 @@ end
 
 function Game:GetAllActivePlayer()
     local result = {}
-    for _, player in pairs(self.players) do
+    for key, player in pairs(self.players) do
         if player:IsActive() then
-            result[_] = player
+            result[key] = player
         end
     end
     return result
@@ -359,7 +359,6 @@ end
 
 --Wird jede viertel Sekunde aufgerufen, überprüft Spielstatus
 function Game:OnThink()
-    self:CheckPlayerAbandon()
     if self.gameState == GAMESTATE_PREPARATION then
         --festlegung der vorbereitungszeit
         if self.nextRoundTime <= GameRules:GetGameTime() then
@@ -393,17 +392,6 @@ function Game:SetNextRoundTime()
         self:StartNextRound()
     end
 end
-
-
-function Game:CheckPlayerAbandon()
-    for _, player in pairs(self.players) do
-        if player.calledAbandon == false and (player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED) then
-            player.calledAbandon = true
-            GameRules:SendCustomMessage("<p color='red'>" .. PlayerResource:GetPlayerName(player:GetPlayerID()) .. " abandoned the game.</p>", 0, 0)
-        end
-    end
-end
-
 
 function Game:ResetSkip()
     for _, player in pairs(self.players) do
@@ -475,7 +463,7 @@ function Game:StartNextRound()
             player.leaked = false;
             player.leaksPenalty = 0;
         end
-        if player.lane and not player.lane.isActive then
+        if not player:IsActive() then
             player.missedSpawns = player.missedSpawns + 1
         end
         if not player.abandoned then
@@ -1072,11 +1060,11 @@ end
 --Alle Einheiten zum Spawnpunkt
 function Game:ResetUnitPositions()
     for _, player in pairs(self.players) do
-        if player:IsActive() then
+        -- if player:IsActive() then
             for __, unit in pairs(player.units) do
                 unit:ResetPosition()
             end
-        end
+        -- end
     end
 end
 
@@ -1104,22 +1092,22 @@ end
 --Stunt Einheiten
 function Game:LockUnits()
     for _, player in pairs(self.players) do
-        if player:IsActive() then
+        -- if player:IsActive() then
             for __, unit in pairs(player.units) do
                 unit:Lock()
             end
-        end
+        -- end
     end
 end
 
 --Respawnt Einheiten
 function Game:SpawnUnits()
     for _, player in pairs(self.players) do
-        if player:IsActive() then
+        -- if player:IsActive() then
             for __, unit in pairs(player.units) do
                 unit:Spawn()
             end
-        end
+        -- end
     end
 end
 
