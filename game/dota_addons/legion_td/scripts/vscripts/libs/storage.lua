@@ -6,6 +6,7 @@ FailureAttribute = "failure"
 
 Storage = {}
 Storage.serverURL = "http://localhost:5000/api/player"
+Storage.loggerURL = "http://localhost:3000/"
 
 Storage.app_id = 1
 
@@ -46,9 +47,12 @@ Storage.rankingPositions = {}
 ------ value: callback
 Storage.rankingPositionRequests = {}
 
+Storage.loggedErrors = {}
+
 function Storage:Init()
     local data = LoadKeyValues("scripts/vscripts/libs/storage_settings.kv")
     if data == nil then return end
+    Storage.loggerURL = data.logger
     Storage.serverURL = data.url
     Storage.app_id = data.customGameId
     if Convars:GetBool('developer') then
@@ -426,6 +430,10 @@ function Storage:GetMatchHistory(steamId, from, to, callback)
     end)
 end
 
+function Storage:SetLoggerUrl(url)
+    self.loggerURL = url
+end
+
 function Storage:SetServerURL(url)
     self.serverURL = url
 end
@@ -459,6 +467,21 @@ function Storage:SendHttpRequest(method, data, callback)
             --self.online = false
         end
         callback(result.Body)
+    end)
+end
+
+function Storage:LogError(error)
+    print("[STORAGE] Logging error")
+    print(error)
+
+    if self.loggedErrors[error] ~= nil then
+        return
+    end
+    self.loggedErrors[error] = true
+
+    local req = CreateHTTPRequestScriptVM('GET', self.loggerURL)
+    req:SetHTTPRequestGetOrPostParameter('log', error)
+    req:Send(function(result)
     end)
 end
 

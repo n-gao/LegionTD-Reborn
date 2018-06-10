@@ -31,7 +31,7 @@ function Precache(context)
 	
     print("[BAREBONES] Performing pre-load precache")
     
-    Precacher(10):PrecacheEverything(context)
+    Precacher(5):PrecacheEverything(context)
 end
 
 -- Create the game mode when we activate

@@ -67,6 +67,10 @@ function Game.new()
     GameRules:SetStrategyTime(0)
     GameRules:SetHeroSelectionTime(45)
 
+    Timers:SetErrorCallback(function(...)
+        self.storage:LogError(...)
+    end)
+
     return self
 end
 

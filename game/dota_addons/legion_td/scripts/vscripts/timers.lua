@@ -152,6 +152,10 @@ function Timers:HandleEventError(name, event, err)
         -- Store that we handled an error
         self.errorHandled = true
     end
+
+    if self.errorCallback ~= nil then
+        self.errorCallback(err)
+    end
 end
 
 function Timers:CreateTimer(name, args)
@@ -203,6 +207,10 @@ function Timers:RemoveTimers(killAll)
     end
     
     Timers.timers = timers
+end
+
+function Timers:SetErrorCallback(callback)
+    Timers.errorCallback = callback
 end
 
 Timers:start()
