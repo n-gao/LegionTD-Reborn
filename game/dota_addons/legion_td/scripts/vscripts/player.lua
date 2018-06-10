@@ -526,7 +526,7 @@ function Player:Abandon()
     PlayerResource:SetGold(self:GetPlayerID(), 0, false)
     self.income = 0
     self.abandoned = true
-    GameRules:SendCustomMessage("<p color='red'>" .. PlayerResource:GetPlayerName(player:GetPlayerID()) .. " abandoned the game.</p>", 0, 0)
+    GameRules:SendCustomMessage("<p color='red'>" .. PlayerResource:GetPlayerName(self:GetPlayerID()) .. " abandoned the game.</p>", 0, 0)
 end
 
 function Player:WantsToSkip()
