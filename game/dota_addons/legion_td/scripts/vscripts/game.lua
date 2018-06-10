@@ -477,7 +477,10 @@ function Game:StartNextRound()
     end
     self.gridBoxes:AddEffects(EF_NODRAW)
     self.nextRoundTime = nil
-    self.rounds[self.gameRound]:Begin()
+
+    local currRound = self:GetCurrentRound()
+    SafeCall(currRound.Begin, currRound)
+
     print "Game:StartNextround() about to call self:UnlockUnits()"
     self:UnlockUnits()
     self:SetGameState(GAMESTATE_FIGHTING)
@@ -1323,6 +1326,13 @@ function Game:GetAllBuilders()
         end
     end
     return result
+end
+
+function SafeCall(func, ...)
+    local status, error = pcall(func, ...)
+    if not status then
+        Game.storage:LogError(errro)
+    end
 end
 
 function HookSetWinnerFunction(callback)
