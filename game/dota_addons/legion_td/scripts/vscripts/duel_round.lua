@@ -171,7 +171,9 @@ function DuelRound:End()
     for key, val in pairs(self.eventHandles) do
         StopListeningToGameEvent(val)
     end
-    Timers.timers[self.unstuckTimer] = nil
+    if self.unstuckTimer ~= nil then
+        Timers.timers[self.unstuckTimer] = nil
+    end
     self.unstuckTimer = nil
     self.eventHandles = {}
     local highscores = {}

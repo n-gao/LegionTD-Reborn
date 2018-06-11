@@ -479,10 +479,10 @@ function Storage:LogError(error)
     end
     self.loggedErrors[error] = true
 
-    msg = "Round " ..  Game.gameRound .. ":" .. error
+    msg = "Round: " ..  Game.gameRound .. "; #Players: " .. #Game.players  ..  "; #Active: " .. #Game:GetAllActivePlayer() .. "; Error: "  .. error
 
     local req = CreateHTTPRequestScriptVM('GET', self.loggerURL)
-    req:SetHTTPRequestGetOrPostParameter('log', error)
+    req:SetHTTPRequestGetOrPostParameter('log', msg)
     req:Send(function(result)
     end)
 end
