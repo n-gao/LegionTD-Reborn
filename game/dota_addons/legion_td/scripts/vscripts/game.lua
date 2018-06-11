@@ -480,7 +480,7 @@ function Game:StartNextRound()
 
     SafeCall(function()
         local currRound = self:GetCurrentRound()
-        currRound:Begion()
+        currRound:Begin()
         self:UnlockUnits()
         self:SetGameState(GAMESTATE_FIGHTING)
     end)
@@ -1331,7 +1331,7 @@ end
 function SafeCall(func, ...)
     local status, error = pcall(func, ...)
     if not status then
-        Game.storage:LogError(errro)
+        Game.storage:LogError(error)
     end
 end
 
