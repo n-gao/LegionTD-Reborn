@@ -478,12 +478,12 @@ function Game:StartNextRound()
     self.gridBoxes:AddEffects(EF_NODRAW)
     self.nextRoundTime = nil
 
-    local currRound = self:GetCurrentRound()
-    SafeCall(currRound.Begin, currRound)
-
-    print "Game:StartNextround() about to call self:UnlockUnits()"
-    self:UnlockUnits()
-    self:SetGameState(GAMESTATE_FIGHTING)
+    SafeCall(function()
+        local currRound = self:GetCurrentRound()
+        currRound:Begion()
+        self:UnlockUnits()
+        self:SetGameState(GAMESTATE_FIGHTING)
+    end)
 end
 
 function Game:CheckTeamLeft(team)

@@ -16,6 +16,7 @@ function DuelRound.new(data, game, roundNumber)
     self.remainingUnitsDire = {}
     self.roundNumber = roundNumber
     self.playerscores = {}
+    self.eventHandles = {}
     for _, pl in pairs(self.game.players) do
         self.playerscores[pl:GetPlayerID()] = 0
     end
@@ -25,7 +26,7 @@ end
 
 
 function DuelRound:Begin()
-    self.EventHandles = {
+    self.eventHandles = {
         ListenToGameEvent("entity_killed", Dynamic_Wrap(DuelRound, "OnEntityKilled"), self)
     }
     self.unstuckTimer = Timers:CreateTimer(240, function()
@@ -167,12 +168,12 @@ function DuelRound:End()
     end
     
     
-    for key, val in pairs(self.EventHandles) do
+    for key, val in pairs(self.eventHandles) do
         StopListeningToGameEvent(val)
     end
     Timers.timers[self.unstuckTimer] = nil
     self.unstuckTimer = nil
-    self.EventHandles = {}
+    self.eventHandles = {}
     local highscores = {}
     local scorescopy = shallowcopy(self.playerscores)
     while true do

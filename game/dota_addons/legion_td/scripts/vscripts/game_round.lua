@@ -15,7 +15,7 @@ function GameRound:ReadRoundConfiguration(kv, game, roundNumber)
     self.winningTeam = DOTA_TEAM_NOTEAM
     self.spawners = {}
     self.remainingUnits = {}
-    self.EventHandles = {}
+    self.eventHandles = {}
     
     for key, val in pairs(kv) do
         if type(val) == "table" and val.NPCName then
@@ -32,7 +32,7 @@ function GameRound:Begin()
     print("Round " .. self.roundNumber .. " started.")
     self.remainingUnits = {}
     
-    self.EventHandles = {
+    self.eventHandles = {
         ListenToGameEvent("npc_spawned", Dynamic_Wrap(GameRound, "OnNPCSpawned"), self),
         ListenToGameEvent("entity_killed", Dynamic_Wrap(GameRound, "OnEntityKilled"), self)
     }
@@ -52,12 +52,12 @@ end
 
 
 function GameRound:End()
-    for key, val in pairs(self.EventHandles) do
+    for key, val in pairs(self.eventHandles) do
         StopListeningToGameEvent(val)
     end
     if Timers.timers[self.unstuckTimer] then Timers.timers[self.unstuckTimer] = nil end
     self.unstuckTimer = nil
-    self.EventHandles = {}
+    self.eventHandles = {}
     self:KillAll(true)
     if self.bounty then
         for _, player in pairs(self.game.players) do
