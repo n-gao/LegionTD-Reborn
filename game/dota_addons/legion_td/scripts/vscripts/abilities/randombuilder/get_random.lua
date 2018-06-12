@@ -31,15 +31,14 @@ SpawnAbilities.tier4 = {
     "naturebuilder_spawn_treant",
     "elementalbuilder_spawn_firebender",
     "assassinbuilder_spawn_lotus",
-    "naturebuilder_spawn_hyena",
 	"undeadbuilder_spawn_nether_drake",
 }
 
 SpawnAbilities.tier5 = {
     "humanbuilder_spawn_lieutenant",
     "elementalbuilder_spawn_voidbender",
-    "naturebuilder_spawn_centaur",
     "assassinbuilder_spawn_jester",
+	"naturebuilder_spawn_hyena",
 	"undeadbuilder_spawn_vampire",
 }
 
