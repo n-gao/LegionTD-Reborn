@@ -32,17 +32,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage"			    "50"
+				"damage"			    "30"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"		        "500"
+				"radius"		        "450"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"magic_resistance"	    "-15"
+				"magic_resistance"	    "-10"
 			}
 			"04"
 			{

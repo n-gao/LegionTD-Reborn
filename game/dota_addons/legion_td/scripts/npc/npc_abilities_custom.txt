@@ -15477,8 +15477,9 @@
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "FightRecapLevel"               "1"
         "BaseClass"                     "ability_lua"
-        "AbilityTextureName"                    "pudge_rot"
-        "ScriptFile"                        "abilities/undeadbuilder/butcher_rot.lua"
+        "AbilityTextureName"            "pudge_rot"
+        "ScriptFile"                    "abilities/undeadbuilder/butcher_rot.lua"
+        "MaxLevel"                      "1"
 
         // Precache
         //-------------------------------------------------------------------------------------------------------------
@@ -15490,7 +15491,7 @@
         
         // Casting
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastPoint"              "0 0 0 0"
+        "AbilityCastPoint"              "0"
 
 
         // Special
@@ -15500,7 +15501,7 @@
             "01"
             {
                 "var_type"              "FIELD_INTEGER"
-                "rot_radius"            "250"
+                "rot_radius"            "200"
             }
             "02"
             {
@@ -15510,12 +15511,12 @@
             "03"
             {
                 "var_type"              "FIELD_INTEGER"
-                "rot_slow"              "-20 -22 -24 -26"
+                "rot_slow"              "-15"
             }
             "04"
             {
                 "var_type"              "FIELD_INTEGER"
-                "rot_damage"                "35 60 85 110"
+                "rot_damage"                "20"
             }
         }
     }
@@ -17177,7 +17178,7 @@
     	"MaxLevel"						"1"
     	// Time		
     	//-------------------------------------------------------------------------------------------------------------
-    	"AbilityCooldown"				"10.0"
+    	"AbilityCooldown"				"11.0"
     	"AbilityDuration"				"15.0"
 
     	// Cost
@@ -17191,12 +17192,12 @@
     		"01"
     		{
     			"var_type"					"FIELD_INTEGER"
-    			"max_attacks"				"5"
+    			"max_attacks"				"4"
     		}
     		"02"
     		{
     			"var_type"					"FIELD_INTEGER"
-    			"attack_speed_bonus_pct"	"400"
+    			"attack_speed_bonus_pct"	"300"
     		}
     		"03"
     		{
@@ -17427,17 +17428,17 @@
     			"01"
     			{
     				"var_type"				"FIELD_FLOAT"
-    				"damage"			    "50"
+    				"damage"			    "30"
     			}
     			"02"
     			{
     				"var_type"				"FIELD_INTEGER"
-    				"radius"		        "500"
+    				"radius"		        "450"
     			}
     			"03"
     			{
     				"var_type"				"FIELD_INTEGER"
-    				"magic_resistance"	    "-15"
+    				"magic_resistance"	    "-10"
     			}
     			"04"
     			{
