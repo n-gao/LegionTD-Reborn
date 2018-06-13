@@ -10163,8 +10163,8 @@
         "BaseClass"             "npc_dota_creature"
         "Model"                 "models/items/undying/flesh_golem/corrupted_scourge_corpse_hive/corrupted_scourge_corpse_hive.vmdl"
         "ModelScale"            "0.55"
-        "SoundSet"                      "Hero_Undying"
-        "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_undying.vsndevts"
+        "SoundSet"              "Hero_Undying"
+        "GameSoundsFile"        "soundevents/game_sounds_heroes/game_sounds_undying.vsndevts"
         "Level"                 "1"
         "HealthBarOffset"       "120"
         "Vscripts"              "ai/ai_default.lua"
@@ -10175,15 +10175,15 @@
 
         // Armor
         //----------------------------------------------------------------
-        "ArmorPhysical"         "8"
+        "ArmorPhysical"         "7"
         "MagicalResistance"     "0"
 
         // Attack
         //----------------------------------------------------------------
         "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
         "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-        "AttackDamageMin"       "100"
-        "AttackDamageMax"       "100"
+        "AttackDamageMin"       "150"
+        "AttackDamageMax"       "150"
         "AttackRate"            "1"
         "AttackAnimationPoint"  "0.5"
         "AttackAcquisitionRange" "850"
@@ -10213,7 +10213,7 @@
 
         // Status
         //----------------------------------------------------------------
-        "StatusHealth"          "1850"
+        "StatusHealth"          "1600"
         "StatusHealthRegen"     "0"
         "StatusMana"            "0"
         "StatusManaRegen"       "0"
@@ -11880,9 +11880,9 @@
         //----------------------------------------------------------------
         "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
         "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-        "AttackDamageMin"       "190"
-        "AttackDamageMax"       "190"
-        "AttackRate"            "0.5"
+        "AttackDamageMin"       "180"
+        "AttackDamageMax"       "180"
+        "AttackRate"            "0.71"
         "AttackAnimationPoint"  "0.2"
         "AttackAcquisitionRange" "850"
         "AttackRange"           "500"

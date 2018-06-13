@@ -7,8 +7,9 @@
     "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
     "FightRecapLevel"               "1"
     "BaseClass"                     "ability_lua"
-    "AbilityTextureName"                    "pudge_rot"
-    "ScriptFile"                        "abilities/undeadbuilder/butcher_rot.lua"
+    "AbilityTextureName"            "pudge_rot"
+    "ScriptFile"                    "abilities/undeadbuilder/butcher_rot.lua"
+    "MaxLevel"                      "1"
 
     // Precache
     //-------------------------------------------------------------------------------------------------------------
@@ -20,7 +21,7 @@
         
     // Casting
     //-------------------------------------------------------------------------------------------------------------
-    "AbilityCastPoint"              "0 0 0 0"
+    "AbilityCastPoint"              "0"
 
 
     // Special
@@ -30,7 +31,7 @@
         "01"
         {
             "var_type"              "FIELD_INTEGER"
-            "rot_radius"            "250"
+            "rot_radius"            "200"
         }
         "02"
         {
@@ -40,12 +41,12 @@
         "03"
         {
             "var_type"              "FIELD_INTEGER"
-            "rot_slow"              "-20 -22 -24 -26"
+            "rot_slow"              "-15"
         }
         "04"
         {
             "var_type"              "FIELD_INTEGER"
-            "rot_damage"                "35 60 85 110"
+            "rot_damage"                "20"
         }
     }
 }

@@ -21,7 +21,7 @@
 		"01"
 		{
 			"var_type"	"FIELD_INTEGER"
-			"atk_damage_tooltip"	"190"
+			"atk_damage_tooltip"	"180"
 		}
 
 		"02"
