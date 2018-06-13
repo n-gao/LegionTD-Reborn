@@ -16716,12 +16716,12 @@
     		"03"
     		{
     			"var_type"				"FIELD_INTEGER"
-    			"rot_slow"				"-20 -22 -24 -26"
+    			"rot_slow"				"-15"
     		}
     		"04"
     		{
     			"var_type"				"FIELD_INTEGER"
-    			"rot_damage"				"25"
+    			"rot_damage"				"20"
     		}
     	}
     }
@@ -18042,7 +18042,7 @@
     		"01"
     		{
     			"var_type"	"FIELD_INTEGER"
-    			"atk_damage_tooltip"	"100"
+    			"atk_damage_tooltip"	"150"
     		}
 
     		"02"
@@ -18060,13 +18060,13 @@
     		"04"
     		{
     			"var_type"	"FIELD_INTEGER"
-    			"health_tooltip"	"1850"
+    			"health_tooltip"	"1600"
     		}
 
     		"05"
     		{
     			"var_type"	"FIELD_INTEGER"
-    			"armor_tooltip"	"8"
+    			"armor_tooltip"	"7"
     		}
 
     		"06"
@@ -19017,7 +19017,7 @@
     		"01"
     		{
     			"var_type"	"FIELD_INTEGER"
-    			"atk_damage_tooltip"	"190"
+    			"atk_damage_tooltip"	"180"
     		}
 
     		"02"

@@ -43,12 +43,12 @@
 		"03"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"rot_slow"				"-20 -22 -24 -26"
+			"rot_slow"				"-15"
 		}
 		"04"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"rot_damage"				"25"
+			"rot_damage"				"20"
 		}
 	}
 }
