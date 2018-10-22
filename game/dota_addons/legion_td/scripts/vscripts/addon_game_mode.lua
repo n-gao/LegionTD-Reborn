@@ -1,22 +1,22 @@
 -- Required files to be visible from anywhere
-require('precache')
-require('game_settings')
-require('timers')
-require('barebones')
+require("precache")
+require("game_settings")
+require("timers")
+require("barebones")
 require("statcollection/init")
-require('game')
-require('game_round')
-require('duel_round')
-require('wave_spawner')
-require('player')
-require('unit')
-require('popups')
-require('notifications')
-require('damage')
-require('selection')
-require('wiki')
-require('wave_unit')
-require('commands')
+require("game")
+require("game_round")
+require("duel_round")
+require("wave_spawner")
+require("player")
+require("unit")
+require("popups")
+require("notifications")
+require("damage")
+require("selection")
+require("wiki")
+require("wave_unit")
+require("commands")
 
 function Precache(context)
     -- NOTE: IT IS RECOMMENDED TO USE A MINIMAL AMOUNT OF LUA PRECACHING, AND A MAXIMAL AMOUNT OF DATADRIVEN PRECACHING.
@@ -28,9 +28,8 @@ function Precache(context)
     
     See GameMode:PostLoadPrecache() in barebones.lua for more information
     ]]
-	
     print("[BAREBONES] Performing pre-load precache")
-    
+
     Precacher(5):PrecacheEverything(context)
 end
 

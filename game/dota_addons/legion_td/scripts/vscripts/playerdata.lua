@@ -3,9 +3,16 @@ PlayerData.datas = {}
 
 function PlayerData.CreateToPlayer(player, callback)
     local result = PlayerData.Get(player:GetSteamID())
-    if result ~= nil then return result end
+    if result ~= nil then
+        return result
+    end
     local result = PlayerData.New(nil, player)
-    Game.storage:SavePlayerData(result.steamID, result:GetToStoredData(), function() end)
+    Game.storage:SavePlayerData(
+        result.steamID,
+        result:GetToStoredData(),
+        function()
+        end
+    )
     callback(result, true)
     return result
 end
@@ -61,7 +68,7 @@ function PlayerData:GetToStoredData()
         earned_tangos = self:GetTotalEarnedTangos(),
         won_duels = self:GetTotalWonDuels(),
         won_games = self:GetTotalWonGames(),
-        lost_games = self:GetTotalLostGames(),
+        lost_games = self:GetTotalLostGames()
     }
     local fractionKills = self:GetTotalFractionKills()
     for key, value in pairs(fractionKills) do
@@ -78,7 +85,6 @@ function PlayerData:GetToStoredData()
     end
     return result
 end
-
 
 function PlayerData:GetMatchData()
     local result = {
@@ -98,7 +104,9 @@ function PlayerData:GetMatchData()
 end
 
 function PlayerData:SaveGetStoredAttribute(attribute)
-    if self.storedData[attribute] == nil then return 0 end
+    if self.storedData[attribute] == nil then
+        return 0
+    end
     return self.storedData[attribute]
 end
 
@@ -122,7 +130,7 @@ function PlayerData:GetTotalFractionKills()
     local fractions = Game:GetAllFractions()
     for fraction, _ in pairs(fractions) do
         local kills = self.player:GetKillsOfFraction(fraction)
-        local key = "killed_" .. fraction;
+        local key = "killed_" .. fraction
         kills = kills + self:SaveGetStoredAttribute(key)
         result[key] = kills
     end
@@ -137,14 +145,18 @@ end
 
 function PlayerData:GetTotalWonGames()
     local result = 0
-    if (self.player.wonGame) then result = result + 1 end
+    if (self.player.wonGame) then
+        result = result + 1
+    end
     result = result + self:SaveGetStoredAttribute("won_games")
     return result
 end
 
 function PlayerData:GetTotalLostGames()
     local result = 0
-    if (self.player.lostGame) then result = result + 1 end
+    if (self.player.lostGame) then
+        result = result + 1
+    end
     result = result + self:SaveGetStoredAttribute("lost_games")
     return result
 end

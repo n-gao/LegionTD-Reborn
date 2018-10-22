@@ -1,4 +1,4 @@
-print('[BAREBONES] barebones.lua')
+print("[BAREBONES] barebones.lua")
 
 -- Generated from template
 if GameMode == nil then
@@ -31,62 +31,62 @@ function GameMode:InitGameMode()
     GameRules:SetRuneMinimapIconScale(MINIMAP_RUNE_ICON_SIZE)
 
     -- Disable runes
-    for rune=1, 12, 1 do
+    for rune = 1, 12, 1 do
         GameRules:GetGameModeEntity():SetRuneEnabled(rune, false)
     end
-    print('[BAREBONES] GameRules set')
-    
+    print("[BAREBONES] GameRules set")
+
     -- Listeners - Event Hooks
     -- All of these events can potentially be fired by the game, though only the uncommented ones have had
     -- Functions supplied for them.
-    ListenToGameEvent('dota_player_gained_level', Dynamic_Wrap(GameMode, 'OnPlayerLevelUp'), self)
-    ListenToGameEvent('dota_ability_channel_finished', Dynamic_Wrap(GameMode, 'OnAbilityChannelFinished'), self)
-    ListenToGameEvent('dota_player_learned_ability', Dynamic_Wrap(GameMode, 'OnPlayerLearnedAbility'), self)
-    ListenToGameEvent('entity_killed', Dynamic_Wrap(GameMode, 'OnEntityKilled'), self)
-    ListenToGameEvent('player_connect_full', Dynamic_Wrap(GameMode, 'OnConnectFull'), self)
-    ListenToGameEvent('player_disconnect', Dynamic_Wrap(GameMode, 'OnDisconnect'), self)
-    ListenToGameEvent('dota_item_purchased', Dynamic_Wrap(GameMode, 'OnItemPurchased'), self)
-    ListenToGameEvent('dota_item_picked_up', Dynamic_Wrap(GameMode, 'OnItemPickedUp'), self)
-    ListenToGameEvent('last_hit', Dynamic_Wrap(GameMode, 'OnLastHit'), self)
-    ListenToGameEvent('dota_non_player_used_ability', Dynamic_Wrap(GameMode, 'OnNonPlayerUsedAbility'), self)
-    ListenToGameEvent('player_changename', Dynamic_Wrap(GameMode, 'OnPlayerChangedName'), self)
-    ListenToGameEvent('dota_rune_activated_server', Dynamic_Wrap(GameMode, 'OnRuneActivated'), self)
-    ListenToGameEvent('dota_player_take_tower_damage', Dynamic_Wrap(GameMode, 'OnPlayerTakeTowerDamage'), self)
-    ListenToGameEvent('tree_cut', Dynamic_Wrap(GameMode, 'OnTreeCut'), self)
-    ListenToGameEvent('entity_hurt', Dynamic_Wrap(GameMode, 'OnEntityHurt'), self)
-    ListenToGameEvent('player_connect', Dynamic_Wrap(GameMode, 'PlayerConnect'), self)
-    ListenToGameEvent('dota_player_used_ability', Dynamic_Wrap(GameMode, 'OnAbilityUsed'), self)
-    ListenToGameEvent('game_rules_state_change', Dynamic_Wrap(GameMode, 'OnGameRulesStateChange'), self)
-    ListenToGameEvent('npc_spawned', Dynamic_Wrap(GameMode, 'OnNPCSpawned'), self)
-    ListenToGameEvent('dota_player_pick_hero', Dynamic_Wrap(GameMode, 'OnPlayerPickHero'), self)
-    ListenToGameEvent('dota_team_kill_credit', Dynamic_Wrap(GameMode, 'OnTeamKillCredit'), self)
-    ListenToGameEvent("player_reconnected", Dynamic_Wrap(GameMode, 'OnPlayerReconnect'), self)
+    ListenToGameEvent("dota_player_gained_level", Dynamic_Wrap(GameMode, "OnPlayerLevelUp"), self)
+    ListenToGameEvent("dota_ability_channel_finished", Dynamic_Wrap(GameMode, "OnAbilityChannelFinished"), self)
+    ListenToGameEvent("dota_player_learned_ability", Dynamic_Wrap(GameMode, "OnPlayerLearnedAbility"), self)
+    ListenToGameEvent("entity_killed", Dynamic_Wrap(GameMode, "OnEntityKilled"), self)
+    ListenToGameEvent("player_connect_full", Dynamic_Wrap(GameMode, "OnConnectFull"), self)
+    ListenToGameEvent("player_disconnect", Dynamic_Wrap(GameMode, "OnDisconnect"), self)
+    ListenToGameEvent("dota_item_purchased", Dynamic_Wrap(GameMode, "OnItemPurchased"), self)
+    ListenToGameEvent("dota_item_picked_up", Dynamic_Wrap(GameMode, "OnItemPickedUp"), self)
+    ListenToGameEvent("last_hit", Dynamic_Wrap(GameMode, "OnLastHit"), self)
+    ListenToGameEvent("dota_non_player_used_ability", Dynamic_Wrap(GameMode, "OnNonPlayerUsedAbility"), self)
+    ListenToGameEvent("player_changename", Dynamic_Wrap(GameMode, "OnPlayerChangedName"), self)
+    ListenToGameEvent("dota_rune_activated_server", Dynamic_Wrap(GameMode, "OnRuneActivated"), self)
+    ListenToGameEvent("dota_player_take_tower_damage", Dynamic_Wrap(GameMode, "OnPlayerTakeTowerDamage"), self)
+    ListenToGameEvent("tree_cut", Dynamic_Wrap(GameMode, "OnTreeCut"), self)
+    ListenToGameEvent("entity_hurt", Dynamic_Wrap(GameMode, "OnEntityHurt"), self)
+    ListenToGameEvent("player_connect", Dynamic_Wrap(GameMode, "PlayerConnect"), self)
+    ListenToGameEvent("dota_player_used_ability", Dynamic_Wrap(GameMode, "OnAbilityUsed"), self)
+    ListenToGameEvent("game_rules_state_change", Dynamic_Wrap(GameMode, "OnGameRulesStateChange"), self)
+    ListenToGameEvent("npc_spawned", Dynamic_Wrap(GameMode, "OnNPCSpawned"), self)
+    ListenToGameEvent("dota_player_pick_hero", Dynamic_Wrap(GameMode, "OnPlayerPickHero"), self)
+    ListenToGameEvent("dota_team_kill_credit", Dynamic_Wrap(GameMode, "OnTeamKillCredit"), self)
+    ListenToGameEvent("player_reconnected", Dynamic_Wrap(GameMode, "OnPlayerReconnect"), self)
     ListenToGameEvent("player_chat", Dynamic_Wrap(CommandEngine, "CheckCommand"), self)
-    
+
     -- Change random seed
-    local timeTxt = string.gsub(string.gsub(GetSystemTime(), ':', ''), '0', '')
+    local timeTxt = string.gsub(string.gsub(GetSystemTime(), ":", ""), "0", "")
     math.randomseed(tonumber(timeTxt))
-    
+
     -- Initialized tables for tracking state
     self.vUserIds = {}
     self.vSteamIds = {}
     self.vBots = {}
     self.vBroadcasters = {}
-    
+
     self.vPlayers = {}
     self.vRadiant = {}
     self.vDire = {}
-    
+
     self.nRadiantKills = 0
     self.nDireKills = 0
     self.game = Game.new()
     self.game:ReadConfiguration()
-    
+
     self.bSeenWaitForPlayers = false
-    
+
     -- Commands can be registered for debugging purposes or as functions that can be called by the custom Scaleform UI'
     --  Convars:RegisterCommand( "command_example", Dynamic_Wrap(GameMode, 'ExampleConsoleCommand'), "A console command example", 0 )'
-    print('[BAREBONES] Done loading Barebones gamemode!\n\n')
+    print("[BAREBONES] Done loading Barebones gamemode!\n\n")
 end
 
 mode = nil
@@ -94,9 +94,9 @@ mode = nil
 -- This function is called 1 to 2 times as the player connects initially but before they
 -- have completely connected
 function GameMode:PlayerConnect(keys)
-    print('[BAREBONES] PlayerConnect')
+    print("[BAREBONES] PlayerConnect")
     DeepPrintTable(keys)
-    
+
     if keys.bot == 1 then
         -- This user is a Bot, so add it to the bots table
         self.vBots[keys.userid] = 1
@@ -105,23 +105,23 @@ end
 
 -- This function is called once when the player fully connects and becomes "Ready" during Loading
 function GameMode:OnConnectFull(keys)
-    print('[BAREBONES] OnConnectFull')
+    print("[BAREBONES] OnConnectFull")
     DeepPrintTable(keys)
     GameMode:CaptureGameMode()
-    
+
     local entIndex = keys.index + 1
     -- The Player entity of the joining user
     local ply = EntIndexToHScript(entIndex)
-    
+
     -- The Player ID of the joining player
     local playerID = ply:GetPlayerID()
-    
+
     -- Update the user ID table with this user
     self.vUserIds[keys.userid] = ply
-    
+
     -- Update the Steam ID table
     self.vSteamIds[PlayerResource:GetSteamAccountID(playerID)] = ply
-    
+
     -- If the player is a broadcaster flag it in the Broadcasters table
     if PlayerResource:IsBroadcaster(playerID) then
         self.vBroadcasters[keys.userid] = 1
@@ -144,21 +144,21 @@ function GameMode:CaptureGameMode()
         mode:SetUseCustomHeroLevels(USE_CUSTOM_HERO_LEVELS)
         mode:SetCustomHeroMaxLevel(MAX_LEVEL)
         mode:SetCustomXPRequiredToReachNextLevel(XP_PER_LEVEL_TABLE)
-        
+
         --mode:SetBotThinkingEnabled( USE_STANDARD_DOTA_BOT_THINKING )
         mode:SetTowerBackdoorProtectionEnabled(ENABLE_TOWER_BACKDOOR_PROTECTION)
-        
+
         mode:SetFogOfWarDisabled(DISABLE_FOG_OF_WAR_ENTIRELY)
         mode:SetGoldSoundDisabled(DISABLE_GOLD_SOUNDS)
         mode:SetRemoveIllusionsOnDeath(REMOVE_ILLUSIONS_ON_DEATH)
-        
+
         self:OnFirstPlayerLoaded()
     end
 end
 
 -- This is an example console command
 function GameMode:ExampleConsoleCommand()
-    print('******* Example Console Command ***************')
+    print("******* Example Console Command ***************")
     local cmdPlayer = Convars:GetCommandClient()
     if cmdPlayer then
         local playerID = cmdPlayer:GetPlayerID()
@@ -167,7 +167,7 @@ function GameMode:ExampleConsoleCommand()
             PlayerResource:ReplaceHeroWith(playerID, "npc_dota_hero_viper", 1000, 1000)
         end
     end
-    print('*********************************************')
+    print("*********************************************")
 end
 
 --[[
@@ -214,7 +214,7 @@ The hero parameter is the hero entity that just spawned in.
 ]]
 function GameMode:OnHeroInGame(hero)
     print("[BAREBONES] Hero spawned in game for first time -- " .. hero:GetUnitName())
-    
+
     -- Store a reference to the player handle inside this hero handle.
     hero.player = PlayerResource:GetPlayer(hero:GetPlayerID())
     -- Store the player's name inside this hero handle.
@@ -223,12 +223,12 @@ function GameMode:OnHeroInGame(hero)
     table.insert(self.vPlayers, hero)
     -- This line for example will set the starting gold of every hero to 500 unreliable gold
     hero:SetGold(START_GOLD, false)
-	
-	local innate_ability = hero:FindAbilityByName("builder_invulnerable")
-		if innate_ability then
-			innate_ability:SetLevel(1)
-			innate_ability:SetHidden(true);
-		end
+
+    local innate_ability = hero:FindAbilityByName("builder_invulnerable")
+    if innate_ability then
+        innate_ability:SetLevel(1)
+        innate_ability:SetHidden(true)
+    end
 end
 
 --[[
@@ -242,9 +242,9 @@ end
 
 -- Cleanup a player when they leave
 function GameMode:OnDisconnect(keys)
-    print('[BAREBONES] Player Disconnected ' .. tostring(keys.userid))
+    print("[BAREBONES] Player Disconnected " .. tostring(keys.userid))
     DeepPrintTable(keys)
-    
+
     local name = keys.name
     local networkid = keys.networkid
     local reason = keys.reason
@@ -255,7 +255,7 @@ end
 function GameMode:OnGameRulesStateChange(keys)
     print("[BAREBONES] GameRules State Changed")
     DeepPrintTable(keys)
-    
+
     local newState = GameRules:State_Get()
     if newState == DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD then
         self.bSeenWaitForPlayers = true
@@ -266,18 +266,21 @@ function GameMode:OnGameRulesStateChange(keys)
         if self.bSeenWaitForPlayers then
             et = .01
         end
-        Timers:CreateTimer("alljointimer", {
-            useGameTime = true,
-            endTime = et,
-            callback = function()
-                if PlayerResource:HaveAllPlayersJoined() then
-                    GameMode:PostLoadPrecache()
-                    GameMode:OnAllPlayersLoaded()
-                    return
+        Timers:CreateTimer(
+            "alljointimer",
+            {
+                useGameTime = true,
+                endTime = et,
+                callback = function()
+                    if PlayerResource:HaveAllPlayersJoined() then
+                        GameMode:PostLoadPrecache()
+                        GameMode:OnAllPlayersLoaded()
+                        return
+                    end
+                    return 1
                 end
-                return 1
-            end
-        })
+            }
+        )
     elseif newState == DOTA_GAMERULES_STATE_STRATEGY_TIME then
         Game:RandomHeroes()
     elseif newState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
@@ -293,7 +296,7 @@ function GameMode:OnNPCSpawned(keys)
     --	print("[BAREBONES] NPC Spawned")
     --	DeepPrintTable(keys)
     local npc = EntIndexToHScript(keys.entindex)
-    
+
     if npc:IsRealHero() and npc.bFirstSpawned == nil then
         npc.bFirstSpawned = true
         GameMode:OnHeroInGame(npc)
@@ -315,9 +318,9 @@ end
 
 -- An item was picked up off the ground
 function GameMode:OnItemPickedUp(keys)
-    print('[BAREBONES] OnItemPurchased')
+    print("[BAREBONES] OnItemPurchased")
     DeepPrintTable(keys)
-    
+
     local heroEntity = EntIndexToHScript(keys.HeroEntityIndex)
     local itemEntity = EntIndexToHScript(keys.ItemEntityIndex)
     local player = PlayerResource:GetPlayer(keys.PlayerID)
@@ -327,22 +330,24 @@ end
 -- A player has reconnected to the game.  This function can be used to repaint Player-based particles or change
 -- state as necessary
 function GameMode:OnPlayerReconnect(keys)
-    print('[BAREBONES] OnPlayerReconnect')
+    print("[BAREBONES] OnPlayerReconnect")
     DeepPrintTable(keys)
 end
 
 -- An item was purchased by a player
 function GameMode:OnItemPurchased(keys)
-    print('[BAREBONES] OnItemPurchased')
+    print("[BAREBONES] OnItemPurchased")
     DeepPrintTable(keys)
-    
+
     -- The playerID of the hero who is buying something
     local plyID = keys.PlayerID
-    if not plyID then return end
-    
+    if not plyID then
+        return
+    end
+
     -- The name of the item purchased
     local itemName = keys.itemname
-    
+
     -- The cost of the item purchased
     local itemcost = keys.itemcost
 end
@@ -357,44 +362,44 @@ end
 
 -- A non-player entity (necro-book, chen creep, etc) used an ability
 function GameMode:OnNonPlayerUsedAbility(keys)
-    print('[BAREBONES] OnNonPlayerUsedAbility')
+    print("[BAREBONES] OnNonPlayerUsedAbility")
     DeepPrintTable(keys)
-    
+
     local abilityname = keys.abilityname
 end
 
 -- A player changed their name
 function GameMode:OnPlayerChangedName(keys)
-    print('[BAREBONES] OnPlayerChangedName')
+    print("[BAREBONES] OnPlayerChangedName")
     DeepPrintTable(keys)
-    
+
     local newName = keys.newname
     local oldName = keys.oldName
 end
 
 -- A player leveled up an ability
 function GameMode:OnPlayerLearnedAbility(keys)
-    print('[BAREBONES] OnPlayerLearnedAbility')
+    print("[BAREBONES] OnPlayerLearnedAbility")
     DeepPrintTable(keys)
-    
+
     local player = EntIndexToHScript(keys.player)
     local abilityname = keys.abilityname
 end
 
 -- A channelled ability finished by either completing or being interrupted
 function GameMode:OnAbilityChannelFinished(keys)
-    print('[BAREBONES] OnAbilityChannelFinished')
+    print("[BAREBONES] OnAbilityChannelFinished")
     DeepPrintTable(keys)
-    
+
     local abilityname = keys.abilityname
     local interrupted = keys.interrupted == 1
 end
 
 -- A player leveled up
 function GameMode:OnPlayerLevelUp(keys)
-    print('[BAREBONES] OnPlayerLevelUp')
+    print("[BAREBONES] OnPlayerLevelUp")
     DeepPrintTable(keys)
-    
+
     local player = EntIndexToHScript(keys.player)
     local level = keys.level
 end
@@ -411,36 +416,36 @@ end
 
 -- A tree was cut down by tango, quelling blade, etc
 function GameMode:OnTreeCut(keys)
-    print('[BAREBONES] OnTreeCut')
+    print("[BAREBONES] OnTreeCut")
     DeepPrintTable(keys)
-    
+
     local treeX = keys.tree_x
     local treeY = keys.tree_y
 end
 
 -- A rune was activated by a player
 function GameMode:OnRuneActivated(keys)
-    print('[BAREBONES] OnRuneActivated')
+    print("[BAREBONES] OnRuneActivated")
     DeepPrintTable(keys)
-    
+
     local player = PlayerResource:GetPlayer(keys.PlayerID)
     local rune = keys.rune
 end
 
 -- A player took damage from a tower
 function GameMode:OnPlayerTakeTowerDamage(keys)
-    print('[BAREBONES] OnPlayerTakeTowerDamage')
+    print("[BAREBONES] OnPlayerTakeTowerDamage")
     DeepPrintTable(keys)
-    
+
     local player = PlayerResource:GetPlayer(keys.PlayerID)
     local damage = keys.damage
 end
 
 -- A player picked a hero
 function GameMode:OnPlayerPickHero(keys)
-    print('[BAREBONES] OnPlayerPickHero')
+    print("[BAREBONES] OnPlayerPickHero")
     DeepPrintTable(keys)
-    
+
     local heroClass = keys.hero
     local heroEntity = EntIndexToHScript(keys.heroindex)
     local player = EntIndexToHScript(keys.player)
@@ -448,9 +453,9 @@ end
 
 -- A player killed another player in a multi-team context
 function GameMode:OnTeamKillCredit(keys)
-    print('[BAREBONES] OnTeamKillCredit')
+    print("[BAREBONES] OnTeamKillCredit")
     DeepPrintTable(keys)
-    
+
     local killerPlayer = PlayerResource:GetPlayer(keys.killer_userid)
     local victimPlayer = PlayerResource:GetPlayer(keys.victim_userid)
     local numKills = keys.herokills
@@ -465,9 +470,9 @@ function GameMode:OnEntityKilled(keys)
     local killedUnit = EntIndexToHScript(keys.entindex_killed)
     -- The Killing entity
     local killerEntity = nil
-    
+
     if keys.entindex_attacker ~= nil then
         killerEntity = EntIndexToHScript(keys.entindex_attacker)
     end
--- Put code here to handle when an entity gets killed
+    -- Put code here to handle when an entity gets killed
 end

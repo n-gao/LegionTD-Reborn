@@ -16,7 +16,6 @@ local unitconfig = {
     [15] = "tower_naturebuilder_centaur_warrunner",
     [16] = "tower_naturebuilder_treebeard",
     [17] = "tower_naturebuilder_very_big_bug",
-    
     [50] = "tower_elementalbuilder_waterbender",
     [51] = "tower_elementalbuilder_thunderbender",
     [52] = "tower_elementalbuilder_earthbender",
@@ -37,7 +36,6 @@ local unitconfig = {
     [67] = "tower_elementalbuilder_voidelemental",
     [68] = "tower_elementalbuilder_voidwarrior",
     [69] = "tower_elementalbuilder_voidgod",
-    
     [100] = "tower_humanbuilder_archbishop",
     [101] = "tower_humanbuilder_archer",
     [102] = "tower_humanbuilder_archmage",
@@ -61,7 +59,6 @@ local unitconfig = {
     [120] = "tower_humanbuilder_soundmaster",
     [121] = "tower_humanbuilder_spearman",
     [122] = "tower_humanbuilder_tactician",
-    
     [300] = "tower_assassinbuilder_creeping_shadow",
     [301] = "tower_assassinbuilder_jester",
     [302] = "tower_assassinbuilder_lotus",
@@ -80,7 +77,6 @@ local unitconfig = {
     [315] = "tower_assassinbuilder_stealth_assassin",
     [316] = "tower_assassinbuilder_timekeeper",
     [317] = "tower_assassinbuilder_trickster",
-    
     [400] = "tower_undeadbuilder_zombie",
     [401] = "tower_undeadbuilder_butcher",
     [402] = "tower_undeadbuilder_nether_drake",
@@ -108,7 +104,6 @@ local unitconfig = {
     [424] = "tower_undeadbuilder_the_forgotten_one",
     [425] = "tower_undeadbuilder_corruptor",
     [426] = "tower_undeadbuilder_possessed_corruptor",
-    
     [1001] = "incomeunit_kobold",
     [1002] = "incomeunit_hill_troll_shaman",
     [1003] = "incomeunit_hill_troll_warrior",

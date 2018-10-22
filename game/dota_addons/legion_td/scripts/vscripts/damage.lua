@@ -7,33 +7,39 @@ function Game:DamageFilter(filterTable)
     if not victim_index or not attacker_index then
         return true
     end
-    
+
     local victim = EntIndexToHScript(victim_index)
     local attacker = EntIndexToHScript(attacker_index)
     local damagetype = filterTable["damagetype_const"]
-    
+
     -- print ("damage is happening: " .. filterTable["damage"])
     -- Physical attack damage filtering
     if damagetype == DAMAGE_TYPE_PHYSICAL then
-        local original_damage = filterTable["damage"]--Post reduction
-        
-        if not Game.UnitKV[attacker:GetUnitName()] then return true end
-        if not Game.UnitKV[victim:GetUnitName()] then return true end
-        
+        -- Magic damage filtering
+        local original_damage = filterTable["damage"]
+         --Post reduction
+
+        if not Game.UnitKV[attacker:GetUnitName()] then
+            return true
+        end
+        if not Game.UnitKV[victim:GetUnitName()] then
+            return true
+        end
+
         local attack_type = Game.UnitKV[attacker:GetUnitName()]["LegionAttackType"] or "none"
         local defend_type = Game.UnitKV[victim:GetUnitName()]["LegionDefendType"] or "none"
-        
-        if attack_type == "none" or defend_type == "none" then return true end
-        
+
+        if attack_type == "none" or defend_type == "none" then
+            return true
+        end
+
         local damage_multiplier = Game.DamageKV[attack_type][defend_type] or 1
-        
+
         --print (attacker:GetUnitName() .. "(" .. attack_type .. ") vs " .. victim:GetUnitName() .. "(" .. defend_type .. "), damage multiplied by " .. damage_multiplier)
         local damage = original_damage * damage_multiplier
-        
+
         -- Reassign the new damage
         filterTable["damage"] = damage
-    
-    -- Magic damage filtering
     elseif damagetype == DAMAGE_TYPE_MAGICAL then
         -- print("Magic Damage is happening: " .. filterTable["damage"])
         local damagePercent = 100
@@ -62,9 +68,9 @@ function Game:DamageFilter(filterTable)
             end
         end
         filterTable["damage"] = filterTable["damage"] * (damagePercent / 100.0)
-        -- print("filtered magic damage: " .. filterTable["damage"] .. " (" .. damagePercent .. " percent)")
+    -- print("filtered magic damage: " .. filterTable["damage"] .. " (" .. damagePercent .. " percent)")
     end
-    
+
     return true
 end
 
@@ -74,5 +80,5 @@ DAMAGE_TYPES = {
     [2] = "DAMAGE_TYPE_MAGICAL",
     [4] = "DAMAGE_TYPE_PURE",
     [7] = "DAMAGE_TYPE_ALL",
-    [8] = "DAMAGE_TYPE_HP_REMOVAL",
+    [8] = "DAMAGE_TYPE_HP_REMOVAL"
 }

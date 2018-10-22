@@ -57,7 +57,7 @@ end
 TIMERS_THINK = 0.01
 
 if Timers == nil then
-    print('[Timers] creating Timers')
+    print("[Timers] creating Timers")
     Timers = {}
     Timers.__index = Timers
 end
@@ -71,8 +71,9 @@ end
 function Timers:start()
     Timers = self
     self.timers = {}
-    
-    local ent = Entities:CreateByClassname("info_target")-- Entities:FindByClassname(nil, 'CWorld')
+
+    local ent = Entities:CreateByClassname("info_target")
+     -- Entities:FindByClassname(nil, 'CWorld')
     ent:SetThink("Think", self, "timers", TIMERS_THINK)
 end
 
@@ -80,10 +81,10 @@ function Timers:Think()
     if GameRules:State_Get() >= DOTA_GAMERULES_STATE_POST_GAME then
         return
     end
-    
+
     -- Track game time, since the dt passed in to think is actually wall-clock time not simulation time.
     local now = GameRules:GetGameTime()
-    
+
     -- Process timers
     for k, v in pairs(Timers.timers) do
         local bUseGameTime = true
@@ -94,23 +95,24 @@ function Timers:Think()
         if v.useOldStyle ~= nil and v.useOldStyle == true then
             bOldStyle = true
         end
-        
+
         local now = GameRules:GetGameTime()
         if not bUseGameTime then
             now = Time()
         end
-        
+
         if v.endTime == nil then
             v.endTime = now
         end
         -- Check if the timer has finished
         if now >= v.endTime then
-            
             -- Run the callback
             local status, nextCall = pcall(v.callback, GameRules:GetGameModeEntity(), v)
-            
+
             -- Make sure it worked
             if status then
+                -- Update timer data
+                --self:UpdateTimerData()
                 -- Check if it needs to loop
                 if nextCall then
                     -- Change its end time
@@ -123,27 +125,24 @@ function Timers:Think()
                     -- Remove from timers list
                     Timers.timers[k] = nil
                 end
-            
-            -- Update timer data
-            --self:UpdateTimerData()
             else
                 -- Nope, handle the error
-                Timers:HandleEventError('Timer', k, nextCall)
+                Timers:HandleEventError("Timer", k, nextCall)
             end
         end
     end
-    
+
     return TIMERS_THINK
 end
 
 function Timers:HandleEventError(name, event, err)
     print(err)
-    
+
     -- Ensure we have data
-    name = tostring(name or 'unknown')
-    event = tostring(event or 'unknown')
-    err = tostring(err or 'unknown')
-    
+    name = tostring(name or "unknown")
+    event = tostring(event or "unknown")
+    err = tostring(err or "unknown")
+
     -- Tell everyone there was an error
     --Say(nil, name .. ' threw an error on event '..event, false)
     --Say(nil, err, false)
@@ -173,21 +172,20 @@ function Timers:CreateTimer(name, args)
         print("Invalid timer created: " .. name)
         return
     end
-    
-    
+
     local now = GameRules:GetGameTime()
     if args.useGameTime ~= nil and args.useGameTime == false then
         now = Time()
     end
-    
+
     if args.endTime == nil then
         args.endTime = now
     elseif args.useOldStyle == nil or args.useOldStyle == false then
         args.endTime = now + args.endTime
     end
-    
+
     Timers.timers[name] = args
-    
+
     return name
 end
 
@@ -197,7 +195,7 @@ end
 
 function Timers:RemoveTimers(killAll)
     local timers = {}
-    
+
     if not killAll then
         for k, v in pairs(Timers.timers) do
             if v.persist then
@@ -205,7 +203,7 @@ function Timers:RemoveTimers(killAll)
             end
         end
     end
-    
+
     Timers.timers = timers
 end
 

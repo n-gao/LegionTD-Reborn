@@ -20,7 +20,6 @@ POPUP_SYMBOL_POST_EYE = 6
 POPUP_SYMBOL_POST_SHIELD = 7
 POPUP_SYMBOL_POST_POINTFIVE = 8
 
-
 -- e.g. when healed by an ability
 function PopupHealing(target, amount)
     PopupNumbers(target, "heal", Vector(0, 255, 0), 3.0, amount, POPUP_SYMBOL_PRE_PLUS, nil)
@@ -101,7 +100,7 @@ function PopupNumbers(target, pfx, color, lifetime, number, presymbol, postsymbo
     else
         pidx = ParticleManager:CreateParticle(pfxPath, PATTACH_ABSORIGIN_FOLLOW, target)
     end
-    
+
     local digits = 0
     if number ~= nil then
         digits = #tostring(number)
@@ -112,7 +111,7 @@ function PopupNumbers(target, pfx, color, lifetime, number, presymbol, postsymbo
     if postsymbol ~= nil then
         digits = digits + 1
     end
-    
+
     ParticleManager:SetParticleControl(pidx, 1, Vector(tonumber(presymbol), tonumber(number), tonumber(postsymbol)))
     ParticleManager:SetParticleControl(pidx, 2, Vector(lifetime, digits, 0))
     ParticleManager:SetParticleControl(pidx, 3, color)
@@ -124,7 +123,7 @@ function PopupMultiplier(target, number)
     local postSymbol = 4 --crit
     local digits = string.len(number) + 1
     local targetPos = target:GetAbsOrigin()
-    
+
     local particle = ParticleManager:CreateParticle(particleName, PATTACH_CUSTOMORIGIN, target)
     ParticleManager:SetParticleControl(particle, 0, Vector(targetPos.x, targetPos.y, targetPos.z + 322))
     ParticleManager:SetParticleControl(particle, 1, Vector(preSymbol, number, postSymbol))
@@ -133,7 +132,7 @@ end
 
 function PopupLegion(target, number)
     local particleName = "particles/custom/legion_commander_duel_text.vpcf"
-    
+
     local digits = string.len(number)
     local targetPos = target:GetAbsOrigin()
     local particle = ParticleManager:CreateParticle(particleName, PATTACH_CUSTOMORIGIN, target)
@@ -145,7 +144,7 @@ end
 function PopupKillbanner(target, name)
     -- Possible names: firstblood, doublekill, triplekill, rampage, multikill_generic
     local particleName = "particles/econ/events/killbanners/screen_killbanner_compendium14_" .. name .. ".vpcf"
-    
+
     local particle = ParticleManager:CreateParticle(particleName, PATTACH_EYES_FOLLOW, target)
 end
 

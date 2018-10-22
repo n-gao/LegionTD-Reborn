@@ -6,8 +6,11 @@ end
 function Player.new(plyEntitie, userID)
     local self = Player()
     self.plyEntitie = plyEntitie
-    self.teamnumber = self:GetTeamNumber()-- new players don't have a team number so this is worthless here
-    if self.plyEntitie ~= nil then plyEntitie.myPlayer = self end
+    self.teamnumber = self:GetTeamNumber()
+     -- new players don't have a team number so this is worthless here
+    if self.plyEntitie ~= nil then
+        plyEntitie.myPlayer = self
+    end
     self.userID = userID
     self.units = {}
     self.tangos = START_TANGO
@@ -55,7 +58,9 @@ function Player:KilledUnit(killed)
 end
 
 function Player:GetFraction()
-    if self.hero == nil then return "other" end
+    if self.hero == nil then
+        return "other"
+    end
     local heroName = self.hero:GetUnitName()
     for _, data in pairs(Game.HeroKV) do
         if data.override_hero == heroName then
@@ -78,7 +83,9 @@ function Player:GetSteamID()
 end
 
 function Player:GetWonDuels()
-    if self.wonDuels == nil then self.wonDuels = 0 end
+    if self.wonDuels == nil then
+        self.wonDuels = 0
+    end
     return self.wonDuels
 end
 
@@ -119,8 +126,8 @@ function Player:GetEarnedTangos()
 end
 
 function Player:Reconnected()
---self:SetPlayerEntity(plyEntitie)
---self.missedSpawns = 0
+    --self:SetPlayerEntity(plyEntitie)
+    --self.missedSpawns = 0
 end
 
 function Player:SetPlayerEntity(plyEntitie, userID)
@@ -132,28 +139,24 @@ function Player:SetPlayerEntity(plyEntitie, userID)
         unit:GivePlayerControl()
     end
     self.roundLeft = nil
---self.missedSpawns = 0
+    --self.missedSpawns = 0
 end
-
 
 function Player:ShouldSpawn()
     return self.lane ~= nil and self:IsActive() and not self:HasAbandoned() and self.hero ~= nil
 end
 
-
 function Player:RemoveEntitie()
     print("User " .. self.userID .. " removed.")
     self.plyEntitie = nil
-    
+
     -- why is this here
     self.userID = -1
-    
+
     self.leaksPenalty = 25
     self.leaked = true
     self.roundLeft = Game.gameRound
 end
-
-
 
 --sets hero to player
 function Player:SetNPC(npc)
@@ -175,13 +178,13 @@ function Player:SetNPC(npc)
             break
         end
     end
-    
+
     self.lane = Game.lanes["" .. laneID]
     self.lane.player = self
     self.lane.isUsed = true
     self:PrepareBuilding(self.lane.mainBuilding)
     self:PrepareBuilding(self.lane.foodBuilding)
-    
+
     --skill abilities
     for i = 0, self.hero:GetAbilityCount() - 2 do
         local ability = self.hero:GetAbilityByIndex(i)
@@ -191,22 +194,30 @@ function Player:SetNPC(npc)
         end
     end
     self.hero:SetAbilityPoints(0)
-    
+
     --prepartaion
-    self.tangoCheckingTimer = Timers:CreateTimer(0, function()
-        self:CreateTangoTicker()
-        return CHECKING_INTERVALL
-    end)
-    Timers:CreateTimer(0.2, function()
-        self:ToSpawn()
-    end)
+    self.tangoCheckingTimer =
+        Timers:CreateTimer(
+        0,
+        function()
+            self:CreateTangoTicker()
+            return CHECKING_INTERVALL
+        end
+    )
+    Timers:CreateTimer(
+        0.2,
+        function()
+            self:ToSpawn()
+        end
+    )
     self:RefreshPlayerInfo()
 end
 
-
 --checks tangos
 function Player:HasEnoughTangos(amount)
-    if self.abandoned then return false end
+    if self.abandoned then
+        return false
+    end
     return self.tangos >= amount
 end
 
@@ -228,12 +239,10 @@ function Player:HasEnoughFood(food)
     end
 end
 
-
 function Player:IncreaseFoodLimit(increment)
     self.foodlimit = self.foodlimit + increment
     self:RefreshPlayerInfo()
 end
-
 
 function Player:GetUsedFood()
     local usedFood = 0
@@ -244,7 +253,6 @@ function Player:GetUsedFood()
     return usedFood
 end
 
-
 function Player:GetTowerValue()
     local result = 0
     for _, unit in pairs(self.units) do
@@ -253,20 +261,17 @@ function Player:GetTowerValue()
     return result
 end
 
-
 --add income
 function Player:AddIncome(amount)
     self.income = self.income + amount
     self:RefreshPlayerInfo()
 end
 
-
 --adds income to gold
 function Player:Income(bounty)
     PlayerResource:ModifyGold(self:GetPlayerID(), self.income + bounty, true, DOTA_ModifyGold_Unspecified)
     self:RefreshPlayerInfo()
 end
-
 
 --get player id
 function Player:GetPlayerID()
@@ -278,19 +283,19 @@ function Player:GetPlayerID()
     return self.plyEntitie:GetPlayerID()
 end
 
-
 --get player
 function Player:GetPlayer()
     return PlayerResource:GetPlayer(self:GetPlayerID())
 end
-
 
 --get team number
 function Player:GetTeamNumber()
     if self.plyEntitie == nil and self.teamnumber and self.hero == nil then
         return self.teamnumber
     end
-    if self.plyEntitie == nil and self.hero == nil then return -1 end
+    if self.plyEntitie == nil and self.hero == nil then
+        return -1
+    end
     if self.hero == nil then
         self.teamnumber = self.plyEntitie:GetTeamNumber()
     else
@@ -299,18 +304,15 @@ function Player:GetTeamNumber()
     return self.teamnumber
 end
 
-
 --get position before ancient
 function Player:GetLastDef()
     return Game.lastDefends["" .. self:GetTeamNumber()]
 end
 
-
 --get position of incoming unit spawn
 function Player:GetIncomeSpawner()
     return Game.incomeSpawner["" .. self:GetTeamNumber()]
 end
-
 
 --adds tangos
 function Player:AddTangos(amount)
@@ -322,21 +324,23 @@ function Player:GetTangos()
     return self.tangos
 end
 
-
 --refreshs tango ui
 function Player:RefreshPlayerInfo()
     if self.plyEntitie and not self.plyEntitie:IsNull() and self:GetPlayerID() then
-        CustomGameEventManager:Send_ServerToAllClients("update_player_info", {
-            playerID = self:GetPlayerID(),
-            leaks = self.leaks,
-            tangoCount = self.tangos,
-            maxTangos = Game:GetTangoLimit(),
-            goldIncome = self.income,
-            tangoIncome = self:GetTangoIncomeIn(60),
-            currentFood = self:GetUsedFood(),
-            maxFood = self.foodlimit,
-            towerValue = self:GetTowerValue()
-        })
+        CustomGameEventManager:Send_ServerToAllClients(
+            "update_player_info",
+            {
+                playerID = self:GetPlayerID(),
+                leaks = self.leaks,
+                tangoCount = self.tangos,
+                maxTangos = Game:GetTangoLimit(),
+                goldIncome = self.income,
+                tangoIncome = self:GetTangoIncomeIn(60),
+                currentFood = self:GetUsedFood(),
+                maxFood = self.foodlimit,
+                towerValue = self:GetTowerValue()
+            }
+        )
         Game:SendStoredData(self:GetPlayerID(), self:GetSteamID())
     end
 end
@@ -349,7 +353,6 @@ function Player:GetTangoIncome()
     return (self.tangoAddAmount / self.tangoAddSpeed)
 end
 
-
 function Player:Leaked(unit, level)
     self.leaked = true
     self.leaks = self.leaks + 1
@@ -358,18 +361,18 @@ function Player:Leaked(unit, level)
     self:RefreshPlayerInfo()
 end
 
-
-
 --resets player location
 function Player:ToSpawn()
     self.hero:SetAbsOrigin(self.lane.heroSpawn:GetAbsOrigin())
     PlayerResource:SetCameraTarget(self:GetPlayerID(), self.hero)
-    Timers:CreateTimer(0.1, function()
-        PlayerResource:SetCameraTarget(self:GetPlayerID(), nil)
-    end)
+    Timers:CreateTimer(
+        0.1,
+        function()
+            PlayerResource:SetCameraTarget(self:GetPlayerID(), nil)
+        end
+    )
     self.hero:Stop()
 end
-
 
 --on leaving lane
 function EnteredRiver(trigger)
@@ -389,8 +392,6 @@ function EnteredRiver(trigger)
     end
 end
 
-
-
 function Player:PrepareBuilding(building)
     building:SetTeam(self:GetTeamNumber())
     building:SetOwner(self.hero)
@@ -403,21 +404,15 @@ function Player:PrepareBuilding(building)
     end
 end
 
-
-
 function Player:SetTangoAddAmount(newAddAmount)
     self.tangoAddAmount = tonumber(newAddAmount)
     self:RefreshPlayerInfo()
 end
 
-
-
 function Player:SetTangoAddSpeed(newAddSpeed)
     self.tangoAddSpeed = newAddSpeed
     self:RefreshPlayerInfo()
 end
-
-
 
 function Player:GetUnitKey(unit)
     for key, val in pairs(self.units) do
@@ -427,39 +422,48 @@ function Player:GetUnitKey(unit)
     end
 end
 
-
 function Player:HasAbandoned()
     return self.abandoned
 end
 
-
 function Player:CreateTangoTicker()
     if (not Timers.timers[self.timer]) and (self.lane.mainBuilding) and (Game:GetCurrentRound()) then
-        
-        self.timer = Timers:CreateTimer(function()
-                
-                if Game.gameState == GAMESTATE_PREPARATION and Game.gameRound == STARTING_ROUND then return (1 / 30) end
-                if self.abandoned == true then return end
-                if Game:GetCurrentRound().isDuelRound then return end
-                
+        self.timer =
+            Timers:CreateTimer(
+            function()
+                if Game.gameState == GAMESTATE_PREPARATION and Game.gameRound == STARTING_ROUND then
+                    return (1 / 30)
+                end
+                if self.abandoned == true then
+                    return
+                end
+                if Game:GetCurrentRound().isDuelRound then
+                    return
+                end
+
                 local tangoDelay = self.tangoAddSpeed
-                if self.leaked then tangoDelay = self.tangoAddSpeed + (self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER * self.leaksPenalty) end
-                if self.tangos > Game:GetTangoLimit() and Game:GetTangoLimit() > -1 then tangoDelay = tangoDelay * 5 end -- slow down production while over the maximum
+                if self.leaked then
+                    tangoDelay = self.tangoAddSpeed + (self.tangoAddSpeed * LEAKED_TANGO_MULTIPLIER * self.leaksPenalty)
+                end
+                if self.tangos > Game:GetTangoLimit() and Game:GetTangoLimit() > -1 then
+                    tangoDelay = tangoDelay * 5
+                end -- slow down production while over the maximum
                 self.tangoAddProgress = self.tangoAddProgress + 1 / tangoDelay / 30
                 local i = self.tangoAddProgress * math.pi * 2
                 if self.lane.mainBuilding:GetAbsOrigin().y > 0 then
                     i = i + math.pi
                 end
                 self.lane.mainBuilding:SetForwardVector(Vector(math.sin(i), math.cos(i), 0))
-                
+
                 if self.tangoAddProgress > 1 then
                     self.tangoAddProgress = self.tangoAddProgress - 1
                     PopupHealing(self.lane.mainBuilding, self.tangoAddAmount)
                     self:IncomeTangos(self.tangoAddAmount)
                 end
-                
+
                 return (1 / 30)
-        end)
+            end
+        )
     end
 end
 
@@ -474,13 +478,16 @@ function Player:IncomeTangos(amount)
     self:AddTangos(amount)
 end
 
-
 function Player:SendErrorCode(code)
     if self.plyEntitie then
-        CustomGameEventManager:Send_ServerToPlayer(self:GetPlayer(), "error", {
-            errorCode = code,
-            error = errorStrings[code]
-        })
+        CustomGameEventManager:Send_ServerToPlayer(
+            self:GetPlayer(),
+            "error",
+            {
+                errorCode = code,
+                error = errorStrings[code]
+            }
+        )
     end
 end
 
@@ -504,9 +511,11 @@ end
 
 function Player:Abandon()
     print("abandoning player on team " .. self.teamnumber)
-    local goldValue = PlayerResource:GetGold(self:GetPlayerID())-- gold in pocket
+    local goldValue = PlayerResource:GetGold(self:GetPlayerID())
+     -- gold in pocket
     print("abandoning player had " .. goldValue .. " gold in pocket")
-    goldValue = goldValue + (self.buildingUpgradeValue)-- gold in building upgrades
+    goldValue = goldValue + (self.buildingUpgradeValue)
+     -- gold in building upgrades
     print("plus building upgrades: " .. goldValue)
     for _, unit in pairs(self.units) do -- gold in built units
         goldValue = goldValue + unit.goldCost
@@ -526,10 +535,16 @@ function Player:Abandon()
     PlayerResource:SetGold(self:GetPlayerID(), 0, false)
     self.income = 0
     self.abandoned = true
-    GameRules:SendCustomMessage("<p color='red'>" .. PlayerResource:GetPlayerName(self:GetPlayerID()) .. " abandoned the game.</p>", 0, 0)
+    GameRules:SendCustomMessage(
+        "<p color='red'>" .. PlayerResource:GetPlayerName(self:GetPlayerID()) .. " abandoned the game.</p>",
+        0,
+        0
+    )
 end
 
 function Player:WantsToSkip()
-    if not self:IsActive() then return true end
+    if not self:IsActive() then
+        return true
+    end
     return self.wantsSkip or false
 end

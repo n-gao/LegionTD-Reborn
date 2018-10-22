@@ -104,12 +104,11 @@ function Notifications:ClearBottomFromTeam(team)
     Notifications:RemoveBottomFromTeam(team, 50)
 end
 
-
 function Notifications:RemoveTop(player, count)
     if type(player) == "number" then
         player = PlayerResource:GetPlayer(player)
     end
-    
+
     CustomGameEventManager:Send_ServerToPlayer(player, "top_remove_notification", {count = count})
 end
 
@@ -117,7 +116,7 @@ function Notifications:RemoveBottom(player, count)
     if type(player) == "number" then
         player = PlayerResource:GetPlayer(player)
     end
-    
+
     CustomGameEventManager:Send_ServerToPlayer(player, "bottom_remove_notification", {count = count})
 end
 
@@ -137,108 +136,460 @@ function Notifications:RemoveBottomFromTeam(team, count)
     CustomGameEventManager:Send_ServerToTeam(team, "bottom_remove_notification", {count = count})
 end
 
-
 function Notifications:Top(player, table)
     if type(player) == "number" then
         player = PlayerResource:GetPlayer(player)
     end
-    
+
     if table.text ~= nil then
-        CustomGameEventManager:Send_ServerToPlayer(player, "top_notification", {text = table.text, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToPlayer(
+            player,
+            "top_notification",
+            {
+                text = table.text,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.hero ~= nil then
-        CustomGameEventManager:Send_ServerToPlayer(player, "top_notification", {hero = table.hero, imagestyle = table.imagestyle, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToPlayer(
+            player,
+            "top_notification",
+            {
+                hero = table.hero,
+                imagestyle = table.imagestyle,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.image ~= nil then
-        CustomGameEventManager:Send_ServerToPlayer(player, "top_notification", {image = table.image, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToPlayer(
+            player,
+            "top_notification",
+            {
+                image = table.image,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.ability ~= nil then
-        CustomGameEventManager:Send_ServerToPlayer(player, "top_notification", {ability = table.ability, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToPlayer(
+            player,
+            "top_notification",
+            {
+                ability = table.ability,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.item ~= nil then
-        CustomGameEventManager:Send_ServerToPlayer(player, "top_notification", {item = table.item, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToPlayer(
+            player,
+            "top_notification",
+            {
+                item = table.item,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     else
-        CustomGameEventManager:Send_ServerToPlayer(player, "top_notification", {text = "No TEXT provided.", duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToPlayer(
+            player,
+            "top_notification",
+            {
+                text = "No TEXT provided.",
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     end
 end
 
 function Notifications:TopToAll(table)
     if table.text ~= nil then
-        CustomGameEventManager:Send_ServerToAllClients("top_notification", {text = table.text, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToAllClients(
+            "top_notification",
+            {
+                text = table.text,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.hero ~= nil then
-        CustomGameEventManager:Send_ServerToAllClients("top_notification", {hero = table.hero, imagestyle = table.imagestyle, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToAllClients(
+            "top_notification",
+            {
+                hero = table.hero,
+                imagestyle = table.imagestyle,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.image ~= nil then
-        CustomGameEventManager:Send_ServerToAllClients("top_notification", {image = table.image, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToAllClients(
+            "top_notification",
+            {
+                image = table.image,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.ability ~= nil then
-        CustomGameEventManager:Send_ServerToAllClients("top_notification", {ability = table.ability, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToAllClients(
+            "top_notification",
+            {
+                ability = table.ability,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.item ~= nil then
-        CustomGameEventManager:Send_ServerToAllClients("top_notification", {item = table.item, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToAllClients(
+            "top_notification",
+            {
+                item = table.item,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     else
-        CustomGameEventManager:Send_ServerToAllClients("top_notification", {text = "No TEXT provided.", duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToAllClients(
+            "top_notification",
+            {
+                text = "No TEXT provided.",
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     end
 end
 
 function Notifications:TopToTeam(team, table)
     if table.text ~= nil then
-        CustomGameEventManager:Send_ServerToTeam(team, "top_notification", {text = table.text, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToTeam(
+            team,
+            "top_notification",
+            {
+                text = table.text,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.hero ~= nil then
-        CustomGameEventManager:Send_ServerToTeam(team, "top_notification", {hero = table.hero, imagestyle = table.imagestyle, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToTeam(
+            team,
+            "top_notification",
+            {
+                hero = table.hero,
+                imagestyle = table.imagestyle,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.image ~= nil then
-        CustomGameEventManager:Send_ServerToTeam(team, "top_notification", {image = table.image, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToTeam(
+            team,
+            "top_notification",
+            {
+                image = table.image,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.ability ~= nil then
-        CustomGameEventManager:Send_ServerToTeam(team, "top_notification", {ability = table.ability, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToTeam(
+            team,
+            "top_notification",
+            {
+                ability = table.ability,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.item ~= nil then
-        CustomGameEventManager:Send_ServerToTeam(team, "top_notification", {item = table.item, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToTeam(
+            team,
+            "top_notification",
+            {
+                item = table.item,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     else
-        CustomGameEventManager:Send_ServerToTeam(team, "top_notification", {text = "No TEXT provided.", duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToTeam(
+            team,
+            "top_notification",
+            {
+                text = "No TEXT provided.",
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     end
 end
-
 
 function Notifications:Bottom(player, table)
     if type(player) == "number" then
         player = PlayerResource:GetPlayer(player)
     end
-    
+
     if table.text ~= nil then
-        CustomGameEventManager:Send_ServerToPlayer(player, "bottom_notification", {text = table.text, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToPlayer(
+            player,
+            "bottom_notification",
+            {
+                text = table.text,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.hero ~= nil then
-        CustomGameEventManager:Send_ServerToPlayer(player, "bottom_notification", {hero = table.hero, imagestyle = table.imagestyle, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToPlayer(
+            player,
+            "bottom_notification",
+            {
+                hero = table.hero,
+                imagestyle = table.imagestyle,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.image ~= nil then
-        CustomGameEventManager:Send_ServerToPlayer(player, "bottom_notification", {image = table.image, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToPlayer(
+            player,
+            "bottom_notification",
+            {
+                image = table.image,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.ability ~= nil then
-        CustomGameEventManager:Send_ServerToPlayer(player, "bottom_notification", {ability = table.ability, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToPlayer(
+            player,
+            "bottom_notification",
+            {
+                ability = table.ability,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.item ~= nil then
-        CustomGameEventManager:Send_ServerToPlayer(player, "bottom_notification", {item = table.item, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToPlayer(
+            player,
+            "bottom_notification",
+            {
+                item = table.item,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     else
-        CustomGameEventManager:Send_ServerToPlayer(player, "bottom_notification", {text = "No TEXT provided.", duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToPlayer(
+            player,
+            "bottom_notification",
+            {
+                text = "No TEXT provided.",
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     end
 end
 
 function Notifications:BottomToAll(table)
     if table.text ~= nil then
-        CustomGameEventManager:Send_ServerToAllClients("bottom_notification", {text = table.text, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToAllClients(
+            "bottom_notification",
+            {
+                text = table.text,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.hero ~= nil then
-        CustomGameEventManager:Send_ServerToAllClients("bottom_notification", {hero = table.hero, imagestyle = table.imagestyle, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToAllClients(
+            "bottom_notification",
+            {
+                hero = table.hero,
+                imagestyle = table.imagestyle,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.image ~= nil then
-        CustomGameEventManager:Send_ServerToAllClients("bottom_notification", {image = table.image, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToAllClients(
+            "bottom_notification",
+            {
+                image = table.image,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.ability ~= nil then
-        CustomGameEventManager:Send_ServerToAllClients("bottom_notification", {ability = table.ability, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToAllClients(
+            "bottom_notification",
+            {
+                ability = table.ability,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.item ~= nil then
-        CustomGameEventManager:Send_ServerToAllClients("bottom_notification", {item = table.item, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToAllClients(
+            "bottom_notification",
+            {
+                item = table.item,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     else
-        CustomGameEventManager:Send_ServerToAllClients("bottom_notification", {text = "No TEXT provided.", duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToAllClients(
+            "bottom_notification",
+            {
+                text = "No TEXT provided.",
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     end
 end
 
 function Notifications:BottomToTeam(team, table)
     if table.text ~= nil then
-        CustomGameEventManager:Send_ServerToTeam(team, "bottom_notification", {text = table.text, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToTeam(
+            team,
+            "bottom_notification",
+            {
+                text = table.text,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.hero ~= nil then
-        CustomGameEventManager:Send_ServerToTeam(team, "bottom_notification", {hero = table.hero, imagestyle = table.imagestyle, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToTeam(
+            team,
+            "bottom_notification",
+            {
+                hero = table.hero,
+                imagestyle = table.imagestyle,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.image ~= nil then
-        CustomGameEventManager:Send_ServerToTeam(team, "bottom_notification", {image = table.image, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToTeam(
+            team,
+            "bottom_notification",
+            {
+                image = table.image,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.ability ~= nil then
-        CustomGameEventManager:Send_ServerToTeam(team, "bottom_notification", {ability = table.ability, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToTeam(
+            team,
+            "bottom_notification",
+            {
+                ability = table.ability,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     elseif table.item ~= nil then
-        CustomGameEventManager:Send_ServerToTeam(team, "bottom_notification", {item = table.item, duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToTeam(
+            team,
+            "bottom_notification",
+            {
+                item = table.item,
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     else
-        CustomGameEventManager:Send_ServerToTeam(team, "bottom_notification", {text = "No TEXT provided.", duration = table.duration, class = table.class, style = table.style, continue = table.continue})
+        CustomGameEventManager:Send_ServerToTeam(
+            team,
+            "bottom_notification",
+            {
+                text = "No TEXT provided.",
+                duration = table.duration,
+                class = table.class,
+                style = table.style,
+                continue = table.continue
+            }
+        )
     end
 end

@@ -12,16 +12,18 @@ GAMESTATE_FIGHTING = 1
 GAMESTATE_END = 2
 STARTING_ROUND = 1
 CHECKING_INTERVALL = 1
+MAX_FAILED_THINKS = 10
 
 --Neues Spiel
 function Game.new()
     local self = Game()
     Game = self
     self.storage = require("libs/storage")
-    ListenToGameEvent('npc_spawned', Dynamic_Wrap(Game, 'OnNPCSpawned'), self)
-    ListenToGameEvent('player_connect_full', Dynamic_Wrap(Game, 'OnConnectFull'), self)
-    ListenToGameEvent('player_reconnected', Dynamic_Wrap(Game, 'OnPlayerReconnect'), self)
-    ListenToGameEvent('player_disconnect', Dynamic_Wrap(Game, 'OnPlayerDisconnect'), self)
+    ListenToGameEvent("npc_spawned", Dynamic_Wrap(Game, "OnNPCSpawned"), self)
+    ListenToGameEvent("player_connect_full", Dynamic_Wrap(Game, "OnConnectFull"), self)
+    ListenToGameEvent("player_reconnected", Dynamic_Wrap(Game, "OnPlayerReconnect"), self)
+    ListenToGameEvent("player_disconnect", Dynamic_Wrap(Game, "OnPlayerDisconnect"), self)
+    self.failedThinks = 0
     self.players = {}
     self.playerDatas = {}
     self.sendRadiant = {}
@@ -36,24 +38,48 @@ function Game.new()
     self.EnglishLocalizationKV = LoadKeyValues("resource/addon_english.txt")
     GameRules:GetGameModeEntity():SetDamageFilter(Dynamic_Wrap(Game, "DamageFilter"), Game)
     GameRules:GetGameModeEntity():SetExecuteOrderFilter(Dynamic_Wrap(Game, "OrderFilter"), Game)
-    
-    LinkLuaModifier("modifier_attack_arcane_lua", "abilities/damage/modifier_attack_arcane_lua.lua", LUA_MODIFIER_MOTION_NONE)
-    LinkLuaModifier("modifier_attack_normal_lua", "abilities/damage/modifier_attack_normal_lua.lua", LUA_MODIFIER_MOTION_NONE)
-    LinkLuaModifier("modifier_attack_pierce_lua", "abilities/damage/modifier_attack_pierce_lua.lua", LUA_MODIFIER_MOTION_NONE)
-    LinkLuaModifier("modifier_defend_heavy_lua", "abilities/damage/modifier_defend_heavy_lua.lua", LUA_MODIFIER_MOTION_NONE)
-    LinkLuaModifier("modifier_defend_medium_lua", "abilities/damage/modifier_defend_medium_lua.lua", LUA_MODIFIER_MOTION_NONE)
-    LinkLuaModifier("modifier_defend_light_lua", "abilities/damage/modifier_defend_light_lua.lua", LUA_MODIFIER_MOTION_NONE)
+
+    LinkLuaModifier(
+        "modifier_attack_arcane_lua",
+        "abilities/damage/modifier_attack_arcane_lua.lua",
+        LUA_MODIFIER_MOTION_NONE
+    )
+    LinkLuaModifier(
+        "modifier_attack_normal_lua",
+        "abilities/damage/modifier_attack_normal_lua.lua",
+        LUA_MODIFIER_MOTION_NONE
+    )
+    LinkLuaModifier(
+        "modifier_attack_pierce_lua",
+        "abilities/damage/modifier_attack_pierce_lua.lua",
+        LUA_MODIFIER_MOTION_NONE
+    )
+    LinkLuaModifier(
+        "modifier_defend_heavy_lua",
+        "abilities/damage/modifier_defend_heavy_lua.lua",
+        LUA_MODIFIER_MOTION_NONE
+    )
+    LinkLuaModifier(
+        "modifier_defend_medium_lua",
+        "abilities/damage/modifier_defend_medium_lua.lua",
+        LUA_MODIFIER_MOTION_NONE
+    )
+    LinkLuaModifier(
+        "modifier_defend_light_lua",
+        "abilities/damage/modifier_defend_light_lua.lua",
+        LUA_MODIFIER_MOTION_NONE
+    )
     LinkLuaModifier("modifier_king_duel_lua", "abilities/modifier_king_duel_lua.lua", LUA_MODIFIER_MOTION_NONE)
     LinkLuaModifier("modifier_unit_freeze_lua", "abilities/modifier_unit_freeze_lua.lua", LUA_MODIFIER_MOTION_NONE)
-    
-    if Convars:GetBool('developer') then
+
+    if Convars:GetBool("developer") then
         Convars:RegisterCommand("start_next_round", Dynamic_Wrap(self, "StartNextRoundCommand"), "keine Ahnung", 0)
         Convars:RegisterCommand("start_prev_round", Dynamic_Wrap(self, "StartPreviousRoundCommand"), "keine Ahnung", 0)
         Convars:RegisterCommand("restart_round", Dynamic_Wrap(self, "RestartRoundCommand"), "keine Ahnung", 0)
         Convars:RegisterCommand("reset", Dynamic_Wrap(self, "RestartCommand"), "keine Ahnung", 0)
         Convars:RegisterCommand("wiki", Dynamic_Wrap(self, "WikiCommand"), "no idea", 0)
     end
-    
+
     CustomGameEventManager:RegisterListener("send_unit", Dynamic_Wrap(Game, "SendUnit"))
     CustomGameEventManager:RegisterListener("upgarde_king", Dynamic_Wrap(Game, "UpgradeKing"))
     CustomGameEventManager:RegisterListener("vote_option_clicked", Dynamic_Wrap(Game, "VoteOptionClicked"))
@@ -62,19 +88,19 @@ function Game.new()
     CustomGameEventManager:RegisterListener("request_ranking", Dynamic_Wrap(Game, "RequestRanking"))
     CustomGameEventManager:RegisterListener("request_ranking_position", Dynamic_Wrap(Game, "RequestRankingPosition"))
     CustomGameEventManager:RegisterListener("request_match_history", Dynamic_Wrap(Game, "RequestMatchHistory"))
-    
+
     GameRules:SetSafeToLeave(false)
     GameRules:SetStrategyTime(0)
     GameRules:SetHeroSelectionTime(45)
 
-    Timers:SetErrorCallback(function(...)
-        self.storage:LogError(...)
-    end)
+    Timers:SetErrorCallback(
+        function(...)
+            self.storage:LogError(...)
+        end
+    )
 
     return self
 end
-
-
 
 --List alle Informationen ein
 function Game:ReadConfiguration()
@@ -101,8 +127,6 @@ function Game:ReadConfiguration()
     print("everything loaded")
 end
 
-
-
 function Game:ReadDuelSpawn(kvDue)
     self.duelSpawn = {}
     if not (type(kvDue) == "table") then
@@ -117,8 +141,6 @@ function Game:ReadDuelSpawn(kvDue)
         end
     end
 end
-
-
 
 function Game:ReadDuelTargets(kvDuet)
     self.duelTargets = {}
@@ -135,8 +157,6 @@ function Game:ReadDuelTargets(kvDuet)
     end
 end
 
-
-
 function Game:ReadIncomeSpawner(kvInc)
     self.incomeSpawner = {}
     if not (type(kvInc) == "table") then
@@ -151,7 +171,6 @@ function Game:ReadIncomeSpawner(kvInc)
         end
     end
 end
-
 
 function Game:ReadLastSpawn(kvLast)
     self.lastDefends = {}
@@ -183,8 +202,6 @@ function Game:ReadLastSpawnRanged(kvLastR)
     end
 end
 
-
-
 function Game:ReadLanes(kvSpawns)
     self.lanes = {}
     if type(kvSpawns) ~= "table" then
@@ -201,8 +218,11 @@ function Game:ReadLanes(kvSpawns)
         local lmainBuilding = Entities:FindByName(nil, sp.MainBuilding)
         local lfoodBuilding = Entities:FindByName(nil, sp.FoodBuilding)
         local llastWaypoint = Entities:FindByName(nil, sp.LastWaypoint)
-        if lspawn and lwaypoint and lheroSpawn and lunitWaypoint and lbox
-            and lfoodBuilding and lmainBuilding and lnextWaypoint and llastWaypoint then
+        if
+            lspawn and lwaypoint and lheroSpawn and lunitWaypoint and lbox and lfoodBuilding and lmainBuilding and
+                lnextWaypoint and
+                llastWaypoint
+         then
             print("Lane " .. ind .. " found.")
             self.lanes[ind] = {
                 spawnpoint = lspawn,
@@ -210,20 +230,23 @@ function Game:ReadLanes(kvSpawns)
                 nextWaypoint = lnextWaypoint:GetAbsOrigin(),
                 midWaypoint = lmidWaypoint:GetAbsOrigin(),
                 lastWaypoint = llastWaypoint:GetAbsOrigin(),
-                waypoints = {lwaypoint:GetAbsOrigin(), lnextWaypoint:GetAbsOrigin(), lmidWaypoint:GetAbsOrigin(), llastWaypoint:GetAbsOrigin() },
+                waypoints = {
+                    lwaypoint:GetAbsOrigin(),
+                    lnextWaypoint:GetAbsOrigin(),
+                    lmidWaypoint:GetAbsOrigin(),
+                    llastWaypoint:GetAbsOrigin()
+                },
                 heroSpawn = lheroSpawn,
                 unitWaypoint = lunitWaypoint,
                 box = lbox,
                 unitBuilding = lunitBuilding,
                 unitBuilding2 = lunitBuilding2,
                 mainBuilding = lmainBuilding,
-                foodBuilding = lfoodBuilding,
+                foodBuilding = lfoodBuilding
             }
         end
     end
 end
-
-
 
 function Game:ReadRoundConfiguration(kv)
     self.rounds = {}
@@ -233,11 +256,13 @@ function Game:ReadRoundConfiguration(kv)
     local i = 1
     while true do
         local roundData = kv["Rounds"][tostring(i)]
-        if not roundData then break end
-        
+        if not roundData then
+            break
+        end
+
         local roundType = roundData["round_type"]
         local roundObj
-        
+
         if roundType == "wave" then
             roundObj = GameRound()
             roundObj:ReadRoundConfiguration(roundData, self, self:GetRoundCount() + 1 - duelRoundCount)
@@ -248,27 +273,21 @@ function Game:ReadRoundConfiguration(kv)
             print("FATAL ERROR: Reading rounds, could not read round type")
             return
         end
-        
+
         table.insert(self.rounds, roundObj)
-        
+
         print("Round " .. i .. " loaded: " .. roundType)
         i = i + 1
     end
 end
 
-
-
 function Game:GetRoundCount()
     return table.count(self.rounds)
 end
 
-
-
 function Game:GetDisplayRound()
     return self.gameRound - self.doneDuels - self.lastWaveCount
 end
-
-
 
 function Game:GetTangoLimit()
     if (voteOptions["tango_limit"]) then
@@ -287,7 +306,6 @@ function Game:GetAllActivePlayer()
     return result
 end
 
-
 function Game:RandomHeroes()
     for _, player in pairs(self.players) do
         if not PlayerResource:HasSelectedHero(player:GetPlayerID()) then
@@ -299,19 +317,29 @@ end
 --Start des Spiels
 function Game:Start()
     print("Game:Start()")
-    print(GetDedicatedServerKey('v1'))
-	Notifications:TopToAll({text="<b color='red'>Remember:</b> <b color='white'>If you find any bug, please report it to the Discord.</b> ", duration=10.0})
-    self.radiantKingVision = CreateUnitByName("king_vision_dummy", self.radiantBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
-    self.direKingVision = CreateUnitByName("king_vision_dummy", self.direBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
+    print(GetDedicatedServerKey("v1"))
+    Notifications:TopToAll(
+        {
+            text = "<b color='red'>Remember:</b> <b color='white'>If you find any bug, please report it to the Discord.</b> ",
+            duration = 10.0
+        }
+    )
+    self.radiantKingVision =
+        CreateUnitByName("king_vision_dummy", self.radiantBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_BADGUYS)
+    self.direKingVision =
+        CreateUnitByName("king_vision_dummy", self.direBoss:GetAbsOrigin(), true, nil, nil, DOTA_TEAM_GOODGUYS)
     self.gridBoxes = Entities:FindByName(nil, "gridboxes")
     self.gameRound = STARTING_ROUND
     self.isRunning = true
     self:SetGameState(GAMESTATE_PREPARATION)
-    Timers:CreateTimer(0, function()
-        for _, player in pairs(self.players) do
-            player:RefreshPlayerInfo()
+    Timers:CreateTimer(
+        0,
+        function()
+            for _, player in pairs(self.players) do
+                player:RefreshPlayerInfo()
+            end
         end
-    end)
+    )
     self.radiantBoss.healthBonus = START_HEALTH_BONUS
     self.radiantBoss.damageBonus = START_DAMAGE_BONUS
     self.radiantBoss.regenBonus = START_BONUS_REGEN
@@ -324,8 +352,8 @@ function Game:Start()
     self:Initialize()
     self:SaveMatchAtEnd()
     self:SaveDataAtEnd()
-    
-    if Convars:GetBool('developer') then
+
+    if Convars:GetBool("developer") then
         Game:UpdateAbilityData()
         Game:UpdateUnitData()
         Game:UpdateBuilderData()
@@ -334,17 +362,31 @@ end
 
 function Game:CreateGameTimer()
     if not self.gameTimer then
-        self.gameTimer = Timers:CreateTimer(0, function()
-            return self:OnThink()
-        end)
-        self.countDownTimer = Timers:CreateTimer(1, function()
-            if (self.nextRoundTime) then
-                CustomGameEventManager:Send_ServerToAllClients("update_countdown", {betweenRounds = Game:IsBetweenRounds(), seconds = Game:GetRemainingBuildingTime()})
-            else
-                CustomGameEventManager:Send_ServerToAllClients("update_countdown", {betweenRounds = Game:IsBetweenRounds(), seconds = -1})
+        self.gameTimer =
+            Timers:CreateTimer(
+            0,
+            function()
+                return self:OnThink()
             end
-            return 1
-        end)
+        )
+        self.countDownTimer =
+            Timers:CreateTimer(
+            1,
+            function()
+                if (self.nextRoundTime) then
+                    CustomGameEventManager:Send_ServerToAllClients(
+                        "update_countdown",
+                        {betweenRounds = Game:IsBetweenRounds(), seconds = Game:GetRemainingBuildingTime()}
+                    )
+                else
+                    CustomGameEventManager:Send_ServerToAllClients(
+                        "update_countdown",
+                        {betweenRounds = Game:IsBetweenRounds(), seconds = -1}
+                    )
+                end
+                return 1
+            end
+        )
     end
 end
 
@@ -355,21 +397,32 @@ function Game:GetRemainingBuildingTime()
     return Game.nextRoundTime - GameRules:GetGameTime()
 end
 
-
-
 --Wird jede viertel Sekunde aufgerufen, überprüft Spielstatus
 function Game:OnThink()
-    if self.gameState == GAMESTATE_PREPARATION then
-        --festlegung der vorbereitungszeit
-        if self.nextRoundTime <= GameRules:GetGameTime() then
-            self:StartNextRound()
+    local success =
+        SafeCall(
+        function()
+            if self.gameState == GAMESTATE_PREPARATION then
+                --festlegung der vorbereitungszeit
+                if self.nextRoundTime <= GameRules:GetGameTime() then
+                    self:StartNextRound()
+                end
+            end
+            if self.gameState == GAMESTATE_FIGHTING then
+                self.rounds[self.gameRound]:CheckEnd()
+            end
+            if self.gameState == GAMESTATE_END then
+            end
         end
-    end
-    if self.gameState == GAMESTATE_FIGHTING then
-        self.rounds[self.gameRound]:CheckEnd()
-    end
-    if self.gameState == GAMESTATE_END then
+    )
+    if not success then
+        self.failedThinks = self.failedThinks + 1
+        if self.failedThinks >= MAX_FAILED_THINKS then
+            return nil
         end
+    else
+        self.failedThinks = 0
+    end
     return 0.25
 end
 
@@ -400,19 +453,22 @@ function Game:ResetSkip()
 end
 
 function Game:SendRoundChanged()
-    CustomGameEventManager:Send_ServerToAllClients("round_changed", {
-        round = self.gameRound,
-        displayRound = self:GetDisplayRound(),
-        isDuel = self:GetCurrentRound().isDuelRound == true,
-        state = self.gameState,
-        nextRoundTime = self.nextRoundTime,
-    });
+    CustomGameEventManager:Send_ServerToAllClients(
+        "round_changed",
+        {
+            round = self.gameRound,
+            displayRound = self:GetDisplayRound(),
+            isDuel = self:GetCurrentRound().isDuelRound == true,
+            state = self.gameState,
+            nextRoundTime = self.nextRoundTime
+        }
+    )
 end
 
 --Setzt die Zeit zum warten zur nächsten Runde
 function Game:SetWaitTime()
     Game:ResetSkip()
-    
+
     local waitTime = self.timeBetweenRounds
     if self.gameRound == 1 then
         waitTime = self.initPrepTime
@@ -421,12 +477,10 @@ function Game:SetWaitTime()
         waitTime = self.timeBeforeDuel
     end
     self.nextRoundTime = GameRules:GetGameTime() + waitTime
-    
+
     self:RespawnUnits()
     print("Time to next Round: " .. waitTime)
 end
-
-
 
 --Runde beendet
 function Game:RoundFinished()
@@ -437,7 +491,7 @@ function Game:RoundFinished()
     for _, listener in pairs(self.endOfRoundListeners) do
         pcall(listener)
     end
-    
+
     self.IncreaseRound()
     self:SetGameState(GAMESTATE_PREPARATION)
     for _, player in pairs(self.players) do
@@ -445,13 +499,9 @@ function Game:RoundFinished()
     end
 end
 
-
-
 function Game:GetCurrentRound()
     return self.rounds[self.gameRound]
 end
-
-
 
 --Startet nächste Runde
 function Game:StartNextRound()
@@ -460,14 +510,17 @@ function Game:StartNextRound()
     print "Game:StartNextround()"
     for _, player in pairs(self.players) do
         if player:IsActive() then --only repair leaks if lane is active
-            player.leaked = false;
-            player.leaksPenalty = 0;
+            player.leaked = false
+            player.leaksPenalty = 0
         end
         if not player:IsActive() then
             player.missedSpawns = player.missedSpawns + 1
         end
         if not player.abandoned then
-            if player.missedSpawns >= 3 or PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED then
+            if
+                player.missedSpawns >= 3 or
+                    PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED
+             then
                 player:Abandon()
             end
         end
@@ -478,12 +531,14 @@ function Game:StartNextRound()
     self.gridBoxes:AddEffects(EF_NODRAW)
     self.nextRoundTime = nil
 
-    SafeCall(function()
-        local currRound = self:GetCurrentRound()
-        currRound:Begin()
-        self:UnlockUnits()
-        self:SetGameState(GAMESTATE_FIGHTING)
-    end)
+    SafeCall(
+        function()
+            local currRound = self:GetCurrentRound()
+            currRound:Begin()
+            self:UnlockUnits()
+            self:SetGameState(GAMESTATE_FIGHTING)
+        end
+    )
 end
 
 function Game:CheckTeamLeft(team)
@@ -507,16 +562,12 @@ function Game:CheckTeamLeft(team)
     GameRules:Defeated()
 end
 
-
-
---Checkt ob gerade keine Runde läuft
+-- Returns true if players can build right now
 function Game:IsBetweenRounds()
     return self.gameState == GAMESTATE_PREPARATION
 end
 
-
-
---Überprüft ob Einheit hier gespawnt werden kann
+-- Checks whether a location is free for spawn
 function Game:CanSpawn(caster, vector)
     local CHECKINGRADIUS = 30
     local result = 2
@@ -531,19 +582,20 @@ function Game:CanSpawn(caster, vector)
     return result
 end
 
-
-
 --Sorgt dafür dass die Zeit aktualisiert Wird
 function Game:Initialize()
     if (voteOptions["fog_of_war"]) then
         mode:SetFogOfWarDisabled(false)
     end
-    Timers:CreateTimer(0, function()
-        GameRules:SetTimeOfDay(0.26)-- always day!
-        return 1
-    end)
+    Timers:CreateTimer(
+        0,
+        function()
+            GameRules:SetTimeOfDay(0.26)
+            -- always day!
+            return 1
+        end
+    )
 end
-
 
 --NPC gespawnt, falls spieler in die Liste eintragen
 function Game:OnNPCSpawned(key)
@@ -571,8 +623,6 @@ function Game:OnNPCSpawned(key)
     end
 end
 
-
-
 function Game:OnConnectFull(keys)
     local entIndex = keys.index + 1
     local ply = EntIndexToHScript(entIndex)
@@ -583,12 +633,15 @@ function Game:OnConnectFull(keys)
             print("Game:OnConnectFull(): Player object found for existing player.")
             player:SetPlayerEntity(ply, keys.userid)
         else
-            print("Game:OnConnectFull(): Player object not found for player entIndex " .. entIndex .. " playerID " .. playerID .. "; Creating.")
+            print(
+                "Game:OnConnectFull(): Player object not found for player entIndex " ..
+                    entIndex .. " playerID " .. playerID .. "; Creating."
+            )
             local newPlayer = Player.new(ply, keys.userid)
             self.players[keys.userid] = newPlayer
         end
     end
-    
+
     for _, p in pairs(self.players) do
         local data = {
             playerID = p:GetPlayerID(),
@@ -597,7 +650,6 @@ function Game:OnConnectFull(keys)
         self:RequestStoredData(data)
     end
 end
-
 
 function Game:OnPlayerReconnect(keys)
     local entIndex = keys.index + 1
@@ -613,8 +665,6 @@ function Game:OnPlayerReconnect(keys)
     end
 end
 
-
-
 function Game:OrderFilter(keys)
     local order = keys.order_type
     local unit = EntIndexToHScript(keys.units["0"])
@@ -622,12 +672,14 @@ function Game:OrderFilter(keys)
     for _, key in pairs(keys.units) do
         table.insert(units, EntIndexToHScript(key))
     end
-    
+
     local issuingPlayer = self:FindPlayerWithID(keys.issuer_player_id_const)
     if issuingPlayer then
-        if issuingPlayer.abandoned == true then return false end
+        if issuingPlayer.abandoned == true then
+            return false
+        end
     end
-    
+
     if order == DOTA_UNIT_ORDER_HOLD_POSITION then
         for _, u in pairs(units) do
             if u.unit then
@@ -635,14 +687,12 @@ function Game:OrderFilter(keys)
             end
         end
     end
-    
-    
+
     local player = nil
     if unit then
         player = unit.player
     end
-    
-    
+
     local ability = EntIndexToHScript(keys.entindex_ability)
     -- if it is an ability
     if ability then
@@ -678,7 +728,7 @@ function Game:OrderFilter(keys)
                 return false
             end
         end
-        
+
         --Tower Special Case
         if string.find(ability:GetName(), "spawn") then
             --between rounds?
@@ -699,7 +749,14 @@ function Game:OrderFilter(keys)
                     player:SendErrorCode(canSpawn)
                     if canSpawn == LEGION_ERROR_INVALID_LOCATION then
                         local pos = player.lane.box:GetAbsOrigin()
-                        MinimapEvent(player:GetTeamNumber(), player.hero, pos.x, pos.y, DOTA_MINIMAP_EVENT_HINT_LOCATION, 1)
+                        MinimapEvent(
+                            player:GetTeamNumber(),
+                            player.hero,
+                            pos.x,
+                            pos.y,
+                            DOTA_MINIMAP_EVENT_HINT_LOCATION,
+                            1
+                        )
                     end
                 end
                 return false
@@ -710,7 +767,6 @@ function Game:OrderFilter(keys)
     return true
 end
 
-
 function Game:FindPlayerWithSteamID(steamID)
     for _, player in pairs(self.players) do
         if tostring(player:GetSteamID()) == tostring(steamID) then
@@ -719,7 +775,6 @@ function Game:FindPlayerWithSteamID(steamID)
     end
     return nil
 end
-
 
 function Game:GetAllPlayersOfTeam(id)
     local result = {}
@@ -731,7 +786,6 @@ function Game:GetAllPlayersOfTeam(id)
     return result
 end
 
-
 function Game:FindPlayerWithID(id)
     for _, player in pairs(self.players) do
         if player:GetPlayerID() == id then
@@ -741,8 +795,6 @@ function Game:FindPlayerWithID(id)
     return nil
 end
 
-
-
 function Game:OnPlayerDisconnect(key)
     for ind, player in pairs(self.players) do
         if player.userID == key.userid then
@@ -750,7 +802,6 @@ function Game:OnPlayerDisconnect(key)
         end
     end
 end
-
 
 --sends a unit
 function Game:SendUnit(data)
@@ -761,7 +812,9 @@ function Game:SendUnit(data)
         cost = data.cost
     }
     local player = Game:FindPlayerWithID(lData.playerID)
-    if not player then return end
+    if not player then
+        return
+    end
     if player:SpendTangos(lData.cost) then
         player:AddIncome(lData.income)
         local spawn = player:GetIncomeSpawner():GetAbsOrigin()
@@ -811,9 +864,6 @@ function Game:LimitSends(units)
     table.remove(units, lowestIndex)
 end
 
-
-
-
 function Game:UpgradeKing(data)
     local lData = {
         id = data.id,
@@ -822,19 +872,33 @@ function Game:UpgradeKing(data)
         income = data.income
     }
     local player = Game:FindPlayerWithID(lData.id)
-    if not player then return end
-    if Game.noUpgrade then player:SendErrorCode(LEGION_ERROR_DURING_DUEL) return end
+    if not player then
+        return
+    end
+    if Game.noUpgrade then
+        player:SendErrorCode(LEGION_ERROR_DURING_DUEL)
+        return
+    end
     if player:HasEnoughTangos(lData.cost) then
         local boss = Game.radiantBoss
         if player:GetTeamNumber() == DOTA_TEAM_BADGUYS then
             boss = Game.direBoss
         end
         if lData.type == 0 then
-            if not Game:UpgradeKingsHealth(boss) then player:SendErrorCode(LEGION_ERROR_TO_MANY_UPGRADES) return end
+            if not Game:UpgradeKingsHealth(boss) then
+                player:SendErrorCode(LEGION_ERROR_TO_MANY_UPGRADES)
+                return
+            end
         elseif lData.type == 1 then
-            if not Game:UpgradeKingsAttack(boss) then player:SendErrorCode(LEGION_ERROR_TO_MANY_UPGRADES) return end
+            if not Game:UpgradeKingsAttack(boss) then
+                player:SendErrorCode(LEGION_ERROR_TO_MANY_UPGRADES)
+                return
+            end
         elseif lData.type == 2 then
-            if not Game:UpgradeKingsRegen(boss) then player:SendErrorCode(LEGION_ERROR_TO_MANY_UPGRADES) return end
+            if not Game:UpgradeKingsRegen(boss) then
+                player:SendErrorCode(LEGION_ERROR_TO_MANY_UPGRADES)
+                return
+            end
         end
         player:AddIncome(lData.income)
         player:SpendTangos(lData.cost)
@@ -842,9 +906,6 @@ function Game:UpgradeKing(data)
         player:SendErrorCode(LEGION_ERROR_NOT_ENOUGH_TANGOS)
     end
 end
-
-
-
 
 function Game:UpgradeKingsHealth(king)
     if IncreaseStack(king, "boss_upgrade_health_stack") then
@@ -857,9 +918,6 @@ function Game:UpgradeKingsHealth(king)
     return false
 end
 
-
-
-
 function Game:UpgradeKingsAttack(king)
     if IncreaseStack(king, "boss_upgrade_attack_stack") then
         king:SetBaseDamageMin(king:GetBaseDamageMin() + king.damageBonus)
@@ -870,9 +928,6 @@ function Game:UpgradeKingsAttack(king)
     return false
 end
 
-
-
-
 function Game:UpgradeKingsRegen(king)
     if IncreaseStack(king, "boss_upgrade_regen_stack") then
         king:SetBaseHealthRegen(king:GetBaseHealthRegen() + king.regenBonus)
@@ -881,7 +936,6 @@ function Game:UpgradeKingsRegen(king)
     end
     return false
 end
-
 
 function Game:VoteOptionClicked(data)
     local lData = {
@@ -902,7 +956,7 @@ function Game:SkipPressed(data)
     local player = Game:FindPlayerWithID(lData.playerID)
     player.wantsSkip = true
     print(lData.playerID .. " wants to skip waiting time.")
-    
+
     Game:FormatSkipMessage(Game:CountSkipvotes(), Game:CountRemainingPlayers())
     Game:CheckSkip()
 end
@@ -930,9 +984,17 @@ end
 function Game:FormatSkipMessage(votes, remaining)
     local message = ""
     if votes == 1 then
-        message = "<b color='LawnGreen'>" .. votes .. " player</b> <b color='white'>is ready for the next round.</b><b color='LawnGreen'> " .. remaining .. " votes</b> <b color='white'>needed.</b>"
+        message =
+            "<b color='LawnGreen'>" ..
+            votes ..
+                " player</b> <b color='white'>is ready for the next round.</b><b color='LawnGreen'> " ..
+                    remaining .. " votes</b> <b color='white'>needed.</b>"
     else
-        message = "<b color='LawnGreen'>" .. votes .. " players</b> <b color='white'>are ready for the next round.</b><b color='LawnGreen'> " .. remaining .. " votes</b> <b color='white'>needed.</b>"
+        message =
+            "<b color='LawnGreen'>" ..
+            votes ..
+                " players</b> <b color='white'>are ready for the next round.</b><b color='LawnGreen'> " ..
+                    remaining .. " votes</b> <b color='white'>needed.</b>"
     end
     GameRules:SendCustomMessage(message, 0, 0)
 end
@@ -959,9 +1021,8 @@ function IncreaseStack(king, modifier)
     return true
 end
 
-
 function Game:IncreaseRound()
-    Game.gameRound = Game.gameRound + 1;
+    Game.gameRound = Game.gameRound + 1
     if (Game.gameRound > Game:GetRoundCount()) then
         Game.gameRound = Game.gameRound - 1
         Game.lastWaveCount = Game.lastWaveCount + 1
@@ -973,8 +1034,6 @@ function Game:IncreaseRound()
         end
     end
 end
-
-
 
 function Game:RecountDuels()
     local duelCount = 0
@@ -989,8 +1048,6 @@ function Game:RecountDuels()
     print("Recounted duels")
 end
 
-
-
 function Game:SetRound(i)
     local curRound = self:GetCurrentRound()
     self.gameRound = i
@@ -1002,8 +1059,6 @@ function Game:SetRound(i)
     print("Set round to " .. i)
 end
 
-
-
 function Game:StartNextRoundCommand()
     if Game.gameState == GAMESTATE_PREPARATION then
         Game:SkipWait()
@@ -1012,33 +1067,23 @@ function Game:StartNextRoundCommand()
     end
 end
 
-
-
 function Game:RestartRoundCommand()
     Game:SetRound(Game.gameRound)
 end
-
-
 
 function Game:StartPreviousRoundCommand()
     Game:SetRound(Game.gameRound - 1)
 end
 
-
-
 function Game:RestartCommand()
     Game:SetRound(1)
 end
-
-
 
 function Game:StopRound()
     if Game.gameState == GAMESTATE_FIGHTING then
         Game:GetCurrentRound():End()
     end
 end
-
-
 
 function Game:ClearBoard()
     for _, round in pairs(self.rounds) do
@@ -1064,9 +1109,9 @@ end
 function Game:ResetUnitPositions()
     for _, player in pairs(self.players) do
         -- if player:IsActive() then
-            for __, unit in pairs(player.units) do
-                unit:ResetPosition()
-            end
+        for __, unit in pairs(player.units) do
+            unit:ResetPosition()
+        end
         -- end
     end
 end
@@ -1096,9 +1141,9 @@ end
 function Game:LockUnits()
     for _, player in pairs(self.players) do
         -- if player:IsActive() then
-            for __, unit in pairs(player.units) do
-                unit:Lock()
-            end
+        for __, unit in pairs(player.units) do
+            unit:Lock()
+        end
         -- end
     end
 end
@@ -1107,9 +1152,9 @@ end
 function Game:SpawnUnits()
     for _, player in pairs(self.players) do
         -- if player:IsActive() then
-            for __, unit in pairs(player.units) do
-                unit:Spawn()
-            end
+        for __, unit in pairs(player.units) do
+            unit:Spawn()
+        end
         -- end
     end
 end
@@ -1131,8 +1176,6 @@ function Game:DistributeMissedTangos(missedTime)
     end
 end
 
-
-
 function Game:GetActivePlayerInTeam(team)
     local result = 0
     for _, player in pairs(Game.players) do
@@ -1143,19 +1186,21 @@ function Game:GetActivePlayerInTeam(team)
     return result
 end
 
-
-
-
 function Game:CreatePlayerDataFor(playerID)
     local player = Game:FindPlayerWithID(playerID)
-    if (player == nil) then return end
-    PlayerData.CreateToPlayer(player, function(result, success)
-        if success then
-            Game:RequestStoredData({playerID = playerID, steamID = player:GetSteamID()})
-        else
-            print("Failure at creating new Playerdataset!")
+    if (player == nil) then
+        return
+    end
+    PlayerData.CreateToPlayer(
+        player,
+        function(result, success)
+            if success then
+                Game:RequestStoredData({playerID = playerID, steamID = player:GetSteamID()})
+            else
+                print("Failure at creating new Playerdataset!")
+            end
         end
-    end)
+    )
 end
 
 function Game:SendStoredData(playerID, steamID)
@@ -1176,14 +1221,17 @@ function Game:RequestStoredData(data)
         steamID = data.steamID
     }
     local playerToSteamID = Game:FindPlayerWithSteamID(lData.steamID)
-    Game.storage:GetPlayerData(lData.steamID, function(result, success)
-        if success == false then
-            Game:CreatePlayerDataFor(lData.playerID)
-            return
+    Game.storage:GetPlayerData(
+        lData.steamID,
+        function(result, success)
+            if success == false then
+                Game:CreatePlayerDataFor(lData.playerID)
+                return
+            end
+            PlayerData.AddOrUpdate(result, playerToSteamID, lData.steamID)
+            Game:SendStoredData(lData.playerID, lData.steamID)
         end
-        PlayerData.AddOrUpdate(result, playerToSteamID, lData.steamID)
-        Game:SendStoredData(lData.playerID, lData.steamID)
-    end)
+    )
 end
 
 function Game:ConvertRankingData(data)
@@ -1204,12 +1252,21 @@ function Game:RequestRanking(data)
         from = data.from,
         to = data.to
     }
-    Game.storage:GetRanking(lData.attribute, lData.from, lData.to, function(result, success)
-        local sendData = Game:ConvertRankingData(result)
-        sendData.count = table.count(sendData)
-        sendData.attribute = lData.attribute
-        CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerID), "send_rankings", sendData)
-    end)
+    Game.storage:GetRanking(
+        lData.attribute,
+        lData.from,
+        lData.to,
+        function(result, success)
+            local sendData = Game:ConvertRankingData(result)
+            sendData.count = table.count(sendData)
+            sendData.attribute = lData.attribute
+            CustomGameEventManager:Send_ServerToPlayer(
+                PlayerResource:GetPlayer(lData.playerID),
+                "send_rankings",
+                sendData
+            )
+        end
+    )
 end
 
 function table.count(tab)
@@ -1224,11 +1281,19 @@ function Game:RequestRankingPosition(data)
     local lData = {
         playerId = data.playerId,
         attribute = data.attribute,
-        steamId = data.steamId,
+        steamId = data.steamId
     }
-    Game.storage:GetRankingPosition(lData.attribute, lData.steamId, function(result)
-        CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerId), "send_ranking_position", result)
-    end)
+    Game.storage:GetRankingPosition(
+        lData.attribute,
+        lData.steamId,
+        function(result)
+            CustomGameEventManager:Send_ServerToPlayer(
+                PlayerResource:GetPlayer(lData.playerId),
+                "send_ranking_position",
+                result
+            )
+        end
+    )
 end
 
 function Game:RequestMatchHistory(data)
@@ -1238,11 +1303,19 @@ function Game:RequestMatchHistory(data)
         from = data.from,
         to = data.to
     }
-    Game.storage:GetMatchHistory(lData.steamId, lData.from, lData.to, function(result)
-        CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(lData.playerId), "send_match_history", result)
-    end)
+    Game.storage:GetMatchHistory(
+        lData.steamId,
+        lData.from,
+        lData.to,
+        function(result)
+            CustomGameEventManager:Send_ServerToPlayer(
+                PlayerResource:GetPlayer(lData.playerId),
+                "send_match_history",
+                result
+            )
+        end
+    )
 end
-
 
 function Game:UpdateUnitData()
     local data = {}
@@ -1251,64 +1324,78 @@ function Game:UpdateUnitData()
         data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
         -- print(data[name].DisplayName)
     end
-    Game.storage:UpdateUnitData(Game.UnitKV);
+    Game.storage:UpdateUnitData(Game.UnitKV)
 end
-
 
 function Game:UpdateAbilityData()
     local data = {}
-    for name,d in pairs(Game.AbilityKV) do
+    for name, d in pairs(Game.AbilityKV) do
         data[name] = d
-        data[name].DisplayName = Game.EnglishLocalizationKV.Tokens["DOTA_Tooltip_ability_"..name] or name
+        data[name].DisplayName = Game.EnglishLocalizationKV.Tokens["DOTA_Tooltip_ability_" .. name] or name
         -- print(data[name].DisplayName)
     end
-    Game.storage:UpdateAbilityData(data);
+    Game.storage:UpdateAbilityData(data)
 end
-
 
 function Game:UpdateBuilderData()
     local data = {}
-    for name,d in pairs(Game.HeroKV) do
+    for name, d in pairs(Game.HeroKV) do
         data[name] = d
         data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
         -- print(data[name].DisplayName)
     end
-    Game.storage:UpdateBuilderData(data);
+    Game.storage:UpdateBuilderData(data)
 end
 
-
 function Game:SaveDataAtEnd()
-    if GameRules:IsCheatMode() then return end
-    HookSetWinnerFunction(function(gameRules, team)
-        for _, player in pairs(self.players) do
-            if player:GetTeamNumber() == team then
-                player.wonGame = true
-            else
-                player.lostGame = true
+    if GameRules:IsCheatMode() then
+        return
+    end
+    HookSetWinnerFunction(
+        function(gameRules, team)
+            for _, player in pairs(self.players) do
+                if player:GetTeamNumber() == team then
+                    player.wonGame = true
+                else
+                    player.lostGame = true
+                end
+                local data = PlayerData.Get(player:GetSteamID()):GetToStoredData()
+                self.storage:SavePlayerData(player:GetSteamID(), data)
             end
-            local data = PlayerData.Get(player:GetSteamID()):GetToStoredData()
-            self.storage:SavePlayerData(player:GetSteamID(), data)
         end
-    end)
+    )
 end
 
 function Game:SaveMatchAtEnd()
-    if GameRules:IsCheatMode() then return end
-    HookSetWinnerFunction(function(gameRules, team)
-        local matchData = {}
-        for _, player in pairs(self.players) do
-            matchData[player:GetSteamID()] = PlayerData.GetByPlayer(player):GetMatchData()
+    if GameRules:IsCheatMode() then
+        return
+    end
+    HookSetWinnerFunction(
+        function(gameRules, team)
+            local matchData = {}
+            for _, player in pairs(self.players) do
+                matchData[player:GetSteamID()] = PlayerData.GetByPlayer(player):GetMatchData()
+            end
+            local duration = GameRules:GetGameTime()
+            local wave = Game.gameRound + Game.lastWaveCount
+            self.storage:SaveMatchData(
+                team,
+                duration,
+                wave,
+                matchData,
+                DuelRound.doneRounds,
+                function(response, success)
+                    print(success)
+                end
+            )
         end
-        local duration = GameRules:GetGameTime()
-        local wave = Game.gameRound + Game.lastWaveCount
-        self.storage:SaveMatchData(team, duration, wave, matchData, DuelRound.doneRounds, function(response, success)
-            print(success)
-        end)
-    end)
+    )
 end
 
 function Game:GetAllFractions()
-    if Game.fractions ~= nil then return Game.fractions end
+    if Game.fractions ~= nil then
+        return Game.fractions
+    end
     Game.fractions = {}
     for _, unit in pairs(Game.UnitKV) do
         local fraction = unit.LegionFraction or "other"
@@ -1329,10 +1416,12 @@ function Game:GetAllBuilders()
 end
 
 function SafeCall(func, ...)
-    local status, error = pcall(func, ...)
+    local status, error_msg = pcall(func, ...)
     if not status then
-        Game.storage:LogError(error)
+        Game.storage:LogError(error_msg)
+    -- error(error_msg)
     end
+    return status
 end
 
 function HookSetWinnerFunction(callback)

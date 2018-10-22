@@ -42,16 +42,14 @@ USE_CUSTOM_HERO_LEVELS = true -- Should we allow heroes to have custom levels?
 MAX_LEVEL = 50 -- What level should we let heroes get to?
 USE_CUSTOM_XP_VALUES = true -- Should we use custom XP values to level up heroes, or the default Dota numbers?
 
-
 -- Fill this table up with the required XP per level if you want to change it
 XP_PER_LEVEL_TABLE = {}
 for i = 1, MAX_LEVEL do
     XP_PER_LEVEL_TABLE[i] = i * 100
 end
 
-
-LAST_WAVE_DMG_PER_ROUND = 20;
-LAST_WAVE_HEALTH_PER_ROUND = 200;
+LAST_WAVE_DMG_PER_ROUND = 20
+LAST_WAVE_HEALTH_PER_ROUND = 200
 
 HARD_MODE_DAMAGE_MULTIPLIER = 1.3
 HARD_MODE_HEALTH_MULTIPLIER = 1.3
@@ -71,7 +69,7 @@ START_TANGO = 20
 START_FOOD_LIMIT = 10
 START_INCOME = 0
 
-if Convars:GetBool('developer') then
+if Convars:GetBool("developer") then
     START_GOLD = 100000
     START_TANGO = 100000
     START_FOOD_LIMIT = 100000
@@ -108,7 +106,6 @@ voteOptions["deactivate_duels"] = false
 voteOptions["hard_mode"] = false
 voteOptions["final_duel"] = false
 
-
 voteOptionsText = {}
 voteOptionsText["tango_limit"] = "Tango limit"
 voteOptionsText["return_to_sender"] = "Return to sender"
@@ -117,7 +114,6 @@ voteOptionsText["deactivate_duels"] = "Deactivate duels"
 voteOptionsText["hard_mode"] = "Hard mode"
 voteOptionsText["final_duel"] = "Final Duel"
 
-
 function UpdateAllVoteLabels()
     for _, opt in pairs(voteOptions) do
         UpdateVoteLabel(opt)
@@ -125,11 +121,14 @@ function UpdateAllVoteLabels()
 end
 
 function UpdateVoteLabel(opt)
-    CustomGameEventManager:Send_ServerToAllClients("update_vote_label", {
-        option = opt,
-        votes = GetVotesFor(opt),
-        playerCount = PlayerResource:GetPlayerCount(),
-    })
+    CustomGameEventManager:Send_ServerToAllClients(
+        "update_vote_label",
+        {
+            option = opt,
+            votes = GetVotesFor(opt),
+            playerCount = PlayerResource:GetPlayerCount()
+        }
+    )
 end
 
 function GetVotesFor(option)
@@ -157,10 +156,18 @@ function CheckVoteResults()
         end
         if (voteOptions[option]) then
             print(option .. " is active.")
-            GameRules:SendCustomMessage("<b color='white'>" .. voteOptionsText[option] .. " is</b> <b color='LawnGreen'>active.</b>", 0, 0)
+            GameRules:SendCustomMessage(
+                "<b color='white'>" .. voteOptionsText[option] .. " is</b> <b color='LawnGreen'>active.</b>",
+                0,
+                0
+            )
         else
             print(option .. " is not active.")
-            GameRules:SendCustomMessage("<b color='white'>" .. voteOptionsText[option] .. " is</b> <b color='red'>disabled.</b>", 0, 0)
+            GameRules:SendCustomMessage(
+                "<b color='white'>" .. voteOptionsText[option] .. " is</b> <b color='red'>disabled.</b>",
+                0,
+                0
+            )
         end
     end
     GameRules:GetGameModeEntity():SetFogOfWarDisabled(not voteOptions["fog_of_war"])

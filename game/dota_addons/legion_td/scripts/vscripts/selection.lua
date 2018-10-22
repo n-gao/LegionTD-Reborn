@@ -85,10 +85,14 @@ function CDOTA_PlayerResource:GetMainSelectedEntity(playerID)
 end
 
 function CDOTA_PlayerResource:IsUnitSelected(playerID, unit)
-    if not unit then return false end
+    if not unit then
+        return false
+    end
     local entIndex = type(unit) == "number" and unit or IsValidEntity(unit) and unit:GetEntityIndex()
-    if not entIndex then return false end
-    
+    if not entIndex then
+        return false
+    end
+
     local selectedEntities = self:GetSelectedEntities(playerID)
     for _, v in pairs(selectedEntities) do
         if v == entIndex then
@@ -99,13 +103,18 @@ function CDOTA_PlayerResource:IsUnitSelected(playerID, unit)
 end
 
 function CDOTA_PlayerResource:RefreshSelection()
-    Timers:CreateTimer(0.03, function()
-        FireGameEvent("dota_player_update_selected_unit", {})
-    end)
+    Timers:CreateTimer(
+        0.03,
+        function()
+            FireGameEvent("dota_player_update_selected_unit", {})
+        end
+    )
 end
 
 function CDOTA_PlayerResource:SetDefaultSelectionEntity(playerID, unit)
-    if not unit then unit = -1 end
+    if not unit then
+        unit = -1
+    end
     local entIndex = type(unit) == "number" and unit or unit:GetEntityIndex()
     local hero = self:GetSelectedHeroEntity(playerID)
     if hero then
@@ -116,22 +125,23 @@ end
 function CDOTA_BaseNPC:SetSelectionOverride(reselect_unit)
     local unit = self
     local reselectIndex = type(reselect_unit) == "number" and reselect_unit or reselect_unit:GetEntityIndex()
-    
+
     CustomNetTables:SetTableValue("selection", tostring(unit:GetEntityIndex()), {entity = reselectIndex})
 end
 
 ------------------------------------------------------------------------
 -- Internal
 ------------------------------------------------------------------------
-require('timers')
+require("timers")
 
 if not Selection then
     Selection = class({})
 end
 
 function Selection:Init()
-    Selection.entities = {}--Stores the selected entities of each playerID
-    CustomGameEventManager:RegisterListener("selection_update", Dynamic_Wrap(Selection, 'OnUpdate'))
+    Selection.entities = {}
+     --Stores the selected entities of each playerID
+    CustomGameEventManager:RegisterListener("selection_update", Dynamic_Wrap(Selection, "OnUpdate"))
 end
 
 function Selection:OnUpdate(event)
@@ -143,17 +153,19 @@ end
 function Selection:GetEntIndexListFromTable(unit_args)
     local entities = {}
     if type(unit_args) == "number" then
-        table.insert(entities, unit_args)-- Entity Index
-    -- Check contents of the table
+        -- Check contents of the table
+        table.insert(entities, unit_args)
+     -- Entity Index
     elseif type(unit_args) == "table" then
         if unit_args.IsCreature then
-            table.insert(entities, unit_args:GetEntityIndex())-- NPC Handle
+            table.insert(entities, unit_args:GetEntityIndex())
+         -- NPC Handle
         else
             for _, arg in pairs(unit_args) do
                 -- Table of entity index values
                 if type(arg) == "number" then
+                    -- Table of npc handles
                     table.insert(entities, arg)
-                -- Table of npc handles
                 elseif type(arg) == "table" then
                     if arg.IsCreature then
                         table.insert(entities, arg:GetEntityIndex())
@@ -165,4 +177,6 @@ function Selection:GetEntIndexListFromTable(unit_args)
     return entities
 end
 
-if not Selection.entities then Selection:Init() end
+if not Selection.entities then
+    Selection:Init()
+end
