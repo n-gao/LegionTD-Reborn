@@ -19,27 +19,31 @@ EXPORTS.Init = function(self)
 end
 
 function aiThinkStandard(self)
-    SafeCall(
-        function()
-            if not self:IsAlive() then
-                return
+    if
+        SafeCall(
+            function()
+                if not self:IsAlive() then
+                    return
+                end
+                if
+                    self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or
+                        self:HasModifier("modifier_invulnerable")
+                 then
+                    return STANDARD_THINK_TIME
+                end
+                if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
+                    return self:NextWayPoint()
+                end
+                if self:IsIdle() and not CheckIfHasAggro(nil, self) then
+                    return self:Unstuck()
+                end
             end
-            if
-                self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or
-                    self:HasModifier("modifier_invulnerable")
-             then
-                return STANDARD_THINK_TIME
-            end
-            if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
-                return self:NextWayPoint()
-            end
-            if self:IsIdle() and not CheckIfHasAggro(nil, self) then
-                return self:Unstuck()
-            end
-        end
-    )
-
-    return STANDARD_THINK_TIME
+        )
+     then
+        return STANDARD_THINK_TIME
+    else
+        return nil
+    end
 end
 
 --[[function aiThinkStandardBuff(self)
@@ -62,34 +66,39 @@ return STANDARD_THINK_TIME
 end]]
 --
 function aiThinkStandardSkill(self)
-    SafeCall(
-        function()
-            if not self:IsAlive() then
-                return
-            end
-            if
-                self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or
-                    self:HasModifier("modifier_invulnerable")
-             then
-                return STANDARD_THINK_TIME
-            end
+    if
+        SafeCall(
+            function()
+                if not self:IsAlive() then
+                    return
+                end
+                if
+                    self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or
+                        self:HasModifier("modifier_invulnerable")
+                 then
+                    return STANDARD_THINK_TIME
+                end
 
-            for i, v in ipairs(self.abilities) do
-                if v:IsCooldownReady() and v:SkillTrigger(self) then
-                    return v.Skill(self, v)
+                for i, v in ipairs(self.abilities) do
+                    if v:IsCooldownReady() and v:SkillTrigger(self) then
+                        return v.Skill(self, v)
+                    end
+                end
+
+                if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
+                    return self:NextWayPoint()
+                end
+
+                if self:IsIdle() and not CheckIfHasAggro(nil, self) then
+                    return self:Unstuck()
                 end
             end
-
-            if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
-                return self:NextWayPoint()
-            end
-
-            if self:IsIdle() and not CheckIfHasAggro(nil, self) then
-                return self:Unstuck()
-            end
-        end
-    )
-    return STANDARD_THINK_TIME
+        )
+     then
+        return STANDARD_THINK_TIME
+    else
+        return nil
+    end
 end
 
 function UseSkillNoTarget(entity, ability)
