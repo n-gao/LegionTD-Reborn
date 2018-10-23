@@ -317,7 +317,6 @@ end
 --Start des Spiels
 function Game:Start()
     print("Game:Start()")
-    print(GetDedicatedServerKey("v1"))
     Notifications:TopToAll(
         {
             text = "<b color='red'>Remember:</b> <b color='white'>If you find any bug, please report it to the Discord.</b> ",

@@ -51,15 +51,17 @@ Storage.loggedErrors = {}
 
 function Storage:Init()
     local data = LoadKeyValues("scripts/vscripts/libs/storage_settings.kv")
+    DeepPrintTable(data)
     if data == nil then
         return
     end
     Storage.loggerURL = data.logger
     Storage.serverURL = data.url
     Storage.app_id = data.customGameId
-    if Convars:GetBool("developer") then
-        Storage.serverURL = data.debugUrl
-    end
+    Storage.dedicated_server_key = GetDedicatedServerKey("v1")
+    -- if Convars:GetBool("developer") then
+    --     Storage.serverURL = data.debugUrl
+    -- end
 end
 
 Storage:Init()
@@ -510,7 +512,8 @@ function Storage:InvalidateAll()
 end
 
 function Storage:SendHttpRequest(method, data, callback)
-    print("[STORAGE] Send Data")
+    print("[STORAGE] Send Data to " .. self.serverURL)
+    data.secret_key = self.dedicated_server_key
     DeepPrintTable(data)
 
     local req = CreateHTTPRequestScriptVM(method, self.serverURL)
@@ -544,9 +547,9 @@ function Storage:LogError(error)
         round = Game.gameRound,
         game_state = Game.gameState,
         num_players = #Game.players,
-        good_players = #Game.GetAllPlayersOfTeam(DOTA_TEAM_GOODGUYS),
-        bad_players = #Game.GetAllPlayersOfTeam(DOTA_TEAM_BADGUYS),
-        active_players = #Game.GetAllActivePlayer(),
+        good_players = #Game:GetAllPlayersOfTeam(DOTA_TEAM_GOODGUYS),
+        bad_players = #Game:GetAllPlayersOfTeam(DOTA_TEAM_BADGUYS),
+        active_players = #Game:GetAllActivePlayer(),
         error = error
     }
     local msg = JSON:encode(msg_obj)
