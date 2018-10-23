@@ -32,7 +32,12 @@ function DuelRound:Begin()
         240,
         function()
             if self.game:GetCurrentRound() == self then
-                self:End()
+                Game.storage:LogError("Unstuck duel round")
+                SafeCall(
+                    function()
+                        self:End()
+                    end
+                )
                 print("Unstuck")
             end
         end
@@ -142,7 +147,11 @@ function DuelRound:CheckEnd()
     self:CheckUnitsAlive()
     if next(self.remainingUnitsRadiant) == nil or next(self.remainingUnitsDire) == nil then
         print("Rounde beendet")
-        self:End()
+        SafeCall(
+            function()
+                self:End()
+            end
+        )
     end
 end
 

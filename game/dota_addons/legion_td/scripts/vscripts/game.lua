@@ -485,9 +485,6 @@ end
 --Runde beendet
 function Game:RoundFinished()
     self.gridBoxes:RemoveEffects(EF_NODRAW)
-    if not self.gameTimer then
-        self:CreateGameTimer()
-    end
     for _, listener in pairs(self.endOfRoundListeners) do
         pcall(listener)
     end
