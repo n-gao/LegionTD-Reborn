@@ -543,6 +543,18 @@ function Storage:LogError(error)
     end
     self.loggedErrors[error] = true
 
+    local players = Game.players
+    local player_data = {}
+    for _, player in pairs(players) do
+        table.insert(player_data, {
+            active = player:IsActive(),
+            abandoned = player:HasAbandoned(),
+            team_number = player:GetTeamNumber(),
+            player_id = player:GetPlayerID(),
+            user_id = player.userID
+        })
+    end
+
     local msg_obj = {
         round = Game.gameRound,
         game_state = Game.gameState,
@@ -550,6 +562,7 @@ function Storage:LogError(error)
         good_players = #Game:GetAllPlayersOfTeam(DOTA_TEAM_GOODGUYS),
         bad_players = #Game:GetAllPlayersOfTeam(DOTA_TEAM_BADGUYS),
         active_players = #Game:GetAllActivePlayer(),
+        players = player_data,
         error = error
     }
     local msg = JSON:encode(msg_obj)
