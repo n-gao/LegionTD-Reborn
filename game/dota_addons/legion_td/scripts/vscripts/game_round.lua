@@ -38,7 +38,6 @@ function GameRound:Begin()
         180,
         function()
             if self.game:GetCurrentRound() == self then
-                Game.storage:LogError("Unstuck normal round")
                 self:KillAll(true)
                 print("Unstuck")
             end

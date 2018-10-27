@@ -1,5 +1,6 @@
 STANDARD_THINK_TIME = 0.1
 OPTIMAL_SEARCH_RANGE = 200
+MAX_SAME_DATA = 15
 EXPORTS = {}
 
 LinkLuaModifier("modifier_unit_freeze_lua", "abilities/modifier_unit_freeze_lua.lua", LUA_MODIFIER_MOTION_NONE)
@@ -89,6 +90,10 @@ function aiThinkStandardSkill(self)
                     return self:NextWayPoint()
                 end
 
+                if not CanFindPath(self:GetAbsOrigin(), self.waypoints[self.wayStep]) then
+                    self:SetAbsOrigin(self.waypoints[self.wayStep])
+                end
+
                 if self:IsIdle() and not CheckIfHasAggro(nil, self) then
                     return self:Unstuck()
                 end
@@ -99,6 +104,46 @@ function aiThinkStandardSkill(self)
     else
         return nil
     end
+end
+
+function CheckStuck(entity)
+    -- Collect data
+    local position = self:GetAbsOrigin()
+    local data = {
+        x = position.x,
+        y = position.y,
+        z = position.z,
+        hp = self:GetHealth(),
+        mana = self:GetMana()
+    }
+    -- Calculate new index
+    local dataArray = self.dataArray or {}
+    local ind = self.currentDataIndex or 0
+    ind = ind + 1
+    if ind > MAX_SAME_DATA then
+        ind = 1
+    end
+    local prevData = dataArray[ind]
+    -- Comparing old with new data
+    local result = prevData ~= nil
+    if prevData ~= nil then
+        for key, value in pairs(data) do
+            result = result and prevData[key] == value
+        end
+    end
+    -- Setting new data
+    dataArray[ind] = data
+    self.dataArray = dataArray
+    self.currentDataIndex = ind
+    -- Catch simple cases first
+    if self:IsIdle() then
+        return true
+    end
+    if self:IsStunned() or self:IsRooted() or CheckIfHasAggro(nil, self) then
+        return false
+    end
+    -- Return data equality
+    return result
 end
 
 function UseSkillNoTarget(entity, ability)

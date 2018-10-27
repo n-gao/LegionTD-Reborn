@@ -72,14 +72,14 @@ end
 
 function BehaviorBlast:Begin()
 
-    print("soundmaster desires to blast")
+    --print("soundmaster desires to blast")
 
 
 
     targetPosition = thisEntity:GetAbsOrigin() + Vector(0, self.blastDirection * 200, 0)
-    print(self.blastDirection)
-    print(thisEntity:GetAbsOrigin())
-    print(targetPosition)
+    --print(self.blastDirection)
+    --print(thisEntity:GetAbsOrigin())
+    --print(targetPosition)
 
     self.endTime = GameRules:GetGameTime() + .2
 
