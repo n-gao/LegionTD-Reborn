@@ -35,6 +35,11 @@ function aiThinkStandard(self)
                 if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
                     return self:NextWayPoint()
                 end
+
+                if self.wayStep and not GridNav:CanFindPath(self:GetAbsOrigin(), self.waypoints[self.wayStep]) then
+                    self:SetAbsOrigin(self.waypoints[self.wayStep])
+                end
+
                 if self:IsIdle() and not CheckIfHasAggro(nil, self) then
                     return self:Unstuck()
                 end
@@ -90,7 +95,7 @@ function aiThinkStandardSkill(self)
                     return self:NextWayPoint()
                 end
 
-                if not CanFindPath(self:GetAbsOrigin(), self.waypoints[self.wayStep]) then
+                if self.wayStep and not GridNav:CanFindPath(self:GetAbsOrigin(), self.waypoints[self.wayStep]) then
                     self:SetAbsOrigin(self.waypoints[self.wayStep])
                 end
 
