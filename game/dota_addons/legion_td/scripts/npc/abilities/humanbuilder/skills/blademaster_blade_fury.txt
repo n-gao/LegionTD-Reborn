@@ -13,7 +13,7 @@
     "AbilityCooldown"               "2.5"
 
     "AbilityManaCost"               "0"
-    "AbilityDamage"                 "50"
+    "AbilityDamage"                 "75"
 
     "precache"
     {
@@ -37,6 +37,11 @@
         {
             "var_type"                  "FIELD_FLOAT"
             "duration"                  "1.0"
+        }
+        "04"
+        {
+            "var_type"                  "FIELD_FLOAT"
+            "damage_tick"               "15"
         }
     }
 
@@ -98,7 +103,7 @@
                         {
                             "Target"        "TARGET"
                             "Type"          "DAMAGE_TYPE_MAGICAL"
-                            "Damage"        "%AbilityDamage * %blade_fury_damage_tick"
+                            "Damage"        "%damage_tick"
                         }
 
                         

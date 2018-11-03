@@ -40,7 +40,7 @@ function aiThinkStandard(self)
                     self:SetAbsOrigin(self.waypoints[self.wayStep])
                 end
 
-                if self:IsIdle() and not CheckIfHasAggro(nil, self) then
+                if CheckStuck(self) then
                     return self:Unstuck()
                 end
             end
@@ -99,7 +99,7 @@ function aiThinkStandardSkill(self)
                     self:SetAbsOrigin(self.waypoints[self.wayStep])
                 end
 
-                if self:IsIdle() and not CheckIfHasAggro(nil, self) then
+                if CheckStuck(self) then
                     return self:Unstuck()
                 end
             end
@@ -111,7 +111,7 @@ function aiThinkStandardSkill(self)
     end
 end
 
-function CheckStuck(entity)
+function CheckStuck(self)
     -- Collect data
     local position = self:GetAbsOrigin()
     local data = {
