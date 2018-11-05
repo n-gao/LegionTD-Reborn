@@ -326,6 +326,7 @@ end
 function Unstuck(self)
     if self.wayStep then -- is this a wave/send creep?
         --print ("Unsticking unit with .WayStep")
+        self:Stop()
         ExecuteOrderFromTable(
             {
                 UnitIndex = self:entindex(),

@@ -563,6 +563,9 @@ function Storage:LogError(error)
         bad_players = #Game:GetAllPlayersOfTeam(DOTA_TEAM_BADGUYS),
         active_players = #Game:GetAllActivePlayer(),
         players = player_data,
+        debug = Convars:GetBool("developer"),
+        date = GetSystemDate(),
+        time = GetSystemTime(),
         error = error
     }
     local msg = JSON:encode(msg_obj)
