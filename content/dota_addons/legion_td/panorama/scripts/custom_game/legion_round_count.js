@@ -7,10 +7,6 @@ function RoundChanged(data) {
     $("#RoundPanel").SetHasClass("BetweenRounds", data.state == 0);
     nextRoundTime = data.nextRoundTime;
 
-    if (data.isDuel) {
-        
-    }
-
     $.Msg("Round updated:");
     $.Msg(data);
     UpdateTime();
