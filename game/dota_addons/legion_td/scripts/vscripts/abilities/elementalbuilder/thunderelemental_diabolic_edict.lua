@@ -30,7 +30,7 @@ function diabolic_edict_start( keys )
 end
 
 function diabolic_edict_repeat( params )
-    if params.num_explosions == 0 then
+    if params.num_explosions == 0 or not params.caster:IsAlive() then
         StopSoundEvent("Hero_Leshrac.Diabolic_Edict_lp", params.caster)
         return
     end
