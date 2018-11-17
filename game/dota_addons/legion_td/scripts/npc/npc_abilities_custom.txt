@@ -10830,10 +10830,11 @@
     	"precache"
     	{
     		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
-    		"particle"	"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_halo_buff.vpcf"
-    		"particle"  "particles/status_fx/status_effect_guardian_angel.vpcf"
-    		"particle"  "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
-    	}
+    		//"particle"	"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_halo_buff.vpcf"
+    		//"particle"  "particles/status_fx/status_effect_guardian_angel.vpcf"
+    		//"particle"  "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
+    	   "particle"	"particles/items_fx/glyph_creeps.vpcf"
+        }
 
     	"OnSpellStart"
     	{
@@ -10871,32 +10872,35 @@
     			"IsBuff"			"1"
     			"IsPurgable"		"1"
     			"Duration"			"%duration"
-    			"StatusEffectName"     "particles/status_fx/status_effect_guardian_angel.vpcf"
-    			"StatusEffectPriority" "10"
+    			//"StatusEffectName"     "particles/status_fx/status_effect_guardian_angel.vpcf"
+    			//"StatusEffectPriority" "10"
 
-    			"OnCreated"
-    			{
-    				"AttachEffect"
-    				{
-    					"EffectName"		"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_halo_buff.vpcf"
-    					"EffectAttachType"	"follow_overhead"
-    					"Target"			"CASTER"
-    				}
+    			//"OnCreated"
+    			//{
+    			//	"AttachEffect"
+    			//	{
+    			//		"EffectName"		"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_halo_buff.vpcf"
+    			//		"EffectAttachType"	"follow_overhead"
+    			//		"Target"			"CASTER"
+    			//	}
 
-    			 	"AttachEffect"
-    				{
-    					"Target"
-    					{
-    						"Center"  		"CASTER"
-    						"Radius"		"%radius"
-    						"Teams" 		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-    						"Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-    					}
-    					"EffectName"				"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
-    					"EffectAttachType"			"follow_origin"
-    					"EffectRadius"				"%radius"
-    				}
-    			}
+    			// 	"AttachEffect"
+    			//	{
+    			//		"Target"
+    			//		{
+    			//			"Center"  		"CASTER"
+    			//			"Radius"		"%radius"
+    			//			"Teams" 		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    			//			"Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    			//		}
+    			//		"EffectName"				"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
+    			//		"EffectAttachType"			"follow_origin"
+    			//		"EffectRadius"				"%radius"
+    			//	}
+    			//}
+
+    			"EffectName" 		"particles/items_fx/glyph_creeps.vpcf"
+				"EffectAttachType" 	"follow_origin"
 
     			"Properties"
     			{
