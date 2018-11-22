@@ -11,9 +11,7 @@ function SelectionFilter(entityList) {
         if (entityList.length > 1 && IsMixedBuildingSelectionGroup(entityList)) {
             $.Schedule(1 / 60, DeselectBuildings)
         }
-    }
-
-    else if (SELECT_ONLY_BUILDINGS) {
+    } else if (SELECT_ONLY_BUILDINGS) {
         if (entityList.length > 1 && IsMixedBuildingSelectionGroup(entityList)) {
             $.Schedule(1 / 60, SelectOnlyBuildings)
         }
@@ -86,8 +84,7 @@ function IsMixedBuildingSelectionGroup(entityList) {
     for (var i = 0; i < entityList.length; i++) {
         if (IsCustomBuilding(entityList[i])) {
             buildings++
-        }
-        else {
+        } else {
             nonBuildings++
         }
     }

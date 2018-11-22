@@ -18,11 +18,11 @@ function formatDate(date) {
     var hour = date.getHours();
     var minutes = date.getMinutes();
 
-    return (day > 9 ? '' : '0') + day + '.'
-        + (month > 9 ? '' : '0') + month + '.'
-        + year + ' '
-        + (hour > 9 ? '' : '0') + hour + ':'
-        + (minutes > 9 ? '' : '0') + minutes;
+    return (day > 9 ? '' : '0') + day + '.' +
+        (month > 9 ? '' : '0') + month + '.' +
+        year + ' ' +
+        (hour > 9 ? '' : '0') + hour + ':' +
+        (minutes > 9 ? '' : '0') + minutes;
 }
 
 

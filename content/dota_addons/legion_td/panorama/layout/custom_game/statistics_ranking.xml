@@ -1,37 +1,37 @@
 <root>
-  <styles>
-    <include src="file://{resources}/styles/dotastyles.css" />
-    <include src="file://{resources}/styles/custom_game/main_hud.css" />
-    <include src="file://{resources}/styles/custom_game/statistics.css" />
-    <include src="file://{resources}/styles/custom_game/statistics_rankings.css" />
-  </styles>
-  <scripts>
-    <include src="file://{resources}/scripts/custom_game/utils.js" />
-    <include src="file://{resources}/scripts/custom_game/utils_ranking.js" />
-    <include src="file://{resources}/scripts/custom_game/statistics_rankings.js" />
-  </scripts>
-  <Panel hittest="false" class="RankingStatisticRoot">
-    <Panel id="RankingAttributePanel">
-      <DropDown id="RankingAttributeDropDown" oninputsubmit="OnRankingChanged()">
-        <Label text="#attribute_rating" id="rating"/>
-        <!--   <Label text="#attribute_experience" id="experience"/><Label text="#attribute_kills" id="kills"/><Label text="#attribute_won_games" id="won_games"/><Label text="#attribute_earned_tangos" id="earned_tangos"/><Label text="#attribute_tangos_per_minute" id="tangos_per_minute"/><Label text="#attribute_gold_per_minute" id="gold_per_minute"/> -->
-      </DropDown>
+    <styles>
+        <include src="file://{resources}/styles/dotastyles.css" />
+        <include src="file://{resources}/styles/custom_game/main_hud.css" />
+        <include src="file://{resources}/styles/custom_game/statistics.css" />
+        <include src="file://{resources}/styles/custom_game/statistics_rankings.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/utils.js" />
+        <include src="file://{resources}/scripts/custom_game/utils_ranking.js" />
+        <include src="file://{resources}/scripts/custom_game/statistics_rankings.js" />
+    </scripts>
+    <Panel hittest="false" class="RankingStatisticRoot">
+        <Panel id="RankingAttributePanel">
+            <DropDown id="RankingAttributeDropDown" oninputsubmit="OnRankingChanged()">
+                <Label text="#attribute_rating" id="rating"/>
+                <!--   <Label text="#attribute_experience" id="experience"/><Label text="#attribute_kills" id="kills"/><Label text="#attribute_won_games" id="won_games"/><Label text="#attribute_earned_tangos" id="earned_tangos"/><Label text="#attribute_tangos_per_minute" id="tangos_per_minute"/><Label text="#attribute_gold_per_minute" id="gold_per_minute"/> -->
+            </DropDown>
+        </Panel>
+        <Panel id="RankingLabels" styles="width: 100%;">
+            <Label text="#Rank" class="RankingRank Headline"/>
+            <Label text="Missing Text" id="RankingAttributeLabel" class="RankingValue Headline"/>
+            <Label text="#Player" class="RankingName Headline"/>
+        </Panel>
+        <Panel id="RankingList">
+            <!--<Label text="Coming soon." style="color: white; text-align: center; font-size: 14px; width: 200px; margin-top: 20px;"/>-->
+        </Panel>
+        <Panel id="RankingLocal">
+            <Label text="#Rank" id="RankingLocalRank" class="RankingRank StatisticsText"/>
+            <Label text="Missing Text" id="RankingLocalValue" class="RankingValue StatisticsText"/>
+            <Panel class="RankingName">
+                <DOTAUserName id="Name" steamid="local" class="StatisticsText"/>
+                <DOTAAvatarImage id="Avater" steamid="local"/>
+            </Panel>
+        </Panel>
     </Panel>
-    <Panel id="RankingLabels" styles="width: 100%;">
-      <Label text="#Rank" class="RankingRank Headline"/>
-      <Label text="Missing Text" id="RankingAttributeLabel" class="RankingValue Headline"/>
-      <Label text="#Player" class="RankingName Headline"/>
-    </Panel>
-    <Panel id="RankingList">
-      <!--<Label text="Coming soon." style="color: white; text-align: center; font-size: 14px; width: 200px; margin-top: 20px;"/>-->
-    </Panel>
-    <Panel id="RankingLocal">
-      <Label text="#Rank" id="RankingLocalRank" class="RankingRank StatisticsText"/>
-      <Label text="Missing Text" id="RankingLocalValue" class="RankingValue StatisticsText"/>
-      <Panel class="RankingName">
-        <DOTAUserName id="Name" steamid="local" class="StatisticsText"/>
-        <DOTAAvatarImage id="Avater" steamid="local"/>
-      </Panel>
-    </Panel>
-  </Panel>
 </root>

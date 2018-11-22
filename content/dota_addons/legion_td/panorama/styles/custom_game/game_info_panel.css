@@ -1,30 +1,25 @@
-.OverthrowGameInfo
-{
-    width:100%;
+.OverthrowGameInfo {
+    width: 100%;
     flow-children: down;
 }
 
-Label
-{
+Label {
     font-size: 18px;
     color: #999999;
     vertical-align: top;
 }
 
-#Title
-{
+#Title {
     flow-children: right;
 }
 
-#TitleIcon
-{
+#TitleIcon {
     width: 64px;
     height: 64px;
     vertical-align: center;
 }
 
-#TitleName
-{
+#TitleName {
     color: #cccccc;
     font-size: 64px;
     margin-left: 0px;
@@ -33,101 +28,83 @@ Label
     vertical-align: center;
 }
 
-#BriefDescription
-{
-}
+#BriefDescription {}
 
 #ThroneText,
 #CoinsText,
-#ItemsText
-{
+#ItemsText {
     width: 50%;
 }
 
-.Header
-{
-	font-size: 18px;
+.Header {
+    font-size: 18px;
     font-weight: bold;
-	margin-top: 36px;
-	text-transform: uppercase;
+    margin-top: 36px;
+    text-transform: uppercase;
 }
 
-#ObjectiveHeader
-{
-	margin-top: 18px;
+#ObjectiveHeader {
+    margin-top: 18px;
 }
 
-#ThroneRow
-{
+#ThroneRow {
     margin-top: -40px;
 }
 
-#ThroneText
-{
+#ThroneText {
     margin-top: 60px;
-	text-align: right;
+    text-align: right;
 }
 
-#ThroneImage
-{
+#ThroneImage {
     margin-top: -20px;
     width: 240px;
     height: 352px;
 }
 
-#CoinsRow
-{
+#CoinsRow {
     margin-top: -120px;
 }
 
-#CoinsImage
-{
+#CoinsImage {
     width: 240px;
     height: 256px;
 }
 
-#CoinsText
-{
+#CoinsText {
     margin-top: 160px;
 }
 
-#ItemsRow
-{
+#ItemsRow {
     margin-top: 0px;
 }
 
-#ItemsImage
-{
+#ItemsImage {
     width: 240px;
     height: 192px;
 }
 
-#ItemsText
-{
+#ItemsText {
     margin-top: 40px;
-	text-align: right;
+    text-align: right;
 }
 
-#TipsHeader
-{
-	margin-top: -18px;
+#TipsHeader {
+    margin-top: -18px;
 }
 
-#TipsRow
-{
-	flow-children: down;
-	margin-right: 92px;
-	margin-top: 18px;
+#TipsRow {
+    flow-children: down;
+    margin-right: 92px;
+    margin-top: 18px;
 }
 
-.TipText
-{
-	margin-left: 16px;
+.TipText {
+    margin-left: 16px;
     margin-top: 0px;
 }
 
-.InfoRow
-{
+.InfoRow {
     flow-children: right;
     width: 100%;
 }
@@ -135,16 +112,14 @@ Label
 
 Label .midas_throne,
 Label .overboss,
-Label .treasure
-{
+Label .treasure {
     color: #cccccc;
     font-weight: bold;
 }
 
 Label .items,
 Label .gold,
-Label .xp
-{
+Label .xp {
     color: #fcaf3d;
     font-weight: bold;
 }

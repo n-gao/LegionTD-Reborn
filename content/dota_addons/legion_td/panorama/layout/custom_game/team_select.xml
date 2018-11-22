@@ -1,5 +1,5 @@
 <root>
-    <styles> 
+    <styles>
         <include src="file://{resources}/styles/dotastyles.css" />
         <include src="file://{resources}/styles/play.css" />
         <include src="file://{resources}/styles/custom_game/team_select.css" />
@@ -37,7 +37,7 @@
                                 <ToggleButton id="hard_mode" onactivate="VoteOptionClicked('hard_mode')" text="#Option_Hard_Mode"/>
                                 <ToggleButton id="final_duel" onactivate="VoteOptionClicked('final_duel')" text="#Option_Final_Duel"/>
                             </Panel>
-                        </Panel> 
+                        </Panel>
                     </Panel>
                     <Panel id="Discord">
                         <Image id="DiscordImage" src="file://{images}/custom_game/game_info/Discord.png" onactivate="ExternalBrowserGoToURL('https://discord.gg/eUHpgQW');"/>

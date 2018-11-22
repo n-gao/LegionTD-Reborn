@@ -46,7 +46,12 @@ function RequestRankingFromTo(attribute, start, end, callback) {
         to: end
     }
     GameEvents.SendCustomGameEventToServer("request_ranking", data);
-    GetCallbacks().push({ attribute: attribute, start: start, end: end, callback: callback });
+    GetCallbacks().push({
+        attribute: attribute,
+        start: start,
+        end: end,
+        callback: callback
+    });
 }
 
 function GetRankingFromTo(attribute, start, end) {

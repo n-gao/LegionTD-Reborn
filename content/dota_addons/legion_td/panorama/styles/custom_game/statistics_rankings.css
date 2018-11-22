@@ -56,11 +56,10 @@
     overflow: scroll;
 }
 
-DOTAAvatarImage
-{
-  width: 30px;
-  height: 30px;
-  background-color: black;
-  vertical-align: top;
-  horizontal-align: right;
+DOTAAvatarImage {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    vertical-align: top;
+    horizontal-align: right;
 }

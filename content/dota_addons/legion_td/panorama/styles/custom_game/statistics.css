@@ -1,23 +1,23 @@
 #StatisticsButtonPanel {
-  width: 100%;
-  height: 100%;
-  vertical-align: bottom;
-  horizontal-align: left;
-  margin-left:	0px;
-  flow-children: down;
-  transition: all 2s linear;
-  background-color: #AAAAAA00;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    horizontal-align: left;
+    margin-left: 0px;
+    flow-children: down;
+    transition: all 2s linear;
+    background-color: #AAAAAA00;
 }
 
 #StatisticsButtonPanel:hover {
-  background-color: #AAAAAA22;
+    background-color: #AAAAAA22;
 }
 
 .LegionLevelIconPanel {
-  width: 90px;
-  height: 95px;
-  margin: 5px;
-  horizontal-align: center;
+    width: 90px;
+    height: 95px;
+    margin: 5px;
+    horizontal-align: center;
 }
 
 .Headline {
@@ -26,220 +26,217 @@
 }
 
 .LegionLevelIconBackground {
-  width: 90px;
-  height: 90px;
-  background-color: gradient(radial, 50% 50%, 0% 0%, 60% 60%, from(#663300), to(#cd7f32));
-  border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    background-color: gradient(radial, 50% 50%, 0% 0%, 60% 60%, from(#663300), to(#cd7f32));
+    border-radius: 50%;
 }
 
 .LegionLevelIconBackground.silver {
-  background-color: gradient(radial, 50% 50%, 0% 0%, 60% 60%, from(#888888 ), to(#c0c0c0));
+    background-color: gradient(radial, 50% 50%, 0% 0%, 60% 60%, from(#888888), to(#c0c0c0));
 }
 
 .LegionLevelIconBackground.gold {
-  background-color: gradient(radial, 50% 50%, 0% 0%, 60% 60%, from(#a48623 ), to(#d4af37 ));
+    background-color: gradient(radial, 50% 50%, 0% 0%, 60% 60%, from(#a48623), to(#d4af37));
 
 }
 
 .LegionLevelIcon {
-  width: 75px;
-  height: 75px;
-  vertical-align: middle;
-  box-shadow: 0px 0px 5px black;
-  horizontal-align: center;
-  border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    vertical-align: middle;
+    box-shadow: 0px 0px 5px black;
+    horizontal-align: center;
+    border-radius: 50%;
 }
 
 .LegionLevelNumber {
-  font-size: 20px;
-  min-width: 20px;
-  text-align: center;
-  vertical-align: bottom;
-  horizontal-align: center;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: white;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px black;
-  background-color: #888888;
+    font-size: 20px;
+    min-width: 20px;
+    text-align: center;
+    vertical-align: bottom;
+    horizontal-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    background-color: #888888;
 }
 
 .LegionProgressBackground {
-  width: 100%;
-  height: 24px;
-  margin: 10px;
-  margin-top: 0px;
-  border-radius: 5px;
-  background-color: #444444;
-  box-shadow: 0px 0px 5px black;
-  vertical-align: bottom;
+    width: 100%;
+    height: 24px;
+    margin: 10px;
+    margin-top: 0px;
+    border-radius: 5px;
+    background-color: #444444;
+    box-shadow: 0px 0px 5px black;
+    vertical-align: bottom;
 }
 
 .ExpProgressBar {
-  width: 50%;
-  height: 100%;
-  margin: 5px;
-  border-radius: 2px;
-  background-color: gradient(linear, 0% 0%, 0% 100%, from(grey), color-stop(.5, lightgrey), to(grey));  
+    width: 50%;
+    height: 100%;
+    margin: 5px;
+    border-radius: 2px;
+    background-color: gradient(linear, 0% 0%, 0% 100%, from(grey), color-stop(.5, lightgrey), to(grey));
 
 }
 
 #StatisticsButton {
-  flow-children: down;
+    flow-children: down;
 }
 
 #UpperStatisticsButton {
-  width: 300px;
-  height: 40px;
-  background-image: url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex");
-  visibility: visible;
+    width: 300px;
+    height: 40px;
+    background-image: url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex");
+    visibility: visible;
 }
 
 #StatisticsButtonLabel {
-  width: 300px;
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: center;
-  margin-top: 5px;
+    width: 300px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 5px;
 }
 
 #LowerStatisticsButton {
-  width: 300px;
-  height: 145px;
-  background-image: url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex");
-  background-size: 100%;	
-  visibility: visible;
-  flow-children: down;
-  
+    width: 300px;
+    height: 145px;
+    background-image: url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex");
+    background-size: 100%;
+    visibility: visible;
+    flow-children: down;
+
 }
 
 #MinimizeArrow {
-  width: 0px;
-  height: 0px;
+    width: 0px;
+    height: 0px;
 }
 
-#LowerStatisticsButton.Minimized {
-}
+#LowerStatisticsButton.Minimized {}
 
 #LowerStatisticsButton:not(Minimized) {
-  visibility: visible;
+    visibility: visible;
 }
 
 #StatisticsArrow {
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
-  horizontal-align: right;
-  margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    horizontal-align: right;
+    margin-right: 10px;
 }
 
 #StatisticsOverlay {
-  vertical-align: middle;
-  horizontal-align: center;
+    vertical-align: middle;
+    horizontal-align: center;
 }
 
-#StatisticsOverlayRoot {
-
-}
+#StatisticsOverlayRoot {}
 
 #StatisticsOuterPanel {
-  width: fit-children;
-  height: fit-children;
-  flow-children: down;
-  box-shadow: 0px 0px 20px black;
-  transition-property: opacity;
-  transition-duration: 0.2s;
+    width: fit-children;
+    height: fit-children;
+    flow-children: down;
+    box-shadow: 0px 0px 20px black;
+    transition-property: opacity;
+    transition-duration: 0.2s;
 }
 
 :not(ShowStatistics) #StatisticsOuterPanel {
-  visibility: collapse;
-  opacity: 0;
+    visibility: collapse;
+    opacity: 0;
 }
 
 .ShowStatistics #StatisticsOuterPanel {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .HideStatistics #StatisticsOuterPanel {
-  opacity: 0;
+    opacity: 0;
 }
 
 #StatisticsHeader {
-  width: 100%;
-  height: fit-children;
-  min-height: 50px;
-  background-color: #050505FE;
+    width: 100%;
+    height: fit-children;
+    min-height: 50px;
+    background-color: #050505FE;
 }
 
 #StatisticsBody {
-  width: fit-children;
-  height: fit-children;
-  background-color: #111111FD;
-  flow-children: right;
-  padding: 5px;
+    width: fit-children;
+    height: fit-children;
+    background-color: #111111FD;
+    flow-children: right;
+    padding: 5px;
 }
 
 #CloseButton {
-  width: 16px;
-  height: 16px;
-  horizontal-align: right;
-  vertical-align:  top;
-  margin-top: 12px;
-  margin-right: 12px;
+    width: 16px;
+    height: 16px;
+    horizontal-align: right;
+    vertical-align: top;
+    margin-top: 12px;
+    margin-right: 12px;
 }
 
-.StatisticPanel  {
-  width: fit-children;
-  height: fit-children;
-  min-width: 200px;
-  min-height: 100px;
-  margin: 10px 10px 10px 10px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #444444;
-  background-color: #050505FF;
-  flow-children: down;
+.StatisticPanel {
+    width: fit-children;
+    height: fit-children;
+    min-width: 200px;
+    min-height: 100px;
+    margin: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+    background-color: #050505FF;
+    flow-children: down;
 }
 
 .StatisticLabelPanel {
-  width: fit-children;
-  height: 25px;
-  vertical-align: top;
-  horizontal-align: left;
-  background-color: #444444;
-  margin-bottom: 5px;
+    width: fit-children;
+    height: 25px;
+    vertical-align: top;
+    horizontal-align: left;
+    background-color: #444444;
+    margin-bottom: 5px;
 }
 
 .StatisticLabel {
-  font-size: 14px;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: lightgrey;
-  vertical-align: middle;
-  text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: lightgrey;
+    vertical-align: middle;
+    text-transform: uppercase;
 }
 
 .StatisticHeader {
-  width: 100%;
-  height: fit-children;
+    width: 100%;
+    height: fit-children;
 }
 
 .ExpProgressNumber {
-  color: white;
-  font-size: 14px;
-  vertical-align: center;
-  horizontal-align: center;
-  text-shadow: 0px 0px 5px black;
+    color: white;
+    font-size: 14px;
+    vertical-align: center;
+    horizontal-align: center;
+    text-shadow: 0px 0px 5px black;
 }
 
 .StatisticsText {
     color: white;
     margin: 5px;
-    font-size:  16px;
+    font-size: 16px;
 }
 
 .StatisticContent {
-  width: fit-children;
-  height: fit-children;
+    width: fit-children;
+    height: fit-children;
 }

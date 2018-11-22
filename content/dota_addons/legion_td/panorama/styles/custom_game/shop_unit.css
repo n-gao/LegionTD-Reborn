@@ -1,61 +1,61 @@
  .UnitButton {
-  width: 75px;
-  height: 75px;
-  transition-property: transform;
-  transition-duration: 0.1s;
-  margin: 6px;
-  border-radius: 6px;
-  box-shadow: fill #000000 0px 0px 8px 0px;
-}
+     width: 75px;
+     height: 75px;
+     transition-property: transform;
+     transition-duration: 0.1s;
+     margin: 6px;
+     border-radius: 6px;
+     box-shadow: fill #000000 0px 0px 8px 0px;
+ }
 
 
-#UnitTangoCostPanel {
-  height: 18px;
-  padding-top: 0px;
-}
+ #UnitTangoCostPanel {
+     height: 18px;
+     padding-top: 0px;
+ }
 
-.Hovered #UnitTangoCostPanel {
-  padding: 4px;
-  height: 90px;
-}
+ .Hovered #UnitTangoCostPanel {
+     padding: 4px;
+     height: 90px;
+ }
 
-#TangoCostLabel {
-  font-size: 17px;
-  font-weight: bold;
-  color: white;
-}
+ #TangoCostLabel {
+     font-size: 17px;
+     font-weight: bold;
+     color: white;
+ }
 
-#GoldIncomeLabel {
-  color: gold;
-  font-size: 15px;
-  font-weight: bold;
-}
+ #GoldIncomeLabel {
+     color: gold;
+     font-size: 15px;
+     font-weight: bold;
+ }
 
-#DescLabel {
-  horizontal-align: center;
-  vertical-align: top;
-  color: white;
-  font-size: 12px;
-  text-overflow: ellipsis;
-  visibility: visible;
-}
+ #DescLabel {
+     horizontal-align: center;
+     vertical-align: top;
+     color: white;
+     font-size: 12px;
+     text-overflow: ellipsis;
+     visibility: visible;
+ }
 
-#UnitTint {
-  width: 75px;
-  height: 75px;
-  background-color: #981717A0;
-  opacity: 0;
-  transition-property: transform, opacity;
-  transition-duration: 0.2s;
-  visibility: collapse;
-}
+ #UnitTint {
+     width: 75px;
+     height: 75px;
+     background-color: #981717A0;
+     opacity: 0;
+     transition-property: transform, opacity;
+     transition-duration: 0.2s;
+     visibility: collapse;
+ }
 
-#UnitTint.TintVisible {
-  opacity: 1;
-  visibility: visible;
-}
+ #UnitTint.TintVisible {
+     opacity: 1;
+     visibility: visible;
+ }
 
-#UnitTint.TintVisible.FadeTint {
-  opacity: 0;
-  visibility: visible;
-}
+ #UnitTint.TintVisible.FadeTint {
+     opacity: 0;
+     visibility: visible;
+ }

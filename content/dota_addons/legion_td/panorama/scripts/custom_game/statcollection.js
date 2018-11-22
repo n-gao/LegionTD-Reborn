@@ -11,14 +11,15 @@ function OnClientCheckIn(args) {
 
     $.Msg('Sending: ', payload)
 
-    $.AsyncWebRequest('http://getdotastats.com/s2/api/s2_check_in.php',
-        {
-            type: 'POST',
-            data: { payload: JSON.stringify(payload) },
-            success: function (data) {
-                $.Msg('GDS Reply: ', data)
-            }
-        });
+    $.AsyncWebRequest('http://getdotastats.com/s2/api/s2_check_in.php', {
+        type: 'POST',
+        data: {
+            payload: JSON.stringify(payload)
+        },
+        success: function (data) {
+            $.Msg('GDS Reply: ', data)
+        }
+    });
 }
 
 function GetSteamID32() {

@@ -1,24 +1,24 @@
 <root>
-  <styles>
-    <include src="file://{resources}/styles/dotastyles.css" />
-    <include src="file://{resources}/styles/custom_game/main_hud.css" />
-    <include src="file://{resources}/styles/custom_game/statistics.css" />
-    <include src="file://{resources}/styles/custom_game/statistics_match_history.css" />
-  </styles>
-  <scripts>
-    <include src="file://{resources}/scripts/custom_game/utils.js" />
-    <include src="file://{resources}/scripts/custom_game/utils_match.js" />
-    <include src="file://{resources}/scripts/custom_game/statistics_match_history.js" />
-  </scripts>
-  <Panel hittest="false" class="MatchStatisticsRoot">
-    <Panel class="MatchListCaption">
-      <Label text="#Date" id="Date" class="Headline"/>
-      <Label text="#Builder" class="Headline Builder"/>
-      <Label text="#Result" id="Result" class="Headline"/>
-      <Label text="#Duration" id="Duration" class="Headline"/>
+    <styles>
+        <include src="file://{resources}/styles/dotastyles.css" />
+        <include src="file://{resources}/styles/custom_game/main_hud.css" />
+        <include src="file://{resources}/styles/custom_game/statistics.css" />
+        <include src="file://{resources}/styles/custom_game/statistics_match_history.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/utils.js" />
+        <include src="file://{resources}/scripts/custom_game/utils_match.js" />
+        <include src="file://{resources}/scripts/custom_game/statistics_match_history.js" />
+    </scripts>
+    <Panel hittest="false" class="MatchStatisticsRoot">
+        <Panel class="MatchListCaption">
+            <Label text="#Date" id="Date" class="Headline"/>
+            <Label text="#Builder" class="Headline Builder"/>
+            <Label text="#Result" id="Result" class="Headline"/>
+            <Label text="#Duration" id="Duration" class="Headline"/>
+        </Panel>
+        <Panel id="MatchList">
+            <Label text="Coming soon." style="color: white; text-align: center; font-size: 14px; width: 200px; margin-top: 20px;"/>
+        </Panel>
     </Panel>
-    <Panel id="MatchList">
-      <Label text="Coming soon." style="color: white; text-align: center; font-size: 14px; width: 200px; margin-top: 20px;"/>
-    </Panel>
-  </Panel>
 </root>

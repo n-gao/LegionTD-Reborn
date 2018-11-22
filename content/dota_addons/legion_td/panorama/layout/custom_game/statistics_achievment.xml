@@ -1,8 +1,8 @@
 <root>
-  <styles>
-    <include src="file://{resources}/styles/custom_game/shop_unit.css" />
-    <include src="file://{resources}/styles/custom_game/main_hud.css" />
-    <include src="file://{resources}/styles/custom_game/statistics.css" />
-  </styles>
-  <scripts></scripts>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/shop_unit.css" />
+        <include src="file://{resources}/styles/custom_game/main_hud.css" />
+        <include src="file://{resources}/styles/custom_game/statistics.css" />
+    </styles>
+    <scripts></scripts>
 </root>

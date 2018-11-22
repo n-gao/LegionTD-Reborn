@@ -1,75 +1,73 @@
 .RoundCountLeft {
-  margin-left: 6px;
-  margin-top: 0px;
-  margin-right: -40px;
-  flow-children: down;
-} 
+    margin-left: 6px;
+    margin-top: 0px;
+    margin-right: -40px;
+    flow-children: down;
+}
 
 .RoundPanel {
-  flow-children: down;
-  width: 100px;
-  height: 110px;
-  transition-property: height;
-  transition-duration: 0.3s;
+    flow-children: down;
+    width: 100px;
+    height: 110px;
+    transition-property: height;
+    transition-duration: 0.3s;
 
-  background-image: url("file://{images}/custom_game/goal_logo.psd");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 100% 100%;
+    background-image: url("file://{images}/custom_game/goal_logo.psd");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
 }
 
 .RoundPanel.BetweenRounds {
-  height: 150px;
+    height: 150px;
 }
 
 #Round {
-  margin-top: 2px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #9e7305;
-  text-align: center;
-  width: 100%;
-  text-transform: uppercase;
-  text-overflow: clip;
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #9e7305;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    text-overflow: clip;
 }
 
-#CurrentRound
-{
-  margin-top: -20px;
-  horizontal-align: center;
-  vertical-align: middle;
-  font-weight: bold;
-  font-size: 60px;
-  color: white;
-  text-shadow: 2px 2px 2px #7b612b;
-  color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
-  text-overflow: clip;
+#CurrentRound {
+    margin-top: -20px;
+    horizontal-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px 2px #7b612b;
+    color: gradient(linear, 0% 0%, 0% 100%, from(#c88423), color-stop(0.25, #c88423), color-stop(0.5, #fffb84), color-stop(0.75, #c88423), to(#9a6717));
+    text-overflow: clip;
 }
 
-#Time
-{
-  margin-top: -22px;
-  font-size: 18px;
-  font-weight: bolder;
-  color: white;
-  text-shadow: 2px 2px 2px #7b612b;
-  text-align: center;
-  width: 100%;
-  text-overflow: clip;
+#Time {
+    margin-top: -22px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 2px 2px #7b612b;
+    text-align: center;
+    width: 100%;
+    text-overflow: clip;
 }
 
 #CountDown {
-  margin-top: 8px;
-  font-size: 18px;
-  font-weight: bolder;
-  color: white;
-  text-shadow: 2px 2px 2px #7b612b;
-  text-align: center;
-  width: 100%;
-  text-overflow: clip;
-  visibility: collapse;
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 2px 2px #7b612b;
+    text-align: center;
+    width: 100%;
+    text-overflow: clip;
+    visibility: collapse;
 }
 
 .BetweenRounds #CountDown {
-  visibility: visible;
+    visibility: visible;
 }

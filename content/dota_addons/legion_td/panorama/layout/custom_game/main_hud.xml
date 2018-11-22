@@ -1,82 +1,84 @@
 <root>
-  <styles>
-    <include src="file://{resources}/styles/dotastyles.css" />
-    <include src="file://{resources}/styles/custom_game/main_hud.css" />
-    <include src="file://{resources}/styles/custom_game/statistics.css" />
-    <include src="file://{resources}/styles/custom_game/shop.css" />
-  </styles>
-  <scripts>
-    <include src="file://{resources}/scripts/custom_game/utils.js" />
-    <include src="file://{resources}/scripts/custom_game/main_hud.js" />
-  </scripts>
-  <Panel hittest="false" class="Hud">
-    <Panel hittest="false" class="DontKnow">
-      <Panel hittest="false" class="InfoPanel" id="InfoPanel">
-        <Image hittest="true" src="file://{images}/custom_game/info-background.psd" class="info-background"/>
-        <Panel hittest="false" class="GoldCount">
-          <Image id="goldimage" src="file://{images}/custom_game/gold.psd"/>
-          <Label id="gold" text="0"/>
+    <styles>
+        <include src="file://{resources}/styles/dotastyles.css" />
+        <include src="file://{resources}/styles/custom_game/main_hud.css" />
+        <include src="file://{resources}/styles/custom_game/statistics.css" />
+        <include src="file://{resources}/styles/custom_game/shop.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/utils.js" />
+        <include src="file://{resources}/scripts/custom_game/main_hud.js" />
+    </scripts>
+    <Panel hittest="false" class="Hud">
+        <Panel hittest="false" class="DontKnow">
+            <Panel hittest="false" class="InfoPanel" id="InfoPanel">
+                <Image hittest="true" src="file://{images}/custom_game/info-background.psd" class="info-background"/>
+                <Panel hittest="false" class="GoldCount">
+                    <Image id="goldimage" src="file://{images}/custom_game/gold.psd"/>
+                    <Label id="gold" text="0"/>
+                </Panel>
+                <Panel hittest="false" class="TangoCount">
+                    <Image id="tangoimage" src="file://{images}/custom_game/tango.psd" />
+                    <Label id="tangos" text="30" />
+                </Panel>
+                <Panel hittest="false" class="IncomePanel">
+                    <Label id="incomeLabel" text="#Income" />
+                    <Panel hittest="false" class="Incomes">
+                        <Label id="goldIncome" text="0" />
+                        <Label id="tangoIncome" text="0" />
+                    </Panel>
+                </Panel>
+                <Panel hittest="false" class="FoodPanel">
+                    <Image id="foodImage" src="file://{images}/custom_game/chicken_leg.psd" />
+                    <Label id="foodLabel" text="0/0" />
+                </Panel>
+            </Panel>
+            <Panel hittest="false" id="OuterShopPanel">
+                <Panel hittest="false" class="ShopButtonPanel">
+                    <Button id="ShopButton" onactivate="OnShopButtonPressed()">
+                        <Image src="file://{images}/custom_game/shop.psd" />
+                        <Label id="Shoplabel" class="ButtonLabel" text="Tango Shop" />
+                    </Button>
+                </Panel>
+                <Panel hittest="false" class="SkipButtonPanel">
+                    <Button id="SkipButton" onactivate="OnSkipButtonPressed()">
+                        <Image src="file://{images}/custom_game/skip.psd" />
+                        <Label id="SkipLabel" class="ButtonLabel" text="#Ready"/>
+                    </Button>
+                </Panel>
+                <Panel hittest="false" class="SkipButtonPanel2">
+                    <Button id="SkipButton" onactivate="OnSkipButtonPressed2()">
+                        <Image src="file://{images}/custom_game/skipready.png" />
+                        <Label id="SkipLabel" class="ButtonLabel2" text="#ReadyPressed"/>
+                    </Button>
+                </Panel>
+                <Panel hittest="true" id="ShopPanel">
+                    <Panel class="TitlePanel">
+                        <Label class="TitleText" text="#RecruitUnits" />
+                    </Panel>
+                    <Panel id="UnitPanel"></Panel>
+                    <Panel class="TitlePanel">
+                        <Label class="TitleText" text="#KingUpgrade" />
+                    </Panel>
+                    <Panel class="UpgradeWrapper">
+                        <Panel id="Upgrades"></Panel>
+                    </Panel>
+                </Panel>
+            </Panel>
+            <Panel hittest="false" id="clockPanelInjection"></Panel>
+            <Panel hittest="false" id="ErrorPanel">
+                <Label id="ErrorMessage" text="" />
+            </Panel>
+            <Panel hitetst="false" id="StatisticsButtonPanel">
+                <Button id="StatisticsButton" onactivate="OnStatisticsButtonPressed()">
+                    <!-- <Panel id="UpperStatisticsButton"><Button id="MinimizeButton" onactivate="OnMinimizedButtonPressed()"><Image src="file://{images}/custom_game/minimize_arrow.psd" id="MinimizeArrow"/></Button><Label id="StatisticsButtonLabel" class="ButtonLabel" text="#Statistics"/><Image src="file://{images}/custom_game/statistics_arrow.psd" id="StatisticsArrow" /></Panel> -->
+                    <Panel id="LowerStatisticsButton">
+                        <Panel id="LegionLevelHook" style="horizontal-align: center;" />
+                        <Panel id="LegionProgressHook" style="width: 100%;"/>
+                    </Panel>
+                </Button>
+            </Panel>
+            <Panel hittest="false" id="StatisticsOverlay"/>
         </Panel>
-        <Panel hittest="false" class="TangoCount">
-          <Image id="tangoimage" src="file://{images}/custom_game/tango.psd" />
-          <Label id="tangos" text="30" />
-        </Panel>
-        <Panel hittest="false" class="IncomePanel">
-          <Label id="incomeLabel" text="#Income" />
-          <Panel hittest="false" class="Incomes">
-            <Label id="goldIncome" text="0" />
-            <Label id="tangoIncome" text="0" />
-          </Panel>
-        </Panel>
-        <Panel hittest="false" class="FoodPanel">
-          <Image id="foodImage" src="file://{images}/custom_game/chicken_leg.psd" />
-          <Label id="foodLabel" text="0/0" />
-        </Panel>
-      </Panel>
-      <Panel hittest="false" id="OuterShopPanel">
-        <Panel hittest="false" class="ShopButtonPanel">
-          <Button id="ShopButton" onactivate="OnShopButtonPressed()">
-            <Image src="file://{images}/custom_game/shop.psd" />
-            <Label id="Shoplabel" class="ButtonLabel" text="Tango Shop" />
-          </Button>
-        </Panel>
-        <Panel hittest="false" class="SkipButtonPanel">
-          <Button id="SkipButton" onactivate="OnSkipButtonPressed()">
-            <Image src="file://{images}/custom_game/skip.psd" />
-            <Label id="SkipLabel" class="ButtonLabel" text="#Ready"/>
-          </Button>
-        </Panel>
-        <Panel hittest="false" class="SkipButtonPanel2">
-          <Button id="SkipButton" onactivate="OnSkipButtonPressed2()">
-            <Image src="file://{images}/custom_game/skipready.png" />
-            <Label id="SkipLabel" class="ButtonLabel2" text="#ReadyPressed"/>
-          </Button>
-        </Panel>
-        <Panel hittest="true" id="ShopPanel">
-          <Panel class="TitlePanel">
-            <Label class="TitleText" text="#RecruitUnits" />
-          </Panel>
-          <Panel id="UnitPanel"></Panel>
-		  		<Panel class="TitlePanel">
-            <Label class="TitleText" text="#KingUpgrade" />
-          </Panel>
-          <Panel class="UpgradeWrapper">
-            <Panel id="Upgrades"></Panel>
-          </Panel>
-		  </Panel>
-      </Panel>
-      <Panel hittest="false" id="clockPanelInjection"></Panel>
-      <Panel hittest="false" id="ErrorPanel">
-        <Label id="ErrorMessage" text="" />
-      </Panel>
-      <Panel hitetst="false" id="StatisticsButtonPanel">
-        <Button id="StatisticsButton" onactivate="OnStatisticsButtonPressed()">
-          <!-- <Panel id="UpperStatisticsButton"><Button id="MinimizeButton" onactivate="OnMinimizedButtonPressed()"><Image src="file://{images}/custom_game/minimize_arrow.psd" id="MinimizeArrow"/></Button><Label id="StatisticsButtonLabel" class="ButtonLabel" text="#Statistics"/><Image src="file://{images}/custom_game/statistics_arrow.psd" id="StatisticsArrow" /></Panel> -->
-          <Panel id="LowerStatisticsButton">
-            <Panel id="LegionLevelHook" style="horizontal-align: center;" />
-            <Panel id="LegionProgressHook" style="width: 100%;"/></Panel>
-        </Button>
-      </Panel>
-      <Panel hittest="false" id="StatisticsOverlay"/></Panel>
-  </Panel>
+    </Panel>
 </root>

@@ -1,10 +1,10 @@
 <root>
-	<styles>
-		<include src="file://{resources}/styles/dotastyles.css" />
-		<include src="file://{resources}/styles/custom_game/game_info_panel.css" />
-		<include src="file://{resources}/styles/custom_game/legion_creator_panel.css" />
-	</styles>
-	<script>
+    <styles>
+        <include src="file://{resources}/styles/dotastyles.css" />
+        <include src="file://{resources}/styles/custom_game/game_info_panel.css" />
+        <include src="file://{resources}/styles/custom_game/legion_creator_panel.css" />
+    </styles>
+    <script>
 		function AddContributor(name, steamId, parent) {
 			var newPlayerPanel = $.CreatePanel("Panel", parent, "player_info");
 			newPlayerPanel.SetAttributeString("creator_steamid", ""+steamId);
@@ -22,18 +22,19 @@
 		GameUI.CustomUIConfig().Creator.forEach(function(entry){ AddContributor("", entry, $("#Creators"))});
 		GameUI.CustomUIConfig().PreviousLeaders.forEach(function(entry){ AddContributor("", entry, $("#PreviousLeaders"))});
 		//GameUI.CustomUIConfig().Leaders.forEach(function(entry){ AddContributor("", entry, $("#Leaders"))});
-	</script>
-	<Panel class="OverthrowGameInfo">
-		<Panel id="CreatorPanel" hittest="false">
-			<Label id="ContributorPanelLabel" text="#legion_contributor_label" />
-			<Label class="ContributorLabel" text="#legion_contributor_creator" />
-			<Panel id="Creators" class="ContributorPanel" hitetst="false" />
-			<!--<Label class="ContributorLabel" text="#legion_contributor_leader" /><Panel id="Leaders" class="ContributorPanel" hitetst="false" />-->
-			<Label class="ContributorLabel" text="#legion_contributor_previous_leader" />
-			<Panel id="PreviousLeaders" class="ContributorPanel" hitetst="false" />
-			<Label class="ContributorLabel" text="#legion_contributor_design" />
-			<Panel id="GameDesigners" class="ContributorPanel" hitetst="false" />
-			<Label class="ContributorLabel" text="#legion_contributor_programming" />
-			<Panel id="Programmers" class="ContributorPanel" hitetst="false" /></Panel>
-	</Panel>
+    </script>
+    <Panel class="OverthrowGameInfo">
+        <Panel id="CreatorPanel" hittest="false">
+            <Label id="ContributorPanelLabel" text="#legion_contributor_label" />
+            <Label class="ContributorLabel" text="#legion_contributor_creator" />
+            <Panel id="Creators" class="ContributorPanel" hitetst="false" />
+            <!--<Label class="ContributorLabel" text="#legion_contributor_leader" /><Panel id="Leaders" class="ContributorPanel" hitetst="false" />-->
+            <Label class="ContributorLabel" text="#legion_contributor_previous_leader" />
+            <Panel id="PreviousLeaders" class="ContributorPanel" hitetst="false" />
+            <Label class="ContributorLabel" text="#legion_contributor_design" />
+            <Panel id="GameDesigners" class="ContributorPanel" hitetst="false" />
+            <Label class="ContributorLabel" text="#legion_contributor_programming" />
+            <Panel id="Programmers" class="ContributorPanel" hitetst="false" />
+        </Panel>
+    </Panel>
 </root>

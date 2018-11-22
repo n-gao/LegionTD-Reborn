@@ -74,7 +74,9 @@ function OnUpdateSelectedUnit() {
 
 // Updates the list of selected entities on server for this player
 function SendSelectedEntities() {
-    GameEvents.SendCustomGameEventToServer("selection_update", { entities: GetSelectedEntities() })
+    GameEvents.SendCustomGameEventToServer("selection_update", {
+        entities: GetSelectedEntities()
+    })
 }
 
 // Local player shortcut

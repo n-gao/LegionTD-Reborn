@@ -1,10 +1,10 @@
 <root>
-	<styles>
-		<include src="file://{resources}/styles/dotastyles.css" />
-		<include src="file://{resources}/styles/custom_game/shared_scoreboard_styles.css" />
-		<include src="file://{resources}/styles/custom_game/multiteam_flyout_scoreboard.css" />
-	</styles>
-	<script>
+    <styles>
+        <include src="file://{resources}/styles/dotastyles.css" />
+        <include src="file://{resources}/styles/custom_game/shared_scoreboard_styles.css" />
+        <include src="file://{resources}/styles/custom_game/multiteam_flyout_scoreboard.css" />
+    </styles>
+    <script>
 		function ToggleMute()
 		{
 			var playerId = $.GetContextPanel().GetAttributeInt( "player_id", -1 );
@@ -21,35 +21,35 @@
 			var playerId = $.GetContextPanel().GetAttributeInt( "player_id", -1 );
 			$.GetContextPanel().SetHasClass( "player_muted", Game.IsPlayerMuted( playerId ) );
 		})();
-	</script>
-	<Panel class="PlayerRow">
-		<Panel id="PlayerRowContainer">
-			<Panel id="Hero" class="ScoreCol_Hero ScoreboardPanel">
-				<Image id="HeroIcon" heroimagestyle="landscape" scaling="stretch-to-fit-preserve-aspect" />
-			</Panel>
-			<Panel id="PlayerDetailsContainer" class="ScoreCol_PlayerDetails ScoreboardPanel">
-				<Panel id="PlayerAndHeroName">
-					<Label id="PlayerName" text="AAAAA" />
-					<Label id="HeroNameAndDescription" text="#custom_scoreboard_hero_name_and_desc" />
-				</Panel>
-				<Label id="TeammateGoldAmount" text="999" />
-				<Button id="MuteButton" onactivate="ToggleMute();" />
-			</Panel>
-			<Panel id="KillsContainer" class="ScoreCol_Kills ScoreboardPanel">
-				<Label id="Kills" text="999" />
-			</Panel>
-			<Panel id="LeaksContainer" class="ScoreCol_Leaks ScoreboardPanel">
-				<Label id="Leaks" text="999" />
-			</Panel>
-			<Panel id="TowerValueContainer" class="ScoreCol_Tower_Value ScoreboardPanel">
-				<Label id="TowerValue" text="999" />
-			</Panel>
-			<Panel id="TangoIncomeContainer" class="ScoreCol_Tango_Income ScoreboardPanel">
-				<Label id="TangoIncome" text="999" />
-			</Panel>
-			<Panel id="GoldIncomeContainer" class="ScoreCol_Gold_Income ScoreboardPanel">
-				<Label id="GoldIncome" text="999" />
-			</Panel>
-		</Panel>
-	</Panel>
+    </script>
+    <Panel class="PlayerRow">
+        <Panel id="PlayerRowContainer">
+            <Panel id="Hero" class="ScoreCol_Hero ScoreboardPanel">
+                <Image id="HeroIcon" heroimagestyle="landscape" scaling="stretch-to-fit-preserve-aspect" />
+            </Panel>
+            <Panel id="PlayerDetailsContainer" class="ScoreCol_PlayerDetails ScoreboardPanel">
+                <Panel id="PlayerAndHeroName">
+                    <Label id="PlayerName" text="AAAAA" />
+                    <Label id="HeroNameAndDescription" text="#custom_scoreboard_hero_name_and_desc" />
+                </Panel>
+                <Label id="TeammateGoldAmount" text="999" />
+                <Button id="MuteButton" onactivate="ToggleMute();" />
+            </Panel>
+            <Panel id="KillsContainer" class="ScoreCol_Kills ScoreboardPanel">
+                <Label id="Kills" text="999" />
+            </Panel>
+            <Panel id="LeaksContainer" class="ScoreCol_Leaks ScoreboardPanel">
+                <Label id="Leaks" text="999" />
+            </Panel>
+            <Panel id="TowerValueContainer" class="ScoreCol_Tower_Value ScoreboardPanel">
+                <Label id="TowerValue" text="999" />
+            </Panel>
+            <Panel id="TangoIncomeContainer" class="ScoreCol_Tango_Income ScoreboardPanel">
+                <Label id="TangoIncome" text="999" />
+            </Panel>
+            <Panel id="GoldIncomeContainer" class="ScoreCol_Gold_Income ScoreboardPanel">
+                <Label id="GoldIncome" text="999" />
+            </Panel>
+        </Panel>
+    </Panel>
 </root>
