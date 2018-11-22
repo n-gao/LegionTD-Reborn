@@ -3,83 +3,83 @@ modifier_dismember_lua = class({})
 --------------------------------------------------------------------------------
 
 function modifier_dismember_lua:IsDebuff()
-	return true
+    return true
 end
 
 --------------------------------------------------------------------------------
 
 function modifier_dismember_lua:IsStunDebuff()
-	return true
+    return true
 end
 
 --------------------------------------------------------------------------------
 
 function modifier_dismember_lua:OnCreated( kv )
-	self.dismember_damage = self:GetAbility():GetSpecialValueFor( "dismember_damage" )
-	self.tick_rate = self:GetAbility():GetSpecialValueFor( "tick_rate" )
-	self.strength_damage_scepter = self:GetAbility():GetSpecialValueFor( "strength_damage_scepter" )
+    self.dismember_damage = self:GetAbility():GetSpecialValueFor( "dismember_damage" )
+    self.tick_rate = self:GetAbility():GetSpecialValueFor( "tick_rate" )
+    self.strength_damage_scepter = self:GetAbility():GetSpecialValueFor( "strength_damage_scepter" )
 
-	if IsServer() then
-		self:GetParent():InterruptChannel()
-		self:OnIntervalThink()
-		self:StartIntervalThink( self.tick_rate )
-	end
+    if IsServer() then
+        self:GetParent():InterruptChannel()
+        self:OnIntervalThink()
+        self:StartIntervalThink( self.tick_rate )
+    end
 end
 
 --------------------------------------------------------------------------------
 
 function modifier_dismember_lua:OnDestroy()
-	if IsServer() then
-		self:GetCaster():InterruptChannel()
-	end
+    if IsServer() then
+        self:GetCaster():InterruptChannel()
+    end
 end
 
 --------------------------------------------------------------------------------
 
 function modifier_dismember_lua:OnIntervalThink()
-	if IsServer() then
-		local flDamage = self.dismember_damage
-		if self:GetCaster():HasScepter() then
-			flDamage = flDamage + ( self:GetCaster():GetStrength() * self.strength_damage_scepter )
-			self:GetCaster():Heal( flDamage, self:GetAbility() )
-		end
+    if IsServer() then
+        local flDamage = self.dismember_damage
+        if self:GetCaster():HasScepter() then
+            flDamage = flDamage + ( self:GetCaster():GetStrength() * self.strength_damage_scepter )
+            self:GetCaster():Heal( flDamage, self:GetAbility() )
+        end
 
-		local damage = {
-			victim = self:GetParent(),
-			attacker = self:GetCaster(),
-			damage = flDamage,
-			damage_type = DAMAGE_TYPE_MAGICAL,
-			ability = self:GetAbility()
-		}
+        local damage = {
+            victim = self:GetParent(),
+            attacker = self:GetCaster(),
+            damage = flDamage,
+            damage_type = DAMAGE_TYPE_MAGICAL,
+            ability = self:GetAbility()
+        }
 
-		ApplyDamage( damage )
-		EmitSoundOn( "Hero_Pudge.Dismember", self:GetParent() )
-	end
+        ApplyDamage( damage )
+        EmitSoundOn( "Hero_Pudge.Dismember", self:GetParent() )
+    end
 end
 
 --------------------------------------------------------------------------------
 
 function modifier_dismember_lua:CheckState()
-	local state = {
-		[MODIFIER_STATE_STUNNED] = true,
-		[MODIFIER_STATE_INVISIBLE] = false,
-	}
+    local state = {
+        [MODIFIER_STATE_STUNNED] = true,
+        [MODIFIER_STATE_INVISIBLE] = false,
+    }
 
-	return state
+    return state
 end
 
 --------------------------------------------------------------------------------
 
 function modifier_dismember_lua:DeclareFunctions()
-	local funcs = {
-		MODIFIER_PROPERTY_OVERRIDE_ANIMATION,
-	}
+    local funcs = {
+        MODIFIER_PROPERTY_OVERRIDE_ANIMATION,
+    }
 
-	return funcs
+    return funcs
 end
 
 --------------------------------------------------------------------------------
 
 function modifier_dismember_lua:GetOverrideAnimation( params )
-	return ACT_DOTA_DISABLED
+    return ACT_DOTA_DISABLED
 end

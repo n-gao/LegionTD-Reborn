@@ -4,21 +4,21 @@
 "bug_geminate_attack"
 {
     // General
-	"BaseClass"             		"weaver_geminate_attack"
-	"AbilityTextureName"			"weaver_geminate_attack"
-    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+    "BaseClass"                     "weaver_geminate_attack"
+    "AbilityTextureName"            "weaver_geminate_attack"
+    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
     
-    "AbilityCooldown"				"7.0"
+    "AbilityCooldown"                "7.0"
         
-    // Special	
+    // Special    
     //-------------------------------------------------------------------------------------------------------------
     "AbilitySpecial"
     {
         "01"
         {
-            "var_type"				"FIELD_FLOAT"
-            "delay"			"0.25"
+            "var_type"                "FIELD_FLOAT"
+            "delay"            "0.25"
         }
-    }		
+    }        
 }

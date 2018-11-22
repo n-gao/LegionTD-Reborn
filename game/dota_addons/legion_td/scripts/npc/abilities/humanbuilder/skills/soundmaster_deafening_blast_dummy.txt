@@ -1,113 +1,113 @@
 // DUMMY SPELL
 "soundmaster_deafening_blast_dummy"
 {
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"				"ability_datadriven"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-	"AbilityTextureName"			"invoker_deafening_blast"
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                "ability_datadriven"
+    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityTextureName"            "invoker_deafening_blast"
 
-	"OnProjectileHitUnit"
-	{
-		"DeleteOnHit"	"0"
-		
-		"RunScript"
-		{
-			"ScriptFile"	"abilities/humanbuilder/deafening_blast.lua"
-			"Function"		"deafening_blast_hit"
-			"knockback_modifier"	"modifier_deafening_blast_knockback_datadriven"
-		}
-	}
+    "OnProjectileHitUnit"
+    {
+        "DeleteOnHit"    "0"
+        
+        "RunScript"
+        {
+            "ScriptFile"    "abilities/humanbuilder/deafening_blast.lua"
+            "Function"        "deafening_blast_hit"
+            "knockback_modifier"    "modifier_deafening_blast_knockback_datadriven"
+        }
+    }
 
-	"Modifiers"
-	{
-		"modifier_deafening_blast_knockback_datadriven"
-		{
-			"IsDebuff"		"1"
-			"IsPurgable"	"0"
+    "Modifiers"
+    {
+        "modifier_deafening_blast_knockback_datadriven"
+        {
+            "IsDebuff"        "1"
+            "IsPurgable"    "0"
 
-			"OverrideAnimation"     "ACT_DOTA_DISABLED"
-			"TextureName"			"invoker_deafening_blast"
+            "OverrideAnimation"     "ACT_DOTA_DISABLED"
+            "TextureName"            "invoker_deafening_blast"
 
-			"StatusEffectName" 		"particles/status_fx/status_effect_frost.vpcf" 	   
-			"StatusEffectPriority"  "10"
+            "StatusEffectName"         "particles/status_fx/status_effect_frost.vpcf"        
+            "StatusEffectPriority"  "10"
 
-			"EffectName"		"particles/units/heroes/hero_invoker/invoker_deafening_blast_knockback_debuff.vpcf"
-			"EffectAttachType"	"follow_origin"
+            "EffectName"        "particles/units/heroes/hero_invoker/invoker_deafening_blast_knockback_debuff.vpcf"
+            "EffectAttachType"    "follow_origin"
 
-			"OnCreated"
-			{
-				"RunScript"
-				{
-					"ScriptFile"	"abilities/humanbuilder/deafening_blast.lua"
-					"Function"		"deafening_blast_knockback_start"
-				}
-			}
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/humanbuilder/deafening_blast.lua"
+                    "Function"        "deafening_blast_knockback_start"
+                }
+            }
 
-			"OnDestroy"
-			{
-				"RunScript"
-				{
-					"ScriptFile"	"abilities/humanbuilder/deafening_blast.lua"
-					"Function"		"deafening_blast_disarm"
-					"disarm_modifier"	"modifier_deafening_blast_disarm_datadriven"
-				}
-			}
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/humanbuilder/deafening_blast.lua"
+                    "Function"        "deafening_blast_disarm"
+                    "disarm_modifier"    "modifier_deafening_blast_disarm_datadriven"
+                }
+            }
 
-			"ThinkInterval"  "0.03"
-			"OnIntervalThink"
-			{
-				"RunScript"
-				{
-					"ScriptFile"	"abilities/humanbuilder/deafening_blast.lua"
-					"Function"		"deafening_blast_knockback"
-				}
+            "ThinkInterval"  "0.03"
+            "OnIntervalThink"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/humanbuilder/deafening_blast.lua"
+                    "Function"        "deafening_blast_knockback"
+                }
 
-				"DestroyTrees"
-				{
-					"Target" 		"TARGET"
-					"Radius"		"100" // Change this to %tree_radius whenever the game feels like working properly
-				}
-			}
+                "DestroyTrees"
+                {
+                    "Target"         "TARGET"
+                    "Radius"        "100" // Change this to %tree_radius whenever the game feels like working properly
+                }
+            }
 
-			"States"
-			{
-				"MODIFIER_STATE_STUNNED"		"MODIFIER_STATE_VALUE_ENABLED"
-			}
-		}
+            "States"
+            {
+                "MODIFIER_STATE_STUNNED"        "MODIFIER_STATE_VALUE_ENABLED"
+            }
+        }
 
-		"modifier_deafening_blast_disarm_datadriven"
-		{
-			"IsDebuff"		"1"
-			"IsPurgable"	"0"
+        "modifier_deafening_blast_disarm_datadriven"
+        {
+            "IsDebuff"        "1"
+            "IsPurgable"    "0"
 
-			"TextureName"	"invoker_deafening_blast"
+            "TextureName"    "invoker_deafening_blast"
 
-			"StatusEffectName" 		"particles/status_fx/status_effect_frost.vpcf" 	   
-			"StatusEffectPriority"  "10"
+            "StatusEffectName"         "particles/status_fx/status_effect_frost.vpcf"        
+            "StatusEffectPriority"  "10"
 
-			"EffectName"		"particles/generic_gameplay/generic_stunned.vpcf"
-			"EffectAttachType"	"follow_overhead"
+            "EffectName"        "particles/generic_gameplay/generic_stunned.vpcf"
+            "EffectAttachType"    "follow_overhead"
 
-			"States"
-			{
-				"MODIFIER_STATE_STUNNED"		"MODIFIER_STATE_VALUE_ENABLED"
-			}
-		}
+            "States"
+            {
+                "MODIFIER_STATE_STUNNED"        "MODIFIER_STATE_VALUE_ENABLED"
+            }
+        }
 
-		"modifier_deafening_blast_dummy"
-		{
-			"Passive"	"1"
+        "modifier_deafening_blast_dummy"
+        {
+            "Passive"    "1"
 
-			"States"
-			{
-				"MODIFIER_STATE_STUNNED"						"MODIFIER_STATE_VALUE_ENABLED"
-				"MODIFIER_STATE_INVULNERABLE"					"MODIFIER_STATE_VALUE_ENABLED"
-				"MODIFIER_STATE_NO_HEALTH_BAR"					"MODIFIER_STATE_VALUE_ENABLED"
-				"MODIFIER_STATE_NO_UNIT_COLLISION"				"MODIFIER_STATE_VALUE_ENABLED"
-				"MODIFIER_STATE_NOT_ON_MINIMAP"					"MODIFIER_STATE_VALUE_ENABLED"
-				"MODIFIER_STATE_UNSELECTABLE"					"MODIFIER_STATE_VALUE_ENABLED"
-			}
-		}
-	}
+            "States"
+            {
+                "MODIFIER_STATE_STUNNED"                        "MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_INVULNERABLE"                    "MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_NO_HEALTH_BAR"                    "MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_NO_UNIT_COLLISION"                "MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_NOT_ON_MINIMAP"                    "MODIFIER_STATE_VALUE_ENABLED"
+                "MODIFIER_STATE_UNSELECTABLE"                    "MODIFIER_STATE_VALUE_ENABLED"
+            }
+        }
+    }
 }

@@ -1,8 +1,8 @@
 --[[
-	Author: Noya
-	Date: 19.01.2015.
-	Bounces a chain frost
-	Bug: Currently fails to have 2 different chains bouncing at the same time, because the counter is on the ability instead of the cast.
+    Author: Noya
+    Date: 19.01.2015.
+    Bounces a chain frost
+    Bug: Currently fails to have 2 different chains bouncing at the same time, because the counter is on the ability instead of the cast.
 ]]
 function ChainFrost(event)
 

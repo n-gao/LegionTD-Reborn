@@ -17,7 +17,7 @@ function Game:DamageFilter(filterTable)
     if damagetype == DAMAGE_TYPE_PHYSICAL then
         -- Magic damage filtering
         local original_damage = filterTable["damage"]
-         --Post reduction
+        --Post reduction
 
         if not Game.UnitKV[attacker:GetUnitName()] then
             return true

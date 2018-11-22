@@ -1,7 +1,7 @@
 --[[Original Author: Pizzalol
-	Date: 21.04.2015.
-	Creates a dummy with a dummy deafening spell
-	The dummy acts as the projectile while following the particle projectile]]
+    Date: 21.04.2015.
+    Creates a dummy with a dummy deafening spell
+    The dummy acts as the projectile while following the particle projectile]]
 function deafening_blast_start(keys)
     local caster = keys.caster
     local caster_location = caster:GetAbsOrigin()
@@ -71,9 +71,9 @@ function deafening_blast_start(keys)
 end
 
 --[[Author: Pizzalol
-	Date: 21.04.2015.
-	Triggers upon hitting a target
-	Deals damage depending on Exort and applies the knockback modifier depending on Quas]]
+    Date: 21.04.2015.
+    Triggers upon hitting a target
+    Deals damage depending on Exort and applies the knockback modifier depending on Quas]]
 function deafening_blast_hit(keys)
     local caster = keys.caster -- Dummy
     local caster_owner = caster:GetOwner() -- Hero
@@ -101,8 +101,8 @@ function deafening_blast_hit(keys)
 end
 
 --[[Author: Pizzalol
-	Date: 21.04.2015.
-	Keeps track of the caster and the direction in which to be knocked back]]
+    Date: 21.04.2015.
+    Keeps track of the caster and the direction in which to be knocked back]]
 function deafening_blast_knockback_start(keys)
     local caster = keys.caster -- Dummy
     local caster_owner = caster:GetOwner() -- Hero
@@ -118,8 +118,8 @@ function deafening_blast_knockback_start(keys)
 end
 
 --[[Author: Pizzalol
-	Date: 21.04.2015.
-	Triggers on an interval in the knockback modifier, moves the target]]
+    Date: 21.04.2015.
+    Triggers on an interval in the knockback modifier, moves the target]]
 function deafening_blast_knockback(keys)
     local target = keys.target
     local target_location = target:GetAbsOrigin()
@@ -130,9 +130,9 @@ function deafening_blast_knockback(keys)
 end
 
 --[[Author: Pizzalol
-	Date: 21.04.2015.
-	Triggers upon the expiration of the knockback modifier
-	Applies a disarm modifier depending on the Wex level]]
+    Date: 21.04.2015.
+    Triggers upon the expiration of the knockback modifier
+    Applies a disarm modifier depending on the Wex level]]
 function deafening_blast_disarm(keys)
     local target = keys.target
     local caster = target.deafening_caster -- Hero

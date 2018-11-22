@@ -1,6 +1,6 @@
 --[[Author: Pizzalol
-	Date: 13.10.2015.
-	Provides vision over the targeted area]]
+    Date: 13.10.2015.
+    Provides vision over the targeted area]]
     function IceVortexVision( keys )
         local caster = keys.caster
         local target_point = keys.target_points[1]

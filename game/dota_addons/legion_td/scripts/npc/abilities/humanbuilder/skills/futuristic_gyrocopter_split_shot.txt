@@ -1,88 +1,88 @@
 "futuristic_gyrocopter_split_shot"
 {
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"						"ability_datadriven"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_ALL"
-	"AbilityUnitTargetFlag"			"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-	"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-	"AbilityTextureName"			"medusa_split_shot"
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                        "ability_datadriven"
+    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitTargetTeam"            "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"            "DOTA_UNIT_TARGET_ALL"
+    "AbilityUnitTargetFlag"            "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    "AbilityUnitDamageType"            "DAMAGE_TYPE_PHYSICAL"
+    "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
+    "AbilityTextureName"            "medusa_split_shot"
 
-	"AbilityCooldown"				"3.0"
-	
-	// Special
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilitySpecial"
-	{
-		"01"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"damage_modifier"		"0"
-		}
-		"02"
-		{
-			"var_type"						"FIELD_INTEGER"
-			"damage_modifier_tooltip"		"0"
-		}
-		"03"
-		{	
-			"var_type"					"FIELD_INTEGER"
-			"arrow_count"				"4"
-		}
-		"04"
-		{	
-			"var_type"					"FIELD_INTEGER"
-			"total_arrow_count"			"5"
-		}
-		"05"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"range"					"500"
-		}
-		"06"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"projectile_speed"		"2000"
-		}
-	}
+    "AbilityCooldown"                "3.0"
+    
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"                "FIELD_INTEGER"
+            "damage_modifier"        "0"
+        }
+        "02"
+        {
+            "var_type"                        "FIELD_INTEGER"
+            "damage_modifier_tooltip"        "0"
+        }
+        "03"
+        {    
+            "var_type"                    "FIELD_INTEGER"
+            "arrow_count"                "4"
+        }
+        "04"
+        {    
+            "var_type"                    "FIELD_INTEGER"
+            "total_arrow_count"            "5"
+        }
+        "05"
+        {
+            "var_type"                "FIELD_INTEGER"
+            "range"                    "500"
+        }
+        "06"
+        {
+            "var_type"                "FIELD_INTEGER"
+            "projectile_speed"        "2000"
+        }
+    }
 
-	"OnProjectileHitUnit"
-	{
-		"DeleteOnHit"	"1"
+    "OnProjectileHitUnit"
+    {
+        "DeleteOnHit"    "1"
 
-		"RunScript"
-		{
-			"ScriptFile"	"abilities/humanbuilder/split_shot.lua"
-			"Function"		"SplitShotDamage"
-		}
-	}
+        "RunScript"
+        {
+            "ScriptFile"    "abilities/humanbuilder/split_shot.lua"
+            "Function"        "SplitShotDamage"
+        }
+    }
 
-	"Modifiers"
-	{
-		"modifier_split_shot"
-		{
-			"Passive"			"1"
-			"IsHidden"			"1"
-			"IsDebuff"			"0"
-	
-			"OnAttack"
-			{
-				"RunScript"
-				{
-					"ScriptFile"	"abilities/humanbuilder/split_shot.lua"
-					"Function"		"SplitShotLaunch"
-					"split_shot_projectile"	"particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
-					"modifiername"	"modifier_split_shot"
-				}
-			}
+    "Modifiers"
+    {
+        "modifier_split_shot"
+        {
+            "Passive"            "1"
+            "IsHidden"            "1"
+            "IsDebuff"            "0"
+    
+            "OnAttack"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/humanbuilder/split_shot.lua"
+                    "Function"        "SplitShotLaunch"
+                    "split_shot_projectile"    "particles/units/heroes/hero_gyrocopter/gyro_base_attack.vpcf"
+                    "modifiername"    "modifier_split_shot"
+                }
+            }
 
-			"Properties"
-			{
-				"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "%damage_modifier" 
-			}
-		}
-	}
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "%damage_modifier" 
+            }
+        }
+    }
 }

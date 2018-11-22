@@ -1,14 +1,13 @@
 --[[
 Pudge AI
 ]]
-
 require("ai/ai_core_new")
 
 behaviorSystem = {} -- create the global so we can assign to it
 
 function Spawn(entityKeyValues)
     thisEntity:SetContextThink("AIThink", AIThink, 1)
-    behaviorSystem = AICore:CreateBehaviorSystem({ BehaviorNone, BehaviorBolt, BehaviorAngel })
+    behaviorSystem = AICore:CreateBehaviorSystem({BehaviorNone, BehaviorBolt, BehaviorAngel})
 end
 
 function AIThink() -- For some reason AddThinkToEnt doesn't accept member functions
@@ -26,8 +25,7 @@ end
 function BehaviorNone:Begin()
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         UnitIndex = thisEntity:entindex(),
         OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
         Position = thisEntity.nextTarget
@@ -48,12 +46,27 @@ function BehaviorBolt:Evaluate()
     local target
 
     -- let's not choose this twice in a row
-    if AICore.currentBehavior == self then return desire end
+    if AICore.currentBehavior == self then
+        return desire
+    end
 
     if self.boltAbility and self.boltAbility:IsFullyCastable() then
         local range = self.boltAbility:GetCastRange()
-        local enemies = FindUnitsInRadius(thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_ANY_ORDER, false)
-        if #enemies > 0 then target = enemies[1] end
+        local enemies =
+            FindUnitsInRadius(
+            thisEntity:GetTeamNumber(),
+            thisEntity:GetAbsOrigin(),
+            nil,
+            range,
+            DOTA_UNIT_TARGET_TEAM_ENEMY,
+            DOTA_UNIT_TARGET_BASIC,
+            0,
+            FIND_ANY_ORDER,
+            false
+        )
+        if #enemies > 0 then
+            target = enemies[1]
+        end
     end
 
     if target then
@@ -69,8 +82,7 @@ end
 function BehaviorBolt:Begin()
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
         UnitIndex = thisEntity:entindex(),
         TargetIndex = self.target:entindex(),
@@ -90,11 +102,24 @@ function BehaviorAngel:Evaluate()
     local desire = 0
 
     -- let's not choose this twice in a row
-    if AICore.currentBehavior == self then return desire end
+    if AICore.currentBehavior == self then
+        return desire
+    end
 
     if self.angelAbility and self.angelAbility:IsFullyCastable() then
         local range = self.angelAbility:GetCastRange()
-        local allies = FindUnitsInRadius(thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_ALL, 0, FIND_ANY_ORDER, false)
+        local allies =
+            FindUnitsInRadius(
+            thisEntity:GetTeamNumber(),
+            thisEntity:GetAbsOrigin(),
+            nil,
+            range,
+            DOTA_UNIT_TARGET_TEAM_FRIENDLY,
+            DOTA_UNIT_TARGET_ALL,
+            0,
+            FIND_ANY_ORDER,
+            false
+        )
         --print ("tactician guardian angel allies number considering: " .. #allies .. " (" .. range .. " range)")
         for _, unit in pairs(allies) do
             local healthLost = unit:GetMaxHealth() - unit:GetHealth()
@@ -111,16 +136,25 @@ end
 function BehaviorAngel:Begin()
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
         UnitIndex = thisEntity:entindex(),
         TargetIndex = nil,
         AbilityIndex = self.angelAbility:entindex()
     }
 
-
-    local units = FindUnitsInRadius(thisEntity:GetTeam(), thisEntity:GetAbsOrigin(), nil, self.angelAbility:GetCastRange(), DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_ALL, 0, FIND_CLOSEST, false)
+    local units =
+        FindUnitsInRadius(
+        thisEntity:GetTeam(),
+        thisEntity:GetAbsOrigin(),
+        nil,
+        self.angelAbility:GetCastRange(),
+        DOTA_UNIT_TARGET_TEAM_FRIENDLY,
+        DOTA_UNIT_TARGET_ALL,
+        0,
+        FIND_CLOSEST,
+        false
+    )
 
     local cooldown = self.angelAbility:GetCooldown(self.angelAbility:GetLevel() - 1)
 
@@ -141,4 +175,4 @@ BehaviorAngel.Continue = BehaviorAngel.Begin --if we re-enter this ability, we m
 
 --------------------------------------------------------------------------------------------------------
 
-AICore.possibleBehaviors = { BehaviorNone, BehaviorBolt, BehaviorAngel }
+AICore.possibleBehaviors = {BehaviorNone, BehaviorBolt, BehaviorAngel}

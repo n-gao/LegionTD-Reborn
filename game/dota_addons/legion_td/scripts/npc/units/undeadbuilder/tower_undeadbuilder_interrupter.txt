@@ -13,7 +13,7 @@
     
     "Ability1"                          "hell_spikes"
     "Ability2"                          "perfected_nether_blast"
-	"Ability3"                          "sell"
+    "Ability3"                          "sell"
 
     // Armor
     //----------------------------------------------------------------
@@ -89,13 +89,13 @@
             }
         }
     "AttachWearables"
-    	{
+        {
                     "Wearable1" { "ItemDef" "7574" }
                     "Wearable2" { "ItemDef" "7565" }
                     "Wearable3" { "ItemDef" "7460" }
                     "Wearable4" { "ItemDef" "7573" }
                     "Wearable5" { "ItemDef" "7575" }
-					"Wearable6" { "ItemDef" "7577" }
-		}
+                    "Wearable6" { "ItemDef" "7577" }
+        }
     }
 }

@@ -1,75 +1,75 @@
 "futuristic_gyrocopter_call_down"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"gyrocopter_call_down"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"FightRecapLevel"				"2"
-		
-		// Casting
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"1000"
-		"AbilityCastPoint"				"0"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "gyrocopter_call_down"
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+        "AbilityType"                    "DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"
+        "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
+        "FightRecapLevel"                "2"
+        
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"                "1000"
+        "AbilityCastPoint"                "0"
 
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"60"
-		
-		// Cost
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"0"
-		
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"slow_duration_first"		"2"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"slow_duration_second"		"4"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_first"				"160"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_second"				"130"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"slow_first"				"70"
-			}
-			"06"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"slow_second"				"70"
-			}
-			"07"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"radius"					"250"
-			}
-			"08"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"range_scepter"					"0"
-			}
-			"09"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_second_scepter"		"175 225 275"
-			}
-		}
-	}
+        // Time        
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"                "60"
+        
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"                "0"
+        
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "slow_duration_first"        "2"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "slow_duration_second"        "4"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "damage_first"                "160"
+            }
+            "04"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "damage_second"                "130"
+            }
+            "05"
+            {
+                "var_type"                    "FIELD_FLOAT"
+                "slow_first"                "70"
+            }
+            "06"
+            {
+                "var_type"                    "FIELD_FLOAT"
+                "slow_second"                "70"
+            }
+            "07"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "radius"                    "250"
+            }
+            "08"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "range_scepter"                    "0"
+            }
+            "09"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "damage_second_scepter"        "175 225 275"
+            }
+        }
+    }

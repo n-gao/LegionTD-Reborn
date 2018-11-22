@@ -1,21 +1,21 @@
 "assassinbuilder_augment_aura"
 {
-	"BaseClass"						"alpha_wolf_command_aura"
-	"AbilityTextureName"			"alpha_wolf_command_aura"
-	"MaxLevel"						"1"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "BaseClass"                        "alpha_wolf_command_aura"
+    "AbilityTextureName"            "alpha_wolf_command_aura"
+    "MaxLevel"                        "1"
+    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-	"AbilitySpecial"
-	{
-		"01"
-		{
-			"var_type"			"FIELD_INTEGER"
-			"bonus_damage_pct"	"18"
-		}
-		"02"
-		{
-			"var_type"			"FIELD_INTEGER"
-			"radius"			"1000"
-		}
-	}
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"            "FIELD_INTEGER"
+            "bonus_damage_pct"    "18"
+        }
+        "02"
+        {
+            "var_type"            "FIELD_INTEGER"
+            "radius"            "1000"
+        }
+    }
 }

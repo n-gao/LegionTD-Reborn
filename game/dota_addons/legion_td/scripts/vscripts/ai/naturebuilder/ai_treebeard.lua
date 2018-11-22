@@ -1,14 +1,13 @@
 --[[
 Pudge AI
 ]]
-
 require("ai/ai_core_new")
 
 behaviorSystem = {} -- create the global so we can assign to it
 
 function Spawn(entityKeyValues)
     thisEntity:SetContextThink("AIThink", AIThink, 1)
-    behaviorSystem = AICore:CreateBehaviorSystem({ BehaviorNone, BehaviorOvergrowth })
+    behaviorSystem = AICore:CreateBehaviorSystem({BehaviorNone, BehaviorOvergrowth})
 end
 
 function AIThink() -- For some reason AddThinkToEnt doesn't accept member functions
@@ -24,11 +23,9 @@ function BehaviorNone:Evaluate()
 end
 
 function BehaviorNone:Begin()
-
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         UnitIndex = thisEntity:entindex(),
         OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
         Position = thisEntity.nextTarget
@@ -48,14 +45,29 @@ function BehaviorOvergrowth:Evaluate()
     local desire = 0
 
     -- let's not choose this twice in a row
-    if AICore.currentBehavior == self then return desire end
+    if AICore.currentBehavior == self then
+        return desire
+    end
 
     local target = nil
 
     if self.overgrowthAbility and self.overgrowthAbility:IsFullyCastable() then
         local range = self.overgrowthAbility:GetCastRange()
-        local enemies = FindUnitsInRadius(thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false)
-        if #enemies > 1 then target = true end
+        local enemies =
+            FindUnitsInRadius(
+            thisEntity:GetTeamNumber(),
+            thisEntity:GetAbsOrigin(),
+            nil,
+            range,
+            DOTA_UNIT_TARGET_TEAM_ENEMY,
+            DOTA_UNIT_TARGET_BASIC,
+            0,
+            FIND_CLOSEST,
+            false
+        )
+        if #enemies > 1 then
+            target = true
+        end
     end
 
     if target then
@@ -68,11 +80,9 @@ function BehaviorOvergrowth:Evaluate()
 end
 
 function BehaviorOvergrowth:Begin()
-
     self.endTime = GameRules:GetGameTime() + 2
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
         UnitIndex = thisEntity:entindex(),
         TargetIndex = nil,
@@ -85,4 +95,4 @@ BehaviorOvergrowth.Continue = BehaviorOvergrowth.Begin --if we re-enter this abi
 
 --------------------------------------------------------------------------------------------------------
 
-AICore.possibleBehaviors = { BehaviorNone, BehaviorOvergrowth }
+AICore.possibleBehaviors = {BehaviorNone, BehaviorOvergrowth}

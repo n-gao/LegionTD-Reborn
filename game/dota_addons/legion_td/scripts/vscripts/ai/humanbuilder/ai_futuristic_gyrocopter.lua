@@ -1,14 +1,13 @@
 --[[
 Pudge AI
 ]]
-
 require("ai/ai_core_new")
 
 behaviorSystem = {} -- create the global so we can assign to it
 
 function Spawn(entityKeyValues)
     thisEntity:SetContextThink("AIThink", AIThink, 1)
-    behaviorSystem = AICore:CreateBehaviorSystem({ BehaviorNone, BehaviorBarrage, BehaviorCalldown, BehaviorFlak })
+    behaviorSystem = AICore:CreateBehaviorSystem({BehaviorNone, BehaviorBarrage, BehaviorCalldown, BehaviorFlak})
 end
 
 function AIThink() -- For some reason AddThinkToEnt doesn't accept member functions
@@ -24,11 +23,9 @@ function BehaviorNone:Evaluate()
 end
 
 function BehaviorNone:Begin()
-
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         UnitIndex = thisEntity:entindex(),
         OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
         Position = thisEntity.nextTarget
@@ -49,12 +46,27 @@ function BehaviorFlak:Evaluate()
     local blastDirection = nil
 
     -- let's not choose this twice in a row
-    if AICore.currentBehavior == self then return desire end
+    if AICore.currentBehavior == self then
+        return desire
+    end
 
     if self.flakAbility and self.flakAbility:IsFullyCastable() then
         local range = self.flakAbility:GetCastRange()
-        local enemies = FindUnitsInRadius(thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false)
-        if #enemies > 0 then target = true end
+        local enemies =
+            FindUnitsInRadius(
+            thisEntity:GetTeamNumber(),
+            thisEntity:GetAbsOrigin(),
+            nil,
+            range,
+            DOTA_UNIT_TARGET_TEAM_ENEMY,
+            DOTA_UNIT_TARGET_BASIC,
+            0,
+            FIND_CLOSEST,
+            false
+        )
+        if #enemies > 0 then
+            target = true
+        end
     end
 
     if target then
@@ -67,11 +79,9 @@ function BehaviorFlak:Evaluate()
 end
 
 function BehaviorFlak:Begin()
-
     self.endTime = GameRules:GetGameTime() + .2
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
         UnitIndex = thisEntity:entindex(),
         TargetIndex = nil,
@@ -92,12 +102,27 @@ function BehaviorBarrage:Evaluate()
     local blastDirection = nil
 
     -- let's not choose this twice in a row
-    if AICore.currentBehavior == self then return desire end
+    if AICore.currentBehavior == self then
+        return desire
+    end
 
     if self.barrageAbility and self.barrageAbility:IsFullyCastable() then
         local range = self.barrageAbility:GetCastRange()
-        local enemies = FindUnitsInRadius(thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false)
-        if #enemies > 0 then target = true end
+        local enemies =
+            FindUnitsInRadius(
+            thisEntity:GetTeamNumber(),
+            thisEntity:GetAbsOrigin(),
+            nil,
+            range,
+            DOTA_UNIT_TARGET_TEAM_ENEMY,
+            DOTA_UNIT_TARGET_BASIC,
+            0,
+            FIND_CLOSEST,
+            false
+        )
+        if #enemies > 0 then
+            target = true
+        end
     end
 
     if target then
@@ -110,11 +135,9 @@ function BehaviorBarrage:Evaluate()
 end
 
 function BehaviorBarrage:Begin()
-
     self.endTime = GameRules:GetGameTime() + .2
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
         UnitIndex = thisEntity:entindex(),
         TargetIndex = nil,
@@ -135,13 +158,29 @@ function BehaviorCalldown:Evaluate()
     local target
 
     -- let's not choose this twice in a row
-    if AICore.currentBehavior == self then return desire end
+    if AICore.currentBehavior == self then
+        return desire
+    end
 
     if self.calldownAbility and self.calldownAbility:IsFullyCastable() then
         local range = self.calldownAbility:GetCastRange()
-        local enemies = FindUnitsInRadius(thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false)
+        local enemies =
+            FindUnitsInRadius(
+            thisEntity:GetTeamNumber(),
+            thisEntity:GetAbsOrigin(),
+            nil,
+            range,
+            DOTA_UNIT_TARGET_TEAM_ENEMY,
+            DOTA_UNIT_TARGET_BASIC,
+            0,
+            FIND_CLOSEST,
+            false
+        )
         for _, enemy in ipairs(enemies) do
-            if enemy:IsAttacking() then target = enemy break end -- only call down on attacking (nonmoving) enemies
+            if enemy:IsAttacking() then
+                target = enemy
+                break
+            end -- only call down on attacking (nonmoving) enemies
         end
     end
 
@@ -156,11 +195,9 @@ function BehaviorCalldown:Evaluate()
 end
 
 function BehaviorCalldown:Begin()
-
     self.endTime = GameRules:GetGameTime() + .4 -- wait a bit after casting
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
         UnitIndex = thisEntity:entindex(),
         Position = self.target:GetAbsOrigin(),
@@ -173,4 +210,4 @@ BehaviorCalldown.Continue = BehaviorCalldown.Begin --if we re-enter this ability
 
 --------------------------------------------------------------------------------------------------------
 
-AICore.possibleBehaviors = { BehaviorNone, BehaviorBarrage, BehaviorCalldown, BehaviorFlak }
+AICore.possibleBehaviors = {BehaviorNone, BehaviorBarrage, BehaviorCalldown, BehaviorFlak}

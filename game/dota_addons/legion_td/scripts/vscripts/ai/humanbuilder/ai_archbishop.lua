@@ -1,14 +1,13 @@
 --[[
 Pudge AI
 ]]
-
 require("ai/ai_core_new")
 
 behaviorSystem = {} -- create the global so we can assign to it
 
 function Spawn(entityKeyValues)
     thisEntity:SetContextThink("AIThink", AIThink, 1)
-    behaviorSystem = AICore:CreateBehaviorSystem({ BehaviorNone, BehaviorHeal })
+    behaviorSystem = AICore:CreateBehaviorSystem({BehaviorNone, BehaviorHeal})
 end
 
 function AIThink() -- For some reason AddThinkToEnt doesn't accept member functions
@@ -26,8 +25,7 @@ end
 function BehaviorNone:Begin()
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         UnitIndex = thisEntity:entindex(),
         OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
         Position = thisEntity.nextTarget
@@ -48,11 +46,24 @@ function BehaviorHeal:Evaluate()
     local target
 
     -- let's not choose this twice in a row
-    if AICore.currentBehavior == self then return desire end
+    if AICore.currentBehavior == self then
+        return desire
+    end
 
     if self.healAbility and self.healAbility:IsFullyCastable() then
         local range = self.healAbility:GetCastRange()
-        local allies = FindUnitsInRadius(thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_ALL, 0, FIND_ANY_ORDER, false)
+        local allies =
+            FindUnitsInRadius(
+            thisEntity:GetTeamNumber(),
+            thisEntity:GetAbsOrigin(),
+            nil,
+            range,
+            DOTA_UNIT_TARGET_TEAM_FRIENDLY,
+            DOTA_UNIT_TARGET_ALL,
+            0,
+            FIND_ANY_ORDER,
+            false
+        )
         local mostHurt = 40 -- minimum hurt amount
         for _, unit in pairs(allies) do
             local healthLost = unit:GetMaxHealth() - unit:GetHealth()
@@ -75,8 +86,7 @@ end
 function BehaviorHeal:Begin()
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
         UnitIndex = thisEntity:entindex(),
         TargetIndex = self.target:entindex(),
@@ -88,4 +98,4 @@ BehaviorHeal.Continue = BehaviorHeal.Begin --if we re-enter this ability, we mig
 
 --------------------------------------------------------------------------------------------------------
 
-AICore.possibleBehaviors = { BehaviorNone, BehaviorHeal }
+AICore.possibleBehaviors = {BehaviorNone, BehaviorHeal}

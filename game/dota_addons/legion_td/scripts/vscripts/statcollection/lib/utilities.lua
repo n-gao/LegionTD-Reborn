@@ -5,7 +5,6 @@ STAT_UTILITIES_VERSION = "0.2"
     It will be extended with more functionalities as the library gets more usage and example cases
     All the functions should only use methods from the Dota API, and not contain calls to a value specific to a certain game mode (use a different file for this!)
 ]]
-
 ------------------------------
 -- Game Functions     --
 ------------------------------

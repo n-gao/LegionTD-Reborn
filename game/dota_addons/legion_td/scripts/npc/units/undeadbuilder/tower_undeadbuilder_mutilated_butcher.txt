@@ -88,11 +88,11 @@
                 "Support"           "0.0"
             }
         }
-	           "AttachWearables"
-    	        {
-    	            "Wearable1" { "ItemDef" "4759" } // Left Hand Weapon
-					"Wearable2"	{ "ItemDef" "4760" } // Heavy Tenderizer
-					"Wearable3"	{ "ItemDef" "260"  } // Pudge's Left Hand
-    	        }
+               "AttachWearables"
+                {
+                    "Wearable1" { "ItemDef" "4759" } // Left Hand Weapon
+                    "Wearable2"    { "ItemDef" "4760" } // Heavy Tenderizer
+                    "Wearable3"    { "ItemDef" "260"  } // Pudge's Left Hand
+                }
     }
 }

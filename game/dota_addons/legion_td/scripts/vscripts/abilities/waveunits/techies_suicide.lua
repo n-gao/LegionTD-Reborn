@@ -50,13 +50,13 @@ function DamageBosses(keys)
     local multiplier = ability:GetLevelSpecialValueFor("damage_boss_multiplier", ability_level)
     local damage = ability:GetLevelSpecialValueFor("damage", ability_level)
     local partial_damage = ability:GetLevelSpecialValueFor("partial_damage", ability_level)
-	local untis_in_small_radius = FindUnitsInRadius(caster:GetTeamNumber(),
+    local untis_in_small_radius = FindUnitsInRadius(caster:GetTeamNumber(),
                                     caster:GetOrigin(), 
                                     nil,                                    
                                     small_radius, 
                                     ability:GetAbilityTargetTeam(), 
                                     ability:GetAbilityTargetType(), 0, 0, false)
-	local untis_in_big_radius = FindUnitsInRadius(caster:GetTeamNumber(),
+    local untis_in_big_radius = FindUnitsInRadius(caster:GetTeamNumber(),
                                     caster:GetOrigin(), 
                                     nil,                                    
                                     big_radius, 

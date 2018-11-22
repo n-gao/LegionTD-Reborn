@@ -6,7 +6,7 @@
     "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
     "AbilityTextureName"            "life_stealer_feast"
-	"MaxLevel"						"1"
+    "MaxLevel"                        "1"
 
     "precache"
     {

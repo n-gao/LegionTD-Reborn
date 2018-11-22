@@ -9,7 +9,7 @@
     "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_nightstalker.vsndevts"
     "Level"                 "1"
     "HealthBarOffset"       "120"
-    "Vscripts"  			"ai/ai_default.lua"
+    "Vscripts"              "ai/ai_default.lua"
 
     "Ability4"                          "sell"
     "Ability1"                          "undeadbuilder_upgrade_consumer"

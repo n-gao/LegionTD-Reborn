@@ -7,7 +7,7 @@
     "GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
     "Level" "1"
     "HealthBarOffset"   "140"
-    "Vscripts"	"ai/waves/ai_ancienthulk.lua"
+    "Vscripts"    "ai/waves/ai_ancienthulk.lua"
     "Ability1"  "ancienthulk_rabid"
     "ArmorPhysical" "13"
     "MagicalResistance" "30"

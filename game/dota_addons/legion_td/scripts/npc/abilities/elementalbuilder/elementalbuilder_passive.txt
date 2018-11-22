@@ -4,83 +4,83 @@
     "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 
     "AbilitySpecial"
-	{
-		"01"
-		{
-			"var_type"						"FIELD_INTEGER"
-			"cooldown_reduction_percent"	"5"
-		}
-		"02"
-		{
-			"var_type"						"FIELD_FLOAT"
-			"armor_increase"				"1"
-		}
-		"03"
-		{
-			"var_type"						"FIELD_FLOAT"
-			"armor_decrease"				"-1"
-		}
-		"04"
-		{
-			"var_type"						"FIELD_FLOAT"
-			"basedamagepercent_increase"	"5"
-		}
-		"05"
-		{
-			"var_type"						"FIELD_FLOAT"
-			"basedamagepercent_decrease"	"-5"
-		}
-		"06"
-		{
-			"var_type"						"FIELD_FLOAT"
-			"magic_increase_percent"	"4" // this does nothing and is hardcoded in damage filter because MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE doesn't seem to do a god damn thing
-		}
-		"07"
-		{
-			"var_type"						"FIELD_FLOAT"
-			"magic_decrease_percent"	"-4" // same
-		}
-		"08"
-		{
-			"var_type"						"FIELD_FLOAT"
-			"attackspeed_increase"	"7.5"
-		}
-		"09"
-		{
-			"var_type"						"FIELD_FLOAT"
-			"attackspeed_decrease"	"-7.5"
-		}
-		"10"
-		{
-			"var_type"						"FIELD_FLOAT"
-			"incomingdamage_decrease_percent"	"-4"
-		}
-		"11"
-		{
-			"var_type"						"FIELD_FLOAT"
-			"incomingdamage_increase_percent"	"4"
-		}
-	}
+    {
+        "01"
+        {
+            "var_type"                        "FIELD_INTEGER"
+            "cooldown_reduction_percent"    "5"
+        }
+        "02"
+        {
+            "var_type"                        "FIELD_FLOAT"
+            "armor_increase"                "1"
+        }
+        "03"
+        {
+            "var_type"                        "FIELD_FLOAT"
+            "armor_decrease"                "-1"
+        }
+        "04"
+        {
+            "var_type"                        "FIELD_FLOAT"
+            "basedamagepercent_increase"    "5"
+        }
+        "05"
+        {
+            "var_type"                        "FIELD_FLOAT"
+            "basedamagepercent_decrease"    "-5"
+        }
+        "06"
+        {
+            "var_type"                        "FIELD_FLOAT"
+            "magic_increase_percent"    "4" // this does nothing and is hardcoded in damage filter because MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE doesn't seem to do a god damn thing
+        }
+        "07"
+        {
+            "var_type"                        "FIELD_FLOAT"
+            "magic_decrease_percent"    "-4" // same
+        }
+        "08"
+        {
+            "var_type"                        "FIELD_FLOAT"
+            "attackspeed_increase"    "7.5"
+        }
+        "09"
+        {
+            "var_type"                        "FIELD_FLOAT"
+            "attackspeed_decrease"    "-7.5"
+        }
+        "10"
+        {
+            "var_type"                        "FIELD_FLOAT"
+            "incomingdamage_decrease_percent"    "-4"
+        }
+        "11"
+        {
+            "var_type"                        "FIELD_FLOAT"
+            "incomingdamage_increase_percent"    "4"
+        }
+    }
 
 
 
-	"Modifiers"
-	{
-		"modifier_elementalbuilder_passive"
-		{
-			"Passive"	"1"
-			"IsHidden"	"0"
-			"TextureName" "invoker_invoke"
-			"OnCreated"
-			{
-				"RunScript"
-				{
-					"ScriptFile"    "abilities/elementalbuilder/passive/elementalbuilder_passive.lua"
-	            	"Function"      "elementalbuilder_passive_start"
-				}
-			}
-		}
-	}
+    "Modifiers"
+    {
+        "modifier_elementalbuilder_passive"
+        {
+            "Passive"    "1"
+            "IsHidden"    "0"
+            "TextureName" "invoker_invoke"
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/elementalbuilder/passive/elementalbuilder_passive.lua"
+                    "Function"      "elementalbuilder_passive_start"
+                }
+            }
+        }
+    }
 }
 
 

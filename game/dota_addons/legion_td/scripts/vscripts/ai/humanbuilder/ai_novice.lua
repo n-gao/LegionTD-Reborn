@@ -1,14 +1,13 @@
 --[[
 Pudge AI
 ]]
-
 require("ai/ai_core_new")
 
 behaviorSystem = {} -- create the global so we can assign to it
 
 function Spawn(entityKeyValues)
     thisEntity:SetContextThink("AIThink", AIThink, 1)
-    behaviorSystem = AICore:CreateBehaviorSystem({ BehaviorNone, BehaviorFade })
+    behaviorSystem = AICore:CreateBehaviorSystem({BehaviorNone, BehaviorFade})
 end
 
 function AIThink() -- For some reason AddThinkToEnt doesn't accept member functions
@@ -26,8 +25,7 @@ end
 function BehaviorNone:Begin()
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         UnitIndex = thisEntity:entindex(),
         OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
         Position = thisEntity.nextTarget
@@ -48,12 +46,27 @@ function BehaviorFade:Evaluate()
     local target
 
     -- let's not choose this twice in a row
-    if AICore.currentBehavior == self then return desire end
+    if AICore.currentBehavior == self then
+        return desire
+    end
 
     if self.fadeAbility and self.fadeAbility:IsFullyCastable() then
         local range = self.fadeAbility:GetCastRange()
-        local enemies = FindUnitsInRadius(thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false)
-        if #enemies > 0 then target = enemies[1] end
+        local enemies =
+            FindUnitsInRadius(
+            thisEntity:GetTeamNumber(),
+            thisEntity:GetAbsOrigin(),
+            nil,
+            range,
+            DOTA_UNIT_TARGET_TEAM_ENEMY,
+            DOTA_UNIT_TARGET_BASIC,
+            0,
+            FIND_CLOSEST,
+            false
+        )
+        if #enemies > 0 then
+            target = enemies[1]
+        end
     end
 
     if target then
@@ -69,8 +82,7 @@ end
 function BehaviorFade:Begin()
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
         UnitIndex = thisEntity:entindex(),
         TargetIndex = self.target:entindex(),
@@ -82,4 +94,4 @@ BehaviorFade.Continue = BehaviorFade.Begin --if we re-enter this ability, we mig
 
 --------------------------------------------------------------------------------------------------------
 
-AICore.possibleBehaviors = { BehaviorNone, BehaviorFade }
+AICore.possibleBehaviors = {BehaviorNone, BehaviorFade}

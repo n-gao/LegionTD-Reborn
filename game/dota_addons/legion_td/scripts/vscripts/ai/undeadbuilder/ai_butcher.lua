@@ -1,18 +1,17 @@
 --[[
 Pudge AI
 ]]
-
-require( "ai/ai_core_new" )
+require("ai/ai_core_new")
 
 behaviorSystem = {} -- create the global so we can assign to it
 
-function Spawn( entityKeyValues )
-    thisEntity:SetContextThink( "AIThink", AIThink, 1 )
-    behaviorSystem = AICore:CreateBehaviorSystem( { BehaviorNone, BehaviorStartRot, BehaviorStopRot } ) 
+function Spawn(entityKeyValues)
+    thisEntity:SetContextThink("AIThink", AIThink, 1)
+    behaviorSystem = AICore:CreateBehaviorSystem({BehaviorNone, BehaviorStartRot, BehaviorStopRot})
 end
 
 function AIThink() -- For some reason AddThinkToEnt doesn't accept member functions
-       return behaviorSystem:Think()
+    return behaviorSystem:Think()
 end
 
 --------------------------------------------------------------------------------------------------------
@@ -25,9 +24,8 @@ end
 
 function BehaviorNone:Begin()
     self.endTime = GameRules:GetGameTime() + .1
-    
-    self.order =
-    {
+
+    self.order = {
         UnitIndex = thisEntity:entindex(),
         OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
         Position = thisEntity.nextTarget
@@ -47,10 +45,21 @@ function BehaviorStartRot:Evaluate()
     self.fadeAbility = thisEntity:FindAbilityByName("pudge_rot_lua")
 
     local range = 250
-    local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false )
-        
+    local enemies =
+        FindUnitsInRadius(
+        thisEntity:GetTeamNumber(),
+        thisEntity:GetAbsOrigin(),
+        nil,
+        range,
+        DOTA_UNIT_TARGET_TEAM_ENEMY,
+        DOTA_UNIT_TARGET_BASIC,
+        0,
+        FIND_CLOSEST,
+        false
+    )
+
     if #enemies > 0 and self.fadeAbility:GetToggleState() == false then
-        return 2 
+        return 2
     end
     return 0
 end
@@ -59,8 +68,7 @@ function BehaviorStartRot:Begin()
     self.fadeAbility = thisEntity:FindAbilityByName("pudge_rot_lua")
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_TOGGLE,
         UnitIndex = thisEntity:entindex(),
         AbilityIndex = self.fadeAbility:entindex()
@@ -78,20 +86,30 @@ function BehaviorStopRot:Evaluate()
     self.fadeAbility = thisEntity:FindAbilityByName("pudge_rot_lua")
 
     local range = 250
-    local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false )
-        
+    local enemies =
+        FindUnitsInRadius(
+        thisEntity:GetTeamNumber(),
+        thisEntity:GetAbsOrigin(),
+        nil,
+        range,
+        DOTA_UNIT_TARGET_TEAM_ENEMY,
+        DOTA_UNIT_TARGET_BASIC,
+        0,
+        FIND_CLOSEST,
+        false
+    )
+
     if #enemies < 1 and self.fadeAbility:GetToggleState() then
-        return 2 
+        return 2
     end
     return 0
 end
 
 function BehaviorStopRot:Begin()
-    self.fadeAbility = thisEntity:FindAbilityByName("pudge_rot_lua")    
+    self.fadeAbility = thisEntity:FindAbilityByName("pudge_rot_lua")
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_TOGGLE,
         UnitIndex = thisEntity:entindex(),
         AbilityIndex = self.fadeAbility:entindex()
@@ -101,4 +119,4 @@ end
 BehaviorStopRot.Continue = BehaviorStartRot.Evaluate -- after stopping rot we will return to evaluation of starting rot
 --------------------------------------------------------------------------------------------------------
 
-AICore.possibleBehaviors = { BehaviorNone, BehaviorStartRot, BehaviorStopRot }
+AICore.possibleBehaviors = {BehaviorNone, BehaviorStartRot, BehaviorStopRot}

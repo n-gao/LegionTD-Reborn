@@ -4,37 +4,37 @@
     "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 
     "AbilitySpecial"
-	{
-		"01"
-		{
-			"var_type"				"FIELD_INTEGER"
-			"damage_percent"		"40"
-		}
-		"02"
-		{
-			"var_type"				"FIELD_FLOAT"
-			"heal_percent"			"40"
-		}
-	}
+    {
+        "01"
+        {
+            "var_type"                "FIELD_INTEGER"
+            "damage_percent"        "40"
+        }
+        "02"
+        {
+            "var_type"                "FIELD_FLOAT"
+            "heal_percent"            "40"
+        }
+    }
 
 
 
-	"Modifiers"
-	{
-		"modifier_naturebuilder_passive"
-		{
-			"Passive"	"1"
-			"IsHidden"	"1"
-			"OnCreated"
-			{
-				"RunScript"
-				{
-					"ScriptFile"    "abilities/naturebuilder/passive/naturebuilder_passive.lua"
-	            	"Function"      "naturebuilder_passive_start"
-				}
-			}
-		}
-	}
+    "Modifiers"
+    {
+        "modifier_naturebuilder_passive"
+        {
+            "Passive"    "1"
+            "IsHidden"    "1"
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/naturebuilder/passive/naturebuilder_passive.lua"
+                    "Function"      "naturebuilder_passive_start"
+                }
+            }
+        }
+    }
 }
 
 

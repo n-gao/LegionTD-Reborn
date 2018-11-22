@@ -1,115 +1,115 @@
 "tactician_guardian_angel"
 {
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"						"ability_datadriven"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
-	"AbilityTextureName"			"omniknight_guardian_angel"
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                        "ability_datadriven"
+    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityType"                    "DOTA_ABILITY_TYPE_ULTIMATE"
+    "SpellImmunityType"                "SPELL_IMMUNITY_ALLIES_YES"
+    "AbilityTextureName"            "omniknight_guardian_angel"
 
-	"AbilityCastRange"				"625" // just for AI
+    "AbilityCastRange"                "625" // just for AI
 
-	// Time		
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"600"
-	"AbilityCastPoint"				"0.1"
-	
-	// Cost
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost"				"0"
-	
-	// Special
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilitySpecial"
-	{
-		"01"
-		{
-			"var_type"					"FIELD_FLOAT"
-			"duration"					"1.7"
-		}
-		"02"
-		{
-			"var_type"					"FIELD_INTEGER"
-			"radius"					"625"
-		}
-	}
+    // Time        
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                "600"
+    "AbilityCastPoint"                "0.1"
+    
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                "0"
+    
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"                    "FIELD_FLOAT"
+            "duration"                    "1.7"
+        }
+        "02"
+        {
+            "var_type"                    "FIELD_INTEGER"
+            "radius"                    "625"
+        }
+    }
 
-	"precache"
-	{
-		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
-		"particle"	"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_halo_buff.vpcf"
-		"particle"  "particles/status_fx/status_effect_guardian_angel.vpcf"
-		"particle"  "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
-	}
+    "precache"
+    {
+        "soundfile"    "soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
+        "particle"    "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_halo_buff.vpcf"
+        "particle"  "particles/status_fx/status_effect_guardian_angel.vpcf"
+        "particle"  "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
+    }
 
-	"OnSpellStart"
-	{
-		"FireSound"
-		{
-			"EffectName"	"Hero_Omniknight.GuardianAngel.Cast"
-			"Target"		"CASTER"
-		}
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+            "EffectName"    "Hero_Omniknight.GuardianAngel.Cast"
+            "Target"        "CASTER"
+        }
 
-		"ActOnTargets"
-		{
-			"Target"
-			{
-				"Center"  		"CASTER"
-				"Radius"		"%radius"
-				"Teams" 		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-				"Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-			}
+        "ActOnTargets"
+        {
+            "Target"
+            {
+                "Center"          "CASTER"
+                "Radius"        "%radius"
+                "Teams"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+                "Types"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+            }
 
-			"Action"
-			{
-				"ApplyModifier"
-				{
-					"Target" 		"TARGET"
-					"ModifierName"	"modifier_guardian_angel"
-				}
-			}
-		}
-	}
+            "Action"
+            {
+                "ApplyModifier"
+                {
+                    "Target"         "TARGET"
+                    "ModifierName"    "modifier_guardian_angel"
+                }
+            }
+        }
+    }
 
-	"Modifiers"
-	{
-		"modifier_guardian_angel"
-		{
-			"IsBuff"			"1"
-			"IsPurgable"		"1"
-			"Duration"			"%duration"
-			"StatusEffectName"     "particles/status_fx/status_effect_guardian_angel.vpcf"
-			"StatusEffectPriority" "10"
+    "Modifiers"
+    {
+        "modifier_guardian_angel"
+        {
+            "IsBuff"            "1"
+            "IsPurgable"        "1"
+            "Duration"            "%duration"
+            "StatusEffectName"     "particles/status_fx/status_effect_guardian_angel.vpcf"
+            "StatusEffectPriority" "10"
 
-			"OnCreated"
-			{
-				"AttachEffect"
-				{
-					"EffectName"		"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_halo_buff.vpcf"
-					"EffectAttachType"	"follow_overhead"
-					"Target"			"CASTER"
-				}
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "EffectName"        "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_halo_buff.vpcf"
+                    "EffectAttachType"    "follow_overhead"
+                    "Target"            "CASTER"
+                }
 
-			 	"AttachEffect"
-				{
-					"Target"
-					{
-						"Center"  		"CASTER"
-						"Radius"		"%radius"
-						"Teams" 		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-						"Types" 		"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-					}
-					"EffectName"				"particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
-					"EffectAttachType"			"follow_origin"
-					"EffectRadius"				"%radius"
-				}
-			}
+                 "AttachEffect"
+                {
+                    "Target"
+                    {
+                        "Center"          "CASTER"
+                        "Radius"        "%radius"
+                        "Teams"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+                        "Types"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+                    }
+                    "EffectName"                "particles/units/heroes/hero_omniknight/omniknight_guardian_angel_ally.vpcf"
+                    "EffectAttachType"            "follow_origin"
+                    "EffectRadius"                "%radius"
+                }
+            }
 
-			"Properties"
-			{
-				"MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL"	"1"
-			}
-		}
-	}
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL"    "1"
+            }
+        }
+    }
 }

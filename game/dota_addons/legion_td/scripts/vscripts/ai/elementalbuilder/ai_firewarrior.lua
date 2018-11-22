@@ -1,14 +1,13 @@
 --[[
 Pudge AI
 ]]
-
 require("ai/ai_core_new")
 
 behaviorSystem = {} -- create the global so we can assign to it
 
 function Spawn(entityKeyValues)
     thisEntity:SetContextThink("AIThink", AIThink, 1)
-    behaviorSystem = AICore:CreateBehaviorSystem({ BehaviorNone, BehaviorFist })
+    behaviorSystem = AICore:CreateBehaviorSystem({BehaviorNone, BehaviorFist})
     --thisEntity:FindAbilityByName("tiny_grow"):SetLevel(3)
 end
 
@@ -27,8 +26,7 @@ end
 function BehaviorNone:Begin()
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         UnitIndex = thisEntity:entindex(),
         OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
         Position = thisEntity.nextTarget
@@ -49,12 +47,27 @@ function BehaviorFist:Evaluate()
     local target
 
     -- let's not choose this twice in a row
-    if AICore.currentBehavior == self then return desire end
+    if AICore.currentBehavior == self then
+        return desire
+    end
 
     if self.FistAbility and self.FistAbility:IsFullyCastable() then
         local range = self.FistAbility:GetCastRange()
-        local enemies = FindUnitsInRadius(thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_ANY_ORDER, false)
-        if #enemies > 0 then target = enemies[1] end
+        local enemies =
+            FindUnitsInRadius(
+            thisEntity:GetTeamNumber(),
+            thisEntity:GetAbsOrigin(),
+            nil,
+            range,
+            DOTA_UNIT_TARGET_TEAM_ENEMY,
+            DOTA_UNIT_TARGET_BASIC,
+            0,
+            FIND_ANY_ORDER,
+            false
+        )
+        if #enemies > 0 then
+            target = enemies[1]
+        end
     end
 
     if target then
@@ -70,8 +83,7 @@ end
 function BehaviorFist:Begin()
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
         UnitIndex = thisEntity:entindex(),
         Position = self.target:GetAbsOrigin(),
@@ -84,4 +96,4 @@ BehaviorFist.Continue = BehaviorFist.Begin --if we re-enter this ability, we mig
 
 --------------------------------------------------------------------------------------------------------
 
-AICore.possibleBehaviors = { BehaviorNone, BehaviorFist }
+AICore.possibleBehaviors = {BehaviorNone, BehaviorFist}

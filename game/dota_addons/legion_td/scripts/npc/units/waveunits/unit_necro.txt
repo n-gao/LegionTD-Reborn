@@ -1,73 +1,73 @@
 "unit_necro"
 {
-	"BaseClass"             "npc_dota_creature"
-	"Model"                 "models/heroes/necrolyte/necrolyte.vmdl"
-	"ModelScale"            "0.7"
-	"SoundSet"				    	"Hero_Necrolyte"
-	"GameSoundsFile"				"soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts"
-	"Level"                 "1"
-	"HealthBarOffset"       "140"
+    "BaseClass"             "npc_dota_creature"
+    "Model"                 "models/heroes/necrolyte/necrolyte.vmdl"
+    "ModelScale"            "0.7"
+    "SoundSet"                        "Hero_Necrolyte"
+    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts"
+    "Level"                 "1"
+    "HealthBarOffset"       "140"
 
-	"Ability1"							"necrolyte_sadist"
+    "Ability1"                            "necrolyte_sadist"
 
-	"ArmorPhysical"         "4"
-	"MagicalResistance"     "0"
+    "ArmorPhysical"         "4"
+    "MagicalResistance"     "0"
 
-	"AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-	"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"       "52.5"
-	"AttackDamageMax"       "57.5"
-	"AttackRate"            "0.5"
-	"AttackAnimationPoint"  "0.2"
-	"AttackAcquisitionRange" "850"
-	"AttackRange"           "400"
-	"ProjectileModel"       "particles/econ/items/necrolyte/necronub_base_attack/necrolyte_base_attack_ka.vpcf"
-	"ProjectileSpeed"       "600"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"       "52.5"
+    "AttackDamageMax"       "57.5"
+    "AttackRate"            "0.5"
+    "AttackAnimationPoint"  "0.2"
+    "AttackAcquisitionRange" "850"
+    "AttackRange"           "400"
+    "ProjectileModel"       "particles/econ/items/necrolyte/necronub_base_attack/necrolyte_base_attack_ka.vpcf"
+    "ProjectileSpeed"       "600"
 
-	"BountyGoldMin"         "6.0"
-	"BountyGoldMax"         "6.0"
+    "BountyGoldMin"         "6.0"
+    "BountyGoldMax"         "6.0"
 
-	"BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"					"50"
-	"RingRadius"            "50"
+    "BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
+    "CollisionSize"                    "50"
+    "RingRadius"            "50"
 
-	"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"         "300"
-	"MovementTurnRate"      "0.6"
+    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"         "300"
+    "MovementTurnRate"      "0.6"
 
-	"StatusHealth"          "400"
-	"StatusHealthRegen"     "0"
-	"StatusMana"            "200"
-	"StatusManaRegen"       "0"
+    "StatusHealth"          "400"
+    "StatusHealthRegen"     "0"
+    "StatusMana"            "200"
+    "StatusManaRegen"       "0"
 
-	"VisionDaytimeRange"    "1400"
-	"VisionNighttimeRange"  "800"
+    "VisionDaytimeRange"    "1400"
+    "VisionNighttimeRange"  "800"
 
-	"TeamName"              "DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "TeamName"              "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
-	"Creature"
-	{
-		"DisableClumpingBehavior"       "1"
-		"DefaultState"				"Invade"
-		"States"
-		{
-			"Invade"
-			{
-				"Name"				"Invade"
-				"Aggression"		"100.0"
-				"Avoidance"			"0.0"
-				"Support"			"0.0"
-			}
-		}
-		"AttachWearables"
-		{
-			"Wearable1" { "ItemDef" "8929" }
-			"Wearable2" { "ItemDef" "8930" }
-			"Wearable3" { "ItemDef" "8928" }
-			"Wearable4" { "ItemDef" "8927" }
-		}
-	}
+    "Creature"
+    {
+        "DisableClumpingBehavior"       "1"
+        "DefaultState"                "Invade"
+        "States"
+        {
+            "Invade"
+            {
+                "Name"                "Invade"
+                "Aggression"        "100.0"
+                "Avoidance"            "0.0"
+                "Support"            "0.0"
+            }
+        }
+        "AttachWearables"
+        {
+            "Wearable1" { "ItemDef" "8929" }
+            "Wearable2" { "ItemDef" "8930" }
+            "Wearable3" { "ItemDef" "8928" }
+            "Wearable4" { "ItemDef" "8927" }
+        }
+    }
 }

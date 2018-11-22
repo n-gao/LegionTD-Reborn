@@ -1,18 +1,17 @@
 --[[
 Pudge AI
 ]]
-
-require( "ai/ai_core_new" )
+require("ai/ai_core_new")
 
 behaviorSystem = {} -- create the global so we can assign to it
 
-function Spawn( entityKeyValues )
-    thisEntity:SetContextThink( "AIThink", AIThink, 1 )
-    behaviorSystem = AICore:CreateBehaviorSystem( { BehaviorNone, BehaviorBlast} ) 
+function Spawn(entityKeyValues)
+    thisEntity:SetContextThink("AIThink", AIThink, 1)
+    behaviorSystem = AICore:CreateBehaviorSystem({BehaviorNone, BehaviorBlast})
 end
 
 function AIThink() -- For some reason AddThinkToEnt doesn't accept member functions
-       return behaviorSystem:Think()
+    return behaviorSystem:Think()
 end
 
 --------------------------------------------------------------------------------------------------------
@@ -25,9 +24,8 @@ end
 
 function BehaviorNone:Begin()
     self.endTime = GameRules:GetGameTime() + .1
-    
-    self.order =
-    {
+
+    self.order = {
         UnitIndex = thisEntity:entindex(),
         OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
         Position = thisEntity.nextTarget
@@ -47,12 +45,23 @@ function BehaviorBlast:Evaluate()
     self.fadeAbility = thisEntity:FindAbilityByName("improved_nether_blast")
 
     local range = 700
-    local enemies = FindUnitsInRadius( thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, FIND_CLOSEST, false )
+    local enemies =
+        FindUnitsInRadius(
+        thisEntity:GetTeamNumber(),
+        thisEntity:GetAbsOrigin(),
+        nil,
+        range,
+        DOTA_UNIT_TARGET_TEAM_ENEMY,
+        DOTA_UNIT_TARGET_BASIC,
+        0,
+        FIND_CLOSEST,
+        false
+    )
     local cooldown = self.fadeAbility:GetCooldownTimeRemaining()
 
     if #enemies > 0 and cooldown == 0 then
         self.target = enemies[1]
-        return 2 
+        return 2
     end
     return 0
 end
@@ -61,8 +70,7 @@ function BehaviorBlast:Begin()
     self.fadeAbility = thisEntity:FindAbilityByName("improved_nether_blast")
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
         UnitIndex = thisEntity:entindex(),
         Position = self.target:GetAbsOrigin(),
@@ -75,4 +83,4 @@ BehaviorBlast.Continue = BehaviorBlast.Begin --if we re-enter this ability, we m
 
 --------------------------------------------------------------------------------------------------------
 
-AICore.possibleBehaviors = { BehaviorNone, BehaviorBlast}
+AICore.possibleBehaviors = {BehaviorNone, BehaviorBlast}

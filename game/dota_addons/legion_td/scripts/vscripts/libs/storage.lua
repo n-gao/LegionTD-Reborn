@@ -546,13 +546,16 @@ function Storage:LogError(error)
     local players = Game.players
     local player_data = {}
     for _, player in pairs(players) do
-        table.insert(player_data, {
-            active = player:IsActive(),
-            abandoned = player:HasAbandoned(),
-            team_number = player:GetTeamNumber(),
-            player_id = player:GetPlayerID(),
-            user_id = player.userID
-        })
+        table.insert(
+            player_data,
+            {
+                active = player:IsActive(),
+                abandoned = player:HasAbandoned(),
+                team_number = player:GetTeamNumber(),
+                player_id = player:GetPlayerID(),
+                user_id = player.userID
+            }
+        )
     end
 
     local msg_obj = {

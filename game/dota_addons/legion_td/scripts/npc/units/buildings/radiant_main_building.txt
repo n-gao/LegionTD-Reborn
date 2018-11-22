@@ -1,70 +1,70 @@
 "radiant_main_building"
 {
-	// General
-	//----------------------------------------------------------------
-	"BaseClass"						"npc_dota_creature"
-	"Model"								"models/props_structures/tower_good.vmdl"
-	"ModelScale"					"0.9"
-	"SoundSet"						"Tower.Water"
-	"Level"								"1"
-	"HealthBarOffset"			"140"
+    // General
+    //----------------------------------------------------------------
+    "BaseClass"                        "npc_dota_creature"
+    "Model"                                "models/props_structures/tower_good.vmdl"
+    "ModelScale"                    "0.9"
+    "SoundSet"                        "Tower.Water"
+    "Level"                                "1"
+    "HealthBarOffset"            "140"
 
-	// Abilities
-	//----------------------------------------------------------------
-	"AbilityLayout"					"4"
-	"Ability1"							"main_building_tango_collector"
-	"Ability2"							"main_building_tango_speed"
-	"Ability3"						"ability_building"
+    // Abilities
+    //----------------------------------------------------------------
+    "AbilityLayout"                    "4"
+    "Ability1"                            "main_building_tango_collector"
+    "Ability2"                            "main_building_tango_speed"
+    "Ability3"                        "ability_building"
 
-	// Armor
-	//----------------------------------------------------------------
-	"ArmorPhysical"				"5"
-	"MagicalResistance"			"0"
+    // Armor
+    //----------------------------------------------------------------
+    "ArmorPhysical"                "5"
+    "MagicalResistance"            "0"
 
-	// Attack
-	//----------------------------------------------------------------
-	"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
-	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"			"0"
-	"AttackDamageMax"			"0"
+    // Attack
+    //----------------------------------------------------------------
+    "AttackCapabilities"        "DOTA_UNIT_CAP_NO_ATTACK"
+    "AttackDamageType"            "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"            "0"
+    "AttackDamageMax"            "0"
 
-	// Bounty
-	//----------------------------------------------------------------
-	"BountyGoldMin"				"0.0"
-	"BountyGoldMax"				"0.0"
+    // Bounty
+    //----------------------------------------------------------------
+    "BountyGoldMin"                "0.0"
+    "BountyGoldMax"                "0.0"
 
-	// Bounds
-	//----------------------------------------------------------------
-	"BoundsHullName"			"DOTA_HULL_SIZE_BARRACKS"
-	"RingRadius"				"110"
-	"CollisionSize"				"100"
+    // Bounds
+    //----------------------------------------------------------------
+    "BoundsHullName"            "DOTA_HULL_SIZE_BARRACKS"
+    "RingRadius"                "110"
+    "CollisionSize"                "100"
 
-	// Movement
-	//----------------------------------------------------------------
-	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"	// Needed to cast Point abilities
-	"MovementSpeed"				"0"
+    // Movement
+    //----------------------------------------------------------------
+    "MovementCapabilities"        "DOTA_UNIT_CAP_MOVE_NONE"    // Needed to cast Point abilities
+    "MovementSpeed"                "0"
 
-	// Status
-	//----------------------------------------------------------------
-	"StatusHealth"				"1"
-	"StatusHealthRegen"			"0"
-	"StatusMana"				"0"
-	"StatusManaRegen"			"0"
+    // Status
+    //----------------------------------------------------------------
+    "StatusHealth"                "1"
+    "StatusHealthRegen"            "0"
+    "StatusMana"                "0"
+    "StatusManaRegen"            "0"
 
-	// Vision
-	//----------------------------------------------------------------
-	"VisionDaytimeRange"		"3800"
-	"VisionNighttimeRange"	"800"
+    // Vision
+    //----------------------------------------------------------------
+    "VisionDaytimeRange"        "3800"
+    "VisionNighttimeRange"    "800"
 
-	// Team
-	//----------------------------------------------------------------
-	"TeamName"					"DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
-	"UnitRelationShipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+    // Team
+    //----------------------------------------------------------------
+    "TeamName"                    "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack"            "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"            "DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+    "UnitRelationShipClass"        "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 
-	"States"
-	{
-		"MODIFIER_STATE_INVULNERABLE"		"MODIFIER_STATE_VALUE_ENABLED"
-	}
+    "States"
+    {
+        "MODIFIER_STATE_INVULNERABLE"        "MODIFIER_STATE_VALUE_ENABLED"
+    }
 }

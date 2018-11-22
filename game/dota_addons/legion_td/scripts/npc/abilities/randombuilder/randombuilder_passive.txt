@@ -4,37 +4,37 @@
     "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 
     "AbilitySpecial"
-	{
-		"01"
-		{
-			"var_type"				"FIELD_FLOAT"
-			"tangos_interest_rate"			"0.03"
-		}
-		"02"
-		{
-			"var_type"				"FIELD_FLOAT"
-			"max_income_multiplier"	"5"
-		}
-	}
+    {
+        "01"
+        {
+            "var_type"                "FIELD_FLOAT"
+            "tangos_interest_rate"            "0.03"
+        }
+        "02"
+        {
+            "var_type"                "FIELD_FLOAT"
+            "max_income_multiplier"    "5"
+        }
+    }
 
 
 
-	"Modifiers"
-	{
-		"modifier_randombuilder_passive"
-		{
-			"Passive"	"1"
-			"IsHidden"	"1"
-			"OnCreated"
-			{
-				"RunScript"
-				{
-					"ScriptFile"    "abilities/randombuilder/passive/randombuilder_passive.lua"
-	            	"Function"      "randombuilder_passive_start"
-				}
-			}
-		}
-	}
+    "Modifiers"
+    {
+        "modifier_randombuilder_passive"
+        {
+            "Passive"    "1"
+            "IsHidden"    "1"
+            "OnCreated"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/randombuilder/passive/randombuilder_passive.lua"
+                    "Function"      "randombuilder_passive_start"
+                }
+            }
+        }
+    }
 }
 
 

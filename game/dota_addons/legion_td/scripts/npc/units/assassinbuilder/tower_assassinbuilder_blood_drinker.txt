@@ -30,7 +30,7 @@
 
     "LegionAttackType"         "normal"
     "LegionDefendType"         "medium"
-	"LegionFraction"		"assassin"
+    "LegionFraction"        "assassin"
 
     "BountyXP"                  "0"
     "BountyGoldMin"             "0"
@@ -71,14 +71,14 @@
             }
         }
        "AttachWearables"
-	        {
-	            "Wearable1" { "ItemDef" "6650" }
-	            "Wearable2" { "ItemDef" "6651" }
-	            "Wearable3" { "ItemDef" "9241" }
-	            "Wearable4" { "ItemDef" "7426" }
-	            "Wearable5" { "ItemDef" "6654" }
-	            "Wearable6" { "ItemDef" "6655" }
-	            "Wearable7" { "ItemDef" "7425" }
-	        }
+            {
+                "Wearable1" { "ItemDef" "6650" }
+                "Wearable2" { "ItemDef" "6651" }
+                "Wearable3" { "ItemDef" "9241" }
+                "Wearable4" { "ItemDef" "7426" }
+                "Wearable5" { "ItemDef" "6654" }
+                "Wearable6" { "ItemDef" "6655" }
+                "Wearable7" { "ItemDef" "7425" }
+            }
     }
 }

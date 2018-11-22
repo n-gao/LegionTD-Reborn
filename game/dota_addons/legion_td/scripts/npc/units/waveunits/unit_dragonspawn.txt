@@ -7,7 +7,7 @@
     "GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
     "Level" "1"
     "HealthBarOffset"   "140"
-    "Vscripts"	"ai/waves/ai_dragonspawn.lua"
+    "Vscripts"    "ai/waves/ai_dragonspawn.lua"
     "Ability1"  "dragonspawn_living_armor"
     "ArmorPhysical" "13"
     "MagicalResistance" "40"

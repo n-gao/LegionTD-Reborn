@@ -1,93 +1,93 @@
 "unit_deathprophet"
 {
-	"BaseClass"	"npc_dota_creature"
-	"Model"	"models/heroes/death_prophet/death_prophet.vmdl"
-	"ModelScale"	"0.6"
-	"SoundSet"	"Hero_DeathProphet"
-	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts"
-	"Level"	"1"
-	"HealthBarOffset"	"140"
-	"Vscripts"	"ai/waves/ai_deathprophet.lua"
-	"Ability1"	"death_prophet_exorcism"
-	"ArmorPhysical"	"15"
-	"MagicalResistance"	"30"
-	"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"	"140.0"
-	"AttackDamageMax"	"165.0"
-	"AttackRate"	"0.6"
-	"AttackAnimationPoint"	"0.2"
-	"AttackAcquisitionRange"	"850"
-	"AttackRange"	"400"
-	"ProjectileModel"	"particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
-	"ProjectileSpeed"	"600"
-	"LegionAttackType"	"arcane"
-	"LegionDefendType"	"light"
-	"LegionExperience"	"500"
+    "BaseClass"    "npc_dota_creature"
+    "Model"    "models/heroes/death_prophet/death_prophet.vmdl"
+    "ModelScale"    "0.6"
+    "SoundSet"    "Hero_DeathProphet"
+    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts"
+    "Level"    "1"
+    "HealthBarOffset"    "140"
+    "Vscripts"    "ai/waves/ai_deathprophet.lua"
+    "Ability1"    "death_prophet_exorcism"
+    "ArmorPhysical"    "15"
+    "MagicalResistance"    "30"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageType"    "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"    "140.0"
+    "AttackDamageMax"    "165.0"
+    "AttackRate"    "0.6"
+    "AttackAnimationPoint"    "0.2"
+    "AttackAcquisitionRange"    "850"
+    "AttackRange"    "400"
+    "ProjectileModel"    "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
+    "ProjectileSpeed"    "600"
+    "LegionAttackType"    "arcane"
+    "LegionDefendType"    "light"
+    "LegionExperience"    "500"
     "LegionFraction"   "boss"
-	"BountyGoldMin"	"25.0"
-	"BountyGoldMax"	"25.0"
-	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"	"50"
-	"RingRadius"	"50"
-	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"	"300"
-	"MovementTurnRate"	"0.6"
-	"StatusHealth"	"4000"
-	"StatusHealthRegen"	"0"
-	"StatusMana"	"400"
-	"StatusManaRegen"	"20"
-	"VisionDaytimeRange"	"1400"
-	"VisionNighttimeRange"	"800"
-	"TeamName"	"DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-	"precache"
-	{
-		"model"	"models/heroes/death_prophet/death_prophet_ghost.vmdl"
-	}
+    "BountyGoldMin"    "25.0"
+    "BountyGoldMax"    "25.0"
+    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
+    "CollisionSize"    "50"
+    "RingRadius"    "50"
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"    "300"
+    "MovementTurnRate"    "0.6"
+    "StatusHealth"    "4000"
+    "StatusHealthRegen"    "0"
+    "StatusMana"    "400"
+    "StatusManaRegen"    "20"
+    "VisionDaytimeRange"    "1400"
+    "VisionNighttimeRange"    "800"
+    "TeamName"    "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack"    "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"    "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass"    "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "precache"
+    {
+        "model"    "models/heroes/death_prophet/death_prophet_ghost.vmdl"
+    }
 
-	"Creature"
-	{
-		"DisableClumpingBehavior"	"1"
-		"DefaultState"	"Invade"
-		"States"
-		{
-			"Invade"
-			{
-				"Name"	"Invade"
-				"Aggression"	"100.0"
-				"Avoidance"	"0.0"
-				"Support"	"100.0"
-			}
+    "Creature"
+    {
+        "DisableClumpingBehavior"    "1"
+        "DefaultState"    "Invade"
+        "States"
+        {
+            "Invade"
+            {
+                "Name"    "Invade"
+                "Aggression"    "100.0"
+                "Avoidance"    "0.0"
+                "Support"    "100.0"
+            }
 
-		}
+        }
 
-		"AttachWearables"
-		{
-			"Wearable1"
-			{
-				"ItemDef"	"168"
-			}
+        "AttachWearables"
+        {
+            "Wearable1"
+            {
+                "ItemDef"    "168"
+            }
 
-			"Wearable2"
-			{
-				"ItemDef"	"169"
-			}
+            "Wearable2"
+            {
+                "ItemDef"    "169"
+            }
 
-			"Wearable3"
-			{
-				"ItemDef"	"170"
-			}
+            "Wearable3"
+            {
+                "ItemDef"    "170"
+            }
 
-			"Wearable4"
-			{
-				"ItemDef"	"171"
-			}
+            "Wearable4"
+            {
+                "ItemDef"    "171"
+            }
 
-		}
+        }
 
-	}
+    }
 
 }

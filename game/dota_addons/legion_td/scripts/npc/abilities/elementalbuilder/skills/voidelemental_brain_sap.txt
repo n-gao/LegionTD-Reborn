@@ -5,90 +5,90 @@
 // Type: Datadriven
 "voidelemental_brain_sap"
 {
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"				"ability_datadriven"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"		
-	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-	"FightRecapLevel"				"1"
-	"AbilityTextureName"			"bane_brain_sap"
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                "ability_datadriven"
+    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    "AbilityUnitTargetTeam"            "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    "AbilityUnitDamageType"            "DAMAGE_TYPE_PURE"        
+    "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
+    "FightRecapLevel"                "1"
+    "AbilityTextureName"            "bane_brain_sap"
 
-	// Precache
-	//-------------------------------------------------------------------------------------------------------------
-	"precache"
-	{
-		"soundfile"		"soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"		
-		"particle"		"particles/units/heroes/hero_bane/bane_enfeeble.vpcf"		
-	}
+    // Precache
+    //-------------------------------------------------------------------------------------------------------------
+    "precache"
+    {
+        "soundfile"        "soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"        
+        "particle"        "particles/units/heroes/hero_bane/bane_enfeeble.vpcf"        
+    }
 
-	// Casting
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCastPoint"				"0.5"
-	"AbilityCastRange"				"300"
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastPoint"                "0.5"
+    "AbilityCastRange"                "300"
 
-	// Time		
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"5.0"
+    // Time        
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                "5.0"
 
-	// Damage.
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityDamage"					"240"
+    // Damage.
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityDamage"                    "240"
 
-	// Cost
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost"				"0"
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                "0"
 
-	
-	"AbilitySpecial"
-	{
-	"01"
-		{
-			"var_type"						"FIELD_INTEGER"
-			"tooltip_brain_sap_heal_amt"		"240"
-		}
-	}
+    
+    "AbilitySpecial"
+    {
+    "01"
+        {
+            "var_type"                        "FIELD_INTEGER"
+            "tooltip_brain_sap_heal_amt"        "240"
+        }
+    }
 
-	"OnSpellStart"
-	{
-		"FireSound"
-		{
-			"EffectName" "Hero_Bane.BrainSap.Target"
-			"Target"	"TARGET"
-		}
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+            "EffectName" "Hero_Bane.BrainSap.Target"
+            "Target"    "TARGET"
+        }
 
-		"FireSound"
-		{
-			"EffectName"	"Hero_Bane.BrainSap"
-			"Target"	"CASTER"
-		}
+        "FireSound"
+        {
+            "EffectName"    "Hero_Bane.BrainSap"
+            "Target"    "CASTER"
+        }
 
-		"FireEffect"
-		{
-			"EffectName"	"particles/units/heroes/hero_bane/bane_sap.vpcf"
-			"EffectAttachType"	"follow_origin"
+        "FireEffect"
+        {
+            "EffectName"    "particles/units/heroes/hero_bane/bane_sap.vpcf"
+            "EffectAttachType"    "follow_origin"
 
-			"ControlPointEntities"
-			{
-				"CASTER" "follow_origin"
-				"TARGET" "follow_origin"		
-			}
-		}
+            "ControlPointEntities"
+            {
+                "CASTER" "follow_origin"
+                "TARGET" "follow_origin"        
+            }
+        }
 
-		"Damage"
-		{
-			"Target"	"TARGET"
-			"Type"		"DAMAGE_TYPE_PURE"
-			"Damage"	"%tooltip_brain_sap_heal_amt"
-		}
+        "Damage"
+        {
+            "Target"    "TARGET"
+            "Type"        "DAMAGE_TYPE_PURE"
+            "Damage"    "%tooltip_brain_sap_heal_amt"
+        }
 
-		"Heal"
-		{
-			"Target"	"CASTER"
-			"HealAmount"	"%tooltip_brain_sap_heal_amt"
-		}
-	}
+        "Heal"
+        {
+            "Target"    "CASTER"
+            "HealAmount"    "%tooltip_brain_sap_heal_amt"
+        }
+    }
 }
 

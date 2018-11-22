@@ -2,7 +2,7 @@
 {
     // General
     //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"            			"ability_datadriven"
+    "BaseClass"                        "ability_datadriven"
     "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "FightRecapLevel"               "1"
     "AbilityTextureName"            "lone_druid_rabid"

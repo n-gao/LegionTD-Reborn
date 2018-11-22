@@ -1,14 +1,13 @@
 --[[
 Pudge AI
 ]]
-
 require("ai/ai_core_new")
 
 behaviorSystem = {} -- create the global so we can assign to it
 
 function Spawn(entityKeyValues)
     thisEntity:SetContextThink("AIThink", AIThink, 1)
-    behaviorSystem = AICore:CreateBehaviorSystem({ BehaviorNone, BehaviorPurification })
+    behaviorSystem = AICore:CreateBehaviorSystem({BehaviorNone, BehaviorPurification})
 end
 
 function AIThink() -- For some reason AddThinkToEnt doesn't accept member functions
@@ -26,8 +25,7 @@ end
 function BehaviorNone:Begin()
     self.endTime = GameRules:GetGameTime() + .1
 
-    self.order =
-    {
+    self.order = {
         UnitIndex = thisEntity:entindex(),
         OrderType = DOTA_UNIT_ORDER_ATTACK_MOVE,
         Position = thisEntity.nextTarget
@@ -52,7 +50,18 @@ function BehaviorPurification:Evaluate()
 
     if self.purificationAbility and self.purificationAbility:IsFullyCastable() then
         local range = self.purificationAbility:GetCastRange()
-        local allies = FindUnitsInRadius(thisEntity:GetTeamNumber(), thisEntity:GetAbsOrigin(), nil, range, DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_ALL, 0, FIND_ANY_ORDER, false)
+        local allies =
+            FindUnitsInRadius(
+            thisEntity:GetTeamNumber(),
+            thisEntity:GetAbsOrigin(),
+            nil,
+            range,
+            DOTA_UNIT_TARGET_TEAM_FRIENDLY,
+            DOTA_UNIT_TARGET_ALL,
+            0,
+            FIND_ANY_ORDER,
+            false
+        )
         local mostHurt = 50 -- minimum hurt amount
         -- print ("Paladin is considering the health of " .. #allies .. " allies!")
         for _, unit in pairs(allies) do
@@ -76,8 +85,7 @@ end
 function BehaviorPurification:Begin()
     self.endTime = GameRules:GetGameTime() + .6 -- purification takes forever to cast
 
-    self.order =
-    {
+    self.order = {
         OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
         UnitIndex = thisEntity:entindex(),
         TargetIndex = self.target:entindex(),
@@ -89,4 +97,4 @@ BehaviorPurification.Continue = BehaviorPurification.Begin --if we re-enter this
 
 --------------------------------------------------------------------------------------------------------
 
-AICore.possibleBehaviors = { BehaviorNone, BehaviorPurification }
+AICore.possibleBehaviors = {BehaviorNone, BehaviorPurification}

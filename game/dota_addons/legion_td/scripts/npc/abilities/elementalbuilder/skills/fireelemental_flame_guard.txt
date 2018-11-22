@@ -10,168 +10,168 @@
 // scripts/vscripts/heroes/hero_ember_spirit/flame_guard.lua
 "fireelemental_flame_guard"
 {
-	// General
-	//-------------------------------------------------------------------------------------------------------------
-	"BaseClass"						"ability_datadriven"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-	"AbilityTextureName"			"ember_spirit_flame_guard"
-	"MaxLevel"						"1"
-	
-	// Casting
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCastRange"				"200"
-	"AbilityCastPoint"				"0"
-	
-	// Time		
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityCooldown"				"10.0"
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "BaseClass"                        "ability_datadriven"
+    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"
+    "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilityTextureName"            "ember_spirit_flame_guard"
+    "MaxLevel"                        "1"
+    
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"                "200"
+    "AbilityCastPoint"                "0"
+    
+    // Time        
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"                "10.0"
 
-	// Cost
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilityManaCost"				"0"
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"                "0"
 
-	// Special
-	//-------------------------------------------------------------------------------------------------------------
-	"AbilitySpecial"
-	{
-		"01"
-		{
-			"var_type"						"FIELD_FLOAT"
-			"duration"						"12.0"
-		}
-		
-		"02"
-		{
-			"var_type"						"FIELD_INTEGER"
-			"radius"						"200"
-		}	
-		
-		"03"
-		{
-			"var_type"						"FIELD_INTEGER"
-			"absorb_amount"					"120"
-		}				
-		"04"
-		{
-			"var_type"						"FIELD_FLOAT"
-			"tick_interval"					"0.2"
-		}
-		"05"
-		{
-			"var_type"						"FIELD_INTEGER"
-			"damage_per_second"				"40"
-		}
-	}
-	
-	// Data driven
-	//-------------------------------------------------------------------------------------------------------------
-	"precache"
-	{
-		"soundfile"							"soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
-		"particle"							"particles/units/heroes/hero_ember_spirit/ember_spirit_flameguard.vpcf"
-	}
-	
-	"OnSpellStart"
-	{
-		"FireSound"
-		{
-			"Target"						"CASTER"
-			"EffectName"					"Hero_EmberSpirit.FlameGuard.Cast"
-		}
-	
-		"RemoveModifier"
-		{
-			"Target"						"CASTER"
-			"ModifierName"					"modifier_flame_guard_buff_datadriven"
-		}
-	
-		"ApplyModifier"
-		{
-			"Target"						"CASTER"
-			"ModifierName"					"modifier_flame_guard_buff_datadriven"
-		}
-	}
-	
-	"Modifiers"
-	{
-		"modifier_flame_guard_buff_datadriven"
-		{
-			"Duration"						"%duration"
-		
-			"OnCreated"
-			{
-				"AttachEffect"
-				{
-					"Target"				"TARGET"
-					"EffectName"			"particles/units/heroes/hero_ember_spirit/ember_spirit_flameguard.vpcf"
-					"EffectAttachType"		"start_at_customorigin"
-					"ControlPointEntities"
-					{
-						"TARGET"			"attach_origin"
-						"TARGET"			"attach_origin"
-					}
-				}
-				
-				"FireSound"
-				{
-					"Target"				"TARGET"
-					"EffectName"			"Hero_EmberSpirit.FlameGuard.Loop"
-				}
-				
-				"RunScript"
-				{
-					"ScriptFile"			"abilities/elementalbuilder/fireelemental_flame_guard.lua"
-					"Function"				"flame_guard_init"
-				}
-			}
-		
-			"OnTakeDamage"
-			{
-				"RunScript"
-				{
-					"ScriptFile"			"abilities/elementalbuilder/fireelemental_flame_guard.lua"
-					"Function"				"flame_guard_on_take_damage"
-					"Damage"				"%attack_damage"
-					"modifier"				"modifier_flame_guard_buff_datadriven"
-				}
-			}
-			
-			"OnDestroy"
-			{
-				"RunScript"
-				{
-					"ScriptFile"			"abilities/elementalbuilder/fireelemental_flame_guard.lua"
-					"Function"				"flame_guard_stop_listening"
-				}
-			}
-			
-			"ThinkInterval"					"%tick_interval"
-			"OnIntervalThink"
-			{
-				"ActOnTargets"
-				{
-					"Target"
-					{
-						"Center"			"TARGET"
-						"Radius"			"%radius"
-						"Teams"				"DOTA_UNIT_TARGET_TEAM_ENEMY"
-						"Types"				"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
-						"Flags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-					}
-					
-					"Action"
-					{
-						"Damage"
-						{
-							"Target"		"TARGET"
-							"Damage"		"40"
-							"Type"			"DAMAGE_TYPE_MAGICAL"
-						}
-					}
-				}
-			}
-		}
-	}
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"                        "FIELD_FLOAT"
+            "duration"                        "12.0"
+        }
+        
+        "02"
+        {
+            "var_type"                        "FIELD_INTEGER"
+            "radius"                        "200"
+        }    
+        
+        "03"
+        {
+            "var_type"                        "FIELD_INTEGER"
+            "absorb_amount"                    "120"
+        }                
+        "04"
+        {
+            "var_type"                        "FIELD_FLOAT"
+            "tick_interval"                    "0.2"
+        }
+        "05"
+        {
+            "var_type"                        "FIELD_INTEGER"
+            "damage_per_second"                "40"
+        }
+    }
+    
+    // Data driven
+    //-------------------------------------------------------------------------------------------------------------
+    "precache"
+    {
+        "soundfile"                            "soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
+        "particle"                            "particles/units/heroes/hero_ember_spirit/ember_spirit_flameguard.vpcf"
+    }
+    
+    "OnSpellStart"
+    {
+        "FireSound"
+        {
+            "Target"                        "CASTER"
+            "EffectName"                    "Hero_EmberSpirit.FlameGuard.Cast"
+        }
+    
+        "RemoveModifier"
+        {
+            "Target"                        "CASTER"
+            "ModifierName"                    "modifier_flame_guard_buff_datadriven"
+        }
+    
+        "ApplyModifier"
+        {
+            "Target"                        "CASTER"
+            "ModifierName"                    "modifier_flame_guard_buff_datadriven"
+        }
+    }
+    
+    "Modifiers"
+    {
+        "modifier_flame_guard_buff_datadriven"
+        {
+            "Duration"                        "%duration"
+        
+            "OnCreated"
+            {
+                "AttachEffect"
+                {
+                    "Target"                "TARGET"
+                    "EffectName"            "particles/units/heroes/hero_ember_spirit/ember_spirit_flameguard.vpcf"
+                    "EffectAttachType"        "start_at_customorigin"
+                    "ControlPointEntities"
+                    {
+                        "TARGET"            "attach_origin"
+                        "TARGET"            "attach_origin"
+                    }
+                }
+                
+                "FireSound"
+                {
+                    "Target"                "TARGET"
+                    "EffectName"            "Hero_EmberSpirit.FlameGuard.Loop"
+                }
+                
+                "RunScript"
+                {
+                    "ScriptFile"            "abilities/elementalbuilder/fireelemental_flame_guard.lua"
+                    "Function"                "flame_guard_init"
+                }
+            }
+        
+            "OnTakeDamage"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"            "abilities/elementalbuilder/fireelemental_flame_guard.lua"
+                    "Function"                "flame_guard_on_take_damage"
+                    "Damage"                "%attack_damage"
+                    "modifier"                "modifier_flame_guard_buff_datadriven"
+                }
+            }
+            
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"            "abilities/elementalbuilder/fireelemental_flame_guard.lua"
+                    "Function"                "flame_guard_stop_listening"
+                }
+            }
+            
+            "ThinkInterval"                    "%tick_interval"
+            "OnIntervalThink"
+            {
+                "ActOnTargets"
+                {
+                    "Target"
+                    {
+                        "Center"            "TARGET"
+                        "Radius"            "%radius"
+                        "Teams"                "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                        "Types"                "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+                        "Flags"                "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+                    }
+                    
+                    "Action"
+                    {
+                        "Damage"
+                        {
+                            "Target"        "TARGET"
+                            "Damage"        "40"
+                            "Type"            "DAMAGE_TYPE_MAGICAL"
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,78 +1,78 @@
 "hydra_splitshot"
 {
-	"BaseClass"             		"ability_datadriven"
-	"AbilityTextureName"			"medusa_split_shot"
-	"MaxLevel" 						"1"
-	"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-	"AbilitySpecial"
-	{
-		"01"
-		{
-			"var_type"			"FIELD_INTEGER"
-			"radius"				"500"
-		}
-		"02"
-		{
-			"var_type"			"FIELD_INTEGER"
-			"targets"				"2"
-		}
-		"03"
-		{
-			"var_type"			"FIELD_FLOAT"
-			"projectile_speed"	"650"
-		}
-		"04"
-		{
-			"var_type"			"FIELD_FLOAT"
-			"damge_perc"		"0.55"
-		}
-	}
-	"Modifiers"
-	{
-		"splitshot"
-		{
-			"Passive"			"1"
-			"IsHidden"			"1"
-			"IsDebuff"			"0"
-			"OnAttack"
-			{
-				"ActOnTargets"
-				{
-					"Target"
-					{
-						"Center"  	"CASTER"
-						"MaxTargets" "%targets"
-						"Radius" 	"%radius"
-						"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-						"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-					}
-					"Action"
-					{
-						"TrackingProjectile"
-						{
-							"Target"				"TARGET"
-							"EffectName"		"particles/units/heroes/hero_lion/lion_base_attack.vpcf"
-							"Dodgeable"			"0"
-							"ProvidesVision"	"0"
-							"MoveSpeed"        	"%projectile_speed"
-							"SourceAttachment"	"DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
-						}
-					}
-				}
-			}
-		}
-	}
-	"OnProjectileHitUnit"
-	{
-		"DeleteOnHit"	"1"
-		"RunScript"
-		{
-			"ScriptFile"	"abilities/waveunits/hydra_splitshot"
-			"Function"		"SplitShotHit"
-		}
-	}
-	"precache"
-	{
-		"particle"  "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
-	}
+    "BaseClass"                     "ability_datadriven"
+    "AbilityTextureName"            "medusa_split_shot"
+    "MaxLevel"                         "1"
+    "AbilityBehavior"                        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"            "FIELD_INTEGER"
+            "radius"                "500"
+        }
+        "02"
+        {
+            "var_type"            "FIELD_INTEGER"
+            "targets"                "2"
+        }
+        "03"
+        {
+            "var_type"            "FIELD_FLOAT"
+            "projectile_speed"    "650"
+        }
+        "04"
+        {
+            "var_type"            "FIELD_FLOAT"
+            "damge_perc"        "0.55"
+        }
+    }
+    "Modifiers"
+    {
+        "splitshot"
+        {
+            "Passive"            "1"
+            "IsHidden"            "1"
+            "IsDebuff"            "0"
+            "OnAttack"
+            {
+                "ActOnTargets"
+                {
+                    "Target"
+                    {
+                        "Center"      "CASTER"
+                        "MaxTargets" "%targets"
+                        "Radius"     "%radius"
+                        "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                        "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+                    }
+                    "Action"
+                    {
+                        "TrackingProjectile"
+                        {
+                            "Target"                "TARGET"
+                            "EffectName"        "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
+                            "Dodgeable"            "0"
+                            "ProvidesVision"    "0"
+                            "MoveSpeed"            "%projectile_speed"
+                            "SourceAttachment"    "DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
+                        }
+                    }
+                }
+            }
+        }
+    }
+    "OnProjectileHitUnit"
+    {
+        "DeleteOnHit"    "1"
+        "RunScript"
+        {
+            "ScriptFile"    "abilities/waveunits/hydra_splitshot"
+            "Function"        "SplitShotHit"
+        }
+    }
+    "precache"
+    {
+        "particle"  "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
+    }
 }

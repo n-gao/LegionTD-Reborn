@@ -1,104 +1,104 @@
 "unit_huskar"
 {
-	"BaseClass"	"npc_dota_creature"
-	"Model"	"models/heroes/huskar/huskar.vmdl"
-	"ModelScale"	"0.6"
-	"SoundSet"	"Hero_Huskar"
-	"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_huskar.vsndevts"
-	"Level"	"1"
-	"HealthBarOffset"	"140"
-	"Vscripts"	"ai/ai_default.lua"
-	"Ability1"	"huskar_burning_spear"
-	"Ability2"	"huskar_berserkers_blood"
-	"ArmorPhysical"	"6"
-	"MagicalResistance"	"0"
-	"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-	"AttackDamageType"	"DAMAGE_TYPE_ArmorPhysical"
-	"AttackDamageMin"	"72.5"
-	"AttackDamageMax"	"82.5"
-	"AttackRate"	"0.8"
-	"AttackAnimationPoint"	"0.2"
-	"AttackAcquisitionRange"	"850"
-	"AttackRange"	"300"
-	"ProjectileModel"	"particles/units/heroes/hero_huskar/huskar_base_attack.vpcf"
-	"ProjectileSpeed"	"600"
-	"LegionAttackType"	"pierce"
-	"LegionDefendType"	"light"
-	"LegionExperience"	"110"
-	"LegionFraction"	"wave"
-	"BountyGoldMin"	"6.0"
-	"BountyGoldMax"	"6.0"
-	"BoundsHullName"	"DOTA_HULL_SIZE_SMALL"
-	"CollisionSize"	"50"
-	"RingRadius"	"50"
-	"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-	"MovementSpeed"	"300"
-	"MovementTurnRate"	"0.6"
-	"StatusHealth"	"750"
-	"StatusHealthRegen"	"0"
-	"StatusMana"	"0"
-	"StatusManaRegen"	"0"
-	"VisionDaytimeRange"	"1400"
-	"VisionNighttimeRange"	"800"
-	"TeamName"	"DOTA_TEAM_NEUTRALS"
-	"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-	"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-	"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-	"Creature"
-	{
-		"DisableClumpingBehavior"	"1"
-		"DefaultState"	"Invade"
-		"States"
-		{
-			"Invade"
-			{
-				"Name"	"Invade"
-				"Aggression"	"100.0"
-				"Avoidance"	"0.0"
-				"Support"	"100.0"
-			}
+    "BaseClass"    "npc_dota_creature"
+    "Model"    "models/heroes/huskar/huskar.vmdl"
+    "ModelScale"    "0.6"
+    "SoundSet"    "Hero_Huskar"
+    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_huskar.vsndevts"
+    "Level"    "1"
+    "HealthBarOffset"    "140"
+    "Vscripts"    "ai/ai_default.lua"
+    "Ability1"    "huskar_burning_spear"
+    "Ability2"    "huskar_berserkers_blood"
+    "ArmorPhysical"    "6"
+    "MagicalResistance"    "0"
+    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+    "AttackDamageType"    "DAMAGE_TYPE_ArmorPhysical"
+    "AttackDamageMin"    "72.5"
+    "AttackDamageMax"    "82.5"
+    "AttackRate"    "0.8"
+    "AttackAnimationPoint"    "0.2"
+    "AttackAcquisitionRange"    "850"
+    "AttackRange"    "300"
+    "ProjectileModel"    "particles/units/heroes/hero_huskar/huskar_base_attack.vpcf"
+    "ProjectileSpeed"    "600"
+    "LegionAttackType"    "pierce"
+    "LegionDefendType"    "light"
+    "LegionExperience"    "110"
+    "LegionFraction"    "wave"
+    "BountyGoldMin"    "6.0"
+    "BountyGoldMax"    "6.0"
+    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
+    "CollisionSize"    "50"
+    "RingRadius"    "50"
+    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+    "MovementSpeed"    "300"
+    "MovementTurnRate"    "0.6"
+    "StatusHealth"    "750"
+    "StatusHealthRegen"    "0"
+    "StatusMana"    "0"
+    "StatusManaRegen"    "0"
+    "VisionDaytimeRange"    "1400"
+    "VisionNighttimeRange"    "800"
+    "TeamName"    "DOTA_TEAM_NEUTRALS"
+    "CombatClassAttack"    "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+    "CombatClassDefend"    "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+    "UnitRelationShipClass"    "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+    "Creature"
+    {
+        "DisableClumpingBehavior"    "1"
+        "DefaultState"    "Invade"
+        "States"
+        {
+            "Invade"
+            {
+                "Name"    "Invade"
+                "Aggression"    "100.0"
+                "Avoidance"    "0.0"
+                "Support"    "100.0"
+            }
 
-		}
+        }
 
-		"OffensiveAbilitites"
-		{
-			"Ability1"
-			{
-				"Name"	"huskar_burning_spear"
-				"Damage"	"1"
-			}
+        "OffensiveAbilitites"
+        {
+            "Ability1"
+            {
+                "Name"    "huskar_burning_spear"
+                "Damage"    "1"
+            }
 
-		}
+        }
 
-		"AttachWearables"
-		{
-			"Wearable1"
-			{
-				"ItemDef"	"4909"
-			}
+        "AttachWearables"
+        {
+            "Wearable1"
+            {
+                "ItemDef"    "4909"
+            }
 
-			"Wearable2"
-			{
-				"ItemDef"	"4908"
-			}
+            "Wearable2"
+            {
+                "ItemDef"    "4908"
+            }
 
-			"Wearable3"
-			{
-				"ItemDef"	"4906"
-			}
+            "Wearable3"
+            {
+                "ItemDef"    "4906"
+            }
 
-			"Wearable4"
-			{
-				"ItemDef"	"4907"
-			}
+            "Wearable4"
+            {
+                "ItemDef"    "4907"
+            }
 
-			"Wearable5"
-			{
-				"ItemDef"	"4910"
-			}
+            "Wearable5"
+            {
+                "ItemDef"    "4910"
+            }
 
-		}
+        }
 
-	}
+    }
 
 }

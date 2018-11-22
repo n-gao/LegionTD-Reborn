@@ -4,9 +4,9 @@
   "AbilityTextureName"      "shadow_shaman_voodoo"
   "MaxLevel"             "12"
 
-  "AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
-  "AbilityChannelTime" 			"15"
-  "AbilityDuration" 				"15"
+  "AbilityBehavior"                    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+  "AbilityChannelTime"             "15"
+  "AbilityDuration"                 "15"
   "AbilityGoldCost"         "20"
   "AbilitySpecial"
   {
@@ -21,25 +21,25 @@
       "limit_increament"  "5"
     }
   }
-	"OnChannelSucceeded"
-	{
-		"RunScript"
-		{
-			"ScriptFile"	"abilities/buildings/food_building"
-			"Function"		"increase_food_limit"
-		}
-	}
+    "OnChannelSucceeded"
+    {
+        "RunScript"
+        {
+            "ScriptFile"    "abilities/buildings/food_building"
+            "Function"        "increase_food_limit"
+        }
+    }
   "OnChannelInterrupted"
   {
     "RunScript"
     {
-      "ScriptFile"	"abilities/buildings/main_building"
-      "Function"		"refund_gold"
+      "ScriptFile"    "abilities/buildings/main_building"
+      "Function"        "refund_gold"
     }
     "RunScript"
     {
-      "ScriptFile"	"abilities/buildings/main_building"
-      "Function"		"refund_tango"
+      "ScriptFile"    "abilities/buildings/main_building"
+      "Function"        "refund_tango"
     }
   }
 }
