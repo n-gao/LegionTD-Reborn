@@ -11,7 +11,7 @@ function SplitShotLaunch(keys)
     local attackTarget = caster:GetAttackTarget()
 
     --ability variables
-    local radius = caster:GetAttackRange()
+    local radius = caster:Script_GetAttackRange()
     local maxTargets = Game:GetActivePlayerInTeam(caster:GetTeamNumber()) - 1
     local projectileSpeed = caster:GetProjectileSpeed()
     local projectile = keys.split_shot_projectile

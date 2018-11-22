@@ -23,7 +23,7 @@ function SkillTrigger1( ability, entity )
 	local Radius = 1000
 	local Units = FindUnitsInRadius(entity:GetTeamNumber(), entity:GetAbsOrigin(), nil, Radius, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC, 0, 0, false)
 	for i,v in pairs(Units) do
-		if CalcDistanceBetweenEntityOBB(entity, v) < v:GetAttackRange() then
+		if CalcDistanceBetweenEntityOBB(entity, v) < v:Script_GetAttackRange() then
 			return true
 		end
 	end
