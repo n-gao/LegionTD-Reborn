@@ -99,6 +99,86 @@ function Game.new()
         end
     )
 
+    -- -- TO CREATE A QUEST - USE:
+    -- CustomGameEventManager:Send_ServerToAllClients(
+    --     "quests_create_quest", 
+    --     {
+    --         name = "Survive for Bonus Gold!",
+    --         desc = "Survive for 60 Seconds!", 
+    --         max = 60, 
+    --         id = 5,
+    --     }
+    -- )
+    -- CustomGameEventManager:Send_ServerToAllClients(
+    --     "quests_create_quest", 
+    --     {
+    --         name = "Kill a Developer", 
+    --         desc = "Kill a Developer!", 
+    --         max = 1, 
+    --         id = 6,
+    --     }
+    -- )
+    -- CustomGameEventManager:Send_ServerToAllClients(
+    --     "quests_create_quest", 
+    --     {
+    --         name = "Kill 5 Different Enemy", 
+    --         desc = "Different Enemies Killed",
+    --         max = 5, 
+    --         id = 7,
+    --     }
+    -- )
+    -- CustomGameEventManager:Send_ServerToAllClients(
+    --     "quests_create_quest", 
+    --     {
+    --         name = "What is This?", 
+    --         desc = "Pick up or Buy an Artifact", 
+    --         max = 1, 
+    --         id = 8,
+    --     }
+    -- )
+
+    -- -- TO UPDATE A QUEST - USE:
+    -- CustomGameEventManager:Send_ServerToAllClients(
+    --     "quests_update_quest", 
+    --     {
+    --         max = 60, 
+    --         current = 0, 
+    --         id = 5,
+    --     }
+    -- )
+
+    -- -- TO DELETE A QUEST - USE:
+    -- CustomGameEventManager:Send_ServerToAllClients(
+    --     "quests_remove_quest", 
+    --     {
+    --         id = 8,
+    --     }
+    -- )
+
+    -- -- EXAMPLE OF A QUEST UPDATE AND REMOVAL AFTER 60 SECONDS:
+    -- local timeElapsed = 0;
+    -- Timers:CreateTimer(1, function()
+    --     timeElapsed = timeElapsed + 1;
+    --     if timeElapsed >= 61 then
+    --         CustomGameEventManager:Send_ServerToAllClients(
+    --             "quests_remove_quest", 
+    --             {
+    --                 id= 5
+    --             }
+    --         )
+    --     else
+    --         CustomGameEventManager:Send_ServerToAllClients(
+    --             "quests_update_quest", 
+    --             {
+    --                 max = 60, 
+    --                 current = timeElapsed, 
+    --                 id= 5
+    --             }
+    --         )
+    --     return 1
+    --     end
+    -- end)
+
     return self
 end
 

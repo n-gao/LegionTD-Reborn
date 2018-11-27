@@ -46,6 +46,10 @@ function GameRound:Begin()
 
     -- Move cameras to creep spawn point
     for _, pl in pairs(self.game.players) do
+        if not pl.lane or not pl.lane.spawnpoint then
+            break
+        end
+        
         local cameraTarget = pl.lane.spawnpoint:GetAbsOrigin()
 
         -- Offset the camera from the spawn position, towards the lane
