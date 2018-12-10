@@ -287,7 +287,7 @@ function Game:GetRoundCount()
 end
 
 function Game:GetDisplayRound()
-    return self.gameRound - self.doneDuels - self.lastWaveCount
+    return self.gameRound - self.doneDuels + self.lastWaveCount
 end
 
 function Game:GetTangoLimit()
@@ -358,12 +358,6 @@ function Game:Start()
         Game:UpdateUnitData()
         Game:UpdateBuilderData()
     end
-
-    pcall(
-        function()
-            Game.storage:LogError(GetDedicatedServerKey("v1"))
-        end
-    )
 end
 
 function Game:CreateGameTimer()

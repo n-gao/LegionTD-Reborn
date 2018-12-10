@@ -51,8 +51,8 @@ function DuelRound:Begin()
 end
 
 function DuelRound:MoveCameras()
-    local radiantDuelSpawn = Game.duelSpawn[""..DOTA_TEAM_GOODGUYS]:GetAbsOrigin()
-    local direDuelSpawn = Game.duelSpawn[""..DOTA_TEAM_BADGUYS]:GetAbsOrigin()
+    local radiantDuelSpawn = Game.duelSpawn["" .. DOTA_TEAM_GOODGUYS]:GetAbsOrigin()
+    local direDuelSpawn = Game.duelSpawn["" .. DOTA_TEAM_BADGUYS]:GetAbsOrigin()
     for _, pl in pairs(Game.players) do
         local cameraTarget
         if pl:GetTeamNumber() == DOTA_TEAM_GOODGUYS then

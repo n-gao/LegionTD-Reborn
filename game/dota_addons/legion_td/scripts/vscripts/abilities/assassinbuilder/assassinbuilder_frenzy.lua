@@ -3,24 +3,24 @@ assassinbuilder_frenzy = class({})
 LinkLuaModifier("modifier_assassinbuilder_frenzy", "abilities/assassinbuilder/assassinbuilder_frenzy.lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_assassinbuilder_frenzy_cooldown", "abilities/assassinbuilder/assassinbuilder_frenzy.lua", LUA_MODIFIER_MOTION_NONE)
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-function assassinbuilder_frenzy:GetBehavior(  ) 
+function assassinbuilder_frenzy:GetBehavior(  )
     return DOTA_ABILITY_BEHAVIOR_NO_TARGET
 end
 
-function assassinbuilder_frenzy:GetGoldCost( iLevel ) 
-    return 0 
+function assassinbuilder_frenzy:GetGoldCost( iLevel )
+    return 0
 end
 
-function assassinbuilder_frenzy:GetManaCost( iLevel ) 
-    return 0 
+function assassinbuilder_frenzy:GetManaCost( iLevel )
+    return 0
 end
 
-function assassinbuilder_frenzy:IsRefreshable(  ) 
-    return false 
+function assassinbuilder_frenzy:IsRefreshable(  )
+    return false
 end
 
-function assassinbuilder_frenzy:IsStealable(  ) 
-    return false 
+function assassinbuilder_frenzy:IsStealable(  )
+    return false
 end
 
 function assassinbuilder_frenzy:OnOwnerSpawned(  )
@@ -71,15 +71,15 @@ function assassinbuilder_frenzy:OnSpellStart()
             table.insert(game.endOfRoundListeners, self.roundListener)
         end
         self:SetActivated(false)
-            
+
         return true
     else
         return false
     end
 end
 
-function assassinbuilder_frenzy:ProcsMagicStick(  ) 
-    return false 
+function assassinbuilder_frenzy:ProcsMagicStick(  )
+    return false
 end
 
 function assassinbuilder_frenzy:NextRound()
@@ -92,10 +92,12 @@ function assassinbuilder_frenzy:NextRound()
         if (not self.cooldownModifier:IsNull()) then
             self.cooldownModifier:SetStackCount(cooldown)
         end
-        if cooldown < 1 then 
+        if cooldown < 1 then
             cooldown = 0
             self:SetActivated(true)
-            self.cooldownModifier:Destroy()
+            if (not self.cooldownModifier:IsNull()) then
+                self.cooldownModifier:Destroy()
+            end
         else
             self:SetActivated(false)
         end
@@ -119,19 +121,19 @@ function modifier_assassinbuilder_frenzy:GetEffectAttachType()
     return PATTACH_ABSORIGIN_FOLLOW
 end
 
-function modifier_assassinbuilder_frenzy:RemoveOnDeath(  ) 
+function modifier_assassinbuilder_frenzy:RemoveOnDeath(  )
     return true
 end
 
-function modifier_assassinbuilder_frenzy:DestroyOnExpire(  ) 
+function modifier_assassinbuilder_frenzy:DestroyOnExpire(  )
     return true
 end
 
-function modifier_assassinbuilder_frenzy:GetTexture(  ) 
-    return "ogre_magi_bloodlust" 
+function modifier_assassinbuilder_frenzy:GetTexture(  )
+    return "ogre_magi_bloodlust"
 end
 
-function modifier_assassinbuilder_frenzy:GetAttributes(  ) 
+function modifier_assassinbuilder_frenzy:GetAttributes(  )
     return MODIFIER_ATTRIBUTE_NONE
 end
 
@@ -152,15 +154,15 @@ if modifier_assassinbuilder_frenzy_cooldown == nil then
     modifier_assassinbuilder_frenzy_cooldown = class({})
 end
 
-function modifier_assassinbuilder_frenzy_cooldown:IsHidden(  ) 
+function modifier_assassinbuilder_frenzy_cooldown:IsHidden(  )
     return false
 end
 
-function modifier_assassinbuilder_frenzy_cooldown:GetTexture(  ) 
-    return "ogre_magi_bloodlust" 
+function modifier_assassinbuilder_frenzy_cooldown:GetTexture(  )
+    return "ogre_magi_bloodlust"
 end
 
-function modifier_assassinbuilder_frenzy_cooldown:GetAttributes(  ) 
+function modifier_assassinbuilder_frenzy_cooldown:GetAttributes(  )
     return MODIFIER_ATTRIBUTE_NONE
 end
 
