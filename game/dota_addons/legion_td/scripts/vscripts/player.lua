@@ -7,7 +7,7 @@ function Player.new(plyEntitie, userID)
     local self = Player()
     self.plyEntitie = plyEntitie
     self.teamnumber = self:GetTeamNumber()
-     -- new players don't have a team number so this is worthless here
+    -- new players don't have a team number so this is worthless here
     if self.plyEntitie ~= nil then
         plyEntitie.myPlayer = self
     end
@@ -143,7 +143,7 @@ function Player:SetPlayerEntity(plyEntitie, userID)
 end
 
 function Player:ShouldSpawn()
-    return self.lane ~= nil and self:IsActive() and not self:HasAbandoned() and self.hero ~= nil
+    return self.lane ~= nil and not self:HasAbandoned() and self.hero ~= nil
 end
 
 function Player:RemoveEntitie()
@@ -364,13 +364,7 @@ end
 --resets player location
 function Player:ToSpawn()
     self.hero:SetAbsOrigin(self.lane.heroSpawn:GetAbsOrigin())
-    PlayerResource:SetCameraTarget(self:GetPlayerID(), self.hero)
-    Timers:CreateTimer(
-        0.1,
-        function()
-            PlayerResource:SetCameraTarget(self:GetPlayerID(), nil)
-        end
-    )
+    self:MoveCamera(self.lane.heroSpawn:GetAbsOrigin(), 1)
     self.hero:Stop()
 end
 
@@ -512,10 +506,10 @@ end
 function Player:Abandon()
     print("abandoning player on team " .. self.teamnumber)
     local goldValue = PlayerResource:GetGold(self:GetPlayerID())
-     -- gold in pocket
+    -- gold in pocket
     print("abandoning player had " .. goldValue .. " gold in pocket")
     goldValue = goldValue + (self.buildingUpgradeValue)
-     -- gold in building upgrades
+    -- gold in building upgrades
     print("plus building upgrades: " .. goldValue)
     for _, unit in pairs(self.units) do -- gold in built units
         goldValue = goldValue + unit.goldCost
@@ -547,4 +541,15 @@ function Player:WantsToSkip()
         return true
     end
     return self.wantsSkip or false
+end
+
+function Player:MoveCamera(target, lerp)
+    CustomGameEventManager:Send_ServerToPlayer(
+        self.plyEntitie,
+        "move_camera",
+        {
+            cameraTarget = target,
+            lerp = lerp
+        }
+    )
 end

@@ -72,40 +72,48 @@ return STANDARD_THINK_TIME
 end]]
 --
 function aiThinkStandardSkill(self)
-    if
+    local thinkTime
+    local callComplete =
         SafeCall(
-            function()
-                if not self:IsAlive() then
+        function()
+            if not self:IsAlive() then
+                return
+            end
+            if
+                self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or
+                    self:HasModifier("modifier_invulnerable")
+             then
+                thinkTime = STANDARD_THINK_TIME
+                return
+            end
+
+            for i, v in ipairs(self.abilities) do
+                if v:IsCooldownReady() and v:SkillTrigger(self) then
+                    thinkTime = v.Skill(self, v)
                     return
                 end
-                if
-                    self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or
-                        self:HasModifier("modifier_invulnerable")
-                 then
-                    return STANDARD_THINK_TIME
-                end
-
-                for i, v in ipairs(self.abilities) do
-                    if v:IsCooldownReady() and v:SkillTrigger(self) then
-                        return v.Skill(self, v)
-                    end
-                end
-
-                if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
-                    return self:NextWayPoint()
-                end
-
-                if self.wayStep and not GridNav:CanFindPath(self:GetAbsOrigin(), self.waypoints[self.wayStep]) then
-                    self:SetAbsOrigin(self.waypoints[self.wayStep])
-                end
-
-                if CheckStuck(self) then
-                    return self:Unstuck()
-                end
             end
-        )
-     then
-        return STANDARD_THINK_TIME
+
+            if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
+                thinkTime = self:NextWayPoint()
+                return
+            end
+
+            if self.wayStep and not GridNav:CanFindPath(self:GetAbsOrigin(), self.waypoints[self.wayStep]) then
+                self:SetAbsOrigin(self.waypoints[self.wayStep])
+            end
+
+            if CheckStuck(self) then
+                thinkTime = self:Unstuck()
+                return
+            end
+
+            thinkTime = STANDARD_THINK_TIME
+            return
+        end
+    )
+    if callComplete and thinkTime then
+        return thinkTime
     else
         return nil
     end
