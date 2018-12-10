@@ -24,30 +24,7 @@ function DuelRound.new(data, game, roundNumber)
 end
 
 function DuelRound:Begin()
-	local radiantDuelSpawn
-    local direDuelSpawn
-    if self.game.duelSpawn["2"] then
-        radiantDuelSpawn = self.game.duelSpawn["2"]:GetAbsOrigin()
-	end
-    if self.game.duelSpawn["3"] then
-        direDuelSpawn = self.game.duelSpawn["3"]:GetAbsOrigin()
-    end
-    for _, pl in pairs(self.game.players) do
-       local cameraTarget
-		if pl:GetTeamNumber() == DOTA_TEAM_GOODGUYS then
-			cameraTarget = radiantDuelSpawn
-		elseif pl:GetTeamNumber() == DOTA_TEAM_BADGUYS then
-            cameraTarget = direDuelSpawn
-        end
-         CustomGameEventManager:Send_ServerToPlayer(
-            pl.plyEntitie,
-            "move_camera", 
-            {
-                cameraTarget = cameraTarget,
-                lerp = 1.5,
-            }
-        )
-    end
+    self:MoveCameras()
     self.eventHandles = {
         ListenToGameEvent("entity_killed", Dynamic_Wrap(DuelRound, "OnEntityKilled"), self)
     }
@@ -72,6 +49,20 @@ function DuelRound:Begin()
         self:PlaceKings()
     end
     self:CheckEnd()
+end
+
+function DuelRound:MoveCameras()
+    local radiantDuelSpawn = self.game.duelSpawn[DOTA_TEAM_GOODGUYS]:GetAbsOrigin()
+    local direDuelSpawn = self.game.duelSpawn[DOTA_TEAM_BADGUYS]:GetAbsOrigin()
+    for _, pl in pairs(self.game.players) do
+        local cameraTarget
+        if pl:GetTeamNumber() == DOTA_TEAM_GOODGUYS then
+            cameraTarget = radiantDuelSpawn
+        else
+            cameraTarget = direDuelSpawn
+        end
+        pl:MoveCamera(cameraTarget, 1.5)
+    end
 end
 
 --Jemand wurde getötet

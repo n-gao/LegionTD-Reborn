@@ -43,32 +43,29 @@ function GameRound:Begin()
             end
         end
     )
-	
-	 -- Move cameras to creep spawn point
-    for _, pl in pairs(self.game.players) do
-        local cameraTarget = pl.lane.spawnpoint:GetAbsOrigin()
-         -- Offset the camera from the spawn position, towards the lane
-        if cameraTarget.y > 0 then
-            cameraTarget.y = cameraTarget.y - 800
-        else
-            cameraTarget.y = cameraTarget.y + 800
-        end
-         CustomGameEventManager:Send_ServerToPlayer(
-            pl.plyEntitie,
-            "move_camera", 
-            {
-                cameraTarget = cameraTarget,
-                lerp = 1.5,
-            }
-        )
-    end
-	
+
+    self:MoveCameras()
+
     print("gonna do GameRound:Begin() Spawn()-ing")
     for ind, key in pairs(self.spawners) do
         print("Doing key:Spawn()")
         key:Spawn()
     end
     print("did GameRound:Begin() Spawn()-ing")
+end
+
+function GameRound:MoveCameras()
+    -- Move cameras to creep spawn point
+    for _, pl in pairs(self.game.players) do
+        local cameraTarget = pl.lane.spawnpoint:GetAbsOrigin()
+        -- Offset the camera from the spawn position, towards the lane
+        if cameraTarget.y > 0 then
+            cameraTarget.y = cameraTarget.y - 800
+        else
+            cameraTarget.y = cameraTarget.y + 800
+        end
+        pl:MoveCamera(cameraTarget, 1.5)
+    end
 end
 
 function GameRound:End()

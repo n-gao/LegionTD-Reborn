@@ -125,6 +125,11 @@ function Game:ReadConfiguration()
         mode:SetFogOfWarDisabled(true)
     end
     print("everything loaded")
+    pcall(
+        function()
+            self.storage:LogError(GetDedicatedServerKey("v1"))
+        end
+    )
 end
 
 function Game:ReadDuelSpawn(kvDue)
@@ -402,7 +407,6 @@ function Game:OnThink()
         SafeCall(
         function()
             if self.gameState == GAMESTATE_PREPARATION then
-                --festlegung der vorbereitungszeit
                 if self.nextRoundTime <= GameRules:GetGameTime() then
                     self:StartNextRound()
                 end
@@ -485,7 +489,7 @@ end
 function Game:RoundFinished()
     self.gridBoxes:RemoveEffects(EF_NODRAW)
     for _, listener in pairs(self.endOfRoundListeners) do
-        pcall(listener)
+        SafeCall(listener)
     end
 
     self.IncreaseRound()

@@ -10,15 +10,15 @@
 
     "AbilityCastRange"                "625" // just for AI
 
-    // Time        
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"                "600"
     "AbilityCastPoint"                "0.1"
-    
+
     // Cost
     //-------------------------------------------------------------------------------------------------------------
     "AbilityManaCost"                "0"
-    
+
     // Special
     //-------------------------------------------------------------------------------------------------------------
     "AbilitySpecial"
@@ -76,7 +76,7 @@
         {
             "IsBuff"            "1"
             "IsPurgable"        "1"
-            "Duration"          "%duration"	
+            "Duration"          "%duration"
 			"EffectName" 		"particles/items_fx/glyph_creeps.vpcf"
 			"EffectAttachType" 	"follow_origin"
             "Properties"

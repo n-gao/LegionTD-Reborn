@@ -73,7 +73,8 @@ end]]
 --
 function aiThinkStandardSkill(self)
     local thinkTime
-    local callComplete = SafeCall(
+    local callComplete =
+        SafeCall(
         function()
             if not self:IsAlive() then
                 return
@@ -95,7 +96,6 @@ function aiThinkStandardSkill(self)
 
             if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
                 thinkTime = self:NextWayPoint()
-                print(thinkTime)
                 return
             end
 
