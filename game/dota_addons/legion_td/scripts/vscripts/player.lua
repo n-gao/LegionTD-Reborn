@@ -127,7 +127,7 @@ end
 
 function Player:Reconnected()
     --self:SetPlayerEntity(plyEntitie)
-    --self.missedSpawns = 0
+    self.missedSpawns = 0
 end
 
 function Player:SetPlayerEntity(plyEntitie, userID)
