@@ -5,9 +5,8 @@ if GameRound == nil then
 end
 
 --Liest Rundeninfos ein
-function GameRound:ReadRoundConfiguration(kv, game, roundNumber)
+function GameRound:ReadRoundConfiguration(kv, roundNumber)
     self.roundNumber = roundNumber
-    self.game = game
     self.roundQuestTitle = kv.round_quest_title or "Kaputt"
     self.roundTitle = kv.round_title or "Kaputt"
     self.bounty = kv.bounty
@@ -37,7 +36,7 @@ function GameRound:Begin()
         Timers:CreateTimer(
         180,
         function()
-            if self.game:GetCurrentRound() == self then
+            if Game:GetCurrentRound() == self then
                 self:KillAll(true)
                 print("Unstuck")
             end
@@ -56,7 +55,7 @@ end
 
 function GameRound:MoveCameras()
     -- Move cameras to creep spawn point
-    for _, pl in pairs(self.game.players) do
+    for _, pl in pairs(Game.players) do
         local cameraTarget = pl.lane.spawnpoint:GetAbsOrigin()
         -- Offset the camera from the spawn position, towards the lane
         if cameraTarget.y > 0 then
@@ -79,7 +78,7 @@ function GameRound:End()
     self.eventHandles = {}
     self:KillAll(true)
     if self.bounty then
-        for _, player in pairs(self.game.players) do
+        for _, player in pairs(Game.players) do
             player:Income(self.bounty)
         end
         GameRules:SendCustomMessage(
@@ -89,7 +88,7 @@ function GameRound:End()
             0
         )
     end
-    self.game:RoundFinished()
+    Game:RoundFinished()
 end
 
 --Überprüft ob eine Runde vorbei ist

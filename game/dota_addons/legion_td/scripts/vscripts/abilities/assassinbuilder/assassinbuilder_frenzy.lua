@@ -89,7 +89,9 @@ function assassinbuilder_frenzy:NextRound()
         end
         local game = GameRules.GameMode.game
         local cooldown = self.cooldown - game:GetDisplayRound()
-        self.cooldownModifier:SetStackCount(cooldown)
+        if (not self.cooldownModifier:IsNull()) then
+            self.cooldownModifier:SetStackCount(cooldown)
+        end
         if cooldown < 1 then 
             cooldown = 0
             self:SetActivated(true)

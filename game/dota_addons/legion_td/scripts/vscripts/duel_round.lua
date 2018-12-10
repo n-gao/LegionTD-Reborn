@@ -4,9 +4,8 @@ end
 
 DuelRound.doneRounds = {}
 
-function DuelRound.new(data, game, roundNumber)
+function DuelRound.new(data, roundNumber)
     local self = DuelRound()
-    self.game = game
     self.roundTitle = data.round_title
     self.bounty = data.bounty
     self.final_duel = (data.determines_winner == "true")
@@ -17,7 +16,7 @@ function DuelRound.new(data, game, roundNumber)
     self.roundNumber = roundNumber
     self.playerscores = {}
     self.eventHandles = {}
-    for _, pl in pairs(self.game.players) do
+    for _, pl in pairs(Game.players) do
         self.playerscores[pl:GetPlayerID()] = 0
     end
     return self
@@ -32,7 +31,7 @@ function DuelRound:Begin()
         Timers:CreateTimer(
         240,
         function()
-            if self.game:GetCurrentRound() == self then
+            if Game:GetCurrentRound() == self then
                 Game.storage:LogError("Unstuck duel round")
                 SafeCall(
                     function()
@@ -43,7 +42,7 @@ function DuelRound:Begin()
             end
         end
     )
-    self.game.doneDuels = self.game.doneDuels + 1
+    Game.doneDuels = Game.doneDuels + 1
     self:PlaceUnits()
     if voteOptions["final_duel"] and self.final_duel then
         self:PlaceKings()
@@ -52,9 +51,9 @@ function DuelRound:Begin()
 end
 
 function DuelRound:MoveCameras()
-    local radiantDuelSpawn = self.game.duelSpawn[DOTA_TEAM_GOODGUYS]:GetAbsOrigin()
-    local direDuelSpawn = self.game.duelSpawn[DOTA_TEAM_BADGUYS]:GetAbsOrigin()
-    for _, pl in pairs(self.game.players) do
+    local radiantDuelSpawn = Game.duelSpawn[""..DOTA_TEAM_GOODGUYS]:GetAbsOrigin()
+    local direDuelSpawn = Game.duelSpawn[""..DOTA_TEAM_BADGUYS]:GetAbsOrigin()
+    for _, pl in pairs(Game.players) do
         local cameraTarget
         if pl:GetTeamNumber() == DOTA_TEAM_GOODGUYS then
             cameraTarget = radiantDuelSpawn
@@ -95,43 +94,43 @@ function DuelRound:OnEntityKilled(event)
 end
 
 function DuelRound:PlaceKings()
-    self.game.radiantBoss:SetAbsOrigin(Vector(0, -1100, 0))
-    self.game.radiantBoss:SetMoveCapability(DOTA_UNIT_CAP_MOVE_GROUND)
-    self.game.radiantBoss:SetDayTimeVisionRange(2000)
-    self.game.radiantBoss:SetBaseMoveSpeed(300)
-    self.game.direBoss:SetAbsOrigin(Vector(0, 1100, 0))
-    self.game.direBoss:SetMoveCapability(DOTA_UNIT_CAP_MOVE_GROUND)
-    self.game.direBoss:SetDayTimeVisionRange(2000)
-    self.game.direBoss:SetBaseMoveSpeed(300)
+    Game.radiantBoss:SetAbsOrigin(Vector(0, -1100, 0))
+    Game.radiantBoss:SetMoveCapability(DOTA_UNIT_CAP_MOVE_GROUND)
+    Game.radiantBoss:SetDayTimeVisionRange(2000)
+    Game.radiantBoss:SetBaseMoveSpeed(300)
+    Game.direBoss:SetAbsOrigin(Vector(0, 1100, 0))
+    Game.direBoss:SetMoveCapability(DOTA_UNIT_CAP_MOVE_GROUND)
+    Game.direBoss:SetDayTimeVisionRange(2000)
+    Game.direBoss:SetBaseMoveSpeed(300)
 
-    self.game.direBoss:AddNewModifier(self.game.direBoss, nil, "modifier_king_duel_lua", {})
-    self.game.radiantBoss:AddNewModifier(self.game.radiantBoss, nil, "modifier_king_duel_lua", {})
+    Game.direBoss:AddNewModifier(Game.direBoss, nil, "modifier_king_duel_lua", {})
+    Game.radiantBoss:AddNewModifier(Game.radiantBoss, nil, "modifier_king_duel_lua", {})
 
-    table.insert(self.remainingUnitsRadiant, self.game.radiantBoss)
-    table.insert(self.remainingUnitsDire, self.game.direBoss)
+    table.insert(self.remainingUnitsRadiant, Game.radiantBoss)
+    table.insert(self.remainingUnitsDire, Game.direBoss)
 
     ExecuteOrderFromTable(
         {
-            UnitIndex = self.game.radiantBoss:entindex(),
+            UnitIndex = Game.radiantBoss:entindex(),
             OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
-            TargetIndex = self.game.direBoss:entindex()
+            TargetIndex = Game.direBoss:entindex()
         }
     )
 
     ExecuteOrderFromTable(
         {
-            UnitIndex = self.game.direBoss:entindex(),
+            UnitIndex = Game.direBoss:entindex(),
             OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
-            TargetIndex = self.game.radiantBoss:entindex()
+            TargetIndex = Game.radiantBoss:entindex()
         }
     )
 end
 
 function DuelRound:PlaceUnits()
-    for _, pl in pairs(self.game.players) do
+    for _, pl in pairs(Game.players) do
         if pl:ShouldSpawn() then
-            local spawnPoint = self.game.duelSpawn["" .. pl:GetTeamNumber()]
-            local target = self.game.duelTargets["" .. pl:GetTeamNumber()]
+            local spawnPoint = Game.duelSpawn["" .. pl:GetTeamNumber()]
+            local target = Game.duelTargets["" .. pl:GetTeamNumber()]
             local team = self.remainingUnitsRadiant
             if pl:GetTeamNumber() == DOTA_TEAM_BADGUYS then
                 team = self.remainingUnitsDire
@@ -179,13 +178,13 @@ function DuelRound:End()
         victoryText = "<b color='red'>Dire</b> <b color='white'>won the duel and earned</b> "
     end
 
-    DuelRound.doneRounds["" .. self.game.doneDuels] = {
+    DuelRound.doneRounds["" .. Game.doneDuels] = {
         winner = self.winningTeam,
         time = GameRules:GetGameTime()
     }
 
     --Add won duel to stats
-    local winners = self.game:GetAllPlayersOfTeam(self.winningTeam)
+    local winners = Game:GetAllPlayersOfTeam(self.winningTeam)
     for _, winner in pairs(winners) do
         winner:WonDuel()
     end
@@ -231,7 +230,7 @@ function DuelRound:End()
     end
 
     if self.bounty then
-        for _, player in pairs(self.game.players) do
+        for _, player in pairs(Game.players) do
             if player.plyEntitie and player:GetTeamNumber() == self.winningTeam and not player.abandoned then
                 player:Income(self.bounty)
             end
@@ -245,7 +244,7 @@ function DuelRound:End()
         0,
         0
     )
-    self.game:RoundFinished()
+    Game:RoundFinished()
 end
 
 function shallowcopy(orig)
@@ -283,8 +282,8 @@ function RelocateUnit(trigger)
     print("teleporting unit!")
     local npc = trigger.activator
     if npc.unit and not npc:IsRealHero() then
-        local spawnPoint = self.game.duelSpawn["" .. npc:GetTeamNumber()]
-        local target = self.game.duelTargets["" .. npc:GetTeamNumber()]
+        local spawnPoint = Game.duelSpawn["" .. npc:GetTeamNumber()]
+        local target = Game.duelTargets["" .. npc:GetTeamNumber()]
         FindClearSpaceForUnit(npc, spawnPoint:GetAbsOrigin(), true)
         npc.nextTarget = target:GetAbsOrigin()
     end

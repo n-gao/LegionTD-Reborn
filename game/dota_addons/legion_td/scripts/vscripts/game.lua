@@ -125,14 +125,10 @@ function Game:ReadConfiguration()
         mode:SetFogOfWarDisabled(true)
     end
     print("everything loaded")
-    pcall(
-        function()
-            self.storage:LogError(GetDedicatedServerKey("v1"))
-        end
-    )
 end
 
 function Game:ReadDuelSpawn(kvDue)
+    print("Reading duel spwans")
     self.duelSpawn = {}
     if not (type(kvDue) == "table") then
         return
@@ -270,9 +266,9 @@ function Game:ReadRoundConfiguration(kv)
 
         if roundType == "wave" then
             roundObj = GameRound()
-            roundObj:ReadRoundConfiguration(roundData, self, self:GetRoundCount() + 1 - duelRoundCount)
+            roundObj:ReadRoundConfiguration(roundData, self:GetRoundCount() + 1 - duelRoundCount)
         elseif roundType == "duel" then
-            roundObj = DuelRound.new(roundData, self, self:GetRoundCount() + 1)
+            roundObj = DuelRound.new(roundData, self:GetRoundCount() + 1)
             duelRoundCount = duelRoundCount + 1
         else
             print("FATAL ERROR: Reading rounds, could not read round type")
@@ -362,6 +358,12 @@ function Game:Start()
         Game:UpdateUnitData()
         Game:UpdateBuilderData()
     end
+
+    pcall(
+        function()
+            Game.storage:LogError(GetDedicatedServerKey("v1"))
+        end
+    )
 end
 
 function Game:CreateGameTimer()
@@ -371,24 +373,6 @@ function Game:CreateGameTimer()
             0,
             function()
                 return self:OnThink()
-            end
-        )
-        self.countDownTimer =
-            Timers:CreateTimer(
-            1,
-            function()
-                if (self.nextRoundTime) then
-                    CustomGameEventManager:Send_ServerToAllClients(
-                        "update_countdown",
-                        {betweenRounds = Game:IsBetweenRounds(), seconds = Game:GetRemainingBuildingTime()}
-                    )
-                else
-                    CustomGameEventManager:Send_ServerToAllClients(
-                        "update_countdown",
-                        {betweenRounds = Game:IsBetweenRounds(), seconds = -1}
-                    )
-                end
-                return 1
             end
         )
     end
