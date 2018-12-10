@@ -7552,7 +7552,7 @@
         "BaseClass"    "npc_dota_creature"
         "Model"    "models/creeps/roshan/roshan.vmdl"
         "ModelScale"    "0.7"
-        "SoundSet"    "Roshan"
+        "SoundSet"	"n_creep_Melee"
         "GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
         "Level"    "1"
         "HealthBarOffset"    "150"

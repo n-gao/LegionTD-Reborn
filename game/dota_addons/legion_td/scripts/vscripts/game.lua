@@ -503,7 +503,6 @@ end
 function Game:StartNextRound()
     self:CheckTeamLeft(DOTA_TEAM_GOODGUYS)
     self:CheckTeamLeft(DOTA_TEAM_BADGUYS)
-    print "Game:StartNextround()"
     for _, player in pairs(self.players) do
         if player:IsActive() then --only repair leaks if lane is active
             player.leaked = false
