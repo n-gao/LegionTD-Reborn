@@ -16,7 +16,7 @@
 
 @keyframes 'blinker' {
     50% {
-        opacity: 0.5;
+        opacity: 0.3;
     }
 }
 
@@ -31,7 +31,7 @@
     animation-name: blinker;
     animation-duration: 1s;
     animation-timing-function: linear;
-    animation-iteration-count: 5;
+    animation-iteration-count: 10;
 }
 
 .AdBanner Label {

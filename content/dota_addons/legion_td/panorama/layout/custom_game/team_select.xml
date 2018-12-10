@@ -45,7 +45,7 @@
                     </Panel>
                     <Panel id="PayPal" class="AdBanner">
                         <Label text="#Ad_donate" />
-                        <Image id="PayPalImage" class="AdImage" src="file://{images}/custom_game/loading_screen/paypal.png" onactivate="ExternalBrowserGoToURL('https://paypal.me/nicholasgao')" onload="DOTAShowTextTooltip('#Ad_new')" onmouseover="DOTAShowTextTooltip('#Ad_new')" onmouseout="DOTAHideTextTooltip()" />
+                        <Image id="PayPalImage" class="AdImage" src="file://{images}/custom_game/loading_screen/paypal.png" onactivate="ExternalBrowserGoToURL('https://paypal.me/nicholasgao')" onmouseover="DOTAShowTextTooltip('#Ad_new')" onmouseout="DOTAHideTextTooltip()" />
                     </Panel>
                 </Panel>
             </Panel>
