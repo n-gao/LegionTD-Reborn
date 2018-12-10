@@ -30,18 +30,22 @@
                         <Panel id="OptionListGroup">
                             <Label id="OptionTitle" text="#Options_title" />
                             <Panel id="Options">
-                                <ToggleButton id="tango_limit" onactivate="VoteOptionClicked('tango_limit')" text="#Option_Income_Limit"/>
-                                <ToggleButton id="return_to_sender" onactivate="VoteOptionClicked('return_to_sender')" text="#Option_Return_To_Sender"/>
-                                <ToggleButton id="fog_of_war" onactivate="VoteOptionClicked('fog_of_war')" text="#Option_Fog_Of_War"/>
-                                <ToggleButton id="deactivate_duels" onactivate="VoteOptionClicked('deactivate_duels')" text="#Option_Deactivate_Duels"/>
-                                <ToggleButton id="hard_mode" onactivate="VoteOptionClicked('hard_mode')" text="#Option_Hard_Mode"/>
-                                <ToggleButton id="final_duel" onactivate="VoteOptionClicked('final_duel')" text="#Option_Final_Duel"/>
+                                <ToggleButton id="tango_limit" onactivate="VoteOptionClicked('tango_limit')" text="#Option_Income_Limit" onmouseover="DOTAShowTextTooltip('#Option_Income_Limit_Tooltip')" onmouseout="DOTAHideTextTooltip()"/>
+                                <ToggleButton id="return_to_sender" onactivate="VoteOptionClicked('return_to_sender')" text="#Option_Return_To_Sender" onmouseover="DOTAShowTextTooltip('#Option_Return_To_Sender_Tooltip')" onmouseout="DOTAHideTextTooltip()"/>
+                                <ToggleButton id="fog_of_war" onactivate="VoteOptionClicked('fog_of_war')" text="#Option_Fog_Of_War" onmouseover="DOTAShowTextTooltip('#Option_Fog_Of_War_Tooltip')" onmouseout="DOTAHideTextTooltip()"/>
+                                <ToggleButton id="deactivate_duels" onactivate="VoteOptionClicked('deactivate_duels')" text="#Option_Deactivate_Duels" onmouseover="DOTAShowTextTooltip('#Option_Deactivate_Duels_Tooltip')" onmouseout="DOTAHideTextTooltip()"/>
+                                <ToggleButton id="hard_mode" onactivate="VoteOptionClicked('hard_mode')" text="#Option_Hard_Mode" onmouseover="DOTAShowTextTooltip('#Option_Hard_Mode_Tooltip')" onmouseout="DOTAHideTextTooltip()"/>
+                                <ToggleButton id="final_duel" onactivate="VoteOptionClicked ('final_duel')" text="#Option_Final_Duel" onmouseover="DOTAShowTextTooltip('#Option_Final_Duel_Tooltip')" onmouseout="DOTAHideTextTooltip()"/>
                             </Panel>
                         </Panel>
                     </Panel>
-                    <Panel id="Discord">
-                        <Image id="DiscordImage" src="file://{images}/custom_game/game_info/Discord.png" onactivate="ExternalBrowserGoToURL('https://discord.gg/eUHpgQW');"/>
+                    <Panel id="Discord" class="AdBanner">
+                        <Image id="DiscordImage" class="AdImage" src="file://{images}/custom_game/game_info/Discord.png" onactivate="ExternalBrowserGoToURL('https://discord.gg/eUHpgQW');" onload="DOTAShowTextTooltip('#Ad_updated')" onmouseover="DOTAShowTextTooltip('#Ad_updated')" onmouseout="DOTAHideTextTooltip()"/>
                         <!-- <Label id="DiscordText" text="#discord_builder_info"/> -->
+                    </Panel>
+                    <Panel id="PayPal" class="AdBanner">
+                        <Label text="#Ad_donate" />
+                        <Image id="PayPalImage" class="AdImage" src="file://{images}/custom_game/loading_screen/paypal.png" onactivate="ExternalBrowserGoToURL('https://paypal.me/nicholasgao')" onload="DOTAShowTextTooltip('#Ad_new')" onmouseover="DOTAShowTextTooltip('#Ad_new')" onmouseout="DOTAHideTextTooltip()" />
                     </Panel>
                 </Panel>
             </Panel>

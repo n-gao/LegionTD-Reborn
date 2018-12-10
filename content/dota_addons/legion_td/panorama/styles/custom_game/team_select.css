@@ -14,30 +14,56 @@
     width: fill-parent-flow(1);
 }
 
-#Discord {
-    /* width: 100%; */
-    horizontal-align: center;
-    width: 300px;
-    height: 130px;
-    flow-children: down;
+@keyframes 'blinker' {
+    50% {
+        opacity: 0.5;
+    }
 }
 
-#DiscordImage:hover {
-    width: 273px;
-    height: 84px;
+.AdBanner {
+    horizontal-align: center;
+    width: 300px;
+    height: fit-children;
+    flow-children: down;
+    padding: 8px;
+    margin: 8px;
+    pre-transform-scale2d: 1;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;
+}
+
+.AdBanner Label {
+    horizontal-align: center;
+    text-align: center;
+    color: #ffffffaa;
+}
+
+.AdImage:hover {
+    pre-transform-scale2d: 1.05;
     box-shadow: #000000ff 0px 0px 16px 0px;
 }
 
-#DiscordImage {
+.AdImage {
     box-shadow: #00000044 0px 0px 8px 0px;
     border-radius: 8px;
-    width: 260px;
-    height: 80px;
     horizontal-align: center;
     vertical-align: middle;
-    transition-property: height, width, box-shadow;
+    transition-property: pre-transform-scale2d, box-shadow;
     transition-timing-function: ease-in-out;
-    transition-duration: 0.1s;
+    transition-duration: 0.12s;
+    margin: 8px;
+}
+
+#DiscordImage {
+    width: 260px;
+    height: 80px;
+}
+
+#PayPalImage {
+    width: 195px;
+    height: 35px;
 }
 
 #DiscordText {
