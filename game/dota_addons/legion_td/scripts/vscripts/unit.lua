@@ -70,6 +70,7 @@ function Unit:Unlock()
         self.npc:RemoveModifierByName("modifier_invulnerable")
         self.npc:SetControllableByPlayer(-1, false)
         self.npc:Stop()
+        self.npc.unit = self
         self:EndCooldowns()
         Timers:CreateTimer(
             0.5,

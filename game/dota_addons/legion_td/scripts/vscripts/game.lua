@@ -10,6 +10,7 @@ end
 GAMESTATE_PREPARATION = 0
 GAMESTATE_FIGHTING = 1
 GAMESTATE_END = 2
+GAMESTATE_END_OF_ROUND = 3
 STARTING_ROUND = 1
 CHECKING_INTERVALL = 1
 MAX_FAILED_THINKS = 10
@@ -31,6 +32,7 @@ function Game.new()
     self.sendLeaderRadiant = 1 -- we'll rotate who gets the biggest send each wave
     self.sendLeaderDire = 1 -- we'll rotate who gets the biggest send each wave
     self.endOfRoundListeners = {}
+    self.startOfRoundListeners = {}
     self.UnitKV = LoadKeyValues("scripts/npc/npc_units_custom.txt")
     self.DamageKV = LoadKeyValues("scripts/damage_table.kv")
     self.HeroKV = LoadKeyValues("scripts/npc/npc_heroes_custom.txt")
@@ -394,6 +396,8 @@ function Game:OnThink()
             end
             if self.gameState == GAMESTATE_END then
             end
+            if self.gameState == GAMESTATE_END_OF_ROUND then
+            end
         end
     )
     if not success then
@@ -466,14 +470,37 @@ end
 --Runde beendet
 function Game:RoundFinished()
     self.gridBoxes:RemoveEffects(EF_NODRAW)
-    for _, listener in pairs(self.endOfRoundListeners) do
-        SafeCall(listener)
-    end
 
     self.IncreaseRound()
     self:SetGameState(GAMESTATE_PREPARATION)
     for _, player in pairs(self.players) do
         player.tangoLimit = self:GetTangoLimit()
+    end
+
+    self:CallEndOfRoundListener()
+end
+
+function Game:CallEndOfRoundListener()
+    for key, listener in pairs(self.endOfRoundListeners) do
+        local ret = nil
+        SafeCall(function()
+            ret = listener()
+        end)
+        if (ret == nil) then
+            self.endOfRoundListeners[key] = nil
+        end
+    end
+end
+
+function Game:CallStartOfRoundListener()
+    for key, listener in pairs(self.startOfRoundListeners) do
+        local ret = nil
+        SafeCall(function()
+            ret = listener()
+        end)
+        if (ret == nil) then
+            self.startOfRoundListeners[key] = nil
+        end
     end
 end
 
@@ -516,6 +543,8 @@ function Game:StartNextRound()
             self:SetGameState(GAMESTATE_FIGHTING)
         end
     )
+
+    self:CallStartOfRoundListener()
 end
 
 function Game:CheckTeamLeft(team)
@@ -1068,6 +1097,14 @@ function Game:ClearBoard()
             round:KillAll()
         end
     end
+end
+
+function Game:AddEndOfRoundListener(listener)
+    table.insert(self.endOfRoundListeners, listener)
+end
+
+function Game:AddStartOfRoundListener(listener)
+    table.insert(self.startOfRoundListeners, listener)
 end
 
 -------------------------------------------------------------------------------

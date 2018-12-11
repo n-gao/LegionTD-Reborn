@@ -171,6 +171,7 @@ end
 
 --Ende einer Runde
 function DuelRound:End()
+    Game:SetGameState(GAMESTATE_END_OF_ROUND)
     self.winningTeam = DOTA_TEAM_GOODGUYS
     local victoryText = "<b color='LawnGreen'>Radiant</b> <b color='white'>won the duel and earned</b> "
     if next(self.remainingUnitsRadiant) == nil then

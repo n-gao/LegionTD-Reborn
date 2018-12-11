@@ -70,6 +70,7 @@ function GameRound:MoveCameras()
 end
 
 function GameRound:End()
+    Game:SetGameState(GAMESTATE_END_OF_ROUND)
     for key, val in pairs(self.eventHandles) do
         StopListeningToGameEvent(val)
     end
