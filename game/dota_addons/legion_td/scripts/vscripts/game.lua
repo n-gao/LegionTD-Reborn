@@ -482,11 +482,8 @@ end
 
 function Game:CallEndOfRoundListener()
     for key, listener in pairs(self.endOfRoundListeners) do
-        local ret = nil
-        SafeCall(function()
-            ret = listener()
-        end)
-        if (ret == nil) then
+        local success, ret = SafeCall(listener)
+        if (not success or ret == nil) then
             self.endOfRoundListeners[key] = nil
         end
     end
@@ -494,11 +491,8 @@ end
 
 function Game:CallStartOfRoundListener()
     for key, listener in pairs(self.startOfRoundListeners) do
-        local ret = nil
-        SafeCall(function()
-            ret = listener()
-        end)
-        if (ret == nil) then
+        local success, ret = SafeCall(listener)
+        if (not success or ret == nil) then
             self.startOfRoundListeners[key] = nil
         end
     end
