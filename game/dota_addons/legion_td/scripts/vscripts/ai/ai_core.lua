@@ -73,7 +73,7 @@ function aiThinkStandardSkill(self)
     local callComplete, thinkTime =
         SafeCall(
         function()
-            if not self:IsAlive() then
+            if not self:IsAlive() or self:IsNull() then
                 return
             end
             if
