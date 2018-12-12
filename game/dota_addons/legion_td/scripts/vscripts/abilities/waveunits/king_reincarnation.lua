@@ -4,7 +4,6 @@
     For the respawn time if you use any custom rule you'll have to change it.
     Bug: can't reduce death count. However, all the other interactions should be correct (gold/xp/messages)
 ]]
-LinkLuaModifier("modifier_unit_freeze_lua", "abilities/modifier_unit_freeze_lua.lua", LUA_MODIFIER_MOTION_NONE)
 
 function Reincarnation( event )
     local caster = event.caster
@@ -14,7 +13,7 @@ function Reincarnation( event )
     local casterHP = caster:GetHealth()
     local casterMana = caster:GetMana()
     local abilityManaCost = ability:GetManaCost( ability:GetLevel() - 1 )
-    
+
     if ability.isReincarnating == true then
         caster:SetHealth(1)
         return
@@ -27,7 +26,7 @@ function Reincarnation( event )
         local respawnPosition = caster:GetAbsOrigin()
         local minDmg = caster:GetBaseDamageMin()
         local maxDmg = caster:GetBaseDamageMax()
-        
+
         -- Start cooldown on the passive
         ability:StartCooldown(cooldown)
 
@@ -35,13 +34,13 @@ function Reincarnation( event )
         caster:SetHealth(1)
         ability.isReincarnating = true
         caster:AddNewModifier(nil, nil, "modifier_invulnerable", {})
-        
+
         --caster:Kill(caster, nil)
         -- Disable buyback.
         --caster:SetBuybackEnabled(false)
         -- Set the gold back
         --caster:SetGold(casterGold, false)
-        
+
         caster:StartGesture(ACT_DOTA_DIE)
         caster:SetBaseDamageMin(0)
         caster:SetBaseDamageMax(0)
@@ -52,7 +51,7 @@ function Reincarnation( event )
         ParticleManager:SetParticleControl(caster.ReincarnateParticle, 1, Vector(slow_radius,0,0))
 
         -- End Particle after reincarnating
-        Timers:CreateTimer(reincarnate_time, function() 
+        Timers:CreateTimer(reincarnate_time, function()
             ParticleManager:DestroyParticle(caster.ReincarnateParticle, false)
             caster:StartGesture(ACT_DOTA_SPAWN)
             caster:SetBaseDamageMax(maxDmg)
@@ -79,12 +78,12 @@ function Reincarnation( event )
         ParticleManager:SetParticleControl(particle3 , 0, respawnPosition)
 
         -- End grave after reincarnating
-        Timers:CreateTimer(reincarnate_time, function() 
+        Timers:CreateTimer(reincarnate_time, function()
                 grave:RemoveSelf()
                 caster:SetHealth(caster:GetMaxHealth())
                 ability.isReincarnating = false
                 caster:RemoveModifierByName("modifier_invulnerable")
-            end)     
+            end)
 
         -- Sounds
         caster:EmitSound("Hero_SkeletonKing.Reincarnate")
@@ -94,10 +93,10 @@ function Reincarnation( event )
         end)
 
         -- Slow
-        local enemies = FindUnitsInRadius(caster:GetTeamNumber(), respawnPosition, nil, slow_radius, 
-                                    DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, 
+        local enemies = FindUnitsInRadius(caster:GetTeamNumber(), respawnPosition, nil, slow_radius,
+                                    DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
                                     DOTA_UNIT_TARGET_FLAG_NONE, FIND_ANY_ORDER, false)
-        
+
         for _,unit in pairs(enemies) do
             ability:ApplyDataDrivenModifier(caster, unit, "modifier_reincarnation_slow", nil)
         end
@@ -107,4 +106,4 @@ function Reincarnation( event )
 
 end
 
-    
+

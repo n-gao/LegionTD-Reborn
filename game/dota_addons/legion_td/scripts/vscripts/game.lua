@@ -1430,12 +1430,12 @@ function Game:GetAllBuilders()
 end
 
 function SafeCall(func, ...)
-    local status, error_msg = pcall(func, ...)
+    local status, result = pcall(func, ...)
     if not status then
         Game.storage:LogError(error_msg)
     -- error(error_msg)
     end
-    return status
+    return status, result
 end
 
 function HookSetWinnerFunction(callback)
