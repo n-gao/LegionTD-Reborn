@@ -289,7 +289,7 @@
             "Ability5"              "undeadbuilder_spawn_vampire"
             "Ability6"        "undeadbuilder_spawn_tormented_soul"
             "Ability7"        "builder_invulnerable"
-            "Ability9"                "undeadbuilder_passive"
+            "Ability9"                ""
                 "Ability10"        "special_bonus_undefined"
                 "Ability11"        "special_bonus_undefined"
                 "Ability12"        "special_bonus_undefined"

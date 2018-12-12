@@ -21,12 +21,12 @@ function aiThinkStandard(self)
     if
         SafeCall(
             function()
-                if not self:IsAlive() then
-                    return
+                if self:IsNull() then
+                    return nil
                 end
                 if
                     self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or
-                        self:HasModifier("modifier_invulnerable")
+                        self:HasModifier("modifier_invulnerable") or not self:IsAlive()
                  then
                     return STANDARD_THINK_TIME
                 end
@@ -73,12 +73,12 @@ function aiThinkStandardSkill(self)
     local callComplete, thinkTime =
         SafeCall(
         function()
-            if not self:IsAlive() or self:IsNull() then
-                return
+            if self:IsNull() then
+                return nil
             end
             if
                 self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or
-                    self:HasModifier("modifier_invulnerable")
+                    self:HasModifier("modifier_invulnerable") or not self:IsAlive()
              then
                 return STANDARD_THINK_TIME
             end
