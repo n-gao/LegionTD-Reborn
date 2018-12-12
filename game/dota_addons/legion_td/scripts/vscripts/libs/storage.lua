@@ -546,6 +546,10 @@ function Storage:LogError(error)
     local players = Game.players
     local player_data = {}
     for _, player in pairs(players) do
+        local unit_names =  {}
+        for _, unit in pairs(player.units) do
+            table.insert(unit_names, unit.npcclass)
+        end
         table.insert(
             player_data,
             {
@@ -553,7 +557,8 @@ function Storage:LogError(error)
                 abandoned = player:HasAbandoned(),
                 team_number = player:GetTeamNumber(),
                 player_id = player:GetPlayerID(),
-                user_id = player.userID
+                user_id = player.userID,
+                unit_names = unit_names
             }
         )
     end
