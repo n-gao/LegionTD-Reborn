@@ -29,7 +29,7 @@ function DuelRound:Begin()
     }
     self.unstuckTimer =
         Timers:CreateTimer(
-        240,
+        180,
         function()
             if Game:GetCurrentRound() == self then
                 Game.storage:LogError("Unstuck duel round")

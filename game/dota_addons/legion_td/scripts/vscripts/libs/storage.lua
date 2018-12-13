@@ -85,7 +85,7 @@ function Storage:RequestRankingPositions(attribute, steamIds)
         function(result)
             local resultTable = JSON:decode(result)
             print("[STORAGE] Get Ranking Position Response")
-            DeepPrintTable(resultTable)
+            -- DeepPrintTable(resultTable)
             if (resultTable == nil) then
                 return
             end
@@ -126,7 +126,7 @@ function Storage:RequestRankingPosition(attribute, steamId)
         function(result)
             local resultTable = JSON:decode(result)
             print("GET RANKING POSITION RESPONSE")
-            DeepPrintTable(resultTable)
+            -- DeepPrintTable(resultTable)
             if resultTable == nil then
                 return
             end
@@ -282,7 +282,7 @@ function Storage:AddCachedRanking(attribute, data)
         ranking[k - 1 + data.from] = v
     end
     print("[STORAGE] Get Ranking Response")
-    DeepPrintTable(data)
+    -- DeepPrintTable(data)
     self.rankingEntries[attribute] = data.playerCount
     self.rankings[attribute] = ranking
 end
@@ -316,7 +316,7 @@ function Storage:GetPlayerData(steam_id, callback)
         function(result)
             local resultTable = JSON:decode(result)
             print("[STORAGE] Get Player Info Response")
-            DeepPrintTable(resultTable)
+            -- DeepPrintTable(resultTable)
             if resultTable ~= nil then
                 if resultTable[DataAttribute] ~= nil then
                     self.cachedData[steam_id] = resultTable[DataAttribute]
@@ -356,7 +356,7 @@ function Storage:SavePlayerData(steam_id, toStore, callback)
     end
     self:InvalidateData(steam_id)
     print("WANTS TO STORE:")
-    DeepPrintTable(toStore)
+    -- DeepPrintTable(toStore)
     local data = JSON:encode(toStore)
     self:SendHttpRequest(
         "POST",
@@ -368,7 +368,7 @@ function Storage:SavePlayerData(steam_id, toStore, callback)
         function(result)
             local resultTable = JSON:decode(result)
             print("POST RESPONSE")
-            DeepPrintTable(resultTable)
+            -- DeepPrintTable(resultTable)
             if callback == nil then
                 return
             end
@@ -388,7 +388,7 @@ function Storage:SaveMatchData(winner, duration, lastWave, playerData, duelData,
         end
         return
     end
-    DeepPrintTable(playerData)
+    -- DeepPrintTable(playerData)
     self:SendHttpRequest(
         "POST",
         {
@@ -403,7 +403,7 @@ function Storage:SaveMatchData(winner, duration, lastWave, playerData, duelData,
         function(result)
             local resultTable = JSON:decode(result)
             print("[STORAGE] Post Match Response")
-            DeepPrintTable(resultTable)
+            -- DeepPrintTable(resultTable)
             if callback == nil then
                 return
             end
@@ -429,7 +429,7 @@ function Storage:UpdateUnitData(unitData)
         function(result)
             local resultTable = JSON:decode(result)
             print("[STORAGE] Updating Units Response")
-            DeepPrintTable(resultTable)
+            -- DeepPrintTable(resultTable)
         end
     )
 end
@@ -447,7 +447,7 @@ function Storage:UpdateAbilityData(abilityData)
         function(result)
             local resultTable = JSON:decode(result)
             print("[STORAGE] Updating Abilities Response")
-            DeepPrintTable(resultTable)
+            -- DeepPrintTable(resultTable)
         end
     )
 end
@@ -465,7 +465,7 @@ function Storage:UpdateBuilderData(builderData)
         function(result)
             local resultTable = JSON:decode(result)
             print("[STORAGE] Updating Builder Response")
-            DeepPrintTable(resultTable)
+            -- DeepPrintTable(resultTable)
         end
     )
 end
@@ -485,7 +485,7 @@ function Storage:GetMatchHistory(steamId, from, to, callback)
         function(result)
             local resultTable = JSON:decode(result)
             print("[STORAGE] Get Match History Response")
-            DeepPrintTable(resultTable)
+            -- DeepPrintTable(resultTable)
             callback(resultTable)
         end
     )
@@ -514,7 +514,7 @@ end
 function Storage:SendHttpRequest(method, data, callback)
     print("[STORAGE] Send Data to " .. self.serverURL)
     data.secret_key = self.dedicated_server_key
-    DeepPrintTable(data)
+    -- DeepPrintTable(data)
 
     local req = CreateHTTPRequestScriptVM(method, self.serverURL)
     for key, value in pairs(data) do
@@ -522,7 +522,7 @@ function Storage:SendHttpRequest(method, data, callback)
     end
     req:Send(
         function(result)
-            print(result.Body)
+            -- print(result.Body)
             if (string.match(result.Body, "<html>")) then
                 result.Body = ""
             end
@@ -546,9 +546,27 @@ function Storage:LogError(error)
     local players = Game.players
     local player_data = {}
     for _, player in pairs(players) do
-        local unit_names =  {}
+        local units =  {}
         for _, unit in pairs(player.units) do
-            table.insert(unit_names, unit.npcclass)
+            if (unit.npc ~= nil) then
+                local modifiers = {}
+                for i=0, unit.npc:GetModifierCount()-1 do
+                    table.insert(modifiers, unit.npc:GetModifierNameByIndex(i))
+                end
+                local waypoints = {}
+                if unit.npc.waypoints ~= nil then
+                    for _, wp in pairs(unit.npc.waypoints) do
+                        table.insert(waypoints, wp:GetName())
+                    end
+                end
+                table.insert(units, {
+                    class = unit.npcclass,
+                    modifiers = modifiers,
+                    waystep = unit.npc.wayStep,
+                    waypoints = waypoints,
+                    nextTarget = tostring(unit.npc.nextTarget)
+                })
+            end
         end
         table.insert(
             player_data,
@@ -558,7 +576,7 @@ function Storage:LogError(error)
                 team_number = player:GetTeamNumber(),
                 player_id = player:GetPlayerID(),
                 user_id = player.userID,
-                unit_names = unit_names
+                units = units
             }
         )
     end
@@ -574,6 +592,7 @@ function Storage:LogError(error)
         debug = Convars:GetBool("developer"),
         date = GetSystemDate(),
         time = GetSystemTime(),
+        log = Game.serverLog,
         error = error
     }
     local msg = JSON:encode(msg_obj)

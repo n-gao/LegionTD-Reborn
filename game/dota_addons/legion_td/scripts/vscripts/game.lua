@@ -24,6 +24,7 @@ function Game.new()
     ListenToGameEvent("player_connect_full", Dynamic_Wrap(Game, "OnConnectFull"), self)
     ListenToGameEvent("player_reconnected", Dynamic_Wrap(Game, "OnPlayerReconnect"), self)
     ListenToGameEvent("player_disconnect", Dynamic_Wrap(Game, "OnPlayerDisconnect"), self)
+    self.serverLog = {}
     self.failedThinks = 0
     self.players = {}
     self.playerDatas = {}
@@ -1426,7 +1427,7 @@ end
 function SafeCall(func, ...)
     local status, result = pcall(func, ...)
     if not status then
-        Game.storage:LogError(error_msg)
+        Game.storage:LogError(result)
     -- error(error_msg)
     end
     return status, result
@@ -1438,4 +1439,12 @@ function HookSetWinnerFunction(callback)
         callback(gameRules, team)
         oldSetGameWinner(gameRules, team)
     end
+end
+
+nativePrint = print
+print = function(...)
+    if (Game.serverLog ~= nil) then
+        table.insert(Game.serverLog, tostring(...))
+    end
+    nativePrint(...)
 end
