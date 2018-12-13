@@ -66,7 +66,7 @@ end
 
 --Jemand wurde getötet
 function DuelRound:OnEntityKilled(event)
-    DeepPrintTable(event)
+    -- DeepPrintTable(event)
     local killed = EntIndexToHScript(event.entindex_killed)
     if not killed then
         return
