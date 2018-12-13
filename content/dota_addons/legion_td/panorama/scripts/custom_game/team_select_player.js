@@ -40,7 +40,10 @@ function SetTitle() {
         title = $.Localize("#legion_contributor_design");
     } else if (Contains(GameUI.CustomUIConfig().Programmers, steam_id)) {
         title = $.Localize("#legion_contributor_programming");
+    } else if (Contains(GameUI.CustomUIConfig().Supporters, steam_id)) {
+        title = $.Localize("#legion_contributor_supporter");
     }
+
     $("#PlayerTitle").text = title;
 }
 
