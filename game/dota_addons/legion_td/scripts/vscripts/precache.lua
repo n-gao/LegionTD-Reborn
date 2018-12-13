@@ -20,7 +20,7 @@ function Precacher:PrecacheEverything(context)
                 for key, value in pairs(entry) do
                     if key == "unitID" then
                         unitName = self.UnitTable[value]
-                        print("Precaching " .. unitName)
+                        -- print("Precaching " .. unitName)
                         if string.find(name, "spawn") then
                             PrecacheUnitByNameSync(unitName, context)
                         elseif string.find(name, "upgrade") then
