@@ -22,7 +22,7 @@ function modifier_king_duel_lua:GetModifierConstantHealthRegen()
     parent = self:GetParent()
     stacks = parent:GetModifierStackCount("boss_upgrade_regen_stack", parent)
     regen = parent:GetBaseHealthRegen()
-    print("stax: " .. stacks .. " Regen: " .. regen)
+    -- print("stax: " .. stacks .. " Regen: " .. regen)
     return regen * -.2
 end
 

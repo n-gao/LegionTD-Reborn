@@ -19,7 +19,7 @@ function Reincarnation( event )
         return
     end
     if casterHP == 0 and ability:IsCooldownReady() and casterMana >= abilityManaCost  then
-        print("Reincarnate")
+        -- print("Reincarnate")
         -- Variables for Reincarnation
         local reincarnate_time = ability:GetLevelSpecialValueFor( "reincarnate_time", ability:GetLevel() - 1 )
         local slow_radius = ability:GetLevelSpecialValueFor( "slow_radius", ability:GetLevel() - 1 )

@@ -191,7 +191,7 @@ function UseSkillTargetPositionOptimalRadius(entity, ability)
     for i, v in pairs(Units) do
         local Radius = ability:GetSpecialValueFor("radius") or ability.CustomAffectRadius
         if not Radius then
-            print("Tried to run UseSkillTargetPositionOptimalRadius without radius; returning")
+            -- print("Tried to run UseSkillTargetPositionOptimalRadius without radius; returning")
             return 10
         end
         local Units =
@@ -213,7 +213,7 @@ function UseSkillTargetPositionOptimalRadius(entity, ability)
     end
 
     if TargetUnit == nil then
-        print("UseSkillTargetPositionOptimalRadius: Couldn't find target unit")
+        -- print("UseSkillTargetPositionOptimalRadius: Couldn't find target unit")
         return STANDARD_THINK_TIME
     end
     entity:CastAbilityOnPosition(TargetUnit:GetAbsOrigin(), ability, -1)
@@ -240,7 +240,7 @@ function UseSkillTargetOptimalRadius(entity, ability)
     for i, v in pairs(Units) do
         local Radius = ability:GetSpecialValueFor("radius") or ability.CustomAffectRadius
         if not Radius then
-            print("Tried to run UseSkillTargetOptimalRadius without radius; returning")
+            -- print("Tried to run UseSkillTargetOptimalRadius without radius; returning")
             return 10
         end
         local Units =
@@ -262,7 +262,7 @@ function UseSkillTargetOptimalRadius(entity, ability)
     end
 
     if TargetUnit == nil then
-        print("UseSkillTargetOptimalRadius: Couldn't find target unit")
+        -- print("UseSkillTargetOptimalRadius: Couldn't find target unit")
         return STANDARD_THINK_TIME
     end
     entity:CastAbilityOnTarget(TargetUnit, ability, -1)
@@ -297,7 +297,7 @@ function UseSkillTargetMostEHPPhysical(entity, ability)
     end
 
     if TargetUnit == nil then
-        print("UseSkillTargetMostEHPPhysical: Couldn't find target unit")
+        -- print("UseSkillTargetMostEHPPhysical: Couldn't find target unit")
         return STANDARD_THINK_TIME
     end
     entity:CastAbilityOnTarget(TargetUnit, ability, -1)

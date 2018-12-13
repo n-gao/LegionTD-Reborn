@@ -25,7 +25,7 @@ function Precache(context)
     This function is used to precache resources/units/items/abilities that will be needed
     for sure in your game and that cannot or should not be precached asynchronously or
     after the game loads.
-    
+
     See GameMode:PostLoadPrecache() in barebones.lua for more information
     ]]
     print("[BAREBONES] Performing pre-load precache")

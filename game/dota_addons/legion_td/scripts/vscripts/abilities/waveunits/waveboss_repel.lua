@@ -1,5 +1,5 @@
 function RepelResetter(keys)
-    print("waveboss_repel.lua")
+    -- print("waveboss_repel.lua")
     local caster = keys.caster
     local caster_location = caster:GetAbsOrigin()
     local ability = keys.ability
@@ -7,15 +7,15 @@ function RepelResetter(keys)
     local cooldown = ability:GetCooldown(ability_level)
     local modifier_time = keys.timemodifier
     local modifier_spell = keys.spellmodifier
-    print("locals")
+    -- print("locals")
 
     ability:StartCooldown(cooldown)
     caster:RemoveModifierByName(modifier_time)
-    print("mod removed")
+    -- print("mod removed")
 
     ability:ApplyDataDrivenModifier(caster, caster, modifier_spell, {})
 
-    print("spell applied")
+    -- print("spell applied")
 
     Timers:CreateTimer(cooldown, function()
         if caster and ability then
@@ -23,5 +23,5 @@ function RepelResetter(keys)
         end
     end)
 
-    print("timer created")
+    -- print("timer created")
 end

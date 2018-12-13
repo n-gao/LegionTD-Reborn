@@ -51,7 +51,7 @@ Storage.loggedErrors = {}
 
 function Storage:Init()
     local data = LoadKeyValues("scripts/vscripts/libs/storage_settings.kv")
-    DeepPrintTable(data)
+    -- DeepPrintTable(data)
     if data == nil then
         return
     end

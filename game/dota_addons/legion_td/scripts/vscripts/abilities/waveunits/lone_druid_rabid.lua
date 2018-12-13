@@ -17,9 +17,9 @@ function Rabid( event )
     -- If the ability is found, take the ability specials and add the duration
     -- We expect a rabid_duration_bonus in the synergy ability
     if synergyAbility ~= nil then
-        print("Found ", synergyAbility:GetAbilityName(), "setting rabid bonus")
+        -- print("Found ", synergyAbility:GetAbilityName(), "setting rabid bonus")
         local rabid_duration_bonus = synergyAbility:GetLevelSpecialValueFor( "rabid_duration_bonus", synergyAbility:GetLevel() - 1 )
-        
+
         -- If the ability was leveled up, add the bonus
         if rabid_duration_bonus ~= nil then
             rabid_duration = rabid_duration + rabid_duration_bonus

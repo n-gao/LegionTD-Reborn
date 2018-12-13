@@ -158,14 +158,14 @@ function BehaviorAngel:Begin()
 
     local cooldown = self.angelAbility:GetCooldown(self.angelAbility:GetLevel() - 1)
 
-    print("found " .. #units .. "friendly units ")
+    -- print("found " .. #units .. "friendly units ")
 
     for _, unit in pairs(units) do
         if unit ~= thisEntity then
             local unitGuardian = unit:FindAbilityByName("tactician_guardian_angel")
             if unitGuardian then
                 unitGuardian:StartCooldown(600)
-                print("Putting a guardian angel on cooldown")
+                -- print("Putting a guardian angel on cooldown")
             end
         end
     end

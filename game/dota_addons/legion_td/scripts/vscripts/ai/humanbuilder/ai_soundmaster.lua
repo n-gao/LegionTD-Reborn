@@ -167,7 +167,7 @@ function BehaviorStorm:Evaluate()
 end
 
 function BehaviorStorm:Begin()
-    print("soundmaster desires to storm")
+    -- print("soundmaster desires to storm")
 
     self.endTime = GameRules:GetGameTime() + .4 -- wait a bit after casting
 

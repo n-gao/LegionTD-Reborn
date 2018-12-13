@@ -37,21 +37,21 @@ function GameRound:Begin()
         180,
         function()
             if Game:GetCurrentRound() == self then
+                print("Unstuck")
                 Game.storage:LogError("Game round stuck")
                 self:KillAll(true)
-                print("Unstuck")
             end
         end
     )
 
     -- self:MoveCameras()
 
-    print("gonna do GameRound:Begin() Spawn()-ing")
+    -- print("gonna do GameRound:Begin() Spawn()-ing")
     for ind, key in pairs(self.spawners) do
-        print("Doing key:Spawn()")
+        -- print("Doing key:Spawn()")
         key:Spawn()
     end
-    print("did GameRound:Begin() Spawn()-ing")
+    -- print("did GameRound:Begin() Spawn()-ing")
 end
 
 function GameRound:MoveCameras()

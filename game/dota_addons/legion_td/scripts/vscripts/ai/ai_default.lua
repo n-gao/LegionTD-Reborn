@@ -12,7 +12,7 @@ function InitAI(self)
         self:Unstuck()
         self.kv = Game.UnitKV[self:GetUnitName()]
         if self.kv.AbilityLevel then
-            DeepPrintTable(self.kv.AbilityLevel)
+            -- DeepPrintTable(self.kv.AbilityLevel)
             for key, val in pairs(self.kv.AbilityLevel) do
                 self:GetAbilityByIndex(tonumber(key:sub(8, 8))):SetLevel(tonumber(val))
             end

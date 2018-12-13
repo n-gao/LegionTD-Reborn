@@ -203,7 +203,7 @@ function WaveSpawner:SendIncomingUnits(team)
             distributedValues[theLane] = distributedValues[theLane] + unit.tangoValue
             tempLowestValue = distributedValues[theLane]
             for _, j in pairs(distributedValues) do
-                print("j = " .. j)
+                -- print("j = " .. j)
                 if j and j < tempLowestValue then
                     tempLowestValue = j
                 end
@@ -212,7 +212,7 @@ function WaveSpawner:SendIncomingUnits(team)
         end
     end
 
-    print("Moving send units-")
+    -- print("Moving send units-")
 
     local sendsPerMiniwave = 15
 
@@ -234,7 +234,7 @@ function WaveSpawner:SendIncomingUnits(team)
             end
             local hpos = offset + (((i - 1) % columns) * spacing)
             local vpos = (math.floor(((i - 1) % sendsPerMiniwave) / columns)) * spacing * polar
-            print("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
+            -- print("inserting into table! Offset is " .. offset .. "; coordinates " .. hpos .. ", " .. vpos)
             table.insert(positions, Vector(hpos, vpos, 0))
         end
 
@@ -245,8 +245,8 @@ function WaveSpawner:SendIncomingUnits(team)
             Timers:CreateTimer(
                 (math.floor((i - 1) / sendsPerMiniwave) * 2) + 2,
                 function()
-                    print("i = " .. i)
-                    print("k = " .. k)
+                    -- print("i = " .. i)
+                    -- print("k = " .. k)
 
                     FindClearSpaceForUnit(unit, rank1 + positions[k], true)
 
