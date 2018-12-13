@@ -51,8 +51,8 @@ function DuelRound:Begin()
 end
 
 function DuelRound:MoveCameras()
-    local radiantDuelSpawn = Game.duelSpawn[""..DOTA_TEAM_GOODGUYS]:GetAbsOrigin()
-    local direDuelSpawn = Game.duelSpawn[""..DOTA_TEAM_BADGUYS]:GetAbsOrigin()
+    local radiantDuelSpawn = Game.duelSpawn["" .. DOTA_TEAM_GOODGUYS]:GetAbsOrigin()
+    local direDuelSpawn = Game.duelSpawn["" .. DOTA_TEAM_BADGUYS]:GetAbsOrigin()
     for _, pl in pairs(Game.players) do
         local cameraTarget
         if pl:GetTeamNumber() == DOTA_TEAM_GOODGUYS then
@@ -171,6 +171,7 @@ end
 
 --Ende einer Runde
 function DuelRound:End()
+    Game:SetGameState(GAMESTATE_END_OF_ROUND)
     self.winningTeam = DOTA_TEAM_GOODGUYS
     local victoryText = "<b color='LawnGreen'>Radiant</b> <b color='white'>won the duel and earned</b> "
     if next(self.remainingUnitsRadiant) == nil then

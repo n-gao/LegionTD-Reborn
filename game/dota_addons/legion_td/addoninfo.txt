@@ -4,7 +4,7 @@
   "maps"  				"legion_td_4v4"
   "IsPlayable"  		"1"
   "PenaltiesEnabled"	"1"
-  "CheckAFKPlayers" 	"1"
+  "CheckAFKPlayers" 	"0"
   "legion_td_4v4"
   {
      "MaxPlayers"    	"8"

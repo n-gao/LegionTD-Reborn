@@ -2,8 +2,6 @@ if Unit == nil then
     Unit = class({})
 end
 
-LinkLuaModifier("modifier_unit_freeze_lua", "abilities/modifier_unit_freeze_lua.lua", LUA_MODIFIER_MOTION_NONE)
-
 Unit.UnitTable = dofile("config_unit")
 
 function Unit:GetUnitNameByID(id)
@@ -70,6 +68,7 @@ function Unit:Unlock()
         self.npc:RemoveModifierByName("modifier_invulnerable")
         self.npc:SetControllableByPlayer(-1, false)
         self.npc:Stop()
+        self.npc.unit = self
         self:EndCooldowns()
         Timers:CreateTimer(
             0.5,

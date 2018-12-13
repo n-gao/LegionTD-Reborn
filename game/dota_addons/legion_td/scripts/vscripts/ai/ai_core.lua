@@ -3,8 +3,6 @@ OPTIMAL_SEARCH_RANGE = 200
 MAX_SAME_DATA = 15
 EXPORTS = {}
 
-LinkLuaModifier("modifier_unit_freeze_lua", "abilities/modifier_unit_freeze_lua.lua", LUA_MODIFIER_MOTION_NONE)
-
 EXPORTS.Init = function(self)
     self:SetContextThink(
         "init_think",
@@ -23,12 +21,12 @@ function aiThinkStandard(self)
     if
         SafeCall(
             function()
-                if not self:IsAlive() then
-                    return
+                if self:IsNull() then
+                    return nil
                 end
                 if
                     self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or
-                        self:HasModifier("modifier_invulnerable")
+                        self:HasModifier("modifier_invulnerable") or not self:IsAlive()
                  then
                     return STANDARD_THINK_TIME
                 end
@@ -72,31 +70,27 @@ return STANDARD_THINK_TIME
 end]]
 --
 function aiThinkStandardSkill(self)
-    local thinkTime
-    local callComplete =
+    local callComplete, thinkTime =
         SafeCall(
         function()
-            if not self:IsAlive() then
-                return
+            if self:IsNull() then
+                return nil
             end
             if
                 self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or
-                    self:HasModifier("modifier_invulnerable")
+                    self:HasModifier("modifier_invulnerable") or not self:IsAlive()
              then
-                thinkTime = STANDARD_THINK_TIME
-                return
+                return STANDARD_THINK_TIME
             end
 
             for i, v in ipairs(self.abilities) do
                 if v:IsCooldownReady() and v:SkillTrigger(self) then
-                    thinkTime = v.Skill(self, v)
-                    return
+                    return v.Skill(self, v)
                 end
             end
 
             if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
-                thinkTime = self:NextWayPoint()
-                return
+                return self:NextWayPoint()
             end
 
             if self.wayStep and not GridNav:CanFindPath(self:GetAbsOrigin(), self.waypoints[self.wayStep]) then
@@ -104,12 +98,10 @@ function aiThinkStandardSkill(self)
             end
 
             if CheckStuck(self) then
-                thinkTime = self:Unstuck()
-                return
+                return self:Unstuck()
             end
 
-            thinkTime = STANDARD_THINK_TIME
-            return
+            return STANDARD_THINK_TIME
         end
     )
     if callComplete and thinkTime then

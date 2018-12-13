@@ -10,6 +10,7 @@ end
 GAMESTATE_PREPARATION = 0
 GAMESTATE_FIGHTING = 1
 GAMESTATE_END = 2
+GAMESTATE_END_OF_ROUND = 3
 STARTING_ROUND = 1
 CHECKING_INTERVALL = 1
 MAX_FAILED_THINKS = 10
@@ -31,6 +32,7 @@ function Game.new()
     self.sendLeaderRadiant = 1 -- we'll rotate who gets the biggest send each wave
     self.sendLeaderDire = 1 -- we'll rotate who gets the biggest send each wave
     self.endOfRoundListeners = {}
+    self.startOfRoundListeners = {}
     self.UnitKV = LoadKeyValues("scripts/npc/npc_units_custom.txt")
     self.DamageKV = LoadKeyValues("scripts/damage_table.kv")
     self.HeroKV = LoadKeyValues("scripts/npc/npc_heroes_custom.txt")
@@ -287,7 +289,7 @@ function Game:GetRoundCount()
 end
 
 function Game:GetDisplayRound()
-    return self.gameRound - self.doneDuels - self.lastWaveCount
+    return self.gameRound - self.doneDuels + self.lastWaveCount
 end
 
 function Game:GetTangoLimit()
@@ -358,12 +360,6 @@ function Game:Start()
         Game:UpdateUnitData()
         Game:UpdateBuilderData()
     end
-
-    pcall(
-        function()
-            Game.storage:LogError(GetDedicatedServerKey("v1"))
-        end
-    )
 end
 
 function Game:CreateGameTimer()
@@ -399,6 +395,8 @@ function Game:OnThink()
                 self.rounds[self.gameRound]:CheckEnd()
             end
             if self.gameState == GAMESTATE_END then
+            end
+            if self.gameState == GAMESTATE_END_OF_ROUND then
             end
         end
     )
@@ -472,14 +470,31 @@ end
 --Runde beendet
 function Game:RoundFinished()
     self.gridBoxes:RemoveEffects(EF_NODRAW)
-    for _, listener in pairs(self.endOfRoundListeners) do
-        SafeCall(listener)
-    end
 
     self.IncreaseRound()
     self:SetGameState(GAMESTATE_PREPARATION)
     for _, player in pairs(self.players) do
         player.tangoLimit = self:GetTangoLimit()
+    end
+
+    self:CallEndOfRoundListener()
+end
+
+function Game:CallEndOfRoundListener()
+    for key, listener in pairs(self.endOfRoundListeners) do
+        local success, ret = SafeCall(listener)
+        if (not success or ret == nil) then
+            self.endOfRoundListeners[key] = nil
+        end
+    end
+end
+
+function Game:CallStartOfRoundListener()
+    for key, listener in pairs(self.startOfRoundListeners) do
+        local success, ret = SafeCall(listener)
+        if (not success or ret == nil) then
+            self.startOfRoundListeners[key] = nil
+        end
     end
 end
 
@@ -522,6 +537,8 @@ function Game:StartNextRound()
             self:SetGameState(GAMESTATE_FIGHTING)
         end
     )
+
+    self:CallStartOfRoundListener()
 end
 
 function Game:CheckTeamLeft(team)
@@ -1076,6 +1093,14 @@ function Game:ClearBoard()
     end
 end
 
+function Game:AddEndOfRoundListener(listener)
+    table.insert(self.endOfRoundListeners, listener)
+end
+
+function Game:AddStartOfRoundListener(listener)
+    table.insert(self.startOfRoundListeners, listener)
+end
+
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
@@ -1399,12 +1424,12 @@ function Game:GetAllBuilders()
 end
 
 function SafeCall(func, ...)
-    local status, error_msg = pcall(func, ...)
+    local status, result = pcall(func, ...)
     if not status then
         Game.storage:LogError(error_msg)
     -- error(error_msg)
     end
-    return status
+    return status, result
 end
 
 function HookSetWinnerFunction(callback)
