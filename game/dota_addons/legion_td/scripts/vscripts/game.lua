@@ -628,19 +628,25 @@ function Game:OnConnectFull(keys)
     local entIndex = keys.index + 1
     local ply = EntIndexToHScript(entIndex)
     local playerID = ply:GetPlayerID()
-    if not PlayerResource:IsBroadcaster(playerID) then
-        local player = self:FindPlayerWithID(playerID)
-        if player then
-            print("Game:OnConnectFull(): Player object found for existing player.")
-            player:SetPlayerEntity(ply, keys.userid)
-        else
-            print(
-                "Game:OnConnectFull(): Player object not found for player entIndex " ..
-                    entIndex .. " playerID " .. playerID .. "; Creating."
-            )
-            local newPlayer = Player.new(ply, keys.userid)
-            self.players[keys.userid] = newPlayer
-        end
+
+    if PlayerResource:IsBroadcaster(playerID) or
+        PlayerResource:IsFakeClient(playerID) or
+        PlayerResource:IsValidPlayer(playerID) or
+        GameRules:State_Get() > DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD then
+        return
+    end
+
+    local player = self:FindPlayerWithID(playerID)
+    if player then
+        print("Game:OnConnectFull(): Player object found for existing player.")
+        player:SetPlayerEntity(ply, keys.userid)
+    else
+        print(
+            "Game:OnConnectFull(): Player object not found for player entIndex " ..
+                entIndex .. " playerID " .. playerID .. "; Creating."
+        )
+        local newPlayer = Player.new(ply, keys.userid)
+        self.players[keys.userid] = newPlayer
     end
 
     for _, p in pairs(self.players) do
@@ -656,13 +662,11 @@ function Game:OnPlayerReconnect(keys)
     local entIndex = keys.index + 1
     local ply = EntIndexToHScript(entIndex)
     local playerID = ply:GetPlayerID()
-    if not PlayerResource:IsBroadcaster(playerID) then
-        local player = self:FindPlayerWithID(playerID)
-        if player then
-            player:SetPlayerEntity(ply, keys.userid)
-        else
-            print("Who reconnected?! " .. playerID)
-        end
+    local player = self:FindPlayerWithID(playerID)
+    if player then
+        player:SetPlayerEntity(ply, keys.userid)
+    else
+        print("Who reconnected?! " .. playerID)
     end
 end
 
