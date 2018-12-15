@@ -280,7 +280,7 @@ function Game:ReadRoundConfiguration(kv)
 
         table.insert(self.rounds, roundObj)
 
-        print("Round " .. i .. " loaded: " .. roundType)
+        -- print("Round " .. i .. " loaded: " .. roundType)
         i = i + 1
     end
 end
@@ -631,8 +631,9 @@ function Game:OnConnectFull(keys)
 
     if PlayerResource:IsBroadcaster(playerID) or
         PlayerResource:IsFakeClient(playerID) or
-        PlayerResource:IsValidPlayer(playerID) or
+        not PlayerResource:IsValidPlayer(playerID) or
         GameRules:State_Get() > DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD then
+        print("Someone connected later on or is not a player.")
         return
     end
 
