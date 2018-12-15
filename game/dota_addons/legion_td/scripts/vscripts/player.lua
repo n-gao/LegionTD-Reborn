@@ -555,3 +555,13 @@ function Player:MoveCamera(target, lerp)
         }
     )
 end
+
+function Player:RemoveCooldown(unit_id)
+    CustomGameEventManager:Send_ServerToPlayer(
+        self.plyEntitie,
+        "remove_cooldown",
+        {
+            id = unit_id
+        }
+    )
+end

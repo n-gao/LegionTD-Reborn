@@ -35,6 +35,14 @@ function SendUnitSucessfull(data) {
     }
 }
 
+function RemoveCooldown(data) {
+    var panel = $.GetContextPanel();
+    if (data.id == panel.GetAttributeInt("id", 0)) {
+        panel.SetAttributeInt("nextUse", 0);
+        SetTintVisible(false);
+    }
+}
+
 function SetCooldown() {
     var panel = $.GetContextPanel();
     var cooldown = panel.GetAttributeInt("cooldown", 0);
@@ -65,3 +73,7 @@ function CheckCooldown() {
         $.Schedule(0.5, CheckCooldown);
     }
 }
+
+(function() {
+    GameEvents.Subscribe("remove_cooldown", RemoveCooldown);
+})();

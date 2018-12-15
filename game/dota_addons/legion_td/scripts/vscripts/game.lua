@@ -824,6 +824,7 @@ function Game:SendUnit(data)
     end
     if player.unitsThisRound >= MAX_INCOMEUNITS_PER_PLAYER then
         player:SendErrorCode(LEGION_ERROR_MAX_INCOMEUNIT_REACHED)
+        player:RemoveCooldown(lData.id)
         return
     end
     if player:SpendTangos(lData.cost) then
@@ -859,6 +860,7 @@ function Game:SendUnit(data)
         end
     else
         player:SendErrorCode(LEGION_ERROR_NOT_ENOUGH_TANGOS)
+        player:RemoveCooldown(lData.id)
     end
 end
 
