@@ -120,6 +120,7 @@ function WaveSpawner:SendIncomingUnits(team)
     local distributedUnits = {}
     local lowestValue = 0
     local leader = 1
+    Game:ResetSendUnitCounts()
     if team == DOTA_TEAM_GOODGUYS then
         units = Game.sendRadiant
         Game.sendRadiant = {}

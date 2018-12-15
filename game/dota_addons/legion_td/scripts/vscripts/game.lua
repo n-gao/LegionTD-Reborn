@@ -804,6 +804,12 @@ function Game:OnPlayerDisconnect(key)
     end
 end
 
+function Game:ResetSendUnitCounts()
+    for _, player in pairs(Game.players) do
+        player.unitsThisRound = 0
+    end
+end
+
 --sends a unit
 function Game:SendUnit(data)
     local lData = {
@@ -814,6 +820,10 @@ function Game:SendUnit(data)
     }
     local player = Game:FindPlayerWithID(lData.playerID)
     if not player then
+        return
+    end
+    if player.unitsThisRound >= MAX_INCOMEUNITS_PER_PLAYER then
+        player:SendErrorCode(LEGION_ERROR_MAX_INCOMEUNIT_REACHED)
         return
     end
     if player:SpendTangos(lData.cost) then

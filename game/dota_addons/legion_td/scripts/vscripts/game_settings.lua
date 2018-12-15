@@ -81,6 +81,8 @@ START_TANGO_LIMIT = 100
 TANGO_LIMIT_PER_ROUND = 25
 LEAKED_TANGO_MULTIPLIER = .07
 
+MAX_INCOMEUNITS_PER_PLAYER = 15
+
 LEGION_ERROR_BETWEEN_ROUNDS = 0
 LEGION_ERROR_NOT_ENOUGH_TANGOS = 1
 LEGION_ERROR_INVALID_LOCATION = 2
@@ -88,6 +90,7 @@ LEGION_ERROR_NOT_ENOUGH_FOOD = 3
 LEGION_ERROR_TO_CLOSE = 4
 LEGION_ERROR_TO_MANY_UPGRADES = 5
 LEGION_ERROR_DURING_DUEL = 6
+LEGION_ERROR_MAX_INCOMEUNIT_REACHED = 7
 
 errorStrings = {}
 errorStrings[LEGION_ERROR_BETWEEN_ROUNDS] = "#Error_not_between_rounds"
@@ -97,6 +100,7 @@ errorStrings[LEGION_ERROR_NOT_ENOUGH_FOOD] = "#Error_not_enough_food"
 errorStrings[LEGION_ERROR_TO_CLOSE] = "#Error_to_close_to_another"
 errorStrings[LEGION_ERROR_TO_MANY_UPGRADES] = "#Error_to_many_king_upgrades"
 errorStrings[LEGION_ERROR_DURING_DUEL] = "#Error_not_possible_in_last_duel"
+errorStrings[LEGION_ERROR_MAX_INCOMEUNIT_REACHED] = "#Error_max_incomeunit_reached"
 
 voteOptions = {}
 voteOptions["tango_limit"] = false

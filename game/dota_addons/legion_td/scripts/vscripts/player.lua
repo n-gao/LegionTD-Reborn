@@ -28,6 +28,7 @@ function Player.new(plyEntitie, userID)
     self.experience = 0
     self.fractionKills = {}
     self.wonDuels = 0
+    self.unitsThisRound = 0
     self.buildUnits = {}
     self.killedUnits = {}
     self.leakedUnits = {}
@@ -40,6 +41,7 @@ function Player:BuildUnit(unitname)
 end
 
 function Player:SendUnit(unitname)
+    self.unitsThisRound = self.unitsThisRound + 1
     self.sendUnits[unitname] = (self.sendUnits[unitname] or 0) + 1
 end
 
