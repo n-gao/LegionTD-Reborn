@@ -628,20 +628,20 @@ function Game:OnConnectFull(keys)
     local entIndex = keys.index + 1
     local ply = EntIndexToHScript(entIndex)
     local playerID = ply:GetPlayerID()
-
-    if PlayerResource:IsBroadcaster(playerID) or
-        PlayerResource:IsFakeClient(playerID) or
-        not PlayerResource:IsValidPlayer(playerID) or
-        GameRules:State_Get() > DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD then
-        print("Someone connected later on or is not a player.")
-        return
-    end
-
     local player = self:FindPlayerWithID(playerID)
+
     if player then
         print("Game:OnConnectFull(): Player object found for existing player.")
         player:SetPlayerEntity(ply, keys.userid)
     else
+        if PlayerResource:IsBroadcaster(playerID) or
+            PlayerResource:IsFakeClient(playerID) or
+            not PlayerResource:IsValidPlayer(playerID) or
+            GameRules:State_Get() > DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD then
+            print("Someone connected later on or is not a player.")
+            return
+        end
+
         print(
             "Game:OnConnectFull(): Player object not found for player entIndex " ..
                 entIndex .. " playerID " .. playerID .. "; Creating."

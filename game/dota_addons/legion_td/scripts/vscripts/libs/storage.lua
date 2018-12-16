@@ -546,30 +546,35 @@ function Storage:LogError(error)
     local players = Game.players
     local player_data = {}
     for _, player in pairs(players) do
-        local units =  {}
-        if player.unit ~= nil then
-            for _, unit in pairs(player.units) do
-                if (unit.npc ~= nil) then
-                    local modifiers = {}
-                    for i=0, unit.npc:GetModifierCount()-1 do
-                        table.insert(modifiers, unit.npc:GetModifierNameByIndex(i))
-                    end
-                    local waypoints = {}
-                    if unit.npc.waypoints ~= nil then
-                        for _, wp in pairs(unit.npc.waypoints) do
-                            table.insert(waypoints, wp:GetName())
+        local units = {}
+        pcall(
+            function()
+                for _, unit in pairs(player.units) do
+                    if (unit.npc ~= nil) then
+                        local modifiers = {}
+                        for i = 0, unit.npc:GetModifierCount() - 1 do
+                            table.insert(modifiers, unit.npc:GetModifierNameByIndex(i))
                         end
+                        local waypoints = {}
+                        if unit.npc.waypoints ~= nil then
+                            for _, wp in pairs(unit.npc.waypoints) do
+                                table.insert(waypoints, wp:GetName())
+                            end
+                        end
+                        table.insert(
+                            units,
+                            {
+                                class = unit.npcclass,
+                                modifiers = modifiers,
+                                waystep = unit.npc.wayStep,
+                                waypoints = waypoints,
+                                nextTarget = tostring(unit.npc.nextTarget)
+                            }
+                        )
                     end
-                    table.insert(units, {
-                        class = unit.npcclass,
-                        modifiers = modifiers,
-                        waystep = unit.npc.wayStep,
-                        waypoints = waypoints,
-                        nextTarget = tostring(unit.npc.nextTarget)
-                    })
                 end
             end
-        end
+        )
         table.insert(
             player_data,
             {
