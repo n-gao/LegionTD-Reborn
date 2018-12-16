@@ -1,6 +1,6 @@
 # Legion TD: Reborn
 ![Steam](https://img.shields.io/badge/Steam-Workshop-green.svg?logo=steam&logoColor=white&link=https://steamcommunity.com/sharedfiles/filedetails/?id=541930328)
-![Homepage](https://img.shields.io/badge/n--gao.de-Homepage-green.svg?link=http://n-gao.de)
+![Homepage](https://img.shields.io/badge/n--gao.de-Homepage-green.svg?link=http://legiontd.n-gao.de)
 ![Discord](https://img.shields.io/badge/Discord-Server-green.svg?logo=discord&logoColor=white&link=https://discord.gg/DACzQn)
 ![Donate](https://img.shields.io/badge/PayPal-Donate-green.svg?logo=paypal&link=https://paypal.me/nicholasgao)
 
