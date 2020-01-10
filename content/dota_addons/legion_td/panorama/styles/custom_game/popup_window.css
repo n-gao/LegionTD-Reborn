@@ -1,0 +1,114 @@
+#PopupWindow
+{
+	width: 1200px;
+	height: 676px;
+	padding: 0px;
+	overflow: clip;
+	flow-children: none;
+	 border: 1px solid #5e6869;	
+	align: center center;
+}
+
+#BackgroundImage
+{
+	horizontal-align: center;
+	width: 1600px;
+	height: 676px;
+	background-image: url("file://{images}/custom_game/spring_cleaning.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left: -90px;
+}
+
+#Contents
+{
+	flow-children: down;
+	vertical-align: bottom;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	background-color: #000e;
+	padding: 16px 20px 20px 20px;
+}
+
+#Title
+{
+	font-weight: semi-bold;
+    color: gradient( linear, 0% 0%, 0% 100%, from( #fff7e8 ), to( #9e8364 ) );
+	font-size: 40px;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 8px 2.0 black;
+}
+
+#Message
+{
+	color: #ccc;
+	text-shadow: 0px 0px 4px 2.0 black;
+	vertical-align: bottom;
+	max-width: 600px;
+	font-size: 20px;
+}
+
+#VersionNumber
+{
+	horizontal-align: right;
+	width: 100%;
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 12px;
+	font-size: 60px;
+	opacity: 1.5;
+	text-transform: uppercase;
+	color: gradient( linear, 0% 0%, 0% 100%, from( #fff7e8 ), to( #9e8364 ) );
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-shadow: 0px 0px 8px 2.0 black;
+}
+
+#Buttons
+{
+	vertical-align: bottom;
+	horizontal-align: right;
+	padding: 20px;
+}
+
+#Buttons TextButton
+{
+	margin-left: 20px;
+}
+
+#DiscordButton
+{
+	width: 325px;
+	height: 100px;
+	padding: 4px 12px 4px 12px;
+    horizontal-align: right;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #7289DA ), to( #7289DA ) );
+	border-top: 1px solid #2C2F33;
+	border-bottom: 1px solid #2C2F33;
+	border-left: 1px solid #2C2F33; 
+	border-right: 1px solid #2C2F33;
+	border-radius: 8px;
+	margin-top: 85px;
+	margin-right: 75px;
+	tooltip-position: bottom;
+}
+
+#DiscordButton:hover
+{
+	pre-transform-scale2d: 1.01;
+    box-shadow: #000000ff 0px 0px 16px 0px;
+}
+
+#DiscordImage
+{
+	background-size: 100%;
+	horizontal-align: center;
+}
+
+#EmoticonReward
+{
+	width: 30px;
+	horizontal-align: center;
+	margin-top: -40px;
+	margin-left: 110px;
+}

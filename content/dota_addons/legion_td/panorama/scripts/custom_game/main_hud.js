@@ -260,6 +260,19 @@ function OnStatisticsButtonPressed() {
     overlay.ToggleClass("ShowStatistics");
 }
 
+function OnContinueButtonPressed()
+{
+	var panel = $("#PopupWindow");
+	panel.visible = !panel.visible;
+	Game.EmitSound("ui.profile_close")
+}
+
+ $.Schedule(15, function()
+    {
+        var panel = $("#PopupWindow");
+		panel.visible = false;
+    });
+
 function UpdatePlayerInfo(data) {
     UpdateInfoPanel();
 }
