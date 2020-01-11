@@ -1,3 +1,9 @@
+@keyframes 'blinker' {
+    50% {
+        opacity: 0.3;
+    }
+}
+
 #PopupWindow
 {
 	width: 1200px;
@@ -5,8 +11,9 @@
 	padding: 0px;
 	overflow: clip;
 	flow-children: none;
-	 border: 1px solid #5e6869;	
+	border: 1px solid #5e6869;	
 	align: center center;
+	visibility: collapse;
 }
 
 #BackgroundImage
@@ -105,10 +112,44 @@
 	horizontal-align: center;
 }
 
-#EmoticonReward
+#StyleButtons
 {
-	width: 30px;
-	horizontal-align: center;
-	margin-top: -40px;
-	margin-left: 110px;
+	width: 700px;
+	opacity: 1;
+	
+	height: fit-children; 
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-bottom: 170px;
+	margin-right: -7px;
+
 }
+
+#NextButton
+{
+	horizontal-align: right;
+	border-radius: 8px;
+	height: 44px;
+	background-image: url("s2r://panorama/images/textures/glassbutton_pink_psd.vtex");
+	background-size: 100%;
+	border: 0px solid transparent;
+	padding-left: 16px;
+	padding-right: 16px;
+	
+	transition-property: brightness, hue-rotation, background-image;
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-in;
+	
+	animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 10;
+	
+	tooltip-position: left;
+}
+
+#NextButton:hover
+{
+	brightness: 2;
+}
+

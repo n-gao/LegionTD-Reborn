@@ -20,12 +20,18 @@
 					<Label id="Message" text="#Call_To_Arms_Description"/>
 				</Panel>
 				<Label id="VersionNumber" text="#Call_to_Arms"/>
-				<Button id="DiscordButton"  onactivate="ExternalBrowserGoToURL('https://discord.gg/pmMnfdA');" onmouseover="UIShowTextTooltip( #Ad_updated)"  onmouseout="UIHideTextTooltip()">
+				<Button id="DiscordButton"  onactivate="ExternalBrowserGoToURL('https://discord.gg/pmMnfdA');" onmouseover="UIShowTextTooltip(#Ad_updated)"  onmouseout="UIHideTextTooltip()">
 					<Image id="DiscordImage" src="file://{images}/custom_game/game_info/Discord.png" />
 				</Button>
 				<Panel id="Buttons" class="PopupButtonRow">
-					<TextButton class="ButtonBevel" text="#DOTA_Continue" onactivate="OnContinueButtonPressed()"/>
+					<TextButton class="ButtonBevel" text="#DOTA_Continue" onactivate="OnContinueButtonPressed()" />
 				</Panel>
+			</Panel>
+	
+			<Panel id="StyleButtons" hittest="false">
+				<Button class="ButtonBevel" id="NextButton" onactivate="OnCleaningButtonPressed()" onload="DOTAShowTextTooltip('#Announcement')" onmouseover="UIShowTextTooltip(#Announcement)"  onmouseout="UIHideTextTooltip()">
+					<Label id="Style2ButtonLabel" text="#SPRING_CLEANING"/>
+				</Button>
 			</Panel>
 	
             <Panel hittest="false" class="InfoPanel" id="InfoPanel">

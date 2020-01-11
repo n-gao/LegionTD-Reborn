@@ -263,15 +263,17 @@ function OnStatisticsButtonPressed() {
 function OnContinueButtonPressed()
 {
 	var panel = $("#PopupWindow");
-	panel.visible = !panel.visible;
+	panel.visible = false;
 	Game.EmitSound("ui.profile_close")
 }
 
- $.Schedule(15, function()
-    {
-        var panel = $("#PopupWindow");
-		panel.visible = false;
-    });
+function OnCleaningButtonPressed()
+{
+	var panel = $("#PopupWindow");
+	panel.visible = !panel.visible;
+	Game.EmitSound("ui.profile_open")
+}
+
 
 function UpdatePlayerInfo(data) {
     UpdateInfoPanel();

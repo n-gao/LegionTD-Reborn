@@ -34,7 +34,7 @@
 }
 
 #CurrentRound {
-    margin-top: -20px;
+    margin-top: -15px;
     horizontal-align: center;
     vertical-align: middle;
     font-weight: bold;
@@ -46,7 +46,7 @@
 }
 
 #Time {
-    margin-top: -22px;
+    margin-top: -15px;
     font-size: 18px;
     font-weight: bolder;
     color: white;
