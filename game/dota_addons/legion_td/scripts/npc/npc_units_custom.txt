@@ -13475,7 +13475,7 @@
             "Level"    "1"
             "HealthBarOffset"    "140"
             "Vscripts"    "ai/ai_default.lua"
-            "Ability1"    "enchantress_untouchable"
+            "Ability1"    "enchantress_untouchable_lua"
             "ArmorPhysical"    "3"
             "MagicalResistance"    "0"
             "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
