@@ -214,10 +214,10 @@ Label .xp {
 	margin-left: 55px;
 	margin-top: 100px;
 	border-style: solid;
-    border-width: 1px;
-    border-color: #444444;
+	border-width: 1px;
+	border-color: #444444;
 	border-radius: 7px;
-  visibility: collapse;
+	visibility: collapse;
 	flow-children: down;
 }
 
