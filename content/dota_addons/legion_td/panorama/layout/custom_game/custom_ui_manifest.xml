@@ -43,16 +43,21 @@
 
 
     var newUI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
-
-    newUI.FindChildTraverse("StatBranch").style.visibility = "collapse";
-
+    var NoGlyphAndRadar = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("minimap_container");
+    var NoTPScrollUI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
+    var NoKDA = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("stackable_side_panels");
+    
+	newUI.FindChildTraverse("StatBranch").style.visibility = "collapse";
+	//NoGlyphAndRadar.FindChildTraverse("GlyphScanContainer").style.visibility = "collapse";
+	NoTPScrollUI.FindChildTraverse("inventory_tpscroll_container").style.visibility = "collapse";
+	NoKDA.FindChildTraverse("quickstats").style.visibility = "collapse";
+	NoKDA.FindChildTraverse("PlusStatus").style.visibility = "collapse";
     $.Msg(DotaDefaultUIElement_t);
     GameUI.CustomUIConfig().dotaUi = newUI;
     </script>
     <Panel>
         <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/main_hud.xml" />
         <CustomUIElement type="FlyoutScoreboard" layoutfile="file://{resources}/layout/custom_game/multiteam_flyout_scoreboard.xml" />
-        <CustomUIElement type="GameInfo" layoutfile="file://{resources}/layout/custom_game/game_info_panel.xml" />
         <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/barebones_notifications.xml" />
         <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/waveinfo_notifications.xml" />
     </Panel>
