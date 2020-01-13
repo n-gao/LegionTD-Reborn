@@ -596,7 +596,7 @@
 #HealthBarsHolder {
 	width: 300px;
 	height: 80px;
-	background-color: gradient( linear, 0% 0%, 0% 100%, from( #272d2eee ), to( #131617ee ) );
+	background-image: url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex");
 	margin-top: 300px;
 	margin-left: -1px;
 	align: left center;
