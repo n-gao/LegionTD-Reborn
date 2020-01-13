@@ -40,7 +40,7 @@ function OnLockAndStartPressed() {
     Game.SetAutoLaunchEnabled(false);
 
     // Set the remaining time before the game starts
-    Game.SetRemainingSetupTime(4);
+    Game.SetRemainingSetupTime(15);
 }
 
 
