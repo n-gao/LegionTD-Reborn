@@ -207,29 +207,29 @@ Label .xp {
 }
 
 #InfoPanel {
-	width: 500px;
-	height: 670px;
-	background-color: #000000BA;
-	margin-left: 55px;
-	margin-top: 100px;
-	border-style: solid;
+    width: 500px;
+    height: 670px;
+    background-color: #000000BA;
+    margin-left: 55px;
+    margin-top: 100px;
+    border-style: solid;
     border-width: 1px;
     border-color: #444444;
-	border-radius: 7px;
-  visibility: collapse;
-	flow-children: down;
+    border-radius: 7px;
+    visibility: collapse;
+    flow-children: down;
 }
 
 
 .InfoLabel
 {
-	margin-top: 15px;
-	margin-left: 15px;
-	horizontal-align: center;
-	font-size: 55px;
-	color: orangered;
-	text-shadow: 2px 2px 2px #000000;
-	font-weight: bold;
-	text-transform: uppercase;
+    margin-top: 15px;
+    margin-left: 15px;
+    horizontal-align: center;
+    font-size: 55px;
+    color: orangered;
+    text-shadow: 2px 2px 2px #000000;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
