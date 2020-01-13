@@ -13,6 +13,7 @@
         <include src="file://{resources}/scripts/custom_game/utils.js" />
         <include src="file://{resources}/scripts/custom_game/main_hud.js" />
 		<include src="file://{resources}/scripts/custom_game/legion_creator_panel.js" />
+		<include src="file://{resources}/scripts/custom_game/health_bars.js" />
     </scripts>
 	<script>
 		function AddContributor(name, steamId, parent) {
@@ -35,6 +36,15 @@
     </script>
     <Panel hittest="false" class="Hud">
         <Panel hittest="false" class="DontKnow">
+		
+			<Panel hittest="false" id="HealthBarsHolder">
+				<Image id="RadiantKing" hittest="true" src="file://{images}/custom_game/RadiantKing.png" onmouseover="UIShowTextTooltip(#Radiant_King)"  onmouseout="UIHideTextTooltip()" />
+				<Panel hittest="false" id="EmptyBarRadiant">
+				</Panel>
+				<Image id="DireKing" hittest="true" src="file://{images}/custom_game/DireKing.png" onmouseover="UIShowTextTooltip(#Dire_King)"  onmouseout="UIHideTextTooltip()" />
+				<Panel hittest="false" id="EmptyBarDire">
+				</Panel>
+			</Panel>
 			
 			<Panel hittest="false" id="TopLeftMenu">
 				<Button id="InformationButton" class="TopLeftButton" onload="DOTAShowTextTooltip('#Information')" onactivate="OnInformationButtonPressed()" onmouseover="UIShowTextTooltip(#Information)"  onmouseout="UIHideTextTooltip()"/>
@@ -70,19 +80,6 @@
 				<Button class="CloseButton" onactivate="InformationPanelCloseButtonClicked()" />
 			</Panel>
 			
-			<Panel hittest="false" id="PopupWindow">
-				<Panel id="BackgroundImage"/>
-				<Panel id="Contents">
-					<Label id="Title" text="#SPRING_CLEANING"/>
-					<Label id="Message" text="#Call_To_Arms_Description"/>
-				</Panel>
-				<Label id="VersionNumber" text="#Call_to_Arms"/>
-				
-				<Panel id="Buttons" class="PopupButtonRow">
-					<TextButton class="ButtonBevel" text="#DOTA_Continue" onactivate="OnContinueButtonPressed()" />
-				</Panel>
-			</Panel>
-	
 			 <Panel hittest="false" class="SkipButtonPanel">
                 <Button id="SkipButton" onactivate="OnSkipButtonPressed()">
                     <Label id="SkipLabel" class="ButtonLabel" text="#Ready"/>
