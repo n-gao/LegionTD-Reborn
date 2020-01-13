@@ -191,14 +191,14 @@ Label .xp {
 
 .GameInformationPanel
 {
-	background-image: url("file://{images}/custom_game/game_info/topbar.png");
-	background-repeat: no-repeat;
-	margin-top: 120px;
-	margin-left: 25px;
-	border-radius: 10px;
-	width: 690px;
-	height: 164px;
-	opacity: 1.5;
+    background-image: url("file://{images}/custom_game/game_info/topbar.png");
+    background-repeat: no-repeat;
+    margin-top: 120px;
+    margin-left: 25px;
+    border-radius: 10px;
+    width: 690px;
+    height: 164px;
+    opacity: 1.5;
 }
 
 #TitleFont
