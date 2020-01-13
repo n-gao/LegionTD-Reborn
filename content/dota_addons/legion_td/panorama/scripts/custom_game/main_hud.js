@@ -238,6 +238,7 @@ function AddUnits(units) {
 
 function OnShopButtonPressed() {
     $("#ShopPanel").ToggleClass("ShopPanelVisible");
+	Game.EmitSound("ui.profile_close")
 }
 
 function OnMinimizedButtonPressed() {
@@ -245,6 +246,7 @@ function OnMinimizedButtonPressed() {
 }
 
 function OnSkipButtonPressed() {
+	Game.EmitSound("ui.map_open")
     $.GetContextPanel().SetHasClass("SkipPressed", true);
     var data = {
         playerID: Players.GetLocalPlayer()
@@ -260,18 +262,24 @@ function OnStatisticsButtonPressed() {
     overlay.ToggleClass("ShowStatistics");
 }
 
+function OnInformationButtonPressed()
+{
+	Game.EmitSound("ui.profile_close")
+	var panel = $("#InformationPanelRoot");
+	panel.visible = !panel.visible;
+}
+
+function InformationPanelCloseButtonClicked()
+{
+	var panel = $("#InformationPanelRoot");
+	panel.visible = false;
+}
+
 function OnContinueButtonPressed()
 {
 	var panel = $("#PopupWindow");
 	panel.visible = false;
 	Game.EmitSound("ui.profile_close")
-}
-
-function OnCleaningButtonPressed()
-{
-	var panel = $("#PopupWindow");
-	panel.visible = !panel.visible;
-	Game.EmitSound("ui.profile_open")
 }
 
 

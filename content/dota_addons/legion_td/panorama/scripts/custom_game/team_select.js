@@ -238,38 +238,37 @@ function CheckForHostPrivileges() {
 //--------------------------------------------------------------------------------------------------
 // Update the state for the transition timer periodically
 //--------------------------------------------------------------------------------------------------
-function UpdateTimer() {
-    var gameTime = Game.GetGameTime();
-    var transitionTime = Game.GetStateTransitionTime();
+function UpdateTimer()
+{
+	var gameTime = Game.GetGameTime();
+	var transitionTime = Game.GetStateTransitionTime();
 
-    CheckForHostPrivileges();
+	CheckForHostPrivileges();
+	
+	var mapInfo = Game.GetMapInfo();
+	$( "#MapInfo" ).SetDialogVariable( "map_name", mapInfo.map_display_name );
 
-    var mapInfo = Game.GetMapInfo();
-    $("#MapInfo").SetDialogVariable("map_name", mapInfo.map_display_name);
+	if ( transitionTime >= 0 )
+	{
+		$( "#StartGameCountdownTimer" ).SetDialogVariableInt( "countdown_timer_seconds", Math.max( 0, Math.floor( transitionTime - gameTime ) ) );
+		$( "#StartGameCountdownTimer" ).SetHasClass( "countdown_active", true );
+		$( "#StartGameCountdownTimer" ).SetHasClass( "countdown_inactive", false );
+	}
+	else
+	{
+		$( "#StartGameCountdownTimer" ).SetHasClass( "countdown_active", false );
+		$( "#StartGameCountdownTimer" ).SetHasClass( "countdown_inactive", true );
+	}
 
-    if (transitionTime >= 0) {
-        $("#StartGameCountdownTimer").SetDialogVariableInt("countdown_timer_seconds", Math.max(0, Math.floor(transitionTime - gameTime)));
-        $("#StartGameCountdownTimer").SetHasClass("countdown_active", true);
-        $("#StartGameCountdownTimer").SetHasClass("countdown_inactive", false);
-    } else {
-        $("#StartGameCountdownTimer").SetHasClass("countdown_active", false);
-        $("#StartGameCountdownTimer").SetHasClass("countdown_inactive", true);
-    }
+	var autoLaunch = Game.GetAutoLaunchEnabled();
+	$( "#StartGameCountdownTimer" ).SetHasClass( "auto_start", autoLaunch );
+	$( "#StartGameCountdownTimer" ).SetHasClass( "forced_start", ( autoLaunch == false ) );
 
-    var autoLaunch = Game.GetAutoLaunchEnabled();
-    $("#StartGameCountdownTimer").SetHasClass("auto_start", autoLaunch);
-    $("#StartGameCountdownTimer").SetHasClass("forced_start", (autoLaunch == false));
-
-    var remainingTime = min_wait_time - (Game.GetGameTime() - startTime);
-    $("#WaitSecondsLabel").text = Math.round(remainingTime);
-
-    // Allow the ui to update its state based on team selection being locked or unlocked
-    $.GetContextPanel().SetHasClass("min_time_not_reached", remainingTime > 0);
-    $.GetContextPanel().SetHasClass("min_time_reached", remainingTime <= 0);
-    $.GetContextPanel().SetHasClass("teams_locked", Game.GetTeamSelectionLocked());
-    $.GetContextPanel().SetHasClass("teams_unlocked", Game.GetTeamSelectionLocked() == false);
-
-    $.Schedule(0.1, UpdateTimer);
+	// Allow the ui to update its state based on team selection being locked or unlocked
+	$.GetContextPanel().SetHasClass( "teams_locked", Game.GetTeamSelectionLocked() );
+	$.GetContextPanel().SetHasClass( "teams_unlocked", Game.GetTeamSelectionLocked() == false );
+		
+	$.Schedule( 0.1, UpdateTimer );
 }
 
 //--------------------------------------------------------------------------------------------------

@@ -17617,7 +17617,7 @@
             "05"
             {
                 "var_type"    "FIELD_INTEGER"
-                "armor_tooltip"    "3"
+                "armor_tooltip"    "1"
             }
 
             "06"
@@ -17665,13 +17665,13 @@
             "01"
             {
                 "var_type"    "FIELD_INTEGER"
-                "atk_damage_tooltip"    "120"
+                "atk_damage_tooltip"    "100"
             }
 
             "02"
             {
                 "var_type"    "FIELD_FLOAT"
-                "atk_speed_tooltip"    "0.8"
+                "atk_speed_tooltip"    "1"
             }
 
             "03"
@@ -17683,13 +17683,13 @@
             "04"
             {
                 "var_type"    "FIELD_INTEGER"
-                "health_tooltip"    "350"
+                "health_tooltip"    "300"
             }
 
             "05"
             {
                 "var_type"    "FIELD_INTEGER"
-                "armor_tooltip"    "2"
+                "armor_tooltip"    "0"
             }
 
             "06"
@@ -17905,7 +17905,7 @@
             "05"
             {
                 "var_type"    "FIELD_INTEGER"
-                "armor_tooltip"    "3"
+                "armor_tooltip"    "0"
             }
 
             "06"
@@ -18714,7 +18714,7 @@
         "AbilityTextureName"    "spawn_zombie"
         "MaxLevel"    "1"
         "AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-        "AbilityGoldCost"    "65"
+        "AbilityGoldCost"    "75"
         "AbilityCooldown"    "1.0"
         "OnSpellStart"
         {
@@ -18749,13 +18749,13 @@
             "04"
             {
                 "var_type"    "FIELD_INTEGER"
-                "health_tooltip"    "325"
+                "health_tooltip"    "290"
             }
 
             "05"
             {
                 "var_type"    "FIELD_INTEGER"
-                "armor_tooltip"    "3"
+                "armor_tooltip"    "1"
             }
 
             "06"
