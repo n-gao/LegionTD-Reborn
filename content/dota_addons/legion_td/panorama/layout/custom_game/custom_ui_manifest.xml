@@ -48,7 +48,7 @@
     var NoKDA = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("stackable_side_panels");
     
 	newUI.FindChildTraverse("StatBranch").style.visibility = "collapse";
-	NoGlyphAndRadar.FindChildTraverse("GlyphScanContainer").style.visibility = "collapse";
+	//NoGlyphAndRadar.FindChildTraverse("GlyphScanContainer").style.visibility = "collapse";
 	NoTPScrollUI.FindChildTraverse("inventory_tpscroll_container").style.visibility = "collapse";
 	NoKDA.FindChildTraverse("quickstats").style.visibility = "collapse";
 	NoKDA.FindChildTraverse("PlusStatus").style.visibility = "collapse";
