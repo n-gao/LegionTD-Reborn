@@ -52,10 +52,9 @@ Label {
     margin-top: 32px;
     margin-left: 20px;
     text-transform: uppercase;
-	
 	color: #fff;
-	font-weight: semi-bold;
-	text-shadow: 0px 0px 4px #CD6BFB;
+    font-weight: semi-bold;
+    text-shadow: 0px 0px 4px #CD6BFB;
 }
 
 #ThroneText,
