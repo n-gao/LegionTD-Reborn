@@ -7,9 +7,9 @@
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 2px;
-	horizontal-align: center;
-	color: white;
-	padding: 10px;
+    horizontal-align: center;
+    color: white;
+    padding: 10px;
 }
 
 DOTAAvatarImage {
@@ -38,5 +38,5 @@ DOTAAvatarImage {
     horizontal-align: center;
     text-shadow: 2px 2px 2px black;
     white-space: nowrap;
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
