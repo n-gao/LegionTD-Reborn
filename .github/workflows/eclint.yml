@@ -15,7 +15,8 @@ jobs:
           node-version: 12.x
       - name: Install eclint
         run: npm install -g eclint
-      - name: Test
-        run: ls
+      - name: test
+        run: exit 1
       - name: Eclint check
         run: eclint check **/*
+        shell: bash
