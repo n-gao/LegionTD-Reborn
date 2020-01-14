@@ -1,0 +1,14 @@
+name: Check Editorconfig
+
+on:
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  editor_check:
+    runs-on: [ubuntu-latest]
+    name: Check Editor Config
+    steps:
+      - name: EditorConfig-Action
+        uses: zbeekman/EditorConfig-Action@v1.1.1
