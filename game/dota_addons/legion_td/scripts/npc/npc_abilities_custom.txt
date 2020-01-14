@@ -17456,7 +17456,7 @@
             "particle"	"particles/units/heroes/hero_viper/viper_poison_debuff.vpcf"
         }
 
-		// Ability General
+        // Ability General
         //-------------------------------------------------------------------------------------------------------------
         "AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
         "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
