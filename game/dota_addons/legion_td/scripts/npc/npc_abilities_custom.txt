@@ -1526,7 +1526,7 @@
             "02"
             {
                 "var_type"                    "FIELD_INTEGER"
-                "crit_damage"                "275"
+                "crit_damage"                "225"
             }
             "03"
             {
@@ -2206,7 +2206,7 @@
             "04"
             {
                 "var_type"                    "FIELD_FLOAT"
-                "dmg_multiplier"            "0.25"
+                "dmg_multiplier"            "0.15"
             }
         }
 
@@ -4403,7 +4403,7 @@
             "05"
             {
                 "var_type"                        "FIELD_INTEGER"
-                "damage_per_second"                "40"
+                "damage_per_second"                "25"
             }
         }
 
@@ -17178,7 +17178,9 @@
     "undeadbuilder_passive"
     {
         "BaseClass" "ability_datadriven"
-        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"    "necrolyte_sadist"
+        "MaxLevel"				"1"
 
         "AbilitySpecial"
         {
@@ -17430,6 +17432,76 @@
                     "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"    "%bonus_attack_speed"
                     "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"    "%bonus_movement_speed"
                 }
+            }
+        }
+    }
+    //=================================================================================================================
+    // Viper: Poison Attack (Lua version)
+    //=================================================================================================================
+    "viper_poison_attack_lua"
+    {
+        // Ability Technical Aspect
+        // base script folder	: scripts/vscripts
+        // base texture folder	: resource/flash3/images/spellicons
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"ability_lua"
+        "ScriptFile"					"abilities/undeadbuilder/viper_poison_attack_lua"
+        "AbilityTextureName"			"viper_poison_attack"
+        "FightRecapLevel"				"1"
+        "MaxLevel"						"1"
+        "precache"
+        {
+            "soundfile"	"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
+            "particle"	"particles/units/heroes/hero_viper/viper_poison_attack.vpcf"
+            "particle"	"particles/units/heroes/hero_viper/viper_poison_debuff.vpcf"
+        }
+        
+        // Ability General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
+        "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+        "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+        "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+        // Ability Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"				"600"
+        "AbilityCastPoint"				"0"
+
+        // Ability Resource
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"				"2"
+        "AbilityManaCost"				"0"
+
+        // Damage
+        //-------------------------------------------------------------------------------------------------------------
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"						"FIELD_FLOAT"
+                "duration"						"2"
+            }
+            "02"
+            {
+                "var_type"						"FIELD_FLOAT"
+                "damage"						"0.15"
+            }
+            "03"
+            {
+                "var_type"						"FIELD_INTEGER"
+                "bonus_movement_speed"			"-15"
+            }
+            "04"
+            {
+                "var_type"						"FIELD_INTEGER"
+                "bonus_attack_speed"			"-15"
             }
         }
     }

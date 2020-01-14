@@ -4,7 +4,6 @@
         <include src="file://{resources}/styles/custom_game/main_hud.css" />
         <include src="file://{resources}/styles/custom_game/statistics.css" />
         <include src="file://{resources}/styles/custom_game/shop.css" />
-        <include src="file://{resources}/styles/custom_game/popup_window.css" />
         <include src="file://{resources}/styles/custom_game/information_panel.css" />
         <include src="file://{resources}/styles/custom_game/legion_creator_panel.css" />
         <include src="file://{resources}/styles/custom_game/game_info_panel.css" />
@@ -22,17 +21,13 @@
             newPlayerPanel.SetAttributeString("creator_name", name);
             newPlayerPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_creator_panel.xml", false, false);
         }
-        GameUI.CustomUIConfig().Programmers = [ ];
         GameUI.CustomUIConfig().GameDesigners = [ "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120"];
         GameUI.CustomUIConfig().Creator = [ "76561198027964324" ];
-        GameUI.CustomUIConfig().Leaders = [ "76561198027964324", "76561198249367546" ];
         GameUI.CustomUIConfig().PreviousLeaders = [ "76561198027964324", "76561198249367546", "76561198030851434" ];
 
-        GameUI.CustomUIConfig().Programmers.forEach(function(entry){ AddContributor("", entry, $("#Programmers"))});
         GameUI.CustomUIConfig().GameDesigners.forEach(function(entry){ AddContributor("", entry, $("#GameDesigners"))});
         GameUI.CustomUIConfig().Creator.forEach(function(entry){ AddContributor("", entry, $("#Creators"))});
         GameUI.CustomUIConfig().PreviousLeaders.forEach(function(entry){ AddContributor("", entry, $("#PreviousLeaders"))});
-        //GameUI.CustomUIConfig().Leaders.forEach(function(entry){ AddContributor("", entry, $("#Leaders"))});
     </script>
     <Panel hittest="false" class="Hud">
         <Panel hittest="false" class="DontKnow">

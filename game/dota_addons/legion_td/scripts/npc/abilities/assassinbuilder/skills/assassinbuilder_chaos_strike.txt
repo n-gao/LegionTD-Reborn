@@ -15,7 +15,7 @@
         "02"
         {
             "var_type"                    "FIELD_INTEGER"
-            "crit_damage"                "275"
+            "crit_damage"                "225"
         }
         "03"
         {
