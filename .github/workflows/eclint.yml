@@ -9,13 +9,13 @@ jobs:
     
       steps:
       - uses: actions/checkout@v1
-      - name: Use Node.js 12.x
+      - name: Install Node.js 12.x
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - name: npm install eclint
-        run: |
-          npm install -g eclint
-      - name: editorconfig check
-        run: |
-          eclint check **/*
+      - name: Install eclint
+        run: npm install -g eclint
+      - name: Test
+        run: ls
+      - name: Eclint check
+        run: eclint check **/*
