@@ -4,13 +4,11 @@ on:
     [pull_request]
       
 jobs:
-    build:
-
+    send_message:
         runs-on: ubuntu-latest
-
         steps:
-        - name: Discord notification
-          if: (github.event.action == 'synchronize') and !github.event.merged
+        - name: New pull request notification
+          if: (github.event.action == 'synchronize') && (!github.event.merged)
           uses: Ilshidur/action-discord@0.1.0
           env:
             DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
