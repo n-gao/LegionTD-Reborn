@@ -11667,7 +11667,7 @@
         "HealthBarOffset"       "120"
         "Vscripts"              "ai/undeadbuilder/ai_possessed_corruptor.lua"
 
-        "Ability4"                          "sell"
+        "Ability4"              "sell"
         "Ability1"              "viper_poison_attack_lua"
 
         // Armor
