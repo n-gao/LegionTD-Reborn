@@ -1244,8 +1244,8 @@
         "Vscripts"                  "ai/ai_default.lua"
 
         "Ability1"                  "assassinbuilder_psi_blades"
-        "Ability2"                  "assassinbuilder_augment_aura"
-        "Ability3"                  "ability_empty_3"
+        "Ability3"                  "assassinbuilder_augment_aura"
+        "Ability2"                  "assassinbuilder_chaos_strike"
         "Ability4"                  "sell"
 
         "ArmorPhysical"             "5"
@@ -10262,11 +10262,11 @@
         "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
         "Level"                 "1"
         "HealthBarOffset"       "120"
-        "Vscripts"              "ai/ai_default"
+        "Vscripts"              "ai/undeadbuilder/ai_corruptor.lua"
 
         "Ability4"                          "sell"
         "Ability1"                          "undeadbuilder_upgrade_possessed_corruptor"
-        "Ability2"                          "viper_corrosive_skin_datadriven"
+        "Ability2"                          "viper_poison_attack_lua"
 
         // Armor
         //----------------------------------------------------------------
@@ -11572,7 +11572,7 @@
 
         "Ability4"                          "sell"
         "Ability1"                          "undeadbuilder_upgrade_corruptor"
-        "Ability2"                          "viper_corrosive_skin_datadriven"
+        "Ability2"                          ""
 
         // Armor
         //----------------------------------------------------------------
@@ -11668,8 +11668,7 @@
         "Vscripts"              "ai/undeadbuilder/ai_possessed_corruptor.lua"
 
         "Ability4"                          "sell"
-        "Ability2"                          "viper_corrosive_skin_datadriven"
-        "Ability1"                          "viper_nethertoxin"
+		 "Ability1"                          "viper_poison_attack_lua"
 
         // Armor
         //----------------------------------------------------------------
@@ -12358,7 +12357,7 @@
         "Ability4"                          "sell"
         "Ability1"                          "undeadbuilder_upgrade_greater_vampire"
         "Ability2"                          "undeadbuilder_upgrade_lifestealer"
-        "Ability3"                          "feast"
+        "Ability3"                          ""
 
         // Armor
         //----------------------------------------------------------------

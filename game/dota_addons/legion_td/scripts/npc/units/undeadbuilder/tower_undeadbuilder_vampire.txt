@@ -14,7 +14,7 @@
     "Ability4"                          "sell"
     "Ability1"                          "undeadbuilder_upgrade_greater_vampire"
     "Ability2"                          "undeadbuilder_upgrade_lifestealer"
-    "Ability3"                          "feast"
+    "Ability3"                          ""
 
     // Armor
     //----------------------------------------------------------------

@@ -12,8 +12,7 @@
     "Vscripts"              "ai/undeadbuilder/ai_possessed_corruptor.lua"
 
     "Ability4"                          "sell"
-    "Ability2"                          "viper_corrosive_skin_datadriven"
-    "Ability1"                          "viper_nethertoxin"
+    "Ability1"                          "viper_poison_attack_lua"
 
     // Armor
     //----------------------------------------------------------------

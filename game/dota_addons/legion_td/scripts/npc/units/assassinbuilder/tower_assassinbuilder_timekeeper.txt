@@ -9,8 +9,8 @@
     "Vscripts"                  "ai/ai_default.lua"
 
     "Ability1"                  "assassinbuilder_psi_blades"
-    "Ability2"                  "assassinbuilder_augment_aura"
-    "Ability3"                  "ability_empty_3"
+    "Ability3"                  "assassinbuilder_augment_aura"
+    "Ability2"                  "assassinbuilder_chaos_strike"
     "Ability4"                  "sell"
 
     "ArmorPhysical"             "5"
