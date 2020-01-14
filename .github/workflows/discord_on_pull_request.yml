@@ -14,4 +14,4 @@ jobs:
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       with:
-        args: 'New Legion TD pull request {{EVENT_PAYLOAD.pull_request.id}}.'
+        args: 'New Legion TD pull request {{ EVENT_PAYLOAD.pull_request.id }} .'
