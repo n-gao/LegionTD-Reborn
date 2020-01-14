@@ -6,7 +6,7 @@
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "AbilityUnitTargetTeam"            "DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-    "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"    
+    "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
     "AbilityTextureName"            "leshrac_lightning_storm"
 
@@ -22,19 +22,19 @@
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastRange"                "700"
     "AbilityCastPoint"                "0.7"
-    
-    // Time        
+
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"                "1.5"
 
     // Cost
     //-------------------------------------------------------------------------------------------------------------
     "AbilityManaCost"                "0"
-    
+
     // Damage.
     //-------------------------------------------------------------------------------------------------------------
     "AbilityDamage"                    "125"
-        
+
     // Special
     //-------------------------------------------------------------------------------------------------------------
     "AbilitySpecial"
@@ -44,7 +44,7 @@
             "var_type"            "FIELD_INTEGER"
             "jump_count"            "3"
         }
-        
+
         "02"
         {
             "var_type"            "FIELD_INTEGER"
@@ -83,7 +83,7 @@
             "Passive"            "0"
             "IsHidden"            "0"
             "IsDebuff"            "1"
-    
+
             "Duration"            "%resist_debuff_duration"
 
             "EffectName"        "particles/items2_fx/veil_of_discord_debuff.vpcf"
@@ -92,7 +92,7 @@
 
             "Properties"
             {
-                "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "%resist_debuff" 
+                "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "%resist_debuff"
             }
         }
     }

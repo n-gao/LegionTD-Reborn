@@ -11,7 +11,7 @@
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
     "AbilityUnitTargetTeam"            "DOTA_UNIT_TARGET_TEAM_ENEMY"
     "AbilityUnitTargetType"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-    "AbilityUnitDamageType"            "DAMAGE_TYPE_PURE"        
+    "AbilityUnitDamageType"            "DAMAGE_TYPE_PURE"
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
     "FightRecapLevel"                "1"
     "AbilityTextureName"            "bane_brain_sap"
@@ -20,8 +20,8 @@
     //-------------------------------------------------------------------------------------------------------------
     "precache"
     {
-        "soundfile"        "soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"        
-        "particle"        "particles/units/heroes/hero_bane/bane_enfeeble.vpcf"        
+        "soundfile"        "soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"
+        "particle"        "particles/units/heroes/hero_bane/bane_enfeeble.vpcf"
     }
 
     // Casting
@@ -29,7 +29,7 @@
     "AbilityCastPoint"                "0.5"
     "AbilityCastRange"                "300"
 
-    // Time        
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"                "5.0"
 
@@ -41,7 +41,7 @@
     //-------------------------------------------------------------------------------------------------------------
     "AbilityManaCost"                "0"
 
-    
+
     "AbilitySpecial"
     {
     "01"
@@ -73,7 +73,7 @@
             "ControlPointEntities"
             {
                 "CASTER" "follow_origin"
-                "TARGET" "follow_origin"        
+                "TARGET" "follow_origin"
             }
         }
 
@@ -91,4 +91,3 @@
         }
     }
 }
-

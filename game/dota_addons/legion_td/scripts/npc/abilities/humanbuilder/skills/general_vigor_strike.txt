@@ -9,14 +9,14 @@
     // Precache
     //-------------------------------------------------------------------------------------------------------------
     "precache"
-     {
-      "soundfile"   "soundevents/game_sounds_heroes/game_sounds_bounty_hunter.vsndevts"
-     }
+    {
+    "soundfile"   "soundevents/game_sounds_heroes/game_sounds_bounty_hunter.vsndevts"
+    }
 
     // Stats
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"                "4.2"
-        
+
     // Special
     //-------------------------------------------------------------------------------------------------------------
     "AbilitySpecial"
@@ -63,7 +63,7 @@
 
                 "RunScript"
                 {
-                    "ScriptFile"    "scripts/vscripts/abilities/humanbuilder/jinada.lua"    
+                    "ScriptFile"    "scripts/vscripts/abilities/humanbuilder/jinada.lua"
                     "Function"        "Jinada"
                     "modifiername"    "modifier_vigor_strike"
                 }
@@ -74,4 +74,4 @@
 
     }
 
-}    
+}

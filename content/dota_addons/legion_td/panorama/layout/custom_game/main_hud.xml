@@ -4,83 +4,83 @@
         <include src="file://{resources}/styles/custom_game/main_hud.css" />
         <include src="file://{resources}/styles/custom_game/statistics.css" />
         <include src="file://{resources}/styles/custom_game/shop.css" />
-		<include src="file://{resources}/styles/custom_game/popup_window.css" />
-		<include src="file://{resources}/styles/custom_game/information_panel.css" />
-		<include src="file://{resources}/styles/custom_game/legion_creator_panel.css" />
-		<include src="file://{resources}/styles/custom_game/game_info_panel.css" />
+        <include src="file://{resources}/styles/custom_game/popup_window.css" />
+        <include src="file://{resources}/styles/custom_game/information_panel.css" />
+        <include src="file://{resources}/styles/custom_game/legion_creator_panel.css" />
+        <include src="file://{resources}/styles/custom_game/game_info_panel.css" />
     </styles>
     <scripts>
         <include src="file://{resources}/scripts/custom_game/utils.js" />
         <include src="file://{resources}/scripts/custom_game/main_hud.js" />
-		<include src="file://{resources}/scripts/custom_game/legion_creator_panel.js" />
-		<include src="file://{resources}/scripts/custom_game/health_bars.js" />
+        <include src="file://{resources}/scripts/custom_game/legion_creator_panel.js" />
+        <include src="file://{resources}/scripts/custom_game/health_bars.js" />
     </scripts>
-	<script>
-		function AddContributor(name, steamId, parent) {
-			var newPlayerPanel = $.CreatePanel("Panel", parent, "player_info");
-			newPlayerPanel.SetAttributeString("creator_steamid", ""+steamId);
-			newPlayerPanel.SetAttributeString("creator_name", name);
-			newPlayerPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_creator_panel.xml", false, false);
-		}
- 		GameUI.CustomUIConfig().Programmers = [ ];
-		GameUI.CustomUIConfig().GameDesigners = [ "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120"];
-		GameUI.CustomUIConfig().Creator = [ "76561198027964324" ];
-		GameUI.CustomUIConfig().Leaders = [ "76561198027964324", "76561198249367546" ];
-		GameUI.CustomUIConfig().PreviousLeaders = [ "76561198027964324", "76561198249367546", "76561198030851434" ];
+    <script>
+        function AddContributor(name, steamId, parent) {
+            var newPlayerPanel = $.CreatePanel("Panel", parent, "player_info");
+            newPlayerPanel.SetAttributeString("creator_steamid", ""+steamId);
+            newPlayerPanel.SetAttributeString("creator_name", name);
+            newPlayerPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_creator_panel.xml", false, false);
+        }
+        GameUI.CustomUIConfig().Programmers = [ ];
+        GameUI.CustomUIConfig().GameDesigners = [ "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120"];
+        GameUI.CustomUIConfig().Creator = [ "76561198027964324" ];
+        GameUI.CustomUIConfig().Leaders = [ "76561198027964324", "76561198249367546" ];
+        GameUI.CustomUIConfig().PreviousLeaders = [ "76561198027964324", "76561198249367546", "76561198030851434" ];
 
-		GameUI.CustomUIConfig().Programmers.forEach(function(entry){ AddContributor("", entry, $("#Programmers"))});
-		GameUI.CustomUIConfig().GameDesigners.forEach(function(entry){ AddContributor("", entry, $("#GameDesigners"))});
-		GameUI.CustomUIConfig().Creator.forEach(function(entry){ AddContributor("", entry, $("#Creators"))});
-		GameUI.CustomUIConfig().PreviousLeaders.forEach(function(entry){ AddContributor("", entry, $("#PreviousLeaders"))});
-		//GameUI.CustomUIConfig().Leaders.forEach(function(entry){ AddContributor("", entry, $("#Leaders"))});
+        GameUI.CustomUIConfig().Programmers.forEach(function(entry){ AddContributor("", entry, $("#Programmers"))});
+        GameUI.CustomUIConfig().GameDesigners.forEach(function(entry){ AddContributor("", entry, $("#GameDesigners"))});
+        GameUI.CustomUIConfig().Creator.forEach(function(entry){ AddContributor("", entry, $("#Creators"))});
+        GameUI.CustomUIConfig().PreviousLeaders.forEach(function(entry){ AddContributor("", entry, $("#PreviousLeaders"))});
+        //GameUI.CustomUIConfig().Leaders.forEach(function(entry){ AddContributor("", entry, $("#Leaders"))});
     </script>
     <Panel hittest="false" class="Hud">
         <Panel hittest="false" class="DontKnow">
-		
-			<Panel hittest="false" id="HealthBarsHolder">
-				<Image id="RadiantKing" hittest="true" src="file://{images}/custom_game/RadiantKing.png" onmouseover="UIShowTextTooltip(#Radiant_King)"  onmouseout="UIHideTextTooltip()" />
-				<Panel hittest="false" id="EmptyBarRadiant">
-				</Panel>
-				<Image id="DireKing" hittest="true" src="file://{images}/custom_game/DireKing.png" onmouseover="UIShowTextTooltip(#Dire_King)"  onmouseout="UIHideTextTooltip()" />
-				<Panel hittest="false" id="EmptyBarDire">
-				</Panel>
-			</Panel>
-			
-			<Panel hittest="false" id="TopLeftMenu">
-				<Button id="InformationButton" class="TopLeftButton" onload="DOTAShowTextTooltip('#Information')" onactivate="OnInformationButtonPressed()" onmouseover="UIShowTextTooltip(#Information)"  onmouseout="UIHideTextTooltip()"/>
-			</Panel>
-			
-			<Panel hittest="false" id="InformationPanelRoot">
-				<Label id="NewsTitle" text="#News"/>
-				<Panel id="ContentsTop">
-					<Label id="Title" text="#ContentTopTitle"/>
-					<Label id="UpdateDate" html="true" text="#ContentTopDate"/>
-					<Label id="Message" html="true" text="#ContentTopDescription"/>
-				</Panel>
-				<Panel id="ContentsBottom">
-					<Label id="Title" text="#ContentBottomTitle"/>
-					<Label id="UpdateDate" html="true" text="#ContentBottomDate"/>
-					<Label id="Message" html="true" text="#ContentBottomDescription"/>
-				</Panel>
-				<Label id="TeamTitle" text="#legion_contributor_label"/>
-				<Panel id="ContentsRight">	
-						<Label class="ContributorLabel" text="#legion_contributor_creator" />
-						<Panel id="Creators" class="ContributorPanel" hitetst="false" />
-						<!--<Label class="ContributorLabel" text="#legion_contributor_leader" /><Panel id="Leaders" class="ContributorPanel" hitetst="false" />-->
-						<Label class="ContributorLabel" text="#legion_contributor_previous_leader" />
-						<Panel id="PreviousLeaders" class="ContributorPanel" hitetst="false" />
-						<Label class="ContributorLabel" text="#legion_contributor_design" />
-						<Panel id="GameDesigners" class="ContributorPanel" hitetst="false" />
-				</Panel>
-				<Label id="BuildersTitle" text="#Upcoming_Builders"/>
-					<DOTAHeroMovie heroimagestyle="portrait" id="upcomingheroes_spirit" heroname="npc_dota_hero_void_spirit" style="border: 1px solid #5e6869; vertical-align: bottom; tooltip-position: bottom; margin-left: 20px; margin-bottom: 10px; border-radius: 8px;" onmouseover="UIShowTextTooltip(#Spirit_Builder)"  onmouseout="UIHideTextTooltip()"/>
-					<DOTAHeroMovie heroimagestyle="portrait" id="upcomingheroes_demon" heroname="npc_dota_hero_warlock" style="border: 1px solid #5e6869; vertical-align: bottom; tooltip-position: bottom; margin-left: 220px; margin-bottom: 10px; border-radius: 8px;" onmouseover="UIShowTextTooltip(#Demon_Builder)"  onmouseout="UIHideTextTooltip()"/>
-					<DOTAHeroMovie heroimagestyle="portrait" id="upcomingheroes_mechanical" heroname="npc_dota_hero_shredder" style="border: 1px solid #5e6869; vertical-align: bottom; tooltip-position: bottom; margin-left: 420px; margin-bottom: 10px; border-radius: 8px;" onmouseover="UIShowTextTooltip(#Mechanical_Builder)"  onmouseout="UIHideTextTooltip()"/>
-			
-				<Button class="CloseButton" onactivate="InformationPanelCloseButtonClicked()" />
-			</Panel>
-			
-			 <Panel hittest="false" class="SkipButtonPanel">
+
+            <Panel hittest="false" id="HealthBarsHolder">
+                <Image id="RadiantKing" hittest="true" src="file://{images}/custom_game/RadiantKing.png" onmouseover="UIShowTextTooltip(#Radiant_King)"  onmouseout="UIHideTextTooltip()" />
+                <Panel hittest="false" id="EmptyBarRadiant">
+                </Panel>
+                <Image id="DireKing" hittest="true" src="file://{images}/custom_game/DireKing.png" onmouseover="UIShowTextTooltip(#Dire_King)"  onmouseout="UIHideTextTooltip()" />
+                <Panel hittest="false" id="EmptyBarDire">
+                </Panel>
+            </Panel>
+
+            <Panel hittest="false" id="TopLeftMenu">
+                <Button id="InformationButton" class="TopLeftButton" onload="DOTAShowTextTooltip('#Information')" onactivate="OnInformationButtonPressed()" onmouseover="UIShowTextTooltip(#Information)"  onmouseout="UIHideTextTooltip()"/>
+            </Panel>
+
+            <Panel hittest="false" id="InformationPanelRoot">
+                <Label id="NewsTitle" text="#News"/>
+                <Panel id="ContentsTop">
+                    <Label id="Title" text="#ContentTopTitle"/>
+                    <Label id="UpdateDate" html="true" text="#ContentTopDate"/>
+                    <Label id="Message" html="true" text="#ContentTopDescription"/>
+                </Panel>
+                <Panel id="ContentsBottom">
+                    <Label id="Title" text="#ContentBottomTitle"/>
+                    <Label id="UpdateDate" html="true" text="#ContentBottomDate"/>
+                    <Label id="Message" html="true" text="#ContentBottomDescription"/>
+                </Panel>
+                <Label id="TeamTitle" text="#legion_contributor_label"/>
+                <Panel id="ContentsRight">
+                        <Label class="ContributorLabel" text="#legion_contributor_creator" />
+                        <Panel id="Creators" class="ContributorPanel" hitetst="false" />
+                        <!--<Label class="ContributorLabel" text="#legion_contributor_leader" /><Panel id="Leaders" class="ContributorPanel" hitetst="false" />-->
+                        <Label class="ContributorLabel" text="#legion_contributor_previous_leader" />
+                        <Panel id="PreviousLeaders" class="ContributorPanel" hitetst="false" />
+                        <Label class="ContributorLabel" text="#legion_contributor_design" />
+                        <Panel id="GameDesigners" class="ContributorPanel" hitetst="false" />
+                </Panel>
+                <Label id="BuildersTitle" text="#Upcoming_Builders"/>
+                    <DOTAHeroMovie heroimagestyle="portrait" id="upcomingheroes_spirit" heroname="npc_dota_hero_void_spirit" style="border: 1px solid #5e6869; vertical-align: bottom; tooltip-position: bottom; margin-left: 20px; margin-bottom: 10px; border-radius: 8px;" onmouseover="UIShowTextTooltip(#Spirit_Builder)"  onmouseout="UIHideTextTooltip()"/>
+                    <DOTAHeroMovie heroimagestyle="portrait" id="upcomingheroes_demon" heroname="npc_dota_hero_warlock" style="border: 1px solid #5e6869; vertical-align: bottom; tooltip-position: bottom; margin-left: 220px; margin-bottom: 10px; border-radius: 8px;" onmouseover="UIShowTextTooltip(#Demon_Builder)"  onmouseout="UIHideTextTooltip()"/>
+                    <DOTAHeroMovie heroimagestyle="portrait" id="upcomingheroes_mechanical" heroname="npc_dota_hero_shredder" style="border: 1px solid #5e6869; vertical-align: bottom; tooltip-position: bottom; margin-left: 420px; margin-bottom: 10px; border-radius: 8px;" onmouseover="UIShowTextTooltip(#Mechanical_Builder)"  onmouseout="UIHideTextTooltip()"/>
+
+                <Button class="CloseButton" onactivate="InformationPanelCloseButtonClicked()" />
+            </Panel>
+
+            <Panel hittest="false" class="SkipButtonPanel">
                 <Button id="SkipButton" onactivate="OnSkipButtonPressed()">
                     <Label id="SkipLabel" class="ButtonLabel" text="#Ready"/>
                 </Button>
@@ -90,43 +90,43 @@
                         <Label id="SkipLabel" class="ButtonLabel2" text="#ReadyPressed"/>
                     </Button>
                 </Panel>
-	
-           <Panel hittest="false" id='ResourcePanel'>
-				<Label hittest="false" id="ResourcesLabel" text="#RESOURCES" html="true" class="TitleFont" />
-				<Panel hittest="false" id='GoldIconPanel'>
-					<Image id="GoldIcon" src="file://{images}/hud/icon_gold_psd.vtex" onmouseover="UIShowTextTooltip(#Gold)" onmouseout="UIHideTextTooltip()" />
-				</Panel>
-				<Panel hittest="false" id='GoldLabelPanel'>
-					<Label hittest="false" id="gold" text="0" html="true" class="TitleFont" />
-				</Panel>
-				<Panel hittest="false" id='LumberIconPanel'>
-					<Image id="LumberIcon" src="file://{images}/custom_game/tango.psd" onmouseover="UIShowTextTooltip(#Tango)" onmouseout="UIHideTextTooltip()"/>
-				</Panel>
-				<Panel hittest="false" id='LumberLabelPanel'>
-					<Label hittest="false" id="tangos" text="30" class="TitleFont" />
-				</Panel>
-				<Panel hittest="false" id='FoodIconPanel'>
-					<Image id="FoodIcon" src="file://{images}/custom_game/chicken_leg.psd" onmouseover="UIShowTextTooltip(#Food)" onmouseout="UIHideTextTooltip()"/>
-				</Panel>
-				<Panel hittest="false" id='FoodLabelPanel'>
-					<Label hittest="false" id="foodLabel" text="0/0" class="TitleFont" />
-				</Panel>
-			</Panel>
-			 <Panel hittest="false" id='IncomePanel'>
-				<Label hittest="false" id="IncomeLabel" text="#INCOME" html="true" class="TitleFont" />
-				<Panel hittest="false" id='GoldIncomePanel'>
-					<Label hittest="false" id="goldIncome" text="0" html="true" class="TitleFont" />
-				</Panel>
-				<Panel hittest="false" id='LumberIncomePanel'>
-					<Label hittest="false" id="tangoIncome" text="0" html="true" class="TitleFont" />
-				</Panel>
-				<Button id="ShopButton" onactivate="OnShopButtonPressed()">
-					<Image src="file://{images}/custom_game/shop.psd" />
-					<Label id="Shoplabel" class="ButtonLabel3" text="Tango Shop" />
-				</Button>
-			 </Panel>
+
+            <Panel hittest="false" id='ResourcePanel'>
+                <Label hittest="false" id="ResourcesLabel" text="#RESOURCES" html="true" class="TitleFont" />
+                <Panel hittest="false" id='GoldIconPanel'>
+                    <Image id="GoldIcon" src="file://{images}/hud/icon_gold_psd.vtex" onmouseover="UIShowTextTooltip(#Gold)" onmouseout="UIHideTextTooltip()" />
+                </Panel>
+                <Panel hittest="false" id='GoldLabelPanel'>
+                    <Label hittest="false" id="gold" text="0" html="true" class="TitleFont" />
+                </Panel>
+                <Panel hittest="false" id='LumberIconPanel'>
+                    <Image id="LumberIcon" src="file://{images}/custom_game/tango.psd" onmouseover="UIShowTextTooltip(#Tango)" onmouseout="UIHideTextTooltip()"/>
+                </Panel>
+                <Panel hittest="false" id='LumberLabelPanel'>
+                    <Label hittest="false" id="tangos" text="30" class="TitleFont" />
+                </Panel>
+                <Panel hittest="false" id='FoodIconPanel'>
+                    <Image id="FoodIcon" src="file://{images}/custom_game/chicken_leg.psd" onmouseover="UIShowTextTooltip(#Food)" onmouseout="UIHideTextTooltip()"/>
+                </Panel>
+                <Panel hittest="false" id='FoodLabelPanel'>
+                    <Label hittest="false" id="foodLabel" text="0/0" class="TitleFont" />
+                </Panel>
+            </Panel>
+            <Panel hittest="false" id='IncomePanel'>
+                <Label hittest="false" id="IncomeLabel" text="#INCOME" html="true" class="TitleFont" />
+                <Panel hittest="false" id='GoldIncomePanel'>
+                    <Label hittest="false" id="goldIncome" text="0" html="true" class="TitleFont" />
+                </Panel>
+                <Panel hittest="false" id='LumberIncomePanel'>
+                    <Label hittest="false" id="tangoIncome" text="0" html="true" class="TitleFont" />
+                </Panel>
+                <Button id="ShopButton" onactivate="OnShopButtonPressed()">
+                    <Image src="file://{images}/custom_game/shop.psd" />
+                    <Label id="Shoplabel" class="ButtonLabel3" text="Tango Shop" />
+                </Button>
+            </Panel>
             <Panel hittest="false" id="OuterShopPanel">
-                
+
                 <Panel hittest="true" id="ShopPanel">
                     <Panel class="TitlePanel">
                         <Label class="TitleText" text="#RecruitUnits" />

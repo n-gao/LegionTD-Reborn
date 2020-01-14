@@ -33,7 +33,7 @@
             "crit_damage"            "145"
         }
     }
-    
+
     "OnSpellStart"
     {
         "ApplyModifier"
@@ -47,16 +47,16 @@
             "ModifierName"            "modifier_assassinbuilder_soul_rend_debuff"
         }
     }
-    
+
     "Modifiers"
     {
         "modifier_assassinbuilder_soul_rend_debuff"
         {
             "Duration"                        "%soul_rend_duration"
-            
+
             "EffectName"                    "particles/units/heroes/hero_skywrath_mage/skywrath_mage_ancient_seal_debuff.vpcf"
             "EffectAttachType"                "follow_overhead"
-            
+
             "Properties"
             {
                 "MODIFIER_PROPERTY_INCOMING_PHYSICAL_DAMAGE_PERCENTAGE"        "%crit_damage"

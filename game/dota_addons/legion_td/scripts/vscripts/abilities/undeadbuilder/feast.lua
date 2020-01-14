@@ -9,7 +9,7 @@ function feast_attack( keys )
     local ability = keys.ability
 
     ability.hp_leech_percent = ability:GetLevelSpecialValueFor("hp_leech_percent", ability:GetLevel() - 1)
-    local feast_modifier = keys.feast_modifier 
+    local feast_modifier = keys.feast_modifier
 
     local damage = target:GetHealth() * (ability.hp_leech_percent / 100)
 
@@ -19,12 +19,12 @@ function feast_attack( keys )
 end
 
 function feast_heal( keys )
-  local attacker = keys.attacker
-  local target = keys.target
-  local ability = keys.ability
+    local attacker = keys.attacker
+    local target = keys.target
+    local ability = keys.ability
 
-  ability.hp_leech_percent = ability:GetLevelSpecialValueFor("hp_leech_percent", ability:GetLevel() - 1)
-  local damage = target:GetHealth() * (ability.hp_leech_percent / 100)
+    ability.hp_leech_percent = ability:GetLevelSpecialValueFor("hp_leech_percent", ability:GetLevel() - 1)
+    local damage = target:GetHealth() * (ability.hp_leech_percent / 100)
 
-  attacker:Heal(damage, ability)
+    attacker:Heal(damage, ability)
 end

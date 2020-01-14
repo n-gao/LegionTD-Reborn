@@ -11,7 +11,7 @@
     "AbilityCooldown"                    "7"
     "AbilityCastPoint"                    "0"
     "AbilityManaCost"                    "0"
-    
+
     "AbilitySpecial"
     {
         "01"
@@ -30,14 +30,14 @@
             "damage_multiplier"            "0.25"
         }
     }
-    
+
     "precache"
     {
         "particle"                        "particles/generic_gameplay/generic_stunned.vpcf"
         "particle"                        "particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
         "particle"                        "particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace_hit.vpcf"
     }
-    
+
     "OnSpellStart"
     {
         "RunScript"
@@ -45,14 +45,14 @@
             "ScriptFile"                "abilities/assassinbuilder/assassinbuilder_spiked_carapace.lua"
             "Function"                    "spiked_carapace_init"
         }
-        
+
         "ApplyModifier"
         {
             "Target"                    "CASTER"
             "ModifierName"                "modifier_assassinbuilder_spiked_carapace_buff"
         }
     }
-    
+
     "Modifiers"
     {
         "modifier_assassinbuilder_spiked_carapace_buff"
@@ -71,7 +71,7 @@
                 }
             }
         }
-        
+
         "modifier_assassinbuilder_spiked_carapace_stun"
         {
             "IsDebuff"                        "1"
@@ -89,7 +89,7 @@
                         "02"                "%stun_duration%stun_duration%stun_duration"
                     }
                 }
-            
+
                 "AttachEffect"
                 {
                     "Target"                "TARGET"
@@ -97,7 +97,7 @@
                     "EffectAttachType"        "follow_overhead"
                 }
             }
-            
+
             "States"
             {
                 "MODIFIER_STATE_STUNNED"    "MODIFIER_STATE_VALUE_ENABLED"

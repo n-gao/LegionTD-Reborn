@@ -1,4 +1,4 @@
- "tower_undeadbuilder_resurrected"
+"tower_undeadbuilder_resurrected"
 {
     // General
     //----------------------------------------------------------------
@@ -87,8 +87,8 @@
                 "Support"           "0.0"
             }
         }
-    "AttachWearables"
-    {
-    }
+        "AttachWearables"
+        {
+        }
     }
 }

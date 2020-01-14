@@ -12,7 +12,7 @@ function caustic_finale_dead_effect( keys )
     if not keys.target:IsAlive() then
         local particleName = "particles/units/heroes/hero_sandking/sandking_caustic_finale_explode.vpcf"
         local soundEventName = "Ability.SandKing_CausticFinale"
-        
+
         local fxIndex = ParticleManager:CreateParticle( particleName, PATTACH_ABSORIGIN, keys.target )
         StartSoundEvent( soundEventName, keys.target )
     end

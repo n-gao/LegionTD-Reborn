@@ -117,7 +117,7 @@ function AICore:CreateBehaviorSystem(behaviors)
                     self.previousOrderTarget ~= self.currentBehavior.order.TargetIndex or
                     self.previousOrderAbilityId ~= self.currentBehavior.order.AbilityIndex or
                     self.previousOrderPosition ~= self.currentBehavior.order.Position
-             then
+            then
                 ExecuteOrderFromTable(self.currentBehavior.order)
 
                 self.previousOrderType = self.currentBehavior.order.OrderType

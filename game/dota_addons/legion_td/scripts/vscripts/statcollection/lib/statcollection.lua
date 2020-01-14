@@ -5,7 +5,7 @@ Integrating the library into your scripts
 2. In your addon_game_mode.lua file, copy this line at the top: require('statcollection/init')
 3. Go into the scripts/vscripts/statcollection folder and inside the `settings.kv` file, change the modID XXXXX value with the modID key that was handed to you by an admin.
 4. After this, you will be sending the default basic stats when a lobby is succesfully created, and after the match ends.
-   You are encouraged to add your own gamemode-specific stats (such as a particular game setting or items being purchased). More about this on the next section.
+    You are encouraged to add your own gamemode-specific stats (such as a particular game setting or items being purchased). More about this on the next section.
 
 If you'd like to store flags, for example, the amount of kills to win, it can be done like so:
 

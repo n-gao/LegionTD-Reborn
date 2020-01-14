@@ -38,7 +38,7 @@
     "precache"
     {
         "soundfile"    	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
-		"particle"		"particles/items_fx/glyph_creeps.vpcf"
+        "particle"		"particles/items_fx/glyph_creeps.vpcf"
     }
 
     "OnSpellStart"
@@ -77,8 +77,8 @@
             "IsBuff"            "1"
             "IsPurgable"        "1"
             "Duration"          "%duration"
-			"EffectName" 		"particles/items_fx/glyph_creeps.vpcf"
-			"EffectAttachType" 	"follow_origin"
+            "EffectName" 		"particles/items_fx/glyph_creeps.vpcf"
+            "EffectAttachType" 	"follow_origin"
             "Properties"
             {
                 "MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL"    "1"

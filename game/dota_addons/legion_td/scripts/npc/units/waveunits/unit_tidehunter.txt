@@ -47,7 +47,7 @@
         {
             "particle"    "particles/units/heroes/hero_tidehunter/tidehunter_krakenshell_purge.vpcf"
         }
-    
+
         "Creature"
         {
             "DisableClumpingBehavior"    "1"
@@ -61,22 +61,22 @@
                     "Avoidance"    "0.0"
                     "Support"    "0.0"
                 }
-    
+
             }
-    
+
             "AttachWearables"
             {
                 "Wearable1"
                 {
                     "ItemDef"    "4131"
                 }
-    
+
                 "Wearable2"
                 {
                     "ItemDef"    "6471"
                 }
-    
+
             }
         }
-    
+
     }

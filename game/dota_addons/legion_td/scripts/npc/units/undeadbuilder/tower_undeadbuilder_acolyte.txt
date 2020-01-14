@@ -32,7 +32,7 @@
     "AttackRange"           "600"
     "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
     "ProjectileSpeed"       "700"
-    
+
     "LegionAttackType"     "arcane"
     "LegionDefendType"     "light"
     "LegionFraction"       "undead"

@@ -17,12 +17,12 @@
         "particle"            "particles/units/heroes/hero_sven/sven_spell_warcry.vpcf"
         "particle"            "particles/units/heroes/hero_sven/sven_warcry_buff.vpcf"
     }
-    
+
     // Casting
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastPoint"                "0.0 0.0 0.0 0.0"
 
-    // Time        
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"                "25.0"
     "AbilityDuration"                "5.0"
@@ -38,7 +38,7 @@
         "01"
         {
             "var_type"            "FIELD_INTEGER"
-            "warcry_armor"        "15"        
+            "warcry_armor"        "15"
         }
         "02"
         {
@@ -60,7 +60,7 @@
             {
                 "Center" "CASTER"
                 "Radius" "%warcry_radius"
-                "Teams" "DOTA_UNIT_TARGET_TEAM_FRIENDLY" 
+                "Teams" "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
                 "Types" "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
             }
 

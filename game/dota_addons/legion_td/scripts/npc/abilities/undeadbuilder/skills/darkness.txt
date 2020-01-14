@@ -24,7 +24,7 @@
         {
             "IsHidden"  "1"
             "Passive"   "1"
-                
+
             "Aura"                  "darkness_modifier_datadriven"
             "Aura_Radius"           "900"
             "Aura_Teams"            "DOTA_UNIT_TARGET_TEAM_FRIENDLY"

@@ -27,7 +27,7 @@ function aiThinkStandard(self)
                 if
                     self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or
                         self:HasModifier("modifier_invulnerable") or not self:IsAlive()
-                 then
+                then
                     return STANDARD_THINK_TIME
                 end
                 if self.wayStep and ((self:GetAbsOrigin() - self.waypoints[self.wayStep]):Length2D() < 50) then -- we've hit a waypoint
@@ -43,7 +43,7 @@ function aiThinkStandard(self)
                 end
             end
         )
-     then
+    then
         return STANDARD_THINK_TIME
     else
         return nil
@@ -79,7 +79,7 @@ function aiThinkStandardSkill(self)
             if
                 self:HasModifier("modifier_unit_freeze_lua") or GameRules:IsGamePaused() or
                     self:HasModifier("modifier_invulnerable") or not self:IsAlive()
-             then
+            then
                 return STANDARD_THINK_TIME
             end
 

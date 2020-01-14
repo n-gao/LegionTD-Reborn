@@ -4,14 +4,14 @@
     //-------------------------------------------------------------------------------------------------------------
     "BaseClass"                        "ability_datadriven"
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"    
+    "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
     "AbilityTextureName"            "deathlust"
     "MaxLevel"                        "1"
-    
+
     "AbilityDuration"                "5.0"
     "AbilityDamage"                    "150"
-    
+
     // Special
     //-------------------------------------------------------------------------------------------------------------
     "AbilitySpecial"
@@ -32,7 +32,7 @@
             "caustic_finale_duration"    "5.0"
         }
     }
-    
+
     // Data driven
     //-------------------------------------------------------------------------------------------------------------
     "precache"
@@ -40,7 +40,7 @@
         "soundfile"                "soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
         "particle"                "particles/units/heroes/hero_sandking/sandking_caustic_finale_explode.vpcf"
     }
-    
+
     "Modifiers"
     {
         "modifier_caustic_finale_buff_datadriven"
@@ -61,13 +61,13 @@
                 }
             }
         }
-        
+
         "modifier_caustic_finale_debuff_datadriven"
         {
             "IsDebuff"            "1"
             "IsPurgable"        "0"
             "Duration"            "%caustic_finale_duration"
-            
+
             "OnDestroy"
             {
                 "RunScript"
@@ -76,7 +76,7 @@
                     "Function"            "caustic_finale_dead_effect"
                 }
             }
-            
+
             "OnDeath"
             {
                 "Damage"

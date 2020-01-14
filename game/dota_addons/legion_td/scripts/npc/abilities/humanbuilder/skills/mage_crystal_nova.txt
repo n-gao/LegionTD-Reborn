@@ -5,18 +5,18 @@
         "BaseClass"                        "crystal_maiden_crystal_nova"
         "AbilityType"                    "DOTA_ABILITY_TYPE_BASIC"
         "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
-        "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"    
+        "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"
         "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
         "AbilityCastRange"                "700"
         "AbilityCastPoint"                "0.3"
-        
-        // Time        
+
+        // Time
         //-------------------------------------------------------------------------------------------------------------
         "AbilityCooldown"                "15.0"
-        
+
         // Damage.
         //-------------------------------------------------------------------------------------------------------------
         "AbilityDamage"                    "80"
@@ -24,7 +24,7 @@
         // Cost
         //-------------------------------------------------------------------------------------------------------------
         "AbilityManaCost"                "0"
-        
+
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilitySpecial"

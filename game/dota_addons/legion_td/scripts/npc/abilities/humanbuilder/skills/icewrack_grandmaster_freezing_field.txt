@@ -4,15 +4,15 @@
     //-------------------------------------------------------------------------------------------------------------
     "BaseClass"                        "ability_datadriven"
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"    
+    "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"
     "AbilityUnitTargetTeam"          "DOTA_UNIT_TARGET_TEAM_ENEMY"
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
     "AbilityUnitTargetType"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
     "AbilityTextureName"            "crystal_maiden_freezing_field"
 
     "AbilityCastRange"                "600"
-    
-    // Time        
+
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"                "90"
 
@@ -29,7 +29,7 @@
             "var_type"            "FIELD_INTEGER"
             "debuff_radius"        "100"
         }
-    
+
         "01"
         {
             "var_type"            "FIELD_INTEGER"
@@ -66,7 +66,7 @@
             "freeze_damage"        "25"
         }
     }
-    
+
     // Data driven
     //-------------------------------------------------------------------------------------------------------------
     "precache"
@@ -76,7 +76,7 @@
         "particle"                "particles/generic_gameplay/generic_slowed_cold.vpcf"
         "particle"                "particles/status_fx/status_effect_frost_lich.vpcf"
     }
-    
+
 //    "OnSpellStart"
 //    {
 //        "ApplyModifier"
@@ -84,14 +84,14 @@
 //            "Target"            "CASTER"
 //            "ModifierName"        "modifier_freezing_field_caster_datadriven"
 //        }
-//        
+//
 //        "FireSound"
 //        {
 //            "Target"            "CASTER"
 //            "EffectName"        "hero_Crystal.freezingField.wind"
 //        }
 //    }
-    
+
     "Modifiers"
     {
         "modifier_freezing_field_caster_datadriven"
@@ -99,14 +99,14 @@
             "Passive"               "1"
             "IsPurgable"            "0"
             "IsHidden"                "1"
-            
+
             "Aura"                    "modifier_freezing_field_debuff_datadriven"
             "Aura_Radius"            "%radius"
             "Aura_Teams"            "DOTA_UNIT_TARGET_TEAM_ENEMY"
             "Aura_Types"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-            
+
         //    "Duration"                "%AbilityDuration"
-            
+
             "OnCreated"
             {
             //    "AttachEffect"
@@ -116,7 +116,7 @@
             //        "EffectAttachType"    "follow_origin"
             //        "EffectRadius"        "%radius"
             //    }
-                
+
                 "RunScript"
                 {
                     "ScriptFile"    "abilities/humanbuilder/freezing_field.lua"
@@ -124,15 +124,15 @@
                 }
             }
         }
-        
+
         "modifier_freezing_field_northwest_thinker_datadriven"
         {
             "IsPurgable"        "0"
             "IsHidden"            "1"
             "ThinkInterval"        "%explosion_interval"
-            
+
         //    "Duration"            "%AbilityDuration"
-            
+
             "OnIntervalThink"
             {
                 "RunScript"
@@ -142,18 +142,18 @@
                 }
             }
         }
-        
+
         "modifier_freezing_field_debuff"
         {
             "IsHidden"                "0"
             "IsPurgable"            "1"
             "IsDebuff"                "1"
             "Duration"                "%debuff_duration"
-            
+
             "EffectName"            "particles/generic_gameplay/generic_slowed_cold.vpcf"
             "StatusEffectName"        "particles/status_fx/status_effect_frost_lich.vpcf"
             "StatusEffectPriority"    "10"
-            
+
             "Properties"
             {
                 "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"    "%debuff_slow"
@@ -186,7 +186,7 @@
                 }
             }
         }
-        
+
         "modifier_freezing_field_ref_point_datadriven"
         {
             "States"

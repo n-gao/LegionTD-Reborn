@@ -18,7 +18,7 @@
     }
 
     "AbilityCooldown"                "6.0"
-    
+
     "AbilitySpecial"
     {
         "01"
@@ -82,7 +82,7 @@
                 {
                     "ScriptFile"            "abilities/assassinbuilder/assassinbuilder_jinada.lua"
                     "Function"                "Jinada"
-                    
+
                 }
 
 

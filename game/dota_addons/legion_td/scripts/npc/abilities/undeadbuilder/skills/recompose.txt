@@ -7,7 +7,7 @@
     "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
     "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
     "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
-    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
     "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_YES"
     "FightRecapLevel"               "1"
     "AbilityTextureName"            "undying_soul_rip"
@@ -16,14 +16,14 @@
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastPoint"              "0.45"
 
-    // Time     
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"               "2"
 
     // Cost
     //-------------------------------------------------------------------------------------------------------------
-    "AbilityManaCost"               "0"     
-    
+    "AbilityManaCost"               "0"
+
     // Cast Range
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastRange"              "750"
@@ -31,7 +31,7 @@
     // Stats
     //-------------------------------------------------------------------------------------------------------------
     "AbilityModifierSupportValue"   "0.0"   // Modifier just does damage/healing
-    
+
     // Special
     //-------------------------------------------------------------------------------------------------------------
     "AbilitySpecial"
@@ -52,4 +52,4 @@
             "max_units"                 "5"
         }
     }
-} 
+}

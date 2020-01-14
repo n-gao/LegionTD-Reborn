@@ -1,8 +1,11 @@
 root = true
 
-[*]
+[**/*.{js,lua,xml,css,txt}]
 indent_style = space
 indent_size = 4
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+[game/dota_addons/legion_td/resource/*.txt]
+charset = utf-16le

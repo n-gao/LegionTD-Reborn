@@ -35,8 +35,8 @@
             "unitID"                "1013"
         }
     }
-  "precache"
-  {
-    "model" "models/creeps/neutral_creeps/n_creep_centaur_lrg/n_creep_centaur_lrg.vmdl"
-  }
+    "precache"
+    {
+        "model" "models/creeps/neutral_creeps/n_creep_centaur_lrg/n_creep_centaur_lrg.vmdl"
+    }
 }

@@ -20,7 +20,7 @@
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
     "FightRecapLevel"                "2"
     "AbilityTextureName"            "enigma_black_hole"
-    
+
     // Precache
     //-------------------------------------------------------------------------------------------------------------
     "precache"
@@ -29,7 +29,7 @@
         "soundfile"        "sounds/weapons/hero/enigma/black_hole_loop.vsnd"
         "soundfile"        "sounds/weapons/hero/enigma/black_hole_stop.vsnd"
     }
-    
+
     // Casting
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastRange"                "240"
@@ -89,7 +89,7 @@
             "vision_radius"            "0"
         }
     }
-    
+
     "OnSpellStart"
     {
         "CreateThinker"
@@ -97,14 +97,14 @@
             "ModifierName"    "modifier_black_hole_datadriven"
             "Target"         "POINT"
         }
-        
+
             "RunScript"
-          {
-              "ScriptFile"    "abilities/elementalbuilder/voidgod_black_hole.lua"
-              "Function"        "GiveVision"
-          }
+        {
+            "ScriptFile"    "abilities/elementalbuilder/voidgod_black_hole.lua"
+            "Function"        "GiveVision"
+        }
     }
-    
+
     "OnChannelFinish"
     {
         "RunScript"
@@ -113,7 +113,7 @@
             "Function"        "ChannelEnd"
         }
     }
-    
+
     "Modifiers"
     {
         "modifier_black_hole_datadriven"
@@ -131,7 +131,7 @@
                     "EffectName"    "Hero_Enigma.Black_Hole"
                     "Target"        "CASTER"
                 }
-                
+
                 "AttachEffect"
                 {
                     "EffectName"        "particles/units/heroes/hero_enigma/enigma_blackhole.vpcf"
@@ -143,14 +143,14 @@
                         "01" "%far_radius %far_radius %far_radius"
                     }
                 }
-                
+
                 "RunScript"
                 {
                     "ScriptFile"    "abilities/elementalbuilder/voidgod_black_hole.lua"
                     "Function"        "MoveUnits"
                 }
             }
-            
+
             "OnDestroy"
             {
                 "FireSound"
@@ -159,7 +159,7 @@
                     "Target"        "TARGET"
                 }
             }
-            
+
             "ThinkInterval"    "%move_tick_rate"
             "OnIntervalThink"
             {
@@ -170,7 +170,7 @@
                 }
             }
         }
-        
+
         "modifier_black_hole_debuff"
         {
             "IsPurgable"    "0"
@@ -187,7 +187,7 @@
                     "Damage"    "%damage"
                 }
             }
-            
+
             "States"
             {
                 "MODIFIER_STATE_STUNNED"            "MODIFIER_STATE_VALUE_ENABLED"

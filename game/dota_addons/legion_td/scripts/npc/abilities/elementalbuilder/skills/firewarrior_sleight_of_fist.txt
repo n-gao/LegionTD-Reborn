@@ -13,16 +13,16 @@
     //-------------------------------------------------------------------------------------------------------------
     "BaseClass"                        "ability_datadriven"
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
-    "AbilityUnitDamageType"            "DAMAGE_TYPE_PHYSICAL"    
+    "AbilityUnitDamageType"            "DAMAGE_TYPE_PHYSICAL"
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
-    
+
     "AbilityCastRange"                "700"
     "AbilityCastPoint"                "0"
     "FightRecapLevel"                "1"
     "AbilityTextureName"            "ember_spirit_sleight_of_fist"
     "AOERadius"                        "%radius"
-    
-    // Time        
+
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"                "3.2"
 
@@ -58,7 +58,7 @@
                 "creep_damage_penalty"            "-25"
             }
     }
-    
+
     // Data driven
     //-------------------------------------------------------------------------------------------------------------
     "precache"
@@ -70,7 +70,7 @@
         "particle"                        "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
         "particle"                        "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
     }
-    
+
     "OnSpellStart"
     {
         "FireSound"
@@ -78,13 +78,13 @@
             "Target"                    "CASTER"
             "EffectName"                "Hero_EmberSpirit.SleightOfFist.Cast"
         }
-    
+
         "ApplyModifier"
         {
             "Target"                    "CASTER"
             "ModifierName"                "modifier_sleight_of_fist_caster_datadriven"
         }
-    
+
         "RunScript"
         {
             "ScriptFile"                "abilities/elementalbuilder/firewarrior_sleight_of_fist.lua"
@@ -92,13 +92,13 @@
             "Target"                    "POINT"
         }
     }
-    
+
     "Modifiers"
     {
         "modifier_sleight_of_fist_caster_datadriven"
         {
             "IsPurgable"                "0"
-        
+
             "States"
             {
                 "MODIFIER_STATE_INVULNERABLE"        "MODIFIER_STATE_VALUE_ENABLED"
@@ -108,12 +108,12 @@
                 "MODIFIER_STATE_ROOTED"                "MODIFIER_STATE_VALUE_ENABLED"
             }
         }
-        
+
         "modifier_sleight_of_fist_dummy_datadriven"
         {
             "IsPurgable"                "0"
             "IsHidden"                    "1"
-            
+
             "OnCreated"
             {
                 "AttachEffect"
@@ -127,7 +127,7 @@
                     }
                 }
             }
-            
+
             "States"
             {
                 "MODIFIER_STATE_INVULNERABLE"                    "MODIFIER_STATE_VALUE_ENABLED"
@@ -139,31 +139,31 @@
                 "MODIFIER_STATE_DISARMED"                        "MODIFIER_STATE_VALUE_ENABLED"
             }
         }
-        
+
         "modifier_sleight_of_fist_target_datadriven"
         {
             "IsPurgable"                "0"
-        
+
             "EffectName"                "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
             "EffectAttachType"            "follow_overhead"
         }
-        
+
         "modifier_sleight_of_fist_target_hero_datadriven"
         {
             "IsPurgable"                "0"
             "IsHidden"                    "1"
-        
+
             "Properties"
             {
                 "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"        "%bonus_hero_damage"
             }
         }
-        
+
         "modifier_sleight_if_fist_target_creep_datadriven"
         {
             "IsPurgable"                "0"
             "IsHidden"                    "1"
-        
+
             "Properties"
             {
                 "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"    "%creep_damage_penalty"

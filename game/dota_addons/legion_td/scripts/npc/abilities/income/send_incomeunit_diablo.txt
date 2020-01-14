@@ -35,8 +35,8 @@
             "unitID"                "1024"
         }
     }
-  "precache"
-  {
-    "model" "models/items/warlock/golem/doom_of_ithogoaki/doom_of_ithogoaki.vmdl"
-  }
+    "precache"
+    {
+        "model" "models/items/warlock/golem/doom_of_ithogoaki/doom_of_ithogoaki.vmdl"
+    }
 }

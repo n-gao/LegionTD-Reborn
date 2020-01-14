@@ -25,7 +25,7 @@ function HandleLivingArmor(keys)
     local caster = keys.caster
     local ability = keys.ability
     local target = keys.unit
-    
+
     local damage = keys.damage
     local block = ability:GetSpecialValueFor("damage_block")
     -- heal handling --
@@ -33,7 +33,7 @@ function HandleLivingArmor(keys)
     if damage > block then heal = block end
     target:SetHealth(target:GetHealth() + heal)
     SendOverheadEventMessage(target, OVERHEAD_ALERT_BLOCK, target, heal, nil)
-    
+
     -- stack handling --
     local stacks = target:GetModifierStackCount("modifier_living_armor_datadriven_stacks", caster)
     if stacks > 0 then

@@ -35,8 +35,8 @@
             "unitID"                "1023"
         }
     }
-  "precache"
-  {
-    "model" "models/creeps/nian/nian_creep.vmdl"
-  }
+    "precache"
+    {
+        "model" "models/creeps/nian/nian_creep.vmdl"
+    }
 }

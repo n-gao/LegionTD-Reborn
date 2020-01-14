@@ -44,7 +44,7 @@
     // Bounds
     //----------------------------------------------------------------
     "BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-  "CollisionSize"                    "40"
+    "CollisionSize"                    "40"
     "RingRadius"            "30"
 
     // Movement

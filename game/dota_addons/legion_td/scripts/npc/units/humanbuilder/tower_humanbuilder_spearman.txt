@@ -33,7 +33,7 @@
     "AttackRange"           "100"
     "ProjectileModel"       ""
     "ProjectileSpeed"       "0"
-    
+
     "LegionAttackType"     "normal"
     "LegionDefendType"     "heavy"
     "LegionFraction"       "human"
@@ -89,7 +89,7 @@
                 "Support"           "0.0"
             }
         }
-   "AttachWearables"
+    "AttachWearables"
         {
             "Wearable1" { "ItemDef" "9134" } // "Burning Shield of the Outland Ravager"
             "Wearable2" { "ItemDef" "9132" } // "Helm of the Outland Ravager"

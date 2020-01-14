@@ -16,7 +16,7 @@
         {
             "var_type"                    "FIELD_INTEGER"
             "crit_damage"                "275"
-        }            
+        }
         "03"
         {
             "var_type"                    "FIELD_INTEGER"
@@ -26,12 +26,12 @@
         {
             "var_type"                    "FIELD_INTEGER"
             "armor_reduction_tooltip"    "5"
-        }            
+        }
         "05"
         {
             "var_type"                    "FIELD_INTEGER"
             "armor_duration"            "8"
         }
-        
+
     }
 }

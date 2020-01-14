@@ -226,7 +226,7 @@ function Game:ReadLanes(kvSpawns)
             lspawn and lwaypoint and lheroSpawn and lunitWaypoint and lbox and lfoodBuilding and lmainBuilding and
                 lnextWaypoint and
                 llastWaypoint
-         then
+        then
             print("Lane " .. ind .. " found.")
             self.lanes[ind] = {
                 spawnpoint = lspawn,
@@ -519,7 +519,7 @@ function Game:StartNextRound()
             if
                 player.missedSpawns >= 3 or
                     PlayerResource:GetConnectionState(player:GetPlayerID()) == DOTA_CONNECTION_STATE_ABANDONED
-             then
+            then
                 player:Abandon()
             end
         end

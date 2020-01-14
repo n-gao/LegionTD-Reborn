@@ -35,10 +35,9 @@
             "unitID"                "1002"
         }
     }
-  "precache"
-  {
-    "model"     "models/creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_high_priest.vmdl"
+    "precache"
+    {
+        "model"     "models/creeps/neutral_creeps/n_creep_forest_trolls/n_creep_forest_troll_high_priest.vmdl"
         "particle"  "particles/units/heroes/hero_chen/chen_base_attack.vpcf"
-
-  }
+    }
 }

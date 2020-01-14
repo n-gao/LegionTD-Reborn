@@ -140,7 +140,7 @@ end
 
 function Selection:Init()
     Selection.entities = {}
-     --Stores the selected entities of each playerID
+    --Stores the selected entities of each playerID
     CustomGameEventManager:RegisterListener("selection_update", Dynamic_Wrap(Selection, "OnUpdate"))
 end
 
@@ -155,11 +155,11 @@ function Selection:GetEntIndexListFromTable(unit_args)
     if type(unit_args) == "number" then
         -- Check contents of the table
         table.insert(entities, unit_args)
-     -- Entity Index
+    -- Entity Index
     elseif type(unit_args) == "table" then
         if unit_args.IsCreature then
             table.insert(entities, unit_args:GetEntityIndex())
-         -- NPC Handle
+        -- NPC Handle
         else
             for _, arg in pairs(unit_args) do
                 -- Table of entity index values

@@ -1,54 +1,54 @@
-	//=================================================================================================================
-	// Enchantress: Untouchable (Lua version)
-	// Credit: Elfansoer
-	// https://github.com/Elfansoer/dota-2-lua-abilities
-	//=================================================================================================================
-	"enchantress_untouchable_lua"
-	{
-		// Ability Technical Aspect
-		// base script folder	: scripts/vscripts
-		// base texture folder	: resource/flash3/images/spellicons
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/waveunits/enchantress_untouchable_lua"
-		"AbilityTextureName"			"enchantress_untouchable"
-		"FightRecapLevel"				"1"
-		"MaxLevel"						"1"
-		"precache"
-		{
-			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
-			"particle"	"particles/units/heroes/hero_enchantress/enchantress_untouchable.vpcf"
-		}
-		
-		// Ability General
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+    //=================================================================================================================
+    // Enchantress: Untouchable (Lua version)
+    // Credit: Elfansoer
+    // https://github.com/Elfansoer/dota-2-lua-abilities
+    //=================================================================================================================
+    "enchantress_untouchable_lua"
+    {
+        // Ability Technical Aspect
+        // base script folder	: scripts/vscripts
+        // base texture folder	: resource/flash3/images/spellicons
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"ability_lua"
+        "ScriptFile"					"abilities/waveunits/enchantress_untouchable_lua"
+        "AbilityTextureName"			"enchantress_untouchable"
+        "FightRecapLevel"				"1"
+        "MaxLevel"						"1"
+        "precache"
+        {
+            "soundfile"	"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
+            "particle"	"particles/units/heroes/hero_enchantress/enchantress_untouchable.vpcf"
+        }
 
-		// Ability Casting
-		//-------------------------------------------------------------------------------------------------------------
+        // Ability General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+        "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
-		// Ability Resource
-		//-------------------------------------------------------------------------------------------------------------
+        // Ability Casting
+        //-------------------------------------------------------------------------------------------------------------
 
-		// Damage
-		//-------------------------------------------------------------------------------------------------------------
+        // Ability Resource
+        //-------------------------------------------------------------------------------------------------------------
 
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"slow_attack_speed"		"-20"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"slow_duration"			"3"
-			}
-		}
-	}
+        // Damage
+        //-------------------------------------------------------------------------------------------------------------
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"				"FIELD_INTEGER"
+                "slow_attack_speed"		"-20"
+            }
+            "02"
+            {
+                "var_type"				"FIELD_INTEGER"
+                "slow_duration"			"3"
+            }
+        }
+    }

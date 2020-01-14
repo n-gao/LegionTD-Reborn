@@ -77,7 +77,7 @@
                     "Wearable1" { "ItemDef" "5926" }
                     "Wearable2" { "ItemDef" "5927" }
                     "Wearable3" { "ItemDef" "8005" }
-                    "Wearable4" { "ItemDef" "5929" } 
+                    "Wearable4" { "ItemDef" "5929" }
                 }
         }
     }
@@ -153,7 +153,7 @@
                     "Support"           "0.0"
                 }
             }
-           "AttachWearables"
+            "AttachWearables"
                 {
                     "Wearable1" { "ItemDef" "6650" }
                     "Wearable2" { "ItemDef" "6651" }
@@ -1144,7 +1144,7 @@
                 "Wearable2" { "ItemDef" "7206" }
                 "Wearable3" { "ItemDef" "7317" }
                 "Wearable4" { "ItemDef" "7318" }
-                "Wearable5" { "ItemDef" "7319" } 
+                "Wearable5" { "ItemDef" "7319" }
                 "Wearable6" { "itemDef" "6694" }
             }
         }
@@ -1187,7 +1187,7 @@
         "BountyGoldMin"             "0"
         "BountyGoldMax"             "0"
 
-        "BoundsHullName"            "DOTA_HULL_SIZE_HERO"   
+        "BoundsHullName"            "DOTA_HULL_SIZE_HERO"
         "RingRadius"                "30"
 
         "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
@@ -1221,7 +1221,7 @@
                     "Support"           "0.0"
                 }
             }
-             "AttachWearables"
+            "AttachWearables"
                 {
                     "Wearable1" { "ItemDef" "6525" }
                     "Wearable2" { "ItemDef" "8009" }
@@ -1348,7 +1348,7 @@
         "LegionAttackType"         "normal"
         "LegionDefendType"         "medium"
         "LegionFraction"        "assassin"
-    
+
         "BountyXP"                  "0"
         "BountyGoldMin"             "0"
         "BountyGoldMax"             "0"
@@ -4203,7 +4203,7 @@
                     "Support"           "0.0"
                 }
             }
-         "AttachWearables"
+        "AttachWearables"
             {
                 "Wearable1" { "ItemDef" "6775" } // "Mask of the Bladesrunner"
                 "Wearable2" { "ItemDef" "8986" } // "Sword of the Bladeform Aesthete"
@@ -4521,12 +4521,12 @@
             }
         "AttachWearables"
         {
-          "Wearable1" { "ItemDef" "8352" } // "Helm of Rising Fury"
-          "Wearable2" { "ItemDef" "8353" } // "Sword of Rising Fury"
-          "Wearable3" { "ItemDef" "8348" } // "Faulds of Rising Fury"
-          "Wearable4" { "ItemDef" "8351" } // "Gauntlets of Rising Fury"
-          "Wearable5" { "ItemDef" "8349" } // "Pauldrons of Rising Fury"
-          "Wearable5" { "ItemDef" "8350" } // "Cape of Rising Fury"
+        "Wearable1" { "ItemDef" "8352" } // "Helm of Rising Fury"
+        "Wearable2" { "ItemDef" "8353" } // "Sword of Rising Fury"
+        "Wearable3" { "ItemDef" "8348" } // "Faulds of Rising Fury"
+        "Wearable4" { "ItemDef" "8351" } // "Gauntlets of Rising Fury"
+        "Wearable5" { "ItemDef" "8349" } // "Pauldrons of Rising Fury"
+        "Wearable5" { "ItemDef" "8350" } // "Cape of Rising Fury"
         }
         }
     }
@@ -4621,13 +4621,13 @@
                     "Support"           "0.0"
                 }
             }
-         "AttachWearables"
+        "AttachWearables"
             {
-              "Wearable1" { "ItemDef" "6895" }
-              "Wearable2" { "ItemDef" "9093" }
-              "Wearable3" { "ItemDef" "9096" }
-              "Wearable4" { "ItemDef" "9095" }
-              "Wearable5" { "ItemDef" "9455" }
+            "Wearable1" { "ItemDef" "6895" }
+            "Wearable2" { "ItemDef" "9093" }
+            "Wearable3" { "ItemDef" "9096" }
+            "Wearable4" { "ItemDef" "9095" }
+            "Wearable5" { "ItemDef" "9455" }
             }
         }
     }
@@ -5214,13 +5214,13 @@
             }
         "AttachWearables"
         {
-          "Wearable1" { "ItemDef" "38" } // "Crystal Maiden's Cape"
-          "Wearable2" { "ItemDef" "5216" } // Shoulders of the North
-      
-          "Wearable3" { "ItemDef" "8228" } // Scepter of the Icebound Floret
-          "Wearable4" { "ItemDef" "41" } // "Crystal Maiden's Cuffs"
-          "Wearable5" { "ItemDef" "311" } // "Crystal Maiden's Headdress"
-          "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
+        "Wearable1" { "ItemDef" "38" } // "Crystal Maiden's Cape"
+        "Wearable2" { "ItemDef" "5216" } // Shoulders of the North
+
+        "Wearable3" { "ItemDef" "8228" } // Scepter of the Icebound Floret
+        "Wearable4" { "ItemDef" "41" } // "Crystal Maiden's Cuffs"
+        "Wearable5" { "ItemDef" "311" } // "Crystal Maiden's Headdress"
+        "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
         }
         }
     }
@@ -5318,11 +5318,11 @@
         "AttachWearables"
         {
         //"Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
-          "Wearable2" { "ItemDef" "4454" } // "Lyralei's Breeze"
-          "Wearable3" { "ItemDef" "23" } // "Wind Ranger's Shoulder Pads"
-          "Wearable4" { "ItemDef" "4512" } // Cape of the Wind Leaf
-          "Wearable5" { "ItemDef" "25" } // "Wind Ranger's Quiver"
-          "Wearable6" { "ItemDef" "4473" } // Markswoman's Cap
+        "Wearable2" { "ItemDef" "4454" } // "Lyralei's Breeze"
+        "Wearable3" { "ItemDef" "23" } // "Wind Ranger's Shoulder Pads"
+        "Wearable4" { "ItemDef" "4512" } // Cape of the Wind Leaf
+        "Wearable5" { "ItemDef" "25" } // "Wind Ranger's Quiver"
+        "Wearable6" { "ItemDef" "4473" } // Markswoman's Cap
         }
         }
     }
@@ -5619,7 +5619,7 @@
             }
             "AttachWearables"
                 {
-                "Wearable1" { "ItemDef" "7580" }  
+                "Wearable1" { "ItemDef" "7580" }
                 "Wearable2" { "ItemDef" "8958" }
                 "Wearable3" { "ItemDef" "8173" }
                 "Wearable4" { "ItemDef" "8954" }
@@ -5722,12 +5722,12 @@
             }
         "AttachWearables"
         {
-          "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
-          "Wearable2" { "ItemDef" "4552" } // "Gilded Falcon Bow"
-          "Wearable3" { "ItemDef" "4562" } // "Gilded Falcon Wings"
-          "Wearable4" { "ItemDef" "4554" } // "Gilded Falcon Cloak"
-          "Wearable5" { "ItemDef" "4553" } // "Gilded Falcon Quiver"
-          "Wearable6" { "ItemDef" "4559" } // "Gilded Falcon Helm" 
+        "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
+        "Wearable2" { "ItemDef" "4552" } // "Gilded Falcon Bow"
+        "Wearable3" { "ItemDef" "4562" } // "Gilded Falcon Wings"
+        "Wearable4" { "ItemDef" "4554" } // "Gilded Falcon Cloak"
+        "Wearable5" { "ItemDef" "4553" } // "Gilded Falcon Quiver"
+        "Wearable6" { "ItemDef" "4559" } // "Gilded Falcon Helm"
         }
         }
     }
@@ -5766,7 +5766,7 @@
         "AttackRange"           "100"
         "ProjectileModel"       ""
         "ProjectileSpeed"       "0"
-    
+
         "LegionAttackType"     "normal"
         "LegionDefendType"     "heavy"
         "LegionFraction"       "human"
@@ -5824,12 +5824,12 @@
             }
         "AttachWearables"
         {
-          "Wearable1" { "ItemDef" "6373" } // "Shield of the Blazing Superiority"
-          "Wearable2" { "ItemDef" "6371" } // "Helmet of the Blazing Superiority"
-          "Wearable3" { "ItemDef" "6376" } // "Vambrace of the Blazing Superiority"
-          "Wearable4" { "ItemDef" "6374" } // "Skirt of the Blazing Superiority"
-          "Wearable5" { "ItemDef" "6372" } // "Pauldrons of the Blazing Superiority"
-          "Wearable6" { "ItemDef" "6375" } // "Sword of the Blazing Superiority"
+        "Wearable1" { "ItemDef" "6373" } // "Shield of the Blazing Superiority"
+        "Wearable2" { "ItemDef" "6371" } // "Helmet of the Blazing Superiority"
+        "Wearable3" { "ItemDef" "6376" } // "Vambrace of the Blazing Superiority"
+        "Wearable4" { "ItemDef" "6374" } // "Skirt of the Blazing Superiority"
+        "Wearable5" { "ItemDef" "6372" } // "Pauldrons of the Blazing Superiority"
+        "Wearable6" { "ItemDef" "6375" } // "Sword of the Blazing Superiority"
         }
         }
     }
@@ -5926,12 +5926,12 @@
             }
         "AttachWearables"
         {
-          "Wearable1" { "ItemDef" "8695" } // "Cape of the Glacial Magnolia"
-          "Wearable2" { "ItemDef" "8697" } // "Mantle of the Glacial Magnolia"
-          "Wearable3" { "ItemDef" "4383" } // "Staff of the Crystalline Queen"
-          "Wearable4" { "ItemDef" "4420" } // "Bracers of the Crystalline Queen"
-          "Wearable5" { "ItemDef" "4540" } // "Tiara of the Crystalline Queen"
-          "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
+        "Wearable1" { "ItemDef" "8695" } // "Cape of the Glacial Magnolia"
+        "Wearable2" { "ItemDef" "8697" } // "Mantle of the Glacial Magnolia"
+        "Wearable3" { "ItemDef" "4383" } // "Staff of the Crystalline Queen"
+        "Wearable4" { "ItemDef" "4420" } // "Bracers of the Crystalline Queen"
+        "Wearable5" { "ItemDef" "4540" } // "Tiara of the Crystalline Queen"
+        "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
         }
         }
     }
@@ -5970,7 +5970,7 @@
         "AttackRange"           "100"
         "ProjectileModel"       ""
         "ProjectileSpeed"       "0"
-    
+
         "LegionAttackType"     "normal"
         "LegionDefendType"     "heavy"
         "LegionFraction"       "human"
@@ -6026,7 +6026,7 @@
                     "Support"           "0.0"
                 }
             }
-       "AttachWearables"
+        "AttachWearables"
             {
                 "Wearable1" { "ItemDef" "9134" } // "Burning Shield of the Outland Ravager"
                 "Wearable2" { "ItemDef" "9132" } // "Helm of the Outland Ravager"
@@ -6101,38 +6101,38 @@
 
             }
 
-             "AttachWearables"
+            "AttachWearables"
                 {
                     "Wearable1"
                     {
                         "ItemDef"   "453"
                     }
-    
+
                     "Wearable2"
                     {
                         "ItemDef"   "8673"
                     }
-    
+
                     "Wearable3"
                     {
                         "ItemDef"   "8301"
                     }
-    
+
                     "Wearable4"
                     {
                         "ItemDef"   "8671"
                     }
-    
+
                     "Wearable5"
                     {
                         "ItemDef"   "8670"
                     }
-    
+
                     "Wearable6"
                     {
                         "ItemDef"   "8669"
                     }
-    
+
                 }
 
         }
@@ -6696,7 +6696,7 @@
         // Bounds
         //----------------------------------------------------------------
         "BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-      "CollisionSize"                    "40"
+    "CollisionSize"                    "40"
         "RingRadius"            "30"
 
         // Movement
@@ -7373,7 +7373,7 @@
         // Bounds
         //----------------------------------------------------------------
         "BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-      "CollisionSize"                    "40"
+    "CollisionSize"                    "40"
         "RingRadius"            "25"
 
         // Movement
@@ -7785,7 +7785,7 @@
         // Bounds
         //----------------------------------------------------------------
         "BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
-      "CollisionSize"                    "40"
+    "CollisionSize"                    "40"
         "RingRadius"            "25"
 
         // Movement
@@ -7848,7 +7848,7 @@
         "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"           // Type of locomotion - ground, air
 
         "UnitRelationshipClass"     "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
-    
+
         // Vision
         //----------------------------------------------------------------
         "VisionDaytimeRange"        "1000"      // Range of vision during day light.
@@ -9843,7 +9843,7 @@
         "Ability4"                          "sell"
         "Ability1"                          "undeadbuilder_upgrade_devourer"
         "Ability2"                          "pudge_rot_lua"
-  
+
 
         // Armor
         //----------------------------------------------------------------
@@ -9862,7 +9862,7 @@
         "AttackRange"           "90"
         "ProjectileModel"       ""
         "ProjectileSpeed"       "0"
-    
+
         "LegionAttackType"     "normal"
         "LegionDefendType"     "heavy"
         "LegionFraction"       "undead"
@@ -9924,37 +9924,37 @@
                         {
                             "ItemDef"   "6007"
                         }
-    
+
                         "Wearable2"
                         {
                             "ItemDef"   "6115"
                         }
-    
+
                         "Wearable3"
                         {
                             "ItemDef"   "6116"
                         }
-    
+
                         "Wearable4"
                         {
                             "ItemDef"   "6202"
                         }
-    
+
                         "Wearable5"
                         {
                             "ItemDef"   "6203"
                         }
-    
+
                         "Wearable6"
                         {
                             "ItemDef"   "6204"
                         }
-    
+
                         "Wearable7"
                         {
                             "ItemDef"   "6212"
                         }
-    
+
                     }
         }
     }
@@ -9992,7 +9992,7 @@
         "AttackRange"           "600"
         "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
         "ProjectileSpeed"       "700"
-    
+
         "LegionAttackType"     "arcane"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -10091,7 +10091,7 @@
         "AttackAnimationPoint"  "0.2"
         "AttackAcquisitionRange" "850"
         "AttackRange"           "90"
-    
+
         "LegionAttackType"     "pierce"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -10190,7 +10190,7 @@
         "AttackRange"           "90"
         "ProjectileModel"       ""
         "ProjectileSpeed"       "0"
-    
+
         "LegionAttackType"     "normal"
         "LegionDefendType"     "medium"
         "LegionFraction"       "undead"
@@ -10285,7 +10285,7 @@
         "AttackRange"           "500"
         "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
         "ProjectileSpeed"       "600"
-    
+
         "LegionAttackType"     "pierce"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -10383,7 +10383,7 @@
         "AttackRange"           "600"
         "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
         "ProjectileSpeed"       "700"
-    
+
         "LegionAttackType"     "arcane"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -10466,7 +10466,7 @@
         "Ability4"                          "sell"
         "Ability1"                          "pudge_dismember_lua"
         "Ability2"                          "improved_pudge_rot_lua"
-  
+
 
         // Armor
         //----------------------------------------------------------------
@@ -10485,7 +10485,7 @@
         "AttackRange"           "90"
         "ProjectileModel"       ""
         "ProjectileSpeed"       "0"
-    
+
         "LegionAttackType"     "normal"
         "LegionDefendType"     "heavy"
         "LegionFraction"       "undead"
@@ -10547,37 +10547,37 @@
                         {
                             "ItemDef"   "6202"
                         }
-    
+
                         "Wearable2"
                         {
                             "ItemDef"   "4007"
                         }
-    
+
                         "Wearable3"
                         {
                             "ItemDef"   "6226"
                         }
-    
+
                         "Wearable4"
                         {
                             "ItemDef"   "7171"
                         }
-    
+
                         "Wearable5"
                         {
                             "ItemDef"   "6298"
                         }
-    
+
                         "Wearable6"
                         {
                             "ItemDef"   "6115"
                         }
-    
+
                         "Wearable7"
                         {
                             "ItemDef"   "8498"
                         }
-    
+
                     }
         }
     }
@@ -10615,7 +10615,7 @@
         "AttackRange"           "600"
         "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
         "ProjectileSpeed"       "700"
-    
+
         "LegionAttackType"     "arcane"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -10716,7 +10716,7 @@
         "AttackRange"           "500"
         "ProjectileModel"       "particles/econ/items/shadow_fiend/sf_desolation/sf_base_attack_desolation.vpcf"
         "ProjectileSpeed"       "600"
-    
+
         "LegionAttackType"     "pierce"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -10814,7 +10814,7 @@
         "AttackRange"           "90"
         "ProjectileModel"       ""
         "ProjectileSpeed"       "0"
-    
+
         "LegionAttackType"     "normal"
         "LegionDefendType"     "medium"
         "LegionFraction"       "undead"
@@ -10887,7 +10887,7 @@
         "Level"                 "1"
         "HealthBarOffset"       "120"
         "Vscripts"              "ai/undeadbuilder/ai_follower.lua"
-                       
+
         "Ability1"                          "undeadbuilder_upgrade_recomposer"
         "Ability2"                          "undeadbuilder_upgrade_cultist"
         "Ability3"                          "undeadbuilder_upgrade_interrupter"
@@ -10911,7 +10911,7 @@
         "AttackRange"           "600"
         "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
         "ProjectileSpeed"       "700"
-    
+
         "LegionAttackType"     "arcane"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -11012,7 +11012,7 @@
         "AttackRange"           "90"
         "ProjectileModel"       ""
         "ProjectileSpeed"       "0"
-    
+
         "LegionAttackType"     "normal"
         "LegionDefendType"     "medium"
         "LegionFraction"       "undead"
@@ -11107,7 +11107,7 @@
         "AttackRange"           "90"
         "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
         "ProjectileSpeed"       "600"
-    
+
         "LegionAttackType"     "normal"
         "LegionDefendType"     "medium"
         "LegionFraction"       "undead"
@@ -11165,7 +11165,7 @@
             }
         "AttachWearables"
         {
-             "Wearable1" { "ItemDef" "8885" }
+            "Wearable1" { "ItemDef" "8885" }
         }
         }
     }
@@ -11204,7 +11204,7 @@
         "AttackRange"           "90"
         "ProjectileModel"       ""
         "ProjectileSpeed"       "0"
-    
+
         "LegionAttackType"     "normal"
         "LegionDefendType"     "medium"
         "LegionFraction"       "undead"
@@ -11277,7 +11277,7 @@
         "Level"                 "1"
         "HealthBarOffset"       "120"
         "Vscripts"              "ai/undeadbuilder/ai_interrupter.lua"
-    
+
         "Ability1"                          "hell_spikes"
         "Ability2"                          "perfected_nether_blast"
         "Ability3"                          "sell"
@@ -11299,7 +11299,7 @@
         "AttackRange"           "600"
         "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
         "ProjectileSpeed"       "700"
-    
+
         "LegionAttackType"     "arcane"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -11398,7 +11398,7 @@
         "AttackAnimationPoint"  "0.2"
         "AttackAcquisitionRange" "850"
         "AttackRange"           "90"
-    
+
         "LegionAttackType"     "pierce"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -11474,7 +11474,7 @@
 
         "Ability4"                          "sell"
         "Ability1"                          "undeadbuilder_upgrade_abomination"
-  
+
 
         // Armor
         //----------------------------------------------------------------
@@ -11493,7 +11493,7 @@
         "AttackRange"           "90"
         "ProjectileModel"       ""
         "ProjectileSpeed"       "0"
-    
+
         "LegionAttackType"     "normal"
         "LegionDefendType"     "heavy"
         "LegionFraction"       "undead"
@@ -11549,7 +11549,7 @@
                     "Support"           "0.0"
                 }
             }
-                   "AttachWearables"
+                    "AttachWearables"
                     {
                         "Wearable1" { "ItemDef" "4759" } // Left Hand Weapon
                         "Wearable2"    { "ItemDef" "4760" } // Heavy Tenderizer
@@ -11591,7 +11591,7 @@
         "AttackRange"           "500"
         "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
         "ProjectileSpeed"       "600"
-    
+
         "LegionAttackType"     "pierce"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -11688,7 +11688,7 @@
         "AttackRange"           "500"
         "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
         "ProjectileSpeed"       "600"
-    
+
         "LegionAttackType"     "pierce"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -11786,7 +11786,7 @@
         "AttackRange"           "600"
         "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
         "ProjectileSpeed"       "700"
-    
+
         "LegionAttackType"     "arcane"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -11853,7 +11853,7 @@
             }
         }
     }
-     "tower_undeadbuilder_resurrected"
+    "tower_undeadbuilder_resurrected"
     {
         // General
         //----------------------------------------------------------------
@@ -11964,7 +11964,7 @@
         "Ability2"              "nevermore_dark_lord_datadriven"
         "Ability3"              "ursa_overpower_datadriven"
         "Ability4"              "sell"
-    
+
         // Armor
         //----------------------------------------------------------------
         "ArmorPhysical"         "7"
@@ -11982,7 +11982,7 @@
         "AttackRange"           "500"
         "ProjectileModel"       "particles/econ/items/shadow_fiend/sf_desolation/sf_base_attack_desolation.vpcf"
         "ProjectileSpeed"       "600"
-    
+
         "LegionAttackType"     "pierce"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -12080,7 +12080,7 @@
         "AttackRange"           "500"
         "ProjectileModel"       "particles/econ/items/shadow_fiend/sf_desolation/sf_base_attack_desolation.vpcf"
         "ProjectileSpeed"       "600"
-    
+
         "LegionAttackType"     "pierce"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -12160,7 +12160,7 @@
         "Ability2"              "splash_attack"
         "Ability3"              "nevermore_dark_lord_datadriven"
         "Ability4"                          "sell"
-    
+
         // Armor
         //----------------------------------------------------------------
         "ArmorPhysical"         "5"
@@ -12178,7 +12178,7 @@
         "AttackRange"           "500"
         "ProjectileModel"       "particles/econ/items/shadow_fiend/sf_desolation/sf_base_attack_desolation.vpcf"
         "ProjectileSpeed"       "600"
-    
+
         "LegionAttackType"     "pierce"
         "LegionDefendType"     "light"
         "LegionFraction"       "undead"
@@ -12276,7 +12276,7 @@
         "AttackRange"           "90"
         "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
         "ProjectileSpeed"       "600"
-    
+
         "LegionAttackType"     "normal"
         "LegionDefendType"     "medium"
         "LegionFraction"       "undead"
@@ -12377,7 +12377,7 @@
         "AttackRange"           "90"
         "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
         "ProjectileSpeed"       "600"
-    
+
         "LegionAttackType"     "normal"
         "LegionDefendType"     "medium"
         "LegionFraction"       "undead"
@@ -12438,7 +12438,7 @@
         }
         }
     }
-     "tower_undeadbuilder_zombie"
+    "tower_undeadbuilder_zombie"
     {
         // General
         //----------------------------------------------------------------
@@ -13187,7 +13187,7 @@
                 "model" "models/heroes/dragon_knight/dragon_knight_dragon.vmdl"
                 "particle"  "particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_frost.vpcf"
             }
-    
+
             "Creature"
             {
                 "DisableClumpingBehavior"   "1"
@@ -13201,9 +13201,9 @@
                         "Avoidance" "0.0"
                         "Support"   "0.0"
                     }
-    
+
                 }
-    
+
                 "AttachWearables"
             {
                 "Wearable1" { "ItemDef" "9134" } // "Burning Shield of the Outland Ravager"
@@ -13213,9 +13213,9 @@
                 "Wearable5" { "ItemDef" "9131" } // "Mantle of the Outland Ravager"
                 "Wearable6" { "ItemDef" "6337" } // "Heavy Wingblade"
             }
-    
+
             }
-    
+
         }
     "unit_dragonspawn"
     {
@@ -13523,9 +13523,9 @@
                         "Avoidance"    "0.0"
                         "Support"    "0.0"
                     }
-    
+
                 }
-    
+
                 "AttachWearables"
                 {
                     "Wearable1"
@@ -13536,11 +13536,11 @@
                     {
                         "ItemDef"    "5024"
                     }
-    
+
                 }
-    
+
             }
-    
+
         }
     "unit_fatty"
         {
@@ -13592,7 +13592,7 @@
             {
                 "particle"  "particles/units/heroes/hero_alchemist/alchemist_acid_spray.vpcf"
             }
-    
+
             "Creature"
             {
                 "DisableClumpingBehavior"   "1"
@@ -13606,50 +13606,50 @@
                         "Avoidance" "0.0"
                         "Support"   "0.0"
                     }
-    
+
                 }
-    
+
                 "AttachWearables"
                 {
                     "Wearable1"
                     {
                         "ItemDef"   "6202"
                     }
-    
+
                     "Wearable2"
                     {
                         "ItemDef"   "4007"
                     }
-    
+
                     "Wearable3"
                     {
                         "ItemDef"   "4760"
                     }
-    
+
                     "Wearable4"
                     {
                         "ItemDef"   "7171"
                     }
-    
+
                     "Wearable5"
                     {
                         "ItemDef"   "6298"
                     }
-    
+
                     "Wearable6"
                     {
                         "ItemDef"   "6115"
                     }
-    
+
                     "Wearable7"
                     {
                         "ItemDef"   "8498"
                     }
-    
+
                 }
-    
+
             }
-    
+
         }
     "unit_gatling_sniper"
     {
@@ -13978,17 +13978,17 @@
                     {
                         "ItemDef"    "8193"
                     }
-    
+
                     "Wearable2"
                     {
                         "ItemDef"    "8191"
                     }
-    
+
                     "Wearable3"
                     {
                         "ItemDef"    "8196"
                     }
-    
+
                 }
 
         }
@@ -14235,7 +14235,7 @@
             }
         }
 
-        "precache" 
+        "precache"
         {
             "particle"    "particles/units/heroes/hero_lycan/lycan_claw_blur.vpcf"
             "particle"    "particles/units/heroes/hero_lycan/lycan_claw_blur_b.vpcf"
@@ -14301,7 +14301,7 @@
                 }
 
             }
-        
+
             "AttachWearables"
             {
                 "Wearable1"
@@ -14562,7 +14562,7 @@
             {
                 "particle"  "particles/units/heroes/hero_life_stealer/life_stealer_feast.vpcf"
             }
-    
+
             "Creature"
             {
                 "DisableClumpingBehavior"   "1"
@@ -14576,36 +14576,36 @@
                         "Avoidance" "0.0"
                         "Support"   "0.0"
                     }
-    
+
                 }
-    
-                 "AttachWearables"
+
+                "AttachWearables"
                 {
                     "Wearable1"
                     {
                         "ItemDef"   "9105"
                     }
-    
+
                     "Wearable2"
                     {
                         "ItemDef"   "9199"
                     }
-    
+
                     "Wearable3"
                     {
                         "ItemDef"   "6319"
                     }
-    
+
                     "Wearable4"
                     {
                         "ItemDef"   "6463"
                     }
-    
+
                 }
-    
-    
+
+
             }
-    
+
         }
     "unit_ogre"
     {
@@ -15052,7 +15052,7 @@
         }
 
     }
-     "unit_space_cow"
+    "unit_space_cow"
         {
             "BaseClass"    "npc_dota_creature"
             "Model"    "models/items/enigma/eidolon/tentacular_conqueror_tentacular_conqueror_eidolons/tentacular_conqueror_tentacular_conqueror_eidolons.vmdl"
@@ -15362,7 +15362,7 @@
             {
                 "particle"    "particles/units/heroes/hero_tidehunter/tidehunter_krakenshell_purge.vpcf"
             }
-    
+
             "Creature"
             {
                 "DisableClumpingBehavior"    "1"
@@ -15376,24 +15376,24 @@
                         "Avoidance"    "0.0"
                         "Support"    "0.0"
                     }
-    
+
                 }
-    
+
                 "AttachWearables"
                 {
                     "Wearable1"
                     {
                         "ItemDef"    "4131"
                     }
-    
+
                     "Wearable2"
                     {
                         "ItemDef"    "6471"
                     }
-    
+
                 }
             }
-    
+
         }
     "unit_tiny"
     {

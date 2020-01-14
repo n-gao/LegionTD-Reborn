@@ -14,23 +14,23 @@
     "BaseClass"                "ability_datadriven"
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
     "AbilityUnitTargetTeam"            "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-    "AbilityUnitTargetType"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING | DOTA_UNIT_TARGET_MECHANICAL"            
+    "AbilityUnitTargetType"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING | DOTA_UNIT_TARGET_MECHANICAL"
     "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
     "SpellImmunityType"                "SPELL_IMMUNITY_ALLIES_NO"
-        
+
     "AbilityCastRange"                "0"
     "AbilityCastPoint"                "0.5 0.5 0.5 0.5"
     "FightRecapLevel"                "1"
     "AbilityTextureName"            "treant_living_armor"
-        
-    // Time        
+
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"                "32.0 26.0 20.0 14.0"
 
     // Cost
     //-------------------------------------------------------------------------------------------------------------
     "AbilityManaCost"                "0"
-        
+
     "AbilitySpecial"
     {
         "01"
@@ -90,7 +90,7 @@
                 {
                     "ScriptFile"    "abilities/waveunits/dragonspawn_living_armor"
                     "Function"        "RemoveParticle"
-                }    
+                }
             }
         }
     }

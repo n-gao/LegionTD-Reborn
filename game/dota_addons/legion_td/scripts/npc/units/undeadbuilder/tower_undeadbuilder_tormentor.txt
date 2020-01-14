@@ -16,7 +16,7 @@
     "Ability2"              "splash_attack"
     "Ability3"              "nevermore_dark_lord_datadriven"
     "Ability4"                          "sell"
-    
+
     // Armor
     //----------------------------------------------------------------
     "ArmorPhysical"         "5"
@@ -34,7 +34,7 @@
     "AttackRange"           "500"
     "ProjectileModel"       "particles/econ/items/shadow_fiend/sf_desolation/sf_base_attack_desolation.vpcf"
     "ProjectileSpeed"       "600"
-    
+
     "LegionAttackType"     "pierce"
     "LegionDefendType"     "light"
     "LegionFraction"       "undead"

@@ -1,662 +1,662 @@
 "legion_td_4v4"
 {
-  "FirstPrepTime"           "60"
-  "PrepTimeBetweenRounds"   "35"
-  "PrepTimeBeforeDuel"      "10"
+    "FirstPrepTime"           "60"
+    "PrepTimeBetweenRounds"   "35"
+    "PrepTimeBeforeDuel"      "10"
 
-  "LastSpawn"
-  {
-    "2"
+    "LastSpawn"
     {
-      "Name"                "Radiant_LastDef"
-    }
-    "3"
-    {
-      "Name"                "Dire_LastDef"
-    }
-  }
-
-  "LastSpawnRanged"
-  {
-    "2"
-    {
-      "Name"                "Radiant_LastDefRanged"
-    }
-    "3"
-    {
-      "Name"                "Dire_LastDefRanged"
-    }
-  }
-
-  "IncomeSpawner"
-  {
-    "2"
-    {
-      "Name"                "Radiant_Income_Spawner"
-    }
-    "3"
-    {
-      "Name"                "Dire_Income_Spawner"
-    }
-  }
-
-  "DuelSpawn"
-  {
-    "2"
-    {
-      "Name"                "Radiant_Duel_Spawn"
-    }
-    "3"
-    {
-      "Name"                "Dire_Duel_Spawn"
-    }
-  }
-
-  "DuelTarget"
-  {
-    "2"
-    {
-      "Name"                "Radiant_Duel_Target"
-    }
-    "3"
-    {
-      "Name"                "Dire_Duel_Target"
-    }
-  }
-
-  "Lanes"
-  {
-    "1"
-    {
-      "SpawnerName"         "Radiant_Left_Top_Spawner"
-      "Waypoint"            "Radiant_Left_top"
-      "NextWaypoint"        "Radiant_Left_Center"
-      "MidWaypoint"         "Radiant_Center"
-      "LastWaypoint"        "Raidant_Ancient"
-      "HeroSpawn"           "Radiant_1"
-      "Box"                 "Radiant_1_Box"
-      "UnitWaypoint"        "Radiant_1_Unit_Waypoint"
-      "MainBuilding"        "Radiant_1_Main_Building"
-      "FoodBuilding"        "Radiant_1_Food_Building"
-    }
-    "2"
-    {
-      "SpawnerName"         "Radiant_Right_Top_Spawner"
-      "Waypoint"            "Radiant_Right_Top"
-      "NextWaypoint"        "Radiant_Right_Center"
-      "MidWaypoint"         "Radiant_Center"
-      "LastWaypoint"        "Raidant_Ancient"
-      "HeroSpawn"           "Radiant_2"
-      "Box"                 "Radiant_2_Box"
-      "UnitWaypoint"        "Radiant_2_Unit_Waypoint"
-      "MainBuilding"        "Radiant_2_Main_Building"
-      "FoodBuilding"        "Radiant_2_Food_Building"
-    }
-    "3"
-    {
-      "SpawnerName"         "Radiant_Left_Bottom_Spawner"
-      "Waypoint"            "Radiant_Left_Bottom"
-      "NextWaypoint"        "Radiant_Left_Center"
-      "MidWaypoint"         "Radiant_Center"
-      "LastWaypoint"        "Raidant_Ancient"
-      "HeroSpawn"           "Radiant_3"
-      "Box"                 "Radiant_3_Box"
-      "UnitWaypoint"        "Radiant_3_Unit_Waypoint"
-      "MainBuilding"        "Radiant_3_Main_Building"
-      "FoodBuilding"        "Radiant_3_Food_Building"
-    }
-    "4"
-    {
-      "SpawnerName"         "Radiant_Right_Bottom_Spawner"
-      "Waypoint"            "Radiant_Right_Bottom"
-      "NextWaypoint"        "Radiant_Right_Center"
-      "MidWaypoint"         "Radiant_Center"
-      "LastWaypoint"        "Raidant_Ancient"
-      "HeroSpawn"           "Radiant_4"
-      "Box"                 "Radiant_4_Box"
-      "UnitWaypoint"        "Radiant_4_Unit_Waypoint"
-      "MainBuilding"        "Radiant_4_Main_Building"
-      "FoodBuilding"        "Radiant_4_Food_Building"
-    }
-    "5"
-    {
-      "SpawnerName"         "Dire_Left_Top_Spawner"
-      "Waypoint"            "Dire_Left_top"
-      "NextWaypoint"        "Dire_Left_Center"
-      "MidWaypoint"         "Dire_Center"
-      "LastWaypoint"        "Dire_Ancient"
-      "HeroSpawn"           "Dire_1"
-      "Box"                 "Dire_1_Box"
-      "UnitWaypoint"        "Dire_1_Unit_Waypoint"
-      "MainBuilding"        "Dire_1_Main_Building"
-      "FoodBuilding"        "Dire_1_Food_Building"
-    }
-    "6"
-    {
-      "SpawnerName"         "Dire_Right_Top_Spawner"
-      "Waypoint"            "Dire_Right_Top"
-      "NextWaypoint"        "Dire_Right_Center"
-      "MidWaypoint"         "Dire_Center"
-      "LastWaypoint"        "Dire_Ancient"
-      "HeroSpawn"           "Dire_2"
-      "Box"                 "Dire_2_Box"
-      "UnitWaypoint"        "Dire_2_Unit_Waypoint"
-      "MainBuilding"        "Dire_2_Main_Building"
-      "FoodBuilding"        "Dire_2_Food_Building"
-    }
-    "7"
-    {
-      "SpawnerName"         "Dire_Left_Bottom_Spawner"
-      "Waypoint"            "Dire_Left_Bottom"
-      "NextWaypoint"        "Dire_Left_Center"
-      "MidWaypoint"         "Dire_Center"
-      "LastWaypoint"        "Dire_Ancient"
-      "HeroSpawn"           "Dire_3"
-      "Box"                 "Dire_3_Box"
-      "UnitWaypoint"        "Dire_3_Unit_Waypoint"
-      "MainBuilding"        "Dire_3_Main_Building"
-      "FoodBuilding"        "Dire_3_Food_Building"
-    }
-    "8"
-    {
-      "SpawnerName"         "Dire_Right_Bottom_Spawner"
-      "Waypoint"            "Dire_Right_Bottom"
-      "NextWaypoint"        "Dire_Right_Center"
-      "MidWaypoint"         "Dire_Center"
-      "LastWaypoint"        "Dire_Ancient"
-      "HeroSpawn"           "Dire_4"
-      "Box"                 "Dire_4_Box"
-      "UnitWaypoint"        "Dire_4_Unit_Waypoint"
-      "MainBuilding"        "Dire_4_Main_Building"
-      "FoodBuilding"        "Dire_4_Food_Building"
-    }
-  }
-
-  "Rounds"
-  {
-    "1"                       // Wave 1
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_donkey"
-      "bounty"                "15"
-      "Unit"
-      {
-        "NPCName"             "unit_donkey"
-        "UnitCount"           "12"
-      }
+        "2"
+        {
+            "Name"                "Radiant_LastDef"
+        }
+        "3"
+        {
+            "Name"                "Dire_LastDef"
+        }
     }
 
-    "2"                       // Wave 2
+    "LastSpawnRanged"
     {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_unicorn"
-      "bounty"                "16"
-      "Unit"
-      {
-        "NPCName"             "unit_unicorn"
-        "UnitCount"           "15"
-      }
+        "2"
+        {
+            "Name"                "Radiant_LastDefRanged"
+        }
+        "3"
+        {
+            "Name"                "Dire_LastDefRanged"
+        }
     }
 
-    "3"                       // Wave 3
+    "IncomeSpawner"
     {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_space_cow"
-      "bounty"                "17"
-      "Unit"
-      {
-        "NPCName"             "unit_space_cow"
-        "UnitCount"           "15"
-      }
+        "2"
+        {
+            "Name"                "Radiant_Income_Spawner"
+        }
+        "3"
+        {
+            "Name"                "Dire_Income_Spawner"
+        }
     }
 
-    "4"                       // Wave 4
+    "DuelSpawn"
     {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_gatling_sniper"
-      "bounty"                "18"
-      "Unit"
-      {
-        "NPCName"             "unit_gatling_sniper"
-        "UnitCount"           "12"
-      }
+        "2"
+        {
+            "Name"                "Radiant_Duel_Spawn"
+        }
+        "3"
+        {
+            "Name"                "Dire_Duel_Spawn"
+        }
     }
 
-    "5"                       // Wave 5
+    "DuelTarget"
     {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_lightning_ball"
-      "bounty"                "19"
-      "Unit"
-      {
-        "NPCName"             "unit_lightning_ball"
-        "UnitCount"           "12"
-      }
+        "2"
+        {
+            "Name"                "Radiant_Duel_Target"
+        }
+        "3"
+        {
+            "Name"                "Dire_Duel_Target"
+        }
     }
 
-    "6"                       // Duel 1
+    "Lanes"
     {
-      "round_type"            "duel"
-      "round_title"           "Duel_Quest_Title"
-      "determines_winner"     "false"
-      "bounty"                "5"
+        "1"
+        {
+            "SpawnerName"         "Radiant_Left_Top_Spawner"
+            "Waypoint"            "Radiant_Left_top"
+            "NextWaypoint"        "Radiant_Left_Center"
+            "MidWaypoint"         "Radiant_Center"
+            "LastWaypoint"        "Raidant_Ancient"
+            "HeroSpawn"           "Radiant_1"
+            "Box"                 "Radiant_1_Box"
+            "UnitWaypoint"        "Radiant_1_Unit_Waypoint"
+            "MainBuilding"        "Radiant_1_Main_Building"
+            "FoodBuilding"        "Radiant_1_Food_Building"
+        }
+        "2"
+        {
+            "SpawnerName"         "Radiant_Right_Top_Spawner"
+            "Waypoint"            "Radiant_Right_Top"
+            "NextWaypoint"        "Radiant_Right_Center"
+            "MidWaypoint"         "Radiant_Center"
+            "LastWaypoint"        "Raidant_Ancient"
+            "HeroSpawn"           "Radiant_2"
+            "Box"                 "Radiant_2_Box"
+            "UnitWaypoint"        "Radiant_2_Unit_Waypoint"
+            "MainBuilding"        "Radiant_2_Main_Building"
+            "FoodBuilding"        "Radiant_2_Food_Building"
+        }
+        "3"
+        {
+            "SpawnerName"         "Radiant_Left_Bottom_Spawner"
+            "Waypoint"            "Radiant_Left_Bottom"
+            "NextWaypoint"        "Radiant_Left_Center"
+            "MidWaypoint"         "Radiant_Center"
+            "LastWaypoint"        "Raidant_Ancient"
+            "HeroSpawn"           "Radiant_3"
+            "Box"                 "Radiant_3_Box"
+            "UnitWaypoint"        "Radiant_3_Unit_Waypoint"
+            "MainBuilding"        "Radiant_3_Main_Building"
+            "FoodBuilding"        "Radiant_3_Food_Building"
+        }
+        "4"
+        {
+            "SpawnerName"         "Radiant_Right_Bottom_Spawner"
+            "Waypoint"            "Radiant_Right_Bottom"
+            "NextWaypoint"        "Radiant_Right_Center"
+            "MidWaypoint"         "Radiant_Center"
+            "LastWaypoint"        "Raidant_Ancient"
+            "HeroSpawn"           "Radiant_4"
+            "Box"                 "Radiant_4_Box"
+            "UnitWaypoint"        "Radiant_4_Unit_Waypoint"
+            "MainBuilding"        "Radiant_4_Main_Building"
+            "FoodBuilding"        "Radiant_4_Food_Building"
+        }
+        "5"
+        {
+            "SpawnerName"         "Dire_Left_Top_Spawner"
+            "Waypoint"            "Dire_Left_top"
+            "NextWaypoint"        "Dire_Left_Center"
+            "MidWaypoint"         "Dire_Center"
+            "LastWaypoint"        "Dire_Ancient"
+            "HeroSpawn"           "Dire_1"
+            "Box"                 "Dire_1_Box"
+            "UnitWaypoint"        "Dire_1_Unit_Waypoint"
+            "MainBuilding"        "Dire_1_Main_Building"
+            "FoodBuilding"        "Dire_1_Food_Building"
+        }
+        "6"
+        {
+            "SpawnerName"         "Dire_Right_Top_Spawner"
+            "Waypoint"            "Dire_Right_Top"
+            "NextWaypoint"        "Dire_Right_Center"
+            "MidWaypoint"         "Dire_Center"
+            "LastWaypoint"        "Dire_Ancient"
+            "HeroSpawn"           "Dire_2"
+            "Box"                 "Dire_2_Box"
+            "UnitWaypoint"        "Dire_2_Unit_Waypoint"
+            "MainBuilding"        "Dire_2_Main_Building"
+            "FoodBuilding"        "Dire_2_Food_Building"
+        }
+        "7"
+        {
+            "SpawnerName"         "Dire_Left_Bottom_Spawner"
+            "Waypoint"            "Dire_Left_Bottom"
+            "NextWaypoint"        "Dire_Left_Center"
+            "MidWaypoint"         "Dire_Center"
+            "LastWaypoint"        "Dire_Ancient"
+            "HeroSpawn"           "Dire_3"
+            "Box"                 "Dire_3_Box"
+            "UnitWaypoint"        "Dire_3_Unit_Waypoint"
+            "MainBuilding"        "Dire_3_Main_Building"
+            "FoodBuilding"        "Dire_3_Food_Building"
+        }
+        "8"
+        {
+            "SpawnerName"         "Dire_Right_Bottom_Spawner"
+            "Waypoint"            "Dire_Right_Bottom"
+            "NextWaypoint"        "Dire_Right_Center"
+            "MidWaypoint"         "Dire_Center"
+            "LastWaypoint"        "Dire_Ancient"
+            "HeroSpawn"           "Dire_4"
+            "Box"                 "Dire_4_Box"
+            "UnitWaypoint"        "Dire_4_Unit_Waypoint"
+            "MainBuilding"        "Dire_4_Main_Building"
+            "FoodBuilding"        "Dire_4_Food_Building"
+        }
     }
 
-    "7"                       // Wave 6
+    "Rounds"
     {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_predator"
-      "bounty"                "20"
-      "Unit"
-      {
-        "NPCName"             "unit_predator"
-        "UnitCount"           "12"
-      }
-    }
+        "1"                       // Wave 1
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_donkey"
+            "bounty"                "15"
+            "Unit"
+            {
+                "NPCName"             "unit_donkey"
+                "UnitCount"           "12"
+            }
+        }
 
-    "8"                       // Wave 7
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_assassins"
-      "bounty"                "22"
-      "Unit"
-      {
-        "NPCName"             "unit_assassins"
-        "UnitCount"           "12"
-      }
-    }
+        "2"                       // Wave 2
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_unicorn"
+            "bounty"                "16"
+            "Unit"
+            {
+                "NPCName"             "unit_unicorn"
+                "UnitCount"           "15"
+            }
+        }
 
-    "9"                       // Wave 8
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_hydra"
-      "bounty"                "24"
-      "Unit"
-      {
-        "NPCName"             "unit_hydra"
-        "UnitCount"           "11"
-      }
-    }
+        "3"                       // Wave 3
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_space_cow"
+            "bounty"                "17"
+            "Unit"
+            {
+                "NPCName"             "unit_space_cow"
+                "UnitCount"           "15"
+            }
+        }
 
-    "10"                      // Wave 9
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_not_lifestealer"
-      "bounty"                "26"
-      "Unit"
-      {
-        "NPCName"             "unit_not_lifestealer"
-        "UnitCount"           "12"
-      }
-    }
+        "4"                       // Wave 4
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_gatling_sniper"
+            "bounty"                "18"
+            "Unit"
+            {
+                "NPCName"             "unit_gatling_sniper"
+                "UnitCount"           "12"
+            }
+        }
 
-    "11"                      // Wave 10
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_fatty"
-      "bounty"                "28"
-      "Unit"
-      {
-        "NPCName"             "unit_fatty"
-        "UnitCount"           "1"
-      }
-    }
+        "5"                       // Wave 5
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_lightning_ball"
+            "bounty"                "19"
+            "Unit"
+            {
+                "NPCName"             "unit_lightning_ball"
+                "UnitCount"           "12"
+            }
+        }
 
-    "12"                      // Duel 2
-    {
-      "round_type"            "duel"
-      "round_title"           "Duel_Quest_Title"
-      "determines_winner"     "false"
-      "bounty"                "15"
-    }
+        "6"                       // Duel 1
+        {
+            "round_type"            "duel"
+            "round_title"           "Duel_Quest_Title"
+            "determines_winner"     "false"
+            "bounty"                "5"
+        }
 
-    "13"                      // Wave 11
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_little_fishy"
-      "bounty"                "30"
-      "Unit"
-      {
-        "NPCName"             "unit_little_fishy"
-        "UnitCount"           "18"
-      }
-    }
+        "7"                       // Wave 6
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_predator"
+            "bounty"                "20"
+            "Unit"
+            {
+                "NPCName"             "unit_predator"
+                "UnitCount"           "12"
+            }
+        }
 
-    "14"                      // Wave 12
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_zombie"
-      "bounty"                "32"
-      "Unit"
-      {
-        "NPCName"             "unit_zombie"
-        "UnitCount"           "15"
-      }
-    }
+        "8"                       // Wave 7
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_assassins"
+            "bounty"                "22"
+            "Unit"
+            {
+                "NPCName"             "unit_assassins"
+                "UnitCount"           "12"
+            }
+        }
 
-    "15"                      // Wave 13
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_tidehunter"
-      "bounty"                "34"
-      "Unit"
-      {
-        "NPCName"             "unit_tidehunter"
-        "UnitCount"           "14"
-      }
-    }
+        "9"                       // Wave 8
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_hydra"
+            "bounty"                "24"
+            "Unit"
+            {
+                "NPCName"             "unit_hydra"
+                "UnitCount"           "11"
+            }
+        }
 
-    "16"                      // Wave 14
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_abaddon"
-      "bounty"                "36"
-      "Unit"
-      {
-        "NPCName"             "unit_abaddon"
-        "UnitCount"           "7"
-      }
-    }
+        "10"                      // Wave 9
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_not_lifestealer"
+            "bounty"                "26"
+            "Unit"
+            {
+                "NPCName"             "unit_not_lifestealer"
+                "UnitCount"           "12"
+            }
+        }
 
-    "17"                      // Wave 15
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_enchantress"
-      "bounty"                "38"
-      "Unit"
-      {
-        "NPCName"             "unit_enchantress"
-        "UnitCount"           "12"
-      }
-    }
+        "11"                      // Wave 10
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_fatty"
+            "bounty"                "28"
+            "Unit"
+            {
+                "NPCName"             "unit_fatty"
+                "UnitCount"           "1"
+            }
+        }
 
-    "18"                      // Duel 3
-    {
-      "round_type"            "duel"
-      "round_title"           "Duel_Quest_Title"
-      "determines_winner"     "false"
-      "bounty"                "25"
-    }
+        "12"                      // Duel 2
+        {
+            "round_type"            "duel"
+            "round_title"           "Duel_Quest_Title"
+            "determines_winner"     "false"
+            "bounty"                "15"
+        }
 
-    "19"                      // Wave 16
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_techies"
-      "bounty"                "70"
-      "Unit"
-      {
-        "NPCName"             "unit_techies"
-        "UnitCount"           "15"
-      }
-    }
+        "13"                      // Wave 11
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_little_fishy"
+            "bounty"                "30"
+            "Unit"
+            {
+                "NPCName"             "unit_little_fishy"
+                "UnitCount"           "18"
+            }
+        }
 
-    "20"                      // Wave 17
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_chaos"
-      "bounty"                "45"
-      "Unit"
-      {
-        "NPCName"             "unit_chaos"
-        "UnitCount"           "13"
-      }
-    }
+        "14"                      // Wave 12
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_zombie"
+            "bounty"                "32"
+            "Unit"
+            {
+                "NPCName"             "unit_zombie"
+                "UnitCount"           "15"
+            }
+        }
 
-    "21"                      // Wave 18
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_phantom"
-      "bounty"                "46"
-      "Unit"
-      {
-        "NPCName"             "unit_phantom"
-        "UnitCount"           "15"
-      }
-    }
+        "15"                      // Wave 13
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_tidehunter"
+            "bounty"                "34"
+            "Unit"
+            {
+                "NPCName"             "unit_tidehunter"
+                "UnitCount"           "14"
+            }
+        }
 
-    "22"                      // Wave 19
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_necro_replacement"
-      "bounty"                "47"
-      "Unit"
-      {
-        "NPCName"             "unit_necro_replacement"
-        "UnitCount"           "12"
-      }
-    }
+        "16"                      // Wave 14
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_abaddon"
+            "bounty"                "36"
+            "Unit"
+            {
+                "NPCName"             "unit_abaddon"
+                "UnitCount"           "7"
+            }
+        }
 
-    "23"                      // Wave 20
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_king"
-      "bounty"                "50"
-      "Unit"
-      {
-        "NPCName"             "unit_king"
-        "UnitCount"           "1"
-      }
-    }
+        "17"                      // Wave 15
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_enchantress"
+            "bounty"                "38"
+            "Unit"
+            {
+                "NPCName"             "unit_enchantress"
+                "UnitCount"           "12"
+            }
+        }
 
-    "24"                      // Duel 4
-    {
-      "round_type"            "duel"
-      "round_title"           "Duel_Quest_Title"
-      "determines_winner"     "false"
-      "bounty"                "35"
-    }
+        "18"                      // Duel 3
+        {
+            "round_type"            "duel"
+            "round_title"           "Duel_Quest_Title"
+            "determines_winner"     "false"
+            "bounty"                "25"
+        }
 
-    "25"                      // Wave 21
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_templer"
-      "bounty"                "52"
-      "Unit"
-      {
-        "NPCName"             "unit_templer"
-        "UnitCount"           "12"
-      }
-    }
+        "19"                      // Wave 16
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_techies"
+            "bounty"                "70"
+            "Unit"
+            {
+                "NPCName"             "unit_techies"
+                "UnitCount"           "15"
+            }
+        }
 
-    "26"                      // Wave 22
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_earthspirit"
-      "bounty"                "54"
-      "Unit"
-      {
-        "NPCName"             "unit_earthspirit"
-        "UnitCount"           "15"
-      }
-    }
+        "20"                      // Wave 17
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_chaos"
+            "bounty"                "45"
+            "Unit"
+            {
+                "NPCName"             "unit_chaos"
+                "UnitCount"           "13"
+            }
+        }
 
-    "27"                      // Wave 23
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_kunkka"
-      "bounty"                "56"
-      "Unit"
-      {
-        "NPCName"             "unit_kunkka"
-        "UnitCount"           "10"
-      }
-    }
+        "21"                      // Wave 18
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_phantom"
+            "bounty"                "46"
+            "Unit"
+            {
+                "NPCName"             "unit_phantom"
+                "UnitCount"           "15"
+            }
+        }
 
-    "28"                      // Wave 24
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_huskar"
-      "bounty"                "58"
-      "Unit"
-      {
-        "NPCName"             "unit_huskar"
-        "UnitCount"           "12"
-      }
-    }
+        "22"                      // Wave 19
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_necro_replacement"
+            "bounty"                "47"
+            "Unit"
+            {
+                "NPCName"             "unit_necro_replacement"
+                "UnitCount"           "12"
+            }
+        }
 
-    "29"                      // Wave 25
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_tiny"
-      "bounty"                "60"
-      "Unit"
-      {
-        "NPCName"             "unit_tiny"
-        "UnitCount"           "15"
-      }
-    }
+        "23"                      // Wave 20
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_king"
+            "bounty"                "50"
+            "Unit"
+            {
+                "NPCName"             "unit_king"
+                "UnitCount"           "1"
+            }
+        }
 
-    "30"                      // Duel 5
-    {
-      "round_type"            "duel"
-      "round_title"           "Duel_Quest_Title"
-      "determines_winner"     "false"
-      "bounty"                "50"
-    }
+        "24"                      // Duel 4
+        {
+            "round_type"            "duel"
+            "round_title"           "Duel_Quest_Title"
+            "determines_winner"     "false"
+            "bounty"                "35"
+        }
 
-    "31"                      // Wave 26
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_drunken"
-      "bounty"                "62"
-      "Unit"
-      {
-        "NPCName"             "unit_drunken"
-        "UnitCount"           "14"
-      }
-    }
-    "32"                      // Wave 27
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_deathprophet"
-      "bounty"                "64"
-      "Unit"
-      {
-        "NPCName"             "unit_deathprophet"
-        "UnitCount"           "3"
-      }
-    }
-    "33"                      // Wave 28
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_rubick"
-      "bounty"                "66"
-      "Unit"
-      {
-        "NPCName"             "unit_rubick"
-        "UnitCount"           "15"
-      }
-    }
-    "34"                      // Wave 29
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_ogre"
-      "bounty"                "68"
-      "Unit"
-      {
-        "NPCName"             "unit_ogre"
-        "UnitCount"           "12"
-      }
-    }
-    "35"                      // Wave 30
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_dragon"
-      "bounty"                "70"
-      "Unit"
-      {
-        "NPCName"             "unit_dragon"
-        "UnitCount"           "1"
-      }
-    }
+        "25"                      // Wave 21
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_templer"
+            "bounty"                "52"
+            "Unit"
+            {
+                "NPCName"             "unit_templer"
+                "UnitCount"           "12"
+            }
+        }
 
-    "36"                      // Duel 6
-    {
-      "round_type"            "duel"
-      "round_title"           "Duel_Quest_Title"
-      "determines_winner"     "true"
-      "bounty"                "150"
-    }
+        "26"                      // Wave 22
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_earthspirit"
+            "bounty"                "54"
+            "Unit"
+            {
+                "NPCName"             "unit_earthspirit"
+                "UnitCount"           "15"
+            }
+        }
 
-    "37"                      // Wave 31
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_chen"
-      "bounty"                "72"
-      "Unit"
-      {
-        "NPCName"             "unit_chen"
-        "UnitCount"           "12"
-      }
-    }
+        "27"                      // Wave 23
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_kunkka"
+            "bounty"                "56"
+            "Unit"
+            {
+                "NPCName"             "unit_kunkka"
+                "UnitCount"           "10"
+            }
+        }
 
-	"38"                      // Wave 32
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_ancienthulk"
-      "bounty"                "74"
-      "Unit"
-      {
-        "NPCName"             "unit_ancienthulk"
-        "UnitCount"           "12"
-      }
-    }
+        "28"                      // Wave 24
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_huskar"
+            "bounty"                "58"
+            "Unit"
+            {
+                "NPCName"             "unit_huskar"
+                "UnitCount"           "12"
+            }
+        }
 
-	"39"                      // Wave 33
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_skeleton"
-      "bounty"                "76"
-      "Unit"
-      {
-        "NPCName"             "unit_skeleton"
-        "UnitCount"           "15"
-      }
-    }
+        "29"                      // Wave 25
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_tiny"
+            "bounty"                "60"
+            "Unit"
+            {
+                "NPCName"             "unit_tiny"
+                "UnitCount"           "15"
+            }
+        }
 
-	"40"                      // Wave 34
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_dragonspawn"
-      "bounty"                "78"
-      "Unit"
-      {
-        "NPCName"             "unit_dragonspawn"
-        "UnitCount"           "5"
-      }
-    }
+        "30"                      // Duel 5
+        {
+            "round_type"            "duel"
+            "round_title"           "Duel_Quest_Title"
+            "determines_winner"     "false"
+            "bounty"                "50"
+        }
 
-	"41"                      // Wave 35
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_ursa"
-      "bounty"                "80"
-      "Unit"
-      {
-        "NPCName"             "unit_ursa"
-        "UnitCount"           "13"
-      }
-    }
+        "31"                      // Wave 26
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_drunken"
+            "bounty"                "62"
+            "Unit"
+            {
+                "NPCName"             "unit_drunken"
+                "UnitCount"           "14"
+            }
+        }
+        "32"                      // Wave 27
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_deathprophet"
+            "bounty"                "64"
+            "Unit"
+            {
+                "NPCName"             "unit_deathprophet"
+                "UnitCount"           "3"
+            }
+        }
+        "33"                      // Wave 28
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_rubick"
+            "bounty"                "66"
+            "Unit"
+            {
+                "NPCName"             "unit_rubick"
+                "UnitCount"           "15"
+            }
+        }
+        "34"                      // Wave 29
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_ogre"
+            "bounty"                "68"
+            "Unit"
+            {
+                "NPCName"             "unit_ogre"
+                "UnitCount"           "12"
+            }
+        }
+        "35"                      // Wave 30
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_dragon"
+            "bounty"                "70"
+            "Unit"
+            {
+                "NPCName"             "unit_dragon"
+                "UnitCount"           "1"
+            }
+        }
 
-	"42"                      // Duel 7
-    {
-      "round_type"            "duel"
-      "round_title"           "Duel_Quest_Title"
-      "determines_winner"     "true"
-      "bounty"                "200"
-    }
+        "36"                      // Duel 6
+        {
+            "round_type"            "duel"
+            "round_title"           "Duel_Quest_Title"
+            "determines_winner"     "true"
+            "bounty"                "150"
+        }
 
-	"43"                      // Wave 36
-    {
-      "round_type"            "wave"
-      "round_title"           "wavetitle_golemwarrior"
-      "bounty"                "82"
-      "Unit"
-      {
-        "NPCName"             "unit_golemwarrior"
-        "UnitCount"           "10"
-      }
-    }
+        "37"                      // Wave 31
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_chen"
+            "bounty"                "72"
+            "Unit"
+            {
+                "NPCName"             "unit_chen"
+                "UnitCount"           "12"
+            }
+        }
 
-  }
+        "38"                      // Wave 32
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_ancienthulk"
+            "bounty"                "74"
+            "Unit"
+            {
+                "NPCName"             "unit_ancienthulk"
+                "UnitCount"           "12"
+            }
+        }
+
+        "39"                      // Wave 33
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_skeleton"
+            "bounty"                "76"
+            "Unit"
+            {
+                "NPCName"             "unit_skeleton"
+                "UnitCount"           "15"
+            }
+        }
+
+        "40"                      // Wave 34
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_dragonspawn"
+            "bounty"                "78"
+            "Unit"
+            {
+                "NPCName"             "unit_dragonspawn"
+                "UnitCount"           "5"
+            }
+        }
+
+        "41"                      // Wave 35
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_ursa"
+            "bounty"                "80"
+            "Unit"
+            {
+                "NPCName"             "unit_ursa"
+                "UnitCount"           "13"
+            }
+        }
+
+        "42"                      // Duel 7
+        {
+            "round_type"            "duel"
+            "round_title"           "Duel_Quest_Title"
+            "determines_winner"     "true"
+            "bounty"                "200"
+        }
+
+        "43"                      // Wave 36
+        {
+            "round_type"            "wave"
+            "round_title"           "wavetitle_golemwarrior"
+            "bounty"                "82"
+            "Unit"
+            {
+                "NPCName"             "unit_golemwarrior"
+                "UnitCount"           "10"
+            }
+        }
+
+    }
 }

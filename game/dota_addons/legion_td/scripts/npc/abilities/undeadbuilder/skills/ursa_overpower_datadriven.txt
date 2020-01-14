@@ -5,13 +5,13 @@
     "BaseClass"                "ability_datadriven"
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
     "AbilityTextureName"                "ursa_overpower"
-    
+
     // Casting
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastRange"                "0"
     "AbilityCastPoint"                "0.3"
     "MaxLevel"                        "1"
-    // Time        
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"                "11.0"
     "AbilityDuration"                "15.0"
@@ -19,7 +19,7 @@
     // Cost
     //-------------------------------------------------------------------------------------------------------------
     "AbilityManaCost"                "0"
-    
+
     // Special
     //-------------------------------------------------------------------------------------------------------------
     "AbilitySpecial"
@@ -40,7 +40,7 @@
             "duration_tooltip"            "15"
         }
     }
-    
+
     // Data driven
     //-------------------------------------------------------------------------------------------------------------
     "precache"
@@ -49,7 +49,7 @@
         "particle"                        "particles/status_fx/status_effect_overpower.vpcf"
         "particle"                        "particles/units/heroes/hero_ursa/ursa_overpower_buff.vpcf"
     }
-    
+
     "OnSpellStart"
     {
         "FireSound"
@@ -57,23 +57,23 @@
             "Target"                    "CASTER"
             "EffectName"                "Hero_Ursa.Overpower"
         }
-    
+
         "RunScript"
         {
             "ScriptFile"                "abilities/undeadbuilder/overpower.lua"
             "Function"                    "overpower_init"
         }
     }
-    
+
     "Modifiers"
     {
         "modifier_enrage_buff_datadriven"
         {
             "Duration"                    "%duration_tooltip"
-            
+
             "StatusEffectName"            "particles/status_fx/status_effect_overpower.vpcf"
             "StatusEffectPriority"        "10"
-        
+
             "OnCreated"
             {
                 "AttachEffect"
@@ -90,7 +90,7 @@
                     }
                 }
             }
-        
+
             "OnAttack"
             {
                 "RunScript"
@@ -99,7 +99,7 @@
                     "Function"                "overpower_decrease_stack"
                 }
             }
-            
+
             "Properties"
             {
                 "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"    "%attack_speed_bonus_pct"

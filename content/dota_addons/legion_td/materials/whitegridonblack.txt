@@ -1,5 +1,5 @@
 "settings"
 {
-	"brightness"		"2.000000"
-	"brightness_offset"		"-1.000000"
+    "brightness"		"2.000000"
+    "brightness_offset"		"-1.000000"
 }

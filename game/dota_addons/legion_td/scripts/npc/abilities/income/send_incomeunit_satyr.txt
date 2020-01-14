@@ -35,8 +35,8 @@
             "unitID"                "1007"
         }
     }
-  "precache"
-  {
-    "model" "models/creeps/neutral_creeps/n_creep_satyr_a/n_creep_satyr_a.vmdl"
-  }
+    "precache"
+    {
+        "model" "models/creeps/neutral_creeps/n_creep_satyr_a/n_creep_satyr_a.vmdl"
+    }
 }

@@ -7,7 +7,7 @@
     "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
     "MaxLevel"                      "1"
     "AbilityTextureName"            "dark_venom"
-    
+
     // Stats
     //-------------------------------------------------------------------------------------------------------------
     "AbilityManaCost"               "0"

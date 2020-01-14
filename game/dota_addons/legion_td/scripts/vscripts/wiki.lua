@@ -57,7 +57,7 @@ function Game:WikiCommand()
                     if
                         string.starts(k, "Ability") and v ~= "sell" and not string.find(v, "builder_upgrade_") and
                             not string.find(v, "ability_empty_")
-                     then
+                    then
                         file:write(make_ability(v))
                     else
                         file:write("unit " .. unitname .. " " .. k .. ", " .. v .. "\n")

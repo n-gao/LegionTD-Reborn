@@ -14,7 +14,7 @@
     "Ability4"                          "sell"
     "Ability1"                          "pudge_dismember_lua"
     "Ability2"                          "improved_pudge_rot_lua"
-  
+
 
     // Armor
     //----------------------------------------------------------------
@@ -33,7 +33,7 @@
     "AttackRange"           "90"
     "ProjectileModel"       ""
     "ProjectileSpeed"       "0"
-    
+
     "LegionAttackType"     "normal"
     "LegionDefendType"     "heavy"
     "LegionFraction"       "undead"
@@ -95,37 +95,37 @@
                     {
                         "ItemDef"   "6202"
                     }
-    
+
                     "Wearable2"
                     {
                         "ItemDef"   "4007"
                     }
-    
+
                     "Wearable3"
                     {
                         "ItemDef"   "6226"
                     }
-    
+
                     "Wearable4"
                     {
                         "ItemDef"   "7171"
                     }
-    
+
                     "Wearable5"
                     {
                         "ItemDef"   "6298"
                     }
-    
+
                     "Wearable6"
                     {
                         "ItemDef"   "6115"
                     }
-    
+
                     "Wearable7"
                     {
                         "ItemDef"   "8498"
                     }
-    
+
                 }
     }
 }

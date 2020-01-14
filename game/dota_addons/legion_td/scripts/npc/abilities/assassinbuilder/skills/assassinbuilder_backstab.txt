@@ -19,7 +19,7 @@
         "soundfile"                        "sounds/weapons/hero/riki/riki_attack1.vsnd"
         "particle"                        "particles/units/heroes/hero_riki/riki_backstab.vpcf"
     }
-    
+
     "AbilitySpecial"
     {
         "01"

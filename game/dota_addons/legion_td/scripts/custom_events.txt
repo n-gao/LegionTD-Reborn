@@ -21,41 +21,41 @@
 "CustomEvents"
 {
 
-	"send_unit"
-	{
-		"id"						"short"
-		"income"					"short"
-		"cost"						"short"
-		"playerID"					"short"
-	}
+    "send_unit"
+    {
+        "id"						"short"
+        "income"					"short"
+        "cost"						"short"
+        "playerID"					"short"
+    }
 
-	"vote_option_clicked"
-	{
-		"option"			"string"
-		"playerID"		"short"
-		"value"				"bool"
-	}
+    "vote_option_clicked"
+    {
+        "option"			"string"
+        "playerID"		"short"
+        "value"				"bool"
+    }
 
-	"request_stored_data"
-	{
-		"playerID"			"short"
-		"steamID"			"uint64"
-	}
+    "request_stored_data"
+    {
+        "playerID"			"short"
+        "steamID"			"uint64"
+    }
 
-	"request_ranking"
-	{
-		"playerID"			"short"
-		"attribute"			"string"
-		"from"				"long"
-		"to"				"long"
-	}
+    "request_ranking"
+    {
+        "playerID"			"short"
+        "attribute"			"string"
+        "from"				"long"
+        "to"				"long"
+    }
 
-	"round_changed"
-	{
-		"round"				"short"
-		"displayRound"		"short"
-		"state"				"short"
-		"isDuel"			"bool"
-		"nextRoundTime"		"int"
-	}
+    "round_changed"
+    {
+        "round"				"short"
+        "displayRound"		"short"
+        "state"				"short"
+        "isDuel"			"bool"
+        "nextRoundTime"		"int"
+    }
 }

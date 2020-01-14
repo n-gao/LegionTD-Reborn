@@ -10,7 +10,7 @@
     "AbilityUnitDamageType"            "DAMAGE_TYPE_PHYSICAL"
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
     "AbilityTextureName"            "medusa_split_shot"
-    
+
     // Special
     //-------------------------------------------------------------------------------------------------------------
     "AbilitySpecial"
@@ -40,7 +40,7 @@
             "Passive"            "1"
             "IsHidden"            "1"
             "IsDebuff"            "0"
-    
+
             "OnAttack"
             {
                 "RunScript"

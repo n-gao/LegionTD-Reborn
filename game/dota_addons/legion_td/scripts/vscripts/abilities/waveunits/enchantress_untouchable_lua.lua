@@ -5,5 +5,5 @@ LinkLuaModifier( "modifier_enchantress_untouchable_lua_debuff", "abilities/waveu
 --------------------------------------------------------------------------------
 -- Passive Modifier
 function enchantress_untouchable_lua:GetIntrinsicModifierName()
-	return "modifier_enchantress_untouchable_lua"
+    return "modifier_enchantress_untouchable_lua"
 end

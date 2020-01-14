@@ -3,7 +3,7 @@
     "BaseClass"                        "ability_datadriven"
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "AbilityTextureName"            "ability_vladmir"
-    
+
     "AbilitySpecial"
     {
         "01"
@@ -37,15 +37,15 @@
             "hp_regen"                    "3"
         }
     }
-    
+
     "Modifiers"
     {
-        
+
         "modifier_vladmir_aura_emitter"  //We use two aura emitters because lifesteal is different for melee and ranged.
         {
             "Passive"                "1"
             "IsHidden"                "1"
-            
+
             "Aura"                     "modifier_vladmir_aura"
             "Aura_Radius"             "%aura_radius"
             "Aura_Teams"             "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -57,7 +57,7 @@
         {
             "Passive"            "0"
             "IsHidden"            "0"
-            
+
             "Properties"
             {
                 "MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE"            "%damage_aura_percent"
@@ -69,7 +69,7 @@
         {
             "Passive"                "1"
             "IsHidden"                "1"
-            
+
             "Aura"                     "modifier_item_vladmir_melee_lifesteal_aura"
             "Aura_Radius"             "%aura_radius"
             "Aura_Teams"             "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -81,7 +81,7 @@
         {
             "Passive"            "0"
             "IsHidden"            "1"
-            
+
             "OnAttackLanded"
             {
                 "Lifesteal"
@@ -95,7 +95,7 @@
         {
             "Passive"                "1"
             "IsHidden"                "1"
-            
+
             "Aura"                     "modifier_item_vladmir_ranged_lifesteal_aura"
             "Aura_Radius"             "%aura_radius"
             "Aura_Teams"             "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -107,7 +107,7 @@
         {
             "Passive"            "0"
             "IsHidden"            "1"
-            
+
             "OnAttackLanded"
             {
                 "Lifesteal"

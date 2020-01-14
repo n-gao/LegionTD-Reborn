@@ -91,12 +91,12 @@
         }
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "8695" } // "Cape of the Glacial Magnolia"
-      "Wearable2" { "ItemDef" "8697" } // "Mantle of the Glacial Magnolia"
-      "Wearable3" { "ItemDef" "4383" } // "Staff of the Crystalline Queen"
-      "Wearable4" { "ItemDef" "4420" } // "Bracers of the Crystalline Queen"
-      "Wearable5" { "ItemDef" "4540" } // "Tiara of the Crystalline Queen"
-      "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
+    "Wearable1" { "ItemDef" "8695" } // "Cape of the Glacial Magnolia"
+    "Wearable2" { "ItemDef" "8697" } // "Mantle of the Glacial Magnolia"
+    "Wearable3" { "ItemDef" "4383" } // "Staff of the Crystalline Queen"
+    "Wearable4" { "ItemDef" "4420" } // "Bracers of the Crystalline Queen"
+    "Wearable5" { "ItemDef" "4540" } // "Tiara of the Crystalline Queen"
+    "Wearable6" { "ItemDef" "502" } // "Crystal Maiden's Ambient Effects"
     }
     }
 }

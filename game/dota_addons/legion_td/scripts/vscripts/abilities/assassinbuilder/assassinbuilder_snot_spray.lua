@@ -18,13 +18,13 @@ if modifier_assassinbuilder_snot_spray == nil then
     modifier_assassinbuilder_snot_spray = class({})
 end
 
-function modifier_assassinbuilder_snot_spray:RemoveOnDeath(  ) 
-    return true 
+function modifier_assassinbuilder_snot_spray:RemoveOnDeath(  )
+    return true
 end
-function modifier_assassinbuilder_snot_spray:DestroyOnExpire(  ) 
-    return true 
+function modifier_assassinbuilder_snot_spray:DestroyOnExpire(  )
+    return true
 end
-function modifier_assassinbuilder_snot_spray:IsHidden(  ) 
+function modifier_assassinbuilder_snot_spray:IsHidden(  )
     return false
 end
 
@@ -36,13 +36,13 @@ function modifier_assassinbuilder_snot_spray:GetEffectAttachType()
     return PATTACH_ABSORIGIN_FOLLOW
 end
 
-function modifier_assassinbuilder_snot_spray:GetTexture(  ) 
+function modifier_assassinbuilder_snot_spray:GetTexture(  )
     return "bristleback_viscous_nasal_goo"
 end
 
-function modifier_assassinbuilder_snot_spray:GetAttributes(  ) 
+function modifier_assassinbuilder_snot_spray:GetAttributes(  )
     return MODIFIER_ATTRIBUTE_NONE
-end 
+end
 
 function modifier_assassinbuilder_snot_spray:DeclareFunctions(  )
     return { MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT, MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS, MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE }
@@ -60,7 +60,7 @@ function modifier_assassinbuilder_snot_spray:GetModifierMoveSpeedBonus_Percentag
     return self:GetAbility():GetSpecialValueFor("base_move_slow") + (self:GetStackCount() * self:GetAbility():GetSpecialValueFor("move_slow_per_stack"))
 end
 
-function modifier_assassinbuilder_snot_spray:OnCreated( param ) 
+function modifier_assassinbuilder_snot_spray:OnCreated( param )
     if IsServer() then
         self:SetStackCount(1)
         self:StartIntervalThink(1)

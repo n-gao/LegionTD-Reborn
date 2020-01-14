@@ -89,13 +89,13 @@
                 "Support"           "0.0"
             }
         }
-     "AttachWearables"
+    "AttachWearables"
         {
-          "Wearable1" { "ItemDef" "6895" }
-          "Wearable2" { "ItemDef" "9093" }
-          "Wearable3" { "ItemDef" "9096" }
-          "Wearable4" { "ItemDef" "9095" }
-          "Wearable5" { "ItemDef" "9455" }
+        "Wearable1" { "ItemDef" "6895" }
+        "Wearable2" { "ItemDef" "9093" }
+        "Wearable3" { "ItemDef" "9096" }
+        "Wearable4" { "ItemDef" "9095" }
+        "Wearable5" { "ItemDef" "9455" }
         }
     }
 }

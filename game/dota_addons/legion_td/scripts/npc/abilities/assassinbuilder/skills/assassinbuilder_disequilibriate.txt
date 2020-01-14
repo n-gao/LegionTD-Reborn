@@ -5,7 +5,7 @@
     "MaxLevel"                         "1"
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
-    
+
     "AbilityManaCost"                "0"
 
     "AbilitySpecial"
@@ -21,7 +21,7 @@
             "duration"                "5"
         }
     }
-    
+
     "Modifiers"
     {
         "modifier_disequilibriate"
@@ -29,7 +29,7 @@
             "Passive"           "1"
             "IsHidden"          "1"
             "Attributes"        "MODIFIER_ATTRIBUTE_MULTIPLE"
-            
+
             "Orb"
             {
                 "Priority"              "DOTA_ORB_PRIORITY_ITEM"
@@ -44,7 +44,7 @@
                     "Target"            "TARGET"
                     "ModifierName"      "modifier_disequilibriate_debuff"
                 }
-                
+
                 "FireSound"
                 {
                     "EffectName"        "Item_Desolator.Target"
@@ -57,7 +57,7 @@
             "Duration"              "%duration"
             "Passive"               "0"
             "IsHidden"              "0"
-            
+
             "Properties"
             {
                 "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"        "%armor_removed"

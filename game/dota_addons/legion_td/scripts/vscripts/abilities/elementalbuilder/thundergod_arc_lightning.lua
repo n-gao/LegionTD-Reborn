@@ -7,12 +7,12 @@ function LightningJump(keys)
     local ability = keys.ability
     local jump_delay = ability:GetLevelSpecialValueFor("jump_delay", (ability:GetLevel() -1))
     local radius = ability:GetLevelSpecialValueFor("radius", (ability:GetLevel() -1))
-    
+
     -- Applies damage to the current target
     ApplyDamage({victim = target, attacker = caster, damage = ability:GetAbilityDamage(), damage_type = ability:GetAbilityDamageType()})
     -- Removes the hidden modifier
     target:RemoveModifierByName("modifier_arc_lightning_datadriven")
-    
+
     -- Waits on the jump delay
     Timers:CreateTimer(jump_delay,
     function()
@@ -25,17 +25,17 @@ function LightningJump(keys)
                 end
             end
         end
-    
+
         -- Adds a global array to the target, so we can check later if it has already been hit in this instance
         if target.hit == nil then
             target.hit = {}
         end
         -- Sets it to true for this instance
         target.hit[current] = true
-    
+
         -- Decrements our jump count for this instance
         ability.jump_count[current] = ability.jump_count[current] - 1
-    
+
         -- Checks if there are jumps left
         if ability.jump_count[current] > 0 then
             -- Finds units in the radius to jump to
@@ -63,7 +63,7 @@ function LightningJump(keys)
             if new_target ~= nil then
                 -- Creates the particle between the new target and the last target
                 local lightningBolt = ParticleManager:CreateParticle(keys.particle, PATTACH_WORLDORIGIN, target)
-                ParticleManager:SetParticleControl(lightningBolt,0,Vector(target:GetAbsOrigin().x,target:GetAbsOrigin().y,target:GetAbsOrigin().z + target:GetBoundingMaxs().z ))   
+                ParticleManager:SetParticleControl(lightningBolt,0,Vector(target:GetAbsOrigin().x,target:GetAbsOrigin().y,target:GetAbsOrigin().z + target:GetBoundingMaxs().z ))
                 ParticleManager:SetParticleControl(lightningBolt,1,Vector(new_target:GetAbsOrigin().x,new_target:GetAbsOrigin().y,new_target:GetAbsOrigin().z + new_target:GetBoundingMaxs().z ))
                 -- Sets the new target as the current target for this instance
                 ability.target[current] = new_target
@@ -87,7 +87,7 @@ function NewInstance(keys)
     local caster = keys.caster
     local ability = keys.ability
     local target = keys.target
-    
+
     -- Keeps track of the total number of instances of the ability (increments on cast)
     if ability.instance == nil then
         ability.instance = 0
@@ -96,15 +96,14 @@ function NewInstance(keys)
     else
         ability.instance = ability.instance + 1
     end
-    
+
     -- Sets the total number of jumps for this instance (to be decremented later)
     ability.jump_count[ability.instance] = ability:GetLevelSpecialValueFor("jump_count", (ability:GetLevel() -1))
     -- Sets the first target as the current target for this instance
     ability.target[ability.instance] = target
-    
+
     -- Creates the particle between the caster and the first target
     local lightningBolt = ParticleManager:CreateParticle(keys.particle, PATTACH_WORLDORIGIN, caster)
-    ParticleManager:SetParticleControl(lightningBolt,0,Vector(caster:GetAbsOrigin().x,caster:GetAbsOrigin().y,caster:GetAbsOrigin().z + caster:GetBoundingMaxs().z ))   
-    ParticleManager:SetParticleControl(lightningBolt,1,Vector(target:GetAbsOrigin().x,target:GetAbsOrigin().y,target:GetAbsOrigin().z + target:GetBoundingMaxs().z ))   
+    ParticleManager:SetParticleControl(lightningBolt,0,Vector(caster:GetAbsOrigin().x,caster:GetAbsOrigin().y,caster:GetAbsOrigin().z + caster:GetBoundingMaxs().z ))
+    ParticleManager:SetParticleControl(lightningBolt,1,Vector(target:GetAbsOrigin().x,target:GetAbsOrigin().y,target:GetAbsOrigin().z + target:GetBoundingMaxs().z ))
 end
-

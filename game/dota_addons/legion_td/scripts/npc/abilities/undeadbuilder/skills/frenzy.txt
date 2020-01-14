@@ -24,7 +24,7 @@
         {
             "IsHidden"  "1"
             "Passive"   "1"
-                
+
             "Aura"                  "frenzy_modifier_datadriven"
             "Aura_Radius"           "300"
             "Aura_Teams"            "DOTA_UNIT_TARGET_TEAM_FRIENDLY"

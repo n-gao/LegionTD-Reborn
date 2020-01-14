@@ -14,4 +14,3 @@
         <Button id="PlayerLeaveTeamButton" onactivate="OnLeaveTeamPressed()" />
     </Panel>
 </root>
-

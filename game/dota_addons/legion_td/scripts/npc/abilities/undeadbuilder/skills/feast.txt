@@ -62,7 +62,7 @@
                     "ScriptFile"    "abilities/undeadbuilder/feast.lua"
                     "Function"      "feast_heal"
                 }
-            }           
+            }
         }
 
         "modifier_feast_damage_datadriven"

@@ -13,7 +13,7 @@ function spiked_carapace_reflect( keys )
     local damageMultiplier = keys.ability:GetSpecialValueFor("damage_multiplier")
 
     if not caster.carapaced_units[ attacker:entindex() ] and not attacker:IsMagicImmune() then
-        if (last_spike_attack.attacker == attacker and last_spike_attack.victim == caster) then 
+        if (last_spike_attack.attacker == attacker and last_spike_attack.victim == caster) then
             last_spike_attack = {}
             return
         end

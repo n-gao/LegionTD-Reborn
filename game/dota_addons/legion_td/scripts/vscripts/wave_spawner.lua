@@ -113,7 +113,7 @@ end
 
 function WaveSpawner:SendIncomingUnits(team)
     local spawners = {}
-     -- list of possible lanes that we can distribute to, indexed 1 to 4
+    -- list of possible lanes that we can distribute to, indexed 1 to 4
     local count = 0 -- number of valid lanes to distribute to
     local units = {}
     local distributedValues = {}
@@ -183,7 +183,7 @@ function WaveSpawner:SendIncomingUnits(team)
             return a.tangoValue > b.tangoValue
         end
     )
-     -- sort units by their tango value
+    -- sort units by their tango value
 
     print("Assigning send units-")
 

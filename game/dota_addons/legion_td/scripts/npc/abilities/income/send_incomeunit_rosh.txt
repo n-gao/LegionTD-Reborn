@@ -35,8 +35,8 @@
             "unitID"                "1025"
         }
     }
-  "precache"
-  {
-    "model" "models/creeps/roshan/roshan.vmdl"
-  }
+    "precache"
+    {
+        "model" "models/creeps/roshan/roshan.vmdl"
+    }
 }

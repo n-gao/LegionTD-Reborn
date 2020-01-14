@@ -9,7 +9,7 @@
     //-------------------------------------------------------------------------------------------------------------
     "BaseClass"                "ability_datadriven"
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"    
+    "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
     "AbilityTextureName"            "faceless_void_time_lock"
 
@@ -21,7 +21,7 @@
         "particle"            "particles/status_fx/status_effect_faceless_chronosphere.vpcf"
         "particle"            "particles/generic_gameplay/generic_stunned.vpcf"
     }
-    
+
     // Stats
     //-------------------------------------------------------------------------------------------------------------
     "AbilityModifierSupportBonus"        "25"

@@ -35,8 +35,8 @@
             "unitID"                "1022"
         }
     }
-  "precache"
-  {
-    "model" "models/creeps/lane_creeps/creep_radiant_hulk/creep_radiant_ancient_hulk.vmdl"
-  }
+    "precache"
+    {
+        "model" "models/creeps/lane_creeps/creep_radiant_hulk/creep_radiant_ancient_hulk.vmdl"
+    }
 }

@@ -12,8 +12,8 @@
     "OnCastbar"                    "0"
     "AbilityTextureName"            "nevermore_dark_lord_datadriven"
     "MaxLevel"                        "1"
-    
-    
+
+
     // Casting
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastRange"                "900"
@@ -40,7 +40,7 @@
         {
             "Passive"            "1"
             "IsHidden"            "1"
-    
+
             "Aura"              "modifier_dark_lord_presence"
             "Aura_Radius"       "%presence_radius"
             "Aura_Teams"        "DOTA_UNIT_TARGET_TEAM_ENEMY"
@@ -52,7 +52,7 @@
         {
             "IsHidden"            "0" //hidden?
             "IsDebuff"            "1"
-        
+
             "Properties"
             {
                 "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "%presence_armor_reduction"

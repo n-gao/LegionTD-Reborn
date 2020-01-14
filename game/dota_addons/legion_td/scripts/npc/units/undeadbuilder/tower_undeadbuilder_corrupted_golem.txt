@@ -32,7 +32,7 @@
     "AttackRange"           "90"
     "ProjectileModel"       ""
     "ProjectileSpeed"       "0"
-    
+
     "LegionAttackType"     "normal"
     "LegionDefendType"     "medium"
     "LegionFraction"       "undead"

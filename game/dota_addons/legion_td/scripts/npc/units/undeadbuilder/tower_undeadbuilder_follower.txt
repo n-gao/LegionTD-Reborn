@@ -10,7 +10,7 @@
     "Level"                 "1"
     "HealthBarOffset"       "120"
     "Vscripts"              "ai/undeadbuilder/ai_follower.lua"
-                       
+
     "Ability1"                          "undeadbuilder_upgrade_recomposer"
     "Ability2"                          "undeadbuilder_upgrade_cultist"
     "Ability3"                          "undeadbuilder_upgrade_interrupter"
@@ -34,7 +34,7 @@
     "AttackRange"           "600"
     "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
     "ProjectileSpeed"       "700"
-    
+
     "LegionAttackType"     "arcane"
     "LegionDefendType"     "light"
     "LegionFraction"       "undead"

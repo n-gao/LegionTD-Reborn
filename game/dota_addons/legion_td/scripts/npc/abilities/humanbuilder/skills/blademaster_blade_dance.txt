@@ -12,7 +12,7 @@
         "particle"  "particles/units/heroes/hero_juggernaut/jugg_crit_blur_impact.vpcf"
         "soundfile" "soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts"
     }
-    
+
     "AbilitySpecial"
     {
         "01"
@@ -62,8 +62,8 @@
                         "ApplyModifier"
                         {
                             "ModifierName"  "modifier_critical_strike_crit"
-                            "Target"        "CASTER"    
-                        }        
+                            "Target"        "CASTER"
+                        }
                     }
                 }
             }
@@ -88,7 +88,7 @@
                 "RemoveModifier"
                 {
                     "ModifierName"      "modifier_critical_strike_crit"
-                    "Target"            "CASTER"    
+                    "Target"            "CASTER"
                 }
             }
         }

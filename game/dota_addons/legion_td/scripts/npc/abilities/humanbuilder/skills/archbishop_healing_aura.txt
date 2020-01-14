@@ -8,8 +8,8 @@
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
     "OnCastbar"                    "0"
     "AbilityTextureName"            "witch_doctor_voodoo_restoration"
-    
-    
+
+
     // Casting
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastRange"                "900"
@@ -36,7 +36,7 @@
         {
             "Passive"            "1"
             "IsHidden"            "1"
-    
+
             "Aura"              "modifier_healing_aura"
             "Aura_Radius"       "%aura_radius"
             "Aura_Teams"        "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -48,7 +48,7 @@
         {
             "IsHidden"            "0" //hidden?
             "IsDebuff"            "0"
-        
+
             "Properties"
             {
                 "MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT" "%aura_regen"

@@ -43,4 +43,3 @@ end
 function modifier_elementalbuilder_passive_thunder_negative_lua:IsDebuff()
     return true
 end
-

@@ -12,7 +12,7 @@
     "AbilityTextureName"            "medusa_split_shot"
 
     "AbilityCooldown"                "3.0"
-    
+
     // Special
     //-------------------------------------------------------------------------------------------------------------
     "AbilitySpecial"
@@ -28,12 +28,12 @@
             "damage_modifier_tooltip"        "0"
         }
         "03"
-        {    
+        {
             "var_type"                    "FIELD_INTEGER"
             "arrow_count"                "4"
         }
         "04"
-        {    
+        {
             "var_type"                    "FIELD_INTEGER"
             "total_arrow_count"            "5"
         }
@@ -67,7 +67,7 @@
             "Passive"            "1"
             "IsHidden"            "1"
             "IsDebuff"            "0"
-    
+
             "OnAttack"
             {
                 "RunScript"
@@ -81,7 +81,7 @@
 
             "Properties"
             {
-                "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "%damage_modifier" 
+                "MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE" "%damage_modifier"
             }
         }
     }

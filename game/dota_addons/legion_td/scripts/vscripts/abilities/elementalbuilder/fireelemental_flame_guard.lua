@@ -15,28 +15,28 @@ function flame_guard_init( keys )
     local targetUnit = keys.target
     local ability = keys.ability
     targetUnit.flame_guard_absorb_amount = ability:GetLevelSpecialValueFor( "absorb_amount", ability:GetLevel() - 1 )
-    
+
     -- Table for look up
     targetUnit.take_next = {}
-    
+
     -- Check if listener is already running
     if targetUnit.listener ~= nil then
         targetUnit.listener = true
         return
     end
-    
+
     --[[
         Anything below this point should be called only ONCE per game session
         unless someone know how to properly stop listener
     ]]
-    
+
     -- Set flags
     targetUnit.listener = true
-    
+
     -- Targeting variables
     local targetEntIndex = targetUnit:entindex()
     local abilityBlockType = DAMAGE_TYPE_MAGICAL
-    
+
     -- Listening to entity hurt
     ListenToGameEvent( "entity_hurt", function( event )
             -- check if should keep listening
@@ -68,7 +68,7 @@ function flame_guard_on_take_damage( keys )
     local attackerEnt = keys.attacker:entindex()
     local damageTaken = keys.Damage
     local modifierName = keys.modifier
-    
+
     -- Forcefully dispell the modifier
     if targetUnit.flame_guard_absorb_amount < 0 then
         targetUnit:RemoveModifierByName( modifierName )
@@ -76,14 +76,14 @@ function flame_guard_on_take_damage( keys )
         targetUnit.listener = false
         return
     end
-    
+
     -- Check if flag has been turned from listener
     if targetUnit.take_next[ attackerEnt ] ~= nil and targetUnit.take_next[ attackerEnt ] == false then
         -- Absorb damage
         targetUnit.flame_guard_absorb_amount = targetUnit.flame_guard_absorb_amount - damageTaken
         targetUnit:SetHealth( targetUnit:GetHealth() + damageTaken )	-- restore health
         targetUnit.take_next[ attackerEnt ] = true
-        
+
         -- If the shield absorbs over damage then remove buff
         if targetUnit.flame_guard_absorb_amount < 0 then
             targetUnit:SetHealth( targetUnit:GetHealth() + targetUnit.flame_guard_absorb_amount )

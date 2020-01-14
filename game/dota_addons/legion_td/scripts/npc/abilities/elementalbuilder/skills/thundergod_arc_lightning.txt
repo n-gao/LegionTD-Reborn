@@ -21,14 +21,14 @@
     "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
     "AbilityTextureName"            "zuus_arc_lightning"
-    
+
     "precache"
     {
         "particle"        "particles/units/heroes/hero_zuus/zuus_arc_lightning_.vpcf"
         "particle"        "particles/units/heroes/hero_zuus/zuus_arc_lightning_head.vpcf"
         "soundfile"        "sounds/weapons/hero/zuus/arc_lightning.vsnd"
     }
-    
+
     // Casting
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastRange"                "850"
@@ -38,7 +38,7 @@
     //-------------------------------------------------------------------------------------------------------------
     "AbilityDamage"                    "130"
 
-    // Time        
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"                "0.75"
 
@@ -74,13 +74,13 @@
             "ModifierName"    "modifier_arc_lightning_datadriven"
             "Target"        "TARGET"
         }
-    
+
         "FireSound"
         {
             "EffectName"    "Hero_Zuus.ArcLightning.Cast"
             "Target"        "CASTER"
         }
-        
+
         "RunScript"
         {
             "ScriptFile"    "abilities/elementalbuilder/thundergod_arc_lightning.lua"
@@ -94,7 +94,7 @@
         "modifier_arc_lightning_datadriven"
         {
             "IsHidden"    "1"
-    
+
             "OnCreated"
             {
                 "RunScript"

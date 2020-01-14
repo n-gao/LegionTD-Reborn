@@ -11,7 +11,7 @@ function modifier_rot_lua:IsAura()
     if self:GetCaster() == self:GetParent() then
         return true
     end
-    
+
     return false
 end
 

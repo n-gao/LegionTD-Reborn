@@ -8,16 +8,16 @@ function GetIllusions( hero )
     local playerID = hero:GetPlayerID()
 
     local allies = FindUnitsInRadius( hero:GetTeamNumber(),
-                                      hero:GetAbsOrigin(),
-                                      nil,
-                                      FIND_UNITS_EVERYWHERE,
-                                      DOTA_UNIT_TARGET_TEAM_FRIENDLY,
-                                      DOTA_UNIT_TARGET_HERO,
-                                      DOTA_UNIT_TARGET_FLAG_NONE,
-                                      FIND_ANY_ORDER,
-                                      false )
+                                    hero:GetAbsOrigin(),
+                                    nil,
+                                    FIND_UNITS_EVERYWHERE,
+                                    DOTA_UNIT_TARGET_TEAM_FRIENDLY,
+                                    DOTA_UNIT_TARGET_HERO,
+                                    DOTA_UNIT_TARGET_FLAG_NONE,
+                                    FIND_ANY_ORDER,
+                                    false )
     local illusions = {}
-    
+
     for _,v in pairs( allies ) do
         if v:GetPlayerID() == playerID and v:IsIllusion() then
             table.insert( illusions, v )
@@ -67,7 +67,7 @@ function RipTide( event )
         StartSoundEvent( "Hero_NagaSiren.RipTide.Precast", unit )
         StartSoundEvent( "Hero_NagaSiren.Riptide.Cast", unit )
     end
-    
+
     -- Cast from the real hero
     castRipTide( caster )
 

@@ -8,7 +8,7 @@
     //-------------------------------------------------------------------------------------------------------------
     "BaseClass"             "ability_datadriven"
     "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
-    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
     "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
     "FightRecapLevel"               "1"
     "AbilityTextureName"            "venomancer_venomous_gale"
@@ -27,15 +27,15 @@
     "AbilityCastRange"              "800"
     "AbilityCastPoint"              "0.0"
 
-    // Time     
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"               "20.0"
-    
+
     // Cost
     //-------------------------------------------------------------------------------------------------------------
     "AbilityManaCost"               "0"
-    
-    // Special  
+
+    // Special
     //-------------------------------------------------------------------------------------------------------------
     "AbilitySpecial"
     {
@@ -121,21 +121,21 @@
             "Target"    "TARGET"
             "Type"      "DAMAGE_TYPE_MAGICAL"
             "Damage"    "%strike_damage"
-        }       
+        }
 
         "RunScript"
         {
             "ScriptFile"    "abilities/naturebuilder/venomous_gale.lua"
             "Function"      "VenomousGaleImpact"
             "modifier"      "modifier_venomous_gale_debuff_datadriven"
-        }   
+        }
     }
 
     "Modifiers"
     {
         "modifier_venomous_gale_debuff_datadriven"
         {
-            "IsDebuff"  "1"         
+            "IsDebuff"  "1"
 
             "EffectName"    "particles/units/heroes/hero_venomancer/venomancer_gale_poison_debuff.vpcf"
             "EffectAttachType"  "follow_origin"
@@ -158,4 +158,3 @@
         }
     }
 }
-

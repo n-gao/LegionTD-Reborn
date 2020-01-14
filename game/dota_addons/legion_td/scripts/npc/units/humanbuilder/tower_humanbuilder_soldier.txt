@@ -33,7 +33,7 @@
     "AttackRange"           "100"
     "ProjectileModel"       ""
     "ProjectileSpeed"       "0"
-    
+
     "LegionAttackType"     "normal"
     "LegionDefendType"     "heavy"
     "LegionFraction"       "human"
@@ -91,12 +91,12 @@
         }
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "6373" } // "Shield of the Blazing Superiority"
-      "Wearable2" { "ItemDef" "6371" } // "Helmet of the Blazing Superiority"
-      "Wearable3" { "ItemDef" "6376" } // "Vambrace of the Blazing Superiority"
-      "Wearable4" { "ItemDef" "6374" } // "Skirt of the Blazing Superiority"
-      "Wearable5" { "ItemDef" "6372" } // "Pauldrons of the Blazing Superiority"
-      "Wearable6" { "ItemDef" "6375" } // "Sword of the Blazing Superiority"
+    "Wearable1" { "ItemDef" "6373" } // "Shield of the Blazing Superiority"
+    "Wearable2" { "ItemDef" "6371" } // "Helmet of the Blazing Superiority"
+    "Wearable3" { "ItemDef" "6376" } // "Vambrace of the Blazing Superiority"
+    "Wearable4" { "ItemDef" "6374" } // "Skirt of the Blazing Superiority"
+    "Wearable5" { "ItemDef" "6372" } // "Pauldrons of the Blazing Superiority"
+    "Wearable6" { "ItemDef" "6375" } // "Sword of the Blazing Superiority"
     }
     }
 }

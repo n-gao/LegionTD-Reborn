@@ -8,10 +8,10 @@
     "AbilityTextureName"            "weaver_geminate_attack"
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
-    
+
     "AbilityCooldown"                "5.0"
-        
-    // Special    
+
+    // Special
     //-------------------------------------------------------------------------------------------------------------
     "AbilitySpecial"
     {
@@ -20,5 +20,5 @@
             "var_type"                "FIELD_FLOAT"
             "delay"            "0.25"
         }
-    }        
+    }
 }

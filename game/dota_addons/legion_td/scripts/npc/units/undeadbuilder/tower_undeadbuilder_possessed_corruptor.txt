@@ -32,7 +32,7 @@
     "AttackRange"           "500"
     "ProjectileModel"       "particles/units/heroes/hero_viper/viper_base_attack.vpcf"
     "ProjectileSpeed"       "600"
-    
+
     "LegionAttackType"     "pierce"
     "LegionDefendType"     "light"
     "LegionFraction"       "undead"

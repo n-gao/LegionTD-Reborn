@@ -51,16 +51,16 @@ function DamageBosses(keys)
     local damage = ability:GetLevelSpecialValueFor("damage", ability_level)
     local partial_damage = ability:GetLevelSpecialValueFor("partial_damage", ability_level)
     local untis_in_small_radius = FindUnitsInRadius(caster:GetTeamNumber(),
-                                    caster:GetOrigin(), 
-                                    nil,                                    
-                                    small_radius, 
-                                    ability:GetAbilityTargetTeam(), 
+                                    caster:GetOrigin(),
+                                    nil,
+                                    small_radius,
+                                    ability:GetAbilityTargetTeam(),
                                     ability:GetAbilityTargetType(), 0, 0, false)
     local untis_in_big_radius = FindUnitsInRadius(caster:GetTeamNumber(),
-                                    caster:GetOrigin(), 
-                                    nil,                                    
-                                    big_radius, 
-                                    ability:GetAbilityTargetTeam(), 
+                                    caster:GetOrigin(),
+                                    nil,
+                                    big_radius,
+                                    ability:GetAbilityTargetTeam(),
                                     ability:GetAbilityTargetType(), 0, 0, false)
     for _, unit in pairs(untis_in_small_radius) do
         if unit:HasModifier("isBoss") then

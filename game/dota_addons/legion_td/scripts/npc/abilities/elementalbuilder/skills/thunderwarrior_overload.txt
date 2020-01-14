@@ -3,11 +3,11 @@
         "BaseClass"                     "storm_spirit_overload"
         "AbilityTextureName"            "storm_spirit_overload"
         "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-        "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"    
+        "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"
         "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
         "SpellDispellableType"            "SPELL_DISPELLABLE_YES"
         "MaxLevel"                        "1"
-        
+
         "AbilityDuration"                "0.6"
         //-------------------------------------------------------------------------------------------------------------
         "AbilityDamage"                    "40"
@@ -25,13 +25,13 @@
                 "var_type"                        "FIELD_INTEGER"
                 "overload_aoe"                    "300"
             }
-            
+
             "02"
             {
                 "var_type"                        "FIELD_INTEGER"
                 "overload_move_slow"            "-80"
             }
-            
+
             "03"
             {
                 "var_type"                        "FIELD_INTEGER"

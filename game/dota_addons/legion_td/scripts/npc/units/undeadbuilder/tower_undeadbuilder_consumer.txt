@@ -30,7 +30,7 @@
     "AttackAnimationPoint"  "0.2"
     "AttackAcquisitionRange" "850"
     "AttackRange"           "90"
-    
+
     "LegionAttackType"     "pierce"
     "LegionDefendType"     "light"
     "LegionFraction"       "undead"

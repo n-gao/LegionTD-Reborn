@@ -15,7 +15,7 @@
 
     "precache"
     {
-        "soundfile"                        "soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"        
+        "soundfile"                        "soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
         "particle"                        "particles/units/heroes/hero_techies/techies_suicide_base.vpcf"
     }
 
@@ -78,8 +78,8 @@
                 "Types"                "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
                 "Flags"                "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
             }
-        
-            "Action"    
+
+            "Action"
             {
                 "Damage"
                 {
@@ -104,8 +104,8 @@
                 "Types"                "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
                 "Flags"                "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
             }
-        
-            "Action"    
+
+            "Action"
             {
                 "Damage"
                 {
@@ -131,7 +131,7 @@
                     "Function"        "Suicide"
                 }
             }
-        }    
+        }
     }
     "Modifiers"
     {
@@ -151,4 +151,3 @@
         }
     }
 }
-

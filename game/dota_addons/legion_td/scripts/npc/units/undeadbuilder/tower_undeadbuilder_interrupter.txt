@@ -10,7 +10,7 @@
     "Level"                 "1"
     "HealthBarOffset"       "120"
     "Vscripts"              "ai/undeadbuilder/ai_interrupter.lua"
-    
+
     "Ability1"                          "hell_spikes"
     "Ability2"                          "perfected_nether_blast"
     "Ability3"                          "sell"
@@ -32,7 +32,7 @@
     "AttackRange"           "600"
     "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
     "ProjectileSpeed"       "700"
-    
+
     "LegionAttackType"     "arcane"
     "LegionDefendType"     "light"
     "LegionFraction"       "undead"

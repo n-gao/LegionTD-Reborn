@@ -35,8 +35,8 @@
             "unitID"                "1016"
         }
     }
-  "precache"
-  {
-    "model" "models/heroes/lycan/lycan_wolf.vmdl"
-  }
+    "precache"
+    {
+        "model" "models/heroes/lycan/lycan_wolf.vmdl"
+    }
 }

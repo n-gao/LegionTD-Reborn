@@ -61,8 +61,8 @@ function diabolic_edict_repeat( params )
     local target = unitsInRange[1]
 
     local pulse = ParticleManager:CreateParticle("particles/units/heroes/hero_leshrac/leshrac_diabolic_edict.vpcf", PATTACH_WORLDORIGIN, params.caster)
-    
-    -- if target is nil then pick a random spot to do explosion, 
+
+    -- if target is nil then pick a random spot to do explosion,
     -- otherwise do it on target and cause damage
     if target == nil then
         x, y = GetRandomXYInCircle(params.radius)
@@ -92,7 +92,7 @@ function diabolic_edict_repeat( params )
     params.num_explosions = params.num_explosions - 1
 
     -- run the function again in jump_delay seconds
-    Timers:CreateTimer(params.explosion_delay, 
+    Timers:CreateTimer(params.explosion_delay,
         function()
             diabolic_edict_repeat( params )
         end

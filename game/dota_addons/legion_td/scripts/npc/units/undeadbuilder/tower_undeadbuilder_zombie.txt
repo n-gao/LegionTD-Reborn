@@ -1,4 +1,4 @@
- "tower_undeadbuilder_zombie"
+"tower_undeadbuilder_zombie"
 {
     // General
     //----------------------------------------------------------------

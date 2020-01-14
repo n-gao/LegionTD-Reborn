@@ -91,12 +91,12 @@
         }
     "AttachWearables"
     {
-      "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
-      "Wearable2" { "ItemDef" "4552" } // "Gilded Falcon Bow"
-      "Wearable3" { "ItemDef" "4562" } // "Gilded Falcon Wings"
-      "Wearable4" { "ItemDef" "4554" } // "Gilded Falcon Cloak"
-      "Wearable5" { "ItemDef" "4553" } // "Gilded Falcon Quiver"
-      "Wearable6" { "ItemDef" "4559" } // "Gilded Falcon Helm" 
+    "Wearable1" { "ItemDef" "21" } // "Wind Ranger's Head"
+    "Wearable2" { "ItemDef" "4552" } // "Gilded Falcon Bow"
+    "Wearable3" { "ItemDef" "4562" } // "Gilded Falcon Wings"
+    "Wearable4" { "ItemDef" "4554" } // "Gilded Falcon Cloak"
+    "Wearable5" { "ItemDef" "4553" } // "Gilded Falcon Quiver"
+    "Wearable6" { "ItemDef" "4559" } // "Gilded Falcon Helm"
     }
     }
 }

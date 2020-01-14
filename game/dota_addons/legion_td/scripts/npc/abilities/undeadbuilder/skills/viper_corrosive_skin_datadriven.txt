@@ -11,7 +11,7 @@
     //-------------------------------------------------------------------------------------------------------------
     "BaseClass"                "ability_datadriven"
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"    
+    "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
     "AbilityTextureName"            "viper_corrosive_skin"
     "MaxLevel"                        "1"
@@ -23,7 +23,7 @@
         "soundfile"        "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
         "particle"        "particles/units/heroes/hero_viper/viper_poison_debuff.vpcf"
     }
-    
+
     // Stats
     //-------------------------------------------------------------------------------------------------------------
     "AbilityModifierSupportBonus"        "10"

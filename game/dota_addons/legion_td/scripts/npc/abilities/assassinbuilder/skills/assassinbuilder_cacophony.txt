@@ -1,4 +1,4 @@
- "assassinbuilder_cacophony"
+"assassinbuilder_cacophony"
 {
     "BaseClass"						"vengefulspirit_wave_of_terror"
     "AbilityTextureName"			"vengefulspirit_wave_of_terror"

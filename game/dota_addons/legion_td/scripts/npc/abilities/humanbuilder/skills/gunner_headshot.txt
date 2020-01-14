@@ -4,21 +4,21 @@
     //-------------------------------------------------------------------------------------------------------------
     "BaseClass"                        "ability_datadriven"
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityUnitDamageType"            "DAMAGE_TYPE_PHYSICAL"    
+    "AbilityUnitDamageType"            "DAMAGE_TYPE_PHYSICAL"
     "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
     "AbilityTextureName"            "sniper_headshot"
-    
+
     // Damage.
     //-------------------------------------------------------------------------------------------------------------
     "AbilityDamage"                    "40"
-    
+
     // Special
     //-------------------------------------------------------------------------------------------------------------
     "precache"
     {
         "particle"                    "particles/generic_gameplay/generic_stunned.vpcf"
     }
-    
+
     "AbilitySpecial"
     {
         "01"
@@ -42,7 +42,7 @@
             "attackspeed_slow"            "-100"
         }
     }
-    
+
     // Data driven
     //-------------------------------------------------------------------------------------------------------------
     "Modifiers"
@@ -52,14 +52,14 @@
             "Passive"            "1"
             "IsHidden"            "1"
             "IsPurgable"        "0"
-            
+
             "OnAttackLanded"
             {
                 "Random"
                 {
                     "Chance"        "%proc_chance"
                     "PseudoRandom"    "DOTA_PSEUDO_RANDOM_SNIPER_HEADSHOT"
-                    
+
                     "OnSuccess"
                     {
                         "ApplyModifier"
@@ -72,7 +72,7 @@
                             }
                             "ModifierName"        "modifier_headshot_debuff_datadriven"
                         }
-                        
+
                         "Damage"
                         {
                             "Target"
@@ -87,16 +87,16 @@
                 }
             }
         }
-    
+
         "modifier_headshot_debuff_datadriven"
         {
             "IsHidden"            "0"
-        
+
             "Duration"            "%slow_duration"
-            
+
             "EffectName"        "particles/generic_gameplay/generic_stunned.vpcf"
             "EffectAttachType"    "follow_overhead"
-        
+
             "Properties"
             {
                 "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"    "%movespeed_slow"

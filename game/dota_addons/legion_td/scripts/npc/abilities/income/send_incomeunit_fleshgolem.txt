@@ -35,8 +35,8 @@
             "unitID"                "1020"
         }
     }
-  "precache"
-  {
-    "model" "models/heroes/undying/undying_flesh_golem.vmdl"
-  }
+    "precache"
+    {
+        "model" "models/heroes/undying/undying_flesh_golem.vmdl"
+    }
 }

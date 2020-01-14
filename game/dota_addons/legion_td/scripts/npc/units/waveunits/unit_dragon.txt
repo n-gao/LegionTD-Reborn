@@ -50,7 +50,7 @@
             "model" "models/heroes/dragon_knight/dragon_knight_dragon.vmdl"
             "particle"  "particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_frost.vpcf"
         }
-    
+
         "Creature"
         {
             "DisableClumpingBehavior"   "1"
@@ -64,9 +64,9 @@
                     "Avoidance" "0.0"
                     "Support"   "0.0"
                 }
-    
+
             }
-    
+
             "AttachWearables"
         {
             "Wearable1" { "ItemDef" "9134" } // "Burning Shield of the Outland Ravager"
@@ -76,7 +76,7 @@
             "Wearable5" { "ItemDef" "9131" } // "Mantle of the Outland Ravager"
             "Wearable6" { "ItemDef" "6337" } // "Heavy Wingblade"
         }
-    
+
         }
-    
+
     }

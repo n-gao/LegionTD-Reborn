@@ -142,13 +142,13 @@ function elementalbuilder_passive_start(keys)
             elementRatios[element] = total / valueAvg
             if elementGods[element] then
                 elementStacks[element] = 1
-          --      print(element .. " has a god!")
+        --      print(element .. " has a god!")
             elseif elementRatios[element] >= 1 then
                 elementStacks[element] = math.floor(5 * (elementRatios[element] - 1))
-          --      print("elementRatios(" .. element .. "): " .. elementRatios[element])
+        --      print("elementRatios(" .. element .. "): " .. elementRatios[element])
             else
                 elementStacks[element] = math.floor(5 * (1 - (1 / elementRatios[element])))
-          --      print("elementRatios(" .. element .. "): " .. elementRatios[element] .. " reciprocal of " .. 1 / elementRatios[element])
+        --      print("elementRatios(" .. element .. "): " .. elementRatios[element] .. " reciprocal of " .. 1 / elementRatios[element])
             end
             if elementStacks[element] > 0 then elementStacks[element] = elementStacks[element] - 1 end
             if elementStacks[element] < 0 then elementStacks[element] = elementStacks[element] + 1 end
@@ -185,7 +185,7 @@ function elementalbuilder_passive_start(keys)
                 end
 
                 for _, element in pairs(elementNames) do
-                  --  if elementSums[element] > 0 then
+                --  if elementSums[element] > 0 then
                         unit:AddNewModifier(unit, ability, "modifier_elementalbuilder_passive_" .. element .. "_lua", {})
                         unit:AddNewModifier(unit, ability, "modifier_elementalbuilder_passive_" .. element .. "_negative_lua", {})
                         if elementStacks[element] < 0 then
@@ -195,7 +195,7 @@ function elementalbuilder_passive_start(keys)
                             unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_lua", unit, math.min(maxStacks, elementStacks[element]))
                             unit:SetModifierStackCount("modifier_elementalbuilder_passive_" .. element .. "_negative_lua", unit, 0)
                         end
-                  --  end
+                --  end
                 end
             end
         end

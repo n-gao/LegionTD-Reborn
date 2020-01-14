@@ -12,7 +12,7 @@
     "SpellImmunityType"        "SPELL_IMMUNITY_ENEMIES_YES"
     "AbilityTextureName"    "bacteria"
     "MaxLevel"                "1"
-    
+
 
     // Special
     //-------------------------------------------------------------------------------------------------------------
@@ -94,7 +94,7 @@
                 "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"    "%slow_pct"
                 "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"    "%attack_slow_tooltip"
             }
-            
+
             "OnAttacked"
             {
                 "ApplyModifier"

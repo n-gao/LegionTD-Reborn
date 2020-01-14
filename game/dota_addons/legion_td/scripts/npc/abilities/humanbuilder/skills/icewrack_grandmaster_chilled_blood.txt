@@ -5,8 +5,8 @@
     "BaseClass"                        "granite_golem_hp_aura"
     "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
     "AbilityTextureName"            "chilled_blood"
-    
-    
+
+
     // Casting
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastRange"                "900"

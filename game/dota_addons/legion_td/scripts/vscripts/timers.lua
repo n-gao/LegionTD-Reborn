@@ -73,7 +73,7 @@ function Timers:start()
     self.timers = {}
 
     local ent = Entities:CreateByClassname("info_target")
-     -- Entities:FindByClassname(nil, 'CWorld')
+    -- Entities:FindByClassname(nil, 'CWorld')
     ent:SetThink("Think", self, "timers", TIMERS_THINK)
 end
 

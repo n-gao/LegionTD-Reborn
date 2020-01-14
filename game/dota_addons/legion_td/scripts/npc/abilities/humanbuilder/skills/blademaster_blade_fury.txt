@@ -20,7 +20,7 @@
         "particle"  "particles/units/heroes/hero_juggernaut/juggernaut_blade_fury.vpcf"
         "soundfile" "soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
     }
-    
+
     "AbilitySpecial"
     {
         "01"
@@ -52,13 +52,13 @@
             "ModifierName"  "modifier_blade_fury"
             "Target"        "CASTER"
             "Duration"      "%duration"
-        }   
+        }
     }
 
     "Modifiers"
     {
         "modifier_blade_fury"
-        {   
+        {
             "OverrideAnimation"         "ACT_DOTA_OVERRIDE_ABILITY_1"
             "States"
             {
@@ -75,15 +75,15 @@
                     "ControlPoints"
                     {
                         "05"    "%blade_fury_radius 0 0"
-                    }                   
+                    }
                 }
                 "FireSound"
                 {
                     "EffectName"    "Hero_Juggernaut.BladeFuryStart"
                     "Target"        "CASTER"
-                }           
+                }
             }
-            
+
             "ThinkInterval"  "%blade_fury_damage_tick"
             "OnIntervalThink"
             {
@@ -96,8 +96,8 @@
                         "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
                         "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
                     }
-                
-                    "Action"    
+
+                    "Action"
                     {
                         "Damage"
                         {
@@ -106,14 +106,14 @@
                             "Damage"        "%damage_tick"
                         }
 
-                        
+
                         "FireSound"
                         {
                             "EffectName"    "Hero_Juggernaut.BladeFury.Impact"
                             "Target"        "TARGET"
                         }
                     }
-                }       
+                }
             }
 
             "OnDestroy"
@@ -138,5 +138,5 @@
                 }
             }
         }
-    }   
+    }
 }

@@ -4,7 +4,7 @@
     //-------------------------------------------------------------------------------------------------------------
     "BaseClass"             "ability_datadriven"
     "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
     "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
     "FightRecapLevel"               "1"
     "AbilityTextureName"            "pugna_nether_blast"
@@ -15,7 +15,7 @@
     "AbilityCastRange"              "400"
     "AbilityCastPoint"              "0.2"
 
-    // Time     
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"               "5.5"
 
@@ -93,7 +93,7 @@
                 "DelayedAction"
                 {
                     "Delay"     "%delay"
-                    "Action"    
+                    "Action"
                     {
                         "FireSound"
                         {

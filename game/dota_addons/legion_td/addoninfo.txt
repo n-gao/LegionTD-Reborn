@@ -1,16 +1,16 @@
 "AddonInfo"
 {
-  "TeamCount" 			"2"
-  "maps"  				"legion_td_4v4"
-  "IsPlayable"  		"1"
-  "PenaltiesEnabled"	"0"
-  "CheckAFKPlayers" 	"0"
-  "legion_td_4v4"
-  {
-     "MaxPlayers"    	"8"
-  }
-  "hero_picker"
-	{
-	 "background_map"	"backgrounds/dashboard_parallax_ti7"
-	}
+    "TeamCount" 			"2"
+    "maps"  				"legion_td_4v4"
+    "IsPlayable"  		"1"
+    "PenaltiesEnabled"	"0"
+    "CheckAFKPlayers" 	"0"
+    "legion_td_4v4"
+    {
+        "MaxPlayers"    	"8"
+    }
+    "hero_picker"
+    {
+    "background_map"	"backgrounds/dashboard_parallax_ti7"
+    }
 }

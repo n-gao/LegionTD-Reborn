@@ -25,7 +25,7 @@
             "corruption_duration"    "15.0"
         }
     }
-    
+
     "Modifiers"
     {
         "modifier_assassinbuilder_weaken_caster"
@@ -48,7 +48,7 @@
                     "Target"            "TARGET"
                     "ModifierName"        "modifier_assassinbuilder_weaken_target"
                 }
-                
+
                 "FireSound"
                 {
                     "EffectName"        "Item_Desolator.Target"
@@ -62,7 +62,7 @@
             "Duration"                "%corruption_duration"
             "Passive"                "0"
             "IsHidden"                "0"
-            
+
             "Properties"
         {
                 "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"        "%corruption_armor"

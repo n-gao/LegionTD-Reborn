@@ -13,12 +13,12 @@
     "AbilityUnitTargetType"                "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
     "SpellImmunityType"                    "SPELL_IMMUNITY_ENEMIES_YES"
     "AbilityTextureName"                "templar_assassin_psi_blades"
-    
+
     "precache"
     {
         "particle"                        "particles/units/heroes/hero_templar_assassin/templar_assassin_psi_blade.vpcf"
     }
-    
+
     "AbilitySpecial"
     {
         "01"
@@ -51,14 +51,14 @@
             "Function"        "DealDamage"
         }
     }
-    
+
     "Modifiers"
     {
         "modifier_assassinbuilder_psi_blades"
         {
             "Passive"    "1"
             "IsHidden"    "1"
-            
+
             "OnAttackLanded"
             {
                 "RunScript"
@@ -69,7 +69,7 @@
                     "damage"        "%attack_damage"
                 }
             }
-            
+
             "Properties"
             {
                 "MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"    "%bonus_attack_range"

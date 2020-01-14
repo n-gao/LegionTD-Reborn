@@ -5,7 +5,7 @@
     "BaseClass"             "tidehunter_ravage"
     "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
     "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
     "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
     "FightRecapLevel"               "2"
     "AbilityTextureName"            "tidehunter_ravage"
@@ -14,8 +14,8 @@
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastRange"              "0"
     "AbilityCastPoint"              "0.3"
-    
-    // Time     
+
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"               "20"
 
@@ -42,7 +42,7 @@
             "speed"             "725"
         }
         "03"
-        {   
+        {
             "var_type"          "FIELD_FLOAT"
             "duration"          "2.4"
         }

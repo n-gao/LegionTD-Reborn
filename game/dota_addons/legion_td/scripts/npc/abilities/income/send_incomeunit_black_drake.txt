@@ -35,8 +35,8 @@
             "unitID"                "1017"
         }
     }
-  "precache"
-  {
-    "model" "models/creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.vmdl"
-  }
+    "precache"
+    {
+        "model" "models/creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.vmdl"
+    }
 }

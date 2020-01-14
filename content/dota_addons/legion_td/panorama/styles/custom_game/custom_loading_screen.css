@@ -7,11 +7,11 @@
     width: 100%;
     height: 100%;
     background-image: url("file://{images}/custom_game/game_info/loading.png");
-	background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
 .OverthrowGameInfo2 {
-	height: 803px;
+    height: 803px;
     width: 610px;
     margin-top: 120px;
     margin-left: 20px;
@@ -52,10 +52,10 @@ Label {
     margin-top: 32px;
     margin-left: 20px;
     text-transform: uppercase;
-	
-	color: #fff;
-	font-weight: semi-bold;
-	text-shadow: 0px 0px 4px #CD6BFB;
+
+    color: #fff;
+    font-weight: semi-bold;
+    text-shadow: 0px 0px 4px #CD6BFB;
 }
 
 #ThroneText,
@@ -65,13 +65,13 @@ Label {
 }
 
 .Header {
-	font-size: 35px;
-	margin-top: 36px;
-	text-transform: uppercase;
-	
-	color: #fff;
-	font-weight: semi-bold;
-	text-shadow: 0px 0px 4px #CD6BFB;
+    font-size: 35px;
+    margin-top: 36px;
+    text-transform: uppercase;
+
+    color: #fff;
+    font-weight: semi-bold;
+    text-shadow: 0px 0px 4px #CD6BFB;
 }
 
 
@@ -192,45 +192,44 @@ Label .xp {
 
 .GameInformationPanel
 {
-	background-image: url("file://{images}/custom_game/game_info/topbar.png");
-	background-repeat: no-repeat;
-	margin-top: 120px;
-	margin-left: 25px;
-	border-radius: 10px;
-	width: 690px;
-	height: 164px;
-	opacity: 1.5;
+    background-image: url("file://{images}/custom_game/game_info/topbar.png");
+    background-repeat: no-repeat;
+    margin-top: 120px;
+    margin-left: 25px;
+    border-radius: 10px;
+    width: 690px;
+    height: 164px;
+    opacity: 1.5;
 }
 
 #TitleFont
 {
-	margin-left: 55px;
+    margin-left: 55px;
 }
 
 #InfoPanel {
-	width: 500px;
-	height: 670px;
-	background-color: #000000BA;
-	margin-left: 55px;
-	margin-top: 100px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #444444;
-	border-radius: 7px;
-	visibility: collapse;
-	flow-children: down;
+    width: 500px;
+    height: 670px;
+    background-color: #000000BA;
+    margin-left: 55px;
+    margin-top: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #444444;
+    border-radius: 7px;
+    visibility: collapse;
+    flow-children: down;
 }
 
 
 .InfoLabel
 {
-	margin-top: 15px;
-	margin-left: 15px;
-	horizontal-align: center;
-	font-size: 55px;
-	color: orangered;
-	text-shadow: 2px 2px 2px #000000;
-	font-weight: bold;
-	text-transform: uppercase;
+    margin-top: 15px;
+    margin-left: 15px;
+    horizontal-align: center;
+    font-size: 55px;
+    color: orangered;
+    text-shadow: 2px 2px 2px #000000;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-

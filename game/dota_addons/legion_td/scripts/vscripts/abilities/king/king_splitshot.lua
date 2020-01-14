@@ -15,9 +15,9 @@ function SplitShotLaunch(keys)
     local maxTargets = Game:GetActivePlayerInTeam(caster:GetTeamNumber()) - 1
     local projectileSpeed = caster:GetProjectileSpeed()
     local projectile = keys.split_shot_projectile
-    
+
     local targets = FindUnitsInRadius(caster:GetTeam(), casterLocation, nil, radius, targetTeam, targetType, targetFlags, FIND_CLOSEST, false)
-    
+
     -- Create projectiles for units that are not the casters current attack target
     for _, target in pairs(targets) do
         -- If we reached the maximum amount of targets then break the loop

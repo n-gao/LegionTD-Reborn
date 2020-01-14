@@ -17,20 +17,20 @@
         "particle"      "particles/units/heroes/hero_invoker/invoker_alacrity_buff.vpcf"
         "particle"      "particles/status_fx/status_effect_alacrity.vpcf"
     }
-    
+
     // Unit Targeting
     //-------------------------------------------------------------------------------------------------------------
     "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
     "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL"
     "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_YES"
-    
+
     // Stats
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastRange"              "650"
     "AbilityCastPoint"              "0"
     "AbilityCooldown"               "10"
     "AbilityManaCost"               "0"
-        
+
     // Special
     //-------------------------------------------------------------------------------------------------------------
     "AbilitySpecial"
@@ -76,7 +76,7 @@
         {
             "IsBuff"    "1"
 
-            "StatusEffectName"      "particles/status_fx/status_effect_alacrity.vpcf"      
+            "StatusEffectName"      "particles/status_fx/status_effect_alacrity.vpcf"
             "StatusEffectPriority"  "10"
 
             "OnCreated"

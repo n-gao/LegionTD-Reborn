@@ -6,12 +6,12 @@
     "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
     "FightRecapLevel"               "1"
     "AbilityTextureName"            "lone_druid_rabid"
-    
+
     // Casting
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCastPoint"              "0.0 0.0 0.0 0.0"
 
-    // Time     
+    // Time
     //-------------------------------------------------------------------------------------------------------------
     "AbilityCooldown"               "30.0 30.0 30.0 30.0"
     "AbilityDuration"               "18.0 22.0 26.0 30.0"
@@ -27,7 +27,7 @@
         "01"
         {
             "var_type"          "FIELD_INTEGER"
-            "bonus_attack_speed"        "10"       
+            "bonus_attack_speed"        "10"
         }
         "02"
         {
@@ -73,7 +73,7 @@
 
     "Modifiers"
     {
-        
+
         "modifier_rabid"
         {
             "EffectName"        "particles/units/heroes/hero_lone_druid/lone_druid_rabid_buff_speed_ring.vpcf"

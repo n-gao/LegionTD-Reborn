@@ -35,8 +35,8 @@
             "unitID"                "1021"
         }
     }
-  "precache"
-  {
-    "model" "models/items/courier/echo_wisp/echo_wisp.vmdl"
-  }
+    "precache"
+    {
+        "model" "models/items/courier/echo_wisp/echo_wisp.vmdl"
+    }
 }

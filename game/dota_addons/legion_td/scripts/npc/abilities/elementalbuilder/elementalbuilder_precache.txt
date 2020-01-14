@@ -86,13 +86,13 @@
 //        "model"     "models/heroes/siren/siren.vmdl"                                                // tower_elementalbuilder_waterwarrior
 //        "soundfile" "soundevents/game_sounds_heroes/game_sounds_naga_siren.vsndevts"                // tower_elementalbuilder_waterwarrior
 //        "soundfile" "soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts"                   // firegod_supernova
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_death.vpcf"              // firegod_supernova                   
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_egg.vpcf"                // firegod_supernova   
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_hit.vpcf"                // firegod_supernova   
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_radiance.vpcf"           // firegod_supernova   
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_radiance_creep.vpcf"     // firegod_supernova   
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_reborn.vpcf"             // firegod_supernova   
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_start.vpcf"              // firegod_supernova   
+//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_death.vpcf"              // firegod_supernova
+//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_egg.vpcf"                // firegod_supernova
+//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_hit.vpcf"                // firegod_supernova
+//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_radiance.vpcf"           // firegod_supernova
+//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_radiance_creep.vpcf"     // firegod_supernova
+//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_reborn.vpcf"             // firegod_supernova
+//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_start.vpcf"              // firegod_supernova
 //        "soundfile" "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"                   // thunderelemental_diablic_edict
 //        "particle"  "particles/units/heroes/hero_leshrac/leshrac_diabolic_edict.vpcf"               // thunderelemental_diablic_edict
 //    }

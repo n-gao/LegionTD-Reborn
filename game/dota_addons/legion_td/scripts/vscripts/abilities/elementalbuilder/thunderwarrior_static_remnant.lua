@@ -20,20 +20,20 @@ function static_remnant_init( keys )
     local ability_damage_type = ability:GetAbilityDamageType()
     local ability_duration = ability:GetDuration()
     local teamnumber = caster:GetTeamNumber()
-    
+
     -- Dummy creation
     local dummy = CreateUnitByName( caster:GetName(), target, false, caster, nil, caster:GetTeamNumber() )
     ability:ApplyDataDrivenModifier( caster, dummy, dummyModifierName, {} )
-    
+
     Timers:CreateTimer( delay, function()
             if not dummy:HasModifier( dummyFreezeModifierName ) then
                 ability:ApplyDataDrivenModifier( caster, dummy, dummyFreezeModifierName, {} )
             end
-    
+
             -- Check in aoe
             local units = FindUnitsInRadius( teamnumber, target, caster, trigger_radius,
                 DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_BASIC + DOTA_UNIT_TARGET_HERO, DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES, 0, false )
-            
+
             -- If there is at least one unit, explode
             if #units > 0 then
                 for k, v in pairs( units ) do
@@ -45,16 +45,16 @@ function static_remnant_init( keys )
                     }
                     ApplyDamage( damageTable )
                 end
-                
+
                 StartSoundEvent( "Hero_StormSpirit.StaticRemnantExplode", dummy )
-                
+
                 dummy:RemoveSelf()
                 return nil
             end
-            
+
             -- Update timer
             remnant_timer = remnant_timer + remnant_interval_check
-            
+
             -- Check if timer should be expired
             if remnant_timer >= ability_duration then
                 dummy:RemoveSelf()
