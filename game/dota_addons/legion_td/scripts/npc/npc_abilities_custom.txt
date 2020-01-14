@@ -17178,9 +17178,9 @@
     "undeadbuilder_passive"
     {
         "BaseClass" "ability_datadriven"
-        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityTextureName"    "necrolyte_sadist"
-		"MaxLevel"				"1"
+        "AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"    "necrolyte_sadist"
+        "MaxLevel"				"1"
 
         "AbilitySpecial"
         {
