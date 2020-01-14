@@ -1,7 +1,12 @@
 name: Pull request notification 
 
 on:
-    [pull_request]
+    pull_request:
+        branches: 
+            - master
+        types: 
+            - closed
+            - opened
       
 jobs:
     send_message:
