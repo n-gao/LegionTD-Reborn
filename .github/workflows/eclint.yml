@@ -16,5 +16,5 @@ jobs:
       - name: Install eclint
         run: npm install -g eclint
       - name: Eclint check
-        run: eclint check **/*
+        run: eclint check *
         shell: bash
