@@ -1,17 +1,19 @@
 name: Pull request notification 
 
 on:
-  [pull_request]
+    [pull_request]
       
 jobs:
-  build:
+    build:
 
-    runs-on: ubuntu-latest
+        runs-on: ubuntu-latest
 
-    steps:
-    - name: Discord notification
-      uses: Ilshidur/action-discord@0.1.0
-      env:
-        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-      with:
-        args: 'New Legion TD pull request "{{EVENT_PAYLOAD.pull_request.title}}".\n{{EVENT_PAYLOAD.pull_request.html_url}}'
+        steps:
+        - name: Discord notification
+          uses: Ilshidur/action-discord@0.1.0
+          env:
+            DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          with:
+            args: |
+                New Legion TD pull request \"{{EVENT_PAYLOAD.pull_request.title}}\".
+                {{EVENT_PAYLOAD.pull_request.html_url}}
