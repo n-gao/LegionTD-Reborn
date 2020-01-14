@@ -1,7 +1,12 @@
 name: Pull request notification 
 
 on:
-    [pull_request]
+    pull_request:
+        branches: 
+            - master
+        types: 
+            - closed
+            - opened
       
 jobs:
     send_message:
@@ -19,7 +24,7 @@ jobs:
                 {{EVENT_PAYLOAD.pull_request.body}}
                 
         - name: Pull request merged
-          if: (github.event.action == 'closed') && github.event.pull_request.merged
+          if: (github.event.action == 'closed')
           uses: Ilshidur/action-discord@0.1.0
           env:
             DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
@@ -27,3 +32,4 @@ jobs:
             args: |
                 Merged pull request \"{{EVENT_PAYLOAD.pull_request.title}}\".
                 {{EVENT_PAYLOAD.pull_request.html_url}}
+                {{EVENT_PAYLOAD.pull_request.merged}}
