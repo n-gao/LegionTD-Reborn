@@ -39,7 +39,7 @@
         "04"
         {
             "var_type"                    "FIELD_FLOAT"
-            "dmg_multiplier"            "0.25"
+            "dmg_multiplier"            "0.15"
         }
     }
 

@@ -42,7 +42,6 @@ function Contains(array, toSearch) {
 	return result;
 }
 
-
 //--------------------------------------------------------------------------------------------------
 // Entry point, update a player panel on creation and register for callbacks when the player details
 // are changed.

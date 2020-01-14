@@ -38,7 +38,7 @@ end
 BehaviorNether = {}
 
 function BehaviorNether:Evaluate()
-    self.fadeAbility = thisEntity:FindAbilityByName("viper_nethertoxin")
+    self.fadeAbility = thisEntity:FindAbilityByName("viper_poison_attack_lua")
 
     local range = 600
     local enemies =
@@ -63,11 +63,11 @@ function BehaviorNether:Evaluate()
 end
 
 function BehaviorNether:Begin()
-    self.fadeAbility = thisEntity:FindAbilityByName("viper_nethertoxin")
+    self.fadeAbility = thisEntity:FindAbilityByName("viper_poison_attack_lua")
     self.endTime = GameRules:GetGameTime() + .1
 
     self.order = {
-        OrderType = DOTA_UNIT_ORDER_CAST_POSITION,
+        OrderType = DOTA_UNIT_ORDER_CAST_TOGGLE_AUTO,
         UnitIndex = thisEntity:entindex(),
         Position = self.target:GetAbsOrigin(),
         TargetIndex = nil,
