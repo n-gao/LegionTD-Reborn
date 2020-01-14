@@ -9,7 +9,7 @@
     "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
     "Level"                 "1"
     "HealthBarOffset"       "120"
-     "Vscripts"              "ai/undeadbuilder/ai_corruptor.lua"
+    "Vscripts"              "ai/undeadbuilder/ai_corruptor.lua"
 
     "Ability4"                          "sell"
     "Ability1"                          "undeadbuilder_upgrade_possessed_corruptor"

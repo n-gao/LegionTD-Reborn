@@ -99,7 +99,7 @@ function modifier_generic_orb_effect_lua:OnOrder( params )
         -- if casting other ability that cancel channel while casting this ability, turn off
         local pass = false
         local behavior = params.ability:GetBehavior()
-        if self:FlagExist( behavior, DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL ) or 
+        if self:FlagExist( behavior, DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL ) or
             self:FlagExist( behavior, DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT ) or
             self:FlagExist( behavior, DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL )
         then
