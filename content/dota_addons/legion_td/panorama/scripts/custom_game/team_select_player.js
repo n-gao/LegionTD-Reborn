@@ -33,13 +33,13 @@ function SetTitle() {
     if (Contains(GameUI.CustomUIConfig().PreviousLeaders, steam_id)) {
         title = $.Localize("#legion_contributor_previous_leader");
     }
-	$("#PlayerTitle").text = title;
+    $("#PlayerTitle").text = title;
 }
 
 function Contains(array, toSearch) {
-	var result;
-	array.forEach(function (entry) { if (entry == toSearch) result = true; });
-	return result;
+    var result;
+    array.forEach(function (entry) { if (entry == toSearch) result = true; });
+    return result;
 }
 
 //--------------------------------------------------------------------------------------------------
