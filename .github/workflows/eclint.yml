@@ -1,0 +1,12 @@
+name: CI
+
+on: [pull_request]
+
+jobs:
+    build:
+        name: ECLint
+        runs-on: [ubuntu-latest]
+        steps:
+            - name: Linting
+              uses: snow-actions/eclint@v1.0.1
+ 
