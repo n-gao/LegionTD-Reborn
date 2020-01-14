@@ -13,7 +13,7 @@
 
     "Ability4"                          "sell"
     "Ability1"                          "undeadbuilder_upgrade_corruptor"
-    "Ability2"                          "viper_corrosive_skin_datadriven"
+    "Ability2"                          ""
 
     // Armor
     //----------------------------------------------------------------

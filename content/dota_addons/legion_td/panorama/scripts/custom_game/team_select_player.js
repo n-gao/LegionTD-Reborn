@@ -30,30 +30,10 @@ function OnPlayerDetailsChanged() {
 
 function SetTitle() {
     var title = "";
-    if (Contains(GameUI.CustomUIConfig().Creator, steam_id)) {
-        title = $.Localize("#legion_contributor_creator");
-    } else if (Contains(GameUI.CustomUIConfig().Leaders, steam_id)) {
-        title = $.Localize("#legion_contributor_leader");
-    } else if (Contains(GameUI.CustomUIConfig().PreviousLeaders, steam_id)) {
-        title = $.Localize("#legion_constributor_previous_leader");
-    } else if (Contains(GameUI.CustomUIConfig().GameDesigners, steam_id)) {
-        title = $.Localize("#legion_contributor_design");
-    } else if (Contains(GameUI.CustomUIConfig().Programmers, steam_id)) {
-        title = $.Localize("#legion_contributor_programming");
-    } else if (Contains(GameUI.CustomUIConfig().Supporters, steam_id)) {
-        title = $.Localize("#legion_contributor_supporter");
-    }
-
+    title = $.Localize("#legion_contributor_leader");
     $("#PlayerTitle").text = title;
 }
 
-function Contains(array, toSearch) {
-    var result;
-    array.forEach(function (entry) {
-        if (entry == toSearch) result = true;
-    });
-    return result;
-}
 
 //--------------------------------------------------------------------------------------------------
 // Entry point, update a player panel on creation and register for callbacks when the player details

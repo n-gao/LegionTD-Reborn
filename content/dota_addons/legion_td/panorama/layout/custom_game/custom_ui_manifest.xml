@@ -4,7 +4,6 @@
         <include src="file://{resources}/scripts/custom_game/selection.js" />
         <include src="file://{resources}/scripts/custom_game/selection_filter.js" />
         <include src="file://{resources}/scripts/custom_game/move_camera.js" />
-        <include src="file://{resources}/scripts/custom_game/supporters.js" />
     </scripts>
     <script>
         GameUI.CustomUIConfig().multiteam_top_scoreboard =
