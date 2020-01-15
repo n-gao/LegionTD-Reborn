@@ -12,7 +12,7 @@
         <include src="file://{resources}/scripts/custom_game/utils.js" />
         <include src="file://{resources}/scripts/custom_game/main_hud.js" />
         <include src="file://{resources}/scripts/custom_game/health_bars.js" />
-        <include src="file://{resources}/scripts/custom_game/team_select_player.js" />
+        <include src="file://{resources}/scripts/custom_game/legion_creator_panel.js" />
     </scripts>
     <script>
         function AddContributor(name, steamId, parent) {
