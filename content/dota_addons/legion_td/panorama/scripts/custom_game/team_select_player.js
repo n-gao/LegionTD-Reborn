@@ -30,10 +30,17 @@ function OnPlayerDetailsChanged() {
 
 function SetTitle() {
     var title = "";
-    title = $.Localize("#legion_contributor_leader");
+    if (Contains(GameUI.CustomUIConfig().PreviousLeaders, steam_id)) {
+        title = $.Localize("#legion_contributor_previous_leader");
+    }
     $("#PlayerTitle").text = title;
 }
 
+function Contains(array, toSearch) {
+    var result;
+    array.forEach(function (entry) { if (entry == toSearch) result = true; });
+    return result;
+}
 
 //--------------------------------------------------------------------------------------------------
 // Entry point, update a player panel on creation and register for callbacks when the player details
