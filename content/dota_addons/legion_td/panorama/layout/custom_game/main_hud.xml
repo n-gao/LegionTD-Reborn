@@ -21,9 +21,6 @@
             newPlayerPanel.SetAttributeString("creator_name", name);
             newPlayerPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_creator_panel.xml", false, false);
         }
-        GameUI.CustomUIConfig().GameDesigners = [ "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120"];
-        GameUI.CustomUIConfig().Creator = [ "76561198027964324" ];
-        GameUI.CustomUIConfig().PreviousLeaders = [ "76561198027964324", "76561198249367546", "76561198030851434" ];
 
         GameUI.CustomUIConfig().GameDesigners.forEach(function(entry){ AddContributor("", entry, $("#GameDesigners"))});
         GameUI.CustomUIConfig().Creator.forEach(function(entry){ AddContributor("", entry, $("#Creators"))});
