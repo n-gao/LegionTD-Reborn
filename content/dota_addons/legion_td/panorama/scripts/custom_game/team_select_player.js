@@ -30,8 +30,14 @@ function OnPlayerDetailsChanged() {
 
 function SetTitle() {
     var title = "";
-    if (Contains(GameUI.CustomUIConfig().PreviousLeaders, steam_id)) {
-        title = $.Localize("#legion_contributor_previous_leader");
+    if (Contains(GameUI.CustomUIConfig().InactiveDevelopers, steam_id)) {
+        title = $.Localize("#legion_contributor_inactive_dev");
+    }
+    if (Contains(GameUI.CustomUIConfig().ActiveDevelopers, steam_id)) {
+        title = $.Localize("#legion_contributor_active_dev");
+    }
+    if (Contains(GameUI.CustomUIConfig().Creator, steam_id)) {
+        title = $.Localize("#legion_contributor_creator");
     }
     $("#PlayerTitle").text = title;
 }

@@ -6,10 +6,10 @@
         <include src="file://{resources}/scripts/custom_game/move_camera.js" />
     </scripts>
     <script>
-        GameUI.CustomUIConfig().GameDesigners = [ "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120"];
         GameUI.CustomUIConfig().Creator = [ "76561198027964324" ];
-        GameUI.CustomUIConfig().PreviousLeaders = [ "76561198027964324", "76561198249367546", "76561198030851434" ];
-        
+        GameUI.CustomUIConfig().ActiveDevelopers = [ "76561198027964324", "76561198249367546", "76561198030851434" ];
+        GameUI.CustomUIConfig().InactiveDevelopers = [ "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120"];
+
         GameUI.CustomUIConfig().multiteam_top_scoreboard =
         {
             reorder_team_scores: true,
