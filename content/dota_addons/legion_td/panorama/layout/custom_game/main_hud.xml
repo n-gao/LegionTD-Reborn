@@ -21,13 +21,10 @@
             newPlayerPanel.SetAttributeString("creator_name", name);
             newPlayerPanel.BLoadLayout("file://{resources}/layout/custom_game/legion_creator_panel.xml", false, false);
         }
-        GameUI.CustomUIConfig().GameDesigners = [ "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120"];
-        GameUI.CustomUIConfig().Creator = [ "76561198027964324" ];
-        GameUI.CustomUIConfig().PreviousLeaders = [ "76561198027964324", "76561198249367546", "76561198030851434" ];
 
-        GameUI.CustomUIConfig().GameDesigners.forEach(function(entry){ AddContributor("", entry, $("#GameDesigners"))});
         GameUI.CustomUIConfig().Creator.forEach(function(entry){ AddContributor("", entry, $("#Creators"))});
-        GameUI.CustomUIConfig().PreviousLeaders.forEach(function(entry){ AddContributor("", entry, $("#PreviousLeaders"))});
+        GameUI.CustomUIConfig().ActiveDevelopers.forEach(function(entry){ AddContributor("", entry, $("#ActiveDevs"))});
+        GameUI.CustomUIConfig().InactiveDevelopers.forEach(function(entry){ AddContributor("", entry, $("#InactiveDevs"))});
     </script>
     <Panel hittest="false" class="Hud">
         <Panel hittest="false" class="DontKnow">
@@ -62,10 +59,10 @@
                         <Label class="ContributorLabel" text="#legion_contributor_creator" />
                         <Panel id="Creators" class="ContributorPanel" hitetst="false" />
                         <!--<Label class="ContributorLabel" text="#legion_contributor_leader" /><Panel id="Leaders" class="ContributorPanel" hitetst="false" />-->
-                        <Label class="ContributorLabel" text="#legion_contributor_previous_leader" />
-                        <Panel id="PreviousLeaders" class="ContributorPanel" hitetst="false" />
-                        <Label class="ContributorLabel" text="#legion_contributor_design" />
-                        <Panel id="GameDesigners" class="ContributorPanel" hitetst="false" />
+                        <Label class="ContributorLabel" text="#legion_contributor_active_dev" />
+                        <Panel id="ActiveDevs" class="ContributorPanel" hitetst="false" />
+                        <Label class="ContributorLabel" text="#legion_contributor_inactive_dev" />
+                        <Panel id="InactiveDevs" class="ContributorPanel" hitetst="false" />
                 </Panel>
                 <Label id="BuildersTitle" text="#Upcoming_Builders"/>
                     <DOTAHeroMovie heroimagestyle="portrait" id="upcomingheroes_spirit" heroname="npc_dota_hero_void_spirit" style="border: 1px solid #5e6869; vertical-align: bottom; tooltip-position: bottom; margin-left: 20px; margin-bottom: 10px; border-radius: 8px;" onmouseover="UIShowTextTooltip(#Spirit_Builder)"  onmouseout="UIHideTextTooltip()"/>
