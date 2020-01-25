@@ -6,7 +6,7 @@
         "AbilityTextureName"    "rattletrap_power_cogs"
         "MaxLevel"    "1"
         "AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-        "AbilityGoldCost"    "135"
+        "AbilityGoldCost"    "100"
         "AbilityCooldown"    "1.0"
         "OnSpellStart"
         {
@@ -23,7 +23,7 @@
             "01"
             {
                 "var_type"    "FIELD_INTEGER"
-                "atk_damage_tooltip"    "150"
+                "atk_damage_tooltip"    "180"
             }
 
             "02"
@@ -41,13 +41,13 @@
             "04"
             {
                 "var_type"    "FIELD_INTEGER"
-                "health_tooltip"    "450"
+                "health_tooltip"    "500"
             }
 
             "05"
             {
                 "var_type"    "FIELD_INTEGER"
-                "armor_tooltip"    "1"
+                "armor_tooltip"    "2"
             }
 
             "06"
