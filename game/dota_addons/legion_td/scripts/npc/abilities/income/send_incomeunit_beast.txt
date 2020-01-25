@@ -1,42 +1,45 @@
-"send_incomeunit_beast"
+"DOTAAbilities"
 {
-    "BaseClass"                     "ability_datadriven"
-    "AbilityTextureName"                "send_incomeunit_beast"
-    "MaxLevel"                                     "1"
-
-    "AbilityBehavior"                        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "AbilityType"                                "DOTA_ABILITY_TYPE_BASIC"
-
-    "AbilityCooldown"                        "10.0"
-
-    "OnSpellStart"
+    "send_incomeunit_beast"
     {
-        "RunScript"
+        "BaseClass"                     "ability_datadriven"
+        "AbilityTextureName"                "send_incomeunit_beast"
+        "MaxLevel"                                     "1"
+
+        "AbilityBehavior"                        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityType"                                "DOTA_ABILITY_TYPE_BASIC"
+
+        "AbilityCooldown"                        "10.0"
+
+        "OnSpellStart"
         {
-            "ScriptFile"    "player.lua"
-            "Function"        "SendUnit"
+            "RunScript"
+            {
+                "ScriptFile"    "player.lua"
+                "Function"        "SendUnit"
+            }
         }
-    }
-    "AbilitySpecial"
-    {
-        "01"
+        "AbilitySpecial"
         {
-            "var_type"            "FIELD_INTEGER"
-            "tango_cost"        "500"
+            "01"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "tango_cost"        "500"
+            }
+            "02"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "income"                "25"
+            }
+            "03"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "unitID"                "1023"
+            }
         }
-        "02"
+        "precache"
         {
-            "var_type"            "FIELD_INTEGER"
-            "income"                "25"
+            "model" "models/creeps/nian/nian_creep.vmdl"
         }
-        "03"
-        {
-            "var_type"            "FIELD_INTEGER"
-            "unitID"                "1023"
-        }
-    }
-    "precache"
-    {
-        "model" "models/creeps/nian/nian_creep.vmdl"
     }
 }

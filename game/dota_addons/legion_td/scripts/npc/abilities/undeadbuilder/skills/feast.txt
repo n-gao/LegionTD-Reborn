@@ -1,87 +1,90 @@
-"feast"
+"DOTAAbilities"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"             "ability_datadriven"
-    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
-    "AbilityTextureName"            "life_stealer_feast"
-    "MaxLevel"                        "1"
+    "feast"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"             "ability_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "AbilityTextureName"            "life_stealer_feast"
+        "MaxLevel"                        "1"
 
-    "precache"
-    {
-        "soundfile"         "soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
-        "particle"          "particles/units/heroes/hero_life_stealer/life_stealer_feast.vpcf"
-    }
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
-    {
-        "01"
+        "precache"
         {
-            "var_type"              "FIELD_INTEGER"
-            "hp_leech_percent"      "15"
+            "soundfile"         "soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
+            "particle"          "particles/units/heroes/hero_life_stealer/life_stealer_feast.vpcf"
         }
-    }
-    "Modifiers"
-    {
-        "modifier_feast_datadriven"
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
         {
-            "Passive"           "1"
-            "IsHidden"          "1"
-            "IsDebuff"          "0"
-
-            "OnAttackStart"
-            // "%attack_damage" is set to the damage value before mitigation
+            "01"
             {
-                "RemoveModifier"
-                {
-                    "ModifierName"  "modifier_feast_damage_datadriven"
-                    "Target"        "CASTER"
-                }
-
-                "RunScript"
-                {
-                    "ScriptFile"    "abilities/undeadbuilder/feast.lua"
-                    "Function"      "feast_attack"
-                    "feast_modifier"    "modifier_feast_damage_datadriven"
-                }
-            }
-
-            "OnAttack"
-            {
-                "FireEffect"
-                {
-                    "EffectName"        "particles/generic_gameplay/generic_lifesteal.vpcf"
-                    "EffectAttachType"  "follow_origin"
-                    "Target"            "CASTER"
-                }
-
-                "RunScript"
-                {
-                    "ScriptFile"    "abilities/undeadbuilder/feast.lua"
-                    "Function"      "feast_heal"
-                }
+                "var_type"              "FIELD_INTEGER"
+                "hp_leech_percent"      "15"
             }
         }
-
-        "modifier_feast_damage_datadriven"
+        "Modifiers"
         {
-            "IsHidden"      "1"
-            "IsPurgable"    "0"
-
-            "OnAttackLanded"
+            "modifier_feast_datadriven"
             {
-                "RemoveModifier"
+                "Passive"           "1"
+                "IsHidden"          "1"
+                "IsDebuff"          "0"
+
+                "OnAttackStart"
+                // "%attack_damage" is set to the damage value before mitigation
                 {
-                    "ModifierName"  "modifier_feast_damage_datadriven"
-                    "Target"        "CASTER"
+                    "RemoveModifier"
+                    {
+                        "ModifierName"  "modifier_feast_damage_datadriven"
+                        "Target"        "CASTER"
+                    }
+
+                    "RunScript"
+                    {
+                        "ScriptFile"    "abilities/undeadbuilder/feast.lua"
+                        "Function"      "feast_attack"
+                        "feast_modifier"    "modifier_feast_damage_datadriven"
+                    }
+                }
+
+                "OnAttack"
+                {
+                    "FireEffect"
+                    {
+                        "EffectName"        "particles/generic_gameplay/generic_lifesteal.vpcf"
+                        "EffectAttachType"  "follow_origin"
+                        "Target"            "CASTER"
+                    }
+
+                    "RunScript"
+                    {
+                        "ScriptFile"    "abilities/undeadbuilder/feast.lua"
+                        "Function"      "feast_heal"
+                    }
                 }
             }
 
-            "Properties"
+            "modifier_feast_damage_datadriven"
             {
-                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "1"
+                "IsHidden"      "1"
+                "IsPurgable"    "0"
+
+                "OnAttackLanded"
+                {
+                    "RemoveModifier"
+                    {
+                        "ModifierName"  "modifier_feast_damage_datadriven"
+                        "Target"        "CASTER"
+                    }
+                }
+
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "1"
+                }
             }
         }
     }

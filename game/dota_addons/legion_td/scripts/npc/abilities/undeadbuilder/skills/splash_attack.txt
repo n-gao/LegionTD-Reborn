@@ -1,40 +1,43 @@
-"splash_attack"
+"DOTAAbilities"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"             "black_dragon_splash_attack"
-    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityTextureName"            "splash"
-
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
+    "splash_attack"
     {
-        "01"
-        {
-            "var_type"                      "FIELD_INTEGER"
-            "damage_percent_close"    "45"
-        }
-        "02"
-        {
-            "var_type"                      "FIELD_INTEGER"
-            "range_mid"                        "150"
-        }
-        "03"
-        {
-            "var_type"                      "FIELD_INTEGER"
-            "damage_percent_mid"                        "40"
-        }
-        "04"
-        {
-            "var_type"                      "FIELD_INTEGER"
-            "range_far"                        "300"
-        }
-        "05"
-        {
-            "var_type"                      "FIELD_INTEGER"
-            "damage_percent_far"                        "35"
-        }
-    }
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"             "black_dragon_splash_attack"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "splash"
 
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "damage_percent_close"    "45"
+            }
+            "02"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "range_mid"                        "150"
+            }
+            "03"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "damage_percent_mid"                        "40"
+            }
+            "04"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "range_far"                        "300"
+            }
+            "05"
+            {
+                "var_type"                      "FIELD_INTEGER"
+                "damage_percent_far"                        "35"
+            }
+        }
+
+    }
 }

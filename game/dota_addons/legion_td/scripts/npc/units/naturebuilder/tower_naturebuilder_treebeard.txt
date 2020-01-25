@@ -1,75 +1,78 @@
-"tower_naturebuilder_treebeard"
+"DOTAUnits"
 {
-    "BaseClass" "npc_dota_creature"
-    "Model" "models/heroes/treant_protector/treant_protector.mdl"
-    "ModelScale"    "0.5"
-    "SoundSet"  "Hero_Treant"
-    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
-    "Level" "1"
-    "HealthBarOffset"   "150"
-    "Vscripts"  "ai/naturebuilder/ai_treebeard.lua"
-    "Ability4"  "sell"
-    "Ability1"  "treebeard_overgrowth"
-    "Ability2"  "treebeard_synergy"
-    "Ability3"  "ability_empty_3"
-    "ArmorPhysical" "6"
-    "MagicalResistance" "40"
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"   "420"
-    "AttackDamageMax"   "445"
-    "AttackRate"    "0.55"
-    "AttackAnimationPoint"  "0.6"
-    "AttackAcquisitionRange"    "850"
-    "AttackRange"   "100"
-    "ProjectileModel"   ""
-    "ProjectileSpeed"   "0"
-    "LegionAttackType" "normal"
-    "LegionDefendType" "heavy"
-    "LegionFraction"   "nature"
-    "BountyGoldMin" "0"
-    "BountyGoldMax" "0"
-    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
-    "RingRadius"    "30"
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed" "270"
-    "MovementTurnRate"  "0.6"
-    "StatusHealth"  "1600"
-    "StatusHealthRegen" "0"
-    "StatusMana"    "0"
-    "StatusManaRegen"   "0"
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-    "TeamName"  "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-    "Creature"
+    "tower_naturebuilder_treebeard"
     {
-        "AttachWearables"
+        "BaseClass" "npc_dota_creature"
+        "Model" "models/heroes/treant_protector/treant_protector.mdl"
+        "ModelScale"    "0.5"
+        "SoundSet"  "Hero_Treant"
+        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
+        "Level" "1"
+        "HealthBarOffset"   "150"
+        "Vscripts"  "ai/naturebuilder/ai_treebeard.lua"
+        "Ability4"  "sell"
+        "Ability1"  "treebeard_overgrowth"
+        "Ability2"  "treebeard_synergy"
+        "Ability3"  "ability_empty_3"
+        "ArmorPhysical" "6"
+        "MagicalResistance" "40"
+        "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"   "420"
+        "AttackDamageMax"   "445"
+        "AttackRate"    "0.55"
+        "AttackAnimationPoint"  "0.6"
+        "AttackAcquisitionRange"    "850"
+        "AttackRange"   "100"
+        "ProjectileModel"   ""
+        "ProjectileSpeed"   "0"
+        "LegionAttackType" "normal"
+        "LegionDefendType" "heavy"
+        "LegionFraction"   "nature"
+        "BountyGoldMin" "0"
+        "BountyGoldMax" "0"
+        "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
+        "RingRadius"    "30"
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed" "270"
+        "MovementTurnRate"  "0.6"
+        "StatusHealth"  "1600"
+        "StatusHealthRegen" "0"
+        "StatusMana"    "0"
+        "StatusManaRegen"   "0"
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+        "TeamName"  "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+        "Creature"
         {
-            "1"
+            "AttachWearables"
             {
-                "ItemDef"   "230"
-            }
+                "1"
+                {
+                    "ItemDef"   "230"
+                }
 
-            "2"
-            {
-                "ItemDef"   "229"
-            }
+                "2"
+                {
+                    "ItemDef"   "229"
+                }
 
-            "3"
-            {
-                "ItemDef"   "227"
-            }
+                "3"
+                {
+                    "ItemDef"   "227"
+                }
 
-            "4"
-            {
-                "ItemDef"   "228"
+                "4"
+                {
+                    "ItemDef"   "228"
+                }
+
             }
 
         }
 
     }
-
 }

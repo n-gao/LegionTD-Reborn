@@ -1,98 +1,101 @@
-"tower_naturebuilder_shroom"
+"DOTAUnits"
 {
-    // General
-    //----------------------------------------------------------------
-    "BaseClass"             "npc_dota_creature"
-    "Model"                 "models/items/furion/treant/shroomling_treant/shroomling_treant.vmdl"
-    "ModelScale"            "0.5"
-    "SoundSet"                      "Furion_Treant"
-    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
-    "Level"                 "1"
-    "HealthBarOffset"       "150"
-    "Vscripts"              "ai/naturebuilder/ai_shroom.lua"
-
-    "Ability4"                          "sell"
-    "Ability1"                          "shroom_corrosive_skin"
-    "Ability2"              "shroom_venomous_gale"
-    "Ability3"              "ability_empty_3"
-
-    // Armor
-    //----------------------------------------------------------------
-    "ArmorPhysical"         "7"
-    "MagicalResistance"     "40"
-
-    // Attack
-    //----------------------------------------------------------------
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "127.5"
-    "AttackDamageMax"       "132.0"
-    "AttackRate"            "1.05"
-    "AttackAnimationPoint"  "0.5"
-    "AttackAcquisitionRange" "850"
-    "AttackRange"           "90"
-    "ProjectileModel"       ""
-    "ProjectileSpeed"       "0"
-
-    "LegionAttackType"     "arcane"
-    "LegionDefendType"     "heavy"
-    "LegionFraction"       "nature"
-
-    // Bounty
-    //----------------------------------------------------------------
-    "BountyGoldMin"         "0"
-    "BountyGoldMax"         "0"
-
-    // Bounds
-    //----------------------------------------------------------------
-    "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-    "RingRadius"            "30"
-
-    // Movement
-    //----------------------------------------------------------------
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"         "270"
-    "MovementTurnRate"      "0.6"
-
-    // Status
-    //----------------------------------------------------------------
-    "StatusHealth"          "950"
-    "StatusHealthRegen"     "0"
-    "StatusMana"            "0"
-    "StatusManaRegen"       "0"
-
-    // Vision
-    //----------------------------------------------------------------
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-
-    // Team
-    //----------------------------------------------------------------
-    "TeamName"              "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-    "precache"
+    "tower_naturebuilder_shroom"
     {
-        "particle"  "particles/units/heroes/hero_ursa/ursa_fury_swipes.vpcf"
-        "particle"  "particles/units/heroes/hero_ursa/ursa_fury_swipes_debuff.vpcf"
-    }
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"             "npc_dota_creature"
+        "Model"                 "models/items/furion/treant/shroomling_treant/shroomling_treant.vmdl"
+        "ModelScale"            "0.5"
+        "SoundSet"                      "Furion_Treant"
+        "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
+        "Level"                 "1"
+        "HealthBarOffset"       "150"
+        "Vscripts"              "ai/naturebuilder/ai_shroom.lua"
 
-    // Creature Data
-    //----------------------------------------------------------------
-    "Creature"
-    {
-        "DisableClumpingBehavior"       "1"
-        "DefaultState"              "Invade"
-        "States"
+        "Ability4"                          "sell"
+        "Ability1"                          "shroom_corrosive_skin"
+        "Ability2"              "shroom_venomous_gale"
+        "Ability3"              "ability_empty_3"
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"         "7"
+        "MagicalResistance"     "40"
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"       "127.5"
+        "AttackDamageMax"       "132.0"
+        "AttackRate"            "1.05"
+        "AttackAnimationPoint"  "0.5"
+        "AttackAcquisitionRange" "850"
+        "AttackRange"           "90"
+        "ProjectileModel"       ""
+        "ProjectileSpeed"       "0"
+
+        "LegionAttackType"     "arcane"
+        "LegionDefendType"     "heavy"
+        "LegionFraction"       "nature"
+
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyGoldMin"         "0"
+        "BountyGoldMax"         "0"
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+        "RingRadius"            "30"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed"         "270"
+        "MovementTurnRate"      "0.6"
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"          "950"
+        "StatusHealthRegen"     "0"
+        "StatusMana"            "0"
+        "StatusManaRegen"       "0"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"              "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+        "precache"
         {
-            "Invade"
+            "particle"  "particles/units/heroes/hero_ursa/ursa_fury_swipes.vpcf"
+            "particle"  "particles/units/heroes/hero_ursa/ursa_fury_swipes_debuff.vpcf"
+        }
+
+        // Creature Data
+        //----------------------------------------------------------------
+        "Creature"
+        {
+            "DisableClumpingBehavior"       "1"
+            "DefaultState"              "Invade"
+            "States"
             {
-                "Name"              "Invade"
-                "Aggression"        "100.0"
-                "Avoidance"         "0.0"
-                "Support"           "0.0"
+                "Invade"
+                {
+                    "Name"              "Invade"
+                    "Aggression"        "100.0"
+                    "Avoidance"         "0.0"
+                    "Support"           "0.0"
+                }
             }
         }
     }

@@ -1,4 +1,6 @@
-"futuristic_gyrocopter_call_down"
+"DOTAAbilities"
+{
+    "futuristic_gyrocopter_call_down"
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
@@ -73,3 +75,4 @@
             }
         }
     }
+}

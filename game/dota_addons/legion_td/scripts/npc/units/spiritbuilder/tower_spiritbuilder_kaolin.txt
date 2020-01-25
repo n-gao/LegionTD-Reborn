@@ -1,0 +1,105 @@
+"DOTAUnits"
+{
+    "tower_spiritbuilder_kaolin"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"             "npc_dota_creature"
+        "Model"                 "models/heroes/earth_spirit/earth_spirit.vmdl"
+        "ModelScale"            "0.60"
+        "SoundSet"                      "Hero_EarthSpirit"
+        "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
+        "Level"                 "1"
+        "HealthBarOffset"       "130"
+        "Vscripts"              "ai/spiritbuilder/ai_spiritbuilder_earth_spirit.lua"
+
+        "Ability4"                          "sell"
+        "Ability1"                          "spiritbuilder_upgrade_great_kaolin"
+        "Ability2"                          "spiritbuilder_upgrade_spirit_king"
+        "Ability3"                          "earth_spirit_boulder_smash"
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"         "4"
+        "MagicalResistance"     "0"
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"       "100"
+        "AttackDamageMax"       "100"
+        "AttackRate"            "1.000000"
+        "AttackAnimationPoint"  "0.350000"
+        "AttackAcquisitionRange" "850"
+        "AttackRange"           "150"
+        "ProjectileModel"		""
+        "ProjectileSpeed"		""
+
+        "LegionAttackType"     "normal"
+        "LegionDefendType"     "heavy"
+        "LegionFraction"       "spirit"
+
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyGoldMin"         "0"
+        "BountyGoldMax"         "0"
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+        "RingRadius"            "30"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed"         "270"
+        "MovementTurnRate"      "0.6"
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"          "600"
+        "StatusHealthRegen"     "0"
+        "StatusMana"            "0"
+        "StatusManaRegen"       "0"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"              "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+        // Creature Data
+        //----------------------------------------------------------------
+        "Creature"
+        {
+            "DisableClumpingBehavior"       "1"
+            "DefaultState"              "Invade"
+            "States"
+            {
+                "Invade"
+                {
+                    "Name"              "Invade"
+                    "Aggression"        "100.0"
+                    "Avoidance"         "0.0"
+                    "Support"           "0.0"
+                }
+            }
+        "AttachWearables"
+            {
+                        "Wearable1" { "ItemDef" "482" }
+                        "Wearable2" { "ItemDef" "8906" }
+                        "Wearable3" { "ItemDef" "6004" }
+                        "Wearable4" { "ItemDef" "7186" }
+                        "Wearable5" { "ItemDef" "7183" }
+                        "Wearable6" { "ItemDef" "13392" }
+            }
+        }
+    }
+}

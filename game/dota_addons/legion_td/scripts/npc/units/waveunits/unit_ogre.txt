@@ -1,98 +1,101 @@
-"unit_ogre"
+"DOTAUnits"
 {
-    "BaseClass" "npc_dota_creature"
-    "Model" "models/heroes/ogre_magi/ogre_magi.vmdl"
-    "ModelScale"    "0.6"
-    "SoundSet"  "Hero_OgreMagi"
-    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-    "Level" "1"
-    "HealthBarOffset"   "140"
-    "Vscripts"  "ai/waves/ai_ogre.lua"
-    "Ability1"  "ogre_magi_bloodlust"
-    "ArmorPhysical" "12"
-    "MagicalResistance" "35"
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"   "152.5"
-    "AttackDamageMax"   "177.5"
-    "AttackRate"    "0.7"
-    "AttackAnimationPoint"  "0.2"
-    "AttackAcquisitionRange"    "850"
-    "AttackRange"   "90"
-    "ProjectileModel"   ""
-    "ProjectileSpeed"   "0"
-    "LegionAttackType" "arcane"
-    "LegionDefendType" "heavy"
-    "LegionExperience" "130"
-    "LegionFraction"   "wave"
-    "BountyGoldMin" "5.0"
-    "BountyGoldMax" "5.0"
-    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
-    "CollisionSize" "50"
-    "RingRadius"    "50"
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed" "300"
-    "MovementTurnRate"  "0.6"
-    "StatusHealth"  "1080"
-    "StatusHealthRegen" "0"
-    "StatusMana"    "100"
-    "StatusManaRegen"   "10"
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-    "TeamName"  "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-    "precache"
+    "unit_ogre"
     {
-        "particle"  "particles/units/heroes/hero_ogre_magi/ogre_magi_bloodlust_buff.vpcf"
-    }
-
-    "Creature"
-    {
-        "DisableClumpingBehavior"   "1"
-        "DefaultState"  "Invade"
-        "States"
+        "BaseClass" "npc_dota_creature"
+        "Model" "models/heroes/ogre_magi/ogre_magi.vmdl"
+        "ModelScale"    "0.6"
+        "SoundSet"  "Hero_OgreMagi"
+        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+        "Level" "1"
+        "HealthBarOffset"   "140"
+        "Vscripts"  "ai/waves/ai_ogre.lua"
+        "Ability1"  "ogre_magi_bloodlust"
+        "ArmorPhysical" "12"
+        "MagicalResistance" "35"
+        "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"   "152.5"
+        "AttackDamageMax"   "177.5"
+        "AttackRate"    "0.7"
+        "AttackAnimationPoint"  "0.2"
+        "AttackAcquisitionRange"    "850"
+        "AttackRange"   "90"
+        "ProjectileModel"   ""
+        "ProjectileSpeed"   "0"
+        "LegionAttackType" "arcane"
+        "LegionDefendType" "heavy"
+        "LegionExperience" "130"
+        "LegionFraction"   "wave"
+        "BountyGoldMin" "5.0"
+        "BountyGoldMax" "5.0"
+        "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
+        "CollisionSize" "50"
+        "RingRadius"    "50"
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed" "300"
+        "MovementTurnRate"  "0.6"
+        "StatusHealth"  "1080"
+        "StatusHealthRegen" "0"
+        "StatusMana"    "100"
+        "StatusManaRegen"   "10"
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+        "TeamName"  "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+        "precache"
         {
-            "Invade"
+            "particle"  "particles/units/heroes/hero_ogre_magi/ogre_magi_bloodlust_buff.vpcf"
+        }
+
+        "Creature"
+        {
+            "DisableClumpingBehavior"   "1"
+            "DefaultState"  "Invade"
+            "States"
             {
-                "Name"  "Invade"
-                "Aggression"    "100.0"
-                "Avoidance" "0.0"
-                "Support"   "0.0"
+                "Invade"
+                {
+                    "Name"  "Invade"
+                    "Aggression"    "100.0"
+                    "Avoidance" "0.0"
+                    "Support"   "0.0"
+                }
+
+            }
+
+            "AttachWearables"
+            {
+                "Wearable1"
+                {
+                    "ItemDef"   "7839"
+                }
+
+                "Wearable2"
+                {
+                    "ItemDef"   "7845"
+                }
+
+                "Wearable3"
+                {
+                    "ItemDef"   "7846"
+                }
+
+                "Wearable4"
+                {
+                    "ItemDef"   "7847"
+                }
+
+                "Wearable5"
+                {
+                    "ItemDef"   "7848"
+                }
+
             }
 
         }
 
-        "AttachWearables"
-        {
-            "Wearable1"
-            {
-                "ItemDef"   "7839"
-            }
-
-            "Wearable2"
-            {
-                "ItemDef"   "7845"
-            }
-
-            "Wearable3"
-            {
-                "ItemDef"   "7846"
-            }
-
-            "Wearable4"
-            {
-                "ItemDef"   "7847"
-            }
-
-            "Wearable5"
-            {
-                "ItemDef"   "7848"
-            }
-
-        }
-
     }
-
 }

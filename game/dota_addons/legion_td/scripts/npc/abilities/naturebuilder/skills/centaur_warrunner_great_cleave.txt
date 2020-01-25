@@ -1,50 +1,53 @@
-"centaur_warrunner_great_cleave"
+"DOTAAbilities"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"             "ability_datadriven"
-    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
-    "AbilityTextureName"            "sven_great_cleave"
-
-    // Precache
-    //-------------------------------------------------------------------------------------------------------------
-    "precache"
+    "centaur_warrunner_great_cleave"
     {
-        "particle"          "particles/units/heroes/hero_sven/sven_spell_great_cleave.vpcf"
-    }
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"             "ability_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
+        "AbilityTextureName"            "sven_great_cleave"
 
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
-    {
-        "01"
+        // Precache
+        //-------------------------------------------------------------------------------------------------------------
+        "precache"
         {
-            "var_type"              "FIELD_INTEGER"
-            "great_cleave_radius"   "300.0"
+            "particle"          "particles/units/heroes/hero_sven/sven_spell_great_cleave.vpcf"
         }
 
-        "02"
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
         {
-            "var_type"              "FIELD_INTEGER"
-            "great_cleave_damage"   "25"
-        }
-    }
-
-    "Modifiers"
-    {
-        "modifier_great_cleave_datadriven"
-        {
-            "Passive"   "1"
-            "IsHidden"  "1"
-
-            "OnAttackLanded"
+            "01"
             {
-                "CleaveAttack"
+                "var_type"              "FIELD_INTEGER"
+                "great_cleave_radius"   "300.0"
+            }
+
+            "02"
+            {
+                "var_type"              "FIELD_INTEGER"
+                "great_cleave_damage"   "25"
+            }
+        }
+
+        "Modifiers"
+        {
+            "modifier_great_cleave_datadriven"
+            {
+                "Passive"   "1"
+                "IsHidden"  "1"
+
+                "OnAttackLanded"
                 {
-                    "CleavePercent"     "%great_cleave_damage"
-                    "CleaveRadius"      "%great_cleave_radius"
-                    "CleaveEffect"      "particles/units/heroes/hero_sven/sven_spell_great_cleave.vpcf"
+                    "CleaveAttack"
+                    {
+                        "CleavePercent"     "%great_cleave_damage"
+                        "CleaveRadius"      "%great_cleave_radius"
+                        "CleaveEffect"      "particles/units/heroes/hero_sven/sven_spell_great_cleave.vpcf"
+                    }
                 }
             }
         }

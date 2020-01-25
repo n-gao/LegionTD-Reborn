@@ -10,7 +10,7 @@
     <Panel class="MatchEntry">
         <Label text="Date" id="Date" class="StatisticsText"/>
         <Panel class="Builder">
-            <Image src="file://{resources}/images/custom_game/buildericons/undead.png" id="BuilderImage"/>
+            <Image src="file://{resources}/images/custom_game/buildericons/spirit.png" id="BuilderImage"/>
             <Label text="BuilderName" id="BuilderName" class="StatisticsText"/>
         </Panel>
         <Label text="+0" id="Result" class="StatisticsText"/>

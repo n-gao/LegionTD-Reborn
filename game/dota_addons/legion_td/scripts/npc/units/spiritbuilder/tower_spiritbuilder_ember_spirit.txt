@@ -1,0 +1,104 @@
+"DOTAUnits"
+{
+    "tower_spiritbuilder_ember_spirit"
+    {
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"             "npc_dota_creature"
+        "Model"                 "models/heroes/ember_spirit/ember_spirit.vmdl"
+        "ModelScale"            "0.75"
+        "SoundSet"                      "Hero_EmberSpirit"
+        "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
+        "Level"                 "1"
+        "HealthBarOffset"       "130"
+        "Vscripts"              "ai/spiritbuilder/ai_spiritbuilder_ember_spirit.lua"
+
+        "Ability4"                          "sell"
+        "Ability1"                          "spiritbuilder_upgrade_xin"
+        "Ability2"                          "flame_guard_datadriven"
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"         "2"
+        "MagicalResistance"     "0"
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"       "110"
+        "AttackDamageMax"       "110"
+        "AttackRate"            "1.000000"
+        "AttackAnimationPoint"  "0.400000"
+        "AttackAcquisitionRange" "600"
+        "AttackRange"           "150"
+        "ProjectileModel"		""
+        "ProjectileSpeed"		""
+
+        "LegionAttackType"     "normal"
+        "LegionDefendType"     "medium"
+        "LegionFraction"       "spirit"
+
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyGoldMin"         "0"
+        "BountyGoldMax"         "0"
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+        "RingRadius"            "30"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed"         "270"
+        "MovementTurnRate"      "0.6"
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"          "260"
+        "StatusHealthRegen"     "0"
+        "StatusMana"            "0"
+        "StatusManaRegen"       "0"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"              "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+        // Creature Data
+        //----------------------------------------------------------------
+        "Creature"
+        {
+            "DisableClumpingBehavior"       "1"
+            "DefaultState"              "Invade"
+            "States"
+            {
+                "Invade"
+                {
+                    "Name"              "Invade"
+                    "Aggression"        "100.0"
+                    "Avoidance"         "0.0"
+                    "Support"           "0.0"
+                }
+            }
+        "AttachWearables"
+            {
+                        "Wearable1" { "ItemDef" "462" }
+                        "Wearable2" { "ItemDef" "469" }
+                        "Wearable3" { "ItemDef" "471" }
+                        "Wearable4" { "ItemDef" "472" }
+                        "Wearable5" { "ItemDef" "473" }
+                        "Wearable6" { "ItemDef" "474" }
+            }
+        }
+    }
+}

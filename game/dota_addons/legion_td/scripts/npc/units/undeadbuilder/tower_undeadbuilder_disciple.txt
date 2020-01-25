@@ -1,101 +1,104 @@
-"tower_undeadbuilder_disciple"
+"DOTAUnits"
 {
-    // General
-    //----------------------------------------------------------------
-    "BaseClass"             "npc_dota_creature"
-    "Model"                 "models/heroes/pugna/pugna.vmdl"
-    "ModelScale"            "0.55"
-    "SoundSet"                      "Hero_Pudge"
-    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_pugna.vsndevts"
-    "Level"                 "1"
-    "HealthBarOffset"       "120"
-    "Vscripts"              "ai/undeadbuilder/ai_disciple.lua"
-
-    "Ability4"                          "sell"
-    "Ability1"                          "undeadbuilder_upgrade_follower"
-    "Ability2"                          "improved_nether_blast"
-
-    // Armor
-    //----------------------------------------------------------------
-    "ArmorPhysical"         "3"
-    "MagicalResistance"     "0"
-
-    // Attack
-    //----------------------------------------------------------------
-    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "55"
-    "AttackDamageMax"       "55"
-    "AttackRate"            "1"
-    "AttackAnimationPoint"  "0.5"
-    "AttackAcquisitionRange" "850"
-    "AttackRange"           "600"
-    "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
-    "ProjectileSpeed"       "700"
-
-    "LegionAttackType"     "arcane"
-    "LegionDefendType"     "light"
-    "LegionFraction"       "undead"
-
-    // Bounty
-    //----------------------------------------------------------------
-    "BountyGoldMin"         "0"
-    "BountyGoldMax"         "0"
-
-    // Bounds
-    //----------------------------------------------------------------
-    "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-    "RingRadius"            "30"
-
-    // Movement
-    //----------------------------------------------------------------
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"         "270"
-    "MovementTurnRate"      "0.6"
-
-    // Status
-    //----------------------------------------------------------------
-    "StatusHealth"          "150"
-    "StatusHealthRegen"     "0"
-    "StatusMana"            "0"
-    "StatusManaRegen"       "0"
-
-    // Vision
-    //----------------------------------------------------------------
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-
-    // Team
-    //----------------------------------------------------------------
-    "TeamName"              "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-    // Creature Data
-    //----------------------------------------------------------------
-    "Creature"
+    "tower_undeadbuilder_disciple"
     {
-        "DisableClumpingBehavior"       "1"
-        "DefaultState"              "Invade"
-        "States"
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"             "npc_dota_creature"
+        "Model"                 "models/heroes/pugna/pugna.vmdl"
+        "ModelScale"            "0.55"
+        "SoundSet"                      "Hero_Pudge"
+        "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_pugna.vsndevts"
+        "Level"                 "1"
+        "HealthBarOffset"       "120"
+        "Vscripts"              "ai/undeadbuilder/ai_disciple.lua"
+
+        "Ability4"                          "sell"
+        "Ability1"                          "undeadbuilder_upgrade_follower"
+        "Ability2"                          "improved_nether_blast"
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"         "3"
+        "MagicalResistance"     "0"
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+        "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"       "55"
+        "AttackDamageMax"       "55"
+        "AttackRate"            "1"
+        "AttackAnimationPoint"  "0.5"
+        "AttackAcquisitionRange" "850"
+        "AttackRange"           "600"
+        "ProjectileModel"       "particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
+        "ProjectileSpeed"       "700"
+
+        "LegionAttackType"     "arcane"
+        "LegionDefendType"     "light"
+        "LegionFraction"       "undead"
+
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyGoldMin"         "0"
+        "BountyGoldMax"         "0"
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+        "RingRadius"            "30"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed"         "270"
+        "MovementTurnRate"      "0.6"
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"          "150"
+        "StatusHealthRegen"     "0"
+        "StatusMana"            "0"
+        "StatusManaRegen"       "0"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"              "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+        // Creature Data
+        //----------------------------------------------------------------
+        "Creature"
         {
-            "Invade"
+            "DisableClumpingBehavior"       "1"
+            "DefaultState"              "Invade"
+            "States"
             {
-                "Name"              "Invade"
-                "Aggression"        "100.0"
-                "Avoidance"         "0.0"
-                "Support"           "0.0"
-            }
-        }
-            "AttachWearables"
+                "Invade"
                 {
-                    "Wearable1" { "ItemDef" "5992" }
-                    "Wearable2" { "ItemDef" "5996" }
-                    "Wearable3" { "ItemDef" "5994" }
-                    "Wearable4" { "ItemDef" "5997" }
-                    "Wearable5" { "ItemDef" "6000" }
-                    "Wearable6" { "ItemDef" "6001" }
+                    "Name"              "Invade"
+                    "Aggression"        "100.0"
+                    "Avoidance"         "0.0"
+                    "Support"           "0.0"
                 }
+            }
+                "AttachWearables"
+                    {
+                        "Wearable1" { "ItemDef" "5992" }
+                        "Wearable2" { "ItemDef" "5996" }
+                        "Wearable3" { "ItemDef" "5994" }
+                        "Wearable4" { "ItemDef" "5997" }
+                        "Wearable5" { "ItemDef" "6000" }
+                        "Wearable6" { "ItemDef" "6001" }
+                    }
+        }
     }
 }

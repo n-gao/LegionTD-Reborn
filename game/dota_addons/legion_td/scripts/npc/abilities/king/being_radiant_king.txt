@@ -1,57 +1,60 @@
-"being_radiant_king"
+"DOTAAbilities"
 {
-    "BaseClass"                 "ability_datadriven"
-    "AbilityTextureName"      "omniknight_guardian_angel"
-    "MaxLevel"             "1"
-
-    "AbilityBehavior"     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilitySpecial"
+    "being_radiant_king"
     {
-        "01"
-        {
-            "var_type"      "FIELD_INTEGER"
-            "health_bonus"         "450"
-        }
-        "02"
-        {
-            "var_type"      "FIELD_INTEGER"
-            "health_bonus_per_stack"      "25"
-        }
-    }
+        "BaseClass"                 "ability_datadriven"
+        "AbilityTextureName"      "omniknight_guardian_angel"
+        "MaxLevel"             "1"
 
-    "Modifiers"
-    {
-        "isBoss"
+        "AbilityBehavior"     "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"
         {
-            "Passive"      "1"
-            "IsHidden"      "0"
-            "IsDebuff"      "0"
-
-            "States"
+            "01"
             {
-                "MODIFIER_STATE_CANNOT_MISS"      "MODIFIER_STATE_VALUE_ENABLED"
+                "var_type"      "FIELD_INTEGER"
+                "health_bonus"         "450"
             }
-
-            "OnDeath"
+            "02"
             {
-                "RunScript"
+                "var_type"      "FIELD_INTEGER"
+                "health_bonus_per_stack"      "25"
+            }
+        }
+
+        "Modifiers"
+        {
+            "isBoss"
+            {
+                "Passive"      "1"
+                "IsHidden"      "0"
+                "IsDebuff"      "0"
+
+                "States"
                 {
-                    "ScriptFile"  "abilities/king/being_king"
-                    "Function"    "BossDied"
+                    "MODIFIER_STATE_CANNOT_MISS"      "MODIFIER_STATE_VALUE_ENABLED"
+                }
+
+                "OnDeath"
+                {
+                    "RunScript"
+                    {
+                        "ScriptFile"  "abilities/king/being_king"
+                        "Function"    "BossDied"
+                    }
                 }
             }
-        }
-        "boss_upgrade_health_stack"
-        {
-            "IsBuff"      "1"
-        }
-        "boss_upgrade_attack_stack"
-        {
-            "IsBuff"      "1"
-        }
-        "boss_upgrade_regen_stack"
-        {
-            "IsBuff"      "1"
+            "boss_upgrade_health_stack"
+            {
+                "IsBuff"      "1"
+            }
+            "boss_upgrade_attack_stack"
+            {
+                "IsBuff"      "1"
+            }
+            "boss_upgrade_regen_stack"
+            {
+                "IsBuff"      "1"
+            }
         }
     }
 }

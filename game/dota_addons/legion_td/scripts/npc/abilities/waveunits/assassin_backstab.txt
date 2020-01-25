@@ -1,42 +1,45 @@
-"assassin_backstab"
+"DOTAAbilities"
 {
-    "BaseClass"                                    "ability_datadriven"
-    "AbilityTextureName"                        "backstab"
-    "MaxLevel"                                    "1"
-    "AbilityBehavior"                            "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilitySpecial"
+    "assassin_backstab"
     {
-        "01"
+        "BaseClass"                                    "ability_datadriven"
+        "AbilityTextureName"                        "backstab"
+        "MaxLevel"                                    "1"
+        "AbilityBehavior"                            "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilitySpecial"
         {
-            "var_type"            "FIELD_FLOAT"
-            "extra_damage"     "0.5"
-        }
-        "02"
-        {
-            "var_type"            "FIELD_INTEGER"
-            "angle"                    "70"
-        }
-    }
-    "Modifiers"
-    {
-        "backstab"
-        {
-            "Passive"            "1"
-            "IsHidden"            "1"
-            "IsDebuff"            "0"
-            "OnAttack"
+            "01"
             {
-                "RunScript"
+                "var_type"            "FIELD_FLOAT"
+                "extra_damage"     "0.5"
+            }
+            "02"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "angle"                    "70"
+            }
+        }
+        "Modifiers"
+        {
+            "backstab"
+            {
+                "Passive"            "1"
+                "IsHidden"            "1"
+                "IsDebuff"            "0"
+                "OnAttack"
                 {
-                    "ScriptFile"    "abilities/waveunits/assassin_backstab"
-                    "Function"        "BackstabHit"
+                    "RunScript"
+                    {
+                        "ScriptFile"    "abilities/waveunits/assassin_backstab"
+                        "Function"        "BackstabHit"
+                    }
                 }
             }
         }
-    }
-    "precache"
-    {
-        "particle"  "particles/units/heroes/hero_riki/riki_backstab.vpcf"
-        "soundfile" "sounds/weapons/hero/riki/riki_backstab.vsnd"
+        "precache"
+        {
+            "particle"  "particles/units/heroes/hero_riki/riki_backstab.vpcf"
+            "soundfile" "sounds/weapons/hero/riki/riki_backstab.vsnd"
+        }
     }
 }

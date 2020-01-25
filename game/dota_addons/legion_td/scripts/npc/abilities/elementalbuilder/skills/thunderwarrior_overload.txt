@@ -1,4 +1,6 @@
-"thunderwarrior_overload"
+"DOTAAbilities"
+{
+    "thunderwarrior_overload"
     {
         "BaseClass"                     "storm_spirit_overload"
         "AbilityTextureName"            "storm_spirit_overload"
@@ -44,3 +46,4 @@
             }
         }
     }
+}

@@ -1,42 +1,45 @@
-"send_incomeunit_golem"
+"DOTAAbilities"
 {
-    "BaseClass"                     "ability_datadriven"
-    "AbilityTextureName"                "send_incomeunit_golem"
-    "MaxLevel"                                     "1"
-
-    "AbilityBehavior"                        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "AbilityType"                                "DOTA_ABILITY_TYPE_BASIC"
-
-    "AbilityCooldown"                        "10.0"
-
-    "OnSpellStart"
+    "send_incomeunit_golem"
     {
-        "RunScript"
+        "BaseClass"                     "ability_datadriven"
+        "AbilityTextureName"                "send_incomeunit_golem"
+        "MaxLevel"                                     "1"
+
+        "AbilityBehavior"                        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityType"                                "DOTA_ABILITY_TYPE_BASIC"
+
+        "AbilityCooldown"                        "10.0"
+
+        "OnSpellStart"
         {
-            "ScriptFile"    "player.lua"
-            "Function"        "SendUnit"
+            "RunScript"
+            {
+                "ScriptFile"    "player.lua"
+                "Function"        "SendUnit"
+            }
         }
-    }
-    "AbilitySpecial"
-    {
-        "01"
+        "AbilitySpecial"
         {
-            "var_type"            "FIELD_INTEGER"
-            "tango_cost"        "200"
+            "01"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "tango_cost"        "200"
+            }
+            "02"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "income"                "5"
+            }
+            "03"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "unitID"                "1011"
+            }
         }
-        "02"
+        "precache"
         {
-            "var_type"            "FIELD_INTEGER"
-            "income"                "5"
+            "model" "models/creeps/neutral_creeps/n_creep_golem_a/neutral_creep_golem_a.vmdl"
         }
-        "03"
-        {
-            "var_type"            "FIELD_INTEGER"
-            "unitID"                "1011"
-        }
-    }
-    "precache"
-    {
-        "model" "models/creeps/neutral_creeps/n_creep_golem_a/neutral_creep_golem_a.vmdl"
     }
 }

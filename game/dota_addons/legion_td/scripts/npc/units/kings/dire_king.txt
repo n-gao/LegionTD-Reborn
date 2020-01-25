@@ -1,99 +1,103 @@
-"dire_king"
+"DOTAUnits"
 {
-    // General
-    //----------------------------------------------------------------
-    "BaseClass"             "npc_dota_creature"
-    "Model"                 "models/heroes/doom/doom.vmdl"
-    "ModelScale"            "2"
-    "SoundSet"                        "Hero_Doom"
-    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_doombringer.vsndevts"
-    "Level"                 "1"
-    "HealthBarOffset"       "450"
-
-    "Ability1"                            "being_dire_king"
-    "Ability2"                "king_split_shot"
-
-    // Armor
-    //----------------------------------------------------------------
-    "ArmorPhysical"         "5"
-    "MagicalResistance"     "0"
-
-    // Attack
-    //----------------------------------------------------------------
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "68.75"
-    "AttackDamageMax"       "81.25"
-    "AttackRate"            "0.8"
-    "AttackAnimationPoint"  "0.5"
-    "AttackAcquisitionRange" "125"
-    "AttackRange"           "615"
-    "ProjectileModel"       "particles/base_attacks/ranged_tower_bad.vpcf"
-    "ProjectileSpeed"       "900"
-
-    "LegionAttackType"        "boss"
-    "LegionDefendType"        "boss"
-    "LegionFraction"   "king"
-    // Bounty
-    //----------------------------------------------------------------
-    "BountyGoldMin"         "9"
-    "BountyGoldMax"         "9"
-
-    // Bounds
-    //----------------------------------------------------------------
-    "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-    "CollisionSize"                    "200"
-    "RingRadius"            "200"
-
-    // Movement
-    //----------------------------------------------------------------
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_NONE"
-    "MovementSpeed"         "0"
-    "MovementTurnRate"      "1"
-
-    // Status
-    //----------------------------------------------------------------
-    "StatusHealth"          "5000"
-    "StatusHealthRegen"     "0.1"
-    "StatusMana"            "0"
-    "StatusManaRegen"       "0"
-
-    // Vision
-    //----------------------------------------------------------------
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-
-    // Team
-    //----------------------------------------------------------------
-    "TeamName"              "DOTA_TEAM_GOODGUYS"
-    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-    // Creature Data
-    //----------------------------------------------------------------
-    "Creature"
+    "dire_king"
     {
-        "DisableClumpingBehavior"       "1"
-        "DefaultState"                "Invade"
-        "States"
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"             "npc_dota_creature"
+        "Model"                 "models/heroes/doom/doom.vmdl"
+        "ModelScale"            "2"
+        "SoundSet"                        "Hero_Doom"
+        "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_doombringer.vsndevts"
+        "Level"                 "1"
+        "HealthBarOffset"       "450"
+
+        "Ability1"                            "being_dire_king"
+        "Ability2"                "king_split_shot"
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"         "5"
+        "MagicalResistance"     "0"
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"       "68.75"
+        "AttackDamageMax"       "81.25"
+        "AttackRate"            "0.8"
+        "AttackAnimationPoint"  "0.500000"
+        "AttackAcquisitionRange" "125"
+        "AttackRange"           "615"
+        "ProjectileModel"       "particles/base_attacks/ranged_tower_bad.vpcf"
+        "ProjectileSpeed"       "900"
+
+        "LegionAttackType"        "boss"
+        "LegionDefendType"        "boss"
+        "LegionFraction"   "king"
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyGoldMin"         "9"
+        "BountyGoldMax"         "9"
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+        "CollisionSize"                    "200"
+        "RingRadius"            "200"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_NONE"
+        "MovementSpeed"         "0"
+        "MovementTurnRate"      "1"
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"          "5000"
+        "StatusHealthRegen"     "0.1"
+        "StatusMana"            "0"
+        "StatusManaRegen"       "0"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"              "DOTA_TEAM_GOODGUYS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+        // Creature Data
+        //----------------------------------------------------------------
+        "Creature"
         {
-            "Invade"
+            "DisableClumpingBehavior"       "1"
+            "DefaultState"                "Invade"
+            "States"
             {
-                "Name"                "Invade"
-                "Aggression"        "100.0"
-                "Avoidance"            "0.0"
-                "Support"            "0.0"
+                "Invade"
+                {
+                    "Name"                "Invade"
+                    "Aggression"        "100.0"
+                    "Avoidance"            "0.0"
+                    "Support"            "0.0"
+                }
             }
-        }
-        "AttachWearables"
-        {
-            "Wearable1" {"ItemDef" "4737"}
-            "Wearable2" {"ItemDef" "4722"}
-            "Wearable3" {"ItemDef" "4783"}
-            "Wearable4" {"ItemDef" "4780"}
-            "Wearable5" {"ItemDef" "4775"}
-            "Wearable6" {"ItemDef" "4738"}
+            "AttachWearables"
+            {
+                "Wearable1" {"ItemDef" "9989"}
+                "Wearable2" {"ItemDef" "8088"}
+                "Wearable3" {"ItemDef" "6276"}
+                "Wearable4" {"ItemDef" "9991"}
+                "Wearable5" {"ItemDef" "9986"}
+                "Wearable6" {"ItemDef" "8047"}
+                "Wearable7" {"ItemDef" "9741"}
+            }
         }
     }
 }

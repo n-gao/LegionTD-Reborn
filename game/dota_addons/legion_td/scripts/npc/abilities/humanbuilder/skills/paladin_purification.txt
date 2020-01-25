@@ -1,42 +1,45 @@
-"paladin_purification"
+"DOTAAbilities"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"                     "omniknight_purification"
-    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-    "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
-    "AbilityUnitDamageType"         "DAMAGE_TYPE_PURE"
-    "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_YES"
-    "AbilityTextureName"            "omniknight_purification"
+    "paladin_purification"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "omniknight_purification"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_PURE"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ALLIES_YES"
+        "AbilityTextureName"            "omniknight_purification"
 
-    // Casting
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityCastRange"              "700"
-    "AbilityCastPoint"              "0.4"
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "700"
+        "AbilityCastPoint"              "0.4"
 
-    // Time
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityCooldown"               "6"
+        // Time
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "6"
 
-    // Cost
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityManaCost"               "0"
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "0"
 
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
-        {
-            "01"
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
             {
-                "var_type"              "FIELD_INTEGER"
-                "heal"                  "150"
+                "01"
+                {
+                    "var_type"              "FIELD_INTEGER"
+                    "heal"                  "150"
+                }
+                "02"
+                {
+                    "var_type"              "FIELD_INTEGER"
+                    "radius"                "260"
+                }
             }
-            "02"
-            {
-                "var_type"              "FIELD_INTEGER"
-                "radius"                "260"
-            }
-        }
+    }
 }

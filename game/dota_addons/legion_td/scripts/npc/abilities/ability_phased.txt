@@ -1,29 +1,32 @@
-"ability_phased"
+"DOTAAbilities"
 {
-    "BaseClass"                     "ability_datadriven"
-
-    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityTextureName"            "Phase"
-    "MaxLevel"                         "1"
-
-    "OnSpellStart"
+    "ability_phased"
     {
-        "ApplyModifier"
-        {
-            "Target"            "CASTER"
-            "ModifierName"        "modifier_phased"
-        }
-    }
+        "BaseClass"                     "ability_datadriven"
 
-    "Modifiers"
-    {
-        "modifier_phased"
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "Phase"
+        "MaxLevel"                         "1"
+
+        "OnSpellStart"
         {
-            "Passive"            "1"
-            "IsHidden"            "1"
-            "States"
+            "ApplyModifier"
             {
-                "MODIFIER_STATE_NO_UNIT_COLLISION"        "MODIFIER_STATE_VALUE_ENABLED"
+                "Target"            "CASTER"
+                "ModifierName"        "modifier_phased"
+            }
+        }
+
+        "Modifiers"
+        {
+            "modifier_phased"
+            {
+                "Passive"            "1"
+                "IsHidden"            "1"
+                "States"
+                {
+                    "MODIFIER_STATE_NO_UNIT_COLLISION"        "MODIFIER_STATE_VALUE_ENABLED"
+                }
             }
         }
     }

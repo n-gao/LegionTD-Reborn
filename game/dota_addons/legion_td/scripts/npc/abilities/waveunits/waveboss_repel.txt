@@ -1,67 +1,70 @@
-"waveboss_repel"
+"DOTAAbilities"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"                        "ability_datadriven"
-    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityTextureName"            "omniknight_repel"
-
-    // Casting
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityCastRange"                "500"
-
-    // Time
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityCooldown"                "4.0"
-
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
+    "waveboss_repel"
     {
-        "01"
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "omniknight_repel"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"                "500"
+
+        // Time
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"                "4.0"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
         {
-            "var_type"                "FIELD_FLOAT"
-            "duration"                "2"
-        }
-    }
-
-    "precache"
-    {
-        "soundfile"    "soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
-        "particle"    "particles/units/heroes/hero_omniknight/omniknight_repel_buff.vpcf"
-    }
-
-    "Modifiers"
-    {
-
-        "modifier_repel_timekeeper"
-        {
-            "Passive"        "1"
-            "IsHidden"       "1"
-            "IsBuff"        "1"
-            "IsPurgable"    "0"
-            "OnCreated"
+            "01"
             {
-                "RunScript"
-                {
-                    "ScriptFile" "abilities/waveunits/waveboss_repel.lua"
-                    "Function"   "RepelResetter"
-                    "timemodifier"    "modifier_repel_timekeeper"
-                    "spellmodifier"    "modifier_repel_datadriven"
-                }
+                "var_type"                "FIELD_FLOAT"
+                "duration"                "2"
             }
         }
 
-        "modifier_repel_datadriven"
+        "precache"
         {
-            "IsBuff"        "1"
-            "IsPurgable"    "1"
-            "Duration"        "%duration"
-            "EffectName"        "particles/units/heroes/hero_omniknight/omniknight_repel_buff.vpcf"
-            "EffectAttachType"    "follow_origin"
-            "States"
+            "soundfile"    "soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
+            "particle"    "particles/units/heroes/hero_omniknight/omniknight_repel_buff.vpcf"
+        }
+
+        "Modifiers"
+        {
+
+            "modifier_repel_timekeeper"
             {
-                "MODIFIER_STATE_MAGIC_IMMUNE"    "MODIFIER_STATE_VALUE_ENABLED"
+                "Passive"        "1"
+                "IsHidden"       "1"
+                "IsBuff"        "1"
+                "IsPurgable"    "0"
+                "OnCreated"
+                {
+                    "RunScript"
+                    {
+                        "ScriptFile" "abilities/waveunits/waveboss_repel.lua"
+                        "Function"   "RepelResetter"
+                        "timemodifier"    "modifier_repel_timekeeper"
+                        "spellmodifier"    "modifier_repel_datadriven"
+                    }
+                }
+            }
+
+            "modifier_repel_datadriven"
+            {
+                "IsBuff"        "1"
+                "IsPurgable"    "1"
+                "Duration"        "%duration"
+                "EffectName"        "particles/units/heroes/hero_omniknight/omniknight_repel_buff.vpcf"
+                "EffectAttachType"    "follow_origin"
+                "States"
+                {
+                    "MODIFIER_STATE_MAGIC_IMMUNE"    "MODIFIER_STATE_VALUE_ENABLED"
+                }
             }
         }
     }
