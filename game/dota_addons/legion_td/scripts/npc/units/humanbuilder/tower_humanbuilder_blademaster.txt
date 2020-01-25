@@ -1,101 +1,104 @@
-"tower_humanbuilder_blademaster"
+"DOTAUnits"
 {
-    // General
-    //----------------------------------------------------------------
-    "BaseClass"             "npc_dota_creature"
-    "Model"                 "models/heroes/juggernaut/juggernaut.vmdl"
-    "ModelScale"            "0.6"
-    "SoundSet"              "Hero_Juggernaut"
-    "GameSoundsFile"        "soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
-    "Level"                 "1"
-    "HealthBarOffset"       "150"
-    "Vscripts"              "ai/humanbuilder/ai_blademaster.lua"
+	"tower_humanbuilder_blademaster"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/juggernaut/juggernaut.vmdl"
+		"ModelScale"            "0.6"
+		"SoundSet"              "Hero_Juggernaut"
+		"GameSoundsFile"        "soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/humanbuilder/ai_blademaster.lua"
 
-    "Ability4"              "sell"
-    "Ability1"              "blademaster_blade_fury"
-    "Ability2"              "blademaster_blade_dance"
-    "Ability3"              "human_vladmir"
+		"Ability4"              "sell"
+		"Ability1"              "blademaster_blade_fury"
+		"Ability2"              "blademaster_blade_dance"
+		"Ability3"              "human_vladmir"
 
-    // Armor
-    //----------------------------------------------------------------
-    "ArmorPhysical"         "8"
-    "MagicalResistance"     "50"
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "8"
+		"MagicalResistance"     "50"
 
-    // Attack
-    //----------------------------------------------------------------
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "465.5"
-    "AttackDamageMax"       "480.0"
-    "AttackRate"            "0.42"
-    "AttackAnimationPoint"  "0.35"
-    "AttackAcquisitionRange" "850"
-    "AttackRange"           "100"
-    "ProjectileModel"       ""
-    "ProjectileSpeed"       "0"
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "465.5"
+		"AttackDamageMax"       "480.0"
+		"AttackRate"            "0.42"
+		"AttackAnimationPoint"  "0.35"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "100"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
 
-    "LegionAttackType"     "normal"
-    "LegionDefendType"     "heavy"
-    "LegionFraction"       "human"
+		"LegionAttackType"     "normal"
+		"LegionDefendType"     "heavy"
+		"LegionFraction"       "human"
 
-    // Bounty
-    //----------------------------------------------------------------
-    "BountyGoldMin"         "0"
-    "BountyGoldMax"         "0"
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
 
-    // Bounds
-    //----------------------------------------------------------------
-    "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-    "RingRadius"            "30"
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
 
-    // Movement
-    //----------------------------------------------------------------
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"         "270"
-    "MovementTurnRate"      "0.6"
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
 
-    // Status
-    //----------------------------------------------------------------
-    "StatusHealth"          "1250"
-    "StatusHealthRegen"     "0"
-    "StatusMana"            "1"
-    "StatusManaRegen"       "0"
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "1250"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "1"
+		"StatusManaRegen"       "0"
 
-    // Vision
-    //----------------------------------------------------------------
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
 
-    // Team
-    //----------------------------------------------------------------
-    "TeamName"              "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
-    // Creature Data
-    //----------------------------------------------------------------
-    "Creature"
-    {
-        "DisableClumpingBehavior"       "1"
-        "DefaultState"              "Invade"
-        "States"
-        {
-            "Invade"
-            {
-                "Name"              "Invade"
-                "Aggression"        "100.0"
-                "Avoidance"         "0.0"
-                "Support"           "0.0"
-            }
-        }
-    "AttachWearables"
-        {
-            "Wearable1" { "ItemDef" "6775" } // "Mask of the Bladesrunner"
-            "Wearable2" { "ItemDef" "8986" } // "Sword of the Bladeform Aesthete"
-            "Wearable3" { "ItemDef" "6773" } // "Shoulders of the Bladesrunner"
-            "Wearable4" { "ItemDef" "6826" } // "Gloves of the Bladesrunner"
-            "Wearable5" { "ItemDef" "6774" } // "Belt of the Bladesrunner"
-        }
-    }
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"              "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"              "Invade"
+					"Aggression"        "100.0"
+					"Avoidance"         "0.0"
+					"Support"           "0.0"
+				}
+			}
+		"AttachWearables"
+			{
+				"Wearable1" { "ItemDef" "6775" } // "Mask of the Bladesrunner"
+				"Wearable2" { "ItemDef" "8986" } // "Sword of the Bladeform Aesthete"
+				"Wearable3" { "ItemDef" "6773" } // "Shoulders of the Bladesrunner"
+				"Wearable4" { "ItemDef" "6826" } // "Gloves of the Bladesrunner"
+				"Wearable5" { "ItemDef" "6774" } // "Belt of the Bladesrunner"
+			}
+		}
+	}
 }

@@ -1,100 +1,103 @@
-"elementalbuilder_precache"
+"DOTAAbilities"
 {
-    "BaseClass" "ability_datadriven"
-    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	"elementalbuilder_precache"
+	{
+		"BaseClass" "ability_datadriven"
+		"AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 
-    "Modifiers"
-    {
-        "modifier_elementalbuilder_precache"
-        {
-            "Passive"               "1"
-            "IsPurgable"            "0"
-            "IsHidden"                "1"
-            "OnCreated"
-            {
-                "RunScript"
-                {
-                    "ScriptFile"    "abilities/elementalbuilder/elementalbuilder_unit_precache.lua"
-                    "Function"        "precache"
-                }
-            }
-        }
-    }
+		"Modifiers"
+		{
+			"modifier_elementalbuilder_precache"
+			{
+				"Passive"               "1"
+				"IsPurgable"            "0"
+				"IsHidden"                "1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"    "abilities/elementalbuilder/elementalbuilder_unit_precache.lua"
+						"Function"        "precache"
+					}
+				}
+			}
+		}
 
-//    "precache"
-//    {
-//        "model"     "models/heroes/earthshaker/earthshaker.vmdl"                                   // tower_elementalbuilder_earthbender
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts"              // tower_elementalbuilder_earthbender
-//        "model"     "models/heroes/sand_king/sand_king.vmdl"                                       // tower_elementalbuilder_earthelemental
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"                 // tower_elementalbuilder_earthelemental
-//        "particle"  "particles/units/heroes/hero_sandking/sandking_caustic_finale_debuff.vpcf"     // tower_elementalbuilder_earthelemental
-//        "particle"  "particles/units/heroes/hero_sandking/sandking_caustic_finale_explode.vpcf"    // tower_elementalbuilder_earthelemental
-//        "model"     "models/heroes/tiny_04/tiny_04.vmdl"                                            // tower_elementalbuilder_earthgod
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"                    // tower_elementalbuilder_earthgod
-//        "particle"  "particles/units/heroes/hero_tiny/tiny_avalanche.vpcf"                         // tower_elementalbuilder_earthgod
-//        "model"     "models/heroes/earth_spirit/earth_spirit.vmdl"                                 // tower_elementalbuilder_earthwarrior
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"             // tower_elementalbuilder_earthwarrior
-//        "model"     "models/heroes/lina/lina.vmdl"                                                 // tower_elementalbuilder_firebender
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"                     // tower_elementalbuilder_firebender
-//        "particle"  "particles/units/heroes/hero_lina/lina_base_attack.vpcf"                       // tower_elementalbuilder_firebender
-//        "model"     "models/heroes/brewmaster/brewmaster_firespirit.vmdl"                          // tower_elementalbuilder_fireelemental
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"               // tower_elementalbuilder_fireelemental
-//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_flameguard.vpcf"        // tower_elementalbuilder_fireelemental
-//        "model"     "models/heroes/phoenix/phoenix_bird.vmdl"                                      // tower_elementalbuilder_firegod
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts"                  // tower_elementalbuilder_firegod
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_base_attack.vpcf"                 // tower_elementalbuilder_firegod
-//        "model"     "models/heroes/ember_spirit/ember_spirit.vmdl"                                 // tower_elementalbuilder_firewarrior
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"             // tower_elementalbuilder_firewarrior
-//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"               // tower_elementalbuilder_firewarrior
-//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"             // tower_elementalbuilder_firewarrior
-//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"             // tower_elementalbuilder_firewarrior
-//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"   // tower_elementalbuilder_firewarrior
-//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"                  // tower_elementalbuilder_firewarrior
-//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"                // tower_elementalbuilder_firewarrior
-//        "model"     "models/heroes/razor/razor.vmdl"                                                // tower_elementalbuilder_thunderbender
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"                     // tower_elementalbuilder_thunderbender
-//        "particle"  "particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf"              // tower_elementalbuilder_thunderbender
-//        "model"     "models/heroes/leshrac/leshrac.vmdl"                                            // tower_elementalbuilder_thunderelemental
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"                   // tower_elementalbuilder_thunderelemental
-//        "particle"  "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"                  // tower_elementalbuilder_thunderelemental
-//        "model"     "models/heroes/zuus/zuus.vmdl"                                                  // tower_elementalbuilder_thundergod
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"                      // tower_elementalbuilder_thundergod
-//        "particle"  "particles/units/heroes/hero_zuus/zuus_base_attack.vpcf"                        // tower_elementalbuilder_thundergod
-//        "particle"  "particles/units/heroes/hero_zuus/zuus_arc_lightning_head.vpcf"                 // tower_elementalbuilder_thundergod
-//        "model"     "models/heroes/storm_spirit/storm_spirit.vmdl"                                  // tower_elementalbuilder_thunderwarrior
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts"               // tower_elementalbuilder_thunderwarrior
-//        "particle"  "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"                  // tower_elementalbuilder_thunderwarrior
-//        "particle"  "particles/units/heroes/hero_stormspirit/stormspirit_static_remnant_image.vpcf" // tower_elementalbuilder_thunderwarrior
-//        "model"     "models/heroes/dark_seer/darkseer_sfm.vmdl"                                     // tower_elementalbuilder_voidbender
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_dark_seer.vsndevts"                 // tower_elementalbuilder_voidbender
-//        "model"     "models/heroes/bane/bane.vmdl"                                                  // tower_elementalbuilder_voidelemental
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"                      // tower_elementalbuilder_voidelemental
-//        "particle"  "particles/units/heroes/hero_enigma/enigma_base_attack.vpcf"                    // tower_elementalbuilder_voidelemental
-//        "model"     "models/heroes/enigma/enigma.vmdl"                                              // tower_elementalbuilder_voidgod
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"                    // tower_elementalbuilder_voidgod
-//        "particle"  "particles/units/heroes/hero_enigma/enigma_base_attack.vpcf"                    // tower_elementalbuilder_voidgod
-//        "model"     "models/heroes/faceless_void/faceless_void.vmdl"                                // tower_elementalbuilder_voidwarrior
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"                    // tower_elementalbuilder_voidwarrior
-//        "model"     "models/heroes/tidehunter/tidehunter.vmdl"                                      // tower_elementalbuilder_waterbender
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"                // tower_elementalbuilder_waterbender
-//        "model"     "models/heroes/morphling/morphling.vmdl"                                        // tower_elementalbuilder_waterelemental
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"                 // tower_elementalbuilder_waterelemental
-//        "particle"  "particles/units/heroes/hero_morphling/morphling_base_attack.vpcf"              // tower_elementalbuilder_waterelemental
-//        "model"     "models/heroes/ancient_apparition/ancient_apparition.vmdl"                      // tower_elementalbuilder_watergod
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts"        // tower_elementalbuilder_watergod
-//        "particle"  "particles/units/heroes/hero_ancient_apparition/ancient_apparition_base_attack.vpcf" // tower_elementalbuilder_watergod
-//        "model"     "models/heroes/siren/siren.vmdl"                                                // tower_elementalbuilder_waterwarrior
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_naga_siren.vsndevts"                // tower_elementalbuilder_waterwarrior
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts"                   // firegod_supernova
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_death.vpcf"              // firegod_supernova
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_egg.vpcf"                // firegod_supernova
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_hit.vpcf"                // firegod_supernova
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_radiance.vpcf"           // firegod_supernova
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_radiance_creep.vpcf"     // firegod_supernova
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_reborn.vpcf"             // firegod_supernova
-//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_start.vpcf"              // firegod_supernova
-//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"                   // thunderelemental_diablic_edict
-//        "particle"  "particles/units/heroes/hero_leshrac/leshrac_diabolic_edict.vpcf"               // thunderelemental_diablic_edict
-//    }
+	//    "precache"
+	//    {
+	//        "model"     "models/heroes/earthshaker/earthshaker.vmdl"                                   // tower_elementalbuilder_earthbender
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts"              // tower_elementalbuilder_earthbender
+	//        "model"     "models/heroes/sand_king/sand_king.vmdl"                                       // tower_elementalbuilder_earthelemental
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"                 // tower_elementalbuilder_earthelemental
+	//        "particle"  "particles/units/heroes/hero_sandking/sandking_caustic_finale_debuff.vpcf"     // tower_elementalbuilder_earthelemental
+	//        "particle"  "particles/units/heroes/hero_sandking/sandking_caustic_finale_explode.vpcf"    // tower_elementalbuilder_earthelemental
+	//        "model"     "models/heroes/tiny_04/tiny_04.vmdl"                                            // tower_elementalbuilder_earthgod
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"                    // tower_elementalbuilder_earthgod
+	//        "particle"  "particles/units/heroes/hero_tiny/tiny_avalanche.vpcf"                         // tower_elementalbuilder_earthgod
+	//        "model"     "models/heroes/earth_spirit/earth_spirit.vmdl"                                 // tower_elementalbuilder_earthwarrior
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"             // tower_elementalbuilder_earthwarrior
+	//        "model"     "models/heroes/lina/lina.vmdl"                                                 // tower_elementalbuilder_firebender
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"                     // tower_elementalbuilder_firebender
+	//        "particle"  "particles/units/heroes/hero_lina/lina_base_attack.vpcf"                       // tower_elementalbuilder_firebender
+	//        "model"     "models/heroes/brewmaster/brewmaster_firespirit.vmdl"                          // tower_elementalbuilder_fireelemental
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"               // tower_elementalbuilder_fireelemental
+	//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_flameguard.vpcf"        // tower_elementalbuilder_fireelemental
+	//        "model"     "models/heroes/phoenix/phoenix_bird.vmdl"                                      // tower_elementalbuilder_firegod
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts"                  // tower_elementalbuilder_firegod
+	//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_base_attack.vpcf"                 // tower_elementalbuilder_firegod
+	//        "model"     "models/heroes/ember_spirit/ember_spirit.vmdl"                                 // tower_elementalbuilder_firewarrior
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"             // tower_elementalbuilder_firewarrior
+	//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"               // tower_elementalbuilder_firewarrior
+	//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"             // tower_elementalbuilder_firewarrior
+	//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"             // tower_elementalbuilder_firewarrior
+	//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"   // tower_elementalbuilder_firewarrior
+	//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"                  // tower_elementalbuilder_firewarrior
+	//        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"                // tower_elementalbuilder_firewarrior
+	//        "model"     "models/heroes/razor/razor.vmdl"                                                // tower_elementalbuilder_thunderbender
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"                     // tower_elementalbuilder_thunderbender
+	//        "particle"  "particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf"              // tower_elementalbuilder_thunderbender
+	//        "model"     "models/heroes/leshrac/leshrac.vmdl"                                            // tower_elementalbuilder_thunderelemental
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"                   // tower_elementalbuilder_thunderelemental
+	//        "particle"  "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"                  // tower_elementalbuilder_thunderelemental
+	//        "model"     "models/heroes/zuus/zuus.vmdl"                                                  // tower_elementalbuilder_thundergod
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"                      // tower_elementalbuilder_thundergod
+	//        "particle"  "particles/units/heroes/hero_zuus/zuus_base_attack.vpcf"                        // tower_elementalbuilder_thundergod
+	//        "particle"  "particles/units/heroes/hero_zuus/zuus_arc_lightning_head.vpcf"                 // tower_elementalbuilder_thundergod
+	//        "model"     "models/heroes/storm_spirit/storm_spirit.vmdl"                                  // tower_elementalbuilder_thunderwarrior
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts"               // tower_elementalbuilder_thunderwarrior
+	//        "particle"  "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"                  // tower_elementalbuilder_thunderwarrior
+	//        "particle"  "particles/units/heroes/hero_stormspirit/stormspirit_static_remnant_image.vpcf" // tower_elementalbuilder_thunderwarrior
+	//        "model"     "models/heroes/dark_seer/darkseer_sfm.vmdl"                                     // tower_elementalbuilder_voidbender
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_dark_seer.vsndevts"                 // tower_elementalbuilder_voidbender
+	//        "model"     "models/heroes/bane/bane.vmdl"                                                  // tower_elementalbuilder_voidelemental
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"                      // tower_elementalbuilder_voidelemental
+	//        "particle"  "particles/units/heroes/hero_enigma/enigma_base_attack.vpcf"                    // tower_elementalbuilder_voidelemental
+	//        "model"     "models/heroes/enigma/enigma.vmdl"                                              // tower_elementalbuilder_voidgod
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"                    // tower_elementalbuilder_voidgod
+	//        "particle"  "particles/units/heroes/hero_enigma/enigma_base_attack.vpcf"                    // tower_elementalbuilder_voidgod
+	//        "model"     "models/heroes/faceless_void/faceless_void.vmdl"                                // tower_elementalbuilder_voidwarrior
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"                    // tower_elementalbuilder_voidwarrior
+	//        "model"     "models/heroes/tidehunter/tidehunter.vmdl"                                      // tower_elementalbuilder_waterbender
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"                // tower_elementalbuilder_waterbender
+	//        "model"     "models/heroes/morphling/morphling.vmdl"                                        // tower_elementalbuilder_waterelemental
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"                 // tower_elementalbuilder_waterelemental
+	//        "particle"  "particles/units/heroes/hero_morphling/morphling_base_attack.vpcf"              // tower_elementalbuilder_waterelemental
+	//        "model"     "models/heroes/ancient_apparition/ancient_apparition.vmdl"                      // tower_elementalbuilder_watergod
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts"        // tower_elementalbuilder_watergod
+	//        "particle"  "particles/units/heroes/hero_ancient_apparition/ancient_apparition_base_attack.vpcf" // tower_elementalbuilder_watergod
+	//        "model"     "models/heroes/siren/siren.vmdl"                                                // tower_elementalbuilder_waterwarrior
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_naga_siren.vsndevts"                // tower_elementalbuilder_waterwarrior
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts"                   // firegod_supernova
+	//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_death.vpcf"              // firegod_supernova
+	//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_egg.vpcf"                // firegod_supernova
+	//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_hit.vpcf"                // firegod_supernova
+	//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_radiance.vpcf"           // firegod_supernova
+	//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_radiance_creep.vpcf"     // firegod_supernova
+	//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_reborn.vpcf"             // firegod_supernova
+	//        "particle"  "particles/units/heroes/hero_phoenix/phoenix_supernova_start.vpcf"              // firegod_supernova
+	//        "soundfile" "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"                   // thunderelemental_diablic_edict
+	//        "particle"  "particles/units/heroes/hero_leshrac/leshrac_diabolic_edict.vpcf"               // thunderelemental_diablic_edict
+	//    }
 
+	}
 }

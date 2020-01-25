@@ -1,42 +1,45 @@
-"send_incomeunit_black_drake"
+"DOTAAbilities"
 {
-    "BaseClass"                     "ability_datadriven"
-    "AbilityTextureName"                "send_incomeunit_black_drake"
-    "MaxLevel"                                     "1"
-
-    "AbilityBehavior"                        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "AbilityType"                                "DOTA_ABILITY_TYPE_BASIC"
-
-    "AbilityCooldown"                        "10.0"
-
-    "OnSpellStart"
+    "send_incomeunit_black_drake"
     {
-        "RunScript"
+        "BaseClass"                     "ability_datadriven"
+        "AbilityTextureName"                "send_incomeunit_black_drake"
+        "MaxLevel"                                     "1"
+
+        "AbilityBehavior"                        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityType"                                "DOTA_ABILITY_TYPE_BASIC"
+
+        "AbilityCooldown"                        "10.0"
+
+        "OnSpellStart"
         {
-            "ScriptFile"    "player.lua"
-            "Function"        "SendUnit"
+            "RunScript"
+            {
+                "ScriptFile"    "player.lua"
+                "Function"        "SendUnit"
+            }
         }
-    }
-    "AbilitySpecial"
-    {
-        "01"
+        "AbilitySpecial"
         {
-            "var_type"            "FIELD_INTEGER"
-            "tango_cost"        "350"
+            "01"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "tango_cost"        "350"
+            }
+            "02"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "income"                "17"
+            }
+            "03"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "unitID"                "1017"
+            }
         }
-        "02"
+        "precache"
         {
-            "var_type"            "FIELD_INTEGER"
-            "income"                "17"
+            "model" "models/creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.vmdl"
         }
-        "03"
-        {
-            "var_type"            "FIELD_INTEGER"
-            "unitID"                "1017"
-        }
-    }
-    "precache"
-    {
-        "model" "models/creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.vmdl"
     }
 }

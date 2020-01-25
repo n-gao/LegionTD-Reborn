@@ -1,74 +1,77 @@
-"tower_elementalbuilder_voidbender"
+"DOTAUnits"
 {
-    "BaseClass" "npc_dota_creature"
-    "Model" "models/heroes/dark_seer/darkseer_sfm.vmdl"
-    "ModelScale"    "0.5"
-    "SoundSet"  "Hero_DarkSeer"
-    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_dark_seer.vsndevts"
-    "Level" "1"
-    "HealthBarOffset"   "150"
-    "Vscripts"  "ai/ai_default.lua"
-    "Ability1"  "elementalbuilder_upgrade_voidelemental"
-    "Ability2"  "elementalbuilder_upgrade_voidwarrior"
-    "Ability3"  "ability_empty_3"
-    "Ability4"  "sell"
-    "ArmorPhysical" "3"
-    "MagicalResistance" "0"
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"   "36.75"
-    "AttackDamageMax"   "40.0"
-    "AttackRate"    "0.6"
-    "AttackAnimationPoint"  "0.5"
-    "AttackAcquisitionRange"    "850"
-    "AttackRange"   "90"
-    "ProjectileModel"   ""
-    "ProjectileSpeed"   "0"
-    "LegionAttackType" "arcane"
-    "LegionDefendType" "medium"
-    "LegionFraction"   "elemental"
-    "BountyGoldMin" "0"
-    "BountyGoldMax" "0"
-    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
-    "RingRadius"    "30"
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed" "270"
-    "MovementTurnRate"  "0.6"
-    "StatusHealth"  "360"
-    "StatusHealthRegen" "0"
-    "StatusMana"    "0"
-    "StatusManaRegen"   "0"
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-    "TeamName"  "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-    "Creature"
-    {
-        "DisableClumpingBehavior"   "1"
-        "DefaultState"  "Invade"
-        "States"
-        {
-            "Invade"
-            {
-                "Name"  "Invade"
-                "Aggression"    "100.0"
-                "Avoidance" "0.0"
-                "Support"   "0.0"
-            }
+	"tower_elementalbuilder_voidbender"
+	{
+		"BaseClass" "npc_dota_creature"
+		"Model" "models/heroes/dark_seer/darkseer_sfm.vmdl"
+		"ModelScale"    "0.5"
+		"SoundSet"  "Hero_DarkSeer"
+		"GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_dark_seer.vsndevts"
+		"Level" "1"
+		"HealthBarOffset"   "150"
+		"Vscripts"  "ai/ai_default.lua"
+		"Ability1"  "elementalbuilder_upgrade_voidelemental"
+		"Ability2"  "elementalbuilder_upgrade_voidwarrior"
+		"Ability3"  "ability_empty_3"
+		"Ability4"  "sell"
+		"ArmorPhysical" "3"
+		"MagicalResistance" "0"
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"   "36.75"
+		"AttackDamageMax"   "40.0"
+		"AttackRate"    "0.6"
+		"AttackAnimationPoint"  "0.5"
+		"AttackAcquisitionRange"    "850"
+		"AttackRange"   "90"
+		"ProjectileModel"   ""
+		"ProjectileSpeed"   "0"
+		"LegionAttackType" "arcane"
+		"LegionDefendType" "medium"
+		"LegionFraction"   "elemental"
+		"BountyGoldMin" "0"
+		"BountyGoldMax" "0"
+		"BoundsHullName"    "DOTA_HULL_SIZE_HERO"
+		"RingRadius"    "30"
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed" "270"
+		"MovementTurnRate"  "0.6"
+		"StatusHealth"  "360"
+		"StatusHealthRegen" "0"
+		"StatusMana"    "0"
+		"StatusManaRegen"   "0"
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+		"TeamName"  "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"Creature"
+		{
+			"DisableClumpingBehavior"   "1"
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  "Invade"
+					"Aggression"    "100.0"
+					"Avoidance" "0.0"
+					"Support"   "0.0"
+				}
 
-        }
+			}
 
-        "AttachWearables"
-        {
-            "Wearable1"
-            {
-                "ItemDef"   "524"
-            }
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"   "524"
+				}
 
-        }
+			}
 
-    }
+		}
 
+	}
 }

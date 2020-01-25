@@ -13,6 +13,57 @@
     width: fill-parent-flow(1);
 }
 
+@keyframes 'blinker' {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.AdBanner {
+    horizontal-align: center;
+    width: 300px;
+    height: fit-children;
+    flow-children: down;
+    pre-transform-scale2d: 1;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 5;
+}
+
+.AdBanner Label {
+    horizontal-align: center;
+    text-align: center;
+    color: #ffffffaa;
+}
+
+.AdImage:hover {
+    pre-transform-scale2d: 1.05;
+    box-shadow: #000000ff 0px 0px 16px 0px;
+}
+
+.AdImage {
+    box-shadow: #00000044 0px 0px 8px 0px;
+    border-radius: 8px;
+    horizontal-align: center;
+    vertical-align: middle;
+    transition-property: pre-transform-scale2d, box-shadow;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.12s;
+    margin: 8px;
+}
+
+#DiscordImage {
+    width: 260px;
+    height: 80px;
+}
+
+#DiscordText {
+    padding-top: 8px;
+    horizontal-align: center;
+    font-size: 20px;
+}
+
 #TeamsList {
     width: 400px;
     height: 950px;
@@ -69,11 +120,10 @@
     width: 100%;
     flow-children: down;
     overflow: clip scroll;
-    background-color: #000000BA;
+
     border-radius: 8px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #444444;
+    
+
 }
 
 #ShuffleTeamAssignmentButton {
@@ -139,7 +189,7 @@
 
 #StartGameCountdownTimer {
     width: 96px;
-    margin-top: 110px;
+    margin-top: 70px;
     horizontal-align: right;
     margin-right: -250px;
 }
@@ -219,6 +269,7 @@
     flow-children: down;
     margin-left: 0px;
     margin-right: 74px;
+    margin-top: -8px;
 }
 
 #UnassignedPlayersButton {

@@ -1,42 +1,45 @@
-"send_incomeunit_lizard"
+"DOTAAbilities"
 {
-    "BaseClass"                     "ability_datadriven"
-    "AbilityTextureName"                "send_incomeunit_lizard"
-    "MaxLevel"                                     "1"
-
-    "AbilityBehavior"                        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "AbilityType"                                "DOTA_ABILITY_TYPE_BASIC"
-
-    "AbilityCooldown"                        "10.0"
-
-    "OnSpellStart"
+    "send_incomeunit_lizard"
     {
-        "RunScript"
+        "BaseClass"                     "ability_datadriven"
+        "AbilityTextureName"                "send_incomeunit_lizard"
+        "MaxLevel"                                     "1"
+
+        "AbilityBehavior"                        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityType"                                "DOTA_ABILITY_TYPE_BASIC"
+
+        "AbilityCooldown"                        "10.0"
+
+        "OnSpellStart"
         {
-            "ScriptFile"    "player.lua"
-            "Function"        "SendUnit"
+            "RunScript"
+            {
+                "ScriptFile"    "player.lua"
+                "Function"        "SendUnit"
+            }
         }
-    }
-    "AbilitySpecial"
-    {
-        "01"
+        "AbilitySpecial"
         {
-            "var_type"            "FIELD_INTEGER"
-            "tango_cost"        "270"
+            "01"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "tango_cost"        "270"
+            }
+            "02"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "income"                "10"
+            }
+            "03"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "unitID"                "1015"
+            }
         }
-        "02"
+        "precache"
         {
-            "var_type"            "FIELD_INTEGER"
-            "income"                "10"
+            "model" "models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_small.vmdl"
         }
-        "03"
-        {
-            "var_type"            "FIELD_INTEGER"
-            "unitID"                "1015"
-        }
-    }
-    "precache"
-    {
-        "model" "models/creeps/neutral_creeps/n_creep_thunder_lizard/n_creep_thunder_lizard_small.vmdl"
     }
 }

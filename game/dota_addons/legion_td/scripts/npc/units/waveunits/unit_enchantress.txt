@@ -1,4 +1,6 @@
-"unit_enchantress"
+"DOTAUnits"
+{
+	"unit_enchantress"
     {
         "BaseClass"    "npc_dota_creature"
         "Model"    "models/heroes/enchantress/enchantress.vmdl"
@@ -75,3 +77,4 @@
         }
 
     }
+}

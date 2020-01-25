@@ -1,27 +1,32 @@
-"undeadbuilder_passive"
+"DOTAAbilities"
 {
-    "BaseClass" "ability_datadriven"
-    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	"undeadbuilder_passive"
+	{
+		"BaseClass" "ability_datadriven"
+		"AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"  "1"
+		"AbilityTextureName"  "necrolyte_sadist"
 
-    "AbilitySpecial"
-    {
-    }
+		"AbilitySpecial"
+		{
+		}
 
-    "Modifiers"
-    {
-        "modifier_undeadbuilder_passive"
-        {
-            "Passive"    "1"
-            "IsHidden"    "0"
-            "TextureName" "necrolyte_sadist"
-            "OnCreated"
-            {
-                "RunScript"
-                {
-                    "ScriptFile"    "abilities/undeadbuilder/passive/undeadbuilder_passive.lua"
-                    "Function"      "undeadbuilder_passive_start"
-                }
-            }
-        }
-    }
+		"Modifiers"
+		{
+			"modifier_undeadbuilder_passive"
+			{
+				"Passive"    "1"
+				"IsHidden"    "0"
+				"TextureName" "necrolyte_sadist"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"    "abilities/undeadbuilder/passive/undeadbuilder_passive.lua"
+						"Function"      "undeadbuilder_passive_start"
+					}
+				}
+			}
+		}
+	}
 }

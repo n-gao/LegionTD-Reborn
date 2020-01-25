@@ -1,4 +1,6 @@
-"unit_tidehunter"
+"DOTAUnits"
+{
+	"unit_tidehunter"
     {
         "BaseClass"    "npc_dota_creature"
         "Model"    "models/heroes/tidehunter/tidehunter.vmdl"
@@ -80,3 +82,4 @@
         }
 
     }
+}

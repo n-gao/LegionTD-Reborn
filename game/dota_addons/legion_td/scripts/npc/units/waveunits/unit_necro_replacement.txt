@@ -1,114 +1,117 @@
-"unit_necro_replacement"
+"DOTAUnits"
 {
-    "BaseClass"    "npc_dota_creature"
-    "Model"    "models/heroes/blood_seeker/blood_seeker.vmdl"
-    "ModelScale"    "0.6"
-    "SoundSet"    "Hero_Bloodseeker"
-    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
-    "Level"    "1"
-    "HealthBarOffset"    "140"
-    "Vscripts"    "ai/waves/ai_necro_replacement.lua"
-    "Ability1"    "bloodseeker_bloodrage"
-    "ArmorPhysical"    "10"
-    "MagicalResistance"    "30"
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"    "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"    "55.5"
-    "AttackDamageMax"    "65.0"
-    "AttackRate"    "0.62"
-    "AttackAnimationPoint"    "0.2"
-    "AttackAcquisitionRange"    "850"
-    "AttackRange"    "128"
-    "ProjectileModel"    ""
-    "ProjectileSpeed"    "0"
-    "LegionAttackType"    "pierce"
-    "LegionDefendType"    "medium"
-    "LegionExperience"    "90"
-    "LegionFraction"    "wave"
-    "BountyGoldMin"    "5.0"
-    "BountyGoldMax"    "5.0"
-    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
-    "CollisionSize"    "50"
-    "RingRadius"    "50"
-    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"    "300"
-    "MovementTurnRate"    "0.6"
-    "StatusHealth"    "600"
-    "StatusHealthRegen"    "0"
-    "StatusMana"    "0"
-    "StatusManaRegen"    "0"
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"    "800"
-    "TeamName"    "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack"    "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend"    "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass"    "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-    "precache"    ""
-    "Creature"
-    {
-        "DisableClumpingBehavior"    "1"
-        "DefaultState"    "Invade"
-        "States"
-        {
-            "Invade"
-            {
-                "Name"    "Invade"
-                "Aggression"    "100.0"
-                "Avoidance"    "0.0"
-                "Support"    "100.0"
-            }
+	"unit_necro_replacement"
+	{
+		"BaseClass"    "npc_dota_creature"
+		"Model"    "models/heroes/blood_seeker/blood_seeker.vmdl"
+		"ModelScale"    "0.6"
+		"SoundSet"    "Hero_Bloodseeker"
+		"GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
+		"Level"    "1"
+		"HealthBarOffset"    "140"
+		"Vscripts"    "ai/waves/ai_necro_replacement.lua"
+		"Ability1"    "bloodseeker_bloodrage"
+		"ArmorPhysical"    "10"
+		"MagicalResistance"    "30"
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"    "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"    "55.5"
+		"AttackDamageMax"    "65.0"
+		"AttackRate"    "0.62"
+		"AttackAnimationPoint"    "0.2"
+		"AttackAcquisitionRange"    "850"
+		"AttackRange"    "128"
+		"ProjectileModel"    ""
+		"ProjectileSpeed"    "0"
+		"LegionAttackType"    "pierce"
+		"LegionDefendType"    "medium"
+		"LegionExperience"    "90"
+		"LegionFraction"    "wave"
+		"BountyGoldMin"    "5.0"
+		"BountyGoldMax"    "5.0"
+		"BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
+		"CollisionSize"    "50"
+		"RingRadius"    "50"
+		"MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"    "300"
+		"MovementTurnRate"    "0.6"
+		"StatusHealth"    "600"
+		"StatusHealthRegen"    "0"
+		"StatusMana"    "0"
+		"StatusManaRegen"    "0"
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"    "800"
+		"TeamName"    "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"    "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"    "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass"    "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"precache"    ""
+		"Creature"
+		{
+			"DisableClumpingBehavior"    "1"
+			"DefaultState"    "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"    "Invade"
+					"Aggression"    "100.0"
+					"Avoidance"    "0.0"
+					"Support"    "100.0"
+				}
 
-        }
+			}
 
-        "OffensiveAbilitites"
-        {
-            "Ability1"
-            {
-                "Name"    "bloodseeker_bloodrage"
-                "Buff"    "1"
-            }
+			"OffensiveAbilitites"
+			{
+				"Ability1"
+				{
+					"Name"    "bloodseeker_bloodrage"
+					"Buff"    "1"
+				}
 
-        }
+			}
 
-        "AttachWearables"
-        {
-            "Wearable1"
-            {
-                "ItemDef"    "6650"
-            }
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"    "6650"
+				}
 
-            "Wearable2"
-            {
-                "ItemDef"    "6651"
-            }
+				"Wearable2"
+				{
+					"ItemDef"    "6651"
+				}
 
-            "Wearable3"
-            {
-                "ItemDef"    "6652"
-            }
+				"Wearable3"
+				{
+					"ItemDef"    "6652"
+				}
 
-            "Wearable4"
-            {
-                "ItemDef"    "6653"
-            }
+				"Wearable4"
+				{
+					"ItemDef"    "6653"
+				}
 
-            "Wearable5"
-            {
-                "ItemDef"    "6654"
-            }
+				"Wearable5"
+				{
+					"ItemDef"    "6654"
+				}
 
-            "Wearable6"
-            {
-                "ItemDef"    "6655"
-            }
+				"Wearable6"
+				{
+					"ItemDef"    "6655"
+				}
 
-            "Wearable7"
-            {
-                "ItemDef"    "6656"
-            }
+				"Wearable7"
+				{
+					"ItemDef"    "6656"
+				}
 
-        }
+			}
 
-    }
+		}
 
+	}
 }

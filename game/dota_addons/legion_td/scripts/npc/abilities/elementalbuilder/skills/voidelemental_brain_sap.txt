@@ -1,93 +1,96 @@
-// Rewrite of the Bane Brain Sap
-// Author: chrislotix
-// Date: October 22, 2015
-// Version: 6.85
-// Type: Datadriven
-"voidelemental_brain_sap"
+"DOTAAbilities"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"                "ability_datadriven"
-    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-    "AbilityUnitTargetTeam"            "DOTA_UNIT_TARGET_TEAM_ENEMY"
-    "AbilityUnitTargetType"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-    "AbilityUnitDamageType"            "DAMAGE_TYPE_PURE"
-    "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
-    "FightRecapLevel"                "1"
-    "AbilityTextureName"            "bane_brain_sap"
-
-    // Precache
-    //-------------------------------------------------------------------------------------------------------------
-    "precache"
+    // Rewrite of the Bane Brain Sap
+    // Author: chrislotix
+    // Date: October 22, 2015
+    // Version: 6.85
+    // Type: Datadriven
+    "voidelemental_brain_sap"
     {
-        "soundfile"        "soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"
-        "particle"        "particles/units/heroes/hero_bane/bane_enfeeble.vpcf"
-    }
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                "ability_datadriven"
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+        "AbilityUnitTargetTeam"            "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "AbilityUnitDamageType"            "DAMAGE_TYPE_PURE"
+        "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
+        "FightRecapLevel"                "1"
+        "AbilityTextureName"            "bane_brain_sap"
 
-    // Casting
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityCastPoint"                "0.5"
-    "AbilityCastRange"                "300"
-
-    // Time
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityCooldown"                "5.0"
-
-    // Damage.
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityDamage"                    "240"
-
-    // Cost
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityManaCost"                "0"
-
-
-    "AbilitySpecial"
-    {
-    "01"
+        // Precache
+        //-------------------------------------------------------------------------------------------------------------
+        "precache"
         {
-            "var_type"                        "FIELD_INTEGER"
-            "tooltip_brain_sap_heal_amt"        "240"
-        }
-    }
-
-    "OnSpellStart"
-    {
-        "FireSound"
-        {
-            "EffectName" "Hero_Bane.BrainSap.Target"
-            "Target"    "TARGET"
+            "soundfile"        "soundevents/game_sounds_heroes/game_sounds_bane.vsndevts"
+            "particle"        "particles/units/heroes/hero_bane/bane_enfeeble.vpcf"
         }
 
-        "FireSound"
-        {
-            "EffectName"    "Hero_Bane.BrainSap"
-            "Target"    "CASTER"
-        }
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastPoint"                "0.5"
+        "AbilityCastRange"                "300"
 
-        "FireEffect"
-        {
-            "EffectName"    "particles/units/heroes/hero_bane/bane_sap.vpcf"
-            "EffectAttachType"    "follow_origin"
+        // Time
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"                "5.0"
 
-            "ControlPointEntities"
+        // Damage.
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityDamage"                    "240"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"                "0"
+
+
+        "AbilitySpecial"
+        {
+        "01"
             {
-                "CASTER" "follow_origin"
-                "TARGET" "follow_origin"
+                "var_type"                        "FIELD_INTEGER"
+                "tooltip_brain_sap_heal_amt"        "240"
             }
         }
 
-        "Damage"
+        "OnSpellStart"
         {
-            "Target"    "TARGET"
-            "Type"        "DAMAGE_TYPE_PURE"
-            "Damage"    "%tooltip_brain_sap_heal_amt"
-        }
+            "FireSound"
+            {
+                "EffectName" "Hero_Bane.BrainSap.Target"
+                "Target"    "TARGET"
+            }
 
-        "Heal"
-        {
-            "Target"    "CASTER"
-            "HealAmount"    "%tooltip_brain_sap_heal_amt"
+            "FireSound"
+            {
+                "EffectName"    "Hero_Bane.BrainSap"
+                "Target"    "CASTER"
+            }
+
+            "FireEffect"
+            {
+                "EffectName"    "particles/units/heroes/hero_bane/bane_sap.vpcf"
+                "EffectAttachType"    "follow_origin"
+
+                "ControlPointEntities"
+                {
+                    "CASTER" "follow_origin"
+                    "TARGET" "follow_origin"
+                }
+            }
+
+            "Damage"
+            {
+                "Target"    "TARGET"
+                "Type"        "DAMAGE_TYPE_PURE"
+                "Damage"    "%tooltip_brain_sap_heal_amt"
+            }
+
+            "Heal"
+            {
+                "Target"    "CASTER"
+                "HealAmount"    "%tooltip_brain_sap_heal_amt"
+            }
         }
     }
 }

@@ -1,98 +1,101 @@
-"unit_abaddon"
+"DOTAUnits"
 {
-    "BaseClass" "npc_dota_creature"
-    "Model" "models/heroes/abaddon/abaddon.vmdl"
-    "ModelScale"    "0.7"
-    "SoundSet"  "Hero_Abaddon"
-    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts"
-    "Level" "1"
-    "HealthBarOffset"   "140"
-    "Vscripts"  "ai/ai_default.lua"
-    "Ability1"  "abaddon_borrowed_time"
-    "ArmorPhysical" "0"
-    "MagicalResistance" "0"
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"   "30.0"
-    "AttackDamageMax"   "35.0"
-    "AttackRate"    "0.87"
-    "AttackAnimationPoint"  "0.2"
-    "AttackAcquisitionRange"    "850"
-    "AttackRange"   "90"
-    "ProjectileModel"   ""
-    "ProjectileSpeed"   "0"
-    "LegionAttackType" "normal"
-    "LegionDefendType" "heavy"
-    "LegionExperience" "80"
-    "LegionFraction"   "wave"
-    "BountyGoldMin" "8.0"
-    "BountyGoldMax" "8.0"
-    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
-    "CollisionSize" "50"
-    "RingRadius"    "50"
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed" "300"
-    "MovementTurnRate"  "0.6"
-    "StatusHealth"  "470"
-    "StatusHealthRegen" "0"
-    "StatusMana"    "0"
-    "StatusManaRegen"   "0"
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-    "TeamName"  "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-    "precache"
-    {
-        "particle"  "particles/units/heroes/hero_abaddon/abaddon_borrowed_time.vpcf"
-    }
+	"unit_abaddon"
+	{
+		"BaseClass" "npc_dota_creature"
+		"Model" "models/heroes/abaddon/abaddon.vmdl"
+		"ModelScale"    "0.7"
+		"SoundSet"  "Hero_Abaddon"
+		"GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts"
+		"Level" "1"
+		"HealthBarOffset"   "140"
+		"Vscripts"  "ai/ai_default.lua"
+		"Ability1"  "abaddon_borrowed_time"
+		"ArmorPhysical" "0"
+		"MagicalResistance" "0"
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"   "30.0"
+		"AttackDamageMax"   "35.0"
+		"AttackRate"    "0.87"
+		"AttackAnimationPoint"  "0.2"
+		"AttackAcquisitionRange"    "850"
+		"AttackRange"   "90"
+		"ProjectileModel"   ""
+		"ProjectileSpeed"   "0"
+		"LegionAttackType" "normal"
+		"LegionDefendType" "heavy"
+		"LegionExperience" "80"
+		"LegionFraction"   "wave"
+		"BountyGoldMin" "8.0"
+		"BountyGoldMax" "8.0"
+		"BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
+		"CollisionSize" "50"
+		"RingRadius"    "50"
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed" "300"
+		"MovementTurnRate"  "0.6"
+		"StatusHealth"  "470"
+		"StatusHealthRegen" "0"
+		"StatusMana"    "0"
+		"StatusManaRegen"   "0"
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
+		"TeamName"  "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_abaddon/abaddon_borrowed_time.vpcf"
+		}
 
-    "Creature"
-    {
-        "DisableClumpingBehavior"   "1"
-        "DefaultState"  "Invade"
-        "States"
-        {
-            "Invade"
-            {
-                "Name"  "Invade"
-                "Aggression"    "100.0"
-                "Avoidance" "0.0"
-                "Support"   "0.0"
-            }
+		"Creature"
+		{
+			"DisableClumpingBehavior"   "1"
+			"DefaultState"  "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"  "Invade"
+					"Aggression"    "100.0"
+					"Avoidance" "0.0"
+					"Support"   "0.0"
+				}
 
-        }
+			}
 
-        "AttachWearables"
-        {
-            "Wearable1"
-            {
-                "ItemDef"   "6410"
-            }
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"   "6410"
+				}
 
-            "Wearable2"
-            {
-                "ItemDef"   "6409"
-            }
+				"Wearable2"
+				{
+					"ItemDef"   "6409"
+				}
 
-            "Wearable3"
-            {
-                "ItemDef"   "6411"
-            }
+				"Wearable3"
+				{
+					"ItemDef"   "6411"
+				}
 
-            "Wearable4"
-            {
-                "ItemDef"   "6412"
-            }
+				"Wearable4"
+				{
+					"ItemDef"   "6412"
+				}
 
-            "Wearable5"
-            {
-                "ItemDef"   "6408"
-            }
+				"Wearable5"
+				{
+					"ItemDef"   "6408"
+				}
 
-        }
+			}
 
-    }
+		}
 
+	}
 }

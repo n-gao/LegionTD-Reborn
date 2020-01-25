@@ -1,77 +1,80 @@
-"general_vigor_strike"
+"DOTAAbilities"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"                "ability_datadriven"
-    "AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityTextureName"    "bounty_hunter_jinada"
-
-    // Precache
-    //-------------------------------------------------------------------------------------------------------------
-    "precache"
+    "general_vigor_strike"
     {
-    "soundfile"   "soundevents/game_sounds_heroes/game_sounds_bounty_hunter.vsndevts"
-    }
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                "ability_datadriven"
+        "AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"    "bounty_hunter_jinada"
 
-    // Stats
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityCooldown"                "4.2"
-
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
-    {
-        "01"
+        // Precache
+        //-------------------------------------------------------------------------------------------------------------
+        "precache"
         {
-            "var_type"                "FIELD_INTEGER"
-            "crit_multiplier"        "200"
+        "soundfile"   "soundevents/game_sounds_heroes/game_sounds_bounty_hunter.vsndevts"
         }
-        "02"
+
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"                "4.2"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
         {
-            "var_type"                "FIELD_FLOAT"
-            "lifesteal_percent"        "50"
-        }
-    }
-
-    "Modifiers"
-    {
-
-        "modifier_vigor_strike"
-        {
-            "Passive"    "1"
-            "IsHidden"    "1"
-
-            "Properties"
+            "01"
             {
-                "MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"    "%crit_multiplier"
+                "var_type"                "FIELD_INTEGER"
+                "crit_multiplier"        "200"
+            }
+            "02"
+            {
+                "var_type"                "FIELD_FLOAT"
+                "lifesteal_percent"        "50"
+            }
+        }
+
+        "Modifiers"
+        {
+
+            "modifier_vigor_strike"
+            {
+                "Passive"    "1"
+                "IsHidden"    "1"
+
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"    "%crit_multiplier"
+                }
+
+                "OnAttackLanded"
+                {
+
+                    "Lifesteal"
+                    {
+                        "Target"            "ATTACKER"
+                        "LifestealPercent"    "%lifesteal_percent"
+                    }
+
+                    "FireSound"
+                    {
+                        "EffectName"    "Hero_BountyHunter.Jinada"
+                        "Target"        "TARGET"
+                    }
+
+                    "RunScript"
+                    {
+                        "ScriptFile"    "scripts/vscripts/abilities/humanbuilder/jinada.lua"
+                        "Function"        "Jinada"
+                        "modifiername"    "modifier_vigor_strike"
+                    }
+
+                }
+
             }
 
-            "OnAttackLanded"
-            {
-
-                "Lifesteal"
-                {
-                    "Target"            "ATTACKER"
-                    "LifestealPercent"    "%lifesteal_percent"
-                }
-
-                "FireSound"
-                {
-                    "EffectName"    "Hero_BountyHunter.Jinada"
-                    "Target"        "TARGET"
-                }
-
-                "RunScript"
-                {
-                    "ScriptFile"    "scripts/vscripts/abilities/humanbuilder/jinada.lua"
-                    "Function"        "Jinada"
-                    "modifiername"    "modifier_vigor_strike"
-                }
-
-            }
-
         }
 
     }
-
 }
