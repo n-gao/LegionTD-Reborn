@@ -1,93 +1,96 @@
-"unit_templer"
+"DOTAUnits"
 {
-    "BaseClass"    "npc_dota_creature"
-    "Model"    "models/heroes/lanaya/lanaya.vmdl"
-    "ModelScale"    "0.6"
-    "SoundSet"    "Hero_TemplarAssassin"
-    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_templar_assassin.vsndevts"
-    "Level"    "1"
-    "HealthBarOffset"    "140"
-    "Vscripts"    "ai/ai_default.lua"
-    "Ability1"    "templar_assassin_psi_blades"
-    "ArmorPhysical"    "4"
-    "MagicalResistance"    "25"
-    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-    "AttackDamageType"    "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"    "38.0"
-    "AttackDamageMax"    "42.25"
-    "AttackRate"    "0.82"
-    "AttackAnimationPoint"    "0.2"
-    "AttackAcquisitionRange"    "850"
-    "AttackRange"    "200"
-    "ProjectileModel"    "particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
-    "ProjectileSpeed"    "700"
-    "LegionAttackType"    "arcane"
-    "LegionDefendType"    "light"
-    "LegionExperience"    "95"
-    "LegionFraction"    "wave"
-    "BountyGoldMin"    "6.0"
-    "BountyGoldMax"    "6.0"
-    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
-    "CollisionSize"    "50"
-    "RingRadius"    "50"
-    "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"    "380"
-    "MovementTurnRate"    "0.6"
-    "StatusHealth"    "450"
-    "StatusHealthRegen"    "0"
-    "StatusMana"    "200"
-    "StatusManaRegen"    "0"
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"    "800"
-    "TeamName"    "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack"    "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend"    "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass"    "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-    "Creature"
+    "unit_templer"
     {
-        "DisableClumpingBehavior"    "1"
-        "DefaultState"    "Invade"
-        "States"
+        "BaseClass"    "npc_dota_creature"
+        "Model"    "models/heroes/lanaya/lanaya.vmdl"
+        "ModelScale"    "0.6"
+        "SoundSet"    "Hero_TemplarAssassin"
+        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_templar_assassin.vsndevts"
+        "Level"    "1"
+        "HealthBarOffset"    "140"
+        "Vscripts"    "ai/ai_default.lua"
+        "Ability1"    "templar_assassin_psi_blades"
+        "ArmorPhysical"    "4"
+        "MagicalResistance"    "25"
+        "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+        "AttackDamageType"    "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"    "38.0"
+        "AttackDamageMax"    "42.25"
+        "AttackRate"    "0.82"
+        "AttackAnimationPoint"    "0.2"
+        "AttackAcquisitionRange"    "850"
+        "AttackRange"    "200"
+        "ProjectileModel"    "particles/units/heroes/hero_templar_assassin/templar_assassin_base_attack.vpcf"
+        "ProjectileSpeed"    "700"
+        "LegionAttackType"    "arcane"
+        "LegionDefendType"    "light"
+        "LegionExperience"    "95"
+        "LegionFraction"    "wave"
+        "BountyGoldMin"    "6.0"
+        "BountyGoldMax"    "6.0"
+        "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
+        "CollisionSize"    "50"
+        "RingRadius"    "50"
+        "MovementCapabilities"    "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed"    "380"
+        "MovementTurnRate"    "0.6"
+        "StatusHealth"    "450"
+        "StatusHealthRegen"    "0"
+        "StatusMana"    "200"
+        "StatusManaRegen"    "0"
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"    "800"
+        "TeamName"    "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack"    "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend"    "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass"    "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+        "Creature"
         {
-            "Invade"
+            "DisableClumpingBehavior"    "1"
+            "DefaultState"    "Invade"
+            "States"
             {
-                "Name"    "Invade"
-                "Aggression"    "100.0"
-                "Avoidance"    "0.0"
-                "Support"    "100.0"
+                "Invade"
+                {
+                    "Name"    "Invade"
+                    "Aggression"    "100.0"
+                    "Avoidance"    "0.0"
+                    "Support"    "100.0"
+                }
+
             }
 
-        }
-
-        "DefensiveAbilitites"
-        {
-            "Ability1"
+            "DefensiveAbilitites"
             {
-                "Name"    "templar_assassin_refraction"
-                "Buff"    "1"
+                "Ability1"
+                {
+                    "Name"    "templar_assassin_refraction"
+                    "Buff"    "1"
+                }
+
             }
 
-        }
-
-        "AttachWearables"
-        {
-            "Wearable1"
+            "AttachWearables"
             {
-                "ItemDef"    "7118"
-            }
+                "Wearable1"
+                {
+                    "ItemDef"    "7118"
+                }
 
-            "Wearable2"
-            {
-                "ItemDef"    "7120"
-            }
+                "Wearable2"
+                {
+                    "ItemDef"    "7120"
+                }
 
-            "Wearable3"
-            {
-                "ItemDef"    "7119"
+                "Wearable3"
+                {
+                    "ItemDef"    "7119"
+                }
+
             }
 
         }
 
     }
-
 }

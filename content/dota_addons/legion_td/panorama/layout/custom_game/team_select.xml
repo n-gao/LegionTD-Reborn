@@ -46,6 +46,9 @@
 
                 </Panel>
             </Panel>
+            <Panel id="Discord" class="AdBanner">
+                <Image id="DiscordImage" class="AdImage" src="file://{images}/custom_game/game_info/Discord.png" onactivate="ExternalBrowserGoToURL('https://discord.gg/pmMnfdA');" onload="DOTAShowTextTooltip('#Ad_updated')" onmouseover="DOTAShowTextTooltip('#Ad_updated')" onmouseout="DOTAHideTextTooltip()"/>
+            </Panel>
             </Panel>
         </Panel>
 

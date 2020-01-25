@@ -1,23 +1,26 @@
-"assassinbuilder_coup_de_grace"
+"DOTAAbilities"
 {
-    "BaseClass"                        "phantom_assassin_coup_de_grace"
-    "AbilityTextureName"            "phantom_assassin_coup_de_grace"
-    "MaxLevel"                        "1"
-    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityType"                    "DOTA_ABILITY_TYPE_ULTIMATE"
-    "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
-
-    "AbilitySpecial"
+    "assassinbuilder_coup_de_grace"
     {
-        "01"
+        "BaseClass"                        "phantom_assassin_coup_de_grace"
+        "AbilityTextureName"            "phantom_assassin_coup_de_grace"
+        "MaxLevel"                        "1"
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityType"                    "DOTA_ABILITY_TYPE_ULTIMATE"
+        "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
+
+        "AbilitySpecial"
         {
-            "var_type"                    "FIELD_INTEGER"
-            "crit_bonus"                "450"
-        }
-        "02"
-        {
-            "var_type"                    "FIELD_INTEGER"
-            "crit_chance"                "15"
+            "01"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "crit_bonus"                "450"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "crit_chance"                "15"
+            }
         }
     }
 }

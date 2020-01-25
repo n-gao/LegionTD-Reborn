@@ -1,36 +1,39 @@
-"naturebuilder_passive"
+"DOTAAbilities"
 {
-    "BaseClass" "ability_datadriven"
-    "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-
-    "AbilitySpecial"
+    "naturebuilder_passive"
     {
-        "01"
-        {
-            "var_type"                "FIELD_INTEGER"
-            "damage_percent"        "40"
-        }
-        "02"
-        {
-            "var_type"                "FIELD_FLOAT"
-            "heal_percent"            "40"
-        }
-    }
+        "BaseClass" "ability_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 
-
-
-    "Modifiers"
-    {
-        "modifier_naturebuilder_passive"
+        "AbilitySpecial"
         {
-            "Passive"    "1"
-            "IsHidden"    "1"
-            "OnCreated"
+            "01"
             {
-                "RunScript"
+                "var_type"                "FIELD_INTEGER"
+                "damage_percent"        "40"
+            }
+            "02"
+            {
+                "var_type"                "FIELD_FLOAT"
+                "heal_percent"            "40"
+            }
+        }
+
+
+
+        "Modifiers"
+        {
+            "modifier_naturebuilder_passive"
+            {
+                "Passive"    "1"
+                "IsHidden"    "1"
+                "OnCreated"
                 {
-                    "ScriptFile"    "abilities/naturebuilder/passive/naturebuilder_passive.lua"
-                    "Function"      "naturebuilder_passive_start"
+                    "RunScript"
+                    {
+                        "ScriptFile"    "abilities/naturebuilder/passive/naturebuilder_passive.lua"
+                        "Function"      "naturebuilder_passive_start"
+                    }
                 }
             }
         }

@@ -28,13 +28,14 @@
     </script>
     <Panel hittest="false" class="Hud">
         <Panel hittest="false" class="DontKnow">
-
-            <Panel hittest="false" id="HealthBarsHolder">
-                <Image id="RadiantKing" hittest="true" src="file://{images}/custom_game/RadiantKing.png" onmouseover="UIShowTextTooltip(#Radiant_King)"  onmouseout="UIHideTextTooltip()" />
-                <Panel hittest="false" id="EmptyBarRadiant">
-                </Panel>
-                <Image id="DireKing" hittest="true" src="file://{images}/custom_game/DireKing.png" onmouseover="UIShowTextTooltip(#Dire_King)"  onmouseout="UIHideTextTooltip()" />
-                <Panel hittest="false" id="EmptyBarDire">
+            <Panel hittest="false" id="HealthBarsRoot">
+                <Panel hittest="false" id="HealthBarsHolder">
+                    <Image id="RadiantKing" hittest="true" src="file://{images}/custom_game/RadiantKing.png" onmouseover="UIShowTextTooltip(#Radiant_King)"  onmouseout="UIHideTextTooltip()" />
+                    <Panel hittest="false" id="EmptyBarRadiant">
+                    </Panel>
+                    <Image id="DireKing" hittest="true" src="file://{images}/custom_game/DireKing.png" onmouseover="UIShowTextTooltip(#Dire_King)"  onmouseout="UIHideTextTooltip()" />
+                    <Panel hittest="false" id="EmptyBarDire">
+                    </Panel>
                 </Panel>
             </Panel>
 
@@ -64,11 +65,6 @@
                         <Label class="ContributorLabel" text="#legion_contributor_inactive_dev" />
                         <Panel id="InactiveDevs" class="ContributorPanel" hitetst="false" />
                 </Panel>
-                <Label id="BuildersTitle" text="#Upcoming_Builders"/>
-                    <DOTAHeroMovie heroimagestyle="portrait" id="upcomingheroes_spirit" heroname="npc_dota_hero_void_spirit" style="border: 1px solid #5e6869; vertical-align: bottom; tooltip-position: bottom; margin-left: 20px; margin-bottom: 10px; border-radius: 8px;" onmouseover="UIShowTextTooltip(#Spirit_Builder)"  onmouseout="UIHideTextTooltip()"/>
-                    <DOTAHeroMovie heroimagestyle="portrait" id="upcomingheroes_demon" heroname="npc_dota_hero_warlock" style="border: 1px solid #5e6869; vertical-align: bottom; tooltip-position: bottom; margin-left: 220px; margin-bottom: 10px; border-radius: 8px;" onmouseover="UIShowTextTooltip(#Demon_Builder)"  onmouseout="UIHideTextTooltip()"/>
-                    <DOTAHeroMovie heroimagestyle="portrait" id="upcomingheroes_mechanical" heroname="npc_dota_hero_shredder" style="border: 1px solid #5e6869; vertical-align: bottom; tooltip-position: bottom; margin-left: 420px; margin-bottom: 10px; border-radius: 8px;" onmouseover="UIShowTextTooltip(#Mechanical_Builder)"  onmouseout="UIHideTextTooltip()"/>
-
                 <Button class="CloseButton" onactivate="InformationPanelCloseButtonClicked()" />
             </Panel>
 

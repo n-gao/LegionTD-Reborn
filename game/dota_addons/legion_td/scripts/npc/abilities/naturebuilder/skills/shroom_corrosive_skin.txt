@@ -1,113 +1,116 @@
-"shroom_corrosive_skin"
+"DOTAAbilities"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"             "ability_datadriven"
-    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
-    "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-    "AbilityTextureName"            "viper_corrosive_skin"
-
-    // Precache
-    //-------------------------------------------------------------------------------------------------------------
-    "precache"
+    "shroom_corrosive_skin"
     {
-        "soundfile"     "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
-        "particle"      "particles/units/heroes/hero_viper/viper_poison_debuff.vpcf"
-    }
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"             "ability_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "AbilityTextureName"            "viper_corrosive_skin"
 
-    // Stats
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityModifierSupportBonus"       "10"
+        // Precache
+        //-------------------------------------------------------------------------------------------------------------
+        "precache"
+        {
+            "soundfile"     "soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
+            "particle"      "particles/units/heroes/hero_viper/viper_poison_debuff.vpcf"
+        }
 
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"                  "FIELD_FLOAT"
-            "duration"                  "4.0"
-        }
-        "02"
-        {
-            "var_type"                  "FIELD_INTEGER"
-            "bonus_movement_speed"      "-10"
-        }
-        "03"
-        {
-            "var_type"                  "FIELD_INTEGER"
-            "bonus_attack_speed"        "-15"
-        }
-        "04"
-        {
-            "var_type"                  "FIELD_INTEGER"
-            "bonus_magic_resistance"    "10"
-        }
-        "05"
-        {
-            "var_type"                  "FIELD_INTEGER"
-            "damage"                    "10"
-        }
-        "06"
-        {
-            "var_type"                  "FIELD_INTEGER"
-            "max_range_tooltip"                 "1400"
-        }
-    }
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityModifierSupportBonus"       "10"
 
-    "Modifiers"
-    {
-        "modifier_corrosive_skin_datadriven"
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
         {
-            "Passive"   "1"
-            "IsHidden"  "1"
-
-            "OnTakeDamage"
+            "01"
             {
-                "ApplyModifier"
-                {
-                    "ModifierName"      "modifier_corrosive_skin_debuff_datadriven"
-                    "Target"            "ATTACKER"
-                }
-
-                "FireSound"
-                {
-                    "EffectName"        "Hero_Viper.CorrosiveSkin"
-                    "Target"            "ATTACKER"
-                }
+                "var_type"                  "FIELD_FLOAT"
+                "duration"                  "4.0"
             }
-
-            "Properties"
+            "02"
             {
-                "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"    "%bonus_magic_resistance"
+                "var_type"                  "FIELD_INTEGER"
+                "bonus_movement_speed"      "-10"
+            }
+            "03"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "bonus_attack_speed"        "-15"
+            }
+            "04"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "bonus_magic_resistance"    "10"
+            }
+            "05"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "damage"                    "10"
+            }
+            "06"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "max_range_tooltip"                 "1400"
             }
         }
 
-        "modifier_corrosive_skin_debuff_datadriven"
+        "Modifiers"
         {
-            "Duration"  "%duration"
-            "IsDebuff"  "1"
-
-            "EffectName"    "particles/units/heroes/hero_viper/viper_poison_debuff.vpcf"
-            "EffectAttachType"  "follow_origin"
-
-            "ThinkInterval" "1.0"
-
-            "OnIntervalThink"
+            "modifier_corrosive_skin_datadriven"
             {
-                "Damage"
+                "Passive"   "1"
+                "IsHidden"  "1"
+
+                "OnTakeDamage"
                 {
-                    "Target"    "TARGET"
-                    "Type"      "DAMAGE_TYPE_MAGICAL"
-                    "Damage"    "%damage"
+                    "ApplyModifier"
+                    {
+                        "ModifierName"      "modifier_corrosive_skin_debuff_datadriven"
+                        "Target"            "ATTACKER"
+                    }
+
+                    "FireSound"
+                    {
+                        "EffectName"        "Hero_Viper.CorrosiveSkin"
+                        "Target"            "ATTACKER"
+                    }
+                }
+
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"    "%bonus_magic_resistance"
                 }
             }
 
-            "Properties"
+            "modifier_corrosive_skin_debuff_datadriven"
             {
-                "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"  "%bonus_attack_speed"
-                "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"  "%bonus_movement_speed"
+                "Duration"  "%duration"
+                "IsDebuff"  "1"
+
+                "EffectName"    "particles/units/heroes/hero_viper/viper_poison_debuff.vpcf"
+                "EffectAttachType"  "follow_origin"
+
+                "ThinkInterval" "1.0"
+
+                "OnIntervalThink"
+                {
+                    "Damage"
+                    {
+                        "Target"    "TARGET"
+                        "Type"      "DAMAGE_TYPE_MAGICAL"
+                        "Damage"    "%damage"
+                    }
+                }
+
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"  "%bonus_attack_speed"
+                    "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"  "%bonus_movement_speed"
+                }
             }
         }
     }

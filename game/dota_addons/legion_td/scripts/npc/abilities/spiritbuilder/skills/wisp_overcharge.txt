@@ -1,0 +1,49 @@
+"DOTAAbilities"
+{
+    //=================================================================================================================
+    // Wisp: Overcharge
+    //=================================================================================================================
+    "wisp_overcharge"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "ID"							"5487"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+        "MaxLevel"                      "1"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastPoint"				"0"
+        "AbilityCastAnimation"			"ACT_INVALID"
+
+        // Time
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"				"15.0"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"				"0"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"					"FIELD_INTEGER"
+                "bonus_attack_speed"		"80"
+            }
+            "02"
+            {
+                "var_type"					"FIELD_FLOAT"
+                "hp_regen"			"0.6"
+            }
+            "03"
+            {
+                "var_type"					"FIELD_FLOAT"
+                "duration"			"5"
+            }
+        }
+    }
+}

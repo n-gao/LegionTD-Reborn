@@ -1,104 +1,107 @@
-"unit_rubick"
+"DOTAUnits"
 {
-    "BaseClass" "npc_dota_creature"
-    "Model" "models/heroes/rubick/rubick.vmdl"
-    "ModelScale"    "0.6"
-    "SoundSet"  "Hero_Rubick"
-    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
-    "Level" "1"
-    "HealthBarOffset"   "140"
-    "Vscripts"  "ai/waves/ai_rubick.lua"
-    "Ability1"  "ogre_magi_ignite"
-    "ArmorPhysical" "3"
-    "MagicalResistance" "15"
-    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"   "85.0"
-    "AttackDamageMax"   "97.5"
-    "AttackRate"    "0.72"
-    "AttackAnimationPoint"  "0.2"
-    "AttackAcquisitionRange"    "850"
-    "AttackRange"   "400"
-    "ProjectileModel"   "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
-    "ProjectileSpeed"   "600"
-    "LegionAttackType" "arcane"
-    "LegionDefendType" "light"
-    "LegionExperience" "105"
-    "LegionFraction"   "wave"
-    "BountyGoldMin" "5.0"
-    "BountyGoldMax" "5.0"
-    "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
-    "CollisionSize" "50"
-    "RingRadius"    "50"
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed" "300"
-    "MovementTurnRate"  "0.6"
-    "StatusHealth"  "880"
-    "StatusHealthRegen" "0"
-    "StatusMana"    "150"
-    "StatusManaRegen"   "10"
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-    "TeamName"  "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-    "precache"
+    "unit_rubick"
     {
-        "particle"  "particles/units/heroes/hero_ogre_magi/ogre_magi_ignite.vpcf"
+        "BaseClass" "npc_dota_creature"
+        "Model" "models/heroes/rubick/rubick.vmdl"
+        "ModelScale"    "0.6"
+        "SoundSet"  "Hero_Rubick"
+        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
+        "Level" "1"
+        "HealthBarOffset"   "140"
+        "Vscripts"  "ai/waves/ai_rubick.lua"
+        "Ability1"  "ogre_magi_ignite"
+        "ArmorPhysical" "3"
+        "MagicalResistance" "15"
+        "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+        "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"   "85.0"
+        "AttackDamageMax"   "97.5"
+        "AttackRate"    "0.72"
+        "AttackAnimationPoint"  "0.2"
+        "AttackAcquisitionRange"    "850"
+        "AttackRange"   "400"
+        "ProjectileModel"   "particles/units/heroes/hero_death_prophet/death_prophet_base_attack.vpcf"
+        "ProjectileSpeed"   "600"
+        "LegionAttackType" "arcane"
+        "LegionDefendType" "light"
+        "LegionExperience" "105"
+        "LegionFraction"   "wave"
+        "BountyGoldMin" "5.0"
+        "BountyGoldMax" "5.0"
+        "BoundsHullName"    "DOTA_HULL_SIZE_SMALL"
+        "CollisionSize" "50"
+        "RingRadius"    "50"
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed" "300"
+        "MovementTurnRate"  "0.6"
+        "StatusHealth"  "880"
+        "StatusHealthRegen" "0"
+        "StatusMana"    "150"
+        "StatusManaRegen"   "10"
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+        "TeamName"  "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+        "precache"
+        {
+            "particle"  "particles/units/heroes/hero_ogre_magi/ogre_magi_ignite.vpcf"
+        }
+
+        "Creature"
+        {
+            "DisableClumpingBehavior"   "1"
+            "DefaultState"  "Invade"
+            "States"
+            {
+                "Invade"
+                {
+                    "Name"  "Invade"
+                    "Aggression"    "100.0"
+                    "Avoidance" "0.0"
+                    "Support"   "100.0"
+                }
+
+            }
+
+            "OffensiveAbilitites"
+            {
+                "Ability1"
+                {
+                    "Name"  "ogre_magi_ignite"
+                    "Damage"    "1"
+                    "Debuff"    "1"
+                }
+
+            }
+
+            "AttachWearables"
+            {
+                "Wearable1"
+                {
+                    "ItemDef"   "9521"
+                }
+
+                "Wearable2"
+                {
+                    "ItemDef"   "8591"
+                }
+
+                "Wearable3"
+                {
+                    "ItemDef"   "8592"
+                }
+
+                "Wearable4"
+                {
+                    "ItemDef"   "9715"
+                }
+
+            }
+
+        }
+
     }
-
-    "Creature"
-    {
-        "DisableClumpingBehavior"   "1"
-        "DefaultState"  "Invade"
-        "States"
-        {
-            "Invade"
-            {
-                "Name"  "Invade"
-                "Aggression"    "100.0"
-                "Avoidance" "0.0"
-                "Support"   "100.0"
-            }
-
-        }
-
-        "OffensiveAbilitites"
-        {
-            "Ability1"
-            {
-                "Name"  "ogre_magi_ignite"
-                "Damage"    "1"
-                "Debuff"    "1"
-            }
-
-        }
-
-        "AttachWearables"
-        {
-            "Wearable1"
-            {
-                "ItemDef"   "9521"
-            }
-
-            "Wearable2"
-            {
-                "ItemDef"   "8591"
-            }
-
-            "Wearable3"
-            {
-                "ItemDef"   "8592"
-            }
-
-            "Wearable4"
-            {
-                "ItemDef"   "9715"
-            }
-
-        }
-
-    }
-
 }

@@ -1,89 +1,92 @@
-"tower_elementalbuilder_thunderelemental"
+"DOTAUnits"
 {
-    "BaseClass" "npc_dota_creature"
-    "Model" "models/heroes/leshrac/leshrac.vmdl"
-    "ModelScale"    "0.5"
-    "SoundSet"  "Hero_Leshrac"
-    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
-    "Level" "1"
-    "HealthBarOffset"   "150"
-    "Vscripts"  "ai/elementalbuilder/ai_thunderelemental.lua"
-    "Ability1"  "elementalbuilder_upgrade_thundergod"
-    "Ability2"  "thunderelemental_diabolic_edict"
-    "Ability3"  "ability_empty_3"
-    "Ability4"  "sell"
-    "ArmorPhysical" "3"
-    "MagicalResistance" "25"
-    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"   "70.0"
-    "AttackDamageMax"   "80.5"
-    "AttackRate"    "0.8"
-    "AttackAnimationPoint"  "0.5"
-    "AttackAcquisitionRange"    "850"
-    "AttackRange"   "250"
-    "ProjectileModel"   "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
-    "ProjectileSpeed"   "900"
-    "LegionAttackType" "arcane"
-    "LegionDefendType" "light"
-    "LegionFraction"   "elemental"
-    "BountyGoldMin" "0"
-    "BountyGoldMax" "0"
-    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
-    "RingRadius"    "30"
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed" "270"
-    "MovementTurnRate"  "0.6"
-    "StatusHealth"  "600"
-    "StatusHealthRegen" "0"
-    "StatusMana"    "0"
-    "StatusManaRegen"   "0"
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-    "TeamName"  "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-    "Creature"
+    "tower_elementalbuilder_thunderelemental"
     {
-        "DisableClumpingBehavior"   "1"
-        "DefaultState"  "Invade"
-        "States"
+        "BaseClass" "npc_dota_creature"
+        "Model" "models/heroes/leshrac/leshrac.vmdl"
+        "ModelScale"    "0.5"
+        "SoundSet"  "Hero_Leshrac"
+        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
+        "Level" "1"
+        "HealthBarOffset"   "150"
+        "Vscripts"  "ai/elementalbuilder/ai_thunderelemental.lua"
+        "Ability1"  "elementalbuilder_upgrade_thundergod"
+        "Ability2"  "thunderelemental_diabolic_edict"
+        "Ability3"  "ability_empty_3"
+        "Ability4"  "sell"
+        "ArmorPhysical" "3"
+        "MagicalResistance" "25"
+        "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+        "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"   "70.0"
+        "AttackDamageMax"   "80.5"
+        "AttackRate"    "0.8"
+        "AttackAnimationPoint"  "0.5"
+        "AttackAcquisitionRange"    "850"
+        "AttackRange"   "250"
+        "ProjectileModel"   "particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
+        "ProjectileSpeed"   "900"
+        "LegionAttackType" "arcane"
+        "LegionDefendType" "light"
+        "LegionFraction"   "elemental"
+        "BountyGoldMin" "0"
+        "BountyGoldMax" "0"
+        "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
+        "RingRadius"    "30"
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed" "270"
+        "MovementTurnRate"  "0.6"
+        "StatusHealth"  "600"
+        "StatusHealthRegen" "0"
+        "StatusMana"    "0"
+        "StatusManaRegen"   "0"
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+        "TeamName"  "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+        "Creature"
         {
-            "Invade"
+            "DisableClumpingBehavior"   "1"
+            "DefaultState"  "Invade"
+            "States"
             {
-                "Name"  "Invade"
-                "Aggression"    "100.0"
-                "Avoidance" "0.0"
-                "Support"   "0.0"
+                "Invade"
+                {
+                    "Name"  "Invade"
+                    "Aggression"    "100.0"
+                    "Avoidance" "0.0"
+                    "Support"   "0.0"
+                }
+
             }
 
-        }
-
-        "AttachWearables"
-        {
-            "Wearable1"
+            "AttachWearables"
             {
-                "ItemDef"   "529"
-            }
+                "Wearable1"
+                {
+                    "ItemDef"   "529"
+                }
 
-            "Wearable2"
-            {
-                "ItemDef"   "345"
-            }
+                "Wearable2"
+                {
+                    "ItemDef"   "345"
+                }
 
-            "Wearable3"
-            {
-                "ItemDef"   "346"
-            }
+                "Wearable3"
+                {
+                    "ItemDef"   "346"
+                }
 
-            "Wearable4"
-            {
-                "ItemDef"   "347"
+                "Wearable4"
+                {
+                    "ItemDef"   "347"
+                }
+
             }
 
         }
 
     }
-
 }
