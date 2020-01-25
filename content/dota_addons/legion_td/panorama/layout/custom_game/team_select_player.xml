@@ -10,7 +10,7 @@
         <DOTAAvatarImage id="PlayerAvatar" />
         <Label id="PlayerIsHostPanel" />
         <Label id="PlayerName" text="PLAYER_NAME" />
-        <Label id="PlayerTitle" style="text-shadow: 0px 1px 3px 4 #49161570; color: gradient( linear, 0% 0%, 0% 100%, from( #f6e6d6 ), to( #db5c4d ) ); opacity: 1 vertical-align: center; margin-right: 15px;" text=""/>
+        <Label id="PlayerTitle" style="text-shadow: 0px 1px 3px 4 #49161570; margin-top: 7px; color: gradient( linear, 0% 0%, 0% 100%, from( #f6e6d6 ), to( #db5c4d ) ); opacity: 1 vertical-align: center; margin-right: 15px;" text=""/>
         <Button id="PlayerLeaveTeamButton" onactivate="OnLeaveTeamPressed()" />
     </Panel>
 </root>

@@ -10,18 +10,6 @@
     background-size: 100% 100%;
 }
 
-.OverthrowGameInfo2 {
-    height: 803px;
-    width: 610px;
-    margin-top: 120px;
-    margin-left: 20px;
-    padding: 8px;
-    border-radius: 16px;
-    flow-children: down;
-    background-color: gradient(linear, 0% 0%, 0.1% 0%, from(#111111), color-stop(0.01, #202327), color-stop(0.2, #141619ff), to(#000000dd));
-}
-
-
 Label {
     font-size: 18px;
     color: #999999;
@@ -68,7 +56,7 @@ Label {
     font-size: 35px;
     margin-top: 36px;
     text-transform: uppercase;
-
+    text-decoration: underline;
     color: #fff;
     font-weight: semi-bold;
     text-shadow: 0px 0px 4px #CD6BFB;

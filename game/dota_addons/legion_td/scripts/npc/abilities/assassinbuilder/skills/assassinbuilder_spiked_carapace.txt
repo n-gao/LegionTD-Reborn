@@ -1,106 +1,109 @@
-// From Dota 2 Spell Library https://github.com/Pizzalol/SpellLibrary
-"assassinbuilder_spiked_carapace"
+"DOTAAbilities"
 {
-    "BaseClass"                            "ability_datadriven"
-    "AbilityBehavior"                    "DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "AbilityUnitDamageType"                "DAMAGE_TYPE_PURE"
-    "SpellImmunityType"                    "SPELL_IMMUNITY_ENEMIES_NO"
-    "FightRecapLevel"                    "1"
-    "AbilityTextureName"                "nyx_assassin_spiked_carapace"
-
-    "AbilityCooldown"                    "7"
-    "AbilityCastPoint"                    "0"
-    "AbilityManaCost"                    "0"
-
-    "AbilitySpecial"
+    // From Dota 2 Spell Library https://github.com/Pizzalol/SpellLibrary
+    "assassinbuilder_spiked_carapace"
     {
-        "01"
-        {
-            "var_type"                    "FIELD_FLOAT"
-            "reflect_duration"            "2.25"
-        }
-        "02"
-        {
-            "var_type"                    "FIELD_FLOAT"
-            "stun_duration"                "0.75"
-        }
-        "03"
-        {
-            "var_type"                    "FIELD_FLOAT"
-            "damage_multiplier"            "0.25"
-        }
-    }
+        "BaseClass"                            "ability_datadriven"
+        "AbilityBehavior"                    "DOTA_ABILITY_BEHAVIOR_NO_TARGET|DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityUnitDamageType"                "DAMAGE_TYPE_PURE"
+        "SpellImmunityType"                    "SPELL_IMMUNITY_ENEMIES_NO"
+        "FightRecapLevel"                    "1"
+        "AbilityTextureName"                "nyx_assassin_spiked_carapace"
 
-    "precache"
-    {
-        "particle"                        "particles/generic_gameplay/generic_stunned.vpcf"
-        "particle"                        "particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
-        "particle"                        "particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace_hit.vpcf"
-    }
+        "AbilityCooldown"                    "7"
+        "AbilityCastPoint"                    "0"
+        "AbilityManaCost"                    "0"
 
-    "OnSpellStart"
-    {
-        "RunScript"
+        "AbilitySpecial"
         {
-            "ScriptFile"                "abilities/assassinbuilder/assassinbuilder_spiked_carapace.lua"
-            "Function"                    "spiked_carapace_init"
-        }
-
-        "ApplyModifier"
-        {
-            "Target"                    "CASTER"
-            "ModifierName"                "modifier_assassinbuilder_spiked_carapace_buff"
-        }
-    }
-
-    "Modifiers"
-    {
-        "modifier_assassinbuilder_spiked_carapace_buff"
-        {
-            "IsBuff"                    "0"
-            "IsPurgable"                "0"
-            "Duration"                    "%reflect_duration"
-            "EffectName"                "particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
-            "OnTakeDamage"
+            "01"
             {
-                "RunScript"
-                {
-                    "ScriptFile"        "abilities/assassinbuilder/assassinbuilder_spiked_carapace.lua"
-                    "Function"            "spiked_carapace_reflect"
-                    "DamageTaken"        "%attack_damage"
-                }
+                "var_type"                    "FIELD_FLOAT"
+                "reflect_duration"            "2.25"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_FLOAT"
+                "stun_duration"                "0.75"
+            }
+            "03"
+            {
+                "var_type"                    "FIELD_FLOAT"
+                "damage_multiplier"            "0.25"
             }
         }
 
-        "modifier_assassinbuilder_spiked_carapace_stun"
+        "precache"
         {
-            "IsDebuff"                        "1"
-            "Duration"                        "%stun_duration"
-            "OverrideAnimation"                "ACT_DOTA_DISABLED"
-            "OnCreated"
+            "particle"                        "particles/generic_gameplay/generic_stunned.vpcf"
+            "particle"                        "particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
+            "particle"                        "particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace_hit.vpcf"
+        }
+
+        "OnSpellStart"
+        {
+            "RunScript"
             {
-                "AttachEffect"
+                "ScriptFile"                "abilities/assassinbuilder/assassinbuilder_spiked_carapace.lua"
+                "Function"                    "spiked_carapace_init"
+            }
+
+            "ApplyModifier"
+            {
+                "Target"                    "CASTER"
+                "ModifierName"                "modifier_assassinbuilder_spiked_carapace_buff"
+            }
+        }
+
+        "Modifiers"
+        {
+            "modifier_assassinbuilder_spiked_carapace_buff"
+            {
+                "IsBuff"                    "0"
+                "IsPurgable"                "0"
+                "Duration"                    "%reflect_duration"
+                "EffectName"                "particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
+                "OnTakeDamage"
                 {
-                    "Target"                "TARGET"
-                    "EffectName"            "particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace_hit.vpcf"
-                    "EffectAttachType"        "follow_origin"
-                    "ControlPoints"
+                    "RunScript"
                     {
-                        "02"                "%stun_duration%stun_duration%stun_duration"
+                        "ScriptFile"        "abilities/assassinbuilder/assassinbuilder_spiked_carapace.lua"
+                        "Function"            "spiked_carapace_reflect"
+                        "DamageTaken"        "%attack_damage"
+                    }
+                }
+            }
+
+            "modifier_assassinbuilder_spiked_carapace_stun"
+            {
+                "IsDebuff"                        "1"
+                "Duration"                        "%stun_duration"
+                "OverrideAnimation"                "ACT_DOTA_DISABLED"
+                "OnCreated"
+                {
+                    "AttachEffect"
+                    {
+                        "Target"                "TARGET"
+                        "EffectName"            "particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace_hit.vpcf"
+                        "EffectAttachType"        "follow_origin"
+                        "ControlPoints"
+                        {
+                            "02"                "%stun_duration%stun_duration%stun_duration"
+                        }
+                    }
+
+                    "AttachEffect"
+                    {
+                        "Target"                "TARGET"
+                        "EffectName"            "particles/generic_gameplay/generic_stunned.vpcf"
+                        "EffectAttachType"        "follow_overhead"
                     }
                 }
 
-                "AttachEffect"
+                "States"
                 {
-                    "Target"                "TARGET"
-                    "EffectName"            "particles/generic_gameplay/generic_stunned.vpcf"
-                    "EffectAttachType"        "follow_overhead"
+                    "MODIFIER_STATE_STUNNED"    "MODIFIER_STATE_VALUE_ENABLED"
                 }
-            }
-
-            "States"
-            {
-                "MODIFIER_STATE_STUNNED"    "MODIFIER_STATE_VALUE_ENABLED"
             }
         }
     }

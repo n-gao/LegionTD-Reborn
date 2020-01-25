@@ -1,0 +1,39 @@
+"DOTAAbilities"
+{
+    "spiritbuilder_dissimilate"
+    {
+        "BaseClass"                    "ability_lua"
+        "ScriptFile"                   "abilities/spiritbuilder/spiritbuilder_dissimilate.lua"
+        "AbilityBehavior"              "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityUnitTargetTeam"        "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+        "AbilityUnitTargetType"        "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+        "MaxLevel"                     "1"
+        "AbilityTextureName"           "void_spirit_dissimilate"
+
+        "AbilityCastPoint"            "0.0"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                "FIELD_INTEGER"
+                "attackdamage_bonus"      "75"
+            }
+            "02"
+            {
+                "var_type"                "FIELD_INTEGER"
+                "evasion_bonus"           "10"
+            }
+            "03"
+            {
+                "var_type"                "FIELD_FLOAT"
+                "duration"                "10.0"
+            }
+            "04"
+            {
+                "var_type"                "FIELD_INTEGER"
+                "cooldown"                "3"
+            }
+        }
+    }
+}

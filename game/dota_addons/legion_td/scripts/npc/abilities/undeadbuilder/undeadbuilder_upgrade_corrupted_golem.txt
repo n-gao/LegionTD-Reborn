@@ -1,65 +1,68 @@
-"undeadbuilder_upgrade_corrupted_golem"
+"DOTAAbilities"
 {
-    "BaseClass"    "ability_datadriven"
-    "AbilityTextureName"    "spawn_golem"
-    "MaxLevel"    "1"
-    "AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "AbilityGoldCost"    "135"
-    "AbilityCooldown"    "1.0"
-    "OnSpellStart"
+    "undeadbuilder_upgrade_corrupted_golem"
     {
-        "RunScript"
+        "BaseClass"    "ability_datadriven"
+        "AbilityTextureName"    "spawn_golem"
+        "MaxLevel"    "1"
+        "AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityGoldCost"    "135"
+        "AbilityCooldown"    "1.0"
+        "OnSpellStart"
         {
-            "ScriptFile"    "unit.lua"
-            "Function"    "UpgradeUnit"
+            "RunScript"
+            {
+                "ScriptFile"    "unit.lua"
+                "Function"    "UpgradeUnit"
+            }
+
+        }
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"    "FIELD_INTEGER"
+                "atk_damage_tooltip"    "150"
+            }
+
+            "02"
+            {
+                "var_type"    "FIELD_FLOAT"
+                "atk_speed_tooltip"    "1"
+            }
+
+            "03"
+            {
+                "var_type"    "FIELD_INTEGER"
+                "atk_range_tooltip"    "90"
+            }
+
+            "04"
+            {
+                "var_type"    "FIELD_INTEGER"
+                "health_tooltip"    "1600"
+            }
+
+            "05"
+            {
+                "var_type"    "FIELD_INTEGER"
+                "armor_tooltip"    "7"
+            }
+
+            "06"
+            {
+                "var_type"    "FIELD_INTEGER"
+                "food_cost"    "1"
+            }
+
+            "07"
+            {
+                "var_type"    "FIELD_INTEGER"
+                "unitID"    "406"
+            }
+
         }
 
     }
-
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "atk_damage_tooltip"    "150"
-        }
-
-        "02"
-        {
-            "var_type"    "FIELD_FLOAT"
-            "atk_speed_tooltip"    "1"
-        }
-
-        "03"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "atk_range_tooltip"    "90"
-        }
-
-        "04"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "health_tooltip"    "1600"
-        }
-
-        "05"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "armor_tooltip"    "7"
-        }
-
-        "06"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "food_cost"    "1"
-        }
-
-        "07"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "unitID"    "406"
-        }
-
-    }
-
 }

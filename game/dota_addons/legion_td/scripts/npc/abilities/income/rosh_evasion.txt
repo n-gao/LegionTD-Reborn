@@ -1,33 +1,36 @@
-"rosh_evasion"
+"DOTAAbilities"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"                        "ability_datadriven"
-    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
+    "rosh_evasion"
     {
-        "01"
-        {
-            "var_type"                "FIELD_INTEGER"
-            "amount"                "5"
-        }
-    }
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-    "Modifiers"
-    {
-
-        "modifier_waveboss_attackspeed"
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
         {
-            "Passive"        "1"
-            "IsHidden"       "1"
-            "IsBuff"        "1"
-            "IsPurgable"    "0"
-            "Properties"
+            "01"
             {
-                "MODIFIER_PROPERTY_EVASION_CONSTANT"    "%amount"
+                "var_type"                "FIELD_INTEGER"
+                "amount"                "5"
+            }
+        }
+
+        "Modifiers"
+        {
+
+            "modifier_waveboss_attackspeed"
+            {
+                "Passive"        "1"
+                "IsHidden"       "1"
+                "IsBuff"        "1"
+                "IsPurgable"    "0"
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_EVASION_CONSTANT"    "%amount"
+                }
             }
         }
     }

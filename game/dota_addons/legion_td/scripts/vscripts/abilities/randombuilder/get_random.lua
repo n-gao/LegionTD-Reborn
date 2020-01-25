@@ -8,6 +8,7 @@ SpawnAbilities.tier1 = {
     "elementalbuilder_spawn_waterbender",
     "assassinbuilder_spawn_zealot_scarab",
     "undeadbuilder_spawn_zombie",
+    "spiritbuilder_spawn_lost_spirit",
 }
 
 SpawnAbilities.tier2 = {
@@ -16,6 +17,7 @@ SpawnAbilities.tier2 = {
     "elementalbuilder_spawn_thunderbender",
     "assassinbuilder_spawn_mind_stealer",
     "undeadbuilder_spawn_mutilated_butcher",
+    "spiritbuilder_spawn_vengeful_spirit",
 }
 
 SpawnAbilities.tier3 = {
@@ -24,6 +26,7 @@ SpawnAbilities.tier3 = {
     "elementalbuilder_spawn_earthbender",
     "assassinbuilder_spawn_creeping_shadow",
     "undeadbuilder_spawn_acolyte",
+    "spiritbuilder_spawn_earth_spirit",
 }
 
 SpawnAbilities.tier4 = {
@@ -33,6 +36,7 @@ SpawnAbilities.tier4 = {
     "assassinbuilder_spawn_lotus",
     "naturebuilder_spawn_hyena",
     "undeadbuilder_spawn_nether_drake",
+    "spiritbuilder_spawn_storm_spirit",
 }
 
 SpawnAbilities.tier5 = {
@@ -41,6 +45,7 @@ SpawnAbilities.tier5 = {
     "naturebuilder_spawn_centaur",
     "assassinbuilder_spawn_jester",
     "undeadbuilder_spawn_vampire",
+    "spiritbuilder_spawn_ember_spirit",
 }
 
 SpawnAbilities.tier6 = {

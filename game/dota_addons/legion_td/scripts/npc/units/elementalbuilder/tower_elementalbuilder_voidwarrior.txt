@@ -1,94 +1,97 @@
-"tower_elementalbuilder_voidwarrior"
+"DOTAUnits"
 {
-    "BaseClass" "npc_dota_creature"
-    "Model" "models/heroes/faceless_void/faceless_void.vmdl"
-    "ModelScale"    "0.55"
-    "SoundSet"  "Hero_FacelessVoid"
-    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
-    "Level" "1"
-    "HealthBarOffset"   "150"
-    "Vscripts"  "ai/ai_default.lua"
-    "Ability4"  "sell"
-    "Ability3"  "ability_empty_3"
-    "Ability2"  "ability_empty_2"
-    "Ability1"  "voidwarrior_time_lock"
-    "ArmorPhysical" "3"
-    "MagicalResistance" "25"
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"   "145.0"
-    "AttackDamageMax"   "165.0"
-    "AttackRate"    "0.5"
-    "AttackAnimationPoint"  "0.4"
-    "AttackAcquisitionRange"    "850"
-    "AttackRange"   "90"
-    "ProjectileModel"   ""
-    "ProjectileSpeed"   "0"
-    "LegionAttackType" "normal"
-    "LegionDefendType" "heavy"
-    "LegionFraction"   "elemental"
-    "BountyGoldMin" "0"
-    "BountyGoldMax" "0"
-    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
-    "RingRadius"    "30"
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed" "270"
-    "MovementTurnRate"  "0.6"
-    "StatusHealth"  "630"
-    "StatusHealthRegen" "0"
-    "StatusMana"    "0"
-    "StatusManaRegen"   "0"
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-    "TeamName"  "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-    "Creature"
+    "tower_elementalbuilder_voidwarrior"
     {
-        "DisableClumpingBehavior"   "1"
-        "DefaultState"  "Invade"
-        "States"
+        "BaseClass" "npc_dota_creature"
+        "Model" "models/heroes/faceless_void/faceless_void.vmdl"
+        "ModelScale"    "0.55"
+        "SoundSet"  "Hero_FacelessVoid"
+        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
+        "Level" "1"
+        "HealthBarOffset"   "150"
+        "Vscripts"  "ai/ai_default.lua"
+        "Ability4"  "sell"
+        "Ability3"  "ability_empty_3"
+        "Ability2"  "ability_empty_2"
+        "Ability1"  "voidwarrior_time_lock"
+        "ArmorPhysical" "3"
+        "MagicalResistance" "25"
+        "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"   "145.0"
+        "AttackDamageMax"   "165.0"
+        "AttackRate"    "0.5"
+        "AttackAnimationPoint"  "0.4"
+        "AttackAcquisitionRange"    "850"
+        "AttackRange"   "90"
+        "ProjectileModel"   ""
+        "ProjectileSpeed"   "0"
+        "LegionAttackType" "normal"
+        "LegionDefendType" "heavy"
+        "LegionFraction"   "elemental"
+        "BountyGoldMin" "0"
+        "BountyGoldMax" "0"
+        "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
+        "RingRadius"    "30"
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed" "270"
+        "MovementTurnRate"  "0.6"
+        "StatusHealth"  "630"
+        "StatusHealthRegen" "0"
+        "StatusMana"    "0"
+        "StatusManaRegen"   "0"
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+        "TeamName"  "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+        "Creature"
         {
-            "Invade"
+            "DisableClumpingBehavior"   "1"
+            "DefaultState"  "Invade"
+            "States"
             {
-                "Name"  "Invade"
-                "Aggression"    "100.0"
-                "Avoidance" "0.0"
-                "Support"   "0.0"
+                "Invade"
+                {
+                    "Name"  "Invade"
+                    "Aggression"    "100.0"
+                    "Avoidance" "0.0"
+                    "Support"   "0.0"
+                }
+
             }
 
-        }
-
-        "AttachWearables"
-        {
-            "Wearable1"
+            "AttachWearables"
             {
-                "ItemDef"   "90"
-            }
+                "Wearable1"
+                {
+                    "ItemDef"   "90"
+                }
 
-            "Wearable2"
-            {
-                "ItemDef"   "91"
-            }
+                "Wearable2"
+                {
+                    "ItemDef"   "91"
+                }
 
-            "Wearable3"
-            {
-                "ItemDef"   "92"
-            }
+                "Wearable3"
+                {
+                    "ItemDef"   "92"
+                }
 
-            "Wearable4"
-            {
-                "ItemDef"   "93"
-            }
+                "Wearable4"
+                {
+                    "ItemDef"   "93"
+                }
 
-            "Wearable5"
-            {
-                "ItemDef"   "4020"
+                "Wearable5"
+                {
+                    "ItemDef"   "4020"
+                }
+
             }
 
         }
 
     }
-
 }
