@@ -1,45 +1,48 @@
-"increase_food_limit"
+"DOTAAbilities"
 {
-    "BaseClass"                 "ability_datadriven"
-    "AbilityTextureName"      "shadow_shaman_voodoo"
-    "MaxLevel"             "12"
+	"increase_food_limit"
+	{
+		"BaseClass"                 "ability_datadriven"
+		"AbilityTextureName"      "shadow_shaman_voodoo"
+		"MaxLevel"             "12"
 
-    "AbilityBehavior"                    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
-    "AbilityChannelTime"             "15"
-    "AbilityDuration"                 "15"
-    "AbilityGoldCost"         "20"
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"      "FIELD_INTEGER"
-            "tango_cost"         "25"
-        }
-        "02"
-        {
-            "var_type"      "FIELD_INTEGER"
-            "limit_increament"  "5"
-        }
-    }
-        "OnChannelSucceeded"
-        {
-            "RunScript"
-            {
-                "ScriptFile"    "abilities/buildings/food_building"
-                "Function"        "increase_food_limit"
-            }
-        }
-    "OnChannelInterrupted"
-    {
-        "RunScript"
-        {
-            "ScriptFile"    "abilities/buildings/main_building"
-            "Function"        "refund_gold"
-        }
-        "RunScript"
-        {
-            "ScriptFile"    "abilities/buildings/main_building"
-            "Function"        "refund_tango"
-        }
-    }
+		"AbilityBehavior"                    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityChannelTime"             "15"
+		"AbilityDuration"                 "15"
+		"AbilityGoldCost"         "20"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"      "FIELD_INTEGER"
+				"tango_cost"         "25"
+			}
+			"02"
+			{
+				"var_type"      "FIELD_INTEGER"
+				"limit_increament"  "5"
+			}
+		}
+			"OnChannelSucceeded"
+			{
+				"RunScript"
+				{
+					"ScriptFile"    "abilities/buildings/food_building"
+					"Function"        "increase_food_limit"
+				}
+			}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"    "abilities/buildings/main_building"
+				"Function"        "refund_gold"
+			}
+			"RunScript"
+			{
+				"ScriptFile"    "abilities/buildings/main_building"
+				"Function"        "refund_tango"
+			}
+		}
+	}
 }

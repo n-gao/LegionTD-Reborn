@@ -1,4 +1,6 @@
-"unit_not_lifestealer"
+"DOTAUnits"
+{
+	"unit_not_lifestealer"
     {
         "BaseClass" "npc_dota_creature"
         "Model" "models/heroes/life_stealer/life_stealer.vmdl"
@@ -92,3 +94,4 @@
         }
 
     }
+}

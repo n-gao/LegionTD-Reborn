@@ -1,121 +1,124 @@
-"human_vladmir"
+"DOTAAbilities"
 {
-    "BaseClass"                        "ability_datadriven"
-    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "AbilityTextureName"            "ability_vladmir"
+	"human_vladmir"
+	{
+		"BaseClass"                        "ability_datadriven"
+		"AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"            "ability_vladmir"
 
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"                    "FIELD_INTEGER"
-            "aura_radius"                "900"
-        }
-        "02"
-        {
-            "var_type"                    "FIELD_INTEGER"
-            "lifesteal_aura_percent_melee"    "15"
-        }
-        "03"
-        {
-            "var_type"                    "FIELD_INTEGER"
-            "lifesteal_aura_percent_ranged"    "10"
-        }
-        "04"
-        {
-            "var_type"                    "FIELD_INTEGER"
-            "damage_aura_percent"        "15"
-        }
-        "05"
-        {
-            "var_type"                    "FIELD_INTEGER"
-            "armor_aura"                "5"
-        }
-        "06"
-        {
-            "var_type"                    "FIELD_INTEGER"
-            "hp_regen"                    "3"
-        }
-    }
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"                    "FIELD_INTEGER"
+				"aura_radius"                "900"
+			}
+			"02"
+			{
+				"var_type"                    "FIELD_INTEGER"
+				"lifesteal_aura_percent_melee"    "15"
+			}
+			"03"
+			{
+				"var_type"                    "FIELD_INTEGER"
+				"lifesteal_aura_percent_ranged"    "10"
+			}
+			"04"
+			{
+				"var_type"                    "FIELD_INTEGER"
+				"damage_aura_percent"        "15"
+			}
+			"05"
+			{
+				"var_type"                    "FIELD_INTEGER"
+				"armor_aura"                "5"
+			}
+			"06"
+			{
+				"var_type"                    "FIELD_INTEGER"
+				"hp_regen"                    "3"
+			}
+		}
 
-    "Modifiers"
-    {
+		"Modifiers"
+		{
 
-        "modifier_vladmir_aura_emitter"  //We use two aura emitters because lifesteal is different for melee and ranged.
-        {
-            "Passive"                "1"
-            "IsHidden"                "1"
+			"modifier_vladmir_aura_emitter"  //We use two aura emitters because lifesteal is different for melee and ranged.
+			{
+				"Passive"                "1"
+				"IsHidden"                "1"
 
-            "Aura"                     "modifier_vladmir_aura"
-            "Aura_Radius"             "%aura_radius"
-            "Aura_Teams"             "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-            "Aura_Types"             "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-            "Aura_Flags"             "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
-            "Aura_ApplyToCaster"     "1"
-        }
-        "modifier_vladmir_aura"
-        {
-            "Passive"            "0"
-            "IsHidden"            "0"
+				"Aura"                     "modifier_vladmir_aura"
+				"Aura_Radius"             "%aura_radius"
+				"Aura_Teams"             "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"             "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_Flags"             "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+				"Aura_ApplyToCaster"     "1"
+			}
+			"modifier_vladmir_aura"
+			{
+				"Passive"            "0"
+				"IsHidden"            "0"
 
-            "Properties"
-            {
-                "MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE"            "%damage_aura_percent"
-                "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE"                "%armor_aura"
-                "MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"                    "%hp_regen"
-            }
-        }
-        "modifier_vladmir_melee_lifesteal_aura_emitter"  //We use two aura emitters because the lifesteal part only affects melee units.
-        {
-            "Passive"                "1"
-            "IsHidden"                "1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE"            "%damage_aura_percent"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE"                "%armor_aura"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"                    "%hp_regen"
+				}
+			}
+			"modifier_vladmir_melee_lifesteal_aura_emitter"  //We use two aura emitters because the lifesteal part only affects melee units.
+			{
+				"Passive"                "1"
+				"IsHidden"                "1"
 
-            "Aura"                     "modifier_item_vladmir_melee_lifesteal_aura"
-            "Aura_Radius"             "%aura_radius"
-            "Aura_Teams"             "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-            "Aura_Types"             "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-            "Aura_Flags"             "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
-            "Aura_ApplyToCaster"     "1"
-        }
-        "modifier_vladmir_melee_lifesteal_aura"
-        {
-            "Passive"            "0"
-            "IsHidden"            "1"
+				"Aura"                     "modifier_item_vladmir_melee_lifesteal_aura"
+				"Aura_Radius"             "%aura_radius"
+				"Aura_Teams"             "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"             "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_Flags"             "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+				"Aura_ApplyToCaster"     "1"
+			}
+			"modifier_vladmir_melee_lifesteal_aura"
+			{
+				"Passive"            "0"
+				"IsHidden"            "1"
 
-            "OnAttackLanded"
-            {
-                "Lifesteal"
-                {
-                    "Target"            "ATTACKER"
-                    "LifestealPercent"    "%lifesteal_aura_percent_melee"
-                }
-            }
-        }
-        "modifier_vladmir_ranged_lifesteal_aura_emitter"  //We use two aura emitters because the lifesteal part only affects melee units.
-        {
-            "Passive"                "1"
-            "IsHidden"                "1"
+				"OnAttackLanded"
+				{
+					"Lifesteal"
+					{
+						"Target"            "ATTACKER"
+						"LifestealPercent"    "%lifesteal_aura_percent_melee"
+					}
+				}
+			}
+			"modifier_vladmir_ranged_lifesteal_aura_emitter"  //We use two aura emitters because the lifesteal part only affects melee units.
+			{
+				"Passive"                "1"
+				"IsHidden"                "1"
 
-            "Aura"                     "modifier_item_vladmir_ranged_lifesteal_aura"
-            "Aura_Radius"             "%aura_radius"
-            "Aura_Teams"             "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-            "Aura_Types"             "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-            "Aura_Flags"             "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_RANGED_ONLY"
-            "Aura_ApplyToCaster"     "1"
-        }
-        "modifier_vladmir_ranged_lifesteal_aura"
-        {
-            "Passive"            "0"
-            "IsHidden"            "1"
+				"Aura"                     "modifier_item_vladmir_ranged_lifesteal_aura"
+				"Aura_Radius"             "%aura_radius"
+				"Aura_Teams"             "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"             "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_Flags"             "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_RANGED_ONLY"
+				"Aura_ApplyToCaster"     "1"
+			}
+			"modifier_vladmir_ranged_lifesteal_aura"
+			{
+				"Passive"            "0"
+				"IsHidden"            "1"
 
-            "OnAttackLanded"
-            {
-                "Lifesteal"
-                {
-                    "Target"            "ATTACKER"
-                    "LifestealPercent"    "%lifesteal_aura_percent_ranged"
-                }
-            }
-        }
-    }
+				"OnAttackLanded"
+				{
+					"Lifesteal"
+					{
+						"Target"            "ATTACKER"
+						"LifestealPercent"    "%lifesteal_aura_percent_ranged"
+					}
+				}
+			}
+		}
+	}
 }

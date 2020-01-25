@@ -1,4 +1,6 @@
-"unit_fatty"
+"DOTAUnits"
+{
+	"unit_fatty"
     {
         "BaseClass" "npc_dota_creature"
         "Model" "models/heroes/pudge/pudge.vmdl"
@@ -106,4 +108,6 @@
 
         }
 
-    }
+    
+	}
+}

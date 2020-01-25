@@ -1,65 +1,68 @@
-"elementalbuilder_upgrade_thunderwarrior"
+"DOTAAbilities"
 {
-    "BaseClass"    "ability_datadriven"
-    "AbilityTextureName"    "rattletrap_power_cogs"
-    "MaxLevel"    "1"
-    "AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "AbilityGoldCost"    "250"
-    "AbilityCooldown"    "1.0"
-    "OnSpellStart"
-    {
-        "RunScript"
-        {
-            "ScriptFile"    "unit.lua"
-            "Function"    "UpgradeUnit"
-        }
+	"elementalbuilder_upgrade_thunderwarrior"
+	{
+		"BaseClass"    "ability_datadriven"
+		"AbilityTextureName"    "rattletrap_power_cogs"
+		"MaxLevel"    "1"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityGoldCost"    "250"
+		"AbilityCooldown"    "1.0"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"    "unit.lua"
+				"Function"    "UpgradeUnit"
+			}
 
-    }
+		}
 
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "atk_damage_tooltip"    "109.5"
-        }
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    "FIELD_INTEGER"
+				"atk_damage_tooltip"    "109.5"
+			}
 
-        "02"
-        {
-            "var_type"    "FIELD_FLOAT"
-            "atk_speed_tooltip"    "0.65"
-        }
+			"02"
+			{
+				"var_type"    "FIELD_FLOAT"
+				"atk_speed_tooltip"    "0.65"
+			}
 
-        "03"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "atk_range_tooltip"    "200"
-        }
+			"03"
+			{
+				"var_type"    "FIELD_INTEGER"
+				"atk_range_tooltip"    "200"
+			}
 
-        "04"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "health_tooltip"    "720"
-        }
+			"04"
+			{
+				"var_type"    "FIELD_INTEGER"
+				"health_tooltip"    "720"
+			}
 
-        "05"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "armor_tooltip"    "4"
-        }
+			"05"
+			{
+				"var_type"    "FIELD_INTEGER"
+				"armor_tooltip"    "4"
+			}
 
-        "06"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "food_cost"    "1"
-        }
+			"06"
+			{
+				"var_type"    "FIELD_INTEGER"
+				"food_cost"    "1"
+			}
 
-        "07"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "unitID"    "62"
-        }
+			"07"
+			{
+				"var_type"    "FIELD_INTEGER"
+				"unitID"    "62"
+			}
 
-    }
+		}
 
+	}
 }

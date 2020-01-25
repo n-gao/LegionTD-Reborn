@@ -1,67 +1,70 @@
-"elementalbuilder_spawn_earthbender"
+"DOTAAbilities"
 {
-    "BaseClass"    "ability_datadriven"
-    "AbilityTextureName"    "earthshaker_fissure"
-    "MaxLevel"    "1"
-    "AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_POINT"
-    "AbilityUnitTargetType"    "DOTA_UNIT_TARGET_BASIC"
-    "AbilityGoldCost"    "70"
-    "AbilityCooldown"    "1.0"
-    "AbilityCastRange"    "125"
-    "OnSpellStart"
-    {
-        "RunScript"
-        {
-            "ScriptFile"    "unit.lua"
-            "Function"    "UnitSpawn"
-        }
+	"elementalbuilder_spawn_earthbender"
+	{
+		"BaseClass"    "ability_datadriven"
+		"AbilityTextureName"    "earthshaker_fissure"
+		"MaxLevel"    "1"
+		"AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetType"    "DOTA_UNIT_TARGET_BASIC"
+		"AbilityGoldCost"    "70"
+		"AbilityCooldown"    "1.0"
+		"AbilityCastRange"    "125"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"    "unit.lua"
+				"Function"    "UnitSpawn"
+			}
 
-    }
+		}
 
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "atk_damage_tooltip"    "47.5"
-        }
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"    "FIELD_INTEGER"
+				"atk_damage_tooltip"    "47.5"
+			}
 
-        "02"
-        {
-            "var_type"    "FIELD_FLOAT"
-            "atk_speed_tooltip"    "1.0"
-        }
+			"02"
+			{
+				"var_type"    "FIELD_FLOAT"
+				"atk_speed_tooltip"    "1.0"
+			}
 
-        "03"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "atk_range_tooltip"    "90"
-        }
+			"03"
+			{
+				"var_type"    "FIELD_INTEGER"
+				"atk_range_tooltip"    "90"
+			}
 
-        "04"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "health_tooltip"    "310"
-        }
+			"04"
+			{
+				"var_type"    "FIELD_INTEGER"
+				"health_tooltip"    "310"
+			}
 
-        "05"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "armor_tooltip"    "2"
-        }
+			"05"
+			{
+				"var_type"    "FIELD_INTEGER"
+				"armor_tooltip"    "2"
+			}
 
-        "06"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "food_cost"    "1"
-        }
+			"06"
+			{
+				"var_type"    "FIELD_INTEGER"
+				"food_cost"    "1"
+			}
 
-        "07"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "unitID"    "52"
-        }
+			"07"
+			{
+				"var_type"    "FIELD_INTEGER"
+				"unitID"    "52"
+			}
 
-    }
+		}
 
+	}
 }

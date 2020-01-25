@@ -1,26 +1,29 @@
-"main_building_tango_speed"
+"DOTAAbilities"
 {
-    "BaseClass"                 "ability_datadriven"
-    "AbilityTextureName"            "treant_living_armor"
-    "MaxLevel"                                 "5"
-    "AbilityBehavior"                    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
-    "AbilityChannelTime"             "1"
-    "AbilityDuration"                 "1"
-    "AbilityGoldCost"                    "75 150 225 300 350"
-    "OnChannelSucceeded"
-    {
-        "RunScript"
-        {
-            "ScriptFile"    "abilities/buildings/main_building"
-            "Function"        "increase_tango_speed"
-        }
-    }
-    "OnChannelInterrupted"
-    {
-        "RunScript"
-        {
-            "ScriptFile"    "abilities/buildings/main_building"
-            "Function"        "refund_gold"
-        }
-    }
+	"main_building_tango_speed"
+	{
+		"BaseClass"                 "ability_datadriven"
+		"AbilityTextureName"            "treant_living_armor"
+		"MaxLevel"                                 "5"
+		"AbilityBehavior"                    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityChannelTime"             "1"
+		"AbilityDuration"                 "1"
+		"AbilityGoldCost"                    "75 150 225 300 350"
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"    "abilities/buildings/main_building"
+				"Function"        "increase_tango_speed"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"    "abilities/buildings/main_building"
+				"Function"        "refund_gold"
+			}
+		}
+	}
 }

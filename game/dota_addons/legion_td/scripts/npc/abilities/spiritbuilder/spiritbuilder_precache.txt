@@ -1,0 +1,26 @@
+"DOTAAbilities"
+{
+    "spiritbuilder_precache"
+    {
+        "BaseClass" "ability_datadriven"
+        "AbilityBehavior"   "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+
+        "Modifiers"
+        {
+            "modifier_spiritbuilder_precache"
+            {
+                "Passive"               "1"
+                "IsPurgable"            "0"
+                "IsHidden"                "1"
+                "OnCreated"
+                {
+                    "RunScript"
+                    {
+                        "ScriptFile"    "abilities/spiritbuilder/spiritbuilder_unit_precache.lua"
+                        "Function"        "precache"
+                    }
+                }
+            }
+        }
+    }
+}

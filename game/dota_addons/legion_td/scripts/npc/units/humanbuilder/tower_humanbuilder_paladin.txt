@@ -1,105 +1,108 @@
-"tower_humanbuilder_paladin"
+"DOTAUnits"
 {
-    // General
-    //----------------------------------------------------------------
-    "BaseClass"             "npc_dota_creature"
-    "Model"                 "models/heroes/omniknight/omniknight.vmdl"
-    "ModelScale"            "0.55"
-    "SoundSet"                      "Hero_OmniKnight"
-    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_omni_knight.vsndevts"
-    "Level"                 "1"
-    "HealthBarOffset"       "150"
-    "Vscripts"              "ai/humanbuilder/ai_paladin.lua"
+	"tower_humanbuilder_paladin"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"             "npc_dota_creature"
+		"Model"                 "models/heroes/omniknight/omniknight.vmdl"
+		"ModelScale"            "0.55"
+		"SoundSet"                      "Hero_OmniKnight"
+		"GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_omni_knight.vsndevts"
+		"Level"                 "1"
+		"HealthBarOffset"       "150"
+		"Vscripts"              "ai/humanbuilder/ai_paladin.lua"
 
 
-    "Ability4"              "sell"
-    "Ability3"              "ability_empty_3"
-    "Ability2"              "ability_empty_2"
-    "Ability1"              "paladin_purification"
+		"Ability4"              "sell"
+		"Ability3"              "ability_empty_3"
+		"Ability2"              "ability_empty_2"
+		"Ability1"              "paladin_purification"
 
-    // Armor
-    //----------------------------------------------------------------
-    "ArmorPhysical"         "7"
-    "MagicalResistance"     "0"
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"         "7"
+		"MagicalResistance"     "0"
 
-    // Attack
-    //----------------------------------------------------------------
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "130.0"
-    "AttackDamageMax"       "142.5"
-    "AttackRate"            "0.5"
-    "AttackAnimationPoint"  "0.4"
-    "AttackAcquisitionRange" "850"
-    "AttackRange"           "100"
-    "ProjectileModel"       ""
-    "ProjectileSpeed"       "0"
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"AttackDamageMin"       "130.0"
+		"AttackDamageMax"       "142.5"
+		"AttackRate"            "0.5"
+		"AttackAnimationPoint"  "0.4"
+		"AttackAcquisitionRange" "850"
+		"AttackRange"           "100"
+		"ProjectileModel"       ""
+		"ProjectileSpeed"       "0"
 
-    "LegionAttackType"      "normal"
-    "LegionDefendType"      "heavy"
-    "LegionFraction"        "human"
+		"LegionAttackType"      "normal"
+		"LegionDefendType"      "heavy"
+		"LegionFraction"        "human"
 
 
-    // Bounty
-    //----------------------------------------------------------------
-    "BountyGoldMin"         "0"
-    "BountyGoldMax"         "0"
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyGoldMin"         "0"
+		"BountyGoldMax"         "0"
 
-    // Bounds
-    //----------------------------------------------------------------
-    "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-    "RingRadius"            "30"
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+		"RingRadius"            "30"
 
-    // Movement
-    //----------------------------------------------------------------
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"         "270"
-    "MovementTurnRate"      "0.6"
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"         "270"
+		"MovementTurnRate"      "0.6"
 
-    // Status
-    //----------------------------------------------------------------
-    "StatusHealth"          "600"
-    "StatusHealthRegen"     "0"
-    "StatusMana"            "0"
-    "StatusManaRegen"       "0"
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"          "600"
+		"StatusHealthRegen"     "0"
+		"StatusMana"            "0"
+		"StatusManaRegen"       "0"
 
-    // Vision
-    //----------------------------------------------------------------
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"    "1400"
+		"VisionNighttimeRange"  "800"
 
-    // Team
-    //----------------------------------------------------------------
-    "TeamName"              "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"              "DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 
-    // Creature Data
-    //----------------------------------------------------------------
-    "Creature"
-    {
-        "DisableClumpingBehavior"       "1"
-        "DefaultState"              "Invade"
-        "States"
-        {
-            "Invade"
-            {
-                "Name"              "Invade"
-                "Aggression"        "100.0"
-                "Avoidance"         "0.0"
-                "Support"           "0.0"
-            }
-        }
-        "AttachWearables"
-            {
-            "Wearable1" { "ItemDef" "7580" }
-            "Wearable2" { "ItemDef" "8958" }
-            "Wearable3" { "ItemDef" "8173" }
-            "Wearable4" { "ItemDef" "8954" }
-            "Wearable5" { "ItemDef" "8957" }
-            "Wearable6" { "ItemDef" "4317" }
-            "Wearable7" { "ItemDef" "45" }
-            }
-    }
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			"DisableClumpingBehavior"       "1"
+			"DefaultState"              "Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"              "Invade"
+					"Aggression"        "100.0"
+					"Avoidance"         "0.0"
+					"Support"           "0.0"
+				}
+			}
+			"AttachWearables"
+				{
+				"Wearable1" { "ItemDef" "7580" }
+				"Wearable2" { "ItemDef" "8958" }
+				"Wearable3" { "ItemDef" "8173" }
+				"Wearable4" { "ItemDef" "8954" }
+				"Wearable5" { "ItemDef" "8957" }
+				"Wearable6" { "ItemDef" "4317" }
+				"Wearable7" { "ItemDef" "45" }
+				}
+		}
+	}
 }

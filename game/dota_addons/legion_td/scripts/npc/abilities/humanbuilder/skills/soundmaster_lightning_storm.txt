@@ -1,99 +1,102 @@
-"soundmaster_lightning_storm"
+"DOTAAbilities"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"                        "ability_datadriven"
-    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "AbilityUnitTargetTeam"            "DOTA_UNIT_TARGET_TEAM_ENEMY"
-    "AbilityUnitTargetType"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-    "AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"
-    "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
-    "AbilityTextureName"            "leshrac_lightning_storm"
+	"soundmaster_lightning_storm"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"                        "ability_datadriven"
+		"AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"            "DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"            "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityTextureName"            "leshrac_lightning_storm"
 
-    "precache"
-    {
-        "soundfile"         "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
-        "particle"            "particles/units/heroes/hero_leshrac/leshrac_lightning_bolt.vpcf"
-        "particle"            "particles/items2_fx/veil_of_discord_debuff.vpcf"
-        "particle"            "particles/units/heroes/hero_leshrac/leshrac_lightning_impact.vpcf"
-        "particle"            "particles/units/heroes/hero_leshrac/leshrac_lightning_sparks.vpcf"
-    }
-    // Casting
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityCastRange"                "700"
-    "AbilityCastPoint"                "0.7"
+		"precache"
+		{
+			"soundfile"         "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
+			"particle"            "particles/units/heroes/hero_leshrac/leshrac_lightning_bolt.vpcf"
+			"particle"            "particles/items2_fx/veil_of_discord_debuff.vpcf"
+			"particle"            "particles/units/heroes/hero_leshrac/leshrac_lightning_impact.vpcf"
+			"particle"            "particles/units/heroes/hero_leshrac/leshrac_lightning_sparks.vpcf"
+		}
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"                "700"
+		"AbilityCastPoint"                "0.7"
 
-    // Time
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityCooldown"                "1.5"
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"                "1.5"
 
-    // Cost
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityManaCost"                "0"
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"                "0"
 
-    // Damage.
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityDamage"                    "125"
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"                    "125"
 
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"            "FIELD_INTEGER"
-            "jump_count"            "3"
-        }
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"            "FIELD_INTEGER"
+				"jump_count"            "3"
+			}
 
-        "02"
-        {
-            "var_type"            "FIELD_INTEGER"
-            "radius"            "650"
-        }
-        "03"
-        {
-            "var_type"                "FIELD_FLOAT"
-            "jump_delay"            "0.25"
-        }
-        "04"
-        {
-            "var_type"                "FIELD_FLOAT"
-            "resist_debuff_duration"    "6"
-        }
-        "05"
-        {
-            "var_type"                "FIELD_INTEGER"
-            "resist_debuff"            "-25"
-        }
-    }
+			"02"
+			{
+				"var_type"            "FIELD_INTEGER"
+				"radius"            "650"
+			}
+			"03"
+			{
+				"var_type"                "FIELD_FLOAT"
+				"jump_delay"            "0.25"
+			}
+			"04"
+			{
+				"var_type"                "FIELD_FLOAT"
+				"resist_debuff_duration"    "6"
+			}
+			"05"
+			{
+				"var_type"                "FIELD_INTEGER"
+				"resist_debuff"            "-25"
+			}
+		}
 
-    "OnSpellStart"
-    {
-        "RunScript"
-        {
-            "ScriptFile"    "scripts/vscripts/abilities/humanbuilder/lightning_storm.lua"
-            "Function"        "lightning_storm_start"
-        }
-    }
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"    "scripts/vscripts/abilities/humanbuilder/lightning_storm.lua"
+				"Function"        "lightning_storm_start"
+			}
+		}
 
-    "Modifiers"
-    {
-        "lightning_storm_veil"
-        {
-            "Passive"            "0"
-            "IsHidden"            "0"
-            "IsDebuff"            "1"
+		"Modifiers"
+		{
+			"lightning_storm_veil"
+			{
+				"Passive"            "0"
+				"IsHidden"            "0"
+				"IsDebuff"            "1"
 
-            "Duration"            "%resist_debuff_duration"
+				"Duration"            "%resist_debuff_duration"
 
-            "EffectName"        "particles/items2_fx/veil_of_discord_debuff.vpcf"
-            "EffectAttachType"  "follow_origin"
-            "Target"            "TARGET"
+				"EffectName"        "particles/items2_fx/veil_of_discord_debuff.vpcf"
+				"EffectAttachType"  "follow_origin"
+				"Target"            "TARGET"
 
-            "Properties"
-            {
-                "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "%resist_debuff"
-            }
-        }
-    }
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS" "%resist_debuff"
+				}
+			}
+		}
+	}
 }

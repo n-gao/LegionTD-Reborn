@@ -167,12 +167,12 @@
 
     background-color: gradient(linear, 0% 0%, 0% 100%, from(#307663), to(#245a4b));
     background-image: url("s2r://panorama/images/backgrounds/background_play_button_2x_png.vtex");
-    box-shadow: #F78F9015 -4px -4px 8px 8px;
+
 
     border-top: 1px solid #ffffff22;
     border-bottom: 1px solid #00000088;
     background-size: 100%;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #0E141Add;
     border-radius: 8px;
 }
 
@@ -188,11 +188,10 @@
 
     background-color: gradient(linear, 0% 0%, 0% 100%, from(#60862d), to(#3d5f1c));
     background-image: url("s2r://panorama/images/backgrounds/background_play_button_2x_png.vtex");
-    box-shadow: #F78F9015 -4px -4px 8px 8px;
     border-top: 1px solid #ffffff22;
     border-bottom: 1px solid #00000088;
     background-size: 100%;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #0E141Add;
     border-radius: 8px;
 }
 
@@ -566,22 +565,31 @@
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: 15;
-
-
 }
 
 #InformationButton:hover {
     opacity: 1.3;
 }
 
+#HealthBarsRoot {
+	width: 100%;
+	height: 100%;
+}
+
+#CollapseHUD {
+	width: 100%;
+	height: 100%;
+}
+
 #HealthBarsHolder {
     width: 300px;
     height: 80px;
-    background-image: url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex");
+    background-color: #0E141Add;
     margin-top: 300px;
     margin-left: -1px;
     align: left center;
     border-radius: 8px;
+	border: 1px solid #0E141Add;
 }
 
 #RadiantKing {
@@ -598,7 +606,6 @@
     width: 32px;
     height: 32px;
     background-size: 100%;
-    background-image: url("file://{images}/custom_game/DireKing.png");
     margin-top: 42px;
     margin-left: 2px;
     z-index: 99999;
@@ -612,7 +619,7 @@
     margin-top: 10px;
     margin-left: 40px;
     border-radius: 8px;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #0E141Add;
 }
 
 #EmptyBarDire {
@@ -622,7 +629,7 @@
     margin-top: 50px;
     margin-left: 40px;
     border-radius: 8px;
-    border: 1px solid #aaaaaa;
+    border: 1px solid #0E141Add;
 }
 
 .ProgressBarLeft {

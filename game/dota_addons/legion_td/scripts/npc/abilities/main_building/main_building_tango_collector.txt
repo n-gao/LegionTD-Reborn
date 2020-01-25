@@ -1,34 +1,37 @@
-"main_building_tango_collector"
+"DOTAAbilities"
 {
-    "BaseClass"                 "ability_datadriven"
-    "AbilityTextureName"            "treant_leech_seed"
-    "MaxLevel"                                 "30"
-    "AbilityBehavior"                    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
-    "AbilityChannelTime"             "1"
-    "AbilityDuration"                 "1"
-    "AbilityGoldCost"                    "60"
-    "OnChannelSucceeded"
-    {
-        "RunScript"
-        {
-            "ScriptFile"    "abilities/buildings/main_building"
-            "Function"        "add_tango_collector"
-        }
-    }
-    "OnChannelInterrupted"
-    {
-        "RunScript"
-        {
-            "ScriptFile"    "abilities/buildings/main_building"
-            "Function"        "refund_gold"
-        }
-    }
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"            "FIELD_INTEGER"
-            "food_cost"                 "1"
-        }
-    }
+	"main_building_tango_collector"
+	{
+		"BaseClass"                 "ability_datadriven"
+		"AbilityTextureName"            "treant_leech_seed"
+		"MaxLevel"                                 "30"
+		"AbilityBehavior"                    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityChannelTime"             "1"
+		"AbilityDuration"                 "1"
+		"AbilityGoldCost"                    "60"
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"    "abilities/buildings/main_building"
+				"Function"        "add_tango_collector"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"    "abilities/buildings/main_building"
+				"Function"        "refund_gold"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"            "FIELD_INTEGER"
+				"food_cost"                 "1"
+			}
+		}
+	}
 }
