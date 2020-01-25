@@ -1,33 +1,36 @@
-"waveboss_attackspeed"
+"DOTAAbilities"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"                        "ability_datadriven"
-    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
+    "waveboss_attackspeed"
     {
-        "01"
-        {
-            "var_type"                "FIELD_FLOAT"
-            "amount"                "50"
-        }
-    }
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 
-    "Modifiers"
-    {
-
-        "modifier_waveboss_attackspeed"
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
         {
-            "Passive"        "1"
-            "IsHidden"       "1"
-            "IsBuff"        "1"
-            "IsPurgable"    "0"
-            "Properties"
+            "01"
             {
-                "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"    "%amount"
+                "var_type"                "FIELD_FLOAT"
+                "amount"                "50"
+            }
+        }
+
+        "Modifiers"
+        {
+
+            "modifier_waveboss_attackspeed"
+            {
+                "Passive"        "1"
+                "IsHidden"       "1"
+                "IsBuff"        "1"
+                "IsPurgable"    "0"
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"    "%amount"
+                }
             }
         }
     }

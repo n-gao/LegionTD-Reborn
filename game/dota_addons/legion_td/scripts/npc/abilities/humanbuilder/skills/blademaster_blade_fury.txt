@@ -1,140 +1,143 @@
-"blademaster_blade_fury"
+"DOTAAbilities"
 {
-    "BaseClass"                     "ability_datadriven"
-    "AbilityTextureName"            "juggernaut_blade_fury"
-
-    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
-    "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
-    "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-    "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
-
-    "AbilityCastRange"              "250"
-    "AbilityCastPoint"              "0.0"
-    "AbilityCooldown"               "2.5"
-
-    "AbilityManaCost"               "0"
-    "AbilityDamage"                 "75"
-
-    "precache"
+    "blademaster_blade_fury"
     {
-        "particle"  "particles/units/heroes/hero_juggernaut/juggernaut_blade_fury.vpcf"
-        "soundfile" "soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
-    }
+        "BaseClass"                     "ability_datadriven"
+        "AbilityTextureName"            "juggernaut_blade_fury"
 
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"                  "FIELD_FLOAT"
-            "blade_fury_damage_tick"    "0.2"
-        }
-        "02"
-        {
-            "var_type"                  "FIELD_INTEGER"
-            "blade_fury_radius"         "250"
-        }
-        "03"
-        {
-            "var_type"                  "FIELD_FLOAT"
-            "duration"                  "1.0"
-        }
-        "04"
-        {
-            "var_type"                  "FIELD_FLOAT"
-            "damage_tick"               "15"
-        }
-    }
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
 
-    "OnSpellStart"
-    {
-        "ApplyModifier"
-        {
-            "ModifierName"  "modifier_blade_fury"
-            "Target"        "CASTER"
-            "Duration"      "%duration"
-        }
-    }
+        "AbilityCastRange"              "250"
+        "AbilityCastPoint"              "0.0"
+        "AbilityCooldown"               "2.5"
 
-    "Modifiers"
-    {
-        "modifier_blade_fury"
+        "AbilityManaCost"               "0"
+        "AbilityDamage"                 "75"
+
+        "precache"
         {
-            "OverrideAnimation"         "ACT_DOTA_OVERRIDE_ABILITY_1"
-            "States"
+            "particle"  "particles/units/heroes/hero_juggernaut/juggernaut_blade_fury.vpcf"
+            "soundfile" "soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
+        }
+
+        "AbilitySpecial"
+        {
+            "01"
             {
-                "MODIFIER_STATE_MAGIC_IMMUNE"       "MODIFIER_STATE_VALUE_ENABLED"
-                "MODIFIER_STATE_SILENCED"           "MODIFIER_STATE_VALUE_ENABLED"
+                "var_type"                  "FIELD_FLOAT"
+                "blade_fury_damage_tick"    "0.2"
             }
-            "OnCreated"
+            "02"
             {
-                "AttachEffect"
-                {
-                    "EffectName"        "particles/units/heroes/hero_juggernaut/juggernaut_blade_fury.vpcf"
-                    "EffectAttachType"  "follow_origin"
-                    "Target"            "CASTER"
-                    "ControlPoints"
-                    {
-                        "05"    "%blade_fury_radius 0 0"
-                    }
-                }
-                "FireSound"
-                {
-                    "EffectName"    "Hero_Juggernaut.BladeFuryStart"
-                    "Target"        "CASTER"
-                }
+                "var_type"                  "FIELD_INTEGER"
+                "blade_fury_radius"         "250"
             }
-
-            "ThinkInterval"  "%blade_fury_damage_tick"
-            "OnIntervalThink"
+            "03"
             {
-                "ActOnTargets"
+                "var_type"                  "FIELD_FLOAT"
+                "duration"                  "1.0"
+            }
+            "04"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "damage_tick"               "15"
+            }
+        }
+
+        "OnSpellStart"
+        {
+            "ApplyModifier"
+            {
+                "ModifierName"  "modifier_blade_fury"
+                "Target"        "CASTER"
+                "Duration"      "%duration"
+            }
+        }
+
+        "Modifiers"
+        {
+            "modifier_blade_fury"
+            {
+                "OverrideAnimation"         "ACT_DOTA_OVERRIDE_ABILITY_1"
+                "States"
                 {
-                    "Target"
+                    "MODIFIER_STATE_MAGIC_IMMUNE"       "MODIFIER_STATE_VALUE_ENABLED"
+                    "MODIFIER_STATE_SILENCED"           "MODIFIER_STATE_VALUE_ENABLED"
+                }
+                "OnCreated"
+                {
+                    "AttachEffect"
                     {
-                        "Center"    "CASTER"
-                        "Radius"    "%blade_fury_radius"
-                        "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
-                        "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-                    }
-
-                    "Action"
-                    {
-                        "Damage"
+                        "EffectName"        "particles/units/heroes/hero_juggernaut/juggernaut_blade_fury.vpcf"
+                        "EffectAttachType"  "follow_origin"
+                        "Target"            "CASTER"
+                        "ControlPoints"
                         {
-                            "Target"        "TARGET"
-                            "Type"          "DAMAGE_TYPE_MAGICAL"
-                            "Damage"        "%damage_tick"
-                        }
-
-
-                        "FireSound"
-                        {
-                            "EffectName"    "Hero_Juggernaut.BladeFury.Impact"
-                            "Target"        "TARGET"
+                            "05"    "%blade_fury_radius 0 0"
                         }
                     }
+                    "FireSound"
+                    {
+                        "EffectName"    "Hero_Juggernaut.BladeFuryStart"
+                        "Target"        "CASTER"
+                    }
                 }
-            }
 
-            "OnDestroy"
-            {
-                "FireSound"
+                "ThinkInterval"  "%blade_fury_damage_tick"
+                "OnIntervalThink"
                 {
-                    "EffectName"    "Hero_Juggernaut.BladeFuryStop"
-                    "Target"        "CASTER"
+                    "ActOnTargets"
+                    {
+                        "Target"
+                        {
+                            "Center"    "CASTER"
+                            "Radius"    "%blade_fury_radius"
+                            "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                            "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+                        }
+
+                        "Action"
+                        {
+                            "Damage"
+                            {
+                                "Target"        "TARGET"
+                                "Type"          "DAMAGE_TYPE_MAGICAL"
+                                "Damage"        "%damage_tick"
+                            }
+
+
+                            "FireSound"
+                            {
+                                "EffectName"    "Hero_Juggernaut.BladeFury.Impact"
+                                "Target"        "TARGET"
+                            }
+                        }
+                    }
                 }
-                "RunScript"
+
+                "OnDestroy"
                 {
-                    "ScriptFile"    "abilities/humanbuilder/blade_fury.lua"
-                    "Function"      "BladeFuryStop"
+                    "FireSound"
+                    {
+                        "EffectName"    "Hero_Juggernaut.BladeFuryStop"
+                        "Target"        "CASTER"
+                    }
+                    "RunScript"
+                    {
+                        "ScriptFile"    "abilities/humanbuilder/blade_fury.lua"
+                        "Function"      "BladeFuryStop"
+                    }
                 }
-            }
-            "OnDeath"
-            {
-                "FireSound"
+                "OnDeath"
                 {
-                    "EffectName"    "Hero_Juggernaut.BladeFuryStop"
-                    "Target"        "CASTER"
+                    "FireSound"
+                    {
+                        "EffectName"    "Hero_Juggernaut.BladeFuryStop"
+                        "Target"        "CASTER"
+                    }
                 }
             }
         }

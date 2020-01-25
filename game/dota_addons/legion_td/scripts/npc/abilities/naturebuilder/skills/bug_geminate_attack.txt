@@ -1,24 +1,27 @@
-//=================================================================================================================
-// Ability: Weaver's Geminate Attack
-//=================================================================================================================
-"bug_geminate_attack"
+"DOTAAbilities"
 {
-    // General
-    "BaseClass"                     "weaver_geminate_attack"
-    "AbilityTextureName"            "weaver_geminate_attack"
-    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
-
-    "AbilityCooldown"                "7.0"
-
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
+    //=================================================================================================================
+    // Ability: Weaver's Geminate Attack
+    //=================================================================================================================
+    "bug_geminate_attack"
     {
-        "01"
+        // General
+        "BaseClass"                     "weaver_geminate_attack"
+        "AbilityTextureName"            "weaver_geminate_attack"
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
+
+        "AbilityCooldown"                "7.0"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
         {
-            "var_type"                "FIELD_FLOAT"
-            "delay"            "0.25"
+            "01"
+            {
+                "var_type"                "FIELD_FLOAT"
+                "delay"            "0.25"
+            }
         }
     }
 }

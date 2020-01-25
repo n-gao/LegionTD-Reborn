@@ -1,0 +1,83 @@
+"DOTAAbilities"
+{
+    //=================================================================================================================
+    // Earth Spirit: Boulder Smash
+    //=================================================================================================================
+    "earth_spirit_boulder_smash"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "ID"							"5608"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+        "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+        "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+        "AbilityUnitTargetFlag"			"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+        "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+        "FightRecapLevel"				"1"
+        "AbilitySound"					"Hero_EarthSpirit.BoulderSmash.Target"
+        "MaxLevel"                      "1"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+        "AbilityCastGestureSlot"		"DEFAULT"
+        "AbilityCastRange"				"200"
+        "AbilityCastPoint"				"0.01"
+
+        // Time
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"				"18.0"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"				"0"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"				"FIELD_INTEGER"
+                "radius"				"100"	// NOTE: This radius must match the radius for geomagnetic grip
+            }
+            "02"
+            {
+                "var_type"				"FIELD_INTEGER"
+                "rock_search_aoe"		"200"
+            }
+            "03"
+            {
+                "var_type"				"FIELD_INTEGER"
+                "rock_damage"			"50"
+            }
+            "04"
+            {
+                "var_type"				"FIELD_INTEGER"
+                "move_slow"				"40"
+            }
+            "05"
+            {
+                "var_type"				"FIELD_FLOAT"
+                "duration"			    "2"
+            }
+            "06"
+            {
+                "var_type"				"FIELD_INTEGER"
+                "speed"					"900"
+            }
+            "07"
+            {
+                "var_type"				"FIELD_FLOAT"
+                "unit_distance"			"350"
+            }
+            "08"
+            {
+                "var_type"				"FIELD_INTEGER"
+                "remnant_smash_radius_tooltip"			"200"
+            }
+        }
+    }
+}

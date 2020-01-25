@@ -1,65 +1,68 @@
-"humanbuilder_upgrade_icewrack_grandmaster"
+"DOTAAbilities"
 {
-    "BaseClass"    "ability_datadriven"
-    "AbilityTextureName"    "rattletrap_power_cogs"
-    "MaxLevel"    "1"
-    "AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "AbilityGoldCost"    "400"
-    "AbilityCooldown"    "1.0"
-    "OnSpellStart"
+    "humanbuilder_upgrade_icewrack_grandmaster"
     {
-        "RunScript"
+        "BaseClass"    "ability_datadriven"
+        "AbilityTextureName"    "rattletrap_power_cogs"
+        "MaxLevel"    "1"
+        "AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityGoldCost"    "400"
+        "AbilityCooldown"    "1.0"
+        "OnSpellStart"
         {
-            "ScriptFile"    "unit.lua"
-            "Function"    "UpgradeUnit"
+            "RunScript"
+            {
+                "ScriptFile"    "unit.lua"
+                "Function"    "UpgradeUnit"
+            }
+
+        }
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"    "FIELD_INTEGER"
+                "atk_damage_tooltip"    "160"
+            }
+
+            "02"
+            {
+                "var_type"    "FIELD_FLOAT"
+                "atk_speed_tooltip"    "1.0"
+            }
+
+            "03"
+            {
+                "var_type"    "FIELD_INTEGER"
+                "atk_range_tooltip"    "600"
+            }
+
+            "04"
+            {
+                "var_type"    "FIELD_INTEGER"
+                "health_tooltip"    "100"
+            }
+
+            "05"
+            {
+                "var_type"    "FIELD_INTEGER"
+                "armor_tooltip"    "0"
+            }
+
+            "06"
+            {
+                "var_type"    "FIELD_INTEGER"
+                "food_cost"    "2"
+            }
+
+            "07"
+            {
+                "var_type"    "FIELD_INTEGER"
+                "unitID"    "111"
+            }
+
         }
 
     }
-
-    "AbilitySpecial"
-    {
-        "01"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "atk_damage_tooltip"    "160"
-        }
-
-        "02"
-        {
-            "var_type"    "FIELD_FLOAT"
-            "atk_speed_tooltip"    "1.0"
-        }
-
-        "03"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "atk_range_tooltip"    "600"
-        }
-
-        "04"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "health_tooltip"    "100"
-        }
-
-        "05"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "armor_tooltip"    "0"
-        }
-
-        "06"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "food_cost"    "2"
-        }
-
-        "07"
-        {
-            "var_type"    "FIELD_INTEGER"
-            "unitID"    "111"
-        }
-
-    }
-
 }

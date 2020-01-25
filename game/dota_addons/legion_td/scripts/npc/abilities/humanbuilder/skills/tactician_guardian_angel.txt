@@ -1,87 +1,90 @@
-"tactician_guardian_angel"
+"DOTAAbilities"
 {
-    // General
-    //-------------------------------------------------------------------------------------------------------------
-    "BaseClass"                        "ability_datadriven"
-    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-    "AbilityType"                    "DOTA_ABILITY_TYPE_ULTIMATE"
-    "SpellImmunityType"                "SPELL_IMMUNITY_ALLIES_YES"
-    "AbilityTextureName"            "omniknight_guardian_angel"
-
-    "AbilityCastRange"                "625" // just for AI
-
-    // Time
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityCooldown"                "600"
-    "AbilityCastPoint"                "0.1"
-
-    // Cost
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilityManaCost"                "0"
-
-    // Special
-    //-------------------------------------------------------------------------------------------------------------
-    "AbilitySpecial"
+    "tactician_guardian_angel"
     {
-        "01"
-        {
-            "var_type"                    "FIELD_FLOAT"
-            "duration"                    "1.7"
-        }
-        "02"
-        {
-            "var_type"                    "FIELD_INTEGER"
-            "radius"                    "625"
-        }
-    }
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                        "ability_datadriven"
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityType"                    "DOTA_ABILITY_TYPE_ULTIMATE"
+        "SpellImmunityType"                "SPELL_IMMUNITY_ALLIES_YES"
+        "AbilityTextureName"            "omniknight_guardian_angel"
 
-    "precache"
-    {
-        "soundfile"    	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
-        "particle"		"particles/items_fx/glyph_creeps.vpcf"
-    }
+        "AbilityCastRange"                "625" // just for AI
 
-    "OnSpellStart"
-    {
-        "FireSound"
-        {
-            "EffectName"    "Hero_Omniknight.GuardianAngel.Cast"
-            "Target"        "CASTER"
-        }
+        // Time
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"                "600"
+        "AbilityCastPoint"                "0.1"
 
-        "ActOnTargets"
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"                "0"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
         {
-            "Target"
+            "01"
             {
-                "Center"          "CASTER"
-                "Radius"        "%radius"
-                "Teams"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-                "Types"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+                "var_type"                    "FIELD_FLOAT"
+                "duration"                    "1.7"
+            }
+            "02"
+            {
+                "var_type"                    "FIELD_INTEGER"
+                "radius"                    "625"
+            }
+        }
+
+        "precache"
+        {
+            "soundfile"    	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
+            "particle"		"particles/items_fx/glyph_creeps.vpcf"
+        }
+
+        "OnSpellStart"
+        {
+            "FireSound"
+            {
+                "EffectName"    "Hero_Omniknight.GuardianAngel.Cast"
+                "Target"        "CASTER"
             }
 
-            "Action"
+            "ActOnTargets"
             {
-                "ApplyModifier"
+                "Target"
                 {
-                    "Target"         "TARGET"
-                    "ModifierName"    "modifier_guardian_angel"
+                    "Center"          "CASTER"
+                    "Radius"        "%radius"
+                    "Teams"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+                    "Types"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+                }
+
+                "Action"
+                {
+                    "ApplyModifier"
+                    {
+                        "Target"         "TARGET"
+                        "ModifierName"    "modifier_guardian_angel"
+                    }
                 }
             }
         }
-    }
 
-    "Modifiers"
-    {
-        "modifier_guardian_angel"
+        "Modifiers"
         {
-            "IsBuff"            "1"
-            "IsPurgable"        "1"
-            "Duration"          "%duration"
-            "EffectName" 		"particles/items_fx/glyph_creeps.vpcf"
-            "EffectAttachType" 	"follow_origin"
-            "Properties"
+            "modifier_guardian_angel"
             {
-                "MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL"    "1"
+                "IsBuff"            "1"
+                "IsPurgable"        "1"
+                "Duration"          "%duration"
+                "EffectName" 		"particles/items_fx/glyph_creeps.vpcf"
+                "EffectAttachType" 	"follow_origin"
+                "Properties"
+                {
+                    "MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL"    "1"
+                }
             }
         }
     }

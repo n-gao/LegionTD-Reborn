@@ -1,109 +1,112 @@
-"tower_elementalbuilder_firewarrior"
+"DOTAUnits"
 {
-    "BaseClass" "npc_dota_creature"
-    "Model" "models/heroes/ember_spirit/ember_spirit.vmdl"
-    "ModelScale"    "0.65"
-    "SoundSet"  "Hero_EmberSpirit"
-    "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
-    "Level" "1"
-    "HealthBarOffset"   "150"
-    "Vscripts"  "ai/elementalbuilder/ai_firewarrior.lua"
-    "Ability4"  "sell"
-    "Ability3"  "ability_empty_3"
-    "Ability2"  "ability_empty_2"
-    "Ability1"  "firewarrior_sleight_of_fist"
-    "ArmorPhysical" "4"
-    "MagicalResistance" "25"
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"   "260.5"
-    "AttackDamageMax"   "277.5"
-    "AttackRate"    "0.7"
-    "AttackAnimationPoint"  "0.5"
-    "AttackAcquisitionRange"    "850"
-    "AttackRange"   "100"
-    "ProjectileModel"   ""
-    "ProjectileSpeed"   "0"
-    "LegionAttackType" "normal"
-    "LegionDefendType" "heavy"
-    "LegionFraction"   "elemental"
-    "BountyGoldMin" "0"
-    "BountyGoldMax" "0"
-    "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
-    "RingRadius"    "30"
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed" "270"
-    "MovementTurnRate"  "0.6"
-    "StatusHealth"  "900"
-    "StatusHealthRegen" "0"
-    "StatusMana"    "0"
-    "StatusManaRegen"   "0"
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-    "TeamName"  "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-    "precache"
+    "tower_elementalbuilder_firewarrior"
     {
-        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
-        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
-        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
-        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
-        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
-        "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
-    }
-
-    "Creature"
-    {
-        "DisableClumpingBehavior"   "1"
-        "DefaultState"  "Invade"
-        "States"
+        "BaseClass" "npc_dota_creature"
+        "Model" "models/heroes/ember_spirit/ember_spirit.vmdl"
+        "ModelScale"    "0.65"
+        "SoundSet"  "Hero_EmberSpirit"
+        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
+        "Level" "1"
+        "HealthBarOffset"   "150"
+        "Vscripts"  "ai/elementalbuilder/ai_firewarrior.lua"
+        "Ability4"  "sell"
+        "Ability3"  "ability_empty_3"
+        "Ability2"  "ability_empty_2"
+        "Ability1"  "firewarrior_sleight_of_fist"
+        "ArmorPhysical" "4"
+        "MagicalResistance" "25"
+        "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageType"  "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"   "260.5"
+        "AttackDamageMax"   "277.5"
+        "AttackRate"    "0.7"
+        "AttackAnimationPoint"  "0.5"
+        "AttackAcquisitionRange"    "850"
+        "AttackRange"   "100"
+        "ProjectileModel"   ""
+        "ProjectileSpeed"   "0"
+        "LegionAttackType" "normal"
+        "LegionDefendType" "heavy"
+        "LegionFraction"   "elemental"
+        "BountyGoldMin" "0"
+        "BountyGoldMax" "0"
+        "BoundsHullName"    "DOTA_HULL_SIZE_HERO"
+        "RingRadius"    "30"
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed" "270"
+        "MovementTurnRate"  "0.6"
+        "StatusHealth"  "900"
+        "StatusHealthRegen" "0"
+        "StatusMana"    "0"
+        "StatusManaRegen"   "0"
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+        "TeamName"  "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack" "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend" "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+        "precache"
         {
-            "Invade"
+            "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_cast.vpcf"
+            "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_caster.vpcf"
+            "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_embers.vpcf"
+            "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleight_of_fist_targetted_marker.vpcf"
+            "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
+            "particle"  "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_trail.vpcf"
+        }
+
+        "Creature"
+        {
+            "DisableClumpingBehavior"   "1"
+            "DefaultState"  "Invade"
+            "States"
             {
-                "Name"  "Invade"
-                "Aggression"    "100.0"
-                "Avoidance" "0.0"
-                "Support"   "0.0"
+                "Invade"
+                {
+                    "Name"  "Invade"
+                    "Aggression"    "100.0"
+                    "Avoidance" "0.0"
+                    "Support"   "0.0"
+                }
+
+            }
+
+            "AttachWearables"
+            {
+                "Wearable1"
+                {
+                    "ItemDef"   "7470"
+                }
+
+                "Wearable2"
+                {
+                    "ItemDef"   "7472"
+                }
+
+                "Wearable3"
+                {
+                    "ItemDef"   "7001"
+                }
+
+                "Wearable4"
+                {
+                    "ItemDef"   "7002"
+                }
+
+                "Wearable5"
+                {
+                    "ItemDef"   "7003"
+                }
+
+                "Wearable6"
+                {
+                    "ItemDef"   "7004"
+                }
+
             }
 
         }
 
-        "AttachWearables"
-        {
-            "Wearable1"
-            {
-                "ItemDef"   "7470"
-            }
-
-            "Wearable2"
-            {
-                "ItemDef"   "7472"
-            }
-
-            "Wearable3"
-            {
-                "ItemDef"   "7001"
-            }
-
-            "Wearable4"
-            {
-                "ItemDef"   "7002"
-            }
-
-            "Wearable5"
-            {
-                "ItemDef"   "7003"
-            }
-
-            "Wearable6"
-            {
-                "ItemDef"   "7004"
-            }
-
-        }
-
     }
-
 }

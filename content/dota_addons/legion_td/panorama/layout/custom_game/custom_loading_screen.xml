@@ -7,26 +7,5 @@
         <Panel id="Title">
             <Label id="LegionTitle" html="true" text="#addon_game_name" />
         </Panel>
-        <Panel class="OverthrowGameInfo2">
-            <Label id="ObjectiveHeader" class="Header" html="true" text="#legion_game_info_header_objective" />
-            <Label id="BriefDescription" text="#legion_game_info_objective" />
-            <Label id="HowToPlayHeader" class="Header" html="true" text="#legion_game_info_header_how_to_play" />
-            <Panel id="ThroneRow" class="InfoRow">
-                <Label id="ThroneText" html="true" text="#legion_brief_description" />
-                <Image id="ThroneImage" src="file://{images}/custom_game/game_info/defend.png" />
-            </Panel>
-            <Panel id="CoinsRow" class="InfoRow">
-                <Image id="CoinsImage" src="file://{images}/custom_game/game_info/units.png" />
-                <Label id="CoinsText" html="true" text="#legion_game_info_units" />
-            </Panel>
-            <Panel id="ItemsRow" class="InfoRow">
-                <Label id="ItemsText" html="true" text="#legion_game_info_tango" />
-                <Image id="ItemsImage" src="file://{images}/custom_game/game_info/keepeye.png" />
-            </Panel>
-            <Label id="TipsHeader" class="Header" html="true" text="#legion_info_tips_header" />
-            <Panel id="TipsRow" class="InfoRow">
-                <Label id="Tips" class="TipText" html="true" text="#legion_game_info_tips"/>
-            </Panel>
-        </Panel>
     </Panel>
 </root>

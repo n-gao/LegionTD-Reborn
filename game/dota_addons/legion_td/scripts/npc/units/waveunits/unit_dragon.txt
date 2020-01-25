@@ -1,4 +1,6 @@
-"unit_dragon"
+"DOTAUnits"
+{
+    "unit_dragon"
     {
         "BaseClass" "npc_dota_creature"
         "Model" "models/heroes/dragon_knight/dragon_knight.vmdl"
@@ -80,3 +82,4 @@
         }
 
     }
+}

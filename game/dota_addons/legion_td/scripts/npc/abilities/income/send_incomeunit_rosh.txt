@@ -1,42 +1,45 @@
-"send_incomeunit_rosh"
+"DOTAAbilities"
 {
-    "BaseClass"                     "ability_datadriven"
-    "AbilityTextureName"                "send_incomeunit_rosh"
-    "MaxLevel"                                     "1"
-
-    "AbilityBehavior"                        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-    "AbilityType"                                "DOTA_ABILITY_TYPE_BASIC"
-
-    "AbilityCooldown"                        "20.0"
-
-    "OnSpellStart"
+    "send_incomeunit_rosh"
     {
-        "RunScript"
+        "BaseClass"                     "ability_datadriven"
+        "AbilityTextureName"                "send_incomeunit_rosh"
+        "MaxLevel"                                     "1"
+
+        "AbilityBehavior"                        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityType"                                "DOTA_ABILITY_TYPE_BASIC"
+
+        "AbilityCooldown"                        "20.0"
+
+        "OnSpellStart"
         {
-            "ScriptFile"    "player.lua"
-            "Function"        "SendUnit"
+            "RunScript"
+            {
+                "ScriptFile"    "player.lua"
+                "Function"        "SendUnit"
+            }
         }
-    }
-    "AbilitySpecial"
-    {
-        "01"
+        "AbilitySpecial"
         {
-            "var_type"            "FIELD_INTEGER"
-            "tango_cost"        "625"
+            "01"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "tango_cost"        "625"
+            }
+            "02"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "income"                "30"
+            }
+            "03"
+            {
+                "var_type"            "FIELD_INTEGER"
+                "unitID"                "1025"
+            }
         }
-        "02"
+        "precache"
         {
-            "var_type"            "FIELD_INTEGER"
-            "income"                "30"
+            "model" "models/creeps/roshan/roshan.vmdl"
         }
-        "03"
-        {
-            "var_type"            "FIELD_INTEGER"
-            "unitID"                "1025"
-        }
-    }
-    "precache"
-    {
-        "model" "models/creeps/roshan/roshan.vmdl"
     }
 }

@@ -1,32 +1,35 @@
-"assassinbuilder_crescent"
+"DOTAAbilities"
 {
-    "BaseClass"                        "sven_great_cleave"
-    "AbilityTextureName"            "sven_great_cleave"
-    "MaxLevel"                        "1"
-    "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
-    "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
-
-    "AbilitySpecial"
+    "assassinbuilder_crescent"
     {
-        "01"
+        "BaseClass"                        "sven_great_cleave"
+        "AbilityTextureName"            "sven_great_cleave"
+        "MaxLevel"                        "1"
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "SpellImmunityType"                "SPELL_IMMUNITY_ENEMIES_YES"
+
+        "AbilitySpecial"
         {
-            "var_type"                "FIELD_INTEGER"
-            "cleave_starting_width"            "150"
-        }
-        "02"
-        {
-            "var_type"                "FIELD_INTEGER"
-            "cleave_ending_width"            "300"
-        }
-        "03"
-        {
-            "var_type"                "FIELD_INTEGER"
-            "cleave_distance"            "350"
-        }
-        "04"
-        {
-            "var_type"                "FIELD_INTEGER"
-            "great_cleave_damage"    "15"
+            "01"
+            {
+                "var_type"                "FIELD_INTEGER"
+                "cleave_starting_width"            "150"
+            }
+            "02"
+            {
+                "var_type"                "FIELD_INTEGER"
+                "cleave_ending_width"            "300"
+            }
+            "03"
+            {
+                "var_type"                "FIELD_INTEGER"
+                "cleave_distance"            "350"
+            }
+            "04"
+            {
+                "var_type"                "FIELD_INTEGER"
+                "great_cleave_damage"    "15"
+            }
         }
     }
 }

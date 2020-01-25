@@ -1,97 +1,100 @@
-"tower_undeadbuilder_consumer"
+"DOTAUnits"
 {
-    // General
-    //----------------------------------------------------------------
-    "BaseClass"             "npc_dota_creature"
-    "Model"                 "models/heroes/life_stealer/life_stealer.vmdl"
-    "ModelScale"            "0.55"
-    "SoundSet"                      "Hero_Viper"
-    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_nightstalker.vsndevts"
-    "Level"                 "1"
-    "HealthBarOffset"       "120"
-    "Vscripts"              "ai/undeadbuilder/ai_lifestealer.lua"
-
-    "Ability4"                          "sell"
-    "Ability1"                          "feast"
-    "Ability2"                          "rage"
-
-    // Armor
-    //----------------------------------------------------------------
-    "ArmorPhysical"         "5"
-    "MagicalResistance"     "0"
-
-    // Attack
-    //----------------------------------------------------------------
-    "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
-    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "165"
-    "AttackDamageMax"       "165"
-    "AttackRate"            "1"
-    "AttackAnimationPoint"  "0.2"
-    "AttackAcquisitionRange" "850"
-    "AttackRange"           "90"
-
-    "LegionAttackType"     "pierce"
-    "LegionDefendType"     "light"
-    "LegionFraction"       "undead"
-
-    // Bounty
-    //----------------------------------------------------------------
-    "BountyGoldMin"         "0"
-    "BountyGoldMax"         "0"
-
-    // Bounds
-    //----------------------------------------------------------------
-    "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-    "RingRadius"            "30"
-
-    // Movement
-    //----------------------------------------------------------------
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"         "270"
-    "MovementTurnRate"      "0.6"
-
-    // Status
-    //----------------------------------------------------------------
-    "StatusHealth"          "850"
-    "StatusHealthRegen"     "0"
-    "StatusMana"            "0"
-    "StatusManaRegen"       "0"
-
-    // Vision
-    //----------------------------------------------------------------
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-
-    // Team
-    //----------------------------------------------------------------
-    "TeamName"              "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-    // Creature Data
-    //----------------------------------------------------------------
-    "Creature"
+    "tower_undeadbuilder_consumer"
     {
-        "DisableClumpingBehavior"       "1"
-        "DefaultState"              "Invade"
-        "States"
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"             "npc_dota_creature"
+        "Model"                 "models/heroes/life_stealer/life_stealer.vmdl"
+        "ModelScale"            "0.55"
+        "SoundSet"                      "Hero_Viper"
+        "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_nightstalker.vsndevts"
+        "Level"                 "1"
+        "HealthBarOffset"       "120"
+        "Vscripts"              "ai/undeadbuilder/ai_lifestealer.lua"
+
+        "Ability4"                          "sell"
+        "Ability1"                          "feast"
+        "Ability2"                          "rage"
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"         "5"
+        "MagicalResistance"     "0"
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
+        "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"       "165"
+        "AttackDamageMax"       "165"
+        "AttackRate"            "1"
+        "AttackAnimationPoint"  "0.2"
+        "AttackAcquisitionRange" "850"
+        "AttackRange"           "90"
+
+        "LegionAttackType"     "pierce"
+        "LegionDefendType"     "light"
+        "LegionFraction"       "undead"
+
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyGoldMin"         "0"
+        "BountyGoldMax"         "0"
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+        "RingRadius"            "30"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed"         "270"
+        "MovementTurnRate"      "0.6"
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"          "850"
+        "StatusHealthRegen"     "0"
+        "StatusMana"            "0"
+        "StatusManaRegen"       "0"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"              "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+        // Creature Data
+        //----------------------------------------------------------------
+        "Creature"
         {
-            "Invade"
+            "DisableClumpingBehavior"       "1"
+            "DefaultState"              "Invade"
+            "States"
             {
-                "Name"              "Invade"
-                "Aggression"        "100.0"
-                "Avoidance"         "0.0"
-                "Support"           "0.0"
+                "Invade"
+                {
+                    "Name"              "Invade"
+                    "Aggression"        "100.0"
+                    "Avoidance"         "0.0"
+                    "Support"           "0.0"
+                }
             }
-        }
-    "AttachWearables"
-        {
-                    "Wearable1" { "ItemDef" "9215" }
-                    "Wearable2" { "ItemDef" "7475" }
-                    "Wearable3" { "ItemDef" "7473" }
-                    "Wearable4" { "ItemDef" "7474" }
+        "AttachWearables"
+            {
+                        "Wearable1" { "ItemDef" "9215" }
+                        "Wearable2" { "ItemDef" "7475" }
+                        "Wearable3" { "ItemDef" "7473" }
+                        "Wearable4" { "ItemDef" "7474" }
+            }
         }
     }
 }

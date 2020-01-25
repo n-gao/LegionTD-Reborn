@@ -1,92 +1,95 @@
-"tower_naturebuilder_flower_treant"
+"DOTAUnits"
 {
-    // General
-    //----------------------------------------------------------------
-    "BaseClass"             "npc_dota_creature"
-    "Model"                 "models/items/furion/treant_flower_1.vmdl"
-    "ModelScale"            "0.5"
-    "SoundSet"                  "Furion_Treant"
-    "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
-    "Level"                 "1"
-    "HealthBarOffset"       "150"
-    "Vscripts"              "ai/ai_default.lua"
-
-    "Ability4"                          "sell"
-    "Ability1"                          "flower_treant_skadi"
-    "Ability2"                          "treant_vampiric_aura"
-    "Ability3"              "ability_empty_3"
-
-    // Armor
-    //----------------------------------------------------------------
-    "ArmorPhysical"         "4"
-    "MagicalResistance"     "20"
-
-    // Attack
-    //----------------------------------------------------------------
-    "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
-    "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-    "AttackDamageMin"       "225.0"
-    "AttackDamageMax"       "275.0"
-    "AttackRate"            "0.7"
-    "AttackAnimationPoint"  "0.5"
-    "AttackAcquisitionRange" "850"
-    "AttackRange"           "350"
-    "ProjectileModel"       "particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
-    "ProjectileSpeed"       "750"
-
-    "LegionAttackType"     "arcane"
-    "LegionDefendType"     "light"
-    "LegionFraction"       "nature"
-
-    // Bounty
-    //----------------------------------------------------------------
-    "BountyGoldMin"         "0"
-    "BountyGoldMax"         "0"
-
-    // Bounds
-    //----------------------------------------------------------------
-    "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
-    "RingRadius"            "30"
-
-    // Movement
-    //----------------------------------------------------------------
-    "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
-    "MovementSpeed"         "270"
-    "MovementTurnRate"      "0.6"
-
-    // Status
-    //----------------------------------------------------------------
-    "StatusHealth"          "620"
-    "StatusHealthRegen"     "0"
-    "StatusMana"            "0"
-    "StatusManaRegen"       "0"
-
-    // Vision
-    //----------------------------------------------------------------
-    "VisionDaytimeRange"    "1400"
-    "VisionNighttimeRange"  "800"
-
-    // Team
-    //----------------------------------------------------------------
-    "TeamName"              "DOTA_TEAM_NEUTRALS"
-    "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
-    "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
-    "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
-
-    // Creature Data
-    //----------------------------------------------------------------
-    "Creature"
+    "tower_naturebuilder_flower_treant"
     {
-        "DisableClumpingBehavior"       "1"
-        "DefaultState"              "Invade"
-        "States"
+        // General
+        //----------------------------------------------------------------
+        "BaseClass"             "npc_dota_creature"
+        "Model"                 "models/items/furion/treant_flower_1.vmdl"
+        "ModelScale"            "0.5"
+        "SoundSet"                  "Furion_Treant"
+        "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_furion.vsndevts"
+        "Level"                 "1"
+        "HealthBarOffset"       "150"
+        "Vscripts"              "ai/ai_default.lua"
+
+        "Ability4"                          "sell"
+        "Ability1"                          "flower_treant_skadi"
+        "Ability2"                          "treant_vampiric_aura"
+        "Ability3"              "ability_empty_3"
+
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"         "4"
+        "MagicalResistance"     "20"
+
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+        "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"       "225.0"
+        "AttackDamageMax"       "275.0"
+        "AttackRate"            "0.7"
+        "AttackAnimationPoint"  "0.5"
+        "AttackAcquisitionRange" "850"
+        "AttackRange"           "350"
+        "ProjectileModel"       "particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
+        "ProjectileSpeed"       "750"
+
+        "LegionAttackType"     "arcane"
+        "LegionDefendType"     "light"
+        "LegionFraction"       "nature"
+
+        // Bounty
+        //----------------------------------------------------------------
+        "BountyGoldMin"         "0"
+        "BountyGoldMax"         "0"
+
+        // Bounds
+        //----------------------------------------------------------------
+        "BoundsHullName"        "DOTA_HULL_SIZE_HERO"
+        "RingRadius"            "30"
+
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed"         "270"
+        "MovementTurnRate"      "0.6"
+
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"          "620"
+        "StatusHealthRegen"     "0"
+        "StatusMana"            "0"
+        "StatusManaRegen"       "0"
+
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"    "1400"
+        "VisionNighttimeRange"  "800"
+
+        // Team
+        //----------------------------------------------------------------
+        "TeamName"              "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "CombatClassDefend"     "DOTA_COMBAT_CLASS_DEFEND_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+        // Creature Data
+        //----------------------------------------------------------------
+        "Creature"
         {
-            "Invade"
+            "DisableClumpingBehavior"       "1"
+            "DefaultState"              "Invade"
+            "States"
             {
-                "Name"              "Invade"
-                "Aggression"        "100.0"
-                "Avoidance"         "0.0"
-                "Support"           "0.0"
+                "Invade"
+                {
+                    "Name"              "Invade"
+                    "Aggression"        "100.0"
+                    "Avoidance"         "0.0"
+                    "Support"           "0.0"
+                }
             }
         }
     }
