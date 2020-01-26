@@ -416,7 +416,7 @@ function Storage:SaveMatchData(winner, duration, lastWave, playerData, duelData,
     )
 end
 
-function Storage:UpdateUnitData(unitData)
+function Storage:UpdateUnitData(unitData, callback)
     if (self.online == false) then
         return
     end
@@ -429,12 +429,14 @@ function Storage:UpdateUnitData(unitData)
         function(result)
             local resultTable = JSON:decode(result)
             print("[STORAGE] Updating Units Response")
+            print(result)
             -- DeepPrintTable(resultTable)
+            callback()
         end
     )
 end
 
-function Storage:UpdateAbilityData(abilityData)
+function Storage:UpdateAbilityData(abilityData, callback)
     if (self.online == false) then
         return
     end
@@ -447,12 +449,14 @@ function Storage:UpdateAbilityData(abilityData)
         function(result)
             local resultTable = JSON:decode(result)
             print("[STORAGE] Updating Abilities Response")
+            print(result)
             -- DeepPrintTable(resultTable)
+            callback()
         end
     )
 end
 
-function Storage:UpdateBuilderData(builderData)
+function Storage:UpdateBuilderData(builderData, callback)
     if (self.online == false) then
         return
     end
@@ -465,7 +469,9 @@ function Storage:UpdateBuilderData(builderData)
         function(result)
             local resultTable = JSON:decode(result)
             print("[STORAGE] Updating Builder Response")
+            print(result)
             -- DeepPrintTable(resultTable)
+            callback()
         end
     )
 end

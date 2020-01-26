@@ -81,6 +81,7 @@ function Game.new()
         Convars:RegisterCommand("restart_round", Dynamic_Wrap(self, "RestartRoundCommand"), "keine Ahnung", 0)
         Convars:RegisterCommand("reset", Dynamic_Wrap(self, "RestartCommand"), "keine Ahnung", 0)
         Convars:RegisterCommand("wiki", Dynamic_Wrap(self, "WikiCommand"), "no idea", 0)
+        Convars:RegisterCommand("upload_unit_data", Dynamic_Wrap(self, "UploadUnitData"), "no idea", 0)
     end
 
     CustomGameEventManager:RegisterListener("send_unit", Dynamic_Wrap(Game, "SendUnit"))
@@ -355,12 +356,6 @@ function Game:Start()
     self:Initialize()
     self:SaveMatchAtEnd()
     self:SaveDataAtEnd()
-
-    if Convars:GetBool("developer") then
-        Game:UpdateAbilityData()
-        Game:UpdateUnitData()
-        Game:UpdateBuilderData()
-    end
 end
 
 function Game:CreateGameTimer()
@@ -1097,6 +1092,12 @@ function Game:RestartCommand()
     Game:SetRound(1)
 end
 
+function Game:UploadUnitData()
+    if Convars:GetBool("developer") then
+        Game:UpdateServerData()
+    end
+end
+
 function Game:StopRound()
     if Game.gameState == GAMESTATE_FIGHTING then
         Game:GetCurrentRound():End()
@@ -1343,35 +1344,30 @@ function Game:RequestMatchHistory(data)
     )
 end
 
-function Game:UpdateUnitData()
+
+function Game:UpdateServerData()
     local data = {}
     for name, d in pairs(Game.UnitKV) do
         data[name] = d
         data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
-        -- print(data[name].DisplayName)
     end
-    Game.storage:UpdateUnitData(Game.UnitKV)
+    Game.storage:UpdateUnitData(Game.UnitKV, function()
+        local data = {}
+        for name, d in pairs(Game.HeroKV) do
+            data[name] = d
+            data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
+        end
+        Game.storage:UpdateBuilderData(data, function()
+            local data = {}
+            for name, d in pairs(Game.AbilityKV) do
+                data[name] = d
+                data[name].DisplayName = Game.EnglishLocalizationKV.Tokens["DOTA_Tooltip_ability_" .. name] or name
+            end
+            Game.storage:UpdateAbilityData(data, function() end)
+        end)
+    end)
 end
 
-function Game:UpdateAbilityData()
-    local data = {}
-    for name, d in pairs(Game.AbilityKV) do
-        data[name] = d
-        data[name].DisplayName = Game.EnglishLocalizationKV.Tokens["DOTA_Tooltip_ability_" .. name] or name
-        -- print(data[name].DisplayName)
-    end
-    Game.storage:UpdateAbilityData(data)
-end
-
-function Game:UpdateBuilderData()
-    local data = {}
-    for name, d in pairs(Game.HeroKV) do
-        data[name] = d
-        data[name].DisplayName = Game.EnglishLocalizationKV.Tokens[name] or name
-        -- print(data[name].DisplayName)
-    end
-    Game.storage:UpdateBuilderData(data)
-end
 
 function Game:SaveDataAtEnd()
     if GameRules:IsCheatMode() then
