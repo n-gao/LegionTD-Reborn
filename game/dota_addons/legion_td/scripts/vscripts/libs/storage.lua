@@ -59,9 +59,9 @@ function Storage:Init()
     Storage.serverURL = data.url
     Storage.app_id = data.customGameId
     Storage.dedicated_server_key = GetDedicatedServerKey("v1")
-    -- if Convars:GetBool("developer") then
-    --     Storage.serverURL = data.debugUrl
-    -- end
+    if Convars:GetBool("developer") then
+        Storage.serverURL = data.debugUrl
+    end
 end
 
 Storage:Init()
