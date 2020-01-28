@@ -1,6 +1,6 @@
 "DOTAAbilities"
 {
-    "spiritbuilder_upgrade_zeus"
+    "spiritbuilder_upgrade_lightning_spirit"
     {
         "BaseClass"    "ability_datadriven"
         "AbilityTextureName"    "rattletrap_power_cogs"
