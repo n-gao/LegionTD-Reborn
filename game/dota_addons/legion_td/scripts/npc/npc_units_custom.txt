@@ -154,7 +154,7 @@
 #base "units/spiritbuilder/tower_spiritbuilder_void_spirit.txt"
 #base "units/spiritbuilder/tower_spiritbuilder_io.txt"
 #base "units/spiritbuilder/tower_spiritbuilder_wisp.txt"
-#base "units/spiritbuilder/tower_spiritbuilder_spirit_king.txt"
+#base "units/spiritbuilder/tower_spiritbuilder_lightning_spirit.txt"
 #base "units/spiritbuilder/tower_spiritbuilder_zeus.txt"
 #base "units/waveunits/unit_abaddon.txt"
 #base "units/waveunits/unit_ancienthulk.txt"
