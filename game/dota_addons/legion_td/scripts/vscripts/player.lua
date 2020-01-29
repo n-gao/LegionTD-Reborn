@@ -29,25 +29,25 @@ function Player.new(plyEntitie, userID)
     self.fractionKills = {}
     self.wonDuels = 0
     self.unitsThisRound = 0
-    self.buildUnits = {}
+    self.builtUnits = {}
     self.killedUnits = {}
     self.leakedUnits = {}
-    self.sendUnits = {}
+    self.sentUnits = {}
     return self
 end
 
 function Player:BuildUnit(unitname)
-    self.buildUnits[unitname] = (self.buildUnits[unitname] or 0) + 1
+    self.builtUnits[unitname] = (self.builtUnits[unitname] or 0) + 1
 end
 
 function Player:SendUnit(unitname)
     self.unitsThisRound = self.unitsThisRound + 1
-    self.sendUnits[unitname] = (self.sendUnits[unitname] or 0) + 1
+    self.sentUnits[unitname] = (self.sentUnits[unitname] or 0) + 1
 end
 
 function Player:GetSends()
     local result = 0
-    for _, c in pairs(self.sendUnits) do
+    for _, c in pairs(self.sentUnits) do
         result = result + c
     end
     return c

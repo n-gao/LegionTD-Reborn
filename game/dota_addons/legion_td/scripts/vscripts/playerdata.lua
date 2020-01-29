@@ -193,17 +193,20 @@ end
 
 function PlayerData:GetUnitData()
     local result = {}
-    for unit, value in pairs(self.player.killedUnits) do
-        result["killed_" .. unit] = value
-    end
-    for unit, value in pairs(self.player.leakedUnits) do
-        result["leaked_" .. unit] = value
-    end
-    for unit, value in pairs(self.player.buildUnits) do
-        result["build_" .. unit] = value
-    end
-    for unit, value in pairs(self.player.sendUnits) do
-        result["send_" .. unit] = value
+    sets = {
+        killed = self.player.killedUnits,
+        leaked = self.player.leakedUnits,
+        built = self.player.builtUnits,
+        sent = self.player.sentUnits
+    }
+    for key, set in pairs(sets) do
+        for unit, value in pairs(set) do
+            unitKey = "unitstat_"..unit
+            if (result[unitKey] == nil) then
+                result[unitKey] = {}
+            end
+            result[unitKey][key] = value
+        end
     end
     return result
 end
