@@ -301,7 +301,7 @@
 #base "abilities/spiritbuilder/spiritbuilder_upgrade_great_xin.txt"
 #base "abilities/spiritbuilder/spiritbuilder_upgrade_void_spirit.txt"
 #base "abilities/spiritbuilder/spiritbuilder_upgrade_spirit_king.txt"
-#base "abilities/spiritbuilder/spiritbuilder_upgrade_zeus.txt"
+#base "abilities/spiritbuilder/spiritbuilder_upgrade_lightning_spirit.txt"
 #base "abilities/spiritbuilder/skills/spiritbuilder_dissimilate.txt"
 #base "abilities/spiritbuilder/skills/storm_spirit_static_remnant.txt"
 #base "abilities/spiritbuilder/skills/storm_spirit_overload.txt"

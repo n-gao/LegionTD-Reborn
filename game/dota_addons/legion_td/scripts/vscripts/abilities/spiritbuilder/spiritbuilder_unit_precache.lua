@@ -16,7 +16,7 @@ spiritUnits = {
     "tower_spiritbuilder_io",
     "tower_spiritbuilder_wisp",
     "tower_spiritbuilder_spirit_king",
-    "tower_spiritbuilder_zeus"
+    "tower_spiritbuilder_lightning_spirit"
 }
 
 function precache(keys)

@@ -41,7 +41,7 @@
             "01"
             {
                 "var_type"				"FIELD_INTEGER"
-                "radius"				"100"	// NOTE: This radius must match the radius for geomagnetic grip
+                "radius"				"125"	// NOTE: This radius must match the radius for geomagnetic grip
             }
             "02"
             {
@@ -51,7 +51,7 @@
             "03"
             {
                 "var_type"				"FIELD_INTEGER"
-                "rock_damage"			"50"
+                "rock_damage"			"85"
             }
             "04"
             {

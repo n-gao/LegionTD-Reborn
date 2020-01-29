@@ -18,16 +18,16 @@
 
         // Armor
         //----------------------------------------------------------------
-        "ArmorPhysical"         "2"
+        "ArmorPhysical"         "4"
         "MagicalResistance"     "0"
 
         // Attack
         //----------------------------------------------------------------
         "AttackCapabilities"    "DOTA_UNIT_CAP_MELEE_ATTACK"
         "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-        "AttackDamageMin"       "300"
-        "AttackDamageMax"       "300"
-        "AttackRate"            "1.000000"
+        "AttackDamageMin"       "350"
+        "AttackDamageMax"       "350"
+        "AttackRate"            "0.800000"
         "AttackAnimationPoint"  "0.350000"
         "AttackAcquisitionRange" "600"
         "AttackRange"           "200"
@@ -56,7 +56,7 @@
 
         // Status
         //----------------------------------------------------------------
-        "StatusHealth"          "850"
+        "StatusHealth"          "1000"
         "StatusHealthRegen"     "0"
         "StatusMana"            "0"
         "StatusManaRegen"       "0"

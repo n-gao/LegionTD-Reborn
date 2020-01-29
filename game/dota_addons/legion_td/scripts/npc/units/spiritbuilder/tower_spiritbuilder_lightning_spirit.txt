@@ -1,6 +1,6 @@
 "DOTAUnits"
 {
-    "tower_spiritbuilder_zeus"
+    "tower_spiritbuilder_lightning_spirit"
     {
         // General
         //----------------------------------------------------------------

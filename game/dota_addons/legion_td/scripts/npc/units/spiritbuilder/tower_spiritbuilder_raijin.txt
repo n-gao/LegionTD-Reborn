@@ -15,7 +15,7 @@
 
         "Ability5"                          "sell"
         "Ability1"                          "spiritbuilder_upgrade_thunderkeg"
-        "Ability2"                          "spiritbuilder_upgrade_zeus"
+        "Ability2"                          "spiritbuilder_upgrade_lightning_spirit"
         "Ability3"                          "storm_spirit_static_remnant"
         "Ability4"                          "storm_spirit_overload"
 
@@ -28,9 +28,9 @@
         //----------------------------------------------------------------
         "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
         "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
-        "AttackDamageMin"       "200"
-        "AttackDamageMax"       "200"
-        "AttackRate"            "1.000000"
+        "AttackDamageMin"       "275"
+        "AttackDamageMax"       "275"
+        "AttackRate"            "0.700000"
         "AttackAnimationPoint"  "0.500000"
         "AttackAcquisitionRange" "850"
         "AttackRange"           "500"
@@ -59,7 +59,7 @@
 
         // Status
         //----------------------------------------------------------------
-        "StatusHealth"          "525"
+        "StatusHealth"          "650"
         "StatusHealthRegen"     "0"
         "StatusMana"            "0"
         "StatusManaRegen"       "0"
