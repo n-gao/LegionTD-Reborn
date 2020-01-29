@@ -94,12 +94,9 @@ function PlayerData:GetMatchData()
         won_duels = self.player:GetWonDuels(),
         fraction = self.player:GetFraction(),
         team = self.player:GetTeamNumber(),
-        abandoned = self.player:HasAbandoned()
+        abandoned = self.player:HasAbandoned(),
+        unit_data = self:GetUnitData()
     }
-    local unitData = self:GetUnitData()
-    for key, value in pairs(unitData) do
-        result[key] = value
-    end
     return result
 end
 
@@ -201,11 +198,10 @@ function PlayerData:GetUnitData()
     }
     for key, set in pairs(sets) do
         for unit, value in pairs(set) do
-            unitKey = "unitstat_"..unit
-            if (result[unitKey] == nil) then
-                result[unitKey] = {}
+            if (result[unit] == nil) then
+                result[unit] = {}
             end
-            result[unitKey][key] = value
+            result[unit][key] = value
         end
     end
     return result
