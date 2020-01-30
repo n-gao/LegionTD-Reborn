@@ -8,7 +8,7 @@
         "AbilityBehavior"    "DOTA_ABILITY_BEHAVIOR_POINT"
         "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
         "AbilityUnitTargetType"    "DOTA_UNIT_TARGET_BASIC"
-        "AbilityGoldCost"    "105"
+        "AbilityGoldCost"    "130"
         "AbilityCooldown"    "1.0"
         "AbilityCastRange"    "125"
         "OnSpellStart"
@@ -44,13 +44,13 @@
             "04"
             {
                 "var_type"    "FIELD_INTEGER"
-                "health_tooltip"    "450"
+                "health_tooltip"    "350"
             }
 
             "05"
             {
                 "var_type"    "FIELD_INTEGER"
-                "armor_tooltip"    "4"
+                "armor_tooltip"    "3"
             }
 
             "06"
