@@ -287,7 +287,7 @@ function UseSkillTargetMostEHPPhysical(entity, ability)
     local mostEHP = 0
 
     for i, v in pairs(Units) do
-        local armor = v:GetPhysicalArmorValue()
+        local armor = v:GetPhysicalArmorValue(true)
         local EHP = v:GetHealth() / (1 - 0.06 * armor / (1 + (0.06 * math.abs(armor))))
         -- from http://dota2.gamepedia.com/Armor#Damage_multiplier
         if EHP > mostEHP then
