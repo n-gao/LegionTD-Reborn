@@ -135,19 +135,24 @@ function DuelRound:PlaceUnits()
             if pl:GetTeamNumber() == DOTA_TEAM_BADGUYS then
                 team = self.remainingUnitsDire
             end
+            meanPosition = Vector(0, 0, 0)
+            for _, unit in pairs(pl.units) do
+                meanPosition = meanPosition + unit.npc:GetAbsOrigin()
+            end
+            meanPosition = meanPosition / #pl.units
             for _, unit in pairs(pl.units) do
                 unit.npc.nextTarget = target:GetAbsOrigin()
-                local relativeposition = unit.npc:GetAbsOrigin() - unit.player.lane.box:GetAbsOrigin()
+                local relativePosition = unit.npc:GetAbsOrigin() - meanPosition
                 if unit.npc:GetAbsOrigin().y < 0 then -- we want to rotate our relative positions for southern lanes
-                    relativeposition.x = relativeposition.x * -1
-                    relativeposition.y = relativeposition.y * -1
+                    relativePosition.x = relativePosition.x * -1
+                    relativePosition.y = relativePosition.y * -1
                 end
-                relativeposition.y = relativeposition.y + unit.player.lane.box:GetBoundingMaxs().y -- we want positions relative to the "front" of the lane
+                relativePosition.y = relativePosition.y + unit.player.lane.box:GetBoundingMaxs().y -- we want positions relative to the "front" of the lane
                 if pl:GetTeamNumber() == DOTA_TEAM_BADGUYS then -- rotate again if spawning badguy creeps
-                    relativeposition.x = relativeposition.x * -1
-                    relativeposition.y = relativeposition.y * -1
+                    relativePosition.x = relativePosition.x * -1
+                    relativePosition.y = relativePosition.y * -1
                 end
-                movePoint = spawnPoint:GetAbsOrigin() + relativeposition
+                movePoint = spawnPoint:GetAbsOrigin() + relativePosition
                 unit.npc.nextTarget.x = movePoint.x
                 FindClearSpaceForUnit(unit.npc, movePoint, true)
                 unit.npc:Stop()
