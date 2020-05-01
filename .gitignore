@@ -19,3 +19,5 @@ game/dota_addons/legion_td/rich_presence_persistent_data\.txt
 game/dota_addons/legion_td/cache_67698596\.soc
 
 *.cfg
+
+**/.vscode
