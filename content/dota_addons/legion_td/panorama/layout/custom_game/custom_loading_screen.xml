@@ -2,10 +2,8 @@
     <styles>
         <include src="file://{resources}/styles/dotastyles.css" />
         <include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
-        <include src="s2r://panorama/styles/leaf_pages/dashboard_page_debut_snapfire.vcss_c" />
     </styles>
     <Panel class="OverthrowGameInfo">
-    <DOTAScenePanel id="Model" map="backgrounds/hero_showcase_snapfire" camera="hero_camera" light="hero_light" renderdeferred="true" rotateonhover="true"  rotateonmousemove="true" yawmin="0" yawmax="0" pitchmin="0" pitchmax="0" antialias="true" particleonly="false" hittest="false" />
         <Panel id="Title">
             <Label id="LegionTitle" html="true" text="#addon_game_name" />
         </Panel>
