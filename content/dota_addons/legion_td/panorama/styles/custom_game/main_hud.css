@@ -261,7 +261,7 @@
     transition-duration: 0.3s;
     transition-property: wash-color;
     transition-timing-function: ease-in-out;
-  }
+}
 
 #NewSettingsButton {
     background-image: url("s2r://panorama/images/control_icons/gear_png.vtex");

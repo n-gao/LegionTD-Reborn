@@ -67,18 +67,18 @@
         GameUI.CustomUIConfig().dotaUi = newUI;
 
         // Credits: EarthSalamander #42
-		// Hide vanilla pick screen in loading screen
-		HidePickScreen()
+        // Hide vanilla pick screen in loading screen
+        HidePickScreen()
 
-		function HidePickScreen() {
-			if (!Game.GameStateIs(3)) {
-				FindDotaHudElement("PreGame").style.opacity = "0";
-				$.Schedule(1.0, HidePickScreen)
-			}
-			else {
-				FindDotaHudElement("PreGame").style.opacity = "1";
-			}
-		}
+        function HidePickScreen() {
+            if (!Game.GameStateIs(3)) {
+                FindDotaHudElement("PreGame").style.opacity = "0";
+                $.Schedule(1.0, HidePickScreen)
+            }
+            else {
+                FindDotaHudElement("PreGame").style.opacity = "1";
+            }
+        }
     </script>
     <Panel>
         <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/main_hud.xml" />

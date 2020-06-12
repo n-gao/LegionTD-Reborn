@@ -30,7 +30,7 @@
         <Panel hittest="false" class="DontKnow">
             <Panel hittest="false" id="TopLeftMenu">
                 <Button id="NewDashboardButton" class="TopLeftButton" onactivate="DOTAHUDShowDashboard();" onmouseover="UIShowTextTooltip(DOTA_HUD_BackToDashboard)"  onmouseout="UIHideTextTooltip()" />
-			    <Button id="NewSettingsButton" class="TopLeftButton" onactivate="DOTAShowSettingsPopup();" onmouseover="UIShowTextTooltip(DOTA_HUD_Settings)"  onmouseout="UIHideTextTooltip()" />
+                <Button id="NewSettingsButton" class="TopLeftButton" onactivate="DOTAShowSettingsPopup();" onmouseover="UIShowTextTooltip(DOTA_HUD_Settings)"  onmouseout="UIHideTextTooltip()" />
                 <Button id="NewScoreboardButton" class="TopLeftButton" onactivate="DOTAHUDToggleScoreboard();" onmouseover="UIShowTextTooltip(DOTA_HUD_Scoreboard)"  onmouseout="UIHideTextTooltip()" />
                 <Button id="InformationButton" class="TopLeftButton" onload="DOTAShowTextTooltip('#Information')" onactivate="OnInformationButtonPressed()" onmouseover="UIShowTextTooltip(#Information)"  onmouseout="UIHideTextTooltip()"/>
             </Panel>
@@ -122,7 +122,7 @@
                                 <Label hittest="false" id="tangos" text="30" class="TangoContainerLabel" />
                                 <Label hittest="false" id="tangoIncome" text="0" html="true" class="TangoIncomeLabel" />
                             </Panel>
-                            <Panel id="FoodContainer" class="FoodBox" onmouseover="UIShowTextTooltip(#Food)" onmouseout="UIHideTextTooltip()"> 
+                            <Panel id="FoodContainer" class="FoodBox" onmouseover="UIShowTextTooltip(#Food)" onmouseout="UIHideTextTooltip()">
                                 <Label hittest="false" id="foodLabel" text="0/0" class="FoodContainerLabel" />
                             </Panel>
                         </Panel>
