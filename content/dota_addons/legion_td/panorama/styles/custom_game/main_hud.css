@@ -56,41 +56,9 @@
 
 #incomeLabel {}
 
-#goldIncome {
-    align: center top;
-    margin-top: 6px;
-    margin-left: 4px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #be9c23;
-    text-shadow: 1px 1px 2px 1.2 black;
-    font-family: defaultFont;
-}
-
-#tangoIncome {
-    align: center top;
-    margin-top: 6px;
-    margin-left: 4px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #27c13f;
-    text-shadow: 1px 1px 2px 1.2 black;
-    font-family: defaultFont;
-}
-
-
 #foodImage {
     width: 20px;
     height: 20px;
-}
-
-#foodLabel {
-    width: 100px;
-    text-align: left;
-    margin-left: 30px;
-    color: #a2322b;
 }
 
 #tangoimage {
@@ -141,58 +109,36 @@
 
 
 .SkipButtonPanel {
-    width: 700px;
+    width: 100%;
+    height: 100%;
     opacity: 1;
-
-    height: fit-children;
-    horizontal-align: right;
-    vertical-align: bottom;
-    margin-bottom: 150px;
-    margin-right: -80px;
-
     transition-property: brightness;
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
 }
 
 #SkipButton {
-    height: 44px;
-    width: 200px;
-
-    horizontal-align: right;
-    vertical-align: center;
-    margin-right: 105px;
-
+    height: 100%;
+    width: 100%;
     font-size: 50px;
-
     background-color: gradient(linear, 0% 0%, 0% 100%, from(#307663), to(#245a4b));
     background-image: url("s2r://panorama/images/backgrounds/background_play_button_2x_png.vtex");
-
-
-    border-top: 1px solid #ffffff22;
-    border-bottom: 1px solid #00000088;
+    border-top: 1px solid #0E141Add;
+    border-left: 1px solid #0E141Add;
     background-size: 100%;
-    border: 1px solid #0E141Add;
-    border-radius: 8px;
+    border-top-left-radius: 2px;
 }
 
 #SkipButton2 {
-    height: 44px;
-    width: 200px;
-
-    horizontal-align: right;
-    vertical-align: center;
-    margin-right: 105px;
-
+    height: 100%;
+    width: 100%;
     font-size: 50px;
-
     background-color: gradient(linear, 0% 0%, 0% 100%, from(#60862d), to(#3d5f1c));
     background-image: url("s2r://panorama/images/backgrounds/background_play_button_2x_png.vtex");
-    border-top: 1px solid #ffffff22;
-    border-bottom: 1px solid #00000088;
+    border-top: 1px solid #0E141Add;
+    border-left: 1px solid #0E141Add;
     background-size: 100%;
-    border: 1px solid #0E141Add;
-    border-radius: 8px;
+    border-top-left-radius: 2px;
 }
 
 
@@ -210,20 +156,14 @@
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 2px #000000;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
 .SkipButtonPanel2 {
-    width: 700px;
+    width: 100%;
+    height: 100%;
     opacity: 1;
-
-    height: fit-children;
-    horizontal-align: right;
-    vertical-align: bottom;
-    margin-bottom: 150px;
-    margin-right: -80px;
-
     transition-property: brightness;
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
@@ -252,298 +192,58 @@
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 2px #000000;
-    font-size: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
-
 
 #test {
     width: 400px;
     height: 400px;
 }
 
-#tangoimage {}
-
-#ResourcePanel {
-    margin-right: 131px;
-    margin-bottom: 0px;
-    horizontal-align: right;
-    vertical-align: bottom;
-    z-index: -2;
-    width: 131px;
-    height: 140px;
-    background-color: #111920bb;
-    background-size: 100%;
-    border-top: 1px solid #ffffff11;
-    border-bottom: 1px solid #ffffff11;
-    box-shadow: #54545480 0px 0px 8px 0px;
-}
-
-#IncomePanel {
-    margin-right: 0px;
-    margin-bottom: 0px;
-    horizontal-align: right;
-    vertical-align: bottom;
-    z-index: -2;
-    width: 131px;
-    height: 140px;
-    background-color: #111920bb;
-    background-size: 100%;
-    border-top: 1px solid #ffffff11;
-    border-bottom: 1px solid #ffffff11;
-    box-shadow: #54545480 0px 0px 8px 0px;
-}
-
-#ResourcesLabel {
-    align: center top;
-    margin-top: 4px;
-    margin-left: 4px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    text-shadow: 1px 1px 2px 1.2 black;
-    font-family: defaultFont;
-}
-
-#IncomeLabel {
-    align: center top;
-    margin-top: 4px;
-    margin-left: 4px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    text-shadow: 1px 1px 2px 1.2 black;
-    font-family: defaultFont;
-}
-
-#LumberLabelPanel {
-    width: 80px;
-    height: 36px;
-    background-color: gradient(linear, 0% 0%, 0% 100%, from(#60862d), to(#3d5f1c));
-    border-top: 1px solid #ffffff22;
-    border-left: 1px solid #ffffff11;
-    border-right: 1px solid #00000044;
-    border-bottom: 1px solid #00000088;
-    brightness: 1;
-    z-index: -1;
-    box-shadow: #000000aa 0px 0px 2px 2px;
-    align: right bottom;
-    margin-bottom: 37px;
-    transition-property: background-image;
-    transition-duration: .18s;
-    transition-timing-function: ease-in-out;
-    tooltip-position: top;
-}
-
-#LumberIconPanel {
-    width: 50px;
-    height: 36px;
-    background-color: #111920bb;
-    background-size: 100%;
-    margin-bottom: 37px;
-    vertical-align: bottom;
-    border-top: 1px solid #ffffff22;
-    border-left: 1px solid #ffffff11;
-    border-right: 1px solid #00000044;
-    border-bottom: 1px solid #00000088;
-    opacity: 1;
-    tooltip-position: left;
-}
-
-#tangos {
-    color: white;
-    font-size: 20px;
-    font-family: Radiance;
-    font-weight: bold;
-    text-align: left;
-    vertical-align: center;
-    horizontal-align: left;
-    margin-left: 5px;
-    text-shadow: 0px 0px 3px 3.0 #000000;
-    margin-top: 4px;
-    text-overflow: shrink;
-}
-
-#LumberIcon {
-    background-size: 100% 100%;
-    width: 36px;
-    height: 26px;
-    horizontal-align: center;
-    vertical-align: center;
-}
-
-#GoldLabelPanel {
-    width: 80px;
-    height: 36px;
-    background-color: gradient(linear, 0% 0%, 0% 100%, from(#e5c100), to(#e5c100));
-    border-top: 1px solid #ffffff22;
-    border-left: 1px solid #ffffff11;
-    border-right: 1px solid #00000044;
-    border-bottom: 1px solid #00000088;
-    brightness: 1;
-    z-index: -1;
-    box-shadow: #000000aa 0px 0px 2px 2px;
-    align: right bottom;
-    margin-bottom: 74px;
-    transition-property: background-image;
-    transition-duration: .18s;
-    transition-timing-function: ease-in-out;
-    tooltip-position: top;
-}
-
-#GoldIconPanel {
-    width: 50px;
-    height: 36px;
-    background-color: #111920bb;
-    background-size: 100%;
-    vertical-align: bottom;
-    margin-bottom: 74px;
-    border-top: 1px solid #ffffff22;
-    border-left: 1px solid #ffffff11;
-    border-right: 1px solid #00000044;
-    border-bottom: 1px solid #00000088;
-    tooltip-position: left;
-}
-
-#gold {
-    color: white;
-    font-size: 20px;
-    font-family: Radiance;
-    font-weight: bold;
-    text-align: left;
-    text-shadow: 0px 0px 3px 4.0 #000000;
-    vertical-align: center;
-    horizontal-align: left;
-    margin-left: 5px;
-    margin-top: 4px;
-    text-overflow: shrink;
-}
-
-#GoldIcon {
-    background-size: 100% 100%;
-    horizontal-align: center;
-    vertical-align: center;
-}
-
-#FoodLabelPanel {
-    width: 80px;
-    height: 36px;
-    background-size: 100% 100%;
-    background-color: gradient(linear, 0% 0%, 0% 100%, from(#BF6819), to(#BF6819));
-    border-top: 1px solid #ffffff22;
-    border-left: 1px solid #ffffff11;
-    border-right: 1px solid #00000044;
-    border-bottom: 1px solid #00000088;
-    brightness: 1;
-    z-index: -1;
-    box-shadow: #000000aa 0px 0px 2px 2px;
-    align: right bottom;
-    transition-property: background-image;
-    transition-duration: .18s;
-    transition-timing-function: ease-in-out;
-    tooltip-position: top;
-}
-
-#FoodIconPanel {
-    width: 50px;
-    height: 36px;
-    background-color: #111920bb;
-    background-size: 100%;
-    vertical-align: bottom;
-    border-top: 1px solid #ffffff22;
-    border-left: 1px solid #ffffff11;
-    border-right: 1px solid #00000044;
-    border-bottom: 1px solid #00000088;
-    tooltip-position: left;
-}
-
-#foodLabel {
-    color: white;
-    font-size: 20px;
-    font-family: Radiance;
-    font-weight: bold;
-    text-align: left;
-    text-shadow: 0px 0px 3px 3.0 #000000;
-    vertical-align: center;
-    horizontal-align: left;
-    margin-left: 5px;
-    margin-top: 4px;
-    text-overflow: shrink;
-}
-
-#FoodIcon {
-    background-size: 100% 100%;
-    width: 32px;
-    height: 32px;
-    horizontal-align: center;
-    vertical-align: center;
-}
-
-#GoldIncomePanel {
-    width: 128px;
-    height: 36px;
-    border-top: 1px solid #ffffff22;
-    border-bottom: 1px solid #00000088;
-    brightness: 1;
-    z-index: -1;
-    align: center bottom;
-    margin-bottom: 74px;
-    transition-property: background-image;
-    transition-duration: .18s;
-    transition-timing-function: ease-in-out;
-}
-
-#LumberIncomePanel {
-    width: 128px;
-    height: 36px;
-    brightness: 1;
-    z-index: -1;
-    border-top: 1px solid #ffffff22;
-    border-bottom: 1px solid #00000088;
-    align: center bottom;
-    margin-bottom: 37px;
-    transition-property: background-image;
-    transition-duration: .18s;
-    transition-timing-function: ease-in-out;
-}
-
 #ShopButton {
-    width: 128px;
-    height: 36px;
+    width: 100%;
+    height: 100%;
     brightness: 1;
-    z-index: -1;
 
-    align: right bottom;
-    transition-property: background-image;
-    transition-duration: .18s;
-    transition-timing-function: ease-in-out;
-    tooltip-position: top;
+    transition-property: brightness;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( #69a1cb ), to( #576ad7 ) )
+    background-image: url("s2r://panorama/images/backgrounds/background_play_button_2x_png.vtex");
+    background-size: 100%;
+    border-top: 1px solid #0E141Add;
+    border-left: 1px solid #0E141Add;
+    border-right: 1px solid #0E141Add;
+    border-top-left-radius: 2px;
+}
+
+#ShopButton:hover {
+    brightness: 1.52;
 }
 
 #TopLeftMenu {
-    width: 775px;
-    height: 149px;
-    margin-top: -30px;
-    margin-left: -260px;
-
-    background-size: 100%;
-    opacity: 1;
+    width: 220px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: -5px;
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( rgba(0, 0, 0, 0.800) ), to( #42310D00 ) );
+    border-radius: 5px;
+    opacity: 1.2;
     transition-duration: .05s;
     transition-property: background-image;
     transition-timing-function: ease-in-out;
 }
 
-
 .TopLeftButton {
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
+    margin-bottom: 0px;
     opacity: 0.7;
     wash-color: #CCDDFF;
-
     transition-property: opacity;
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
     tooltip-position: bottom;
 }
 
@@ -553,12 +253,42 @@
     }
 }
 
+#NewDashboardButton {
+    background-image: url("s2r://panorama/images/control_icons/dota_logo_white_png.vtex");
+    background-size: 100%;
+    margin-top: 4px;
+    margin-left: 20px;
+    transition-duration: 0.3s;
+    transition-property: wash-color;
+    transition-timing-function: ease-in-out;
+  }
+
+#NewSettingsButton {
+    background-image: url("s2r://panorama/images/control_icons/gear_png.vtex");
+    background-size: 25px;
+    margin-top: 7px;
+    margin-left: 67px;
+    transition-duration: 0.3s;
+    transition-property: wash-color;
+    transition-timing-function: ease-in-out;
+}
+
+#NewScoreboardButton {
+    background-image: url("s2r://panorama/images/control_icons/hamburger_png.vtex");
+    background-size: 26px;
+    margin-top: 6px;
+    margin-left: 110px;
+    transition-duration: 0.3s;
+    transition-property: wash-color;
+    transition-timing-function: ease-in-out;
+}
+
 #InformationButton {
     background-image: url("s2r://panorama/images/custom_gameinfo_icon_psd.vtex");
     background-size: 26px;
     background-repeat: no-repeat;
-    margin-top: 44px;
-    margin-left: 420px;
+    margin-top: 5px;
+    margin-left: 160px;
     wash-color: #CCDDFF;
 
     animation-name: blinker;
@@ -593,50 +323,50 @@
 }
 
 #RadiantKing {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     background-size: 100%;
-    margin-top: 4px;
-    margin-left: 2px;
+    margin-top: 2px;
+    margin-left: 5px;
     z-index: 99999;
-    tooltip-position: bottom;
+    tooltip-position: left;
 }
 
 #DireKing {
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     background-size: 100%;
-    margin-top: 42px;
-    margin-left: 2px;
+    margin-top: 33px;
+    margin-left: 5px;
     z-index: 99999;
-    tooltip-position: bottom;
+    tooltip-position: left;
 }
 
 #EmptyBarRadiant {
-    width: 250px;
+    width: 85%;
     height: 20px;
     background-color: transparent;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-left: 40px;
-    border-radius: 8px;
-    border: 1px solid #0E141Add;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 #EmptyBarDire {
-    width: 250px;
+    width: 85%;
     height: 20px;
     background-color: transparent;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 40px;
-    border-radius: 8px;
-    border: 1px solid #0E141Add;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 .ProgressBarLeft {
     width: 100%;
     height: 100%;
     background-color: green;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 #HealthBarRadiant {
@@ -663,4 +393,189 @@
     font-size: 15px;
     color: white;
     margin-top: 1px;
+}
+
+#NewResourcesPanel {
+    width: 360px;
+    height: 220px;
+    align: right bottom;
+    margin-top: 50px;
+}
+
+#LeftFlare {
+    background-image: url("s2r://panorama/images/hud/reborn/side_flare_tall_psd.vtex");
+    background-size: 100%;
+    width: 52px;
+    height: 200px;
+    margin-left: -16px;
+    vertical-align: bottom;
+}
+
+#NewResourcesPanelContainer {
+    background-image: url("s2r://panorama/images/hud/reborn/ability_bg_psd.vtex") ;
+    background-size: 100%;
+    width: 90%;
+    height: 220px;
+    align: right bottom;
+
+}
+
+#NewResourcesPanelContainerTopSection {
+    width: 100%;
+    height: 25%;
+    vertical-align: top;
+    border-bottom: 1px solid #ffffff22;
+}
+
+#NewResourcesPanelContainerTopLeftSection {
+    width: 50%;
+    height: 100%;
+    vertical-align: top;
+    horizontal-align: left;
+}
+
+#NewResourcesPanelContainerTopRightSection {
+    width: 50%;
+    height: 100%;
+    vertical-align: top;
+    horizontal-align: right;
+}
+
+#NewResourcesPanelContainerMidSection {
+    width: 100%;
+    height: 45%;
+    vertical-align: middle;
+    margin-bottom: 10px;
+
+}
+
+#NewResourcesPanelContainerBottomSection {
+    width: 100%;
+    height: 30%;
+    vertical-align: bottom;
+    border-top: 1px solid #ffffff22;
+}
+
+#GoldContainer
+{
+    background-image: url("file://{images}/custom_game/icons/gold.png");
+    background-size: 28px 28px;
+    background-position: 2px;
+}
+
+.GoldBox
+{
+    width: 100%;
+    height: 33px;
+    border: 1px solid #000000aa;
+    border-radius: 5px;
+    background-size: 24% 80%;
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+    flow-children: down;
+    tooltip-position: left;
+}
+
+#TangoContainer
+{
+    background-image: url("file://{images}/custom_game/icons/tango.png");
+    background-size: 28px 28px;
+    background-position: 2px;
+}
+
+.TangoBox
+{
+    width: 100%;
+    height: 33px;
+    margin-bottom: 1px;
+    border: 1px solid #000000aa;
+    border-radius: 5px;
+    background-size: 24% 80%;
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+    flow-children: down;
+    vertical-align: center;
+    tooltip-position: left;
+}
+
+#FoodContainer
+{
+    background-image: url("file://{images}/custom_game/icons/food.png");
+    background-size: 28px 28px;
+    background-position: 2px;
+}
+
+.FoodBox
+{
+    width: 100%;
+    height: 33px;
+    margin-bottom: 0px;
+    border: 1px solid #000000aa;
+    border-radius: 5px;
+    background-size: 24% 80%;
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+    flow-children: down;
+    vertical-align: bottom;
+    tooltip-position: left;
+}
+
+.GoldContainerLabel
+{
+    font-size: 20px;
+    color: goldenrod;
+    align: left middle;
+    margin-left: 30px;
+    margin-right: 5%;
+    margin-top: 4px;
+    text-align: left;
+    text-shadow: 1px 1px 2px 3.0 #000000;
+}
+
+.GoldIncomeLabel
+{
+    font-size: 20px;
+    color: goldenrod;
+    margin-left: 90px;
+    margin-top: -24px;
+    margin-right: 10px;
+    text-align: right;
+    width: 100%;
+    text-shadow: 1px 1px 2px 3.0 #000000;
+}
+
+.TangoContainerLabel
+{
+    font-size: 20px;
+    color: #27c13f;
+    align: left middle;
+    margin-left: 30px;
+    margin-right: 5%;
+    margin-top: 4px;
+    text-align: left;
+    text-shadow: 1px 1px 2px 3.0 #000000;
+}
+
+.TangoIncomeLabel
+{
+    font-size: 20px;
+    color: #27c13f;
+    margin-left: 90px;
+    margin-top: -24px;
+    margin-right: 10px;
+    text-align: right;
+    width: 100%;
+    text-shadow: 1px 1px 2px 3.0 #000000;
+}
+
+.FoodContainerLabel
+{
+    font-size: 20px;
+    color: white;
+    align: left middle;
+    margin-left: 30px;
+    margin-right: 5%;
+    margin-top: 3px;
+    text-align: left;
+    text-shadow: 1px 1px 2px 3.0 #000000;
 }

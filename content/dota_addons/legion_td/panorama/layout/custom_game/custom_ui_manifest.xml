@@ -51,7 +51,11 @@
         var NoKDA = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("stackable_side_panels");
         var NoNewRightPanel = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
         var NoNeutralItemSlot = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
+        var newUITOP = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("MenuButtons");
 
+        newUITOP.FindChildTraverse("DashboardButton").style.visibility = "collapse";
+        newUITOP.FindChildTraverse("ToggleScoreboardButton").style.visibility = "collapse";
+        newUITOP.FindChildTraverse("SettingsButton").style.visibility = "collapse";
         newUI.FindChildTraverse("StatBranch").style.visibility = "collapse";
         NoGlyphAndRadar.FindChildTraverse("GlyphScanContainer").style.visibility = "collapse";
         NoTPScrollUI.FindChildTraverse("inventory_tpscroll_container").style.visibility = "collapse";
@@ -61,6 +65,20 @@
         NoNeutralItemSlot.FindChildTraverse("inventory_neutral_slot_container").style.visibility = "collapse";
         $.Msg(DotaDefaultUIElement_t);
         GameUI.CustomUIConfig().dotaUi = newUI;
+
+        // Credits: EarthSalamander #42
+		// Hide vanilla pick screen in loading screen
+		HidePickScreen()
+
+		function HidePickScreen() {
+			if (!Game.GameStateIs(3)) {
+				FindDotaHudElement("PreGame").style.opacity = "0";
+				$.Schedule(1.0, HidePickScreen)
+			}
+			else {
+				FindDotaHudElement("PreGame").style.opacity = "1";
+			}
+		}
     </script>
     <Panel>
         <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/main_hud.xml" />
