@@ -25,7 +25,7 @@
             "01"
             {
                 "var_type"    "FIELD_INTEGER"
-                "atk_damage_tooltip"    "110"
+                "atk_damage_tooltip"    "130"
             }
 
             "02"
@@ -43,7 +43,7 @@
             "04"
             {
                 "var_type"    "FIELD_INTEGER"
-                "health_tooltip"    "350"
+                "health_tooltip"    "500"
             }
 
             "05"

@@ -15,7 +15,7 @@
         "Ability3"                  "ability_empty_3"
         "Ability4"                  "sell"
 
-        "ArmorPhysical"             "15"
+        "ArmorPhysical"             "17"
         "MagicalResistance"         "0"
 
         "AttackCapabilities"        "DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -45,7 +45,7 @@
         "MovementSpeed"             "270"
         "MovementTurnRate"          "0.5"
 
-        "StatusHealth"              "1300"
+        "StatusHealth"              "1450"
         "StatusHealthRegen"         "20"
         "StatusMana"                "0"
         "StatusManaRegen"           "0"

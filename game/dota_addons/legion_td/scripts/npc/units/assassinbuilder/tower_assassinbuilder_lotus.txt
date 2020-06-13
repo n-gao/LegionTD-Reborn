@@ -15,7 +15,7 @@
         "Ability3"                  "ability_empty_3"
         "Ability4"                  "sell"
 
-        "ArmorPhysical"             "3"
+        "ArmorPhysical"             "5"
         "MagicalResistance"         "0"
 
         "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -45,7 +45,7 @@
         "MovementSpeed"             "270"
         "MovementTurnRate"          "0.5"
 
-        "StatusHealth"              "220"
+        "StatusHealth"              "260"
         "StatusHealthRegen"         "0"
         "StatusMana"                "0"
         "StatusManaRegen"           "0"
