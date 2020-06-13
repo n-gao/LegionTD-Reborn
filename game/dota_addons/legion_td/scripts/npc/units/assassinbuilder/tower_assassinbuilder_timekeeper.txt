@@ -15,7 +15,7 @@
         "Ability3"                  "assassinbuilder_augment_aura"
         "Ability4"                  "sell"
 
-        "ArmorPhysical"             "5"
+        "ArmorPhysical"             "7"
         "MagicalResistance"         "0"
 
         "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -45,7 +45,7 @@
         "MovementSpeed"             "270"
         "MovementTurnRate"          "0.5"
 
-        "StatusHealth"              "650"
+        "StatusHealth"              "750"
         "StatusHealthRegen"         "0"
         "StatusMana"                "0"
         "StatusManaRegen"           "0"

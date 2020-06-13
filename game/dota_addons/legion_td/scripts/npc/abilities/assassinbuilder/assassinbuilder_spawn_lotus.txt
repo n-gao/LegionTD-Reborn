@@ -43,13 +43,13 @@
             "04"
             {
                 "var_type"    "FIELD_INTEGER"
-                "health_tooltip"    "220"
+                "health_tooltip"    "260"
             }
 
             "05"
             {
                 "var_type"    "FIELD_INTEGER"
-                "armor_tooltip"    "3"
+                "armor_tooltip"    "5"
             }
 
             "06"
