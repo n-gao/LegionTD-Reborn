@@ -28,18 +28,10 @@
     </script>
     <Panel hittest="false" class="Hud">
         <Panel hittest="false" class="DontKnow">
-            <Panel hittest="false" id="HealthBarsRoot">
-                <Panel hittest="false" id="HealthBarsHolder">
-                    <Image id="RadiantKing" hittest="true" src="file://{images}/custom_game/RadiantKing.png" onmouseover="UIShowTextTooltip(#Radiant_King)"  onmouseout="UIHideTextTooltip()" />
-                    <Panel hittest="false" id="EmptyBarRadiant">
-                    </Panel>
-                    <Image id="DireKing" hittest="true" src="file://{images}/custom_game/DireKing.png" onmouseover="UIShowTextTooltip(#Dire_King)"  onmouseout="UIHideTextTooltip()" />
-                    <Panel hittest="false" id="EmptyBarDire">
-                    </Panel>
-                </Panel>
-            </Panel>
-
             <Panel hittest="false" id="TopLeftMenu">
+                <Button id="NewDashboardButton" class="TopLeftButton" onactivate="DOTAHUDShowDashboard();" onmouseover="UIShowTextTooltip(DOTA_HUD_BackToDashboard)"  onmouseout="UIHideTextTooltip()" />
+                <Button id="NewSettingsButton" class="TopLeftButton" onactivate="DOTAShowSettingsPopup();" onmouseover="UIShowTextTooltip(DOTA_HUD_Settings)"  onmouseout="UIHideTextTooltip()" />
+                <Button id="NewScoreboardButton" class="TopLeftButton" onactivate="DOTAHUDToggleScoreboard();" onmouseover="UIShowTextTooltip(DOTA_HUD_Scoreboard)"  onmouseout="UIHideTextTooltip()" />
                 <Button id="InformationButton" class="TopLeftButton" onload="DOTAShowTextTooltip('#Information')" onactivate="OnInformationButtonPressed()" onmouseover="UIShowTextTooltip(#Information)"  onmouseout="UIHideTextTooltip()"/>
             </Panel>
 
@@ -68,51 +60,6 @@
                 <Button class="CloseButton" onactivate="InformationPanelCloseButtonClicked()" />
             </Panel>
 
-            <Panel hittest="false" class="SkipButtonPanel">
-                <Button id="SkipButton" onactivate="OnSkipButtonPressed()">
-                    <Label id="SkipLabel" class="ButtonLabel" text="#Ready"/>
-                </Button>
-                </Panel>
-                <Panel hittest="false" class="SkipButtonPanel2">
-                    <Button id="SkipButton2" onactivate="OnSkipButtonPressed2()">
-                        <Label id="SkipLabel" class="ButtonLabel2" text="#ReadyPressed"/>
-                    </Button>
-                </Panel>
-
-            <Panel hittest="false" id='ResourcePanel'>
-                <Label hittest="false" id="ResourcesLabel" text="#RESOURCES" html="true" class="TitleFont" />
-                <Panel hittest="false" id='GoldIconPanel'>
-                    <Image id="GoldIcon" src="file://{images}/hud/icon_gold_psd.vtex" onmouseover="UIShowTextTooltip(#Gold)" onmouseout="UIHideTextTooltip()" />
-                </Panel>
-                <Panel hittest="false" id='GoldLabelPanel'>
-                    <Label hittest="false" id="gold" text="0" html="true" class="TitleFont" />
-                </Panel>
-                <Panel hittest="false" id='LumberIconPanel'>
-                    <Image id="LumberIcon" src="file://{images}/custom_game/tango.psd" onmouseover="UIShowTextTooltip(#Tango)" onmouseout="UIHideTextTooltip()"/>
-                </Panel>
-                <Panel hittest="false" id='LumberLabelPanel'>
-                    <Label hittest="false" id="tangos" text="30" class="TitleFont" />
-                </Panel>
-                <Panel hittest="false" id='FoodIconPanel'>
-                    <Image id="FoodIcon" src="file://{images}/custom_game/chicken_leg.psd" onmouseover="UIShowTextTooltip(#Food)" onmouseout="UIHideTextTooltip()"/>
-                </Panel>
-                <Panel hittest="false" id='FoodLabelPanel'>
-                    <Label hittest="false" id="foodLabel" text="0/0" class="TitleFont" />
-                </Panel>
-            </Panel>
-            <Panel hittest="false" id='IncomePanel'>
-                <Label hittest="false" id="IncomeLabel" text="#INCOME" html="true" class="TitleFont" />
-                <Panel hittest="false" id='GoldIncomePanel'>
-                    <Label hittest="false" id="goldIncome" text="0" html="true" class="TitleFont" />
-                </Panel>
-                <Panel hittest="false" id='LumberIncomePanel'>
-                    <Label hittest="false" id="tangoIncome" text="0" html="true" class="TitleFont" />
-                </Panel>
-                <Button id="ShopButton" onactivate="OnShopButtonPressed()">
-                    <Image src="file://{images}/custom_game/shop.psd" />
-                    <Label id="Shoplabel" class="ButtonLabel3" text="Tango Shop" />
-                </Button>
-            </Panel>
             <Panel hittest="false" id="OuterShopPanel">
 
                 <Panel hittest="true" id="ShopPanel">
@@ -142,6 +89,55 @@
                 </Button>
             </Panel>
             <Panel hittest="false" id="StatisticsOverlay"/>
+
+            <Panel hitetst="false" id="NewResourcesPanel">
+                <Panel id="LeftFlare"/>
+                    <Panel id="NewResourcesPanelContainer">,
+                        <Panel id="NewResourcesPanelContainerTopSection">
+                            <Panel id="NewResourcesPanelContainerTopLeftSection">
+                                <Panel hittest="false" class="SkipButtonPanel">
+                                    <Button id="SkipButton" onactivate="OnSkipButtonPressed()">
+                                        <Label id="SkipLabel" class="ButtonLabel" text="#Ready"/>
+                                    </Button>
+                                </Panel>
+                                <Panel hittest="false" class="SkipButtonPanel2">
+                                    <Button id="SkipButton2" onactivate="OnSkipButtonPressed2()">
+                                        <Label id="SkipLabel" class="ButtonLabel2" text="#ReadyPressed"/>
+                                    </Button>
+                                </Panel>
+                            </Panel>
+                            <Panel id="NewResourcesPanelContainerTopRightSection">
+                                <Button id="ShopButton" onactivate="OnShopButtonPressed()">
+                                    <Label id="Shoplabel" class="ButtonLabel3" text="Tango Shop" />
+                                </Button>
+                            </Panel>
+                        </Panel>
+
+                        <Panel id="NewResourcesPanelContainerMidSection">
+                            <Panel id="GoldContainer" class="GoldBox" onmouseover="UIShowTextTooltip(#Gold)" onmouseout="UIHideTextTooltip()">
+                                <Label hittest="false" id="gold" text="0" html="true" class="GoldContainerLabel" />
+                                <Label hittest="false" id="goldIncome" text="0" html="true" class="GoldIncomeLabel" />
+                            </Panel>
+                            <Panel id="TangoContainer" class="TangoBox" onmouseover="UIShowTextTooltip(#Tango)" onmouseout="UIHideTextTooltip()">
+                                <Label hittest="false" id="tangos" text="30" class="TangoContainerLabel" />
+                                <Label hittest="false" id="tangoIncome" text="0" html="true" class="TangoIncomeLabel" />
+                            </Panel>
+                            <Panel id="FoodContainer" class="FoodBox" onmouseover="UIShowTextTooltip(#Food)" onmouseout="UIHideTextTooltip()">
+                                <Label hittest="false" id="foodLabel" text="0/0" class="FoodContainerLabel" />
+                            </Panel>
+                        </Panel>
+
+
+                        <Panel id="NewResourcesPanelContainerBottomSection">
+                            <Image id="RadiantKing" hittest="true" src="file://{images}/custom_game/RadiantKing.png" onmouseover="UIShowTextTooltip(#Radiant_King)"  onmouseout="UIHideTextTooltip()" />
+                            <Panel hittest="false" id="EmptyBarRadiant"/>
+                            <Image id="DireKing" hittest="true" src="file://{images}/custom_game/DireKing.png" onmouseover="UIShowTextTooltip(#Dire_King)"  onmouseout="UIHideTextTooltip()" />
+                            <Panel hittest="false" id="EmptyBarDire"/>
+                        </Panel>
+
+                    </Panel>
+            </Panel>
+
         </Panel>
     </Panel>
 </root>

@@ -18,19 +18,14 @@ Label {
 
 #Title {
     flow-children: right;
-}
 
-#TitleIcon {
-    width: 64px;
-    height: 64px;
-    vertical-align: center;
+    margin-left: -5px;
+    margin-top: 25px;
 }
 
 #TitleName {
     color: cyan;
     font-size: 64px;
-    margin-left: -5px;
-    margin-top: 16px;
     text-transform: uppercase;
     vertical-align: center;
 }
@@ -40,184 +35,12 @@ Label {
     margin-top: 32px;
     margin-left: 20px;
     text-transform: uppercase;
-
-    color: #fff;
-    font-weight: semi-bold;
-    text-shadow: 0px 0px 4px #CB894F;
-}
-
-#ThroneText,
-#CoinsText,
-#ItemsText {
-    width: fill-parent-flow(1.0);
-}
-
-.Header {
-    font-size: 35px;
-    margin-top: 36px;
-    text-transform: uppercase;
-    text-decoration: underline;
-    color: #fff;
-    font-weight: semi-bold;
-    text-shadow: 0px 0px 4px #CD6BFB;
-}
-
-
-#ObjectiveHeader {
-    margin-top: 25px;
-    margin-left: 10px;
-    font-size: 35px;
-}
-
-#BriefDescription {
-    margin-left: 25px;
-    color: white;
-    font-size: 20px;
-}
-
-#HowToPlayHeader {
-    margin-left: 10px;
-    font-size: 35px;
-}
-
-#ThroneRow {
-    margin-top: -50px;
-}
-
-#ThroneText {
-    vertical-align: center;
-    margin-left: -35px;
-    text-align: right;
-    color: white;
-    font-size: 20px;
-}
-
-#ThroneImage {
-    vertical-align: center;
-    width: 200px;
-    height: 200px;
-}
-
-#CoinsRow {
-    margin-top: -50px;
-    margin-left: 20px;
-}
-
-#CoinsImage {
-    width: 200px;
-    height: 200px;
-    vertical-align: center;
-    margin-left: -40px;
-}
-
-#CoinsText {
-    vertical-align: center;
-    font-size: 20px;
-    color: white;
-}
-
-#ItemsRow {}
-
-#ItemsImage {
-    width: 200px;
-    margin-left: 10px;
-    margin-top: -75px;
-}
-
-#ItemsText {
-    margin-top: 40px;
-    margin-left: 0px;
-    text-align: right;
-    color: white;
-    font-size: 20px;
-}
-
-#ItemsText2 {
-    margin-top: 60px;
-    margin-left: -247px;
-    text-align: right;
-    color: white;
-    font-size: 20px;
-}
-
-#TipsHeader {
-    margin-left: 13px;
-    margin-top: -60px;
-}
-
-#TipsRow {
-    flow-children: down;
-    margin-right: 92px;
-    margin-left: 5px;
-}
-
-.TipText {
-    margin-left: 16px;
-    margin-top: 0px;
-    color: white;
-    font-size: 20px;
-}
-
-.InfoRow {
-    flow-children: right;
-    width: 100%;
-}
-
-
-Label .midas_throne,
-Label .overboss,
-Label .treasure {
-    color: #cccccc;
-    font-weight: bold;
-}
-
-Label .items,
-Label .gold,
-Label .xp {
-    color: #fcaf3d;
-    font-weight: bold;
-}
-
-.GameInformationPanel
-{
-    background-image: url("file://{images}/custom_game/game_info/topbar.png");
-    background-repeat: no-repeat;
-    margin-top: 120px;
-    margin-left: 25px;
-    border-radius: 10px;
-    width: 690px;
-    height: 164px;
-    opacity: 1.5;
-}
-
-#TitleFont
-{
-    margin-left: 55px;
-}
-
-#InfoPanel {
-    width: 500px;
-    height: 670px;
     background-color: #000000BA;
-    margin-left: 55px;
-    margin-top: 100px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #444444;
-    border-radius: 7px;
-    visibility: collapse;
-    flow-children: down;
-}
-
-
-.InfoLabel
-{
-    margin-top: 15px;
-    margin-left: 15px;
-    horizontal-align: center;
-    font-size: 55px;
-    color: orangered;
-    text-shadow: 2px 2px 2px #000000;
-    font-weight: bold;
-    text-transform: uppercase;
+    color: white;
+    font-weight: semi-bold;
+    text-shadow: 1px 1px 2px 3.0 #000000;
+    font-family: defaultFont;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
 }
