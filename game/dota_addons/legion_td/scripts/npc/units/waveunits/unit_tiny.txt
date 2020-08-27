@@ -83,7 +83,7 @@
                     "ItemDef"    "495"
                 }
 
-                "Wearable3"
+                "Wearable4"
                 {
                     "ItemDef"    "496"
                 }

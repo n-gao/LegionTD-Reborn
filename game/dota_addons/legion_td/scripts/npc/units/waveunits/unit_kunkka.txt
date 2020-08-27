@@ -86,7 +86,7 @@
 
                 "Wearable5"
                 {
-                    "ItemDef"   "6778"
+                    "ItemDef"   "5256"
                 }
 
                 "Wearable6"

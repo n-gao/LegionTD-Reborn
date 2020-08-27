@@ -275,6 +275,20 @@ function InformationPanelCloseButtonClicked()
     panel.visible = false;
 }
 
+function UIPopupButtonClickedClose()
+{
+    var panel = $("#PopupWindow");
+    panel.visible = false;
+}
+
+function SchedulePopupClose()
+{
+    var panel = $("#PopupWindow");
+    $.Schedule(10, function () {
+        panel.visible = false;
+    });
+}
+ 
 function OnContinueButtonPressed()
 {
     var panel = $("#PopupWindow");
@@ -368,6 +382,7 @@ function UpdateGold() {
 
 (function () {
     UpdateGold();
+    SchedulePopupClose();
     GameEvents.Subscribe("dota_player_update_query_unit", UpdateInfoPanel);
     GameEvents.Subscribe("update_player_info", UpdatePlayerInfo);
     GameEvents.Subscribe("debug", UpdateDebug);
