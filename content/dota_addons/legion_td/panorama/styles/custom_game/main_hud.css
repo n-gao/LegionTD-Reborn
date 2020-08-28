@@ -596,7 +596,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: gradient( linear, 0% 0%, 0% 100%, from( #272d2eee ), to( #131617ee ) );
-    border: 1px solid #5e6869;	
+    border: 1px solid #5e6869;
 }
 
 .CloseButton
@@ -629,12 +629,12 @@
 {
     horizontal-align: center;
     width: 810px;
-    height: 0px; 
+    height: 0px;
     background-repeat: no-repeat;
     background-size: cover;
     transition-property: brightness;
     transition-duration: 0.22s;
-    transition-timing-function: ease-in-out;	
+    transition-timing-function: ease-in-out;
 }
 
 #SplashImage:hover
