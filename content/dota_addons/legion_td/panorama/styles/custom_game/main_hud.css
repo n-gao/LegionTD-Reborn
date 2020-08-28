@@ -587,7 +587,7 @@
     overflow: clip;
     flow-children: none;
     background-color: gradient( linear, 0% 0%, 0% 100%, from( #322b36 ), to( #000000EF ) );
-	align: center center;
+    align: center center;
 }
 
 .Contents
@@ -699,7 +699,7 @@
 .Buttons
 {
     horizontal-align: center;
-   flow-children: right;
+    flow-children: right;
     margin-bottom: 50px;
 }
 
