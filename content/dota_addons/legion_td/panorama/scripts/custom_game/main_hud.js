@@ -288,7 +288,7 @@ function SchedulePopupClose()
         panel.visible = false;
     });
 }
- 
+
 function OnContinueButtonPressed()
 {
     var panel = $("#PopupWindow");
