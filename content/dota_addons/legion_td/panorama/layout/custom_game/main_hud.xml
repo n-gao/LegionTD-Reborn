@@ -137,7 +137,19 @@
 
                     </Panel>
             </Panel>
-
+            <Panel hittest="false" id="PopupWindow">
+                <Panel class="Contents">
+                    <Panel id="TitleBox">
+                        <Label id="Title" text="#DiscordTitle"/>
+                    </Panel>
+                    <Panel id="SplashImage"/>
+                    <Label id="Message" text="#DiscordDescription"/>
+                    <Panel class="Buttons">
+                        <TextButton id="LearnMore" class="ButtonBevel" text="#DiscordJoinButton" onactivate="ExternalBrowserGoToURL('https://discord.gg/pmMnfdA');"/>
+                    </Panel>
+                </Panel>
+                <Button class="CloseButton" onactivate="UIPopupButtonClickedClose()"/>
+            </Panel>
         </Panel>
     </Panel>
 </root>
