@@ -4,7 +4,7 @@
     {
         // General
         "BaseClass"                 "npc_dota_creature" // Class of entity of link to.
-        "Model"                     "models/development/invisiblebox.mdl"   // Model.
+        "Model"                     "models/development/invisiblebox.vmdl"   // Model.
 
         "Ability1"                  "ability_dummy_unit"
 
