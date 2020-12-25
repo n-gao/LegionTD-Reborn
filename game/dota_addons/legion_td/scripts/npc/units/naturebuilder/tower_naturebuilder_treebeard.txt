@@ -3,7 +3,7 @@
     "tower_naturebuilder_treebeard"
     {
         "BaseClass" "npc_dota_creature"
-        "Model" "models/heroes/treant_protector/treant_protector.mdl"
+        "Model" "models/heroes/treant_protector/treant_protector.vmdl"
         "ModelScale"    "0.5"
         "SoundSet"  "Hero_Treant"
         "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
