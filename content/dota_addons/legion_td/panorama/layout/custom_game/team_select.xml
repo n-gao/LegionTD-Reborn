@@ -1,6 +1,6 @@
 <root>
     <styles>
-            <include src="file://{resources}/styles/dotastyles.css" />
+            <include src="s2r://panorama/styles/dotastyles.vcss_c" />
             <include src="file://{resources}/styles/play.css" />
             <include src="file://{resources}/styles/custom_game/team_select.css" />
     </styles>
@@ -9,7 +9,7 @@
             <include src="file://{resources}/scripts/custom_game/legion_options.js" />
     </scripts>
     <Panel hittest="false" class="TeamSelect">
-        <Panel hittest="false" id="TeamSelectContainer" selectionpos="auto">`
+        <Panel hittest="false" id="TeamSelectContainer" selectionpos="auto">
         <!--Empty space to let the loading screen and chat be visible-->
         <Panel hittest="false" id="TeamsSelectEmptySpace" />
 
