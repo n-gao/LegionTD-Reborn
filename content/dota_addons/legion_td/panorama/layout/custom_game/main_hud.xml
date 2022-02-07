@@ -1,6 +1,6 @@
 <root>
     <styles>
-        <include src="file://{resources}/styles/dotastyles.css" />
+        <include src="s2r://panorama/styles/dotastyles.vcss_c" />
         <include src="file://{resources}/styles/custom_game/main_hud.css" />
         <include src="file://{resources}/styles/custom_game/statistics.css" />
         <include src="file://{resources}/styles/custom_game/shop.css" />
@@ -37,7 +37,7 @@
 
             <Panel hittest="false" id="InformationPanelRoot">
                 <Label id="NewsTitle" text="#News"/>
-                <Panel id="ContentsTop">
+                <!--<Panel id="ContentsTop">
                     <Label id="Title" text="#ContentTopTitle"/>
                     <Label id="UpdateDate" html="true" text="#ContentTopDate"/>
                     <Label id="Message" html="true" text="#ContentTopDescription"/>
@@ -46,12 +46,12 @@
                     <Label id="Title" text="#ContentBottomTitle"/>
                     <Label id="UpdateDate" html="true" text="#ContentBottomDate"/>
                     <Label id="Message" html="true" text="#ContentBottomDescription"/>
-                </Panel>
+                </Panel>-->
                 <Label id="TeamTitle" text="#legion_contributor_label"/>
                 <Panel id="ContentsRight">
                         <Label class="ContributorLabel" text="#legion_contributor_creator" />
                         <Panel id="Creators" class="ContributorPanel" hitetst="false" />
-                        <!--<Label class="ContributorLabel" text="#legion_contributor_leader" /><Panel id="Leaders" class="ContributorPanel" hitetst="false" />-->
+                        <!--<Label class="ContributorLabel" text="#legion_contributor_leader" /><Panel id="Leaders" class="ContributorPanel" hittest="false" />-->
                         <Label class="ContributorLabel" text="#legion_contributor_active_dev" />
                         <Panel id="ActiveDevs" class="ContributorPanel" hitetst="false" />
                         <Label class="ContributorLabel" text="#legion_contributor_inactive_dev" />
@@ -92,7 +92,7 @@
 
             <Panel hitetst="false" id="NewResourcesPanel">
                 <Panel id="LeftFlare"/>
-                    <Panel id="NewResourcesPanelContainer">,
+                    <Panel id="NewResourcesPanelContainer">
                         <Panel id="NewResourcesPanelContainerTopSection">
                             <Panel id="NewResourcesPanelContainerTopLeftSection">
                                 <Panel hittest="false" class="SkipButtonPanel">

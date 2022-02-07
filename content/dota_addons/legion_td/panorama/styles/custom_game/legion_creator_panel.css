@@ -5,7 +5,7 @@
 
 .ContributorLabel {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 2px;
     horizontal-align: center;
     color: white;
@@ -39,4 +39,6 @@ DOTAAvatarImage {
     text-shadow: 2px 2px 2px black;
     white-space: nowrap;
     margin-bottom: 15px;
+    height: fit-children;
+    overflow: clip;
 }

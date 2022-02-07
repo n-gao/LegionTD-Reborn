@@ -7,8 +7,8 @@
     </scripts>
     <script>
         GameUI.CustomUIConfig().Creator = [ "76561198027964324" ];
-        GameUI.CustomUIConfig().ActiveDevelopers = [ "76561198027964324", "76561198249367546", "76561198030851434" ];
-        GameUI.CustomUIConfig().InactiveDevelopers = [ "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120"];
+        GameUI.CustomUIConfig().ActiveDevelopers = [ "76561198027964324", "76561198249367546" ];
+        GameUI.CustomUIConfig().InactiveDevelopers = [ "76561198038088076", "76561197993928301", "76561197998364533", "76561198020293120", "76561198030851434" ];
 
         GameUI.CustomUIConfig().multiteam_top_scoreboard =
         {
@@ -52,6 +52,7 @@
         var NoNewRightPanel = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
         var NoNeutralItemSlot = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
         var newUITOP = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("MenuButtons");
+        var NoAghanimPanel = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block").FindChildTraverse("AbilitiesAndStatBranch");
 
         newUITOP.FindChildTraverse("DashboardButton").style.visibility = "collapse";
         newUITOP.FindChildTraverse("ToggleScoreboardButton").style.visibility = "collapse";
@@ -63,6 +64,7 @@
         NoKDA.FindChildTraverse("PlusStatus").style.visibility = "collapse";
         NoNewRightPanel.FindChildTraverse("right_flare").style.visibility = "collapse";
         NoNeutralItemSlot.FindChildTraverse("inventory_neutral_slot_container").style.visibility = "collapse";
+        NoAghanimPanel.FindChildTraverse("AghsStatusContainer").style.visibility = "collapse";
         $.Msg(DotaDefaultUIElement_t);
         GameUI.CustomUIConfig().dotaUi = newUI;
 

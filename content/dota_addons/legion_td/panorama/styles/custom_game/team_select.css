@@ -736,16 +736,16 @@ DOTAAvatarImage {
 }
 
 #PlayerIsHostPanel {
-    background-image: url("file://{images}/icon_star.png");
+    background-image: url("s2r://panorama/images/dpc/favorite_star_psd.vtex");
     background-repeat: no-repeat;
     background-size: contain;
     overflow: noclip;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     visibility: collapse;
-    margin-top: 2px;
+    margin-top: 6px;
     margin-right: 4px;
-    margin-left: 4px;
+    margin-left: 5px;
     visibility: collapse;
 }
 
