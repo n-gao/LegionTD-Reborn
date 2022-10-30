@@ -69,8 +69,8 @@
 
         GameUI.CustomUIConfig().multiteam_top_scoreboard =
         {
-	        reorder_team_scores: false,
-	        TeamOverlayXMLFile: "file://{resources}/layout/custom_game/overthrow_scoreboard_team_overlay.xml"
+            reorder_team_scores: false,
+            TeamOverlayXMLFile: "file://{resources}/layout/custom_game/overthrow_scoreboard_team_overlay.xml"
         };
 
     </script>

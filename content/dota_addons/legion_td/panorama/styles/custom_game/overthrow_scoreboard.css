@@ -16,50 +16,50 @@
 .VictoryPanel
 {
     flow-children: down;
-	width: 100px;
-	height: 100px;
+    width: 100px;
+    height: 100px;
 
-	background-image: url("file://{images}/custom_game/goal_logo.psd");
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: 100% 100%;
+    background-image: url("file://{images}/custom_game/goal_logo.psd");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
 }
 
 #Goal
 {
-	margin-top: 2px;
-	margin-bottom: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     font-size: 16px;
     font-weight: bold;
     color: #9e7305;
     text-align: center;
-	width: 100%;
-	text-transform: uppercase;
+    width: 100%;
+    text-transform: uppercase;
     text-overflow: clip;
 }
 
 #VictoryPoints
 {
-	margin-top: -20px;
+    margin-top: -20px;
     horizontal-align: center;
     vertical-align: middle;
     font-weight: bold;
     font-size: 60px;
     color: white;
-	text-shadow: 2px 2px 2px #7b612b;
-	color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
+    text-shadow: 2px 2px 2px #7b612b;
+    color: gradient( linear, 0% 0%, 0% 100%, from( #c88423 ), color-stop( 0.25, #c88423 ), color-stop( 0.5, #fffb84 ), color-stop( 0.75, #c88423 ), to( #9a6717 ) );
     text-overflow: clip;
 }
 
 #Timer
 {
-	margin-top: -16px;
+    margin-top: -16px;
     font-size: 18px;
     font-weight: bolder;
     color: white;
-	text-shadow: 2px 2px 2px #7b612b;
+    text-shadow: 2px 2px 2px #7b612b;
     text-align: center;
-	width: 100%;
+    width: 100%;
     text-overflow: clip;
 }
 
@@ -86,11 +86,10 @@
 
 #TeamNotices
 {
-	margin-top: 50px;
-	flow-children: down;
-	width: 100%;
+    margin-top: 50px;
+    flow-children: down;
+    width: 100%;
 }
-
 
 #FirstPlaceIndicator
 {
@@ -146,21 +145,21 @@
     overflow: noclip;
     text-shadow: 2px 2px 2px black;
 
-	animation-duration: 0.3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .close_to_victory #PointsToWin
 {
     visibility: visible;
-	animation-name: CloseToVictoryAnim;
+    animation-name: CloseToVictoryAnim;
 }
 
 .very_close_to_victory #PointsToWin
 {
     visibility: visible;
-	animation-name: VeryCloseToVictoryAnim;
+    animation-name: VeryCloseToVictoryAnim;
 }
 
 .victory #PointsToWin
@@ -168,60 +167,59 @@
     visibility: visible;
 }
 
-
 @keyframes 'CloseToVictoryAnim'
 {
-	0%
-	{
-		transform: translateX( -2px ) rotateZ( -3deg );
-	}
+    0%
+    {
+        transform: translateX( -2px ) rotateZ( -3deg );
+    }
 
-	50%
-	{
-		transform: translateX( 2px ) rotateZ( 3deg );
-	}
-	
-	100%
-	{
-		transform: translateX( -2px ) rotateZ( -3deg );
-	}
+    50%
+    {
+        transform: translateX( 2px ) rotateZ( 3deg );
+    }
+    
+    100%
+    {
+        transform: translateX( -2px ) rotateZ( -3deg );
+    }
 }
 
 @keyframes 'VeryCloseToVictoryAnim'
 {
-	0%
-	{
-		transform: translateX( -4px ) rotateZ( -10deg );
-	}
+    0%
+    {
+        transform: translateX( -4px ) rotateZ( -10deg );
+    }
 
-	50%
-	{
-		transform: translateX( 4px ) rotateZ( 10deg );
-	}
-	
-	100%
-	{
-		transform: translateX( -4px ) rotateZ( -10deg );
-	}
+    50%
+    {
+        transform: translateX( 4px ) rotateZ( 10deg );
+    }
+    
+    100%
+    {
+        transform: translateX( -4px ) rotateZ( -10deg );
+    }
 }
 
 #TempStatusRow
 {
     width: 100%;
-	margin-top: 34px;
+    margin-top: 34px;
 }
 
 #RecentScore
 {
-	margin-left: 72px;
+    margin-left: 72px;
     horizontal-align: left;
     color: white;
     font-size: 32px;
     font-weight: bold;
     text-shadow: 3px 5px 5px black;
 
-	transition-property: transform, opacity;
-	transition-duration: 0.15s;
+    transition-property: transform, opacity;
+    transition-duration: 0.15s;
     transform: scaleX(2) scaleY(2);
     opacity: 0;
 }
