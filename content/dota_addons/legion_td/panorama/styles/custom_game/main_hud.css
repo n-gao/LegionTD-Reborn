@@ -105,6 +105,7 @@
     vertical-align: top;
     width: 100px;
     height: 150px;
+    margin-right: 650px;
 }
 
 
@@ -707,7 +708,6 @@
 {
     horizontal-align: center;
     vertical-align: bottom;
-    box-shadow: #00000077 -4px -4px 8px 8px;
     margin: 0px 10px;
     width: 298px;
     height: 48px;

@@ -73,37 +73,29 @@
             {
                 "Wearable1"
                 {
-                    "ItemDef"    "490"
+                    "ItemDef"    "6288"
                 }
 
                 "Wearable2"
                 {
-                    "ItemDef"    "394"
+                    "ItemDef"    "6046"
                 }
 
                 "Wearable3"
                 {
-                    "ItemDef"    "487"
+                    "ItemDef"    "6045"
                 }
 
                 "Wearable4"
                 {
-                    "ItemDef"    "489"
+                    "ItemDef"    "6043"
                 }
 
                 "Wearable5"
                 {
-                    "ItemDef"    "491"
+                    "ItemDef"    "6042"
                 }
-
-                "Wearable6"
-                {
-                    "ItemDef"    "492"
-                }
-
             }
-
         }
-
     }
 }

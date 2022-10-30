@@ -614,14 +614,14 @@ DOTAPlay.1v1Disallowed.SectionVisible_1v1  #PlayButton
 DOTAPlay.CanReturnToWeekendTourney #DeniedPlayButton,
 DOTAPlay.InReadyUp #DeniedPlayButton,
 DOTAPlay.ReturningToQueue #DeniedPlayButton,
-DOTAPlay.PlayButtonHidden #DeniedPlayButton,
+DOTAPlay.PlayButtonHidden #DeniedPlayButton
 {
     visibility: collapse;
 }
 
 DOTAPlay.InReadyUp #PlayButton,
 DOTAPlay.ReturningToQueue #PlayButton,
-DOTAPlay.PlayButtonHidden #PlayButton,
+DOTAPlay.PlayButtonHidden #PlayButton
 {
     visibility: collapse;
 }

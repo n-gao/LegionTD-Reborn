@@ -25,22 +25,26 @@ function OnPlayerDetailsChanged() {
     $.GetContextPanel().SetHasClass("player_is_local", playerInfo.player_is_local);
     $.GetContextPanel().SetHasClass("player_has_host_privileges", playerInfo.player_has_host_privileges);
 
-    SetTitle();
+//   SetTitle();
 }
 
-function SetTitle() {
-    var title = "";
-    if (Contains(GameUI.CustomUIConfig().InactiveDevelopers, steam_id)) {
-        title = $.Localize("#legion_contributor_inactive_dev");
-    }
-    if (Contains(GameUI.CustomUIConfig().ActiveDevelopers, steam_id)) {
-        title = $.Localize("#legion_contributor_active_dev");
-    }
-    if (Contains(GameUI.CustomUIConfig().Creator, steam_id)) {
-        title = $.Localize("#legion_contributor_creator");
-    }
-    $("#PlayerTitle").text = title;
-}
+//--------------------------------------------------------------------------------------------------
+// Needs a fixed.
+// line:42(46 with comment), col:27) - TypeError: Cannot set property 'text' of null
+//--------------------------------------------------------------------------------------------------
+//function SetTitle() {
+//    var title = "";
+//    if (Contains(GameUI.CustomUIConfig().InactiveDevelopers, steam_id)) {
+//        title = $.Localize("#legion_contributor_inactive_dev");
+//    }
+//    if (Contains(GameUI.CustomUIConfig().ActiveDevelopers, steam_id)) {
+//        title = $.Localize("#legion_contributor_active_dev");
+//    }
+//    if (Contains(GameUI.CustomUIConfig().Creator, steam_id)) {
+//        title = $.Localize("#legion_contributor_creator");
+//    }
+//    $("#PlayerTitle").text = title;
+//}
 
 function Contains(array, toSearch) {
     var result;

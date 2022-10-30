@@ -81,22 +81,22 @@
             {
                 "Wearable1"
                 {
-                    "ItemDef"   "419"
+                    "ItemDef"   "8592"
                 }
 
                 "Wearable2"
                 {
-                    "ItemDef"   "203"
+                    "ItemDef"   "8594"
                 }
 
                 "Wearable3"
                 {
-                    "ItemDef"   "204"
+                    "ItemDef"   "8593"
                 }
 
                 "Wearable4"
                 {
-                    "ItemDef"   "205"
+                    "ItemDef"   "8591"
                 }
 
             }

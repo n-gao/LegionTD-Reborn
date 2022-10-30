@@ -253,8 +253,8 @@
 #StartGameCountdownTimer.countdown_inactive #TimerBg,
 #StartGameCountdownTimer.countdown_inactive #TimerRing,
 #StartGameCountdownTimer.countdown_inactive #TimerLabelAutoStart,
-#StartGameCountdownTimer.countdown_inactive #TimerLabelGameStart,
-    {
+#StartGameCountdownTimer.countdown_inactive #TimerLabelGameStart
+{
     opacity: 0;
 }
 
@@ -368,7 +368,6 @@
 #LockAndStartButton {
     horizontal-align: right;
     background-color: gradient(linear, 0% 0%, 0% 100%, from(#2d4881cc), to(#486ca9cc));
-    box-shadow: fill #486ca922 -4px -4px 8px 8px;
     border-top: 1px solid #ffffff03;
     border-left: 1px solid #ffffff03;
     visibility: collapse;
@@ -477,7 +476,6 @@ DropDownMenu {
     margin-right: 5px;
     background-color: gradient(linear, 0% 0%, 0% 100%, from(#2d4881cc), to(#486ca9cc));
     background-image: url("s2r://panorama/images/backgrounds/background_play_button_2x_png.vtex");
-    box-shadow: fill #486ca922 -4px -4px 8px 8px;
     border-top: 1px solid #ffffff03;
     border-left: 1px solid #ffffff03;
     border-radius: 8px;
@@ -491,7 +489,6 @@ DropDownMenu {
     margin-right: -395px;
     background-color: gradient(linear, 0% 0%, 0% 100%, from(#2d4881cc), to(#486ca9cc));
     background-image: url("s2r://panorama/images/backgrounds/background_play_button_2x_png.vtex");
-    box-shadow: fill #486ca922 -4px -4px 8px 8px;
     border-top: 1px solid #ffffff03;
     border-left: 1px solid #ffffff03;
     border-radius: 8px;
@@ -544,7 +541,6 @@ DropDownMenu {
 
 .no_unassigned_players #LockAndStartButton:hover {
     background-color: gradient(linear, 0% 0%, 0% 100%, from(#2d4881cc), to(#84acff));
-    box-shadow: fill #486ca966 -4px -4px 18px 8px;
 }
 
 .no_unassigned_players #LockAndStartButton:active {
@@ -586,8 +582,6 @@ DropDownMenu {
     visibility: visible;
 }
 
-
-
 .TeamSelectTeam {
     width: 100%;
     background-color: gradient(linear, 100% 0%, 100% 100%, from(#272b30), color-stop(0.6, #181a1e), to(#181a1e));
@@ -603,7 +597,7 @@ DropDownMenu {
 }
 
 .TeamSelectTeam.local_player_on_this_team {
-    box-shadow: -3px -3px 12px 6px gray;
+    border: 2px solid #cfccccbd;
 }
 
 .TeamSelectTeam:hover {

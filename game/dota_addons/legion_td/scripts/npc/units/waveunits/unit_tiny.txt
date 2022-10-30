@@ -3,10 +3,10 @@
     "unit_tiny"
     {
         "BaseClass"    "npc_dota_creature"
-        "Model"    "models/heroes/tiny_02/tiny_02.vmdl"
-        "ModelScale"    "0.6"
-        "SoundSet"    "Hero_Tiny"
-        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
+        "Model"    "models/heroes/meepo/meepo.vmdl"
+        "ModelScale"    "0.9"
+        "SoundSet"    "Hero_Meepo"
+        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_meepo.vsndevts"
         "Level"    "1"
         "HealthBarOffset"    "140"
         "Vscripts"    "ai/ai_default.lua"
@@ -70,22 +70,32 @@
             {
                 "Wearable1"
                 {
-                    "ItemDef"    "494"
+                    "ItemDef"    "13736"
                 }
 
                 "Wearable2"
                 {
-                    "ItemDef"    "493"
+                    "ItemDef"    "13737"
                 }
 
                 "Wearable3"
                 {
-                    "ItemDef"    "495"
+                    "ItemDef"    "13738"
                 }
 
                 "Wearable4"
                 {
-                    "ItemDef"    "496"
+                    "ItemDef"    "13740"
+                }
+
+                "Wearable5"
+                {
+                    "ItemDef"    "13739"
+                }
+
+                "Wearable6"
+                {
+                    "ItemDef"    "13741"
                 }
 
             }

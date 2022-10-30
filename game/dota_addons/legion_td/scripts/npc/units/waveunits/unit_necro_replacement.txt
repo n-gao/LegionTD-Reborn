@@ -4,7 +4,7 @@
     {
         "BaseClass"    "npc_dota_creature"
         "Model"    "models/heroes/blood_seeker/blood_seeker.vmdl"
-        "ModelScale"    "0.6"
+        "ModelScale"    "0.7"
         "SoundSet"    "Hero_Bloodseeker"
         "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
         "Level"    "1"
@@ -76,37 +76,37 @@
             {
                 "Wearable1"
                 {
-                    "ItemDef"    "6650"
+                    "ItemDef"    "18109"
                 }
 
                 "Wearable2"
                 {
-                    "ItemDef"    "6651"
+                    "ItemDef"    "18108"
                 }
 
                 "Wearable3"
                 {
-                    "ItemDef"    "6652"
+                    "ItemDef"    "18107"
                 }
 
                 "Wearable4"
                 {
-                    "ItemDef"    "6653"
+                    "ItemDef"    "18106"
                 }
 
                 "Wearable5"
                 {
-                    "ItemDef"    "6654"
+                    "ItemDef"    "18104"
                 }
 
                 "Wearable6"
                 {
-                    "ItemDef"    "6655"
+                    "ItemDef"    "7425"
                 }
 
                 "Wearable7"
                 {
-                    "ItemDef"    "6656"
+                    "ItemDef"    "7426"
                 }
 
             }
