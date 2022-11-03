@@ -9,3 +9,19 @@ insert_final_newline = true
 
 [game/dota_addons/legion_td/resource/*.txt]
 charset = utf-16le
+
+[content/dota_addons/legion_td/materials/overviews/legion_td_4v4.txt]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+indent_style = unset
+indent_size = unset
+
+[game/dota_addons/legion_td/resource/overviews/legion_td_4v4.txt]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+indent_style = unset
+indent_size = unset
