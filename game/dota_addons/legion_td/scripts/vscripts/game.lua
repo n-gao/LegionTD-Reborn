@@ -620,7 +620,7 @@ function Game:OnNPCSpawned(key)
 end
 
 function Game:OnConnectFull(keys)
-    local entIndex = keys.index + 1
+    local entIndex = keys.index
     local ply = EntIndexToHScript(entIndex)
     local playerID = ply:GetPlayerID()
     local player = self:FindPlayerWithID(playerID)
@@ -655,7 +655,7 @@ function Game:OnConnectFull(keys)
 end
 
 function Game:OnPlayerReconnect(keys)
-    local entIndex = keys.index + 1
+    local entIndex = keys.index
     local ply = EntIndexToHScript(entIndex)
     local playerID = ply:GetPlayerID()
     local player = self:FindPlayerWithID(playerID)

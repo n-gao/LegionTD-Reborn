@@ -4,7 +4,7 @@
     {
         "BaseClass" "npc_dota_creature"
         "Model" "models/heroes/windrunner/windrunner.vmdl"
-        "ModelScale"    "0.55"
+        "ModelScale"    "0.75"
         "SoundSet"  "Hero_Windrunner"
         "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
         "Level" "1"

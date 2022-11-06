@@ -3,10 +3,10 @@
     "unit_tidehunter"
     {
         "BaseClass"    "npc_dota_creature"
-        "Model"    "models/heroes/tidehunter/tidehunter.vmdl"
-        "ModelScale"    "0.7"
-        "SoundSet"    "Hero_Tidehunter"
-        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
+        "Model"    "models/items/courier/calabaxa_courier/calabaxa_courier.vmdl"
+        "ModelScale"    "0.9"
+        "SoundSet"    "Undying_Zombie"
+        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_undying.vsndevts"
         "Level"    "1"
         "HealthBarOffset"    "140"
         "Vscripts"    "ai/ai_default.lua"
@@ -63,43 +63,7 @@
                     "Avoidance"    "0.0"
                     "Support"    "0.0"
                 }
-
-            }
-
-            "AttachWearables"
-            {
-                "Wearable1"
-                {
-                    "ItemDef"    "34"
-                }
-
-                "Wearable2"
-                {
-                    "ItemDef"    "35"
-                }
-
-                "Wearable3"
-                {
-                    "ItemDef"    "36"
-                }
-
-                "Wearable4"
-                {
-                    "ItemDef"    "37"
-                }
-
-                "Wearable5"
-                {
-                    "ItemDef"    "582"
-                }
-
-                "Wearable6"
-                {
-                    "ItemDef"    "583"
-                }
-
             }
         }
-
     }
 }

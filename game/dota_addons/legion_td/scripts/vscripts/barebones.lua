@@ -109,7 +109,7 @@ function GameMode:OnConnectFull(keys)
     -- DeepPrintTable(keys)
     GameMode:CaptureGameMode()
 
-    local entIndex = keys.index + 1
+    local entIndex = keys.index
     -- The Player entity of the joining user
     local ply = EntIndexToHScript(entIndex)
 
@@ -144,6 +144,7 @@ function GameMode:CaptureGameMode()
         mode:SetUseCustomHeroLevels(USE_CUSTOM_HERO_LEVELS)
         mode:SetCustomHeroMaxLevel(MAX_LEVEL)
         mode:SetCustomXPRequiredToReachNextLevel(XP_PER_LEVEL_TABLE)
+        mode:DisableHudFlip(true)
 
         --mode:SetBotThinkingEnabled( USE_STANDARD_DOTA_BOT_THINKING )
         mode:SetTowerBackdoorProtectionEnabled(ENABLE_TOWER_BACKDOOR_PROTECTION)
@@ -223,6 +224,8 @@ function GameMode:OnHeroInGame(hero)
     table.insert(self.vPlayers, hero)
     -- This line for example will set the starting gold of every hero to 500 unreliable gold
     hero:SetGold(START_GOLD, false)
+
+    local particle = ParticleManager:CreateParticle( "particles/econ/events/diretide_2020/emblem/fall20_emblem_v2_effect.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
 
     local innate_ability = hero:FindAbilityByName("builder_invulnerable")
     if innate_ability then

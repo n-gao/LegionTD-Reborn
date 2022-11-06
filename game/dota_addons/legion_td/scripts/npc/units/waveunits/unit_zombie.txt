@@ -4,7 +4,7 @@
     {
         "BaseClass"    "npc_dota_creature"
         "Model"    "models/heroes/undying/undying_minion.vmdl"
-        "ModelScale"    "0.7"
+        "ModelScale"    "0.8"
         "SoundSet"    "Undying_Zombie"
         "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_undying.vsndevts"
         "Level"    "1"

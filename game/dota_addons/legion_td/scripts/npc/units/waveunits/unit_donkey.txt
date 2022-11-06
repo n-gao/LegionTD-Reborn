@@ -3,9 +3,9 @@
     "unit_donkey"
     {
         "BaseClass" "npc_dota_creature"
-        "Model" "models/creeps/lane_creeps/creep_radiant_melee/radiant_melee.vmdl"
+        "Model" "models/creeps/neutral_creeps/n_creep_troll_skeleton/n_creep_skeleton_melee.vmdl"
         "GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
-        "ModelScale"    "0.9"
+        "ModelScale"    "1"
         "Level" "1"
         "HealthBarOffset"   "140"
         "Vscripts"  "ai/ai_default.lua"

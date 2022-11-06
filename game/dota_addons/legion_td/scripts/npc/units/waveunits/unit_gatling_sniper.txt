@@ -3,9 +3,9 @@
     "unit_gatling_sniper"
     {
         "BaseClass"    "npc_dota_creature"
-        "Model"    "models/heroes/sniper/sniper.vmdl"
-        "ModelScale"    "0.6"
-        "SoundSet"    "Hero_Sniper"
+        "Model"    "models/creeps/lane_creeps/creep_bad_ranged_diretide/creep_bad_ranged_diretide.vmdl"
+        "ModelScale"    "0.9"
+        "SoundSet"    "Undying_Zombie"
         "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
         "Level"    "1"
         "HealthBarOffset"    "140"
@@ -17,7 +17,7 @@
         "AttackDamageMin"    "2.7"
         "AttackDamageMax"    "3.0"
         "AttackRate"    "0.35"
-        "AttackAnimationPoint"    "0.2"
+        "AttackAnimationPoint"    "0.5"
         "AttackAcquisitionRange"    "850"
         "AttackRange"    "500"
         "ProjectileModel"    "particles/items_fx/desolator_projectile.vpcf"
@@ -57,34 +57,7 @@
                     "Avoidance"    "0.0"
                     "Support"    "0.0"
                 }
-
             }
-
-            "AttachWearables"
-            {
-                "Wearable1"
-                {
-                    "ItemDef"    "4698"
-                }
-
-                "Wearable2"
-                {
-                    "ItemDef"    "4700"
-                }
-
-                "Wearable3"
-                {
-                    "ItemDef"    "4701"
-                }
-
-                "Wearable4"
-                {
-                    "ItemDef"    "6895"
-                }
-
-            }
-
         }
-
     }
 }
