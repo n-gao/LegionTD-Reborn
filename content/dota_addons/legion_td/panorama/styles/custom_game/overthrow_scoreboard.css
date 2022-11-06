@@ -173,12 +173,10 @@
     {
         transform: translateX( -2px ) rotateZ( -3deg );
     }
-
     50%
     {
         transform: translateX( 2px ) rotateZ( 3deg );
     }
-    
     100%
     {
         transform: translateX( -2px ) rotateZ( -3deg );
@@ -191,12 +189,10 @@
     {
         transform: translateX( -4px ) rotateZ( -10deg );
     }
-
     50%
     {
         transform: translateX( 4px ) rotateZ( 10deg );
     }
-    
     100%
     {
         transform: translateX( -4px ) rotateZ( -10deg );
