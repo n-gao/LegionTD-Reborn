@@ -3,10 +3,10 @@
     "unit_assassins"
     {
         "BaseClass" "npc_dota_creature"
-        "Model" "models/items/broodmother/spiderling/witchs_grasp_spiderling/witchs_grasp_spiderling.vmdl"
-        "ModelScale"    "0.4"
-        "SoundSet"  "Hero_Broodmother"
-        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
+        "Model" "models/heroes/rikimaru/rikimaru.vmdl"
+        "ModelScale"    "1"
+        "SoundSet"  "Hero_Riki"
+        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_riki.vsndevts"
         "Level" "1"
         "HealthBarOffset"   "140"
         "Vscripts"  "ai/ai_default.lua"
@@ -18,7 +18,7 @@
         "AttackDamageMin"   "16.5"
         "AttackDamageMax"   "18.0"
         "AttackRate"    "0.78"
-        "AttackAnimationPoint"  "0.5"
+        "AttackAnimationPoint"  "0.2"
         "AttackAcquisitionRange"    "850"
         "AttackRange"   "90"
         "ProjectileModel"   ""
@@ -57,6 +57,33 @@
                     "Aggression"    "100.0"
                     "Avoidance" "0.0"
                     "Support"   "0.0"
+                }
+            }
+            "AttachWearables"
+            {
+                "Wearable1"
+                {
+                    "ItemDef"   "5267"
+                }
+                "Wearable2"
+                {
+                    "ItemDef"   "8445"
+                }
+                "Wearable3"
+                {
+                    "ItemDef"   "8444"
+                }
+                "Wearable4"
+                {
+                    "ItemDef"   "8443"
+                }
+                "Wearable5"
+                {
+                    "ItemDef"   "8441"
+                }
+                "Wearable6"
+                {
+                    "ItemDef"   "8442"
                 }
             }
         }

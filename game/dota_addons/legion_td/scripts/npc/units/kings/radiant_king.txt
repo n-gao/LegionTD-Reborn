@@ -5,8 +5,8 @@
         // General
         //----------------------------------------------------------------
         "BaseClass"             "npc_dota_creature"
-        "Model"                 "models/creeps/lane_creeps/creep_radiant_hulk/creep_radiant_diretide_ancient_hulk.vmdl"
-        "ModelScale"            "2"
+        "Model"                 "models/heroes/omniknight/omniknight.vmdl"
+        "ModelScale"            "2.2"
         "SoundSet"                        "Hero_Omniknight"
         "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
         "Level"                 "1"
@@ -88,6 +88,15 @@
                     "Avoidance"            "0.0"
                     "Support"            "0.0"
                 }
+            }
+            "AttachWearables"
+            {
+                "Wearable1" {"ItemDef" "45" }
+                "Wearable2" {"ItemDef" "7580" }
+                "Wearable3" {"ItemDef" "9748" }
+                "Wearable4" {"ItemDef" "12632" }
+                "Wearable5" {"ItemDef" "12633" }
+                "Wearable6" {"ItemDef" "8957" }
             }
         }
     }

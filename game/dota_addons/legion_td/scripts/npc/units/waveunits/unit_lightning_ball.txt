@@ -3,8 +3,8 @@
     "unit_lightning_ball"
     {
         "BaseClass"    "npc_dota_creature"
-        "Model"    "models/items/courier/pumpkin_courier/pumpkin_courier.vmdl"
-        "ModelScale"    "1.1"
+        "Model"    "models/heroes/lycan/lycan_wolf.vmdl"
+        "ModelScale"    "0.6"
         "SoundSet"                    "n_creep_Melee"
         "GameSoundsFile"                "soundevents/game_sounds_creeps.vsndevts"
         "Level"    "1"

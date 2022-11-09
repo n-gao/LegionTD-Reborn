@@ -3,9 +3,9 @@
     "unit_unicorn"
     {
         "BaseClass"    "npc_dota_creature"
-        "Model"    "models/items/wraith_king/arcana/wk_arcana_skeleton.vmdl"
+        "Model"    "models/creeps/lane_creeps/creep_radiant_melee/radiant_melee_mega.vmdl"
         "GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
-        "ModelScale"    "1"
+        "ModelScale"    "0.9"
         "Level"    "1"
         "HealthBarOffset"    "140"
         "Vscripts"    "ai/ai_default.lua"

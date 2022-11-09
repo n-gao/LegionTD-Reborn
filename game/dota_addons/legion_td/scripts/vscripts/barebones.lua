@@ -225,8 +225,6 @@ function GameMode:OnHeroInGame(hero)
     -- This line for example will set the starting gold of every hero to 500 unreliable gold
     hero:SetGold(START_GOLD, false)
 
-    local particle = ParticleManager:CreateParticle( "particles/econ/events/diretide_2020/emblem/fall20_emblem_v2_effect.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
-
     local innate_ability = hero:FindAbilityByName("builder_invulnerable")
     if innate_ability then
         innate_ability:SetLevel(1)

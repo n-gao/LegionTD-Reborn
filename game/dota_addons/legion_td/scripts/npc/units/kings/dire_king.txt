@@ -5,7 +5,7 @@
         // General
         //----------------------------------------------------------------
         "BaseClass"             "npc_dota_creature"
-        "Model"                 "models/creeps/lane_creeps/creep_dire_hulk/creep_dire_diretide_ancient_hulk.vmdl"
+        "Model"                 "models/heroes/doom/doom.vmdl"
         "ModelScale"            "2"
         "SoundSet"                        "Hero_Doom"
         "GameSoundsFile"                "soundevents/game_sounds_heroes/game_sounds_doombringer.vsndevts"
@@ -87,6 +87,16 @@
                     "Avoidance"            "0.0"
                     "Support"            "0.0"
                 }
+            }
+            "AttachWearables"
+            {
+                "Wearable1" {"ItemDef" "9989"}
+                "Wearable2" {"ItemDef" "8088"}
+                "Wearable3" {"ItemDef" "6276"}
+                "Wearable4" {"ItemDef" "9991"}
+                "Wearable5" {"ItemDef" "9986"}
+                "Wearable6" {"ItemDef" "8047"}
+                "Wearable7" {"ItemDef" "9741"}
             }
         }
     }

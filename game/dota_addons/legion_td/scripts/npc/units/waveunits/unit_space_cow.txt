@@ -3,8 +3,8 @@
     "unit_space_cow"
     {
         "BaseClass"    "npc_dota_creature"
-        "Model"    "models/creeps/neutral_creeps/n_creep_ghost_a/n_creep_ghost_a.vmdl"
-        "ModelScale"    "0.8"
+        "Model"    "models/items/enigma/eidolon/tentacular_conqueror_tentacular_conqueror_eidolons/tentacular_conqueror_tentacular_conqueror_eidolons.vmdl"
+        "ModelScale"    "1"
         "GameSoundsFile"    "soundevents/game_sounds_creeps.vsndevts"
         "Level"    "1"
         "HealthBarOffset"    "140"
@@ -16,10 +16,10 @@
         "AttackDamageMin"    "6.50"
         "AttackDamageMax"    "7"
         "AttackRate"    "1.25"
-        "AttackAnimationPoint"    "0.5"
+        "AttackAnimationPoint"    "0.4"
         "AttackAcquisitionRange"    "800"
         "AttackRange"    "450"
-        "ProjectileModel"            "particles/neutral_fx/ghost_base_attack.vpcf" // Particle system model for projectile.
+        "ProjectileModel"            "particles/econ/items/enigma/enigma_geodesic/enigma_base_attack_eidolon_geodesic.vpcf" // Particle system model for projectile.
         "ProjectileSpeed"            "900"        // Speed of projectile.
         "LegionAttackType"    "normal"
         "LegionDefendType"    "heavy"
