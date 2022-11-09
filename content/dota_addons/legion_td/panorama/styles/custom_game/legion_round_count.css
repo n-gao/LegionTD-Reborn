@@ -30,8 +30,9 @@
     width: 100%;
     text-transform: uppercase;
     text-overflow: clip;
-    color: gradient( linear, 0% 30%, 0% 140%, from( #EA5136 ), to( #FEE6A9 ) );
+    color: #fff;
     font-weight: semi-bold;
+    text-shadow: 0px 0px 4px #CD6BFB;
 }
 
 #CurrentRound {
@@ -39,8 +40,9 @@
     horizontal-align: center;
     vertical-align: middle;
     font-size: 60px;
-    color: gradient( linear, 0% 30%, 0% 140%, from( #EA5136 ), to( #FEE6A9 ) );
+    color: #fff;
     font-weight: semi-bold;
+    text-shadow: 0px 0px 4px #CD6BFB;
     text-overflow: clip;
 }
 

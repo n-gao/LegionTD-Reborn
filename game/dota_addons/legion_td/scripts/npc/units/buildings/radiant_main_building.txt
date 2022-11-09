@@ -5,8 +5,8 @@
         // General
         //----------------------------------------------------------------
         "BaseClass"                        "npc_dota_creature"
-        "Model"                                "models/props_gameplay/pumpkin_rune.vmdl"
-        "ModelScale"                    "2"
+        "Model"                                "models/props_structures/tower_good.vmdl"
+        "ModelScale"                    "0.9"
         "SoundSet"                        "Tower.Water"
         "Level"                                "1"
         "HealthBarOffset"            "140"

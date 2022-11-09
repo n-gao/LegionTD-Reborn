@@ -32,7 +32,6 @@
                 <Button id="NewDashboardButton" class="TopLeftButton" onactivate="DOTAHUDShowDashboard();" onmouseover="UIShowTextTooltip(#DOTA_HUD_BackToDashboard)"  onmouseout="UIHideTextTooltip()" />
                 <Button id="NewSettingsButton" class="TopLeftButton" onactivate="DOTAShowSettingsPopup();" onmouseover="UIShowTextTooltip(#DOTA_HUD_Settings)"  onmouseout="UIHideTextTooltip()" />
                 <Button id="NewScoreboardButton" class="TopLeftButton" onactivate="DOTAHUDToggleScoreboard();" onmouseover="UIShowTextTooltip(#DOTA_HUD_Scoreboard)"  onmouseout="UIHideTextTooltip()" />
-                <Button id="InformationButton" class="TopLeftButton" onload="DOTAShowTextTooltip('#Information')" onactivate="OnInformationButtonPressed()" onmouseover="UIShowTextTooltip(#Information)"  onmouseout="UIHideTextTooltip()"/>
             </Panel>
 
             <Panel hittest="false" id="InformationPanelRoot">
@@ -136,19 +135,6 @@
                         </Panel>
 
                     </Panel>
-            </Panel>
-            <Panel hittest="false" id="PopupWindow">
-                <Panel class="Contents">
-                    <Panel id="TitleBox">
-                        <Label id="Title" text="#DiscordTitle"/>
-                    </Panel>
-                    <Panel id="SplashImage"/>
-                    <Label id="Message" text="#DiscordDescription"/>
-                    <Panel class="Buttons">
-                        <TextButton id="LearnMore" class="ButtonBevel" text="#DiscordJoinButton" onactivate="ExternalBrowserGoToURL('https://discord.gg/pmMnfdA');"/>
-                    </Panel>
-                </Panel>
-                <Button class="CloseButton" onactivate="UIPopupButtonClickedClose()"/>
             </Panel>
         </Panel>
     </Panel>

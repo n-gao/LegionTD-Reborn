@@ -3,12 +3,12 @@
     "unit_hydra"
     {
         "BaseClass"    "npc_dota_creature"
-        "Model"    "models/items/undying/flesh_golem/grim_harvest_golem/grim_harvest_golem.vmdl"
+        "Model"    "models/heroes/medusa/medusa.vmdl"
         "ModelScale"    "0.6"
-        "SoundSet"    "Hero_Undying"
-        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_undying.vsndevts"
+        "SoundSet"    "Hero_Medusa"
+        "GameSoundsFile"    "soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
         "Level"    "1"
-        "HealthBarOffset"    "170"
+        "HealthBarOffset"    "140"
         "Vscripts"    "ai/ai_default.lua"
         "Ability1"    "hydra_splitshot"
         "ArmorPhysical"    "3"
@@ -18,7 +18,7 @@
         "AttackDamageMin"    "10.0"
         "AttackDamageMax"    "12.0"
         "AttackRate"    "1.4"
-        "AttackAnimationPoint"    "0.300000"
+        "AttackAnimationPoint"    "0.2"
         "AttackAcquisitionRange"    "850"
         "AttackRange"    "400"
         "ProjectileModel"    "particles/units/heroes/hero_lion/lion_base_attack.vpcf"
@@ -58,7 +58,21 @@
                     "Avoidance"    "0.0"
                     "Support"    "0.0"
                 }
-
+            }
+            "AttachWearables"
+            {
+                "Wearable1"
+                {
+                    "ItemDef"    "8193"
+                }
+                "Wearable2"
+                {
+                    "ItemDef"    "8191"
+                }
+                "Wearable3"
+                {
+                    "ItemDef"    "8196"
+                }
             }
         }
     }
